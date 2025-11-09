@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="week" cnName="每周" dayNum="2" tipText="每周（周一为时间点）玩家将获得1次任务次数，上周未完成的任务次数将作废。" autoUnlockByLevelB="1" levelIsTaskLvB="1" maxLvLimitB="1">
+		<task name="weekMadboss" cnName="战神之怒" lv="99" unlockLv="30">
+			<openD tk="beatMadboss" />
+			<shortText>击败战神</shortText>
+			<conditionText>剩余时间 [time]</conditionText>
+			<uiConditionText>在时间 [time] 之内击败战神</uiConditionText>
+			<description>任务中，战神拥有“上帝之盾”技能：每0.5秒抵挡1次必亡伤害；每周还会更替若干个技能；</description>
+			
+			<worldMapId>XingGu</worldMapId>
+			<levelId>weekMadboss</levelId>
+			<diff>1</diff>
+			<growth>
+				<task><condition time="480" timeType="fail" timeFirst="倒计时 " />
+					<enemyLifeMul>2</enemyLifeMul><enemyDpsMul>0.4</enemyDpsMul><gift>things;madheart;20</gift>
+				</task>
+				<task><condition time="480" timeType="fail" timeFirst="倒计时 " />
+					<enemyLifeMul>10</enemyLifeMul><enemyDpsMul>0.7</enemyDpsMul><gift>things;madheart;22</gift>
+				</task>
+				<task><condition time="480" timeType="fail" timeFirst="倒计时 " />
+					<enemyLifeMul>22</enemyLifeMul><enemyDpsMul>1</enemyDpsMul><gift>things;madheart;24</gift>
+				</task>
+				<task><condition time="480" timeType="fail" timeFirst="倒计时 " />
+					<enemyLifeMul>50</enemyLifeMul><enemyDpsMul>1.2</enemyDpsMul><gift>things;madheart;26</gift>
+				</task>
+				<task><condition time="480" timeType="fail" timeFirst="倒计时 " />
+					<enemyLifeMul>100</enemyLifeMul><enemyDpsMul>1.5</enemyDpsMul><gift>things;madheart;28</gift>
+				</task>
+				<task><condition time="480" timeType="fail" timeFirst="倒计时 " />
+					<enemyLifeMul>200</enemyLifeMul><enemyDpsMul>2</enemyDpsMul><gift>things;madheart;30</gift>
+				</task>
+				<task><condition time="480" timeType="fail" timeFirst="倒计时 " />
+					<enemyLifeMul>400</enemyLifeMul><enemyDpsMul>2.5</enemyDpsMul><gift>things;madheart;32</gift>
+				</task>
+				<task><condition time="480" timeType="fail" timeFirst="倒计时 " />
+					<enemyLifeMul>800</enemyLifeMul><enemyDpsMul>3</enemyDpsMul><gift>things;madheart;34</gift>
+				</task>
+			</growth>	
+		</task>
+		
+		<task name="weekParts" cnName="零件–屠戮" uiShowTime="999999" unlockLv="30" maxLvLimitB="0">
+			<openD tk="BuDong_plot" />
+			<diff>20</diff>
+			<shortText>前往[map]消灭守关首领！</shortText>
+			<conditionText>消灭守关首领</conditionText>
+			<uiConditionText>消灭守关首领</uiConditionText>
+			<description>鬼爵养的真是一群亡命暴徒，要从他们身上要到零件箱比登天还难，一不做二不休，把他们逼到角落，以暴制暴！</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>weekTask/weekParts</fixedLevelUrl>
+			
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>things;partsChest78;6</gift>
+			<gift>base;partsCoin;20</gift>
+			
+			
+		</task>
+		<task name="weekHourse" cnName="午马–践踏" uiShowTime="999999" unlockLv="30" maxLvLimitB="0">
+			<openD tk="BuDong_plot" />
+			<diff>20</diff>
+			<shortText>前往[map]消灭守关首领！</shortText>
+			<conditionText>消灭守关首领</conditionText>
+			<uiConditionText>消灭守关首领</uiConditionText>
+			<description>鬼爵养的真是一群亡命暴徒，要从他们身上要到午马碎片比登天还难，一不做二不休，把他们逼到角落，以暴制暴！</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>weekTask/weekHourse</fixedLevelUrl>
+			
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>things;yearHourse;7</gift>
+			
+		</task>
+		
+		<task name="weekHeadBlack" cnName="头盔–暗物质" uiShowTime="999999" unlockLv="30">
+			<openD tk="GuiWang_breath" />
+			<remarks>head</remarks>
+			<diff>0.7</diff>
+			<shortText>前往[map]消灭守关首领！</shortText>
+			<conditionText>消灭守关首领</conditionText>
+			<uiConditionText>消灭守关首领</uiConditionText>
+			<description>以战争狂人和鬼爵为首的黑暗势力不断蔓延，请英雄尽快集齐由暗物质打造的装备碎片，粉碎黑暗势力的阴谋。</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>weekTask/weekHeadBlack</fixedLevelUrl>
+			
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>things;equipHighBox;10</gift>
+			
+			<openD mustB="1" closeAffterCompleteB="1">
+				<must>things;dreamKey;4</must>
+				<must>things;courageKey;12</must>
+				<must>things;energyKey;4</must>
+				<must>things;victoryKey;4</must>
+			</openD>
+		</task>
+		<task name="weekCoatBlack" cnName="战衣–暗物质" uiShowTime="999999" unlockLv="30">
+			<openD tk="GuiWang_breath" />
+			<remarks>coat</remarks>
+			<diff>0.7</diff>
+			<shortText>前往[map]消灭守关首领！</shortText>
+			<conditionText>消灭守关首领</conditionText>
+			<uiConditionText>消灭守关首领</uiConditionText>
+			<description>以战争狂人和鬼爵为首的黑暗势力不断蔓延，请英雄尽快集齐由暗物质打造的装备碎片，粉碎黑暗势力的阴谋。</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>weekTask/weekCoatBlack</fixedLevelUrl>
+			
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>things;equipHighBox;10</gift>
+			
+			<openD mustB="1" closeAffterCompleteB="1">
+				<must>things;dreamKey;4</must>
+				<must>things;courageKey;4</must>
+				<must>things;energyKey;12</must>
+				<must>things;victoryKey;4</must>
+			</openD>
+		</task>
+		
+		<task name="weekPantsBlack" cnName="战裤–暗物质" uiShowTime="999999" unlockLv="30">
+			<openD tk="GuiWang_breath" />
+			<remarks>pants</remarks>
+			<diff>0.7</diff>
+			<shortText>前往[map]消灭守关首领！</shortText>
+			<conditionText>消灭守关首领</conditionText>
+			<uiConditionText>消灭守关首领</uiConditionText>
+			<description>以战争狂人和鬼爵为首的黑暗势力不断蔓延，请英雄尽快集齐由暗物质打造的装备碎片，粉碎黑暗势力的阴谋。</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>weekTask/weekPantsBlack</fixedLevelUrl>
+			
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>things;equipHighBox;10</gift>
+			
+			<openD mustB="1" closeAffterCompleteB="1">
+				<must>things;dreamKey;4</must>
+				<must>things;courageKey;4</must>
+				<must>things;energyKey;4</must>
+				<must>things;victoryKey;12</must>
+			</openD>
+		</task>
+		<task name="weekBeltBlack" cnName="腰带–暗物质" uiShowTime="999999" unlockLv="30">
+			<openD tk="GuiWang_breath" />
+			<remarks>belt</remarks>
+			<diff>0.7</diff>
+			<shortText>前往[map]消灭守关首领！</shortText>
+			<conditionText>消灭守关首领</conditionText>
+			<uiConditionText>消灭守关首领</uiConditionText>
+			<description>以战争狂人和鬼爵为首的黑暗势力不断蔓延，请英雄尽快集齐由暗物质打造的装备碎片，粉碎黑暗势力的阴谋。</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>weekTask/weekBeltBlack</fixedLevelUrl>
+			
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>things;equipHighBox;10</gift>
+			
+			<openD mustB="1" closeAffterCompleteB="1">
+				<must>things;dreamKey;12</must>
+				<must>things;courageKey;4</must>
+				<must>things;energyKey;4</must>
+				<must>things;victoryKey;4</must>
+			</openD>
+		</task>
+		
+		
+		
+		
+		<task name="weekHead" cnName="头盔–威慑" uiShowTime="999999" unlockLv="30">
+			<openD tk="BaiSha_skeleton" />
+			<remarks>head</remarks>
+			<diff>0.7</diff>
+			<shortText>前往[map]消灭守关首领！</shortText>
+			<conditionText>消灭守关首领</conditionText>
+			<uiConditionText>消灭守关首领</uiConditionText>
+			<description>运气不错，从鬼爵那释放了一群不太疯狂的暴徒，看来稍加武力威慑，就能从他们那要到不错的稀有装备！</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>weekTask/weekHead</fixedLevelUrl>
+			
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>things;equipHighBox;10</gift>
+			
+			<openD mustB="1" closeAffterCompleteB="1">
+				<must>things;dreamKey;4</must>
+				<must>things;courageKey;12</must>
+				<must>things;energyKey;4</must>
+				<must>things;victoryKey;4</must>
+			</openD>
+		</task>
+		<task name="weekCoat" cnName="战衣–铲除" uiShowTime="999999" unlockLv="30">
+			<openD tk="BaiSha_skeleton" />
+			<remarks>coat</remarks>
+			<diff>0.7</diff>
+			<shortText>前往[map]消灭守关首领！</shortText>
+			<conditionText>消灭守关首领</conditionText>
+			<uiConditionText>消灭守关首领</uiConditionText>
+			<description>“真是有其父必有其子”，这批暴徒跟鬼爵一样狡诈无信，必须将他们全部铲除，否则后患无穷。</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>weekTask/weekCoat</fixedLevelUrl>
+			
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>things;equipHighBox;10</gift>
+			
+			<openD mustB="1" closeAffterCompleteB="1">
+				<must>things;dreamKey;4</must>
+				<must>things;courageKey;4</must>
+				<must>things;energyKey;12</must>
+				<must>things;victoryKey;4</must>
+			</openD>
+		</task>
+		
+		<task name="weekPants" cnName="战裤–制服" uiShowTime="999999" unlockLv="30">
+			<openD tk="BaiSha_skeleton" />
+			<remarks>pants</remarks>
+			<diff>0.7</diff>
+			<shortText>前往[map]消灭守关首领！</shortText>
+			<conditionText>消灭守关首领</conditionText>
+			<uiConditionText>消灭守关首领</uiConditionText>
+			<description>不好，竟然释放了一群有通天本事的亡命暴徒，如不尽快制服他们，必遭他们的祸害。</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>weekTask/weekPants</fixedLevelUrl>
+			
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>things;equipHighBox;10</gift>
+			
+			<openD mustB="1" closeAffterCompleteB="1">
+				<must>things;dreamKey;4</must>
+				<must>things;courageKey;4</must>
+				<must>things;energyKey;4</must>
+				<must>things;victoryKey;12</must>
+			</openD>
+		</task>
+		<task name="weekBelt" cnName="腰带–监禁" uiShowTime="999999" unlockLv="30">
+			<openD tk="BaiSha_skeleton" />
+			<remarks>belt</remarks>
+			<diff>0.7</diff>
+			<shortText>前往[map]消灭守关首领！</shortText>
+			<conditionText>消灭守关首领</conditionText>
+			<uiConditionText>消灭守关首领</uiConditionText>
+			<description>鬼爵真是养了一群奇怪的暴徒，不想伤害我，却也不想给我任何好处，看来只好先打败他们，将他们重新监禁起来了。</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>weekTask/weekBelt</fixedLevelUrl>
+			
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>things;equipHighBox;10</gift>
+			
+			<openD mustB="1" closeAffterCompleteB="1">
+				<must>things;dreamKey;12</must>
+				<must>things;courageKey;4</must>
+				<must>things;energyKey;4</must>
+				<must>things;victoryKey;4</must>
+			</openD>
+		</task>
+		<task name="weekArms" cnName="武器–处决" uiShowTime="999999" unlockLv="30">
+			<openD tk="BaiSha_skeleton" />
+			<remarks>arms</remarks>
+			<diff>0.7</diff>
+			<shortText>前往[map]消灭守关首领！</shortText>
+			<conditionText>消灭守关首领</conditionText>
+			<uiConditionText>消灭守关首领</uiConditionText>
+			<description>鬼爵养的真是一群亡命暴徒，要从他们身上要到武器比登天还难，一不做二不休，把他们逼到角落，以暴制暴！</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>weekTask/weekArms</fixedLevelUrl>
+			
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>things;armsHighBox;10</gift>
+			
+			<openD mustB="1" closeAffterCompleteB="1">
+				<must>things;dreamKey;8</must>
+				<must>things;courageKey;8</must>
+				<must>things;energyKey;4</must>
+				<must>things;victoryKey;4</must>
+			</openD>
+		</task>
+		
+		
+	</father>
+</data>

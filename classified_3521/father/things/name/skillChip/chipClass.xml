@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="skillChip" cnName="技能碎片" smeltType="otherChip">
+		<things cnName="滑翔技能碎片">
+			<name>gliding_heroChip</name><addDropDefineB>1</addDropDefineB>
+			<cnName>滑翔技能碎片</cnName>
+			<iconUrl>ThingsIcon/gliding_heroChip</iconUrl>
+			<description>学习人物技能“滑翔”所需物品。在秘境“守望者”中获得。</description>
+			<smeltD grade="2" addType="" price="2" />
+		</things>
+		<things cnName="翻滚技能碎片">
+			<name>rolling_heroChip</name><addDropDefineB>1</addDropDefineB>
+			<cnName>翻滚技能碎片</cnName>
+			<iconUrl>ThingsIcon/rolling_heroChip</iconUrl>
+			<description>学习人物技能“翻滚”所需物品。在秘境“炸裂者”中获得。[n][n]{b}{font color='#FF66FF'}也是合成黑色武器“熔炉”必需品之一，需求40个。{/font}{/b}</description>
+			<smeltD grade="2" addType="" price="14" />
+		</things>
+		<things cnName="王者之翼碎片">
+			<name>kingWing_heroChip</name><addDropDefineB>1</addDropDefineB>
+			<cnName>王者之翼碎片</cnName>
+			<iconUrl>ThingsIcon/kingWing_heroChip</iconUrl>
+			<description>学习人物技能“王者之翼”所需物品。在秘境“王者兔”中获得。</description>
+		</things>
+		<things cnName="附身碎片">
+			<name>possession_heroChip</name><addDropDefineB>1</addDropDefineB>
+			<cnName>附身碎片</cnName>
+			<iconUrl>ThingsIcon/possession_heroChip</iconUrl>
+			<description>学习和升级人物技能“附身”所需物品。在竞技场商店和纪念币商店中兑换获得。</description>
+		</things>
+		<things cnName="全域光波碎片">
+			<name>silverScreen_heroChip</name>
+			<cnName>全域光波碎片</cnName>
+			<iconUrl>ThingsIcon/silverScreen_heroChip</iconUrl>
+			<description>学习和升级人物技能“全域光波”所需物品。在秘境“铁犬”中获得。</description>
+		</things>
+		<things cnName="抵御碎片">
+			<name>FoggyHeroChip</name>
+			<cnName>抵御碎片</cnName>
+			<iconUrl>SkillIcon/FoggyHeroChip</iconUrl>
+			<description>学习和升级人物技能“抵御”所需物品。在秘境“黄金隼”中获得。</description>
+		</things>
+	</father>
+	</data>

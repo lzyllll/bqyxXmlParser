@@ -1,0 +1,19 @@
+{
+  "father": {
+    "name": "bossEdit",
+    "body": [
+      {
+        "value": "12_3:moreBullet\n12_4:MeatyAway\n12_11:missile_Sentry\n\n\n13_8:deadlyArrow\n13_9:deadlyGhost\n\n\n14_5:killXinLing\n\n21_2:offAllSkill\n\n23_1:LastdayHit\n\n\n31_4:WarriorShield\n\n\n31_12:verShield\n\n\n32_1:rebirth_enemy\n\n32_3:recoveryHalo_enemy\n\n\n\n32_8:lockLife\n\n\n34_2:noUnderFlyHit",
+        "name": "bcardSkillRare",
+        "cnName": "随机技能-稀有",
+        "noEncodeB": true
+      },
+      {
+        "value": "11_9:demCloned2\n12_15:fastCd\n21_6:skillCopyTransport\n21_11:everSilenceEnemy\n21_14:meltFlamerPurgold\n23_12:shortShootRangeHole\n23_13:blackHoleDemon\n32_10:upperLimitSecond\n35_7:spellImmunityMax\n42_3:invisibilityEver\n\n13_5:meteoriteRain\n12_3:moreBullet\n13_8:deadlyArrow\n21_2:offAllSkill\n12_11:missile_Sentry\n13_9:deadlyGhost\n13_3:screwBall",
+        "name": "bcardSkillMagic",
+        "cnName": "随机技能-传奇",
+        "noEncodeB": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<skill>
+			<name>BoomSkullSBulletDie</name>
+			<cnName>导弹受到伤害</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB>
+			
+			<conditionType>passive</conditionType>
+			<condition>die</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>BoomSkullSBulletDie</effectType>
+		</skill>
+		<skill>
+			<name>teleport_BoomSkullS</name>
+			<cnName>瞬移</cnName>
+			
+			<cd>2</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>200</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>teleport_BoomSkullS</effectType>
+			 
+			<meEffectImg soundUrl="sound/teleport_enemy" con="add">lightEffect/basinShow</meEffectImg>
+		</skill>
+		<skill>
+			<name>desertedHalo_BoomSkullS</name><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<cnName>导弹系统</cnName><noCopyB>1</noCopyB>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>desertedHalo_BoomSkullS</effectType>
+			<duration>2</duration>
+			<range>99999</range>
+			
+			<description>爆骷S处于虚无状态，不受任何攻击，并向敌人发射多种导弹。敌人击爆导弹才能使爆骷S受到伤害。同时敌人无法回血。</description>
+		</skill>
+	</father>
+</data>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="other" cnName="其他" num="33">
+  <body soundUrl="specialGun/yearTigerSound" name="yearTigerSound" cnName="寅虎-音效" />
+  <body soundUrl="specialGun/purgoldFoxSound" name="purgoldFox_point" cnName="群攻-音效" />
+  <body soundUrl="electric" name="magnetBulletSkill_point" cnName="磁铁磁力-音效" />
+  <body soundUrl="sound/earthquake" name="noAiFindAndHit_other" cnName="不受ai发现和伤害-音效" />
+  <body soundUrl="boomSound/bigBoom" name="noAiFindAndHit_point" cnName="不受ai发现和伤害-音效" />
+  <body con="add" name="FireWolf_noFire_point" cnName="无名火-点">FireWolf/fireShow</body>
+  <body con="add" noShowB="1" name="SaberTiger_shield_point" cnName="超导电幕-点">SaberTiger/angerEffect</body>
+  <body con="add" name="sprintSwordHit_extra_other" cnName="凯撒特效附带-其他">Striker/swordAfterAttackLeft</body>
+  <body con="add" name="sprintSwordHit_extra_point" cnName="凯撒特效附带-点">Striker/swordAfterAttackRight</body>
+  <body con="add" name="sprintSwordHit_other" cnName="凯撒特效附带-其他">Striker/swordAttackLeft</body>
+  <body con="add" name="sprintSwordHit_point" cnName="凯撒特效附带-点">Striker/swordAttackRight</body>
+  <body con="add" partType="head" name="laserWatchdogUnder_point" cnName="激光扫荡-受到攻击-点">Watchdog/hurtEffect</body>
+  <body raNum="1" con="filter" name="YouthWolf_combo_other" cnName="连拳-其他">YouthWolf/shadowLeft</body>
+  <body raNum="1" con="filter" name="YouthWolf_combo_point" cnName="连拳-点">YouthWolf/shadowRight</body>
+  <body partType="body,head" soundUrl="sound/pointBoom_hero" name="pianoGunSkill_point" cnName="音爆-点">boomEffect/bigCircle</body>
+  <body soundUrl="boomSound/boom" name="revengeLing_point" cnName="复仇-点">boomEffect/bigFire</body>
+  <body partType="hand_right,leg_right_1,eye_left,body" name="MadbossBuff_other" cnName="全身发光、走路带烟-其他">boomEffect/boom3</body>
+  <body soundUrl="boomSound/midBoom2" partType="body" con="add" name="yearSnakeSkill_point" cnName="蛇刺-点">boomEffect/midCan</body>
+  <body soundUrl="sound/body_hit" name="flySkyBatBuff_point" cnName="蝙蝠状态-点">boomEffect/midWood</body>
+  <body raNum="1" soundUrl="TransportZombie/throwBoom" name="TransportZombieThrowHit_point" cnName="击退-点">boomEffect/posion3</body>
+  <body con="add" soundUrl="sound/fireHit2" name="SkeletalMageClonedUnder_point" cnName="分身只受副手攻击-点">bulletHitEffect/headshot</body>
+  <body partType="body" soundUrl="sound/magicHit1" name="yearSheepSkill_point" cnName="周末无双-点">bulletHitEffect/purpleLaser</body>
+  <body con="add" soundUrl="sound/crazy_hero" name="YouthWolf_crazy_other" cnName="虚无狂暴-其他">bulletHitEffect/purpleLaser</body>
+  <body con="add" name="SkeletalMageCloned_point" cnName="制魂术-点">bulletHitEffect/purpleLaser</body>
+  <body partType="head,body" soundUrl="sound/vehicleFit" name="firePossession_other" cnName="附身-其他">generalEffect/blackHoleHide</body>
+  <body partType="head" name="firePossession_point" cnName="附身-点">generalEffect/headTip</body>
+  <body soundUrl="sound/hummer_hit" name="goldSpadeSkill_point" cnName="崩溃-点">generalEffect/lightning</body>
+  <body noFollowB="1" soundUrl="sound/skillCopy_enemy" con="add" name="madfireTeleport_point" cnName="瞬移-点">generalEffect/vehicleFit</body>
+  <body partType="shootPoint" con="add" raNum="1" name="purgoldSkunkLink_point" cnName="弹爆状态-点">gunFire/purgoldSkunk</body>
+  <body con="add" name="SaberTiger_laser_point" cnName="量子光束-点">skillEffect/aperture</body>
+  <body con="add" name="madArmsAttack_other" cnName="擎天斩-其他">skillEffect/apertureBig</body>
+  <body soundUrl="sound/magicHit1" con="add" partType="body" name="invincibleEmp_point" cnName="无敌驱散-点">skillEffect/emp</body>
+  <body name="sniperKingEnemyHit_point" cnName="狙击之王怪物攻击主角-点">skillEffect/paralysis_enemy</body>
+</father>
+
+
+</data>

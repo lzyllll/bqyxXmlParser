@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="窃听者">
+		<skill cnName="防弹外壳">
+			<name>likeMissle_Shapers</name>
+			<cnName>防弹外壳</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt_lifeMissile</effectType>
+			<mul>0.5</mul>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>受到跟踪子弹、爆石的伤害降低[1-mul]。</description>
+		</skill>
+		<skill cnName="防弹钢甲">
+			<name>likeMissleNo</name>
+			<cnName>防弹钢甲</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition><target>me</target>
+			<addType>instant</addType>
+			<effectType>changeHurt_lifeMissile</effectType>
+			<mul>0</mul>
+			<description>不受到跟踪子弹和爆石的伤害。</description>
+		</skill>
+		<skill cnName="防弹钢甲-不显示">
+			<name>likeMissleNo2</name>
+			<cnName>防弹钢甲</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>underAllHit</condition><target>me</target>
+			<addType>instant</addType>
+			<effectType>changeHurt_lifeMissile</effectType>
+			<mul>0</mul>
+			<description>不受到跟踪子弹和爆石的伤害。</description>
+		</skill>
+	</father>
+	
+	</data>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="wilder">
+		<body index="0" name="王者兔" shell="compound">
+			
+			<name>KingRabbit</name>
+			<cnName>王者兔</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/KingRabbit.swf</swfUrl>
+			<rosRatio>2</rosRatio>
+			
+			<imgType>normal</imgType>
+			<flipCtrlBy>target</flipCtrlBy>
+			<showLevel>999</showLevel>
+			<preBulletArr />
+			<imgArr>
+				stand,move,hurt1,die1
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,shootAttack
+				,normalAttack
+				,kingAttack
+				,moreAttack
+			</imgArr>
+			
+			<hitRect>-27,-23,50,54</hitRect>
+			<lifeBarExtraHeight>-80</lifeBarExtraHeight>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>10</maxVx>
+			<motionState>fly</motionState><flyUseSpiderB>1</flyUseSpiderB>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>KingRabbit_AIExtra</extraAIClassLabel>
+			
+			<skillArr />
+			<bossSkillArr>KingRabbitMore,KingRabbitKing,KingRabbitTreater,noSpeedReduce,fightReduct,defenceBounce_enemy</bossSkillArr>
+			<bossSkillArrCn />
+			<uiSkillArr />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel>
+					<hurtRatio>3</hurtRatio>
+					<attackType>direct</attackType>
+					<skillArr />
+					<shakeValue>4</shakeValue>
+					<hitImgUrl soundUrl="sound/body_hit">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel>
+					<bulletLabel>KingRabbit_shoot</bulletLabel>
+					<grapRect>-500,-100,270,120</grapRect>
+					<hurtRatio>1</hurtRatio>
+				</hurt>
+				<hurt info="追魂术">
+					<imgLabel>kingAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<bulletLabel>KingRabbit_king</bulletLabel>
+					<grapRect>-400,-111,100,150</grapRect>
+					<hurtMul>0.3</hurtMul>
+					<shakeValue>4</shakeValue>
+					<attackType>holy</attackType>
+				</hurt>
+				<hurt info="追魂术">
+					<imgLabel>moreAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<bulletLabel>KingRabbit_more</bulletLabel>
+					<grapRect>-400,-111,100,150</grapRect>
+					<hurtMul>0.1</hurtMul>
+					<shakeValue>4</shakeValue>
+					<attackType>holy</attackType>
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		
+	</father>
+	</data>

@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicle" cnName="战车body">
+		<body shell="compound">
+			
+			<name>NianCar</name>
+			<cnName>年兽坐骑</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/vehicle/NianCar.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<rosRatio>1</rosRatio>
+			<headHurtMul>1</headHurtMul>
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<imgClass>CarImage</imgClass>
+			<imgType>normal</imgType>
+			<rotateBySlopeB>1</rotateBySlopeB>
+			<imgArr>
+				stand,move,die1
+				,__jumpUp,jumpUp,jumpDown,jumpDown__,jumpUp__jumpDown
+				,dartsAttack
+			</imgArr>
+			
+			<hitRect>-30,-88,60,88</hitRect>
+			
+			<maxVx>8</maxVx>
+			<maxJumpNum>1</maxJumpNum>
+			
+			
+			<attackAIClass>CarAttack_AI</attackAIClass>
+			<keyClass>CarBodyKey</keyClass>
+			<bulletLauncherClass>CarBulletLauncher</bulletLauncherClass>
+			<skillArr>godHandNian</skillArr>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>0.52</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit2">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown</imgLabel>
+					<hurtRatio>0.52</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/body_hit">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown__</imgLabel>
+					<hurtRatio>0.9</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/body_hit">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>dartsAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>2</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>3</meBack>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		<skill cnName="上帝的护佑">
+			<name>godHandNian</name>
+			<cnName>上帝的护佑</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>beforeDie</condition>
+			<minTriggerT>55</minTriggerT>
+			<firstTriggerT>55</firstTriggerT>
+			<target>me</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>godHand</effectType>
+			<value>1</value>
+			<duration>8</duration>
+			
+			<meEffectImg soundUrl="sound/invisibility_hero" con="add" />
+			<description>在受到必亡的伤害时，你将接受上帝的护佑，进入隐身无敌模式，持续[duration]秒，同时剩余1点生命值。技能触发间隔不小于[minTriggerT]秒。</description>
+		</skill>
+	</father>
+</data>

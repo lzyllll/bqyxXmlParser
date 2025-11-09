@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill index="0" name="周一平衡">
+			<name>consLibraSkill</name><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<cnName>周一平衡</cnName><noRandomListB>1</noRandomListB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>puWe,noMainTask,noBossEditB,dayPan,yearArmsFalse,targetUnitType,noUnionBattle</otherConditionArr>
+			<conditionRange>1</conditionRange>
+			<conditionString>boss</conditionString>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>consLibraSkill</effectType>
+			
+			<otherEffectImg />
+			<pointEffectImg name="consPurpleBoom" />
+			<description>每周一你可以实现如下技能效果1次：击中首领时，将它的总生命值设置为和你一致，同时你将获得免伤的能力。主线任务、军队争霸、工厂中该技能无效。</description>
+		</skill>
+	</father>
+</data>

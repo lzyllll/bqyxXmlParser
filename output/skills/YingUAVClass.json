@@ -1,0 +1,82 @@
+{
+  "father": [
+    {
+      "name": "other",
+      "body": {
+        "index": 0,
+        "name": "YingUAV",
+        "shell": "metal",
+        "cnName": "怒蜂",
+        "raceType": "robot",
+        "swfUrl": "swf/enemy/YingUAV347.swf",
+        "lifeRatio": 0.6,
+        "rosRatio": 99,
+        "showLevel": 9999,
+        "motionState": "fly",
+        "flyType": "tween",
+        "dieImg": {
+          "name": "midSpace"
+        },
+        "dieJumpMul": 0,
+        "lifeBarExtraHeight": 45,
+        "imgArr": "stand,move\n\t\t\t\t,shootAttack\n\t\t\t\t,die1",
+        "hitRect": "-14,-45,28,45",
+        "maxJumpNum": 1,
+        "maxVx": 10,
+        "nextAttackTime": 0,
+        "skillArr": "spellImmunityMax,toFlyCd,alloyShell_9,birthInvi5",
+        "hurtArr": {
+          "hurt": {
+            "imgLabel": "shootAttack",
+            "cn": "射击",
+            "hurtRatio": 1.8,
+            "bulletLabel": "YingUAVShoot",
+            "grapRect": "-35,114,85,250"
+          }
+        }
+      }
+    },
+    {
+      "name": "we",
+      "skills": {
+        "YingUAVShoot": {
+          "cnName": "怒蜂-射击",
+          "name": "YingUAVShoot",
+          "shakeAngle": 1,
+          "bulletLife": 0.8,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 0.5,
+          "attackDelay": 0.3,
+          "bulletAngle": 90,
+          "bulletAngleRange": 12,
+          "penetrationGap": 1000,
+          "followD": {
+            "value": 1
+          },
+          "shootPoint": "0,24",
+          "bulletSpeed": 45,
+          "flipX": 1,
+          "bulletImgUrl": {
+            "name": "shoot_Watchdog_bullet"
+          },
+          "hitImgUrl": {
+            "name": "fireFlamer_hit"
+          }
+        },
+        "birthInvi5": {
+          "name": "birthInvi5",
+          "cnName": "出生无敌5秒",
+          "noBeClearB": 1,
+          "conditionType": "passive",
+          "condition": "add",
+          "target": "me",
+          "addType": "state",
+          "effectType": "invincibleAndThrough",
+          "duration": 5,
+          "description": "出生时无敌5秒。"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,886 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="life">
+		
+<ask author="橙子">
+ <title>以下哪种副手的相关武器是步枪？</title>
+ <correct>月刺</correct>
+ <error>凯撒</error>
+ <error>沃龙牌棍棒</error>
+ <error>黄金镐</error>
+</ask> 
+
+<ask author="俞闫">
+ <title>进入军队后需要多少贡献才能开启争霸？</title>
+ <correct>1000</correct>
+ <error>500</error>
+ <error>1100</error>
+ <error>不需要</error>
+</ask> 
+
+<ask author="红颜夕下">
+ <title>为什么北极熊不能和企鹅一起愉快的玩耍呢</title>
+ <correct>因为企鹅在南极，北极熊在北极</correct>
+ <error>北极熊吃肉，企鹅吃素</error>
+ <error>企鹅吃肉，北极熊吃素</error>
+ <error>企鹅会吃掉北极熊</error>
+</ask> 
+
+<ask author="i这是什么玩意i">
+ <title>分解1个78级零件箱可以得到多少个75级零件箱?</title>
+ <correct>4</correct>
+ <error>8</error>
+ <error>6</error>
+ <error>2</error>
+</ask>
+
+
+<ask author="巅化">
+ <title>阿巴达斯处于虚无狂暴状态时，以下那种攻击可以对其造成伤害？</title>
+ <correct>闪电塔电击</correct>
+ <error>剑齿镖副手攻击</error>
+ <error>赤鼬鼬灭导弹</error>
+ <error>爆石</error>
+</ask>
+
+<ask author="【觉醒】屑狐狸">
+ <title>小美的技能复制无法复制以下哪个技能？</title>
+ <correct>潮汐护甲</correct>
+ <error>反物质</error>
+ <error>融弹回血</error>
+ <error>无名火</error>
+</ask>
+
+
+<ask author="萌新捏">
+ <title>称号“学霸”的获取条件是？</title>
+ <correct>连续5天答题全对</correct>
+ <error>连续10天答题全对</error>
+ <error>使用黄金购买</error>
+ <error>拳击击败沃龙</error>
+</ask>
+
+
+<ask author="『永夜』鹏鹏">
+ <title>下列哪一项不是判定三角形全等的方式？</title>
+ <error>边边边</error>
+ <error>角角边</error>
+ <correct>边边角</correct>
+ <error>斜边、直角边</error>
+</ask> 
+
+<ask author="NRD.硬糖">
+ <title>“隐形战机”的“隐形”是指？</title>
+ <correct>雷达测不到</correct>
+ <error>肉眼看不到</error>
+ <error>人耳听不到</error>
+ <error>子弹打不到</error>
+</ask>
+<ask author="『小可爱』沧海">
+ <title>万能载具碎片不能合成哪种载具碎片？</title>
+ <correct>异齿虎碎片</correct>
+ <error>泰坦碎片</error>
+ <error>挖掘者碎片</error>
+ <error>破晓碎片</error>
+</ask> 
+
+<ask author="『小可爱』沧海">
+ <title>以下哪个节日称号不是永久称号？</title>
+ <correct>七夕眷侣</correct>
+ <error>粽叶飘香</error>
+ <error>春节快乐</error>
+ <error>六一快乐</error>
+</ask> 
+
+<ask author="『小可爱』沧海">
+ <title>以下物品中，无法在神秘商人处购买获得的是？</title>
+ <correct>战神之心</correct>
+ <error>冥王图鉴</error>
+ <error>生化宝石</error>
+ <error>光锥碎片</error>
+</ask> 
+
+<ask author="影剑·凌逍遥">
+ <title>无双光锥的“驱魂”会封锁以下哪个技能？</title>
+ <correct>重生</correct>
+ <error>夺命魂</error>
+ <error>复仇之魂</error>
+ <error>短命之仇</error>
+</ask> 
+
+<ask author="『小可爱』沧海">
+ <title>重置技能时，无法返还的是</title>
+ <correct>技能熟练度</correct>
+ <error>神能石</error>
+ <error>光能石</error>
+ <error>申猴碎片</error>
+</ask>
+
+<ask author="NRD.硬糖">
+ <title>下列哪个时装没有与副手相关的技能？</title>
+ <correct>狼首</correct>
+ <error>噬魂时装</error>
+ <error>大Boss时装</error>
+ <error>雪影时装</error>
+</ask>
+
+<ask author="掠光">
+ <title>十周年庆封面中，主角手持的武器是？</title>
+ <correct>辰龙</correct>
+ <error>寅虎</error>
+ <error>赤鼬</error>
+ <error>极源</error>
+</ask>
+
+<ask author="『永恒』夏日的忧">
+ <title>下列哪个载具不能学习轰天聚合</title>
+ <correct>暗夜侵袭者</correct>
+ <error>雷鸣</error>
+ <error>冰霜祖龙</error>
+ <error>炙热挖掘者</error>
+</ask> 
+
+<ask author="是豪豪吖">
+ <title>天鹰小美的好感度达到24000后，每日可领取的物品是?</title>
+ <correct>尸牙碎片</correct>
+ <error>生化宝石</error>
+ <error>海绵碎片</error>
+ <error>镭射穿梭器</error>
+</ask>
+
+<ask author="qibaan">
+ <title>小肠上皮细胞吸收葡萄糖属于什么运输方式？</title>
+ <correct>主动运输</correct>
+ <error>被动运输</error>
+ <error>胞吞</error>
+ <error>胞吐</error>
+</ask>
+
+<ask author="仰">
+ <title>双人模式中，P2玩家的武器如何瞄准？</title>
+ <correct>自动瞄准</correct>
+ <error>鼠标控制</error>
+ <error>随机乱摆</error>
+ <error>方向键控制</error>
+</ask>
+
+<ask author="仰">
+ <title>秘境“GM三人组中，丛安是戴着面具的哪一个首领”</title>
+ <correct>掘金尸</correct>
+ <error>矿工僵尸</error>
+ <error>巨毒尸</error>
+ <error>狂战尸</error>
+</ask>
+
+<ask author="消失的强化石">
+ <title>下列哪个不是获得终极武器“辰龙”要集齐的相关武器</title>
+ <correct>丑牛</correct>
+ <error>亥猪</error>
+ <error>光锥</error>
+ <error>巳蛇</error>
+</ask>
+
+
+		
+		
+		
+<ask author="动情">
+ <title>红色品质的雷克基因体有多少条资质</title>
+ <correct>9条</correct>
+ <error>7条</error>
+ <error>8条</error>
+ <error>10条</error>
+</ask>
+
+<ask author="言辞偏稽">
+ <title>武器的属性“寿命”是指</title>
+ <correct>发射的武器子弹最多存在几秒，过后消失</correct>
+ <error>该武器还能射击几次，此后损坏，需要修理</error>
+ <error>该武器最多存在几天，过后消失</error>
+ <error>持有该武器可以延年益寿，延长几天</error>
+</ask>
+
+
+<ask author="NRD.硬糖">
+ <title>“江南三大名楼”不包括？</title>
+ <correct>鹳雀楼</correct>
+ <error>滕王阁</error>
+ <error>黄鹤楼</error>
+ <error>岳阳楼</error>
+</ask>
+
+<ask author="NRD.硬糖">
+ <title>汉字“凹”和“凸”分别有几个笔画？</title>
+ <correct>5、5</correct>
+ <error>4、5</error>
+ <error>4、4</error>
+ <error>5、4</error>
+</ask>
+
+<ask author="NRD.硬糖">
+ <title>以下哪种树木可以独木成林？</title>
+ <correct>榕树</correct>
+ <error>梧桐树</error>
+ <error>樟树</error>
+ <error>松树</error>
+</ask>
+
+<ask author="『小可爱』沧海">
+ <title>以下称号里，提升荣誉值最高的是</title>
+ <correct>成就之皇</correct>
+ <error>群组达人</error>
+ <error>超能英雄</error>
+ <error>十项全能</error>
+</ask>
+
+<ask author="『小可爱』沧海">
+ <title>爆枪突击推出的第一把生肖武器是</title>
+ <correct>亥猪</correct>
+ <error>沃龙</error>
+ <error>辰龙</error>
+ <error>酉鸡</error>
+</ask>
+
+<ask author="消失の星期三">
+ <title>学习技能最低等级是多少</title>
+ <correct>5级</correct>
+ <error>10级</error>
+ <error>6级</error>
+ <error>1级</error>
+</ask>
+
+<ask author="言辞偏稽">
+ <title>载具的属性“耐久”指</title>
+ <correct>载具能承受多少点伤害，类似生命值</correct>
+ <error>操作载具需要消耗一定的耐久，耗尽后损坏，需要修理</error>
+ <error>操作载具需要消耗一定的耐久，耗尽后永久损坏</error>
+ <error>载具还能在背包中存在几秒，过后消失</error>
+</ask>
+
+<ask author="Q点Q">
+ <title>在锻造界面合成一件小卡时装需要多少个稀有宝箱</title>
+ <correct>400</correct>
+ <error>320</error>
+ <error>300</error>
+ <error>350</error>
+</ask>
+
+<ask author="Q点Q">
+ <title>以下哪个成就具有战斗力加成</title>
+ <correct>屠尸大帝</correct>
+ <error>好人缘</error>
+ <error>称霸秘境</error>
+ <error>劫后余生</error>
+</ask>
+
+<ask author="云轩阁丨落星">
+ <title>以下哪个时装能增加装备碎片掉率</title>
+ <correct>刹鬼时装</correct>
+ <error>工人帽</error>
+ <error>小娜时装</error>
+ <error>军长时装</error>
+</ask>
+
+<ask author="葭莩">
+ <title>以下哪种情况会让时装左下角会红色三角的标志</title>
+ <correct>时装被使用了外观</correct>
+ <error>时装是限时的</error>
+ <error>时装被沃龙偷走了</error>
+ <error>三个同样的时装合成了二星时装</error>
+</ask>
+
+<ask author="『酱油』孤星">
+ <title>下列哪把武器是终极武器</title>
+ <correct>辰龙</correct>
+ <error>沃龙</error>
+ <error>异祖龙</error>
+ <error>霸王龙</error>
+</ask>
+		
+<ask author="消失の星期三">
+ <title>红色品质的雷克基因体怎么获取？</title>
+ <correct>商店购买</correct>
+ <error>秘境掉落</error>
+ <error>竞技场兑换</error>
+ <error>功勋商店兑换</error>
+</ask>
+<ask author="Rainy_忧雨">
+ <title>以下技能哪种可以通过重造功能洗出？</title>
+ <correct>击中溅射</correct>
+ <error>爆石</error>
+ <error>七步毒</error>
+ <error>快感</error>
+</ask>
+
+<ask author="红颜夕下">
+ <title>在19世纪，为发电机和电动机提供了理论基础的科学家是？</title>
+ <correct>法拉第</correct>
+ <error>吉尔特</error>
+ <error>西门子</error>
+ <error>奥斯特</error>
+</ask>
+
+<ask author="Rainy_忧雨">
+ <title>以下哪种不是火焰宝石的获取途径？</title>
+ <correct>装备宝石箱</correct>
+ <error>看门狗关卡</error>
+ <error>秘境多肉</error>
+ <error>军队功勋兑换</error>
+</ask>
+
+<ask author="【觉醒】屑狐狸">
+ <title>无双赤鼬无法克制以下哪个技能？</title>
+ <correct>夺命魂</correct>
+ <error>复仇之箭</error>
+ <error>尸毒</error>
+ <error>短命之仇</error>
+</ask>
+
+<ask author="『小可爱』沧海 ">
+ <title>明朝由盛转衰的转折点是</title>
+ <correct>土木堡之变</correct>
+ <error>靖难之役</error>
+ <error>红丸案</error>
+ <error>明末党争</error>
+</ask>
+
+<ask author="安晓卡儿~">
+ <title>心零的好感度加成在星期三时指定哪种敏感加成？</title>
+ <correct>冷冻敏感</correct>
+ <error>电磁敏感</error>
+ <error>生化敏感</error>
+ <error>火焰敏感</error>
+</ask>
+
+<ask author="因狐之言">
+ <title>军队建筑-地质研究所的第12级效果是什么？</title>
+ <correct>人物移动速度+25%</correct>
+ <error>人物移动速度+30%</error>
+ <error>人物移动速度+35%</error>
+ <error>人物移动速度+40%</error>
+</ask>
+
+<ask author="Rainy_忧雨">
+ <title>以下哪种不是无双水晶的获取途径？</title>
+ <correct>趣味问答全对</correct>
+ <error>盖亚特惠礼包</error>
+ <error>修罗模式</error>
+ <error>太空探索成就</error>
+</ask>
+
+<ask author="【觉醒】屑狐狸">
+ <title>当雷霆鬼鲛强化相同时，合成狂人会继承谁的技能和附加属性？</title>
+ <correct>鬼鲛</correct>
+ <error>雷霆</error>
+ <error>随机选择，大概率鬼鲛</error>
+ <error>随机选择，大概率雷霆</error>
+</ask>
+
+<ask author="未羊碎片">
+ <title>4399游戏吧是哪一年成立的？</title>
+ <correct>2009</correct>
+ <error>2008</error>
+ <error>2010</error>
+ <error>2011</error>
+</ask>
+
+<ask author="未羊碎片">
+ <title>在哪一年的周年庆活动中充值返利为25%？ </title>
+ <correct>2019</correct>
+ <error>2018</error>
+ <error>2020</error>
+ <error>2021</error>
+</ask>
+
+<ask author="MC~天铭">
+ <title>在常规条件下，铜可以与下列哪种酸反应？</title>
+ <correct>稀硝酸</correct>
+ <error>稀硫酸</error>
+ <error>稀盐酸</error>
+ <error>乙酸</error>
+</ask>
+
+
+<ask author="【暮雨】 2">
+ <title>以下哪种途径不会存档？</title>
+ <error>当天第一次进入黑市</error>
+ <error>打开远古宝箱</error>
+ <error>领取军队贡献</error>
+ <correct>制作美食</correct>
+</ask>
+
+<ask author=" 【身法】小豪° ">
+ <title>我国的地形分布特点是什么？</title>
+ <correct>西高东低</correct>
+ <error>东高西低</error>
+ <error>北高南低</error>
+ <error>南高北低</error>
+</ask>
+
+<ask author="【觉醒】屑狐狸">
+ <title>合成一个四级特殊零件需要多少个一级特殊零件？</title>
+ <correct>450</correct>
+ <error>400</error>
+ <error>900</error>
+ <error>550</error>
+</ask>
+
+<ask author="MC~天铭">
+ <title>《水浒传》中一共有多少位好汉</title>
+ <correct>108</correct>
+ <error>107</error>
+ <error>120</error>
+ <error>110</error>
+</ask>
+
+<ask author="冰梦愚者°">
+ <title>爆枪突击游戏里从多少级主线关卡开始出现增伤技能的衰减？</title>
+ <correct>86级</correct>
+ <error>87级</error>
+ <error>88级</error>
+ <error>89级</error>
+</ask>
+
+<ask author="【觉醒】屑狐狸">
+ <title>未携带相关武器时，副手面板伤害如何计算？</title>
+ <correct>已装备的最高战力武器战斗力×副手倍数÷4</correct>
+ <error>已装备的最高战力武器战斗力x副手倍数÷2</error>
+ <error>背包中相关武器战斗力×副手倍数</error>
+ <error>背包中相关武器战斗力×副手倍数÷4</error>
+</ask>
+
+<ask author="冰梦愚者°">
+ <title>爆枪突击里纪念币是几周年活动开始出现的</title>
+ <correct>5周年</correct>
+ <error>6周年</error>
+ <error>4周年</error>
+ <error>7周年</error>
+</ask>
+
+<ask author="冰梦愚者°">
+ <title>可以通过下面哪个渠道获得神谕战裤碎片？</title>
+ <correct>熔炼</correct>
+ <error>稀有宝箱的开启</error>
+ <error>神器宝箱的开启</error>
+ <error>秘境</error>
+</ask>
+
+<ask author="红尘家、反某人">
+ <title>以下哪个不是特殊零件的获取渠道？</title>
+ <correct>擒王任务</correct>
+ <error>副本任务“变种毒魔”</error>
+ <error>关卡寒光入口和寒光西城</error>
+ <error>纪念币商店</error>
+</ask>
+
+<ask author="小槍槍~~~">
+ <title>修罗模式难度7中的冷门以下哪种武器不可使用</title>
+ <correct>火龙</correct>
+ <error>辰龙</error>
+ <error>贪吃蛇</error>
+ <error>金蝉</error>
+</ask>
+
+<ask author="冰梦愚者°">
+ <title>下面哪一个方法不能对异齿虎第一阶段造成伤害？</title>
+ <correct>原地用剑齿镖进行攻击</correct>
+ <error>触发巨像套件并攻击异齿虎</error>
+ <error>烁金的神级技能高温</error>
+ <error>赤鼬的神级技能鼬灭</error>
+</ask>
+
+<ask author="MC~天铭">
+ <title>三国灭亡的顺序是</title>
+ <correct>蜀、魏、吴</correct>
+ <error>魏、蜀、吴</error>
+ <error>吴、魏、蜀</error>
+ <error>蜀、吴、魏</error>
+</ask>
+
+<ask author="日常挂机摆烂">
+ <title>“曲沃代翼”是发生在哪个时期的历史事件？</title>
+ <correct>春秋时期</correct>
+ <error>战国时期</error>
+ <error>南北朝时期</error>
+ <error>五代十国时期</error>
+</ask>
+
+<ask author="言辞偏稽">
+ <title>以下武器哪个不是火炮？</title>
+ <correct>炮仗</correct>
+ <error>苍弩</error>
+ <error>弦音</error>
+ <error>钢笔枪</error>
+</ask>
+
+<ask author="紫夜喵✿">
+ <title>正常倍速时游戏中1秒对应了多少帧？</title>
+ <correct>30</correct>
+ <error>15</error>
+ <error>45</error>
+ <error>60</error>
+</ask>
+
+<ask author="巴笑白">
+ <title>5号武器格的黄金价格和达到VIP1的所需充值黄金分别为？</title>
+ <correct>20、100</correct>
+ <error>300、100</error>
+ <error>250、200</error>
+ <error>我不知道，反正前者肯定大于后者</error>
+</ask>
+
+<ask author="言辞偏稽">
+ <title>以下武器哪个是喷火器？</title>
+ <correct>寒霜</correct>
+ <error>猩焰</error>
+ <error>火龙</error>
+ <error>熔炉</error>
+</ask>
+
+<ask author="NRD.硬糖">
+ <title>标准围棋棋盘的中心点称为什么？</title>
+ <correct>天元</correct>
+ <error>星</error>
+ <error>眼</error>
+ <error>空</error>
+</ask>
+
+<ask author="影剑·凌逍遥">
+ <title>以下哪一个地图是“太空探索”中的关卡？</title>
+ <correct>木卫三洞穴</correct>
+ <error>沃土镇</error>
+ <error>星谷</error>
+ <error>倒塔村</error>
+</ask>
+
+<ask author="影剑·凌逍遥">
+ <title>军队争霸中的战地积分计算公式为？</title>
+ <correct>(100-通关时间)÷2</correct>
+ <error>(100＋通关时间)×2</error>
+ <error>(100×通关时间)÷65</error>
+ <error>(125－25)×通关时间</error>
+</ask>
+
+<ask author="论坛名字七个字">
+ <title>末日坦克本体、大炮、机关枪、导弹发射器、后轮的敏感顺序分别是什么</title>
+ <correct>电磁敏感、生化敏感、冷冻敏感、电磁敏感、火焰敏感</correct>
+ <error>电磁敏感、火焰敏感、冷冻敏感、生化敏感、电磁敏感</error>
+ <error>火焰敏感、电磁敏感、生化敏感、冷冻敏感、电磁敏感</error>
+ <error>火焰敏感、电磁敏感、生化敏感、火焰敏感、电磁敏感</error>
+</ask>
+
+<ask author="天龙*小战士">
+ <title>苯环的不饱和度是多少？</title>
+ <correct>4</correct>
+ <error>3</error>
+ <error>2</error>
+ <error>1</error>
+</ask>
+
+<ask author="影剑·凌逍遥">
+ <title>第一届问答征集活动在什么时候开启？</title>
+ <correct>2023年8月4日</correct>
+ <error>2019年7月27日</error>
+ <error>2023年7月4日</error>
+ <error>2020年10月10日</error>
+</ask>
+
+<ask author="血瞳0404">
+ <title>敏捷宝石可在哪个关卡中获得？</title>
+ <correct>实验室底层</correct>
+ <error>实验室入口</error>
+ <error>实验室中层</error>
+ <error>实验室顶层</error>
+</ask>
+
+<ask author="『小可爱』沧海 ">
+ <title>“落霞与孤鹜齐飞”出自哪篇著作？</title>
+ <correct>《滕王阁序》</correct>
+ <error>《逍遥游》</error>
+ <error>《阿房宫赋》</error>
+ <error>《兰亭集序》</error>
+</ask>
+
+<ask author="『小可爱』沧海 ">
+ <title>“四大文明古国”这一概念最早由谁提出？</title>
+ <correct>梁启超</correct>
+ <error>辜鸿铭</error>
+ <error>蔡元培</error>
+ <error>傅斯年</error>
+</ask>
+
+<ask author="『小可爱』沧海 ">
+ <title>《论语》中“有朋自远方来”的下一句是？ </title>
+ <error>虽远必诛</error>
+ <correct>不亦说乎</correct>
+ <error>必先苦其心志，劳其筋骨</error>
+ <error>鞭数十，驱之别院</error>
+</ask>
+
+<ask author="『小可爱』沧海 ">
+ <title>我国东北地区的气候类型主要为</title>
+ <error>温带大陆性气候</error>
+ <error>温带海洋性气候</error>
+ <correct>温带季风气候</correct>
+ <error>温带草原气候</error>
+</ask>
+
+<ask author="GT-猛星">
+ <title>我国四大直辖市是哪四个城市？</title>
+ <correct>北京、上海、天津、重庆</correct>
+ <error>北京、上海、重庆、深圳</error>
+ <error>成都、上海、北京、济南</error>
+ <error>成都、大连、深圳、杭州</error>
+</ask>
+
+<ask author="秋晚·枫叶">
+ <title>打造一把超凡三阶段的光锥共需要多少光锥碎片？</title>
+ <correct>2005</correct>
+ <error>2000</error>
+ <error>1995</error>
+ <error>1985</error>
+</ask>
+
+<ask author="『小可爱』沧海 ">
+ <title>“我消灭你，与你无关”这句话出自哪本小说？</title>
+ <error>《流浪地球》</error>
+ <correct>《三体》</correct>
+ <error>《高堡奇人》</error>
+ <error>《盗梦空间》</error>
+</ask>
+
+<ask author="『小可爱』沧海 ">
+ <title>首领工厂战场中第一个上架的的Boss是？</title>
+ <error>战斗僵尸</error>
+ <correct>财宝僵尸</correct>
+ <error>飓风巫师</error>
+ <error>末日坦克</error>
+</ask>
+
+<ask author="碳化欧鳇">
+ <title>以下哪个是氧化物</title>
+ <correct>水</correct>
+ <error>黄金</error>
+ <error>碳酸氢铵</error>
+ <error>臭氧</error>
+</ask>
+
+<ask author=" ゛永恆の审判日">
+ <title>科幻小说中常见的光速飞船的驱动方式是以下哪种</title>
+ <correct>空间曲率驱动</correct>
+ <error>核聚变发动机驱动</error>
+ <error>喷气式发动机驱动</error>
+ <error>沃龙助推驱动</error>
+</ask>
+
+<ask author="NRD.硬糖"> 
+ <title>名句“落霞与孤鹜齐飞，秋水共长天一色”出自哪种体裁的作品</title>
+ <correct>骈体文</correct>
+ <error>诗</error>
+ <error>词</error>
+ <error>曲</error>
+</ask>
+
+<ask author="『小可爱』云兮 ">
+ <title>以下条约中，哪个是平等条约 </title>
+ <correct>《尼布楚条约》</correct>
+ <error>《望厦条约》</error>
+ <error>《黄埔条约》</error>
+ <error>《马关条约》</error>
+</ask>
+
+<ask author="『小可爱』云兮 ">
+ <title>我国第一部国别体史书是</title>
+ <correct>《国语》</correct>
+ <error>《战国策》</error>
+ <error>《春秋》</error>
+ <error>《史记》</error>
+</ask>
+
+<ask author="『小可爱』云兮 ">
+ <title>以下不是四大名著的是</title>
+ <correct>《西厢记》</correct>
+ <error>《西游记》</error>
+ <error>《红楼梦》</error>
+ <error>《三国演义》</error>
+</ask>
+
+<ask author="『羁绊』·豆包"> 
+<title>以下哪个是河北的本土乐队</title>
+ <correct>万能青年旅店乐队</correct>
+ <error>丢火车乐队</error>
+ <error>萨满乐队</error>
+ <error>飘乐队</error>
+</ask>
+
+<ask author="白了卡">
+ <title>在爆枪30.4版本，冷冻宝石在以下哪个关卡掉落</title>
+ <correct>98级天空顶</correct>
+ <error>96级实验室入口</error>
+ <error>99级实验室顶层</error>
+ <error>98级实验室中层</error>
+</ask>
+
+<ask author="Rainy_忧雨">
+ <title>94版电视剧《三国演义》中“我被酒色所伤，竟然如此憔悴”是谁的台词？</title>
+ <correct>吕布</correct>
+ <error>张飞</error>
+ <error>袁术</error>
+ <error>沃龙</error>
+</ask>
+
+<ask author="zhrh141516">
+ <title>联合国设立的“国际禁毒日”是每年的</title>
+ <correct>6月26日</correct>
+ <error>7月3日</error>
+ <error>6月1日</error>
+ <error>5月17日</error>
+</ask>
+
+<ask author="zhrh141516">
+ <title>在路上有陌生人给你一种像糖果的东西，你的选择应该是</title>
+ <correct>干脆拒绝</correct>
+ <error>碍于面子，勉强吃下</error>
+ <error>相信他，直接吞下</error>
+ <error>好奇，尝试一下也没关系</error>
+</ask>
+
+<ask author="粉红色的回忆hpc">
+ <title>被称为“交流电之父”的科学家是</title>
+ <correct>法拉第</correct>
+ <error>特斯拉</error>
+ <error>爱迪生</error>
+ <error>爱因斯坦</error>
+</ask>
+
+ <ask author="空闲又淡定的盒饭mdra">
+ <title>以下哪个技能能对有“红武敏感”的敌人造成伤害</title>
+ <correct>全域光波</correct>
+ <error>电离折射</error>
+ <error>毒雾</error>
+ <error>群体自燃</error>
+</ask>
+
+<ask author="随波逐流---">
+ <title>boss战神在血量为24.5%时属于什么敏感类型</title>
+ <correct>火炮敏感</correct>
+ <error>副手敏感</error>
+ <error>狙击敏感</error>
+ <error>尸宠敏感</error>
+</ask>
+
+<ask author="王颖">
+ <title>充值返利获得的返利黄金是否会纳入VIP累计金额？</title>
+ <correct>会</correct>
+ <error>不会</error>
+ <error>分情况</error>
+ <error>不一定</error>
+</ask>
+
+<ask author="王颖">
+ <title>以下哪个时装是覆盖全身的？</title>
+ <correct>小鸣时装</correct>
+ <error>虚化面具</error>
+ <error>神烦狗</error>
+ <error>小贝头盔</error>
+</ask>
+
+<ask author="『小可爱』沧海 ">
+ <title>“唐宋八大家”不包括</title>
+ <correct>白居易</correct>
+ <error>柳宗元</error>
+ <error>韩愈</error>
+ <error>曾巩</error>
+</ask>
+
+<ask author="『小可爱』沧海 ">
+ <title>《七子之歌》中的“七子”不包括</title>
+ <correct>外东北</correct>
+ <error>大连</error>
+ <error>广州湾</error>
+ <error>威海卫</error>
+</ask>
+
+<ask author="『小可爱』沧海 ">
+ <title>以下哪个不是国产动画片？</title>
+ <correct>《铁臂阿童木》</correct>
+ <error>《黑猫警长》</error>
+ <error>《葫芦娃》</error>
+ <error>《舒克和贝塔》</error>
+</ask>
+
+<ask author="『小可爱』沧海 ">
+ <title>以下属于偶函数的是</title>
+ <correct>f（x）=cosx</correct>
+ <error>f（x）=sinx</error>
+ <error>f（x）=tanx</error>
+ <error>f（x）=2x</error>
+</ask>
+
+<ask author="『小可爱』沧海 ">
+ <title>成语三马食槽中的“三马”不包括</title>
+ <correct>司马徽</correct>
+ <error>司马懿</error>
+ <error>司马师</error>
+ <error>司马昭</error>
+</ask>
+
+<ask author="NRD.硬糖">
+ <title>著名篮球运动员科比·布莱恩特曾在对战哪只球队时狂砍81分？</title>
+ <correct>猛龙</correct>
+ <error>勇士</error>
+ <error>火箭</error>
+ <error>湖人</error>
+</ask>
+
+<ask author="天翼诺西亚">
+ <title>“英国”的全称是什么</title>
+ <correct>大不列颠及北爱尔兰联合王国</correct>
+ <error>英吉利国</error>
+ <error>英特尔联合王国</error>
+ <error>带嘤帝国</error>
+</ask>
+
+<ask author="穹之顶·雨安">
+ <title>2000年，福布斯排行榜上第一位是哪位富豪</title>
+ <correct>比尔·盖茨</correct>
+ <error>沃伦·巴菲特</error>
+ <error>沃龙·先生</error>
+ <error>拉里·埃里森</error>
+</ask>
+
+<ask author="『小可爱』沧海 ">
+ <title>以下细胞器中含有DNA的是</title>
+ <correct>线粒体</correct>
+ <error>内质网</error>
+ <error>高尔基体</error>
+ <error>核糖体</error>
+</ask>
+
+<ask author="『小可爱』沧海 ">
+ <title>“立木南门”源于以下哪个历史事件？</title>
+ <correct>商鞅变法</correct>
+ <error>大禹治水</error>
+ <error>淝水之战</error>
+ <error>黄巢起义</error>
+</ask>
+
+<ask author="『小可爱』沧海 ">
+ <title>爆枪GM三人组不包括</title>
+ <correct>巨毒尸</correct>
+ <error>沃龙先生</error>
+ <error>花火</error>
+ <error>丛安</error>
+</ask>
+
+<ask author="影剑·凌逍遥">
+ <title>辰龙进阶到无双阶段获得技能为</title>
+ <correct>散射电爆</correct>
+ <error>穿甲虎刃</error>
+ <error>突袭</error>
+ <error>化锁</error>
+</ask>
+
+
+	
+	</father>	
+</data>

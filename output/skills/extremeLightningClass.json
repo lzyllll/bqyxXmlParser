@@ -1,0 +1,72 @@
+{
+  "father": [
+    {
+      "type": "howitzer",
+      "bullet": {
+        "color": "purgold",
+        "name": "extremeLightning",
+        "cnName": "闪电极源",
+        "noMagneticB": 1,
+        "noBeClearB": 1,
+        "aiShootRange": 800,
+        "attackType": "holy",
+        "dpsMul": 1,
+        "capacity": 30,
+        "attackGap": 1.4,
+        "reloadGap": 0.5,
+        "shakeAngle": 1,
+        "bulletWidth": 80,
+        "beatBack": 2,
+        "targetShakeValue": 10,
+        "armsArmMul": 0.6,
+        "armsWeight": 5,
+        "upValue": 8,
+        "shootShakeAngle": 70,
+        "shootRecoil": 10,
+        "screenShakeValue": 15,
+        "bulletLife": 6,
+        "hitType": "rect",
+        "followD": {
+          "value": 0.5,
+          "delay": 1
+        },
+        "bulletSpeed": 20,
+        "speedD": {
+          "max": 20,
+          "min": 8,
+          "a": -20
+        },
+        "penetrationGap": 1000,
+        "boomD": {
+          "selfB": true,
+          "hurtMul": 0
+        },
+        "skillArr": "enemyEmp,offAllSkill",
+        "iconUrl": "specialGun/dragonUltra",
+        "shootSoundUrl": "sound/lightningShoot",
+        "flipX": 1,
+        "bulletImgUrl": {
+          "value": "generalEffect/frozenBallBig",
+          "con": "add"
+        },
+        "hitImgUrl": {
+          "value": "generalEffect/frozenBallHide",
+          "soundUrl": "sound/paralysis_enemy_hit",
+          "shake": "2,0.2,10",
+          "con": "filter"
+        },
+        "selfBoomImgUrl": {
+          "value": "generalEffect/frozenBallHide",
+          "con": "add"
+        },
+        "fireImgUrl": {
+          "value": "boomEffect/boom2",
+          "con": "add"
+        },
+        "bodyImgRange": "specialGun/extremeLightning",
+        "description": null
+      }
+    },
+    null
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "father": {
+    "name": "craft",
+    "body": {
+      "shell": "compound",
+      "name": "PurpleBee",
+      "cnName": "紫蜂",
+      "raceType": "ship",
+      "swfUrl": "swf/ship/PurpleBee.swf",
+      "dieImg": {
+        "name": "stoneBoom"
+      },
+      "dieJumpMul": 0,
+      "imgClass": "CarImage",
+      "flipCtrlBy": "mouse",
+      "rotateBySlopeB": 1,
+      "imgArr": "stand,die1",
+      "hitRect": "-20,-20,40,40",
+      "motionD": {
+        "F_AIR": 6
+      },
+      "motionClass": "AircraftGroundMotion",
+      "motionState": "fly",
+      "flyType": "space",
+      "maxVx": 6,
+      "attackAIClass": "CarAttack_AI",
+      "keyClass": "CraftBodyKey",
+      "bulletLauncherClass": "CraftBulletLauncher",
+      "skillArr": null,
+      "vBullet": {
+        "type": "main",
+        "label": "PurpleBee_main",
+        "dpsMul": 1,
+        "len": 10,
+        "minRa": -180,
+        "maxRa": -179.99
+      }
+    },
+    "bullet": {
+      "name": "PurpleBee_main",
+      "cnName": "紫蜂主炮",
+      "hurtRatio": 1,
+      "bulletLife": 3,
+      "bulletWidth": 30,
+      "hitType": "rect",
+      "attackGap": 1,
+      "screenShakeValue": 4,
+      "bulletSpeed": 15,
+      "flipX": 1,
+      "bulletImgUrl": {
+        "name": "PurpleBeeBullet"
+      },
+      "fireImgUrl": {
+        "name": "PurpleBeeFire"
+      },
+      "hitImgUrl": {
+        "name": "pistol1_hit"
+      }
+    }
+  }
+}

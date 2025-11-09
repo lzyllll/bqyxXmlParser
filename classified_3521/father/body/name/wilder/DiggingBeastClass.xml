@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="wilder">
+		
+		
+		<body shell="compound">
+			
+			<name>DiggingBeast</name>
+			<cnName>掘地兽</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/DiggingBeast.swf</swfUrl>
+			
+			<rosRatio>1</rosRatio>
+			<headHurtMul>1</headHurtMul>
+			<lifeRatio>1.8</lifeRatio>
+			<showLevel>999</showLevel>
+			
+			<imgType>normal</imgType>
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<imgArr>
+				stand,move
+				,normalAttack,rainAttack,drillAttack,airAttack
+				,hurt1,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+			</imgArr>
+			<lifeBarExtraHeight>-40</lifeBarExtraHeight>
+			<preBulletArr>DiggingRainBullet,DiggingRainBullet_red</preBulletArr>
+			
+			<hitRect>-18,-96,36,96</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>6</maxVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>DiggingBeast_AIExtra</extraAIClassLabel>
+			
+			<skillArr />
+			<bossSkillArr>KingRabbitTreater,DiggingHammer,DiggingDrill,addDiggingBox,DiggingRain,fightReduct2,defenceBounce_enemy</bossSkillArr>
+			<bossSkillArrCn />
+			
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit2">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt cd="5">
+					<imgLabel>airAttack</imgLabel>
+					<grapMinLen>0</grapMinLen><grapMaxLen>600</grapMaxLen>
+					<hurtRatio>1</hurtRatio>
+					<attackType>holy</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit2">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>rainAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<grapRect>-400,-111,100,105</grapRect>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>drillAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.0000000001</hurtRatio>
+					<hurtMul>0.12</hurtMul>
+					<attackType>holy</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit2">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>	
+					
+	</father>
+	</data>

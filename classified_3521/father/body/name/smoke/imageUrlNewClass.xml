@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="smoke">
+		<body cnName="爆炸尾烟-中" name="boomMoveSmoke" urlRandomValue="2" len="30">boomEffect/midInside</body>
+		<body cnName="爆炸尾烟-小" name="boomMoveSmokeSmall" urlRandomValue="2" len="20">boomEffect/smallInside</body>
+		<body cnName="灰尾烟-小" name="midGreySmoke" urlRandomValue="2" len="20">smokeEffect/midGrey</body>
+		<body cnName="矿锯尾烟" name="oreBombState" con="filter">bulletHitEffect/blueLaser</body>
+		<body cnName="导弹尾烟" name="SilverShipMissileSmoke" con="filter" raNum="30">smokeEffect/lineMid</body>
+	</father>
+	
+	
+	
+	</data>

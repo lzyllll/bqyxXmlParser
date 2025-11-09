@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="僵尸">
+		
+		<bullet cnName="陨石雨">
+			<name>meteoriteRain</name>
+			<cnName>陨石雨</cnName><bulletSkillArr>rainBulletIron</bulletSkillArr><noMagneticB>1</noMagneticB>
+			<attackType>holy</attackType>
+			<hurtRatio>0</hurtRatio>
+			<hurtMul>0.3</hurtMul>
+			<bulletAngle>90</bulletAngle><bulletLife>15</bulletLife><bulletWidth>45</bulletWidth><hitType>rect</hitType>
+			<shootPoint>0,-10000</shootPoint>
+			<shootNum>18</shootNum>
+			<shootGap>0.4</shootGap>
+			<penetrationGap>1000</penetrationGap>
+			<bulletSpeed>8</bulletSpeed>
+			<bulletVra>36</bulletVra>
+			<skillArr />
+			<bulletImgUrl raNum="10">bullet/bigStone</bulletImgUrl>
+			<smokeImgUrl raNum="30" con="filter">bullet/fireball</smokeImgUrl>
+			<hitImgUrl soundVolume="0.4" soundUrl="boomSound/midBoom2">boomEffect/boom2</hitImgUrl>
+		</bullet>
+		
+		
+		<bullet cnName="大地闪电-修罗">
+			<name>lightningFloor</name>
+			<cnName>大地闪电-修罗</cnName><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			
+			<hurtMul>0.3</hurtMul>
+			<attackType>holy</attackType>
+			
+			<bulletLife>0.0001</bulletLife>
+			<bulletWidth>220</bulletWidth>
+			<hitType>longLine</hitType>
+			
+			<bulletAngle>270</bulletAngle>
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<skillArr>invincibleEmp</skillArr>
+				
+			<shootPoint>0,0</shootPoint>
+			<bulletSpeed>0</bulletSpeed>
+			<imgClearDelay>0.23</imgClearDelay>
+			<bulletImgUrl con="filter" soundUrl="sound/electric">bullet/lightning1</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/paralysis_enemy_hit">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		
+		<bullet cnName="螺旋电球">
+			<name>screwBall</name><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			<cnName>螺旋电球</cnName>
+			<hurtMul>0.2</hurtMul>
+			<attackType>holy</attackType>
+			
+			<bulletAngle>0</bulletAngle>
+			<bulletLife>9999999</bulletLife>
+			<bulletWidth>80</bulletWidth>
+			<hitType>rect</hitType>
+			<bulletNum>3</bulletNum>
+			<bulletSpeed>0</bulletSpeed>
+				
+			<bulletSkillArr>screwBall</bulletSkillArr>
+			<skillArr>sumBossAttenWe,BallLightningHurt,enemyEmp</skillArr>
+			<penetrationNum>999</penetrationNum>
+			<penetrationGap>1000</penetrationGap>
+			<bulletImgUrl con="add">generalEffect/frozenBallBig</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/paralysis_enemy_hit" con="add">bulletHitEffect/fitHit</hitImgUrl>
+		</bullet>
+		
+		
+		
+		<bullet cnName="反击导弹">
+			<name>fightBackBullet</name><noMagneticB>1</noMagneticB>
+			<cnName>反击导弹</cnName>
+			<hurtRatio>1</hurtRatio>
+			<attackType>holy</attackType>
+			
+			<bulletAngle>0</bulletAngle>
+			<bulletLife>4</bulletLife>
+			<bulletWidth>15</bulletWidth>
+			<hitType>rect</hitType>
+			<bulletNum>1</bulletNum>
+			<shootPoint>0,-50</shootPoint>
+			<bulletSpeed>2</bulletSpeed>
+			<speedD min="2" max="25" a="15" />
+				
+			<skillArr>BallLightningHurt</skillArr>
+			<penetrationGap>1000</penetrationGap>
+			<bulletImgUrl raNum="30">bullet/backBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/body_hit">boomEffect/boom1</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/fireSmoke</smokeImgUrl>
+		</bullet>
+		
+		
+		<bullet cnName="复仇之魂">
+			<name>revengeGhost</name><noMagneticB>1</noMagneticB>
+			<cnName>复仇之魂</cnName>
+			<hurtRatio>1</hurtRatio>
+			<attackType>holy</attackType>
+			<bulletLife>25</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			<bulletAngle>-90</bulletAngle>
+			<bulletSpeed>0</bulletSpeed>
+			<bulletSkillArr>spiralMove</bulletSkillArr>
+			<noHitTime>2</noHitTime>
+				
+			<skillArr>invincibleEmp,killAllExcludeVehicle</skillArr>
+			<penetrationGap>1000</penetrationGap>
+			<bulletImgUrl con="add">skillEffect/killBall</bulletImgUrl>
+			<smokeImgUrl con="add">generalEffect/lakeBuff</smokeImgUrl>
+			<hitImgUrl con="add" soundUrl="sound/hummer_hit">boomEffect/midCan</hitImgUrl>
+		</bullet>
+		
+		
+		<bullet cnName="复仇之箭">
+			<name>revengeArrow</name>
+			<cnName>复仇之箭</cnName><noMagneticB>1</noMagneticB>
+			
+			<hurtMul>0.5</hurtMul>
+			<attackType>holy</attackType>
+			
+			<bulletAngle>0</bulletAngle>
+			<bulletLife>4</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			<bulletNum>1</bulletNum>
+			<shootPoint>0,-50</shootPoint>
+			<bulletSpeed>5</bulletSpeed>
+			<speedD min="5" max="20" a="15" />
+				
+			<skillArr>invincibleEmp</skillArr>
+			<penetrationGap>1000</penetrationGap>
+			<bulletImgUrl raNum="30" con="add">bullet/redArrow</bulletImgUrl>
+			<smokeImgUrl raNum="30" con="filter">bullet/redArrow</smokeImgUrl>
+			<hitImgUrl soundUrl="sound/body_hit">bulletHitEffect/energyPurple</hitImgUrl>
+		</bullet>
+	</father>
+		
+</data>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill>
+			<name>yearMonkeySkill</name><noRandomListB>1</noRandomListB>
+			<cnName>龙卷</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreNoSkillB>1</ignoreNoSkillB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<otherConditionArr>noDemon,noMainTask,noHardB,meHaveStateOr</otherConditionArr>
+			<conditionString>murderous_hero</conditionString>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>yearMonkeySkill</effectType>
+			<duration>4</duration>
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+			
+			<description>当你拥有嗜爪状态时，能让被龙卷风击中的敌人卷入风中，经过[duration]秒再落下。主线任务、修罗模式无效。</description>
+		</skill>
+	</father>
+</data>

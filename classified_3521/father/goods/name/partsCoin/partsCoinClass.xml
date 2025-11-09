@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="partsCoin" cnName="零件券" priceType="partsCoin" labelArr="all">
+		<type>
+			
+			<goods defineLabel="partsGridCard" price="40" buyLimitNum="25" />
+			<goods defineLabel="noHurtParts_1" price="5" />
+			<goods defineLabel="mooncakeParts_1" dataType="parts" price="60" buyLimitNum="1" />
+			<goods defineLabel="lshapedParts_1" dataType="parts" price="40" buyLimitNum="3" />
+			
+			
+			<goods defineLabel="shockParts_1" dataType="parts" price="15" buyLimitNum="20" />
+			<goods defineLabel="hardeningParts_1" dataType="parts" price="15" buyLimitNum="20" />
+			<goods defineLabel="speedParts_1" dataType="parts" price="15" buyLimitNum="20" />
+			<goods defineLabel="downSpeedParts_1" dataType="parts" price="15" buyLimitNum="20" />
+			
+			<goods defineLabel="twoShootParts_1" dataType="parts" price="30" buyLimitNum="12" />
+			<goods defineLabel="eleParts_1" dataType="parts" price="30" buyLimitNum="12" />
+			<goods defineLabel="redArmsParts_1" dataType="parts" price="30" buyLimitNum="12" />
+			<goods defineLabel="penbodyParts_1" dataType="parts" price="40" buyLimitNum="12" />
+			
+			
+			<goods defineLabel="digWallParts_1" dataType="parts" price="40" buyLimitNum="1" />
+			
+			<goods defineLabel="degaussingParts_1" dataType="parts" price="25" buyLimitNum="3" />
+			<goods defineLabel="angleCtrlParts_1" dataType="parts" price="40" buyLimitNum="2" />
+			
+			<goods defineLabel="fireParts_1" dataType="parts" price="50" buyLimitNum="1" />
+			<goods defineLabel="electricParts_1" dataType="parts" price="60" buyLimitNum="1" />
+		</type>
+		
+	</father>
+</data>

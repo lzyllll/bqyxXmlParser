@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicleSkill" cnName="技能">
+		<skill>
+			<name>goldGaiaSkill</name><noBeClearB>1</noBeClearB>
+			<cnName>装甲压制</cnName><iconUrl>SkillIcon/goldGaiaSkill</iconUrl>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			
+			<cd>90</cd>
+			<conditionType>active</conditionType>
+			<condition>beforeAttack</condition>
+			<target>me</target>
+			<changeText>造成碾压伤害的[mul]</changeText>
+			
+			<addType>state</addType>
+			<effectType>bullet_goldGaia</effectType><effectFather>vehicle</effectFather>
+			<extraValueType>meDpsFactor</extraValueType>
+			<mul>9</mul>
+			<duration>1.5</duration>
+			
+			<obj>"name":"goldGaiaSkillBullet","site":"mouse","flipB":true</obj>
+			<description>在鼠标处连续召唤4台狂怒盖亚，砸向敌人，每台造成碾压伤害[mul]的伤害（对冷冻敏感敌人再增加50%的伤害）。</description>
+			
+			<growth>
+				<skill><mul>6</mul></skill>
+				<skill><mul>9</mul></skill>
+				<skill><mul>12</mul></skill>
+				<skill><mul>15</mul></skill>
+				<skill><mul>18</mul></skill>
+				<skill><mul>21</mul></skill>
+				<skill><mul>27</mul></skill>
+				<skill><mul>33</mul></skill>
+				<skill><mul>40</mul></skill>
+				<skill><mul>50</mul></skill>
+			</growth>
+		</skill>
+				<skill>
+					<name>goldGaiaSkillBullet</name>
+					<cnName>对冷冻敏感提升</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+					
+					<conditionType>passive</conditionType><changeHurtB>1</changeHurtB>
+					<condition>hit</condition>
+					<otherConditionArr>targetShell</otherConditionArr>
+					<conditionString>variation</conditionString>
+					<target>target</target>
+					
+					<addType>instant</addType>
+					<effectType>changeHurtNoCondition</effectType>
+					<mul>1.5</mul>
+					<pointEffectImg name="orangeWaveBoom" />
+					<targetPointEffectB>1</targetPointEffectB>
+				</skill>
+	</father>
+	
+	</data>

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="pistol" cnName="手枪">
+		<bullet index="30" name="pistolFox" color="black" dropLevelArr="90" dropBodyArr="PoisonDemon" evoMaxLv="12" evoMustFirstLv="4" composeLv="90" chipNum="150">
+			<name>pistolFox</name>
+			<cnName>银狐</cnName><extraMul>1.5</extraMul>
+			
+			<capacity>19</capacity>
+			<attackGap>0.25</attackGap>
+			<reloadGap>1.5</reloadGap>
+			<shakeAngle>1</shakeAngle>
+			<bulletWidth>500</bulletWidth>
+			<bulletShakeWidth>0,50</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>2</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="0" body="3" />	
+			<critD mul="2" pro="0.3" />
+			
+			<skillArr>Hit_SlowMove_ArmsSkill,Hit_Paralysis_ArmsSkill</skillArr>
+			<godSkillArr>fox_godArmsSkill,Hit_crazy_godArmsSkill</godSkillArr>
+			
+			<dpsMul>1.6</dpsMul>
+			<uiDpsMul>1.4</uiDpsMul>
+			<hurtRatio>5</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>1.05</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>0</upValue>
+			<shootShakeAngle>45</shootShakeAngle>
+			<shootRecoil>4</shootRecoil>
+			<screenShakeValue>8</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			.
+			<shootSoundUrl>pistol1/barrel5_sound</shootSoundUrl>
+			<flipX>1</flipX>
+			<lineD lightColor="0x00BFEE" size="2" lightSize="6" blendMode="add" type="one" />
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			
+			<bodyImgRange>specialGun/pistolFox</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>消灭首领毒魔(90级)</description>
+		</bullet>
+	</father>
+	
+	
+	</data>

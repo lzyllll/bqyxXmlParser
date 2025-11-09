@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="coatSkill" cnName="战衣、战裤---装备技能-不能使用condition=add的参数、不能使用addSkillEffectImg参数，否则会出错">
+		
+		<skill index="0" cnName="牺牲">
+			<name>sacrifice_equip</name>
+			<cnName>牺牲</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHurt</condition>
+			<target>me,range,we</target>
+			
+			<addType>instant</addType>
+			<effectType>sacrifice</effectType>
+			<mul>0.15</mul>
+			<range>450</range>
+			<description>每次受到伤害都能增加[range]范围内我方单位的生命值，增加值为伤害值的[mul]。</description>
+		</skill>
+		<skill index="0" cnName="钢背">
+			<name>backStrong_equip</name>
+			<cnName>钢背</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>0.65</mul>
+			
+			<obj>"type":"backWeak"</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>减少来自背面[1-mul]的伤害。</description>
+		</skill>
+		<skill index="0" cnName="负离子外壳">
+			<name>anionSkin_equip</name>
+			<cnName>负离子外壳</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<minTriggerT>5</minTriggerT>
+			<target>target</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>anionSkin</effectType>
+			<effectProArr>0.2</effectProArr>
+			<mul>0.5</mul>
+			<duration>3</duration>
+			
+			<targetEffectImg soundUrl="sound/paralysis_enemy_hit" />
+			<stateEffectImg con="add">skillEffect/paralysis_enemy</stateEffectImg>
+			<description>自身被攻击时，攻击者有[effectProArr.0]的几率被麻痹，无法移动，攻击速度降低[1-mul]，持续[duration]秒。</description>
+		</skill>
+		<skill index="0" cnName="净化器">
+			<name>treater_equip</name>
+			<cnName>净化器</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<intervalT>6</intervalT>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>clearEnemyState</effectType>
+			 
+			<targetEffectImg con="add">skillEffect/treater_equip</targetEffectImg>
+			<description>每隔[intervalT]秒清除1次自身负面状态。</description>
+		</skill>
+		<skill index="0" cnName="芒刺">
+			<name>backWeak_equip</name>
+			<cnName>芒刺</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>1.35</mul>
+			
+			<obj>"type":"backWeak"</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>攻击敌人背部或者后脑勺都会造成额外[mul-1]的伤害。</description>
+		</skill>
+		<skill index="0" cnName="荆棘外表">
+			<name>thornSkin_equip</name>
+			<cnName>荆棘外表</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<minTriggerT>5</minTriggerT>
+			<target>target</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>dizziness</effectType>
+			<effectProArr>0.2</effectProArr>
+			<duration>2</duration>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+			<description>自身被攻击时，攻击者有[effectProArr.0]的几率进入眩晕状态，持续[duration]秒。</description>
+		</skill>
+		<skill index="0" cnName="折射">
+			<name>refraction_equip</name>
+			<cnName>折射</cnName>
+			<noEffectLevelModel>arena</noEffectLevelModel>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>refraction</effectType>
+			<effectProArr>0.15</effectProArr>
+			<range>350</range>
+			
+			<description>自身被攻击时，有[effectProArr.0]的几率不受伤害，同时使周围[range]内的敌人受到同等伤害。</description>
+		</skill>
+	</father>		
+	</data>

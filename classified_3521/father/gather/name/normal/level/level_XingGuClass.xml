@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="normal">
+		<gather name="实验室">
+			<level name="XingGu_1">
+				
+				<info diff="2" enemyLv="99" noTreasureB="1" hb="1" tm="480" />
+				<sceneLabel>XingGu</sceneLabel>
+				
+				<unitG><allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="战神" unitType="boss" lifeMul="1" skillArr="likeMissleNo2" />
+					</unitOrder>
+					
+				</unitG>
+				
+				<eventG>
+					<group>
+						
+						<event id="e2_1"><condition delay="1" /></event>
+						<event id="e2_1">
+							<order>createUnit:enemy4; r1</order>
+						</event> 
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>level;taskTimingB:false</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			
+			
+			
+			
+			<level name="XingPeak_plot">
+				
+				<info diff="2" enemyLv="99" noTreasureB="1" hb="1" />
+				<sceneLabel>XingPeak</sceneLabel>
+				
+				<unitG><allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="狂战神" unitType="boss" lifeMul="3" skillArr="" />
+					</unitOrder>
+					
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event>
+							<order>createUnit:enemy4; r1</order>
+						</event> 
+						<event>
+							<condition>enemyNumber:less_1</condition>
+							<order>say; startList:s1</order>
+						</event>
+						<event><condition delay="1">say:listOver</condition></event>
+						<event><condition /><order>say; startList:s2</order></event>
+						
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>worldMap:levelName; XingPeak:XingPeak_1</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			<level name="XingPeak_1">
+				
+				<info diff="2" enemyLv="99" noTreasureB="1" hb="1" />
+				<sceneLabel>XingPeak</sceneLabel>
+				
+				<unitG><allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="狂战神" unitType="boss" lifeMul="3" skillArr="" />
+					</unitOrder>
+					
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event>
+							<order>createUnit:enemy4; r1</order>
+						</event> 
+						<event>
+							<condition>enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			
+			
+			<level name="weekMadboss">
+				
+				<info diff="2" enemyLv="99" noTreasureB="1" hb="1" />
+				<sceneLabel>XingGu</sceneLabel>
+				
+				<unitG><allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="战神" unitType="boss" lifeMul="1" skillArr="likeMissleNo2,godShield" />
+					</unitOrder>
+					<unitOrder id="enemySkill">
+						<numberType>number</numberType>
+						<unit cnName="毒蛛" skillArr="killXinLing" />
+						<unit cnName="毒蛛" skillArr="deadlyArrow" />
+						<unit cnName="毒蛛" skillArr="rebirth_enemy" />
+						<unit cnName="毒蛛" skillArr="lockLife" />
+						<unit cnName="毒蛛" skillArr="moreBullet" />
+						<unit cnName="毒蛛" skillArr="crazy_enemy,silence_enemy" />
+						<unit cnName="毒蛛" skillArr="posion7_hugePosion" />
+						<unit cnName="毒蛛" skillArr="globalSpurting_enemy" />
+						<unit cnName="毒蛛" skillArr="extendCd,State_AddMove" />
+						<unit cnName="毒蛛" skillArr="enemyToZombie" />
+						<unit cnName="毒蛛" skillArr="invisibilityEver,teleport_enemy" />
+						<unit cnName="毒蛛" skillArr="MeatyAway" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e2_1"><condition delay="1" /></event>
+						<event id="e2_1">
+							<order>createUnit:enemy4; r1</order>
+							<order>weekMadboss</order>
+						</event> 
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>level;taskTimingB:false</order>
+							<order>task:weekMadboss; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+	</father>
+</data>

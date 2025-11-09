@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicle" cnName="战车body">
+		<body index="0" name="沙漠进袭者" shell="metal">
+			
+			<name>DesertTank</name>
+			<cnName>沙漠进袭者</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/vehicle/DesertTank38.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<rosRatio>1</rosRatio>
+			<headHurtMul>0.5</headHurtMul>
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<imgClass>CarImage</imgClass>
+			<imgType>normal</imgType>
+			<rotateBySlopeB>1</rotateBySlopeB>
+			<imgArr>
+				stand,move,die1
+				,__jumpUp,jumpUp,jumpDown,jumpDown__
+			</imgArr>
+			
+			<hitRect>-30,-88,60,88</hitRect>
+			
+			<motionD F_G="0.6" jumpDelayT="0.15" F_I="0.2" F_F="0.9" moveWhenVB="1" />
+			<maxVx>14</maxVx>
+			<maxJumpNum>1</maxJumpNum>
+			
+			
+			<attackAIClass>CarAttack_AI</attackAIClass>
+			<keyClass>CarBodyKey</keyClass>
+			<bulletLauncherClass>CarBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpUp</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown__</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		<body name="丛林狂袭者" fixed="DesertTank" shell="metal">
+			<name>ForestTank</name>
+			<cnName>丛林狂袭者</cnName>
+			<swfUrl>swf/vehicle/ForestTank59.swf</swfUrl>
+			<bmpUrl>BodyImg/ForestTank</bmpUrl>
+		</body>	
+		<body name="暗夜侵袭者" fixed="DesertTank" shell="metal">
+			<name>DarkTank</name>
+			<cnName>暗夜侵袭者</cnName>
+			<swfUrl>swf/vehicle/DarkTank.swf</swfUrl>
+			<bmpUrl>BodyImg/DarkTank</bmpUrl>
+		</body>	
+		<body name="大地掠袭者" fixed="DesertTank" shell="metal">
+			<name>FloorTank</name>
+			<cnName>大地掠袭者</cnName>
+			<swfUrl>swf/vehicle/FloorTank342.swf</swfUrl>
+			<bmpUrl>BodyImg/FloorTank</bmpUrl>
+			<bossSkillArr>floorTankSkill_8</bossSkillArr>
+			<motionD F_G="0.6" jumpDelayT="0.15" F_I="0.7" F_F="0.6" moveWhenVB="1" />
+		</body>	
+	</father>
+</data>

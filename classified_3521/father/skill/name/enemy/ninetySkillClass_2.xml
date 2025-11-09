@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="卫队尸">
+		<skill index="0" name="击中沉默">
+			<name>silence_SnowSoldiers</name>
+			<cnName>击中沉默</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>silenceB</effectType>
+			<value>1</value>
+			<duration>3</duration>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/silence_enemy</stateEffectImg>
+			<description>击中目标后使其无法释放技能，持续[duration]秒。</description>
+		</skill> 
+		
+		<skill index="0" name="分身">
+			<name>clonedSnowSoldiers</name>
+			<cnName>分身</cnName><iconUrl36>SkillIcon/cloned_36</iconUrl36>
+			<cd>30</cd>
+			<showInLifeBarB>1</showInLifeBarB><noInClonedB>1</noInClonedB>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>700</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>cloned</effectType>
+			<value>1</value>
+			<mul>0.02</mul>
+			<secMul>0.75</secMul>
+			<duration>16</duration>
+			
+			<meEffectImg soundUrl="sound/cloned_enemy" con="add">skillEffect/hiding_hero</meEffectImg>
+			<description>产生[value]个分身，攻击力与自身同等，血量为自身的[mul]，持续[duration]秒。</description>
+		</skill>
+		<skill cnName="风暴突袭">
+			<name>teleport_SnowSoldiers</name>
+			<cnName>风暴突袭</cnName><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<cd>6</cd><iconUrl36>SkillIcon/HookWitchShake_36</iconUrl36>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>1000</conditionRange>
+			<target>me</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>teleport_SnowSoldiers</effectType>
+			<valueString>attackTarget</valueString>
+			<duration>2.5</duration>
+			 
+			<meActionLabel>rotateAttack</meActionLabel>
+			<meEffectImg soundUrl="sound/teleport_enemy" con="add">lightEffect/basinShow</meEffectImg>
+			<description>瞬间突袭到敌人身边，发动锤旋风暴。</description>
+		</skill>
+		<skill index="0" name="收到攻击打断风暴突袭">
+			<name>underCrossbow_SnowSoldiers</name>
+			<cnName>收到攻击打断风暴突袭</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>underCrossbow_SnowSoldiers</effectType>
+			<valueString>rotateAttack</valueString>
+			
+			<description>击中目标后使其无法释放技能，持续[duration]秒。</description>
+		</skill>
+	</father>	
+	</data>

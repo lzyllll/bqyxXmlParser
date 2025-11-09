@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">	
+		
+		<bullet cnName="王者兔-射击">
+			<name>KingRabbit_shoot</name>
+			<cnName>王者兔-射击</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>179</bulletAngle>
+			<bulletAngleRange>5</bulletAngleRange>
+			<bulletLife>4</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.9</attackGap>
+			<attackDelay>0.6</attackDelay>
+			<bulletNum>3</bulletNum>
+			<shootAngle>20</shootAngle>
+			<shootPoint>-5,-40</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<bulletSpeed>30</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30" con="add">KingRabbit/bullet</bulletImgUrl>
+			<smokeImgUrl raNum="30" con="filter">bulletHitEffect/smoke_small2</smokeImgUrl>
+			<hitImgUrl soundUrl="sound/body_hit">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		
+		
+		<bullet cnName="王者之箭">
+			<name>KingRabbit_king</name>
+			<cnName>王者之箭</cnName>
+			
+			<hurtMul>0.3</hurtMul>
+			<attackType>holy</attackType>
+			<bulletSkillArr>noPenetrationWhenHitBody</bulletSkillArr>
+			
+			<bulletAngle>179.9</bulletAngle>
+			<bulletLife>4</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.2</attackGap>
+			<attackDelay>0.89</attackDelay>
+			<bulletNum>1</bulletNum>
+			<shootPoint>-92,-39</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<oneHitBodyB>1</oneHitBodyB>
+			<skillArr>KingRabbitKingHit</skillArr>
+				
+			
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2" con="filter">KingRabbit/bigBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/body_hit">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		
+		
+		
+		<bullet cnName="无疆之箭">
+			<name>KingRabbit_more</name>
+			<cnName>无疆之箭</cnName>
+			
+			<hurtMul>0.1</hurtMul>
+			<attackType>holy</attackType>
+			
+			<bulletAngle>120</bulletAngle>
+			<bulletLife>3</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.5</attackGap>
+			<attackDelay>1.32</attackDelay>
+			<bulletNum>6</bulletNum>
+			<shootAngle>40</shootAngle>
+			<shootPoint>-5,-248</shootPoint>
+			<bulletSpeed>35</bulletSpeed>
+				
+			<penetrationGap>1000</penetrationGap>
+			<skillArr />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="3" con="filter">KingRabbit/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/body_hit">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		
+		
+		
+		
+		
+		<skill name="王者之箭">
+			<name>KingRabbitKing</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>王者之箭</cnName>
+			<cd>8</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>1.4</duration>
+			<meActionLabel>kingAttack</meActionLabel>
+			<description>王者兔向前方射出王者之箭，推行目标至背后的墙。此后目标无法动弹并且射速降低，目标只有使用装置“全域电击器”或者等待10秒才可解除当前状态。</description>
+		</skill>
+					<skill name="王者之箭-击中">
+						<name>KingRabbitKingHit</name><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+						<cnName>王者之箭-击中</cnName>
+						<conditionType>passive</conditionType>
+						<condition>hit</condition>
+						
+						
+						<target>target</target>
+						<addType>instantAndState</addType>
+						<effectType>KingRabbitKingHit</effectType>
+						<duration>10</duration>
+						<stateEffectImg con="add" partType="body">generalEffect/crazy</stateEffectImg>
+						<stateEffectImg2 partType="shootPoint" raNum="25" followPartRaB="1">bulletHitEffect/smoke_black</stateEffectImg2>
+						<description />
+					</skill>
+					
+		<skill name="无疆之箭">
+			<name>KingRabbitMore</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>无疆之箭</cnName>
+			<cd>6</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>0.4</conditionRange>
+			
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<duration>0.1</duration>
+			<meActionLabel>moreAttack</meActionLabel>
+			<description>当王者兔生命值低于40%时，自身防御力将提升500%。而此时王者兔会在最佳时机腾空而起向目标发射6发致命的无疆之箭，同时自身防御力将降至20%，这正是玩家攻击王者兔的最佳时机！</description>
+		</skill>
+		
+		<skill cnName="眩晕抵抗">
+			<name>KingRabbitTreater</name>
+			<cnName>眩晕抵抗</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB><ignoreNoSkillB>1</ignoreNoSkillB>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<intervalT>0.1</intervalT>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>clearEnemyStateByEffectTypeArr</effectType>
+			<valueString>dizziness</valueString>
+			 
+			<description>每隔[intervalT]秒清除自身眩晕状态。</description>
+		</skill>
+	</father>
+	
+</data>

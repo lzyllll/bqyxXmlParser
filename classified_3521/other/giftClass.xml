@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<vipExc>
+		<one name="vipExc_1" cnName="累计充值1万黄金的专属礼包" mustLevel="10000" >
+			<gift>parts;pistolCopyParts_1;1</gift>
+		</one>
+		<one name="vipExc_3" cnName="累计充值3万黄金的专属礼包" mustLevel="30000" >
+			<gift>parts;shotgunCopyParts_1;1</gift>
+		</one>
+		<one name="vipExc1" cnName="累计充值5万黄金的专属礼包" mustLevel="50000" >
+			<gift>arms;closureGun;1</gift>
+		</one>
+		<one name="vipExc2" cnName="累计充值10万黄金的专属礼包" mustLevel="100000" >
+			<gift>equip;blackGhost;1</gift>
+		</one>
+		<one name="vipExc3" cnName="累计充值15万黄金的专属礼包" mustLevel="150000" >
+			<gift>bossCard;vipExcOreWorm;1</gift>
+		</one>
+	</vipExc>
+	
+	<other>
+		<one name="YXDumpling" cnName="节元宵" >
+			<gift pro="300">base;anniCoin;1</gift>
+			<gift pro="250">base;tenCoin;1</gift>
+			<gift pro="110">things;allBlackCash;1</gift>
+			<gift pro="120">things;allBlackEquipCash;1</gift>
+			<gift pro="100" sp="30">things;armsGemChest;1</gift>
+			<gift pro="20" sp="6">things;zodiacCash;1</gift>
+			<gift pro="30" sp="9">base;partsCoin;1</gift>
+			<gift pro="10" sp="3">things;ghostStone;1</gift>
+			<gift pro="30" sp="9">things;yaStone;1</gift>
+			<gift pro="30" sp="9">things;yaRock;1</gift>
+
+		</one>
+		
+		<one name="realName" cnName="实名认证礼包">
+			<gift>things;yearPig;5</gift>
+			<gift>things;yearDog;5</gift>
+			<gift>things;yearSnake;5</gift>
+			<gift>things;yearHourse;5</gift>
+			<gift>things;frozenGem;8</gift>
+			<gift>things;electricGem;8</gift>
+			<gift>things;fireGem;8</gift>
+			<gift>things;poisonGem;8</gift>
+			<gift>things;bloodStone;20</gift>
+			<gift>things;strengthenStone;20</gift>
+			<gift>things;godStone;20</gift>
+			<gift>things;converStone;20</gift>
+		</one>
+		<one name="active22_12" cnName="双旦活跃度礼包" mustLevel="1" >
+			<gift>equip;dragonHead;1</gift>
+		</one>
+		
+	</other>
+	<activity>
+		<one codeExchangeId="37648" name="gameBox12" cnName="游戏盒十二周年" startTime="2025-6-20 00:00:00">
+			<codeUrl>https://my.4399.com/forums/thread-64278568 </codeUrl>
+			<gift>things;armsTitanium;300</gift>
+			<gift>things;armsRadium;300</gift>
+			<gift>things;allBlackCash;100</gift>
+			<gift>things;allBlackEquipCash;100</gift>
+			<gift>things;zodiacCash;30</gift>
+			<gift>things;armsGemChest;30</gift>
+			<gift>base;partsCoin;20</gift>
+			<gift>things;demBall;10</gift>
+
+		</one>
+		<one codeExchangeId="36773" name="gameBox23_5" cnName="游戏盒云游独家">
+			<codeUrl>https://my.4399.com/forums/thread-63579375 </codeUrl>
+			<gift>things;bloodStone;40</gift>
+			<gift>things;godStone;100</gift>
+			<gift>things;strengthenStone;50</gift>
+			<gift>things;armsGemChest;10</gift>
+		</one>
+		
+		<one codeExchangeId="36774" name="gameBox23_5V" cnName="游戏盒云游会员">
+			<codeUrl>https://my.4399.com/forums/thread-63579375 </codeUrl>
+			<gift>things;allBlackCash;50</gift>
+			<gift>things;allBlackEquipCash;50</gift>
+			<gift>things;equipGemChest;10</gift>
+			<gift>things;demBall;60</gift>
+		</one>
+		<one codeExchangeId="37207" name="gameBox24_5" cnName="游戏盒云游黄金周">
+			<codeUrl>https://my.4399.com/forums/thread-63997438</codeUrl>
+			<gift>things;exploitCard;2</gift>
+			<gift>things;bloodStone;200</gift>
+			<gift>things;strengthenStone;200</gift>
+			<gift>things;strengthenDrug;500</gift>
+			<gift>things;demBall;60</gift>
+			<gift>base;wilderKey;5</gift>
+		</one>
+		
+		
+		
+		
+		
+		
+		<one codeExchangeId="12" name="normalCard2016" cnName="星斗卡牌普通礼包" hideB="1">
+			<codeUrl>https://huodong2.4399.com/2016/xdkp/ </codeUrl>
+			<gift>things;strengthenStone;100</gift>
+			<gift>things;bloodStone;100</gift>
+			<gift>things;doubleCard;2</gift>
+			<gift>things;normalChest;2</gift>
+		</one>
+		<one codeExchangeId="4" name="superCard2016" cnName="星斗卡牌豪华礼包" hideB="1">
+			<codeUrl>https://huodong2.4399.com/2016/xdkp/ </codeUrl>
+			<gift>things;converStone;200</gift>
+			<gift>things;godStone;300</gift>
+			<gift>things;armsTitanium;20</gift>
+			<gift>things;armsRadium;20</gift>
+			<gift>things;shotgunBlade;5</gift>
+			<gift>things;magicChest;1</gift>
+		</one>
+		
+		<one name="millionpackDay" cnName="百万每日礼包" hideB="1" startTime="2016-9-12" endTime="2016-10-10">
+			<codeUrl>https://huodong2.4399.com/2016/millionpack12/guide/</codeUrl>
+			<gift>things;armsEchelonCard;5</gift>
+			<gift>things;equipEchelonCard;5</gift>
+			<gift>things;strengthenStone;20</gift>
+			<gift>things;militarySupplies;10</gift>
+
+		</one>
+		<one name="millionpackBest" cnName="百万豪华礼包" hideB="1" startTime="2016-9-12" endTime="2016-10-10">
+			<gift>things;highEquipEchelonCard;10</gift>
+			<gift>things;armsTitanium;20</gift>
+			<gift>things;armsRadium;20</gift>
+			<gift>things;boneRing_1;10</gift>
+			<gift>things;normalChest;3</gift>
+			<gift>things;magicChest;2</gift>
+		</one>
+		<one name="dianzan" cnName="点赞礼包"  hideB="1">
+			<gift>things;skillFleshCard;5</gift>
+			<gift>things;strengthenStone;150</gift>
+			<gift>things;bloodStone;200</gift>
+			<gift>things;godStone;300</gift>
+			<gift>things;strengthenDrug;500</gift>
+			<gift>things;lightStone;30</gift>
+			<gift>things;converStone;300</gift>
+			<gift>things;militarySupplies;200</gift>
+			<gift>things;magicChest;2</gift>
+			<gift>things;normalChest;3</gift>
+			<gift>things;coinHeap_3;1</gift>
+		</one>
+		
+	</activity>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<mercenaryGift>
+		<one name="mercenary1" cnName="初出茅庐礼包">
+			<gift>things;lightStone;15</gift>
+			<gift>things;strengthenStone;15</gift>
+			<gift>things;bloodStone;15</gift>
+			<gift>things;keyChest;5</gift>
+		</one>
+		<one name="mercenary2" cnName="登堂入室礼包">
+			<gift>things;lightStone;25</gift>
+			<gift>things;strengthenStone;20</gift>
+			<gift>things;bloodStone;20</gift>
+			<gift>things;keyChest;10</gift>
+		</one>
+		<one name="mercenary3" cnName="出类拔萃礼包">
+			<gift>things;lightStone;35</gift>
+			<gift>things;strengthenStone;30</gift>
+			<gift>things;bloodStone;30</gift>
+			<gift>things;keyChest;15</gift>
+		</one>
+		<one name="mercenary4" cnName="登峰造极礼包">
+			<gift>things;lightStone;50</gift>
+			<gift>things;strengthenStone;30</gift>
+			<gift>things;bloodStone;30</gift>
+			<gift>things;keyChest;20</gift>
+			<gift>things;lifeCatalyst;10</gift>
+			<gift>things;energyCatalyst;10</gift>
+			<gift>things;variationCatalyst;10</gift>
+			<gift>things;ashesSuit_belt;30</gift>
+		</one>
+	</mercenaryGift>
+	
+	<national2017>
+		<one name="national2017Draw" cnName="国庆大作战" randomB="1">
+			<gift pro="3000">things;bloodStone;10</gift>
+			<gift pro="3000">things;strengthenStone;10</gift>
+			<gift pro="2000">things;allBlackCash;4</gift>
+			<gift pro="2000">things;allBlackEquipCash;4</gift>
+			<gift pro="1000">things;armsRadium;8</gift>
+			<gift pro="1000">things;armsTitanium;8</gift>
+			<gift pro="500">things;redFire;5</gift>
+			<gift pro="500">things;rocketCate;5</gift>
+			<gift pro="500">things;meltFlamer;5</gift>
+			<gift pro="500">things;waterFlamer;5</gift>
+			<gift pro="500">things;partsChest81;1</gift>
+			<gift pro="50">things;partsChest84;1</gift>
+			<gift pro="7">things;partsChest87;1</gift>
+			<gift pro="2">equip;SaberTigerCar;1</gift>
+
+		</one>
+	</national2017>
+	
+	<anniverGm>
+		<one name="anniverGm1" cnName="神护碎片">
+			<gift>things;allBlackEquipCash;50</gift>
+		</one>
+		<one name="anniverGm2" cnName="神武碎片">
+			<gift>things;allBlackCash;50</gift>
+		</one>
+	</anniverGm>
+	
+	<summerSign>
+		<one name="summer1" cnName="暑期签到每日" mustLevel="1">
+			<gift>base;anniCoin;13</gift>
+			<gift>things;zodiacCash;3</gift>
+			<gift>things;arenaChest;1</gift>
+			<gift>things;strengthenStone;10</gift>
+			<gift>things;allBlackCash;15</gift>
+			<gift>things;allBlackEquipCash;15</gift>
+			<gift>base;partsCoin;1</gift>
+
+		</one>
+		<one name="summer2" cnName="暑期签到5天" mustLevel="5">
+			<gift>base;anniCoin;10</gift>
+			<gift>things;zodiacCash;4</gift>
+			<gift>things;arenaChest;3</gift>
+			<gift>things;strengthenStone;10</gift>
+			<gift>things;allBlackCash;10</gift>
+			<gift>things;allBlackEquipCash;10</gift>
+			<gift>things;rainGun;20</gift>
+
+		</one>
+		<one name="summer3" cnName="暑期签到10天" mustLevel="10">
+			<gift>base;anniCoin;20</gift>
+			<gift>things;zodiacCash;7</gift>
+			<gift>things;arenaChest;6</gift>
+			<gift>things;strengthenStone;20</gift>
+			<gift>things;allBlackCash;20</gift>
+			<gift>things;allBlackEquipCash;20</gift>
+			<gift>things;rainGun;30</gift>
+
+		</one>
+		<one name="summer4" cnName="暑期签到17天" mustLevel="17">
+			<gift>base;anniCoin;34</gift>
+			<gift>things;zodiacCash;10</gift>
+			<gift>things;arenaChest;9</gift>
+			<gift>things;strengthenStone;34</gift>
+			<gift>things;allBlackCash;34</gift>
+			<gift>things;allBlackEquipCash;34</gift>
+			<gift>things;rainGun;50</gift>
+
+		</one>
+		<one name="summer5" cnName="暑期签到24天" mustLevel="24">
+			<gift>base;anniCoin;50</gift>
+			<gift>things;zodiacCash;13</gift>
+			<gift>things;arenaChest;12</gift>
+			<gift>things;strengthenStone;50</gift>
+			<gift>things;allBlackCash;50</gift>
+			<gift>things;allBlackEquipCash;50</gift>
+			<gift>things;partsChest87;2</gift>
+			<gift>base;partsCoin;20</gift>
+
+		</one>
+		
+		<one name="summer6" cnName="暑期签到31天" mustLevel="31">
+			<gift>base;anniCoin;70</gift>
+			<gift>things;zodiacCash;16</gift>
+			<gift>things;arenaChest;15</gift>
+			<gift>things;strengthenStone;70</gift>
+			<gift>things;allBlackCash;70</gift>
+			<gift>things;allBlackEquipCash;70</gift>
+			<gift>things;partsChest87;2</gift>
+			<gift>base;partsCoin;20</gift>
+
+		</one>
+		<one name="summer7" cnName="暑期签到40天" mustLevel="40">
+			<gift>base;anniCoin;90</gift>
+			<gift>things;zodiacCash;19</gift>
+			<gift>things;arenaChest;18</gift>
+			<gift>things;strengthenStone;90</gift>
+			<gift>things;allBlackCash;90</gift>
+			<gift>things;allBlackEquipCash;90</gift>
+			<gift>things;partsChest87;2</gift>
+			<gift>base;partsCoin;25</gift>
+
+		</one>
+		<one name="summer8" cnName="暑期签到50天" mustLevel="50">
+			<gift>base;anniCoin;110</gift>
+			<gift>things;zodiacCash;22</gift>
+			<gift>things;arenaChest;21</gift>
+			<gift>things;strengthenStone;110</gift>
+			<gift>things;allBlackCash;110</gift>
+			<gift>things;allBlackEquipCash;110</gift>
+			<gift>things;partsChest87;2</gift>
+			<gift>base;partsCoin;30</gift>		
+			<gift>bossCard;su25;1</gift>		
+		</one>
+		
+	</summerSign>
+</data>

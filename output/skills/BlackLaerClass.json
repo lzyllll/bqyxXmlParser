@@ -1,0 +1,284 @@
+{
+  "father": [
+    {
+      "name": "wilder",
+      "body": {
+        "index": 0,
+        "name": "BlackLaer",
+        "shell": "compound",
+        "cnName": "黑暗雷尔",
+        "raceType": "robot",
+        "swfUrl": "swf/enemy/BlackLaer.swf",
+        "headIconUrl": "IconGather/PetLaer",
+        "lifeRatio": 1,
+        "showLevel": 999,
+        "imgType": "normal",
+        "imgArr": "stand,move\n\t\t\t\t,normalAttack,shootAttack,chargedAttack,ballAttack,staticAttack\n\t\t\t\t,hurt1,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+        "hitRect": "-14,-76,28,76",
+        "maxJumpNum": 1,
+        "nextAttackTime": 0,
+        "extraAIClassLabel": "BlackLaer_AIExtra",
+        "bossSkillArr": "trueshotLaer,cloned_BlackLaer,charged_BlackLaer,lightBall_BlackLaer,static_BlackLaer,BlackLaer_hitParalysis",
+        "hurtArr": {
+          "hurt": [
+            {
+              "imgLabel": "normalAttack",
+              "hurtRatio": 2,
+              "attackType": "direct",
+              "shakeValue": 4,
+              "hitImgUrl": {
+                "value": "bulletHitEffect/energy",
+                "con": "add",
+                "soundUrl": "sound/hand_hit"
+              }
+            },
+            {
+              "imgLabel": "shootAttack",
+              "hurtRatio": 2,
+              "bulletLabel": "shoot_BlackLaer",
+              "grapRect": "-450,-88,351,77"
+            },
+            {
+              "info": "不加入ai选择-充能",
+              "imgLabel": "chargedAttack",
+              "noAiChooseB": 1,
+              "grapRect": "-400,-111,100,105"
+            },
+            {
+              "info": "不加入ai选择-辐射光球",
+              "imgLabel": "ballAttack",
+              "noAiChooseB": 1,
+              "bulletLabel": "lightBall_BlackLaer",
+              "grapRect": "-400,-111,100,105",
+              "hurtRatio": 12
+            },
+            {
+              "info": "不加入ai选择-充能",
+              "imgLabel": "staticAttack",
+              "noAiChooseB": 1,
+              "grapRect": "-400,-111,100,105"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "enemy",
+      "skills": {
+        "cloned_BlackLaer": {
+          "index": 0,
+          "name": "cloned_BlackLaer",
+          "cnName": "分身",
+          "cd": 30,
+          "noInClonedB": 1,
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "lifePerLess",
+          "conditionRange": 0.5,
+          "target": "me",
+          "addType": "instant",
+          "effectType": "cloned",
+          "value": 2,
+          "mul": 0.1,
+          "secMul": 0.75,
+          "duration": 30,
+          "meEffectImg": {
+            "value": "skillEffect/hiding_hero",
+            "soundUrl": "sound/cloned_enemy",
+            "con": "add"
+          },
+          "description": "生命值低于50%时产生[value]个分身，攻击力与自身同等，血量为自身的[mul]，持续[duration]秒。"
+        },
+        "charged_BlackLaer": {
+          "index": 0,
+          "cnName": "充能",
+          "name": "charged_BlackLaer",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cd": 10,
+          "delay": 0.66,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "weNumMore",
+          "conditionRange": 1,
+          "target": {
+            "value": "me,random,we",
+            "noMeB": true
+          },
+          "addType": "instantAndState",
+          "effectType": "charged_BlackLaer",
+          "value": 1.5,
+          "mul": 0.1,
+          "range": 800,
+          "duration": 5,
+          "stateEffectImg": {
+            "value": "generalEffect/lakeBuff",
+            "partType": "body",
+            "con": "add",
+            "raNum": 1
+          },
+          "description": "随机瞬移到分身或主体身边，使其受到伤害降低[1-mul]、移动速度增加[value]倍，持续[duration]秒。",
+          "meActionLabel": "chargedAttack"
+        },
+        "lightBall_BlackLaer": {
+          "index": 0,
+          "cnName": "辐射光球",
+          "name": "lightBall_BlackLaer",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cd": 30,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "nearAttackTarget",
+          "conditionRange": 400,
+          "target": "me",
+          "addType": "state",
+          "effectType": "no",
+          "meActionLabel": "ballAttack",
+          "description": "向前方发射缓慢移动的光球，对敌人造成持续伤害，受到伤害的敌人移动速度降低90%，同时使其无法释放技能。"
+        },
+        "static_BlackLaer": {
+          "index": 0,
+          "cnName": "静电过载",
+          "name": "static_BlackLaer",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cd": 15,
+          "delay": 0.5,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "nearAttackTarget",
+          "conditionRange": 700,
+          "target": "me",
+          "addType": "state",
+          "effectType": "static_BlackLaer",
+          "duration": 0.8,
+          "targetEffectImg": {
+            "value": "generalEffect/lakeBoom",
+            "soundUrl": "sound/paralysis_enemy_hit",
+            "con": "add"
+          },
+          "description": "瞬移到敌人身上，使周围150码内的敌人麻痹3秒。",
+          "meActionLabel": "staticAttack"
+        },
+        "BlackLaer_hitParalysis": {
+          "index": 0,
+          "name": "BlackLaer_hitParalysis",
+          "cnName": "静电麻痹",
+          "cd": 0.1,
+          "conditionType": "active",
+          "target": "me,range,enemy",
+          "addType": "state",
+          "effectType": "moveSpeed",
+          "mul": 0,
+          "range": 150,
+          "duration": 2,
+          "stateEffectImg": {
+            "value": "skillEffect/paralysis_enemy",
+            "con": "add",
+            "soundUrl": "sound/paralysis_enemy_hit"
+          },
+          "description": "使其麻痹，持续3秒。"
+        },
+        "trueshotLaer": {
+          "name": "trueshotLaer",
+          "cnName": "强击光环",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "conditionType": "passive",
+          "condition": "interval",
+          "target": {
+            "value": "me,range,we",
+            "noMeB": true
+          },
+          "addType": "state",
+          "effectType": "hurtMul",
+          "mul": 1.6,
+          "duration": 2,
+          "range": 400,
+          "stateEffectImg": {
+            "value": "skillEffect/trueshot_enemy",
+            "partType": "2hand",
+            "con": "add",
+            "raNum": 30,
+            "followPartRaB": true
+          },
+          "description": "周围[range]码以内的我方单位提升[mul-1]的攻击力。"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "黑暗雷尔",
+      "bullet": [
+        {
+          "cnName": "黑暗雷尔-射击",
+          "name": "shoot_BlackLaer",
+          "shakeAngle": 1,
+          "bulletLife": 2,
+          "bulletWidth": 40,
+          "hitType": "rect",
+          "attackGap": 0.9,
+          "attackDelay": 0.5,
+          "bulletAngle": 180,
+          "bulletAngleRange": 50,
+          "bulletNum": 1,
+          "penetrationGap": 1000,
+          "shootPoint": "-86,-55",
+          "bulletSpeed": 30,
+          "followD": {
+            "value": 0.3
+          },
+          "flipX": 1,
+          "bulletImgUrl": {
+            "value": "BlackLaer/bullet",
+            "raNum": 30,
+            "con": "filter"
+          },
+          "hitImgUrl": {
+            "value": "bulletHitEffect/energy",
+            "soundUrl": "sound/fireHit1"
+          }
+        },
+        {
+          "cnName": "辐射光球",
+          "name": "lightBall_BlackLaer",
+          "shakeAngle": 1,
+          "bulletLife": 13,
+          "bulletWidth": 60,
+          "hitType": "rect",
+          "attackGap": 1,
+          "attackDelay": 0.55,
+          "bulletAngle": 180,
+          "bulletNum": 1,
+          "penetrationNum": 999,
+          "penetrationGap": 1000,
+          "twoHitGap": 0.1,
+          "followD": {
+            "value": 1,
+            "maxTime": 2
+          },
+          "shootPoint": "-92,-43",
+          "bulletSpeed": 10,
+          "speedD": {
+            "max": 25,
+            "min": 1,
+            "a": -4
+          },
+          "skillArr": "lightBall_PetLake_slow,silence_wind",
+          "flipX": 1,
+          "bulletImgUrl": {
+            "value": "BlackLaer/ball",
+            "raNum": 1,
+            "con": "add"
+          },
+          "hitImgUrl": {
+            "soundUrl": "sound/fireHit1"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="敌方">
+		<body name="铁犬" shell="normal">
+			
+			<name>IronDog</name>
+			<cnName>铁犬</cnName>
+			<raceType>human</raceType>
+			<swfUrl>swf/enemy/IronDog335.swf</swfUrl>
+			
+			<rosRatio>1</rosRatio>
+			<showLevel>999</showLevel>
+			<headIconUrl>IconGather/IronDog</headIconUrl>
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move
+				,normalAttack,die1
+				,fiveAttack,mopAttack,daggerAttack,iceAttack,hideAttack
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<maxVx>13</maxVx>
+			<extraAIClassLabel>IronDog_AIExtra</extraAIClassLabel>
+			<avtiveSkillCdOverT>0.1</avtiveSkillCdOverT>
+			
+			<skillArr>IronDogIce,IronDogDagger,IronDogFive,fastForward_enemy,IronDogBuff,verShield,underToLand,rigidBody_enemy,likeMissleNo,summonShortLife,findHide,State_SpellImmunity</skillArr>
+			<bossSkillArr>IronDogMop</bossSkillArr>
+			<bossSkillArrCn />
+			<wilderSkillArr>weaponDefence</wilderSkillArr>
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel><cn>刺砍</cn>
+					<hurtRatio>1</hurtRatio>
+					<attackType>holy</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit" soundRan="3">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>fiveAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.00000000000001</hurtRatio>
+					<hurtMul>0.6</hurtMul>
+					<attackType>holy</attackType>
+					<skillArr>invincibleEmp</skillArr>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hitImgUrl name="IronDogFiveHit" />
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>mopAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.00000000000001</hurtRatio>
+					<hurtMul>0.07</hurtMul>
+					<attackType>holy</attackType>
+					<skillArr>invincibleEmp</skillArr>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hitImgUrl name="IronDogFiveHit" />
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>daggerAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>1</hurtRatio>
+					<attackType>holy</attackType>
+					<skillArr>invincibleEmp</skillArr>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hitImgUrl name="IronDogFiveHit" />
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>iceAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.00000000000001</hurtRatio>
+					<hurtMul>0.15</hurtMul>
+					<attackType>holy</attackType>
+					<skillArr>invincibleEmp</skillArr>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hitImgUrl name="IronDogFiveHit" />
+				</hurt>
+			</hurtArr>
+		</body>
+	</father>
+	</data>

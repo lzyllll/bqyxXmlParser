@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="materials" cnName="活动物品" smeltType="festival">
+		<things cnName="抢楼券">
+			<name>occupyStamp</name>
+			<cnName>抢楼券</cnName>
+			<itemsLevel>999</itemsLevel>
+			<iconUrl>ThingsIcon/occupyStamp</iconUrl>
+			<description>
+				全民抢楼活动所需物品。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]消灭普通关卡首领必然掉落
+			</description>
+			<loveD num="4" />
+		</things>
+		
+		<things cnName="白色玫瑰">
+			<name>whiteRose</name>
+			<cnName>白色玫瑰</cnName>
+			<zuobiNum>5000</zuobiNum>
+			<iconUrl>ThingsIcon/whiteRose</iconUrl>
+			<description>把它赠送给小樱将额外200点好感度。</description>
+			<effectD type="addLove" value="200" />
+			<loveD num="1" />
+			<smeltD grade="1" addType="" price="20" />
+		</things>
+		<things cnName="百合花">
+			<name>lily</name>
+			<cnName>百合花</cnName>
+			<zuobiNum>5000</zuobiNum>
+			<iconUrl>ThingsIcon/lily</iconUrl>
+			<description>
+				开启心零支线任务的必需品。把它赠送给心零将获得180点左右的好感度。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店
+				[n]纪念币商店
+				[n]竞技场兑换
+			</description>
+			<effectD type="addLove" value="170" />
+			<loveD num="1" />
+			<smeltD grade="-1" price="20" />
+		</things>
+		<things cnName="玩具熊">
+			<name>teddyBear</name>
+			<cnName>玩具熊</cnName>
+			<zuobiNum>5000</zuobiNum>
+			<iconUrl>ThingsIcon/teddyBear</iconUrl>
+			<description>
+				开启小美支线任务的必需品。把它赠送给小美将获得200点左右的好感度。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]十年币兑换
+				[n]商店购买
+			</description>
+			<effectD type="addLove" value="190" />
+			<loveD num="1" />
+			<smeltD grade="-1" price="20" />
+		</things>
+		
+		<things cnName="粽子测试">
+			<name>zongzi</name>
+			<cnName>粽子测试</cnName>
+			<zuobiNum>5000</zuobiNum>
+			<iconUrl>ThingsIcon/zongzi</iconUrl>
+			<description>在商店中用于兑换商品。</description>
+			<loveD num="1" />
+		</things>
+		
+	</father>	
+	</data>

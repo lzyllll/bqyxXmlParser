@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="lightning" cnName="闪电枪">
+		<bullet name="yearDragon" color="darkgold" composeLv="99" dropLevelArr="999" evoMaxLv="2">
+			<name>yearDragon</name>
+			<cnName>辰龙</cnName>
+			<whippB>0</whippB>
+			<dpsMul>1.9</dpsMul>
+			<uiDpsMul>2.1</uiDpsMul>
+			
+			<capacity>8</capacity>
+			<attackGap>1.2</attackGap>
+			<reloadGap>2</reloadGap>
+			<shakeAngle>1</shakeAngle>
+			<bulletWidth>500</bulletWidth>
+			<bulletShakeWidth>100</bulletShakeWidth>
+			<bulletNum>10</bulletNum>				
+			<shootAngle>15</shootAngle>				
+			<beatBack>2</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>0</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="0" body="0" />	
+			<critD mul="2" pro="0.25" />
+			
+			<skillArr>Hit_Spurting_ArmsSkill,Hit_AddLifeMul_ArmsSkill</skillArr>
+			<godSkillArr>yearDragonSkill</godSkillArr>
+			
+			<hurtRatio>4</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.6</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>8</upValue>
+			<shootShakeAngle>70</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			
+			<iconUrl>specialGun/yearDragonIcon</iconUrl>
+			<shootSoundUrl>sound/lightningShoot</shootSoundUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30" con="filter" len="50" time="0.03" waveAn="45" everFleshB="1" imgDieType="ranStop">generalEffect/lineLightning</bulletImgUrl>
+			<hitImgUrl con="add">bulletHitEffect/fitHit</hitImgUrl>
+			<fireImgType />
+			
+			<bodyImgRange>specialGun/yearDragon</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description />
+		</bullet>
+	</father>
+	</data>

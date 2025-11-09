@@ -1,0 +1,1216 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="normal">
+		
+		
+		<gather name="太阳系-任务">
+			<level name="MadmanPlot">
+				
+				<info enemyLv="99" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" noDeviceB="1" mustSingleB="1" firstLostB="1" />
+				<drop noB="1" />
+				
+				<sceneLabel>BaiZhang</sceneLabel>
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="we1" camp="we">
+						<unit cnName="本我" dpsMul="200" lifeMul="0.05" armsRange="yearSheep" />
+						<unit cnName="摩卡" dpsMul="200" lifeMul="0.05" armsRange="sniperCicada$2,shotgunSkunkTwo$2" skillArr="feedback_hero_5,jumpNumAdd1,State_AddMove50" dieGotoState="stru" aiOrder="followBodyAttack:p1" />
+					</unitOrder>
+					<unitOrder id="weShip" camp="we">
+						<unit id="氩星舰" cnName="氩星舰" />
+					</unitOrder>
+					<unitOrder id="we3" camp="we">
+						<unit cnName="文杰表哥" dpsMul="500" lifeMul="0.01" armsRange="christmasGun$2" skillArr="groupLight_hero_7,hiding_hero_3,jumpNumAdd1,State_AddMove50" aiOrder="followBodyAttack:p1" />
+					</unitOrder>
+				</unitG>
+				 
+				<rectG>
+					<rect id="r_birth">747,171,198,71</rect>
+					<rect id="r_over">2948,308,70,109</rect>
+				</rectG>
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>weAllHeroNoShoot</order><order>weAllHeroNoEquip</order>
+							<order>createUnit:we1; r_birth</order><order>heroEverParasitic:本我</order>
+							<order>toPlotMode</order>
+							<order>openInput</order>
+						</event>
+						<event>
+							<condition delay="1" />
+							<order>say; startList:s1</order>
+						</event>
+						
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>createUnit:weShip; 1500,-700</order>
+							<order>body:氩星舰;blendMode:add</order>
+							<order>body:氩星舰;followPoint:1482,0</order>
+							<order>playSound:ArgonShip/goIn</order>
+						</event>
+						<event>
+							<condition delay="1" />
+							<order>say; startList:s2</order>
+						</event>
+						
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>body:氩星舰;followPoint:400,-1500</order>
+							<order>playSound:ArgonShip/goIn</order>
+						</event>
+						<event>
+							<condition delay="1" />
+							<order>say; startList:s3</order>
+						</event>
+							
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>createUnit:we3; 3042,370</order>
+						</event>
+						<event>
+							<condition delay="1" />
+							<order>say; startList:s4</order>
+						</event>
+						<event>
+							<condition delay="1">say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			<level name="YaSomewhere_1">
+				
+				<info enemyLv="10" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" noDeviceB="1" mustSingleB="1" firstLostB="1" />
+				<drop noB="1" />
+				
+				<sceneLabel>YaSomewhere</sceneLabel>
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="we3" camp="we">
+						<unit cnName="吸血蝙蝠" />
+						<unit cnName="空单位" />
+					</unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>createUnit:we3; r_birth</order>
+							<order>weAllHeroNoShoot</order>
+							<order>weAllHeroNoEquip</order>
+							<order>body:p1;noExist</order>
+							<order>body:吸血蝙蝠;noExist</order>
+							<order>body:吸血蝙蝠;setXY:491,412</order>
+							<order>body:空单位;noExist</order>
+							<order>body:空单位;setXY:363,412</order>
+							<order>toPlotMode</order>
+						</event>
+						<event>
+							<condition delay="1" />
+							<order>say; startList:s1</order>
+							<order>openInput</order>
+						</event>
+						<event>
+							<condition delay="1">say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>level; win</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			
+			<level name="EarthSkyTask">
+				
+				<info enemyLv="10" modeDiy="spaceCraft" />
+				<drop noB="1" exp="0" />
+				
+				<sceneLabel>EarthSky</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="enemy1">
+						<unit cnName="小陨石" num="10" />
+					</unitOrder>
+					<unitOrder id="eMid">
+						<unit cnName="中陨石" num="5" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>pro</numberType>
+						<unit cnName="小陨石" num="10" />
+						<unit cnName="中陨石" num="3" />
+					</unitOrder>
+					<unitOrder id="eBig">
+						<unit cnName="小陨石" num="5" />
+						<unit cnName="陨石矿" num="1" />
+					</unitOrder>
+					<unitOrder id="eF">
+						<unit cnName="飞速陨石" num="1" />
+					</unitOrder>
+					<unitOrder id="e1">
+						<numberType>pro</numberType>
+						<unit cnName="小陨石" num="10" />
+						<unit cnName="飞速陨石" num="2" />
+						<unit cnName="中陨石" num="3" />
+						<unit cnName="陨石矿" num="0.5" />
+					</unitOrder>
+					<unitOrder id="eOil">
+						<unit cnName="炸药桶" num="1" />
+					</unitOrder>
+					
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event><condition /><order>say; startList:s1</order></event>
+						<event><condition delay="0.1">say:listOver</condition></event>
+						
+					
+						<event><condition doNumber="1">frontEnemyNumber:less_1</condition><order>createUnit:enemy1; rHitMainSpace</order></event>
+						<event><condition doNumber="3">frontEnemyNumber:less_5</condition><order>createUnit:enemy1; rHitMainSpace</order></event>
+						<event><condition>frontEnemyNumber:less_1</condition><order>createUnit:eMid; rHitMainSpace</order></event>
+						<event><condition delay="1" /><order>createUnit:eF; rHitMainSpace</order></event>
+						<event><condition /><order>createUnit:eOil; rHitMainSpace</order></event>
+						<event><condition doNumber="3">frontEnemyNumber:less_5</condition><order>createUnit:enemy3; rHitMainSpace</order></event>
+						<event><condition doNumber="2">frontEnemyNumber:less_1</condition><order>createUnit:eBig; rHitMainSpace</order></event>
+								<event><condition doNumber="1">frontEnemyNumber:less_1</condition><order>createUnit:eF; rHitMainSpace</order></event>
+								<event><condition doNumber="10" delay="0.2" /><order>createUnit:eF; rHitMainSpace</order></event>
+						<event><condition doNumber="5">frontEnemyNumber:less_1</condition><order>createUnit:e1; rHitMainSpace</order></event>
+								<event><condition doNumber="1">frontEnemyNumber:less_1</condition><order>createUnit:eF; rHitMainSpace</order></event>
+								<event><condition doNumber="15" delay="0.2" /><order>createUnit:eF; rHitMainSpace</order></event>
+						<event><condition /><order>createUnit:eOil; rHitMainSpace</order></event>
+						<event><condition doNumber="5">frontEnemyNumber:less_5</condition><order>createUnit:e1; rHitMainSpace</order></event>
+								<event><condition doNumber="1">frontEnemyNumber:less_1</condition><order>createUnit:eF; rHitMainSpace</order></event>
+								<event><condition doNumber="20" delay="0.2" /><order>createUnit:eF; rHitMainSpace</order></event>
+						<event><condition /><order>createUnit:eOil; rHitMainSpace</order></event>
+						<event><condition doNumber="5">frontEnemyNumber:less_1</condition><order>createUnit:e1; r1</order></event>
+						<event><condition /><order>createUnit:eOil; rHitMainSpace</order></event>
+						<event><condition doNumber="3">frontEnemyNumber:less_10</condition><order>createUnit:e1; r1</order></event>
+						
+						
+						<event><condition>enemyNumber:less_1</condition><order>say; startList:s2</order></event>
+						<event><condition delay="0.1">say:listOver</condition></event>
+						<event>
+							<order>task:EarthSky_1; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="SolarInsideEnemy">
+				
+				<info enemyLv="10" modeDiy="spaceCraft" />
+				<drop noB="1" exp="0" />
+				
+				<sceneLabel>SolarInside</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="e1">
+						<numberType>pro</numberType>
+						<unit cnName="小陨石" num="10" />
+						<unit cnName="飞速陨石" num="2" />
+						<unit cnName="中陨石" num="3" />
+						<unit cnName="炸药桶" num="1" />
+					</unitOrder>
+					<unitOrder id="eOil">
+						<unit cnName="炸药桶" num="1" />
+					</unitOrder>
+					<unitOrder id="eShip">
+						<unit cnName="拉矿船" num="1" />
+					</unitOrder>
+					<unitOrder id="eTaper">
+						<unit cnName="矿锥" num="5" />
+					</unitOrder>
+					<unitOrder id="eSaw">
+						<unit cnName="矿棘" num="1" />
+					</unitOrder>
+					<unitOrder id="e2">
+						<unit cnName="拉矿船" num="2" />
+						<unit cnName="矿锥" num="2" />
+					</unitOrder>
+					<unitOrder id="e3">
+						<unit cnName="小陨石" num="4" />
+						<unit cnName="中陨石" num="1" />
+						<unit cnName="拉矿船" num="1" />
+						<unit cnName="矿锥" num="1" />
+						<unit cnName="矿棘" num="1" />
+					</unitOrder>
+					<unitOrder id="eF">
+						<unit cnName="飞速陨石" num="1" />
+					</unitOrder>
+					
+					<unitOrder id="eBird">
+						<unit cnName="鸟头机" num="2" />
+					</unitOrder>
+					<unitOrder id="eLaser">
+						<unit cnName="采矿激光炮" num="1" />
+					</unitOrder>
+					<unitOrder id="eFlower">
+						<unit cnName="采矿花" num="1" skillArr="spaceMoveLeftNoAI" />
+					</unitOrder>
+					
+					
+					<unitOrder id="e41">
+						<unit cnName="拉矿船" num="1" />
+						<unit cnName="矿棘" num="1" />
+					</unitOrder>
+					<unitOrder id="e42">
+						<unit cnName="采矿激光炮" num="1" />
+						<unit cnName="鸟头机" num="2" />
+					</unitOrder>
+					
+					<unitOrder id="e51">
+						<unit cnName="矿锥" num="1" />
+						<unit cnName="矿棘" num="1" />
+					</unitOrder>
+					<unitOrder id="e52">
+						<unit cnName="采矿花" num="3" skillArr="spaceMoveLeftNoAI" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						
+						<event><condition doNumber="1">frontEnemyNumber:less_1</condition><order>createUnit:eFlower; r1</order></event>
+						
+						
+						<event><condition>liveEnemyNumber:less_1</condition><order>createUnit:eOil; rHitMainSpace</order></event>
+						<event><condition doNumber="2" delay="1" /><order>createUnit:e1; rHitMainSpace</order></event>
+						
+						
+						<event><condition doNumber="2">frontEnemyNumber:less_1</condition><order>createUnit:eShip; r4</order><order>createUnit:eShip; r2</order><order>createUnit:eShip; r3</order></event>
+						
+						<event><condition doNumber="1">frontEnemyNumber:less_1</condition><order>createUnit:eShip; r4</order><order>createUnit:eShip; r2</order><order>createUnit:eShip; r3</order></event>
+						<event><condition /><order>createUnit:eOil; rHitMainSpace</order></event>
+						
+						<event><condition doNumber="3">frontEnemyNumber:less_1</condition><order>createUnit:eTaper; r1</order></event>
+						<event><condition doNumber="1">frontEnemyNumber:less_1</condition><order>createUnit:eSaw; r1</order></event>
+						<event><condition doNumber="5" delay="2" /><order>createUnit:eSaw; r1</order></event>
+						<event><condition doNumber="2">frontEnemyNumber:less_1</condition><order>createUnit:e2; r1</order></event>
+						
+						<event><condition doNumber="1">frontEnemyNumber:less_1</condition><order>createUnit:e3; r1</order></event>
+						<event><condition /><order>createUnit:eOil; rHitMainSpace</order></event>
+						<event><condition doNumber="2">frontEnemyNumber:less_1</condition><order>createUnit:e3; r1</order></event>
+						
+						<event><condition>rightEnemyNumber:less_1</condition><order>createUnit:eF; rHitMainSpace</order></event>
+						<event><condition delay="0.5" doNumber="10" /><order>createUnit:eF; rHitMainSpace</order></event>
+						
+						<event><condition doNumber="3">frontEnemyNumber:less_1</condition><order>createUnit:eLaser; r1</order></event>
+						
+						<event><condition doNumber="3">frontEnemyNumber:less_1</condition><order>createUnit:eBird; r1</order></event>
+						
+						<event><condition doNumber="3">rightEnemyNumber:less_1</condition><order>createUnit:eFlower; r1</order></event>
+						
+						
+						<event><condition doNumber="2">rightEnemyNumber:less_1</condition><order>createUnit:e41; r1</order><order>createUnit:e42; rRight</order></event>
+						<event><condition doNumber="2">rightEnemyNumber:less_1</condition><order>createUnit:e51; r1</order><order>createUnit:e52; rRight</order></event>
+						
+						<event><condition>enemyNumber:less_1</condition><order>say; startList:s2</order></event>
+						<event><condition delay="0.1">say:listOver</condition></event>
+						<event>
+							<order>task:SolarInsideEnemy; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="SolarInsideBoss">
+				
+				<info enemyLv="10" modeDiy="spaceCraft" />
+				<drop noB="1" exp="0" />
+				
+				<sceneLabel>SolarInside</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="eBoss">
+						<unit cnName="采矿舰" num="1" lifeMul="4.5" unitType="boss" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event><condition /><order>say; startList:s1</order></event>
+						<event><condition delay="0.1">say:listOver</condition></event>
+						
+						<event><condition /><order>createUnit:eBoss; r1</order></event>
+						
+						<event><condition>enemyNumber:less_1</condition><order>say; startList:s2</order></event>
+						<event><condition delay="0.1">say:listOver</condition></event>
+						<event>
+							<order>task:SolarInsideBoss; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="CeresSouthEnemy">
+				
+				<info enemyLv="10" modeDiy="spaceCraft" />
+				<drop noB="1" exp="0" />
+				
+				<sceneLabel>CeresSouth</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="e1">
+						<unit cnName="采矿球" num="15" />
+					</unitOrder>
+					<unitOrder id="e2">
+						<unit cnName="浮游矿锥" num="5" />
+					</unitOrder>
+					<unitOrder id="e3">
+						<unit cnName="浮游激光炮" num="6" />
+					</unitOrder>
+					<unitOrder id="e4">
+						<unit cnName="采矿球" num="7" />
+						<unit cnName="矿场战机" num="3" />
+					</unitOrder>
+					<unitOrder id="e5">
+						<unit cnName="采矿花" num="3" />
+					</unitOrder>
+					<unitOrder id="eSaw">
+						<unit cnName="矿棘" num="1" />
+					</unitOrder>
+					<unitOrder id="eF">
+						<unit cnName="飞速陨石" num="1" />
+					</unitOrder>
+					
+					<unitOrder id="e10">
+						<unit cnName="浮游矿锥" num="2" />
+						<unit cnName="浮游激光炮" num="1" />
+						<unit cnName="采矿球" num="6" />
+						<unit cnName="矿场战机" num="2" />
+					</unitOrder>
+					<unitOrder id="e20">
+						<unit cnName="浮游矿锥" num="2" />
+						<unit cnName="浮游激光炮" num="1" />
+						<unit cnName="采矿花" num="1" />
+						<unit cnName="采矿球" num="12" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event><condition delay="0.1" /></event>
+						<event><condition doNumber="7">liveEnemyNumber:less_1</condition><order>createUnit:e1; rEnemySpace</order></event>
+						
+								<event><condition delay="1">liveEnemyNumber:less_1</condition><order>createUnit:eSaw; rHitMainSpace</order></event><event><condition doNumber="4" delay="2" /><order>createUnit:eSaw; rHitMainSpace</order></event>
+						<event><condition doNumber="3">liveEnemyNumber:less_1</condition><order>createUnit:e2; rEnemySpace</order></event>
+						<event><condition doNumber="3">liveEnemyNumber:less_1</condition><order>createUnit:e3; rEnemySpace</order></event>
+						
+								<event><condition delay="1">liveEnemyNumber:less_1</condition><order>createUnit:eF; rHitMainSpace</order></event><event><condition doNumber="30" delay="0.3" /><order>createUnit:eF; rHitMainSpace</order></event>
+						<event><condition doNumber="3">liveEnemyNumber:less_1</condition><order>createUnit:e4; rEnemySpace</order></event>
+						
+								<event><condition delay="1">liveEnemyNumber:less_1</condition><order>createUnit:eF; rHitMainSpace</order></event><event><condition doNumber="30" delay="0.3" /><order>createUnit:eF; rHitMainSpace</order></event>
+						<event><condition doNumber="3">liveEnemyNumber:less_1</condition><order>createUnit:e10; rEnemySpace</order></event>
+								<event><condition delay="1">liveEnemyNumber:less_1</condition><order>createUnit:eSaw; rHitMainSpace</order></event><event><condition doNumber="4" delay="2" /><order>createUnit:eSaw; rHitMainSpace</order></event>
+						<event><condition doNumber="2">liveEnemyNumber:less_1</condition><order>createUnit:e20; rEnemySpace</order></event>
+						<event><condition doNumber="2">liveEnemyNumber:less_1</condition><order>createUnit:e5; rEnemySpace</order></event>
+						
+						<event>
+							<condition>enemyNumber:less_1</condition>
+							<order>task:CeresSouthEnemy; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="CeresSouthBoss">
+				
+				<info enemyLv="10" modeDiy="spaceCraft" />
+				<drop noB="1" exp="0" />
+				
+				<sceneLabel>CeresSouth</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="eBoss">
+						<unit cnName="葵型采矿机" num="1" lifeMul="7" unitType="boss" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event><condition /><order>createUnit:eBoss; r1</order></event>
+						
+						<event><condition>enemyNumber:less_1</condition><order>say; startList:s2</order></event>
+						<event><condition delay="0.1">say:listOver</condition></event>
+						<event>
+							<order>task:CeresSouthBoss; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="GanymedeEnemy">
+				
+				<info enemyLv="10" modeDiy="spaceCraft" />
+				<drop noB="1" exp="0" />
+				
+				<sceneLabel>Ganymede</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="e1">
+						<unit cnName="采矿球" num="8" />
+						<unit cnName="浮游矿锥" num="2" />
+						<unit cnName="浮游激光炮" num="2" />
+					</unitOrder>
+					<unitOrder id="e2">
+						<unit cnName="矿场战机" num="4" />
+					</unitOrder>
+					<unitOrder id="e3">
+						<unit cnName="采矿花" num="2" />
+					</unitOrder>
+					<unitOrder id="e4">
+						<unit cnName="采矿虫" num="2" />
+					</unitOrder>
+					<unitOrder id="e5">
+						<unit cnName="采矿虫" num="1" />
+						<unit cnName="采矿球" num="10" />
+					</unitOrder>
+					<unitOrder id="e6">
+						<unit cnName="采矿虫" num="1" />
+						<unit cnName="采矿花" num="1" />
+					</unitOrder>
+					<unitOrder id="e7">
+						<unit cnName="采矿虫" num="1" />
+						<unit cnName="浮游矿锥" num="2" />
+						<unit cnName="浮游激光炮" num="2" />
+					</unitOrder>
+					
+					
+					<unitOrder id="eBoom">
+						<unit cnName="炸药桶" num="1" />
+					</unitOrder>
+					
+					<unitOrder id="e10">
+						<unit cnName="采矿球" num="10" />
+						<unit cnName="矿场战机" num="2" />
+						<unit cnName="采矿虫" num="1" />
+					</unitOrder>
+					<unitOrder id="e20">
+						<unit cnName="采矿球" num="10" />
+						<unit cnName="采矿花" num="1" />
+						<unit cnName="采矿虫" num="1" />
+					</unitOrder>
+					
+					<unitOrder id="e30">
+						<unit cnName="采矿虫" num="4" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event><condition delay="0.1" /></event>
+						<event><condition doNumber="3">liveEnemyNumber:less_1</condition><order>createUnit:e1; rEnemySpace</order></event>
+						<event><condition doNumber="1">liveEnemyNumber:less_1</condition><order>createUnit:e2; rEnemySpace</order></event>
+						<event><condition doNumber="1">liveEnemyNumber:less_1</condition><order>createUnit:e3; rEnemySpace</order></event>
+						<event><condition doNumber="3">liveEnemyNumber:less_1</condition><order>createUnit:e4; rEnemySpace</order></event>
+						<event><condition doNumber="3">liveEnemyNumber:less_1</condition><order>createUnit:e5; rEnemySpace</order></event>
+						<event><condition doNumber="3">liveEnemyNumber:less_1</condition><order>createUnit:e6; rEnemySpace</order></event>
+								<event><condition delay="1" /><order>createUnit:eBoom; rHitMainSpace</order></event>
+						<event><condition doNumber="3">liveEnemyNumber:less_1</condition><order>createUnit:e7; rEnemySpace</order></event>
+								<event><condition delay="1" /><order>createUnit:eBoom; rHitMainSpace</order></event>
+						
+						<event><condition doNumber="2">liveEnemyNumber:less_1</condition><order>createUnit:e10; rEnemySpace</order></event>
+						<event><condition doNumber="2">liveEnemyNumber:less_1</condition><order>createUnit:e20; rEnemySpace</order></event>
+						<event><condition doNumber="2">liveEnemyNumber:less_1</condition><order>createUnit:e30; rEnemySpace</order></event>
+						
+						<event>
+							<condition>enemyNumber:less_1</condition>
+							<order>task:GanymedeEnemy; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			
+			<level name="GanymedeBoss">
+				
+				<info enemyLv="10" modeDiy="spaceCraft" />
+				<drop noB="1" exp="0" />
+				
+				<sceneLabel>Ganymede</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="eBoss">
+						<unit cnName="蛇型采矿机" num="1" lifeMul="4" unitType="boss" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event><condition /><order>createUnit:eBoss; r1</order></event>
+						
+						<event><condition>enemyNumber:less_1</condition><order>say; startList:s2</order></event>
+						<event><condition delay="0.1">say:listOver</condition></event>
+						<event>
+							<order>task:GanymedeBoss; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			
+			<level name="GanymedeCaveEnemy">
+				
+				<info enemyLv="10" modeDiy="spaceSuit" />
+				<drop noB="1" exp="0" />
+				
+				<sceneLabel>GanymedeCave</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="e1">
+						<unit cnName="采矿球" num="8" />
+						<unit cnName="浮游矿锥" num="2" />
+						<unit cnName="浮游激光炮" num="2" />
+					</unitOrder>
+					<unitOrder id="e2">
+						<unit cnName="矿场战机" num="4" />
+					</unitOrder>
+					<unitOrder id="e3">
+						<unit cnName="采矿花" num="2" />
+					</unitOrder>
+					<unitOrder id="e4">
+						<unit cnName="采矿虫" num="2" />
+					</unitOrder>
+					<unitOrder id="e5">
+						<unit cnName="采矿虫" num="1" />
+						<unit cnName="采矿球" num="10" />
+					</unitOrder>
+					<unitOrder id="e6">
+						<unit cnName="采矿虫" num="1" />
+						<unit cnName="采矿花" num="1" />
+					</unitOrder>
+					<unitOrder id="e7">
+						<unit cnName="采矿虫" num="1" />
+						<unit cnName="浮游矿锥" num="2" />
+						<unit cnName="矿场战机" num="2" />
+					</unitOrder>
+					
+					
+					<unitOrder id="eBoom">
+						<unit cnName="炸药桶" num="1" />
+					</unitOrder>
+					
+					<unitOrder id="e10">
+						<unit cnName="采矿球" num="10" />
+						<unit cnName="矿场战机" num="2" />
+						<unit cnName="采矿花" num="2" />
+					</unitOrder>
+					<unitOrder id="e30">
+						<unit cnName="采矿虫" num="4" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event><condition /><order>say; startList:s1</order></event>
+						<event><condition delay="0.1">say:listOver</condition></event>
+						
+						<event><condition doNumber="1">liveEnemyNumber:less_3</condition><order>createUnit:e4; rEnemySpace2</order></event>
+						<event><condition doNumber="1">liveEnemyNumber:less_3</condition><order>createUnit:e3; rEnemySpace2</order></event>
+						<event><condition doNumber="1">liveEnemyNumber:less_3</condition><order>createUnit:e2; rEnemySpace2</order></event>
+						<event><condition doNumber="1">liveEnemyNumber:less_3</condition><order>createUnit:e1; rEnemySpace2</order></event>
+						<event><condition doNumber="1">liveEnemyNumber:less_3</condition><order>createUnit:e6; rEnemySpace2</order></event>
+						<event><condition doNumber="1">liveEnemyNumber:less_3</condition><order>createUnit:e5; rEnemySpace2</order></event>
+								<event><condition delay="1" /><order>createUnit:eBoom; rHitMainSpace</order></event>
+						<event><condition doNumber="1">liveEnemyNumber:less_3</condition><order>createUnit:e7; rEnemySpace2</order></event>
+								<event><condition delay="1" /><order>createUnit:eBoom; rHitMainSpace</order></event>
+						
+						<event><condition doNumber="1">liveEnemyNumber:less_3</condition><order>createUnit:e10; rEnemySpace2</order></event>
+						<event><condition doNumber="1">liveEnemyNumber:less_3</condition><order>createUnit:e30; rEnemySpace2</order></event>
+						
+						<event><condition>enemyNumber:less_1</condition><order>say; startList:s2</order></event>
+						<event><condition delay="0.1">say:listOver</condition></event>
+						<event>
+							<condition />
+							<order>task:GanymedeCaveEnemy; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="GanymedeCaveBoss">
+				
+				<info enemyLv="10" modeDiy="spaceSuit" />
+				<drop noB="1" exp="0" />
+				
+				<sceneLabel>GanymedeCave</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					
+					<unitOrder id="eBoss">
+						<unit cnName="黄金隼" num="1" lifeMul="4" dpsMul="0.3" unitType="boss" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event><condition /><order>say; startList:s1</order></event>
+						<event><condition delay="0.1">say:listOver</condition></event>
+						
+						<event><condition /><order>createUnit:eBoss; r1</order></event>
+						
+						<event><condition>enemyNumber:less_1</condition><order>say; startList:s2</order></event>
+						<event><condition delay="0.1">say:listOver</condition></event>
+						<event>
+							<order>task:GanymedeCaveBoss; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			
+			<level name="GanymedeCavernTask">
+				
+				<info enemyLv="10" modeDiy="spaceSuit" preSkillArr="blackHoleDevicer_1" />
+				<drop noB="1" />
+				
+				<sceneLabel>GanymedeCavern</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="e7">
+						<unit cnName="采矿虫" num="1" />
+						<unit cnName="浮游矿锥" num="1" />
+						<unit cnName="矿场战机" num="1" />
+						<unit cnName="采矿花" num="1" />
+						<unit cnName="采矿球" num="5" />
+						<unit cnName="矿棘" num="1" />
+					</unitOrder>
+					
+					<unitOrder id="eF">
+						<unit cnName="飞速陨石" num="1" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event><condition /><order>say; startList:s1</order></event>
+						<event><condition delay="0.1">say:listOver</condition></event>
+						
+						<event><condition doNumber="2">liveEnemyNumber:less_1</condition><order>createUnit:e7; rEnemySpace2</order></event>
+						
+						<event><condition delay="1">liveEnemyNumber:less_1</condition><order>createUnit:eF; rHitMainSpace</order></event><event><condition doNumber="30" delay="0.3" /><order>createUnit:eF; rHitMainSpace</order></event>
+						
+						<event><condition doNumber="3">liveEnemyNumber:less_1</condition><order>createUnit:e7; rEnemySpace2</order></event>
+						
+						
+						<event><condition>enemyNumber:less_1</condition><order>say; startList:s2</order></event>
+						<event><condition delay="0.1">say:listOver</condition></event>
+						<event>
+							<condition>enemyNumber:less_1</condition>
+						</event>
+						<event>
+							<condition>hitMapRect:rhole; p1</condition>
+							<order>inWormhole</order>
+						</event>
+						<event>
+							<condition delay="2" />
+							
+							<order>task:GanymedeCavernTask; complete</order>
+						</event>
+						<event>
+							<condition delay="0.5" />
+							<order>level; win</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="GanymedeCavernDog">
+				
+				<info enemyLv="10" modeDiy="spaceCraft" />
+				<drop noB="1" />
+				
+				<sceneLabel>Ganymede</sceneLabel>
+				<eventG>
+					<group>
+						<event><condition /><order>say; startList:s1</order></event>
+						<event><condition delay="1">say:listOver</condition></event>
+						
+						<event>
+							<condition delay="0.1" />
+							<order>task:GanymedeCavernDog; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+		</gather>
+		
+		<gather name="太阳系-关卡">
+			<level name="EarthSky_1">
+				
+				<info enemyLv="10" modeDiy="spaceCraft" overBackB="1" />
+				<drop noB="1" />
+				
+				<sceneLabel>EarthSky</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="enemy1">
+						<unit cnName="小陨石" num="10" />
+					</unitOrder>
+					<unitOrder id="eMid">
+						<unit cnName="中陨石" num="5" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>pro</numberType>
+						<unit cnName="小陨石" num="10" />
+						<unit cnName="中陨石" num="3" />
+					</unitOrder>
+					<unitOrder id="eBig">
+						<unit cnName="小陨石" num="5" />
+						<unit cnName="陨石矿" num="1" />
+					</unitOrder>
+					<unitOrder id="eF">
+						<unit cnName="飞速陨石" num="1" />
+					</unitOrder>
+					<unitOrder id="e1">
+						<numberType>pro</numberType>
+						<unit cnName="小陨石" num="10" />
+						<unit cnName="中陨石" num="3" />
+						<unit cnName="陨石矿" num="0.5" />
+						<unit cnName="拉矿船" num="2" />
+					</unitOrder>
+					<unitOrder id="eOil">
+						<unit cnName="炸药桶" num="1" />
+					</unitOrder>
+					
+					<unitOrder id="eBoss">
+						<unit cnName="采矿花" lifeMul="3" unitType="boss" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						
+						
+						<event><condition doNumber="1">frontEnemyNumber:less_1</condition><order>createUnit:enemy1; rHitMainSpace</order></event>
+						<event><condition doNumber="1">frontEnemyNumber:less_5</condition><order>createUnit:enemy1; rHitMainSpace</order></event>
+						<event><condition>frontEnemyNumber:less_1</condition><order>createUnit:eMid; rHitMainSpace</order></event>
+						<event><condition delay="1" /><order>createUnit:eF; rHitMainSpace</order></event>
+						<event><condition /><order>createUnit:eOil; rHitMainSpace</order></event>
+						<event><condition doNumber="2">frontEnemyNumber:less_5</condition><order>createUnit:enemy3; rHitMainSpace</order></event>
+						<event><condition doNumber="2">frontEnemyNumber:less_1</condition><order>createUnit:eBig; rHitMainSpace</order></event>
+								<event><condition doNumber="1">frontEnemyNumber:less_1</condition><order>createUnit:eF; rHitMainSpace</order></event>
+								<event><condition doNumber="10" delay="0.2" /><order>createUnit:eF; rHitMainSpace</order></event>
+						<event><condition doNumber="2">frontEnemyNumber:less_1</condition><order>createUnit:e1; rHitMainSpace</order></event>
+								<event><condition doNumber="1">frontEnemyNumber:less_1</condition><order>createUnit:eF; rHitMainSpace</order></event>
+								<event><condition doNumber="15" delay="0.2" /><order>createUnit:eF; rHitMainSpace</order></event>
+						<event><condition /><order>createUnit:eOil; rHitMainSpace</order></event>
+						<event><condition doNumber="2">frontEnemyNumber:less_5</condition><order>createUnit:e1; rHitMainSpace</order></event>
+								<event><condition doNumber="1">frontEnemyNumber:less_1</condition><order>createUnit:eF; rHitMainSpace</order></event>
+								<event><condition doNumber="20" delay="0.2" /><order>createUnit:eF; rHitMainSpace</order></event>
+						<event><condition /><order>createUnit:eOil; rHitMainSpace</order></event>
+						<event><condition doNumber="3">frontEnemyNumber:less_1</condition><order>createUnit:e1; r1</order></event>
+						<event><condition /><order>createUnit:eOil; rHitMainSpace</order></event>
+						<event><condition doNumber="3">frontEnemyNumber:less_10</condition><order>createUnit:e1; r1</order></event>
+						
+						<event><condition>liveEnemyNumber:less_1</condition><order>createUnit:eBoss; r1</order></event>
+						
+						
+						<event>
+							<condition>enemyNumber:less_1</condition>
+							<order>task:EarthSky_1; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="SolarInside_1">
+				
+				<info enemyLv="10" modeDiy="spaceCraft" overBackB="1" />
+				<drop noB="1" />
+				
+				<sceneLabel>SolarInside</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="e1">
+						<numberType>pro</numberType>
+						<unit cnName="小陨石" num="10" />
+						<unit cnName="飞速陨石" num="2" />
+						<unit cnName="中陨石" num="3" />
+					</unitOrder>
+					<unitOrder id="eOil">
+						<unit cnName="炸药桶" num="1" />
+					</unitOrder>
+					<unitOrder id="eShip">
+						<unit cnName="拉矿船" num="1" />
+					</unitOrder>
+					<unitOrder id="eTaper">
+						<unit cnName="矿锥" num="5" />
+					</unitOrder>
+					<unitOrder id="eSaw">
+						<unit cnName="矿棘" num="1" />
+					</unitOrder>
+					<unitOrder id="e2">
+						<unit cnName="拉矿船" num="2" />
+						<unit cnName="矿锥" num="2" />
+					</unitOrder>
+					<unitOrder id="e3">
+						<unit cnName="小陨石" num="4" />
+						<unit cnName="中陨石" num="1" />
+						<unit cnName="拉矿船" num="1" />
+						<unit cnName="矿锥" num="1" />
+						<unit cnName="矿棘" num="1" />
+					</unitOrder>
+					<unitOrder id="eF">
+						<unit cnName="飞速陨石" num="1" />
+					</unitOrder>
+					
+					<unitOrder id="eBird">
+						<unit cnName="鸟头机" num="2" />
+					</unitOrder>
+					<unitOrder id="eLaser">
+						<unit cnName="采矿激光炮" num="1" />
+					</unitOrder>
+					<unitOrder id="eFlower">
+						<unit cnName="采矿花" num="1" skillArr="spaceMoveLeftNoAI" />
+					</unitOrder>
+					
+					
+					<unitOrder id="e41">
+						<unit cnName="拉矿船" num="1" />
+						<unit cnName="矿棘" num="1" />
+					</unitOrder>
+					<unitOrder id="e42">
+						<unit cnName="采矿激光炮" num="1" />
+						<unit cnName="鸟头机" num="2" />
+					</unitOrder>
+					
+					<unitOrder id="e51">
+						<unit cnName="矿锥" num="1" />
+						<unit cnName="矿棘" num="1" />
+					</unitOrder>
+					<unitOrder id="eBoss">
+						<unit cnName="采矿舰" num="1" lifeMul="3" unitType="boss" />
+					</unitOrder>
+					
+					
+				</unitG>
+				
+				<eventG>
+					<group>
+						
+						<event><condition doNumber="1" delay="1" /><order>createUnit:e1; rHitMainSpace</order></event>
+						
+						
+						<event><condition doNumber="1">frontEnemyNumber:less_1</condition><order>createUnit:eShip; r4</order><order>createUnit:eShip; r2</order><order>createUnit:eShip; r3</order></event>
+						
+						<event><condition doNumber="1">frontEnemyNumber:less_1</condition><order>createUnit:eShip; r4</order><order>createUnit:eShip; r2</order><order>createUnit:eShip; r3</order></event>
+						<event><condition /><order>createUnit:eOil; rHitMainSpace</order></event>
+						
+						<event><condition doNumber="1">frontEnemyNumber:less_1</condition><order>createUnit:eTaper; r1</order></event>
+						<event><condition doNumber="1">frontEnemyNumber:less_1</condition><order>createUnit:eSaw; r1</order></event>
+						<event><condition doNumber="5" delay="2" /><order>createUnit:eSaw; r1</order></event>
+						<event><condition doNumber="1">frontEnemyNumber:less_1</condition><order>createUnit:e2; r1</order></event>
+						
+						<event><condition doNumber="1">frontEnemyNumber:less_1</condition><order>createUnit:e3; r1</order></event>
+						<event><condition /><order>createUnit:eOil; rHitMainSpace</order></event>
+						<event><condition doNumber="1">frontEnemyNumber:less_1</condition><order>createUnit:e3; r1</order></event>
+						
+						<event><condition>rightEnemyNumber:less_1</condition><order>createUnit:eF; rHitMainSpace</order></event>
+						<event><condition delay="0.5" doNumber="10" /><order>createUnit:eF; rHitMainSpace</order></event>
+						
+						<event><condition doNumber="1">frontEnemyNumber:less_1</condition><order>createUnit:eLaser; r1</order></event>
+						
+						<event><condition doNumber="1">frontEnemyNumber:less_1</condition><order>createUnit:eBird; r1</order></event>
+						
+						<event><condition doNumber="1">rightEnemyNumber:less_1</condition><order>createUnit:eFlower; r1</order></event>
+						
+						
+						<event><condition doNumber="1">rightEnemyNumber:less_1</condition><order>createUnit:e41; r1</order><order>createUnit:e42; rRight</order></event>
+						<event><condition doNumber="1">rightEnemyNumber:less_1</condition><order>createUnit:e51; r1</order></event>
+						
+						<event><condition>liveEnemyNumber:less_1</condition><order>createUnit:eBoss; r1</order></event>
+						<event>
+							<condition>enemyNumber:less_1</condition>
+							<order>task:SolarInsideEnemy; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="CeresSouth_1">
+				
+				<info enemyLv="10" modeDiy="spaceCraft" overBackB="1" />
+				<drop noB="1" />
+				
+				<sceneLabel>CeresSouth</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="ett">
+						<unit cnName="采矿球" num="1" />
+					</unitOrder>
+					
+					<unitOrder id="e1">
+						<unit cnName="采矿球" num="25" />
+					</unitOrder>
+					<unitOrder id="e2">
+						<unit cnName="采矿球" num="10" />
+						<unit cnName="浮游矿锥" num="6" />
+					</unitOrder>
+					<unitOrder id="e3">
+						<unit cnName="采矿球" num="10" />
+						<unit cnName="浮游矿锥" num="3" />
+						<unit cnName="浮游激光炮" num="2" />
+					</unitOrder>
+					<unitOrder id="e4">
+						<unit cnName="采矿球" num="7" />
+						<unit cnName="矿场战机" num="3" />
+					</unitOrder>
+					<unitOrder id="e5">
+						<unit cnName="采矿花" num="3" />
+					</unitOrder>
+					<unitOrder id="eSaw">
+						<unit cnName="矿棘" num="1" />
+					</unitOrder>
+					<unitOrder id="eShip">
+						<unit cnName="拉矿船" num="3" />
+					</unitOrder>
+					
+					<unitOrder id="eF">
+						<unit cnName="飞速陨石" num="1" />
+					</unitOrder>
+					
+					<unitOrder id="e10">
+						<unit cnName="浮游矿锥" num="4" />
+						<unit cnName="浮游激光炮" num="1" />
+						<unit cnName="采矿球" num="17" />
+						<unit cnName="矿场战机" num="2" />
+					</unitOrder>
+					<unitOrder id="e20">
+						<unit cnName="浮游矿锥" num="4" />
+						<unit cnName="浮游激光炮" num="1" />
+						<unit cnName="采矿花" num="2" />
+						<unit cnName="采矿球" num="6" />
+					</unitOrder>
+					<unitOrder id="eBoss">
+						<unit cnName="葵型采矿机" num="1" lifeMul="3.5" unitType="boss" />
+					</unitOrder>
+					
+				</unitG>
+				
+				<eventG>
+					<group>
+						
+						
+						<event><condition delay="0.1" /></event>
+						<event><condition doNumber="1">liveEnemyNumber:less_1</condition><order>createUnit:e1; rEnemySpace</order></event>
+						
+								<event><condition delay="1">liveEnemyNumber:less_1</condition><order>createUnit:eSaw; rHitMainSpace</order></event><event><condition doNumber="6" delay="0.6" /><order>createUnit:eSaw; rHitMainSpace</order></event>
+						<event><condition doNumber="1">liveEnemyNumber:less_1</condition><order>createUnit:e2; rEnemySpace</order></event>
+						<event><condition doNumber="1">liveEnemyNumber:less_1</condition><order>createUnit:e3; rEnemySpace</order></event>
+						
+								<event><condition delay="1">liveEnemyNumber:less_1</condition><order>createUnit:eF; rHitMainSpace</order></event><event><condition doNumber="30" delay="0.3" /><order>createUnit:eF; rHitMainSpace</order></event>
+						<event><condition doNumber="1">liveEnemyNumber:less_1</condition><order>createUnit:e4; rEnemySpace</order></event>
+						
+								<event><condition delay="1">liveEnemyNumber:less_1</condition><order>createUnit:eF; rHitMainSpace</order></event><event><condition doNumber="30" delay="0.2" /><order>createUnit:eF; rHitMainSpace</order></event>
+						<event><condition doNumber="1">liveEnemyNumber:less_1</condition><order>createUnit:e10; rEnemySpace</order></event>
+								<event><condition delay="1">liveEnemyNumber:less_1</condition><order>createUnit:eSaw; rHitMainSpace</order></event><event><condition doNumber="8" delay="0.5" /><order>createUnit:eSaw; rHitMainSpace</order></event>
+								
+						<event><condition doNumber="1">liveEnemyNumber:less_1</condition><order>createUnit:e20; rEnemySpace</order></event>
+								<event><condition delay="0">liveEnemyNumber:less_1</condition><order>createUnit:eShip; rHitMainSpace</order></event><event><condition doNumber="5" delay="2" /><order>createUnit:eShip; rHitMainSpace</order></event>
+
+						<event><condition doNumber="1">liveEnemyNumber:less_1</condition><order>createUnit:e5; rEnemySpace</order></event>
+						
+						<event><condition>liveEnemyNumber:less_1</condition><order>createUnit:eBoss; rHitMainSpace</order></event>
+					
+						<event>
+							<condition>enemyNumber:less_1</condition>
+							<order>task:CeresSouthEnemy; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="Ganymede_1">
+				
+				<info enemyLv="10" modeDiy="spaceCraft" overBackB="1" />
+				<drop noB="1" />
+				
+				<sceneLabel>Ganymede</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="e1">
+						<unit cnName="采矿球" num="12" />
+						<unit cnName="浮游矿锥" num="2" />
+						<unit cnName="浮游激光炮" num="2" />
+					</unitOrder>
+					<unitOrder id="e2">
+						<unit cnName="矿场战机" num="5" />
+					</unitOrder>
+					<unitOrder id="e3">
+						<unit cnName="采矿花" num="2" />
+					</unitOrder>
+					<unitOrder id="e4">
+						<unit cnName="采矿虫" num="2" />
+					</unitOrder>
+					<unitOrder id="e5">
+						<unit cnName="采矿虫" num="1" />
+						<unit cnName="采矿球" num="12" />
+					</unitOrder>
+					<unitOrder id="e6">
+						<unit cnName="采矿虫" num="1" />
+						<unit cnName="采矿花" num="1" />
+					</unitOrder>
+					<unitOrder id="e7">
+						<unit cnName="采矿虫" num="1" />
+						<unit cnName="浮游矿锥" num="4" />
+						<unit cnName="浮游激光炮" num="3" />
+					</unitOrder>
+					<unitOrder id="eSaw">
+						<unit cnName="矿棘" num="1" />
+					</unitOrder>
+					<unitOrder id="eShip">
+						<unit cnName="拉矿船" num="3" />
+					</unitOrder>
+					
+					<unitOrder id="eBoom">
+						<unit cnName="炸药桶" num="1" />
+					</unitOrder>
+					
+					<unitOrder id="e10">
+						<unit cnName="采矿球" num="12" />
+						<unit cnName="矿场战机" num="4" />
+						<unit cnName="采矿虫" num="1" />
+					</unitOrder>
+					<unitOrder id="e20">
+						<unit cnName="采矿球" num="15" />
+						<unit cnName="采矿花" num="1" />
+						<unit cnName="采矿虫" num="1" />
+					</unitOrder>
+					
+					<unitOrder id="e30">
+						<unit cnName="采矿虫" num="3" />
+					</unitOrder>
+					<unitOrder id="eBoss">
+						<unit cnName="蛇型采矿机" num="1" lifeMul="3" unitType="boss" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						
+						<event><condition delay="0.1" /></event>
+						<event><condition doNumber="1">liveEnemyNumber:less_1</condition><order>createUnit:e1; rEnemySpace</order></event>
+						<event><condition doNumber="1">liveEnemyNumber:less_1</condition><order>createUnit:e3; rEnemySpace</order></event>
+						<event><condition doNumber="1">liveEnemyNumber:less_1</condition><order>createUnit:e4; rEnemySpace</order></event>
+						
+								<event><condition delay="0">liveEnemyNumber:less_1</condition><order>createUnit:eShip; rHitMainSpace</order></event><event><condition doNumber="4" delay="2" /><order>createUnit:eShip; rHitMainSpace</order></event>
+
+						<event><condition doNumber="1">liveEnemyNumber:less_1</condition><order>createUnit:e6; rEnemySpace</order></event>
+								<event><condition delay="1" /><order>createUnit:eBoom; rHitMainSpace</order></event>
+						<event><condition doNumber="1">liveEnemyNumber:less_1</condition><order>createUnit:e7; rEnemySpace</order></event>
+								<event><condition delay="1" /><order>createUnit:eBoom; rHitMainSpace</order></event>
+						
+						<event><condition doNumber="1">liveEnemyNumber:less_1</condition><order>createUnit:e10; rEnemySpace</order></event>
+								<event><condition delay="1">liveEnemyNumber:less_1</condition><order>createUnit:eSaw; rHitMainSpace</order></event><event><condition doNumber="8" delay="0.5" /><order>createUnit:eSaw; rHitMainSpace</order></event>
+						<event><condition doNumber="1">liveEnemyNumber:less_1</condition><order>createUnit:e20; rEnemySpace</order></event>
+						
+								<event><condition delay="0">liveEnemyNumber:less_1</condition><order>createUnit:eShip; rHitMainSpace</order></event><event><condition doNumber="5" delay="2" /><order>createUnit:eShip; rHitMainSpace</order></event>
+
+						<event><condition doNumber="1">liveEnemyNumber:less_1</condition><order>createUnit:e30; rEnemySpace</order></event>
+						
+						<event><condition>liveEnemyNumber:less_1</condition><order>createUnit:eBoss; rHitMainSpace</order></event>
+						
+						<event>
+							<condition>enemyNumber:less_1</condition>
+							<order>task:GanymedeEnemy; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			
+			<level name="GanymedeCave_1">
+				
+				<info enemyLv="10" modeDiy="spaceSuit" overBackB="1" />
+				<drop noB="1" />
+				
+				<sceneLabel>GanymedeCave</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="e1">
+						<unit cnName="采矿球" num="6" />
+						<unit cnName="浮游矿锥" num="2" />
+						<unit cnName="采矿花" num="1" />
+					</unitOrder>
+					<unitOrder id="e7">
+						<unit cnName="采矿虫" num="1" />
+						<unit cnName="浮游矿锥" num="2" />
+						<unit cnName="矿场战机" num="2" />
+						<unit cnName="采矿花" num="1" />
+					</unitOrder>
+					
+					<unitOrder id="eBoss">
+						<unit cnName="黄金隼" num="1" lifeMul="4" dpsMul="0.3" unitType="boss" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						
+						<event><condition delay="0.1" /></event>
+						<event><condition doNumber="3">liveEnemyNumber:less_1</condition><order>createUnit:e1; rEnemySpace2</order></event>
+						<event><condition doNumber="3">liveEnemyNumber:less_1</condition><order>createUnit:e7; rEnemySpace2</order></event>
+						
+						<event><condition>liveEnemyNumber:less_1</condition><order>createUnit:eBoss; r123</order></event>
+						
+						
+						<event>
+							<condition>enemyNumber:less_1</condition>
+							<order>task:GanymedeEnemy; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			
+		</gather>
+	</father>
+</data>

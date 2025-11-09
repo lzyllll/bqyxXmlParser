@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="伏地尸">
+		<skill index="0" name="伏地尸-被硬直加速">
+			<name>addMove_Crawler</name>
+			<cnName>狂躁</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHurt</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>crazy</effectType>
+			<value>0</value>
+			<mul>2</mul>
+			<duration>10</duration>
+			<range>0</range>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>受到伤害时将变得狂躁，移动速度和伤害均提高1倍。</description>
+		</skill>
+		<skill index="0" cnName="喷射毒蛛">
+			<name>summonedSpider_Crawler</name>
+			<cnName>喷射毒蛛</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<minTriggerT>15</minTriggerT>
+			
+			<delay>0.3</delay>
+			
+			<conditionType>passive</conditionType>
+			<condition>beforeAttack</condition>
+			<otherConditionArr>nowImgLabel</otherConditionArr>
+			<conditionString>shootAttack</conditionString>.
+			<effectProArr>1</effectProArr>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>summonedUnits</effectType>
+			
+			<obj>"cnName":"毒蛛","num":5,"lifeMul":2,"dpsMul":2,"maxNum":10,"cx":-105,"cy":-43,"firstVx":10,"skillArr":["defenceBounce_enemy","State_AddMove"]</obj>
+			
+			<description>释放技能后，单位从嘴中喷出2只毒蛛。</description>
+		</skill>
+		<skill index="0" name="分身">
+			<name>Crawler_cloned</name>
+			<cnName>分身</cnName><iconUrl36>SkillIcon/cloned_36</iconUrl36>
+			<cd>30</cd><noInClonedB>1</noInClonedB>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>700</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>cloned</effectType>
+			<value>1</value>
+			<mul>0.25</mul>
+			<secMul>0.75</secMul>
+			<duration>16</duration>
+			
+			<meEffectImg soundUrl="sound/cloned_enemy" con="add">skillEffect/hiding_hero</meEffectImg>
+			<description>产生[value]个分身，攻击力与自身同等，血量为自身的[mul]，持续[duration]秒。</description>
+		</skill>
+	</father>
+	</data>

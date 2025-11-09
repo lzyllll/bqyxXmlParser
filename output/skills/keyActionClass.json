@@ -1,0 +1,158 @@
+{
+  "key": [
+    {
+      "name": "left",
+      "cnName": "向左",
+      "single": "A",
+      "p1": "DELETE",
+      "p2": "A"
+    },
+    {
+      "name": "right",
+      "cnName": "向右",
+      "single": "D",
+      "p1": "PAGE_DOWN",
+      "p2": "D"
+    },
+    {
+      "name": "up",
+      "cnName": "弹跳",
+      "single": "W",
+      "p1": "HOME",
+      "p2": "W"
+    },
+    {
+      "name": "down",
+      "cnName": "下蹲",
+      "single": "S",
+      "p1": "END",
+      "p2": "S"
+    },
+    {
+      "name": "nextArms",
+      "cnName": "换武器",
+      "single": "Q",
+      "p1": "INSERT",
+      "p2": "Q"
+    },
+    {
+      "name": "attack",
+      "cnName": "徒手攻击/载具",
+      "single": "E",
+      "p1": "PAGE_UP",
+      "p2": "E"
+    },
+    {
+      "name": "weapon",
+      "cnName": "副手攻击",
+      "single": "H",
+      "p1": "RIGHT",
+      "p2": "H",
+      "newB": true
+    },
+    {
+      "name": "changeCharger",
+      "cnName": "装载弹药",
+      "single": "R",
+      "p1": "BACKSLASH",
+      "p2": "R"
+    },
+    {
+      "name": "shoot",
+      "cnName": "射击",
+      "single": "mouse",
+      "p1": "mouse",
+      "p2": "J"
+    },
+    {
+      "name": "nextSay",
+      "cnName": "跳过对话/装置",
+      "single": "F",
+      "p1": "RIGHTBRACKET",
+      "p2": "F",
+      "newB": true
+    },
+    {
+      "name": "airLand",
+      "cnName": "飞行时装陆空切换",
+      "single": "I",
+      "p1": "CONTROL",
+      "p2": "I",
+      "newB": true
+    },
+    {
+      "name": "lifeBottle",
+      "pubB": true,
+      "cnName": "生命药瓶",
+      "single": "Z",
+      "p1": "UP",
+      "p2": ""
+    },
+    {
+      "name": "teamLifeBottle",
+      "pubB": true,
+      "cnName": "队友生命药瓶",
+      "single": "X",
+      "p1": "X",
+      "p2": ""
+    },
+    {
+      "name": "caisson",
+      "pubB": true,
+      "cnName": "弹药箱",
+      "single": "C",
+      "p1": "C",
+      "p2": ""
+    },
+    {
+      "name": "teamRebirthCard",
+      "pubB": true,
+      "cnName": "队友重生卡",
+      "single": "V",
+      "p1": "V",
+      "p2": ""
+    },
+    {
+      "name": "skillFleshCard",
+      "pubB": true,
+      "cnName": "技能刷新卡",
+      "single": "B",
+      "p1": "B",
+      "p2": ""
+    },
+    {
+      "name": "spaceToken",
+      "pubB": true,
+      "cnName": "时空令牌",
+      "single": "G",
+      "p1": "G",
+      "p2": ""
+    },
+    {
+      "name": "bossSumCard",
+      "pubB": true,
+      "cnName": "首领召唤卡",
+      "single": "H",
+      "p1": "H",
+      "p2": ""
+    },
+    {
+      "name": "ai",
+      "pubB": true,
+      "cnName": "AI战斗",
+      "single": "N",
+      "p1": "N",
+      "p2": ""
+    },
+    {
+      "name": "levelCount",
+      "pubB": true,
+      "cnName": "显示统计面板",
+      "single": "P",
+      "p1": "P",
+      "p2": ""
+    }
+  ],
+  "cn": "-1:鼠标;\n0:无;\n8:Backspace;\n9:Tab;\n20:CapsLock;\n16:Shift;\n17:Ctrl;\n32:空格;\n13:回车;\n45:Insert;\n36:Home;\n33:PageUp;\n46:Delete;\n35:End;\n34:PageDown;\n37:←;\n38:↑;\n39:→;\n40:↓;\n96:小键盘0;\n97:小键盘1;\n98:小键盘2;\n99:小键盘3;\n100:小键盘4;\n101:小键盘5;\n102:小键盘6;\n103:小键盘7;\n104:小键盘8;\n105:小键盘9;\n111:小键盘/;\n106:小键盘*;\n109:小键盘-;\n107:小键盘+;\n110:小键盘.;\n188:，;\n190:.;\n191:/;\n186:；;\n222:';\n219:[;\n221:];\n220:\\;\n189:-;\n187:=;\n192:~;",
+  "no": "112;\n\t\t113;\n\t\t114;\n\t\t115;\n\t\t116;\n\t\t117;\n\t\t118;\n\t\t119;\n\t\t120;\n\t\t121;\n\t\t122;\n\t\t123;\n\t\t91;\n\t\t145;\n\t\t19;\n\t\t144:数字开关;\n\t\t18;Alt;"
+}

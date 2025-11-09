@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	
+	<one cnName="海洋少将" name="sea" skill="outfit_follow">
+		
+		<must type="arms" partType="sniper" 		colorArr="orange,red"/>
+		<must type="arms" partType="shotgun" 	colorArr="orange,red"/>
+		<must type="arms" partType="rifle" 		colorArr="orange,red,black"/>
+		<must type="equip" partType="vehicle" 	nameArr="DesertTank,Daybreak,RedReaper,Prophet"/>	
+	</one>
+	<one cnName="天空少将" name="sky" skill="outfit_blood">
+		<must type="arms" partType="rifle" 		colorArr="orange,red"/>
+		<must type="arms" partType="rocket" 		colorArr="orange,red"/>
+		<must type="arms" partType="pistol" 		colorArr="orange,red,black"/>
+		<must type="equip" partType="vehicle" 	nameArr="BlueWhale,SeaShark,Punisher"/>	
+	</one>
+	
+	
+	<one cnName="霸虎无双" name="tigerNiubi" skill="outfit_shootMissile">
+		<must type="arms" partType="pistol" 		colorArr="red"/>
+		<must type="arms"  			nameArr="rifleWhite,rifleDragon" />
+		<must type="arms" partType="rocket" 		nameArr="rocketHummer" />
+		<must type="equip" partType="device" 		nameArr="earthquakeGenerator" lv="5"/>	
+	</one>
+	
+	<one cnName="捷豹无双" name="leopardNiubi" skill="outfit_jump">
+		<must type="arms"  		nameArr="pistolRed,pistolGod,pistolCabrite"/>
+		<must type="arms" partType="sniper" 		nameArr="sniperBlue" />
+		<must type="equip" partType="weapon" 		nameArr="butcherBlade" lv="3"/>	
+	</one>
+	<one cnName="血狮无双" name="lionNiubi" skill="outfit_crit">
+		<must type="arms" partType="pistol" 		colorArr="red"/>
+		<must type="arms"  		nameArr="sniperGreen,sniperSmilodon" />
+		<must type="equip" partType="device" 		nameArr="electricDevicer" lv="5"/>	
+	</one>
+	<one cnName="饿狼无双" name="wolfNiubi" skill="outfit_boom">
+		<must type="arms" partType="rifle" 		colorArr="red"/>
+		<must type="arms" nameArr="rocketSky,rocketMammoth,christmasGun,redFire" />
+		<must type="equip" partType="weapon" 		nameArr="wolongStick" lv="3"/>	
+	</one>
+	<one cnName="战鹰无双" name="eagleNiubi" skill="outfit_eagle">
+		<must type="arms" partType="shotgun" 		colorArr="black,darkgold,purgold,yagold"/>
+		<must type="arms" nameArr="beadCrossbow" />
+		<must type="arms" nameArr="rocketCate,redFire" />
+		<must type="equip" partType="device" 		nameArr="shuttleDevicer,skeletonWand,hookDevice" lv="1"/>
+	</one>
+	<one cnName="巨象无双" name="elephantNiubi" skill="outfit_elephant">
+		<must type="arms" partType="sniper" 		colorArr="black,darkgold,purgold,yagold"/>
+		<must type="arms" nameArr="erosionFlamer" />
+		<must type="arms" nameArr="shotgunBlade,ghostAxe" />
+		<must type="equip" partType="weapon" 		nameArr="saberDarts,sprintSword" lv="1"/>	
+	</one>
+	
+	<one cnName="沃龙无双" name="wolong" skill="outfit_wolong">
+		<must type="arms" nameArr="pistolGod,pistolFox" />
+		<must type="arms" nameArr="rifleWhite,rifleDragon,rifleHornet" />
+		<must type="arms" nameArr="sniperGreen,sniperCicada"/>
+		<must type="arms" nameArr="rocketSky,shotgunSkunk" />
+		<must type="equip" partType="vehicle" 	nameArr="Gaia,BlueMotoSec"/>	
+		<must type="equip" partType="fashion" 	nameArr="nightmare,bigBoss,xiaoJin,chinaCaptain2,armyCommander,neZha,wuKong"/>	
+	</one>
+</data>

@@ -1,0 +1,480 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="normal">
+		<gather>
+			<level name="beforeXiShan1">
+				
+				<info enemyLv="99" diff="2" allMoreB="1" noPetB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" />
+				<sceneLabel>MainUpland</sceneLabel>
+				<eventG>
+					<group>
+						<event><condition /><order>say; startList:s1</order></event>
+						<event><condition delay="0.1">say:listOver</condition></event>
+						<event>
+							<order>task:beforeXiShan1; complete</order>
+							<order>worldMap:unlock; XiShan1</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			
+			<level name="xiaohuXi1">
+				<info enemyLv="99" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" noDeviceB="1" mustSingleB="1" firstLostB="1" preSkillArr="" />
+				<fixed target="XiShan1_1" info="no" drop="no" unitG="before" rectG="all" eventG="no" />
+				<drop noB="1" />
+				
+				<sceneLabel>XiShan1</sceneLabel>
+				<unitG>
+					<unitOrder id="weMad" camp="we">
+						<unit cnName="战争狂人" lifeMul="6" dpsMul="5000" armsRange="meltFlamer,rifleHornet,sniperCicada,shotgunSkunk,pistolFox,redFire" skillArr="changeToMadboss,alloyShell_10,silverShield_8,hiding_hugePosion,State_SpellImmunity" />
+					</unitOrder>
+					<unitOrder id="weXiaohu" camp="we">
+						<unit cnName="小虎" aiOrder="followBodyAttack:p1" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>weAllHeroNoShoot</order><order>weAllHeroNoEquip</order>
+							<order>createUnit:weMad; r_birth</order><order>heroEverParasitic:战争狂人</order>
+						</event>
+						<event><order>openInput</order></event>
+						<event><condition delay="1" /><order>say; startList:s1</order></event>
+						<event><condition>say:listOver</condition></event><event><condition delay="1" /></event>
+						
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order><order>createUnit:enemy1; r3</order></event> 
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy2; r1</order><order>createUnit:enemy2; r2</order><order>createUnit:enemy2; r3</order></event> 
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy3; r1</order><order>createUnit:enemy3; r2</order><order>createUnit:enemy3; r3</order></event> 
+						<event><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition><order>createUnit:enemy4; r1</order><order>createUnit:enemy4; r2</order><order>createUnit:enemy4; r3</order></event> 
+						
+						<event><condition delay="1">enemyNumber:less_1</condition><order>createUnit:weXiaohu; r_birth</order></event>	
+						<event><condition delay="1" /><order>say; startList:s2</order></event>	
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>	
+					</group>
+					<group>
+						<event id="e_fail"><condition delay="1">bodyEvent:die; 战争狂人</condition><order>alert:yes; 任务失败！</order></event>
+						<event><condition delay="0.03" /><order>level; fail</order></event>
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="xiaohuXi2">
+				<info enemyLv="99" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" noDeviceB="1" mustSingleB="1" firstLostB="1" preSkillArr="" />
+				<fixed target="XiShan2_1" info="no" drop="no" unitG="before" rectG="all" eventG="no" />
+				<drop noB="1" />
+				
+				<sceneLabel>XiShan2</sceneLabel>
+				<unitG>
+					<unitOrder id="weMad" camp="we">
+						<unit cnName="战争狂人" lifeMul="1" dpsMul="5000" armsRange="meltFlamer,rifleHornet,sniperCicada,shotgunSkunk,pistolFox,redFire" skillArr="jumpNumAdd1,changeToMadboss,alloyShell_8,silverShield_8,hiding_hugePosion,State_SpellImmunity" />
+					</unitOrder>
+					<unitOrder id="weXiaohu" camp="we">
+						<unit cnName="小虎" aiOrder="followBodyAttack:p1" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>weAllHeroNoShoot</order><order>weAllHeroNoEquip</order>
+							<order>createUnit:weMad; r_birth</order><order>heroEverParasitic:战争狂人</order>
+						</event>
+						<event><order>openInput</order></event>
+						<event><condition delay="1" /><order>say; startList:s1</order></event>
+						<event><condition>say:listOver</condition></event><event><condition delay="1" /></event>
+						
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order><order>createUnit:enemy1; r3</order></event> 
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy2; r1</order><order>createUnit:enemy2; r2</order><order>createUnit:enemy2; r3</order></event> 
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy3; r1</order><order>createUnit:enemy3; r2</order><order>createUnit:enemy3; r3</order></event> 
+						<event><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition><order>createUnit:enemy4; r1</order><order>createUnit:enemy4; r2</order><order>createUnit:enemy4; r3</order></event> 
+						
+						<event><condition delay="1">enemyNumber:less_1</condition><order>createUnit:weXiaohu; r_birth</order></event>	
+						<event><condition delay="1" /><order>say; startList:s2</order></event>	
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>	
+					</group>
+					<group>
+						<event id="e_fail"><condition delay="1">bodyEvent:die; 战争狂人</condition><order>alert:yes; 任务失败！</order></event>
+						<event><condition delay="0.03" /><order>level; fail</order></event>
+					</group>
+				</eventG>
+			</level>
+			
+			
+			<level name="xiaohuXi3">
+				<info enemyLv="99" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" noDeviceB="1" mustSingleB="1" firstLostB="1" preSkillArr="" />
+				<drop noB="1" />
+				
+				<sceneLabel>XiShan3</sceneLabel>
+				<unitG><allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="weMad" camp="we">
+						<unit cnName="战争狂人" lifeMul="1" dpsMul="5000" skillArr="State_InvincibleThrough,State_noAiFind" dieGotoState="stru" />
+					</unitOrder>
+					<unitOrder id="weXiaohu" camp="we">
+						<unit cnName="小虎" lifeMul="1" dpsMul="5000" skillArr="jumpNumAdd1,State_SpellImmunity,noBulletReduct,slowMove_enemy,enemyEmp,moreBullet" />
+					</unitOrder>
+					
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="古惑僵尸" num="3" />
+						<unit cnName="矿工僵尸" num="3" />
+						<unit cnName="利爪僵尸" num="4" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>number</numberType>
+						<unit cnName="利爪僵尸" num="3" />
+						<unit cnName="古惑僵尸" num="8" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>number</numberType>
+						<unit cnName="古惑僵尸" num="5" />
+						<unit cnName="矿工僵尸" num="5" />
+						<unit cnName="利爪僵尸" num="5" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="利爪僵尸" unitType="boss" lifeMul="1.5" dpsMul="0.3" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>weAllHeroNoShoot</order><order>weAllHeroNoEquip</order>
+							<order>createUnit:weXiaohu; r_birth</order><order>heroEverParasitic:小虎</order>
+							<order>createUnit:weMad; r2</order>
+							<order>body:战争狂人; toDie</order>
+						</event>
+						<event><order>openInput</order></event>
+						<event><condition>bodyGap:less_350; 小虎:战争狂人</condition><order>say; startList:s1</order></event>
+						<event><condition>say:listOver</condition></event><event><condition delay="1" /></event>
+						
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order><order>createUnit:enemy1; r3</order></event> 
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy2; r1</order><order>createUnit:enemy2; r2</order><order>createUnit:enemy2; r3</order></event> 
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy3; r1</order><order>createUnit:enemy3; r2</order><order>createUnit:enemy3; r3</order></event> 
+						<event><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition><order>createUnit:enemy4; r1</order><order>createUnit:enemy4; r2</order><order>createUnit:enemy4; r3</order></event> 
+						
+						<event><condition delay="1">enemyNumber:less_1</condition><order>level; rebirthWeStruHero</order></event>	
+						<event><condition delay="1" /><order>say; startList:s2</order></event>	
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>	
+					</group>
+					<group>
+						<event id="e_fail"><condition delay="1">bodyEvent:die; 小虎</condition><order>alert:yes; 任务失败！</order></event>
+						<event><condition delay="0.03" /><order>level; fail</order></event>
+					</group>
+				</eventG>
+			</level>
+			
+			
+			<level name="xiaohuUpland">
+				
+				<info enemyLv="99" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" noDeviceB="1" mustSingleB="1" firstLostB="1" preSkillArr="" />
+				<sceneLabel>FutureUpland</sceneLabel>
+				
+				<unitG><allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="weZhang" camp="we">
+						<unit cnName="老章" armsRange="pistolCabrite" aiOrder="followBodyAttack:p1" />
+					</unitOrder>
+					<unitOrder id="weXiaohu" camp="we">
+						<unit cnName="小虎" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>weAllHeroNoShoot</order><order>weAllHeroNoEquip</order>
+							<order>createUnit:weXiaohu; r_birth</order><order>heroEverParasitic:小虎</order>
+							<order>createUnit:weZhang; r1</order>
+						</event>
+						<event><order>openInput</order></event>
+						<event><condition>bodyGap:less_350; 小虎:老章</condition><order>say; startList:s1</order></event>
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>	
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="xiaohuXi4">
+				<info enemyLv="99" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" noDeviceB="1" mustSingleB="1" firstLostB="1" preSkillArr="" />
+				<drop noB="1" />
+				
+				<sceneLabel>XiShan3</sceneLabel>
+				<unitG><allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="weMad" camp="we">
+						<unit cnName="战争狂人" lifeMul="0.3" dpsMul="3000" armsRange="meltFlamer,rifleHornet,sniperCicada,shotgunSkunk,pistolFox,redFire" skillArr="crazy_hero_5,jumpNumAdd1,changeToMadboss,alloyShell_8,silverShield_8,hiding_hugePosion,State_SpellImmunity" />
+					</unitOrder>
+					<unitOrder id="weXiaohu" camp="we">
+						<unit cnName="小虎" lifeMul="0.5" dpsMul="1000" skillArr="State_SpellImmunity,noBulletReduct,slowMove_enemy,enemyEmp,moreBullet" dieGotoState="stru" />
+					</unitOrder>
+					
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="古惑僵尸" num="3" />
+						<unit cnName="矿工僵尸" num="3" />
+						<unit cnName="利爪僵尸" num="4" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>number</numberType>
+						<unit cnName="利爪僵尸" num="3" />
+						<unit cnName="古惑僵尸" num="8" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>number</numberType>
+						<unit cnName="古惑僵尸" num="5" />
+						<unit cnName="矿工僵尸" num="5" />
+						<unit cnName="利爪僵尸" num="5" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="大地掠袭者" unitType="boss" lifeMul="2" dpsMul="3" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>weAllHeroNoShoot</order><order>weAllHeroNoEquip</order>
+							<order>createUnit:weMad; r_birth</order><order>heroEverParasitic:战争狂人</order>
+							<order>createUnit:weXiaohu; r_birth</order>
+						</event>
+						<event><order>openInput</order></event>
+						<event><order>say; startList:s1</order></event>
+						<event><condition>say:listOver</condition></event><event><condition delay="1" /></event>
+						
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order><order>createUnit:enemy1; r3</order></event> 
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy2; r1</order><order>createUnit:enemy2; r2</order><order>createUnit:enemy2; r3</order></event> 
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy3; r1</order><order>createUnit:enemy3; r2</order><order>createUnit:enemy3; r3</order></event> 
+						<event><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition><order>createUnit:enemy4; r1</order><order>createUnit:enemy4; r2</order><order>createUnit:enemy4; r3</order></event> 
+						
+						<event><condition delay="1">enemyNumber:less_1</condition><order>level; rebirthWeStruHero</order></event>	
+						<event><condition delay="1" /><order>say; startList:s2</order></event>	
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>body:战争狂人; ai:patrolRandom</order>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>	
+					</group>
+					<group>
+						<event id="e_fail"><condition delay="1">bodyEvent:die; 战争狂人</condition><order>alert:yes; 任务失败！</order></event>
+						<event><condition delay="0.03" /><order>level; fail</order></event>
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="xiaohuXi5">
+				<info enemyLv="99" />
+				<fixed target="XiShan4_1" info="no" drop="no" unitG="before" rectG="all" eventG="no" />
+				<drop noB="1" />
+				
+				<sceneLabel>XiShan3</sceneLabel>
+				<unitG><allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="weXiaohu" camp="we">
+						<unit cnName="小虎" lifeMul="0.3" dpsMul="100" skillArr="State_SpellImmunity,noBulletReduct,slowMove_enemy,enemyEmp,moreBullet" aiOrder="followBodyAttack:p1" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event><condition doNumber="1">liveEnemyNumber:less_2</condition><order>createUnit:enemy1; r1</order><order>createUnit:weXiaohu; r1</order></event> 
+						<event><condition doNumber="3">liveEnemyNumber:less_2</condition><order>createUnit:enemy2; r123</order></event> 
+						<event><condition doNumber="3">liveEnemyNumber:less_2</condition><order>createUnit:enemy3; r123</order></event> 
+						<event><condition doNumber="1">enemyNumber:less_1</condition><order>createUnit:enemy4; r123</order></event> 
+						
+						<event><condition delay="1">enemyNumber:less_1</condition><order>level; rebirthWeStruHero</order><order>body:小虎; ai:no</order></event>	
+						<event><condition delay="1" /><order>say; startList:s2</order></event>	
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>body:藏师将军; ai:patrolRandom</order>
+							<order>body:小虎; followBody:p1</order>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>	
+					</group>
+					<group>
+						<event id="e_fail"><condition delay="1">bodyEvent:die; 小虎</condition><order>alert:yes; 任务失败！</order></event>
+						<event><condition delay="0.03" /><order>level; fail</order></event>
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="xiaohuXi6">
+				<info enemyLv="99" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" noDeviceB="1" mustSingleB="1" firstLostB="1" preSkillArr="blackHoleDevicer_1" />
+				<drop noB="1" />
+				
+				<sceneLabel>XiShan1</sceneLabel>
+				<unitG>
+					<unitOrder id="weMad" camp="we">
+						<unit cnName="战争狂人" lifeMul="0.5" dpsMul="5000" armsRange="meltFlamer,rifleHornet,sniperCicada,shotgunSkunk,pistolFox,redFire" skillArr="jumpNumAdd1,changeToMadboss,alloyShell_8,silverShield_8,hiding_hugePosion,State_SpellImmunity" />
+					</unitOrder>
+					<unitOrder id="weShip" camp="we">
+						<unit cnName="大幻银" aiOrder="followBody:战争狂人" />
+					</unitOrder>
+					
+					<unitOrder id="weZang">
+						<unit cnName="藏师将军" lifeMul="8" unitType="boss" armsRange="sniperCicada,yearDragon,extremeGun" skillArr="crazy_hero_7,hiding_hero_4" dieGotoState="stru" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>weAllHeroNoShoot</order><order>weAllHeroNoEquip</order>
+							<order>createUnit:weMad; r_birth</order><order>heroEverParasitic:战争狂人</order>
+							<order>createUnit:weZang; r3</order>
+						</event>
+						<event><order>openInput</order></event>
+						<event><condition delay="1" /><order>say; startList:s1</order></event>
+						<event><condition>say:listOver</condition></event>
+						<event><condition delay="0.1" /></event>
+						
+						<event><condition delay="0.1">liveEnemyNumber:less_1</condition></event>	
+						<event><condition delay="0.1" /><order>say; startList:s2</order></event>	
+						<event><condition delay="2">say:listOver</condition><order>createUnit:weShip; rEnemySpace</order></event>
+						<event><condition delay="1" /><order>say; startList:s3</order></event>	
+						
+						<event><condition>say:listOver</condition><order>body:大幻银; ai:no</order></event>
+						<event><condition>bodyGap:less_100; 大幻银:战争狂人</condition><order>hideBody:战争狂人</order><order>everParasitic:战争狂人; 大幻银</order><order>say; startList:s4</order></event>
+						
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>task:now; complete</order>
+							
+							<order>level; showPointer:r_over</order>
+						</event>	
+						<event>
+							<condition delay="2" />
+							<order>level; win</order>
+						</event>	
+						
+					</group>
+					<group>
+						<event id="e_fail"><condition delay="1">bodyEvent:die; 战争狂人</condition><order>alert:yes; 任务失败！</order></event>
+						<event><condition delay="0.03" /><order>level; fail</order></event>
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="xiaohuUpland2">
+				
+				<info enemyLv="99" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" noDeviceB="1" mustSingleB="1" firstLostB="1" preSkillArr="" />
+				<sceneLabel>FutureUpland</sceneLabel>
+				
+				<unitG><allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="weZhang" camp="we">
+						<unit cnName="老章" armsRange="pistolCabrite" />
+					</unitOrder>
+					<unitOrder id="weXiaohu" camp="we">
+						<unit cnName="小虎" aiOrder="followBodyAttack:心零" />
+						<unit cnName="心零" aiOrder="followBodyAttack:老章" />
+					</unitOrder>
+				</unitG>
+				<rectG>
+					<rect id="birth2">257,600,41,41</rect>
+					<rect id="birth4">1928,600,41,41</rect>
+				</rectG>
+				
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>weAllHeroNoShoot</order><order>weAllHeroNoEquip</order>
+							<order>createUnit:weZhang; birth2</order><order>heroEverParasitic:老章</order>
+						</event>
+						<event><order>openInput</order></event>
+						<event><condition delay="1" /><order>say; startList:s1</order></event>
+						<event>
+							<condition delay="1">say:listOver</condition>
+							<order>createUnit:weXiaohu; birth4</order>
+							<order>clearHeroParasitic</order>
+							<order>heroEverParasitic:心零</order>
+						</event>
+						<event><condition delay="0.1" /><order>say; startList:s2</order></event>
+						<event><condition delay="0.1">say:listOver</condition></event>		
+						<event><condition>bodyGap:less_350; 小虎:老章</condition><order>say; startList:s3</order></event>
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>	
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="xiaohuXi7">
+				
+				<info enemyLv="99" allMoreB="1" />
+				<sceneLabel>XiShan1</sceneLabel>
+				
+				<unitG><allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="weXiaohu" camp="we">
+						<unit cnName="小虎" aiOrder="followBodyAttack:心零" />
+					</unitOrder>
+					<unitOrder id="weShip" camp="we">
+						<unit cnName="大幻银" aiOrder="followBody:藏师将军" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>createUnit:weXiaohu; r_birth</order>
+							<order>body:藏师将军; toStru</order>
+							<order>body:藏师将军; movePoint:2544,631</order>
+						</event>
+						<event><condition>bodyGap:less_350; 藏师将军:p1</condition><order>say; startList:s1</order></event>
+						<event><condition delay="2">say:listOver</condition><order>createUnit:weShip; rEnemySpace</order><order>level; rebirthWeStruHero</order></event>
+						<event><condition delay="0.1" /><order>say; startList:s2</order></event>	
+						<event><condition delay="1">say:listOver</condition></event>
+						<event><condition>bodyGap:less_350; 藏师将军:大幻银</condition><order>body:大幻银; ai:no</order><order>say; startList:s3</order></event>
+						
+						
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>body:小虎; ai:no</order>
+							<order>body:大幻银; followBody:藏师将军</order>
+							
+						</event>	
+						<event>
+							<condition delay="2" />
+							<order>level; shake:beatMadboss</order>
+						</event>	
+						<event>
+							<condition delay="1" />
+							<order>say; startList:s4</order>
+						</event>	
+						<event>
+							<condition delay="1">say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>	
+					</group>
+				</eventG>
+			</level>
+		</gather>
+	</father>
+</data>

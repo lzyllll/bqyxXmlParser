@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="异角龙">		
+		<bullet cnName="异角龙-喷毒">
+			<name>Triceratops_poison</name>
+			<cnName>异角龙-喷毒</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>-170</bulletAngle>
+			<shakeAngle>15</shakeAngle>
+			<bulletAngleRange>20</bulletAngleRange>
+			<bulletLife>3</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.8</attackGap>
+			<attackDelay>0.4</attackDelay>
+			<bulletNum>3</bulletNum>				
+			<shootAngle>6</shootAngle>					
+			<shootPoint>-124,-100</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<bulletSpeed>15</bulletSpeed>
+			<speedD random="0.2" max="15" min="10" a="-15" />
+			<gravity>0.1</gravity>
+			
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">skillEffect/poisonClaw_enemy</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="sound/water_hit">boomEffect/posion1</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">skillEffect/poisonClaw_enemy</smokeImgUrl>
+		</bullet>
+		<bullet cnName="异角龙-石头">
+			<name>Triceratops_shoot</name>
+			<cnName>异角龙-石头</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>-170</bulletAngle>
+			<bulletAngleRange>10</bulletAngleRange>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.8</attackGap>
+			<attackDelay>0.53</attackDelay>
+			<bulletNum>3</bulletNum>				
+			<shootAngle>3</shootAngle>					
+			<shootPoint>-174,-17</shootPoint>
+			<speedD random="0.5" max="30" min="20" />
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<bulletSpeed>15</bulletSpeed>
+			<gravity>0.2</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>skillEffect/imploding_enemy_bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/smallBoom">boomEffect/boom1</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+		</bullet>
+		<bullet cnName="异角龙-巨石崩塌">
+			<name>Triceratops_stone</name>
+			<cnName>异角龙-巨石崩塌</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			<attackType>holy</attackType>
+			
+			<bulletAngle>90</bulletAngle>
+			<bulletLife>15</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<bulletNum>1</bulletNum>				
+			<speedD random="0.07" max="10" min="8" />
+				
+			<penetrationGap>1000</penetrationGap>
+			<twoHitGap>0.5</twoHitGap>
+			<twoHitSameNameB>1</twoHitSameNameB>
+				
+			<bulletSpeed>9</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>skillEffect/imploding_enemy_bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/smallBoom">boomEffect/boom1</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+		</bullet>
+	</father>
+	
+	</data>

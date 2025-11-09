@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill_link">
+		<skill index="1" name="湿身-狙击枪伤害提升">
+			<name>waterFlamer_sniper</name><noRandomListB>1</noRandomListB>
+			<cnName>湿身-狙击枪伤害提升</cnName><ignoreNoSkillB>1</ignoreNoSkillB><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt_gunType</effectType>
+			<valueString>sniper</valueString>
+			<mul>1.5</mul>
+			<duration>2</duration>
+		</skill>
+	</father>
+</data>

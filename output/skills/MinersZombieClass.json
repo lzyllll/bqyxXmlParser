@@ -1,0 +1,240 @@
+{
+  "father": {
+    "name": "enemy",
+    "skills": {
+      "MinersZombie": {
+        "name": "MinersZombie",
+        "cnName": "矿工僵尸",
+        "headIconUrl": "IconGather/MinersZombie",
+        "raceType": "zombies",
+        "swfUrl": "swf/enemy/MinersZombie340.swf",
+        "lifeRatio": 1.2,
+        "rosRatio": 0.2,
+        "showLevel": 999,
+        "imgArr": "stand,move,run\n\t\t\t\t,normalAttack,shootAttack\n\t\t\t\t,sprintAttack,magicAttack\n\t\t\t\t,hurt1,hurt2,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+        "bossImgArr": "sprintAttack,magicAttack",
+        "hitRect": "-14,-76,28,76",
+        "maxJumpNum": 1,
+        "maxVx": 6,
+        "nextAttackTime": 0,
+        "extraAIClassLabel": null,
+        "avtiveSkillCdOverT": 0,
+        "skillArr": "reflectiveShell,noBounce_enemy,MinersZombieBuff",
+        "bossSkillArr": "minersSprint,minersShake,meteoriteRain,weaponDefence,moreBullet,State_SpellImmunity,toLand",
+        "bossSkillArrCn": null,
+        "hurtArr": {
+          "hurt": [
+            {
+              "imgLabel": "normalAttack",
+              "cn": "镐击",
+              "hurtRatio": 2,
+              "shakeValue": 4,
+              "attackType": "direct",
+              "skillArr": null,
+              "hitImgUrl": {
+                "name": "oreWormHit"
+              }
+            },
+            {
+              "imgLabel": "shootAttack",
+              "cn": "飞镐",
+              "bulletLabel": "MinersZombie_1",
+              "grapRect": "-450,-111,350,105",
+              "hurtRatio": 1.5,
+              "attackType": "holy"
+            },
+            {
+              "info": "不加入ai选择",
+              "imgLabel": "sprintAttack",
+              "noAiChooseB": 1,
+              "grapRect": "-450,-111,350,105",
+              "hurtRatio": 1e-09,
+              "hurtMul": 0.04,
+              "attackType": "holy",
+              "hitImgUrl": {
+                "name": "oreWormHit"
+              },
+              "skillArr": "minersSprintHit,offPassSkill"
+            },
+            {
+              "info": "不加入ai选择",
+              "imgLabel": "magicAttack",
+              "noAiChooseB": 1,
+              "grapRect": "-450,-111,350,105",
+              "hurtRatio": 1e-09,
+              "hurtMul": 0.45,
+              "attackType": "holy",
+              "skillArr": null
+            }
+          ]
+        }
+      },
+      "MinersZombie_1": {
+        "name": "MinersZombie_1",
+        "cnName": "飞镐",
+        "shakeAngle": 5,
+        "bulletLife": 3,
+        "bulletWidth": 40,
+        "hitType": "rect",
+        "attackGap": 0.7,
+        "attackDelay": 0.5,
+        "bulletAngle": -179,
+        "bulletAngleRange": 70,
+        "shootPoint": "-71,-84",
+        "bulletSpeed": 12,
+        "penetrationGap": 1000,
+        "skillArr": null,
+        "flipX": 1,
+        "bulletImgUrl": "MinersZombie/bullet",
+        "smokeImgUrl": {
+          "value": "MinersZombie/bulletSmoke",
+          "con": "filter"
+        },
+        "hitImgUrl": {
+          "name": "oreWormHit"
+        }
+      },
+      "MinersZombieBuff": {
+        "name": "MinersZombieBuff",
+        "cnName": "矿工僵尸buff",
+        "ignoreSilenceB": 1,
+        "ignoreNoSkillB": 1,
+        "everNoClearB": 1,
+        "noBeClearB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "conditionType": "passive",
+        "condition": "bodyAdd",
+        "target": "me",
+        "addType": "state",
+        "effectType": "MinersZombieBuff",
+        "duration": 9999999
+      },
+      "minersSprint": {
+        "cnName": "致命冲刺",
+        "name": "minersSprint",
+        "iconUrl36": "SkillIcon/GasDefenseShake_36",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "noBeClearB": 1,
+        "noSkillDodgeB": 1,
+        "cd": 9,
+        "delay": 0.1,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "target": "me,range,enemy",
+        "addType": "instant",
+        "effectType": "no",
+        "duration": 2,
+        "range": 999999,
+        "meEffectImg": {
+          "soundUrl": "sound/silence_enemy"
+        },
+        "stateEffectImg": {
+          "value": "skillEffect/silenceMore",
+          "partType": "mouth",
+          "con": "add"
+        },
+        "meActionLabel": "sprintAttack",
+        "description": "矿工僵尸瞬移到敌人面前，并给目标一致命冲刺，击中敌人时封锁其被动技能。"
+      },
+      "minersSprintHit": {
+        "name": "minersSprintHit",
+        "cnName": "冲刺碰撞",
+        "ignoreSilenceB": 1,
+        "ignoreNoSkillB": 1,
+        "noBeClearB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "conditionType": "passive",
+        "condition": "hit",
+        "otherConditionArr": "hurtIsAttack",
+        "target": "target",
+        "addType": "state",
+        "effectType": "minersSprintHit",
+        "duration": 0.1
+      },
+      "minersShake": {
+        "cnName": "地震",
+        "name": "minersShake",
+        "iconUrl36": null,
+        "ignoreNoSkillB": 1,
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "noBeClearB": 1,
+        "noSkillDodgeB": 1,
+        "cd": 14,
+        "delay": 0.3,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "target": "me",
+        "addType": "state",
+        "effectType": "bullet_minersShake",
+        "duration": 6,
+        "obj": {
+          "name": "minersShakeBullet"
+        },
+        "mul": 0.3,
+        "range": 400,
+        "intervalT": 0.5,
+        "stateEffectImg": {
+          "name": "minersShake"
+        },
+        "pointEffectImg": {
+          "name": "minersShakeBody"
+        },
+        "meActionLabel": "magicAttack",
+        "description": "矿工僵尸开启自身的地震发生器，每过[intervalT]秒震一次地面，对附近的敌人造成重大伤害，持续[duration]秒。"
+      },
+      "minersShakeBullet": {
+        "cnName": "矿工僵尸-地震",
+        "name": "minersShakeBullet",
+        "hurtRatio": 0,
+        "hurtMul": 0.05,
+        "attackType": "holy",
+        "noMagneticB": 1,
+        "shakeAngle": 5,
+        "bulletLife": 0.01,
+        "bulletWidth": 50,
+        "hitType": "rect",
+        "attackGap": 0,
+        "attackDelay": 0,
+        "bulletAngle": 270,
+        "bulletNum": 1,
+        "penetrationGap": 1000,
+        "penetrationNum": 999,
+        "shootPoint": "0,0",
+        "bulletSpeed": 0,
+        "imgClearDelay": 0.3,
+        "bulletImgUrl": "boomEffect/blackBoom",
+        "hitImgUrl": {
+          "value": "bladeHitEffect/blood",
+          "con": "add",
+          "soundUrl": "sound/body_hit"
+        }
+      },
+      "reflectiveShell": {
+        "name": "reflectiveShell",
+        "cnName": "反光服",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "noBeClearB": 1,
+        "conditionType": "passive",
+        "condition": "underHit",
+        "otherConditionArr": "hurtArmsType",
+        "conditionString": "laser",
+        "target": "target",
+        "addType": "state",
+        "effectType": "lostPro",
+        "mul": 0.1,
+        "duration": 1,
+        "stateEffectImg": {
+          "name": "blindnessPhantomHit_state"
+        },
+        "description": "受到激光枪攻击时，反光服将激光发射到攻击者的眼中，使其致盲，攻击成功率降低[mul]，持续[duration]秒。"
+      }
+    }
+  }
+}

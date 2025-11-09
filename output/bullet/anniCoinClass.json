@@ -1,0 +1,437 @@
+{
+  "father": {
+    "name": "anniCoin",
+    "cnName": "纪念币",
+    "priceType": "anniCoin",
+    "labelArr": "all",
+    "type": {
+      "goods": [
+        {
+          "defineLabel": "rainGun",
+          "price": 5,
+          "dayBuyLimitNum": 2,
+          "buyLimitNum": 100,
+          "fixedLimitB": true
+        },
+        {
+          "defineLabel": "vehicleCash",
+          "price": 2,
+          "dayBuyLimitNum": 20,
+          "fixedLimitB": true
+        },
+        {
+          "defineLabel": "ghostStone",
+          "price": 15,
+          "dayBuyLimitNum": 2,
+          "fixedLimitB": true
+        },
+        {
+          "dataType": "base",
+          "defineLabel": "partsCoin",
+          "price": 2,
+          "dayBuyLimitNum": 5,
+          "buyLimitNum": 100,
+          "fixedLimitB": true
+        },
+        {
+          "defineLabel": "longGlasses_1",
+          "price": 20,
+          "buyLimitNum": 10,
+          "fixedLimitB": true
+        },
+        {
+          "defineLabel": "partsChest78",
+          "price": 10,
+          "dayBuyLimitNum": 2
+        },
+        {
+          "dataType": "base",
+          "defineLabel": "tenCoin",
+          "price": 2,
+          "dayBuyLimitNum": 200,
+          "buyLimitNum": 4500,
+          "fixedLimitB": true
+        },
+        {
+          "defineLabel": "intensDrug",
+          "price": 3,
+          "buyLimitNum": 100,
+          "fixedLimitB": true
+        },
+        {
+          "defineLabel": "teddyBear",
+          "price": 10,
+          "dayBuyLimitNum": 1,
+          "buyLimitNum": 30,
+          "fixedLimitB": true
+        },
+        {
+          "defineLabel": "greedySnake",
+          "price": 5,
+          "dayBuyLimitNum": 5,
+          "buyLimitNum": 100,
+          "fixedLimitB": true
+        },
+        {
+          "defineLabel": "barrenAwn",
+          "price": 5,
+          "dayBuyLimitNum": 3,
+          "buyLimitNum": 260,
+          "fixedLimitB": true
+        },
+        {
+          "defineLabel": "firstArmsBox",
+          "price": 1
+        },
+        {
+          "dataType": "fashion",
+          "inBagType": "equip",
+          "defineLabel": "dragonHead",
+          "price": 90,
+          "limitOneB": true
+        },
+        {
+          "defineLabel": "iceCone",
+          "price": 2,
+          "dayBuyLimitNum": 7,
+          "buyLimitNum": 180,
+          "fixedLimitB": true
+        },
+        {
+          "defineLabel": "soldiersStamp",
+          "price": 3,
+          "dayBuyLimitNum": 3
+        },
+        {
+          "defineLabel": "lightCone",
+          "price": 7,
+          "buyLimitNum": 60,
+          "fixedLimitB": true
+        },
+        {
+          "defineLabel": "workerHead",
+          "price": 8,
+          "buyLimitNum": 10,
+          "fixedLimitB": true
+        },
+        {
+          "defineLabel": "skyArch",
+          "price": 3,
+          "dayBuyLimitNum": 7
+        },
+        {
+          "defineLabel": "lily",
+          "price": 3,
+          "dayBuyLimitNum": 1
+        },
+        {
+          "defineLabel": "possession_heroChip",
+          "price": 3,
+          "buyLimitNum": 140,
+          "fixedLimitB": true
+        },
+        {
+          "defineLabel": "skeletonMedal_1",
+          "price": 1,
+          "buyLimitNum": 15
+        },
+        {
+          "defineLabel": "pianoGun",
+          "price": 2,
+          "buyLimitNum": 40
+        },
+        {
+          "defineLabel": "yearMonkey",
+          "price": 2,
+          "buyLimitNum": 65
+        },
+        {
+          "defineLabel": "yearRabbit",
+          "price": 2,
+          "buyLimitNum": 50
+        },
+        {
+          "defineLabel": "yearMouse",
+          "price": 3,
+          "buyLimitNum": 50
+        },
+        {
+          "defineLabel": "yearSnake",
+          "price": 2,
+          "buyLimitNum": 100
+        },
+        {
+          "defineLabel": "yearHourse",
+          "price": 3,
+          "buyLimitNum": 50
+        },
+        {
+          "defineLabel": "yearDog",
+          "price": 2,
+          "buyLimitNum": 50
+        },
+        {
+          "defineLabel": "yearPig",
+          "price": 2,
+          "buyLimitNum": 50
+        },
+        {
+          "defineLabel": "yearCattle",
+          "price": 2,
+          "buyLimitNum": 50
+        },
+        {
+          "defineLabel": "alertGem",
+          "price": 1,
+          "buyLimitNum": 150
+        },
+        {
+          "defineLabel": "wisdomGem",
+          "price": 1,
+          "buyLimitNum": 150
+        },
+        {
+          "defineLabel": "agileGem",
+          "price": 1,
+          "buyLimitNum": 150
+        },
+        {
+          "defineLabel": "defenceGem",
+          "price": 1,
+          "buyLimitNum": 150
+        },
+        {
+          "defineLabel": "fireGem",
+          "price": 1,
+          "buyLimitNum": 150
+        },
+        {
+          "defineLabel": "electricGem",
+          "price": 1,
+          "buyLimitNum": 150
+        },
+        {
+          "defineLabel": "frozenGem",
+          "price": 1,
+          "buyLimitNum": 300
+        },
+        {
+          "defineLabel": "poisonGem",
+          "price": 1,
+          "buyLimitNum": 150
+        },
+        {
+          "dataType": "parts",
+          "defineLabel": "huntParts_1",
+          "price": 2,
+          "buyLimitNum": 130
+        },
+        {
+          "dataType": "parts",
+          "defineLabel": "acidicParts_1",
+          "price": 2,
+          "buyLimitNum": 130
+        },
+        {
+          "defineLabel": "normalChest",
+          "price": 8,
+          "buyLimitNum": 50
+        },
+        {
+          "defineLabel": "magicChest",
+          "price": 8,
+          "buyLimitNum": 50
+        },
+        {
+          "defineLabel": "dragonChest",
+          "price": 8,
+          "buyLimitNum": 50
+        },
+        {
+          "defineLabel": "tigerChest",
+          "price": 8,
+          "buyLimitNum": 80
+        },
+        {
+          "defineLabel": "artifactChest",
+          "price": 4,
+          "buyLimitNum": 100
+        },
+        {
+          "defineLabel": "allBlackCash",
+          "price": 1,
+          "buyLimitNum": 500
+        },
+        {
+          "defineLabel": "allBlackEquipCash",
+          "price": 1,
+          "buyLimitNum": 500
+        },
+        {
+          "defineLabel": "armsRadium",
+          "num": 2,
+          "price": 1,
+          "buyLimitNum": 500
+        },
+        {
+          "defineLabel": "armsTitanium",
+          "num": 2,
+          "price": 1,
+          "buyLimitNum": 500
+        },
+        {
+          "defineLabel": "redFire",
+          "price": 3,
+          "buyLimitNum": 125
+        },
+        {
+          "defineLabel": "meltFlamer",
+          "price": 3,
+          "buyLimitNum": 125
+        },
+        {
+          "defineLabel": "rocketCate",
+          "price": 3,
+          "buyLimitNum": 250,
+          "fixedLimitB": true
+        },
+        {
+          "defineLabel": "beadCrossbow",
+          "price": 3,
+          "buyLimitNum": 125
+        },
+        {
+          "defineLabel": "erosionFlamer",
+          "price": 3,
+          "buyLimitNum": 125
+        },
+        {
+          "defineLabel": "AircraftGunCash",
+          "price": 3,
+          "buyLimitNum": 125
+        },
+        {
+          "defineLabel": "oracleSuit_head",
+          "price": 3,
+          "buyLimitNum": 125
+        },
+        {
+          "defineLabel": "oracleSuit_coat",
+          "price": 3,
+          "buyLimitNum": 125
+        },
+        {
+          "defineLabel": "oracleSuit_belt",
+          "price": 3,
+          "buyLimitNum": 125
+        },
+        {
+          "defineLabel": "strengthenStone",
+          "price": 3,
+          "num": 5
+        },
+        {
+          "defineLabel": "bloodStone",
+          "price": 3,
+          "num": 5
+        },
+        {
+          "defineLabel": "armsEchelonCard",
+          "price": 3,
+          "num": 5,
+          "buyLimitNum": 100
+        },
+        {
+          "defineLabel": "highArmsEchelonCard",
+          "price": 2,
+          "buyLimitNum": 75
+        },
+        {
+          "defineLabel": "ultiArmsEchelonCard",
+          "price": 8,
+          "buyLimitNum": 12
+        },
+        {
+          "defineLabel": "equipEchelonCard",
+          "price": 3,
+          "num": 5,
+          "buyLimitNum": 100
+        },
+        {
+          "defineLabel": "highEquipEchelonCard",
+          "price": 2,
+          "buyLimitNum": 75
+        },
+        {
+          "defineLabel": "ultiEquipEchelonCard",
+          "price": 8,
+          "buyLimitNum": 12
+        },
+        {
+          "defineLabel": "weaponChest",
+          "price": 2,
+          "buyLimitNum": 250
+        },
+        {
+          "defineLabel": "deviceChest",
+          "price": 2,
+          "buyLimitNum": 250
+        },
+        {
+          "defineLabel": "converStone",
+          "price": 1,
+          "num": 12
+        },
+        {
+          "defineLabel": "godStone",
+          "price": 1,
+          "num": 12
+        },
+        {
+          "defineLabel": "skillStone",
+          "price": 1,
+          "num": 24
+        },
+        {
+          "defineLabel": "lightStone",
+          "price": 3,
+          "num": 5
+        },
+        {
+          "defineLabel": "fineStone",
+          "price": 3
+        },
+        {
+          "defineLabel": "moonCake",
+          "price": 30,
+          "buyLimitNum": 5,
+          "fixedLimitB": true
+        },
+        {
+          "defineLabel": "tangyuan",
+          "price": 20,
+          "buyLimitNum": 5,
+          "fixedLimitB": true
+        },
+        {
+          "defineLabel": "jiaozi",
+          "price": 20,
+          "buyLimitNum": 5,
+          "fixedLimitB": true
+        },
+        {
+          "defineLabel": "nineCake",
+          "price": 20,
+          "buyLimitNum": 5,
+          "fixedLimitB": true
+        },
+        {
+          "defineLabel": "bagGridCard",
+          "price": 10,
+          "buyLimitNum": 18,
+          "fixedLimitB": true
+        }
+      ]
+    }
+  }
+}

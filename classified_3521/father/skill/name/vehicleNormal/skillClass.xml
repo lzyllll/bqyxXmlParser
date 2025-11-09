@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicleNormal" cnName="载具技能">	
+		<skill cnName="挖掘者-动能推撞">
+			<name>highDrill</name>
+			<cnName>动能推撞</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeedAllStop</effectType>
+			<mul>0</mul>
+			<duration>1</duration>
+			 
+			<description />
+		</skill>
+		<skill cnName="挖掘者-超能推撞">
+			<name>superHighDrill</name>
+			<cnName>超能推撞</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeedAllStop</effectType>
+			<mul>0</mul>
+			<duration>3</duration>
+			 
+			<stateEffectImg partType="arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="filter" raNum="30">skillEffect/redFire</stateEffectImg>
+			<description />
+		</skill>
+		<skill cnName="挖掘者-动能推撞-推">
+			<name>highDrillHit</name>
+			<cnName>挖掘者-动能推撞-推</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>highDrillHit</effectType>
+			 
+			<description />
+		</skill>	
+		
+		
+	</father>
+	
+	</data>

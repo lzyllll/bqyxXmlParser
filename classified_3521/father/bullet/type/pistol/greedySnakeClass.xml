@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="pistol" cnName="手枪">
+		<bullet name="greedySnake" color="black" dropLevelArr="999" evoB="0" composeLv="97" chipB="1" chipNum="100">
+			<name>greedySnake</name>
+			<cnName>贪吃蛇</cnName>
+			
+			<capacity>30</capacity>
+			<attackGap>0.4</attackGap>
+			<reloadGap>2.5</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>40</bulletWidth>
+			<bulletNum>1</bulletNum>				
+			
+			<twoShootPro>0</twoShootPro>
+			<penetrationNum>10</penetrationNum>
+			<penetrationGap>1000</penetrationGap>
+			<bounceD floor="0" body="0" />	
+			
+			<skillArr>Hit_SlowMove_ArmsSkill,Hit_disabled_ArmsSkill</skillArr>
+			<godSkillArr>editBulletPath,greedySnakeSkill</godSkillArr>
+			
+			<dpsMul>0.4</dpsMul>
+			<uiDpsMul>0.5</uiDpsMul>
+			<hurtRatio>1</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>1.05</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>0</upValue>
+			<shootShakeAngle>15</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			<oneHitBodyB>1</oneHitBodyB>
+			
+			<bulletSpeed>20</bulletSpeed>
+			<bulletLife>5</bulletLife>
+			<hitType>rect</hitType>
+			
+			.
+			<shootSoundUrl>specialGun/greedySnakeSound</shootSoundUrl>
+			<flipX>1</flipX>
+			<lineD editB="1" />
+			<bulletImgUrl raNum="30" con="filter">specialGun/greedySnakeBullet</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/fitHit</hitImgUrl>
+			
+			<bodyImgRange>specialGun/greedySnake</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>活动获得</description>
+		</bullet>
+	</father>
+	</data>

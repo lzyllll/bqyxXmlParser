@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="normal">
+		<gather name="">
+			<level name="customBase">
+				<fixed info="no" drop="no" unitG="no" eventG="no" rectG="all" />
+				<info diy="customTask" enemyLv="1" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" noDeviceB="1" mustSingleB="1" preSkillArr="KingRabbitTreater" />
+				<drop noB="1" />
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" skillCloseB="1" noSuperB="1" />
+					
+					<unitOrder id="weBoss" camp="we">
+						<unit id="weBoss" cnName="僵尸王" unitType="boss" skillArr="State_AddMoveValue6" />
+					</unitOrder>
+					<unitOrder id="weEnemy" camp="we">
+						<unit cnName="肥胖僵尸" num="5" />
+						<unit cnName="战斗僵尸" num="5" />
+					</unitOrder>
+					<unitOrder id="main">
+						<unit cnName="本我" dieGotoState="stru" />
+					</unitOrder>
+					<unitOrder id="wenjie">
+						<unit cnName="文杰表哥" aiOrder="followBodyAttack:本我" dieGotoState="stru" />
+					</unitOrder>
+					<unitOrder id="zangshi">
+						<unit cnName="藏师将军" aiOrder="followBodyAttack:本我" dieGotoState="stru" />
+					</unitOrder>
+					<unitOrder id="girl">
+						<unit cnName="小樱" aiOrder="followBodyAttack:本我" dieGotoState="stru" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						
+						<event id="e1_1">
+							<condition />
+							<order>createUnit:weBoss; r2</order>
+							<order>level; diyEvent:addBoss</order>
+							<order>weAllHeroNoShoot</order>
+							<order>weAllHeroNoEquip</order>
+							<order>heroEverParasitic:weBoss</order>
+						</event>
+						<event><condition delay="0.1" /><order>say; startList:s1</order></event>
+						<event><condition delay="0.1">say:listOver</condition></event>
+						<event><condition delay="0.3" /></event>
+						<event>
+							<condition />
+							<order>createUnit:main;rLeftSpider </order>
+							<order>level; diyEvent:addMainOther</order>
+						</event>
+						<event>
+							<condition>liveEnemyNumber:less_1</condition>
+							<order>say; startList:s2</order>
+						</event>
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+					<group>
+						<event id="e_fail">
+							<condition delay="1">bodyEvent:die; weBoss</condition>
+							<order>alert:yes; 任务失败！</order>
+						</event>
+						<event><condition delay="0.03" /><order>level; fail</order></event>
+					</group>
+				</eventG>
+			</level>
+			
+			
+		</gather>
+	</father>	
+	</data>

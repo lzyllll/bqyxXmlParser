@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<body>
+			<name>HealerZombie</name>
+			<cnName>僵尸治疗兵</cnName><headIconUrl>IconGather/HealerZombie</headIconUrl>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/HealerZombie310.swf</swfUrl>
+			
+			<lifeRatio>1.4</lifeRatio>
+			<showLevel>999</showLevel>
+			
+			<imgArr>
+				stand,move,run
+				,normalAttack,magicAttack
+				,thumpAttack,shieldAttack
+				,hurt1,hurt2,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			<bossImgArr>thumpAttack,shieldAttack,magicAttack</bossImgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>6</maxVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel />
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<skillArr>weaponDefence,noBounce_enemy</skillArr>
+			<bossSkillArr>healerBoundless,healerShield,reverseHurt_enemy,feedback_enemy,State_SpellImmunity,godShield,skillGift_enemy,reflectiveShell</bossSkillArr>
+			<bossSkillArrCn />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel><cn>拳击</cn>
+					<hurtRatio>2</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<skillArr />
+					<hitImgUrl name="fistHit" />
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		
+		
+		<bullet>
+			<name>HealerZombie_1</name>
+			<cnName>飞镐</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>3</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.5</attackDelay>
+			<bulletAngle>-179</bulletAngle>
+			<bulletAngleRange>70</bulletAngleRange>
+			<shootPoint>-71,-84</shootPoint>
+			<bulletSpeed>12</bulletSpeed>
+				
+			<penetrationGap>1000</penetrationGap>
+			<skillArr />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>HealerZombie/bullet</bulletImgUrl>
+			<hitImgUrl name="oreWormHit" />
+		</bullet>
+		
+		
+		
+		
+		
+		<skill>
+			<name>healerShield</name>
+			<cnName>异族护盾</cnName><iconUrl36 /><ignoreNoSkillB>1</ignoreNoSkillB>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB>
+			<cd>20</cd>
+			<firstCd>19</firstCd>
+			<delay>0.7</delay>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<passiveSkillArr>healerShieldSensitive</passiveSkillArr>
+			<duration>10</duration>
+			 
+			<stateEffectImg name="healerShield" />
+			<meActionLabel>shieldAttack</meActionLabel>
+			<description>开启异族护盾，受尸宠的伤害增加20倍，其他伤害降低至10%，持续[duration]秒。</description>
+		</skill>
+				<skill cnName="尸宠敏感">
+					<name>healerShieldSensitive</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+					<cnName>尸宠敏感</cnName><ignoreNoSkillB>1</ignoreNoSkillB><ignoreSilenceB>1</ignoreSilenceB>
+					<conditionType>passive</conditionType><condition>underAllHit</condition><target>me</target><addType>instant</addType>
+					<effectType>healerShieldSensitive</effectType><mul>0.1</mul><value>20</value>
+					<description>受尸宠的伤害增加20倍，其他伤害降低至10%。</description>
+				</skill>
+		<skill>
+			<name>healerBoundless</name><ignoreNoSkillB>1</ignoreNoSkillB><ignoreImmunityB>1</ignoreImmunityB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB>
+			<cnName>嗜血射线</cnName><iconUrl36>SkillIcon/static_PetLake_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<cd>15</cd>
+			<firstCd>10</firstCd>
+			<delay>0.3</delay>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>600</conditionRange>
+			<target>me,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>healerBoundless</effectType>
+			<value>12</value>
+			<mul>0.5</mul>
+			<range>1100</range>
+			<duration>0.5</duration>
+			 
+			<stateEffectImg partType="body" con="add" raNum="30" followPartRaB="1">skillEffect/magneticField_paralysis</stateEffectImg>
+			<pointEffectImg name="laserBlackLine" />
+			<meActionLabel>magicAttack</meActionLabel>
+			<description>向外释放嗜血射线，将周围[range]码的敌人吸附到自身周围，吸收敌人生命值，并回复自身生命值。</description>
+		</skill>
+	</father>
+</data>

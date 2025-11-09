@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="car" cnName="战车载具所需">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<bullet cnName="盖亚合体-主炮">
+			<name>GaiaFit_main</name>
+			<cnName>轰天雷-主炮</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletNum>3</bulletNum>
+			<shootAngle>5</shootAngle>
+			
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.2</attackGap>
+			
+				
+			<shootRecoil>15</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			<bulletSpeed>45</bulletSpeed>
+			<boomD bodyB="1" floorB="1" radius="120" />
+			
+			
+			<flipX>1</flipX>
+			<fireImgUrl soundUrl="GaiaFit/shoot" />
+			<bulletImgUrl raNum="30" con="filter">bullet/gaiaFit</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/magicHit2" shake="2,0.2,10" con="add">boomEffect/boom3</hitImgUrl>
+		</bullet>
+		
+		<bullet cnName="平民合体-主炮">
+			<name>CivilianFit_main</name>
+			<cnName>镇山虎-主炮</cnName>
+			
+			<hurtRatio>2</hurtRatio>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.2</attackGap>
+			
+				
+			<shootRecoil>15</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			<bulletSpeed>35</bulletSpeed>
+			<boomD bodyB="1" floorB="1" radius="120" />
+			
+			<flipX>1</flipX>
+			<fireImgUrl soundUrl="CivilianFit/shoot" />
+			<bulletImgUrl raNum="30">CivilianFit/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/magicHit2" shake="2,0.2,10" con="add">CivilianFit/hit</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">CivilianFit/smoke</smokeImgUrl>
+		</bullet>
+		
+		<bullet cnName="飞行器合体-主炮">
+			<name>FlyFit_main</name>
+			<cnName>霸空雕-主炮</cnName>
+			
+			<hurtRatio>0.8</hurtRatio>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>35</bulletWidth>
+			<hitType>rect</hitType>
+			<bulletNum>3</bulletNum>
+			<shootAngle>5</shootAngle>
+			
+			<attackGap>0.2</attackGap>
+			
+				
+			<shootRecoil>15</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			<bulletSpeed>30</bulletSpeed>
+			<boomD bodyB="1" floorB="1" radius="120" />
+			<followD value="1" delay="0.1" noLM="1" />
+			
+			<flipX>1</flipX>
+			<fireImgUrl soundUrl="FlyFit/shoot" />
+			<bulletImgUrl con="add">FlyFit/bullet</bulletImgUrl>
+			<smokeImgUrl raNum="30" con="filter">FlyFit/smoke</smokeImgUrl>
+			<hitImgUrl soundUrl="sound/magicHit2" shake="2,0.2,10" con="add">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		
+	</father>
+</data>

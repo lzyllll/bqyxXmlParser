@@ -1,0 +1,1936 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<body index="0" name="战斗僵尸">
+			
+			<name>ZombieBattle</name><headIconUrl>IconGather/ZombieBattle</headIconUrl>
+			<cnName>战斗僵尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ZombieBattle.swf</swfUrl>
+			
+			<lifeRatio>0.8</lifeRatio>
+			
+			<imgArr>
+				stand,move,run
+				,normalAttack1,normalAttack2,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			
+			<nextAttackTime>1</nextAttackTime>
+			
+			<skillArr>UnderRos_AddMove_Battle</skillArr>
+			<bossSkillArr>slowMove_enemy,paralysis_enemy,selfBurn_enemy</bossSkillArr>
+			<bossSkillArrCn>减速，闪电麻痹，自燃</bossSkillArrCn>
+			<demBossSkillArr>slowMove_enemy</demBossSkillArr>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel><cn>单爪</cn>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="ZombieBattle/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel><cn>双爪</cn>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="ZombieBattle/hit2">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="无头自爆僵尸">
+			
+			<name>ZombieHeadless</name>
+			<cnName>无头自爆僵尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ZombieHeadless.swf</swfUrl>
+			
+			<lifeRatio>0.6</lifeRatio>
+			<superDpsAdd>2</superDpsAdd>
+			<headHurtMul>1</headHurtMul>
+			
+			<imgArr>
+				stand,move,run
+				,normalAttack1,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>10</maxVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr>suicide_headless,boom_headless</skillArr>
+			<canBossB>0</canBossB>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="携弹僵尸" shell="metal">
+			
+			<name>ZombieIncapable</name>
+			<cnName>携弹僵尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ZombieIncapable.swf</swfUrl>
+			
+			<lifeRatio>0.7</lifeRatio>
+			
+			<imgArr>
+				stand,move
+				,normalAttack1,normalAttack2,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			
+			<nextAttackTime>1</nextAttackTime>
+			
+			<skillArr />
+			<bossSkillArr>moreMissile_enemy,imploding_enemy,disabled_enemy</bossSkillArr>
+			<bossSkillArrCn>万弹归宗，爆石，致残</bossSkillArrCn>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<bulletLabel>ZombieBomb_1</bulletLabel>
+					<grapRect>-350,-111,300,105</grapRect>
+					<hurtRatio>1.2</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" soundUrl="ZombieIncapable/hit1" raNum="30">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="橄榄僵尸">
+			
+			<name>ZombieFootball</name>
+			<cnName>橄榄僵尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ZombieFootball.swf</swfUrl>
+			<headIconUrl>IconGather/PetZombieFootball</headIconUrl>
+			
+			<lifeRatio>0.6</lifeRatio>
+			<expRatio>0.8</expRatio>
+			<headHurtMul>0.3</headHurtMul>
+			
+			<imgArr>
+				stand,move
+				,normalAttack1,normalAttack2,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			
+			<nextAttackTime>1</nextAttackTime>
+			
+			<skillArr />
+			<bossSkillArr>imploding_enemy,hidingAll_enemy,trueshot_enemy</bossSkillArr>
+			<bossSkillArrCn>爆石，群体隐身，强击光环</bossSkillArrCn>
+			<demBossSkillArr>hidingAll_enemy</demBossSkillArr>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<bulletLabel>ZombieFootball_1</bulletLabel>
+					<grapRect>-350,-111,300,105</grapRect>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<shakeValue>2</shakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" soundUrl="ZombieFootball/hit1" raNum="30">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="肥胖僵尸">
+			
+			<name>ZombieFat</name><headIconUrl>IconGather/ZombieFat</headIconUrl>
+			<cnName>肥胖僵尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ZombieFat.swf</swfUrl>
+			
+			<lifeRatio>1.3</lifeRatio>
+			
+			<imgArr>
+				stand,move
+				,normalAttack1,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			
+			<hitRect>-18,-86,36,86</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			
+			<nextAttackTime>1</nextAttackTime>
+			
+			<skillArr>Hit_Crit_Fat</skillArr>
+			<bossSkillArr />
+			<bossSkillArrCn />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+					<beatBack>3</beatBack>
+					<shakeValue>6</shakeValue>
+					<hitImgUrl con="add" soundUrl="ZombieFat/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="屠刀僵尸">
+			
+			<name>ZombieCleaver</name>
+			<cnName>屠刀僵尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ZombieCleaver.swf</swfUrl>
+			
+			<lifeRatio>1.3</lifeRatio>
+			
+			
+			<imgArr>
+				stand,move
+				,normalAttack1,normalAttack2,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			
+			<hitRect>-18,-86,36,86</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			
+			<nextAttackTime>1</nextAttackTime>
+			
+			<skillArr>slowMove_enemy</skillArr>
+			<bossSkillArr>trueshot_enemy,groupSpeedUp_enemy,liveReplace_enemy</bossSkillArr>
+			<bossSkillArrCn>减速，强击光环，群体加速，生命置换</bossSkillArrCn>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel><cn>砍刀</cn>
+					<hurtRatio>1.8</hurtRatio>
+					<attackType>direct</attackType>
+					<beatBack>3</beatBack>
+					<shakeValue>6</shakeValue>
+					<hitImgUrl con="add" soundUrl="ZombieCleaver/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel><cn>飞刀</cn>
+					<bulletLabel>ZombieCleaver_1</bulletLabel>
+					<grapRect>-400,-111,350,105</grapRect>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="僵尸王">
+			
+			<name>ZombieKing</name>
+			<cnName>僵尸王</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ZombieKing.swf</swfUrl>
+			<headIconUrl>IconGather/PetZombieKing</headIconUrl>
+			
+			<lifeRatio>1.8</lifeRatio>
+			<rateRatio>0.05</rateRatio>
+			<showLevel>7</showLevel>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move,run
+				,floorAttack,gunAttack,normalAttack1,normalAttack2,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			<lifeBarExtraHeight>-20</lifeBarExtraHeight>
+			<handAddRa>90</handAddRa>
+			
+			<hitRect>-18,-96,36,96</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>8</maxVx>
+			<runStartVx>10</runStartVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr />
+			<bossSkillArr>crazy_king,recovery_enemy,paralysis_enemy</bossSkillArr>
+			<bossSkillArrCn />
+			<demBossSkillArr>crazy_king</demBossSkillArr>
+			<extraDropArmsB>1</extraDropArmsB>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>floorAttack</imgLabel><cn>地滚弹</cn>
+					<bulletLabel>ZombieKing_floor</bulletLabel>
+					<grapRect>-350,-111,200,105</grapRect>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt>
+					<imgLabel>gunAttack</imgLabel><cn>迫击炮</cn>
+					<bulletLabel>ZombieKing_gun</bulletLabel>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hurtRatio>0.5</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel><cn>重锤</cn>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="ZombieKing/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel><cn>挠抓</cn>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="ZombieKing/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>
+		<body index="0" name="鬼目游尸" shell="normal">
+			
+			<name>ZombieLing</name>
+			<cnName>鬼目游尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ZombieLing.swf</swfUrl>
+			
+			<lifeRatio>0.8</lifeRatio>
+			
+			<imgArr>
+				stand,move
+				,normalAttack1,normalAttack2,hurt1,hurt2,die1,die2
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			
+			<maxVx>9</maxVx>
+			<maxJumpNum>1</maxJumpNum>
+			<motionState>fly</motionState>
+			<flyUseSpiderB>1</flyUseSpiderB>
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr />
+			<bossSkillArr>liveReplace_enemy,strong_enemy,reverseHurt_enemy</bossSkillArr>
+			<bossSkillArrCn>生命置换、顽强、电离反转</bossSkillArrCn>
+			<demBossSkillArr>reverseHurt_enemy</demBossSkillArr>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="ZombieLing/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel>
+					<bulletLabel>laser_ling</bulletLabel>
+					<grapRect>-350,-111,350,105</grapRect>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="冥刃游尸" shell="normal">
+			
+			<name>ZombiePo</name>
+			<cnName>冥刃游尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ZombiePo.swf</swfUrl>
+			
+			<lifeRatio>1.3</lifeRatio>
+			
+			<imgArr>
+				stand,move
+				,normalAttack1,normalAttack2,hurt1,hurt2,die1,die2
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			
+			<hitRect>-18,-86,36,86</hitRect>
+			
+			<maxVx>6</maxVx>
+			<maxJumpNum>1</maxJumpNum>
+			<motionState>fly</motionState>
+			<flyUseSpiderB>1</flyUseSpiderB>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>ZombiePo_AIExtra</extraAIClassLabel>
+			
+			<skillArr>crazy_enemy</skillArr>
+			<bossSkillArr>teleport_enemy,paralysis_enemy,selfBurn_enemy</bossSkillArr>
+			<bossSkillArrCn>狂暴、瞬移、闪电麻痹、自燃</bossSkillArrCn>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="ZombiePo/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel>
+					<hurtRatio>0.3</hurtRatio>
+					<attackType>direct</attackType>
+					<beatBack>3</beatBack>
+					<shakeValue>6</shakeValue>
+					<grapRect>-300,-111,300,105</grapRect>
+					<hitImgUrl con="add" soundUrl="ZombiePo/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="游尸王" shell="normal">
+			
+			<name>SwimKing</name>
+			<cnName>游尸王</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/SwimKing.swf</swfUrl>
+			
+			<lifeRatio>1.5</lifeRatio>
+			<rateRatio>0.05</rateRatio>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move
+				,floorAttack,gunAttack,normalAttack1,normalAttack2,hurt1,hurt2,die1,die2
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			<lifeBarExtraHeight>-20</lifeBarExtraHeight>
+			<handAddRa>90</handAddRa>
+			
+			<hitRect>-18,-96,36,96</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>10</maxVx>
+			<motionState>fly</motionState>
+			<flyUseSpiderB>1</flyUseSpiderB>
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr />
+			<bossSkillArr>FightKing_cloned,recoveryHalo_enemy,trueshot_enemy,disabledHalo_enemy,slowMoveHalo_enemy</bossSkillArr>
+			<bossSkillArrCn>分身、复原光环、强击光环、致残光环、减速光环</bossSkillArrCn>
+			<demBossSkillArr>slowMoveHalo_enemy</demBossSkillArr>
+			<extraDropArmsB>1</extraDropArmsB>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>floorAttack</imgLabel><cn>地滚弹</cn>
+					<bulletLabel>SwimKing_floor</bulletLabel>
+					<grapRect>-350,-111,200,105</grapRect>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt>
+					<imgLabel>gunAttack</imgLabel><cn>旋风弹</cn>
+					<bulletLabel>SwimKing_gun</bulletLabel>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hurtRatio>0.5</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel><cn>重锤</cn>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="SwimKing/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel><cn>挠抓</cn>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="SwimKing/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>
+		<body index="0" name="狂战尸">
+			
+			<name>FightKing</name>
+			<cnName>狂战尸</cnName><headIconUrl>IconGather/FightKing</headIconUrl>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/FightKing.swf</swfUrl>
+			
+			<lifeRatio>1.8</lifeRatio>
+			<rateRatio>0.05</rateRatio>
+			<showLevel>40</showLevel>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move
+				,comboAttack,choppedAttack,windAttack,shootAttack,shakeAttack
+				,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			<lifeBarExtraHeight>-20</lifeBarExtraHeight>
+			<handAddRa>90</handAddRa>
+			
+			<hitRect>-18,-96,36,96</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>12</maxVx>
+			<runStartVx>12</runStartVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>FightKing_AIExtra</extraAIClassLabel>
+			
+			<bulletLauncherClass>VehicleBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			<bossSkillArr>murderous_enemy,liveReplace_enemy,strong_enemy,globalSpurting_enemy</bossSkillArr>
+			<bossSkillArrCn />
+			<demBossSkillArr>knifeBoom_FightKing,murderous_enemy,strong_enemy</demBossSkillArr>
+			<extraDropArmsB>1</extraDropArmsB>
+			
+			<extraG label="ExtraTaskAI_FightKing" bossSkillArr="silence_FightKing,knifeBoom_FightKing,summonedPo_extra,FightKing_cloned_extra,murderous_enemy,strong_enemy,globalSpurting_enemy" stateArr="coverFog_FightKing">
+				<extra lifeMin="0.7" skillArr="summonedPo_extra" />
+				<extra lifeMin="0.4" skillArr="FightKing_cloned_extra" stateArr="coverFog_FightKing" />
+				<extra lifeMin="0" skillArr="knifeBoom_FightKing,silence_FightKing" />
+			</extraG>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>shakeAttack</imgLabel><cn>震地</cn>
+					<hurtRatio>2</hurtRatio>
+					<skillArr>FightKing_slowMove,FightKing_disabled</skillArr>
+					<attackType>direct</attackType>
+					<shakeValue>10</shakeValue>
+					<hitImgUrl con="add" soundUrl="FightKing/hit1" shake="5,0.4,35">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><cn>旋风宗</cn>
+					<bulletLabel>FightKing_shoot</bulletLabel>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt>
+					<imgLabel>comboAttack</imgLabel><cn>连击</cn>
+					<hurtRatio>0.5</hurtRatio><mustGrapRectB>1</mustGrapRectB>
+					<skillArr>FightKing_slowMove</skillArr>
+					<attackType>direct</attackType>
+					<shakeValue>7</shakeValue>
+					<hitImgUrl con="add" soundUrl="FightKing/hit2">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>choppedAttack</imgLabel><cn>劈斩</cn>
+					<hurtRatio>3</hurtRatio><mustGrapRectB>1</mustGrapRectB>
+					<skillArr />
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="FightKing/hit3" shake="3,0.2,25">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>windAttack</imgLabel><cn>旋风刀</cn>
+					<hurtRatio>0.5</hurtRatio><mustGrapRectB>1</mustGrapRectB>
+					<skillArr>FightKing_slowMove</skillArr>
+					<attackType>direct</attackType>
+					<shakeValue>6</shakeValue>
+					<grapRect>-350,-111,300,105</grapRect>
+					<hitImgUrl con="add" soundUrl="FightKing/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+			</hurtArr>
+		</body>	
+		<body index="0" name="毒蛛" shell="normal">
+			
+			<name>SmallSpider</name>
+			<cnName>毒蛛</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/SmallSpider.swf</swfUrl>
+			
+			<lifeRatio>0.7</lifeRatio>
+			
+			<imgArr>
+				stand,move
+				,normalAttack,shootAttack,hurt1,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			
+			<hitRect>-20,-40,40,40</hitRect>
+			
+			<maxJumpNum>2</maxJumpNum>
+			<maxVx>6</maxVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>SmallSpider_AIExtra</extraAIClassLabel>
+			
+			<skillArr />
+			<bossSkillArr>State_AddMove,SmallSpider_hitParalysis,disabled_enemy,poisonClaw_enemy,slowMove_enemy,murderous_enemy</bossSkillArr>
+			<bossSkillArrCn>击中麻痹，致残，毒爪，减速，嗜爪</bossSkillArrCn>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<grapRect>-150,-111,150,105</grapRect>
+					<hitImgUrl con="add" soundUrl="SmallSpider/hit1" raNum="30">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="巨毒尸">
+			
+			<name>HugePoison</name>
+			<cnName>巨毒尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/HugePoison.swf</swfUrl>
+			
+			<lifeRatio>2.2</lifeRatio>
+			<rateRatio>0.05</rateRatio>
+			<showLevel>45</showLevel>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move
+				,shakeAttack,shootAttack,normalAttack
+				,rollAttack,__rollAttack,rollAttack__
+				,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			<lifeBarExtraHeight>-60</lifeBarExtraHeight>
+			<handAddRa>90</handAddRa>
+			
+			<hitRect>-20,-90,40,90</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>6.5</maxVx>
+			<runStartVx>12</runStartVx>
+			
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>HugePosion_AIExtra</extraAIClassLabel>
+			
+			<bulletLauncherClass>VehicleBulletLauncher</bulletLauncherClass>
+			<skillArr>roll_hugePosion</skillArr>
+			<bossSkillArr>silence_hugePosion,bullying_enemy,hiding_hugePosion</bossSkillArr>
+			<bossSkillArrCn />
+			<demBossSkillArr>silence_hugePosion,bullying_enemy,hiding_hugePosion</demBossSkillArr>
+			<extraDropArmsB>1</extraDropArmsB>
+			
+			<extraG label="ExtraTaskAI" bossSkillArr="silence_hugePosion,bullying_enemy,hiding_hugePosion,splash_HugePoison,summonedGasBom_HugePoison">
+				<extra lifeMin="0.7" skillArr="splash_HugePoison" />
+				<extra lifeMin="0.4" skillArr="summonedGasBom_HugePoison" />
+				<extra lifeMin="0" skillArr="splash_HugePoison,summonedGasBom_HugePoison" />
+			</extraG>
+			
+			<hurtArr>
+				
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><cn>喷毒</cn>
+					<bulletLabel>HugePoison_shoot</bulletLabel>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hurtRatio>0.5</hurtRatio>
+					<skillArr>posion7_hugePosion</skillArr>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt>
+					<imgLabel>shakeAttack</imgLabel><cn>毒震</cn>
+					<hurtRatio>5</hurtRatio>
+					<attackType>chaos</attackType>
+					<shakeValue>7</shakeValue>
+					<skillArr>FightKing_slowMove</skillArr>
+					<hitImgUrl con="add" soundUrl="">boomEffect/posion1</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel><cn>拳击</cn>
+					<hurtRatio>1.5</hurtRatio>
+					<attackType>chaos</attackType>
+					<skillArr>corrosion_hugePosion</skillArr>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="">boomEffect/posion1</hitImgUrl>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>rollAttack</imgLabel><keyName>attack4</keyName>
+					<noAiChooseB>1</noAiChooseB><ingfollowB>1</ingfollowB>
+					<noShootB>1</noShootB>
+					<hurtRatio>0.5</hurtRatio>
+					<attackType>chaos</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="HugePoison/rollHit3">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="霸王毒蛛" shell="normal">
+			
+			<name>SpiderKing</name>
+			<cnName>霸王毒蛛</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/SpiderKing.swf</swfUrl>
+			
+			<lifeRatio>2</lifeRatio>
+			<showLevel>47</showLevel>
+			
+			<imgArr>
+				stand,move
+				,normalAttack,shootAttack,birthAttack,hurt1,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			
+			<maxJumpNum>2</maxJumpNum>
+			<maxVx>8</maxVx>
+			
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>SmallSpider_AIExtra</extraAIClassLabel>
+			
+			<bulletLauncherClass>VehicleBulletLauncher</bulletLauncherClass>
+			<skillArr>corrosion_enemy,summonedSpider_spiderKing,groupSpeedUp_enemy,electricBoom_enemy,trueshot_enemy</skillArr>
+			<bossSkillArr>tenacious_enemy</bossSkillArr>
+			<bossSkillArrCn>召唤毒蛛、群体加速、腐蚀、电球爆发、反击、强击光环</bossSkillArrCn>
+			<extraDropArmsB>1</extraDropArmsB>
+			
+			<extraG label="ExtraTaskAI_SpiderKing" bossSkillArr="invisibility_SpiderKing,acidRain_SpiderKing,corrosion_enemy,summonedSpider_spiderKing_extra,groupSpeedUp_enemy,electricBoom_enemy,tenacious_enemy,trueshot_enemy" stateArr="invisibility_SpiderKing">
+				<extra lifeMin="0.7" skillArr="" stateArr="invisibility_SpiderKing" />
+				<extra lifeMin="0.4" skillArr="acidRain_SpiderKing" />
+				<extra lifeMin="0" skillArr="summonedSpider_spiderKing_extra,acidRain_SpiderKing" />
+			</extraG>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel><keyName>attack1</keyName><cn>挠击</cn>
+					<hurtRatio>3</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<grapRect>-150,-111,150,105</grapRect>
+					<hitImgUrl con="add" soundUrl="SpiderKing/hit1" raNum="30">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><keyName>attack2</keyName><cn>喷毒</cn>
+					<bulletLabel>SpiderKing_shoot</bulletLabel>
+					<grapRect>-300,-111,100,105</grapRect>
+					<hurtRatio>1.5</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="暴君">
+			
+			<name>Skeleton</name>
+			<cnName>暴君</cnName>
+			<raceType>zombies</raceType><headIconUrl>IconGather/Skeleton</headIconUrl>
+			<swfUrl>swf/enemy/Skeleton.swf</swfUrl>
+			
+			<lifeRatio>1.8</lifeRatio>
+			<rateRatio>0.05</rateRatio>
+			<headHurtMul>0.6</headHurtMul>
+			<showLevel>50</showLevel>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move,run
+				,normalAttack,comboAttack,sprintAttack,bulletAttack,machineAttack,plugAttack
+				,hurt1,hurt2,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			<lifeBarExtraHeight>-60</lifeBarExtraHeight>
+			<handAddRa>90</handAddRa>
+			
+			<hitRect>-18,-96,36,96</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>8</maxVx>
+			<runStartVx>11</runStartVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			<bulletLauncherClass>VehicleBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			<bossSkillArr>knife_skeleton,crazy_skeleton,teleport_skeleton,atry_skeleton,hyperopia_incapable,blindness_skeleton,strong_enemy</bossSkillArr>
+			<bossSkillArrCn>地狱之刃，狂暴，瞬移，最后一搏，远视，致盲，顽强</bossSkillArrCn>
+			<extraDropArmsB>1</extraDropArmsB>
+			<extraAIClassLabel>Skeleton_AIExtra</extraAIClassLabel>
+			<preBulletArr>knife_skeleton</preBulletArr>
+			
+			<extraG label="ExtraTaskAI" bossSkillArr="strong_enemy,State_SpellImmunity,hammer_enemy,knife_skeleton,crazy_skeleton,teleport_skeleton,atry_skeleton,hyperopia_incapable,blindness_skeleton">
+				<extra lifeMin="0.7" skillArr="" />
+				<extra lifeMin="0.4" skillArr="hammer_enemy" />
+				<extra lifeMin="0" skillArr="hammer_enemy" />
+			</extraG>
+			
+			<hurtArr>
+				
+				<hurt>
+					<imgLabel>normalAttack</imgLabel><cn>竖切</cn>
+					<grapMaxLen>140</grapMaxLen><grapMinLen>0</grapMinLen>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>10</shakeValue>
+					<hitImgUrl sound="Skeleton/hit1" con="add">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+				<hurt>
+					<imgLabel>comboAttack</imgLabel><cn>连击</cn>
+					<grapMaxLen>140</grapMaxLen><grapMinLen>0</grapMinLen>
+					<hurtRatio>3</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>7</shakeValue>
+					<hitImgUrl sound="Skeleton/hit3" con="add">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+				<hurt>
+					<imgLabel>sprintAttack</imgLabel><cn>冲刺</cn><mustGrapRectB>1</mustGrapRectB>
+					<grapMaxLen>190</grapMaxLen><grapMinLen>0</grapMinLen>
+					<hurtRatio>1.5</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>7</shakeValue>
+					<hitImgUrl sound="Skeleton/hit2" con="add">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+				<hurt>
+					<imgLabel>bulletAttack</imgLabel><cn>导弹</cn><mustGrapRectB>1</mustGrapRectB>
+					<grapMaxLen>400</grapMaxLen><grapMinLen>180</grapMinLen>
+					<grapRect>-400,-111,300,105</grapRect>
+					<bulletLabel>Skeleton_bullet</bulletLabel>
+					<hurtRatio>0.8</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				
+				<hurt>
+					<imgLabel>machineAttack</imgLabel><cn>机关枪</cn><mustGrapRectB>1</mustGrapRectB>
+					<grapMaxLen>400</grapMaxLen><grapMinLen>120</grapMinLen>
+					<grapRect>-400,-111,300,105</grapRect>
+					<bulletLabel>Skeleton_machine</bulletLabel>
+					<hurtRatio>0.2</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				
+				<hurt info="不加入ai选择">
+					<imgLabel>plugAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<grapMaxLen>500</grapMaxLen><grapMinLen>0</grapMinLen>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>7</shakeValue>
+					<hitImgUrl con="add">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="银锤" shell="metal">
+			
+			<name>ZombieSilver</name>
+			<cnName>银锤</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/ZombieSilver.swf</swfUrl>
+			
+			<lifeRatio>1.3</lifeRatio>
+			
+			
+			<imgArr>
+				stand,move
+				,normalAttack1,normalAttack2,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			
+			<hitRect>-18,-86,36,86</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>8</maxVx>
+			
+			<nextAttackTime>1</nextAttackTime>
+			
+			<skillArr>hammer_hit</skillArr>
+			<bossSkillArr>crazy_enemy,trueshot_enemy,groupSpeedUp_enemy,skillGift_enemy,pointBoom_enemy</bossSkillArr>
+			<bossSkillArrCn>狂暴，强击光环，群体加速，馈赠，定点轰炸</bossSkillArrCn>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<hurtRatio>1.8</hurtRatio>
+					<attackType>direct</attackType>
+					<beatBack>3</beatBack>
+					<shakeValue>6</shakeValue>
+					<hitImgUrl con="add" soundUrl="ZombieSilver/hit1">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel>
+					<bulletLabel>ZombieSilver_1</bulletLabel>
+					<grapRect>-400,-111,350,105</grapRect>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="钢铁僵尸王" shell="metal">
+			
+			<name>IronZombieKing</name>
+			<cnName>钢铁僵尸王</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/IronZombieKing.swf</swfUrl>
+			
+			<lifeRatio>1.8</lifeRatio>
+			<rateRatio>0.05</rateRatio>
+			<headHurtMul>0.5</headHurtMul>
+			<showLevel>60</showLevel>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move,run
+				,floorAttack,gunAttack,normalAttack1,normalAttack2,backAttack
+				,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			<lifeBarExtraHeight>-20</lifeBarExtraHeight>
+			<handAddRa>90</handAddRa>
+			
+			<hitRect>-18,-96,36,96</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>8</maxVx>
+			<runStartVx>10</runStartVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr />
+			<bossSkillArr>teleport_enemy,ironBody_enemy,magneticField_enemy,beatBack_iron,murderous_enemy,paralysis_enemy</bossSkillArr>
+			<bossSkillArrCn>闪烁，钢铁之躯，磁力场，磁力反击，嗜爪，闪电麻痹</bossSkillArrCn>
+			<extraDropArmsB>1</extraDropArmsB>
+			<extraG label="ExtraTaskAI" bossSkillArr="teleport_enemy,ironBody_enemy,magneticField_enemy,beatBack_iron,murderous_enemy,tenacious_enemy,paralysis_enemy">
+				<extra lifeMin="0.7" skillArr="" />
+				<extra lifeMin="0.4" skillArr="" />
+				<extra lifeMin="0" skillArr="" />
+			</extraG>
+			
+			<hurtArr>
+				
+				<hurt>
+					<imgLabel>floorAttack</imgLabel><mustGrapRectB>1</mustGrapRectB>
+					<bulletLabel>IronZombieKing_floor</bulletLabel>
+					<grapRect>-350,-111,200,105</grapRect>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt>
+					<imgLabel>gunAttack</imgLabel><mustGrapRectB>1</mustGrapRectB>
+					<bulletLabel>IronZombieKing_gun</bulletLabel>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hurtRatio>0.5</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="IronZombieKing/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="IronZombieKing/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+				<hurt info="不加入ai选择">
+					<imgLabel>backAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<bulletLabel>IronZombieKing_bitBack</bulletLabel>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hurtRatio>1.5</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+			</hurtArr>
+		</body>
+		<body index="0" name="吸血蝙蝠" shell="normal">
+			
+			<name>Bat</name>
+			<cnName>吸血蝙蝠</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/Bat.swf</swfUrl>
+			
+			<lifeRatio>0.8</lifeRatio>
+			
+			<flipCtrlBy>target</flipCtrlBy>
+			<imgArr>
+				stand,move,hurt1,die1
+				,normalAttack1
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			
+			<hitRect>-25,-15,50,30</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>7</maxVx>
+			<motionState>fly</motionState>
+			<flyUseSpiderB>1</flyUseSpiderB>
+			<flyType>tween</flyType>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>Bat_AIExtra</extraAIClassLabel>
+			
+			<skillArr>suckBlood_enemy</skillArr>
+			<bossSkillArr>FightKing_cloned,slowMove_enemy,selfBurn_enemy,globalSpurting_enemy,imploding_enemy,teleport_enemy</bossSkillArr>
+			<bossSkillArrCn />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel><mustGrapRectB>1</mustGrapRectB>
+					<hurtRatio>2.5</hurtRatio>
+					<grapRect>-150,-80,157,91</grapRect>
+					<attackType>direct</attackType>
+					<skillArr />
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="Bat/hit2">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+			</hurtArr>
+		</body>
+		<body index="0" name="飓风巫尸">
+			
+			<name>TyphoonWitch</name>
+			<cnName>飓风巫尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/TyphoonWitch.swf</swfUrl>
+			
+			<lifeRatio>1.5</lifeRatio>
+			<rateRatio>0.05</rateRatio>
+			<showLevel>65</showLevel>
+			
+			<flipCtrlBy>target</flipCtrlBy>
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move,__stru,stru,hurt1,hurt2,die1
+				,normalAttack1,shootAttack,shootAttack2,batAttack,windAttack,roarAttack
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			<lifeBarExtraHeight>-40</lifeBarExtraHeight>
+			<handAddRa>90</handAddRa>
+			
+			<hitRect>-18,-96,36,96</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>7</maxVx>
+			<motionState>fly</motionState>
+			<flyUseSpiderB>1</flyUseSpiderB>
+			<flyType>tween</flyType>
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			<bulletLauncherClass>VehicleBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			<bossSkillArr>bar_wind,wizardAnger_wind,bullying_enemy,groupSpeedUp_enemy,noSR</bossSkillArr>
+			<wilderSkillArr>cmldef2_enemy,fightReduct,defenceBounce_enemy</wilderSkillArr>
+			<bossSkillArrCn />
+			<extraDropArmsB>1</extraDropArmsB>
+			<extraG label="ExtraTaskAI" bossSkillArr="bar_wind,wizardAnger_wind,bullying_enemy,groupSpeedUp_enemy,noSR">
+				<extra lifeMin="0.7" skillArr="" />
+				<extra lifeMin="0.4" skillArr="" />
+				<extra lifeMin="0" skillArr="" />
+			</extraG>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel><keyName>attack1</keyName>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<skillArr>poisonClaw_wind</skillArr>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="TyphoonWitch/hit2">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><mustGrapRectB>1</mustGrapRectB><keyName>attack2</keyName>
+					<bulletLabel>TyphoonWitch_shoot1</bulletLabel>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hurtRatio>0.5</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack2</imgLabel><mustGrapRectB>1</mustGrapRectB><keyName>attack3</keyName>
+					<bulletLabel>TyphoonWitch_shoot2</bulletLabel>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hurtRatio>5</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				
+				<hurt>
+					<imgLabel>windAttack</imgLabel><mustGrapRectB>1</mustGrapRectB><keyName>attack4</keyName>
+					<bulletLabel>TyphoonWitch_wind</bulletLabel>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hurtRatio>0.5</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>batAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<bulletLabel>TyphoonWitch_bat</bulletLabel>
+					<grapRect>-500,-111,100,105</grapRect>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>roarAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<bulletLabel>TyphoonWitch_anger</bulletLabel>
+					<grapRect>-500,-111,100,105</grapRect>
+					<hurtRatio>0.5</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+			</hurtArr>
+		</body>
+		<body index="0" name="无疆骑士" shell="compound">
+			
+			<name>Knights</name>
+			<cnName>无疆骑士</cnName><headIconUrl>IconGather/Knights</headIconUrl>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/Knights.swf</swfUrl>
+			
+			<rosRatio>99</rosRatio>
+			<lifeRatio>1.8</lifeRatio>
+			<rateRatio>0.05</rateRatio>
+			<headHurtMul>0.6</headHurtMul>
+			<showLevel>70</showLevel>
+			
+			<dieJumpMul>0</dieJumpMul>
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move,run
+				,normalAttack,laserAttack,shootAttack,boundlessAttack
+				,__jumpUp,jumpUp,jumpDown,jumpDown__
+				,die1
+			</imgArr>
+			<lifeBarExtraHeight>-280</lifeBarExtraHeight>
+			<handAddRa>90</handAddRa>
+			
+			<hitRect>-18,-96,36,96</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>7</maxVx>
+			<runStartVx>8.5</runStartVx>
+			<motionD jumpDelayT="0.19" />
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			<bulletLauncherClass>VehicleBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			<bossSkillArr>crazy_knights,trample_knights,boundless_enemy,treater_knights,disabledHalo_enemy,globalSpurting_enemy,strong_enemy,noSpeedReduce</bossSkillArr>
+			<bossSkillArrCn>践踏，铁拳，无疆统治，净化器，致残光环，全局溅射，顽强，刚毅</bossSkillArrCn>
+			
+			<extraAIClassLabel>Knights_AIExtra</extraAIClassLabel>
+			<preBulletArr />
+			<extraG label="ExtraTaskAI" bossSkillArr="crazy_knights,trample_knights,boundless_enemy,treater_knights,disabledHalo_enemy,globalSpurting_enemy,strong_enemy,noSpeedReduce">
+				<extra lifeMin="0.7" skillArr="" />
+				<extra lifeMin="0.4" skillArr="" />
+				<extra lifeMin="0" skillArr="" />
+			</extraG>
+			
+			<dropD rareSuit="normal" />
+			<extraDropArmsB>1</extraDropArmsB>
+			
+			<hurtArr>
+				
+				<hurt>
+					<imgLabel>normalAttack</imgLabel><cn>重锤</cn>
+					<mustGrapRectB>1</mustGrapRectB>
+					<hurtRatio>4</hurtRatio>
+					<skillArr>hammer_knights</skillArr>
+					<attackType>direct</attackType>
+					<shakeValue>10</shakeValue>
+					<hitImgUrl sound="sound/vehicle_hit2" con="add">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><cn>拳炮</cn>
+					<bulletLabel>Knights_shoot1</bulletLabel>
+					<grapRect>-500,-100,250,150</grapRect>
+					<hurtRatio>0.5</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt>
+					<imgLabel>laserAttack</imgLabel><cn>聚束激光</cn>
+					<mustGrapRectB>1</mustGrapRectB>
+					<grapMaxLen>450</grapMaxLen><grapMinLen>100</grapMinLen>
+					<hurtRatio>0.5</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>10</shakeValue>
+					<hitImgUrl con="add">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+				
+				<hurt info="不加入ai选择">
+					<imgLabel>run</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>10</shakeValue>
+					<hitImgUrl sound="sound/vehicle_hit1" con="add">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="独眼僵尸">
+			
+			<name>ZombieCyclopia</name>
+			<cnName>独眼僵尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ZombieCyclopia.swf</swfUrl>
+			
+			<lifeRatio>1.3</lifeRatio>
+			
+			<imgArr>
+				stand,move
+				,normalAttack1,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			
+			<hitRect>-18,-86,36,86</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			
+			<nextAttackTime>1</nextAttackTime>
+			
+			<skillArr>gaze_enemy</skillArr>
+			<bossSkillArr>despise_enemy,ironBody_enemy,strong_enemy,tenacious_enemy</bossSkillArr>
+			<bossSkillArrCn>藐视，钢铁之躯，顽强，反击</bossSkillArrCn>
+			<demBossSkillArr>despise_enemy</demBossSkillArr>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<beatBack>3</beatBack>
+					<shakeValue>6</shakeValue>
+					<hitImgUrl con="add" soundUrl="ZombieFat/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="嗜血尸狼">
+			
+			<name>ZombieWolf</name>
+			<cnName>嗜血尸狼</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ZombieWolf.swf</swfUrl>
+			<headIconUrl>IconGather/PetZombieWolf</headIconUrl>
+			
+			
+			<lifeRatio>2</lifeRatio>
+			<showLevel>75</showLevel>
+			
+			<imgArr>
+				stand,move,run
+				,normalAttack1,normalAttack2,shootAttack,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			<lifeBarExtraHeight>-20</lifeBarExtraHeight>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>9</maxVx>
+			<runStartVx>11</runStartVx>
+			
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			<bulletLauncherClass>VehicleBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			<bossSkillArr>lifeLink_wolf,feeding_wolf,groupCrazy_enemy,trueshot_enemy,bullying_enemy,noSpeedReduce</bossSkillArr>
+			<bossSkillArrCn>生命连结，反哺，群体狂暴，强击光环，欺凌，刚毅</bossSkillArrCn>
+			<extraDropArmsB>1</extraDropArmsB>
+			<dropD rareSuit="normal" />
+			<extraAIClassLabel>ZombieWolf_AIExtra</extraAIClassLabel>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel><keyName>attack1</keyName>
+					<hurtRatio>3</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" soundUrl="sound/body_hit" raNum="30">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel><mustGrapRectB>1</mustGrapRectB><keyName>attack2</keyName>
+					<hurtRatio>3</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<grapRect>-171,-100,128,120</grapRect>
+					<hitImgUrl con="add" soundUrl="sound/body_hit" raNum="30">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><keyName>attack3</keyName>
+					<bulletLabel>ZombieWolf_shoot</bulletLabel>
+					<skillArr>posion7_wolf</skillArr>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hurtRatio>0.2</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+			</hurtArr>
+		</body>
+		<body index="0" name="火炮尸狼">
+			
+			<name>BoomWolf</name>
+			<cnName>火炮尸狼</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/BoomWolf.swf</swfUrl>
+			
+			<lifeRatio>2</lifeRatio>
+			<showLevel>75</showLevel>
+			
+			<imgArr>
+				stand,move,run
+				,normalAttack1,normalAttack2,shootAttack,bulletAttack,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			<lifeBarExtraHeight>-20</lifeBarExtraHeight>
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>7</maxVx>
+			<runStartVx>10</runStartVx>
+			
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr />
+			<bossSkillArr>lifeLink_wolf,feeding_wolf,groupReverseHurt_enemy,silence_enemy,disabled_enemy,noSpeedReduce</bossSkillArr>
+			<bossSkillArrCn>生命连结，反哺，反转术，沉默，顽强，刚毅</bossSkillArrCn>
+			<extraDropArmsB>1</extraDropArmsB>
+			<dropD rareSuit="normal" />
+			<extraAIClassLabel>ZombieWolf_AIExtra</extraAIClassLabel>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<hurtRatio>3</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" soundUrl="sound/body_hit" raNum="30">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel><mustGrapRectB>1</mustGrapRectB>
+					<hurtRatio>3</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<grapRect>-171,-100,128,120</grapRect>
+					<hitImgUrl con="add" soundUrl="sound/body_hit" raNum="30">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel>
+					<bulletLabel>ZombieWolf_shoot</bulletLabel>
+					<skillArr>posion7_wolf</skillArr>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hurtRatio>0.2</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				.<hurt>
+					<imgLabel>bulletAttack</imgLabel><mustGrapRectB>1</mustGrapRectB>
+					<bulletLabel>BoomWolf_bullet</bulletLabel>
+					<grapRect>-450,-111,100,105</grapRect>
+					<hurtRatio>0.5</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="监狱僵尸">
+			
+			<name>ZombiePrison</name>
+			<cnName>监狱僵尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ZombiePrison.swf</swfUrl>
+			
+			<lifeRatio>0.7</lifeRatio>
+			
+			<imgArr>
+				stand,move
+				,normalAttack1,normalAttack2,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			
+			<maxJumpNum>2</maxJumpNum>
+			<maxVx>7</maxVx>
+			
+			<nextAttackTime>1</nextAttackTime>
+			
+			<skillArr>fastForward_enemy</skillArr>
+			<bossSkillArr>globalSpurting_enemy,murderous_enemy,bullying_enemy,paralysis_enemy,liveReplace_enemy</bossSkillArr>
+			<bossSkillArrCn>全局溅射，嗜爪，欺凌，闪电麻痹，生命置换</bossSkillArrCn>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<bulletLabel>ZombiePrison_1</bulletLabel>
+					<grapRect>-350,-111,300,105</grapRect>
+					<hurtRatio>1.2</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" soundUrl="sound/hand_hit">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>	
+		
+		
+		<body index="0" name="战斗干尸">
+			
+			<name>BattleMummy</name>
+			<cnName>战斗干尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/BattleMummy.swf</swfUrl>
+			
+			<lifeRatio>0.8</lifeRatio>
+			
+			<imgArr>
+				stand,move,run
+				,normalAttack1,normalAttack2,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>7</maxVx>
+			
+			<nextAttackTime>1</nextAttackTime>
+			
+			<skillArr>UnderRos_AddMove_Battle</skillArr>
+			<bossSkillArr>Doctor2_cloned,paralysis_enemy,selfBurn_enemy,State_SpellImmunity,corrosion_enemy,strong_enemy</bossSkillArr>
+			<bossSkillArrCn>分身，闪电麻痹，自燃，技能免疫，腐蚀，顽强</bossSkillArrCn>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel><mustGrapRectB>1</mustGrapRectB><exactGrapRectB>1</exactGrapRectB>
+					<hurtRatio>0.7</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl name="TyphoonWitch_bat_hit" />
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl name="TyphoonWitch_bat_hit" />
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="星锤干尸">
+			
+			<name>HammerMummy</name>
+			<cnName>星锤干尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/HammerMummy.swf</swfUrl>
+			
+			<lifeRatio>1.3</lifeRatio>
+			
+			
+			<imgArr>
+				stand,move
+				,normalAttack1,normalAttack2,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			
+			<hitRect>-18,-86,36,86</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>6.5</maxVx>
+			
+			<nextAttackTime>1</nextAttackTime>
+			
+			<skillArr>SmallSpider_hitParalysis</skillArr>
+			<bossSkillArr>trueshot_enemy,groupSpeedUp_enemy,liveReplace_enemy,killCharm,disabledHalo_enemy,globalSpurting_enemy</bossSkillArr>
+			<bossSkillArrCn>减速，强击光环，群体加速，生命置换,致残光环,全局溅射</bossSkillArrCn>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<hurtRatio>1.8</hurtRatio>
+					<attackType>direct</attackType>
+					<beatBack>3</beatBack>
+					<shakeValue>6</shakeValue>
+					<hitImgUrl name="PetIronChiefS_shoot1_hit" />
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel>
+					<bulletLabel>HammerMummy_1</bulletLabel>
+					<grapRect>-400,-111,350,105</grapRect>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="狂战狼" shell="normal">
+			
+			<name>FightWolf</name>
+			<cnName>狂战狼</cnName><headIconUrl>IconGather/PetFightWolf</headIconUrl>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/FightWolf213.swf</swfUrl>
+			
+			<lifeRatio>1.8</lifeRatio>
+			<rateRatio>0.05</rateRatio>
+			<showLevel>80</showLevel>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move
+				,fistAttack,hammerAttack,legAttack,stoneAttack,laserAttack,shadowAttack,summonAttack
+				,hurt1,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			<lifeBarExtraHeight>-20</lifeBarExtraHeight>
+			<handAddRa>90</handAddRa>
+			
+			<hitRect>-18,-96,36,96</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>8</maxVx>
+			<runStartVx>12</runStartVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>FightWolf_AIExtra</extraAIClassLabel>
+			
+			<bulletLauncherClass>VehicleBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			<bossSkillArr>desertedHalo_enemy,noSpeedReduce,anger_FightWolf,summon_FightWolf,killCharm</bossSkillArr>
+			<wilderSkillArr>cmldef2_enemy,fightReduct,defenceBounce_enemy</wilderSkillArr>
+			<bossSkillArrCn />
+			<extraDropArmsB>1</extraDropArmsB>
+			<preBulletArr>anger_FightWolf</preBulletArr>
+			
+			
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>fistAttack</imgLabel><mustGrapRectB>1</mustGrapRectB><cn>拳击</cn>
+					<hurtRatio>1.5</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>7</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>hammerAttack</imgLabel><mustGrapRectB>1</mustGrapRectB><cn>抱拳</cn>
+					<skillArr>slowMove_wind</skillArr>
+					<hurtRatio>3</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>7</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>legAttack</imgLabel><mustGrapRectB>1</mustGrapRectB><cn>无影腿</cn>
+					<hurtRatio>1.5</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>7</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shadowAttack</imgLabel><mustGrapRectB>1</mustGrapRectB><cn>幻影攻击</cn>
+					<skillArr>slowMove_wind,hammer_FightWolf</skillArr>
+					<hurtRatio>1.5</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>7</shakeValue>
+					<grapRect>-450,-111,250,105</grapRect>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>laserAttack</imgLabel><mustGrapRectB>1</mustGrapRectB><exactGrapRectB>1</exactGrapRectB><cn>激光</cn>
+					<skillArr>laser_FightWolf</skillArr>
+					<hurtRatio>0.3</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>7</shakeValue>
+					<hitImgUrl con="add">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+				
+				<hurt info="不加入ai选择">
+					<imgLabel>summonAttack</imgLabel><noAiChooseB>1</noAiChooseB><keyName>attack6</keyName>
+					<bulletLabel>summonWolf_FightWolf</bulletLabel>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hurtRatio>0.01</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>7</shakeValue>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>stoneAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<grapMaxLen>500</grapMaxLen><grapMinLen>0</grapMinLen>
+					<hurtMul>0.15</hurtMul>
+					<attackType>direct</attackType>
+					<shakeValue>7</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/body_hit">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>	
+		
+		<body index="0" name="哨兵" shell="metal">
+			
+			<name>Sentry</name>
+			<cnName>哨兵</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/Sentry.swf</swfUrl>
+			
+			<lifeRatio>0.6</lifeRatio>
+			<expRatio>0.8</expRatio>
+			<headHurtMul>0.2</headHurtMul>
+			
+			<headIconUrl>IconGather/Sentry</headIconUrl>
+			<imgArr>
+				stand,move
+				,shootAttack1,shootAttack2,hurt1,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			
+			<maxVx>10</maxVx>
+			<maxJumpNum>1</maxJumpNum>
+			
+			<nextAttackTime>1</nextAttackTime>
+			
+			<skillArr />
+			<bossSkillArr>missile_Sentry,atry_skeleton,silence_wind,State_SpellImmunity,strong_enemy</bossSkillArr>
+			<bossSkillArrCn>绝命导弹,电离折射，最后一搏,沉默，技能免疫</bossSkillArrCn>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>shootAttack1</imgLabel><mustGrapRectB>1</mustGrapRectB>
+					<bulletLabel>Sentry1</bulletLabel>
+					<grapRect>-450,-150,400,130</grapRect>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack2</imgLabel>
+					<bulletLabel>Sentry2</bulletLabel>
+					<hurtRatio>6</hurtRatio>
+					<grapRect>-600,-111,650,105</grapRect>
+					<attackType>direct</attackType>
+				</hurt>
+			</hurtArr>
+		</body>
+		<body index="0" name="窃听者" shell="compound">
+			
+			<name>Shapers</name>
+			<cnName>窃听者</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/Shapers.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<headHurtMul>0.4</headHurtMul>
+			
+			<flipCtrlBy>target</flipCtrlBy>
+			<imgArr>
+				stand,move,hurt1,die1
+				,normalAttack1,normalAttack2,normalAttack3,shootAttack
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			<lifeBarExtraHeight>-70</lifeBarExtraHeight>
+			
+			<hitRect>-25,-50,50,50</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>9</maxVx>
+			<motionState>fly</motionState>
+			<flyUseSpiderB>1</flyUseSpiderB>
+			<flyType>tween</flyType>
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			
+			<skillArr />
+			<bossSkillArr>hiding_enemy,slowMove_enemy,likeMissle_Shapers,reverseHurt_enemy</bossSkillArr>
+			<bossSkillArrCn>隐身、减速、防弹盔甲、电离反转</bossSkillArrCn>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<hurtRatio>2.5</hurtRatio>
+					<attackType>direct</attackType>
+					<skillArr />
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/body_hit">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<skillArr />
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/body_hit">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack3</imgLabel>
+					<hurtRatio>2.5</hurtRatio>
+					<attackType>direct</attackType>
+					<skillArr />
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><mustGrapRectB>1</mustGrapRectB>
+					<bulletLabel>Shapers1</bulletLabel>
+					<grapRect>-400,-150,350,130</grapRect>
+					<hurtRatio>0.5</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+			</hurtArr>
+		</body>
+		<body index="0" name="伏地尸">
+			
+			<name>Crawler</name>
+			<cnName>伏地尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/Crawler.swf</swfUrl>
+			
+			<lifeRatio>2</lifeRatio>
+			<showLevel>47</showLevel>
+			<headHurtMul>0.4</headHurtMul>
+			
+			<imgArr>
+				stand,move,run
+				,normalAttack,shootAttack,hurt1,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			
+			<maxJumpNum>2</maxJumpNum>
+			<maxVx>7</maxVx>
+			<runStartVx>10</runStartVx>
+			
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel />
+			
+			<bulletLauncherClass />
+			<skillArr>addMove_Crawler</skillArr>
+			<bossSkillArr>summonedSpider_Crawler,defenceBounce_enemy,Crawler_cloned,corrosion_hugePosion,trueshot_enemy</bossSkillArr>
+			<bossSkillArrCn>喷射毒蛛、胶性表皮、分身、蚀毒、强击光环</bossSkillArrCn>
+			<extraDropArmsB>1</extraDropArmsB>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel><keyName>attack1</keyName>
+					<hurtRatio>3</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" soundUrl="sound/body_hit" raNum="30">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><keyName>attack2</keyName>
+					<bulletLabel>Crawler_shoot</bulletLabel>
+					<grapRect>-200,-111,100,105</grapRect>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="掘金尸">
+			
+			<name>NuggetsZombie</name>
+			<cnName>掘金尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/NuggetsZombie.swf</swfUrl>
+			
+			<lifeRatio>1.3</lifeRatio>
+			
+			
+			<imgArr>
+				stand,move
+				,normalAttack1,normalAttack2,lightningAttack,rotatingAttack
+				,hurt1,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			
+			<hitRect>-18,-86,36,86</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<lifeBarExtraHeight>-30</lifeBarExtraHeight>
+			
+			<extraAIClassLabel>NuggetsZombie_AIExtra</extraAIClassLabel>
+			<nextAttackTime>1</nextAttackTime>
+			
+			<skillArr />
+			<bossSkillArr>NuggetsShoot,noBounce_enemy,wind_Nuggets,SmallSpider_hitParalysis,despise_enemy,slowMoveHalo_enemy,teleport_enemy,noSpeedReduce</bossSkillArr>
+			<bossSkillArrCn>空虚，遁地风暴，击中麻痹，藐视，减速光环，瞬移</bossSkillArrCn>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<hurtRatio>1.5</hurtRatio>
+					<attackType>direct</attackType>
+					<beatBack>3</beatBack>
+					<shakeValue>6</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit2">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel><mustGrapRectB>1</mustGrapRectB>
+					<hurtRatio>0.75</hurtRatio>
+					<attackType>direct</attackType>
+					<beatBack>3</beatBack>
+					<shakeValue>6</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit2">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>lightningAttack</imgLabel><oneHurtB>1</oneHurtB><noShootB>1</noShootB>
+					<noAiChooseB>1</noAiChooseB>
+					<hurtMul>0.2</hurtMul>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>rotatingAttack</imgLabel>
+					<noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.5</hurtRatio>
+					<attackType>chaos</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>	
+		
+		<body index="0" name="狂野收割者" shell="normal">
+			
+			<name>FightPig</name>
+			<cnName>狂野收割者</cnName>
+			<raceType>zombies</raceType><headIconUrl>IconGather/FightPig</headIconUrl>
+			<swfUrl>swf/enemy/FightPig.swf</swfUrl>
+			
+			<lifeRatio>1.8</lifeRatio>
+			<rateRatio>0.05</rateRatio>
+			<showLevel>999</showLevel>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move
+				,normalAttack,shootAttack,sprintAttack,rollAttack,__rollAttack,rollAttack__,lightningAttack,thornAttack
+				,hurt1,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			<lifeBarExtraHeight>-20</lifeBarExtraHeight>
+			<handAddRa>90</handAddRa>
+			
+			<hitRect>-18,-96,36,96</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>8</maxVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>FightPig_AIExtra</extraAIClassLabel>
+			
+			<skillArr />
+			<bossSkillArr>roll_pig,collision_pig,noBounce_enemy,fleshFeast_pig,thorns_pig,thunder_pig,cmldef_enemy</bossSkillArr>
+			<extraDropArmsB>1</extraDropArmsB>
+			<preBulletArr />
+			
+			
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel><cn>斧击</cn>
+					<hurtRatio>1.5</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>7</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><cn>飞斧</cn>
+					<bulletLabel>FightPig_shoot</bulletLabel>
+					<grapRect>-350,-111,300,105</grapRect>
+					<hurtRatio>1.2</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>rollAttack</imgLabel>
+					<noAiChooseB>1</noAiChooseB>
+					<noShootB>1</noShootB><ingfollowB>1</ingfollowB>
+					<hurtRatio>0.8</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>sprintAttack</imgLabel><oneHurtB>1</oneHurtB>
+					<noAiChooseB>1</noAiChooseB>
+					<hurtMul>0.5</hurtMul>
+					<attackType>chaos</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>lightningAttack</imgLabel><oneHurtB>1</oneHurtB>
+					<noAiChooseB>1</noAiChooseB>
+					<hurtRatio>5</hurtRatio>
+					<attackType>chaos</attackType>
+					<shakeValue>4</shakeValue>
+				</hurt>
+			</hurtArr>
+		</body>	
+		
+	</father>	
+	
+	</data>

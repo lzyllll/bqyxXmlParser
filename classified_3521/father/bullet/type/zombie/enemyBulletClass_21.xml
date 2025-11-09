@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="掘金尸">
+		<bullet cnName="掘金尸-疾风斩">
+			<name>knife_Nuggets</name>
+			<cnName>掘金尸-疾风斩</cnName>
+			
+			<hurtMul>0.2</hurtMul>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>0.06</bulletLife>
+			<bulletWidth>90</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<twoHitGap>0.5</twoHitGap>
+			<twoHitSameNameB>1</twoHitSameNameB>
+			<bulletAngle>270</bulletAngle>
+			<bulletNum>1</bulletNum>				
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			
+			<flipX>1</flipX>
+			<imgClearDelay>0.12</imgClearDelay>
+			<bulletImgUrl>NuggetsZombie/piercingLeft</bulletImgUrl>
+			<secondBulletImgUrl>NuggetsZombie/piercingRight</secondBulletImgUrl>
+			<hitImgUrl>bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+	</father>	
+	</data>

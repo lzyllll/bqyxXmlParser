@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="虚晶蝎">
+		<skill index="0" name="泰山压顶">
+			<name>VirtualScorpion_press</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>泰山压顶</cnName><ignoreSilenceB>1</ignoreSilenceB>
+			<cd>10</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition><target>me</target>
+			<addType>instant</addType><effectType>no</effectType>
+			<meActionLabel>pressAttack</meActionLabel>
+			<description>跳至高空，凝聚巨钳之力快速砸向地面，产生巨大的范围伤害。</description>
+		</skill>
+		<skill index="0" name="蝎舞风暴">
+			<name>VirtualScorpion_wind</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>蝎舞风暴</cnName><ignoreSilenceB>1</ignoreSilenceB>
+			<cd>14</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition><target>me</target>
+			<addType>instant</addType><effectType>no</effectType>
+			<meActionLabel>windAttack</meActionLabel>
+			<description>制造2波阴阳风暴，阴暴具有极强的破坏力，而阳暴能激发肾上腺素，提高玩家的战斗力！</description>
+		</skill>
+		<skill index="0" name="战栗光">
+			<name>VirtualScorpion_light</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>战栗光</cnName><ignoreSilenceB>1</ignoreSilenceB>
+			<cd>19</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget,lifePerLess50</otherConditionArr>
+			<conditionRange>500</conditionRange><target>me</target>
+			<addType>instant</addType><effectType>no</effectType>
+			<meActionLabel>lightAttack</meActionLabel>
+			<description>持续从尾部喷射剧毒光,对大范围内的敌人造成战栗伤害。</description>
+		</skill>
+		<skill index="0" name="潮汐护甲">
+			<name>VirtualScorpion_defence</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>潮汐护甲</cnName><ignoreSilenceB>1</ignoreSilenceB><noBeClearB>1</noBeClearB>
+			<conditionType>passive</conditionType><condition>add</condition>
+			<target>me</target>
+			<addType>state</addType><effectType>VirtualScorpion_defence</effectType>
+			<duration>9999999</duration>
+			<description>紫晶护甲如潮汐般涌动，随着时间不断增长降低。</description>
+		</skill>
+		
+		<skill cnName="阳风增加攻击力">
+			<name>VirtualScorpion_windHurt</name>
+			<cnName>阳风增加攻击力</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>hurtMul</effectType>
+			<mul>2</mul>
+			<duration>5</duration>
+			
+			<stateEffectImg partType="2hand" con="add" raNum="15" followPartRaB="1">skillEffect/murderous_enemy</stateEffectImg>
+		</skill>
+		
+	</father>	
+	
+	
+	</data>

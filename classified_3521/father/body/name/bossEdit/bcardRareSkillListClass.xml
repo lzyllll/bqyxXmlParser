@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="bossEdit">
+		<body name="bcardSkillRare" cnName="随机技能-稀有" noEncodeB="1">
+			12_3:moreBullet
+12_4:MeatyAway
+12_11:missile_Sentry
+
+
+13_8:deadlyArrow
+13_9:deadlyGhost
+
+
+14_5:killXinLing
+
+21_2:offAllSkill
+
+23_1:LastdayHit
+
+
+31_4:WarriorShield
+
+
+31_12:verShield
+
+
+32_1:rebirth_enemy
+
+32_3:recoveryHalo_enemy
+
+
+
+32_8:lockLife
+
+
+34_2:noUnderFlyHit
+
+		</body>
+		
+		
+		<body name="bcardSkillMagic" cnName="随机技能-传奇" noEncodeB="1">
+			
+			11_9:demCloned2
+12_15:fastCd
+21_6:skillCopyTransport
+21_11:everSilenceEnemy
+21_14:meltFlamerPurgold
+23_12:shortShootRangeHole
+23_13:blackHoleDemon
+32_10:upperLimitSecond
+35_7:spellImmunityMax
+42_3:invisibilityEver
+
+13_5:meteoriteRain
+12_3:moreBullet
+13_8:deadlyArrow
+21_2:offAllSkill
+12_11:missile_Sentry
+13_9:deadlyGhost
+13_3:screwBall
+
+		</body>
+	</father>
+		
+</data>

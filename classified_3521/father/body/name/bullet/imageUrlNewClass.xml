@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="bullet" cnName="子弹">
+		<body cnName="处女座子弹" name="consVirgoBullet" shake="3,0.3,16,0,mess" con="add" raNum="4" ranAn="180" soundUrl="newGun/consVirgoS" soundRan="5">bulletHitEffect/purpleEnergy</body>
+		
+		<body cnName="幻银跟踪导弹" name="SilverShipMissile" raNum="30">bullet/orangeMissile</body>
+		<body cnName="幻银子弹" name="SilverShipBullet" con="add" raNum="60">bullet/blueLaserThin</body>
+		
+		<body cnName="紫蜂子弹" name="PurpleBeeBullet" con="add" raNum="30">bullet/laser2</body>
+		
+		<body cnName="矿锯" name="oreSawBullet" raNum="1">OreBomb/stand</body>
+		<body cnName="隼武子弹" name="falconArmsBullet" raNum="30" con="filter">bullet/greenDiam</body>
+		<body cnName="利爪僵尸子弹" name="clawsBullet" con="filter" raNum="30">ClawsZombie/bullet</body>
+		<body cnName="双头僵尸-回旋镖" name="DoubleZombieRotate">DoubleZombie/rotateBullet</body>
+		<body cnName="极源子弹" name="extremeGunBullet" con="add">generalEffect/frozenBallMid</body>
+		<body cnName="漫游子弹" name="roamRocketBullet" raNum="30">bullet/redMissile</body>
+		<body cnName="气球子弹" name="balloonBullet" raNum="30">PartsIcon/balloonBullet</body>
+		<body cnName="月饼子弹" name="mooncakeBullet">PartsIcon/mooncakeBullet</body>
+		<body cnName="神圣盖亚子弹" name="gaiaBigBullet" raNum="30">bullet/gaiaBigBullet</body>
+		<body cnName="神圣盖亚-装甲压制" name="goldGaiaSkillBullet">GoldGaia/skillBullet</body>
+		
+		<body cnName="轮刺" name="wheelStabsDiggersBullet" soundUrl="hitSound/clawHit" soundRan="3" soundVolume="0.4">FourDiggers/diggers</body>
+		
+		<body con="add" raNum="30" name="highlighterBullet" cnName="荧光笔子弹">specialGun/electricLine</body>
+		<body con="filter" raNum="30" name="highlighterBulletSun" cnName="荧光笔烟花" imgDieType="ranPlay">specialGun/electricLine</body>
+		<body con="add" raNum="18" name="FuGuangBullet" cnName="扶光剑气">FuGuang/daggerBullet</body>
+		
+		<body con="add" name="saberDartsFox" cnName="狐狸心零剑齿镖">foxLing/weaponBullet</body>
+		
+		<body cnName="天秤座子弹" name="consLibraBullet">newGun/consLibraBullet</body>
+		<body cnName="天秤座子弹2" name="consLibraSmoke" con="add">newGun/consLibraSmoke</body>
+		<body cnName="汤圆" name="tangYuan">newGun/tangYuan</body>
+		
+		
+		<body cnName="眩晕地雷" name="hurtMineBullet">dropEffect/hurtMineBullet</body>
+		<body cnName="眩晕地雷-敌方" name="hurtMineBulletEnemy">dropEffect/hurtMineBulletEnemy</body>
+		<body cnName="致命地雷" name="hammerMineBullet">dropEffect/hammerMineBullet</body>
+		<body cnName="致命地雷-敌方" name="hammerMineBulletEnemy">dropEffect/hammerMineBulletEnemy</body>
+		
+		<body cnName="降雨炮子弹" name="rainGunBullet" con="add">newGun/rainGunBullet</body>
+		
+		<body cnName="无疆骑士-拳炮" name="BlackKnightsBullet" raNum="30">BlackKnights/bullet1</body>
+		<body cnName="无疆骑士-双拳炮" name="BlackKnightsBulletTwo" raNum="20">BlackKnights/bullet2</body>
+		
+	</father>
+	</data>

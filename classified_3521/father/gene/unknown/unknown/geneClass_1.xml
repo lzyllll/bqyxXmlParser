@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father info="升级后的宠物">
+		<gene lv="2" name="PetIronZombieKing" cnName="钢铁僵尸王" type="boss">
+			<dpsMul>0.8</dpsMul><lifeMul>9</lifeMul>
+			<talentSkillArr>crazy_pet,trueshot_pet,shelling_ZombieKing</talentSkillArr>
+		</gene>
+		<gene lv="2" name="PetChaosKing" cnName="混沌狂战尸" type="boss">
+			<dpsMul>1.7</dpsMul><lifeMul>6</lifeMul>
+			<talentSkillArr>shake_FightKing,whirlwind_FightKing,shoot_FightKing</talentSkillArr>
+		</gene>
+		<gene lv="2" name="PetZombieHelmet" cnName="金盔僵尸">
+			<dpsMul>0.8</dpsMul><lifeMul>9</lifeMul>
+			<talentSkillArr>helmet_PetZombieFootball,shoot_PetZombieFootball,globalLight_PetZombieFootball</talentSkillArr>
+		</gene>
+		<gene lv="2" name="PetFightWolf" cnName="狂战狼" type="boss">
+			<dpsMul>2</dpsMul><lifeMul>7</lifeMul>
+			<talentSkillArr>summon_PetFightWolf,laser_PetFightWolf,treater_PetFightWolf,anger_PetFightWolf</talentSkillArr>
+		</gene>
+		
+		<gene lv="2" name="PetIronChiefSecond" cnName="铁魁X2" superB="1" type="boss" evolutionLabel="PetIronChiefThird" evolutionMustMul="4,4,6" growMust="1.8">
+			<dpsMul>1.4</dpsMul><lifeMul>11</lifeMul>
+			<talentSkillArr>sacrifice_PetIronChief,defenceAuras_PetIronChief,godHand_PetIronChief</talentSkillArr>
+			<laterSkillArr>disabledHalo_pet,recoveryHalo_pet,strong_pet,feedback_pet</laterSkillArr>
+			<talentProArr>dpsMul,hurtMul,lifeMul,headMul,lifeRate,critPro3,dodge,fightDedut</talentProArr>
+		</gene>
+		<gene lv="3" name="PetIronChiefThird" cnName="哈迪斯" superB="1" type="boss" evolutionLabel="PetIronChiefS" growMust="2.2">
+			<dpsMul>1.7</dpsMul><lifeMul>15</lifeMul>
+			<talentSkillArr>sacrifice_PetIronChief,defenceAuras_PetIronChief,godHand_PetIronChief</talentSkillArr>
+			<laterSkillArr>disabledHalo_pet,recoveryHalo_pet,strong_pet,feedback_pet</laterSkillArr>
+			<talentProArr>dpsMul,hurtMul,lifeMul,headMul,lifeRate,critPro3,dodge,fightDedut</talentProArr>
+		</gene>
+		<gene lv="4" name="PetIronChiefS" cnName="冥王" superB="1" type="boss">
+			<dpsMul>2.3</dpsMul><lifeMul>19</lifeMul>
+			<talentSkillArr>ironShell,sacrifice_PetIronChief,defenceAuras_PetIronChief,godHand_PetIronChief</talentSkillArr>
+			<laterSkillArr>disabledHalo_pet,recoveryHalo_pet,strong_pet,feedback_pet</laterSkillArr>
+			<talentProArr>dpsMul,hurtMul,lifeMul,headMul,lifeRate,critPro3,dodge,fightDedut</talentProArr>
+		</gene>
+		
+		
+		<gene lv="2" name="PetBoomSkullSecond" cnName="爆骷X2" superB="1" type="boss" evolutionLabel="PetBoomSkullThird" evolutionMustMul="4,6,4" growMust="1.8">
+			<dpsMul>3</dpsMul><lifeMul>7</lifeMul>
+			<talentSkillArr>endlessBombing_skull,current_skull,degradation_PetBoomSkull</talentSkillArr>
+			<laterSkillArr>disabledHalo_pet,trueshot_pet,slowMoveHalo_pet,groupReverseHurt_pet</laterSkillArr>
+			<talentProArr>dpsMul,hurtMul,lifeMul,headMul,lifeRate,critPro3,cdMul,dodge</talentProArr>
+		</gene>
+		<gene lv="3" name="PetBoomSkullThird" cnName="爆骷X3" superB="1" type="boss" evolutionLabel="PetBoomSkullS" growMust="2.2">
+			<dpsMul>4.5</dpsMul><lifeMul>9</lifeMul>
+			<talentSkillArr>endlessBombing_skull,current_skull,degradation_PetBoomSkull</talentSkillArr>
+			<laterSkillArr>disabledHalo_pet,trueshot_pet,slowMoveHalo_pet,groupReverseHurt_pet</laterSkillArr>
+			<talentProArr>dpsMul,hurtMul,lifeMul,headMul,lifeRate,critPro3,cdMul,dodge</talentProArr>
+		</gene>
+		<gene lv="4" name="PetBoomSkullS" cnName="爆骷S" superB="1" type="boss">
+			<dpsMul>6</dpsMul><lifeMul>11</lifeMul>
+			<talentSkillArr>babyBoom_skull,endlessBombing_skull,current_skull,degradation_PetBoomSkull</talentSkillArr>
+			<laterSkillArr>disabledHalo_pet,trueshot_pet,slowMoveHalo_pet,groupReverseHurt_pet</laterSkillArr>
+			<talentProArr>dpsMul,hurtMul,lifeMul,headMul,lifeRate,critPro3,cdMul,dodge</talentProArr>
+		</gene>
+		
+	</father>	
+</data>

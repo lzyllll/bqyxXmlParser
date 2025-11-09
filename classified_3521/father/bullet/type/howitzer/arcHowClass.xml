@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="howitzer" cnName="榴弹炮">
+		<bullet cnName="撒旦" color="darkgold" composeLv="99" dropLevelArr="999">
+			<name>arcHow</name>
+			<cnName>撒旦</cnName>
+			
+			<dpsMul>2</dpsMul>
+			<uiDpsMul>2</uiDpsMul>
+			
+			<capacity>20</capacity>
+			<attackGap>1.2</attackGap>
+			<attackDelay>1.6</attackDelay>
+			<crossbowD focoB="1" minDelayMul="0.3" vAtt="1" />
+			<reloadGap>1.5</reloadGap>
+			<bulletWidth>30</bulletWidth>
+			
+			<armsArmMul>0.65</armsArmMul>
+			<upValue>10</upValue>
+			<shootShakeAngle>30</shootShakeAngle>
+			<shootRecoil>7</shootRecoil>
+			<screenShakeValue>8</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>5</bulletLife>
+			<hitType>rect</hitType>
+				
+			<bulletSpeed>30</bulletSpeed>
+			<speedD min="10" />
+			
+			<gravity>1</gravity>
+			
+			<skillArr />
+			<godSkillArr />
+			
+			<iconUrl>specialGun/arcHowIcon</iconUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl name="blueLaserBig" />
+			<smokeImgUrl name="yearPig_bullet" />
+			<hitImgUrl name="yearDog_boom" />
+			<hitFloorImgUrl name="pistol1_hit" />
+			<fireImgUrl name="gunFireRocket" />
+			<shootSoundUrl>specialGun/arcHowSound</shootSoundUrl>
+			
+			<bodyImgRange>specialGun/arcHow</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description />
+		</bullet>
+		
+	</father>
+	</data>

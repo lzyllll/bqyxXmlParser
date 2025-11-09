@@ -1,0 +1,146 @@
+{
+  "base": {
+    "pro": [
+      {
+        "name": "level",
+        "cnName": "等级",
+        "unit": ""
+      },
+      {
+        "name": "evo",
+        "cnName": "进化体",
+        "unit": "",
+        "gatherColor": "yellow"
+      },
+      {
+        "name": "vehicleType",
+        "cnName": "类型",
+        "unit": ""
+      },
+      {
+        "name": "baseLife",
+        "cnName": "基本耐久",
+        "unit": "",
+        "wanB": true
+      },
+      {
+        "name": "nowLife",
+        "cnName": "当前耐久",
+        "unit": "",
+        "wanB": true,
+        "gatherColor": "green"
+      },
+      {
+        "name": "mainMul",
+        "cnName": "主炮攻击",
+        "unit": "倍",
+        "fixedNum": 1
+      },
+      {
+        "name": "subMul",
+        "cnName": "机枪攻击",
+        "unit": "倍",
+        "fixedNum": 1
+      },
+      {
+        "name": "attackMul",
+        "cnName": "普通攻击",
+        "unit": "倍",
+        "fixedNum": 1
+      },
+      {
+        "name": "speed",
+        "cnName": "速度",
+        "unit": ""
+      },
+      {
+        "name": "duration",
+        "cnName": "持续时间",
+        "unit": "秒"
+      },
+      {
+        "name": "cd",
+        "cnName": "冷却时间",
+        "unit": "秒"
+      },
+      {
+        "name": "baseLifeMul",
+        "cnName": "基础耐久系数",
+        "unit": "倍",
+        "fixedNum": 1
+      },
+      {
+        "name": "lifeMul",
+        "cnName": "耐久系数",
+        "unit": "倍",
+        "fixedNum": 1
+      },
+      {
+        "name": "limitLife",
+        "cnName": "耐久上限",
+        "unit": "",
+        "wanB": true
+      },
+      {
+        "name": "limitMainHurt",
+        "cnName": "主炮伤害上限",
+        "unit": "",
+        "wanB": true
+      },
+      {
+        "name": "limitSubHurt",
+        "cnName": "机枪伤害上限",
+        "unit": "",
+        "wanB": true
+      },
+      {
+        "name": "limitAttackHurt",
+        "cnName": "普通伤害上限",
+        "unit": "",
+        "wanB": true
+      }
+    ]
+  },
+  "bullet": {
+    "pro": [
+      {
+        "name": "dpsMul",
+        "cnName": "攻击倍数",
+        "unit": "倍",
+        "fixedNum": 1
+      },
+      {
+        "name": "hurtRatio",
+        "cnName": "当前伤害",
+        "unit": "",
+        "gatherColor": "orangeness",
+        "wanB": true
+      },
+      {
+        "name": "hurtTheory",
+        "cnName": "理论伤害",
+        "unit": "",
+        "gatherColor": "purple",
+        "wanB": true
+      },
+      {
+        "name": "hurtLimit",
+        "cnName": "伤害上限",
+        "unit": "",
+        "gatherColor": "green",
+        "wanB": true
+      },
+      {
+        "name": "attackGap",
+        "cnName": "射击速度",
+        "unit": "发/秒",
+        "fixedNum": 2
+      },
+      {
+        "name": "rotateRange",
+        "cnName": "转角范围",
+        "unit": "度"
+      }
+    ]
+  }
+}

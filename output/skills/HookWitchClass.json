@@ -1,0 +1,204 @@
+{
+  "father": {
+    "name": "enemy",
+    "skills": {
+      "HookWitch": {
+        "name": "HookWitch",
+        "shell": "normal",
+        "cnName": "斩之使者",
+        "headIconUrl": "IconGather/HookWitch",
+        "raceType": "zombies",
+        "swfUrl": "swf/enemy/HookWitch316.swf",
+        "lifeRatio": 1.8,
+        "showLevel": 999,
+        "imgType": "normal",
+        "imgArr": "stand,move,run\n\t\t\t\t,normalAttack,pullAttack,rollAttack,rollAttack__,__rollAttack,shakeAttack\n\t\t\t\t,hurt1,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+        "lifeBarExtraHeight": -50,
+        "handAddRa": 90,
+        "hitRect": "-18,-96,36,96",
+        "maxJumpNum": 1,
+        "maxVx": 12,
+        "runStartVx": 8,
+        "nextAttackTime": 0,
+        "extraAIClassLabel": "HookWitch_AIExtra",
+        "skillArr": null,
+        "bossSkillArr": "fightReduct2,defenceBounce_enemy,HookWitchHook,HookWitchRoll,HookWitchShake,HookWitchVehicle",
+        "wilderSkillArr": "shortShootRangeHole,weaponNo,godShield,fitVehicleDefence",
+        "bossSkillArrCn": null,
+        "extraDropArmsB": 1,
+        "dropD": {
+          "blackArmsBodyB": true
+        },
+        "hurtArr": {
+          "hurt": [
+            {
+              "imgLabel": "normalAttack",
+              "cn": "普通攻击",
+              "hurtRatio": 2,
+              "attackType": "direct",
+              "grapMaxLen": 160,
+              "grapMinLen": 50,
+              "skillArr": null,
+              "shakeValue": 4,
+              "hitImgUrl": {
+                "value": "bulletHitEffect/energy",
+                "con": "add",
+                "soundUrl": "sound/vehicle_hit1"
+              }
+            },
+            {
+              "info": "爆怒一击",
+              "noAiChooseB": 1,
+              "imgLabel": "shakeAttack",
+              "hurtMul": 0.7,
+              "hurtRatio": 1e-09,
+              "attackType": "holy",
+              "noUseOtherSkillB": 1
+            },
+            {
+              "info": "不加入ai选择",
+              "imgLabel": "pullAttack",
+              "noAiChooseB": 1,
+              "hurtRatio": 0.5,
+              "attackType": "holy",
+              "skillArr": "HookWitchHookHit",
+              "shakeValue": 4,
+              "hitImgUrl": {
+                "value": "bulletHitEffect/energy",
+                "con": "add"
+              }
+            },
+            {
+              "info": "不加入ai选择",
+              "imgLabel": "rollAttack",
+              "noAiChooseB": 1,
+              "noShootB": 1,
+              "ingfollowB": 1,
+              "hurtRatio": 1e-09,
+              "hurtMul": 0.025,
+              "transBackMul": 0.5,
+              "shakeValue": 4,
+              "hitImgUrl": {
+                "value": "bladeHitEffect/blood",
+                "con": "add",
+                "soundUrl": "sound/vehicle_hit1"
+              }
+            }
+          ]
+        }
+      },
+      "HookWitchShake": {
+        "index": 0,
+        "name": "HookWitchShake",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "cnName": "夺命斩",
+        "iconUrl36": "SkillIcon/HookWitchShake_36",
+        "cd": 9,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "target": "me",
+        "addType": "state",
+        "effectType": "invincible",
+        "duration": 1.8,
+        "meActionLabel": "shakeAttack",
+        "description": "斩之使者腾空而起，向地面的敌人发起夺命斩，造成巨大伤害。"
+      },
+      "HookWitchHook": {
+        "index": 0,
+        "name": "HookWitchHook",
+        "cnName": "勾魂斩",
+        "iconUrl36": "SkillIcon/HookWitchHook_36",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "cd": 5,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "nearAttackTarget",
+        "conditionRange": 700,
+        "target": "me",
+        "addType": "no",
+        "meActionLabel": "pullAttack",
+        "description": "斩之使者向前释放镰刀，把敌人勾到自己的面前，并眩晕敌人。"
+      },
+      "HookWitchHookHit": {
+        "index": 0,
+        "name": "HookWitchHookHit",
+        "cnName": "钩拉-击中麻痹",
+        "conditionType": "passive",
+        "condition": "hit",
+        "target": "target",
+        "noBeClearB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "addType": "state",
+        "effectType": "SnowGirlPullHit",
+        "mul": 36,
+        "secMul": 50,
+        "valueString": "belt",
+        "duration": 2.4,
+        "stateEffectImg": {
+          "value": "skillEffect/dizziness",
+          "partType": "mouth",
+          "con": "add"
+        }
+      },
+      "HookWitchRoll": {
+        "index": 0,
+        "name": "HookWitchRoll",
+        "cnName": "旋风斩",
+        "iconUrl36": "SkillIcon/HookWitchRoll_36",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "cd": 20,
+        "ignoreSilenceB": 1,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "lifePerLess",
+        "conditionRange": 0.6,
+        "target": "me",
+        "addType": "state",
+        "effectType": "HookWitchRoll",
+        "mul": 1,
+        "duration": 15,
+        "meEffectImg": null,
+        "description": "斩之使者进入旋风状态，旋转镰刀对敌人进行追击，持续[duration]秒。斩之使者弹跳时也会取消旋风状态。"
+      },
+      "HookWitchVehicle": {
+        "cnName": "绝地反击",
+        "name": "HookWitchVehicle",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "conditionType": "passive",
+        "condition": "underHit",
+        "target": "target",
+        "addType": "instant",
+        "effectType": "HookWitchVehicle",
+        "mul": 0.4,
+        "meEffectImg": null,
+        "targetEffectImg": null,
+        "description": "单位生命值小于[mul]时，不受任何载具的伤害。"
+      },
+      "shortShootRangeHole": {
+        "name": "shortShootRangeHole",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "cnName": "狭隘领域",
+        "ignoreImmunityB": 1,
+        "ignoreNoSkillB": 1,
+        "noSkillDodgeB": 1,
+        "noBeClearB": 1,
+        "everNoClearB": 1,
+        "conditionType": "passive",
+        "condition": "interval",
+        "target": "me,range,enemy",
+        "addType": "state",
+        "effectType": "limitShootRange",
+        "value": 100,
+        "duration": 1,
+        "range": 999999,
+        "description": "使所有持枪敌人的射程不超过[value]码。"
+      }
+    }
+  }
+}

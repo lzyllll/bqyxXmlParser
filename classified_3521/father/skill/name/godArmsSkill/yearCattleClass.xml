@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill index="0" name="牛年大吉">
+			<name>yearCattleSkill</name><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<cnName>周二大吉</cnName><noRandomListB>1</noRandomListB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>puWe,noDemonOnlyBoss,noMainTask,noHardB,dayPan,yearArmsFalse,targetUnitType,noUnionBattle</otherConditionArr>
+			<conditionRange>2</conditionRange>
+			<conditionString>boss</conditionString>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>yearCattleSkill</effectType>
+			<mul>0.02</mul>
+			<doGap>1</doGap>
+			<duration>999</duration>
+			
+			<meEffectImg />
+			<stateEffectImg partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="filter" raNum="30">skillEffect/poisonousFog_hero</stateEffectImg>
+			<description>每周二可以使一位首领慢性中毒，每秒损失2%的生命值，直至它倒下。无视技能免疫、不会被清除。主线任务、修罗决斗模式、军队争霸中该技能无效。</description>
+		</skill>
+	</father>
+</data>

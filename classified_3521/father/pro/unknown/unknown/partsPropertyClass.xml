@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father>
+		<pro name="bullet" cnName="攻击等级">
+			<effectName>dps</effectName>
+			<effectCnName>伤害</effectCnName>
+			<range maxLevel="15" max="0.3" />
+			<range maxLevel="20" max="0.3" />
+			<range maxLevel="25" max="0.3" />
+			<range maxLevel="30" max="0.3" />
+			<range maxLevel="35" max="0.45" />
+			<range maxLevel="40" max="0.6" />
+			<range maxLevel="45" max="0.75" />
+			<range maxLevel="50" max="0.9" />
+			<range maxLevel="55" max="1.0" />
+			<range maxLevel="60" max="1.1" />
+			<range maxLevel="65" max="1.2" />
+			<range maxLevel="70" max="1.3" />
+			<range maxLevel="84" max="1.4" />
+			<range maxLevel="87" max="1.5" />
+			<range maxLevel="999" max="1.5" />
+		</pro>
+		<pro name="shooter" cnName="射速等级">
+			<effectName>attackGap</effectName>
+			<effectCnName>射击速度</effectCnName>
+			<range maxLevel="15" max="-0.22" />
+			<range maxLevel="20" max="-0.26" />
+			<range maxLevel="25" max="-0.30" />
+			<range maxLevel="30" max="-0.34" />
+			<range maxLevel="35" max="-0.38" />
+			<range maxLevel="40" max="-0.42" />
+			<range maxLevel="45" max="-0.46" />
+			<range maxLevel="50" max="-0.50" />
+			<range maxLevel="55" max="-0.52" />
+			<range maxLevel="60" max="-0.54" />
+			<range maxLevel="65" max="-0.55" />
+			<range maxLevel="70" max="-0.56" />
+			<range maxLevel="84" max="-0.57" />
+			<range maxLevel="87" max="-0.58" />
+			<range maxLevel="999" max="-0.58" />
+		</pro>
+		<pro name="capacity" cnName="弹容等级">
+			<effectName>capacityMul</effectName>
+			<effectCnName>弹容</effectCnName>
+			<range maxLevel="15" max="0.25" />
+			<range maxLevel="20" max="0.33" />
+			<range maxLevel="25" max="0.41" />
+			<range maxLevel="30" max="0.49" />
+			<range maxLevel="35" max="0.57" />
+			<range maxLevel="40" max="0.65" />
+			<range maxLevel="45" max="0.73" />
+			<range maxLevel="50" max="0.81" />
+			<range maxLevel="55" max="0.83" />
+			<range maxLevel="60" max="0.85" />
+			<range maxLevel="65" max="0.86" />
+			<range maxLevel="70" max="0.87" />
+			<range maxLevel="84" max="0.88" />
+			<range maxLevel="87" max="0.89" />
+			<range maxLevel="999" max="0.89" />
+		</pro>
+		<pro name="stabler" cnName="稳定等级">
+			<effectName>shakeAngle</effectName>
+			<effectCnName>精准度</effectCnName>
+			<range maxLevel="15" max="-0.20" />
+			<range maxLevel="20" max="-0.25" />
+			<range maxLevel="25" max="-0.30" />
+			<range maxLevel="30" max="-0.35" />
+			<range maxLevel="35" max="-0.40" />
+			<range maxLevel="40" max="-0.45" />
+			<range maxLevel="45" max="-0.50" />
+			<range maxLevel="50" max="-0.55" />
+			<range maxLevel="55" max="-0.57" />
+			<range maxLevel="60" max="-0.59" />
+			<range maxLevel="65" max="-0.61" />
+			<range maxLevel="70" max="-0.63" />
+			<range maxLevel="84" max="-0.64" />
+			<range maxLevel="87" max="-0.65" />
+			<range maxLevel="999" max="-0.65" />
+		</pro>
+		<pro name="loader" cnName="装载等级">
+			<effectName>reload</effectName>
+			<effectCnName>装弹速度</effectCnName>
+			<range maxLevel="15" max="-0.20" />
+			<range maxLevel="20" max="-0.27" />
+			<range maxLevel="25" max="-0.34" />
+			<range maxLevel="30" max="-0.41" />
+			<range maxLevel="35" max="-0.48" />
+			<range maxLevel="40" max="-0.55" />
+			<range maxLevel="45" max="-0.62" />
+			<range maxLevel="50" max="-0.69" />
+			<range maxLevel="55" max="-0.72" />
+			<range maxLevel="60" max="-0.75" />
+			<range maxLevel="65" max="-0.77" />
+			<range maxLevel="66" max="-0.79" />
+			<range maxLevel="84" max="-0.80" />
+			<range maxLevel="87" max="-0.81" />
+			<range maxLevel="999" max="-0.81" />
+		</pro>
+		<pro name="sight" cnName="射程等级">
+			<effectName>shootDistance</effectName>
+			<effectCnName>射程</effectCnName>
+			<range maxLevel="15" max="150" />
+			<range maxLevel="20" max="200" />
+			<range maxLevel="25" max="250" />
+			<range maxLevel="30" max="300" />
+			<range maxLevel="35" max="350" />
+			<range maxLevel="40" max="400" />
+			<range maxLevel="45" max="450" />
+			<range maxLevel="50" max="500" />
+			<range maxLevel="55" max="525" />
+			<range maxLevel="60" max="550" />
+			<range maxLevel="65" max="570" />
+			<range maxLevel="70" max="585" />
+			<range maxLevel="84" max="600" />
+			<range maxLevel="87" max="610" />
+			<range maxLevel="999" max="610" />
+		</pro>
+	</father>
+</data>

@@ -1,0 +1,175 @@
+{
+  "father": {
+    "name": "space",
+    "cnName": "敌方",
+    "skills": {
+      "FalconBoss": {
+        "name": "FalconBoss",
+        "shell": "normal",
+        "cnName": "黄金隼",
+        "raceType": "ship",
+        "swfUrl": "swf/hero/FalconBoss335.swf",
+        "showLevel": 999,
+        "headIconUrl": "goldFalcon/bossIcon",
+        "lifeBarExtraHeight": -190,
+        "aircraft": "wing2",
+        "imgArr": "standStop,standForward,standBack,standStop__squatStop\n\t\t\t\t,squatForward,squatStop,squatBack,squatStop__standStop\n\t\t\t\t,jumpDown__,jumpDown,jumpUp__jumpDown,jumpUp,__jumpUp\n\t\t\t\t,die1,__stru,stru\n\t\t\t\t,armsAttack,birthAttack",
+        "preBulletArr": "extremeLaserFire",
+        "hitRect": "-20, -90, 40, 90",
+        "squatHitRect": "-20,-50,40,50",
+        "hurtRectArr": [
+          "-40,-70,58,60",
+          "-26, -197, 54, 176",
+          "-26, -257, 54, 116"
+        ],
+        "maxVx": 10.5,
+        "squatMaxVx": 5,
+        "maxJumpNum": 1,
+        "dieJumpMul": 0,
+        "motionD": {
+          "jumpMul": 1.5
+        },
+        "flyUseSpiderB": 1,
+        "flyType": "tween",
+        "armsNumber": 3,
+        "randomArmsRange": "sawEmitter,falconArms",
+        "oneAiLabel": "Madboss",
+        "skillArr": "FalconBossBuff",
+        "bossSkillArr": "falconSaw,FalconFly,crazyMad,State_SpellImmunity,strong_enemy,findHide",
+        "bossSkillArrCn": null,
+        "wilderSkillArr": "pioneerDemon,noUnderLaser,midLightning,likeMissleNo,godShield",
+        "hurtArr": {
+          "hurt": {
+            "cn": "擎天斩",
+            "imgLabel": "armsAttack",
+            "noAiChooseB": 1,
+            "hurtRatio": 1,
+            "hurtMul": 0.5,
+            "attackType": "holy",
+            "skillArr": "invincibleEmp",
+            "shakeValue": 6,
+            "grapRect": "-350,-111,300,105"
+          }
+        }
+      },
+      "falconSaw": {
+        "name": "falconSaw",
+        "wantDescripB": 1,
+        "cnName": "召唤拉矿船",
+        "everNoClearB": 1,
+        "noBeClearB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "lifePerLess50",
+        "target": "me",
+        "cd": 25,
+        "addType": "state",
+        "summonedUnitsB": 1,
+        "effectType": "sumSaw",
+        "effectFather": "falconBoss",
+        "obj": {
+          "cnName": "拉矿船",
+          "num": 1.5,
+          "lifeMul": 1,
+          "dpsMul": 1,
+          "lifeTime": -1,
+          "position": "mouse",
+          "cx": 700,
+          "cy": -70,
+          "flipB": false,
+          "pointEf": 1
+        },
+        "value": 5,
+        "secMul": 1.5,
+        "duration": 11,
+        "pointEffectImg": {
+          "name": "oreBombShowFlower"
+        },
+        "meEffectImg": {
+          "name": "falconHide"
+        },
+        "description": "生命值少于50%时，隐身自己，并召唤大量的拉矿船（红武敏感）。"
+      },
+      "FalconFly": {
+        "name": "FalconFly",
+        "cnName": "飞行",
+        "ignoreNoSkillB": 1,
+        "ignoreSilenceB": 1,
+        "cd": 20,
+        "conditionType": "active",
+        "doCondition": "canLand",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "nearAttackTarget,lifePerLess80",
+        "conditionRange": 1200,
+        "target": "me",
+        "addType": "instant",
+        "effectType": "flyOrLand",
+        "effectFather": "falconBoss"
+      },
+      "FalconBossBuff": {
+        "cnName": "全身发光、走路带烟",
+        "name": "FalconBossBuff",
+        "noCopyB": 1,
+        "everNoClearB": 1,
+        "noBeClearB": 1,
+        "ignoreNoSkillB": 1,
+        "ignoreSilenceB": 1,
+        "conditionType": "passive",
+        "condition": "add",
+        "target": "me",
+        "addType": "state",
+        "effectType": "buff",
+        "effectFather": "falconBoss",
+        "duration": 99999999,
+        "meEffectImg": {
+          "name": "madArmsAttack_state"
+        },
+        "stateEffectImg": {
+          "value": "generalEffect/purBigLight",
+          "partType": "leg_right_1,leg_left_1,arm_right_1,arm_left_1,mouth",
+          "con": "add"
+        },
+        "pointEffectImg": {
+          "value": "boomEffect/smoke2",
+          "con": "add"
+        },
+        "otherEffectImg": {
+          "value": "boomEffect/boom3",
+          "partType": "hand_right,leg_right_1,eye_left,body"
+        }
+      },
+      "verShield30": {
+        "name": "verShield30",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "cnName": "薄命竖盾",
+        "ignoreImmunityB": 1,
+        "ignoreNoSkillB": 1,
+        "ignoreSilenceB": 1,
+        "conditionType": "passive",
+        "otherConditionArr": "skillSpecialNumLess,lifePerLess30",
+        "conditionRange": 0,
+        "condition": "underHit",
+        "target": "me",
+        "addType": "instant",
+        "summonedUnitsB": 1,
+        "effectType": "summonedUnitsAndCount",
+        "obj": {
+          "cnName": "竖盾",
+          "num": 2,
+          "lifeMul": 1,
+          "dpsMul": 0,
+          "lifeTime": 9999999,
+          "mulByFatherB": 1,
+          "maxNum": 2,
+          "skillArr": [
+            "verShieldBuff"
+          ]
+        },
+        "description": "生命值少于30%时，左右两侧竖起高高的护盾，抵挡任何攻击。"
+      }
+    }
+  }
+}

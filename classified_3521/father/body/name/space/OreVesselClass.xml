@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="space">
+		<body>
+			<name>OreVessel</name>
+			<cnName>采矿舰</cnName>
+			<raceType>ship</raceType><headIconUrl>IconGather/OreVessel</headIconUrl>
+			<swfUrl>swf/ship/OreVessel.swf</swfUrl>
+			
+			<dieImg name="bigSpace" /><imgType>normal</imgType>
+			<dieJumpMul>0</dieJumpMul><lifeBarExtraHeight>-100</lifeBarExtraHeight>
+			<lockLeftB>1</lockLeftB>
+			<imgArr>
+				stand,normalAttack,sawAttack,taperAttack,bombAttack,bigAttack,die1
+			</imgArr>
+			
+			<hitRect>-20,-20,40,40</hitRect>
+			<hurtRectArr>-211,-47,92,123</hurtRectArr>
+			<hurtRectArr>-126,-103,112,232</hurtRectArr>
+			<hurtRectArr>-19,-124,197,209</hurtRectArr>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<maxVx>10</maxVx><motionD F_AIR="1" />
+			<bossSkillArr>OreVesselTaper,OreVesselBomb,OreVesselSaw</bossSkillArr>
+			<hurtArr>
+				<hurt cd="3">
+					<imgLabel>normalAttack</imgLabel>
+					<bulletLabel>OreVesselBullet</bulletLabel>
+					<grapRect>-960,-71,900,186</grapRect>
+					<hurtRatio>1</hurtRatio>
+				</hurt>
+			</hurtArr>
+		</body>
+				<bullet>
+					<name>OreVesselBullet</name>
+					<cnName>采矿舰-十字弹</cnName>
+					<hurtRatio>0.3</hurtRatio>
+					<bulletLife>4</bulletLife>
+					<bulletWidth>30</bulletWidth>
+					<hitType>rect</hitType>
+					
+					<attackGap>0.7</attackGap>
+					<attackDelay>0.3</attackDelay>
+					<bulletAngle>22.5</bulletAngle>
+					<bulletNum>8</bulletNum>
+					<shootNum>3</shootNum>
+					<shootGap>0.1</shootGap>
+					<shootAngle>157.5</shootAngle>					
+						
+					<shootPoint>-133,61</shootPoint>
+					<bulletSpeed>12</bulletSpeed>
+					<bulletImgUrl name="PurpleBeeBullet" />
+					<hitImgUrl name="gun_hit" />
+				</bullet>
+			
+				<skill>
+					<name>OreVesselTaper</name>
+					<cnName>召唤矿锥</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+					<conditionType>active</conditionType>
+					<condition>avtiveSkillCdOver</condition>
+					<target>me</target>
+					<cd>12</cd><delay>0.7</delay>
+					
+					<addType>state</addType><summonedUnitsB>1</summonedUnitsB>
+					<effectType>sumTimeGapDiff</effectType><effectFather>oreSpace</effectFather>
+					<obj>"cnName":"矿锥","num":1,"lifeMul":1,"dpsMul":1,"lifeTime":-1,"cx":61,"cy":-119,"pointEf":1</obj>
+					<value>6</value>
+					<secMul>0.1</secMul>
+					<duration>0.7</duration>
+					<pointEffectImg name="oreBombShowFlower" />
+					<meActionLabel>taperAttack</meActionLabel>
+				</skill>
+				<skill>
+					<name>OreVesselBomb</name>
+					<cnName>召唤矿锯</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+					<conditionType>active</conditionType>
+					<condition>avtiveSkillCdOver</condition>
+					<target>me</target>
+					<cd>8</cd><delay>0.5</delay>
+					
+					<addType>state</addType><summonedUnitsB>1</summonedUnitsB>
+					<effectType>sumTimeGapDiff</effectType><effectFather>oreSpace</effectFather>
+					<obj>"cnName":"矿锯","num":1,"lifeMul":1.5,"dpsMul":1,"lifeTime":-1,"cx":-84,"cy":73,"pointEf":1</obj>
+					<value>10</value>
+					<secMul>0.15</secMul>
+					<duration>1.6</duration>
+					<pointEffectImg name="oreBombShowFlower" />
+					<meActionLabel>bombAttack</meActionLabel>
+				</skill>
+				<skill>
+					<name>OreVesselSaw</name>
+					<cnName>召唤矿棘</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+					<conditionType>active</conditionType>
+					<condition>avtiveSkillCdOver</condition>
+					<target>me</target>
+					<cd>15</cd><delay>0.7</delay>
+					
+					<addType>state</addType><summonedUnitsB>1</summonedUnitsB>
+					<effectType>sumTimeGapDiff</effectType><effectFather>oreSpace</effectFather>
+					<obj>"cnName":"矿棘","num":1.5,"lifeMul":1,"dpsMul":1,"lifeTime":-1,"cx":-69,"cy":-69,"pointEf":1,"skillArr":["OreVesselSawSlow"]</obj>
+					<value>1</value>
+					<secMul>99</secMul>
+					<duration>0.1</duration>
+					<pointEffectImg name="oreBombShowFlower" />
+					<meActionLabel>sawAttack</meActionLabel>
+				</skill>
+						<skill>
+							<name>OreVesselSawSlow</name>
+							<cnName>矿棘减速</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+							<conditionType>passive</conditionType>
+							<condition>add</condition>
+							<target>me</target>
+							
+							<addType>instant</addType>
+							<effectType>setFivMaxMul</effectType>
+							<mul>0.6</mul>
+						</skill>
+	</father>
+</data>

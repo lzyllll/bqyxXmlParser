@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="deputy" cnName="支线" tipText="" autoUnlockByLevelB="1">
+		<task role="noGirl" name="NanTang_XiaoYing" cnName="寻找小樱（小樱入队）" lv="35" unlockLv="30" levelIsTaskLvB="1">
+			<openD tk="ShuangTa_fall" />
+			<shortText>前往[map]寻找小樱，并保证她能够存活下来。</shortText>
+			<uiConditionText>寻找小樱，并保证她能够存活下来</uiConditionText>
+			<description>双塔沦陷之后，制毒师下落不明。而据特种兵阿天描述，制毒师在失踪之前，曾在南唐城与一位名叫“小樱”的女子会过面。你现在必须独自前往南唐城找出这位女子。</description>
+			
+			<worldMapId>NanTang</worldMapId>
+			<levelId>NanTang_XiaoYing</levelId>
+			
+			<gift>more;Girl;1;;taskLv</gift>
+		</task>
+		<task name="thornyRoad" cnName="荆棘之路" uiShowTime="999999" lv="84" unlockLv="84">
+			<limit vehicleB="0" propsB="0" skillB="0" />
+			<shortText>前往[map]收集大银币。</shortText>
+			<conditionText>大银币 [nowNum]/[num]</conditionText>
+			<uiConditionText>收集大银币 [num] 个</uiConditionText>
+			<description>通过充满荆棘的道路上拾取银币。</description>
+			
+			<worldMapId>NanTang</worldMapId>
+			<levelId>deputyLevel/thornyRoad</levelId>
+			<noEnemyWhenCompleteB>1</noEnemyWhenCompleteB>
+			<condition type="collect" target="hitDrop" targetId="addCoin_task" value="26" cumulativeType="no" />
+			<gift>base;anniCoin;10</gift>
+			<gift>things;partsChest84;1</gift>
+		</task>
+		<task name="defendBeiDou" cnName="保卫北斗" uiShowTime="999999" lv="85" unlockLv="85">
+			<limit vehicleB="0" propsB="0" skillB="0" />
+			<shortText>前往[map]清理火球</shortText>
+			<conditionText>坚持 [time]</conditionText>
+			<uiConditionText>坚持 [time]</uiConditionText>
+			<description>北斗城遭到了火球的袭击，请用武器清理这些火球，不要让北斗遭受破坏。</description>
+			
+			<worldMapId>BeiDou</worldMapId>
+			<levelId>deputyLevel/defendBeiDou</levelId>
+			<condition time="120" timeType="win" />
+			<gift>base;anniCoin;10</gift>
+			<gift>things;armsTitanium;20</gift>
+			<gift>things;armsRadium;20</gift>
+		</task>
+		<task name="missileTrain" cnName="派生训练日" lv="86" unlockLv="86" levelIsTaskLvB="1" superAddNumB="1" uiShowTime="999999">
+			<diff>2</diff>
+			<shortText>前往[map]使用派生导弹消灭敌人</shortText>
+			<conditionText>僵尸 [nowNum]/[num]</conditionText>
+			<uiConditionText>使用派生导弹累计消灭 [nowNum]/[num] 个僵尸</uiConditionText>
+			<description>前往指定地点使用派生导弹（也适用套件霸虎无双的派生导弹）消灭敌人。</description>
+			
+			<worldMapId>YangMei</worldMapId>
+			<levelId>missileTrain</levelId>
+			<condition type="collect" target="hitMissile_heroKill" value="300" />
+			<uiFleshCondition><one>bodyEvent:die; anyone</one></uiFleshCondition>
+			<gift>base;anniCoin;10</gift>
+			<gift>things;lightStone;15</gift>
+		</task>
+		
+		<task name="thunderboltBirth" cnName="雷霆的诞生" lv="87" unlockLv="87" levelIsTaskLvB="1">
+			<diff>2</diff>
+			<shortText>前往[map]，摧毁鬼爵制造的雷霆载具。</shortText>
+			<uiConditionText>摧毁鬼爵制造的雷霆载具</uiConditionText>
+			<description>鬼爵用新材料改造了雷鸣载具，快去摧毁它！</description>
+			
+			<worldMapId>PrisonDoor</worldMapId>
+			<levelId>deputyLevel/thunderboltBirth</levelId>
+			<gift>base;anniCoin;10</gift>
+			<gift>things;magicChest;7</gift>
+		</task>
+		
+		<task name="storyXiaoMei" cnName="小美的身世" lv="88" unlockLv="30" levelIsTaskLvB="1">
+			<diff>1</diff>
+			<shortText>前往[map]，使用弩清理僵尸，并保证小美活着。</shortText>
+			<uiConditionText>用弩清理僵尸，并保证小美活着。</uiConditionText>
+			<description>和小美一起到地下城，清除那里的僵尸（只受弩的伤害）。小美将告诉你她真正的身世。</description>
+			
+			<worldMapId>DiXia</worldMapId>
+			<levelId>deputyLevel/storyXiaoMei</levelId>
+			<gift>base;anniCoin;10</gift>
+			<gift>things;agileGem;15</gift>
+		</task>
+		
+		<task name="petTrain" cnName="宠物训练场" lv="89" unlockLv="89" levelIsTaskLvB="1" superAddNumB="1" uiShowTime="999999">
+			<diff>1</diff>
+			<shortText>前往[map]，使用宠物消灭敌人</shortText>
+			<conditionText>僵尸 [nowNum]/[num]</conditionText>
+			<uiConditionText>使用宠物累计消灭 [nowNum]/[num] 个僵尸</uiConditionText>
+			<description>前往指定地点使用宠物消灭敌人。</description>
+			
+			<worldMapId>GongMu</worldMapId>
+			<levelId>petTrain</levelId>
+			<condition type="collect" target="petKill" value="200" />
+			<uiFleshCondition><one>bodyEvent:die; anyone</one></uiFleshCondition>
+			<gift>base;anniCoin;10</gift>
+			<gift>things;bloodStone;20</gift>
+			<gift>things;PetBoomSkullBook;10</gift>
+		</task>
+		
+		<task name="missingArthur" cnName="失踪的亚瑟" lv="90" unlockLv="90" levelIsTaskLvB="1" uiShowTime="999999">
+			<openD tk="PiaoMiao_plot" />
+			<diff>2</diff>
+			<shortText>前往[map]，找出亚瑟。</shortText>
+			<uiConditionText>使用近战攻击清理敌人，找出亚瑟</uiConditionText>
+			<description>前往丛林深处，使用近战攻击清理敌人，并找出亚瑟。</description>
+			
+			<worldMapId>JungleDeep</worldMapId>
+			<levelId>deputyLevel/missingArthur</levelId>
+			<gift>base;anniCoin;10</gift>
+			<gift>things;electricGem;15</gift>
+		</task>
+		
+		<task name="pistolFoxTrain" cnName="银狐挑战" lv="90" unlockLv="90" levelIsTaskLvB="1" superAddNumB="1" uiShowTime="999999">
+			<diff>3</diff>
+			<shortText>前往[map]，使用银狐召唤的蝙蝠消灭敌人</shortText>
+			<conditionText>僵尸 [nowNum]/[num]</conditionText>
+			<uiConditionText>使用银狐召唤的蝙蝠累计消灭 [nowNum]/[num] 个僵尸</uiConditionText>
+			<description>前往指定地点训练银狐的召唤技能。</description>
+			
+			<worldMapId>JungleOutside</worldMapId>
+			<levelId>pistolFoxTrain</levelId>
+			<condition type="collect" target="pistolFoxKill" value="300" />
+			<uiFleshCondition><one>bodyEvent:die; anyone</one></uiFleshCondition>
+			<gift>base;anniCoin;10</gift>
+			<gift>things;poisonGem;15</gift>
+		</task>
+		
+		<task name="rescueMocha" cnName="营救摩卡" lv="91" unlockLv="91" levelIsTaskLvB="1">
+			<openD tk="HanGuang1_plot" />
+			<diff>2</diff>
+			<shortText>前往[map]，清理僵尸，并保证摩卡活着。</shortText>
+			<uiConditionText>清理僵尸，并保证摩卡活着。</uiConditionText>
+			<description>前往千年冻湖，营救摩卡，问出他和战争狂人的关系。</description>
+			
+			<worldMapId>DongWu</worldMapId>
+			<levelId>deputyLevel/rescueMocha</levelId>
+			<gift>base;anniCoin;10</gift>
+			<gift>things;yearDog;10</gift>
+		</task>
+		
+		<task name="killTreasure" cnName="追击财宝僵尸" lv="91" unlockLv="91" levelIsTaskLvB="1" uiShowTime="999999">
+			<diff>2</diff>
+			<shortText>前往[map]，使用副手消灭所有财宝僵尸。</shortText>
+			<conditionText>剩余时间 [time][n]消灭僵尸 [nowNum]/[num]</conditionText>
+			<uiConditionText>限定时间内，使用副手消灭所有财宝僵尸。</uiConditionText>
+			<description>前往指定地点，在限定时间内，使用副手消灭所有财宝僵尸。</description>
+			
+			<uiFleshCondition><one>bodyEvent:die; anyone</one></uiFleshCondition>
+			<condition type="collect" target="killEnemyNum" value="30" cumulativeType="no" time="300" timeType="fail" />
+			<noEnemyWhenCompleteB>1</noEnemyWhenCompleteB>
+			
+			<worldMapId>BingKuDeep</worldMapId>
+			<levelId>deputyLevel/killTreasure</levelId>
+			<gift>base;anniCoin;10</gift>
+			<gift>things;normalChest;10</gift>
+		</task>
+		
+		<task name="vehicleTrain" cnName="载具训练" lv="92" unlockLv="92" levelIsTaskLvB="1" superAddNumB="1" uiShowTime="999999">
+			<diff>2</diff>
+			<shortText>前往[map]使用载具碾压消灭精英怪</shortText>
+			<conditionText>精英怪 [nowNum]/[num]</conditionText>
+			<uiConditionText>使用载具碾压累计消灭 [nowNum]/[num] 个精英怪</uiConditionText>
+			<description>前往指定地点使用载具碾压消灭精英怪。</description>
+			
+			<worldMapId>BaWang</worldMapId>
+			<levelId>vehicleTrain</levelId>
+			<condition type="collect" target="vehicleTrain" value="10" />
+			<uiFleshCondition><one>bodyEvent:die; anyone</one></uiFleshCondition>
+			<gift>base;anniCoin;10</gift>
+			<gift>things;NianCarCash;10</gift>
+			<gift>things;SaberTigerCarCash;5</gift>
+		</task>
+		
+		<task name="bulletLimitTrain" cnName="限弹挑战" lv="92" unlockLv="92" levelIsTaskLvB="1" uiShowTime="999999">
+			<limit vehicleB="0" propsB="0" />
+			<diff>1</diff>
+			<shortText>前往[map]，消灭首领。</shortText>
+			<uiConditionText>在限制弹药的情况下，消灭首领</uiConditionText>
+			<description>在任务中，系统给玩家指定4把无法补充弹药的武器，同时无法使用载具、副手、装置和道具，并限制了金刚钻的无限子弹效果，你要想办法清除所有敌人并消灭首领。</description>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			
+			<worldMapId>LvSen</worldMapId>
+			<levelId>bulletLimitTrain</levelId>
+			<gift>base;anniCoin;10</gift>
+			<gift>things;waterFlamer;5</gift>
+			<gift>things;yearPig;5</gift>
+		</task>
+		<task name="rifleHornetTrain" cnName="青蜂训练" lv="93" unlockLv="93" levelIsTaskLvB="1" uiShowTime="999999">
+			<diff>3</diff>
+			<shortText>前往[map]使用步枪青蜂爆头精英怪。</shortText>
+			<conditionText>精英怪 [nowNum]/[num]</conditionText>
+			<uiConditionText>使用步枪青蜂爆头 [nowNum]/[num] 个精英怪</uiConditionText>
+			<description>前往指定地点使用步枪青蜂爆头精英怪。</description>
+			
+			<worldMapId>ShangSha</worldMapId>
+			<levelId>rifleHornetTrain</levelId>
+			<condition type="collect" target="rifleHornetTrain" value="10" />
+			<uiFleshCondition><one>bodyEvent:die; anyone</one></uiFleshCondition>
+			<gift>base;anniCoin;10</gift>
+			<gift>things;yearSnake;8</gift>
+		</task>
+		<task name="doctorEsteem" cnName="制毒师的自尊" lv="93" unlockLv="30" levelIsTaskLvB="1">
+			<diff>2</diff>
+			<conditionText>macth_kills_doctor</conditionText>
+			<shortText>在消灭所有僵尸之后，你的灭敌数必须少于制毒师。</shortText>
+			<uiConditionText>灭敌比赛必须输给制毒师，并保证他活着。</uiConditionText>
+			<description>与制毒师进行灭敌比赛，但是你得想办法输给他，并保证他活着。</description>
+			
+			<uiFleshCondition><one>bodyEvent:die; anyone</one></uiFleshCondition>
+			<worldMapId>BaoLun</worldMapId>
+			<levelId>deputyLevel/doctorEsteem</levelId>
+			<gift>base;anniCoin;10</gift>
+			<gift>things;yearHourse;6</gift>
+		</task>
+		
+		<task name="lightningTowerTrain" cnName="闪电塔训练" lv="93" unlockLv="93" levelIsTaskLvB="1" superAddNumB="1" uiShowTime="999999">
+			<diff>2</diff>
+			<shortText>前往[map]使用装置闪电塔消灭精英怪</shortText>
+			<conditionText>精英怪 [nowNum]/[num]</conditionText>
+			<uiConditionText>使用闪电塔累计消灭 [nowNum]/[num] 个精英怪</uiConditionText>
+			<description>前往指定地点使用装置闪电塔消灭精英怪。</description>
+			
+			<worldMapId>DongFeng</worldMapId>
+			<levelId>lightningTowerTrain</levelId>
+			<condition type="collect" target="lightningTowerTrain" value="4" />
+			<uiFleshCondition><one>bodyEvent:die; anyone</one></uiFleshCondition>
+			<gift>base;anniCoin;10</gift>
+			<gift>things;artifactChest;5</gift>
+		</task>
+		
+		
+		<task name="xinLingTrain" cnName="训练女助手（心零入队）" lv="93" unlockLv="30" levelIsTaskLvB="1">
+			<diff>2</diff>
+			<conditionText>macth_kills_XinLing</conditionText>
+			<shortText>在消灭所有僵尸之后，你的灭敌数必须少于心零。</shortText>
+			<uiConditionText>灭敌比赛必须输给心零，并保证她活着。</uiConditionText>
+			<description>今天你要负责训练制毒师的女助手——心零，和她进行灭敌比赛，但是你得想办法输给她，并保证她活着。</description>
+			
+			<uiFleshCondition><one>bodyEvent:die; anyone</one></uiFleshCondition>
+			<worldMapId>LuYu</worldMapId>
+			<levelId>deputyLevel/xinLingTrain</levelId>
+			<gift>more;XinLing;1;;93</gift>
+			
+			<openD mustB="1" tk="HanGuang3_city">
+				<must>things;lily;100</must>
+			</openD>
+		</task>
+		
+		
+		<task name="threePartner" cnName="招募退役兵（队友上场+1）" lv="94" unlockLv="30" levelIsTaskLvB="1">
+			<diff>2</diff>
+			<shortText>前往[map]消灭首领，拯救退役兵。</shortText>
+			<uiConditionText>消灭首领，拯救退役兵。</uiConditionText>
+			<description>一群退役兵被困在监狱深处，去把他们解救出来！并招募他们保护我们的主城，这样我们就可以在以后的战斗中上场更多队友了！</description>
+			
+			<worldMapId>PrisonDeep</worldMapId>
+			<levelId>deputyLevel/threePartner</levelId>
+			<gift>base;anniCoin;10</gift>
+			
+			<openD mustB="1" tk="HanGuang4_city">
+				<must>things;soldiersStamp;30</must>
+			</openD>
+		</task>
+		
+		
+		
+		<task name="madFlyBug" cnName="极源宝石" lv="98" unlockLv="98">
+			<openD tk="madFly3" />
+			<shortText>收集极源宝石</shortText>
+			<conditionText>丢失宝石不超过 [num]个</conditionText>
+			<uiConditionText>丢失宝石不超过 [num]个</uiConditionText>
+			<description>收集极源宝石，如果丢失的宝石超过指定数量，任务将失败。</description>
+			
+			<worldMapId>HanGuangSub</worldMapId>
+			<levelId>madFlyBug</levelId>
+			<condition type="value" value="10" />
+			<gift>things;nuclearStone;2</gift>
+			<gift>things;demStone;5</gift>
+			<gift>things;doubleArmsCard;4</gift>
+			<gift>things;demonSpreadCard;4</gift>
+		</task>
+		
+		<task name="getXiaoMei" cnName="回家（小美入队）" lv="99" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>完成对话。</shortText>
+			<uiConditionText>完成对话。</uiConditionText>
+			<description>小樱带着小美，在实验室地下找到了被关押的亚瑟，他们之间会进行什么样的对话呢？之后，小美将加入爆枪小队。</description>
+			
+			<worldMapId>HospitalUnder</worldMapId>
+			<levelId>deputyLevel/getXiaoMei</levelId>
+			<gift>more;XiaoMei;1;;taskLv</gift>
+			
+			<openD mustB="1" tk="Hospital5_plot">
+				<must>things;teddyBear;30</must>
+			</openD>
+		</task>
+		
+		
+		<task name="shotgunBladeTrain" cnName="战斧挑战（队友上场+1）" lv="99" unlockLv="30" levelIsTaskLvB="1" uiShowTime="999999">
+			<diff>0.5</diff>
+			<shortText>前往[map]使用战斧的跳斩击杀敌人。</shortText>
+			<conditionText>敌人 [nowNum]/[num]</conditionText>
+			<uiConditionText>使用战斧的跳斩击杀 [nowNum]/[num] 个敌人</uiConditionText>
+			<description>给阿天示范战斧的使用，完成任务后，我们就可在战斗中上场更多的队友了。注意，你必须拥有战斧才能完成当前任务。</description>
+			
+			<worldMapId>BaWang</worldMapId>
+			<levelId>shotgunBladeTrain</levelId>
+			<condition type="collect" target="shotgunBladeTrain" value="13" />
+			<uiFleshCondition><one>bodyEvent:die; anyone</one></uiFleshCondition>
+			<gift>things;highPartnerCard;5</gift>
+			
+			<openD mustB="1" tk="XiShan5_plot">
+				<must>things;highPartnerCard;60</must>
+			</openD>
+		</task>
+	</father>
+</data>

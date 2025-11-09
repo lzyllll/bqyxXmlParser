@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<body shell="normal">
+			<name>DoubleZombie</name>
+			<cnName>双头僵尸</cnName><headIconUrl>IconGather/DoubleZombie</headIconUrl>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/DoubleZombie.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<showLevel>999</showLevel>
+			<lifeBarExtraHeight>-50</lifeBarExtraHeight>
+			
+			<imgArr>
+				stand,move,run
+				,normalAttack,shootAttack
+				,shotgunAttack,rotateAttack,shakeAttack
+				,hurt1,hurt2,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			<bossImgArr>shotgunAttack,rotateAttack,shakeAttack</bossImgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			
+			<maxJumpNum>2</maxJumpNum>
+			<maxVx>9</maxVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel />
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<skillArr>likeMissleNo,reflectiveShell</skillArr>
+			<bossSkillArr>verShield,immune,gridBlock,DoubleZombieShake,DoubleZombieShotgun,DoubleZombieRotate,teleport_skeleton,meltFlamerPurgold,cardNoAttackSkill</bossSkillArr>
+			<bossSkillArrCn />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel><cn>砍击</cn>
+					<hurtRatio>2</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<skillArr />
+					<hitImgUrl name="oreWormHit" />
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><cn>枪击</cn><mustGrapRectB>1</mustGrapRectB>
+					<bulletLabel>DoubleZombie_1</bulletLabel>
+					<grapRect>-700,-162,400,140</grapRect>
+					<hurtRatio>4</hurtRatio>
+					<attackType>holy</attackType>
+				</hurt>
+				<hurt>
+					<imgLabel>rotateAttack</imgLabel><cn>回旋刃</cn><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>1</hurtRatio>
+					<bulletLabel>DoubleZombieRotate</bulletLabel>
+					<grapRect>-600,-132,450,133</grapRect>
+					<shakeValue>4</shakeValue>
+					<attackType>holy</attackType>
+					
+					<hitImgUrl name="oreWormHit" />
+				</hurt>
+				<hurt>
+					<imgLabel>shakeAttack</imgLabel><cn>跳斩</cn><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>1</hurtRatio>
+					<hurtMul>0.5</hurtMul>
+					<shakeValue>4</shakeValue>
+					<attackType>holy</attackType>
+					<skillArr>pullAttackHammer</skillArr>
+					<hitImgUrl name="oreWormHit" />
+				</hurt>
+				<hurt>
+					<imgLabel>shotgunAttack</imgLabel><cn>狂野追击</cn><noAiChooseB>1</noAiChooseB>
+					<bulletLabel>DoubleZombieShotgun</bulletLabel>
+					<grapRect>-600,-132,450,133</grapRect>
+					<hurtRatio>2</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>holy</attackType>
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		<bullet>
+			<name>DoubleZombie_1</name>
+			<cnName>枪击</cnName>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>0.001</bulletLife>
+			<bulletWidth>1200</bulletWidth>
+			<hitType>longLine</hitType>
+			
+			<attackGap>0.8</attackGap>
+			<attackDelay>0.5</attackDelay>
+			<bulletAngle>176</bulletAngle>
+			<shootPoint>-130,-110</shootPoint>
+			<bulletSpeed>0</bulletSpeed>
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<skillArr />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<lineD lightColor="0xFF9900" size="6" lightSize="14" blendMode="add" type="one" />
+			<hitImgUrl name="rocketCate_hit" />
+		</bullet>
+		<bullet>
+			<name>DoubleZombieShotgun</name>
+			<cnName>狂野追击</cnName>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>0.001</bulletLife>
+			<bulletWidth>1200</bulletWidth>
+			<hitType>longLine</hitType>
+			
+			<attackGap>1.8</attackGap>
+			<attackDelay>1.15</attackDelay>
+			<bulletNum>10</bulletNum>
+			<bulletAngle>179</bulletAngle>
+			<shootAngle>40</shootAngle>
+			<shootNum>2</shootNum>
+			<shootGap>0.36</shootGap>
+			<shootPoint>-144,-72</shootPoint>
+			<bulletSpeed>0</bulletSpeed>
+			<penetrationGap>1000</penetrationGap>
+			<skillArr>blindness_skeleton</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<lineD lightColor="0xFF9900" size="6" lightSize="14" blendMode="add" type="one" />
+			<hitImgUrl name="rocketCate_hit" />
+		</bullet>
+		
+		<bullet>
+			<name>DoubleZombieRotate</name>
+			<cnName>双头僵尸-回旋镖</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>-179</bulletAngle>
+			<bulletLife>1.7</bulletLife>
+			<bulletWidth>50</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>2.8</attackGap>
+			<attackDelay>0.8</attackDelay>
+			<shootPoint>-104,-85</shootPoint>
+			<bulletAngleRange>50</bulletAngleRange>
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<bulletSkillArr>DoubleZombieRotate</bulletSkillArr>
+			<followD value="1" delay="0.1" maxTime="" />
+			<skillArr>offAllSkill</skillArr>
+				
+			<bulletSpeed>30</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl name="DoubleZombieRotate" />
+			<hitImgUrl name="oreWormHit" />
+		</bullet>
+		
+		
+		
+		
+		
+		
+		
+		
+		<skill>
+			<name>DoubleZombieRotate</name>
+			<cnName>回旋镖</cnName><iconUrl36 /><ignoreNoSkillB>1</ignoreNoSkillB>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<cd>7</cd>
+			<firstCd>6</firstCd>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>noAttackImg</otherConditionArr>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>DoubleZombieRotate</effectType>
+			<duration>2.6</duration>
+			 
+			<meActionLabel>rotateAttack</meActionLabel>
+			<description>双头僵尸掷出回旋镖追踪敌人，击中后封锁敌人的技能。</description>
+		</skill>
+		
+		<skill>
+			<name>DoubleZombieShotgun</name>
+			<cnName>狂野追击</cnName><iconUrl36 /><ignoreNoSkillB>1</ignoreNoSkillB>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<cd>12</cd>
+			<firstCd>11</firstCd>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>noAttackImg,lifePerLess</otherConditionArr>
+			<conditionRange>0.3</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>DoubleZombieShotgun</effectType>
+			<duration>2.1</duration>
+			 
+			<meActionLabel>shotgunAttack</meActionLabel>
+			<description>生命值小于30%时，双头僵尸掏出背部的散弹枪，对敌人进多次射击，并致盲敌人。</description>
+		</skill>
+		
+		<skill>
+			<name>DoubleZombieShake</name>
+			<cnName>跳斩</cnName><iconUrl36 /><ignoreNoSkillB>1</ignoreNoSkillB>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<cd>12</cd>
+			<firstCd>11</firstCd>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>noAttackImg</otherConditionArr>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>DoubleZombieShake</effectType>
+			<duration>2.1</duration>
+			 
+			<meActionLabel>shakeAttack</meActionLabel>
+			<description>双头僵尸瞬移到敌人面前，对其进行斩杀，并击晕目标。</description>
+		</skill>
+		
+		
+				<skill>
+					<name>cardNoAttackSkill</name>
+					<cnName>震魂曲</cnName><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+					
+					<conditionType>passive</conditionType><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+					<condition>add</condition><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+					<target>me,range,enemy</target><ignoreNoSkillB>1</ignoreNoSkillB><ignoreSilenceB>1</ignoreSilenceB>
+					
+					<addType>state</addType>
+					<effectType>cardNoAttackSkill</effectType>
+					<duration>999999</duration>
+					<range>999999</range>
+					
+					<stateEffectImg name="noAttackOrder" />
+					<description>让所有魂卡自闭。在魂卡PK中无效。</description>
+				</skill>
+				
+				
+		<skill cnName="格挡">
+			<name>gridBlock</name>
+			<cnName>格挡</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB><ignoreNoSkillB>1</ignoreNoSkillB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>gridBlock</effectType>
+			<value>200</value>
+			<mul>0.20</mul>
+			<description>[value]码内的敌人攻击自己时，受到的伤害降低[1-mul]。</description>
+		</skill>
+	</father>
+		
+</data>

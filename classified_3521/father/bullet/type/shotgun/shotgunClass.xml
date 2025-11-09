@@ -1,0 +1,497 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="shotgun" cnName="散弹枪">
+		<bullet index="0" name="shotgun1">
+			<name>shotgun1</name>
+			<cnName>散弹枪</cnName>
+			<whippB>0</whippB>
+			
+			<randomPro>1</randomPro>
+			
+			<capacity>6,8</capacity>
+			<attackGap>0.8,1.2</attackGap>
+			<reloadGap>1.5,2</reloadGap>
+			<shakeAngle>0,1</shakeAngle>
+			<bulletWidth>500,600</bulletWidth>
+			<bulletShakeWidth>0,100</bulletShakeWidth>
+			<bulletNum>5,10</bulletNum>				
+			<shootAngle>15,22</shootAngle>				
+			
+			<penetrationNum>0</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<selfBoom>0</selfBoom>
+			<floorBounce>0</floorBounce>
+			<beatBack>2</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<armsImgLabel />
+			
+			
+			<hurtRatio>4</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.6</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>15</upValue>
+			<shootShakeAngle>70</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			<attackDelay>0</attackDelay>
+			<shootNum>1</shootNum>					
+								
+				
+			<bulletSpeed>0</bulletSpeed>
+			
+			
+					
+						
+			
+			<followD value="0" delay="0" maxTime="0" />				
+			<bounceD floor="0" body="0" num="0" />	
+			
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			
+			<fireImgType />
+			<shootSoundUrl />
+			
+			<allImgRange>shotgun1,shotgun2,shotgun3</allImgRange>
+			<bodyImgRange>sniper1/body,ak/body,m4/body</bodyImgRange>
+			<barrelImgRange>shotgun1/barrel2,shotgun1/barrel3</barrelImgRange>
+			<stockImgRange>sniper1/stock,ak/stock,m4/stock</stockImgRange>
+			<gripImgRange>sniper1/grip,ak/grip,m4/grip</gripImgRange>
+		</bullet>
+		<bullet index="0" name="shotgunLock">
+			<name>shotgunLock</name>
+			<cnName>散弹枪</cnName>
+			<whippB>0</whippB>
+			
+			<capacity>8</capacity>
+			<attackGap>0.8</attackGap>
+			<reloadGap>1.3</reloadGap>
+			<bulletWidth>500</bulletWidth>
+			<bulletNum>8</bulletNum>				
+			<shootAngle>17</shootAngle>				
+			
+			<penetrationNum>0</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<selfBoom>0</selfBoom>
+			<floorBounce>0</floorBounce>
+			<beatBack>2</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<armsImgLabel />
+			
+			
+			<hurtRatio>4</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.6</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>15</upValue>
+			<shootShakeAngle>70</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			<attackDelay>0</attackDelay>
+			<shootNum>1</shootNum>					
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<lineD lightColor="0xFFCC00" size="2" lightSize="6" blendMode="add" type="one" />
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			
+			<fireImgType />
+			<shootSoundUrl />
+			
+			<allImgRange>shotgun1,shotgun2,shotgun3</allImgRange>
+			<bodyImgRange>sniper1/body,ak/body,m4/body</bodyImgRange>
+			<barrelImgRange>shotgun1/barrel2,shotgun1/barrel3</barrelImgRange>
+			<stockImgRange>sniper1/stock,ak/stock,m4/stock</stockImgRange>
+			<gripImgRange>sniper1/grip,ak/grip,m4/grip</gripImgRange>
+		</bullet>
+		<bullet index="0" name="shotgun_two">
+			<name>shotgun_two</name>
+			<cnName>散弹双枪</cnName>
+			<whippB>0</whippB>
+			
+			<capacity>50</capacity>
+			<attackGap>0.5</attackGap>
+			<reloadGap>1.5,2</reloadGap>
+			<shakeAngle>0,1</shakeAngle>
+			<bulletWidth>700</bulletWidth>
+			<bulletShakeWidth>0,100</bulletShakeWidth>
+			<bulletNum>10</bulletNum>				
+			<shootAngle>10</shootAngle>				
+			
+			<penetrationNum>0</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<selfBoom>0</selfBoom>
+			<floorBounce>0</floorBounce>
+			<beatBack>2</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<armsImgLabel />
+			
+			
+			<hurtRatio>4</hurtRatio>
+			<gunNum>2</gunNum>
+			<armsArmMul>0.6</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>10</upValue>
+			<shootShakeAngle>70</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			<attackDelay>0</attackDelay>
+			<shootNum>1</shootNum>					
+			--&gt;					
+				
+			<bulletSpeed>0</bulletSpeed>
+			
+			
+					
+						
+			
+			<followD value="0" delay="0" maxTime="0" />				
+			<bounceD floor="0" body="0" num="0" />	
+			
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			
+			<fireImgType />
+			<shootSoundUrl />
+			
+			<allImgRange>shotgun1,shotgun2,shotgun3</allImgRange>
+			<bodyImgRange>sniper1/body,ak/body,m4/body</bodyImgRange>
+			<barrelImgRange>shotgun1/barrel2,shotgun1/barrel3</barrelImgRange>
+			<stockImgRange>sniper1/stock,ak/stock,m4/stock</stockImgRange>
+			<gripImgRange>sniper1/grip,ak/grip,m4/grip</gripImgRange>
+		</bullet>
+		
+		
+		<bullet index="10" name="shotgunRed">
+			<name>shotgunRed</name>
+			<cnName>赤龙</cnName>
+			<whippB>0</whippB>
+			
+			<capacity>6,8</capacity>
+			<attackGap>1</attackGap>
+			<reloadGap>2</reloadGap>
+			<shakeAngle>1</shakeAngle>
+			<bulletWidth>500</bulletWidth>
+			<bulletShakeWidth>100</bulletShakeWidth>
+			<bulletNum>11</bulletNum>				
+			<shootAngle>22</shootAngle>				
+			<beatBack>2</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>0</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="4" body="3" />	
+			<critD mul="2" pro="0.2" />
+			
+			<skillArr>Hit_Spurting_ArmsSkill,Hit_AddLifeMul_ArmsSkill</skillArr>
+			<godSkillArr>Hit_imploding_godArmsSkill,Hit_pointBoom_godArmsSkill</godSkillArr>
+			
+			<hurtRatio>4</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.6</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>14</upValue>
+			<shootShakeAngle>70</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			
+			<iconUrl>specialGun/shotgunRedIcon</iconUrl>
+			<shootSoundUrl>specialGun/shotgunRed_sound</shootSoundUrl>
+			<flipX>1</flipX>
+			<lineD lightColor="0xFF0000" size="2" lightSize="6" blendMode="add" />
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			<fireImgType />
+			
+			<bodyImgRange>specialGun/shotgunRed</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+		</bullet>
+		<bullet index="11" name="shotgunLightning">
+			<name>shotgunLightning</name>
+			<cnName>雷电</cnName>
+			<whippB>0</whippB>
+			
+			<capacity>6</capacity>
+			<attackGap>0.9</attackGap>
+			<reloadGap>2</reloadGap>
+			<shakeAngle>1</shakeAngle>
+			<bulletWidth>500</bulletWidth>
+			<bulletShakeWidth>100</bulletShakeWidth>
+			<bulletNum>10</bulletNum>				
+			<shootAngle>22</shootAngle>				
+			<beatBack>2</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>0</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="4" body="3" />	
+			<critD mul="2" pro="0.2" />
+			
+			<skillArr>Hit_blindness_ArmsSkill,Hit_disabled_ArmsSkill</skillArr>
+			<godSkillArr>Hit_imploding_godArmsSkill,Hit_Lightning_godArmsSkill</godSkillArr>
+			
+			<hurtRatio>4</hurtRatio>
+			<gunNum>2</gunNum>
+			<armsArmMul>0.6</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>14</upValue>
+			<shootShakeAngle>70</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			
+			<iconUrl>specialGun/shotgunLightningIcon</iconUrl>
+			<shootSoundUrl>specialGun/shotgunRed_sound</shootSoundUrl>
+			<flipX>1</flipX>
+			<lineD lightColor="0xFF0000" size="2" lightSize="6" blendMode="add" />
+			
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			<fireImgType />
+			
+			<bodyImgRange>specialGun/shotgunLightning</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+		</bullet>
+		<bullet index="12" name="shotgunFire" color="red" rareDropLevel="80">
+			<name>shotgunFire</name>
+			<cnName>火龙</cnName>
+			<whippB>0</whippB>
+			
+			<capacity>6,10</capacity>
+			<attackGap>0.95,1.2</attackGap>
+			<reloadGap>2,2.5</reloadGap>
+			<shakeAngle>1</shakeAngle>
+			<bulletWidth>500</bulletWidth>
+			<bulletShakeWidth>100</bulletShakeWidth>
+			<bulletNum>11</bulletNum>				
+			<shootAngle>22</shootAngle>				
+			<beatBack>2</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>0</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="4" body="3" />	
+			<critD mul="2" pro="0.2" />
+			
+			<skillArr>Hit_Spurting_ArmsSkill,Hit_AddLifeMul_ArmsSkill</skillArr>
+			<godSkillArr>Hit_imploding_godArmsSkill,Hit_pointBoom_godArmsSkill</godSkillArr>
+			
+			<hurtRatio>4</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.6</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>14</upValue>
+			<shootShakeAngle>70</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			
+			<shootSoundUrl>specialGun/shotgunRed_sound</shootSoundUrl>
+			<flipX>1</flipX>
+			<lineD lightColor="0xFF0000" size="2" lightSize="6" blendMode="add" />
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			<fireImgType />
+			
+			<bodyImgRange>specialGun/shotgunFire</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>80级以上关卡和每周任务(武器-处决)</description>
+		</bullet>
+		
+		
+		<bullet index="36" name="shotgunBlade" color="red" rareDropLevel="999" chipB="1" chipNum="130">
+			<name>shotgunBlade</name>
+			<cnName>战斧</cnName>
+			<whippB>0</whippB>
+			
+			<capacity>6,10</capacity>
+			<attackGap>0.95,1.2</attackGap>
+			<reloadGap>2,2.5</reloadGap>
+			<shakeAngle>1</shakeAngle>
+			<bulletWidth>500</bulletWidth>
+			<bulletShakeWidth>100</bulletShakeWidth>
+			<bulletNum>11</bulletNum>				
+			<shootAngle>22</shootAngle>				
+			<beatBack>2</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>0</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="4" body="3" />	
+			<critD mul="2" pro="0.2" />
+			
+			<skillArr>Hit_Spurting_ArmsSkill,Hit_AddLifeMul_ArmsSkill</skillArr>
+			<godSkillArr>Hit_imploding_godArmsSkill,shotgunBlade_ArmsSkill</godSkillArr>
+			
+			<hurtRatio>4</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.6</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>4</upValue>
+			<shootShakeAngle>70</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			
+			<shootSoundUrl>specialGun/shotgunRed_sound</shootSoundUrl>
+			<flipX>1</flipX>
+			<lineD lightColor="0x0099FF" size="2" lightSize="6" blendMode="add" />
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			<fireImgType />
+			
+			<bodyImgRange>specialGun/shotgunBlade</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>消灭秘境首领“虚洪螈”获得</description>
+		</bullet>
+		
+		
+		<bullet index="34" name="shotgunCrocodile" color="black" dropLevelArr="85" chipNum="400">
+			<name>shotgunCrocodile</name>
+			<cnName>沙鳄</cnName>
+			<whippB>0</whippB>
+			
+			<capacity>6,10</capacity>
+			<attackGap>0.95,1.2</attackGap>
+			<reloadGap>2,2.5</reloadGap>
+			<shakeAngle>1</shakeAngle>
+			<bulletWidth>500</bulletWidth>
+			<bulletShakeWidth>100</bulletShakeWidth>
+			<bulletNum>11</bulletNum>				
+			<shootAngle>22</shootAngle>				
+			<beatBack>2</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>0</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="4" body="3" />	
+			<critD mul="2" pro="0.2" />
+			
+			<skillArr>Hit_AddLifeMul_ArmsSkill,Hit_Spurting_ArmsSkill</skillArr>
+			<godSkillArr>Hit_crazy_godArmsSkill,imploding_blackArmsSkill</godSkillArr>
+			
+			<hurtRatio>4</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.6</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>14</upValue>
+			<shootShakeAngle>70</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			
+			<shootSoundUrl>specialGun/shotgunRed_sound</shootSoundUrl>
+			<flipX>1</flipX>
+			<lineD lightColor="0xFF0000" size="2" lightSize="6" blendMode="add" />
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			<fireImgType />
+			
+			<bodyImgRange>specialGun/shotgunCrocodile</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+		</bullet>
+		
+		
+		
+		
+		
+		
+		<bullet index="34" name="shotgunSkunkTwo">
+			<name>shotgunSkunkTwo</name>
+			<cnName>赤鼬双枪</cnName>
+			<whippB>0</whippB>
+			<gunNum>2</gunNum>
+			
+			<capacity>6,10</capacity>
+			<attackGap>0.7</attackGap>
+			<reloadGap>1</reloadGap>
+			<shakeAngle>1</shakeAngle>
+			<bulletWidth>500</bulletWidth>
+			<bulletShakeWidth>100</bulletShakeWidth>
+			<bulletNum>11</bulletNum>				
+			<shootAngle>22</shootAngle>				
+			<beatBack>2</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>0</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="4" body="3" />	
+			<critD mul="2" pro="0.2" />
+			
+			<skillArr>booby_godArmsSkill</skillArr>
+			
+			<hurtRatio>4</hurtRatio>
+			<armsArmMul>0.6</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>14</upValue>
+			<shootShakeAngle>70</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			
+			<shootSoundUrl>specialGun/shotgunRed_sound</shootSoundUrl>
+			<flipX>1</flipX>
+			<lineD lightColor="0xFF0000" size="2" lightSize="6" blendMode="add" />
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			<fireImgType />
+			
+			<bodyImgRange>specialGun/shotgunSkunk</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+		</bullet>
+	</father>
+	
+</data>

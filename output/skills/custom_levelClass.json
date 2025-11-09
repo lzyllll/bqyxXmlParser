@@ -1,0 +1,1215 @@
+{
+  "father": [
+    {
+      "name": "normal",
+      "gather": {
+        "name": "",
+        "level": {
+          "name": "customBase",
+          "fixed": {
+            "info": "no",
+            "drop": "no",
+            "unitG": "no",
+            "eventG": "no",
+            "rectG": "all"
+          },
+          "info": {
+            "diy": "customTask",
+            "enemyLv": 1,
+            "noMoreB": true,
+            "noVehicleB": true,
+            "noTreasureB": true,
+            "noPropsB": true,
+            "noDeviceB": true,
+            "mustSingleB": true,
+            "preSkillArr": "KingRabbitTreater"
+          },
+          "drop": {
+            "noB": true
+          },
+          "unitG": {
+            "allDefault": {
+              "aiOrder": "patrolGlobal",
+              "skillCloseB": true,
+              "noSuperB": true
+            },
+            "unitOrder": [
+              {
+                "id": "weBoss",
+                "camp": "we",
+                "unit": {
+                  "id": "weBoss",
+                  "cnName": "僵尸王",
+                  "unitType": "boss",
+                  "skillArr": "State_AddMoveValue6"
+                }
+              },
+              {
+                "id": "weEnemy",
+                "camp": "we",
+                "unit": [
+                  {
+                    "cnName": "肥胖僵尸",
+                    "num": 5
+                  },
+                  {
+                    "cnName": "战斗僵尸",
+                    "num": 5
+                  }
+                ]
+              },
+              {
+                "id": "main",
+                "unit": {
+                  "cnName": "本我",
+                  "dieGotoState": "stru"
+                }
+              },
+              {
+                "id": "wenjie",
+                "unit": {
+                  "cnName": "文杰表哥",
+                  "aiOrder": "followBodyAttack:本我",
+                  "dieGotoState": "stru"
+                }
+              },
+              {
+                "id": "zangshi",
+                "unit": {
+                  "cnName": "藏师将军",
+                  "aiOrder": "followBodyAttack:本我",
+                  "dieGotoState": "stru"
+                }
+              },
+              {
+                "id": "girl",
+                "unit": {
+                  "cnName": "小樱",
+                  "aiOrder": "followBodyAttack:本我",
+                  "dieGotoState": "stru"
+                }
+              }
+            ]
+          },
+          "eventG": {
+            "group": [
+              {
+                "event": [
+                  {
+                    "id": "e1_1",
+                    "condition": null,
+                    "order": [
+                      "createUnit:weBoss; r2",
+                      "level; diyEvent:addBoss",
+                      "weAllHeroNoShoot",
+                      "weAllHeroNoEquip",
+                      "heroEverParasitic:weBoss"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.3
+                    }
+                  },
+                  {
+                    "condition": null,
+                    "order": [
+                      "createUnit:main;rLeftSpider",
+                      "level; diyEvent:addMainOther"
+                    ]
+                  },
+                  {
+                    "condition": "liveEnemyNumber:less_1",
+                    "order": "say; startList:s2"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              },
+              {
+                "event": [
+                  {
+                    "id": "e_fail",
+                    "condition": {
+                      "value": "bodyEvent:die; weBoss",
+                      "delay": 1
+                    },
+                    "order": "alert:yes; 任务失败！"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.03
+                    },
+                    "order": "level; fail"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "customTask",
+      "gather": {
+        "name": "特别关卡",
+        "level": [
+          {
+            "name": "cusWoTu_doctor",
+            "info": {
+              "diy": "customTask",
+              "enemyLv": 19,
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "noDeviceB": true,
+              "mustSingleB": true
+            },
+            "sceneLabel": "WoTu",
+            "drop": {
+              "noB": true
+            },
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "skillCloseB": true,
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "weBoss",
+                  "camp": "we",
+                  "unit": {
+                    "id": "weBoss",
+                    "cnName": "战斗僵尸",
+                    "unitType": "boss",
+                    "skillArr": "State_AddMove"
+                  }
+                },
+                {
+                  "id": "weEnemy",
+                  "camp": "we",
+                  "unit": [
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 5
+                    },
+                    {
+                      "cnName": "战斗僵尸",
+                      "num": 5
+                    }
+                  ]
+                },
+                {
+                  "id": "main",
+                  "unit": [
+                    {
+                      "cnName": "本我",
+                      "dieGotoState": "stru"
+                    },
+                    {
+                      "cnName": "制毒师",
+                      "aiOrder": "followBodyAttack:本我"
+                    }
+                  ]
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "600,290,200,117",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "2940,563,60,125",
+                  "id": "r_over"
+                },
+                {
+                  "value": "1500,180,500,80",
+                  "id": "r1"
+                },
+                {
+                  "value": "2000,180,500,80",
+                  "id": "r2"
+                },
+                {
+                  "value": "2500,180,500,80",
+                  "id": "r3"
+                },
+                {
+                  "value": "30,30,30,30",
+                  "id": "r4"
+                },
+                {
+                  "value": "491,504,78,30",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "2507,504,78,30",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "id": "e1_1",
+                      "condition": null,
+                      "order": [
+                        "createUnit:weBoss; r2",
+                        "level; diyEvent:addBoss",
+                        "weAllHeroNoShoot",
+                        "weAllHeroNoEquip",
+                        "heroEverParasitic:weBoss"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.1
+                      },
+                      "order": "say; startList:s1"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      }
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.3
+                      }
+                    },
+                    {
+                      "condition": null,
+                      "order": "createUnit:main;rLeftSpider"
+                    },
+                    {
+                      "condition": "liveEnemyNumber:less_1",
+                      "order": [
+                        "task:now; complete",
+                        "level; showPointer:r_over"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "value": "bodyEvent:die; weBoss",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 任务失败！"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_win",
+                      "condition": {
+                        "value": "bodyEvent:die; 制毒师",
+                        "delay": 1
+                      },
+                      "order": [
+                        "task:now; complete",
+                        "alert:yes; 任务成功！"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; win"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "cusBeiDou_mercenary",
+            "info": {
+              "diy": "customTask",
+              "enemyLv": 23,
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "noDeviceB": true,
+              "mustSingleB": true
+            },
+            "sceneLabel": "BeiDou",
+            "drop": {
+              "noB": true
+            },
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "skillCloseB": true,
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "weBoss",
+                  "camp": "we",
+                  "unit": {
+                    "id": "weBoss",
+                    "cnName": "僵尸突击兵",
+                    "unitType": "boss",
+                    "skillArr": "State_AddMove,FightKing_hitParalysis, recovery_enemy"
+                  }
+                },
+                {
+                  "id": "weEnemy",
+                  "camp": "we",
+                  "unit": [
+                    {
+                      "cnName": "战斗僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "无头自爆僵尸",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "屠刀僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "携弹僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "僵尸狙击兵",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "僵尸暴枪兵",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "僵尸炮兵总管",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "main",
+                  "unit": [
+                    {
+                      "cnName": "本我",
+                      "dieGotoState": "stru"
+                    },
+                    {
+                      "cnName": "沙漠特种兵",
+                      "num": 1,
+                      "aiOrder": "followBodyAttack:p1"
+                    },
+                    {
+                      "cnName": "雇佣兵",
+                      "num": 2,
+                      "aiOrder": "followBodyAttack:沙漠特种兵"
+                    }
+                  ]
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1555,744,174,55",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "2942,700,73,115",
+                  "id": "r_over"
+                },
+                {
+                  "value": "933,-114,408,106",
+                  "id": "r1"
+                },
+                {
+                  "value": "29,-166,368,106",
+                  "id": "r2"
+                },
+                {
+                  "value": "2718,-88,263,106",
+                  "id": "r3"
+                },
+                {
+                  "value": "2126,170,71,60",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "1113,374,71,60",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "id": "e1_1",
+                      "condition": null,
+                      "order": [
+                        "createUnit:weBoss; r2",
+                        "level; diyEvent:addBoss",
+                        "weAllHeroNoShoot",
+                        "weAllHeroNoEquip",
+                        "heroEverParasitic:weBoss"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.1
+                      },
+                      "order": "say; startList:s1"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      }
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.3
+                      }
+                    },
+                    {
+                      "condition": null,
+                      "order": "createUnit:main;rLeftSpider"
+                    },
+                    {
+                      "condition": "liveEnemyNumber:less_1",
+                      "order": [
+                        "task:now; complete",
+                        "level; showPointer:r_over"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "value": "bodyEvent:die; weBoss",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 任务失败！"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "cusShuangTa_defend",
+            "info": {
+              "diy": "customTask",
+              "enemyLv": 27,
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "noDeviceB": true,
+              "mustSingleB": true
+            },
+            "sceneLabel": "ShuangTa",
+            "drop": {
+              "noB": true
+            },
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "skillCloseB": true,
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "weBoss",
+                  "camp": "we",
+                  "unit": {
+                    "id": "weBoss",
+                    "cnName": "屠刀僵尸",
+                    "unitType": "boss",
+                    "skillArr": "State_AddMoveValue6"
+                  }
+                },
+                {
+                  "id": "weEnemy",
+                  "camp": "we",
+                  "unit": [
+                    {
+                      "cnName": "战斗僵尸",
+                      "num": 2,
+                      "skillArr": "hiding_enemy"
+                    },
+                    {
+                      "cnName": "屠刀僵尸",
+                      "num": 2,
+                      "skillArr": "hiding_enemy"
+                    },
+                    {
+                      "cnName": "携弹僵尸",
+                      "num": 2,
+                      "skillArr": "hiding_enemy"
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 1,
+                      "skillArr": "hiding_enemy"
+                    },
+                    {
+                      "cnName": "僵尸狙击兵",
+                      "num": 1,
+                      "skillArr": "hiding_enemy"
+                    },
+                    {
+                      "cnName": "僵尸炮兵总管",
+                      "num": 1,
+                      "skillArr": "hiding_enemy"
+                    }
+                  ]
+                },
+                {
+                  "id": "main",
+                  "unit": [
+                    {
+                      "cnName": "制毒师",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "沙漠特种兵",
+                      "num": 1,
+                      "aiOrder": "followBodyAttack:制毒师"
+                    },
+                    {
+                      "cnName": "雇佣兵",
+                      "num": 2,
+                      "aiOrder": "followBodyAttack:沙漠特种兵"
+                    }
+                  ]
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "813,678,179,70",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "1930,1000,56,111",
+                  "id": "r_over"
+                },
+                {
+                  "value": "28,1030,270,71",
+                  "id": "r1"
+                },
+                {
+                  "value": "1800,1030,270,71",
+                  "id": "r2"
+                },
+                {
+                  "value": "600,-250,270,71",
+                  "id": "r3"
+                },
+                {
+                  "value": "1466,-250,270,71",
+                  "id": "r4"
+                },
+                {
+                  "value": "-300,1030,270,71",
+                  "id": "r_hide"
+                },
+                {
+                  "value": "316,613,83,40",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "1746,800,83,40",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "id": "e1_1",
+                      "condition": null,
+                      "order": [
+                        "createUnit:weBoss; r2",
+                        "level; diyEvent:addBoss",
+                        "weAllHeroNoShoot",
+                        "weAllHeroNoEquip",
+                        "heroEverParasitic:weBoss"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.1
+                      },
+                      "order": "say; startList:s1"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      }
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.3
+                      }
+                    },
+                    {
+                      "condition": null,
+                      "order": "createUnit:main;rLeftSpider"
+                    },
+                    {
+                      "condition": "liveEnemyNumber:less_1",
+                      "order": [
+                        "task:now; complete",
+                        "level; showPointer:r_over"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "value": "bodyEvent:die; weBoss",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 任务失败！"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "cusDongShan_QiHuang",
+            "info": {
+              "diy": "customTask",
+              "enemyLv": 28,
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "noDeviceB": true,
+              "mustSingleB": true
+            },
+            "sceneLabel": "DongShan",
+            "drop": {
+              "noB": true
+            },
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "skillCloseB": true,
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "weBoss",
+                  "camp": "we",
+                  "unit": {
+                    "id": "weBoss",
+                    "cnName": "奇皇博士",
+                    "lifeMul": 0.6,
+                    "unitType": "boss",
+                    "skillArr": "State_AddMoveValue6"
+                  }
+                },
+                {
+                  "id": "weEnemy",
+                  "camp": "we",
+                  "unit": [
+                    {
+                      "cnName": "战斗僵尸",
+                      "num": 5
+                    },
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 5
+                    },
+                    {
+                      "cnName": "屠刀僵尸",
+                      "num": 5
+                    },
+                    {
+                      "cnName": "僵尸空降兵",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "僵尸空军总管",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "main",
+                  "unit": [
+                    {
+                      "cnName": "本我",
+                      "dieGotoState": "stru"
+                    },
+                    {
+                      "cnName": "文杰表哥",
+                      "dieGotoState": "stru",
+                      "aiOrder": "followBodyAttack:本我"
+                    },
+                    {
+                      "cnName": "藏师将军",
+                      "dieGotoState": "stru",
+                      "aiOrder": "followBodyAttack:本我"
+                    }
+                  ]
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "813,678,179,70",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "1930,1000,56,111",
+                  "id": "r_over"
+                },
+                {
+                  "value": "28,1030,270,71",
+                  "id": "r1"
+                },
+                {
+                  "value": "1800,1030,270,71",
+                  "id": "r2"
+                },
+                {
+                  "value": "600,-250,270,71",
+                  "id": "r3"
+                },
+                {
+                  "value": "1466,-250,270,71",
+                  "id": "r4"
+                },
+                {
+                  "value": "-300,1030,270,71",
+                  "id": "r_hide"
+                },
+                {
+                  "value": "316,613,83,40",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "1746,800,83,40",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "id": "e1_1",
+                      "condition": null,
+                      "order": [
+                        "createUnit:weBoss; r2",
+                        "level; diyEvent:addBoss",
+                        "weAllHeroNoShoot",
+                        "weAllHeroNoEquip",
+                        "heroEverParasitic:weBoss"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.1
+                      },
+                      "order": "say; startList:s1"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      }
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.3
+                      }
+                    },
+                    {
+                      "condition": null,
+                      "order": "createUnit:main;rLeftSpider"
+                    },
+                    {
+                      "condition": "liveEnemyNumber:less_1",
+                      "order": [
+                        "task:now; complete",
+                        "level; showPointer:r_over"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "value": "bodyEvent:die; weBoss",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 任务失败！"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "cusQingMing_Arthur",
+            "info": {
+              "diy": "customTask",
+              "enemyLv": 30,
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "noDeviceB": true,
+              "mustSingleB": true
+            },
+            "sceneLabel": "QingMing",
+            "drop": {
+              "noB": true
+            },
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "skillCloseB": true,
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "weBoss",
+                  "camp": "we",
+                  "unit": {
+                    "id": "weBoss",
+                    "cnName": "亚瑟",
+                    "lifeMul": 1,
+                    "unitType": "boss",
+                    "skillArr": "State_AddMoveValue6"
+                  }
+                },
+                {
+                  "id": "weEnemy",
+                  "camp": "we",
+                  "unit": [
+                    {
+                      "cnName": "屠刀僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "橄榄僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "僵尸空降兵",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "僵尸狙击兵",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "僵尸暴枪兵",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "僵尸空军总管",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "main",
+                  "unit": [
+                    {
+                      "cnName": "本我",
+                      "dieGotoState": "stru"
+                    },
+                    {
+                      "cnName": "文杰表哥",
+                      "dieGotoState": "stru",
+                      "aiOrder": "followBodyAttack:本我"
+                    },
+                    {
+                      "cnName": "藏师将军",
+                      "dieGotoState": "stru",
+                      "aiOrder": "followBodyAttack:本我"
+                    }
+                  ]
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1850,820,330,106",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "-30,800,80,135",
+                  "id": "r_over"
+                },
+                {
+                  "value": "20,50,330,106",
+                  "id": "r1"
+                },
+                {
+                  "value": "2768,192,330,106",
+                  "id": "r2"
+                },
+                {
+                  "value": "1280,46,330,106",
+                  "id": "r3"
+                },
+                {
+                  "value": "2072,310,84,48",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "122,868,84,66",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "id": "e1_1",
+                      "condition": null,
+                      "order": [
+                        "createUnit:weBoss; r2",
+                        "level; diyEvent:addBoss",
+                        "weAllHeroNoShoot",
+                        "weAllHeroNoEquip",
+                        "heroEverParasitic:weBoss"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.1
+                      },
+                      "order": "say; startList:s1"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      }
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.3
+                      }
+                    },
+                    {
+                      "condition": null,
+                      "order": "createUnit:main;rLeftSpider"
+                    },
+                    {
+                      "condition": "liveEnemyNumber:less_1"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.1
+                      },
+                      "order": "say; startList:s2"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      },
+                      "order": [
+                        "task:now; complete",
+                        "level; showPointer:r_over"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "value": "bodyEvent:die; weBoss",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 任务失败！"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "cusDongShan_shiti",
+            "info": {
+              "enemyLv": 71,
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "noDeviceB": true,
+              "mustSingleB": true,
+              "firstLostB": true,
+              "preSkillArr": "blackHoleDevicer_1"
+            },
+            "drop": {
+              "noB": true
+            },
+            "sceneLabel": "DongShan",
+            "unitG": {
+              "unitOrder": {
+                "id": "we2",
+                "camp": "we",
+                "unit": [
+                  {
+                    "cnName": "亚瑟"
+                  },
+                  {
+                    "cnName": "奇皇博士"
+                  }
+                ]
+              }
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1426,1030,142,52",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "2958,976,70,109",
+                  "id": "r_over"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": null,
+                    "order": [
+                      "sceneMc:floor; show:shiti",
+                      "weAllHeroNoShoot",
+                      "weAllHeroNoEquip",
+                      "createUnit:we2; r_birth",
+                      "heroEverParasitic:亚瑟"
+                    ]
+                  },
+                  {
+                    "order": "openInput"
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "order": [
+                      "task:now; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

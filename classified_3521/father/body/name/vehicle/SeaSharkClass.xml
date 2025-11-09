@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicle" cnName="战车body">
+		<body index="0" name="潜行者" shell="metal">
+			
+			<name>SeaShark</name>
+			<cnName>潜行者</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/vehicle/SeaShark.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<rosRatio>1</rosRatio>
+			<headHurtMul>0.5</headHurtMul>
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<rotateBySlopeB>1</rotateBySlopeB>
+			<imgClass>CarImage</imgClass>
+			<imgType>normal</imgType>
+			<flipCtrlBy>mouse</flipCtrlBy>
+			<imgArr>
+				stand,move,die1
+			</imgArr>
+			
+			<hitRect>-30,-88,60,88</hitRect>
+			
+			<motionClass>AircraftGroundMotion</motionClass>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<motionD F_G="0.8" jumpDelayT="0.15" F_I="0.3" F_F="0.9" moveWhenVB="1" F_AIR="3" />
+			<maxVx>12</maxVx>
+			<maxJumpNum>1</maxJumpNum>
+			
+			<attackAIClass>CarAttack_AI</attackAIClass>
+			<keyClass>CarBodyKey</keyClass>
+			<bulletLauncherClass>CarBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			
+			<hurtArr>
+			</hurtArr>
+		</body>
+		
+		<body name="潜伏者" fixed="SeaShark" shell="metal">
+			<name>Lurker</name>
+			<cnName>潜伏者</cnName>
+			<swfUrl>swf/vehicle/Lurker.swf</swfUrl>
+			<bmpUrl>BodyImg/Lurker</bmpUrl>
+		</body>
+		<body name="潜影者" fixed="SeaShark" shell="metal">
+			<name>LurkerThird</name>
+			<cnName>潜影者</cnName>
+			<swfUrl>swf/vehicle/LurkerThird.swf</swfUrl>
+			<bmpUrl>BodyImg/LurkerThird</bmpUrl>
+		</body>
+		<body name="潜匿者" fixed="SeaShark" shell="metal">
+			<name>LurkerFour</name>
+			<cnName>潜匿者</cnName>
+			<swfUrl>swf/vehicle/LurkerFour.swf</swfUrl>
+			<bmpUrl>BodyImg/LurkerFour</bmpUrl>
+			<maxVx>14</maxVx>
+		</body>
+	</father>
+</data>

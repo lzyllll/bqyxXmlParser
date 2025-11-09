@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="petBodySkill">
+		<skill>
+			<name>babyBoom_skull</name>
+			<cnName>婴儿潮</cnName>
+			<cd>150</cd>
+			<iconUrl>SkillIcon/babyBoom_skull</iconUrl>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>600</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>bullet_babyBoom</effectType>
+			<extraValueType>nowArmsDps</extraValueType>
+			<duration>2.2</duration>
+			<mul>1.8</mul>
+			
+			<obj>"name":"babyBoom_skull"</obj>
+			
+			<description>爆骷召唤出成群结队的婴儿飞碟攻击敌人，每架飞碟的伤害为爆骷当前战斗力的[mul]。</description>
+			<growth>
+				<skill><cd>150</cd></skill>
+				<skill><cd>131</cd></skill>
+				<skill><cd>113</cd></skill>
+				<skill><cd>94</cd></skill>
+				<skill><cd>80</cd></skill>
+				<skill><cd>65</cd></skill>
+				<skill><cd>50</cd></skill>
+				<skill><cd>50</cd><mul>2.1</mul><changeText>伤害倍数[mul]</changeText></skill>
+				<skill><cd>50</cd><mul>2.4</mul><changeText>伤害倍数[mul]</changeText></skill>
+			</growth>
+		</skill>
+	</father>
+</data>

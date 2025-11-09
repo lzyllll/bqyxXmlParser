@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<bullet cnName="法球">
+			<name>SkeletalMageShoot</name>
+			<cnName>法球</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>5</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.4</attackDelay>
+			<bulletAngle>185</bulletAngle>
+			<bulletAngleRange>20</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootPoint>-104,-68</shootPoint>
+			<bulletSpeed>12</bulletSpeed>
+			<penetrationGap>1000</penetrationGap>
+			<followD value="0.3" maxTime="3" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30" con="add">bullet/skeletonBullet</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="sound/fireHit2">SkeletalMage/boom</hitImgUrl>
+		</bullet>
+		
+		
+		
+		<bullet cnName="追魂术-子弹">
+			<name>SkeletalMageFollowBullet</name>
+			<cnName>追魂术-子弹</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>1.5</bulletLife>
+			<bulletWidth>50</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.4</attackGap>
+			<attackDelay>1</attackDelay>
+			<bulletAngle>185</bulletAngle>
+			<bulletAngleRange>180</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootPoint>-33,-96</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<penetrationGap>1000</penetrationGap>
+			<bulletSkillArr>spiralMove,SkeletalMageFollowDieEvent</bulletSkillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30" con="filter">bullet/skeletonBullet</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="sound/fireHit2">SkeletalMage/boom</hitImgUrl>
+		</bullet>
+		
+		
+					<bullet cnName="骷髅权杖-子弹">
+						<name>skeletonWandBullet</name>
+						<cnName>骷髅权杖-子弹</cnName>
+						<hurtRatio>0.00001</hurtRatio>
+						<attackType>holy</attackType>
+						
+						<shakeAngle>5</shakeAngle>
+						<bulletLife>6</bulletLife>
+						<bulletWidth>50</bulletWidth>
+						<hitType>rect</hitType>
+						
+						<attackGap>0</attackGap>
+						<attackDelay>0</attackDelay>
+						<bulletAngle>185</bulletAngle>
+							
+						<shootPoint>-20,-80</shootPoint>
+						<bulletSpeed>30</bulletSpeed>
+						<penetrationGap>1000</penetrationGap>
+						<followD value="0.5" />
+						<skillArr>skeletonWandHit</skillArr>
+						
+						
+						<flipX>1</flipX>
+						<bulletImgUrl raNum="30" con="filter">bullet/skeletonBullet</bulletImgUrl>
+						<hitImgUrl con="add" soundUrl="sound/fireHit2">boomEffect/bigCircle</hitImgUrl>
+					</bullet>
+					
+		
+		
+		<skill name="追魂术">
+			<name>SkeletalMageFollow</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>追魂术</cnName>
+			<cd>8</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>1.4</duration>
+			<meActionLabel>followAttack</meActionLabel>
+			<description>骷髅巫师化成一道灵魂波攻击敌人，击中敌人后现身，并对敌人造成重大伤害。</description>
+		</skill>
+		
+		<skill name="制魂术">
+			<name>SkeletalMageCloned</name>
+			<cnName>制魂术</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<cd>10</cd>
+			<firstCd>10</firstCd>
+			<delay>0.9</delay>
+			
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>0.4</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>SkeletalMageCloned</effectType>
+			<value>3</value>
+			<mul>0.25</mul>
+			<duration>30</duration>
+			
+			<linkArr>SkeletalMageHeroAngerAdd</linkArr>
+			
+			<meActionLabel>shadowAttack</meActionLabel>
+			<pointEffectImg con="add">bulletHitEffect/purpleLaser</pointEffectImg>
+			<description>骷髅巫师生命值低于40%时制造3个魂魄，此时骷髅巫师进入无敌施法状态。这3个魂魄只受副手攻击，消灭1个魂魄将对骷髅巫师造成最大生命值3%的伤害。</description>
+		</skill>
+		
+		
+					<skill cnName="分身只受副手攻击">
+						<name>SkeletalMageClonedUnder</name>
+						<cnName>分身只受副手攻击</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB>
+						
+						<conditionType>passive</conditionType>
+						<condition>underHit</condition>
+						<target>target</target>
+						
+						<addType>instant</addType>
+						<effectType>SkeletalMageClonedUnder</effectType>
+						<mul>0.03</mul>
+						
+						<meEffectImg />
+						<pointEffectImg con="add" soundUrl="sound/fireHit2">bulletHitEffect/headshot</pointEffectImg>
+						
+						<description>分身只受副手攻击，受到副手攻击后，自身死亡，主人受到相当于自身生命值[mul]的伤害。</description>
+					</skill>
+					
+					<skill index="0" name="让P1角色副手怒气回复速度增加">
+						<name>SkeletalMageHeroAngerAdd</name>
+						<cnName>让P1角色副手怒气回复速度增加</cnName>
+						
+						<cd>0.1</cd>
+						
+						<conditionType>active</conditionType>
+						<target>me,range,enemy</target>
+						
+						<addType>state</addType>
+						<effectType>angerAddMul</effectType>
+						<mul>3</mul>
+						<duration>999999</duration>
+						<range>99999</range>
+					</skill>
+	</father>
+	
+</data>

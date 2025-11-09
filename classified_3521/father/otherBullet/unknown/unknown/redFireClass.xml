@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father>
+		<otherBullet kind="fire">
+			<name>redFireBullet</name>
+			<cnName>猩焰火攻</cnName><armsType>rocket</armsType>
+			
+			<hurtRatio>1.5</hurtRatio>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>180</bulletAngle>
+			<bulletNum>4</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootAngle>10</shootAngle>					
+				
+			<followD value="2" delay="0.1" />	 
+			<penetrationGap>1000</penetrationGap>
+				
+			<shootPoint>0,0</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<speedD random="0.2" />
+			<gravity>0</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="filter" raNum="30">bullet/fireballSmoke</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/fireHit1">boomEffect/boom1</hitImgUrl>
+		</otherBullet>
+	</father>
+	</data>

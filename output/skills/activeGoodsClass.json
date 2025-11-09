@@ -1,0 +1,152 @@
+{
+  "father": {
+    "name": "pumpkin",
+    "cnName": "粽子",
+    "priceType": "pumpkin",
+    "labelArr": "all",
+    "type": {
+      "goods": [
+        {
+          "dataType": "equip",
+          "defineLabel": "loveShell_1",
+          "price": 180,
+          "buyLimitNum": 1
+        },
+        {
+          "dataType": "parts",
+          "defineLabel": "balloonParts_1",
+          "price": 30,
+          "buyLimitNum": 1
+        },
+        {
+          "defineLabel": "doubleArmsCard",
+          "price": 3,
+          "buyLimitNum": 10
+        },
+        {
+          "defineLabel": "doubleEquipCard",
+          "price": 3,
+          "buyLimitNum": 10
+        },
+        {
+          "defineLabel": "doubleMaterialsCard",
+          "price": 3,
+          "buyLimitNum": 10
+        },
+        {
+          "defineLabel": "strengthenStone",
+          "num": 10,
+          "price": 1,
+          "buyLimitNum": 200
+        },
+        {
+          "defineLabel": "zodiacCash",
+          "price": 3,
+          "buyLimitNum": 30
+        },
+        {
+          "defineLabel": "madheart",
+          "price": 4,
+          "buyLimitNum": 30
+        },
+        {
+          "defineLabel": "demStone",
+          "price": 4,
+          "buyLimitNum": 30
+        },
+        {
+          "defineLabel": "demBall",
+          "price": 2,
+          "buyLimitNum": 50
+        },
+        {
+          "defineLabel": "lightCone",
+          "price": 2,
+          "buyLimitNum": 25
+        },
+        {
+          "defineLabel": "partsChest87",
+          "price": 15,
+          "buyLimitNum": 4
+        },
+        {
+          "defineLabel": "partsChest84",
+          "price": 5,
+          "buyLimitNum": 4
+        },
+        {
+          "defineLabel": "highVehicleCard",
+          "price": 3,
+          "buyLimitNum": 5
+        },
+        {
+          "defineLabel": "highPetCard",
+          "price": 3,
+          "buyLimitNum": 5
+        },
+        {
+          "defineLabel": "pianoGun",
+          "price": 2,
+          "buyLimitNum": 20
+        },
+        {
+          "defineLabel": "yearSnake",
+          "price": 2,
+          "buyLimitNum": 50
+        },
+        {
+          "defineLabel": "yearPig",
+          "price": 2,
+          "buyLimitNum": 50
+        },
+        {
+          "defineLabel": "yearMonkey",
+          "price": 2,
+          "buyLimitNum": 50
+        },
+        {
+          "defineLabel": "yearRabbit",
+          "price": 2,
+          "buyLimitNum": 50
+        },
+        {
+          "defineLabel": "yearMouse",
+          "price": 2,
+          "buyLimitNum": 50
+        },
+        {
+          "defineLabel": "yearCattle",
+          "price": 2,
+          "buyLimitNum": 50
+        },
+        {
+          "defineLabel": "yearDog",
+          "price": 1,
+          "buyLimitNum": 50
+        },
+        {
+          "dataType": "parts",
+          "defineLabel": "huntParts_1",
+          "price": 1,
+          "buyLimitNum": 100
+        },
+        {
+          "dataType": "parts",
+          "defineLabel": "acidicParts_1",
+          "price": 1,
+          "buyLimitNum": 100
+        },
+        {
+          "defineLabel": "allBlackCash",
+          "price": 1,
+          "num": 5
+        },
+        {
+          "defineLabel": "allBlackEquipCash",
+          "price": 1,
+          "num": 5
+        }
+      ]
+    }
+  }
+}

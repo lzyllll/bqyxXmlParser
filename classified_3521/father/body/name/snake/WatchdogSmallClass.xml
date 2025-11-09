@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="snake" cnName="血蟒">
+		<body index="0" name="巡逻狗" shell="metal">
+			
+			<name>WatchdogSmall</name>
+			<cnName>巡逻狗</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/WatchdogSmall.swf</swfUrl>
+			
+			<lifeRatio>0.6</lifeRatio>
+			<showLevel>9999</showLevel>
+			<dieImg name="midSpace" /><dieJumpMul>0</dieJumpMul>
+			<imgArr>
+				stand,move
+				,shootAttack,lightningAttack
+				,hurt1,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+			</imgArr>
+			
+			<hitRect>-14,-50,28,50</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>8</maxVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<bossSkillArr>noSpeedReduce,silence_enemy,defenceBounce_enemy</bossSkillArr>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><cn>射击</cn>
+					<hurtRatio>1</hurtRatio>
+					<bulletLabel>WatchdogSmallShoot</bulletLabel>
+					<grapRect>-280,-91,179,93</grapRect>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>lightningAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<grapRect>-280,-82,210,93</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>	
+	</father>		
+	</data>

@@ -1,0 +1,334 @@
+{
+  "father": [
+    {
+      "name": "enemy",
+      "cnName": "敌方",
+      "bullet": {
+        "Madgod": {
+          "name": "Madgod",
+          "shell": "compound",
+          "cnName": "狂战神",
+          "raceType": "zombies",
+          "swfUrl": "swf/enemy/Madgod339.swf",
+          "rosRatio": 1,
+          "showLevel": 9999,
+          "headHurtMul": 0.3,
+          "headIconUrl": "IconGather/Madgod",
+          "imgType": "normal",
+          "lifeBarExtraHeight": -180,
+          "imgArr": "stand,move\n\t\t\t\t,normalAttack,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,die1\n\t\t\t\t,birthAttack\n\t\t\t\t,rotateAttack,shakeAttack,sprintAttack,magicAttack",
+          "hitRect": "-20, -90, 40, 90",
+          "maxVx": 11,
+          "extraAIClassLabel": null,
+          "preBulletArr": "extremeLaserFire,MadgodSmoke",
+          "dieJumpMul": 0,
+          "motionD": {
+            "jumpMul": 1.5
+          },
+          "avtiveSkillCdOverT": 0.06,
+          "skillArr": "MadgodBuff,MadgodHit,verShieldMad,meltFlamerPurgold,vertigoArmorIron,cardNoAttackSkill,findHide,spellImmunityMax,noBounce_enemy,underHurt50",
+          "bossSkillArr": "magicMadgod,rotateMadgod,shakeMadgod,sprintMadgod,weaponDefence2,enemyToZombie,strong_enemy",
+          "bossSkillArrCn": null,
+          "wilderSkillArr": null,
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "normalAttack",
+                "cn": "挥砍",
+                "hurtRatio": 2,
+                "attackType": "holy",
+                "shakeValue": 4,
+                "hitImgUrl": null
+              },
+              {
+                "cn": "乾坤斩",
+                "imgLabel": "rotateAttack",
+                "noAiChooseB": 1,
+                "hurtRatio": 1,
+                "hurtMul": 0.1,
+                "attackType": "holy",
+                "skillArr": null,
+                "hitImgUrl": null
+              },
+              {
+                "cn": "现身",
+                "imgLabel": "birthAttack",
+                "noAiChooseB": 1,
+                "hurtRatio": 1e-14,
+                "grapRect": "-400,-111,100,105",
+                "skillArr": null
+              },
+              {
+                "cn": "擎天斩",
+                "imgLabel": "shakeAttack",
+                "noAiChooseB": 1,
+                "hurtRatio": 2,
+                "hurtMul": 0.4,
+                "attackType": "holy",
+                "hitImgUrl": null
+              },
+              {
+                "cn": "疾风刺",
+                "imgLabel": "sprintAttack",
+                "noAiChooseB": 1,
+                "hurtRatio": 2,
+                "hurtMul": 0.05,
+                "attackType": "holy",
+                "hitImgUrl": null
+              },
+              {
+                "cn": "虚空之雷",
+                "imgLabel": "magicAttack",
+                "noAiChooseB": 1,
+                "hurtRatio": 1e-14,
+                "grapRect": "-400,-111,100,105"
+              }
+            ]
+          },
+          "armsType": null
+        },
+        "MadgodSmoke": {
+          "cnName": "爆瓶子弹",
+          "name": "MadgodSmoke",
+          "shakeAngle": 5,
+          "bulletLife": 30,
+          "bulletWidth": 30,
+          "hitType": "rect",
+          "bulletSpeed": 0,
+          "hitGap": 0.1,
+          "skillArr": "LaborZombieBoomBuff",
+          "penetrationNum": 999,
+          "penetrationGap": 1000,
+          "flipX": 1,
+          "bulletImgUrl": null,
+          "armsType": null
+        }
+      }
+    },
+    {
+      "name": "enemy",
+      "skill": [
+        {
+          "cnName": "全身发光、走路带烟",
+          "name": "MadgodBuff",
+          "noCopyB": 1,
+          "everNoClearB": 1,
+          "noBeClearB": 1,
+          "ignoreNoSkillB": 1,
+          "ignoreSilenceB": 1,
+          "conditionType": "passive",
+          "condition": "add",
+          "target": "me",
+          "addType": "state",
+          "effectType": "buff",
+          "effectFather": "madgod",
+          "duration": 99999999,
+          "meEffectImg": {
+            "name": "madArmsAttack_state"
+          },
+          "stateEffectImg": {
+            "value": "generalEffect/purBigLight",
+            "partType": "leg_right_1,leg_left_1,arm_right_1,arm_left_1,mouth",
+            "con": "add"
+          },
+          "pointEffectImg": {
+            "value": "boomEffect/smoke2",
+            "con": "add"
+          },
+          "otherEffectImg": {
+            "value": "boomEffect/boom3",
+            "partType": "hand_right,leg_right_1,eye_left,body"
+          }
+        },
+        {
+          "name": "MadgodHit",
+          "cnName": "狂战神击中",
+          "noSkillDodgeB": 1,
+          "ignoreNoSkillB": 1,
+          "ignoreImmunityB": 1,
+          "conditionType": "passive",
+          "condition": "allHit",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "MadgodHit",
+          "effectFather": "madgod",
+          "description": "。"
+        },
+        {
+          "name": "shakeMadgod",
+          "cnName": "擎天斩",
+          "noBeClearB": 1,
+          "ignoreNoSkillB": 1,
+          "ignoreSilenceB": 1,
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cd": 9,
+          "iconUrl36": null,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "no",
+          "otherEffectImg": {
+            "value": "skillEffect/apertureBig",
+            "con": "add"
+          },
+          "meActionLabel": "shakeAttack",
+          "description": "释放擎天斩，对地面造成猛烈一击。动作期间，狂战神将拥有竖盾。"
+        },
+        {
+          "name": "rotateMadgod",
+          "cnName": "乾坤斩",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cd": 8,
+          "iconUrl36": null,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "nearAttackTarget",
+          "conditionRange": 700,
+          "target": "me",
+          "addType": "instant",
+          "effectType": "no",
+          "meActionLabel": "rotateAttack",
+          "description": "狂战神挥刀腾旋两周，汇聚力量之后，向敌人发起致命一斩，对敌人造成超大范围的伤害。动作期间，狂战神将拥有竖盾。"
+        },
+        {
+          "name": "sprintMadgod",
+          "cnName": "疾风刺",
+          "noBeClearB": 1,
+          "ignoreNoSkillB": 1,
+          "ignoreSilenceB": 1,
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cd": 10,
+          "iconUrl36": null,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "nearEnemy",
+          "conditionRange": 500,
+          "target": "me",
+          "addType": "instant",
+          "effectType": "no",
+          "meActionLabel": "sprintAttack",
+          "pointEffectImg": {
+            "name": "skillEffectTeleport"
+          },
+          "description": "当敌人靠近自己时，狂战神将瞬移至远处，并挥刀向敌人发起突袭。此时狂战神处于无敌状态。"
+        },
+        {
+          "name": "magicMadgod",
+          "cnName": "冰魄之雷",
+          "ignoreNoSkillB": 1,
+          "ignoreSilenceB": 1,
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cd": 12,
+          "iconUrl36": null,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "lifePerLess50,magicMadgod",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "no",
+          "meActionLabel": "magicAttack",
+          "stateEffectImg": {
+            "name": "frozenState"
+          },
+          "otherEffectImg": {
+            "name": "silenceWarrior_state"
+          },
+          "description": "当场上有多位持枪敌人时，狂战神将启动冰魄之雷，将他们冰封，只保留1位持枪敌人的活动性。持续7秒。"
+        },
+        {
+          "name": "magicMadgodHit",
+          "cnName": "冰魄之雷-击中",
+          "ignoreImmunityB": 1,
+          "noSkillDodgeB": 1,
+          "ignoreNoSkillB": 1,
+          "noBeClearB": 1,
+          "everNoClearB": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "instantAndState",
+          "effectType": "magicMadgodHit",
+          "duration": 7,
+          "stateEffectImg": {
+            "name": "frozenState"
+          },
+          "description": "。"
+        },
+        {
+          "name": "weaponDefence2",
+          "showInLifeBarB": 1,
+          "cnName": "淬火外壳",
+          "ignoreNoSkillB": 1,
+          "wantDescripB": 1,
+          "conditionType": "passive",
+          "condition": "underHit",
+          "otherConditionArr": "hurtChild",
+          "conditionString": "weapon",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "changeHurtAndMul",
+          "mul": 0.35,
+          "description": "受到副手伤害减少[1-mul]。"
+        },
+        {
+          "name": "verShieldMad",
+          "showInLifeBarB": 1,
+          "cnName": "竖盾",
+          "ignoreImmunityB": 1,
+          "ignoreNoSkillB": 1,
+          "ignoreSilenceB": 1,
+          "conditionType": "passive",
+          "condition": "add",
+          "target": "me",
+          "addType": "instant",
+          "summonedUnitsB": 1,
+          "effectType": "summonedUnitsAndCount",
+          "obj": "\"cnName\":\"竖盾\",\"num\":2,\"lifeMul\":1,\"dpsMul\":0,\"lifeTime\":9999999,\"mulByFatherB\":1,\"maxNum\":2,\"skillArr\":[\"verShieldMadBuff\",\"verShieldMadUnder\"]",
+          "description": "左右两侧竖起高高的护盾，抵挡任何攻击。"
+        },
+        {
+          "name": "verShieldMadBuff",
+          "cnName": "竖盾buff",
+          "ignoreImmunityB": 1,
+          "noSkillDodgeB": 1,
+          "ignoreNoSkillB": 1,
+          "noBeClearB": 1,
+          "everNoClearB": 1,
+          "conditionType": "passive",
+          "condition": "add",
+          "target": "me",
+          "addType": "state",
+          "effectType": "verShieldMadBuff",
+          "effectFather": "madgod",
+          "value": 180,
+          "stateEffectImg": {
+            "name": "verShieldMadState"
+          },
+          "duration": 999999999
+        },
+        {
+          "name": "verShieldMadUnder",
+          "cnName": "竖盾under",
+          "ignoreImmunityB": 1,
+          "noSkillDodgeB": 1,
+          "ignoreNoSkillB": 1,
+          "noBeClearB": 1,
+          "everNoClearB": 1,
+          "conditionType": "passive",
+          "condition": "underAllHit",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "verShieldMadUnder",
+          "effectFather": "madgod",
+          "valueString": "verShieldMadBuff",
+          "duration": 999999999
+        }
+      ]
+    }
+  ]
+}

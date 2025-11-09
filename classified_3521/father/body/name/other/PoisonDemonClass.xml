@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="other" cnName="其他">
+		<body index="0" name="毒精灵">
+			
+			<name>PoisonElves</name>
+			<cnName>毒精灵</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/PoisonElves.swf</swfUrl>
+			
+			<lifeRatio>0.7</lifeRatio>
+			
+			<dieJumpMul>0</dieJumpMul>
+			<imgArr>
+				stand,move,die1
+				,__jumpUp,jumpUp,jumpDown,jumpDown__
+			</imgArr>
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			
+			<maxVx>9</maxVx>
+			<motionD F_G="0.3" jumpDelayT="0.001" />
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>Antimatter_AIExtra</extraAIClassLabel>
+			
+			<skillArr />
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<hurtArr>
+				
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>0.000001</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt><imgLabel>stand</imgLabel><noAiChooseB>1</noAiChooseB><hurtRatio>0.000001</hurtRatio><attackType>direct</attackType></hurt>
+				<hurt><imgLabel>jumpUp</imgLabel><noAiChooseB>1</noAiChooseB><hurtRatio>0.000001</hurtRatio><attackType>direct</attackType></hurt>
+				<hurt><imgLabel>jumpDown</imgLabel><noAiChooseB>1</noAiChooseB><hurtRatio>0.000001</hurtRatio><attackType>direct</attackType></hurt>
+				<hurt><imgLabel>__jumpUp</imgLabel><noAiChooseB>1</noAiChooseB><hurtRatio>0.000001</hurtRatio><attackType>direct</attackType></hurt>
+				<hurt><imgLabel>jumpDown__</imgLabel><noAiChooseB>1</noAiChooseB><hurtRatio>0.000001</hurtRatio><attackType>direct</attackType></hurt>
+			</hurtArr>
+		</body>	
+	</father>
+</data>

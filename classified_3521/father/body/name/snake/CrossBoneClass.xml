@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="snake" cnName="血蟒">
+		<body shell="metal">
+			<name>CrossBone</name>
+			<cnName>交叉骨</cnName><headIconUrl>IconGather/CrossBone</headIconUrl>
+			<raceType>human</raceType>
+			<swfUrl>swf/hero/CrossBone.swf</swfUrl>
+			
+			
+			<lifeRatio>2.5</lifeRatio>
+			<showLevel>9999</showLevel>
+			
+			<imgArr>
+				standStop,standForward,standBack,standStop__squatStop
+				,squatForward,squatStop,squatBack,squatStop__standStop
+				,die1,die2,__stru,stru
+				,throwAttack
+				,jumpDown__,jumpDown,jumpUp__jumpDown,jumpUp,__jumpUp
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+				,BlueMotoRide,WatchEagleRide
+			</imgArr>
+			<lowerImgArr>
+				thigh
+				,leg_left_1
+				,leg_left_0
+				,foot_left
+				,leg_right_1
+				,leg_right_0
+				,foot_right
+			</lowerImgArr>
+			<lifeBarExtraHeight>-20</lifeBarExtraHeight>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-15,-38,30,38</hurtRectArr> 
+			<hurtRectArr>-20, -110, 40, 110</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>12</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>1</armsNumber>
+			<randomArmsRange>yearSheep$cb</randomArmsRange>	
+			<extraAIClassLabel />
+			<oneAiLabel>FightShooter</oneAiLabel>
+			
+			<bossSkillArr>cardNoAttackSkill,meltFlamerPurgold,noUnderMulHurt,defenceWenjie,godShield,KingRabbitTreater,treater_knights,through_hero_10,sameInvi,rideBlueMoto,rideFireWolf,rideKun,rideNian,rideFloorTank</bossSkillArr>
+			<extraDropArmsB>1</extraDropArmsB>
+			
+			
+			<hurtArr>
+				
+			</hurtArr>
+		</body>
+		
+		
+		
+		
+	</father>	
+	</data>

@@ -1,0 +1,124 @@
+{
+  "father": {
+    "name": "space",
+    "skills": {
+      "OreLaserFly": {
+        "name": "OreLaserFly",
+        "ignoreSilenceB": 1,
+        "ignoreNoSkillB": 1,
+        "cnName": "浮游激光炮出现位置",
+        "everNoClearB": 1,
+        "noBeClearB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "conditionType": "passive",
+        "condition": "bodyAdd",
+        "target": "me",
+        "addType": "instant",
+        "effectType": "OreLaserFly",
+        "effectFather": "oreSpace",
+        "pointEffectImg": {
+          "name": "oreBombShow"
+        }
+      },
+      "OreWaveMoveY": {
+        "name": "OreWaveMoveY",
+        "ignoreSilenceB": 1,
+        "ignoreNoSkillB": 1,
+        "cnName": "垂直浮动",
+        "everNoClearB": 1,
+        "noBeClearB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "conditionType": "passive",
+        "condition": "add",
+        "target": "me",
+        "addType": "state",
+        "effectType": "OreWaveMoveY",
+        "effectFather": "oreSpace",
+        "value": 20,
+        "mul": 1,
+        "duration": 999999
+      },
+      "OreLaser": {
+        "name": "OreLaser",
+        "cnName": "采矿激光炮",
+        "lifeRatio": 4,
+        "raceType": "ship",
+        "swfUrl": "swf/ship/OreLaser.swf",
+        "dieImg": {
+          "name": "midSpace"
+        },
+        "dieJumpMul": 0,
+        "lockLeftB": 1,
+        "imgType": "normal",
+        "imgArr": "stand,normalAttack,die1",
+        "hitRect": "-25,-25,50,50",
+        "motionState": "fly",
+        "flyType": "space",
+        "motionD": {
+          "vRan": 0,
+          "F_AIR": 2
+        },
+        "maxVx": 4,
+        "attackAIClass": null,
+        "skillArr": "OreLaserBuff",
+        "hurtArr": {
+          "hurt": {
+            "cd": 3,
+            "imgLabel": "normalAttack",
+            "hurtRatio": 0.1,
+            "shakeValue": 10
+          }
+        }
+      },
+      "OreLaserBuff": {
+        "name": "OreLaserBuff",
+        "ignoreSilenceB": 1,
+        "ignoreNoSkillB": 1,
+        "cnName": "矿石激光台buff",
+        "everNoClearB": 1,
+        "noBeClearB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "conditionType": "passive",
+        "condition": "bodyAdd",
+        "target": "me",
+        "addType": "state",
+        "effectType": "OreLaser",
+        "value": 1.9,
+        "mul": -60,
+        "valueString": "normalAttack",
+        "summonedUnitsB": 1,
+        "obj": {
+          "cnName": "陨石矿",
+          "num": 1,
+          "lifeMul": 1,
+          "dpsMul": 1,
+          "maxNum": 1,
+          "lifeTime": -1,
+          "cy": 60,
+          "skillArr": [
+            "meteOreLaserDie"
+          ]
+        },
+        "duration": 9999999
+      },
+      "meteOreLaserDie": {
+        "name": "meteOreLaserDie",
+        "ignoreSilenceB": 1,
+        "ignoreNoSkillB": 1,
+        "cnName": "陨石矿死亡",
+        "everNoClearB": 1,
+        "noBeClearB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "conditionType": "passive",
+        "condition": "die",
+        "target": "me",
+        "addType": "instant",
+        "effectType": "meteOreLaserDie"
+      }
+    }
+  }
+}

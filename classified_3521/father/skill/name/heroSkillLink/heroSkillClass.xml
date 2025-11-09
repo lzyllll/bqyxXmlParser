@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="heroSkillLink" cnName="英雄技能-链接">
+		<skill index="0" name="毒雾-减血">
+			<name>poisonousFog_hero_link</name>
+			<cnName>毒雾-减血</cnName>
+			
+			<conditionType>active</conditionType>
+			<target>mouse,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>poison_xiaoAi</effectType>
+			<extraValueType>targetMaxLife</extraValueType>
+			<mul>0.01</mul>
+			<doGap>1</doGap>
+			<duration>10</duration>
+			<range>200</range>
+			<growth>
+				<skill><range>200</range></skill>
+				<skill><range>250</range></skill>
+				<skill><range>300</range></skill>
+				<skill><range>400</range></skill>
+				<skill><range>450</range></skill>
+				<skill><range>450</range></skill>
+				<skill><range>450</range></skill>
+				<skill><range>450</range><duration>11</duration></skill>
+				<skill><range>450</range><duration>12</duration></skill>
+				<skill><range>500</range><duration>12</duration><mul>0.015</mul></skill>
+			</growth>
+			
+		</skill>
+		<skill index="0" name="吞噬-回血">
+			<name>devour_hero_link</name>
+			<cnName>吞噬-回血</cnName>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>lifeRate</effectType>
+			<mul>0.13</mul>
+			<duration>20</duration>
+			<stateEffectImg partType="mouth" con="add">skillEffect/rune_red_e</stateEffectImg>
+			<growth>
+				<skill><mul>0.13</mul></skill>
+				<skill><mul>0.13</mul></skill>
+				<skill><mul>0.13</mul></skill>
+				<skill><mul>0.13</mul></skill>
+				<skill><mul>0.13</mul></skill>
+				<skill><mul>0.13</mul></skill>
+				<skill><mul>0.13</mul></skill>
+				<skill><mul>0.16</mul></skill>
+				<skill><mul>0.20</mul></skill>
+				<skill><mul>0.25</mul></skill>
+			</growth>
+			
+		</skill>
+		<skill index="0" name="反馈-反弹被动技能">
+			<name>backHurt_hero_link</name>
+			<cnName>电离折射</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>backHurt</effectType>
+			<extraValueType>hurtValue</extraValueType>
+			<value>0</value>
+			<mul>1</mul>
+			<growth>
+				<skill><mul>1</mul></skill>
+				<skill><mul>1</mul></skill>
+				<skill><mul>1</mul></skill>
+				<skill><mul>1</mul></skill>
+				<skill><mul>1</mul></skill>
+				<skill><mul>1</mul></skill>
+				<skill><mul>1</mul></skill>
+				<skill><mul>1.25</mul></skill>
+				<skill><mul>1.5</mul></skill>
+				<skill><mul>3</mul></skill>
+			</growth>	
+		</skill>
+		<skill index="0" name="selfBurn_hero_link" cnName="自燃-链接">
+			<name>selfBurn_hero_link</name>
+			<cnName>群体自燃</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,random,enemy</target>
+			
+			<addType>instant</addType>
+			<effectType>normal_hurt</effectType>
+			<extraValueType>passiveStateProduerDpsUI</extraValueType>
+			<mul>0.05</mul>
+			<duration>0.1</duration>
+			<range>300</range>
+			
+			<targetEffectImg con="add" randomRange="40">bulletHitEffect/spark_motion2</targetEffectImg>
+			<description>单位全身燃起熊熊烈火，对附近[range]范围内的敌人造成伤害，伤害值为当前武器面板战斗力的[mul]。</description>
+			
+			<growth>
+				<skill><mul>0.05</mul></skill>
+				<skill><mul>0.09</mul></skill>
+				<skill><mul>0.13</mul></skill>
+				<skill><mul>0.17</mul></skill>
+				<skill><mul>0.21</mul></skill>
+				<skill><mul>0.24</mul></skill>
+				<skill><mul>0.27</mul></skill>
+				<skill><mul>0.29</mul></skill>
+				<skill><mul>0.31</mul></skill>
+				<skill><mul>0.35</mul></skill>
+				
+				<skill><mul>0.4</mul></skill>
+				<skill><mul>0.45</mul></skill>
+				<skill><mul>0.5</mul></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="wisdomAnger_hero_link" cnName="智慧怒火-链接">
+			<name>wisdomAnger_hero_link</name>
+			<cnName>智慧怒火</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,random,enemy</target>
+			
+			<addType>instant</addType>
+			<effectType>normal_hurt</effectType>
+			<extraValueType>passiveStateProduerDpsUI</extraValueType>
+			<mul>1</mul>
+			<duration>0.1</duration>
+			<range>300</range>
+			
+			<targetEffectImg con="add" randomRange="40">bulletHitEffect/spark_motion2</targetEffectImg>
+			<description>单位全身燃起熊熊烈火，对附近[range]范围内的敌人造成伤害，伤害值为当前武器面板战斗力的[mul]。</description>
+			
+			<growth>
+				<skill><mul>0.03</mul></skill>
+				<skill><mul>0.05</mul></skill>
+				<skill><mul>0.07</mul></skill>
+				<skill><mul>0.09</mul></skill>
+				<skill><mul>0.11</mul></skill>
+				<skill><mul>0.13</mul></skill>
+				<skill><mul>0.15</mul></skill>
+				<skill><mul>0.17</mul></skill>
+				<skill><mul>0.19</mul></skill>
+				<skill><mul>0.22</mul></skill>
+				
+				<skill><mul>0.26</mul></skill>
+				<skill><mul>0.31</mul><ignoreImmunityB>1</ignoreImmunityB></skill>
+				<skill><mul>0.38</mul><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB></skill>
+				<skill><mul>0.45</mul><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB></skill>
+			</growth>
+		</skill>
+		
+		<skill index="0" name="rolling_hero_link" cnName="翻滚-减速">
+			<name>rolling_hero_link</name>
+			<cnName>翻滚-减速</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<intervalT>0.033</intervalT>
+			<target>me,random,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>hurtMul</effectType>
+			<mul>0.7</mul>
+			<duration>1.5</duration>
+			<range>60</range>
+			
+			<stateEffectImg partType="2hand">skillEffect/disabled_enemy</stateEffectImg>
+		</skill>
+		
+		<skill index="0" name="沉默-使我方技能免疫3秒">
+			<name>silence_hero_link</name>
+			<cnName>沉默-使我方技能免疫3秒</cnName>
+			
+			<conditionType>active</conditionType>
+			<target>me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>spellImmunityB</effectType>
+			<duration>3</duration>
+			<range>1500</range>
+			<stateEffectImg name="outfit_elephant_state" />
+			<growth>
+				<skill><duration>3</duration></skill>
+				<skill><duration>4</duration></skill>
+				<skill><duration>5</duration></skill>
+				<skill><duration>6</duration></skill>
+			</growth>
+		</skill>
+		
+		<skill cnName="击中眩晕">
+			<name>moreMissile_hero_dizziness</name>
+			<cnName>击中眩晕</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>dizziness</effectType>
+			<duration>2</duration>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+			<description>击中目标使其陷入眩晕状态，持续[duration]秒。</description>
+		</skill>
+		<skill cnName="击中眩晕">
+			<name>moreMissile_hero_dizziness2</name><ignoreImmunityB>1</ignoreImmunityB>
+			<cnName>击中眩晕</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>dizziness</effectType>
+			<duration>3</duration>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+			<description>击中目标使其陷入眩晕状态，持续[duration]秒，无视技能免疫。</description>
+		</skill>
+	</father>
+	
+</data>

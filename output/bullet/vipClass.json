@@ -1,0 +1,535 @@
+{
+  "level": [
+    {
+      "lv": 1,
+      "must": 100,
+      "smeltNum": 2,
+      "base": {
+        "expMul": 0.1,
+        "dpsMul": 0.1,
+        "lifeMul": 0.2,
+        "defenceMul": 0.2,
+        "bag": 6,
+        "askPropsNum": 0
+      },
+      "props": {
+        "lifeBottle": 1,
+        "teamLifeBottle": 1,
+        "caisson": 1,
+        "rebirthStone": 0,
+        "teamRebirthCard": 0,
+        "skillFleshCard": 0
+      },
+      "buyLimitNumObj": {
+        "militarySupplies": 6,
+        "strengthenStone": 10,
+        "magicChest": 1,
+        "dragonChest": 1
+      },
+      "gift": [
+        "things;skillStone;30",
+        "things;rebirthStone;1",
+        "things;coinHeap_1;5",
+        "things;armsHighBox;5",
+        "things;equipHighBox;5"
+      ],
+      "dayGift": {
+        "gift": [
+          "base;anniCoin;10",
+          "things;strengthenStone;3",
+          "things;strengthenDrug;5",
+          "things;anniversaryCash;5",
+          "things;weaponChest;5",
+          "things;allBlackCash;10",
+          "things;allBlackEquipCash;10"
+        ]
+      }
+    },
+    {
+      "lv": 2,
+      "must": 200,
+      "smeltNum": 3,
+      "base": {
+        "expMul": 0.2,
+        "dpsMul": 0.18,
+        "lifeMul": 0.3,
+        "defenceMul": 0.3,
+        "bag": 9,
+        "askPropsNum": 0
+      },
+      "props": {
+        "lifeBottle": 1,
+        "teamLifeBottle": 1,
+        "caisson": 2,
+        "rebirthStone": 1,
+        "teamRebirthCard": 1,
+        "skillFleshCard": 1
+      },
+      "buyLimitNumObj": {
+        "militarySupplies": 7,
+        "strengthenStone": 20,
+        "magicChest": 2,
+        "dragonChest": 2
+      },
+      "gift": [
+        "things;skillStone;50",
+        "things;rebirthStone;2",
+        "things;coinHeap_1;9",
+        "things;armsHighBox;8",
+        "things;equipHighBox;8"
+      ],
+      "dayGift": {
+        "gift": [
+          "base;anniCoin;12",
+          "things;strengthenStone;3",
+          "things;bloodStone;4",
+          "things;strengthenDrug;7",
+          "things;weaponChest;6",
+          "things;anniversaryCash;7",
+          "things;allBlackCash;12",
+          "things;allBlackEquipCash;12"
+        ]
+      }
+    },
+    {
+      "lv": 3,
+      "must": 500,
+      "smeltNum": 4,
+      "base": {
+        "expMul": 0.3,
+        "dpsMul": 0.26,
+        "lifeMul": 0.4,
+        "defenceMul": 0.4,
+        "bag": 12,
+        "askPropsNum": 1
+      },
+      "props": {
+        "lifeBottle": 2,
+        "teamLifeBottle": 1,
+        "caisson": 3,
+        "rebirthStone": 2,
+        "teamRebirthCard": 1,
+        "skillFleshCard": 1
+      },
+      "buyLimitNumObj": {
+        "militarySupplies": 8,
+        "strengthenStone": 40,
+        "magicChest": 4,
+        "dragonChest": 4
+      },
+      "gift": [
+        "things;skillStone;70",
+        "things;rebirthStone;3",
+        "things;coinHeap_1;15",
+        "things;armsHighBox;10",
+        "things;equipHighBox;10"
+      ],
+      "dayGift": {
+        "gift": [
+          "base;anniCoin;15",
+          "things;strengthenStone;6",
+          "things;bloodStone;7",
+          "things;strengthenDrug;12",
+          "things;weaponChest;7",
+          "things;partsChest72;2",
+          "things;anniversaryCash;12",
+          "things;allBlackCash;15",
+          "things;allBlackEquipCash;15",
+          "parts;huntParts_1;1",
+          "parts;acidicParts_1;1"
+        ]
+      }
+    },
+    {
+      "lv": 4,
+      "must": 1000,
+      "smeltNum": 5,
+      "base": {
+        "expMul": 0.45,
+        "dpsMul": 0.34,
+        "lifeMul": 0.5,
+        "defenceMul": 0.5,
+        "bag": 15,
+        "askPropsNum": 1
+      },
+      "props": {
+        "lifeBottle": 2,
+        "teamLifeBottle": 2,
+        "caisson": 4,
+        "rebirthStone": 2,
+        "teamRebirthCard": 2,
+        "skillFleshCard": 1
+      },
+      "buyLimitNumObj": {
+        "militarySupplies": 9,
+        "strengthenStone": 70,
+        "magicChest": 7,
+        "dragonChest": 7
+      },
+      "gift": [
+        "things;doubleCard;3",
+        "things;skillStone;100",
+        "things;rebirthStone;5",
+        "things;coinHeap_1;20",
+        "things;armsHighBox;14",
+        "things;equipHighBox;14"
+      ],
+      "dayGift": {
+        "gift": [
+          "base;anniCoin;16",
+          "things;strengthenStone;9",
+          "things;bloodStone;10",
+          "things;strengthenDrug;16",
+          "things;keyChest;1",
+          "things;weaponChest;8",
+          "things;partsChest72;2",
+          "things;anniversaryCash;16",
+          "things;allBlackCash;20",
+          "things;allBlackEquipCash;20",
+          "parts;huntParts_1;2",
+          "parts;acidicParts_1;2"
+        ]
+      }
+    },
+    {
+      "lv": 5,
+      "must": 2000,
+      "smeltNum": 6,
+      "base": {
+        "expMul": 0.6,
+        "dpsMul": 0.42,
+        "lifeMul": 0.6,
+        "defenceMul": 0.6,
+        "bag": 18,
+        "askPropsNum": 2
+      },
+      "props": {
+        "lifeBottle": 2,
+        "teamLifeBottle": 2,
+        "caisson": 5,
+        "rebirthStone": 2,
+        "teamRebirthCard": 2,
+        "skillFleshCard": 2
+      },
+      "buyLimitNumObj": {
+        "militarySupplies": 10,
+        "strengthenStone": 120,
+        "magicChest": 12,
+        "dragonChest": 12
+      },
+      "gift": [
+        "things;doubleCard;5",
+        "things;skillStone;140",
+        "things;rebirthStone;7",
+        "things;coinHeap_1;30",
+        "things;armsHighBox;18",
+        "things;equipHighBox;18"
+      ],
+      "dayGift": {
+        "gift": [
+          "base;anniCoin;17",
+          "things;strengthenStone;12",
+          "things;bloodStone;13",
+          "things;strengthenDrug;21",
+          "things;keyChest;1",
+          "things;doubleCard;1",
+          "things;weaponChest;9",
+          "things;normalChest;1",
+          "things;partsChest72;4",
+          "things;anniversaryCash;21",
+          "things;allBlackCash;25",
+          "things;allBlackEquipCash;25",
+          "parts;huntParts_1;3",
+          "parts;acidicParts_1;3"
+        ]
+      }
+    },
+    {
+      "lv": 6,
+      "must": 5000,
+      "smeltNum": 7,
+      "armsSkinArr": "sniperCicada",
+      "base": {
+        "expMul": 0.8,
+        "dpsMul": 0.5,
+        "lifeMul": 0.7,
+        "defenceMul": 0.7,
+        "bag": 21,
+        "askPropsNum": 2
+      },
+      "props": {
+        "lifeBottle": 3,
+        "teamLifeBottle": 2,
+        "caisson": 6,
+        "rebirthStone": 3,
+        "teamRebirthCard": 2,
+        "skillFleshCard": 2
+      },
+      "buyLimitNumObj": {
+        "militarySupplies": 11,
+        "strengthenStone": 200,
+        "magicChest": 20,
+        "dragonChest": 20
+      },
+      "gift": [
+        "things;doubleCard;8",
+        "things;skillStone;180",
+        "things;rebirthStone;9",
+        "things;coinHeap_1;45",
+        "things;armsHighBox;24",
+        "things;equipHighBox;24"
+      ],
+      "dayGift": {
+        "gift": [
+          "base;anniCoin;18",
+          "things;strengthenStone;15",
+          "things;bloodStone;15",
+          "things;strengthenDrug;26",
+          "things;keyChest;1",
+          "things;doubleCard;1",
+          "things;weaponChest;10",
+          "things;normalChest;1",
+          "things;dragonChest;1",
+          "things;partsChest75;1",
+          "things;anniversaryCash;26",
+          "things;allBlackCash;30",
+          "things;allBlackEquipCash;30",
+          "parts;huntParts_1;4",
+          "parts;acidicParts_1;4"
+        ]
+      }
+    },
+    {
+      "lv": 7,
+      "must": 8000,
+      "smeltNum": 8,
+      "armsSkinArr": "sniperCicada,redFire",
+      "base": {
+        "expMul": 0.95,
+        "dpsMul": 0.55,
+        "lifeMul": 0.8,
+        "defenceMul": 0.8,
+        "bag": 24,
+        "askPropsNum": 3
+      },
+      "props": {
+        "lifeBottle": 3,
+        "teamLifeBottle": 3,
+        "caisson": 7,
+        "rebirthStone": 3,
+        "teamRebirthCard": 3,
+        "skillFleshCard": 2
+      },
+      "buyLimitNumObj": {
+        "militarySupplies": 12,
+        "strengthenStone": 300,
+        "magicChest": 23,
+        "dragonChest": 23
+      },
+      "gift": [
+        "things;doubleCard;11",
+        "things;skillStone;230",
+        "things;rebirthStone;11",
+        "things;teamRebirthCard;4",
+        "things;skillFleshCard;4",
+        "things;coinHeap_1;60",
+        "things;armsHighBox;30",
+        "things;equipHighBox;30"
+      ],
+      "dayGift": {
+        "gift": [
+          "base;anniCoin;19",
+          "things;strengthenStone;17",
+          "things;bloodStone;17",
+          "things;strengthenDrug;30",
+          "things;keyChest;2",
+          "things;doubleCard;2",
+          "things;weaponChest;11",
+          "things;normalChest;1",
+          "things;dragonChest;1",
+          "things;magicChest;1",
+          "things;partsChest75;3",
+          "things;anniversaryCash;30",
+          "things;allBlackCash;35",
+          "things;allBlackEquipCash;35",
+          "parts;huntParts_1;5",
+          "parts;acidicParts_1;5"
+        ]
+      }
+    },
+    {
+      "lv": 8,
+      "must": 10000,
+      "smeltNum": 9,
+      "armsSkinArr": "sniperCicada,redFire,rifleHornet",
+      "base": {
+        "expMul": 1.1,
+        "dpsMul": 0.6,
+        "lifeMul": 0.9,
+        "defenceMul": 0.9,
+        "bag": 30,
+        "askPropsNum": 4
+      },
+      "props": {
+        "lifeBottle": 3,
+        "teamLifeBottle": 3,
+        "caisson": 8,
+        "rebirthStone": 3,
+        "teamRebirthCard": 3,
+        "skillFleshCard": 3
+      },
+      "buyLimitNumObj": {
+        "militarySupplies": 13,
+        "strengthenStone": 500,
+        "magicChest": 25,
+        "dragonChest": 25
+      },
+      "gift": [
+        "things;doubleCard;14",
+        "things;skillStone;280",
+        "things;rebirthStone;13",
+        "things;teamRebirthCard;6",
+        "things;skillFleshCard;6",
+        "things;coinHeap_1;75",
+        "things;armsHighBox;36",
+        "things;equipHighBox;36"
+      ],
+      "dayGift": {
+        "gift": [
+          "base;anniCoin;20",
+          "things;strengthenStone;19",
+          "things;bloodStone;19",
+          "things;strengthenDrug;30",
+          "things;keyChest;2",
+          "things;doubleCard;2",
+          "things;weaponChest;12",
+          "things;normalChest;2",
+          "things;dragonChest;1",
+          "things;magicChest;1",
+          "things;partsChest75;4",
+          "things;anniversaryCash;32",
+          "things;allBlackCash;40",
+          "things;allBlackEquipCash;40",
+          "parts;huntParts_1;6",
+          "parts;acidicParts_1;6"
+        ]
+      }
+    },
+    {
+      "lv": 9,
+      "must": 20000,
+      "smeltNum": 10,
+      "armsSkinArr": "sniperCicada,redFire,rifleHornet,yearDragon",
+      "base": {
+        "expMul": 1.25,
+        "dpsMul": 0.65,
+        "lifeMul": 1.0,
+        "defenceMul": 1.0,
+        "bag": 30,
+        "askPropsNum": 5
+      },
+      "props": {
+        "lifeBottle": 4,
+        "teamLifeBottle": 3,
+        "caisson": 9,
+        "rebirthStone": 4,
+        "teamRebirthCard": 3,
+        "skillFleshCard": 3
+      },
+      "buyLimitNumObj": {
+        "militarySupplies": 15,
+        "strengthenStone": 1000,
+        "magicChest": 27,
+        "dragonChest": 27
+      },
+      "gift": [
+        "things;doubleCard;17",
+        "things;skillStone;330",
+        "things;rebirthStone;15",
+        "things;teamRebirthCard;8",
+        "things;skillFleshCard;8",
+        "things;coinHeap_1;80",
+        "things;armsHighBox;44",
+        "things;equipHighBox;44"
+      ],
+      "dayGift": {
+        "gift": [
+          "base;anniCoin;22",
+          "things;strengthenStone;21",
+          "things;bloodStone;21",
+          "things;strengthenDrug;30",
+          "things;keyChest;2",
+          "things;doubleCard;3",
+          "things;weaponChest;13",
+          "things;normalChest;2",
+          "things;dragonChest;2",
+          "things;magicChest;1",
+          "things;partsChest75;6",
+          "things;anniversaryCash;39",
+          "things;allBlackCash;45",
+          "things;allBlackEquipCash;45",
+          "parts;huntParts_1;7",
+          "parts;acidicParts_1;7"
+        ]
+      }
+    },
+    {
+      "lv": 10,
+      "must": 50000,
+      "smeltNum": 12,
+      "armsSkinArr": "sniperCicada,redFire,rifleHornet,yearDragon,shotgunSkunk,yearTiger",
+      "base": {
+        "expMul": 1.4,
+        "dpsMul": 0.7,
+        "lifeMul": 1.1,
+        "defenceMul": 1.1,
+        "bag": 30,
+        "askPropsNum": 6
+      },
+      "props": {
+        "lifeBottle": 5,
+        "teamLifeBottle": 4,
+        "caisson": 10,
+        "rebirthStone": 5,
+        "teamRebirthCard": 4,
+        "skillFleshCard": 4
+      },
+      "buyLimitNumObj": {
+        "militarySupplies": 17,
+        "strengthenStone": 2000,
+        "magicChest": 30,
+        "dragonChest": 30
+      },
+      "gift": [
+        "things;doubleCard;20",
+        "things;skillStone;380",
+        "things;rebirthStone;17",
+        "things;teamRebirthCard;10",
+        "things;skillFleshCard;10",
+        "things;coinHeap_1;100",
+        "things;armsHighBox;52",
+        "things;equipHighBox;52"
+      ],
+      "dayGift": {
+        "gift": [
+          "base;anniCoin;24",
+          "things;strengthenStone;24",
+          "things;bloodStone;24",
+          "things;strengthenDrug;30",
+          "things;keyChest;3",
+          "things;doubleCard;3",
+          "things;weaponChest;15",
+          "things;normalChest;2",
+          "things;dragonChest;2",
+          "things;magicChest;2",
+          "things;partsChest75;8",
+          "things;anniversaryCash;52",
+          "things;allBlackCash;50",
+          "things;allBlackEquipCash;50",
+          "parts;huntParts_1;8",
+          "parts;acidicParts_1;8"
+        ]
+      }
+    }
+  ]
+}

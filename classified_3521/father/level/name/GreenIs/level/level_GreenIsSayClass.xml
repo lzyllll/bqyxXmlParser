@@ -1,0 +1,661 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="GreenIs">
+		<level name="YaShipsComing">
+			<sayList name="s1">
+				<say target="制毒师"><content>不好意思，耽误了大家一个月的时间。</content></say>
+				<say target="文杰表哥"><content>快憋死我了，之前不是说好只要隔离2周吗？</content></say>
+				<say target="我"><content>还好我们都没被感染。</content></say>
+				<say target="心零"><content>哎呦，这一个月有吃有喝，还不用干活，人生从来没这么爽过。</content></say>
+				<say target="制毒师"><content>谁让你们把未来溪山的病毒带回来？</content></say>
+				<say target="藏师将军"><content>这病毒研究得怎么样了？</content></say>
+				<say target="制毒师"><content>这是一种新的僵尸病毒变异体，和地球现在流行的旧病毒完全不同。</content></say>
+				<say target="制毒师"><content>但所幸的是，各位体内的抗体对新型病毒依然具有一定的抗性，所以大家都没事。</content></say>
+				<say target="文杰表哥"><content>那就没啥好怕了嘛。</content></say>
+				<say target="我"><content>对了，多博士那艘飞船消毒过了吗？</content></say>
+				<say target="制毒师"><content>已经全面消毒过了。</content></say>
+				<say target="小樱"><content>很棒！绿岛现在还是一片净土，可不能污染了它。</content></say>
+
+			</sayList>
+			<sayList name="s11">
+				<say target="我"><content>刚才是不是哪里发生地震了？</content></say>
+				<say target="小樱"><content>我好像听到了远处的呼啸声……</content></say>
+
+			</sayList>
+			
+			
+			<sayList name="s2">
+				<say target="藏师将军"><content>是氩星的飞船！！</content></say>
+				<say target="心零"><content>不会是来救狂人的吧……</content></say>
+				<say target="小樱"><content>这么多……我有点害怕……</content></say>
+				<say target="我"><content>全员戒备！！</content></say>
+				<say target="u5"><content>你好，地球人。</content></say>
+				<say target="文杰表哥"><content>你们是谁？</content></say>
+				<say target="u5"><content>我是氩星大统领的儿子，你们口中的“狂人”就是我的弟弟。</content></say>
+				<say target="文杰表哥"><content>我们之间可能有一些误会。</content></say>
+				<say target="u5"><content>咱们开门见山吧，狂人是不是被你们关押了？</content></say>
+				<say target="我"><content>没错，你想怎样？</content></say>
+				<say target="文杰表哥"><content>小白，你说话能不能客气点！</content></say>
+				<say target="u5"><content>我有个小小的请求。</content></say>
+				<say target="我"><content>说吧。</content></say>
+				<say target="u5"><content>我这位弟弟从小就不怎么守规矩，我希望你们能继续关着他，不要再让他出来闯祸了。</content></say>
+				<say target="藏师将军"><content>这……您这话是认真的吗？</content></say>
+				<say target="u5"><content>是的。</content></say>
+				<say target="文杰表哥"><content>所以，你们不是来带他走的？</content></say>
+				<say target="u5"><content>是的。</content></say>
+				<say target="我"><content>如果是这样，您应该不会专程来一趟吧？还带了这么多的战舰。</content></say>
+				<say target="u5"><content>这是我们氩星人表达诚挚的基本礼仪。</content></say>
+				<say target="u5"><content>不过我确实还有另外一件事。</content></say>
+				<say target="我"><content>什么？</content></say>
+				<say target="u5"><content>我们已经从铁犬那找回了你们被狂人偷走的物资，我现在也将其悉数归还。</content></say>
+				<say target="文杰表哥"><content>太好了！</content></say>
+				<say target="u5"><content>但里面的核能石我得拿走。</content></say>
+				<say target="我"><content>你这是想明抢吗？</content></say>
+				<say target="u5"><content>我想用同等数量的氩石来交换。</content></say>
+				<say target="文杰表哥"><content>小白，对于我们来说，氩石确实比核能石更重要。</content></say>
+				<say target="我"><content>如果我们不同意交换呢？</content></say>
+				<say target="u5"><content>是这样的吗？这已经是我能给予你们地球人最大限度的尊严了。</content></say>
+				<say target="我"><content>这根本就不是交易，这明明是胁迫！</content></say>
+				<say target="u5"><content>呵呵，可能我不是很懂地球人的语言，这么跟你说吧。</content></say>
+				<say target="u5"><content>就在这之前，我已经从几十个地球军阀手中收走了不少的核能石，他们之中没一个不同意这项交易的……除了一支美洲军团。</content></say>
+				<say target="u5"><content>所以他们所在的安全区100公里以内都被夷为了平地。</content></say>
+				<say target="我"><content>你们！</content></say>
+				<say target="藏师将军"><content>100公里？相当于几十颗核弹的破坏力……</content></say>
+				<say target="文杰表哥"><content>就几颗核能石嘛，没啥大不了的。</content></say>
+				<say target="我"><content>不过，我们还摧毁了几百架的氩星……</content></say>
+				<say target="文杰表哥"><content>小白，你给我住嘴！</content></say>
+				<say target="u5"><content>采矿机是吧？</content></say>
+				<say target="我"><content>对，你会放过我们吗？</content></say>
+				<say target="u5"><content>那都是生成式AI的产品，要多少有多少，战斗力和成本都不及一艘氩星舰的一亿分之一。</content></say>
+				<say target="u5"><content>能找到核能石就是它们最大的价值体现。</content></say>
+				<say target="我"><content>行！那我们的核能石就拿去吧！</content></say>
+				<say target="u5"><content>爽快！我就喜欢这种融洽的交易氛围。</content></say>
+				<say target="u5"><content>那咱们就此别过，后会有期。</content></say>
+
+			</sayList>
+			
+			<sayList name="s3">
+				<say target="文杰表哥"><content>小白……你今天终于成熟了一回儿！</content></say>
+				<say target="我"><content>是吗？</content></say>
+				<say target="小樱"><content>没以前那么冲动了。</content></say>
+				<say target="藏师将军"><content>面对数量这么庞大的氩星舰，是个人都得认怂。</content></say>
+				<say target="我"><content>不得不承认，我们现在打不过他们。</content></say>
+				<say target="文杰表哥"><content>差老远了。</content></say>
+				<say target="我"><content>他们早已得到了核能石，为何还要假模假样的来这做交易呢？</content></say>
+				<say target="心零"><content>跟狂人是一个路子的，表演型人格呗。</content></say>
+				<say target="我"><content>非也，他们来这的目的就是武力威慑。说直白点，不听话的都得死。</content></say>
+				<say target="藏师将军"><content>他们想让我们关着狂人，不要擅自主张放了他。</content></say>
+				<say target="文杰表哥"><content>狂人和他哥之间绝对有矛盾。</content></say>
+				<say target="我"><content>不管怎么样，短期内不会有氩星人来找麻烦了。</content></say>
+
+			</sayList>
+			<sayList name="s4">
+				<say target="我"><content>我妈怎么来电了？</content></say>
+				<say target="我"><content>喂，妈。</content></say>
+				<say target="玉晴"><content>小白，快来救我！</content></say>
+				<say target="我"><content>怎么了？！</content></say>
+				<say target="玉晴"><content>信号塔马上就要被毁了！</content></say>
+				<say target="我"><content>绿岛的信号塔吗？</content></say>
+				<say target="玉晴"><content>快来救……我……（信号丢失）</content></say>
+				<say target="我"><content>妈！</content></say>
+				<say target="我"><content>信号中断了！</content></say>
+				<say target="文杰表哥"><content>怎么回事？</content></say>
+				<say target="我"><content>不知道啊！</content></say>
+				<say target="文杰表哥"><content>我赶紧联系一下绿岛的陆队长。</content></say>
+				<say target="我"><content>我也拨打一下多米诺的电话！</content></say>
+				<say target="文杰表哥"><content>打不通啊！</content></say>
+				<say target="我"><content>我也是！</content></say>
+				<say target="小樱"><content>看来是绿岛的信号塔被破坏了。</content></say>
+				<say target="我"><content>我现在马上得去绿岛一趟！</content></say>
+				<say target="文杰表哥"><content>我也得去！</content></say>
+				<say target="我"><content>其他人就在高地上守着，这次不是去外星，放心吧，我们不会有事的。</content></say>
+				<say target="小樱"><content>好！</content></say>
+				<say target="心零"><content>遵命！</content></say>
+				<say target="藏师将军"><content>你们需要船吗？</content></say>
+				<say target="我"><content>事态紧急，还是飞行载具更快。</content></say>
+				<say target="文杰表哥"><content>我马上去准备！</content></say>
+			</sayList>
+		</level>
+		
+		<level name="RaysSeaBreak">
+			<sayList name="s1">
+				<say target="大鹏"><content>不明身份飞机，你已进入血蟒军团的警戒范围，请立即表明身份并说明飞行意图。</content></say>
+				<say target="weBoss"><content>我原本就是绿岛居民，现在只是回家而已。</content></say>
+				<say target="大鹏"><content>为防止病毒入侵，绿岛早已封关，目前禁止任何船只、飞行器入岛。</content></say>
+				<say target="weBoss"><content>就在刚刚，我母亲在岛上向我发出求救信号，还希望你们能够通融一下，放我进岛。</content></say>
+				<say target="大鹏"><content>请详细说明一下你的身份。</content></say>
+				<say target="weBoss"><content>我是爆枪小队的小白。</content></say>
+				<say target="大鹏"><content>啊？爆枪小队！</content></say>
+				<say target="大鹏"><content>请求支援！请求支援！</content></say>
+				<say target="大鹏"><content>爆枪小队来犯！爆枪小队来犯！</content></say>
+			</sayList>
+			<sayList name="s11">
+				<say target="weBoss"><content>什么情况？！</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="weBoss"><content>血蟒应该是陆队长的军团。</content></say>
+				<say target="weBoss"><content>小白，咱们和血蟒并没有瓜葛，为啥要和我们开战？</content></say>
+				<say target="weBoss"><content>唉，我也不知道啊。</content></say>
+			</sayList>
+		</level>
+		
+		<level name="RaysSeaBoss">
+			<sayList name="s1">
+				<say target="weBoss"><content>按下这个按钮，可让飞机进入处决形态，此时飞机将不会受到敌人子弹的伤害，而且飞机炮口会不断装填4倍数量于以往的炮弹。</content></say>
+				<say target="weBoss"><content>就是持续时间短了些，只有3秒时间。</content></say>
+				<say target="weBoss"><content>距离绿岛越来越近了，我们要速战速决，尽量减少和血蟒的冲突。</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="血蟒突击兵"><content>你们一定会后悔的！</content></say>
+				<say target="weBoss"><content>上岛后，我们会跟陆队长交代清楚的。</content></say>
+				<say target="血蟒突击兵"><content>已经迟了！我们已经开启了全岛迷雾，你们的武器、装备、技能都将无法使用！</content></say>
+				<say target="weBoss"><content>什么东西？</content></say>
+				<say target="血蟒突击兵"><content>来了就知道了！</content></say>
+			</sayList>
+		</level>
+		
+		
+		<level name="GreenIs1_plot">
+			<sayList name="s1">
+				<say target="StrikerTask"><content>飞机只能停在这了。</content></say>
+				<say target="WenJieTask"><content>果真如他所说，我的武器装备都出现了问题，我的技能也使不出来了，除了鬼步和滑翔。</content></say>
+				<say target="StrikerTask"><content>好在我们还有几把破烂武器可以用，可能只有高阶物品会受影响吧。</content></say>
+				<say target="WenJieTask"><content>他口中的“迷雾”，也许是能发射特定能量波的装置。</content></say>
+				<say target="StrikerTask"><content>哦？你怎么知道？</content></say>
+				<say target="WenJieTask"><content>之前有听姨妈聊过，陆队长正在岛上批量建设类似信号塔一样的东西，应该就是“迷雾”。我当时没觉得奇怪，也就没多问。</content></say>
+				<say target="StrikerTask"><content>这种奇怪的技术，我也是第一次听说。</content></say>
+				<say target="WenJieTask"><content>话说你对陆队长有多少了解？</content></say>
+				<say target="StrikerTask"><content>当初我离岛的时候，他还没什么名声，我只知道他是外来人。</content></say>
+				<say target="WenJieTask"><content>嘿嘿，看来我知道的比你还多。</content></say>
+				<say target="StrikerTask"><content>说来听听。</content></say>
+				<say target="WenJieTask"><content>陆队长全名陆天启，原本是一群跨国雇佣兵“血蟒”的队长，当年病毒在全球肆虐的时候，血蟒小队正好在海上执行任务，因此躲过一劫。</content></say>
+				<say target="WenJieTask"><content>后来他们漂泊到了绿岛，被岛民所收留。因为战力过人，并且精通防御工事，血蟒小队被岛民们委以保护全岛的重任。</content></say>
+				<say target="WenJieTask"><content>南塘城病毒爆发后，为防止病毒入侵，陆队长将全岛封闭，严格管制进出的交通工具和人员，使绿岛成为了霞光最后一块净土。</content></say>
+				<say target="WenJieTask"><content>而后，血蟒小队不断招兵买马，逐渐壮大成了血蟒军团。现在血蟒内部已经尊称陆队长为陆司令。</content></say>
+				<say target="WenJieTask"><content>据说血蟒还有自己的科学实验室。</content></say>
+				<say target="StrikerTask"><content>这些都是我妈告诉你的吧？</content></say>
+				<say target="WenJieTask"><content>要不然呢？</content></say>
+				<say target="StrikerTask"><content>还好这一年有你陪她聊天……还是尽快找到我妈吧，我不希望她有事。</content></say>
+				<say target="WenJieTask"><content>不好！树林里好像埋伏着几个血蟒小兵！</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="StrikerTask"><content>血蟒小兵身上还带着一些有趣的道具。</content></say>
+				<say target="WenJieTask"><content>我得研究一下怎么用。</content></say>
+			</sayList>
+		</level>
+		
+		<level name="GreenIs2_plot">
+			<sayList name="s1">
+				<say target="StrikerTask"><content>这有颗地雷，我们赶紧把它捡起来！</content></say>
+				<say target="WenJieTask"><content>这种地雷我以前用过，用它来对付成群结队的敌人特别有效。</content></say>
+				<say target="StrikerTask"><content>我知道了。</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="StrikerTask"><content>我听到了前方有履带的声音。</content></say>
+				<say target="WenJieTask"><content>可能是坦克？</content></say>
+				<say target="StrikerTask"><content>我们还是先躲起来吧。</content></say>
+			</sayList>
+		</level>
+		
+		<level name="GreenIs2_plot2">
+			<sayList name="s1">
+				<say target="StrikerTask"><content>我看清楚了，是泰坦！</content></say>
+				<say target="WenJieTask"><content>它好像没发现我们。</content></say>
+				<say target="StrikerTask"><content>很好！正好用收集来的地雷对付它。</content></say>
+				<say target="WenJieTask"><content>注意，如果几个地雷之间埋得太近，可能会连环引爆。</content></say>
+				<say target="StrikerTask"><content>好。等会儿那咱俩得互相跟紧点，枪就尽量不要用了。</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="StrikerTask"><content>终于把它给摧毁了！</content></say>
+				<say target="WenJieTask"><content>不对！我的加速扳机怎么可以用了？</content></say>
+				<say target="StrikerTask"><content>是吗？我试试看。</content></say>
+			</sayList>
+			<sayList name="s3">
+				<say target="StrikerTask"><content>我的狂暴也可以用了耶！还有远视、二段跳和翻滚！</content></say>
+				<say target="WenJieTask"><content>就是等级低了点。“迷雾”的效果在减弱，但并没有完全消散。</content></say>
+				<say target="StrikerTask"><content>看来这台泰坦上可能装有“迷雾”发射装置。</content></say>
+				<say target="WenJieTask"><content>这个猜想绝对错不了！</content></say>
+			</sayList>
+		</level>
+		<level name="GreenIs3_plot">
+			<sayList name="s2">
+				<say target="StrikerTask"><content>这些机器狗和鬼爵的看门狗简直一模一样！</content></say>
+				<say target="WenJieTask"><content>不知道血蟒和鬼爵有什么关联。</content></say>
+				<say target="血蟒狙击兵"><content>竟然还敢上岛？看你们干的好事！</content></say>
+				<say target="StrikerTask"><content>我就是土生土长的绿岛人，凭什么不让我回家？</content></say>
+				<say target="血蟒狙击兵"><content>太可笑了，你根本不配做绿岛人！</content></say>
+				<say target="WenJieTask"><content>你这是什么意思？</content></say>
+				<say target="血蟒狙击兵"><content>自己的家园，为什么要把它……</content></say>
+				<say target="StrikerTask"><content>把话说清楚。</content></say>
+				<say target="WenJieTask"><content>喂！</content></say>
+				<say target="StrikerTask"><content>唉，他昏过去了。</content></say>
+				<say target="WenJieTask"><content>先别管他了，过来看看这有一家二手武器店。</content></say>
+				<say target="StrikerTask"><content>我看看。</content></say>
+			</sayList>
+			<sayList name="s3">
+				<say target="StrikerTask"><content>这家武器店明显还在营业中，但是老板不知道去哪了。</content></say>
+				<say target="WenJieTask"><content>看到我们和血蟒火拼，他肯定躲起来了呀。</content></say>
+				<say target="WenJieTask"><content>他这里的武器应该不受迷雾影响吧？我想淘点好的，把手上这破烂玩意儿给换了。</content></say>
+				<say target="StrikerTask"><content>你这不是偷吗？</content></say>
+				<say target="WenJieTask"><content>我会放点黄金给他的。</content></say>
+				<say target="StrikerTask"><content>这荒郊野外的，你把黄金放在这，不就等于扔了吗？</content></say>
+				<say target="StrikerTask"><content>还是等老板回来吧。</content></say>
+			</sayList>
+			
+			<sayList name="s4">
+				<say target="StrikerTask"><content>不好，我又看到陆蛇部队了！</content></say>
+				<say target="WenJieTask"><content>在哪里？</content></say>
+				<say target="StrikerTask"><content>就在前面！还有几个穿着铁甲的士兵！</content></say>
+				<say target="WenJieTask"><content>我们先埋伏起来！</content></say>
+			</sayList>
+		</level>
+		<level name="GreenIs3_domi">
+			<sayList name="s1">
+				<say target="多米诺"><content>小白！快来救我！</content></say>
+				<say target="WenJieTask"><content>前面有人在叫你，是谁啊？</content></say>
+				<say target="多米诺"><content>我是多米诺！</content></say>
+				<say target="StrikerTask"><content>是多博士！</content></say>
+				<say target="WenJieTask"><content>我们来了！</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="多米诺"><content>谢谢你们救了我。</content></say>
+				<say target="StrikerTask"><content>这就别客气了。</content></say>
+				<say target="WenJieTask"><content>话说您不是和陆队长合作的科学家吗？为什么会被血蟒追捕？</content></say>
+				<say target="多米诺"><content>唉，这还不是因为你们。</content></say>
+				<say target="StrikerTask"><content>我们？</content></say>
+				<say target="多米诺"><content>你们还回来的那艘飞船上有僵尸病毒，现在已经在绿岛上传染开了。</content></say>
+				<say target="StrikerTask"><content>啊！？</content></say>
+				<say target="WenJieTask"><content>不可能！制毒师已经做好消毒工作了呀！</content></say>
+				<say target="多米诺"><content>血蟒也对飞船进行过一次消毒，但是没用。</content></say>
+				<say target="StrikerTask"><content>为什么？</content></say>
+				<say target="多米诺"><content>第一位感染者正是这位负责消毒的血蟒士兵。</content></say>
+				<say target="多米诺"><content>飞船的病毒和大陆上的不一样，也许正常的消毒剂对它根本没用。</content></say>
+				<say target="StrikerTask"><content>这确实是新型的病毒，但我敢保证，制毒师已经把它们消灭干净了！</content></say>
+				<say target="多米诺"><content>那这事就很蹊跷了。总之，陆帅已经把这锅扣在你们爆枪小队头上了，并迁怒于我。</content></say>
+				<say target="WenJieTask"><content>难怪在霞光海峡上，血蟒要跟我们开战。</content></say>
+				<say target="StrikerTask"><content>我给自己老家投毒，我有什么好处吗？</content></say>
+				<say target="多米诺"><content>我也是这么跟陆司令说的，但是他不信。</content></say>
+				<say target="多米诺"><content>他还说我是叛徒，要关押我，审判我。无奈之下，我只能逃跑。</content></say>
+				<say target="StrikerTask"><content>一定有人在陷害我们，他们希望挑起爆枪小队和血蟒的冲突，并坐收渔翁之利。</content></say>
+				<say target="多米诺"><content>如果是这样，那他的心也太坏了。</content></say>
+				<say target="多米诺"><content>目前全岛戒严，岛民们都把自己关在家中，但是外面的僵尸却越来越多。</content></say>
+				<say target="StrikerTask"><content>那我妈该怎么办？多博士，你知道我妈在哪吗？</content></say>
+				<say target="多米诺"><content>她去保卫被僵尸围攻的信号塔了。唉，这本来就不是她的职责，不知道她为什么这么上心。</content></say>
+				<say target="StrikerTask"><content>那我得去找她！</content></say>
+				<say target="多米诺"><content>你不用那么担心，据我所知，血蟒部队已经赶到了信号塔，玉晴的安全应该没问题。</content></say>
+				<say target="WenJieTask"><content>现在我们和血蟒已经结下了梁子，他们恐怕不会善待姨妈。</content></say>
+				<say target="多米诺"><content>陆司令虽然还在气头上，但我相信他还是明事理之人。</content></say>
+				<say target="StrikerTask"><content>我管他是谁，只要敢动我妈一下，我都不会放过！</content></say>
+				<say target="多米诺"><content>现在还有另外一个隐患。</content></say>
+				<say target="StrikerTask"><content>什么隐患？</content></say>
+				<say target="多米诺"><content>刚才隐约听到血蟒小兵说，他们为了阻止你们逃跑，在回头澳埋下了大量的地雷。</content></say>
+				<say target="StrikerTask"><content>回去的事以后再说。</content></say>
+				<say target="多米诺"><content>真要到那个时候，恐怕你们不一定有时间去拆地雷。</content></say>
+				<say target="多米诺"><content>还是我去把地雷给拆了吧。</content></say>
+				<say target="WenJieTask"><content>你行不行啊？</content></say>
+				<say target="多米诺"><content>这些地雷就是我研发的，你说行不行？</content></say>
+				<say target="StrikerTask"><content>感谢多博士，你自己要小心一点，我们现在就分头行动。</content></say>
+			</sayList>
+		</level>
+		
+		<level name="GreenIs1_clearMine">
+			<sayList name="s1" oneB="1">
+				<say target="多米诺"><content>靠近一些能看到埋雷的痕迹，如果蹲下来，还能看得更远一些。</content></say>
+				<say target="多米诺"><content>这些地雷经过独特的设计，普通子弹是无法引爆它们的，必须用火炮或地雷。</content></say>
+				<say target="多米诺"><content>可惜今天我的火炮子弹没带够，只能将就着用了。</content></say>
+				<say target="多米诺"><content>不过我带了很多眩晕地雷，可以把它埋在致命地雷之间，等会儿只要用火炮射击其中一颗，就能触发连环爆炸。</content></say>
+				<say target="多米诺"><content>致命地雷的爆炸半径为240码，我可不能靠太近。</content></say>
+				<say target="多米诺"><content>还好，我会滑翔和二段跳，这样就能从容一些了。</content></say>
+				<say target="多米诺"><content>要引爆上面这层地雷就只能靠火炮了，跳上去太危险了。</content></say>
+				
+			</sayList>
+			<sayList name="s2">
+				<say target="多米诺"><content>吓我一身的冷汗！</content></say>
+				<say target="多米诺"><content>现在就去和小白他们回合。</content></say>
+				<say target="多米诺"><content>我得从密林里穿过去，可不能走大路了。</content></say>
+			</sayList>
+		</level>
+		
+		
+		<level name="GreenIs4_plot">
+			<sayList name="s1" oneB="1">
+				<say target="多米诺"><content>总算跟上你们了！</content></say>
+				<say target="WenJieTask"><content>你的速度很快嘛！</content></say>
+				<say target="多米诺"><content>我可是拆弹专家。</content></say>
+				<say target="StrikerTask"><content>你们看前方，有辆血蟒的坦克在那驻守。</content></say>
+			</sayList>
+			<sayList name="s2" oneB="1">
+				<say target="WenJieTask"><content>我们是不是得先躲起来？</content></say>
+				<say target="多米诺"><content>别慌，这些载具的视野都很窄，它现在还看不到我们。</content></say>
+				<say target="WenJieTask"><content>载具上是不是装有“迷雾”装置。</content></say>
+				<say target="多米诺"><content>你们连“迷雾”都知道？</content></say>
+				<say target="StrikerTask"><content>要是没有“迷雾”，我们现在早就到信号塔了。</content></say>
+				<say target="多米诺"><content>“迷雾”是血蟒最庞大的防御工事，不仅是载具上有哦。</content></say>
+				<say target="StrikerTask"><content>还有哪里？</content></say>
+				<say target="多米诺"><content>这个说来就话长了，我们还是先解决掉眼前这辆坦克吧。</content></say>
+				<say target="多米诺"><content>我这还有一些眩晕地雷，分一些给你们。</content></say>
+			</sayList>
+			<sayList name="s3" oneB="1">
+				<say target="StrikerTask"><content>太好了！</content></say>
+				<say target="多米诺"><content>这俩坦克有爆发性技能，所以在它爆发的时候，我们要用地雷限制住它。</content></say>
+			</sayList>
+			
+			
+			<sayList name="s4">
+				<say target="旺达" iconUrl="IconGather/WangLuo"><content>多米诺，你竟然帮着爆枪小队对付血蟒！你这个叛徒！</content></say>
+				<say target="多米诺"><content>啊？参谋长！</content></say>
+				<say target="多米诺"><content>听我解释！</content></say>
+				<say target="旺达" iconUrl="IconGather/WangLuo"><content>事实摆在这，你还想解释什么？</content></say>
+				<say target="StrikerTask"><content>这位是？</content></say>
+				<say target="多米诺"><content>血蟒的旺达参谋长。</content></say>
+				<say target="StrikerTask"><content>尊敬的参谋长，想必您应该知道我妈在哪吧？</content></say>
+				<say target="旺达" iconUrl="IconGather/WangLuo"><content>你就是@Striker吧？没错，我们已经将玉晴关押。</content></say>
+				<say target="旺达" iconUrl="IconGather/WangLuo"><content>你对绿岛犯下如此罪行，你的亲人也脱不了干系。</content></say>
+				<say target="StrikerTask"><content>我妈和此事无关，希望您能放了她。</content></say>
+				<say target="StrikerTask"><content>病毒的真相，我会和你们一起调查清楚的。</content></say>
+				<say target="旺达" iconUrl="IconGather/WangLuo"><content>你已经折损了我们这么多血蟒小兵，你让我如何相信你？</content></say>
+				<say target="StrikerTask"><content>我愿意作为人质，与我妈进行交换。您觉得如何？</content></say>
+				<say target="WenJieTask"><content>@Striker，这事没那么简单。</content></say>
+				<say target="旺达" iconUrl="IconGather/WangLuo"><content>呵呵，谁知道你心中藏着什么诡计。</content></say>
+				<say target="旺达" iconUrl="IconGather/WangLuo"><content>交换人质可以，但你得先为血蟒完成一项任务，来表示你的诚意。</content></say>
+				<say target="StrikerTask"><content>您说。</content></say>
+				<say target="旺达" iconUrl="IconGather/WangLuo"><content>我要你以血蟒的名义，在虚天塔中通关到第10层。</content></say>
+				<say target="StrikerTask"><content>虚天塔是什么？</content></say>
+				<say target="旺达" iconUrl="IconGather/WangLuo"><content>啊，你竟然不知道虚天塔？</content></say>
+				<say target="旺达" iconUrl="IconGather/WangLuo"><content>看来你在霞光大陆上都成井底之蛙了。</content></say>
+				<say target="旺达" iconUrl="IconGather/WangLuo"><content>解释这繁琐之事就交给多米诺吧，等你完成该项任务时，我会来找你的。</content></say>
+				<say target="旺达" iconUrl="IconGather/WangLuo"><content>在此之前如果再和血蟒部队发生冲突，那我们的约定就此作废！</content></say>
+				<say target="StrikerTask"><content>等等！</content></say>
+			</sayList>
+			<sayList name="s5">
+				<say target="WenJieTask"><content>我总觉得哪里不对劲。</content></say>
+				<say target="StrikerTask"><content>多博士，虚天塔是什么？</content></say>
+				<say target="多米诺"><content>这是由世界前三大军团联合制作的一款虚拟现实游戏。</content></say>
+				<say target="多米诺"><content>游戏中有一座无限层数的虚天塔，设计者将现实中的僵尸一比一复刻，随机塞入其中，每层僵尸的难度也将逐渐递增。</content></say>
+				<say target="多米诺"><content>虚天塔每年都会举办一场盛大的比赛，由各地军团派代表参赛，取得指定名次的军团可获得非常丰厚的奖励。</content></say>
+				<say target="WenJieTask"><content>这玩意儿我还真的没听说过。</content></say>
+				<say target="多米诺"><content>我们知道，之前的全球互联网早就瘫痪了。而现在能实现全球互联的，也只剩卫星网络。</content></say>
+				<say target="多米诺"><content>虚天塔只能运行在卫星网络之上，所以能否与卫星进行通讯，就是一个军团能否知晓和参加该项赛事的先决条件。</content></say>
+				<say target="StrikerTask"><content>所以血蟒已经实现了卫星通讯？</content></say>
+				<say target="多米诺"><content>你看，绿岛的信号塔已经坏了，我刚才能和旺达能够通话，靠的就是卫星通讯。</content></say>
+				<say target="WenJieTask"><content>原来如此！</content></say>
+				<say target="WenJieTask"><content>我比较好奇世界前三大军团分别是谁？有没有霞光大陆的爆枪军团……</content></say>
+				<say target="StrikerTask"><content>都啥时候了，还开玩笑！</content></say>
+				<say target="WenJieTask"><content>嘿嘿！</content></say>
+				<say target="多米诺"><content>三大军团分别是亚洲的昆仑、美洲的利维坦、还有非洲的刺沙。</content></say>
+				<say target="多米诺"><content>他们的士兵人数均为十万人级别，是我们难以企及的高度。</content></say>
+				<say target="StrikerTask"><content>居然有这么多人？</content></say>
+				<say target="多米诺"><content>不过美洲的利维坦最近发生了巨大变故。</content></say>
+				<say target="多米诺"><content>据说他们的基地遭到了几十枚核弹的攻击，整支军团近乎覆灭。</content></say>
+				<say target="StrikerTask"><content>啊？难道就是他口中……那支不听话的军团？</content></say>
+				<say target="多米诺"><content>谁？</content></say>
+				<say target="WenJieTask"><content>咳咳……也不知道如今还能从哪里搞来这么多核弹。</content></say>
+				<say target="多米诺"><content>我也觉得奇怪。</content></say>
+				<say target="StrikerTask"><content>别扯那么多了。我现在想知道陆司令为什么要我参赛。</content></say>
+				<say target="多米诺"><content>在虚天塔中通关到第10层，就可以获得昆仑军团独制的芯片。这些芯片正是新一版“迷雾”所需的部件。</content></say>
+				<say target="StrikerTask"><content>血蟒内部就没有人可以参赛吗？</content></say>
+				<say target="多米诺"><content>我也不是很清楚。</content></say>
+				<say target="StrikerTask"><content>管不了那么多了，快告诉我怎么进入虚天塔。</content></say>
+				<say target="多米诺"><content>这还需要特制的游戏设备，你跟我来。</content></say>
+				<say target="StrikerTask"><content>好。</content></say>
+			</sayList>
+		</level>
+		<level name="GreenSomewhere_1">
+			<sayList name="s1">
+				<say target="旺达"><content>司令，利维坦刚传来消息，虚天塔已经获得了爆枪小队的全面战斗数据。</content></say>
+				<say target="陆天启"><content>果然上钩了！</content></say>
+				<say target="旺达"><content>我有一事不解，利维坦不是已经……</content></say>
+				<say target="陆天启"><content>我知道你想问什么。</content></say>
+				<say target="陆天启"><content>那场爆炸看似天灾，实为元帅的一步棋。利维坦的全部人员早就转移到了地下。</content></say>
+				<say target="陆天启"><content>他将利维坦隐藏，目的是让非洲和亚洲放松警惕。</content></say>
+				<say target="旺达"><content>原来如此！</content></say>
+				<say target="陆天启"><content>为了掩人耳目，很快，元帅就会将虚天塔的权限转移到我们手上。</content></say>
+				<say target="旺达"><content>真的吗？那我们就可以获得很多珍贵的数据了！</content></say>
+				<say target="陆天启"><content>是的，元帅有意栽培我们，血蟒也将走上崛起之路，成为未来利维坦最重要的一份子。</content></say>
+				<say target="旺达"><content>太好了！</content></say>
+				<say target="陆天启"><content>对了，爆枪小队突破了虚天塔第几层？</content></say>
+				<say target="旺达"><content>第10层。</content></say>
+				<say target="陆天启"><content>呵呵，刚好完成任务，明摆着故意隐藏实力。</content></say>
+				<say target="陆天启"><content>区区几人就能将亚洲前十的天鹰军团覆灭，战力可不止这些。</content></say>
+				<say target="旺达"><content>对于天鹰的陨落，鬼爵和狂人的作用也不可小觑。</content></say>
+				<say target="旺达"><content>当初若不是司令将鬼爵的消息透露给狂人的随从，恐怕现在爆枪小队还在和天鹰纠缠呢。</content></say>
+				<say target="陆天启"><content>鬼爵这个疯子，既然不能为元帅所用，那他最适合的用处就是，当作借刀杀人的刀。</content></say>
+				<say target="陆天启"><content>现在的重点是爆枪小队，如果不做防备，我怕假以时日，他们就将成为利维坦最大的威胁。</content></say>
+				<say target="旺达"><content>不如趁现在就……</content></say>
+				<say target="陆天启"><content>不着急，说不定他们有我们不知道的底牌，先让交叉骨去探一探。</content></say>
+				<say target="陆天启"><content>把爆枪小队的数据传给交叉骨，让他好好研究一下，做好准备。</content></say>
+				<say target="旺达"><content>好的。</content></say>
+				<say target="旺达"><content>那……多米诺该怎么处理？</content></say>
+				<say target="陆天启"><content>留着吧，他的宝贝还有不少，日后还有用处。</content></say>
+				<say target="旺达"><content>遵命。</content></say>
+			</sayList>
+		</level>
+		<level name="timeCapsule1">
+			<sayList name="s1">
+				<say target="多米诺"><content>刚刚从前面的武器店给你们掏了几把武器。</content></say>
+				<say target="WenJieTask"><content>总算可以把之前那些垃圾给扔了。</content></say>
+				<say target="StrikerTask"><content>老板不在，这样做不好吧？</content></say>
+				<say target="多米诺"><content>没关系的，我和老板关系不错。</content></say>
+				<say target="多米诺"><content>话说，那个虚天塔，你们完全有实力打到第20层。</content></say>
+				<say target="StrikerTask"><content>能完成目标就行，我不想浪费太多时间。</content></say>
+				<say target="旺达"><content>你们果然没让人失望。</content></say>
+				<say target="StrikerTask"><content>旺达，现在血蟒能履行约定了吧？</content></say>
+				<say target="旺达"><content>那是当然。你们来仙草镇，我会把你妈妈带过来的。</content></say>
+				<say target="StrikerTask"><content>好！</content></say>
+				<say target="旺达"><content>提醒一句，最近僵尸越来越多，我们在森林里布上了一些地雷，你们自己小心一点。</content></say>
+				<say target="WenJieTask"><content>你还挺好心。</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="多米诺"><content>说僵尸，僵尸就到了！快看前面！</content></say>
+			</sayList>
+			<sayList name="s3">
+				<say target="StrikerTask"><content>这些僵尸的变异特征和溪山那些僵尸很像，难道真是我们带来的病毒？</content></say>
+				<say target="WenJieTask"><content>大概率是溪山的病毒，但不一定是我们带来的。</content></say>
+				<say target="StrikerTask"><content>等救出我妈之后，一定要查出是谁干的。</content></say>
+				<say target="多米诺"><content>刚才这里应该有100多只僵尸吧？病毒的蔓延速度太快了！</content></say>
+				<say target="StrikerTask"><content>那我们更要加快速度了。</content></say>
+				<say target="多米诺"><content>恐怕没那么容易。</content></say>
+				<say target="多米诺"><content>我这里还有一样装置，你先拿着。</content></say>
+				<say target="StrikerTask"><content>什么东西？</content></say>
+				<say target="多米诺"><content>悬停沙漏，可以让时间静止的装置，我想后面应该用得到。</content></say>
+				<say target="WenJieTask"><content>什么？时间静止？！</content></say>
+				<say target="多米诺"><content>很难想象吧？这也是从氩星飞船上意外获得的技术。</content></say>
+				<say target="多米诺"><content>按下这个按钮，就可以让周围的时间停止，再按一下，时间就会恢复。</content></say>
+				<say target="多米诺"><content>不过目前时间停止的过程只能持续几十秒。</content></say>
+				<say target="StrikerTask"><content>让我们试试看！</content></say>
+			</sayList>
+		</level>
+		<level name="timeCapsule11">
+			<sayList name="s1">
+				<say target="多米诺"><content>前面有地雷！</content></say>
+				<say target="StrikerTask"><content>没事，这些地雷是用来对付僵尸的。</content></say>
+				<say target="多米诺"><content>未必，你看它们之间还藏有红色地雷，那是用来对付我们的。</content></say>
+				<say target="WenJieTask"><content>卑鄙，血蟒也是说一套做一套。</content></say>
+				<say target="多米诺"><content>只能说他们现在还不信任我们。</content></say>
+				<say target="多米诺"><content>不过我们有悬停沙漏。时间静止之后，地雷就检测不到震动了。</content></say>
+				<say target="StrikerTask"><content>那我们每人用一次，就可以躲过这些地雷了。</content></say>
+				<say target="多米诺"><content>但是这些地雷终究是个隐患，还是得想办法给它拆了。</content></say>
+				<say target="多米诺"><content>这些地雷的间隔很密集，只要其中一颗爆炸，其他所有地雷都会被连环引爆。</content></say>
+				<say target="多米诺"><content>可惜我那支火炮的子弹用完了。</content></say>
+				<say target="StrikerTask"><content>我也没有火炮。</content></say>
+				<say target="WenJieTask"><content>我也没有。</content></say>
+				<say target="多米诺"><content>嘿嘿，我看到前面有一只僵尸！</content></say>
+				<say target="StrikerTask"><content>想办法把它引诱到地雷上吗？</content></say>
+				<say target="多米诺"><content>对！</content></say>
+				
+			</sayList>
+			<sayList name="s2">
+				<say target="多米诺"><content>爆炸声可能会引来僵尸，准备好悬停沙漏。</content></say>
+			</sayList>
+			<sayList name="s3">
+				<say target="多米诺"><content>这些僵尸太疯狂了！</content></say>
+				<say target="多米诺"><content>估计等会儿还有，我们先躲起来吧！</content></say>
+			</sayList>
+		</level>
+		
+		<level name="timeCapsule2">
+			<sayList name="s3">
+				<say target="旺达"><content>驻守仙草镇的十几位血蟒士兵被感染了，他们手持长射程的高伤激光枪，你们可要注意了。</content></say>
+				<say target="StrikerTask"><content>知道了，谢谢你的提醒。</content></say>
+				<say target="多米诺"><content>我们马上就到了。</content></say>
+			</sayList>
+		</level>
+		
+		<level name="timeCapsule3">
+			<sayList name="s1">
+				<say target="多米诺"><content>那些感染者就在前方。</content></say>
+				<say target="WenJieTask"><content>我们用远视镜看看。</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="交叉骨"><content>三位站住！</content></say>
+				<say target="多米诺"><content>交叉骨，你来干什么？</content></say>
+				<say target="交叉骨"><content>这一路上杀了多少血蟒小兵，各位心里有数，你觉得我会放过你们吗？</content></say>
+				<say target="StrikerTask"><content>我们和旺达已经达成约定，在完成虚天塔任务后，血蟒就对之前所发生的冲突既往不咎。</content></say>
+				<say target="交叉骨"><content>好一个既往不咎！</content></say>
+				<say target="交叉骨"><content> 如果放任外人屠戮我血蟒兄弟，那以后我在队中还有威信可言吗？</content></say>
+				<say target="WenJieTask"><content> 是那些小兵先动手的，我们仅仅是为了自保。</content></say>
+				<say target="交叉骨"><content> 无论怎么解释，今天你们必须过我这一关！</content></say>
+				<say target="StrikerTask"><content> 这里有“迷雾”干扰，我们只能拿着这些破铜烂铁，肯定打不过你。</content></say>
+				<say target="StrikerTask"><content> 我们还是束手就擒吧，表哥？</content></say>
+				<say target="WenJieTask"><content>  啊？这就认输了？</content></say>
+				<say target="交叉骨"><content>我马上令手下把这该死的迷雾给关了，击败你们根本不需要那破玩意儿。</content></say>
+				<say target="StrikerTask"><content>话可别说得太早。</content></say>
+				<say target="交叉骨"><content>我马上就到，你们就等着受死吧！</content></say>
+			</sayList>
+			<sayList name="s3">
+				<say target="多米诺"><content>我听说，只是听说啊，交叉骨击败过一位通关了虚天塔第50层的高手。</content></say>
+				<say target="WenJieTask"><content>这么夸张吗？</content></say>
+				<say target="StrikerTask"><content>既然虚天塔奖励丰厚，血蟒为何不派如此猛将参加？</content></say>
+				<say target="StrikerTask"><content>哪里还需要我们去为血蟒完成那第10层的任务？真是令人费解。</content></say>
+				<say target="多米诺"><content>这问题我还真没问过陆司令。不过我认为，如果一个军队在虚天塔里表现得太出头，可能会遭到各大军团的围猎。</content></say>
+				<say target="StrikerTask"><content>什么意思？</content></say>
+				<say target="多米诺"><content>队中高手，比如交叉骨，就很容易会被大军团挖走。试问，谁不想拥抱更强大的势力呢？</content></say>
+				<say target="WenJieTask"><content>如果挖不走呢？</content></say>
+				<say target="多米诺"><content>如果挖不走，那这样的小军队反而会被大军团视为威胁，那样就更危险了。</content></say>
+				<say target="StrikerTask"><content>僵尸已经横行数年，全人类的敌人难道不是僵尸吗？彼此之间居然还要勾心斗角，自损内耗，真是令人心寒。</content></say>
+				<say target="多米诺"><content>也许僵尸病毒的流行，自始至终都是一场人祸呢？</content></say>
+				<say target="StrikerTask"><content>唉，经历了这么多，我也没以前那么单纯了。</content></say>
+				<say target="StrikerTask"><content>不多说了，一会儿的战斗可能比较激烈，你可能要回避一下。</content></say>
+				<say target="多米诺"><content>好。</content></say>
+			</sayList>
+		</level>
+		<level name="GreenTown1_plot">
+			<sayList name="s1">
+					<say r="noStrikerWenJie" target="我"><content>@playerName，你怎么来了？</content></say>
+					<say r="noStrikerWenJie" target="p1"><content>没我在，你们能行吗？</content></say>
+					<say r="noStrikerWenJie" target="我"><content>很高兴你能来！</content></say>
+					<say r="noStrikerWenJie" target="文杰表哥"><content>太好了，又多了一位帮手了！</content></say>
+				<say target="我"><content>交叉骨就在前面，做好准备！</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="交叉骨"><content>我竟然败了！</content></say>
+				<say target="交叉骨"><content>唉，只怪自己实力不济。</content></say>
+				<say target="旺达"><content>交叉骨，你别在这瞎掺和了。</content></say>
+				<say target="我"><content>旺达，我们的约定还算数吗？</content></say>
+				<say target="旺达"><content>放心，我们快到了，你母亲就在我身边。</content></say>
+				<say target="我"><content>太好了！</content></say>
+			</sayList>
+		</level>
+		
+		
+		<level name="GreenTown1_hostage">
+			<sayList name="s1">
+				<say target="旺达" pointer="我"><content>我把玉晴带来了。</content></say>
+				<say target="我"><content>妈妈！</content></say>
+				<say target="玉晴"><content>孩子！终于见到你了！</content></say>
+				<say target="旺达"><content>按照约定，我把玉晴交给你们，你跟我去血蟒总部。</content></say>
+				<say target="玉晴"><content>我俩刚刚见面，能不能让我们多讲几句话？</content></say>
+				<say target="旺达"><content>只要他没干什么坏事，日后有的是相聚的时间。</content></say>
+				<say target="我"><content>妈妈，没关系，我很快就会回来的。</content></say>
+				<say target="旺达"><content>快点吧。</content></say>
+				<say target="我"><content>要我卸下武器和装备吗？</content></say>
+				<say target="旺达"><content>呵呵，不需要。没发现你们的技能都被“迷雾”给封锁了吗？</content></say>
+				<say target="我"><content>难怪浑身不自在。</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="血蟒雇佣兵"><content>长官，不好了！迷雾主塔正在遭受不明飞行物的攻击！</content></say>
+				<say target="旺达"><content>什么？！</content></say>
+				<say target="旺达"><content>是不是你们搞的鬼？！</content></say>
+				<say target="我"><content>不是。</content></say>
+				<say target="文杰表哥"><content>我都不知道迷雾主塔在哪里。</content></say>
+				<say target="旺达"><content>哼！除了你们还有谁？！</content></say>
+				<say target="我"><content>我们的人都在这，你不要血口喷人！</content></say>
+				<say target="旺达"><content>多米诺呢？！</content></say>
+				<say target="旺达"><content>我知道了，原来这是你们设下的陷阱！</content></say>
+				<say target="旺达"><content>哼！竟然跟我玩阴的！</content></say>
+				<say target="旺达"><content>血蟒一定会让你们付出代价的！</content></say>
+			</sayList>
+			<sayList name="s3">
+				<say target="旺达"><content>血蟒勇士们听令，拿下在场所有爆枪小队成员，一个都不能放走！</content></say>
+				<say target="血蟒狙击兵"><content>遵命！</content></say>
+			</sayList>
+			<sayList name="s4">
+				<say target="我"><content>刚才好险啊！</content></say>
+				<say target="玉晴"><content>袭击迷雾主塔的事，不会真的是多米诺干的吧？</content></say>
+				<say target="文杰表哥"><content>这倒是有可能，他最近一直在帮我们的忙。</content></say>
+				<say target="我"><content>趁血蟒的大部队没来，我们赶紧护送你回战斧高地吧。</content></say>
+				<say target="玉晴"><content>这么着急吗？我还想回家里拿点东西呢。</content></say>
+				<say target="我"><content>什么东西会比你的命还重要？</content></say>
+				<say target="我"><content>赶紧走吧！</content></say>
+			</sayList>
+		</level>
+		
+		<level name="GreenIs1_escort">
+			<sayList name="s1">
+				<say target="我"><content>这架飞机会将您安全送回战斧高地。</content></say>
+				<say target="我"><content>回去后，记得把我们收集的病毒样本交给制毒师。</content></say>
+				<say target="玉晴"><content>你们不跟我一起走吗？</content></say>
+				<say target="我"><content>如今绿岛已经被僵尸侵占，而且我们已经和血蟒已经反目，当前必须把相关事件调查清楚，否则后患无穷。</content></say>
+				<say target="玉晴"><content>一起回高地吧，后面再从长计议。</content></say>
+				<say target="文杰表哥"><content>姨妈，您就放心吧。现在的小白已经不再是以前那位冲动的少年了。</content></say>
+				<say target="玉晴"><content>行啦，我回高地后再给你们找点帮手过来。</content></say>
+				<say target="我"><content>可以可以，就听您的。</content></say>
+				<say target="文杰表哥"><content>哎呦，别墨迹了，赶紧走吧，趁着血蟒的空中部队还没过来。</content></say>
+				<say target="玉晴"><content>那你们自己注意安全。</content></say>
+				<say target="我"><content>放心吧，妈妈。</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="我"><content>不对啊……</content></say>
+				<say target="文杰表哥"><content>怎么了？</content></say>
+				<say target="我"><content>我的技能好像恢复了！</content></say>
+				<say target="文杰表哥"><content>我也是！</content></say>
+				<say target="文杰表哥"><content>看来迷雾已经被破坏了。</content></say>
+				<say target="我"><content>或许这真的是多博士的杰作。</content></say>
+				<say target="文杰表哥"><content>他到底去哪了，这一路上一直都联系不上他。</content></say>
+				<say target="我"><content>先找到他吧。</content></say>
+			</sayList>
+		</level>
+		
+		<level name="GreenIs4_black">
+			<sayList name="s1">
+				<say target="文杰表哥"><content>姨妈真的把你们都叫来了！</content></say>
+				<say target="心零"><content>那必须的！</content></say>
+				<say target="小樱"><content>又可以一起战斗了！</content></say>
+				<say target="我"><content>算了，就依她老人家一次吧。</content></say>
+				
+				
+				<say target="旺达"><content>你们知道吗？将迷雾损毁，会让整个绿岛陷入危险的境地！</content></say>
+				<say target="我"><content>你应该好好调查一下，而不是将所有屎盆子都往我们身上扣。</content></say>
+				<say target="旺达"><content>事到如今，也不想听你们狡辩了。</content></say>
+				<say target="文杰表哥"><content>你想怎样？</content></say>
+				<say target="文杰表哥"><content>没有迷雾的血蟒根本不是我们的对手。</content></say>
+				<say target="旺达"><content>呵呵，我们可不仅擅长建造防御工事。</content></say>
+				<say target="旺达"><content>准备接受血蟒的审判吧！</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="我"><content>这不是天鹰的无疆骑士吗？太难缠了！</content></say>
+				<say target="文杰表哥"><content>这很明显是它的超级强化版。</content></say>
+				<say target="我"><content>看来血蟒还藏着很多我们不知道的秘密。</content></say>
+				<say target="多米诺"><content>小白，你们现在在哪里？</content></say>
+				<say target="我"><content>多博士！</content></say>
+				<say target="文杰表哥"><content>你终于想起我们了。</content></say>
+				<say target="多米诺"><content>之前为了防止被血蟒查到我的定位，我把通讯器给关了。</content></say>
+				<say target="多米诺"><content>我现在也只能开一会儿。</content></say>
+				<say target="我"><content>你在哪里？我们去找你吧。</content></say>
+				<say target="多米诺"><content>可以的，我在天风塔。</content></say>
+				<say target="我"><content>就是绿岛最高的那个瞭望塔？</content></say>
+				<say target="多米诺"><content>是的，现在这里都是血蟒的守卫，我也脱不开身。你们过来要小心一点。</content></say>
+				<say target="文杰表哥"><content>知道了，我们马上就来。</content></say>
+			</sayList>
+		</level>
+	</father>
+</data>

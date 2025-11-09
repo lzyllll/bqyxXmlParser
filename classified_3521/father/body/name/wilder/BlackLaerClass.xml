@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="wilder">
+		<body index="0" name="黑暗雷尔" shell="compound">
+			
+			<name>BlackLaer</name>
+			<cnName>黑暗雷尔</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/BlackLaer.swf</swfUrl>
+			<headIconUrl>IconGather/PetLaer</headIconUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<showLevel>999</showLevel>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move
+				,normalAttack,shootAttack,chargedAttack,ballAttack,staticAttack
+				,hurt1,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>BlackLaer_AIExtra</extraAIClassLabel>
+			<bossSkillArr>trueshotLaer,cloned_BlackLaer,charged_BlackLaer,lightBall_BlackLaer,static_BlackLaer,BlackLaer_hitParalysis</bossSkillArr>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/hand_hit">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<bulletLabel>shoot_BlackLaer</bulletLabel>
+					<grapRect>-450,-88,351,77</grapRect>
+				</hurt>
+				
+				<hurt info="不加入ai选择-充能">
+					<imgLabel>chargedAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<grapRect>-400,-111,100,105</grapRect>
+				</hurt>
+				<hurt info="不加入ai选择-辐射光球">
+					<imgLabel>ballAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<bulletLabel>lightBall_BlackLaer</bulletLabel>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hurtRatio>12</hurtRatio>
+				</hurt>
+				<hurt info="不加入ai选择-充能">
+					<imgLabel>staticAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<grapRect>-400,-111,100,105</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>	
+		
+	</father>
+	</data>

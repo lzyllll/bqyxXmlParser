@@ -1,0 +1,298 @@
+{
+  "father": [
+    {
+      "name": "enemy",
+      "skills": {
+        "PoisonDemon": {
+          "name": "PoisonDemon",
+          "cnName": "毒魔",
+          "raceType": "zombies",
+          "swfUrl": "swf/enemy/PoisonDemon.swf",
+          "lifeRatio": 1.8,
+          "rateRatio": 0.05,
+          "showLevel": [
+            999,
+            91
+          ],
+          "imgType": "normal",
+          "imgArr": "stand,move,run\n\t\t\t\t,normalAttack,shakeAttack,pullAttack,poisonAttack\n\t\t\t\t,hurt1,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+          "lifeBarExtraHeight": -50,
+          "handAddRa": 90,
+          "hitRect": "-18,-96,36,96",
+          "maxJumpNum": 1,
+          "maxVx": 12,
+          "runStartVx": 8,
+          "nextAttackTime": 0,
+          "extraAIClassLabel": "PoisonDemon_AIExtra",
+          "skillArr": null,
+          "bossSkillArr": "metalCorrosion,strong_enemy,PoisonDemonJump,cmldef_enemy,fightReduct2,defenceBounce_enemy,PoisonDemonElves,PoisonDemonElvesShow",
+          "bossSkillArrCn": "60%近战防御、80%防毒、胶性表皮",
+          "extraG": {
+            "label": "ExtraTaskAI",
+            "bossSkillArr": "metalCorrosion,strong_enemy,PoisonDemonJump,cmldef_enemy,fightReduct2,defenceBounce_enemy,PoisonDemonElves,PoisonDemonElvesShow",
+            "extra": [
+              {
+                "lifeMin": 0.7,
+                "skillArr": ""
+              },
+              {
+                "lifeMin": 0.4,
+                "skillArr": ""
+              },
+              {
+                "lifeMin": 0,
+                "skillArr": ""
+              }
+            ]
+          },
+          "extraDropArmsB": 1,
+          "dropD": {
+            "blackArmsBodyB": true
+          },
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "normalAttack",
+                "cn": "拳击",
+                "hurtRatio": 5,
+                "attackType": "direct",
+                "skillArr": null,
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/energy",
+                  "con": "add",
+                  "soundUrl": "sound/vehicle_hit4"
+                }
+              },
+              {
+                "info": "不加入ai选择",
+                "imgLabel": "shakeAttack",
+                "noAiChooseB": 1,
+                "hurtRatio": 3,
+                "attackType": "holy",
+                "skillArr": "PoisonDemonHit",
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/energy",
+                  "con": "add",
+                  "soundUrl": "sound/vehicle_hit4"
+                }
+              },
+              {
+                "cnName": "抓捕",
+                "cn": "抓捕",
+                "imgLabel": "pullAttack",
+                "mustGrapRectB": 1,
+                "hurtRatio": 0.001,
+                "skillArr": "pullAttackHit,pullAttackHammer,pullAttackEmp",
+                "attackType": "holy",
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/energy",
+                  "con": "add",
+                  "soundUrl": "sound/vehicle_hit4"
+                },
+                "noUseOtherSkillB": 1
+              }
+            ]
+          }
+        },
+        "PoisonDemonJump": {
+          "index": 0,
+          "name": "PoisonDemonJump",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cnName": "闪击",
+          "iconUrl36": "SkillIcon/GasDefenseShake_36",
+          "cd": 3,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "nearAttackTarget",
+          "conditionRange": 700,
+          "target": "me",
+          "addType": "state",
+          "effectType": "invincible",
+          "duration": 1.1,
+          "meActionLabel": "shakeAttack",
+          "description": "闪烁到敌人面前，对其发起震地攻击，减速敌人，减速之前敌人移动速度越快则减速时间越长。"
+        },
+        "PoisonDemonHit": {
+          "name": "PoisonDemonHit",
+          "cnName": "闪击-减速目标",
+          "noBeClearB": 1,
+          "condition": "hit",
+          "conditionType": "passive",
+          "target": "target",
+          "addType": "state",
+          "effectType": "slowByMoveSpeed",
+          "value": 1,
+          "mul": 0.35,
+          "duration": 6,
+          "stateEffectImg": {
+            "value": "skillEffect/disabled_enemy",
+            "partType": "2foot"
+          }
+        },
+        "pullAttackHit": {
+          "index": 0,
+          "name": "pullAttackHit",
+          "cnName": "抓捕-击中",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "effectType": "SnowGirlPullHit",
+          "mul": 18,
+          "secMul": 24,
+          "valueString": "hand_left",
+          "duration": 0.2,
+          "stateEffectImg": {
+            "value": "skillEffect/dizziness",
+            "partType": "mouth",
+            "con": "add"
+          }
+        },
+        "pullAttackHammer": {
+          "index": 0,
+          "cnName": "击中眩晕",
+          "name": "pullAttackHammer",
+          "showInLifeBarB": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "instantAndState",
+          "effectType": "dizziness",
+          "duration": 2,
+          "stateEffectImg": {
+            "value": "skillEffect/dizziness",
+            "partType": "mouth",
+            "con": "add"
+          },
+          "description": "击中使目标陷入眩晕状态，持续[duration]秒。"
+        },
+        "pullAttackEmp": {
+          "index": 0,
+          "name": "pullAttackEmp",
+          "cnName": "清空目标子弹",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "emp",
+          "value": 0.3,
+          "mul": 0,
+          "description": "击中目标后清空其所有枪支30%的子弹。"
+        },
+        "PoisonDemonElves": {
+          "index": 0,
+          "name": "PoisonDemonElves",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cnName": "毒精灵",
+          "iconUrl36": "SkillIcon/PoisonDemonElves_36",
+          "cd": 20,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "lifePerLess",
+          "conditionRange": 0.35,
+          "target": "me",
+          "addType": "state",
+          "effectType": "no",
+          "meActionLabel": "poisonAttack",
+          "description": "毒魔生命值少于35%时会吐出毒精灵（技能免疫），被毒精灵碰撞的敌人会降低攻击力并受到七步毒伤害。"
+        },
+        "PoisonDemonElvesShow": {
+          "index": 0,
+          "cnName": "召唤毒精灵",
+          "name": "PoisonDemonElvesShow",
+          "conditionType": "active",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "summonedUnits",
+          "obj": {
+            "cnName": "毒精灵",
+            "num": 1,
+            "lifeMul": 0.015,
+            "dpsMul": 0.5,
+            "mulByFatherB": 1,
+            "cx": -100,
+            "cy": -97,
+            "firstVx": 10,
+            "maxNum": 10,
+            "skillArr": [
+              "posion7_wolf",
+              "disabled_enemy",
+              "State_SpellImmunity"
+            ]
+          },
+          "duration": 30,
+          "description": null
+        }
+      }
+    },
+    {
+      "name": "other",
+      "cnName": "其他",
+      "body": {
+        "index": 0,
+        "name": "PoisonElves",
+        "cnName": "毒精灵",
+        "raceType": "zombies",
+        "swfUrl": "swf/enemy/PoisonElves.swf",
+        "lifeRatio": 0.7,
+        "dieJumpMul": 0,
+        "imgArr": "stand,move,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpDown,jumpDown__",
+        "hitRect": "-14,-30,28,30",
+        "maxVx": 9,
+        "motionD": {
+          "F_G": 0.3,
+          "jumpDelayT": 0.001
+        },
+        "nextAttackTime": 0,
+        "extraAIClassLabel": "Antimatter_AIExtra",
+        "skillArr": null,
+        "avtiveSkillCdOverT": 0,
+        "hurtArr": {
+          "hurt": [
+            {
+              "imgLabel": "move",
+              "hurtRatio": 1e-06,
+              "shakeValue": 4,
+              "attackType": "direct"
+            },
+            {
+              "imgLabel": "stand",
+              "noAiChooseB": 1,
+              "hurtRatio": 1e-06,
+              "attackType": "direct"
+            },
+            {
+              "imgLabel": "jumpUp",
+              "noAiChooseB": 1,
+              "hurtRatio": 1e-06,
+              "attackType": "direct"
+            },
+            {
+              "imgLabel": "jumpDown",
+              "noAiChooseB": 1,
+              "hurtRatio": 1e-06,
+              "attackType": "direct"
+            },
+            {
+              "imgLabel": "__jumpUp",
+              "noAiChooseB": 1,
+              "hurtRatio": 1e-06,
+              "attackType": "direct"
+            },
+            {
+              "imgLabel": "jumpDown__",
+              "noAiChooseB": 1,
+              "hurtRatio": 1e-06,
+              "attackType": "direct"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "father": [
+    {
+      "type": "weather",
+      "cnName": "气象枪",
+      "bullet": {
+        "cnName": "冰锥",
+        "name": "iceCone",
+        "kind": "water",
+        "color": "black",
+        "composeLv": 99,
+        "chipB": true,
+        "chipNum": 100,
+        "dropLevelArr": 999,
+        "capacity": 9,
+        "attackGap": 0.7,
+        "reloadGap": 1,
+        "shakeAngle": 0,
+        "bulletWidth": 35,
+        "bulletShakeWidth": "0,0",
+        "bulletNum": 1,
+        "gunNum": 1,
+        "armsArmMul": 0.9,
+        "upValue": 5,
+        "shootShakeAngle": 30,
+        "shootRecoil": 12,
+        "screenShakeValue": 16,
+        "bulletLife": 2,
+        "hitType": "rect",
+        "dpsMul": 1.8,
+        "uiDpsMul": 2,
+        "bulletSpeed": 35,
+        "twoShootPro": 0.4,
+        "penetrationGap": 0,
+        "bounceD": {
+          "floor": 0,
+          "body": 0
+        },
+        "critD": {
+          "mul": 2,
+          "pro": 0.3
+        },
+        "skillArr": "Hit_Paralysis_ArmsSkill",
+        "godSkillArr": "Hit_Hammer_godArmsSkill,iceConeSkill",
+        "iconUrl": "specialGun/iceConeIcon",
+        "flipX": 1,
+        "bulletImgUrl": {
+          "name": "iceConeBullet"
+        },
+        "hitImgUrl": {
+          "name": "iceConeHit"
+        },
+        "fireImgUrl": {
+          "name": "iceConeFire"
+        },
+        "shootSoundUrl": "sound/snowHit",
+        "bodyImgRange": "specialGun/iceCone",
+        "bulletImgRange": "specialGun/bullet",
+        "description": "纪念币兑换"
+      }
+    },
+    {
+      "name": "godArmsSkill",
+      "cnName": "神级武器技能",
+      "skills": {
+        "iceConeSkill": {
+          "name": "iceConeSkill",
+          "noSkillDodgeB": 1,
+          "ignoreImmunityB": 1,
+          "cnName": "周六大吉",
+          "noRandomListB": 1,
+          "noBeClearB": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "otherConditionArr": "puWe,noDemonOnlyBoss,noMainTask,noHardB,dayPan,yearArmsFalse,targetUnitType,noUnionBattle",
+          "conditionRange": 6,
+          "conditionString": "boss",
+          "target": "target",
+          "addType": "instantAndState",
+          "effectType": "iceConeSkill",
+          "duration": 300,
+          "stateEffectImg": {
+            "name": "frozenState"
+          },
+          "description": "每周六可以冰冻一个首领，让他无法动弹，持续[duration]秒，无视技能免疫、不会被清除。主线任务、修罗决斗模式、军队争霸、困难模式下该技能无效。"
+        }
+      }
+    }
+  ]
+}

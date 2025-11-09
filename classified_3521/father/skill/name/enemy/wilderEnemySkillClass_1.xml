@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="异角龙">
+		<skill cnName="巨石崩塌">
+			<name>Triceratops_stone</name>
+			<cnName>巨石崩塌</cnName><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<cd>12</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>500</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>bullet_Triceratops</effectType>
+			<mul>0.5</mul>
+			<duration>7</duration>
+			
+			<obj>"name":"Triceratops_stone"</obj>
+			
+			<meEffectImg soundUrl="sound/fireHit2" noShowB="1" />
+			<meActionLabel>stoneAttack</meActionLabel>
+			<description>首领用尾巴猛烈拍打地面，从空中间歇性地持续掉落3束巨石，时续[duration]秒。</description>
+		</skill>
+		<skill cnName="硬甲">
+			<name>Triceratops_hard</name>
+			<cnName>硬甲</cnName><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<cd>50</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>500</conditionRange>
+			<target>me</target>
+			<delay>0.3</delay>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<duration>15</duration>
+			<passiveSkillArr>underHit_Paralysis_link</passiveSkillArr>
+			
+			<stateEffectImg bodyColor="0xFFCC00" bodyColorAlpha="0.5" />
+			<stateEffectImg2 partType="body" con="add">generalEffect/crazy</stateEffectImg2>
+			<meActionLabel>magicAttack</meActionLabel>
+			<description>每隔[cd]秒释放一层护甲，效果期间受到伤害，使攻击者减少60%移动速度，持续4秒。</description>
+		</skill>
+		<skill cnName="蛋护">
+			<name>Triceratops_egg</name>
+			<cnName>蛋护</cnName><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			
+			<cd>30</cd>
+			<delay>0.68</delay>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>summonedUnits</effectType>
+			<obj>"cnName":"异龙蛋","num":1,"mulByFatherB":1,"lifeMul":0.02,"cx":-155,"cy":-23,"maxNum":1,"lifeBarB":1,"skillArr":["invincible_eeg"]</obj>
+			<duration>30</duration>
+			
+			<meActionLabel>eggAttack</meActionLabel>
+			<description>从嘴里吐出一枚异龙蛋，此时首领无敌，直到蛋被击碎。</description>
+		</skill>
+		<skill cnName="海市蜃楼">
+			<name>Triceratops_oasis</name>
+			<cnName>海市蜃楼</cnName>
+			
+			<cd>15</cd>
+			<summonedUnitsB>1</summonedUnitsB>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>Triceratops_oasis</effectType>
+			<obj>"cnName":"绿洲","num":3,"lifeMul":1000,"maxNum":100,"noUnderHurtB":1,"noAiFindB":1,"noUnderHitB":1,"skillArr":["State_SpellImmunity","DesertOasis_thirst"]</obj>
+			<duration>15</duration>
+			
+			<description>。</description>
+		</skill>
+		<skill cnName="饥荒">
+			<name>Triceratops_deserted</name>
+			<cnName>饥荒</cnName><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<noBeClearB>1</noBeClearB>
+			<noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<otherConditionArr>noState</otherConditionArr>
+			<conditionString>DesertOasis_thirst</conditionString>
+			<target>me,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>desertedhurtMul</effectType>
+			<mul>0.1</mul>
+			<duration>0.3</duration>
+			<range>99999</range>
+			
+			<stateEffectImg partType="mouth" con="add">generalEffect/headSmoke</stateEffectImg>
+			<stateEffectImg2 partType="mouth" con="filter" raNum="30">bulletHitEffect/smoke_small</stateEffectImg2>
+			<description>降低所有敌人[1-mul]的攻击力，对绿洲周围的敌人无效。</description>
+		</skill>
+		<skill cnName="远古基因">
+			<name>noDegradation</name>
+			<cnName>远古基因</cnName><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>underHurtMulMax</effectType>
+			<value>1</value>
+			<duration>9999999</duration>
+			
+			<description>敌人无法通过任何技能来降低首领的防御。</description>
+		</skill>
+		
+		<skill cnName="解渴">
+			<name>DesertOasis_thirst</name>
+			<cnName>解渴</cnName>
+			<noBeClearB>1</noBeClearB>
+			<noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<intervalT>0.1</intervalT>
+			<target>me,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<duration>3</duration>
+			<range>150</range>
+			
+			<description>。</description>
+		</skill>
+	</father>
+	
+	 </data>

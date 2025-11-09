@@ -1,0 +1,36 @@
+{
+  "father": {
+    "name": "snake",
+    "cnName": "血蟒",
+    "body": {
+      "index": 0,
+      "name": "PythonStriker",
+      "shell": "normal",
+      "movieLink": "XiaoHu",
+      "cnName": "血蟒突击兵",
+      "raceType": "human",
+      "swfUrl": "swf/hero/PythonStriker.swf",
+      "showLevel": 9999,
+      "headIconUrl": "IconGather/PythonStriker",
+      "lifeBarExtraHeight": -20,
+      "hitRect": "-12, -90, 24, 90",
+      "squatHitRect": "-12,-50,24,50",
+      "hurtRectArr": [
+        "-15,-38,30,38",
+        "-12, -100, 24, 95",
+        "-12, -50, 24, 50"
+      ],
+      "maxVx": 13,
+      "squatMaxVx": 6,
+      "maxJumpNum": 2,
+      "flyType": "space",
+      "motionD": {
+        "F_AIR": 6
+      },
+      "armsNumber": 1,
+      "randomArmsRange": "ak47",
+      "skillArr": "crazy_enemy",
+      "bossSkillArr": "skillGift_enemy,moreMissile_enemy,selfBurn_enemy"
+    }
+  }
+}

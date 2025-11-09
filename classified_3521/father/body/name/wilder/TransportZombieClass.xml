@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="wilder">
+		<body index="0" name="运毒尸" shell="normal">
+			
+			<name>TransportZombie</name>
+			<cnName>运毒尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/TransportZombie.swf</swfUrl>
+			
+			<lifeRatio>1.8</lifeRatio>
+			<showLevel>999</showLevel>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move
+				,normalAttack,shootAttack
+				,shakeAttack,walkAttack,throwAttack
+				,hurt1,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			<lifeBarExtraHeight>-30</lifeBarExtraHeight>
+			<handAddRa>90</handAddRa>
+			
+			<hitRect>-18,-96,36,96</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>12</maxVx>
+			<runStartVx>12</runStartVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>TransportZombie_AIExtra</extraAIClassLabel>
+			
+			<skillArr />
+			<bossSkillArr>desertedHalo_enemy,silence_enemy,skillCopyTransport,TransportZombieThrow,TransportZombieShake,fightReduct2,defenceBounce_enemy</bossSkillArr>
+			<bossSkillArrCn>70%近战防御、80%防毒、胶性表皮</bossSkillArrCn>
+			<extraDropArmsB>1</extraDropArmsB>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel>
+					<hurtRatio>1</hurtRatio>
+					<attackType>holy</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit2">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel>
+					<bulletLabel>TransportZombieShoot</bulletLabel>
+					<grapRect>-400,-111,350,105</grapRect>
+					<hurtRatio>2</hurtRatio>
+					<attackType>holy</attackType>
+					<skillArr>poisonClaw_enemy</skillArr>
+				</hurt>
+				<hurt info="重砸"><noAiChooseB>1</noAiChooseB>
+					<imgLabel>shakeAttack</imgLabel>
+					<grapRect>-518,-147,150,127</grapRect>
+					<hurtMul>0.2</hurtMul>
+					<skillArr>TransportZombieShakeHit</skillArr>
+					<attackType>holy</attackType>
+					<noUseOtherSkillB>1</noUseOtherSkillB>
+				</hurt>
+				<hurt info="击退"><noAiChooseB>1</noAiChooseB>
+					<imgLabel>throwAttack</imgLabel>
+					<hurtRatio>0.5</hurtRatio>
+					<attackType>holy</attackType>
+					<skillArr>TransportZombieThrowHit</skillArr>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit1">bulletHitEffect/energy</hitImgUrl>
+					<noUseOtherSkillB>1</noUseOtherSkillB>
+				</hurt>
+			</hurtArr>
+		</body>
+	</father>
+	</data>

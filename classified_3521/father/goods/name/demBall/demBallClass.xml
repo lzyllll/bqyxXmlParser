@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="demBall" cnName="万能球" priceType="demBall" labelArr="all">
+		<type>
+			<goods defineLabel="lightCone" price="5" buyLimitNum="300" />
+			<goods defineLabel="zodiacCash" price="6" buyLimitNum="300" />
+			<goods defineLabel="yearCattle" price="4" buyLimitNum="150" />
+			<goods defineLabel="yearMonkey" price="4" buyLimitNum="150" />
+			<goods defineLabel="rocketCate" price="4" buyLimitNum="300" />
+			
+			<goods defineLabel="skeletonMedal_1" price="2" />
+			<goods dataType="parts" defineLabel="huntParts_1" price="1" buyLimitNum="300" />
+			<goods dataType="parts" defineLabel="acidicParts_1" price="1" buyLimitNum="300" />
+			
+			<goods defineLabel="fireGem" price="2" />
+			<goods defineLabel="electricGem" price="2" />
+			<goods defineLabel="frozenGem" price="2" />
+			<goods defineLabel="poisonGem" price="2" />
+			<goods defineLabel="alertGem" price="2" />
+			<goods defineLabel="wisdomGem" price="2" />
+			<goods defineLabel="agileGem" price="2" />
+			<goods defineLabel="defenceGem" price="2" />
+		</type>
+		
+		
+	</father>
+</data>

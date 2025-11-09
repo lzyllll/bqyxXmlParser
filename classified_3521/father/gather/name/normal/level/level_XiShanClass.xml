@@ -1,0 +1,414 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="normal">
+		<gather name="绝壁窟">
+			<level name="XiShan1_plot">
+				<info enemyLv="99" noMoreB="1" noTreasureB="1" mustSingleB="1" preSkillArr="blackHoleDevicer_1,madmanHead" />
+				<fixed target="XiShan1_1" info="no" drop="all" unitG="all" rectG="all" eventG="no" />
+				
+				<sceneLabel>XiShan1</sceneLabel>
+				
+				<eventG>
+					<group>
+						<event><condition /><order>XiShan1_1</order></event>
+						<event><condition delay="1" /><order>say; startList:s1</order></event>
+						<event><condition>say:listOver</condition><order>restoreHeroEquipImg</order></event>
+						<event><condition delay="1" /><order>say; startList:s11</order></event>
+						<event><condition>say:listOver</condition></event><event><condition delay="1" /></event>
+						
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order><order>createUnit:enemy1; r3</order></event> 
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy2; r1</order><order>createUnit:enemy2; r2</order><order>createUnit:enemy2; r3</order></event> 
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy3; r1</order><order>createUnit:enemy3; r2</order><order>createUnit:enemy3; r3</order></event> 
+						<event><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition><order>createUnit:enemy4; r1</order><order>createUnit:enemy4; r2</order><order>createUnit:enemy4; r3</order></event> 
+						<event><condition delay="1">enemyNumber:less_1</condition><order>level; rebirthAllMore</order><order>alert:yes; 发现物品：升化剂。</order></event>	
+						<event><condition delay="0.1" /><order>say; startList:s2</order></event>	
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>worldMap:levelName; XiShan1:XiShan1_1</order>
+							<order>level; showPointer:r_over</order>
+						</event>	
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="XiShan1_plotOther">
+				<info enemyLv="99" noMoreB="1" noTreasureB="1" mustSingleB="1" />
+				<fixed target="XiShan1_1" info="no" drop="all" unitG="all" rectG="all" eventG="no" />
+				
+				<sceneLabel>XiShan1</sceneLabel>
+				
+				<eventG>
+					<group>
+						<event><condition /></event>
+						<event><condition delay="1" /><order>say; startList:s1</order></event>
+						<event><condition>say:listOver</condition></event><event><condition delay="1" /></event>
+						
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order><order>createUnit:enemy1; r3</order></event> 
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy2; r1</order><order>createUnit:enemy2; r2</order><order>createUnit:enemy2; r3</order></event> 
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy3; r1</order><order>createUnit:enemy3; r2</order><order>createUnit:enemy3; r3</order></event> 
+						<event><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition><order>createUnit:enemy4; r1</order><order>createUnit:enemy4; r2</order><order>createUnit:enemy4; r3</order></event> 
+						<event><condition delay="1">enemyNumber:less_1</condition><order>level; rebirthAllMore</order></event>	
+						<event><condition delay="0.1" /><order>say; startList:s2</order></event>	
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>worldMap:levelName; XiShan1:XiShan1_1</order>
+							<order>level; showPointer:r_over</order>
+						</event>	
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="XiShan1_1">
+				<info enemyLv="99" diff="2" />
+				<sceneLabel>XiShan1</sceneLabel>
+				
+				<unitG><allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="矿工僵尸" num="4" />
+						<unit cnName="古惑僵尸" num="6" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>number</numberType>
+						<unit cnName="古惑僵尸" num="5" />
+						<unit cnName="矿工僵尸" num="4" />
+						<unit cnName="僵尸治疗兵" num="3" />
+						
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>number</numberType>
+						<unit cnName="古惑僵尸" num="5" />
+						<unit cnName="矿工僵尸" num="5" />
+						<unit cnName="僵尸治疗兵" num="5" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="矿工僵尸" unitType="boss" lifeMul="0.8" dpsMul="1" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e2_1"><condition delay="1" /></event>
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order><order>createUnit:enemy1; r3</order></event> 
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy2; r1</order><order>createUnit:enemy2; r2</order><order>createUnit:enemy2; r3</order></event> 
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy3; r1</order><order>createUnit:enemy3; r2</order><order>createUnit:enemy3; r3</order></event> 
+						<event id="e2_1"><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition><order>createUnit:enemy4; r1</order><order>createUnit:enemy4; r2</order><order>createUnit:enemy4; r3</order></event> 
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		<gather name="溪山西">
+			<level name="XiShan2_plot">
+				<info enemyLv="99" noTreasureB="1" />
+				<fixed target="XiShan2_1" info="no" drop="all" unitG="all" rectG="all" eventG="no" />
+				
+				<sceneLabel>XiShan2</sceneLabel>
+				
+				<eventG>
+					<group>
+						<event><condition delay="1" /><order>say; startList:s1</order></event>
+						<event><condition delay="1">say:listOver</condition></event>
+						
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order><order>createUnit:enemy1; r3</order></event> 
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy2; r1</order><order>createUnit:enemy2; r2</order><order>createUnit:enemy2; r3</order></event> 
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy3; r1</order><order>createUnit:enemy3; r2</order><order>createUnit:enemy3; r3</order></event> 
+						<event><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition><order>createUnit:enemy4; r1</order><order>createUnit:enemy4; r2</order><order>createUnit:enemy4; r3</order></event> 
+						<event><condition delay="1">enemyNumber:less_1</condition><order>level; rebirthAllMore</order><order>alert:yes; 发现物品：隼武碎片。</order></event>	
+						<event><condition delay="0.1" /><order>say; startList:s2</order></event>	
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>task:now; complete</order>
+							
+							<order>worldMap:levelName; XiShan2:XiShan2_1</order>
+							<order>level; showPointer:r_over</order>
+						</event>	
+					</group>
+				</eventG>
+			</level>
+			<level name="XiShan2_1">
+				<info enemyLv="99" diff="2" />
+				<sceneLabel>XiShan2</sceneLabel>
+				
+				<unitG><allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="古惑僵尸" num="3" />
+						<unit cnName="矿工僵尸" num="3" />
+						<unit cnName="僵尸治疗兵" num="4" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>number</numberType>
+						<unit cnName="矿工僵尸" num="3" />
+						<unit cnName="古惑僵尸" num="8" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>number</numberType>
+						<unit cnName="古惑僵尸" num="5" />
+						<unit cnName="矿工僵尸" num="5" />
+						<unit cnName="僵尸治疗兵" num="5" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="僵尸治疗兵" unitType="boss" lifeMul="2" dpsMul="1" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e2_1"><condition delay="1" /></event>
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order><order>createUnit:enemy1; r3</order></event> 
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy2; r1</order><order>createUnit:enemy2; r2</order><order>createUnit:enemy2; r3</order></event> 
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy3; r1</order><order>createUnit:enemy3; r2</order><order>createUnit:enemy3; r3</order></event> 
+						<event id="e2_1"><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition><order>createUnit:enemy4; r1</order><order>createUnit:enemy4; r2</order><order>createUnit:enemy4; r3</order></event> 
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		
+		<gather name="溪山南">
+			<level name="XiShan3_plot">
+				<info enemyLv="99" noTreasureB="1" />
+				<fixed target="XiShan3_1" info="no" drop="all" unitG="all" rectG="all" eventG="no" />
+				
+				<sceneLabel>XiShan3</sceneLabel>
+				
+				<eventG>
+					<group>
+						<event><condition delay="1" /><order>say; startList:s1</order></event>
+						<event><condition delay="1">say:listOver</condition></event>
+						
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order><order>createUnit:enemy1; r3</order></event> 
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy2; r1</order><order>createUnit:enemy2; r2</order><order>createUnit:enemy2; r3</order></event> 
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy3; r1</order><order>createUnit:enemy3; r2</order><order>createUnit:enemy3; r3</order></event> 
+						<event><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition><order>createUnit:enemy4; r1</order><order>createUnit:enemy4; r2</order><order>createUnit:enemy4; r3</order></event> 
+						<event><condition delay="1">enemyNumber:less_1</condition><order>level; rebirthAllMore</order><order>alert:yes; 发现物品：极源碎片。</order></event>	
+						<event><condition delay="0.1" /><order>say; startList:s2</order></event>	
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>worldMap:levelName; XiShan3:XiShan3_1</order>
+							<order>level; showPointer:r_over</order>
+						</event>	
+					</group>
+				</eventG>
+			</level>
+			<level name="XiShan3_1">
+				<info enemyLv="99" diff="2" />
+				<sceneLabel>XiShan3</sceneLabel>
+				
+				<unitG><allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="古惑僵尸" num="3" skillArr="feedback_enemy" />
+						<unit cnName="矿工僵尸" num="3" skillArr="reverseHurt_enemy" />
+						<unit cnName="利爪僵尸" num="4" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>number</numberType>
+						<unit cnName="利爪僵尸" num="3" skillArr="reverseHurt_enemy" />
+						<unit cnName="古惑僵尸" num="8" skillArr="feedback_enemy" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>number</numberType>
+						<unit cnName="古惑僵尸" num="5" skillArr="feedback_enemy" />
+						<unit cnName="矿工僵尸" num="5" />
+						<unit cnName="利爪僵尸" num="5" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="利爪僵尸" unitType="boss" lifeMul="2" dpsMul="1" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e2_1"><condition delay="1" /></event>
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order><order>createUnit:enemy1; r3</order></event> 
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy2; r1</order><order>createUnit:enemy2; r2</order><order>createUnit:enemy2; r3</order></event> 
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy3; r1</order><order>createUnit:enemy3; r2</order><order>createUnit:enemy3; r3</order></event> 
+						<event id="e2_1"><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition><order>createUnit:enemy4; r1</order><order>createUnit:enemy4; r2</order><order>createUnit:enemy4; r3</order></event> 
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		
+		<gather name="溪山顶">
+			<level name="XiShan4_plot">
+				<info enemyLv="99" noTreasureB="1" />
+				<fixed target="XiShan4_1" info="no" drop="all" unitG="affter" rectG="all" eventG="no" />
+				
+				<sceneLabel>XiShan4</sceneLabel>
+				<unitG>
+					<unitOrder id="we2" camp="we">
+						<unit cnName="小虎" num="1" aiOrder="followBodyAttack:p1" />
+					</unitOrder>
+				</unitG>
+				
+				
+				<eventG>
+					<group>
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order><order>createUnit:enemy1; r3</order></event> 
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy2; r1</order><order>createUnit:enemy2; r2</order><order>createUnit:enemy2; r3</order></event> 
+						<event><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy3; r1</order><order>createUnit:enemy3; r2</order><order>createUnit:enemy3; r3</order></event> 
+						<event><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition><order>createUnit:enemy4; r1</order><order>createUnit:enemy4; r2</order><order>createUnit:enemy4; r3</order></event> 
+						<event><condition delay="1">enemyNumber:less_1</condition><order>level; rebirthAllMore</order><order>alert:yes; 发现物品：氩石。</order></event>	
+						<event><condition delay="0.1" /><order>say; startList:s2</order></event>
+						
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>createUnit:we2; r_over</order>
+						</event>
+						<event>
+							<condition delay="0.1">bodyGap:less_350; p1:小虎</condition>
+							<order>say; startList:s3</order>
+						</event>
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>worldMap:levelName; XiShan4:XiShan4_1</order>
+							<order>level; showPointer:r_over</order>
+						</event>	
+					</group>
+				</eventG>
+			</level>
+			<level name="XiShan4_1">
+				<info enemyLv="99" diff="2" />
+				<sceneLabel>XiShan4</sceneLabel>
+				
+				<unitG><allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="古惑僵尸" num="3" />
+						<unit cnName="僵尸治疗兵" num="3" />
+						<unit cnName="利爪僵尸" num="4" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>number</numberType>
+						<unit cnName="利爪僵尸" num="3" />
+						<unit cnName="古惑僵尸" num="6" />
+						<unit cnName="僵尸治疗兵" num="2" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>number</numberType>
+						<unit cnName="古惑僵尸" num="5" />
+						<unit cnName="僵尸治疗兵" num="5" />
+						<unit cnName="利爪僵尸" num="5" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="双头僵尸" unitType="boss" lifeMul="2" dpsMul="1" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e2_1"><condition delay="1" /></event>
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order><order>createUnit:enemy1; r3</order></event> 
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy2; r1</order><order>createUnit:enemy2; r2</order><order>createUnit:enemy2; r3</order></event> 
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">liveEnemyNumber:less_2</condition><order>createUnit:enemy3; r1</order><order>createUnit:enemy3; r2</order><order>createUnit:enemy3; r3</order></event> 
+						<event id="e2_1"><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition><order>createUnit:enemy4; r1</order><order>createUnit:enemy4; r2</order><order>createUnit:enemy4; r3</order></event> 
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			
+			
+			<level name="XiShan5_plot">
+				<info enemyLv="99" noTreasureB="1" />
+				<fixed target="XiShan5_1" info="no" drop="all" unitG="all" rectG="all" eventG="no" />
+				
+				<sceneLabel>XiShan5</sceneLabel>
+				
+				<eventG>
+					<group>
+						<event><condition delay="1" /><order>say; startList:s1</order></event>
+						<event><condition delay="1">say:listOver</condition></event>
+						
+						<event><condition doNumber="2">liveEnemyNumber:less_2</condition><order>createUnit:enemy1; r123</order></event> 
+						<event><condition doNumber="2">liveEnemyNumber:less_2</condition><order>createUnit:enemy2; r123</order></event> 
+						<event><condition doNumber="2">liveEnemyNumber:less_2</condition><order>createUnit:enemy3; r123</order></event> 
+						<event><condition doNumber="2">liveEnemyNumber:less_2</condition><order>createUnit:enemy4; r123</order></event> 
+						<event><condition doNumber="1">enemyNumber:less_1</condition><order>createUnit:enemy5; r123</order></event> 
+						<event><condition delay="1">enemyNumber:less_1</condition><order>level; rebirthAllMore</order></event>	
+						<event><condition delay="0.1" /><order>say; startList:s2</order></event>	
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>worldMap:levelName; XiShan5:XiShan5_1</order>
+							<order>level; showPointer:r_over</order>
+						</event>	
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="XiShan5_1">
+				<info enemyLv="99" diff="2" />
+				<sceneLabel>XiShan5</sceneLabel>
+				
+				<unitG><allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="古惑僵尸" num="3" />
+						<unit cnName="僵尸治疗兵" num="3" />
+						<unit cnName="矿工僵尸" num="4" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>number</numberType>
+						<unit cnName="利爪僵尸" num="10" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>number</numberType>
+						<unit cnName="古惑僵尸" num="11" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="古惑僵尸" num="5" />
+						<unit cnName="僵尸治疗兵" num="3" />
+						<unit cnName="利爪僵尸" num="3" />
+						<unit cnName="矿工僵尸" num="3" />
+					</unitOrder>
+					<unitOrder id="enemy5">
+						<numberType>number</numberType>
+						<unit cnName="氩星吞噬者" unitType="boss" lifeMul="2" dpsMul="1" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event><condition delay="1" /></event>
+						<event><condition doNumber="2">liveEnemyNumber:less_2</condition><order>createUnit:enemy1; r123</order></event> 
+						<event><condition doNumber="2">liveEnemyNumber:less_2</condition><order>createUnit:enemy2; r123</order></event> 
+						<event><condition doNumber="2">liveEnemyNumber:less_2</condition><order>createUnit:enemy3; r123</order></event> 
+						<event><condition doNumber="2">liveEnemyNumber:less_2</condition><order>createUnit:enemy4; r123</order></event> 
+						<event><condition doNumber="1">enemyNumber:less_1</condition><order>createUnit:enemy5; r123</order></event> 
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+	</father>
+</data>

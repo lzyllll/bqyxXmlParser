@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="task" cnName="任务">
+		
+		<bullet cnName="汤圆">
+			<name>tangYuan</name><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			<cnName>汤圆</cnName>
+			<hurtRatio>0</hurtRatio>
+			
+			<bulletLife>20</bulletLife>
+			<bulletWidth>25</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<bulletAngle>90</bulletAngle>
+			<bulletSpeed>7</bulletSpeed>
+			<speedD random="0.2" />
+			<boomD selfB="1" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl name="tangYuan" />
+			<smokeImgUrl name="tangYuan" />
+			<hitFloorImgUrl name="stoneBoom" />
+			<selfBoomImgUrl name="oreBombShow" />
+		</bullet>
+		
+		<bullet cnName="枪林弹雨-导弹">
+			<name>bulletRainBullet</name><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			<cnName>枪林弹雨-导弹</cnName>
+			<hurtRatio>0</hurtRatio>
+			<hurtMul>2</hurtMul>
+			<attackType>holy</attackType>
+			
+			<bulletLife>20</bulletLife>
+			<bulletWidth>15</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<bulletAngle>180</bulletAngle>
+			<bulletSpeed>8</bulletSpeed>
+			<speedD random="0.4" />
+			<penetrationGap>1000</penetrationGap>
+			<boomD selfB="1" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>bullet/gaiaBulletFire</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom2">boomEffect/boom2</hitImgUrl>
+			<selfBoomImgUrl soundVolume="0.2" soundUrl="boomSound/midBoom2">boomEffect/boom2</selfBoomImgUrl>
+		</bullet>
+		<bullet cnName="枪林弹雨-闪电球">
+			<name>bulletRainBall</name><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			<cnName>枪林弹雨-闪电球</cnName>
+			<hurtRatio>1</hurtRatio>
+			<attackType>holy</attackType>
+			
+			<bulletLife>15</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<bulletAngle>180</bulletAngle>
+			<bulletSpeed>5</bulletSpeed>
+			<penetrationGap>1000</penetrationGap>
+			<skillArr>bulletRainBallHit</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="add">skillEffect/paralysis_enemy_bullet</bulletImgUrl>
+		</bullet>
+		
+		<bullet cnName="荆棘之路">
+			<name>thornyRoad</name><sameCampB>0</sameCampB><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			<cnName>荆棘之路</cnName>
+			<hurtMul>0.1</hurtMul>
+			<attackType>holy</attackType>
+			
+			<bulletLife>9999999</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<bulletAngle>0</bulletAngle>
+			<bulletSpeed>0</bulletSpeed>
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<twoHitGap>1</twoHitGap>
+			<skillArr>killAll,invincibleEmp,enemyEmp</skillArr>
+			<flipX>1</flipX>
+			<bulletImgUrl>bullet/thorns</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="sound/vehicle_hit1">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		
+		<bullet cnName="保卫北斗">
+			<name>defendBeiDou</name><sameCampB>0</sameCampB><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			<cnName>保卫北斗</cnName>
+			<hurtMul>1</hurtMul>
+			<attackType>holy</attackType>
+			
+			<bulletLife>9999999</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			
+			<bulletAngle>90</bulletAngle>
+			<bulletSpeed>7</bulletSpeed>
+			<speedD random="0.3" />
+			<boomD selfB="1" hurtMul="0" />
+			<bindingD cnName="空单位" lifeMul="0.00001" />
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<skillArr>killAll</skillArr>
+			<flipX>1</flipX>
+			<bulletImgUrl con="filter" raNum="1">generalEffect/fire</bulletImgUrl>
+			<selfBoomImgUrl soundUrl="sound/fireHit2">boomEffect/boom3</selfBoomImgUrl>
+			<hitFloorImgUrl soundUrl="boomSound/bigBoom">boomEffect/bigCircle</hitFloorImgUrl>
+		</bullet>
+	</father>
+</data>

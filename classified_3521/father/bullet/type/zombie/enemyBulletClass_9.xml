@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="暴君">		
+		<bullet cnName="骷髅-跟踪导弹">
+			<name>Skeleton_bullet</name>
+			<cnName>骷髅-跟踪导弹</cnName>
+			<hurtRatio>1</hurtRatio>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.4</attackDelay>
+			<bulletAngle>175</bulletAngle>
+			<bulletAngleRange>0</bulletAngleRange>
+			<bulletNum>3</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootAngle>20</shootAngle>					
+				
+			<bounceD floor="6" />	
+			<followD value="1" maxTime="0.6" />	
+				
+			<shootPoint>-97,-84</shootPoint>
+			<bulletSpeed>35</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">rocket/rocketBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom2" shake="3,0.4,13">boomEffect/boom2</hitImgUrl>
+			<hitFloorImgUrl soundUrl="boomSound/smallBoom" shake="3,0.4,9" soundVolume="0.5">boomEffect/boom1</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="30">skillEffect/smallFire</smokeImgUrl>
+		</bullet>
+		<bullet index="0" name="骷髅-散弹枪">
+			<name>Skeleton_machine</name>
+			<cnName>骷髅-散弹枪</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			<bulletWidth>800</bulletWidth>
+			<bulletShakeWidth>100</bulletShakeWidth>
+			
+			<shootPoint>-97,-84</shootPoint>
+			<bulletAngle>175</bulletAngle>
+			<attackGap>1</attackGap>
+			<attackDelay>0.4</attackDelay>
+			<bulletNum>6</bulletNum>				
+			<shootNum>4</shootNum>					
+			<shootGap>0.07</shootGap>					
+				
+			<shootAngle>20</shootAngle>				
+			<shakeAngle>3</shakeAngle>
+			<bulletSpeed>0</bulletSpeed>
+			
+			
+					
+						
+			
+			<bounceD floor="6" body="0" num="0" />	
+			
+			
+			<flipX>1</flipX>
+			<lineD lightColor="0x00FFFF" size="2" lightSize="6" />
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			
+		</bullet>
+		<bullet cnName="骷髅-地狱剑">
+			<name>knife_skeleton</name>
+			<cnName>骷髅-地狱剑</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>0.04</bulletLife>
+			<bulletWidth>100</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>270</bulletAngle>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+								
+			<shootAngle>0</shootAngle>					
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<shootPoint>0,0</shootPoint>
+			<bulletSpeed>0</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<imgClearDelay>0.4</imgClearDelay>
+			<bulletImgUrl>Skeleton/knifeEffect</bulletImgUrl>
+			<hitImgUrl con="add">bladeHitEffect/blood</hitImgUrl>
+		</bullet>
+		<bullet cnName="骷髅-地狱剑-副本">
+			<name>knife_skeleton_extra</name>
+			<cnName>骷髅-地狱剑-副本</cnName>
+			
+			<hurtMul>0.25</hurtMul>
+			<attackType>holy</attackType>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>0.04</bulletLife>
+			<bulletWidth>100</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>270</bulletAngle>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+								
+			<shootAngle>0</shootAngle>					
+				
+			<penetrationGap>1000</penetrationGap>
+			<skillArr>knife_skeleton_hammer</skillArr>
+				
+			<shootPoint>0,0</shootPoint>
+			<bulletSpeed>0</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<imgClearDelay>0.4</imgClearDelay>
+			<bulletImgUrl>Skeleton/knifeEffect</bulletImgUrl>
+			<hitImgUrl con="add">bladeHitEffect/blood</hitImgUrl>
+		</bullet>
+	</father>
+	</data>

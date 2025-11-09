@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill name="鼬灭">
+			<name>booby_godArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>鼬灭</cnName>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<summonedUnitsB>1</summonedUnitsB>
+			<addType>state</addType>
+			<effectType>booby_godArmsSkill</effectType>
+			<extraValueType>nowArmsTrueDps</extraValueType>
+			<duration>999999</duration>
+			<mul>0.5</mul>
+			<range>600</range>
+			
+			<obj>"cnName":"赤鼬导弹发射器","num":1,"lifeMul":1000,"maxNum":1,"dpsMul":1,"mulByFatherB":true,"lifeTime":1,"noUnderHurtB":1,"noAiFindB":1,"noUnderHitB":1,"skillArr":["State_SpellImmunity"]</obj>
+			
+			<description>对接近的敌方单位，发射导弹驱逐。</description>
+		</skill>
+		<skill name="超鼬灭">
+			<name>booby_godArmsSkill2</name><noRandomListB>1</noRandomListB>
+			<cnName>超鼬灭</cnName>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<summonedUnitsB>1</summonedUnitsB>
+			<addType>state</addType>
+			<effectType>booby_godArmsSkill</effectType>
+			<extraValueType>nowArmsTrueDps</extraValueType>
+			<duration>999999</duration>
+			<mul>0.5</mul>
+			<range>900</range>
+			
+			<obj>"cnName":"赤鼬导弹发射器","num":1,"lifeMul":1000,"maxNum":1,"dpsMul":1,"mulByFatherB":true,"lifeTime":1,"noUnderHurtB":1,"noAiFindB":1,"noUnderHitB":1,"skillArr":["State_SpellImmunity"]</obj>
+			
+			<description>对周围900码的敌人发射导弹驱逐。</description>
+		</skill>
+		<skill name="超鼬灭">
+			<name>boobyPurgold</name><noRandomListB>1</noRandomListB>
+			<cnName>超鼬灭</cnName>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<summonedUnitsB>1</summonedUnitsB>
+			<addType>state</addType>
+			<effectType>booby_godArmsSkill</effectType>
+			<extraValueType>nowArmsTrueDps</extraValueType>
+			<duration>999999</duration>
+			<mul>0.5</mul>
+			<range>900</range>
+			
+			<obj>"cnName":"赤鼬导弹发射器","num":1,"lifeMul":1000,"maxNum":1,"dpsMul":1,"mulByFatherB":true,"lifeTime":1,"noUnderHurtB":1,"noAiFindB":1,"noUnderHitB":1,"skillArr":["State_SpellImmunity","boobyPurgoldBody"]</obj>
+			
+			<description>对敌人发射导弹驱逐，并且不会触发其殒命技能。</description>
+		</skill>
+		
+		<skill name="弹爆">
+			<name>purgoldSkunk</name><noBeClearB>1</noBeClearB>
+			<cnName>弹爆</cnName><noRandomListB>1</noRandomListB><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition><changeHurtB>1</changeHurtB>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>purgoldSkunk</effectType>
+			<linkArr>purgoldSkunkLink</linkArr>
+			<description>每颗子弹击中敌人都有3%的概率产生3倍散射，对有殒命技能的敌人概率加4倍，且封锁其殒命技能（短命之仇、复仇之箭、复仇之魂等）。[预估增加武器输出：70%]</description>
+		</skill>
+	</father>
+	
+	</data>

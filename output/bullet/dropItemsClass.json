@@ -1,0 +1,362 @@
+{
+  "father": [
+    {
+      "type": "effect",
+      "drop": [
+        {
+          "cnName": "增加血量",
+          "name": "addLifeMul",
+          "text": "+血量",
+          "imgUrl": "dropEffect/addLifeMul",
+          "extraSkill": "DropEffect_AddLifeMul",
+          "lifetime": 60,
+          "noFollowHeroB": 1
+        },
+        {
+          "cnName": "增加弹药",
+          "name": "addCharger",
+          "text": "+弹药",
+          "imgUrl": "dropEffect/addCharger",
+          "extraSkill": "DropEffect_AddChargerMul",
+          "lifetime": 60,
+          "noFollowHeroB": 1
+        },
+        {
+          "cnName": "增加银币",
+          "name": "addCoin",
+          "imgUrl": "dropEffect/addCoin",
+          "lifetime": 60
+        },
+        {
+          "cnName": "小南瓜",
+          "name": "addPumpkin",
+          "text": "获得物品",
+          "imgUrl": "ThingsIcon/pumpkin",
+          "noFollowHeroB": 1,
+          "smallMapColor": 4278255615
+        },
+        {
+          "cnName": "增加银币",
+          "name": "addCoin_task",
+          "imgUrl": "dropEffect/addCoin_task",
+          "noFollowHeroB": 1,
+          "smallMapColor": 4278255615
+        },
+        {
+          "cnName": "血液样本",
+          "name": "bloodTask",
+          "imgUrl": "ThingsIcon/bloodSample",
+          "noFollowHeroB": 1,
+          "smallMapColor": 4278255615
+        },
+        {
+          "cnName": "血滴",
+          "name": "bloodDrop",
+          "imgUrl": "ThingsIcon/bloodDrop",
+          "noFollowHeroB": 1
+        },
+        {
+          "cnName": "超能石",
+          "name": "skillStoneTask",
+          "imgUrl": "ThingsIcon/skillStone",
+          "noFollowHeroB": 1
+        },
+        {
+          "cnName": "增加纪念币",
+          "name": "addAniverCoin",
+          "imgUrl": "ThingsIcon/anniCoin",
+          "noFollowHeroB": 1
+        },
+        {
+          "cnName": "增加十年币",
+          "name": "addTenCoin",
+          "imgUrl": "ThingsIcon/tenCoin",
+          "noFollowHeroB": 1
+        },
+        {
+          "cnName": "增加零件券",
+          "name": "addPartsCoin",
+          "imgUrl": "ThingsIcon/partsCoin",
+          "noFollowHeroB": 1
+        },
+        {
+          "cnName": "无敌药水",
+          "name": "invincibleDrugDrop",
+          "imgUrl": "dropEffect/invincibleDrug",
+          "extraSkill": "invincibleDrugDrop",
+          "noFollowHeroB": 1,
+          "lifetime": 15,
+          "smallMapColor": 4278255615
+        },
+        {
+          "cnName": "金球",
+          "name": "FlyDragonBall",
+          "lifetime": 10,
+          "imgUrl": "FlyDragon/drop",
+          "noFollowHeroB": 1
+        },
+        {
+          "cnName": "稀有元素-黄",
+          "name": "elementsYellow",
+          "lifetime": 10,
+          "imgUrl": "FireWolf/elementsYellow",
+          "noFollowHeroB": 1
+        },
+        {
+          "cnName": "稀有元素-红",
+          "name": "elementsRed",
+          "lifetime": 10,
+          "imgUrl": "FireWolf/elementsRed",
+          "noFollowHeroB": 1
+        },
+        {
+          "cnName": "稀有元素-绿",
+          "name": "elementsGreen",
+          "lifetime": 10,
+          "imgUrl": "FireWolf/elementsGreen",
+          "noFollowHeroB": 1
+        },
+        {
+          "cnName": "稀有元素-绿",
+          "name": "elementsBlue",
+          "lifetime": 10,
+          "imgUrl": "FireWolf/elementsPurple",
+          "noFollowHeroB": 1
+        },
+        {
+          "cnName": "稀有元素-紫",
+          "name": "elementsPurple",
+          "lifetime": 10,
+          "imgUrl": "FireWolf/elementsPurple",
+          "noFollowHeroB": 1
+        },
+        {
+          "keyB": true,
+          "cnName": "无敌罐头",
+          "name": "invinCanned",
+          "lifeTime": 90,
+          "noFollowHeroB": true,
+          "text": "无敌10秒",
+          "imgUrl": "dropEffect/invinCanned",
+          "extraSkill": "invinCannedDrop"
+        },
+        {
+          "keyB": true,
+          "cnName": "增伤药剂",
+          "name": "hurtDrug",
+          "lifeTime": 90,
+          "noFollowHeroB": true,
+          "text": "伤害加倍7秒",
+          "imgUrl": "dropEffect/hurtDrug",
+          "extraSkill": "hurtDrugDrop"
+        },
+        {
+          "keyB": true,
+          "cnName": "眩晕地雷x2",
+          "name": "hammerMineEffect",
+          "lifeTime": 90,
+          "noFollowHeroB": true,
+          "text": "获得眩晕地雷x2",
+          "imgUrl": "dropEffect/hammerMine",
+          "extraSkill": "hammerMineDrop"
+        },
+        {
+          "keyB": true,
+          "cnName": "致命地雷x2",
+          "name": "hurtMineEffect",
+          "lifeTime": 90,
+          "noFollowHeroB": true,
+          "text": "获得致命地雷x2",
+          "imgUrl": "dropEffect/hurtMine",
+          "extraSkill": "hurtMineDrop"
+        }
+      ]
+    },
+    {
+      "type": "arms",
+      "drop": [
+        {
+          "cnName": "手枪",
+          "name": "pistol",
+          "text": "获得武器",
+          "imgUrl": "dropEffect/arms"
+        },
+        {
+          "cnName": "步枪",
+          "name": "rifle",
+          "text": "获得武器",
+          "imgUrl": "dropEffect/arms"
+        },
+        {
+          "cnName": "狙击枪",
+          "name": "sniper",
+          "text": "获得武器",
+          "imgUrl": "dropEffect/arms"
+        },
+        {
+          "cnName": "散弹枪",
+          "name": "shotgun",
+          "text": "获得武器",
+          "imgUrl": "dropEffect/arms"
+        },
+        {
+          "cnName": "火箭筒",
+          "name": "rocket",
+          "text": "获得武器",
+          "imgUrl": "dropEffect/arms"
+        },
+        {
+          "cnName": "激光枪",
+          "name": "laser",
+          "text": "获得武器",
+          "imgUrl": "dropEffect/arms"
+        },
+        {
+          "cnName": "弩",
+          "name": "crossbow",
+          "text": "获得武器",
+          "imgUrl": "dropEffect/arms"
+        },
+        {
+          "cnName": "喷火器",
+          "name": "flamer",
+          "text": "获得武器",
+          "imgUrl": "dropEffect/arms"
+        },
+        {
+          "cnName": "稀有武器",
+          "name": "rareArms",
+          "text": "获得武器",
+          "imgUrl": "dropEffect/rareArms"
+        }
+      ]
+    },
+    {
+      "type": "equip",
+      "drop": [
+        {
+          "cnName": "头盔",
+          "name": "head",
+          "text": "获得装备",
+          "imgUrl": "dropEffect/equip"
+        },
+        {
+          "cnName": "战衣",
+          "name": "coat",
+          "text": "获得装备",
+          "imgUrl": "dropEffect/equip"
+        },
+        {
+          "cnName": "战裤",
+          "name": "pants",
+          "text": "获得装备",
+          "imgUrl": "dropEffect/equip"
+        },
+        {
+          "cnName": "腰带",
+          "name": "belt",
+          "text": "获得装备",
+          "imgUrl": "dropEffect/equip"
+        }
+      ]
+    },
+    {
+      "type": "things",
+      "drop": [
+        {
+          "cnName": "超能石",
+          "name": "skillStone",
+          "text": "获得物品",
+          "imgUrl": "ThingsIcon/skillStone"
+        },
+        {
+          "cnName": "神能石",
+          "name": "godStone",
+          "text": "获得物品",
+          "imgUrl": "ThingsIcon/godStone"
+        },
+        {
+          "cnName": "转化石",
+          "name": "converStone",
+          "text": "获得物品",
+          "imgUrl": "ThingsIcon/converStone"
+        },
+        {
+          "cnName": "生命催化剂",
+          "name": "lifeCatalyst",
+          "text": "获得物品",
+          "imgUrl": "ThingsIcon/lifeCatalyst"
+        },
+        {
+          "cnName": "商券",
+          "name": "taxStamp",
+          "text": "获得物品",
+          "imgUrl": "ThingsIcon/taxStamp"
+        },
+        {
+          "cnName": "稀有宝箱",
+          "name": "normalChest",
+          "text": "获得物品",
+          "imgUrl": "ThingsIcon/normalChest"
+        },
+        {
+          "cnName": "沙漠进袭者碎片",
+          "name": "DesertTankCash",
+          "text": "获得物品",
+          "imgUrl": "ThingsIcon/DesertTankCash"
+        },
+        {
+          "cnName": "破晓碎片",
+          "name": "DaybreakCash",
+          "text": "获得物品",
+          "imgUrl": "ThingsIcon/DaybreakCash"
+        },
+        {
+          "cnName": "收割者碎片",
+          "name": "RedReaperCash",
+          "text": "获得物品",
+          "imgUrl": "ThingsIcon/RedReaperCash"
+        },
+        {
+          "cnName": "潜行者碎片",
+          "name": "SeaSharkCash",
+          "text": "获得物品",
+          "imgUrl": "ThingsIcon/SeaSharkCash"
+        },
+        {
+          "cnName": "巨鲸碎片",
+          "name": "BlueWhaleCash",
+          "text": "获得物品",
+          "imgUrl": "ThingsIcon/BlueWhaleCash"
+        },
+        {
+          "cnName": "先知碎片",
+          "name": "ProphetCash",
+          "text": "获得物品",
+          "imgUrl": "ThingsIcon/ProphetCash"
+        },
+        {
+          "cnName": "碎片",
+          "name": "TitansCash",
+          "text": "获得物品",
+          "imgUrl": "ThingsIcon/TitansCash"
+        },
+        {
+          "cnName": "泰坦碎片",
+          "name": "PunisherCash",
+          "text": "获得物品",
+          "imgUrl": "ThingsIcon/PunisherCash"
+        }
+      ]
+    },
+    {
+      "type": "gene",
+      "drop": {
+        "cnName": "基因体",
+        "name": "gene",
+        "text": "获得基因体",
+        "imgUrl": "dropEffect/gene"
+      }
+    }
+  ]
+}

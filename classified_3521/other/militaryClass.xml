@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<level name="1" cnName="列兵" must="800" dpsMul="0.01" giftMul="1">
+		<gift>base;coin;						10000</gift>
+		<gift>things;skillStone;			15</gift>
+		<gift>things;godStone;			3</gift>
+		<gift>things;converStone;		3</gift>
+		<gift>things;strengthenDrug;	10</gift>
+		<gift>things;armsHighBox;		1</gift>
+		<gift>things;equipHighBox;		1</gift>
+		<gift>things;militarySupplies;	30</gift>
+		<gift>things;anniversaryCash;	3</gift>
+		
+	</level>
+	<level name="2" cnName="上等兵" must="1600" dpsMul="0.02" giftMul="1.2"></level>
+	<level name="3" cnName="下士" must="2400" dpsMul="0.03" giftMul="1.4"></level>
+	<level name="4" cnName="中士" must="3200" dpsMul="0.04" giftMul="1.6"></level>
+	
+	<level name="5" cnName="上士" must="4000" dpsMul="0.05" giftMul="2.0"></level>
+	<level name="6" cnName="少尉" must="4800" dpsMul="0.06" giftMul="2.2"></level>
+	<level name="7" cnName="中尉" must="5600" dpsMul="0.07" giftMul="2.4"></level>
+	<level name="8" cnName="上尉" must="6400" dpsMul="0.08" giftMul="2.6"></level>
+	
+	<level name="9" cnName="大尉" must="17200" dpsMul="0.09" giftMul="3"></level>
+	<level name="10" cnName="少校" must="18000" dpsMul="0.10" giftMul="3.2"></level>
+	<level name="11" cnName="中校" must="18800" dpsMul="0.11" giftMul="3.4"></level>
+	
+	<level name="12" cnName="上校" must="20400" dpsMul="0.12" giftMul="3.6"></level>
+	<level name="13" cnName="大校" must="23600" dpsMul="0.13" giftMul="4.0"></level>
+	<level name="14" cnName="少将" must="26800" dpsMul="0.14" giftMul="4.2"></level>
+	
+	<level name="15" cnName="中将" must="30000" dpsMul="0.15" giftMul="4.3"></level>
+	<level name="16" cnName="上将" must="33200" dpsMul="0.16" giftMul="4.4"></level>
+	<level name="17" cnName="大将" must="36400" dpsMul="0.17" giftMul="4.5"></level>
+	
+	<level name="18" cnName="元帅" must="47600" dpsMul="0.18" giftMul="4.6"></level>
+	<level name="19" cnName="大元帅" must="50800" dpsMul="0.19" giftMul="4.7"></level>
+	
+	<level name="20" cnName="联邦大将" must="60000" dpsMul="0.22" giftMul="4.8">
+		<gift>things;skillStone;			94</gift>
+		<gift>things;godStone;			14</gift>
+		<gift>things;converStone;		14</gift>
+		<gift>things;strengthenDrug;	47</gift>
+		<gift>things;armsHighBox;		4</gift>
+		<gift>things;equipHighBox;		4</gift>
+		<gift>things;militarySupplies;	144</gift>
+		<gift>things;anniversaryCash;	14</gift>
+		<gift>things;allBlackEquipCash;	5</gift>
+	</level>
+	<level name="21" cnName="联邦少统" must="68000" dpsMul="0.24" giftMul="4.9">
+		<gift>things;skillStone;			96</gift>
+		<gift>things;godStone;			14</gift>
+		<gift>things;converStone;		14</gift>
+		<gift>things;strengthenDrug;	48</gift>
+		<gift>things;armsHighBox;		4</gift>
+		<gift>things;equipHighBox;		4</gift>
+		<gift>things;militarySupplies;	146</gift>
+		<gift>things;anniversaryCash;	14</gift>
+		<gift>things;allBlackEquipCash;	8</gift>
+	</level>
+	<level name="22" cnName="联邦中统" must="76000" dpsMul="0.27" giftMul="5.0">
+		<gift>things;skillStone;			98</gift>
+		<gift>things;godStone;			14</gift>
+		<gift>things;converStone;		14</gift>
+		<gift>things;strengthenDrug;	49</gift>
+		<gift>things;armsHighBox;		4</gift>
+		<gift>things;equipHighBox;		4</gift>
+		<gift>things;militarySupplies;	148</gift>
+		<gift>things;anniversaryCash;	14</gift>
+		<gift>things;allBlackEquipCash;	11</gift>
+	</level>
+	
+	<level name="23" cnName="联邦上统" must="100000" dpsMul="0.29" giftMul="5.1">
+		<gift>things;skillStone;			100</gift>
+		<gift>things;godStone;			15</gift>
+		<gift>things;converStone;		15</gift>
+		<gift>things;strengthenDrug;	50</gift>
+		<gift>things;armsHighBox;	5</gift>
+		<gift>things;equipHighBox;		5</gift>
+		<gift>things;militarySupplies;	150</gift>
+		<gift>things;anniversaryCash;	15</gift>
+		<gift>things;allBlackEquipCash;	12</gift>
+	</level>
+	<level name="24" cnName="联邦大统" must="180000" dpsMul="0.31" giftMul="5.2">
+		<gift>things;skillStone;			102</gift>
+		<gift>things;godStone;			15</gift>
+		<gift>things;converStone;		15</gift>
+		<gift>things;strengthenDrug;	51</gift>
+		<gift>things;armsHighBox;	5</gift>
+		<gift>things;equipHighBox;		5</gift>
+		<gift>things;militarySupplies;	152</gift>
+		<gift>things;anniversaryCash;	15</gift>
+		<gift>things;allBlackEquipCash;	13</gift>
+	</level>
+	<level name="25" cnName="联邦元帅" must="260000" dpsMul="0.33" giftMul="5.3">
+		<gift>things;skillStone;			104</gift>
+		<gift>things;godStone;			15</gift>
+		<gift>things;converStone;		15</gift>
+		<gift>things;strengthenDrug;	52</gift>
+		<gift>things;armsHighBox;	5</gift>
+		<gift>things;equipHighBox;		5</gift>
+		<gift>things;militarySupplies;	154</gift>
+		<gift>things;anniversaryCash;	15</gift>
+		<gift>things;allBlackEquipCash;	14</gift>
+	</level>
+	<level name="26" cnName="联邦大元帅" must="340000" dpsMul="0.35" giftMul="5.4">
+		<gift>things;skillStone;			106</gift>
+		<gift>things;godStone;			16</gift>
+		<gift>things;converStone;		16</gift>
+		<gift>things;strengthenDrug;	54</gift>
+		<gift>things;armsHighBox;	6</gift>
+		<gift>things;equipHighBox;		6</gift>
+		<gift>things;militarySupplies;	156</gift>
+		<gift>things;anniversaryCash;	16</gift>
+		<gift>things;allBlackEquipCash;	15</gift>
+	</level>
+</data>

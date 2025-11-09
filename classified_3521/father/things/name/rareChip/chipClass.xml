@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="rareChip" cnName="稀有碎片">
+		<things cnName="稀有碎片">
+			<name>rareChip</name><hideB>1</hideB><addDropDefineB>1</addDropDefineB>
+			<cnName>稀有</cnName>
+			<btnList>compose</btnList>
+			<iconUrl>ThingsIcon/blackChip</iconUrl>
+			<description>。</description>
+		</things>
+	</father>
+	</data>

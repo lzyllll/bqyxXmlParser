@@ -1,0 +1,83 @@
+{
+  "father": [
+    {
+      "name": "state",
+      "body": [
+        {
+          "cnName": "伤害",
+          "name": "allHurtMul",
+          "add": 0.01,
+          "max": 50
+        },
+        {
+          "cnName": "技能回速",
+          "name": "cdMul",
+          "add": 0.003,
+          "max": 40
+        },
+        {
+          "cnName": "怒气回速",
+          "name": "angerMul",
+          "add": 0.02,
+          "max": 50
+        },
+        {
+          "cnName": "防御力",
+          "name": "defenceMul",
+          "add": 0.03,
+          "max": 60
+        }
+      ]
+    },
+    {
+      "name": "levelInfo",
+      "body": {
+        "cnName": "倒计时/秒",
+        "name": "tm",
+        "add": 1,
+        "max": 80,
+        "unit": ""
+      }
+    },
+    {
+      "name": "props",
+      "body": [
+        {
+          "cnName": "弹药箱",
+          "name": "caisson",
+          "add": 1,
+          "max": 6,
+          "point": 4,
+          "unit": ""
+        },
+        {
+          "cnName": "重生石",
+          "name": "rebirthStone",
+          "add": 1,
+          "max": 2,
+          "point": 5,
+          "unit": ""
+        },
+        {
+          "cnName": "队友重生卡",
+          "name": "teamRebirthCard",
+          "add": 1,
+          "max": 2,
+          "point": 5,
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "name": "other",
+      "body": {
+        "cnName": "首领全出场",
+        "name": "allBossShow",
+        "add": 1,
+        "max": 1,
+        "point": 2,
+        "unit": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<guoQingEgg>
+		<one name="guoQingEgg" cnName="砸金蛋" randomB="1">
+			<gift pro="300">base;anniCoin;10</gift>
+			<gift pro="100">base;tenCoin;10</gift>
+			<gift pro="300">things;zodiacBag;1</gift>
+			<gift pro="100">things;yearSnake;3</gift>
+			<gift pro="100">things;yearDog;3</gift>
+			<gift pro="30">things;blackRifleBox;1</gift>
+			<gift pro="30">things;blackSniperBox;1</gift>
+			<gift pro="30">things;blackShotgunBox;1</gift>
+			<gift pro="30">things;blackPistolBox;1</gift>
+			<gift pro="30">things;blackRocketBox;1</gift>
+			<gift pro="30">things;blackLaserBox;1</gift>
+			<gift pro="50">things;bigHurtCard;2</gift>
+			<gift pro="50">things;zombieBottle;2</gift>
+			<gift pro="50">things;demonSpreadCard;2</gift>
+			<gift pro="50">things;doubleArmsCard;2</gift>
+			<gift pro="50">things;doubleEquipCard;2</gift>
+			<gift pro="50">things;doubleMaterialsCard;2</gift>
+			<gift pro="30">things;rebirthStone;5</gift>
+			<gift pro="100">things;intensDrug;5</gift>
+			<gift pro="20">base;partsCoin;20</gift>
+			<gift pro="10">things;bossCardStamp;10</gift>
+			<gift pro="5">base;wilderKey;5</gift>
+			<gift pro="4">things;partsChest87;4</gift>
+		</one>
+	</guoQingEgg>
+	<guoQingSign>
+		<one name="guoQingSign1" mustLevel="1">
+			<gift>base;coin;1000000</gift>
+			<gift>base;anniCoin;20</gift>
+			<gift>things;blackArmsBox;1</gift>
+			<gift>things;zodiacCash;5</gift>
+		</one>
+		<one name="guoQingSign2" mustLevel="2">
+			<gift>base;coin;1000000</gift>
+			<gift>base;anniCoin;22</gift>
+			<gift>things;blackArmsBox;1</gift>
+			<gift>things;zodiacCash;5</gift>
+		</one>
+		<one name="guoQingSign3" mustLevel="3">
+			<gift>base;coin;1000000</gift>
+			<gift>base;anniCoin;24</gift>
+			<gift>things;blackArmsBox;1</gift>
+			<gift>things;zodiacCash;5</gift>
+			<gift>things;allBlackCash;200</gift>
+		</one>
+		<one name="guoQingSign4" mustLevel="4">
+			<gift>base;coin;1000000</gift>
+			<gift>base;anniCoin;26</gift>
+			<gift>things;blackArmsBox;1</gift>
+			<gift>things;zodiacCash;5</gift>
+			<gift>things;allBlackEquipCash;200</gift>
+		</one>
+		<one name="guoQingSign5" mustLevel="5">
+			<gift>base;coin;1000000</gift>
+			<gift>base;anniCoin;28</gift>
+			<gift>things;blackArmsBox;1</gift>
+			<gift>things;zodiacCash;5</gift>
+			<gift>things;armsGemChest;100</gift>
+		</one>
+		<one name="guoQingSign6" mustLevel="6">
+			<gift>base;coin;1000000</gift>
+			<gift>base;anniCoin;30</gift>
+			<gift>things;zodiacCash;5</gift>
+			<gift>things;demStone;30</gift>
+		</one>
+		<one name="guoQingSign7" mustLevel="7">
+			<gift>base;coin;1000000</gift>
+			<gift>base;anniCoin;32</gift>
+			<gift>things;zodiacCash;5</gift>
+			<gift>things;madheart;30</gift>
+		</one>
+		<one name="guoQingSign8" mustLevel="8">
+			<gift>base;coin;1000000</gift>
+			<gift>base;anniCoin;34</gift>
+			<gift>things;zodiacCash;16</gift>
+			<gift>things;partsChest87;3</gift>
+			<gift>parts;spurtingCube_1;1</gift>
+		</one>
+		
+	</guoQingSign>
+</data>

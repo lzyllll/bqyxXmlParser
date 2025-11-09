@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="craft">
+		<body shell="compound">
+			<name>SilverShip</name>
+			<cnName>幻银</cnName>
+			<raceType>ship</raceType><rosRatio>1</rosRatio>
+			<swfUrl>swf/ship/SilverShip.swf</swfUrl><imgType>normal</imgType>
+			<bmpUrl>BodyImg/SilverShip</bmpUrl>
+			
+			<dieImg name="stoneBoom" />
+			<dieJumpMul>0</dieJumpMul>
+			<imgClass>CarImage</imgClass>
+			
+			<flipCtrlBy>mouse</flipCtrlBy>
+			<rotateBySlopeB>1</rotateBySlopeB>
+			<imgArr>
+				stand,screenAttack,die1
+			</imgArr>
+			
+			<hitRect>-20,-20,40,40</hitRect>
+			
+			<motionD F_AIR="8" />
+			<motionClass>AircraftGroundMotion</motionClass>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<maxVx>14</maxVx>
+			
+			<attackAIClass>CarAttack_AI</attackAIClass>
+			<keyClass>CraftBodyKey</keyClass>
+			<bulletLauncherClass>CraftBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			<vBullet type="main" label="SilverShip_main" dpsMul="1" len="0" minRa="-180" maxRa="-179.99" />
+		</body>
+		
+		<body shell="compound">
+			<name>SilverShipBig</name>
+			<cnName>大幻银</cnName><headIconUrl>IconGather/SilverShip</headIconUrl>
+			<raceType>ship</raceType><rosRatio>1</rosRatio>
+			<swfUrl>swf/ship/SilverShipBig.swf</swfUrl><imgType>normal</imgType>
+			<bmpUrl>BodyImg/SilverShip</bmpUrl>
+			
+			<dieImg name="stoneBoom" />
+			<dieJumpMul>0</dieJumpMul>
+			<imgClass>CarImage</imgClass>
+			
+			<flipCtrlBy>mouse</flipCtrlBy>
+			<rotateBySlopeB>1</rotateBySlopeB>
+			<imgArr>
+				stand,die1
+			</imgArr>
+			
+			<hitRect>-20,-20,40,40</hitRect>
+			
+			<motionD F_AIR="8" />
+			<motionClass>AircraftGroundMotion</motionClass>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<maxVx>14</maxVx>
+			
+			<attackAIClass>CarAttack_AI</attackAIClass>
+			<keyClass>CraftBodyKey</keyClass>
+			<bulletLauncherClass>CraftBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			<vBullet type="main" label="SilverShip_main" dpsMul="1" len="0" minRa="-180" maxRa="-179.99" />
+		</body>
+		
+		
+		<bullet>
+			<name>SilverShip_main</name><hurtRatio>0.1</hurtRatio> 
+			<cnName>幻银主炮0级</cnName>
+			<bulletLife>0.65</bulletLife><bulletWidth>30</bulletWidth><extendGap>20</extendGap>
+			<hitType>rect</hitType><attackGap>0.1</attackGap><screenShakeValue>4</screenShakeValue><bulletSpeed>40</bulletSpeed>
+			<bulletImgUrl name="SilverShipBullet" /><fireImgUrl name="SilverShipFire" /><hitImgUrl name="gun_hit" />
+		</bullet>
+		
+		
+		
+	</father>
+</data>

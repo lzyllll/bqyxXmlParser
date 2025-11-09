@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="loveSkill" cnName="忠诚度技能">
+		<skill name="防御力提升30%">
+			<name>defenceLing</name><cnName>防御力提升</cnName><everNoClearB>1</everNoClearB>
+			<conditionType>passive</conditionType><condition>add</condition><target>me</target><addType>state</addType><duration>99999</duration>
+			<mul>0.6</mul><effectType>underHurtMul</effectType>
+			<description>战斗中提升[1-mul]的防御力。</description>
+		</skill>
+		<skill>
+			<name>noHurt10Lings</name>
+			<cnName>抵挡低于自身生命值的伤害。</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHurt</condition>
+			<otherConditionArr>hurtLessLifePer</otherConditionArr>
+			<conditionRange>0.15</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>addLifeByHurt</effectType>
+			
+			<meEffectImg partType="body" con="filter">generalEffect/hurtDefence1</meEffectImg>
+			<description>抵挡低于自身生命值15%的伤害。</description>
+		</skill>
+		
+		<skill>
+			<name>resistPerLing4</name>
+			<cnName>抵挡4次百分比伤害</cnName><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<otherConditionArr>isMulHurt,specialNumLess,canUnderHurt</otherConditionArr>
+			<conditionRange>4</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>noMulHurt</effectType>
+			<description>关卡中抵挡4次百分比伤害。</description>
+			<targetEffectImg partType="body">generalEffect/hurtDefence</targetEffectImg>
+		</skill>
+		
+		<skill>
+			<name>hurtStrikerLing</name><cnName>P1增伤-心零</cnName><typeD type="hurt" child="hurtDec" pro="hurtStrikerLing" /><everNoClearB>1</everNoClearB>
+			<conditionType>passive</conditionType><condition>add</condition><target>me</target><addType>state</addType><duration>99999</duration>
+			<mul>0.00002</mul><value>0.40</value><effectType>hurtMulByLingLove</effectType>
+			<valueString>Striker</valueString>
+			<description>P1角色获得相当于好感度x0.00002的攻击力加成，最多加成40%。</description>
+		</skill>
+		
+		<skill>
+			<name>hurtLing40</name><cnName>攻击力提升40%</cnName><everNoClearB>1</everNoClearB>
+			<conditionType>passive</conditionType><condition>add</condition><target>me</target><addType>state</addType><duration>99999</duration>
+			<mul>1.4</mul><effectType>hurtMul</effectType>
+			<description>战斗中的攻击力提升[mul-1]。</description>
+		</skill>
+		
+		<skill>
+			<name>vehicleLing40</name><cnName>载具防御力</cnName><everNoClearB>1</everNoClearB><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<conditionType>passive</conditionType><condition>add</condition><target>me</target>
+			<addType>state</addType><duration>99999</duration>
+			<mul>1.5</mul><secMul>1</secMul><effectType>defenceAndAttack</effectType><valueString>vehicle</valueString>
+			<description>战斗中提升载具[mul-1]的防御力。</description>
+		</skill>
+		
+		<skill>
+			<name>ironBodyLing</name>
+			<cnName>钢铁之躯</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>underRos</condition>
+			<target>me</target>
+			
+			<addType>stateAndInstant</addType>
+			<effectType>ironBodyLing</effectType>
+			<mul>0.07</mul>
+			<duration>4</duration>
+			 
+			<stateEffectImg partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" raNum="30">bulletHitEffect/smoke_small</stateEffectImg>
+			<description>累计生命减少20%时，就会无敌[duration]秒，并回复[mul]的生命值。</description>
+		</skill>
+		
+		<skill>
+			<name>eleStrikerLing</name><cnName>指定元素加成</cnName>
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			<addType>instant</addType>
+			<effectType>hurtStrikerLing</effectType>
+			<mul>1.7</mul>
+			<valueString>Striker</valueString>
+			<description>战斗中，P1角色对指定元素敏感的敌人造成额外[mul-1]的伤害。周一指定生化敏感，周二、周五指定火焰敏感，周三、周六指定冷冻敏感，周四、周日指定电磁敏感。</description>
+		</skill>
+		
+		<skill>
+			<name>dropStrikerLing</name><cnName>掉率提升</cnName><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+			<conditionType>passive</conditionType><condition>add</condition><target>me</target><addType>state</addType><duration>99999</duration>
+			<mul>0.13</mul><effectType>dropStrikerLing</effectType>
+			<valueString>Striker</valueString>
+			<description>P1角色消灭敌人后，武器装备碎片掉率、宝石掉率提升[mul]。</description>
+		</skill>
+	</father>
+</data>

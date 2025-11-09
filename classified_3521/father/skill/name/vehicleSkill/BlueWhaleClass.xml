@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicleSkill" cnName="技能">
+		<skill>
+			<name>theKunSkill</name>
+			<cnName>弹药回收</cnName><iconUrl>SkillIcon/theKunSkill</iconUrl>
+			<effectInfoArr>补充弹药</effectInfoArr>
+			
+			<conditionType>passive</conditionType>
+			<condition>carShoot</condition>
+			<target>me</target>
+			<changeText>概率[effectProArr.0]</changeText>
+			
+			<addType>instant</addType>
+			<effectType>theKunSkill</effectType><effectFather>vehicle</effectFather>
+			<effectProArr>0.04</effectProArr>
+			<valueString>addCharger</valueString>
+			<description>每次射击都有[effectProArr.0]的概率产生若干个（数量和子弹数相同）持续2分钟的弹药箱。</description>
+			<pointEffectImg name="beadCrossbow_boom" />
+			
+			<growth>
+				<skill><effectProArr>0.006</effectProArr></skill>
+				<skill><effectProArr>0.009</effectProArr></skill>
+				<skill><effectProArr>0.012</effectProArr></skill>
+				<skill><effectProArr>0.015</effectProArr></skill>
+				<skill><effectProArr>0.018</effectProArr></skill>
+				<skill><effectProArr>0.021</effectProArr></skill>
+				<skill><effectProArr>0.024</effectProArr></skill>
+				<skill><effectProArr>0.027</effectProArr></skill>
+				<skill><effectProArr>0.030</effectProArr></skill>
+				<skill><effectProArr>0.040</effectProArr></skill>
+			</growth>
+		</skill>
+	</father>
+	
+	
+	
+	
+	
+	</data>

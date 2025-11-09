@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<skill cnName="致盲之光">
+			<name>blindnessPhantom</name>
+			<cnName>致盲之光</cnName><iconUrl36>SkillIcon/blindnessPhantom_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<cd>9</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>state</addType><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<effectType>noUnderHurtB</effectType>
+			<duration>1.8</duration>
+			 
+			<description>向目标释放强烈光照，使其完全无法发动攻击，攻击成功率降至0%。</description>
+			
+			<meActionLabel>lightAttack</meActionLabel>
+		</skill>
+				<skill cnName="腐蚀">
+					<name>blindnessPhantomHit</name>
+					<cnName>腐蚀</cnName>
+					
+					<conditionType>passive</conditionType>
+					<condition>hit</condition>
+					<target>target</target>
+					
+					<addType>state</addType><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+					<effectType>lostPro</effectType>
+					<mul>999</mul>
+					<duration>5</duration>
+					<stateEffectImg partType="2eye" raNum="25" followPartRaB="1">bulletHitEffect/smoke_black</stateEffectImg>
+					<description />
+				</skill>
+				
+		<skill index="0" cnName="猛击">
+			<name>comboPhantom</name>
+			<cnName>猛击</cnName><iconUrl36>SkillIcon/comboPhantom_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<cd>7</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>state</addType><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<effectType>noUnderHurtB</effectType>
+			<duration>1.4</duration>
+			 
+			<description>向目标猛力发起3连击，逐渐降低目标的移动速度。</description>
+			
+			<meActionLabel>comboAttack</meActionLabel>
+		</skill>
+				<skill cnName="猛击-减速">
+					<name>comboPhantomHit</name>
+					<cnName>减速</cnName>
+					
+					<conditionType>passive</conditionType>
+					<condition>hit</condition>
+					<target>target</target>
+					
+					<addType>state</addType><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><noBeClearB>1</noBeClearB>
+					<overlyingB>1</overlyingB>
+					<effectType>moveSpeedOver</effectType>
+					<value>3</value>
+					<mul>1</mul>
+					<duration>5</duration>
+					
+					<stateEffectImg partType="2foot">skillEffect/disabled_enemy</stateEffectImg>
+					<description>。</description>
+				</skill>
+				
+		<skill index="0" cnName="旋击">
+			<name>rotatePhantom</name>
+			<cnName>旋击</cnName><iconUrl36>SkillIcon/rotatePhantom_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<cd>12</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>600</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>noUnderHurtB</effectType>
+			<duration>0.01</duration>
+			 
+			<description>向目标发起旋转攻击，造成巨大伤害。</description>
+			
+			<meActionLabel>rotateAttack</meActionLabel>
+		</skill>
+	</father>
+</data>

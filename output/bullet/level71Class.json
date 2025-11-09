@@ -1,0 +1,1171 @@
+{
+  "father": {
+    "name": "normal",
+    "gather": [
+      {
+        "name": "监狱大门",
+        "level": [
+          {
+            "name": "PrisonDoor_ghost",
+            "info": {
+              "enemyLv": 73
+            },
+            "sceneLabel": "PrisonDoor",
+            "fixed": {
+              "target": "PrisonDoor_1",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "no"
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "id": "e2_2",
+                      "condition": {
+                        "value": "enemyNumber:less_3",
+                        "doNumber": 6,
+                        "orderChooseType": "randomOne"
+                      },
+                      "order": [
+                        "createUnit:enemy1; r1",
+                        "createUnit:enemy1; r2",
+                        "createUnit:enemy1; r3"
+                      ]
+                    },
+                    {
+                      "id": "e1_1",
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "delay": 2
+                      }
+                    },
+                    {
+                      "id": "e2_3",
+                      "condition": {
+                        "value": "enemyNumber:less_3",
+                        "doNumber": 6,
+                        "orderChooseType": "randomOne"
+                      },
+                      "order": [
+                        "createUnit:enemy2; r1",
+                        "createUnit:enemy2; r2",
+                        "createUnit:enemy2; r3"
+                      ]
+                    },
+                    {
+                      "id": "e1_1",
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "delay": 2
+                      }
+                    },
+                    {
+                      "id": "e2_4",
+                      "condition": {
+                        "value": "enemyNumber:less_5",
+                        "doNumber": 1,
+                        "orderChooseType": "randomOne"
+                      },
+                      "order": [
+                        "createUnit:enemy3; r1",
+                        "createUnit:enemy3; r2",
+                        "createUnit:enemy3; r3"
+                      ]
+                    },
+                    {
+                      "id": "e_killAllEnemy",
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "delay": 1
+                      }
+                    },
+                    {
+                      "id": "e2_11",
+                      "condition": {
+                        "value": "task:state; PrisonDoor_ghost:ing",
+                        "delay": 0.1
+                      },
+                      "order": "level; showPointer:r_over"
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e2_5",
+                      "condition": {
+                        "value": "affterDelLevelEvent:e_killAllEnemy",
+                        "delay": 0.1
+                      }
+                    },
+                    {
+                      "id": "e2_11",
+                      "condition": {
+                        "value": "task:state; PrisonDoor_ghost:complete",
+                        "delay": 0.1
+                      },
+                      "order": "level; rebirthAllMore"
+                    },
+                    {
+                      "id": "e2_11",
+                      "condition": {
+                        "delay": 0.1
+                      },
+                      "order": "say; startList:s1"
+                    },
+                    {
+                      "id": "e2_11",
+                      "condition": {
+                        "value": "say:listOver; s1",
+                        "delay": 0.5
+                      },
+                      "order": [
+                        "worldMap:levelName; PrisonDoor:PrisonDoor_1",
+                        "level; showPointer:r_over"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "PrisonDoor_1",
+            "info": {
+              "enemyLv": 73
+            },
+            "sceneLabel": "PrisonDoor",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "监狱僵尸",
+                      "num": 1.5
+                    },
+                    {
+                      "cnName": "战斗僵尸",
+                      "num": 1.5
+                    },
+                    {
+                      "cnName": "鬼影战士",
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "监狱僵尸",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "战斗僵尸",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "鬼影战士",
+                      "num": 2.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "鬼影战士",
+                    "unitType": "boss",
+                    "num": 1,
+                    "dpsMul": 5,
+                    "lifeMul": 1.5
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1600,1300,285,72",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "3448,1264,60,132",
+                  "id": "r_over"
+                },
+                {
+                  "value": "52,800,286,72",
+                  "id": "r1"
+                },
+                {
+                  "value": "1600,800,286,72",
+                  "id": "r2"
+                },
+                {
+                  "value": "2825,800,286,72",
+                  "id": "r3"
+                },
+                {
+                  "value": "207,1256,68,68",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "3174,1256,68,68",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 1
+                    }
+                  },
+                  {
+                    "id": "e2_2",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 6,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e1_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 2
+                    }
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 6,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e1_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 2
+                    }
+                  },
+                  {
+                    "id": "e2_4",
+                    "condition": {
+                      "value": "enemyNumber:less_5",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e_win",
+                    "condition": "enemyNumber:less_1",
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "监狱第1层",
+        "level": [
+          {
+            "name": "PrisonFirst_wolf",
+            "info": {
+              "enemyLv": 74
+            },
+            "sceneLabel": "PrisonFirst",
+            "fixed": {
+              "target": "PrisonFirst_1",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "no"
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 1
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": [
+                      "worldMap:levelName; PrisonFirst:PrisonFirst_1",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "PrisonFirst_1",
+            "info": {
+              "enemyLv": 74
+            },
+            "sceneLabel": "PrisonFirst",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "独眼僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "监狱僵尸",
+                      "num": 9
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "独眼僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "监狱僵尸",
+                      "num": 1.5
+                    },
+                    {
+                      "cnName": "僵尸狙击兵",
+                      "lifeMul": 2,
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "独眼僵尸",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "监狱僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "吸血蝙蝠",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "僵尸狙击兵",
+                      "lifeMul": 2,
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "嗜血尸狼",
+                    "unitType": "boss",
+                    "lifeMul": 2,
+                    "dpsMul": 1.6
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "33,1319,134,72",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "2350,1311,36,100",
+                  "id": "r_over"
+                },
+                {
+                  "value": "749,827,224,66",
+                  "id": "r1"
+                },
+                {
+                  "value": "1619,811,210,78",
+                  "id": "r2"
+                },
+                {
+                  "value": "1545,1073,212,78",
+                  "id": "r3"
+                },
+                {
+                  "value": "257,993,40,40",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "2251,969,40,40",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 1
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "enemyNumber:less_1",
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "监狱深处",
+        "level": [
+          {
+            "name": "PrisonDeep_wolf",
+            "info": {
+              "enemyLv": 75
+            },
+            "sceneLabel": "PrisonDeep",
+            "fixed": {
+              "target": "PrisonDeep_1",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "no"
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 1
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": "level; rebirthAllMore"
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "say:listOver; s1",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "worldMap:levelName; PrisonDeep:PrisonDeep_1",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "PrisonDeep_1",
+            "info": {
+              "enemyLv": 75
+            },
+            "sceneLabel": "PrisonDeep",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "独眼僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "监狱僵尸",
+                      "num": 9
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "独眼僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "监狱僵尸",
+                      "num": 1.5
+                    },
+                    {
+                      "cnName": "鬼影战士",
+                      "lifeMul": 2,
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "独眼僵尸",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "监狱僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "屠刀僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "鬼影战士",
+                      "lifeMul": 2,
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "嗜血尸狼",
+                      "unitType": "boss",
+                      "lifeMul": 1.5,
+                      "dpsMul": 1.2
+                    },
+                    {
+                      "cnName": "火炮尸狼",
+                      "unitType": "boss",
+                      "lifeMul": 0.8,
+                      "dpsMul": 1.4
+                    }
+                  ]
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "41,2000,210,68",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "3450,1992,52,108",
+                  "id": "r_over"
+                },
+                {
+                  "value": "41,1668,400,94",
+                  "id": "r1"
+                },
+                {
+                  "value": "1373,1448,340,72",
+                  "id": "r2"
+                },
+                {
+                  "value": "2060,900,436,74",
+                  "id": "r3"
+                },
+                {
+                  "value": "167,1212,40,40",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "3368,1450,40,40",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 1
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "enemyNumber:less_1",
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "监狱出口",
+        "level": [
+          {
+            "name": "PrisonExport_duke",
+            "info": {
+              "enemyLv": 75
+            },
+            "sceneLabel": "PrisonExport",
+            "fixed": {
+              "target": "PrisonExport_1",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "no"
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 1
+                    }
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "say:listOver; s1",
+                      "delay": 0.5
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": [
+                      "level; rebirthAllMore",
+                      "task:now; complete",
+                      "worldMap:levelName; PrisonExport:PrisonExport_1",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "PrisonExport_1",
+            "info": {
+              "enemyLv": 75
+            },
+            "sceneLabel": "PrisonExport",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "独眼僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "监狱僵尸",
+                      "num": 9
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "独眼僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "监狱僵尸",
+                      "num": 1.5
+                    },
+                    {
+                      "cnName": "鬼影战士",
+                      "lifeMul": 2,
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "独眼僵尸",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "监狱僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "屠刀僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "鬼影战士",
+                      "lifeMul": 2,
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "鬼爵",
+                    "unitType": "boss",
+                    "lifeMul": 4,
+                    "dpsMul": 2
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1674,1304,190,68",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "3400,1302,38,90",
+                  "id": "r_over"
+                },
+                {
+                  "value": "686,1050,364,100",
+                  "id": "r1"
+                },
+                {
+                  "value": "2640,1050,364,100",
+                  "id": "r2"
+                },
+                {
+                  "value": "1576,530,364,100",
+                  "id": "r3"
+                },
+                {
+                  "value": "938,864,40,40",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "2434,864,40,40",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 1
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "enemyNumber:less_1",
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

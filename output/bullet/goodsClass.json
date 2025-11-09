@@ -1,0 +1,1967 @@
+{
+  "father": {
+    "name": "normal",
+    "cnName": "普通",
+    "priceType": "coin",
+    "labelArr": "hot,all,props,materials,fashion,vehicle,arms,parts,equip,other",
+    "type": [
+      {
+        "name": "hot",
+        "goods": [
+          {
+            "otherArr": "fashion",
+            "noOtherPathB": true,
+            "propId": 4535,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "阎罗时装",
+            "name": "yanluo",
+            "price": 1500,
+            "discount": 0.8,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "fashion",
+            "noOtherPathB": true,
+            "propId": 4534,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "惊雀时装",
+            "name": "officerYing",
+            "price": 1500,
+            "discount": 0.8,
+            "priceType": "money"
+          },
+          {
+            "propId": 4533,
+            "cnName": "巨蟹座碎片",
+            "name": "consCancer",
+            "price": 6,
+            "buyLimitNum": 600,
+            "chooseNumB": true,
+            "discount": 0.5,
+            "endTime": 1999,
+            "priceType": "money"
+          },
+          {
+            "propId": 4525,
+            "cnName": "镭射箱",
+            "name": "shuttleSword",
+            "price": 190,
+            "buyLimitNum": 4,
+            "chooseNumB": true,
+            "endTime": 1988,
+            "priceType": "money"
+          },
+          {
+            "propId": 4526,
+            "cnName": "黑洞箱",
+            "name": "blackHoleSword",
+            "price": 220,
+            "buyLimitNum": 4,
+            "chooseNumB": true,
+            "endTime": 1988,
+            "priceType": "money"
+          },
+          {
+            "propId": 4511,
+            "dataType": "equip",
+            "inBagType": "equip",
+            "cnName": "超远视镜",
+            "name": "superGlasses",
+            "price": 370,
+            "endTime": 1987,
+            "priceType": "money"
+          },
+          {
+            "propId": 3833,
+            "cnName": "神烦狗碎片",
+            "name": "dogHeadChip",
+            "defineLabel": "dogHead",
+            "num": 1,
+            "price": 4,
+            "chooseNumB": true,
+            "endTime": 1989,
+            "priceType": "money"
+          }
+        ]
+      },
+      {
+        "name": "props",
+        "goods": [
+          {
+            "propId": 1207,
+            "cnName": "队友重生卡",
+            "name": "teamRebirthCard",
+            "price": 5,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 1209,
+            "cnName": "技能刷新卡",
+            "name": "skillFleshCard",
+            "price": 5,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4172,
+            "cnName": "竞技宝箱",
+            "name": "arenaChest",
+            "num": 1,
+            "price": 3,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 3978,
+            "cnName": "扫荡卡",
+            "name": "sweepingCard",
+            "num": 1,
+            "price": 8,
+            "chooseNumB": true,
+            "dayBuyLimitNum": 30,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 3106,
+            "cnName": "双倍武器掉率卡",
+            "name": "doubleArmsCard",
+            "price": 10,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 3105,
+            "cnName": "双倍装备掉率卡",
+            "name": "doubleEquipCard",
+            "price": 8,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 1210,
+            "cnName": "双倍经验绿卡",
+            "name": "doubleCard",
+            "price": 5,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 1211,
+            "cnName": "双倍经验金卡",
+            "name": "doubleHighCard",
+            "price": 10,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4397,
+            "cnName": "魂卡券",
+            "name": "bossCardStamp",
+            "num": 1,
+            "price": 3,
+            "chooseNumB": true,
+            "buyLimitNum": 5000,
+            "priceType": "money"
+          },
+          {
+            "propId": 4110,
+            "cnName": "募兵券",
+            "name": "soldiersStamp",
+            "num": 1,
+            "price": 8,
+            "chooseNumB": true,
+            "dayBuyLimitNum": 7,
+            "priceType": "money"
+          },
+          {
+            "propId": 4424,
+            "cnName": "队友功勋牌",
+            "name": "exploitCard",
+            "num": 1,
+            "price": 30,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4396,
+            "cnName": "技能熟练卡",
+            "name": "profiStamp",
+            "price": 10,
+            "chooseNumB": true,
+            "num": 1,
+            "priceType": "money"
+          },
+          {
+            "propId": 1540,
+            "cnName": "改名卡",
+            "name": "renameCard",
+            "num": 1,
+            "price": 20,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 3897,
+            "cnName": "钥匙箱",
+            "name": "keyChest",
+            "price": 2,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 3547,
+            "cnName": "终级武器守护卡",
+            "name": "ultiArmsEchelonCard",
+            "price": 15,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 3709,
+            "cnName": "终级装备守护卡",
+            "name": "ultiEquipEchelonCard",
+            "price": 15,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4428,
+            "cnName": "高级武器守护卡",
+            "name": "highArmsEchelonCard",
+            "price": 5,
+            "chooseNumB": true,
+            "discount": 0.4,
+            "priceType": "money"
+          },
+          {
+            "propId": 4429,
+            "cnName": "高级装备守护卡",
+            "name": "highEquipEchelonCard",
+            "price": 5,
+            "chooseNumB": true,
+            "discount": 0.4,
+            "priceType": "money"
+          },
+          {
+            "propId": 4290,
+            "cnName": "装备守护卡",
+            "name": "equipEchelonCard",
+            "price": 2,
+            "num": 4,
+            "chooseNumB": true,
+            "discount": 0.5,
+            "priceType": "money"
+          },
+          {
+            "propId": 4289,
+            "cnName": "武器守护卡",
+            "name": "armsEchelonCard",
+            "price": 2,
+            "num": 4,
+            "chooseNumB": true,
+            "discount": 0.5,
+            "priceType": "money"
+          }
+        ]
+      },
+      {
+        "name": "materials",
+        "goods": [
+          {
+            "otherArr": "hot",
+            "propId": 1208,
+            "cnName": "重生石",
+            "name": "rebirthStone",
+            "price": 9,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 3980,
+            "cnName": "核能石",
+            "name": "nuclearStone",
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 2138,
+            "cnName": "光能石",
+            "name": "lightStone",
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 3961,
+            "cnName": "转化石",
+            "name": "converStone",
+            "price": 2,
+            "chooseNumB": true,
+            "num": 25,
+            "priceType": "money"
+          },
+          {
+            "propId": 3962,
+            "cnName": "神能石",
+            "name": "godStone",
+            "price": 2,
+            "chooseNumB": true,
+            "num": 30,
+            "priceType": "money"
+          },
+          {
+            "propId": 3963,
+            "cnName": "超能石",
+            "name": "skillStone",
+            "price": 1,
+            "chooseNumB": true,
+            "num": 50,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4393,
+            "cnName": "神武碎片",
+            "name": "allBlackCash",
+            "num": 5,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4393,
+            "cnName": "神护碎片",
+            "name": "allBlackEquipCash",
+            "num": 4,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 3909,
+            "cnName": "钛晶",
+            "name": "armsTitanium",
+            "num": 10,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 3909,
+            "cnName": "镭晶",
+            "name": "armsRadium",
+            "num": 10,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4503,
+            "name": "fireGem",
+            "num": 2,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4503,
+            "name": "electricGem",
+            "num": 2,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4503,
+            "name": "frozenGem",
+            "num": 2,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4503,
+            "name": "poisonGem",
+            "num": 2,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4504,
+            "name": "wisdomGem",
+            "num": 2,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4504,
+            "name": "agileGem",
+            "num": 2,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4504,
+            "name": "defenceGem",
+            "num": 2,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4504,
+            "name": "alertGem",
+            "num": 2,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4490,
+            "cnName": "氩石",
+            "name": "yaStone",
+            "price": 5,
+            "chooseNumB": true,
+            "buyLimitNum": 1200,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4491,
+            "cnName": "氩岗岩",
+            "name": "yaRock",
+            "price": 6,
+            "chooseNumB": true,
+            "buyLimitNum": 1000,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4402,
+            "cnName": "无双水晶",
+            "name": "demStone",
+            "price": 4,
+            "chooseNumB": true,
+            "buyLimitNum": 4000,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4403,
+            "cnName": "战神之心",
+            "name": "madheart",
+            "price": 4,
+            "chooseNumB": true,
+            "buyLimitNum": 2500,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4438,
+            "cnName": "万能球",
+            "name": "demBall",
+            "price": 2,
+            "chooseNumB": true,
+            "buyLimitNum": 2000,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4389,
+            "cnName": "血石x1000",
+            "name": "bloodStone1000",
+            "defineLabel": "bloodStone",
+            "price": 100,
+            "chooseNumB": true,
+            "num": 1000,
+            "priceType": "money"
+          },
+          {
+            "propId": 4048,
+            "cnName": "血石",
+            "name": "bloodStone",
+            "price": 1,
+            "num": 5,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4391,
+            "cnName": "强化石x1000",
+            "name": "strengthenStone1000",
+            "defineLabel": "strengthenStone",
+            "price": 100,
+            "chooseNumB": true,
+            "num": 1000,
+            "priceType": "money"
+          },
+          {
+            "propId": 2234,
+            "cnName": "强化石",
+            "name": "strengthenStone",
+            "defineLabel": "strengthenStone",
+            "num": 5,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4390,
+            "cnName": "强化剂1万个",
+            "name": "strengthenDrug10000",
+            "defineLabel": "strengthenDrug",
+            "price": 100,
+            "chooseNumB": true,
+            "num": 10000,
+            "priceType": "money"
+          },
+          {
+            "propId": 4057,
+            "cnName": "强化剂",
+            "name": "strengthenDrug",
+            "price": 1,
+            "chooseNumB": true,
+            "num": 50,
+            "priceType": "money"
+          },
+          {
+            "propId": 4506,
+            "cnName": "精石",
+            "name": "fineStone",
+            "price": 3,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4465,
+            "cnName": "升化剂",
+            "name": "intensDrug",
+            "price": 2,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4479,
+            "cnName": "聚魂石",
+            "name": "ghostStone",
+            "price": 8,
+            "chooseNumB": true,
+            "dayBuyLimitNum": 40,
+            "priceType": "money"
+          },
+          {
+            "propId": 4430,
+            "cnName": "玩具熊",
+            "name": "teddyBear",
+            "num": 1,
+            "price": 10,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 3975,
+            "cnName": "百合花",
+            "name": "lily",
+            "num": 1,
+            "price": 8,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4514,
+            "cnName": "神队卡片",
+            "name": "highPartnerCard",
+            "num": 1,
+            "price": 5,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4496,
+            "cnName": "背包位卡",
+            "dataType": "things",
+            "name": "bagGridCard",
+            "num": 6,
+            "price": 5,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4497,
+            "cnName": "仓库位卡",
+            "dataType": "things",
+            "name": "houseGridCard",
+            "num": 20,
+            "price": 5,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4486,
+            "cnName": "零件位卡",
+            "dataType": "things",
+            "name": "partsGridCard",
+            "num": 1,
+            "price": 40,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4056,
+            "cnName": "军备物资",
+            "name": "militarySupplies",
+            "price": 1,
+            "chooseNumB": true,
+            "num": 20,
+            "priceType": "money"
+          }
+        ]
+      },
+      {
+        "name": "fashion",
+        "goods": [
+          {
+            "otherArr": "hot",
+            "noOtherPathB": true,
+            "propId": 2611,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "圣诞老人时装",
+            "name": "santaClaus",
+            "price": 600,
+            "priceType": "money"
+          },
+          {
+            "noOtherPathB": true,
+            "propId": 2612,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "圣诞女郎时装",
+            "name": "christmasWoman",
+            "price": 600,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "noOtherPathB": true,
+            "propId": 4481,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "白狐心零时装",
+            "name": "foxLing",
+            "price": 820,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "noOtherPathB": true,
+            "propId": 4472,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "大圣时装",
+            "name": "greatSage",
+            "price": 1500,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "noOtherPathB": true,
+            "propId": 4432,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "雪影时装",
+            "name": "snowShadow",
+            "price": 1500,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "noOtherPathB": true,
+            "propId": 4425,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "紫嫣小美时装",
+            "name": "purpleMei",
+            "price": 700,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "noOtherPathB": true,
+            "propId": 4401,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "刹鬼时装",
+            "name": "hundredGhosts",
+            "price": 1500,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "noOtherPathB": true,
+            "propId": 4327,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "噬魂时装",
+            "name": "phageNew",
+            "price": 1500,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "noOtherPathB": true,
+            "propId": 4395,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "黄金隼",
+            "name": "goldFalcon",
+            "price": 1000,
+            "priceType": "money"
+          },
+          {
+            "noOtherPathB": true,
+            "propId": 3947,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "军长时装",
+            "name": "armyCommander",
+            "price": 1200,
+            "priceType": "money"
+          },
+          {
+            "noOtherPathB": true,
+            "propId": 3655,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "五星队长",
+            "name": "chinaCaptain2",
+            "price": 1100,
+            "priceType": "money"
+          },
+          {
+            "noOtherPathB": true,
+            "propId": 4360,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "白宙时装",
+            "name": "whiteUniver",
+            "price": 400,
+            "discount": 0.8,
+            "priceType": "money"
+          },
+          {
+            "noOtherPathB": true,
+            "propId": 4361,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "清凉心零时装",
+            "name": "swimLing",
+            "price": 800,
+            "priceType": "money"
+          },
+          {
+            "noOtherPathB": true,
+            "propId": 4329,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "噬原时装",
+            "name": "phage",
+            "price": 1500,
+            "discount": 0.8,
+            "endTime": 1983,
+            "priceType": "money"
+          },
+          {
+            "noOtherPathB": true,
+            "propId": 4303,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "牛仔小樱时装",
+            "name": "cowboyYing",
+            "price": 800,
+            "priceType": "money"
+          },
+          {
+            "noOtherPathB": true,
+            "propId": 4304,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "机甲小樱时装",
+            "name": "mechaYing",
+            "price": 800,
+            "priceType": "money"
+          },
+          {
+            "propId": 4294,
+            "cnName": "工人帽碎片",
+            "name": "workerHead",
+            "num": 1,
+            "price": 10,
+            "chooseNumB": true,
+            "endTime": 1986,
+            "buyLimitNum": 40,
+            "priceType": "money"
+          },
+          {
+            "noOtherPathB": true,
+            "propId": 3966,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "大Boss时装",
+            "name": "bigBoss",
+            "price": 1200,
+            "discount": 0.85,
+            "priceType": "money"
+          },
+          {
+            "noOtherPathB": true,
+            "propId": 4113,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "悟空时装",
+            "name": "wuKong",
+            "price": 800,
+            "discount": 0.9,
+            "priceType": "money"
+          },
+          {
+            "noOtherPathB": true,
+            "propId": 4114,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "哪吒时装",
+            "name": "neZha",
+            "price": 800,
+            "discount": 0.9,
+            "priceType": "money"
+          },
+          {
+            "noOtherPathB": true,
+            "propId": 3970,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "学生心零时装",
+            "name": "studentLing",
+            "price": 650,
+            "priceType": "money"
+          },
+          {
+            "noOtherPathB": true,
+            "propId": 3971,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "助手心零时装",
+            "name": "helperLing",
+            "price": 500,
+            "priceType": "money"
+          },
+          {
+            "noOtherPathB": true,
+            "propId": 2295,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "团长时装",
+            "name": "levi",
+            "price": 550,
+            "priceType": "money"
+          },
+          {
+            "noOtherPathB": true,
+            "propId": 2299,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "小乐时装",
+            "name": "kagura",
+            "price": 650,
+            "priceType": "money"
+          },
+          {
+            "noOtherPathB": true,
+            "propId": 2298,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "小巴时装",
+            "name": "saber",
+            "price": 650,
+            "priceType": "money"
+          },
+          {
+            "noOtherPathB": true,
+            "propId": 3967,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "小金时装",
+            "name": "xiaoJin",
+            "price": 800,
+            "discount": 0.85,
+            "priceType": "money"
+          },
+          {
+            "noOtherPathB": true,
+            "propId": 3968,
+            "dataType": "fashion",
+            "inBagType": "equip",
+            "cnName": "夜魔时装",
+            "name": "nightmare",
+            "price": 700,
+            "discount": 0.85,
+            "priceType": "money"
+          },
+          {
+            "propId": 3904,
+            "cnName": "狼首时装碎片",
+            "name": "wolfFashion",
+            "price": 5,
+            "num": 4,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 2777,
+            "cnName": "蚁人碎片",
+            "name": "antMan",
+            "price": 5,
+            "chooseNumB": true,
+            "num": 4,
+            "priceType": "money"
+          }
+        ]
+      },
+      {
+        "name": "vehicle",
+        "goods": [
+          {
+            "otherArr": "hot",
+            "noOtherPathB": true,
+            "propId": 1783,
+            "dataType": "vehicle",
+            "inBagType": "equip",
+            "cnName": "泰坦",
+            "name": "Titans",
+            "price": 1500,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "noOtherPathB": true,
+            "propId": 4078,
+            "dataType": "vehicle",
+            "inBagType": "equip",
+            "cnName": "幽鬼",
+            "name": "BlueMoto",
+            "price": 1500,
+            "discount": 0.8,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "noOtherPathB": true,
+            "propId": 1792,
+            "dataType": "vehicle",
+            "inBagType": "equip",
+            "cnName": "制裁者",
+            "name": "Punisher",
+            "price": 1000,
+            "priceType": "money"
+          },
+          {
+            "noOtherPathB": true,
+            "propId": 1781,
+            "dataType": "vehicle",
+            "inBagType": "equip",
+            "cnName": "先知",
+            "name": "Prophet",
+            "price": 750,
+            "priceType": "money"
+          },
+          {
+            "propId": 4079,
+            "dataType": "vehicle",
+            "inBagType": "equip",
+            "cnName": "挖掘者",
+            "name": "Diggers",
+            "price": 400,
+            "priceType": "money"
+          },
+          {
+            "propId": 4439,
+            "dataType": "vehicle",
+            "inBagType": "equip",
+            "cnName": "沙漠进袭者",
+            "name": "DesertTank",
+            "price": 60,
+            "priceType": "money"
+          },
+          {
+            "propId": 4500,
+            "dataType": "vehicle",
+            "inBagType": "equip",
+            "cnName": "收割者",
+            "name": "RedReaper",
+            "price": 80,
+            "priceType": "money"
+          },
+          {
+            "propId": 4500,
+            "dataType": "vehicle",
+            "inBagType": "equip",
+            "cnName": "破晓",
+            "name": "Daybreak",
+            "price": 80,
+            "priceType": "money"
+          },
+          {
+            "propId": 4500,
+            "dataType": "vehicle",
+            "inBagType": "equip",
+            "cnName": "巨鲸",
+            "name": "BlueWhale",
+            "price": 80,
+            "priceType": "money"
+          },
+          {
+            "propId": 4500,
+            "dataType": "vehicle",
+            "inBagType": "equip",
+            "cnName": "潜行者",
+            "name": "SeaShark",
+            "price": 80,
+            "priceType": "money"
+          },
+          {
+            "propId": 3942,
+            "cnName": "年兽碎片",
+            "name": "NianCarCash",
+            "price": 1,
+            "num": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4501,
+            "cnName": "狩猎者碎片",
+            "name": "AircraftGunCash",
+            "price": 2,
+            "num": 4,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 2103,
+            "cnName": "挖掘者碎片",
+            "name": "DiggersCash",
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 1967,
+            "cnName": "泰坦碎片",
+            "name": "TitansCash",
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 1968,
+            "cnName": "制裁者碎片",
+            "name": "PunisherCash",
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 1968,
+            "cnName": "先知碎片",
+            "name": "ProphetCash",
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4528,
+            "cnName": "赤焰碎片",
+            "name": "RedMotoCash",
+            "price": 1,
+            "num": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4498,
+            "cnName": "沙漠进袭者碎片",
+            "name": "DesertTankCash",
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4498,
+            "cnName": "破晓碎片",
+            "name": "DaybreakCash",
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4498,
+            "cnName": "收割者碎片",
+            "name": "RedReaperCash",
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4498,
+            "cnName": "潜行者碎片",
+            "name": "SeaSharkCash",
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4498,
+            "cnName": "巨鲸碎片",
+            "name": "BlueWhaleCash",
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          }
+        ]
+      },
+      {
+        "name": "arms",
+        "goods": [
+          {
+            "propId": 4524,
+            "cnName": "天秤座碎片",
+            "name": "consLibra",
+            "price": 2,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4512,
+            "cnName": "极源碎片",
+            "name": "extremeGun",
+            "price": 6,
+            "chooseNumB": true,
+            "buyLimitNum": 250,
+            "priceType": "money"
+          },
+          {
+            "propId": 4513,
+            "cnName": "隼武碎片",
+            "name": "falconGun",
+            "price": 6,
+            "chooseNumB": true,
+            "buyLimitNum": 250,
+            "priceType": "money"
+          },
+          {
+            "propId": 4515,
+            "cnName": "星轨碎片",
+            "name": "starTrails",
+            "price": 3,
+            "chooseNumB": true,
+            "buyLimitNum": 200,
+            "priceType": "money"
+          },
+          {
+            "propId": 4516,
+            "cnName": "漫游碎片",
+            "name": "roamRocket",
+            "price": 4,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4399,
+            "cnName": "荒芒碎片",
+            "name": "barrenAwn",
+            "price": 7,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4339,
+            "cnName": "万能生肖碎片",
+            "name": "zodiacCash",
+            "num": 1,
+            "price": 2,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4404,
+            "cnName": "光锥碎片",
+            "name": "lightCone",
+            "num": 1,
+            "price": 5,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 3911,
+            "cnName": "卡特巨炮碎片",
+            "name": "rocketCate",
+            "price": 3,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4314,
+            "cnName": "铄金之源",
+            "name": "meltFlamer",
+            "num": 1,
+            "price": 2,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4262,
+            "cnName": "天弓碎片",
+            "name": "skyArch",
+            "num": 1,
+            "price": 2,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 3939,
+            "cnName": "亥猪碎片",
+            "name": "yearPig",
+            "num": 1,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4111,
+            "cnName": "戌狗碎片",
+            "name": "yearDog",
+            "num": 1,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4109,
+            "cnName": "丑牛碎片",
+            "name": "yearCattle",
+            "num": 1,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4089,
+            "cnName": "卯兔碎片",
+            "name": "yearRabbit",
+            "num": 1,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4043,
+            "cnName": "申猴碎片",
+            "name": "yearMonkey",
+            "num": 1,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 3976,
+            "cnName": "子鼠碎片",
+            "name": "yearMouse",
+            "num": 1,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 3946,
+            "cnName": "巳蛇碎片",
+            "name": "yearSnake",
+            "num": 1,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 3950,
+            "cnName": "午马碎片",
+            "name": "yearHourse",
+            "num": 1,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 3949,
+            "cnName": "酉鸡碎片",
+            "name": "yearChicken",
+            "num": 1,
+            "price": 7,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 3215,
+            "cnName": "蚀骨碎片",
+            "name": "erosionFlamer",
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 3217,
+            "cnName": "烟花弩碎片",
+            "name": "beadCrossbow",
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4502,
+            "cnName": "钢笔枪碎片",
+            "name": "penGun",
+            "num": 1,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4527,
+            "cnName": "贪吃蛇碎片",
+            "name": "greedySnake",
+            "num": 1,
+            "price": 2,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4173,
+            "cnName": "弦音碎片",
+            "name": "pianoGun",
+            "num": 1,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 3905,
+            "cnName": "洪荒碎片",
+            "name": "waterFlamer",
+            "price": 2,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4420,
+            "cnName": "战斧稀有碎片",
+            "name": "shotgunBlade",
+            "price": 4,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4421,
+            "cnName": "祖龙稀有碎片",
+            "name": "FlyDragonGun",
+            "price": 3,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4418,
+            "cnName": "圣诞礼炮碎片",
+            "name": "christmasGunChip",
+            "defineLabel": "christmasGun",
+            "price": 3,
+            "chooseNumB": true,
+            "priceType": "money"
+          }
+        ]
+      },
+      {
+        "name": "parts",
+        "goods": [
+          {
+            "otherArr": "hot",
+            "propId": 4436,
+            "cnName": "爆裂弹",
+            "dataType": "parts",
+            "name": "burstParts_1",
+            "num": 1,
+            "price": 100,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4485,
+            "cnName": "消磁器",
+            "dataType": "parts",
+            "name": "degaussingParts_1",
+            "num": 1,
+            "price": 50,
+            "chooseNumB": true,
+            "dayBuyLimitNum": 1,
+            "priceType": "money"
+          },
+          {
+            "propId": 4484,
+            "cnName": "挖墙弹",
+            "dataType": "parts",
+            "name": "digWallParts_1",
+            "num": 1,
+            "price": 80,
+            "chooseNumB": true,
+            "buyLimitNum": 1,
+            "priceType": "money"
+          },
+          {
+            "propId": 4483,
+            "cnName": "减速器",
+            "dataType": "parts",
+            "name": "downSpeedParts_1",
+            "num": 1,
+            "price": 30,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4473,
+            "cnName": "C型枪管",
+            "dataType": "parts",
+            "name": "lshapedParts_1",
+            "num": 1,
+            "price": 70,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4474,
+            "cnName": "元素泡",
+            "dataType": "parts",
+            "name": "eleParts_1",
+            "num": 1,
+            "price": 60,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4475,
+            "cnName": "连发器",
+            "dataType": "parts",
+            "name": "twoShootParts_1",
+            "num": 1,
+            "price": 60,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4476,
+            "cnName": "穿人器",
+            "dataType": "parts",
+            "name": "penbodyParts_1",
+            "num": 1,
+            "price": 70,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4461,
+            "cnName": "生化球",
+            "dataType": "parts",
+            "name": "poisonParts_1",
+            "num": 1,
+            "price": 250,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4458,
+            "cnName": "电磁球",
+            "dataType": "parts",
+            "name": "electricParts_1",
+            "num": 1,
+            "price": 250,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4459,
+            "cnName": "火焰球",
+            "dataType": "parts",
+            "name": "fireParts_1",
+            "num": 1,
+            "price": 250,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4460,
+            "cnName": "冷冻球",
+            "dataType": "parts",
+            "name": "frozenParts_1",
+            "num": 1,
+            "price": 250,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4507,
+            "cnName": "猎人技能器",
+            "dataType": "parts",
+            "name": "huntParts_1",
+            "num": 1,
+            "price": 2,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4508,
+            "cnName": "腐蚀芯片",
+            "dataType": "parts",
+            "name": "acidicParts_1",
+            "num": 1,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          }
+        ]
+      },
+      {
+        "name": "equip",
+        "goods": [
+          {
+            "otherArr": "hot",
+            "propId": 4532,
+            "cnName": "死神碎片",
+            "name": "sickleScythe_1",
+            "price": 3,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4426,
+            "cnName": "凯撒箱",
+            "name": "sprintSword20",
+            "price": 1500,
+            "buyLimitNum": 1,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4274,
+            "dataType": "device",
+            "inBagType": "equip",
+            "cnName": "镭射穿梭器",
+            "name": "shuttleDevicer_1",
+            "num": 1,
+            "price": 8,
+            "dayBuyLimitNum": 8,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4435,
+            "cnName": "斩之核心碎片",
+            "name": "hookDevice_1",
+            "num": 1,
+            "price": 4,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4471,
+            "cnName": "远视镜碎片",
+            "name": "longGlasses_1",
+            "price": 7,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4505,
+            "cnName": "神谕战衣碎片",
+            "name": "oracleSuit_coat",
+            "price": 1,
+            "num": 2,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4505,
+            "cnName": "神谕腰带碎片",
+            "name": "oracleSuit_belt",
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4505,
+            "cnName": "神谕头盔碎片",
+            "name": "oracleSuit_head",
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 2787,
+            "dataType": "weapon",
+            "inBagType": "equip",
+            "cnName": "凯撒",
+            "name": "sprintSword_1",
+            "price": 350,
+            "discount": 0.5,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4523,
+            "cnName": "异龙蛋碎片",
+            "name": "dinosaurEgg_1",
+            "price": 2,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4086,
+            "dataType": "weapon",
+            "inBagType": "equip",
+            "cnName": "剑齿镖",
+            "name": "saberDarts_1",
+            "price": 200,
+            "discount": 0.5,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4241,
+            "cnName": "暴君之骷碎片",
+            "name": "skeletonMedal_1",
+            "num": 1,
+            "price": 2,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 3944,
+            "cnName": "兽甲碎片",
+            "name": "crabShell",
+            "num": 1,
+            "price": 2,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4519,
+            "cnName": "骷髅权杖碎片",
+            "name": "skeletonWand_1",
+            "price": 2,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4517,
+            "cnName": "王者之翼碎片",
+            "name": "kingWing_heroChip",
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4518,
+            "cnName": "斗士之角碎片",
+            "name": "duelistClaw_1",
+            "price": 2,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4520,
+            "cnName": "无疆之章碎片",
+            "name": "knightsMedal_1",
+            "price": 3,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4521,
+            "cnName": "部落骨环碎片",
+            "name": "boneRing_1",
+            "price": 2,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 3613,
+            "cnName": "副手箱",
+            "name": "weaponChest",
+            "num": 2,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 3119,
+            "cnName": "装置箱",
+            "name": "deviceChest",
+            "num": 2,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          }
+        ]
+      },
+      null,
+      {
+        "name": "other",
+        "goods": [
+          {
+            "cnName": "生命药瓶",
+            "name": "lifeBottle",
+            "price": 0.4,
+            "chooseNumB": true,
+            "priceType": "coin",
+            "priceExtra": "levelCoinIncome"
+          },
+          {
+            "cnName": "弹药箱",
+            "name": "caisson",
+            "price": 0.4,
+            "chooseNumB": true,
+            "priceType": "coin",
+            "priceExtra": "levelCoinIncome"
+          },
+          {
+            "cnName": "队友生命药瓶",
+            "name": "teamLifeBottle",
+            "price": 0.4,
+            "chooseNumB": true,
+            "priceType": "coin",
+            "priceExtra": "levelCoinIncome"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 4400,
+            "cnName": "全域光波碎片",
+            "name": "silverScreen_heroChip",
+            "price": 15,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4522,
+            "cnName": "翻滚技能碎片",
+            "name": "rolling_heroChip",
+            "price": 3,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4112,
+            "cnName": "附身碎片",
+            "name": "possession_heroChip",
+            "num": 1,
+            "price": 2,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 2772,
+            "cnName": "滑翔技能碎片",
+            "name": "gliding_heroChip",
+            "price": 2,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "otherArr": "hot",
+            "propId": 2786,
+            "dataType": "gene",
+            "inBagType": "gene",
+            "cnName": "雷克基因体",
+            "name": "PetLake",
+            "price": 600,
+            "priceType": "money"
+          },
+          {
+            "propId": 1820,
+            "dataType": "gene",
+            "inBagType": "gene",
+            "cnName": "铁魁基因体",
+            "name": "PetIronChief",
+            "price": 370,
+            "priceType": "money"
+          },
+          {
+            "propId": 1821,
+            "dataType": "gene",
+            "inBagType": "gene",
+            "cnName": "爆骷基因体",
+            "name": "PetBoomSkull",
+            "price": 370,
+            "priceType": "money"
+          },
+          {
+            "propId": 4055,
+            "cnName": "战宠号角",
+            "name": "petSuppleCard",
+            "price": 10,
+            "chooseNumB": true,
+            "discount": 0.4,
+            "priceType": "money"
+          },
+          {
+            "propId": 1991,
+            "cnName": "生命催化剂",
+            "name": "lifeCatalyst",
+            "price": 10,
+            "chooseNumB": true,
+            "num": 10,
+            "priceType": "money"
+          },
+          {
+            "propId": 1992,
+            "cnName": "能量催化剂",
+            "name": "energyCatalyst",
+            "price": 10,
+            "chooseNumB": true,
+            "num": 10,
+            "priceType": "money"
+          },
+          {
+            "propId": 1993,
+            "cnName": "变异催化剂",
+            "name": "variationCatalyst",
+            "price": 10,
+            "chooseNumB": true,
+            "num": 10,
+            "priceType": "money"
+          },
+          {
+            "propId": 4531,
+            "cnName": "雷斯图鉴",
+            "name": "PetLakeBook",
+            "num": 1,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4529,
+            "cnName": "爆骷S图鉴",
+            "name": "PetBoomSkullBook",
+            "num": 1,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4530,
+            "cnName": "冥王图鉴",
+            "name": "PetIronChiefBook",
+            "num": 1,
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 4058,
+            "cnName": "商券",
+            "name": "taxStamp",
+            "price": 2,
+            "chooseNumB": true,
+            "num": 15,
+            "discount": 0.5,
+            "priceType": "money"
+          },
+          {
+            "propId": 3730,
+            "cnName": "装扮券",
+            "name": "dressStamp",
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 3731,
+            "cnName": "高级装扮券",
+            "name": "dressStampHigh",
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "propId": 3732,
+            "cnName": "黄金装扮券",
+            "name": "dressStampGold",
+            "price": 10,
+            "chooseNumB": true,
+            "priceType": "money"
+          },
+          {
+            "cnName": "时空令牌",
+            "name": "spaceToken",
+            "price": 1,
+            "chooseNumB": true,
+            "priceType": "coin",
+            "priceExtra": "levelCoinIncome"
+          },
+          {
+            "propId": 4288,
+            "cnName": "中型银币堆",
+            "name": "coinHeap_2",
+            "price": 10,
+            "chooseNumB": true,
+            "discount": 0.3,
+            "priceType": "money"
+          },
+          {
+            "propId": 4287,
+            "cnName": "大型银币堆",
+            "name": "coinHeap_3",
+            "price": 50,
+            "chooseNumB": true,
+            "discount": 0.4,
+            "priceType": "money"
+          }
+        ]
+      }
+    ]
+  }
+}

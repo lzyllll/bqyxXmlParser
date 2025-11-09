@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="哨兵">
+		<skill index="0" cnName="绝命攻击">
+			<name>missile_Sentry</name>
+			<cnName>绝命攻击</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>missile_Sentry</effectType>
+			<mul>0.1</mul>
+			
+			<description>每次攻击都目标造成最大生命值[mul]的伤害。</description>
+		</skill>
+	</father>	
+	</data>

@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="wilder" cnName="枯荣镇">
+		<body index="0" name="炸裂者" shell="normal">
+			
+			<name>DryFrog</name>
+			<cnName>炸裂者</cnName><headIconUrl>IconGather/DryFrog</headIconUrl>
+			<raceType>zombie</raceType>
+			<swfUrl>swf/enemy/DryFrog.swf</swfUrl>
+			
+			<imgType>normal</imgType>
+			<lifeRatio>2</lifeRatio>
+			<showLevel>999</showLevel>
+			<headHurtMul>1</headHurtMul>
+			
+			<imgArr>
+				stand,move,die1,hurt1
+				,normalAttack,shootAttack,pullAttack,rotateAttack,pourAttack,leapAttack
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			<lifeBarExtraHeight>-80</lifeBarExtraHeight>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>8</maxVx>
+			<runStartVx>10</runStartVx>
+			
+			<avtiveSkillCdOverT>0.1</avtiveSkillCdOverT>
+			<nextAttackTime>0</nextAttackTime>
+			<preBulletArr>DryFrogPour_zero</preBulletArr>
+			
+			<bulletLauncherClass />
+			<skillArr />
+			<bossSkillArr>fightReduct,defenceBounce_enemy,DryFrogPull,DryFrogRotate,DryFrogPour,DryFrogJump</bossSkillArr>
+			<extraDropArmsB>1</extraDropArmsB>
+			<extraAIClassLabel>DryFrog_AIExtra</extraAIClassLabel>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel><cn>飞踹</cn>
+					<hurtRatio>0.5</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" soundUrl="sound/body_hit" raNum="30">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><cn>投弹</cn>
+					<bulletLabel>DryFrog_shoot</bulletLabel>
+					<grapRect>-366,-108,171,108</grapRect>
+					<hurtRatio>0.5</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				
+				<hurt info="不加入ai选择"><noAiChooseB>1</noAiChooseB>
+					<imgLabel>pullAttack</imgLabel>
+					<hurtRatio>0.001</hurtRatio>
+					<skillArr>DryFrogPullHit,DryFrogPullPosion</skillArr>
+					<attackType>holy</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/body_hit">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt info="不加入ai选择"><noAiChooseB>1</noAiChooseB>
+					<imgLabel>rotateAttack</imgLabel>
+					<bulletLabel>DryFrogRotate</bulletLabel>
+					<hurtRatio>1</hurtRatio>
+					<grapRect>-300,-111,250,105</grapRect>
+				</hurt>
+				<hurt info="不加入ai选择"><noAiChooseB>1</noAiChooseB>
+					<imgLabel>pourAttack</imgLabel>
+					<bulletLabel>DryFrogPour</bulletLabel>
+					<hurtMul>0.12</hurtMul>
+					<attackType>holy</attackType>
+					<grapRect>-300,-111,250,105</grapRect>
+				</hurt>
+				<hurt info="不加入ai选择"><noAiChooseB>1</noAiChooseB>
+					<imgLabel>leapAttack</imgLabel>
+					<skillArr>emp_wind</skillArr>
+					<hurtMul>0.2</hurtMul>
+					<attackType>holy</attackType>
+					<grapRect>-300,-111,250,105</grapRect>
+					<hitImgUrl con="add" soundUrl="sound/laserShoot2">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				
+			</hurtArr>
+		</body>
+		
+		<body index="0" name="极速守卫" shell="metal">
+			
+			<name>FastGuards</name>
+			<cnName>极速守卫</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/FastGuards.swf</swfUrl>
+			
+			<imgType>normal</imgType>
+			<lifeRatio>2</lifeRatio>
+			<showLevel>999</showLevel>
+			<headHurtMul>3</headHurtMul>
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<imgArr>
+				stand,move,die1,hurt1
+				,shootAttack,eleAttack,screenAttack,missileAttack,springAttack
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,die1
+			</imgArr>
+			<rotateBySlopeB>1</rotateBySlopeB>
+			
+			<hitRect>-30,-88,60,88</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>15</maxVx>
+			
+			<avtiveSkillCdOverT>0.1</avtiveSkillCdOverT>
+			<nextAttackTime>0</nextAttackTime>
+			<preBulletArr>FastGuards_screen,FastGuards_missileChild,FastGuards_missileSun</preBulletArr>
+			
+			<bulletLauncherClass>VehicleBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			<bossSkillArr>fightReduct,FastGuards_spring,eleField_FastGuards,FastGuards_screen,FastGuards_missile</bossSkillArr>
+			<extraDropArmsB>1</extraDropArmsB>
+			<extraAIClassLabel>FastGuards_AIExtra</extraAIClassLabel>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel>
+					<bulletLabel>FastGuards_shoot</bulletLabel>
+					<grapRect>-366,-108,171,108</grapRect>
+					<hurtRatio>0.2</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt name="不加入ai选择">
+					<imgLabel>missileAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<bulletLabel>FastGuards_missile</bulletLabel>
+					<grapRect>-366,-108,171,108</grapRect>
+					<hurtRatio>2</hurtRatio>
+					<attackType>holy</attackType>
+				</hurt>
+				
+				<hurt name="不加入ai选择">
+					<imgLabel>springAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<noUseOtherSkillB>1</noUseOtherSkillB>
+					<ingfollowB>1</ingfollowB>
+					<hurtMul>0.05</hurtMul>
+					<attackType>holy</attackType>
+					<hitImgUrl con="add" soundUrl="sound/body_hit" raNum="30">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt name="不加入ai选择">
+					<imgLabel>FastGuards_screen</imgLabel><noAiChooseB>1</noAiChooseB>
+					<noUseOtherSkillB>1</noUseOtherSkillB>
+					<grapRect>-366,-108,171,108</grapRect>
+				</hurt>
+				
+				
+				
+			</hurtArr>
+		</body>
+		
+		<body index="0" name="编织者" shell="compound">
+			
+			<name>Weaver</name>
+			<cnName>编织者</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/Weaver.swf</swfUrl>
+			
+			<lifeRatio>2</lifeRatio>
+			<showLevel>999</showLevel>
+			<headHurtMul>2</headHurtMul>
+			
+			<imgArr>
+				stand,move
+				,normalAttack,shootAttack,smokeAttack,webAttack,summonedAttack,thornAttack
+				,hurt1,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+			</imgArr>
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<rotateBySlopeB>1</rotateBySlopeB>
+			<lifeBarExtraHeight>-50</lifeBarExtraHeight>
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			
+			<maxVx>8</maxVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>Weaver_ExtraAI</extraAIClassLabel>
+			
+			<bulletLauncherClass>VehicleBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			<bossSkillArr>cmldef2_enemy,trueshot_enemy,fightReduct,Weaver_summoned,Weaver_smoke,Weaver_web,Weaver_thorn</bossSkillArr>
+			<bossSkillArrCn />
+			<extraDropArmsB>1</extraDropArmsB>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel>
+					<hurtRatio>3</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<grapRect>-150,-111,150,105</grapRect>
+					<hitImgUrl con="add" soundUrl="sound/body_hit" raNum="30">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel>
+					<bulletLabel>Weaver_shoot</bulletLabel>
+					<grapRect>-300,-111,100,105</grapRect>
+					<hurtRatio>1.5</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				
+				<hurt name="不加入ai选择">
+					<imgLabel>smokeAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<bulletLabel>Weaver_smoke</bulletLabel>
+					<grapRect>-300,-111,100,105</grapRect>
+					<hurtRatio>6</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt name="不加入ai选择">
+					<imgLabel>thornAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.000001</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>holy</attackType>
+					<grapRect>-150,-111,150,105</grapRect>
+					<hitImgUrl con="add" soundUrl="sound/body_hit" raNum="30">bulletHitEffect/energy</hitImgUrl>
+					<skillArr>Weaver_thorn_hit</skillArr>
+				</hurt>
+			</hurtArr>
+		</body>	
+		
+		<body index="0" name="决斗者">
+			
+			<name>Duelist</name>
+			<cnName>决斗者</cnName>
+			<raceType>zombie</raceType>
+			<swfUrl>swf/enemy/Duelist287.swf</swfUrl>
+			
+			<imgType>normal</imgType>
+			<lifeRatio>2</lifeRatio>
+			<showLevel>999</showLevel>
+			<headHurtMul>1</headHurtMul>
+			
+			<imgArr>
+				stand,move,die1,hurt1
+				,normalAttack,kickAttack,shakeAttack,shootAttack,comboAttack
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			<lifeBarExtraHeight>-80</lifeBarExtraHeight>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>10</maxVx>
+			
+			<avtiveSkillCdOverT>0.1</avtiveSkillCdOverT>
+			<nextAttackTime>0</nextAttackTime>
+			<preBulletArr />
+			
+			<bulletLauncherClass />
+			<skillArr>DuelistEffect</skillArr>
+			<bossSkillArr>fightReduct,defenceBounce_enemy,DuelistShoot,DuelistShake,DuelistCombo</bossSkillArr>
+			<extraDropArmsB>1</extraDropArmsB>
+			<extraAIClassLabel>Duelist_AIExtra</extraAIClassLabel>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel><cn>拳击</cn>
+					<hurtRatio>0.5</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" soundUrl="sound/body_hit">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt cd="1">
+					<imgLabel>kickAttack</imgLabel><cn>膝撞</cn>
+					<hurtRatio>2</hurtRatio>
+					<grapRect>-300,-80,200,80</grapRect>
+					<shakeValue>4</shakeValue>
+					<beatBack>5</beatBack>
+					<meBack>5</meBack>
+					<attackType>holy</attackType>
+					<hitImgUrl con="add" soundUrl="sound/body_hit">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt><br />
+				
+				<hurt info="不加入ai选择">
+					<imgLabel>shakeAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtMul>0.2</hurtMul>
+					<shakeValue>4</shakeValue>
+					<skillArr>DuelistShakeSlow</skillArr>
+					<attackType>holy</attackType>
+					<hitImgUrl con="add" soundUrl="sound/body_hit" raNum="30">bulletHitEffect/bluntBig</hitImgUrl>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>shootAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<bulletLabel>Duelist_shoot</bulletLabel>
+					<grapRect>-366,-108,171,108</grapRect>
+					<hurtMul>0.3</hurtMul>
+					<attackType>holy</attackType>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>comboAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<grapRect>-366,-108,171,108</grapRect>
+					<skillArr>DuelistComboHit</skillArr>
+					<hurtMul>0.2</hurtMul>
+					<attackType>holy</attackType>
+					<hitImgUrl con="add" soundUrl="sound/body_hit" raNum="30">bulletHitEffect/bluntBig</hitImgUrl>
+				</hurt>
+				
+			</hurtArr>
+		</body>
+	</father>	
+	</data>

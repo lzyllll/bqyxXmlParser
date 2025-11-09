@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="pet" cnName="尸宠">
+		<body shell="compound">
+		
+			<name>PetBoomSkullS</name>
+			<cnName>爆骷S</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/pet/PetBoomSkullS.swf</swfUrl>
+			<headIconUrl>IconGather/PetBoomSkullS</headIconUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<rosRatio>1</rosRatio>
+			<headHurtMul>0.5</headHurtMul>
+			
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move,die1
+				,shootAttack1,shootAttack2
+			</imgArr>
+			<lifeBarExtraHeight>-50</lifeBarExtraHeight>
+			
+			<hitRect>-30,-88,60,88</hitRect>
+			
+			<maxVx>7</maxVx>
+			<motionState>fly</motionState>
+			<flyUseSpiderB>1</flyUseSpiderB>
+			<flyType>tween</flyType>
+			
+			<skillArr />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>shootAttack1</imgLabel>
+					<bulletLabel>PetBoomSkullS_shoot1</bulletLabel>
+					<grapRect>-700,-200,600,400</grapRect>
+					<hurtRatio>3.5</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack2</imgLabel>
+					<bulletLabel>PetBoomSkullS_machine</bulletLabel>
+					<grapRect>-450,-200,200,400</grapRect>
+					<hurtRatio>0.2</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		
+		<bullet cnName="爆骷S-跟踪导弹">
+			<name>PetBoomSkullS_shoot1</name>
+			<cnName>爆骷S-跟踪导弹</cnName>
+			<hurtRatio>0.3</hurtRatio>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.5</attackGap>
+			<attackDelay>0.3</attackDelay>
+			<bulletAngle>179</bulletAngle>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+				
+			<followD value="1" />	
+			<penetrationGap>1000</penetrationGap>
+			<boomD selfB="1" bodyB="1" radius="250" />
+				
+			<shootPoint>-160,-67</shootPoint>
+			<bulletSpeed>35</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">PetBoomSkullS/bullet1</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom2" shake="3,0.4,13">boomEffect/boom1</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bullet/fireballSmoke</smokeImgUrl>
+		</bullet>
+		<bullet index="0" name="爆骷S-机关枪">
+			<name>PetBoomSkullS_machine</name>
+			<cnName>爆骷S-机关枪</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			<bulletWidth>1200</bulletWidth>
+			<bulletShakeWidth>100</bulletShakeWidth>
+			
+			<shootPoint>0,-60</shootPoint>
+			<bulletAngle>175</bulletAngle>
+			<attackGap>1.6</attackGap>
+			<attackDelay>0.23</attackDelay>
+			<bulletNum>12</bulletNum>				
+			<shootNum>21</shootNum>					
+			<shootGap>0.066</shootGap>					
+				
+			<shootAngle>170</shootAngle>				
+			<shakeAngle>20</shakeAngle>
+			<bulletSpeed>0</bulletSpeed>
+			<positionD specialType="PetBoomSkullS_machine" />
+			<penetrationGap>1000</penetrationGap>
+			
+			<flipX>1</flipX>
+			<lineD type="one" lightColor="0x00FFFF" size="3" lightSize="7" />
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+		</bullet>
+		
+		
+		
+		
+		<bullet cnName="爆骷-婴儿潮">
+			<name>babyBoom_skull</name>
+			<cnName>爆骷-婴儿潮</cnName>
+			<hurtRatio>1</hurtRatio>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>3</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			<hitGap>0.3</hitGap>
+			
+			<bulletAngle>0</bulletAngle>
+			<bulletNum>1</bulletNum>				
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<noMagneticB>1</noMagneticB>
+				
+			<bulletSpeed>25</bulletSpeed>
+			<speedD random="0.2" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>PetBoomSkullS/babyBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/vehicle_hit1">boomEffect/boom2</hitImgUrl>
+			<smokeImgUrl con="add">generalEffect/crazy</smokeImgUrl>
+		</bullet>
+	</father>
+	
+	
+	</data>

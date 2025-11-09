@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicleSkill" cnName="技能">
+		<skill>
+			<name>FourDiggersSkill</name>
+			<cnName>风驰血锯</cnName>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			
+			<cd>100</cd>
+			<changeText>碾压伤害提升：[mul-1]</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>beforeAttack</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>attackMul</effectType>
+			<mul>1.5</mul>
+			<duration>5</duration>
+			
+			
+			<meEffectImg soundUrl="sound/murderous_hero" />
+			<stateEffectImg name="FourDiggersSkill" />
+			<description>释放技能后，普通伤害、碾压伤害提升[mul-1]，持续[duration]秒。</description>
+			
+			<growth>
+				<skill><mul>1.5</mul></skill>
+				<skill><mul>1.9</mul></skill>
+				<skill><mul>2.3</mul></skill>
+				<skill><mul>2.7</mul></skill>
+				<skill><mul>3.1</mul></skill>
+				<skill><mul>3.5</mul></skill>
+				<skill><mul>3.9</mul></skill>
+				<skill><mul>4.3</mul></skill>
+				<skill><mul>4.8</mul></skill>
+				<skill><mul>5.2</mul></skill>
+			</growth>
+		</skill>
+		
+		
+		
+	</father>
+	</data>

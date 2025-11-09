@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data name="ZangShi">
+	<level lv="1" must="0" cn="冷漠">
+		
+	</level>
+	<level lv="2" must="500" cn="低">
+		
+	</level>
+	<level lv="3" must="2000" cn="低">
+		<skillNameArr>dodgeProZang</skillNameArr>
+	</level>
+	<level lv="4" must="3500" cn="中">
+		<skillNameArr>defenceZang</skillNameArr>
+	</level>	
+	<level lv="5" must="5500" cn="高">
+		<skillNameArr>hurtStrikerZang,vehicleAddLove30</skillNameArr>
+	</level>
+	<level lv="6" must="9000" cn="高">
+		<skillNameArr>noHurtZang,sameArmsHurtAddZang</skillNameArr>
+	</level>
+	<level lv="7" must="15000" cn="忠诚">
+		<skillNameArr>hurtZang</skillNameArr>
+		<gift>things;artifactChest;1</gift>
+	</level>
+	<level lv="8" must="24000" cn="赤诚">
+		<skillNameArr>hurtHoleZang</skillNameArr>
+		<appLabel>稀有装置</appLabel>
+		<gift>equip;blackHoleDevicer_1;1</gift>
+	</level>
+</data>

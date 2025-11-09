@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="rocket" cnName="火炮">
+		<bullet color="purgold">
+			<name>extremeRocket</name>
+			<cnName>擎天极源</cnName><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			<aiShootRange>700</aiShootRange>
+			<attackType>holy</attackType>
+			<dpsMul>3</dpsMul>
+			
+			<capacity>30</capacity>
+			<attackGap>0.7</attackGap>
+			<reloadGap>0.5</reloadGap>
+			<bulletWidth>35</bulletWidth>
+			<bulletNum>3</bulletNum>				
+			<shootAngle>3</shootAngle>
+			
+			<armsArmMul>0.5</armsArmMul>
+			<upValue>20</upValue>
+			<shootShakeAngle>20</shootShakeAngle>
+			<shootRecoil>20</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>2.5</bulletLife>
+			<hitType>rect</hitType>
+				
+			<bulletSpeed>30</bulletSpeed>
+			
+			<twoShootPro>0.15</twoShootPro>
+			<penetrationGap>1000</penetrationGap>
+			<skillArr>enemyEmp,killPet</skillArr>
+			
+			<fireImgUrl con="add">boomEffect/boom2</fireImgUrl>
+			<shootSoundUrl>sound/bigShoot</shootSoundUrl>
+			<bulletImgUrl con="filter" raNum="30">bullet/gaiaFit</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/magicHit2" shake="2,0.2,10" con="add">boomEffect/boom2</hitImgUrl>
+			
+			
+			<bodyImgRange>specialGun/extremeRocket</bodyImgRange>
+		</bullet>
+	</father>
+	</data>

@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicle" cnName="战车body">
+		<body shell="compound">
+			
+			<name>SaberTigerCar</name>
+			<cnName>异齿虎坐骑</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/vehicle/SaberTigerCar.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<rosRatio>1</rosRatio>
+			<headHurtMul>0.5</headHurtMul>
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<imgClass>CarImage</imgClass>
+			<imgType>normal</imgType>
+			<rotateBySlopeB>1</rotateBySlopeB>
+			<imgArr>
+				stand,move,die1
+				,__jumpUp,jumpUp,jumpDown,jumpDown__,jumpUp__jumpDown
+				,shakeAttack
+			</imgArr>
+			
+			<hitRect>-30,-88,60,88</hitRect>
+			
+			<maxVx>20</maxVx>
+			<maxJumpNum>1</maxJumpNum>
+			
+			
+			<attackAIClass>CarAttack_AI</attackAIClass>
+			<keyClass>CarBodyKey</keyClass>
+			<bulletLauncherClass>CarBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>0.52</hurtRatio>
+					<attackType>through</attackType>
+					<skillArr>SaberTigerHit</skillArr>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit2">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown</imgLabel>
+					<hurtRatio>0.52</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/body_hit">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown__</imgLabel>
+					<hurtRatio>0.52</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/body_hit">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				
+			</hurtArr>
+		</body>
+		
+		<skill>
+			<name>SaberTigerHit</name>
+			<cnName>酸性腐蚀</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>raceType</otherConditionArr>
+			<conditionString>robot</conditionString>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurtNoCondition</effectType>
+			<mul>1.6</mul>
+			
+			<description>对机械体造成额外伤害。</description>
+		</skill>
+		
+	</father>
+</data>

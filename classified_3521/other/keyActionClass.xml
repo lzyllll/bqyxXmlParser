@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<key name="left" 						cnName="向左" 					single="A" 				p1="DELETE" 			p2="A" />
+	<key name="right" 						cnName="向右" 					single="D" 				p1="PAGE_DOWN" 	p2="D" />
+	<key name="up"		 					cnName="弹跳" 					single="W" 				p1="HOME" 			p2="W" />
+	<key name="down" 					cnName="下蹲" 					single="S" 				p1="END" 				p2="S" />
+	
+	<key name="nextArms" 				cnName="换武器" 				single="Q" 				p1="INSERT" 			p2="Q" />
+	<key name="attack" 					cnName="徒手攻击/载具"		 single="E" 				p1="PAGE_UP" 		p2="E" />
+	<key name="weapon" 				cnName="副手攻击" 				single="H" 				p1="RIGHT" 			p2="H" 	newB="1" />
+	<key name="changeCharger" 	cnName="装载弹药"				single="R" 				p1="BACKSLASH" 	p2="R" />
+	<key name="shoot" 					cnName="射击"					single="mouse" 		p1="mouse" 			p2="J" />
+	<key name="nextSay" 				cnName="跳过对话/装置" 		single="F" 				p1="RIGHTBRACKET" p2="F" 	newB="1" />
+	<key name="airLand" 				cnName="飞行时装陆空切换" 		single="I" 				p1="CONTROL" p2="I" 	newB="1" />
+	
+	
+	
+	<key name="lifeBottle" 				pubB="1" 	cnName="生命药瓶" 		single="Z" 		p1="UP" 						p2="" />
+	<key name="teamLifeBottle" 		pubB="1" 	cnName="队友生命药瓶" single="X" 		p1="X"  						p2="" />
+	<key name="caisson" 				pubB="1" 	cnName="弹药箱" 		single="C" 		p1="C"  						p2="" />
+	<key name="teamRebirthCard" 	pubB="1" 	cnName="队友重生卡" 	single="V" 		p1="V"  						p2="" />
+	<key name="skillFleshCard" 		pubB="1" 	cnName="技能刷新卡" 	single="B" 		p1="B"  						p2="" />
+	<key name="spaceToken" 			pubB="1" 	cnName="时空令牌" 		single="G" 		p1="G"  						p2="" />
+	
+	<key name="bossSumCard" 		pubB="1" 	cnName="首领召唤卡" 		single="H" p1="H"  		p2="" />
+	<key name="ai" 						pubB="1" 	cnName="AI战斗" 		single="N" p1="N"  		p2="" />
+	<key name="levelCount" 						pubB="1" 	cnName="显示统计面板" 		single="P" p1="P"  		p2="" />
+	
+	
+	
+	
+	
+	<cn>
+-1:鼠标;
+0:无;
+8:Backspace;
+9:Tab;
+20:CapsLock;
+16:Shift;
+17:Ctrl;
+32:空格;
+13:回车;
+45:Insert;
+36:Home;
+33:PageUp;
+46:Delete;
+35:End;
+34:PageDown;
+37:←;
+38:↑;
+39:→;
+40:↓;
+96:小键盘0;
+97:小键盘1;
+98:小键盘2;
+99:小键盘3;
+100:小键盘4;
+101:小键盘5;
+102:小键盘6;
+103:小键盘7;
+104:小键盘8;
+105:小键盘9;
+111:小键盘/;
+106:小键盘*;
+109:小键盘-;
+107:小键盘+;
+110:小键盘.;
+188:，;
+190:.;
+191:/;
+186:；;
+222:';
+219:[;
+221:];
+220:\;
+189:-;
+187:=;
+192:~;
+	</cn>
+	<no>
+		112;
+		113;
+		114;
+		115;
+		116;
+		117;
+		118;
+		119;
+		120;
+		121;
+		122;
+		123;
+		91;
+		145;
+		19;
+		144:数字开关;
+		18;Alt;
+	</no>
+</data>

@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="pet" cnName="尸宠">
+		<body index="0" name="冥王" shell="metal">
+			
+			<name>PetIronChiefS</name>
+			<cnName>冥王</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/pet/PetIronChiefS.swf</swfUrl>
+			<headIconUrl>IconGather/PetIronChiefS</headIconUrl>
+			
+			<lifeRatio>1.3</lifeRatio>
+			
+			<imgArr>
+				stand,move
+				,normalAttack1,normalAttack2,shootAttack
+				,hurt1,die1
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			
+			<hitRect>-18,-86,36,86</hitRect>
+			
+			<maxVx>7</maxVx>
+			<maxJumpNum>1</maxJumpNum>
+			<motionState>fly</motionState>
+			<flyUseSpiderB>1</flyUseSpiderB>
+			<flyType>tween</flyType>
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr />
+			<bossSkillArr />
+			<bossSkillArrCn />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit2">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel>
+					<hurtRatio>5</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/metal_hit1">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><mustGrapRectB>1</mustGrapRectB>
+					<bulletLabel>PetIronChiefS_shoot1</bulletLabel>
+					<grapRect>-360,-120,250,107</grapRect>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+			</hurtArr>
+		</body>	
+		
+		<bullet>
+			<name>PetIronChiefS_shoot1</name>
+			<cnName>冥王-光波</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>120</bulletWidth>
+			<hitType>longLine</hitType>
+			
+			<attackGap>0.8</attackGap>
+			<attackDelay>0.5</attackDelay>
+			<bulletAngle>179.9</bulletAngle>
+			<bulletNum>1</bulletNum>				
+				
+			<penetrationNum>999</penetrationNum>
+			<penetrationGap>1000</penetrationGap>
+			<twoHitGap>0.3</twoHitGap>
+				
+			<shootPoint>-67,-65</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">PetIronChiefS/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/vehicle_hit1" con="add">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+	</father>
+	</data>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="petBodySkill">
+		<skill>
+			<cnName>冥盾</cnName>
+			<name>ironShell</name>
+			<iconUrl>SkillIcon/ironShell</iconUrl>
+			<changeText>持续时间：[duration]秒</changeText>
+			<conditionType>passive</conditionType>
+			<condition>underHurt</condition>
+			<otherConditionArr>isMulHurt</otherConditionArr>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>0.2</duration>
+			<stateEffectImg partType="body" con="add">generalEffect/invincibleShield</stateEffectImg>
+			<description>受到敌人百分比伤害后，无敌[duration]秒。</description>
+			<growth>
+				<skill><duration>0.2</duration></skill>
+				<skill><duration>0.3</duration></skill>
+				<skill><duration>0.4</duration></skill>
+				<skill><duration>0.5</duration></skill>
+				<skill><duration>0.6</duration></skill>
+				<skill><duration>0.8</duration></skill>
+				<skill><duration>1.0</duration></skill>
+				<skill><duration>1.2</duration></skill>
+				<skill><duration>1.4</duration></skill>
+			</growth>
+		</skill>
+	</father>
+	
+	
+</data>

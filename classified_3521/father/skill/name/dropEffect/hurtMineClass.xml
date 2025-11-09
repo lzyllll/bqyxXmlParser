@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="dropEffect" cnName="掉落的效果物品">
+		<skill>
+			<name>hurtMineDrop</name>
+			<cnName>获得致命地雷</cnName>
+			
+			<addType>instant</addType>
+			<effectType>addTempDevice</effectType>
+			<value>2</value>
+			<valueString>hurtMine_6</valueString>
+		</skill>
+	</father>
+</data>

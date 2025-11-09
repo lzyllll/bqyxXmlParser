@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="雷斯">
+		<bullet cnName="雷斯-射击">
+			<name>shoot_PetLaerS</name>
+			<cnName>雷斯-射击</cnName>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.9</attackGap>
+			<attackDelay>0.5</attackDelay>
+			<bulletAngle>180</bulletAngle>
+			<bulletAngleRange>30</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<shootPoint>-86,-55</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<followD value="0.3" />	
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30" con="filter">PetLaerS/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/fireHit1">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		<bullet cnName="雷斯-辐射光球">
+			<name>lightBall_PetLaerS</name>
+			<cnName>雷斯-辐射光球</cnName>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>13</bulletLife>
+			<bulletWidth>60</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1</attackGap>
+			<attackDelay>0.55</attackDelay>
+			<bulletAngle>180</bulletAngle>
+			<bulletNum>1</bulletNum>				
+				
+			<penetrationNum>999</penetrationNum>
+			<penetrationGap>1000</penetrationGap>
+			<twoHitGap>0.1</twoHitGap>
+			<followD value="1" maxTime="2" />	
+				
+			<shootPoint>-92,-43</shootPoint>
+			<bulletSpeed>10</bulletSpeed>
+			<speedD max="25" min="1" a="-4" />
+			<skillArr>lightBall_PetLake_slow,silence_wind</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1" con="add">PetLaerS/ball</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/fireHit1">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+	</father>	
+	</data>

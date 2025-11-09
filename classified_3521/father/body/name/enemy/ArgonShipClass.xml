@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="载具-战车">
+		<body name="氩星舰" shell="compound">
+			
+			<name>ArgonShip</name>
+			<cnName>氩星舰</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/ArgonShip341.swf</swfUrl>
+			<headIconUrl />
+			<showLevel>9999</showLevel>
+			
+			<lifeRatio>1</lifeRatio>
+			<rosRatio>1</rosRatio>
+			<headHurtMul>0.5</headHurtMul>
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<rotateBySlopeB>1</rotateBySlopeB>
+			<imgType>normal</imgType><lifeBarExtraHeight>-80</lifeBarExtraHeight>
+			<imgArr>
+				stand,move,die1
+				,waveAttack
+				,showAttack,disappearAttack
+			</imgArr>
+			
+			<hitRect>-148,-55,318,112</hitRect>
+			
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<motionD vRan="0" F_AIR="2" />
+			<maxVx>8</maxVx>
+			
+			<hurtArr>
+			</hurtArr>
+		</body>
+		
+	</father>
+</data>

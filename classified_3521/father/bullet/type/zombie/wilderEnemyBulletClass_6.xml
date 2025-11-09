@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="年兽">
+		<bullet cnName="年兽-火球">
+			<name>Nian_fireball</name>
+			<cnName>年兽-火球</cnName>
+			
+			<hurtRatio>0</hurtRatio>
+			<hurtMul>0.1</hurtMul>
+			
+			<bulletAngle>175</bulletAngle>
+			<bulletAngleRange>10</bulletAngleRange>
+			<bulletLife>10</bulletLife>
+			<bulletWidth>25</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.3</attackDelay>
+			<bulletNum>1</bulletNum>					
+			<shootPoint>-198,-124</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+			<followD delay="2" maxTime="2.3" value="6" />
+				
+			<bulletSpeed>10</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">NianMonster/fireball</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/fireHit1">boomEffect/boom1</hitImgUrl>
+		</bullet>
+		<bullet cnName="年兽-驾驭星火">
+			<name>Nian_spark</name>
+			<cnName>驾驭星火</cnName>
+			
+			<hurtRatio>0</hurtRatio>
+			<hurtMul>0.2</hurtMul>
+			<attackType>holy</attackType>
+			
+			<shakeAngle>10</shakeAngle>
+			<bulletAngle>-90</bulletAngle>
+			<bulletLife>10</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<bulletNum>1</bulletNum>				
+				
+			<penetrationGap>1000</penetrationGap>
+			<bulletSkillArr>Mammoth_missile</bulletSkillArr>
+			<followD value="2" delay="1" />
+				
+			<bulletSpeed>12</bulletSpeed>
+			<speedD max="25" min="1" a="-10" random="0.2" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="add">NianMonster/sparkBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/fireHit1" soundVolume="0.3" shake="3,0.4,13">boomEffect/boom2</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="45">bulletHitEffect/spark_motion</smokeImgUrl>
+		</bullet>
+		<bullet cnName="年兽-晶火刃">
+			<name>Nian_darts</name>
+			<cnName>年兽-晶火刃</cnName>
+			
+			<hurtRatio>0</hurtRatio>
+			<hurtMul>0.1</hurtMul>
+			
+			<bulletAngle>160</bulletAngle>
+			<bulletAngleRange>30</bulletAngleRange>
+			<bulletLife>15</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.1</attackGap>
+			<attackDelay>0.6</attackDelay>
+			<bulletNum>3</bulletNum>					
+			<shootAngle>20</shootAngle>
+			<shootPoint>-103,-230</shootPoint>
+				
+			<skillArr>Nian_dartsParalysis</skillArr>
+			<bounceD glueFloorB="1" />
+			<penetrationNum>999</penetrationNum>
+			<oneHitBodyB>1</oneHitBodyB>
+				
+			<bulletSpeed>40</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="16" con="add">NianMonster/dartsBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/metal_hit1">bulletHitEffect/yellow_motion</hitImgUrl>
+			
+		</bullet>
+	</father>	
+	</data>

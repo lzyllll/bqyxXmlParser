@@ -1,0 +1,194 @@
+{
+  "father": {
+    "type": "zombie",
+    "cnName": "僵尸",
+    "bullet": [
+      {
+        "cnName": "陨石雨",
+        "name": "meteoriteRain",
+        "bulletSkillArr": "rainBulletIron",
+        "noMagneticB": 1,
+        "attackType": "holy",
+        "hurtRatio": 0,
+        "hurtMul": 0.3,
+        "bulletAngle": 90,
+        "bulletLife": 15,
+        "bulletWidth": 45,
+        "hitType": "rect",
+        "shootPoint": "0,-10000",
+        "shootNum": 18,
+        "shootGap": 0.4,
+        "penetrationGap": 1000,
+        "bulletSpeed": 8,
+        "bulletVra": 36,
+        "skillArr": null,
+        "bulletImgUrl": {
+          "value": "bullet/bigStone",
+          "raNum": 10
+        },
+        "smokeImgUrl": {
+          "value": "bullet/fireball",
+          "raNum": 30,
+          "con": "filter"
+        },
+        "hitImgUrl": {
+          "value": "boomEffect/boom2",
+          "soundVolume": 0.4,
+          "soundUrl": "boomSound/midBoom2"
+        }
+      },
+      {
+        "cnName": "大地闪电-修罗",
+        "name": "lightningFloor",
+        "noMagneticB": 1,
+        "noBeClearB": 1,
+        "hurtMul": 0.3,
+        "attackType": "holy",
+        "bulletLife": 0.0001,
+        "bulletWidth": 220,
+        "hitType": "longLine",
+        "bulletAngle": 270,
+        "penetrationGap": 1000,
+        "penetrationNum": 999,
+        "skillArr": "invincibleEmp",
+        "shootPoint": "0,0",
+        "bulletSpeed": 0,
+        "imgClearDelay": 0.23,
+        "bulletImgUrl": {
+          "value": "bullet/lightning1",
+          "con": "filter",
+          "soundUrl": "sound/electric"
+        },
+        "hitImgUrl": {
+          "value": "bulletHitEffect/energy",
+          "soundUrl": "sound/paralysis_enemy_hit"
+        }
+      },
+      {
+        "cnName": "螺旋电球",
+        "name": "screwBall",
+        "noMagneticB": 1,
+        "noBeClearB": 1,
+        "hurtMul": 0.2,
+        "attackType": "holy",
+        "bulletAngle": 0,
+        "bulletLife": 9999999,
+        "bulletWidth": 80,
+        "hitType": "rect",
+        "bulletNum": 3,
+        "bulletSpeed": 0,
+        "bulletSkillArr": "screwBall",
+        "skillArr": "sumBossAttenWe,BallLightningHurt,enemyEmp",
+        "penetrationNum": 999,
+        "penetrationGap": 1000,
+        "bulletImgUrl": {
+          "value": "generalEffect/frozenBallBig",
+          "con": "add"
+        },
+        "hitImgUrl": {
+          "value": "bulletHitEffect/fitHit",
+          "soundUrl": "sound/paralysis_enemy_hit",
+          "con": "add"
+        }
+      },
+      {
+        "cnName": "反击导弹",
+        "name": "fightBackBullet",
+        "noMagneticB": 1,
+        "hurtRatio": 1,
+        "attackType": "holy",
+        "bulletAngle": 0,
+        "bulletLife": 4,
+        "bulletWidth": 15,
+        "hitType": "rect",
+        "bulletNum": 1,
+        "shootPoint": "0,-50",
+        "bulletSpeed": 2,
+        "speedD": {
+          "min": 2,
+          "max": 25,
+          "a": 15
+        },
+        "skillArr": "BallLightningHurt",
+        "penetrationGap": 1000,
+        "bulletImgUrl": {
+          "value": "bullet/backBullet",
+          "raNum": 30
+        },
+        "hitImgUrl": {
+          "value": "boomEffect/boom1",
+          "soundUrl": "sound/body_hit"
+        },
+        "smokeImgUrl": {
+          "value": "bulletHitEffect/fireSmoke",
+          "con": "filter",
+          "raNum": 30
+        }
+      },
+      {
+        "cnName": "复仇之魂",
+        "name": "revengeGhost",
+        "noMagneticB": 1,
+        "hurtRatio": 1,
+        "attackType": "holy",
+        "bulletLife": 25,
+        "bulletWidth": 40,
+        "hitType": "rect",
+        "bulletAngle": -90,
+        "bulletSpeed": 0,
+        "bulletSkillArr": "spiralMove",
+        "noHitTime": 2,
+        "skillArr": "invincibleEmp,killAllExcludeVehicle",
+        "penetrationGap": 1000,
+        "bulletImgUrl": {
+          "value": "skillEffect/killBall",
+          "con": "add"
+        },
+        "smokeImgUrl": {
+          "value": "generalEffect/lakeBuff",
+          "con": "add"
+        },
+        "hitImgUrl": {
+          "value": "boomEffect/midCan",
+          "con": "add",
+          "soundUrl": "sound/hummer_hit"
+        }
+      },
+      {
+        "cnName": "复仇之箭",
+        "name": "revengeArrow",
+        "noMagneticB": 1,
+        "hurtMul": 0.5,
+        "attackType": "holy",
+        "bulletAngle": 0,
+        "bulletLife": 4,
+        "bulletWidth": 40,
+        "hitType": "rect",
+        "bulletNum": 1,
+        "shootPoint": "0,-50",
+        "bulletSpeed": 5,
+        "speedD": {
+          "min": 5,
+          "max": 20,
+          "a": 15
+        },
+        "skillArr": "invincibleEmp",
+        "penetrationGap": 1000,
+        "bulletImgUrl": {
+          "value": "bullet/redArrow",
+          "raNum": 30,
+          "con": "add"
+        },
+        "smokeImgUrl": {
+          "value": "bullet/redArrow",
+          "raNum": 30,
+          "con": "filter"
+        },
+        "hitImgUrl": {
+          "value": "bulletHitEffect/energyPurple",
+          "soundUrl": "sound/body_hit"
+        }
+      }
+    ]
+  }
+}

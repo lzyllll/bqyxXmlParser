@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicle" cnName="战车body">
+		<body index="0" name="守望之翼" shell="metal">
+			
+			<name>WatchEagleAir</name>
+			<cnName>守望之翼</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/vehicle/WatchEagleAir176.swf</swfUrl>
+			
+			<imgType>normal</imgType>
+			<flipCtrlBy>mouse</flipCtrlBy>
+			<dieJumpMul>0</dieJumpMul>
+			<showLevel>999</showLevel>
+			<imgArr>
+				stand,move,hurt1,die1
+				,sprintAttack
+			</imgArr>
+			
+			<hitRect>-25,-15,50,30</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>15</maxVx>
+			<motionState>fly</motionState><flyUseSpiderB>1</flyUseSpiderB><flyType>space</flyType>
+			<motionD F_AIR="3" />
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>WatchEagleAir_AIExtra</extraAIClassLabel>
+			
+			<bulletLauncherClass>VehicleBulletLauncher</bulletLauncherClass>
+			<keyClass>VehicleBodyKey</keyClass>
+			<bossSkillArrCn />
+			
+			<hurtArr>
+				
+				<hurt info="不加入ai选择">
+					<imgLabel>sprintAttack</imgLabel><meBack>40</meBack>
+					<grapRect>-87,61,146,262</grapRect><mustGrapRectB>1</mustGrapRectB>
+					<hurtRatio>2</hurtRatio>
+					<attackType>through</attackType>
+					<skillArr />
+					<shakeValue>4</shakeValue>
+					<hitImgUrl soundUrl="sound/body_hit">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+			</hurtArr>
+		</body>
+	</father>
+</data>

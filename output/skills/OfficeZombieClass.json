@@ -1,0 +1,79 @@
+{
+  "father": {
+    "name": "enemy",
+    "body": {
+      "index": 0,
+      "name": "OfficeZombie",
+      "cnName": "会计尸",
+      "raceType": "zombies",
+      "swfUrl": "swf/enemy/OfficeZombie.swf",
+      "lifeRatio": 0.7,
+      "showLevel": 91,
+      "imgArr": "stand,move\n\t\t\t\t,normalAttack,shootAttack,hurt1,hurt2,die1,die2\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1\n\t\t\t\t,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2",
+      "hitRect": "-14,-76,28,76",
+      "maxJumpNum": 1,
+      "nextAttackTime": 1,
+      "skillArr": null,
+      "bossSkillArr": null,
+      "bossSkillArrCn": null,
+      "hurtArr": {
+        "hurt": [
+          {
+            "imgLabel": "normalAttack",
+            "hurtRatio": 2,
+            "shakeValue": 4,
+            "attackType": "direct",
+            "hitImgUrl": {
+              "value": "bulletHitEffect/fitHit",
+              "con": "add",
+              "soundUrl": "sound/body_hit",
+              "raNum": 4
+            }
+          },
+          {
+            "imgLabel": "shootAttack",
+            "bulletLabel": "OfficeZombie_1",
+            "grapRect": "-450,-111,350,105",
+            "hurtRatio": 1,
+            "attackType": "direct"
+          }
+        ]
+      }
+    },
+    "bullet": {
+      "cnName": "办公僵尸",
+      "name": "OfficeZombie_1",
+      "shakeAngle": 5,
+      "bulletLife": 2,
+      "bulletWidth": 10,
+      "hitType": "rect",
+      "attackGap": 0.7,
+      "attackDelay": 0.4,
+      "bulletAngle": 179,
+      "bulletAngleRange": 40,
+      "bulletNum": 1,
+      "shootNum": 1,
+      "shootAngle": 0,
+      "shootPoint": "-56,-46",
+      "bulletSpeed": 9,
+      "boomD": {
+        "bodyB": true,
+        "selfB": true,
+        "radius": 80,
+        "noExcludeBodyB": true
+      },
+      "speedD": {
+        "random": 0.2
+      },
+      "skillArr": "blindness_skeleton",
+      "penetrationGap": 1000,
+      "flipX": 1,
+      "bulletImgUrl": "OfficeZombie/bullet",
+      "hitImgUrl": {
+        "value": "OfficeZombie/hitEffect",
+        "soundUrl": "sound/hummer_hit",
+        "raNum": 4
+      }
+    }
+  }
+}

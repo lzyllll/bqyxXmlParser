@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+		<goods propId="3942" cnName="年兽碎片" name="NianCarCash" num="1" price="4" chooseNumB="1"  otherArr="vehicle,wilder"><priceType>money</priceType></goods>
+		<goods propId="2981" cnName="守望之翼碎片" name="WatchEagleAirCash" price="8" chooseNumB="1" otherArr="vehicle,wilder"><priceType>money</priceType></goods>
+		<goods propId="2752" dataType="arms" inBagType="arms" cnName="炮仗" name="bangerGun" price="600" limitOneB="1" otherArr="hot"><priceType>money</priceType></goods>
+		<goods propId="2613" dataType="arms" inBagType="arms" cnName="圣诞礼炮" name="christmasGun" price="500" otherArr="hot"><priceType>money</priceType></goods>
+		
+		<goods propId="3611" cnName="周年碎片" name="anniversaryCash" num="2" price="2" chooseNumB="1" otherArr="dis" discount="0.5"><priceType>money</priceType></goods>
+		
+		<goods propId="4049" cnName="高级装备箱" name="equipHighBox" defineLabel="equipHighBox" price="2" chooseNumB="1" num="4" otherArr="dis" discount="0.5" dayBuyLimitNum="50"><priceType>money</priceType></goods>
+		<goods propId="4050" cnName="高级武器箱" name="armsHighBox" defineLabel="armsHighBox" price="2" chooseNumB="1" num="4" otherArr="dis" discount="0.5" dayBuyLimitNum="50"><priceType>money</priceType></goods>
+		<goods propId="4051" cnName="高级步枪箱" name="rifleBox" defineLabel="rifleBox" price="8" chooseNumB="1" num="10"  otherArr="dis" discount="0.5" dayBuyLimitNum="50"><priceType>money</priceType></goods>
+		<goods propId="4052" cnName="高级狙击箱" name="sniperBox" defineLabel="sniperBox" price="8" chooseNumB="1" num="10"  otherArr="dis" discount="0.5" dayBuyLimitNum="50"><priceType>money</priceType></goods>
+		<goods propId="4053" cnName="高级手枪箱" name="pistolBox" defineLabel="pistolBox" price="8" chooseNumB="1" num="10"  otherArr="dis" discount="0.5" dayBuyLimitNum="50"><priceType>money</priceType></goods>
+		<goods propId="4054" cnName="高级散弹箱" name="shotgunBox" defineLabel="shotgunBox" price="8" chooseNumB="1" num="10"  otherArr="dis" discount="0.5" dayBuyLimitNum="50"><priceType>money</priceType></goods>
+			
+		<goods propId="2071" cnName="传奇宝箱" name="magicChest" defineLabel="magicChest" price="60" chooseNumB="1" dayBuyLimitNum="1"><priceType>money</priceType></goods>
+			<goods propId="1849" cnName="稀有宝箱" name="normalChest" defineLabel="normalChest" price="40" chooseNumB="1" dayBuyLimitNum="30"><priceType>money</priceType></goods>
+			<goods propId="3906" cnName="异虎宝箱" name="tigerChest" price="40" chooseNumB="1" dayBuyLimitNum="30"><priceType>money</priceType></goods>
+			<goods propId="3907" cnName="远古宝箱" name="dragonChest" defineLabel="dragonChest" price="40" chooseNumB="1" dayBuyLimitNum="1"><priceType>money</priceType></goods>
+			
+	</data>

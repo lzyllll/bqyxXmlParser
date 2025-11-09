@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="技能">
+		<bullet cnName="七人斩-子弹">
+			<name>IronDogFiveBullet</name>
+			<cnName>七人斩-子弹</cnName><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			
+			<hurtMul>0.5</hurtMul>
+			<attackType>holy</attackType>
+			
+			<bulletNum>1</bulletNum>
+			<bulletAngle>90</bulletAngle>
+			<twoHitGap>0.8</twoHitGap>
+			<twoHitSameNameB>1</twoHitSameNameB>
+			
+			<noHitTime>0.47</noHitTime>
+			<bulletLife>0.56</bulletLife>
+			<imgClearDelay>0.43</imgClearDelay>
+			<bulletWidth>700</bulletWidth>
+			<hitType>longLine</hitType>
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<skillArr>invincibleEmp</skillArr>
+			<bulletImgUrl con="add">IronDog/fiveBullet</bulletImgUrl>
+			<hitImgUrl name="IronDogFiveHit" />
+		</bullet>
+		<bullet cnName="冰魄斩-子弹">
+			<name>IronDogIceBullet</name>
+			<cnName>冰魄斩-子弹</cnName><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			
+			<hitType>rect</hitType>
+			<hurtMul>0.05</hurtMul>
+			<attackType>holy</attackType>
+			
+			<bulletNum>1</bulletNum>
+			<bulletLife>0.0001</bulletLife>
+			<imgClearDelay>0.35</imgClearDelay>
+			<bulletWidth>80</bulletWidth>
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<skillArr>invincibleEmp,IronDogIceHit</skillArr>
+			<bulletImgUrl con="add">IronDog/iceBullet</bulletImgUrl>
+			<hitImgUrl name="IronDogFiveHit" />
+		</bullet>
+	</father>
+	
+	
+	</data>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="rocket" cnName="火炮-特殊">
+		<bullet index="44" cnName="卯兔" name="yearRabbit" kind="water" color="black" composeLv="95" chipB="1" chipNum="100" dropLevelArr="999">
+			<name>yearRabbit</name>
+			<cnName>卯兔</cnName>
+			
+			
+			<capacity>15</capacity>
+			<attackGap>0.4</attackGap>
+			<reloadGap>2</reloadGap>
+			<shakeAngle>7</shakeAngle>
+			<bulletWidth>30</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<gunNum>1</gunNum>
+			
+			
+			<armsArmMul>1.05</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>0</upValue>
+			<shootShakeAngle>45</shootShakeAngle>
+			<shootRecoil>4</shootRecoil>
+			<screenShakeValue>8</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>6</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>1.8</dpsMul>
+			<uiDpsMul>2</uiDpsMul>
+			
+				
+			<bulletSpeed>26</bulletSpeed>
+			<speedD min="5" max="26" random="0.3" a="-30" />
+			
+			<twoShootPro>0.4</twoShootPro>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="1" body="0" />	
+			<critD mul="2" pro="0.3" />
+			
+			
+			<skillArr>Hit_blindness_ArmsSkill,Hit_SlowMove_ArmsSkill</skillArr>
+			<godSkillArr>Hit_crazy_godArmsSkill,yearRabbitSkill</godSkillArr>
+			
+			<iconUrl>specialGun/yearRabbitIcon</iconUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl con="add" raNum="1" urlRandomValue="3">specialGun/yearRabbitBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="specialGun/christmasGunHit">specialGun/christmasGunBoom</hitImgUrl>
+			<hitFloorImgUrl>no</hitFloorImgUrl>
+			<fireImgType />
+			<shootSoundUrl>specialGun/yearRabbitSound</shootSoundUrl>
+			
+			<bodyImgRange>specialGun/yearRabbit</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>2020中秋签到</description>
+		</bullet>
+		
+	</father>
+	</data>

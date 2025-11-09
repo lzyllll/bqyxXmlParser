@@ -1,0 +1,119 @@
+{
+  "father": [
+    {
+      "type": "cutter",
+      "cnName": "切割枪",
+      "bullet": {
+        "yearTiger": {
+          "name": "yearTiger",
+          "color": "darkgold",
+          "composeLv": 99,
+          "dropLevelArr": 999,
+          "evoMaxLv": 2,
+          "cnName": "寅虎",
+          "extraMul": 1.6,
+          "whippB": 0,
+          "noBeClearB": 1,
+          "dpsMul": 1.9,
+          "uiDpsMul": 2.3,
+          "capacity": 8,
+          "attackGap": 0.8,
+          "reloadGap": 2,
+          "shakeAngle": 1,
+          "bulletWidth": 30,
+          "bulletShakeWidth": "0,0",
+          "bulletNum": 1,
+          "twoShootPro": 0.3,
+          "penetrationNum": 4,
+          "penetrationGap": 1000,
+          "bounceD": {
+            "floor": 0,
+            "body": 0
+          },
+          "critD": {
+            "mul": 0,
+            "pro": 0
+          },
+          "followD": {
+            "value": 4,
+            "delay": 999,
+            "hitIsTargetB": true
+          },
+          "skillArr": "Hit_Spurting_ArmsSkill,Hit_AddLifeMul_ArmsSkill",
+          "godSkillArr": "yearTigerSkill,yearTigerHurtSuper",
+          "bulletSpeed": 25,
+          "hurtRatio": 4,
+          "gunNum": 1,
+          "armsArmMul": 0.5,
+          "armsWeight": 5,
+          "upValue": 15,
+          "shootShakeAngle": 40,
+          "shootRecoil": 10,
+          "screenShakeValue": 15,
+          "noShakeTime": 0.5,
+          "bulletLife": 7,
+          "hitType": "rect",
+          "iconUrl": "specialGun/yearTigerIcon",
+          "shootSoundUrl": "specialGun/yearTigerSound",
+          "flipX": 1,
+          "bulletImgUrl": "specialGun/yearTigerBullet",
+          "hitImgUrl": "bulletHitEffect/fitHit",
+          "fireImgType": null,
+          "bodyImgRange": "specialGun/yearTiger",
+          "bulletImgRange": "specialGun/bullet",
+          "description": null,
+          "armsType": "cutter"
+        }
+      }
+    },
+    {
+      "name": "godArmsSkill",
+      "cnName": "神级武器技能",
+      "skill": [
+        {
+          "name": "yearTigerSkill",
+          "noRandomListB": 1,
+          "cnName": "虎刃",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "me",
+          "addType": "state",
+          "effectType": "attackGapMul",
+          "mul": 1.4,
+          "duration": 5,
+          "description": "发射出的利刃将不断切割敌人，最多切割4下，无视刚体。击中敌人后将提高[mul-1]的武器射速。"
+        },
+        {
+          "name": "yearTigerPurgold",
+          "noRandomListB": 1,
+          "cnName": "穿甲虎刃",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "me",
+          "addType": "state",
+          "effectType": "attackGapMul",
+          "mul": 1.4,
+          "duration": 5,
+          "description": "发射出的利刃将不断切割敌人，最多切割12下，无视刚体、防弹外壳、防弹钢甲。击中敌人后将提高[mul-1]的武器射速。"
+        },
+        {
+          "index": 0,
+          "name": "yearTigerHurtSuper",
+          "noRandomListB": 1,
+          "cnName": "精英之殇",
+          "ignoreImmunityB": 1,
+          "noSkillDodgeB": 1,
+          "changeHurtB": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "yearTigerHurtSuper",
+          "mul": 3,
+          "secMul": 1.6,
+          "description": "对精英怪物造成的伤害提高[mul-1]，对首领的伤害提高[secMul-1]。"
+        }
+      ]
+    }
+  ]
+}

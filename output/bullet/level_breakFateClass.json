@@ -1,0 +1,1132 @@
+{
+  "father": {
+    "name": "normal",
+    "gather": [
+      {
+        "name": "破局-实验室底层",
+        "level": {
+          "name": "breakFate",
+          "sceneLabel": "Hospital2",
+          "info": {
+            "enemyLv": 99,
+            "diy": "thornyRoad",
+            "preBulletArr": "thornyRoad",
+            "preSkillArr": "vehicleFit_Gaia",
+            "dropSmallMapB": true,
+            "sightCover": 1,
+            "noMoreB": true,
+            "noVehicleB": true,
+            "noTreasureB": true,
+            "noPropsB": true,
+            "mustSingleB": true
+          },
+          "drop": {
+            "coin": 0,
+            "exp": 0,
+            "arms": 0,
+            "equip": 0,
+            "skillStone": 0,
+            "taxStamp": 0
+          },
+          "eventG": {
+            "group": [
+              {
+                "event": {
+                  "id": "e1_1",
+                  "order": "say; startList:s1,s2,s3,s4,s5,s6"
+                }
+              },
+              {
+                "event": [
+                  {
+                    "id": "e1_4",
+                    "condition": {
+                      "value": "task:state; breakFate:complete",
+                      "delay": 0.01
+                    },
+                    "order": "say; startList:s10"
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "say:listOver",
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "改命-实验室地下",
+        "level": {
+          "name": "changeLife",
+          "sceneLabel": "HospitalUnder",
+          "info": {
+            "enemyLv": 0,
+            "diff": 1,
+            "diy": "changeLife",
+            "preBulletArr": "bulletRainBullet,bulletRainBall",
+            "preSkillArr": "invincibleDrugDrop",
+            "dropSmallMapB": true,
+            "sightCover": 1,
+            "noMoreB": true,
+            "noVehicleB": true,
+            "noTreasureB": true,
+            "noPropsB": true,
+            "mustSingleB": true
+          },
+          "drop": {
+            "coin": 0,
+            "exp": 0,
+            "arms": 0,
+            "equip": 0,
+            "skillStone": 0,
+            "taxStamp": 0
+          },
+          "unitG": {
+            "allDefault": {
+              "aiOrder": "patrolGlobal"
+            },
+            "unitOrder": {
+              "id": "we2",
+              "camp": "we",
+              "unit": {
+                "cnName": "战争狂人",
+                "num": 1,
+                "aiOrder": "followBody:p1",
+                "skillArr": "madmanHead"
+              }
+            }
+          },
+          "eventG": {
+            "group": [
+              {
+                "event": [
+                  {
+                    "id": "e1_1",
+                    "order": [
+                      "say; startList:s1,s2,s3,s4,s5,s6,s7",
+                      "level;taskTimingB:false"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "say:listOver",
+                    "order": "level;taskTimingB:true"
+                  }
+                ]
+              },
+              {
+                "event": [
+                  {
+                    "id": "e1_4",
+                    "condition": {
+                      "value": "task:state; changeLife:complete",
+                      "delay": 0.01
+                    },
+                    "order": [
+                      "clearAllBullet",
+                      "say; startList:s10"
+                    ]
+                  },
+                  {
+                    "id": "e2_0",
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.01
+                    },
+                    "order": [
+                      "createUnit:we2; r2",
+                      "body:战争狂人; doSkill:madmanHead",
+                      "playMusic; music_face:suspense",
+                      "say; startList:s11"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "say:listOver",
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "离别-霸王坡",
+        "level": [
+          {
+            "name": "leavePartner",
+            "info": {
+              "enemyLv": 99,
+              "noMoreB": true,
+              "noTreasureB": true
+            },
+            "drop": {
+              "coin": 0,
+              "exp": 0,
+              "arms": 0,
+              "equip": 0,
+              "skillStone": 0,
+              "taxStamp": 0
+            },
+            "sceneLabel": "BaWang",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "we2",
+                  "camp": "we",
+                  "unit": [
+                    {
+                      "cnName": "雇佣兵",
+                      "num": 1,
+                      "lifeMul": 0.02,
+                      "aiOrder": "followBodyAttack:p1"
+                    },
+                    {
+                      "cnName": "丛林特种兵",
+                      "num": 2,
+                      "lifeMul": 0.01,
+                      "aiOrder": "followBodyAttack:p1"
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy1",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "毒蛛",
+                    "num": 8,
+                    "dpsMul": 1,
+                    "skillArr": "likeMissle_Shapers,revengeArrow,rigidBody_enemy,State_SpellImmunity"
+                  }
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "携弹僵尸",
+                      "num": 6,
+                      "dpsMul": 1,
+                      "skillArr": "moreBullet,likeMissle_Shapers,revengeArrow,rigidBody_enemy,State_SpellImmunity"
+                    },
+                    {
+                      "cnName": "毒蛛",
+                      "num": 3,
+                      "dpsMul": 1,
+                      "skillArr": "likeMissle_Shapers,revengeArrow,rigidBody_enemy,State_SpellImmunity"
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy5",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "霸王毒蛛",
+                    "unitType": "boss",
+                    "lifeMul": 2,
+                    "dpsMul": 1,
+                    "skillArr": "ironBody_enemy,immune,MeatySkillBack,likeMissle_Shapers,screwBall,invincibleEmp"
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1578,962,226,82",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "2928,1200,84,157",
+                  "id": "r_over"
+                },
+                {
+                  "value": "16,616,254,112",
+                  "id": "r1"
+                },
+                {
+                  "value": "2726,694,254,112",
+                  "id": "r2"
+                },
+                {
+                  "value": "1548,418,254,112",
+                  "id": "r3"
+                },
+                {
+                  "value": "2540,731,84,84",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "690,723,84,84",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e1_1",
+                    "order": [
+                      "createUnit:we2; r_birth",
+                      "P2EverParasitic:雇佣兵",
+                      "say; startList:s1,s2,s3,s4,s5"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 10,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy5; r1",
+                      "createUnit:enemy5; r2",
+                      "createUnit:enemy5; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": [
+                      "say; startList:s10",
+                      "playMusic; music_face:leave"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "say:listOver",
+                    "order": [
+                      "task:now; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "BaWang_otherRole",
+            "info": {
+              "enemyLv": 99,
+              "noTreasureB": true
+            },
+            "drop": {
+              "coin": 0,
+              "exp": 0,
+              "arms": 0,
+              "equip": 0,
+              "skillStone": 0,
+              "taxStamp": 0
+            },
+            "sceneLabel": "BaWang",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "毒蛛",
+                    "num": 8,
+                    "dpsMul": 1,
+                    "skillArr": "likeMissle_Shapers,revengeArrow,rigidBody_enemy,State_SpellImmunity"
+                  }
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "携弹僵尸",
+                      "num": 6,
+                      "dpsMul": 1,
+                      "skillArr": "moreBullet,likeMissle_Shapers,revengeArrow,rigidBody_enemy,State_SpellImmunity"
+                    },
+                    {
+                      "cnName": "毒蛛",
+                      "num": 3,
+                      "dpsMul": 1,
+                      "skillArr": "likeMissle_Shapers,revengeArrow,rigidBody_enemy,State_SpellImmunity"
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy5",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "霸王毒蛛",
+                    "unitType": "boss",
+                    "lifeMul": 2,
+                    "dpsMul": 1,
+                    "skillArr": "ironBody_enemy,immune,MeatySkillBack,likeMissle_Shapers,screwBall,invincibleEmp"
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1578,962,226,82",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "2928,1200,84,157",
+                  "id": "r_over"
+                },
+                {
+                  "value": "16,616,254,112",
+                  "id": "r1"
+                },
+                {
+                  "value": "2726,694,254,112",
+                  "id": "r2"
+                },
+                {
+                  "value": "1548,418,254,112",
+                  "id": "r3"
+                },
+                {
+                  "value": "2540,731,84,84",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "690,723,84,84",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e1_1",
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 10,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy5; r1",
+                      "createUnit:enemy5; r2",
+                      "createUnit:enemy5; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": [
+                      "say; startList:s2",
+                      "playMusic; music_face:funny"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "say:listOver",
+                    "order": [
+                      "task:now; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "弥天大谎-缥缈森林",
+        "level": {
+          "name": "madmanTrick",
+          "info": {
+            "enemyLv": 99,
+            "diff": 1,
+            "noMoreB": true,
+            "noVehicleB": true,
+            "noTreasureB": true,
+            "noPropsB": true,
+            "mustSingleB": true
+          },
+          "drop": {
+            "coin": 0.01,
+            "exp": 0.005,
+            "life": 0.2,
+            "arms": 0,
+            "equip": 0,
+            "skillStone": 0,
+            "taxStamp": 0
+          },
+          "sceneLabel": "PiaoMiao",
+          "unitG": {
+            "allDefault": {
+              "aiOrder": "patrolGlobal"
+            },
+            "unitOrder": [
+              {
+                "id": "we2",
+                "camp": "we",
+                "unit": {
+                  "cnName": "战争狂人"
+                }
+              },
+              {
+                "id": "we3",
+                "camp": "we",
+                "unit": {
+                  "cnName": "狂人机器X",
+                  "dpsMul": 1000,
+                  "lifeMul": 0.15,
+                  "skillCloseB": true,
+                  "skillArr": "groupCrazy_enemy,WarriorShoot,WarriorSprint,State_SpellImmunity,fightReduct2,rigidBody_enemy"
+                }
+              },
+              {
+                "id": "enemy1",
+                "numberType": "number",
+                "unit": [
+                  {
+                    "cnName": "携弹僵尸",
+                    "num": 9
+                  },
+                  {
+                    "cnName": "战斗僵尸",
+                    "num": 12
+                  }
+                ]
+              },
+              {
+                "id": "enemy2",
+                "numberType": "pro",
+                "unit": [
+                  {
+                    "cnName": "银锤",
+                    "num": 12
+                  },
+                  {
+                    "cnName": "携弹僵尸",
+                    "num": 6
+                  },
+                  {
+                    "cnName": "僵尸狙击兵",
+                    "lifeMul": 2,
+                    "num": 1.5
+                  }
+                ]
+              },
+              {
+                "id": "enemy3",
+                "numberType": "number",
+                "unit": [
+                  {
+                    "cnName": "吸血蝙蝠",
+                    "num": 6
+                  },
+                  {
+                    "cnName": "银锤",
+                    "num": 9
+                  },
+                  {
+                    "cnName": "橄榄僵尸",
+                    "num": 5
+                  },
+                  {
+                    "cnName": "僵尸狙击兵",
+                    "lifeMul": 2,
+                    "num": 1.5
+                  }
+                ]
+              },
+              {
+                "id": "enemy4",
+                "numberType": "number",
+                "unit": {
+                  "cnName": "毒魔",
+                  "unitType": "boss",
+                  "lifeMul": 1,
+                  "dpsMul": 2
+                }
+              }
+            ]
+          },
+          "eventG": {
+            "group": [
+              {
+                "event": [
+                  {
+                    "id": "e1_1",
+                    "order": [
+                      "createUnit:we2; r_birth",
+                      "heroEverParasitic:战争狂人",
+                      "say; startList:s1"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    },
+                    "order": [
+                      "body:战争狂人;noExist",
+                      "createUnit:we3; r_birth",
+                      "heroEverParasitic:狂人机器X"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 2,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 2,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 2,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "enemyNumber:less_1",
+                    "order": "say; startList:s2"
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "say:listOver",
+                    "order": [
+                      "task:now; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              },
+              {
+                "event": [
+                  {
+                    "id": "e_fail",
+                    "condition": {
+                      "value": "bodyEvent:die; 狂人机器X",
+                      "delay": 1
+                    },
+                    "order": "alert:yes; 任务失败！"
+                  },
+                  {
+                    "id": "e_fail",
+                    "condition": {
+                      "delay": 0.03
+                    },
+                    "order": "level; fail"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "战斧高地",
+        "level": {
+          "name": "captureUpland",
+          "info": {
+            "diy": "captureUpland",
+            "enemyLv": 99,
+            "diff": 1,
+            "noMoreB": true,
+            "noVehicleB": true,
+            "noTreasureB": true,
+            "noPropsB": true,
+            "mustSingleB": true
+          },
+          "drop": {
+            "coin": 0.01,
+            "exp": 0.005,
+            "life": 0.2,
+            "arms": 0,
+            "equip": 0,
+            "skillStone": 0,
+            "taxStamp": 0
+          },
+          "sceneLabel": "MainUpland",
+          "unitG": {
+            "allDefault": {
+              "aiOrder": "patrolGlobal",
+              "noSuperB": true
+            },
+            "unitOrder": [
+              {
+                "id": "we2",
+                "camp": "we",
+                "unit": {
+                  "cnName": "狂人机器X",
+                  "dpsMul": 4000,
+                  "lifeMul": 1.2,
+                  "skillCloseB": true,
+                  "skillArr": "groupCrazy_enemy,WarriorShoot,WarriorSprint,State_SpellImmunity,fightReduct2,rigidBody_enemy,summSentry,recoveryHalo_enemy"
+                }
+              },
+              {
+                "id": "enemy1",
+                "numberType": "number",
+                "unit": [
+                  {
+                    "cnName": "文杰表哥",
+                    "num": 1,
+                    "lifeMul": 130,
+                    "dieGotoState": "stru",
+                    "armsRange": "shotgunSkunk,rocketCate,lightCone",
+                    "skillArr": "changeToSecDiggers,feedback_hero_5,pioneer_hero_5,moreMissile_hero_10"
+                  },
+                  {
+                    "cnName": "藏师将军",
+                    "num": 1,
+                    "lifeMul": 130,
+                    "dieGotoState": "stru",
+                    "armsRange": "sniperCicada,rocketCate,lightCone",
+                    "skillArr": "changeToThunderbolt"
+                  },
+                  {
+                    "cnName": "小樱",
+                    "num": 1,
+                    "lifeMul": 130,
+                    "dieGotoState": "stru",
+                    "armsRange": "pistolFox,rocketCate,lightCone",
+                    "skillArr": "changeToSaberTiger,silence_hero_5,invisibility_hero_3,through_hero_5"
+                  },
+                  {
+                    "cnName": "心零",
+                    "num": 1,
+                    "lifeMul": 130,
+                    "dieGotoState": "stru",
+                    "armsRange": "meltFlamer,rocketCate,lightCone",
+                    "skillArr": "changeToGaia,tauntLing_5,strongLing_5,revengeLing_10,resonanceLing_10"
+                  }
+                ]
+              }
+            ]
+          },
+          "eventG": {
+            "group": [
+              {
+                "event": [
+                  {
+                    "id": "e1_1",
+                    "order": [
+                      "createUnit:we2; r_birth",
+                      "heroEverParasitic:狂人机器X",
+                      "say; startList:s1"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": "say; startList:s2"
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "say:listOver",
+                    "order": [
+                      "task:now; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              },
+              {
+                "event": [
+                  {
+                    "id": "e_fail",
+                    "condition": {
+                      "value": "bodyEvent:die; 狂人机器X",
+                      "delay": 1
+                    },
+                    "order": "alert:yes; 任务失败！"
+                  },
+                  {
+                    "id": "e_fail",
+                    "condition": {
+                      "delay": 0.03
+                    },
+                    "order": "level; fail"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "白沙村",
+        "level": {
+          "name": "beatWarriorSec",
+          "info": {
+            "enemyLv": 99,
+            "noMoreB": true,
+            "noTreasureB": true
+          },
+          "drop": {
+            "coin": 0,
+            "exp": 0,
+            "arms": 0,
+            "equip": 0,
+            "skillStone": 0,
+            "taxStamp": 0
+          },
+          "sceneLabel": "BaiSha",
+          "unitG": {
+            "allDefault": {
+              "aiOrder": "patrolGlobal"
+            },
+            "unitOrder": {
+              "id": "enemy1",
+              "numberType": "number",
+              "unit": {
+                "cnName": "狂人机器X",
+                "unitType": "boss",
+                "lifeMul": 1.5,
+                "dpsMul": 1.5
+              }
+            }
+          },
+          "rectG": {
+            "rect": [
+              {
+                "value": "1494,886,212,92",
+                "id": "r_birth"
+              },
+              {
+                "value": "3386,1084,48,100",
+                "id": "r_over"
+              },
+              {
+                "value": "30,754,280,120",
+                "id": "r1"
+              },
+              {
+                "value": "1327,318,280,120",
+                "id": "r2"
+              },
+              {
+                "value": "3060,713,280,120",
+                "id": "r3"
+              },
+              {
+                "value": "2156,638  ,118,64",
+                "label": "addCharger"
+              },
+              {
+                "value": "813,820,118,64",
+                "label": "addCharger"
+              }
+            ]
+          },
+          "eventG": {
+            "group": {
+              "event": [
+                {
+                  "id": "e1",
+                  "condition": null,
+                  "order": "recoverAllHeroHead"
+                },
+                {
+                  "id": "e2_1",
+                  "condition": {
+                    "value": "enemyNumber:less_1",
+                    "doNumber": 1,
+                    "orderChooseType": "randomOne"
+                  },
+                  "order": [
+                    "createUnit:enemy1; r1",
+                    "createUnit:enemy1; r2",
+                    "createUnit:enemy1; r3"
+                  ]
+                },
+                {
+                  "id": "e2_11",
+                  "condition": {
+                    "value": "enemyNumber:less_1",
+                    "delay": 0.5
+                  },
+                  "order": [
+                    "level;taskTimingB:false",
+                    "say; startList:s1"
+                  ]
+                },
+                {
+                  "id": "e2_11",
+                  "condition": "say:listOver",
+                  "order": [
+                    "task:now; complete",
+                    "level; showPointer:r_over"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "战神-战斧高地",
+        "level": {
+          "name": "beatMadboss",
+          "info": {
+            "enemyLv": 99,
+            "allMoreB": true,
+            "noTreasureB": true
+          },
+          "drop": {
+            "coin": 0,
+            "exp": 0,
+            "arms": 0,
+            "equip": 0,
+            "skillStone": 0,
+            "taxStamp": 0
+          },
+          "sceneLabel": "MainUpland",
+          "unitG": {
+            "allDefault": {
+              "aiOrder": "patrolGlobal"
+            },
+            "unitOrder": {
+              "id": "enemy1",
+              "unit": {
+                "cnName": "战神",
+                "unitType": "boss",
+                "lifeMul": 1.75
+              }
+            }
+          },
+          "eventG": {
+            "group": {
+              "event": [
+                {
+                  "id": "e1",
+                  "condition": null,
+                  "order": [
+                    "allPartnerStruNoStrikerWen",
+                    "recoverAllHeroHead",
+                    "level;taskTimingB:false"
+                  ]
+                },
+                {
+                  "id": "s1",
+                  "condition": {
+                    "delay": 0.5
+                  },
+                  "order": "say; startList:s1"
+                },
+                {
+                  "id": "s1_1",
+                  "condition": "say:listOver",
+                  "order": "allPartnerRebirth"
+                },
+                {
+                  "id": "s2",
+                  "condition": {
+                    "delay": 0.5
+                  },
+                  "order": "say; startList:s2"
+                },
+                {
+                  "id": "s2",
+                  "condition": "say:listOver",
+                  "order": "level; shake:beatMadboss"
+                },
+                {
+                  "id": "e1_1",
+                  "condition": {
+                    "delay": 1
+                  },
+                  "order": [
+                    "level;taskTimingB:true",
+                    "createUnit:enemy1; r1"
+                  ]
+                },
+                {
+                  "id": "e8",
+                  "condition": {
+                    "value": "enemyNumber:less_1",
+                    "delay": 1
+                  },
+                  "order": [
+                    "allPartnerRebirth",
+                    "allHeroNoUnderHit",
+                    "level;taskTimingB:false",
+                    "playMusic; music_face:descent",
+                    "say; startList:s3"
+                  ]
+                },
+                {
+                  "id": "s1_1",
+                  "condition": {
+                    "value": "say:listOver",
+                    "delay": 0.1
+                  },
+                  "order": [
+                    "playMusic; music_face:funny",
+                    "say; startList:s4"
+                  ]
+                },
+                {
+                  "id": "e9",
+                  "condition": "say:listOver",
+                  "order": [
+                    "task:now; complete",
+                    "level; showPointer:r_over"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

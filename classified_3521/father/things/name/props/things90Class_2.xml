@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="props" cnName="节日礼包">
+		
+		<things cnName="周年畅玩礼包">
+			<name>anniver2025_1</name>
+			<cnName>周年畅玩礼包</cnName>
+			<iconUrl>ThingsIcon/postNormalChest</iconUrl>
+			<useSave>shopAuto</useSave>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店银币购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<showGiftB>1</showGiftB>
+			<gift>base;anniCoin;15</gift>
+			<gift>things;normalChest;5</gift>
+			<gift>things;magicChest;5</gift>
+			<gift>things;dragonChest;5</gift>
+			<gift>things;tigerChest;5</gift>
+			<gift>things;allBlackCash;25</gift>
+			<gift>things;allBlackEquipCash;25</gift>
+			<gift>things;armsGemChest;10</gift>
+			<gift>things;equipGemChest;10</gift>
+			<gift>things;yaStone;4</gift>
+			<gift>things;yaRock;3</gift>
+			<gift>things;zodiacBag;2</gift>
+		</things>
+		
+		<things cnName="周年特惠礼包">
+			<name>anniver2025_2</name>
+			<cnName>周年豪华礼包</cnName>
+			<iconUrl>ThingsIcon/postPlatinumChest</iconUrl>
+			<useSave>shopAuto</useSave>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店黄金购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<showGiftB>1</showGiftB>
+			<gift>things;zodiacCash;25</gift>
+			<gift>things;demonChest;1</gift>
+			<gift>things;madheart;15</gift>
+			<gift>things;demStone;15</gift>
+			<gift>things;yaStone;15</gift>
+			<gift>things;yaRock;15</gift>
+			<gift>things;armsGemChest;25</gift>
+			<gift>things;equipGemChest;25</gift>
+			<gift>base;partsCoin;10</gift>
+			<gift>base;wilderKey;2</gift>
+			<gift>things;ghostStone;5</gift>
+			<gift>things;partsChest90;1</gift>
+		</things>
+		
+		<things cnName="bug补偿礼包">
+			<name>offset2025_7</name>
+			<cnName>bug补偿礼包</cnName>
+			<iconUrl>ThingsIcon/postNormalChest</iconUrl>
+			<useSave>shopAuto</useSave>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店银币购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<showGiftB>1</showGiftB>
+			<gift>head;maxBug;1</gift>
+			<gift>things;demStone;15</gift>
+			<gift>things;demBall;20</gift>
+			<gift>things;madheart;15</gift>
+			<gift>things;yaStone;15</gift>
+			<gift>things;yaRock;15</gift>
+			<gift>things;nuclearStone;20</gift>
+			<gift>base;partsCoin;30</gift>
+			<gift>things;bossCardStamp;20</gift>
+			<gift>base;wilderKey;10</gift>
+		</things>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</father>
+	</data>

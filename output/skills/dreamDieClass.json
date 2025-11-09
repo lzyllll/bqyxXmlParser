@@ -1,0 +1,42 @@
+{
+  "father": {
+    "type": "energy",
+    "cnName": "火炮-特殊",
+    "bullet": {
+      "cnName": "幻灭",
+      "name": "dreamDie",
+      "color": "yagold",
+      "capacity": 200,
+      "attackGap": 0.12,
+      "reloadGap": 1,
+      "shakeAngle": 1,
+      "bulletWidth": 30,
+      "bulletShakeWidth": "0,0",
+      "aiShootRange": 610,
+      "armsArmMul": 0.6,
+      "upValue": 10,
+      "shootShakeAngle": 10,
+      "shootRecoil": 1,
+      "screenShakeValue": 3,
+      "noShakeTime": 0.5,
+      "bulletLife": 0.65,
+      "hitType": "rect",
+      "bulletSpeed": 40,
+      "iconUrl": "specialGun/dreamDieIcon",
+      "flipX": 1,
+      "bulletImgUrl": {
+        "name": "SilverShipBullet"
+      },
+      "fireImgUrl": {
+        "name": "SilverShipFire"
+      },
+      "hitImgUrl": {
+        "name": "gun_hit"
+      },
+      "shootSoundUrl": "sound/laserShoot",
+      "bodyImgRange": "specialGun/dreamDie",
+      "bulletImgRange": "specialGun/bullet",
+      "description": null
+    }
+  }
+}

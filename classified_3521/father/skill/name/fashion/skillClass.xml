@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="fashion" cnName="时装技能">
+		<skill cnName="南瓜头技能">
+			<name>pumpkinHead</name>
+			<cnName>后来居上</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>noDemonOnlyBoss,noTask,noUnionBattle</otherConditionArr>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>lessRedArms</effectType>
+			<mul>10</mul>
+			<description>红色及红色以下的武器，伤害提升10倍。主线、争霸、修罗决斗无效。</description>
+		</skill>
+		
+		<skill name="wolfFashionSkill" cnName="">
+			<name>wolfFashionSkill</name>
+			<cnName>狼震</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>skillCombo</condition>
+			<otherConditionArr>skillCombo</otherConditionArr>
+			<conditionRange>1</conditionRange>
+			<conditionString>crazy_hero,feedback_hero</conditionString>
+			<target limitNum="20">me,range,enemy</target>
+			
+			<addType>instant</addType>
+			<effectType>normal_hurt</effectType>
+			<extraValueType>nowArmsTrueDps</extraValueType>
+			<mul>10</mul>
+			<range>1000</range>
+			
+			<meEffectImg soundUrl="sound/wolfFashionSkill" />
+			<targetEffectImg con="add">bulletHitEffect/wolfShake</targetEffectImg>
+			<description>同时触发人物技能狂暴、电离折射时，对周围1000码内的敌人发起狼震攻击，造成相当于当前武器面板伤害*射速*10的伤害。</description>
+		</skill>
+		
+		
+		<skill>
+			<name>goldFalcon</name>
+			<cnName>金翼</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>goldFalcon</effectType>
+			<description>进入关卡将长出黄金翅膀，让角色一直处于飞行状态。主线任务、首领工厂的困难模式下无效。未穿该时装时，可用“使用外观”来让角色获得该技能效果。可使用“I”键来切换陆空状态。</description>
+			<duration>9999999</duration>
+		</skill>
+		
+		<skill>
+			<name>dragonHeadSkill</name>
+			<cnName>龙翅</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>instant</addType><summonedUnitsB>1</summonedUnitsB>
+			<effectType>dragonHeadSkill</effectType>
+			<obj>"cnName":"异火龙"</obj>
+			<description>进入关卡将长出龙翅，让角色一直处于飞行状态。主线任务、争霸下无效。可使用“I”键来切换陆空状态。</description>
+		</skill>
+		<skill>
+			<name>zombieMask</name>
+			<cnName>伪装</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+			<target>me</target>
+			<otherConditionArr>noTask</otherConditionArr>
+			
+			<addType>state</addType>
+			<effectType>noAiFind</effectType>
+			<description>伪装成僵尸，使敌人永远不会攻击你。任务中无效。</description>
+			<duration>9999999</duration>
+		</skill>
+		
+		<skill cnName="恶魔风脚">
+			<name>crazy_sanji</name>
+			<cnName>恶魔风脚</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>vehicleOver</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>shootSpeedAndHurt</effectType>
+			<mul>2</mul>
+			<secMul>2</secMul>
+			<duration>5</duration>
+			
+			<meEffectImg soundUrl="sound/crazy_hero" />
+			<stateEffectImg partType="2hand,2leg" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg>
+			<description>载具使用完后，自身燃起烈火，攻击力增加100%，射击速度增加100%，不消耗子弹（非修罗模式），持续5秒。</description>
+		</skill>
+		<skill cnName="飞雷神">
+			<name>xiaoBoShoot</name>
+			<cnName>飞雷神</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>usewolongStick</condition>
+			<target>me</target>
+			<delay>0.15</delay>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			
+			<obj>"name":"xiaoBoShoot","site":"me","flipB":true</obj>
+			
+			<description>挥舞沃龙牌棍棒，释放出分身，对前方的敌人造成最大生命值12%的伤害。修罗模式、99级主线任务中效果降低。</description>
+		</skill>
+		<skill cnName="鸣人">
+			<name>xiaoMingShoot</name>
+			<cnName>疾风斩</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>usebutcherBlade</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>bullet_xiaoMing</effectType>
+			<mul>0.15</mul>
+			<value>70</value>
+			<duration>1.2</duration>
+			
+			<obj>"name":"knife_xiaoMing"</obj>
+			
+			<description>挥舞屠夫砍击前方所有敌人，对普通单位造成瞬秒伤害，对首领造成最大生命值15%的伤害。修罗模式、99级主线任务下效果降低。</description>
+		</skill>
+		<skill index="1" name="瞬秒-小怪">
+			<name>seckillNormalEnemy</name>
+			<cnName>瞬秒</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>seckillNormalEnemy</effectType>
+		</skill>
+		
+		<skill cnName="小炎戒">
+			<name>xiaoAiShoot</name>
+			<cnName>小炎戒</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>poison_xiaoAi</effectType>
+			<extraValueType>targetMaxLife</extraValueType>
+			<mul>0.011</mul>
+			<doGap>1</doGap>
+			<duration>2</duration>
+			 
+			<stateEffectImg partType="arm_right_1,arm_left_1,leg_right_1,leg_left_1" con="add" raNum="30">skillEffect/redFire</stateEffectImg>
+			<description>将火焰灌输进子弹，高温子弹使敌人燃烧，每秒造成最大生命值1.1%的灼烧伤害。修罗模式下效果降低。</description>
+		</skill>
+		<skill cnName="英雄跳斩-降低目标攻击力">
+			<name>shotgunBladeHero</name>
+			<cnName>英雄跳斩-降低目标攻击力</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>hurtMul</effectType>
+			<mul>0.3</mul>
+			<duration>5</duration>
+			<stateEffectImg partType="2hand,arm_right_0,arm_right_1,arm_left_0,arm_left_1">skillEffect/disabled_enemy</stateEffectImg>
+			<description>减少被击中目标[1-mul]的攻击力。</description>
+		</skill>
+		
+		<skill name="chinaCaptainSkill" cnName="队长之魄">
+			<name>chinaCaptainSkill</name>
+			<cnName>队长之魄</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>cdMul</effectType>
+			<mul>1.3</mul>
+			<duration>2</duration>
+			<range>1500</range>
+			 
+			<description>震慑1500码内的敌人，使他们所有主动技能冷却时间延长30%。</description>
+		</skill>
+		<skill name="armyCommanderSkill" cnName="鼓舞士气">
+			<name>armyCommanderSkill</name>
+			<cnName>鼓舞士气</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target noMainB="1">me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>underHurtMulAndMul</effectType>
+			<mul>0.7</mul>
+			<secMul>0.7</secMul>
+			<duration>2</duration>
+			<range>99999</range>
+			 
+			<stateEffectImg partType="mouth" con="add">skillEffect/rune_blue_shield</stateEffectImg>
+			<description>使周围队友（除了P1角色）的防御力提升30%、百分比伤害降低30%。</description>
+		</skill>
+		
+		
+		
+		
+		<skill>
+			<name>yanluoSkill</name>
+			<cnName>煞刃</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>yanluoSkill</effectType>
+			<mul>3</mul>
+			<duration>999999</duration>
+			<description>使用死神副手时将有专属动作；在场有敌人首领或精英怪时，怒气回复速度增加至原来的[mul]；使用“斩之核心”装置时不再召唤斩之使者，而是添加一个70%时间的Buff，Buff效果如下：怒气无限，近战伤害+200%，近战动作期间处于无敌状态。</description>
+		</skill>
+		<skill>
+			<name>snowShadowSkill</name>
+			<cnName>怒目</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>snowShadowSkill</effectType>
+			<value>66</value>
+			<mul>1.5</mul>
+			<duration>999999</duration>
+			<description>保持移动速度不降低，受到伤害时能保持准星；初始拥有[value]%的怒气，怒气回复速度增加至原来的[mul]；使用月刺将拥有较大攻击范围。</description>
+		</skill>
+		<skill name="foxLingSkill">
+			<name>foxLingSkill</name>
+			<cnName>流萤扇</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>bladeSkill</effectType>
+			<value>33</value>
+			<mul>2.3</mul>
+			<duration>999999</duration>
+			<description>初始拥有[value]%的怒气，怒气回复速度增加至原来的[mul]；使用剑齿镖时将投出跟踪流萤扇。</description>
+		</skill>
+		
+		
+		<skill name="bladeSkill">
+			<name>bladeSkill</name>
+			<cnName>盛怒</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>bladeSkill</effectType>
+			<value>33</value>
+			<mul>2.3</mul>
+			<duration>999999</duration>
+			<description>初始拥有[value]%的怒气，怒气回复速度增加至原来的[mul]；使用屠夫时将拥有超大攻击范围。</description>
+		</skill>
+		
+		<skill name="hundredGhostsSkill">
+			<name>hundredGhostsSkill</name>
+			<cnName>鬼诀</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<duration>999999</duration>
+			<description>使用凯撒有专属动作；在此动作期间，如果同时装备有8级镭射穿梭器，还会在出招前瞬移到鼠标点位置（可在“系统&gt;其他”中设置成双击瞬移），使用其他时装外观时不会拥有该效果。</description>
+		</skill>
+		
+		
+		<skill name="cyanArmySkill" cnName="无敌之怒">
+			<name>cyanArmySkill</name>
+			<cnName>无敌之怒</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>hurtUnderIsInvincible</otherConditionArr>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>otherHurtMul</effectType>
+			<mul>4</mul>
+			<duration>3</duration>
+			 
+			<stateEffectImg partType="shootPoint" con="filter" raNum="30">bulletHitEffect/fireSmoke</stateEffectImg>
+			<description>攻击无敌怪物时，你的伤害会提高400%，持续3秒。</description>
+		</skill>
+		
+		
+		
+		
+		<skill index="0" name="生化锁定">
+			<name>bioShockSkill</name>
+			<cnName>生化锁定</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<valueString>boss</valueString>
+			<mul>1.30</mul>
+			
+			<obj>"type":"enemyType"</obj>
+			
+			<description>对首领造成额外30%的伤害。</description>
+		</skill>
+		<skill>
+			<name>hurtBossAdd</name>
+			<cnName>生化锁定X</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<valueString>boss</valueString>
+			<mul>2</mul>
+			
+			<obj>"type":"enemyType"</obj>
+			
+			<description>对首领造成额外[mul-1]的伤害。</description>
+		</skill>
+	</father>	
+	
+	</data>

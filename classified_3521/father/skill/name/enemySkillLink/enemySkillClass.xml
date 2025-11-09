@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemySkillLink" cnName="英雄技能-链接">
+		<skill index="0" name="电离折射-反弹被动技能">
+			<name>backHurt_enemy_link</name>
+			<cnName>反馈--反弹被动技能</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>backHurt</effectType>
+			<extraValueType>hurtValue</extraValueType>
+			<value>0</value>
+			<mul>0.1</mul>
+		</skill>
+		
+		<skill index="0" name="闪电麻痹-减速">
+			<name>paralysis_enemy_link</name>
+			<cnName>闪电麻痹-减速</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<mul>0</mul>
+			<duration>5</duration>
+			 
+			<stateEffectImg con="add">skillEffect/paralysis_enemy</stateEffectImg>
+		</skill>
+		<skill index="0" name="生命置换-置换">
+			<name>lifeReplace_enemy_link</name>
+			<cnName>生命置换-置换</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>lifeReplace</effectType>
+			 
+		</skill>
+		<skill index="0" name="技能复制-复制">
+			<name>skillCopy_enemy_link</name>
+			<cnName>技能复制-复制</cnName><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>skillCopy</effectType>
+			 
+		</skill>
+		<skill index="6" cnName="全局溅射-链接">
+			<name>globalSpurting_enemy_link</name>
+			<cnName>全局溅射-链接</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target,range,enemy</target>
+			
+			<addType>instant</addType>
+			<effectType>globalSpurting_enemy</effectType>
+			<extraValueType>hurtValue</extraValueType>
+			<value>0</value>
+			<mul>1</mul>
+			<range>500</range>
+			
+			<meEffectImg />
+			<targetEffectImg>bulletHitEffect/yellow_motion</targetEffectImg>
+			<description>击中目标后，对其[range]范围内的敌方单位造成伤害，伤害值为武器伤害的50%。</description>
+		</skill>
+	</father>
+	</data>

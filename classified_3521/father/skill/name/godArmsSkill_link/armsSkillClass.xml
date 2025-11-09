@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill_link" cnName="链接">
+		<skill name="炎爆-爆">
+			<name>Hit_burn_ArmsSkill_link</name>
+			<cnName>炎爆-爆</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<extraValueType>nowArmsTrueDps</extraValueType>
+			<effectType>crit</effectType>
+			<value>1</value>
+			<mul>7</mul>
+			<targetEffectImg partType="body" soundUrl="boomSound/midBoom">boomEffect/boom3</targetEffectImg>
+			<description>火焰爆炸伤害。</description>
+		</skill>
+		<skill name="爆胆-无法叠加得buff">
+			<name>fear_noBuff</name><noRandomListB>1</noRandomListB>
+			<cnName>爆胆-无法叠加得buff</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<duration>3</duration>
+		</skill>
+		
+		<skill>
+			<name>sickle_godArmsSkill2_link</name><noBeClearB>1</noBeClearB>
+			<cnName>超级飞镰-破甲</cnName><noRandomListB>1</noRandomListB><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType><changeHurtB>1</changeHurtB>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>overwhelmed</effectType>
+			<mul>1.4</mul>
+			<description>对拥有技能防弹外壳、防弹钢甲的敌人造成额外[mul-1]的伤害。</description>
+		</skill>
+		
+	</father>		
+</data>

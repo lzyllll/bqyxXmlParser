@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="memory" cnName="回忆" autoUnlockByLevelB="1">
+		<task name="WoTu_1M" cnName="沃土镇" lv="1">
+			<shortText />
+			<uiConditionText>消灭所有僵尸</uiConditionText>
+			<description>消灭所有僵尸。</description>
+			
+			<worldMapId>WoTu</worldMapId>
+			<levelId>WoTu_1</levelId>
+			<openD tk="Hospital5_plot" />
+			<gift>base;anniCoin;16</gift>
+			<gift>things;madheart;2</gift>
+		</task>
+		<task name="YangMei_1M" cnName="杨梅岭" lv="3">
+			<shortText />
+			<uiConditionText>消灭携枪僵尸首领</uiConditionText>
+			<description>消灭杨梅岭深处一只携枪僵尸，并抢走他的武器。</description>
+			
+			<worldMapId>YangMei</worldMapId>
+			<levelId>YangMei_1</levelId>
+			<condition type="levelWin" />
+			<gift>base;anniCoin;16</gift>
+			<gift>things;madheart;2</gift>
+		</task>
+		<task name="XiaSha_1M" cnName="下沙" lv="4">
+			<shortText />
+			<uiConditionText>消灭所有僵尸</uiConditionText>
+			<description>消灭所有僵尸。</description>
+			
+			<worldMapId>XiaSha</worldMapId>
+			<levelId>XiaSha_1</levelId>
+			<condition type="levelWin" />
+			<gift>base;anniCoin;16</gift>
+			<gift>things;madheart;2</gift>
+		</task>
+		<task name="FengWei_1M" cnName="凤尾洋" lv="5">
+			<shortText />
+			<uiConditionText>消灭所有僵尸</uiConditionText>
+			<description>消灭所有僵尸。</description>
+			
+			<worldMapId>FengWei</worldMapId>
+			<levelId>FengWei_1</levelId>
+			<condition type="levelWin" />
+			<gift>base;anniCoin;16</gift>
+			<gift>things;madheart;2</gift>
+		</task>
+		<task name="XiChi_1M" cnName="西池" lv="6">
+			<shortText />
+			<uiConditionText>消灭所有僵尸</uiConditionText>
+			<description>消灭最后出现的僵尸，获得超能石。</description>
+			
+			<worldMapId>XiChi</worldMapId>
+			<levelId>XiChi_1</levelId>
+			<condition type="levelWin" />
+			<gift>base;anniCoin;16</gift>
+			<gift>things;madheart;2</gift>
+		</task>
+		<task name="BaiLu_1M" cnName="白鹭镇" lv="7">
+			<shortText />
+			<uiConditionText>消灭所有僵尸</uiConditionText>
+			<description>消灭所有僵尸。</description>
+			
+			<worldMapId>BaiLu</worldMapId>
+			<levelId>BaiLu_1</levelId>
+			<condition type="levelWin" />
+			<gift>base;anniCoin;16</gift>
+			<gift>things;madheart;2</gift>
+		</task>
+		<task name="ShuiSheng_1M" cnName="水升村" lv="8">
+			<shortText />
+			<uiConditionText>消灭僵尸王</uiConditionText>
+			<description>消灭僵尸王。</description>
+			
+			<worldMapId>ShuiSheng</worldMapId>
+			<levelId>ShuiSheng_1</levelId>
+			<condition type="levelWin" />
+			<gift>base;anniCoin;16</gift>
+			<gift>things;madheart;2</gift>
+		</task>
+		<task name="BaiZhang_1M" cnName="比拼灭敌" lv="9" failB="1" uiShowTime="999999" moreKillEnemyNumIsMe="1">
+			<shortText>在消灭所有僵尸之后，你的灭敌数必须超过藏师。</shortText>
+			<conditionText>macth_kills_ZhangShi</conditionText>
+			<description>在消灭所有僵尸之后，你的灭敌数必须超过藏师。</description>
+			
+			<uiFleshCondition>
+				<one>bodyEvent:die; anyone</one>
+			</uiFleshCondition>
+			<worldMapId>BaiZhang</worldMapId>
+			<levelId>BaiZhang_1</levelId>
+			<gift>base;anniCoin;16</gift>
+			<gift>things;madheart;2</gift>
+		</task>
+		
+		<task name="ZhuTou_1M" cnName="猪头洋" lv="10">
+			<shortText />
+			<uiConditionText>消灭所有僵尸</uiConditionText>
+			<description>消灭所有僵尸。</description>
+			
+			<worldMapId>ZhuTou</worldMapId>
+			<levelId>ZhuTou_1</levelId>
+			<condition type="levelWin" />
+			<gift>base;anniCoin;16</gift>
+			<gift>things;madheart;2</gift>
+		</task>
+		
+		<task name="ShuangTa_1M" cnName="双塔村" lv="11">
+			<shortText />
+			<uiConditionText>消灭所有敌人</uiConditionText>
+			<description>消灭所有敌人。</description>
+			
+			<worldMapId>ShuangTa</worldMapId>
+			<levelId>ShuangTa_1</levelId>
+			<condition type="levelWin" />
+			<gift>base;anniCoin;16</gift>
+			<gift>things;madheart;2</gift>
+		</task>
+		
+		<task name="BeiDou_1M" cnName="北斗城" lv="13">
+			<shortText />
+			<uiConditionText>消灭所有敌人</uiConditionText>
+			<description>消灭所有敌人。</description>
+			
+			<worldMapId>BeiDou</worldMapId>
+			<levelId>BeiDou_1</levelId>
+			<condition type="levelWin" />
+			<gift>base;anniCoin;16</gift>
+			<gift>things;madheart;2</gift>
+		</task>
+		
+		<task name="DongShan_1M" cnName="东山澳" lv="14">
+			<shortText />
+			<uiConditionText>消灭所有敌人</uiConditionText>
+			<description>消灭所有敌人。</description>
+			
+			<worldMapId>DongShan</worldMapId>
+			<levelId>DongShan_1</levelId>
+			<condition type="levelWin" />
+			<gift>base;anniCoin;16</gift>
+			<gift>things;madheart;2</gift>
+		</task>
+		
+		<task name="QingSha_1M" cnName="青纱镇" lv="15">
+			<shortText />
+			<uiConditionText>消灭所有敌人</uiConditionText>
+			<description>消灭所有敌人。</description>
+			
+			<worldMapId>QingSha</worldMapId>
+			<levelId>QingSha_1</levelId>
+			<condition type="levelWin" />
+			<gift>base;anniCoin;16</gift>
+			<gift>things;madheart;2</gift>
+		</task>
+		
+		<task name="QingMing_1M" cnName="清明岭" lv="16">
+			<shortText />
+			<uiConditionText>消灭所有敌人</uiConditionText>
+			<description>消灭所有敌人。</description>
+			
+			<worldMapId>QingMing</worldMapId>
+			<levelId>QingMing_1</levelId>
+			<condition type="levelWin" />
+			<gift>base;anniCoin;16</gift>
+			<gift>things;madheart;2</gift>
+		</task>
+		
+		<task name="NanTang_1M" cnName="南唐" lv="18">
+			<shortText />
+			<uiConditionText>消灭所有敌人</uiConditionText>
+			<description>消灭所有敌人。</description>
+			
+			<worldMapId>NanTang</worldMapId>
+			<levelId>NanTang_1</levelId>
+			<condition type="levelWin" />
+			<gift>base;anniCoin;16</gift>
+			<gift>things;madheart;2</gift>
+		</task>
+	</father>
+</data>

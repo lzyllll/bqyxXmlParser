@@ -1,0 +1,88 @@
+{
+  "father": {
+    "type": "car",
+    "cnName": "战车载具所需",
+    "bullet": {
+      "GaiaFit_main": {
+        "cnName": "轰天雷-主炮",
+        "name": "GaiaFit_main",
+        "hurtRatio": 1,
+        "shakeAngle": 1,
+        "bulletLife": 2,
+        "bulletNum": 3,
+        "shootAngle": 5,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "attackGap": 0.2,
+        "shootRecoil": 15,
+        "screenShakeValue": 16,
+        "bulletSpeed": 45,
+        "boomD": {
+          "bodyB": true,
+          "floorB": true,
+          "radius": 120
+        },
+        "flipX": 1,
+        "fireImgUrl": null,
+        "bulletImgUrl": "bullet/gaiaFit",
+        "hitImgUrl": "boomEffect/boom3",
+        "armsType": "car"
+      },
+      "CivilianFit_main": {
+        "cnName": "镇山虎-主炮",
+        "name": "CivilianFit_main",
+        "hurtRatio": 2,
+        "shakeAngle": 1,
+        "bulletLife": 2,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "attackGap": 0.2,
+        "shootRecoil": 15,
+        "screenShakeValue": 16,
+        "bulletSpeed": 35,
+        "boomD": {
+          "bodyB": true,
+          "floorB": true,
+          "radius": 120
+        },
+        "flipX": 1,
+        "fireImgUrl": null,
+        "bulletImgUrl": "CivilianFit/bullet",
+        "hitImgUrl": "CivilianFit/hit",
+        "smokeImgUrl": "CivilianFit/smoke",
+        "armsType": "car"
+      },
+      "FlyFit_main": {
+        "cnName": "霸空雕-主炮",
+        "name": "FlyFit_main",
+        "hurtRatio": 0.8,
+        "shakeAngle": 1,
+        "bulletLife": 2,
+        "bulletWidth": 35,
+        "hitType": "rect",
+        "bulletNum": 3,
+        "shootAngle": 5,
+        "attackGap": 0.2,
+        "shootRecoil": 15,
+        "screenShakeValue": 16,
+        "bulletSpeed": 30,
+        "boomD": {
+          "bodyB": true,
+          "floorB": true,
+          "radius": 120
+        },
+        "followD": {
+          "value": 1,
+          "delay": 0.1,
+          "noLM": 1
+        },
+        "flipX": 1,
+        "fireImgUrl": null,
+        "bulletImgUrl": "FlyFit/bullet",
+        "smokeImgUrl": "FlyFit/smoke",
+        "hitImgUrl": "bulletHitEffect/energy",
+        "armsType": "car"
+      }
+    }
+  }
+}

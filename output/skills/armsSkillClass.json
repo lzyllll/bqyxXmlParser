@@ -1,0 +1,981 @@
+{
+  "father": [
+    {
+      "name": "armsSkill",
+      "cnName": "武器技能",
+      "skills": {
+        "Hit_SlowMove_ArmsSkill": {
+          "name": "Hit_SlowMove_ArmsSkill",
+          "cnName": "击中减速",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "effectType": "moveSpeed",
+          "value": 0,
+          "mul": 0.6,
+          "duration": 2,
+          "range": 0,
+          "meEffectImg": null,
+          "stateEffectImg": {
+            "value": "skillEffect/disabled_enemy",
+            "partType": "2foot"
+          },
+          "description": "击中目标后减少其[1-mul]的移动速度，持续2秒。"
+        },
+        "Kill_AddCharger_ArmsSkill": {
+          "name": "Kill_AddCharger_ArmsSkill",
+          "cnName": "击毙补充弹药",
+          "conditionType": "passive",
+          "condition": "killTarget",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "charger",
+          "value": 0,
+          "mul": 0.05,
+          "obj": {
+            "target": "now",
+            "addType": "add"
+          },
+          "meEffectImg": null,
+          "targetEffectImg": null,
+          "description": "击毙单位后，补充当前武器5%的携弹量。"
+        },
+        "Kill_AddLifeMul_ArmsSkill": {
+          "name": "Kill_AddLifeMul_ArmsSkill",
+          "cnName": "击毙回复",
+          "conditionType": "passive",
+          "condition": "killTarget",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "life",
+          "value": 0,
+          "mul": 0.04,
+          "obj": {
+            "target": "now",
+            "addType": "add"
+          },
+          "meEffectImg": null,
+          "targetEffectImg": null,
+          "description": "击毙单位后，补充自身4%的生命值。"
+        },
+        "Hit_Poison_ArmsSkill": {
+          "name": "Hit_Poison_ArmsSkill",
+          "cnName": "剧毒",
+          "conditionType": "passive",
+          "noSkillDodgeB": 1,
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "effectType": "poison",
+          "extraValueType": "hurtValue",
+          "value": 0,
+          "mul": 0.2,
+          "doGap": 1,
+          "duration": 5,
+          "meEffectImg": null,
+          "stateEffectImg": {
+            "value": "skillEffect/poisonousFog_hero",
+            "partType": "mouth",
+            "con": "add"
+          },
+          "description": "击中目标后，使其每秒减少一定的生命值，减少量为武器当前造成伤害的20%，持续5秒。"
+        },
+        "Kill_Spurting_ArmsSkill": {
+          "name": "Kill_Spurting_ArmsSkill",
+          "cnName": "击毙溅射",
+          "conditionType": "passive",
+          "condition": "killTarget",
+          "target": "target,range,enemy",
+          "addType": "instant",
+          "effectType": "spurting",
+          "extraValueType": "nowArmsDps",
+          "value": 0,
+          "mul": 0.3,
+          "range": 200,
+          "meEffectImg": null,
+          "targetEffectImg": null,
+          "description": "击毙目标后，对其200范围内的敌方单位造成伤害，伤害值为武器实际战斗力的30%。"
+        },
+        "Kill_Crazy_ArmsSkill": {
+          "name": "Kill_Crazy_ArmsSkill",
+          "cnName": "振奋",
+          "conditionType": "passive",
+          "condition": "killTarget",
+          "target": "me",
+          "addType": "state",
+          "effectType": "hurtMul",
+          "mul": 1.2,
+          "duration": 2,
+          "meEffectImg": null,
+          "stateEffectImg": {
+            "value": "skillEffect/trueshot_enemy",
+            "partType": "2hand",
+            "con": "add",
+            "raNum": 30,
+            "followPartRaB": true
+          },
+          "description": "击毙敌人后，自身攻击力提升20%，持续2秒。"
+        },
+        "Hit_Spurting_ArmsSkill": {
+          "name": "Hit_Spurting_ArmsSkill",
+          "cnName": "击中溅射",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target,range,enemy,,,6",
+          "addType": "instant",
+          "effectType": "spurting",
+          "extraValueType": "hurtValue",
+          "value": 0,
+          "mul": 0.1,
+          "range": 200,
+          "meEffectImg": null,
+          "targetEffectImg": null,
+          "description": "击中目标后，对其200范围内的敌方单位造成伤害，伤害值为武器所造成伤害的10%。"
+        },
+        "Hit_disabled_ArmsSkill": {
+          "name": "Hit_disabled_ArmsSkill",
+          "cnName": "致残",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "effectType": "hurtMul",
+          "mul": 0.75,
+          "duration": 2,
+          "stateEffectImg": {
+            "value": "skillEffect/disabled_enemy",
+            "partType": "2hand"
+          },
+          "description": "击中目标后减少其25%的攻击力，持续2秒。"
+        },
+        "Hit_Paralysis_ArmsSkill": {
+          "name": "Hit_Paralysis_ArmsSkill",
+          "cnName": "击中麻痹",
+          "createByArmsTypePro": "effectProArr",
+          "haveEffectBuletHitNum": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "effectType": "moveSpeed",
+          "effectProArr": 0.03,
+          "mul": 0,
+          "duration": 2,
+          "targetEffectImg": {
+            "soundUrl": "sound/paralysis_enemy_hit"
+          },
+          "stateEffectImg": {
+            "value": "skillEffect/paralysis_enemy",
+            "con": "add"
+          },
+          "description": "击中目标后，有[effectProArr.0]的几率使其麻痹，持续[duration]秒。"
+        },
+        "Hit_blindness_ArmsSkill": {
+          "name": "Hit_blindness_ArmsSkill",
+          "cnName": "致盲",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "effectType": "lostPro",
+          "mul": 0.25,
+          "duration": 3,
+          "stateEffectImg": {
+            "value": "skillEffect/disabled_enemy",
+            "partType": "2eye"
+          },
+          "description": "击中目标后使其失去准心，使其攻击成功率降低[mul]，持续3秒。"
+        },
+        "Hit_AddLifeMul_ArmsSkill": {
+          "name": "Hit_AddLifeMul_ArmsSkill",
+          "cnName": "击中回复",
+          "haveEffectBuletHitNum": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "Hit_AddLifeMul",
+          "extraValueType": "hurtValue",
+          "value": 0.008,
+          "mul": 0,
+          "meEffectImg": null,
+          "targetEffectImg": null,
+          "description": "击中目标后，补充自身生命值，补充值为武器所造成伤害的1%。"
+        },
+        "Hit_silence_ArmsSkill": {
+          "name": "Hit_silence_ArmsSkill",
+          "cnName": "击中沉默",
+          "createByArmsTypePro": "effectProArr",
+          "haveEffectBuletHitNum": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "instantAndState",
+          "effectType": "silenceBAndClearState",
+          "effectProArr": 0.015,
+          "value": 1,
+          "duration": 2,
+          "targetEffectImg": {
+            "soundUrl": "sound/silence_enemy"
+          },
+          "stateEffectImg": {
+            "value": "skillEffect/silence_enemy",
+            "partType": "mouth",
+            "con": "add"
+          },
+          "description": "击中目标后，有[effectProArr.0]的几率使其无法释放技能，持续[duration]秒，同时清除目标身上一些状态。"
+        },
+        "Hit_hitMissile_godArmsSkill": {
+          "name": "Hit_hitMissile_godArmsSkill",
+          "cnName": "击中派生",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "bullet",
+          "effectProArr": 0.06,
+          "extraValueType": "nowArmsDps",
+          "obj": {
+            "name": "hitMissile_hero",
+            "site": "shootPoint",
+            "flipB": false
+          },
+          "meEffectImg": null,
+          "targetEffectImg": null,
+          "description": "每次射击都有[effectProArr.0]的概率派生跟踪导弹。导弹伤害为当前武器实际战斗力值。"
+        }
+      }
+    },
+    {
+      "name": "randomGodArmsSkill",
+      "cnName": "神级武器技能-参加随机",
+      "skills": {
+        "randomGodArmsSkill": {
+          "cnName": "刷新",
+          "name": "Hit_fleshSkill_godArmsSkill",
+          "secString": "texture/t9",
+          "createByArmsTypePro": "effectProArr",
+          "haveEffectBuletHitNum": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "fleshLastSkill",
+          "effectProArr": 0.02,
+          "mul": 0.15,
+          "meEffectImg": {
+            "soundUrl": "sound/skillFlesh"
+          },
+          "description": "每次击中目标都有[effectProArr.0]的几率使最近使用的那一个主动技能的冷却时间回复20%。"
+        }
+      }
+    },
+    {
+      "name": "godArmsSkill",
+      "cnName": "神级技能",
+      "skills": {
+        "Hit_imploding_godArmsSkill": {
+          "cnName": "爆石",
+          "name": "Hit_imploding_godArmsSkill",
+          "noRandomListB": 1,
+          "haveEffectBuletHitNum": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "bullet",
+          "effectProArr": 0.05,
+          "mul": 40,
+          "extraValueType": "nowArmsHurt",
+          "obj": {
+            "name": "imploding_godArmsSkill",
+            "site": "me",
+            "flipB": true
+          },
+          "description": "每次击中目标都有[effectProArr.0]的几率使自身爆发5颗石头，每颗石头伤害值为：[mul]*武器面板伤害*增伤Buff（排除武器技能、零件技能）。"
+        },
+        "Hit_Lightning_godArmsSkill": {
+          "name": "Hit_Lightning_godArmsSkill",
+          "noRandomListB": 1,
+          "cnName": "击中闪电",
+          "haveEffectBuletHitNum": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "me,near,enemy",
+          "addType": "instant",
+          "effectType": "lightning_godArmsSkill",
+          "effectProArr": 0.05,
+          "extraValueType": "nowArmsDps",
+          "value": 0,
+          "mul": 1,
+          "range": 300,
+          "meEffectImg": null,
+          "description": "击中敌人后有[effectProArr.0]的几率产生高压电流，对[range]码内最近的敌人造成1倍于武器实际战斗力的伤害。"
+        },
+        "Hit_Hammer_godArmsSkill": {
+          "index": 2,
+          "name": "Hit_Hammer_godArmsSkill",
+          "noRandomListB": 1,
+          "cnName": "击中眩晕",
+          "haveEffectBuletHitNum": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "instantAndState",
+          "effectType": "dizziness",
+          "effectProArr": 0.07,
+          "duration": 2,
+          "stateEffectImg": {
+            "value": "skillEffect/dizziness",
+            "partType": "mouth",
+            "con": "add"
+          },
+          "description": "击中目标有[effectProArr.0]的几率使目标陷入眩晕状态，持续[duration]秒。"
+        },
+        "Hit_SuperMissile_godArmsSkill": {
+          "index": 3,
+          "name": "Hit_SuperMissile_godArmsSkill",
+          "noRandomListB": 1,
+          "cnName": "超级派生",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "bullet",
+          "effectProArr": 0.09,
+          "mul": 1,
+          "extraValueType": "nowArmsDps",
+          "obj": {
+            "name": "hitMissile_hero",
+            "site": "shootPoint",
+            "flipB": false
+          },
+          "meEffectImg": null,
+          "targetEffectImg": null,
+          "description": "每次射击都有9%的概率派生跟踪导弹。导弹伤害为当前武器实际战斗力值。"
+        },
+        "superHitSlow": {
+          "name": "superHitSlow",
+          "noRandomListB": 1,
+          "cnName": "超级减速",
+          "ignoreImmunityB": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "effectType": "moveSpeed",
+          "value": 0,
+          "mul": 0.5,
+          "duration": 2,
+          "range": 0,
+          "meEffectImg": null,
+          "stateEffectImg": {
+            "value": "skillEffect/disabled_enemy",
+            "partType": "2foot"
+          },
+          "description": "击中目标后减少其[1-mul]的移动速度，持续2秒。无视技能免疫。"
+        },
+        "Hit_Paralysis_ArmsSkill2": {
+          "name": "Hit_Paralysis_ArmsSkill2",
+          "noRandomListB": 1,
+          "cnName": "超级麻痹",
+          "haveEffectBuletHitNum": 1,
+          "ignoreImmunityB": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "effectType": "moveSpeed",
+          "effectProArr": 0.02,
+          "mul": 0,
+          "duration": 4,
+          "targetEffectImg": {
+            "soundUrl": "sound/paralysis_enemy_hit"
+          },
+          "stateEffectImg": {
+            "value": "skillEffect/paralysis_enemy",
+            "con": "add"
+          },
+          "description": "击中目标后，有[effectProArr.0]的几率使其麻痹，持续[duration]秒。"
+        },
+        "Hit_burn_ArmsSkill": {
+          "name": "Hit_burn_ArmsSkill",
+          "noRandomListB": 1,
+          "cnName": "炎爆",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "overlyingB": 1,
+          "effectType": "burn_arms",
+          "valueString": "Hit_burn_ArmsSkill_link",
+          "value": 100,
+          "duration": 2,
+          "stateEffectImg": {
+            "bodyColor": 16711680
+          },
+          "description": "每次伤害都会给目标叠加1层持续[duration]秒的“火焰”，当叠加到[value]层时对目标造成巨大的爆炸伤害。"
+        },
+        "cold_ArmsSkill": {
+          "name": "cold_ArmsSkill",
+          "noRandomListB": 1,
+          "cnName": "冷凝",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "overlyingB": 1,
+          "effectType": "cold_arms",
+          "value": 40,
+          "mul": 0.005,
+          "duration": 2,
+          "stateEffectImg": {
+            "bodyColor": 57589
+          },
+          "description": "每次伤害都会给目标叠加1层持续[duration]秒的“霜冻”，每层降低目标[mul]的防御力，最高叠加[value]层。"
+        },
+        "erosion_ArmsSkill": {
+          "name": "erosion_ArmsSkill",
+          "noRandomListB": 1,
+          "cnName": "蚀骨",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "overlyingB": 1,
+          "effectType": "cold_arms",
+          "value": 30,
+          "mul": 0.01,
+          "duration": 2,
+          "stateEffectImg": {
+            "bodyColor": 16724991
+          },
+          "description": "每次伤害都会给目标叠加1层持续[duration]秒的“腐蚀”，每层降低目标[mul]的防御力，最高叠加[value]层。"
+        },
+        "beatBack_ArmsSkill": {
+          "name": "beatBack_ArmsSkill",
+          "noRandomListB": 1,
+          "cnName": "痛击",
+          "ignoreImmunityB": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "overlyingB": 1,
+          "effectType": "beatBack_arms",
+          "value": 6,
+          "duration": 2,
+          "stateEffectImg": {
+            "bodyColor": 16711680
+          },
+          "description": "击中同时推动目标一段距离，蓄力越久推动距离越远，无视技能免疫。"
+        },
+        "combo_ArmsSkill": {
+          "name": "combo_ArmsSkill",
+          "noRandomListB": 1,
+          "cnName": "连弩",
+          "conditionType": "passive",
+          "condition": "heroOneShoot",
+          "target": "me",
+          "addType": "state",
+          "effectType": "bullet_combo",
+          "extraValueType": "nowArmsTrueDps",
+          "value": 10,
+          "mul": 0.04,
+          "duration": 2,
+          "obj": {
+            "name": "combo_crossbow"
+          },
+          "description": "每次射击都将发射连弩，蓄力越久连弩数量越多，单发连弩伤害为武器面板单伤*射速*[mul]。"
+        },
+        "viscous_ArmsSkill": {
+          "cnName": "粘性",
+          "name": "viscous_ArmsSkill",
+          "noRandomListB": 1,
+          "conditionType": "passive",
+          "condition": "killTarget",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "no",
+          "description": "礼炮发射出的糖果会粘在地面或者墙壁上，持续30秒，怪物经过时会引爆糖果。"
+        },
+        "viscousSuper_ArmsSkill": {
+          "name": "viscousSuper_ArmsSkill",
+          "cnName": "超级粘性",
+          "noRandomListB": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "effectType": "lostPro",
+          "mul": 0.25,
+          "duration": 3,
+          "stateEffectImg": {
+            "value": "skillEffect/disabled_enemy",
+            "partType": "2eye"
+          },
+          "description": "发射的糖果会粘在地面或墙上，敌人经过时会引爆糖果，同时降低敌人攻击成功率。"
+        },
+        "flyDragonHead": {
+          "name": "flyDragonHead",
+          "noRandomListB": 1,
+          "cnName": "火焰始祖",
+          "conditionType": "passive",
+          "condition": "loopClick",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "bullet",
+          "extraValueType": "nowArmsTrueDps",
+          "obj": {
+            "name": "flyDragonHead",
+            "site": "shootPoint",
+            "flipB": false
+          },
+          "duration": 0.4,
+          "description": "连续射击时候，每隔一段时间喷射出异祖龙的火焰，追击敌方单位，无子弹时候也能触发。"
+        },
+        "bangerGunSkill": {
+          "name": "bangerGunSkill",
+          "noRandomListB": 1,
+          "cnName": "贯穿波",
+          "conditionType": "passive",
+          "condition": "loopClick",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "bullet",
+          "extraValueType": "nowArmsTrueDps",
+          "obj": {
+            "name": "bangerGunSkill",
+            "site": "shootPoint",
+            "flipB": false
+          },
+          "duration": 1,
+          "description": "连续射击时，每隔一段时间产生一个缓慢移动的光波，贯穿所有敌方单位。"
+        },
+        "infiniteFire": {
+          "name": "infiniteFire",
+          "noRandomListB": 1,
+          "cnName": "无限火力",
+          "conditionType": "passive",
+          "condition": "loopClick",
+          "target": "me",
+          "addType": "state",
+          "effectType": "noReduceCapacityB",
+          "duration": 0.5,
+          "description": "连续射击超过1秒，武器将不消耗子弹。"
+        },
+        "shotgunBlade_ArmsSkill": {
+          "name": "shotgunBlade_ArmsSkill",
+          "noRandomListB": 1,
+          "cnName": "跳斩",
+          "conditionType": "passive",
+          "condition": "killTarget",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "no",
+          "description": "使用副手（不包括死神副手）时，会瞬移到鼠标位置，发起跳斩攻击。",
+          "stateEffectImg": {
+            "value": "Striker/bladeUpEffect",
+            "con": "add"
+          },
+          "stateEffectImg2": {
+            "value": "Striker/bladeDownEffect",
+            "con": "add"
+          }
+        },
+        "godMace_ArmsSkill": {
+          "name": "godMace_ArmsSkill",
+          "noRandomListB": 1,
+          "cnName": "上帝之杖",
+          "haveEffectBuletHitNum": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "effectType": "godMace_ArmsSkill",
+          "extraValueType": "nowArmsHurt",
+          "effectProArr": 0.05,
+          "value": 4,
+          "range": 250,
+          "duration": 0.2,
+          "targetEffectImg": {
+            "value": "bulletHitEffect/purpleLaser",
+            "raNum": 1,
+            "soundUrl": "sound/laserShoot2"
+          },
+          "description": "击中目标后有[effectProArr.0]概率对目标造成范围伤害，敌人越多伤害越高。"
+        }
+      }
+    },
+    {
+      "name": "godArmsSkill",
+      "cnName": "神级技能",
+      "skills": {
+        "windThunder_ArmsSkill": {
+          "name": "windThunder_ArmsSkill",
+          "noRandomListB": 1,
+          "cnName": "风雷",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "effectType": "windThunder",
+          "extraValueType": "nowArmsTrueDps",
+          "mul": 0.12,
+          "value": 33,
+          "range": 200,
+          "duration": 0.2,
+          "description": "移动能够积蓄电能，击中目标后消耗电能，同时产生6条闪电随机轰击附近的敌方单位。",
+          "stateEffectImg": {
+            "value": "bullet/lightning1",
+            "noShowB": true,
+            "noFollowB": true,
+            "randomRange": 1,
+            "con": "add"
+          },
+          "stateEffectImg2": {
+            "value": "bullet/lightning2",
+            "noShowB": true,
+            "noFollowB": true,
+            "randomRange": 1,
+            "con": "add"
+          }
+        },
+        "laserKill_godArmsSkill": {
+          "name": "laserKill_godArmsSkill",
+          "noRandomListB": 1,
+          "cnName": "影灭",
+          "haveEffectBuletHitNum": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "otherConditionArr": "floorState",
+          "conditionString": "squat",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "bullet",
+          "extraValueType": "nowArmsHurt",
+          "obj": {
+            "name": "laserKill_godArmsSkill",
+            "site": "shootPoint",
+            "flipB": false
+          },
+          "meEffectImg": null,
+          "targetEffectImg": null,
+          "description": "下蹲状态下，每次射击都会额外向目标发射激光炮，激光伤害为当前武器面板单伤的20%。"
+        },
+        "imploding_blackArmsSkill": {
+          "cnName": "爆沙",
+          "name": "imploding_blackArmsSkill",
+          "noRandomListB": 1,
+          "haveEffectBuletHitNum": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "bullet",
+          "effectProArr": 0.1,
+          "mul": 20,
+          "extraValueType": "nowArmsHurt",
+          "obj": {
+            "name": "imploding_blackArmsSkill",
+            "site": "me",
+            "flipB": true
+          },
+          "meEffectImg": {
+            "soundUrl": "sound/imploding_enemy"
+          },
+          "description": "击中目标后有[effectProArr.0]概率向前方爆裂出4条火花，轰炸前方所有目标，每条火花伤害为：20*武器面板伤害*增伤Buff（排除武器技能、零件技能）。"
+        },
+        "fear_godArmsSkill": {
+          "name": "fear_godArmsSkill",
+          "noRandomListB": 1,
+          "cnName": "爆胆",
+          "haveEffectBuletHitNum": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "otherConditionArr": "noState",
+          "conditionString": "fear_noBuff",
+          "target": {
+            "value": "target",
+            "arenaB": false
+          },
+          "addType": "instantAndState",
+          "effectType": "armsFear",
+          "extraValueType": "nowArmsHurt",
+          "effectProArr": 0.5,
+          "mul": 0.6,
+          "duration": 2,
+          "linkArr": "fear_noBuff",
+          "stateEffectImg": {
+            "value": "skillEffect/screaming_hero_target",
+            "partType": "mouth",
+            "con": "filter"
+          },
+          "targetEffectImg": {
+            "value": "skillEffect/screaming_hero",
+            "soundUrl": "sound/magicHit1",
+            "partType": "mouth",
+            "con": "add"
+          },
+          "description": "击中后有[effectProArr.0]概率恐惧目标并造成额外伤害(武器面板单伤x[mul])。"
+        },
+        "fear_godArmsSkill2": {
+          "name": "fear_godArmsSkill2",
+          "mustLv": 2,
+          "cnName": "爆震",
+          "noRandomListB": 1,
+          "haveEffectBuletHitNum": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "otherConditionArr": "noState",
+          "conditionString": "fear_noBuff",
+          "target": {
+            "value": "target",
+            "arenaB": false
+          },
+          "addType": "instantAndState",
+          "effectType": "armsFear",
+          "extraValueType": "nowArmsHurt",
+          "effectProArr": 0.5,
+          "mul": 1,
+          "duration": 2,
+          "linkArr": "fear_noBuff",
+          "stateEffectImg": {
+            "value": "skillEffect/screaming_hero_target",
+            "partType": "mouth",
+            "con": "filter"
+          },
+          "targetEffectImg": {
+            "value": "skillEffect/screaming_hero",
+            "soundUrl": "sound/magicHit1",
+            "partType": "mouth",
+            "con": "add"
+          },
+          "description": "击中后有[effectProArr.0]概率恐惧目标并造成额外伤害(武器面板单伤x[mul])，并减速目标。"
+        },
+        "sickle_godArmsSkill": {
+          "name": "sickle_godArmsSkill",
+          "noRandomListB": 1,
+          "cnName": "飞镰",
+          "haveEffectBuletHitNum": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "bullet",
+          "effectProArr": 0.1,
+          "extraValueType": "nowArmsHurt",
+          "mul": 4,
+          "obj": {
+            "name": "sickle_godArmsSkill",
+            "site": "hitPosition",
+            "flipB": false
+          },
+          "description": "击中目标后有[effectProArr.0]概率产生连续弹射的飞镰，飞镰最多弹射5次。"
+        },
+        "sickle_godArmsSkill2": {
+          "name": "sickle_godArmsSkill2",
+          "noRandomListB": 1,
+          "cnName": "跟踪飞镰",
+          "haveEffectBuletHitNum": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "bullet",
+          "effectProArr": 0.1,
+          "extraValueType": "nowArmsHurt",
+          "mul": 5,
+          "obj": {
+            "name": "sickle_godArmsSkill2",
+            "site": "hitPosition",
+            "flipB": false
+          },
+          "description": "击中目标后有[effectProArr.0]概率产生连续弹射的跟踪飞镰，无视防弹外壳、防弹钢甲，并对此类敌人额外造成40%的伤害。"
+        },
+        "demonAddHurt": {
+          "name": "demonAddHurt",
+          "cnName": "战修罗",
+          "noRandomListB": 1,
+          "ignoreImmunityB": 1,
+          "noSkillDodgeB": 1,
+          "conditionType": "passive",
+          "changeHurtB": 1,
+          "condition": "hit",
+          "otherConditionArr": "isDemon",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "changeHurtNoCondition",
+          "mul": 1.2,
+          "description": "修罗模式下伤害增加[mul-1]。"
+        },
+        "noFoggyDef": {
+          "name": "noFoggyDef",
+          "noBeClearB": 1,
+          "ignoreNoSkillB": 1,
+          "cnName": "突袭",
+          "noRandomListB": 1,
+          "ignoreImmunityB": 1,
+          "noSkillDodgeB": 1,
+          "conditionType": "passive",
+          "condition": "loopClick",
+          "otherConditionArr": null,
+          "target": "me,range,enemy",
+          "addType": "instantAndState",
+          "effectType": "noFoggyDefB",
+          "duration": 0.2,
+          "range": 999999,
+          "description": "持续射击会封锁在场所有敌人的“抵御”技能。"
+        },
+        "immuneNemesis": {
+          "name": "immuneNemesis",
+          "noBeClearB": 1,
+          "cnName": "惩罚",
+          "noRandomListB": 1,
+          "ignoreImmunityB": 1,
+          "noSkillDodgeB": 1,
+          "conditionType": "passive",
+          "changeHurtB": 1,
+          "condition": "hit",
+          "otherConditionArr": "haveSkillOr",
+          "conditionString": "State_SpellImmunity,immune,treater_knights,FoggyDefence",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "immuneNemesis",
+          "mul": 1.6,
+          "description": "对拥有技能净化器、免疫、技能免疫、抵御的敌人造成额外[mul-1]的伤害。"
+        },
+        "trackslipGod": {
+          "name": "trackslipGod",
+          "cnName": "打滑",
+          "noRandomListB": 1,
+          "haveEffectBuletHitNum": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "effectType": "trackslipGod",
+          "extraValueType": "armsBaseAttackGap",
+          "duration": 0.1,
+          "description": "使敌人走路很滑，持续时间是武器初始射击间隔的2倍。",
+          "stateEffectImg": {
+            "name": "waterFoot"
+          }
+        },
+        "resonateGodSuper": {
+          "name": "resonateGodSuper",
+          "cnName": "超级共振",
+          "noRandomListB": 1,
+          "haveEffectBuletHitNum": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "resonateGod",
+          "description": "随机选一把携带武器（步枪、手枪、喷火器、能量枪必须为同类武器），触发其神级技能（突袭、粘性、跳斩、子母弹、烟花、轨迹绘制等武器技能无效）。装有改变品质成色的零件该技能无效。"
+        },
+        "lash_ArmsSkill": {
+          "cnName": "子母弹",
+          "name": "lash_ArmsSkill",
+          "noRandomListB": 1,
+          "conditionType": "passive",
+          "condition": "killTarget",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "no",
+          "description": "母弹自爆后内部弹射出7颗更小的子弹，每颗伤害为母弹的90%。"
+        },
+        "beadCrossbow_ArmsSkill": {
+          "cnName": "烟花",
+          "name": "beadCrossbow_ArmsSkill",
+          "noRandomListB": 1,
+          "conditionType": "passive",
+          "condition": "killTarget",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "no",
+          "description": "这就是一把烟花炮！释放烟花后，坠落的烟花对敌人造成伤害。"
+        },
+        "oldSugar": {
+          "name": "oldSugar",
+          "cnName": "陈年老糖",
+          "noRandomListB": 1,
+          "ignoreImmunityB": 1,
+          "noSkillDodgeB": 1,
+          "conditionType": "passive",
+          "changeHurtB": 1,
+          "condition": "hit",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "oldSugar",
+          "mul": 0.7,
+          "secMul": 7,
+          "description": "子弹每存在1秒，就增加[mul]的伤害，最高增加[secMul]的伤害。"
+        },
+        "editBulletPath": {
+          "cnName": "轨迹编辑",
+          "name": "editBulletPath",
+          "noRandomListB": 1,
+          "conditionType": "passive",
+          "condition": "no",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "no",
+          "description": "玩家可绘制子弹运动轨迹。"
+        }
+      }
+    },
+    {
+      "name": "godArmsSkill_link",
+      "cnName": "链接",
+      "skills": {
+        "Hit_burn_ArmsSkill_link": {
+          "name": "Hit_burn_ArmsSkill_link",
+          "cnName": "炎爆-爆",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "instant",
+          "extraValueType": "nowArmsTrueDps",
+          "effectType": "crit",
+          "value": 1,
+          "mul": 7,
+          "targetEffectImg": {
+            "value": "boomEffect/boom3",
+            "partType": "body",
+            "soundUrl": "boomSound/midBoom"
+          },
+          "description": "火焰爆炸伤害。"
+        },
+        "fear_noBuff": {
+          "name": "fear_noBuff",
+          "noRandomListB": 1,
+          "cnName": "爆胆-无法叠加得buff",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "effectType": "no",
+          "duration": 3
+        },
+        "sickle_godArmsSkill2_link": {
+          "name": "sickle_godArmsSkill2_link",
+          "noBeClearB": 1,
+          "cnName": "超级飞镰-破甲",
+          "noRandomListB": 1,
+          "ignoreImmunityB": 1,
+          "noSkillDodgeB": 1,
+          "conditionType": "passive",
+          "changeHurtB": 1,
+          "condition": "hit",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "overwhelmed",
+          "mul": 1.4,
+          "description": "对拥有技能防弹外壳、防弹钢甲的敌人造成额外[mul-1]的伤害。"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="space">
+		<body>
+			<name>OreWorm</name>
+			<cnName>蛇型采矿机</cnName><lifeRatio>1</lifeRatio>
+			<raceType>ship</raceType>
+			<swfUrl>swf/ship/OreWorm.swf</swfUrl><headIconUrl>IconGather/OreWorm</headIconUrl>
+			
+			<dieImg name="bigSpace" />
+			<dieJumpMul>0</dieJumpMul>
+			<imgType>normal</imgType>
+			
+			<imgArr>
+				stand,die1
+			</imgArr>
+			
+			<hitRect>-20,-20,40,40</hitRect>
+			<hurtRectArr>-42,-42,84,84</hurtRectArr>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<motionD vRan="0" F_AIR="2" />
+			<maxVx>8</maxVx>
+			<attackAIClass />
+			<skillArr>OreWormAI</skillArr>
+			<bossSkillArr>noSR,OreWormWave,lockLife</bossSkillArr>
+			<wilderSkillArr>OreWormInviTail,OreWormInvi,OreWormSuckBlood,weaponDefence,State_SpellImmunity,rigidBody_enemy,likeMissle_Shapers</wilderSkillArr>
+			<hurtArr>
+				<hurt>
+					<imgLabel>stand</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>10</shakeValue>
+					<meBack>1</meBack>
+					<hitImgUrl name="oreWormHit" />
+				</hurt>
+			</hurtArr>
+		</body>
+						<skill>
+							<name>silverScreenReduce</name><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+							<cnName>光波减伤</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+							<conditionType>passive</conditionType>
+							<condition>underAllHit</condition>
+							<target>me</target>
+							
+							<addType>instant</addType>
+							<effectType>changeHurt_bulletName</effectType>
+							<valueString>silverScreenBullet</valueString>
+							<mul>0.5</mul>
+						</skill>
+						<skill>
+							<name>OreWormAI</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+							<cnName>响尾</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+							<conditionType>passive</conditionType>
+							<condition>add</condition>
+							<target>me</target>
+							
+							<addType>state</addType>
+							<effectType>OreWormAI</effectType><effectFather>oreSpace</effectFather><summonedUnitsB>1</summonedUnitsB>
+							<value>5</value>
+							<mul>0.005</mul>
+							<secMul>100</secMul>
+							<duration>9999999</duration>
+							<obj>"cnName":"蛇型采矿机尾","num":1,"lifeMul":0.01,"dpsMul":1,"mulByFatherB":1,"lifeTime":-1</obj>
+							<pointEffectImg name="oreBombShowFlower" />
+							<description>生命值每减少[mul]就会产生1个尾巴。</description>
+						</skill>
+						<skill>
+							<name>OreWormWave</name>
+							<cnName>波动</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+							<conditionType>active</conditionType>
+							<condition>avtiveSkillCdOver</condition>
+							<target>me</target>
+							<cd>40</cd>
+							<firstCd>25</firstCd>
+							
+							<addType>state</addType>
+							<effectType>OreWormWave</effectType><effectFather>oreSpace</effectFather>
+							<mul>2</mul>
+							<value>5</value>
+							<duration>15</duration>
+							<range>180</range>
+							<meEffectImg name="groupSpeedUp_enemy_me" />
+							<stateEffectImg name="WarriorShield_state" />
+						</skill>
+						
+						<skill>
+							<name>OreWormInvi</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+							<cnName>长尾护盾</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+							<conditionType>passive</conditionType>
+							<condition>add</condition>
+							<target>me</target>
+							
+							<addType>state</addType>
+							<effectType>OreWormInvi</effectType><effectFather>oreSpace</effectFather>
+							<value>30</value>
+							<duration>999999999</duration>
+							<stateEffectImg name="SaberTiger_shield_second_state" />
+							<description>尾巴数量超过[value]时进入无敌状态。</description>
+						</skill>
+						<skill cnName="吸能">
+							<name>OreWormSuckBlood</name>
+							<cnName>吸能</cnName>
+							<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+							
+							<conditionType>passive</conditionType>
+							<condition>hit</condition>
+							<target>me</target>
+							
+							<addType>instant</addType>
+							<effectType>OreWormSuckBlood</effectType><effectFather>oreSpace</effectFather>
+							<value>0</value>
+							<mul>0.001</mul>
+							<pointEffectImg name="nearAddLifeLove_state" />
+							
+							<description>每次攻击敌人将回复自己[mul]的生命值。</description>
+						</skill>
+						<skill>
+							<name>OreWormInviTail</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+							<cnName>无敌长尾</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+							<conditionType>active</conditionType>
+							<condition>avtiveSkillCdOver</condition>
+							<iconUrl36>SkillIcon/silverShield_36</iconUrl36>
+							<cd>25</cd>
+							<firstCd>20</firstCd>
+							<target noMeB="1">me,range,we</target>
+							
+							<addType>state</addType>
+							<effectType>invincibleAndThrough</effectType>
+							<duration>7</duration>
+							<range>999999</range>
+							<targetEffectImg name="feedback_enemy_me" />
+							<stateEffectImg name="SaberTiger_shield_second_state" />
+							<description>每隔一段时间让所有尾巴进入无敌状态。</description>
+						</skill>
+						
+						
+						<skill>
+							<name>defenceAurasWorm</name>
+							<cnName>防御光环</cnName>
+							<iconUrl>SkillIcon/defenceAuras</iconUrl>
+							
+							<conditionType>passive</conditionType>
+							<condition>interval</condition>
+							<target noMeB="1">me,range,we</target>
+							
+							<addType>state</addType>
+							<effectType>underHurtMul</effectType>
+							<mul>0.1</mul>
+							<duration>0.1</duration>
+							<range>10000</range>
+							
+							<stateEffectImg partType="mouth" con="add">skillEffect/rune_blue_shield</stateEffectImg>
+							<description>为周围[range]码以内的我方单位增加[1-mul]的防御力。</description>
+						</skill>
+						<skill>
+							<name>WormHurtSuper</name><noRandomListB>1</noRandomListB>
+							<cnName>精英之殇</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+							<changeHurtB>1</changeHurtB>
+							
+							<conditionType>passive</conditionType>
+							<condition>hit</condition>
+							<target>target</target>
+							
+							<addType>instant</addType>
+							<effectType>yearTigerHurtSuper</effectType>
+							<mul>2</mul>
+							<secMul>2</secMul>
+							
+							<description>对精英怪物造成的伤害提高[mul-1]，对首领的伤害提高[secMul-1]。</description>
+						</skill>
+						
+						
+						<skill>
+							<name>OreWormAI_sum</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+							<cnName>响尾</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+							<conditionType>passive</conditionType>
+							<condition>add</condition>
+							<target>me</target>
+							
+							<addType>state</addType>
+							<effectType>OreWormAI_sum</effectType><effectFather>oreSpace</effectFather><summonedUnitsB>1</summonedUnitsB>
+							<value>10</value>
+							<mul>0.01</mul>
+							<secMul>30</secMul>
+							<duration>9999999</duration>
+							<obj>"cnName":"蛇型采矿机尾","num":1,"lifeMul":0.01,"dpsMul":1,"mulByFatherB":1,"lifeTime":-1</obj>
+							<pointEffectImg name="oreBombShowFlower" />
+							<description>生命值每减少[mul]就会产生1个尾巴，最多同时存在30个尾巴。在战场难度8时，尾巴将携带首领在工厂中添加的技能（非召唤类）。</description>
+						</skill>
+		
+		
+		
+		<body>
+			<name>OreWormTail</name>
+			<cnName>蛇型采矿机尾</cnName>
+			<raceType>ship</raceType>
+			<swfUrl>swf/ship/OreWormTail.swf</swfUrl>
+			
+			<dieImg name="stoneBoom" />
+			<dieJumpMul>0</dieJumpMul>
+			<lockLeftB>1</lockLeftB>
+			<imgArr>
+				stand,die1
+			</imgArr>
+			
+			<hitRect>-20,-20,40,40</hitRect>
+			<hurtRectArr>-30,-30,60,60</hurtRectArr>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<motionD vRan="0" F_AIR="8" />
+			<maxVx>8</maxVx>
+			<attackAIClass />
+			<skillArr>OreWormTailAI,silverScreenReduce</skillArr>
+			<hurtArr>
+				<hurt>
+					<imgLabel>stand</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>10</shakeValue>
+					<meBack>5</meBack>
+					<hitImgUrl name="oreWormHit" />
+				</hurt>
+			</hurtArr>
+		</body>
+		<skill>
+			<name>OreWormTailAI</name><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<cnName>蛇型采矿机尾buff</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>OreWormTailAI</effectType><effectFather>oreSpace</effectFather>
+			<mul>1</mul>
+			<value>2</value>
+			<duration>9999999</duration>
+		</skill>
+	</father>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</data>

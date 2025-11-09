@@ -1,0 +1,39 @@
+{
+  "father": [
+    {
+      "name": "snake",
+      "cnName": "血蟒",
+      "body": {
+        "index": 0,
+        "name": "WangLuo",
+        "shell": "normal",
+        "movieLink": "XiaoHu",
+        "cnName": "旺达",
+        "raceType": "human",
+        "swfUrl": "swf/hero/WangLuo.swf",
+        "showLevel": 9999,
+        "headIconUrl": "IconGather/WangLuo",
+        "lifeBarExtraHeight": -20,
+        "hitRect": "-12, -90, 24, 90",
+        "squatHitRect": "-12,-50,24,50",
+        "hurtRectArr": [
+          "-15,-38,30,38",
+          "-12, -100, 24, 95",
+          "-12, -50, 24, 50"
+        ],
+        "maxVx": 11,
+        "squatMaxVx": 5,
+        "maxJumpNum": 2,
+        "flyType": "space",
+        "motionD": {
+          "F_AIR": 6
+        },
+        "armsNumber": 1,
+        "randomArmsRange": "yearDragon",
+        "skillArr": "hyperopia_incapable",
+        "bossSkillArr": "sumLandDog,slowMove_enemy"
+      }
+    },
+    null
+  ]
+}

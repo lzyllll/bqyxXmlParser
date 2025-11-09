@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<base>
+		<pro name="level" cnName="等级" unit=""></pro>
+		<pro name="evo" cnName="进化体" unit="" gatherColor="yellow"></pro>
+		<pro name="vehicleType" cnName="类型" unit=""></pro>
+		<pro name="baseLife" cnName="基本耐久" unit="" wanB="1"></pro>
+		<pro name="nowLife" cnName="当前耐久" unit="" wanB="1" gatherColor="green"></pro>
+		<pro name="mainMul" cnName="主炮攻击" unit="倍" fixedNum="1"></pro>
+		<pro name="subMul" cnName="机枪攻击" unit="倍" fixedNum="1"></pro>
+		<pro name="attackMul" cnName="普通攻击" unit="倍" fixedNum="1"></pro>
+		<pro name="speed" cnName="速度" unit=""></pro>
+		<pro name="duration" cnName="持续时间" unit="秒"></pro>
+		<pro name="cd" cnName="冷却时间" unit="秒"></pro>
+		<pro name="baseLifeMul" cnName="基础耐久系数" unit="倍" fixedNum="1"></pro>
+		<pro name="lifeMul" cnName="耐久系数" unit="倍" fixedNum="1"></pro>
+		
+		
+		
+		
+		<pro name="limitLife" cnName="耐久上限" unit=""  wanB="1"></pro>
+		<pro name="limitMainHurt" cnName="主炮伤害上限" unit=""  wanB="1"></pro>
+		<pro name="limitSubHurt" cnName="机枪伤害上限" unit=""  wanB="1"></pro>
+		<pro name="limitAttackHurt" cnName="普通伤害上限" unit=""  wanB="1"></pro>
+	</base>
+	<bullet>
+		<pro name="dpsMul" cnName="攻击倍数" unit="倍" fixedNum="1"></pro>
+		<pro name="hurtRatio" cnName="当前伤害" unit="" gatherColor="orangeness"  wanB="1"></pro>
+		<pro name="hurtTheory" cnName="理论伤害" unit="" gatherColor="purple"  wanB="1"></pro>
+		<pro name="hurtLimit" cnName="伤害上限" unit="" gatherColor="green" wanB="1"></pro>
+		
+		<pro name="attackGap" cnName="射击速度" unit="发/秒" fixedNum="2"></pro>
+		<pro name="rotateRange" cnName="转角范围" unit="度"></pro>
+		
+	</bullet>
+</data>

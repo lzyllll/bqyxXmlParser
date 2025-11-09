@@ -1,0 +1,870 @@
+{
+  "father": [
+    {
+      "name": "new",
+      "cnName": "新的",
+      "head": [
+        {
+          "name": "maxBug",
+          "cnName": "史上最大bug",
+          "diff": 20,
+          "noEquip": 1,
+          "condition": {
+            "info": "商店领取补偿礼包"
+          },
+          "addObjJson": {
+            "ranBlackArmsDropPro": 0.26
+          }
+        },
+        {
+          "name": "anniver11",
+          "cnName": "十一周年快乐",
+          "diff": 50,
+          "condition": {
+            "info": "十一周年签到奖励。"
+          },
+          "addObjJson": {
+            "dpsAll": 0.21,
+            "gemDropPro": 0.17
+          }
+        },
+        {
+          "name": "upBody",
+          "cnName": "UP达人",
+          "diff": 100,
+          "life": 30,
+          "noEquip": 1,
+          "condition": {
+            "info": "参加UP达人活动。"
+          },
+          "addObjJson": {
+            "gemDropPro": 0.25,
+            "specialPartsDropPro": 0.25
+          }
+        },
+        {
+          "name": "anniver10",
+          "cnName": "十年相伴",
+          "diff": 50,
+          "condition": {
+            "info": "十周年签到奖励。"
+          },
+          "addObjJson": {
+            "dpsAll": 0.2,
+            "gemDropPro": 0.16
+          }
+        },
+        {
+          "name": "armsSkinCreator",
+          "cnName": "武器制造大师",
+          "diff": 100,
+          "condition": {
+            "fun": "armsSkinCreator",
+            "info": "参加武器皮肤大赛获得"
+          },
+          "addObjJson": {
+            "moreDpsMul": 0.05,
+            "moreLifeMul": 0.1
+          }
+        },
+        {
+          "name": "bbs23",
+          "cnName": "群组达人",
+          "diff": 50,
+          "life": 15,
+          "condition": {
+            "info": "参加群组活动获得"
+          },
+          "addObjJson": {
+            "blackEquipDropPro": 0.6
+          }
+        },
+        {
+          "name": "anniver9",
+          "cnName": "九周年快乐",
+          "diff": 50,
+          "condition": {
+            "info": "九周年签到奖励。"
+          },
+          "addObjJson": {
+            "dpsAll": 0.15,
+            "gemDropPro": 0.16
+          }
+        },
+        {
+          "name": "achieveKing",
+          "cnName": "成就之皇",
+          "diff": 160,
+          "condition": {
+            "fun": "num",
+            "must": 209,
+            "pro": "getAchieveNum",
+            "info": "获得[must]个成就。",
+            "progressInfo": "已获得[compare]个"
+          },
+          "addObjJson": {
+            "lottery": 15
+          }
+        },
+        {
+          "name": "achieveGod",
+          "cnName": "成就之神",
+          "diff": 180,
+          "condition": {
+            "fun": "num",
+            "must": 255,
+            "pro": "getAchieveNum",
+            "info": "获得[must]个成就。",
+            "progressInfo": "已获得[compare]个"
+          },
+          "addObjJson": {
+            "lottery": 19
+          }
+        },
+        {
+          "name": "anniver8",
+          "cnName": "八周年快乐",
+          "diff": 50,
+          "condition": {
+            "info": "八周年签到奖励。"
+          },
+          "addObjJson": {
+            "dpsAll": 0.12,
+            "gemDropPro": 0.15
+          }
+        },
+        {
+          "name": "zodiac12",
+          "cnName": "十二生肖",
+          "diff": 150,
+          "condition": {
+            "fun": "num",
+            "must": 12,
+            "pro": "getZodiacNum",
+            "info": "获得[must]种生肖武器。",
+            "progressInfo": "已获得[compare]种"
+          },
+          "addObjJson": {
+            "zodiacArmsHurtAdd": 0.25
+          }
+        },
+        {
+          "name": "battle4",
+          "cnName": "霞光领主",
+          "diff": 160,
+          "life": 7,
+          "iconUrl48": "IconGather/battle4_48",
+          "condition": {
+            "info": "军队争霸总积分超过900可获得。"
+          },
+          "addObjJson": {
+            "lottery": 10,
+            "specialPartsDropPro": 0.3
+          }
+        },
+        {
+          "name": "battle3",
+          "cnName": "霞光天军",
+          "diff": 100,
+          "life": 7,
+          "iconUrl48": "IconGather/battle3_48",
+          "condition": {
+            "info": "军队争霸总积分超过850可获得。"
+          },
+          "addObjJson": {
+            "lottery": 5,
+            "specialPartsDropPro": 0.2
+          }
+        },
+        {
+          "name": "battle2",
+          "cnName": "霞光雄狮",
+          "diff": 80,
+          "life": 7,
+          "iconUrl48": "IconGather/battle2_48",
+          "condition": {
+            "info": "军队争霸总积分超过800可获得。"
+          },
+          "addObjJson": {
+            "lottery": 4,
+            "specialPartsDropPro": 0.16
+          }
+        },
+        {
+          "name": "battle1",
+          "cnName": "霞光劲旅",
+          "diff": 60,
+          "life": 7,
+          "iconUrl48": "IconGather/battle1_48",
+          "condition": {
+            "info": "军队争霸总积分超过750可获得。"
+          },
+          "addObjJson": {
+            "lottery": 3,
+            "specialPartsDropPro": 0.12
+          }
+        },
+        {
+          "name": "joyousFool",
+          "cnName": "愚人欢乐",
+          "diff": 50,
+          "life": 365,
+          "condition": {
+            "info": "在{purple 2025年4月20号}之前累计6天活跃度达到60。"
+          },
+          "addObjJson": {
+            "lifeAll": 20.25,
+            "dpsAll": -20.25
+          }
+        },
+        {
+          "name": "anniver7",
+          "cnName": "爆枪七周年",
+          "diff": 50,
+          "condition": {
+            "info": "七周年签到奖励。"
+          },
+          "addObjJson": {
+            "dpsAll": 0.12,
+            "gemDropPro": 0.13
+          }
+        },
+        {
+          "name": "singleAF",
+          "cnName": "单身狗",
+          "diff": 40,
+          "life": 7,
+          "condition": {
+            "info": "在{purple 2024年11月15号}之前累计6天活跃度达到90。"
+          },
+          "addObjJson": {
+            "vehicleDpsMul": 3.5,
+            "vehicleDefMul": 3.5
+          }
+        },
+        {
+          "name": "happyFool",
+          "cnName": "愚人快乐",
+          "diff": 40,
+          "condition": {
+            "fun": "num",
+            "must": 6,
+            "pro": "getActive20_3",
+            "info": "在{purple 2020年4月13号}之前累计[must]天活跃度达到50。",
+            "progressInfo": "已累计[compare]天"
+          },
+          "addObjJson": {
+            "lifeAll": 0.7,
+            "dpsAll": -0.4
+          }
+        },
+        {
+          "name": "anniver6",
+          "cnName": "爆枪六周年",
+          "diff": 50,
+          "condition": {
+            "info": "六周年签到奖励。"
+          },
+          "addObjJson": {
+            "dpsAll": 0.1,
+            "gemDropPro": 0.11
+          }
+        },
+        {
+          "name": "childrenDay",
+          "cnName": "六一快乐",
+          "diff": 30,
+          "iconUrl48": "IconGather/childrenDay_48",
+          "condition": {
+            "info": "在{purple 2023年6月15号之前}累计6天活跃度达到90。"
+          },
+          "addObjJson": {
+            "maxJumpNumAdd": 2
+          }
+        },
+        {
+          "name": "childrenFly",
+          "cnName": "六一起飞",
+          "diff": 30,
+          "life": 365,
+          "condition": {
+            "info": "在{purple 2025年6月20号之前}累计8天活跃度达到90。"
+          },
+          "addObjJson": {
+            "fgNE": 0.5
+          }
+        },
+        {
+          "name": "anniver5",
+          "cnName": "爆枪五周年",
+          "diff": 50,
+          "condition": {
+            "info": "五周年签到奖励。"
+          },
+          "addObjJson": {
+            "lifeAll": 0.2,
+            "gemDropPro": 0.1
+          }
+        },
+        {
+          "name": "anniver4",
+          "cnName": "爆枪四周年",
+          "diff": 50,
+          "condition": {
+            "info": "四周年签到奖励。"
+          },
+          "addObjJson": {
+            "lottery": 10
+          }
+        },
+        {
+          "name": "anniver3",
+          "cnName": "爆枪三周年",
+          "diff": 50,
+          "condition": {
+            "info": "三周年签到奖励。"
+          },
+          "addObjJson": {
+            "blackEquipDropPro": 0.4
+          }
+        },
+        {
+          "name": "qixi",
+          "cnName": "七夕眷侣",
+          "diff": 50,
+          "life": 30,
+          "condition": {
+            "fun": "num",
+            "must": 5,
+            "pro": "getActive90Day",
+            "info": "在{purple 2016年8月21号}之前累计[must]天活跃度达到90。",
+            "progressInfo": "已累计[compare]天"
+          },
+          "addObjJson": {
+            "dpsAll": 0.06,
+            "loveAdd": 50
+          }
+        },
+        {
+          "name": "zongzi",
+          "cnName": "粽叶飘香",
+          "diff": 40,
+          "condition": {
+            "fun": "zongzi",
+            "info": "通关猪头洋、百丈道、水升村、白鹭镇、西池的超难难度各1次，清理这些地方的僵尸，为举办龙舟赛做准备。",
+            "progressInfo": "[compare]"
+          },
+          "addObjJson": {
+            "lottery": 2,
+            "dpsAll": 0.02
+          }
+        },
+        {
+          "name": "happySpring",
+          "cnName": "春节快乐",
+          "diff": 20,
+          "condition": {
+            "info": "春节点灯活动礼包。"
+          },
+          "addObjJson": {
+            "lottery": 2
+          }
+        },
+        {
+          "name": "widerAll",
+          "cnName": "秘境征服者",
+          "diff": 80,
+          "condition": {
+            "fun": "num",
+            "must": 5,
+            "pro": "getWilderDiff4Num",
+            "info": "累计通关[must]个神难秘境副本。",
+            "progressInfo": "[compare]个"
+          },
+          "addObjJson": {
+            "dpsAll": 0.06,
+            "lottery": 5
+          }
+        },
+        {
+          "name": "superHero",
+          "cnName": "超能英雄",
+          "diff": 120,
+          "life": 15,
+          "iconUrl48": "IconGather/superHero_48",
+          "condition": {
+            "info": "使用“竞技宝箱”合成。"
+          },
+          "addObjJson": {
+            "dpsMul": 1.0,
+            "rareArmsDropPro": 0.7
+          }
+        },
+        {
+          "name": "specialSoldiers",
+          "cnName": "特种奇兵",
+          "diff": 120,
+          "life": 15,
+          "iconUrl48": "IconGather/specialSoldiers_48",
+          "condition": {
+            "info": "使用“竞技宝箱”合成。"
+          },
+          "addObjJson": {
+            "lifeMul": 1.0,
+            "rareEquipDropPro": 0.7
+          }
+        },
+        {
+          "name": "headshot_20",
+          "cnName": "爆头王",
+          "diff": 20,
+          "condition": {
+            "fun": "num",
+            "must": 20,
+            "pro": "headShotLevelNum",
+            "info": "连续通关[must]个关卡（不包括竞技场、任务），并且爆头率都在80%以上。",
+            "progressInfo": "连续[compare]个}"
+          },
+          "addObjJson": {
+            "dpsMul_sniper": 0.02
+          }
+        },
+        {
+          "name": "goddiff_30",
+          "cnName": "踏平霞光",
+          "diff": 30,
+          "condition": {
+            "fun": "num",
+            "must": 30,
+            "pro": "getGoddiffNum",
+            "info": "解锁神难地图超过[must]个。",
+            "progressInfo": "[compare]个"
+          },
+          "addObjJson": {
+            "arenaStampDropNum": 3
+          }
+        },
+        {
+          "name": "death",
+          "cnName": "死神",
+          "diff": 15,
+          "condition": {
+            "fun": "death",
+            "info": "获得“宇宙最脆”和“无药可救”2个成就勋章。",
+            "progressInfo": "[compare]"
+          },
+          "addObjJson": {
+            "lifeRateMul": 0.05
+          }
+        },
+        {
+          "name": "rareArms_5",
+          "cnName": "武器收藏家",
+          "diff": 20,
+          "condition": {
+            "fun": "rareArms_5",
+            "info": "获得4种稀有武器，并装上它们。",
+            "progressInfo": "[compare]"
+          },
+          "addObjJson": {
+            "rareArmsDropPro": 0.06
+          }
+        },
+        {
+          "name": "fakeFinale",
+          "cnName": "假的大结局",
+          "diff": 150,
+          "condition": {
+            "fun": "num",
+            "must": 96,
+            "pro": "getMainTaskCompleteNum",
+            "info": "完成[must]个主线任务。这不是大结局！这不是大结局！这不是大结局！",
+            "progressInfo": "已完成[compare]个"
+          },
+          "addObjJson": {
+            "lottery": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "top",
+      "cnName": "排行榜",
+      "head": [
+        {
+          "name": "dpsTop_1",
+          "cnName": "战神",
+          "diff": 150,
+          "unlockLv": 75,
+          "noEquip": 1,
+          "condition": {
+            "fun": "num",
+            "must": 500000000,
+            "pro": "getDps",
+            "info": "主角战斗力到达[must]。",
+            "progressInfo": "[compare]"
+          },
+          "addObjJson": {
+            "weaponDropPro": 0.1
+          }
+        },
+        {
+          "name": "arena_1",
+          "cnName": "竞技之王",
+          "diff": 100,
+          "unlockLv": 50,
+          "noEquip": 1,
+          "condition": {
+            "fun": "num",
+            "must": 240,
+            "pro": "getArenaNum",
+            "info": "累计在竞技场中挑战超过[must]次。",
+            "progressInfo": "[compare]次"
+          },
+          "addObjJson": {
+            "arenaStampDropNum": 8
+          }
+        },
+        {
+          "name": "rifle_1",
+          "cnName": "步枪之王",
+          "diff": 90,
+          "unlockLv": 70,
+          "condition": {
+            "fun": "num",
+            "must": 600000000,
+            "pro": "getMaxDps_rifle",
+            "info": "装上一把战斗力达到[must]的{green 步枪}。",
+            "progressInfo": "[compare]"
+          },
+          "addObjJson": {
+            "dpsMul_rifle": 0.04
+          }
+        },
+        {
+          "name": "sniper_1",
+          "cnName": "狙击之王",
+          "diff": 90,
+          "unlockLv": 70,
+          "condition": {
+            "fun": "num",
+            "must": 700000000,
+            "pro": "getMaxDps_sniper",
+            "info": "装上一把战斗力达到[must]的{green 狙击}。",
+            "progressInfo": "[compare]"
+          },
+          "addObjJson": {
+            "dpsMul_sniper": 0.04
+          }
+        },
+        {
+          "name": "shotgun_1",
+          "cnName": "散弹之王",
+          "diff": 90,
+          "unlockLv": 70,
+          "condition": {
+            "fun": "num",
+            "must": 800000000,
+            "pro": "getMaxDps_shotgun",
+            "info": "装上一把战斗力达到[must]的{green 散弹}。",
+            "progressInfo": "[compare]"
+          },
+          "addObjJson": {
+            "dpsMul_shotgun": 0.04
+          }
+        },
+        {
+          "name": "pistol_1",
+          "cnName": "手枪之王",
+          "diff": 90,
+          "unlockLv": 70,
+          "condition": {
+            "fun": "num",
+            "must": 900000000,
+            "pro": "getMaxDps_pistol",
+            "info": "装上一把战斗力达到[must]的{green 手枪}。",
+            "progressInfo": "[compare]"
+          },
+          "addObjJson": {
+            "dpsMul_pistol": 0.04
+          }
+        },
+        {
+          "name": "rocket_1",
+          "cnName": "火炮之王",
+          "diff": 90,
+          "unlockLv": 70,
+          "condition": {
+            "fun": "num",
+            "must": 1000000000,
+            "pro": "getMaxDps_rocket",
+            "info": "装上一把战斗力达到[must]的{green 火炮}。",
+            "progressInfo": "[compare]"
+          },
+          "addObjJson": {
+            "dpsMul_rocket": 0.04
+          }
+        },
+        {
+          "name": "almighty_10",
+          "cnName": "十项全能",
+          "diff": 80,
+          "unlockLv": 50,
+          "condition": {
+            "fun": "num",
+            "must": 10,
+            "pro": "get10YiArmsTypeNum",
+            "info": "背包中拥有[must]把类型不同并且战力达到5亿的武器。",
+            "progressInfo": "[compare]个"
+          },
+          "addObjJson": {
+            "dpsAll": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "name": "collection",
+      "cnName": "收集",
+      "head": [
+        {
+          "name": "weapon_4",
+          "cnName": "兵器大亨",
+          "diff": 80,
+          "condition": {
+            "fun": "weapon_4",
+            "info": "获得所有副手的{orange 第四级}。",
+            "progressInfo": "[compare]"
+          },
+          "addObjJson": {
+            "bloodStoneDropPro": 0.15
+          }
+        },
+        {
+          "name": "device_4",
+          "cnName": "装置大亨",
+          "diff": 40,
+          "condition": {
+            "fun": "device_4",
+            "info": "获得所有装置的{orange 第四级}。",
+            "progressInfo": "[compare]"
+          },
+          "addObjJson": {
+            "lifeCatalystDropPro": 0.2
+          }
+        },
+        {
+          "name": "achieve_70",
+          "cnName": "成就大亨",
+          "diff": 50,
+          "condition": {
+            "fun": "num",
+            "must": 70,
+            "pro": "getAchieveNum",
+            "info": "获得[must]个成就。",
+            "progressInfo": "[compare]个"
+          },
+          "addObjJson": {
+            "lifeMul": 0.1
+          }
+        },
+        {
+          "name": "achieve_123",
+          "cnName": "成就之王",
+          "diff": 70,
+          "condition": {
+            "fun": "num",
+            "must": 123,
+            "pro": "getAchieveNum",
+            "info": "获得[must]个成就。",
+            "progressInfo": "[compare]个"
+          },
+          "addObjJson": {
+            "dodge": 0.03
+          }
+        },
+        {
+          "name": "dominating",
+          "cnName": "独霸一方",
+          "diff": 130,
+          "condition": {
+            "fun": "dominating",
+            "info": "同时装上仲裁者套装、小卡时装、四级副手、五级装置、盖亚载具。",
+            "progressInfo": "[compare]"
+          },
+          "addObjJson": {
+            "critPro3": 0.03
+          }
+        }
+      ]
+    },
+    {
+      "name": "union",
+      "cnName": "军队",
+      "head": {
+        "name": "unionIsMyHome",
+        "cnName": "公会是我家",
+        "diff": 85,
+        "condition": {
+          "fun": "num",
+          "must": 153600,
+          "pro": "getUnionContribution",
+          "info": "个人军队贡献超过[must]。",
+          "progressInfo": "[compare][n]{purple （打开军队界面后才能刷新以上数据）}"
+        },
+        "addObjJson": {
+          "dpsMul": 0.05
+        }
+      }
+    },
+    {
+      "name": "other",
+      "cnName": "其他",
+      "head": [
+        {
+          "name": "wantUpgrade",
+          "cnName": "我要升级",
+          "diff": 20,
+          "condition": {
+            "fun": "num",
+            "must": 4,
+            "pro": "continuousLoginDay",
+            "info": "连续[must]天在线1个小时以上。",
+            "progressInfo": "[compare]天[n]{purple （如果没有连续登陆，进度将被清空。）}"
+          },
+          "addObjJson": {
+            "expMul": 0.25
+          }
+        },
+        {
+          "name": "petEvo_4",
+          "cnName": "闲着蛋疼",
+          "diff": 50,
+          "condition": {
+            "fun": "num",
+            "must": 3,
+            "pro": "getEvoPetNum",
+            "info": "累计进化[must]只尸宠。",
+            "progressInfo": "[compare]只"
+          },
+          "addObjJson": {
+            "godStoneDropPro": 0.15
+          }
+        },
+        {
+          "name": "vehicleEvo_4",
+          "cnName": "载具新时代",
+          "diff": 70,
+          "condition": {
+            "fun": "num",
+            "must": 4,
+            "pro": "getEvoVehicleNum",
+            "info": "累计进化[must]个载具。",
+            "progressInfo": "[compare]个"
+          },
+          "addObjJson": {
+            "converStoneDropPro": 0.15
+          }
+        },
+        {
+          "name": "ask_5",
+          "cnName": "学霸",
+          "diff": 70,
+          "life": 60,
+          "condition": {
+            "fun": "num",
+            "must": 5,
+            "pro": "askAllRightNum",
+            "info": "连续[must]天答题全对。",
+            "progressInfo": "[compare]天"
+          },
+          "addObjJson": {
+            "weaponDropPro": 0.2
+          }
+        },
+        {
+          "name": "heroSkill_21",
+          "cnName": "全能人",
+          "diff": 25,
+          "condition": {
+            "fun": "num",
+            "must": 21,
+            "pro": "getHeroSkillNum",
+            "info": "P1角色学习超过[must]个技能。",
+            "progressInfo": "[compare]个"
+          },
+          "addObjJson": {
+            "cdMul": 0.03
+          }
+        },
+        {
+          "name": "armsRemake100",
+          "cnName": "武器锻造家",
+          "diff": 50,
+          "unlockLv": 70,
+          "condition": {
+            "fun": "num",
+            "must": 100,
+            "pro": "armsRemakeNum",
+            "info": "累计重造[must]把武器。",
+            "progressInfo": "[compare]把"
+          },
+          "addObjJson": {
+            "rareArmsDropPro": 0.13
+          }
+        },
+        {
+          "name": "equipRemake100",
+          "cnName": "装备锻造家",
+          "diff": 50,
+          "unlockLv": 70,
+          "condition": {
+            "fun": "num",
+            "must": 100,
+            "pro": "equipRemakeNum",
+            "info": "累计重造[must]个装备。",
+            "progressInfo": "[compare]个"
+          },
+          "addObjJson": {
+            "rareEquipDropPro": 0.13
+          }
+        },
+        {
+          "name": "baoqiang",
+          "cnName": "爆枪突击",
+          "diff": 50,
+          "condition": {
+            "info": "爆枪突击直播专属称号"
+          },
+          "addObjJson": {
+            "blackArmsDropPro": 0.2
+          }
+        },
+        {
+          "name": "gameKing",
+          "cnName": "佣兵之王",
+          "diff": 100,
+          "condition": {
+            "info": "佣兵之王活动奖励。"
+          },
+          "addObjJson": {
+            "dpsAll": 0.08,
+            "lifeAll": 0.08
+          }
+        },
+        {
+          "name": "gameSuper",
+          "cnName": "佣兵精英",
+          "diff": 60,
+          "condition": {
+            "info": "佣兵之王活动奖励。"
+          },
+          "addObjJson": {
+            "dpsAll": 0.06,
+            "lifeAll": 0.06
+          }
+        }
+      ]
+    }
+  ]
+}

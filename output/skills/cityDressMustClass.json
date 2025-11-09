@@ -1,0 +1,32 @@
+{
+  "type": "dataList",
+  "father": {
+    "name": "cityDress",
+    "body": [
+      {
+        "value": "10\n10\n10\n10\n10\n10\n10\n10\n10\n10",
+        "name": "dressStampMust",
+        "cnName": "装扮券所需",
+        "len": 10
+      },
+      {
+        "value": "0\n2\n4\n6\n8\n10\n12\n14\n16\n18",
+        "name": "dressStampGoldMust_unit",
+        "cnName": "黄金装扮券所需-单位",
+        "len": 10
+      },
+      {
+        "value": "3\n3\n3\n3\n3\n3\n3\n3\n3\n3\n3\n3\n3\n3\n3\n3\n3\n3\n3\n3\n5\n5\n5\n5\n5\n5\n5\n5\n5\n5\n5\n5\n5\n5\n5\n5\n5\n5\n5\n5\n10\n10\n10\n10\n10\n10\n10\n10\n10\n10\n10\n10\n10\n10\n10\n10\n10\n10\n10\n10",
+        "name": "dressStampHighMust",
+        "cnName": "高级装扮券所需-装扮物",
+        "len": 60
+      },
+      {
+        "value": "0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n2\n2\n2\n2\n2\n2\n2\n2\n2\n2\n3\n3\n3\n3\n3\n3\n3\n3\n3\n3\n4\n4\n4\n4\n4\n4\n4\n4\n4\n4\n5",
+        "name": "dressStampGoldMust_decora",
+        "cnName": "黄金装扮券所需-装扮物",
+        "len": 60
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="props" cnName="永久礼包">
+		<things cnName="噬原补偿礼包">
+			<name>disEver22_10</name>
+			<cnName>噬原补偿礼包</cnName>
+			<iconUrl>ThingsIcon/postPlatinumChest</iconUrl>
+			<description>
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="0" />
+			<showGiftB>1</showGiftB>
+			<gift>things;zodiacCash;60</gift>
+			<gift>things;demStone;30</gift>
+			<gift>things;equipGemChest;150</gift>
+			<gift>things;armsGemChest;150</gift>
+		</things>
+		<things cnName="圣诞畅玩礼包">
+			<name>normalChristmasGift</name>
+			<cnName>圣诞畅玩礼包</cnName>
+			<iconUrl>ThingsIcon/postNormalChest</iconUrl>
+			<useSave>shopAuto</useSave>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店银币购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<showGiftB>1</showGiftB>
+			<gift>things;strengthenStone;10</gift>
+			<gift>things;doubleCard;5</gift>
+			<gift>things;weaponChest;3</gift>
+			<gift>things;doubleMaterialsCard;5</gift>
+			<gift>things;doubleEquipCard;5</gift>
+			<gift>things;skillFleshCard;3</gift>
+			<gift>things;anniversaryCash;50</gift>
+			<gift>things;coinHeap_1;2</gift>
+			<gift>things;normalChest;1</gift>
+		</things>
+		
+		<things cnName="圣诞豪华礼包">
+			<name>goldChristmasGift</name>
+			<cnName>圣诞豪华礼包</cnName>
+			<iconUrl>ThingsIcon/postPlatinumChest</iconUrl>
+			<useSave>shopAuto</useSave>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店黄金购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<showGiftB>1</showGiftB>
+			<gift>things;weaponChest;5</gift>
+			<gift>things;coinHeap_2;1</gift>
+			<gift>things;strengthenDrug;50</gift>
+			<gift>things;strengthenStone;20</gift>
+			<gift>things;skillFleshCard;5</gift>
+			<gift>things;armsEchelonCard;20</gift>
+			<gift>things;equipEchelonCard;20</gift>
+			<gift>things;doubleArmsCard;5</gift>
+			<gift>things;armsRadium;30</gift>
+			<gift>things;allBlackCash;20</gift>
+		</things>
+	</father>
+</data>

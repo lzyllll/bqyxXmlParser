@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">	
+		<bullet>
+			<name>BoomSkullS_general</name>
+			<cnName>爆骷S-普通导弹</cnName><noMagneticB>1</noMagneticB><shootRecoil>0.015</shootRecoil>
+			
+			<shakeAngle>4</shakeAngle>
+			<bulletLife>15</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.8</attackGap>
+			<attackDelay>0.5</attackDelay>
+			<bulletAngle>180</bulletAngle>
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<shootPoint>-173,-65</shootPoint>
+			<bulletSpeed>12</bulletSpeed>
+			<speedD random="0.2" />
+			<boomD selfB="1" hurtMul="0" noExcludeBodyB="1" haveBodyHitEffectB="1" />
+			<bindingD cnName="空单位" lifeMul="0.003" skillArr="BoomSkullSBulletDie" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">BoomSkullS/generalBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/microBoom2" shake="3,0.4,13">boomEffect/boom2</hitImgUrl>
+		</bullet>
+		<bullet>
+			<name>BoomSkullS_boom</name>
+			<cnName>爆骷S-轰炸导弹</cnName><noMagneticB>1</noMagneticB><shootRecoil>0.005</shootRecoil>
+			
+			<shakeAngle>4</shakeAngle>
+			<bulletLife>15</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.8</attackGap>
+			<attackDelay>0.5</attackDelay>
+			<bulletAngle>180</bulletAngle>
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<shootPoint>-173,-65</shootPoint>
+			<bulletSpeed>12</bulletSpeed>
+			<speedD random="0.3" />
+			<boomD selfB="1" floorB="1" bodyB="1" radius="120" noExcludeBodyB="1" haveBodyHitEffectB="1" />
+			<bindingD cnName="空单位" lifeMul="0.01" skillArr="BoomSkullSBulletDie" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">BoomSkullS/boomBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/bigBoom" shake="5,0.4,13">boomEffect/bigCircle</hitImgUrl>
+		</bullet>
+		
+		
+		<bullet>
+			<name>BoomSkullS_box</name>
+			<cnName>爆骷S-箱子导弹</cnName><noMagneticB>1</noMagneticB>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>15</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.8</attackGap>
+			<attackDelay>0.6</attackDelay>
+			<bulletAngle>-167</bulletAngle>
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>-1</penetrationNum>
+				
+			<shootPoint>-176,-123</shootPoint>
+			<bulletSpeed>7</bulletSpeed>
+			<boomD selfB="1" hurtMul="0" noExcludeBodyB="1" haveBodyHitEffectB="1" />
+			<bindingD cnName="空单位" lifeMul="0.02" skillArr="BoomSkullSBulletDie" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">BoomSkullS/boxBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/boom" shake="3,0.4,13">boomEffect/midWood</hitImgUrl>
+		</bullet>
+		
+		<bullet>
+			<name>BoomSkullS_follow</name>
+			<cnName>爆骷S-跟踪导弹</cnName><noMagneticB>1</noMagneticB><shootRecoil>0.03</shootRecoil>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>25</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.8</attackGap>
+			<attackDelay>0.63</attackDelay>
+			<bulletAngle>-141</bulletAngle>
+				
+			<followD value="0.4" delay="0.7" />	
+			<penetrationGap>1000</penetrationGap>
+				
+			<shootPoint>-133,-175</shootPoint>
+			<bulletSpeed>20</bulletSpeed>
+			<speedD min="10" max="20" a="-5" />
+			<boomD selfB="1" hurtMul="0" noExcludeBodyB="1" haveBodyHitEffectB="1" />
+			<bindingD cnName="空单位" lifeMul="0.004" skillArr="BoomSkullSBulletDie" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">BoomSkullS/bullet1</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom2" shake="3,0.4,13">boomEffect/boom2</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bullet/fireballSmoke</smokeImgUrl>
+		</bullet>
+		
+		<bullet>
+			<name>BoomSkullS_para</name>
+			<cnName>爆骷S-抛物线导弹</cnName><noMagneticB>1</noMagneticB><shootRecoil>0.06</shootRecoil>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>15</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.8</attackGap>
+			<attackDelay>0.63</attackDelay>
+			<bulletAngle>-143</bulletAngle>
+				
+			<shootPoint>-146,-150</shootPoint>
+			<bulletSpeed>13</bulletSpeed>
+			<speedD random="0.1" />
+			<boomD selfB="1" floorB="1" bodyB="1" radius="200" noExcludeBodyB="1" haveBodyHitEffectB="1" />
+			<bindingD cnName="空单位" lifeMul="0.008" skillArr="BoomSkullSBulletDie" />
+			<gravity>0.3</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">BoomSkullS/paraBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/bigBoom" shake="5,0.4,13">boomEffect/bigCircle</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bullet/fireballSmoke</smokeImgUrl>
+		</bullet>
+		
+	</father>
+	</data>

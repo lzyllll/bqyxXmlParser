@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="boom">
+		<body con="add" name="stoneSeaWalk" cnName="石海步行特效">boomEffect/posionSmall</body>
+		<body cnName="太空小爆炸" name="smallSpace" soundUrl="hitSound/fire" soundRan="3" soundVolume="0.2">boomEffect/boom1</body>
+		<body cnName="太空爆炸-大" name="bigSpace" soundUrl="boomSound/big" soundRan="4" shake="8,0.3,16,0,mess" len="70">boomEffect/bigCircle</body>
+		<body cnName="太空爆炸-大-震动大" name="bigSpaceShake" soundUrl="boomSound/big" soundRan="4" shake="8,0.3,30,0,mess" len="70">boomEffect/bigCircle</body>
+		<body cnName="太空爆炸-中" name="midSpace" soundUrl="boomSound/midBoom" soundRan="7" shake="8,0.3,16,0,mess" len="70">boomEffect/bigCircle</body>
+		<body cnName="石头爆炸" name="stoneBoom" soundUrl="boomSound/microBoom" soundRan="4" shake="8,0.2,16,0,mess" soundVolume="0.6" len="50">boomEffect/bigSmoke</body>
+		<body cnName="幻银火光" name="SilverShipFire" raNum="30" con="add" soundUrl="sound/laserShoot" soundVolume="0.5">gunFire/enegry</body>
+		<body cnName="能量火光-无声" name="enegryGunFire" raNum="30" con="add">gunFire/enegry</body>
+		<body cnName="紫蜂火光" name="PurpleBeeFire" raNum="30" con="add" soundUrl="specialGun/yearCattleSound">bulletHitEffect/purLaser</body>
+		<body cnName="矿弹出现" name="oreBombShow" con="add" soundUrl="hitSound/waveHit" soundRan="3">generalEffect/blackHoleHide</body>
+		
+		<body cnName="能量波" name="waveBoom" con="add" raNum="4">boomEffect/wave</body>
+		<body cnName="元素波" name="orangeWaveBoom" con="add" raNum="4">boomEffect/orangeWave</body>
+		<body cnName="蓝色波" name="blueWaveBoom" con="add" raNum="4">boomEffect/blueWave</body>
+		<body cnName="红色撞击波" name="redWaveBoom" con="add" raNum="7">boomEffect/redWave</body>
+		
+		<body cnName="尸化特效" name="changeToZombie" soundUrl="sound/changeToZombie_enemy">boomEffect/posion3</body>
+		<body cnName="荧光笔自爆" name="highlighterBoom" con="add">specialGun/beadBoom</body>
+		<body cnName="荧光笔自爆音效" name="highlighterBoomSound" soundUrl="boomSound/big" soundRan="4">boomEffect/zero</body>
+		
+		<body cnName="星座紫色爆炸" name="consPurpleBoom" con="add" ranAn="180" raNum="4" randomRange="8" soundUrl="boomSound/midBoom" soundRan="7" shake="8,0.3,16,0,mess">newGun/purpleBoom</body>
+		<body cnName="土向上爆炸" name="bigSoilShort" soundUrl="boomSound/microBoom" soundRan="4">boomEffect/bigSoilShort</body>
+		
+		<body cnName="大爆炸喷溅" name="bigBoomSputtering" soundUrl="boomSound/big" soundRan="4" shake="8,0.3,30,0,mess">boomEffect/bigFire</body>
+		<body cnName="下雨" name="rainSputtering" urlRandomValue="3" con="add">sputtering/rain</body>
+		<body cnName="高温" name="heatSputtering" con="add">sputtering/heat</body>
+		<body cnName="降雨炮爆炸" name="rainBulletBoom" shake="20,0.3,30,0,mess">boomEffect/bigSpace</body>
+		
+	</father>
+	
+	
+	
+	</data>

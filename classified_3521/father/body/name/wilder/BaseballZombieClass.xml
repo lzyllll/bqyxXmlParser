@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="wilder">
+		<body index="0" name="棍棒僵尸">
+			
+			<name>BaseballZombie</name>
+			<cnName>棍棒僵尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/BaseballZombie345.swf</swfUrl>
+			<lifeRatio>0.8</lifeRatio>
+			<showLevel>9999</showLevel>
+			
+			<imgArr>
+				stand,move,run
+				,normalAttack1,normalAttack2,hurt1,hurt2,die1
+				,magicAttack,shakeAttack,impactAttack
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			<bossImgArr>magicAttack,shakeAttack,impactAttack</bossImgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel />
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<skillArr>UnderRos_AddMove_Battle,noSpeedReduce</skillArr>
+			<bossSkillArr>FoggyZombieShake,FoggyZombieImpact,noUnderMulHurt,defenceInvi,noDegradation,gridBlock,cardNoAttackSkill</bossSkillArr>
+			<bossSkillArrCn />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel><cn>棒连击</cn>
+					<hurtRatio>1.5</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl name="fistHit" />
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel><cn>棒锤击</cn>
+					<hurtRatio>2</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<skillArr>hammer_hit</skillArr>
+					<hitImgUrl name="fistHit" />
+				</hurt>
+				
+				<hurt info="斩击">
+					<imgLabel>shakeAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtMul>0.5</hurtMul>
+					<skillArr>FoggyShakeHit</skillArr>
+					<attackType>holy</attackType>
+					<shakeValue>4</shakeValue><noUseOtherSkillB>1</noUseOtherSkillB>
+					<hitImgUrl name="fistHit" />
+				</hurt>
+				<hurt info="钝击">
+					<imgLabel>impactAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtMul>0.3</hurtMul>
+					<skillArr>FoggyImpactHit</skillArr>
+					<attackType>holy</attackType>
+					<shakeValue>4</shakeValue><noUseOtherSkillB>1</noUseOtherSkillB>
+					<hitImgUrl name="fistHit" />
+				</hurt>
+			</hurtArr>
+		</body>
+	</father>
+	</data>

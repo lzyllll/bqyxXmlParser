@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="props" cnName="宝箱" smeltType="box">
+		<things cnName="修罗宝箱">
+			<name>demonChest</name>
+			<cnName>修罗宝箱</cnName><addDropDefineB>1</addDropDefineB>
+			<iconUrl>ThingsIcon/demonChest</iconUrl>
+			<description>
+				[n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]修罗九
+				[n][n]使用后将随机获得以下物品中的1种</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="0" />
+			<giftRandomB>1</giftRandomB>
+			
+			<gift pro="50">base;anniCoin;30</gift>
+			<gift pro="100">things;demStone;5</gift>
+			<gift pro="100">things;madheart;5</gift>
+			<gift pro="100">things;demBall;5</gift>
+			<gift pro="100">things;roamRocket;3</gift>
+			<gift pro="100">things;starTrails;3</gift>
+			<gift pro="100">things;barrenAwn;3</gift>
+			<gift pro="100">things;iceCone;3</gift>
+			<gift pro="100">things;pianoGun;3</gift>
+			<gift pro="200">things;bossCardStamp;5</gift>
+			<gift pro="100">base;partsCoin;10</gift>
+			<gift pro="80">base;wilderKey;5</gift>
+			<gift pro="50">parts;demCapacityParts_1;1</gift>
+		</things>
+		<things cnName="稀有宝箱">
+			<name>normalChest</name><addDropDefineB>1</addDropDefineB>
+			<cnName>稀有宝箱</cnName>
+			<iconUrl>ThingsIcon/normalChest</iconUrl>
+			<description>
+				可在“锻造&gt;合成&gt;物品”中合成小卡、小隆、小娜、小田等时装。
+				[n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]1、消灭财宝僵尸。
+				[n]2、竞技场兑换、商店购买。
+				[n]3、完成活跃任务领取活跃礼包。
+				[n][n]使用后将随机获得以下物品中的1种：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<smeltD grade="2" addType="armsEquip" price="40" />
+			<giftRandomB>1</giftRandomB>
+			
+			<gift pro="2">arms;pistolSange</gift>
+			<gift pro="2">arms;shotgunLightning</gift>
+			<gift pro="4">arms;rocketHummer</gift>
+			
+			<gift pro="66">equip;earthquakeGenerator_1;8</gift>
+			<gift pro="66">equip;endlessRocket_1;8</gift>
+			<gift pro="66">equip;lightningTower_1;8</gift>
+			<gift pro="66">equip;energyShield_1;8</gift>
+			<gift pro="66">equip;electricDevicer_1;8</gift>
+			
+			<gift pro="250">things;skillStone;200</gift>
+			<gift pro="250">things;godStone;100</gift>
+			<gift pro="250">things;converStone;100</gift>
+			<gift pro="250">things;taxStamp;200</gift>
+			
+			<gift pro="200">base;coin;800000</gift>
+		</things>
+		<things cnName="传奇宝箱">
+			<name>magicChest</name><addDropDefineB>1</addDropDefineB>
+			<cnName>传奇宝箱</cnName>
+			<iconUrl>ThingsIcon/magicChest</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]1、每次消灭完首领将有一定几率出现财宝僵尸，关卡难度越高、关卡等级越高，出现财宝僵尸的概率就越高。消灭财宝僵尸将有一定几率掉落传奇宝箱。
+				[n]2、竞技场兑换。
+				[n]3、商店购买（每天限定次数）。
+				[n][n]使用后将随机获得以下物品中的1种：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<smeltD grade="2" addType="armsEquip" price="60" />
+			<giftRandomB>1</giftRandomB>
+			<gift pro="25" sp="0.003">equip;Thunder</gift>
+			<gift pro="45">arms;pistolRed</gift>
+			<gift pro="45">arms;rifleYellow</gift>
+			<gift pro="45">arms;sniperBlue</gift>
+			<gift pro="45">arms;shotgunRed</gift>
+			<gift pro="120">equip;butcherBlade_1;15</gift>
+			<gift pro="120">equip;moonDagger_1;15</gift>
+			<gift pro="120">equip;wolongStick_1;15</gift>
+			<gift pro="1286">things;dreamKey;8</gift>
+			<gift pro="1286">things;courageKey;8</gift>
+			<gift pro="1286">things;energyKey;8</gift>
+			<gift pro="1286">things;victoryKey;8</gift>
+			<gift pro="667">things;strengthenStone;30</gift>
+			<gift pro="1587" sp="0.158">things;arenaStamp;200</gift>
+			<gift pro="750">things;bloodStone;30</gift>
+			<gift pro="1295">things;converStone;150</gift>
+		</things>
+		
+		
+		<things cnName="远古宝箱">
+			<name>dragonChest</name><addDropDefineB>1</addDropDefineB>
+			<cnName>远古宝箱</cnName>
+			<iconUrl>ThingsIcon/dragonChest</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]1、消灭50级以上普通关卡、秘境首领有几率掉落，每天最多掉落2个。
+				[n]2、竞技场兑换、军队商店兑换。
+				[n]3、商店购买（每天限定次数）。
+				[n][n]使用后将随机获得以下物品中的1种：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<smeltD grade="2" addType="armsEquip" price="60" />
+			<giftRandomB>1</giftRandomB>
+			
+			<gift pro="6" sp="0.003">equip;FlyDragonAir;1</gift>
+			<gift pro="50">things;rifleHornet;10</gift>
+			<gift pro="167">things;pistolCabrite;10</gift>
+			<gift pro="250">things;christmasGun;10</gift>
+			<gift pro="333">things;anniversaryCash;20</gift>
+			<gift pro="167">things;lightStone;40</gift>
+			<gift pro="250">things;converStone;200</gift>
+			<gift pro="250">things;bloodStone;30</gift>
+			<gift pro="333">things;armsTitanium;20</gift>
+			<gift pro="500">things;armsRadium;20</gift>
+			
+			<gift pro="100">things;partsChest81;1</gift>
+			<gift pro="100">things;partsChest84;1</gift>
+			<gift pro="20">things;partsChest87;1</gift>
+			<gift pro="310" sp="0.108">things;yearPig;1</gift>
+
+		</things>
+		
+		
+		<things cnName="神器宝箱">
+			<name>artifactChest</name>
+			<cnName>神器宝箱</cnName>
+			<iconUrl>ThingsIcon/artifactChest</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				
+				[n][n]使用后将随机获得以下物品中的1种：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<giftRandomB>1</giftRandomB>
+			
+			
+			<gift pro="700">things;ghostAxe;1</gift>
+			<gift pro="100">things;allBlackCash;5</gift>
+			<gift pro="100">things;allBlackEquipCash;5</gift>
+			<gift pro="200">things;AircraftGunCash;5</gift>
+			<gift pro="200">things;erosionFlamer;3</gift>
+			<gift pro="200">things;beadCrossbow;3</gift>
+			<gift pro="200">things;oracleSuit_head;3</gift>
+			<gift pro="200">things;oracleSuit_belt;3</gift>
+			<gift pro="200">things;oracleSuit_coat;3</gift>
+			<gift pro="500">things;weaponChest;1</gift>
+			<gift pro="500">things;deviceChest;1</gift>
+			<gift pro="500">things;fineStone;1</gift>
+			<gift pro="800">things;skillStone;30</gift>
+			<gift pro="800">things;strengthenDrug;30</gift>
+		</things>
+		
+		
+		<things cnName="异虎宝箱">
+			<name>tigerChest</name>
+			<cnName>异虎宝箱</cnName>
+			<iconUrl>ThingsIcon/tigerChest</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]活跃度礼包
+				[n]商店购买（每天限定次数）
+				[n][n]使用后获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="0" />
+			<showGiftB>1</showGiftB>
+			
+			<gift>things;SaberTigerCarCash;1</gift>
+			<gift>base;coin;20000</gift>
+			<gift>things;bloodStone;3</gift>
+			<gift>things;strengthenStone;1</gift>
+			<gift>things;allBlackCash;1</gift>
+			<gift>things;allBlackEquipCash;2</gift>
+			<gift>things;armsRadium;3</gift>
+			<gift>things;armsTitanium;3</gift>
+			<gift>things;redFire;1</gift>
+			<gift>things;rocketCate;1</gift>
+			<gift>things;meltFlamer;1</gift>
+			<gift>things;pistolFox;1</gift>
+		</things>
+		<things cnName="竞技宝箱">
+			<name>arenaChest</name>
+			<cnName>竞技宝箱</cnName>
+			<iconUrl>ThingsIcon/arenaChest</iconUrl>
+			<description>
+				可在“锻造&gt;合成&gt;物品”中合成小鸣时装、小波时装、小艾时装、超能英雄称号、特种奇兵称号。
+				[n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]首领工厂高难度首领
+				[n]功勋牌兑换
+				[n][n]使用后将随机获得以下物品中的1种</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="0" />
+			<giftRandomB>1</giftRandomB>
+			
+			<gift pro="200">things;yearDog;1</gift>
+			<gift pro="200">things;yearMonkey;1</gift>
+			<gift pro="200">things;yearSnake;1</gift>
+			<gift pro="200">things;yearCattle;1</gift>
+			<gift pro="200">things;yearPig;1</gift>
+			<gift pro="200">things;yearHourse;1</gift>
+			<gift pro="200">things;yearMouse;1</gift>
+			<gift pro="200">things;yearRabbit;1</gift>
+		</things>
+		<things cnName="生肖碎片包">
+			<name>zodiacBag</name>
+			<cnName>生肖碎片包</cnName>
+			<iconUrl>ThingsIcon/zodiacBag</iconUrl>
+			<description>
+				包含6种生肖碎片
+				[n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]活跃值礼包
+				[n][n]使用后获得以下所有物品</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<showGiftB>1</showGiftB>
+			<loveD num="0" />
+			
+			<gift>things;yearMonkey;1</gift>
+			<gift>things;yearPig;1</gift>
+			<gift>things;yearRabbit;1</gift>
+			<gift>things;yearMouse;1</gift>
+			<gift>things;yearHourse;1</gift>
+			<gift>things;yearCattle;1</gift>
+		</things>
+		
+		
+		
+		
+		
+		
+		
+		<things cnName="联邦工资包">
+			<name>postNormalChest</name>
+			<cnName>联邦工资包</cnName>
+			<iconUrl>ThingsIcon/postNormalChest</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]1、职务系统中的每日礼包。
+				[n][n]使用后将随机获得以下物品中的1种：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<giftRandomB>1</giftRandomB>
+			
+			<gift pro="240">things;armsEchelonCard;5</gift>
+			<gift pro="240">things;equipEchelonCard;5</gift>
+			<gift pro="100">things;strengthenStone;5</gift>
+			<gift pro="100">things;lightStone;5</gift>
+			<gift pro="33">things;militarySupplies;50</gift>
+			<gift pro="33">things;normalChest;1</gift>
+			<gift pro="33">things;magicChest;1</gift>
+			<gift pro="218">things;coinHeap_1;5</gift>
+		</things>
+		<things cnName="元首礼包">
+			<name>postPlatinumChest</name>
+			<cnName>元首礼包</cnName>
+			<iconUrl>ThingsIcon/postPlatinumChest</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]1、职务系统中的每日礼包。
+				[n][n]使用后将随机获得以下物品中的1种：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<giftRandomB>1</giftRandomB>
+			
+			<gift pro="120">things;doubleArmsCard;1</gift>
+			<gift pro="160">things;doubleEquipCard;1</gift>
+			<gift pro="120">things;doubleMaterialsCard;1</gift>
+			<gift pro="300">things;coinHeap_1;5</gift>
+			
+		</things>
+	</father>
+	
+	
+	
+	
+	
+	
+	
+	</data>

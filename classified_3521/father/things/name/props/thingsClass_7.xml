@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="props" cnName="银币堆">	
+		<things cnName="小型银币堆">
+			<name>coinHeap_1</name>
+			<cnName>小型银币堆</cnName>
+			<zuobiNum>30000</zuobiNum>
+			<iconUrl>ThingsIcon/coinHeap_1</iconUrl>
+			<description>使用后添加1万银币。</description>
+			<effectD type="addGift" />
+			<gift>base;coin;10000</gift>
+			<smeltD addType="coin" price="2" />
+			</things>
+		<things cnName="中型银币堆">
+			<name>coinHeap_2</name>
+			<cnName>中型银币堆</cnName>
+			<zuobiNum>2000</zuobiNum>
+			<iconUrl>ThingsIcon/coinHeap_2</iconUrl>
+			<description>使用后添加10万银币。</description>
+			<effectD type="addGift" />
+			<gift>base;coin;100000</gift>
+			<smeltD addType="coin" price="15" />
+			</things>
+		<things cnName="大型银币堆">
+			<name>coinHeap_3</name>
+			<cnName>大型银币堆</cnName>
+			<zuobiNum>200</zuobiNum>
+			<iconUrl>ThingsIcon/coinHeap_3</iconUrl>
+			<description>使用后添加100万银币。</description>
+			<effectD type="addGift" />
+			<gift>base;coin;1000000</gift>
+			<smeltD addType="coin" price="100" />
+			</things>
+	</father>
+	</data>

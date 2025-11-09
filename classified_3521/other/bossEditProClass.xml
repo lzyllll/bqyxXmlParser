@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<gather name="boss">
+		<father name="base" changeB="0">
+			<body name="cn" cnName="首领中文名前缀"/>
+			<body name="g" cnName="奖励"/>
+		</father>
+		<father name="other" changeB="0">
+			<body name="ud" cnName=""/>
+			<body name="pn" cnName=""/>
+		</father>
+		<father name="level">
+			<body name="mp" cnName="地图" defPro="sceneLabel" />
+		</father>
+		<father name="levelInfo">
+			<body name="lv" type="number" cnName="等级" defPro="enemyLv" init="99" min="40" max="99" />
+			<body name="hb" type="boolean" cnName="困难设定" defPro="hb" 			scoreMul="2" tip="饺子等道具无法使用，某些技能、武器、装备也将受到限制（类似于99级主线任务的限制）。" init="1" />
+			<body name="tm" type="number" cnName="倒计时" defPro="tm" 				scoreMul="1" unit="秒" init="180" max="300" min="0" tip="设置为0，可取消倒计时。" />
+			<body name="pa" type="boolean" cnName="禁止队友" defPro="noPartnerB" scoreMul="2"/>
+			<body name="pe" type="boolean" cnName="禁止尸宠" defPro="noPetB" 		scoreMul="1.3"/>
+			<body name="ve" type="boolean" cnName="禁止载具" defPro="noVehicleB" scoreMul="1.2" />
+			<body name="pr" type="boolean" cnName="禁止道具" defPro="noPropsB" scoreMul="2.5" />
+			<body name="si" type="boolean" cnName="强制单人" defPro="mustSingleB" scoreMul="1.1" />
+		</father>
+		<father name="levelBossUnit">
+			<body name="n" cnName="首领" defPro="name" changeB="0"/>
+			<body name="sk" type="array" cnName="技能" defPro="skillArr" defValueFun="getSkillNameArr" />
+			<body name="dp" type="number" cnName="伤害系数" defPro="dpsMul" init="1" min="1" max="30" />
+			<body name="li" type="number" cnName="生命系数" defPro="lifeMul" init="10" min="1" max="100000"/>
+			<body name="sc" type="boolean" cnName="关闭自身技能" defPro="skillCloseB" />
+			<body name="ar" type="array" cnName="武器" defPro="armsRange" />
+		</father>
+	</gather>
+	
+</data>
+

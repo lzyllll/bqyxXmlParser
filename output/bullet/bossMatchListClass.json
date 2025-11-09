@@ -1,0 +1,17 @@
+{
+  "father": [
+    {
+      "name": "bossMatch",
+      "body": null
+    },
+    {
+      "name": "level",
+      "body": {
+        "value": "WoTu:WoTu_4\nYangMei:YangMei_4\nXiaSha:XiaSha_4\nFengWei:FengWei_5\nXiChi:XiChi_win\nBaiLu:BaiLu_5\nShuiSheng:ShuiSheng_4\nBaiZhang:BaiZhang_4\nZhuTou:ZhuTou_3\nShuangTa:ShuangTa_3\nBeiDou:BeiDou_goto\nDongShan:DongShan_4\nQingSha:QingSha_5\nQingMing:QingMing_4\nNanTang:NanTang_3\nYouLing:YouLing_4\nXiFeng:XiFeng_4\nLvSen:LvSen_2\nDuKu:DuKu_poision\nBaoLun:BaoLun_2\nLuYu:LuYu_1\nBaWang:BaWang_1\nPingChuan:PingChuan_1\nBaiSha:BaiSha_2",
+        "name": "lastLevelName",
+        "cnName": "最新关卡名称",
+        "noEncodeB": true
+      }
+    }
+  ]
+}

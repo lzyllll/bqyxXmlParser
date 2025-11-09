@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="敌方">
+		<body index="0" name="沃龙" shell="normal">
+			
+			<name>Wanda</name>
+			<cnName>沃龙</cnName>
+			<raceType>human</raceType>
+			<swfUrl>swf/hero/Wanda342.swf</swfUrl>
+			
+			<showLevel>999</showLevel>
+			<headIconUrl>IconGather/Wanda</headIconUrl>
+			<lifeBarExtraHeight>-20</lifeBarExtraHeight>
+			<imgArr>
+				standStop,standForward,standBack,standStop__squatStop
+				,squatForward,squatStop,squatBack,squatStop__standStop
+				,jumpDown__,jumpDown,jumpUp__jumpDown,jumpUp,__jumpUp
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+				,die1,die2,__stru,stru
+			</imgArr>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-15,-38,30,38</hurtRectArr> 
+			<hurtRectArr>-12, -75, 24, 75</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>10.5</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			<maxJumpNum>1</maxJumpNum>
+			<flyType>tween</flyType>
+			
+			<armsNumber>1</armsNumber>
+			<randomArmsRange>yearDragon</randomArmsRange>
+			
+			<skillArr>crazy_enemy</skillArr>
+			<bossSkillArr>moreMissile_enemy</bossSkillArr>
+		</body>
+		
+		
+		<skill>
+			<name>scaleWolong</name>
+			<cnName>缩放</cnName>
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>scaleWolong</effectType>
+			<range>400</range>
+			<duration>999999</duration>
+			<description>缩放</description>
+			<pointEffectImg partType="mouth" con="add">skillEffect/screaming_hero_target</pointEffectImg>
+		</skill>
+	</father>
+	
+		
+</data>

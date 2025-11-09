@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill index="0" name="音爆">
+			<name>pianoGunSkill</name><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<cnName>音爆</cnName><noRandomListB>1</noRandomListB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>noMainTask,noHardB</otherConditionArr>
+			<target>target</target>
+			
+			<addType>stateAndInstant</addType>
+			<effectType>pianoGunSkill</effectType>
+			<duration>3</duration>
+			
+			<stateEffectImg partType="head" con="add">specialGun/pianoGunBuff</stateEffectImg>
+			<pointEffectImg partType="body,head" soundUrl="sound/pointBoom_hero">boomEffect/bigCircle</pointEffectImg>
+			<description>把一段乐谱的音符完整地打到一个敌人身上，将对它造成音爆伤害，伤害=(乐谱长度x0.6%-0.4%)x敌人当前生命值。主线任务、修罗模式效果受限。</description>
+		</skill>
+	</father>
+	
+</data>

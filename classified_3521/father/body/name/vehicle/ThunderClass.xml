@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicle" cnName="战车body">
+		<body index="0" name="雷鸣" shell="metal">
+			
+			<name>Thunder</name>
+			<cnName>雷鸣</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/vehicle/Thunder.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<rosRatio>1</rosRatio>
+			<headHurtMul>0.5</headHurtMul>
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<imgClass>CarImage</imgClass>
+			<imgType>normal</imgType>
+			<rotateBySlopeB>1</rotateBySlopeB>
+			<imgArr>
+				stand,move,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+			</imgArr>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			
+			<maxVx>13</maxVx>
+			<maxJumpNum>2</maxJumpNum>
+			
+			
+			<attackAIClass>CarAttack_AI</attackAIClass>
+			<keyClass>CarBodyKey</keyClass>
+			<bulletLauncherClass>CarBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="Titans/hit1">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown__</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>
+		<body name="雷霆" fixed="Thunder" shell="metal">
+			<name>Thunderbolt</name>
+			<cnName>雷霆</cnName>
+			<swfUrl>swf/vehicle/Thunderbolt.swf</swfUrl>
+			<bmpUrl>BodyImg/Thunderbolt</bmpUrl>
+			<bossSkillArr>upperLimitSecond,slowMove_enemy,paralysis_enemy</bossSkillArr>
+		</body>
+	</father>
+</data>

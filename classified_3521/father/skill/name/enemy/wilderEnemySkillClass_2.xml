@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="异祖龙">
+		<skill cnName="巨焰围剿">
+			<name>FlyDragon_fireSurround</name>
+			<cnName>巨焰围剿</cnName><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<noBeClearB>1</noBeClearB>
+			<ignoreSilenceB>1</ignoreSilenceB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>bullet_fireSurround</effectType>
+			<duration>9999999</duration>
+			<mul>0.3</mul>
+			
+			<obj>"name":"FlyDragon_fireSurround","nameArr":["FlyDragon_fireSurroundSmoke"]</obj>
+			
+			<description>首领引来飞龙群，在直线路径上持续喷射火柱，对击中的敌人每秒造成[mul]最大生命值的伤害。</description>
+		</skill>
+		<skill cnName="月石">
+			<name>FlyDragonBall</name><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<cnName>月石</cnName>
+			<noBeClearB>1</noBeClearB>
+			<ignoreSilenceB>1</ignoreSilenceB><noCopyB>1</noCopyB>
+			
+			<cd>5</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>FlyDragonBall</effectType>
+			
+			<stateEffectImg>FlyDragon/drop</stateEffectImg>
+			<description>收集地图上遗落的6个月石后，首领将会完全石化，并且矫捷姿态消失。</description>
+		</skill>
+		<skill cnName="石化">
+			<name>FlyDragon_petrifaction</name><overlyingB>1</overlyingB>
+			<cnName>石化</cnName>
+			<noBeClearB>1</noBeClearB>
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<noSkillDodgeB>1</noSkillDodgeB>
+			
+			<cd>3</cd>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>FlyDragon_petrifaction</effectType>
+			<value>5</value>
+			<duration>9999999</duration>
+			
+			<stateEffectImg bodyColor="0x58564B" />
+			<description>。</description>
+		</skill>
+		<skill index="0" cnName="矫捷姿态">
+			<name>FlyDragon_dodgePro</name><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<cnName>矫捷姿态</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>dodgePro</effectType>
+			<value>0.9</value>
+			<duration>999999</duration>
+			<description>闪避率增加90%，石化后闪避状态消失。</description>
+		</skill>
+		<skill index="0" cnName="召唤蝙蝠">
+			<name>FlyDragon_summoned</name>
+			<cnName>召唤蝙蝠</cnName>
+			
+			<cd>0.1</cd>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>summonedUnits</effectType>
+			
+			<obj>"cnName":"吸血蝙蝠","num":10,"lifeMul":0.05,"dpsMul":0.05,"lifeTime":10,"mulByFatherB":1,"maxNum":10,"skillArr":[]</obj>
+			
+			<description>蝙蝠。</description>
+		</skill>
+		<skill index="0" cnName="龙甲">
+			<name>FlyDragon_likeMissle</name><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<cnName>龙甲</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>0.05</mul>
+			
+			<obj>"type":"followBullet"</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>受到跟踪型子弹的伤害减少[1-mul]。</description>
+		</skill>
+		<skill cnName="近战伤害减免">
+			<name>fightReduct</name>
+			<cnName>近战防御</cnName>
+			<noBeClearB>1</noBeClearB>
+			<ignoreSilenceB>1</ignoreSilenceB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>fightDedut</effectType>
+			<mul>0.90</mul>
+			<duration>9999999</duration>
+			
+			<description>受到近战伤害减少90%。</description>
+		</skill>
+		<skill cnName="近战伤害减免">
+			<name>fightReduct7</name>
+			<cnName>近战防御</cnName>
+			<noBeClearB>1</noBeClearB>
+			<ignoreSilenceB>1</ignoreSilenceB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>fightDedut</effectType>
+			<mul>0.75</mul>
+			<duration>9999999</duration>
+			
+			<description>受到近战伤害减少[mul]。</description>
+		</skill>
+		<skill index="0" cnName="石化眩晕">
+			<name>FlyDragon_hammer</name>
+			<cnName>石化眩晕</cnName>
+			
+			<conditionType>active</conditionType>
+			<target>me,range,enemy</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>dizziness</effectType>
+			<duration>2</duration>
+			<range>100</range>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+			<description>击中目标有[effectProArr.0]的几率使目标陷入眩晕状态，持续[duration]秒，对机械体无效。</description>
+		</skill>
+	</father>	 
+	</data>

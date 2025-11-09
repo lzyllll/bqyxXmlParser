@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="shield" cnName="护盾">
+		<equip maxLv="3" baseLabel="crabShell" cnName="兽甲" composeMustNum="120" stren="0.7" cd="70" delay="3" skillArr="crabShell" />
+				<skill>
+					<cnName>兽甲</cnName>
+					<name>crabShell</name>
+					<changeText>降低伤害：[1-mul]</changeText>
+					<conditionType>passive</conditionType>
+					<condition>underHit</condition>
+					<target>me</target>
+					<addType>instant</addType>
+					<effectType>changeHurtMulDedut</effectType>
+					<mul>0.95</mul>
+					<description>降低[1-mul]的近战百分比伤害。</description>
+					<growth>
+						<skill><mul>0.95</mul></skill>
+						<skill><mul>0.85</mul></skill>
+						<skill><mul>0.75</mul></skill>
+					</growth>
+				</skill>
+				
+				
+		<equip maxLv="2" baseLabel="loveShell" cnName="爱心护盾" stren="0.25" cd="20" delay="1" skillArr="loveShell" />
+				<skill>
+					<cnName>爱的力量</cnName>
+					<name>loveShell</name>
+					<changeText>最快加速到[value]秒</changeText>
+					<conditionType>passive</conditionType>
+					<condition>add</condition>
+					<target>me</target>
+					<addType>state</addType>
+					<effectType>loveShell</effectType>
+					<range>600</range>
+					<value>8</value>
+					<duration>9999999</duration>
+					<description>从[range]码开始，距离小樱越近，护盾充能速度越快，最快加速到[value]秒。</description>
+					<growth>
+						<skill><value>8</value></skill>
+						<skill><value>8</value><mul>0.1</mul><changeText>靠近心零、小美也有效果</changeText><description>从[range]码开始，距离小樱、心零或者小美越近，护盾充能速度越快，最快加速到[value]秒。</description></skill>
+						
+					</growth>
+				</skill>	
+				
+				
+		<equip maxLv="3" baseLabel="spongeShell" cnName="海绵" composeMustNum="120" stren="0.3" cd="20" delay="1" skillArr="spongeShell" />
+				<skill>
+					<cnName>海绵</cnName>
+					<name>spongeShell</name>
+					<changeText>不受伤害时间：[duration]秒</changeText>
+					<conditionType>passive</conditionType>
+					<condition>underHurt</condition>
+					<otherConditionArr>isMulHurt</otherConditionArr>
+					<target>me</target>
+					<addType>state</addType>
+					<effectType>noUnderHurtB</effectType>
+					<duration>0.25</duration>
+					<stateEffectImg partType="body" con="add">generalEffect/invincibleShield</stateEffectImg>
+					<description>受到敌人百分比伤害后，不受伤害[duration]秒。</description>
+					<growth>
+						<skill><duration>0.25</duration></skill>
+						<skill><duration>0.40</duration></skill>
+						<skill><duration>0.65</duration></skill>
+					</growth>
+				</skill>
+	</father>
+</data>

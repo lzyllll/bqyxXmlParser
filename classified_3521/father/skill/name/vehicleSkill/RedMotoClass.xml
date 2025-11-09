@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicleSkill" cnName="技能">
+		<skill>
+			<name>redMoto3Skill</name>
+			<cnName>车卷风</cnName><iconUrl>SkillIcon/redMoto3Skill</iconUrl>
+			<effectInfoArr />
+			<changeText>时间间隔[intervalT]秒</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition><intervalT>1</intervalT>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>redMoto3Skill</effectType><effectFather>vehicle</effectFather>
+			<description>每过[intervalT]秒，清除一次载具附近的爆瓶毒雾、战神地面火焰。同时自身不会被封锁。</description>
+			<pointEffectImg name="extremeLaserFire_boom" />
+			
+			<growth>
+				<skill><intervalT>1.0</intervalT></skill>
+				<skill><intervalT>0.9</intervalT></skill>
+				<skill><intervalT>0.8</intervalT></skill>
+				<skill><intervalT>0.7</intervalT></skill>
+				<skill><intervalT>0.6</intervalT></skill>
+				<skill><intervalT>0.5</intervalT></skill>
+				<skill><intervalT>0.4</intervalT></skill>
+				<skill><intervalT>0.3</intervalT></skill>
+				<skill><intervalT>0.2</intervalT></skill>
+				<skill><intervalT>0.1</intervalT></skill>
+			</growth>
+		</skill>
+	</father>
+	
+	
+	
+	</data>

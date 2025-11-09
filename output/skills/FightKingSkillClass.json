@@ -1,0 +1,171 @@
+{
+  "father": {
+    "name": "enemy",
+    "cnName": "怪物技能",
+    "skills": {
+      "FightKing_slowMove": {
+        "index": 0,
+        "name": "FightKing_slowMove",
+        "cnName": "狂战尸-震地减速",
+        "conditionType": "passive",
+        "condition": "hit",
+        "target": "target",
+        "addType": "state",
+        "effectType": "moveSpeed",
+        "value": 0,
+        "mul": 0.5,
+        "duration": 2,
+        "stateEffectImg": {
+          "value": "skillEffect/disabled_enemy",
+          "partType": "2foot"
+        },
+        "description": "击中目标后降低其50%的移动速度，持续2秒。"
+      },
+      "FightKing_cloned": {
+        "index": 0,
+        "name": "FightKing_cloned",
+        "cnName": "分身",
+        "iconUrl36": "SkillIcon/cloned_36",
+        "cd": 30,
+        "showInLifeBarB": 1,
+        "noInClonedB": 1,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "nearAttackTarget",
+        "conditionRange": 700,
+        "target": "me",
+        "addType": "instant",
+        "effectType": "cloned",
+        "value": 1,
+        "mul": 0.25,
+        "secMul": 0.75,
+        "duration": 30,
+        "meEffectImg": {
+          "value": "skillEffect/hiding_hero",
+          "soundUrl": "sound/cloned_enemy",
+          "con": "add"
+        },
+        "description": "产生[value]个分身，攻击力与自身同等，血量为自身的[mul]，持续[duration]秒。"
+      },
+      "knifeBoom_FightKing": {
+        "index": 0,
+        "name": "knifeBoom_FightKing",
+        "cnName": "狂刃爆发",
+        "showInLifeBarB": 1,
+        "noInClonedB": 1,
+        "ignoreSilenceB": 1,
+        "cd": 8,
+        "delay": 0.3,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "nearAttackTarget",
+        "conditionRange": 700,
+        "target": "me",
+        "addType": "instant",
+        "effectType": "bullet",
+        "extraValueType": "meDpsFactor",
+        "obj": {
+          "name": "knifeBoom_FightKing",
+          "site": "me",
+          "flipB": true
+        },
+        "meActionLabel": "shakeAttack",
+        "description": "从单位背后爆发出多把旋刃。"
+      },
+      "summonedPo_extra": {
+        "index": 0,
+        "name": "summonedPo_extra",
+        "cnName": "召唤冥刃",
+        "showInLifeBarB": 1,
+        "noInClonedB": 1,
+        "cd": 4,
+        "delay": 0.25,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "nearAttackTarget",
+        "conditionRange": 700,
+        "target": "me",
+        "addType": "instant",
+        "effectType": "summonedUnits",
+        "obj": {
+          "cnName": "冥刃游尸",
+          "num": 1,
+          "lifeMul": 0.02,
+          "dpsMul": 0.5,
+          "maxNum": 5,
+          "cx": 0,
+          "cy": 0
+        },
+        "meActionLabel": "windAttack",
+        "description": "狂战尸使出旋风刀，同时召唤出一只[obj.cnName]。"
+      },
+      "FightKing_cloned_extra": {
+        "index": 0,
+        "name": "FightKing_cloned_extra",
+        "cnName": "分身",
+        "cd": 30,
+        "showInLifeBarB": 1,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "nearAttackTarget",
+        "conditionRange": 700,
+        "target": "me",
+        "addType": "instant",
+        "effectType": "cloned",
+        "value": 1,
+        "mul": 0.2,
+        "secMul": 0.75,
+        "duration": 20,
+        "meEffectImg": {
+          "value": "skillEffect/hiding_hero",
+          "soundUrl": "sound/cloned_enemy",
+          "con": "add"
+        },
+        "description": "产生[value]个分身，攻击力与自身同等，血量为自身的[mul]，持续[duration]秒。分身被消灭后"
+      },
+      "silence_FightKing": {
+        "index": 0,
+        "name": "silence_FightKing",
+        "cnName": "沉默",
+        "showInLifeBarB": 1,
+        "cd": 8,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "target": "me,range,enemy",
+        "addType": "state",
+        "effectType": "silenceB",
+        "value": 1,
+        "duration": 5,
+        "range": 999999,
+        "meEffectImg": {
+          "soundUrl": "sound/silence_enemy"
+        },
+        "stateEffectImg": {
+          "value": "skillEffect/silence_enemy",
+          "partType": "mouth",
+          "con": "add"
+        },
+        "description": "使[range]码以内的敌方单位无法释放技能，持续[duration]秒。"
+      },
+      "coverFog_FightKing": {
+        "index": 0,
+        "name": "coverFog_FightKing",
+        "cnName": "金钟雾",
+        "noInClonedB": 1,
+        "conditionType": "active",
+        "target": "me",
+        "addType": "state",
+        "effectType": "dodgePro",
+        "value": 0.5,
+        "duration": 999999,
+        "stateEffectImg": {
+          "value": "bulletHitEffect/smoke_small",
+          "partType": "arm_right_1,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1",
+          "con": "filter",
+          "raNum": 30
+        },
+        "description": "全身覆盖金钟雾，增加50%的闪避值。"
+      }
+    }
+  }
+}

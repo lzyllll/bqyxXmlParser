@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="we">
+		<bullet cnName="怒蜂-射击">
+			<name>YingUAVShoot</name>
+			<cnName>怒蜂-射击</cnName>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>0.8</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.5</attackGap>
+			<attackDelay>0.3</attackDelay>
+			<bulletAngle>90</bulletAngle>
+			<bulletAngleRange>12</bulletAngleRange>
+				
+			<penetrationGap>1000</penetrationGap>
+			<followD value="1" />
+				
+			<shootPoint>0,24</shootPoint>
+			<bulletSpeed>45</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl name="shoot_Watchdog_bullet" />
+			<hitImgUrl name="fireFlamer_hit" />
+		</bullet>
+		
+		
+		<skill>
+			<name>birthInvi5</name>
+			<cnName>出生无敌5秒</cnName><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>invincibleAndThrough</effectType>
+			<duration>5</duration>
+			<description>出生时无敌5秒。</description>
+		</skill>
+	</father>	
+	
+	
+</data>

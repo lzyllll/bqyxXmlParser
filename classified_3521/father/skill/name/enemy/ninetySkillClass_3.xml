@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="女爵尸">
+		<skill index="0" name="钩拉">
+			<name>SnowGirlHook</name>
+			<cnName>钩拉</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>SnowGirlHook</effectType>
+			<duration>0.3</duration>
+			
+			<description>击中目标后使其无法释放技能，持续[duration]秒。</description>
+		</skill>
+		
+		<skill name="钩雪莲华">
+			<name>SnowGirlPull</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>钩雪莲华</cnName><iconUrl36>SkillIcon/IronDogFive_36</iconUrl36>
+			<cd>6</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>700</conditionRange><target>me</target>
+			<addType>no</addType>
+			<meActionLabel>pullAttack</meActionLabel>
+			<description>将敌人拉至身边，一顿乱斩之后，将其抛掷高空。</description>	
+		</skill>
+		
+		
+		
+		<skill index="0" name="钩拉-击中麻痹">
+			<name>SnowGirlHookHit</name>
+			<cnName>钩拉-击中麻痹</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<mul>0</mul>
+			<duration>1</duration>
+			<applyArr>hookAttack</applyArr>
+			 
+			<stateEffectImg con="add" soundUrl="sound/paralysis_enemy_hit">skillEffect/paralysis_enemy</stateEffectImg>
+		</skill>
+		
+		<skill index="0" name="钩雪莲华-击中">
+			<name>SnowGirlPullHit</name>
+			<cnName>钩雪莲华-击中</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>SnowGirlPullHit</effectType>
+			<mul>23</mul>
+			<secMul>28</secMul>
+			<valueString>hand_left</valueString>
+			<duration>0.2</duration>
+			 
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+		</skill>
+		<skill index="0" name="钩雪莲华-抛空中">
+			<name>SnowGirlAfterPullHit</name>
+			<cnName>钩雪莲华-抛空中</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>SnowGirlAfterPullHit</effectType>
+			<duration>1.5</duration>
+			 
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+		</skill>
+	</father>	
+	</data>

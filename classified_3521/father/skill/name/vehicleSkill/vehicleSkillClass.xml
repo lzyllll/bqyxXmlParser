@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicleSkill" cnName="英雄技能">
+		<skill index="0" name="轰天聚合">
+			<name>vehicleFit_Gaia</name>
+			<cnName>轰天聚合</cnName>
+			<studyMustMul>1.4</studyMustMul>
+			
+			<cd>60</cd>
+			<changeText>伤害倍数：[mul]</changeText>
+			
+			<conditionType>active</conditionType>
+			<doCondition>vehicleFit</doCondition>
+			<condition />
+			<conditionString>SaberTigerCar,FlyDragonAir,BlackTitans,Temmoku,SecDiggers,BlueMoto,Adjudicator,Thunder</conditionString>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>vehicleFit</effectType>
+			<valueString>GaiaFit</valueString>
+			<duration>20</duration>
+			<mul>0.3</mul>
+			
+			<meEffectImg noFollowB="1" soundUrl="sound/vehicleFit" con="add">generalEffect/vehicleFit</meEffectImg>
+			<description>当在场的2个队友同时装备指定载具（必须强化至30级）时，他们和主角将合体成一个超强载具：轰天雷！伤害倍数：[mul]，持续时间[duration]秒。 指定载具包括黑暗泰坦、天目、判决者、腥红挖掘者、幽鬼、异祖龙、异齿虎、雷鸣以及它们的进化体。</description>
+			
+			<growth>
+				<skill><mul>0.3</mul></skill>
+				<skill><mul>0.6</mul></skill>
+				<skill><mul>0.9</mul></skill>
+				<skill><mul>1.2</mul></skill>
+				<skill><mul>1.5</mul></skill>
+				<skill><mul>1.8</mul></skill>
+				<skill><mul>2.1</mul></skill>
+				<skill><mul>2.4</mul></skill>
+				<skill><mul>2.7</mul></skill>
+				<skill><mul>3.0</mul></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="镇山聚合">
+			<name>vehicleFit_Civilian</name>
+			<cnName>镇山聚合</cnName>
+			<studyMustMul>1.4</studyMustMul>
+			
+			<cd>60</cd>
+			<changeText>伤害倍数：[mul]</changeText>
+			
+			<conditionType>active</conditionType>
+			<doCondition>vehicleFit</doCondition>
+			<condition />
+			<conditionString>BoneBreaker,ForestTank,MoonLack,RedCrusher,RedMoto,BlueMotoSec,BlackTitans,Temmoku</conditionString>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>vehicleFit</effectType>
+			<valueString>CivilianFit</valueString>
+			<duration>20</duration>
+			<mul>0.3</mul>
+			
+			<meEffectImg noFollowB="1" soundUrl="sound/vehicleFit" con="add">generalEffect/vehicleFit</meEffectImg>
+			<description>在场的2个队友同时装备指定载具（必须强化至30级）时，他们和主角将合体成一个超强载具：镇山虎！伤害倍数：[mul]，持续时间[duration]秒。指定载具包括黑暗泰坦、血魂、天目、丛林狂袭者、月蚀、碾压者、赤焰、切割者。</description>
+			
+			<growth>
+				<skill><mul>0.3</mul></skill>
+				<skill><mul>0.6</mul></skill>
+				<skill><mul>0.9</mul></skill>
+				<skill><mul>1.2</mul></skill>
+				<skill><mul>1.5</mul></skill>
+				<skill><mul>1.8</mul></skill>
+				<skill><mul>2.1</mul></skill>
+				<skill><mul>2.4</mul></skill>
+				<skill><mul>2.7</mul></skill>
+				<skill><mul>3.0</mul></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="霸空聚合">
+			<name>vehicleFit_fly</name>
+			<cnName>霸空聚合</cnName>
+			<studyMustMul>1.4</studyMustMul>
+			
+			<cd>60</cd>
+			<changeText>伤害倍数：[mul]</changeText>
+			
+			<conditionType>active</conditionType>
+			<doCondition>vehicleFit</doCondition>
+			<condition />
+			<conditionString>Lurker,TheEagle,Adjudicator,WatchEagleAir,BlueMotoSec,BlackTitans</conditionString>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>vehicleFit</effectType>
+			<valueString>FlyFit</valueString>
+			<duration>20</duration>
+			<mul>0.3</mul>
+			
+			<meEffectImg noFollowB="1" soundUrl="sound/vehicleFit" con="add">generalEffect/vehicleFit</meEffectImg>
+			<description>在场的2个队友同时装备指定载具（必须强化至30级）时，他们和主角将合体成一个超强飞行器：霸空雕！伤害倍数：[mul]，持续时间[duration]秒。 指定载具包括丛林潜伏者、雄鹰、判决者、守望之翼、黑暗泰坦、血魂。</description>
+			
+			<growth>
+				<skill><mul>0.3</mul></skill>
+				<skill><mul>0.6</mul></skill>
+				<skill><mul>0.9</mul></skill>
+				<skill><mul>1.2</mul></skill>
+				<skill><mul>1.5</mul></skill>
+				<skill><mul>1.8</mul></skill>
+				<skill><mul>2.1</mul></skill>
+				<skill><mul>2.4</mul></skill>
+				<skill><mul>2.7</mul></skill>
+				<skill><mul>3.0</mul></skill>
+			</growth>
+		</skill>
+		
+		
+		<skill index="0" name="核弹头">
+			<name>crazy_vehicle</name>
+			<cnName>核弹头</cnName>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			
+			<cd>20</cd>
+			<changeText>增加[mul-1]的射击速度</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>beforeAttack</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>crazyVehicle</effectType>
+			<mul>1.21</mul>
+			<duration>10</duration>
+			
+			
+			<meEffectImg soundUrl="sound/crazy_hero" />
+			<stateEffectImg partType="shootPoint" con="add" raNum="30" followPartRaB="1">generalEffect/murderous</stateEffectImg>
+			<description>释放技能后，单位增加[mul-1]的射击速度，和一定的移动速度，持续[duration]秒。</description>
+			
+			<growth>
+				<skill><mul>1.21</mul></skill>
+				<skill><mul>1.32</mul></skill>
+				<skill><mul>1.43</mul></skill>
+				<skill><mul>1.54</mul></skill>
+				<skill><mul>1.65</mul></skill>
+				<skill><mul>1.76</mul></skill>
+				<skill><mul>1.87</mul></skill>
+				<skill><mul>1.98</mul></skill>
+				<skill><mul>2.09</mul></skill>
+				<skill><mul>2.20</mul></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="核动力">
+			<name>murderous_vehicle</name>
+			<cnName>核动力</cnName>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			
+			<cd>20</cd>
+			<changeText>碾压伤害提升：[mul-1]</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>beforeAttack</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>attackMul</effectType>
+			<mul>1.21</mul>
+			<duration>10</duration>
+			
+			
+			<meEffectImg soundUrl="sound/murderous_hero" />
+			<stateEffectImg partType="hand_right" con="add">generalEffect/crazy</stateEffectImg>
+			<description>释放技能后，普通伤害、碾压伤害提升[mul-1]，持续[duration]秒。</description>
+			
+			<growth>
+				<skill><mul>1.21</mul></skill>
+				<skill><mul>1.32</mul></skill>
+				<skill><mul>1.43</mul></skill>
+				<skill><mul>1.54</mul></skill>
+				<skill><mul>1.65</mul></skill>
+				<skill><mul>1.76</mul></skill>
+				<skill><mul>1.87</mul></skill>
+				<skill><mul>1.98</mul></skill>
+				<skill><mul>2.09</mul></skill>
+				<skill><mul>2.20</mul></skill>
+			</growth>
+		</skill>
+		
+		
+		
+		<skill index="0" name="守望之盾">
+			<name>WatchEagleAirDefence</name>
+			<cnName>守望之盾</cnName>
+			<iconUrl>SkillIcon/pioneer_hero</iconUrl>
+			
+			<changeText>减少[1-mul]受到的伤害</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>playAttackLabel</condition>
+			<otherConditionArr>producerImgLabel</otherConditionArr>
+			<conditionString>sprintAttack</conditionString>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>underHurtMul</effectType>
+			<duration>0.6</duration>
+			<mul>0.1</mul>
+			
+			
+			<meEffectImg soundUrl="sound/energyShield" />
+			<stateEffectImg con="filter" partType="body">generalEffect/subductionEffect</stateEffectImg>
+			<description>在守望者冲刺时，减少[1-mul]受到的伤害。</description>
+			
+			<growth>
+				<skill><mul>0.9</mul></skill>
+				<skill><mul>0.8</mul></skill>
+				<skill><mul>0.7</mul></skill>
+				<skill><mul>0.6</mul></skill>
+				<skill><mul>0.5</mul></skill>
+				<skill><mul>0.4</mul></skill>
+				<skill><mul>0.3</mul></skill>
+				<skill><mul>0.2</mul></skill>
+				<skill><mul>0.1</mul></skill>
+			</growth>
+		</skill>
+		
+		<skill name="合金外壳">
+			<name>alloyShell</name>
+			<cnName>合金外壳</cnName>
+			<iconUrl>SkillIcon/alloyShell</iconUrl>
+			
+			<changeText>减少[1-mul]百分比伤害</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>me</target>
+			<addType>instant</addType>
+			<effectType>changeHurtMul</effectType>
+			<mul>0.91</mul>
+			<description>减少[1-mul]受到的百分比伤害，载具拥有该技能时将无视封锁。</description>
+			
+			<growth>
+				<skill><mul>0.91</mul></skill>
+				<skill><mul>0.82</mul></skill>
+				<skill><mul>0.73</mul></skill>
+				<skill><mul>0.64</mul></skill>
+				<skill><mul>0.55</mul></skill>
+				<skill><mul>0.46</mul></skill>
+				<skill><mul>0.37</mul></skill>
+				<skill><mul>0.28</mul></skill>
+				<skill><mul>0.19</mul></skill>
+				<skill><mul>0.05</mul></skill>
+			</growth>
+		</skill>
+		
+		<skill cnName="遇强则强">
+			<name>strongStrong</name>
+			<cnName>遇强则强</cnName>
+			<iconUrl>SkillIcon/strongStrong</iconUrl>
+			<changeText>提高[mul-1]的伤害</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>hurtUnderIsInvincible</otherConditionArr>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>otherHurtMul</effectType>
+			<mul>1.08</mul>
+			<duration>8</duration>
+			<stateEffectImg partType="shootPoint" con="filter" raNum="30">bulletHitEffect/fireSmoke</stateEffectImg>
+			<description>攻击无敌怪物时，你的伤害会提高[mul-1]，持续[duration]秒。</description>
+			<growth>
+				<skill><mul>1.08</mul></skill>
+				<skill><mul>1.16</mul></skill>
+				<skill><mul>1.24</mul></skill>
+				<skill><mul>1.32</mul></skill>
+				<skill><mul>1.40</mul></skill>
+				<skill><mul>1.48</mul></skill>
+				<skill><mul>1.56</mul></skill>
+				<skill><mul>1.64</mul></skill>
+				<skill><mul>1.72</mul></skill>
+				<skill><mul>1.90</mul></skill>
+			</growth>
+		</skill>
+		
+		<skill cnName="冲击波">
+			<name>shockWave</name>
+			<cnName>冲击波</cnName>
+			<iconUrl>SkillIcon/shockWave</iconUrl>
+			<changeText>震晕敌人[duration]秒</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>die</condition>
+			<target>me,range,enemy</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>dizziness</effectType>
+			<duration>0.4</duration>
+			<range>600</range>
+			
+			<stateEffectImg partType="mouth" con="add" soundUrl="sound/vehicle_hit1">skillEffect/dizziness</stateEffectImg>
+			<description>自身爆炸后，震晕范围内[range]码的所有敌人[duration]秒。</description>
+			<growth>
+				<skill><duration>0.4</duration></skill>
+				<skill><duration>0.8</duration></skill>
+				<skill><duration>1.2</duration></skill>
+				<skill><duration>1.6</duration></skill>
+				<skill><duration>2.0</duration></skill>
+				<skill><duration>2.4</duration></skill>
+				<skill><duration>2.8</duration></skill>
+				<skill><duration>3.2</duration></skill>
+				<skill><duration>3.6</duration></skill>
+				<skill><duration>4.0</duration></skill>
+			</growth>
+		</skill>
+		
+		<skill cnName="见面礼">
+			<name>meetingGift</name>
+			<cnName>见面礼</cnName>
+			<iconUrl>SkillIcon/meetingGift</iconUrl>
+			<changeText>伤害倍数[mul]</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>0,0,0,0,0,1</effectProArr>
+			<extraValueType>vehicleFatherDps</extraValueType>
+			<mul>0.008</mul>
+			<range>300</range>
+			
+			<obj>"name":"moreMissile_enemy","site":"me","flipB":true,"launcherB":true</obj>
+			
+			<description>载具召唤出来后，会发射24颗导弹，对敌人进行轰炸，导弹伤害=角色战斗力x[mul]。</description>
+			<growth>
+				<skill><mul>0.008</mul></skill>
+				<skill><mul>0.016</mul></skill>
+				<skill><mul>0.024</mul></skill>
+				<skill><mul>0.032</mul></skill>
+				<skill><mul>0.040</mul></skill>
+				<skill><mul>0.048</mul></skill>
+				<skill><mul>0.058</mul></skill>
+				<skill><mul>0.066</mul></skill>
+				<skill><mul>0.076</mul></skill>
+				<skill><mul>0.100</mul></skill>
+			</growth>
+		</skill>
+		
+	</father>
+	</data>

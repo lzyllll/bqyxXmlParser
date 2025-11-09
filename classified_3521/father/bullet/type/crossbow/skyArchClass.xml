@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="crossbow" cnName="弩">
+		<bullet name="天弓" color="black" dropLevelArr="999" evoMaxLv="2" composeLv="99" chipB="1" chipNum="200">
+			<name>skyArch</name><cnName>天弓</cnName>
+			<dpsMul>1.1</dpsMul>
+			<uiDpsMul>1.1</uiDpsMul>
+			
+			<capacity>15</capacity>
+			<attackGap>5</attackGap>
+			<reloadGap>1.5</reloadGap>
+			<shakeAngle>0,0</shakeAngle>
+			<bulletWidth>30</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<shootAngle>1</shootAngle>
+			
+			<armsArmMul>0.5</armsArmMul><upValue>10</upValue><shootShakeAngle>30</shootShakeAngle><shootRecoil>7</shootRecoil><screenShakeValue>10</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime><bulletLife>2.5</bulletLife>
+			<hitType>rect</hitType>
+				
+			<bulletSpeed>28</bulletSpeed>
+				
+			<attackDelay>5.1</attackDelay>
+			<crossbowD focoB="1" minDelayMul="0.02" />
+			<godSkillArr>Hit_pointBoom_godArmsSkill,skyArchSkill</godSkillArr>
+			
+			<shootSoundUrl>specialGun/skyArchSound</shootSoundUrl>
+			<bulletImgUrl con="add">bulletHitEffect/blueLaser</bulletImgUrl>
+			<smokeImgUrl raNum="60" con="filter">bullet/blueLaser</smokeImgUrl>
+			<hitImgUrl soundUrl="specialGun/arrowImpact">bulletHitEffect/fitHit</hitImgUrl>
+			<hitFloorImgUrl>bulletHitEffect/yellow_motion</hitFloorImgUrl>
+			<fireImgType>no</fireImgType>
+			
+			<bodyImgRange>specialGun/skyArch</bodyImgRange><bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>纪念币兑换</description>
+		</bullet>
+	</father>
+	</data>

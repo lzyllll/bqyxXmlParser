@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="钢铁僵尸王-技能">
+		<skill index="0" name="ironBody_enemy" cnName="钢铁之躯">
+			<name>ironBody_enemy</name><wantDescripB>1</wantDescripB>
+			<cnName>钢铁之躯</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underRos</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>ironBody</effectType>
+			<value>1</value>
+			<mul>0.2</mul>
+			<duration>6</duration>
+			 
+			<stateEffectImg partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" raNum="30">bulletHitEffect/smoke_small</stateEffectImg>
+			<description>被攻击产生硬直时将进入钢铁之躯状态，受到伤害减少[1-mul]，持续[duration]秒。</description>
+		</skill>
+		<skill index="0" name="magneticField_enemy" cnName="磁力场">
+			<name>magneticField_enemy</name><wantDescripB>1</wantDescripB>
+			<cnName>磁力场</cnName>
+			<showInLifeBarB>1</showInLifeBarB><iconUrl36>SkillIcon/magneticField_enemy_36</iconUrl36>
+			
+			<cd>21</cd>
+			<firstCd>18</firstCd>
+			
+			<conditionType>active</conditionType>
+			<condition>underHit</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>700</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>magneticField_zombieKing</effectType>
+			<value>1</value>
+			<mul>0.2</mul>
+			<duration>7</duration>
+			<range>200</range>
+			 
+			<passiveSkillArr>magneticField_enemy_link</passiveSkillArr>
+			 
+			<meEffectImg soundUrl="sound/magneticField" />
+			<stateEffectImg partType="mouth" con="add">skillEffect/magneticField</stateEffectImg>
+			<description>向外释放磁力场，使自身对技能免疫，同时使700码的范围内的所有敌方子弹偏离轨道，持续[duration]秒。</description>
+		</skill>
+				<skill index="0" name="magneticField_enemy_link" cnName="磁力场-曲扭光环">
+					<name>magneticField_enemy_link</name>
+					<cnName>磁力场-曲扭光环</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+					
+					<conditionType>active</conditionType>
+					<condition>interval</condition>
+					<target>me,range,enemy</target>
+					
+					<addType>state</addType>
+					<effectType>magneticField</effectType>
+					<range>1000</range>
+					<duration>0.5</duration>
+					 
+					<stateEffectImg partType="shootPoint" con="add" raNum="30" followPartRaB="1">skillEffect/magneticField_paralysis</stateEffectImg>
+					<description>使目标射出的子弹偏离轨道，持续[duration]秒。</description>
+				</skill>
+		<skill index="0" name="beatBack_iron" cnName="磁力反击">
+			<name>beatBack_iron</name><wantDescripB>1</wantDescripB>
+			<cnName>磁力反击</cnName>
+			<showInLifeBarB>1</showInLifeBarB><iconUrl36>SkillIcon/shelling_ZombieKing_36</iconUrl36>
+			
+			<cd>15</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>400</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>noUnderHurtB</effectType>
+			<value>1</value>
+			<duration>1.4</duration>
+			 
+			<meActionLabel>backAttack</meActionLabel>
+			<description>钢铁僵尸王利用磁力收集周围掉落在地面的子弹，并在收集完毕后控制它们射向四周的敌人！</description>
+		</skill>
+	</father>	
+	</data>

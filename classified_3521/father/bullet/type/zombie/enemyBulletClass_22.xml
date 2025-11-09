@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="伏地尸">
+		<bullet cnName="伏地尸-喷毒">
+			<name>Crawler_shoot</name>
+			<cnName>伏地尸-喷毒</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>-170</bulletAngle>
+			<shakeAngle>15</shakeAngle>
+			<bulletAngleRange>20</bulletAngleRange>
+			<bulletLife>0.4</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.6</attackGap>
+			<attackDelay>0.3</attackDelay>
+			<bulletNum>3</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootGap>0</shootGap>					
+			<shootAngle>10</shootAngle>					
+			<shootPoint>-98,-38</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<bulletSpeed>20</bulletSpeed>
+			<speedD random="0.5" max="30" min="15" a="-15" />
+			<gravity>0.2</gravity>
+			
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">skillEffect/poisonClaw_enemy</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="SpiderKing/shoot_hit">boomEffect/posion1</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">skillEffect/poisonClaw_enemy</smokeImgUrl>
+		</bullet>
+	</father>	
+	</data>

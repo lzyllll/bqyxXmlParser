@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="hit">
+		<body cnName="阎罗击中" name="yanluoHit" con="add" soundUrl="hitSound/cutBody" soundRan="3" raNum="21" ranAn="60">bulletHitEffect/maskBlue</body>
+		<body cnName="采矿虫碰撞" name="oreWormHit" con="add" soundUrl="sound/vehicle_hit" soundRan="3">bulletHitEffect/fitHit</body>
+		<body cnName="全域光波碰撞" name="silverScreenBulletHit" con="add" soundUrl="hitSound/waveHit" soundRan="3">bulletHitEffect/fitHit</body>
+		<body cnName="绿色能量击中" name="greenEnergyHit" con="add" soundUrl="hitSound/shieldHit">bulletHitEffect/poison</body>
+		
+		<body cnName="黄色砍击-无声" name="yellowHitSilence" con="add">bulletHitEffect/bluntBig</body>
+		<body cnName="黄色砍击" name="yellowHit" soundUrl="hitSound/chopMetal" soundRan="3" con="add">bulletHitEffect/bluntBig</body>
+		<body cnName="紫色砍击" name="purpleHit" soundUrl="hitSound/chopMetal" soundRan="3" con="add">bulletHitEffect/bluntBigPurple</body>
+		<body cnName="紫色砍击-无声" name="purpleHitSilence" con="add">bulletHitEffect/bluntBigPurple</body>
+		<body cnName="蓝色砍击" name="blueHit" soundUrl="hitSound/chopMetal" soundRan="3" con="add">bulletHitEffect/bigBlue</body>
+		<body cnName="黄色棍击" name="yellowStickHit" soundUrl="hitSound/chopBody" soundRan="3" con="add">bulletHitEffect/bluntBig</body>
+		<body cnName="紫色撕裂" name="purpleSickle" soundUrl="hitSound/knifeHit" soundRan="4" con="add">bladeHitEffect/blood</body>
+		<body cnName="紫色溅射-无声" name="purpleSpurting" con="add" ranAn="180" raNum="8">bulletHitEffect/purple</body>
+		<body cnName="紫色能量击中-无声" name="purpleEnergyHitSmall" con="add" ranAn="180" raNum="4">bulletHitEffect/purpleEnergySmall</body>
+		
+		<body cnName="紫色火光" name="purpleGunFire" con="add" raNum="30" urlRandomValue="2">gunFire/purple</body>
+		<body cnName="紫色喷射火光" name="purpleSpurtingFire" con="add">bulletHitEffect/purple</body>
+		
+		<body cnName="红色刀刃击中" name="redSteel" con="add" raNum="15" ranAn="180" soundUrl="hitSound/cutBody" soundRan="3">bulletHitEffect/steel</body>
+		<body cnName="红色刀刃击中-无声" name="redSteelSin" con="add" raNum="15" ranAn="180">bulletHitEffect/steel</body>
+		<body cnName="弹力回收" name="elasticRecoveryGod" con="add" raNum="8" ranAn="60">bulletHitEffect/blue</body>
+		<body cnName="盛血绞杀" name="fullCrushGod" raNum="5" ranAn="180">bulletHitEffect/headshot</body>
+		<body cnName="蓝色抓痕" name="blueClaw" con="add" raNum="21" ranAn="60">bulletHitEffect/claw</body>
+		<body cnName="紫色抓痕" name="purpleClaw" con="add" raNum="21" ranAn="60">bulletHitEffect/mask</body>
+		<body cnName="红色抓痕-小" name="redClawSmall" con="add" raNum="21" ranAn="60">bulletHitEffect/clawSmall</body>
+		<body cnName="紫色抓痕-小" name="purpleClawSmall" con="add" raNum="21" ranAn="60">bulletHitEffect/clawSmallPurple</body>
+		
+		<body cnName="利爪击中" name="clawHit" con="add" soundUrl="hitSound/clawHit" soundRan="3">bladeHitEffect/blood</body>
+		<body cnName="拳头击中" name="fistHit" con="add" soundUrl="hitSound/fistHit" soundRan="3">bulletHitEffect/fitHit</body>
+		<body cnName="大激光击中-紫" name="purpleLaserBig" raNum="1" con="add">WorldSnake/purLaser</body>
+		<body cnName="处女座击中" name="consVirgoHit" ranAn="180" raNum="4" randomRange="8">bulletHitEffect/purpleBoomSmall</body>
+		<body cnName="小红爆击中" name="fireBoomHit" ranAn="180" raNum="5" randomRange="12">bulletHitEffect/fireBoom</body>
+		<body cnName="星座紫色击中" name="consPurpleHit" ranAn="180" raNum="4" randomRange="8">newGun/purpleHit</body>
+		
+		<body cnName="蓝色短激光击中" name="blueLaserShoot" raNum="1" con="add" cacheB="1">bulletHitEffect/blueLaserShoot</body>
+		<body cnName="下雨击打" name="rainHit" urlRandomValue="2" con="add">bulletHitEffect/rainHit</body>
+		<body cnName="水击中" name="waterHit" con="add">bulletHitEffect/water</body>
+		
+		 <body cnName="驱散无声" name="empNoSound" con="add">skillEffect/smallOrangeEmp</body>
+		 
+	</father>
+	
+	
+	
+	</data>

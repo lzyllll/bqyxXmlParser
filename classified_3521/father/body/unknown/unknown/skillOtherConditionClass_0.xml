@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father cnName="目标判断">
+		<body cnName="" name="targetIsHero" tip="目标是持枪单位" />
+		<body cnName="" name="targetFitVehicle" tip="目标是聚合载具" />
+		<body cnName="" name="tergetName" tip="目标的单位名称" conditionString="单位名称" stringType="bodyName" />
+		<body cnName="" name="targetUnitType" tip="目标的单位类型" conditionString="单位类型" stringType="unitType" />
+		<body cnName="" name="targetBossOrSuper" tip="目标是精英怪或者首领" />
+		<body cnName="" name="noMainPlayer" tip="目标不是主角" />
+		<body cnName="" name="puMainPlayer" tip="释放者是主角" />
+		<body cnName="" name="raceType" tip="目标的种族类型" conditionString="种族类型" stringType="raceType" />
+		<body cnName="" name="isTrueBody" tip="目标不是召唤单位" />
+		<body cnName="" name="noTrueBody" tip="目标是召唤单位" />
+		<body cnName="" name="noMadboss" tip="目标不是战神" />
+	</father>
+	</data>

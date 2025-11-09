@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill>
+			<name>yearHourseSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>处决</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType><changeHurtB>1</changeHurtB>
+			<condition>hit</condition>
+			<otherConditionArr>targetLifePerLess</otherConditionArr>
+			<conditionRange>0.05</conditionRange>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurtNoCondition</effectType>
+			<mul>20</mul>
+			<targetEffectImg con="add" partType="body">boomEffect/midCan</targetEffectImg>
+			
+			<description>对生命值低于5%的敌人造成20倍的伤害，无视技能免疫。</description>
+		</skill>
+		
+	</father>
+</data>

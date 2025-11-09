@@ -1,0 +1,46 @@
+{
+  "name": "ZangShi",
+  "level": [
+    null,
+    null,
+    {
+      "lv": 3,
+      "must": 2000,
+      "cn": "低",
+      "skillNameArr": "dodgeProZang"
+    },
+    {
+      "lv": 4,
+      "must": 3500,
+      "cn": "中",
+      "skillNameArr": "defenceZang"
+    },
+    {
+      "lv": 5,
+      "must": 5500,
+      "cn": "高",
+      "skillNameArr": "hurtStrikerZang,vehicleAddLove30"
+    },
+    {
+      "lv": 6,
+      "must": 9000,
+      "cn": "高",
+      "skillNameArr": "noHurtZang,sameArmsHurtAddZang"
+    },
+    {
+      "lv": 7,
+      "must": 15000,
+      "cn": "忠诚",
+      "skillNameArr": "hurtZang",
+      "gift": "things;artifactChest;1"
+    },
+    {
+      "lv": 8,
+      "must": 24000,
+      "cn": "赤诚",
+      "skillNameArr": "hurtHoleZang",
+      "appLabel": "稀有装置",
+      "gift": "equip;blackHoleDevicer_1;1"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "task": [
+    {
+      "id": 42,
+      "name": "kingTask",
+      "cnName": "每日签到",
+      "contribution": 100,
+      "mustNum": 1,
+      "info": "领取每日签到礼包"
+    },
+    {
+      "id": 44,
+      "name": "arena",
+      "cnName": "竞技挑战",
+      "contribution": 100,
+      "mustNum": 1,
+      "info": "取得竞技场胜利1次"
+    },
+    {
+      "id": 92,
+      "name": "level",
+      "cnName": "关卡挑战",
+      "contribution": 100,
+      "mustNum": 2,
+      "info": "任意普通关卡胜利2次 或 主角战斗力到达过5亿"
+    },
+    {
+      "id": 43,
+      "name": "extraTask",
+      "cnName": "副本任务",
+      "contribution": 100,
+      "mustNum": 1,
+      "info": "完成副本任务1次 或 主角战斗力到达过10亿"
+    },
+    {
+      "id": 93,
+      "name": "wilder",
+      "cnName": "秘境挑战",
+      "contribution": 60,
+      "mustNum": 1,
+      "info": "取得秘境胜利1次 或 主角战斗力到达过30亿"
+    },
+    {
+      "id": 94,
+      "name": "loveGift",
+      "cnName": "赠送礼物",
+      "contribution": 60,
+      "mustNum": 1,
+      "info": "给队友赠礼1次 或 队友好感度/忠诚度到达15000"
+    },
+    {
+      "id": 106,
+      "name": "federal",
+      "cnName": "联邦任务",
+      "contribution": 100,
+      "mustNum": 1,
+      "info": "完成今日联邦任务 或 个人贡献到达6万"
+    },
+    {
+      "id": 107,
+      "name": "smelt",
+      "cnName": "主城熔炼",
+      "contribution": 100,
+      "mustNum": 1,
+      "info": "在冶炼屋中熔炼物品1次 或 获得战神装备1件"
+    },
+    {
+      "id": 108,
+      "name": "activeValue",
+      "cnName": "120点活跃值",
+      "contribution": 100,
+      "mustNum": 120,
+      "info": "获得120点活跃值 或 获得1把无双武器"
+    }
+  ]
+}

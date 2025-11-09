@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="target" cnName="瞬发" num="70">
+	
+  <body soundUrl="sound/feedback_hero" name="feedback_enemy_me" cnName="电离折射-音效" />
+  <body soundUrl="sound/invisibility_hero" con="add" name="wizardAnger_wind_me" cnName="巫尸之怒-音效" />
+  <body soundUrl="sound/magicHit1" name="terroristBox_screaming_me" cnName="惊吓-音效" />
+  <body soundUrl="sound/cloned_enemy" name="blindnessPhantomZHit_me" cnName="哨兵之门-击中召唤哨兵-音效" />
+  <body soundUrl="sound/magneticField" name="ballPhantomZ_me" cnName="闪电外壳-音效" />
+  <body soundUrl="sound/silence_enemy" name="GasDefenseShake_me" cnName="当头扳击-音效" />
+  <body soundUrl="sound/reverseHurt_enemy" name="groupReverseHurt_enemy_me" cnName="反转术-音效" />
+  <body soundUrl="sound/poisonousFog_hero" name="poisonousFog_hero_me" cnName="毒雾-音效" />
+  <body soundUrl="sound/skillCopy_enemy" name="skillCopyTransport_me" cnName="技能复制-音效" />
+  <body soundUrl="sound/teleport_enemy" con="add" name="dinosaurEgg_me" cnName="异龙蛋-音效" />
+  <body soundUrl="sound/crazy_hero" name="crazyMad_me" cnName="觉醒-音效" />
+  <body soundUrl="sound/coquettish_hero" name="coquettish_hero_me" cnName="妖魅-音效" />
+  <body soundUrl="skillEffect/possession_s" name="firePossession_me" cnName="附身-音效" />
+  <body soundUrl="sound/through_hero" name="through_hero_me" cnName="金刚钻-音效" />
+  <body shake="10,1,40" soundUrl="sound/earthquake" name="earthquake_me" cnName="地震-音效" />
+  <body soundUrl="sound/groupLight_hero" name="groupLightMadFly_me" cnName="群体圣光-音效" />
+  <body soundUrl="sound/globalLight_hero" name="globalLight_hero_me" cnName="全域圣光-音效" />
+  <body soundUrl="sound/hummer_shoot" name="hammer_enemy_me" cnName="眩晕之锤-音效" />
+  <body soundUrl="sound/devour_hero" name="devour_hero_me" cnName="吞噬-音效" />
+  <body soundUrl="sound/electric" name="current_skull_me" cnName="聚能电流-音效" />
+  <body soundUrl="sound/lifeReplace_enemy" name="liveReplace_enemy_me" cnName="生命置换-音效" />
+  <body soundUrl="sound/wolfFashionSkill" name="wolfFashionSkill_me" cnName="狼震-音效" />
+  <body soundUrl="sound/charm_hero" name="charm_hero_me" cnName="魅惑-音效" />
+  <body soundUrl="sound/murderous_hero" name="murderous_hero_me" cnName="嗜爪-音效" />
+  <body soundUrl="sound/fireHit2" noShowB="1" name="Triceratops_stone_me" cnName="巨石崩塌-音效" />
+  <body soundUrl="sound/moreMissile_hero" name="circle_inward_shell_me" cnName="圆周弹-音效" />
+  <body soundUrl="sound/imploding_enemy" name="sweep_runAway_me" cnName="导弹召唤-逃出升天任务-音效" />
+  <body soundUrl="sound/energyShield" name="bladeShield_me" cnName="利刃盾-音效" />
+  <body soundUrl="sound/globalSpurting_enemy" name="globalSpurting_enemy_me" cnName="全局溅射-音效" />
+  <body soundUrl="sound/teleport_enemy" name="squibDevice_me" cnName="爆竹-音效" />
+  <body soundUrl="sound/tenacious_hero" name="tenacious_enemy_me" cnName="反击-音效" />
+  <body soundUrl="sound/groupSpeedUp_enemy" name="groupSpeedUp_enemy_me" cnName="群体加速-音效" />
+  <body soundUrl="sound/skillFlesh" name="Hit_fleshSkill_godArmsSkill_me" cnName="刷新-音效" />
+  <body soundUrl="sound/paralysis_enemy_shoot" name="paralysis_enemy_me" cnName="闪电麻痹-音效" />
+  <body partType="body" soundUrl="specialGun/christmasGunShoot" name="bubblesGotoCamp_target" cnName="转变颜色-目标">Bubbles/change</body>
+  <body soundUrl="CheetahCar/hp_in" con="add" name="fastForward_Cheetah_me" cnName="冲刺-释放">CheetahCar/fastForward</body>
+  <body partType="body" soundUrl="boomSound/midBoom" name="addFlamer_ArmsSkill_link_target" cnName="大炎爆-爆-目标">boomEffect/bigCircle</body>
+  <body soundUrl="sound/pointBoom_hero" name="yearPigSkill_target" cnName="周五大吉-目标">boomEffect/bigCircle</body>
+  <body name="nuclear_peak_target" cnName="核爆-目标">boomEffect/bigFire</body>
+  <body partType="body" name="skyArchSkill_target" cnName="核爆-目标">boomEffect/boom1</body>
+  <body name="iceConeFire" cnName="冰锥发射" con="add">boomEffect/boom1</body>
+  
+  <body partType="body" soundUrl="boomSound/midBoom" name="Hit_burn_ArmsSkill_link_target" cnName="炎爆-爆-目标">boomEffect/boom3</body>
+  <body con="add" partType="body" name="yearHourseSkill_target" cnName="处决-目标">boomEffect/midCan</body>
+  <body partType="body" name="MeatyAway_target" cnName="全域驱赶-目标">boomEffect/posion3</body>
+  <body raNum="1" soundUrl="sound/laserShoot2" name="godMace_ArmsSkill_target" cnName="上帝之杖-目标">bulletHitEffect/purpleLaser</body>
+  <body con="add" randomRange="10" soundUrl="sound/electric" name="madCloseLightning_target" cnName="近电-目标">bulletHitEffect/spark_motion2</body>
+  <body con="add" randomRange="40" name="Nian_change_link_target" cnName="自燃-链接-目标">bulletHitEffect/spark_motion2</body>
+  <body con="add" name="wolfFashionSkill_target" cnName="狼震-目标">bulletHitEffect/wolfShake</body>
+  <body soundUrl="sound/invisibility_hero" partType="body" name="blackHoleDevicer_me" cnName="黑洞-释放">generalEffect/blackHoleHide</body>
+  <body soundUrl="uiSound/swapHero" con="add" partType="head" name="madmanHead_me" cnName="战争狂人脱下头盔-释放">generalEffect/blackHoleHide</body>
+  <body partType="head" name="madmanHead_target" cnName="战争狂人脱下头盔-目标">generalEffect/blackHoleHide</body>
+  <body partType="2eye" con="add" name="meteoriteRain_me" cnName="陨石雨-释放">generalEffect/crazy</body>
+  <body partType="body" name="resistMulHurt_target" cnName="巨伤盾-目标">generalEffect/hurtDefence</body>
+  <body partType="body" con="filter" name="noHurt10Lings_me" cnName="抵挡低于自身生命值的伤害。-释放">generalEffect/hurtDefence1</body>
+  <body soundUrl="sound/paralysis_enemy_hit" con="add" name="static_BlackLaer_target" cnName="静电过载-目标">generalEffect/lakeBoom</body>
+  <body noFollowB="1" soundUrl="sound/vehicleFit" con="add" name="changeToGaia_me" cnName="变身盖亚-释放">generalEffect/vehicleFit</body>
+  <body soundUrl="sound/teleport_enemy" con="add" name="teleport_BoomSkullS_me" cnName="瞬移-释放">lightEffect/basinShow</body>
+  <body name="charm_hero_target" cnName="魅惑-目标">skillEffect/charm_hero</body>
+  <body con="add" name="electricDevicer_target" cnName="全域电击-目标">skillEffect/electricDevicer</body>
+  <body con="add" soundUrl="sound/groupLight_hero" soundVolume="0.3" name="VanityKer_feeding_target" cnName="反哺-目标">skillEffect/groupLight_hero</body>
+  <body con="add" name="groupLightMadFly_target" cnName="群体圣光-目标">skillEffect/groupLight_hero</body>
+  <body soundUrl="sound/groupLight_hero" con="add" name="feeding_wolf_me" cnName="反哺-释放">skillEffect/groupLight_hero</body>
+  <body soundUrl="sound/invisibility_hero" con="add" name="invisibility_enemy_me" cnName="隐匿之雾-释放">skillEffect/hiding_hero</body>
+  <body soundUrl="sound/hiding_hero" con="add" name="madfireHiding_me" cnName="隐身-释放">skillEffect/hiding_hero</body>
+  <body soundUrl="sound/cloned_enemy" con="add" name="cloned_BlackLaer_me" cnName="分身-释放">skillEffect/hiding_hero</body>
+  <body con="add" partType="body" name="immune_equip_target" cnName="免疫-目标">skillEffect/immune_equip</body>
+  <body con="add" partType="head" name="firePossession_target" cnName="附身-目标">skillEffect/possession</body>
+  <body soundUrl="sound/tauntLing" partType="mouth" name="tauntLing_me" cnName="嘲讽-释放">skillEffect/screaming_hero</body>
+  <body soundUrl="sound/magicHit1" partType="mouth" con="add" name="fear_godArmsSkill_target" cnName="爆胆-目标">skillEffect/screaming_hero</body>
+  <body soundUrl="sound/screaming_hero" partType="mouth" con="add" name="screaming_enemy_me" cnName="尖叫-释放">skillEffect/screaming_hero</body>
+  <body con="add" name="treater_knights_target" cnName="净化器-目标">skillEffect/treater_equip</body>
+  <body con="add" name="skillEffectTeleport" cnName="闪烁">skillEffect/teleport</body>
+  <body con="add" name="skillEffectTeleportShow" cnName="闪烁出现">skillEffect/endTeleport</body>
+
+ </father>
+
+
+</data>

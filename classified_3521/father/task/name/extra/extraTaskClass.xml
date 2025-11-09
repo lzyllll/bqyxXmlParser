@@ -1,0 +1,542 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="extra" cnName="副本" clearCompleteAfterBuyNumB="1" dayNum="1" buyNum="1" buyMustDefineName="buyExtraTaskNum" tipText="每天第一次上线将清除前一天的任务进度。" autoUnlockByLevelB="1" maxLvLimitB="1">
+		<task name="extra_CheetahCar" cnName="迅捷古飙" uiShowTime="999999" unlockLv="96" moreKillEnemyNumIsMe="1" completeLimitNum="-1" maxLvLimitB="0">
+			<shortText>前往[map]消灭古飙</shortText>
+			<uiConditionText>消灭古飙</uiConditionText>
+			<description>未来尼古拉工业生产的超能载具。</description>
+			
+			<worldMapId>HanGuang2</worldMapId>
+			<fixedLevelUrl>extraTask/extra_CheetahCar</fixedLevelUrl>
+			
+			<drop dropName="diff_4" />
+			<diff>15</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<growth>
+				<task>
+					<diff>15</diff>
+					<gift>base;coin;40;;;;LevelEnemyCoin</gift>
+					<gift>things;armsGemChest;6</gift>
+				</task>
+				<task>
+					<diff>30</diff>
+					<gift>base;coin;40;;;;LevelEnemyCoin</gift>
+					<gift>things;armsGemChest;7</gift>
+				</task>
+				<task>
+					<diff>60</diff>
+					<gift>base;coin;40;;;;LevelEnemyCoin</gift>
+					<gift>things;armsGemChest;8</gift>
+				</task>
+				<task>
+					<diff>120</diff>
+					<gift>base;coin;40;;;;LevelEnemyCoin</gift>
+					<gift>things;armsGemChest;9</gift>
+				</task>
+				<task>
+					<diff>140</diff>
+					<gift>base;coin;40;;;;LevelEnemyCoin</gift>
+					<gift>things;equipGemChest;9</gift>
+				</task>
+			</growth>
+		</task> 
+		<task name="extra_PoisonDemon" cnName="变种毒魔" uiShowTime="999999" unlockLv="91" moreKillEnemyNumIsMe="1" completeLimitNum="-1" maxLvLimitB="0">
+			<shortText>前往[map]消灭毒魔</shortText>
+			<uiConditionText>消灭毒魔</uiConditionText>
+			<description>鬼爵部队最新研发出的战争变种人，栖身与缥缈森林，以动物为食，适应能力超强，柔软的身体可以远距离抓捕猎物。</description>
+			
+			<worldMapId>JungleDeep</worldMapId>
+			<fixedLevelUrl>extraTask/extra_PoisonDemon</fixedLevelUrl>
+			
+			<drop dropName="diff_4" />
+			<diff>15</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<growth>
+				<task>
+					<diff>15</diff>
+					<gift>base;coin;40;;;;LevelEnemyCoin</gift>
+					<gift>parts;huntParts_1;4</gift>
+					<gift>parts;acidicParts_1;1</gift>
+				</task>
+				<task>
+					<diff>30</diff>
+					<gift>base;coin;40;;;;LevelEnemyCoin</gift>
+					<gift>parts;acidicParts_1;4</gift>
+					<gift>parts;huntParts_1;2</gift>
+				</task>
+				<task>
+					<diff>60</diff>
+					<gift>base;coin;40;;;;LevelEnemyCoin</gift>
+					<gift>parts;huntParts_1;4</gift>
+					<gift>parts;acidicParts_1;4</gift>
+				</task>
+				<task>
+					<diff>120</diff>
+					<gift>base;coin;40;;;;LevelEnemyCoin</gift>
+					<gift>parts;huntParts_1;5</gift>
+					<gift>parts;acidicParts_1;5</gift>
+				</task>
+			</growth>
+		</task>
+		<task name="extra_IceMan" cnName="雪王野帝" uiShowTime="999999" unlockLv="90" moreKillEnemyNumIsMe="1" completeLimitNum="-1" maxLvLimitB="0">
+			<shortText>前往[map]消灭野帝</shortText>
+			<uiConditionText>消灭野帝</uiConditionText>
+			<description>冰雪世界的王者，你能打败它吗？</description>
+			
+			<worldMapId>BuDong</worldMapId>
+			<fixedLevelUrl>extraTask/extra_IceMan</fixedLevelUrl>
+			
+			<drop dropName="diff_4" />
+			<diff>15</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<growth>
+				<task>
+					<diff>15</diff>
+					<gift>base;coin;40;;;;LevelEnemyCoin</gift>
+					<gift>things;partsChest75;4</gift>
+				</task>
+				<task>
+					<diff>30</diff>
+					<gift>base;coin;40;;;;LevelEnemyCoin</gift>
+					<gift>things;partsChest75;5</gift>
+				</task>
+				<task>
+					<diff>60</diff>
+					<gift>base;coin;40;;;;LevelEnemyCoin</gift>
+					<gift>things;partsChest75;6</gift>
+				</task>
+				<task>
+					<diff>120</diff>
+					<gift>base;coin;40;;;;LevelEnemyCoin</gift>
+					<gift>things;partsChest75;7</gift>
+				</task>
+			</growth>
+		</task>
+		
+		
+		
+		
+		
+		
+		<task name="extra_FightKing" cnName="狂刃之尸" uiShowTime="999999" unlockLv="30" moreKillEnemyNumIsMe="1" completeLimitNum="-1">
+			<shortText>前往[map]消灭变种狂战尸</shortText>
+			<uiConditionText>消灭变种狂战尸</uiConditionText>
+			<description>变种狂战尸将额外拥有“召唤冥刃”、“狂刃爆发”2个技能，其中“狂刃爆发”将会对我方造成致命伤害，务必小心！该首领有一定概率掉落“沙漠进袭者碎片”。</description>
+			
+			<worldMapId>ShuiSheng</worldMapId>
+			<fixedLevelUrl>extraTask/extra_FightKing</fixedLevelUrl>
+			
+			<drop dropName="diff_2" />
+			<diff>1.5</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<growth>
+				<task>
+					<diff>0.2</diff>
+					<gift>base;coin;4;;;;LevelEnemyCoin</gift>
+					<gift>things;skillStone;5</gift>
+					<gift>things;godStone;5</gift>
+					<gift>things;converStone;5</gift>
+					<gift>things;DesertTankCash;16</gift>
+				</task>
+				<task>
+					<diff>1</diff>
+					<gift>base;coin;5;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;4</gift>
+					<gift>things;godStone;6</gift>
+					<gift>things;converStone;6</gift>
+					<gift>things;DesertTankCash;17</gift>
+				</task>
+				<task>
+					<diff>5</diff>
+					<gift>base;coin;6;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;5</gift>
+					<gift>things;godStone;7</gift>
+					<gift>things;converStone;7</gift>
+					<gift>things;DesertTankCash;18</gift>
+				</task>
+				<task>
+					<diff>25</diff>
+					<gift>base;coin;6;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;6</gift>
+					<gift>things;godStone;8</gift>
+					<gift>things;converStone;8</gift>
+					<gift>things;DesertTankCash;19</gift>
+				</task>
+			</growth>
+				
+			
+		</task>
+		<task name="extra_HugePoison" cnName="幽灵毒气弹" uiShowTime="999999" unlockLv="35" moreKillEnemyNumIsMe="1" completeLimitNum="-1">
+			<shortText>前往[map]消灭变种巨毒尸</shortText>
+			<uiConditionText>消灭变种巨毒尸</uiConditionText>
+			<description>变种巨毒尸拥有生产幽灵毒气弹的能力，毒气弹爆炸后威力不可小觑，千万不要靠近它。该首领有一定概率掉落“破晓碎片”。</description>
+			
+			<worldMapId>YouLing</worldMapId>
+			<fixedLevelUrl>extraTask/extra_HugePoison</fixedLevelUrl>
+			
+			<drop dropName="diff_2" />
+			<diff>1.5</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<growth>
+				<task>
+					<diff>0.2</diff>
+					<gift>base;coin;4;;;;LevelEnemyCoin</gift>
+					<gift>things;skillStone;3</gift>
+					<gift>things;godStone;5</gift>
+					<gift>things;converStone;5</gift>
+					<gift>things;DaybreakCash;15</gift>
+				</task>
+				<task>
+					<diff>1</diff>
+					<gift>base;coin;5;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;4</gift>
+					<gift>things;godStone;6</gift>
+					<gift>things;converStone;6</gift>
+					<gift>things;DaybreakCash;16</gift>
+				</task>
+				<task>
+					<diff>5</diff>
+					<gift>base;coin;6;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;5</gift>
+					<gift>things;godStone;7</gift>
+					<gift>things;converStone;7</gift>
+					<gift>things;DaybreakCash;17</gift>
+				</task>
+				<task>
+					<diff>25</diff>
+					<gift>base;coin;6;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;6</gift>
+					<gift>things;godStone;8</gift>
+					<gift>things;converStone;8</gift>
+					<gift>things;DaybreakCash;18</gift>
+				</task>
+			</growth>
+		</task>
+		<task name="extra_SpiderKing" cnName="酸雨城" uiShowTime="999999" unlockLv="40" moreKillEnemyNumIsMe="1" completeLimitNum="-1">
+			<shortText>前往[map]消灭变种霸王毒蛛</shortText>
+			<uiConditionText>消灭变种霸王毒蛛</uiConditionText>
+			<description>每次我方使用主动技能都有可能触发霸王毒蛛的酸雨技能，被酸雨击中后将扣除大量生命，务必小心！该首领有一定概率掉落“收割者碎片”。</description>
+			
+			<worldMapId>LvSen</worldMapId>
+			<fixedLevelUrl>extraTask/extra_SpiderKing</fixedLevelUrl>
+			
+			<drop dropName="diff_2" />
+			<diff>1.5</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<growth>
+				<task>
+					<diff>0.2</diff>
+					<gift>base;coin;4;;;;LevelEnemyCoin</gift>
+					<gift>things;skillStone;6</gift>
+					<gift>things;godStone;2</gift>
+					<gift>things;converStone;2</gift>
+					<gift>things;RedReaperCash;16</gift>
+				</task>
+				<task>
+					<diff>1</diff>
+					<gift>base;coin;5;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;2</gift>
+					<gift>things;godStone;4</gift>
+					<gift>things;converStone;4</gift>
+					<gift>things;RedReaperCash;17</gift>
+				</task>
+				<task>
+					<diff>5</diff>
+					<gift>base;coin;6;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;4</gift>
+					<gift>things;godStone;6</gift>
+					<gift>things;converStone;6</gift>
+					<gift>things;RedReaperCash;18</gift>
+				</task>
+				<task>
+					<diff>25</diff>
+					<gift>base;coin;6;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;6</gift>
+					<gift>things;godStone;8</gift>
+					<gift>things;converStone;8</gift>
+					<gift>things;RedReaperCash;19</gift>
+				</task>
+			</growth>
+		</task>
+		<task name="extra_Skeleton" cnName="眩晕之锤" uiShowTime="999999" unlockLv="45" moreKillEnemyNumIsMe="1" completeLimitNum="-1">
+			<shortText>前往[map]消灭变种暴君</shortText>
+			<uiConditionText>消灭变种暴君</uiConditionText>
+			<description>变种暴君的眩晕之锤将拥有非常恐怖的眩晕能力，它会让你完全丧失攻击能力，甚至连逃生的机会都没有！该首领有一定概率掉落“潜行者碎片”。</description>
+			
+			<worldMapId>YangMei</worldMapId>
+			<fixedLevelUrl>extraTask/extra_Skeleton</fixedLevelUrl>
+			
+			<drop dropName="diff_2" />
+			<diff>1.5</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<growth>
+				<task>
+					<diff>0.2</diff>
+					<gift>base;coin;4;;;;LevelEnemyCoin</gift>
+					<gift>things;skillStone;6</gift>
+					<gift>things;godStone;2</gift>
+					<gift>things;converStone;2</gift>
+					<gift>things;SeaSharkCash;16</gift>
+				</task>
+				<task>
+					<diff>1</diff>
+					<gift>base;coin;5;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;2</gift>
+					<gift>things;godStone;4</gift>
+					<gift>things;converStone;4</gift>
+					<gift>things;SeaSharkCash;17</gift>
+				</task>
+				<task>
+					<diff>5</diff>
+					<gift>base;coin;6;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;4</gift>
+					<gift>things;godStone;6</gift>
+					<gift>things;converStone;6</gift>
+					<gift>things;SeaSharkCash;18</gift>
+				</task>
+				<task>
+					<diff>20</diff>
+					<gift>base;coin;6;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;6</gift>
+					<gift>things;godStone;8</gift>
+					<gift>things;converStone;8</gift>
+					<gift>things;SeaSharkCash;19</gift>
+				</task>
+			</growth>
+		</task>
+		<task name="extra_XiaoMei" cnName="克隆之魂" uiShowTime="999999" unlockLv="50" moreKillEnemyNumIsMe="1" completeLimitNum="-1">
+			<shortText>前往[map]消灭天鹰小美</shortText>
+			<uiConditionText>消灭天鹰小美</uiConditionText>
+			<description>天鹰总部参谋长，长相与小樱 极为相似，精通各种神技，尤其是“技能复制”与“尸化”，使她成为爆枪联盟最难缠的对手之一。该首领有一定概率掉落“巨鲸碎片”。</description>
+			
+			<worldMapId>ZhongXin</worldMapId>
+			<fixedLevelUrl>extraTask/extra_XiaoMei</fixedLevelUrl>
+			
+			<drop dropName="diff_2" />
+			<diff>3</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<growth>
+				<task>
+					<diff>0.2</diff>
+					<gift>base;coin;4;;;;LevelEnemyCoin</gift>
+					<gift>things;skillStone;6</gift>
+					<gift>things;godStone;2</gift>
+					<gift>things;converStone;2</gift>
+					<gift>things;BlueWhaleCash;16</gift>
+				</task>
+				<task>
+					<diff>1</diff>
+					<gift>base;coin;5;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;2</gift>
+					<gift>things;godStone;4</gift>
+					<gift>things;converStone;4</gift>
+					<gift>things;BlueWhaleCash;17</gift>
+				</task>
+				<task>
+					<diff>5</diff>
+					<gift>base;coin;6;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;4</gift>
+					<gift>things;godStone;6</gift>
+					<gift>things;converStone;6</gift>
+					<gift>things;BlueWhaleCash;18</gift>
+				</task>
+				<task>
+					<diff>20</diff>
+					<gift>base;coin;6;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;6</gift>
+					<gift>things;godStone;8</gift>
+					<gift>things;converStone;8</gift>
+					<gift>things;BlueWhaleCash;19</gift>
+				</task>
+			</growth>
+		</task>
+		
+		
+		<task name="extra_IronZombieKing" cnName="钢铁之躯" uiShowTime="999999" unlockLv="55" moreKillEnemyNumIsMe="1" completeLimitNum="-1">
+			<shortText>前往[map]消灭钢铁僵尸王</shortText>
+			<uiConditionText>消灭钢铁僵尸王</uiConditionText>
+			<description>僵尸王的钢铁形态，头戴磁力头盔，让它拥有控制金属的能力。该首领有一定概率掉落“先知碎片”。</description>
+			
+			<worldMapId>ZhongXin</worldMapId>
+			<fixedLevelUrl>extraTask/extra_IronZombieKing</fixedLevelUrl>
+			
+			<drop dropName="diff_2" />
+			<diff>3</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<growth>
+				<task>
+					<diff>0.2</diff>
+					<gift>base;coin;4;;;;LevelEnemyCoin</gift>
+					<gift>things;skillStone;6</gift>
+					<gift>things;godStone;2</gift>
+					<gift>things;converStone;2</gift>
+					<gift>things;ProphetCash;18</gift>
+				</task>
+				<task>
+					<diff>1</diff>
+					<gift>base;coin;5;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;2</gift>
+					<gift>things;godStone;4</gift>
+					<gift>things;converStone;4</gift>
+					<gift>things;ProphetCash;19</gift>
+				</task>
+				<task>
+					<diff>5</diff>
+					<gift>base;coin;6;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;4</gift>
+					<gift>things;godStone;6</gift>
+					<gift>things;converStone;6</gift>
+					<gift>things;ProphetCash;20</gift>
+				</task>
+				<task>
+					<diff>20</diff>
+					<gift>base;coin;6;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;6</gift>
+					<gift>things;godStone;8</gift>
+					<gift>things;converStone;8</gift>
+					<gift>things;ProphetCash;21</gift>
+				</task>
+			</growth>
+		</task>
+		<task name="extra_TyphoonWitch" cnName="飓风力量" uiShowTime="999999" unlockLv="60" moreKillEnemyNumIsMe="1" completeLimitNum="-1">
+			<shortText>前往[map]消灭飓风巫尸</shortText>
+			<uiConditionText>消灭飓风巫尸</uiConditionText>
+			<description>导致暮光市沙漠化的罪魁祸首！拥有召唤飓风和吸血蝙蝠的能力。该首领有一定概率掉落“制裁者碎片”。</description>
+			
+			<worldMapId>ZhongXin</worldMapId>
+			<fixedLevelUrl>extraTask/extra_TyphoonWitch</fixedLevelUrl>
+			
+			<drop dropName="diff_2" />
+			<diff>3</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<growth>
+				<task>
+					<diff>0.2</diff>
+					<gift>base;coin;4;;;;LevelEnemyCoin</gift>
+					<gift>things;skillStone;6</gift>
+					<gift>things;godStone;2</gift>
+					<gift>things;converStone;2</gift>
+					<gift>things;PunisherCash;19</gift>
+				</task>
+				<task>
+					<diff>1</diff>
+					<gift>base;coin;5;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;2</gift>
+					<gift>things;godStone;4</gift>
+					<gift>things;converStone;4</gift>
+					<gift>things;PunisherCash;20</gift>
+				</task>
+				<task>
+					<diff>5</diff>
+					<gift>base;coin;6;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;4</gift>
+					<gift>things;godStone;6</gift>
+					<gift>things;converStone;6</gift>
+					<gift>things;PunisherCash;21</gift>
+				</task>
+				<task>
+					<diff>20</diff>
+					<gift>base;coin;6;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;6</gift>
+					<gift>things;godStone;8</gift>
+					<gift>things;converStone;8</gift>
+					<gift>things;PunisherCash;22</gift>
+				</task>
+			</growth>
+		</task>
+		<task name="extra_Knights" cnName="无疆统治" uiShowTime="999999" unlockLv="60" moreKillEnemyNumIsMe="1" completeLimitNum="-1">
+			<shortText>前往[map]消灭无疆骑士</shortText>
+			<uiConditionText>消灭无疆骑士</uiConditionText>
+			<description>天鹰“诺亚”项目的另外一个实验品，这个庞然大物的力量巨大无比，每个动作都能使大地颤抖。该首领有一定概率掉落“泰坦碎片”。</description>
+			
+			<worldMapId>ZhongXin</worldMapId>
+			<fixedLevelUrl>extraTask/extra_Knights</fixedLevelUrl>
+			
+			<drop dropName="diff_2" />
+			<diff>3</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<growth>
+				<task>
+					<diff>0.2</diff>
+					<gift>base;coin;4;;;;LevelEnemyCoin</gift>
+					<gift>things;skillStone;6</gift>
+					<gift>things;godStone;2</gift>
+					<gift>things;converStone;2</gift>
+					<gift>things;TitansCash;22</gift>
+				</task>
+				<task>
+					<diff>1</diff>
+					<gift>base;coin;5;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;2</gift>
+					<gift>things;godStone;4</gift>
+					<gift>things;converStone;4</gift>
+					<gift>things;TitansCash;23</gift>
+				</task>
+				<task>
+					<diff>5</diff>
+					<gift>base;coin;6;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;4</gift>
+					<gift>things;godStone;6</gift>
+					<gift>things;converStone;6</gift>
+					<gift>things;TitansCash;24</gift>
+				</task>
+				<task>
+					<diff>20</diff>
+					<gift>base;coin;6;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;6</gift>
+					<gift>things;godStone;8</gift>
+					<gift>things;converStone;8</gift>
+					<gift>things;TitansCash;25</gift>
+				</task>
+			</growth>
+		</task>
+		<task name="extra_GhostDuke" cnName="鬼爵降临" uiShowTime="999999" unlockLv="65" moreKillEnemyNumIsMe="1" completeLimitNum="-1">
+			<shortText>前往[map]消灭鬼爵</shortText>
+			<uiConditionText>消灭鬼爵</uiConditionText>
+			<description>鬼影部队的总司令，身份成迷。该首领有一定概率掉落“挖掘者碎片”。</description>
+			
+			<worldMapId>PrisonExport</worldMapId>
+			<fixedLevelUrl>extraTask/extra_GhostDuke</fixedLevelUrl>
+			
+			<drop dropName="diff_2" />
+			<diff>3</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<growth>
+				<task>
+					<diff>0.2</diff>
+					<gift>base;coin;4;;;;LevelEnemyCoin</gift>
+					<gift>things;skillStone;6</gift>
+					<gift>things;godStone;2</gift>
+					<gift>things;converStone;2</gift>
+					<gift>things;DiggersCash;19</gift>
+				</task>
+				<task>
+					<diff>1</diff>
+					<gift>base;coin;5;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;2</gift>
+					<gift>things;godStone;4</gift>
+					<gift>things;converStone;4</gift>
+					<gift>things;DiggersCash;20</gift>
+				</task>
+				<task>
+					<diff>5</diff>
+					<gift>base;coin;6;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;4</gift>
+					<gift>things;godStone;6</gift>
+					<gift>things;converStone;6</gift>
+					<gift>things;DiggersCash;21</gift>
+				</task>
+				<task>
+					<diff>20</diff>
+					<gift>base;coin;6;;;;LevelEnemyCoin</gift>
+					<gift>things;armsTitanium;6</gift>
+					<gift>things;godStone;8</gift>
+					<gift>things;converStone;8</gift>
+					<gift>things;DiggersCash;22</gift>
+				</task>
+			</growth>
+		</task>
+		
+		
+		
+	</father>
+</data>

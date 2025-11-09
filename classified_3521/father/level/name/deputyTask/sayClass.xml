@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="deputyTask">
+		<level name="thunderboltBirth">
+			<sayList name="s1">
+				<say target="藏师将军"><content>这些载具碎片，可以拿回去好好研究研究！</content></say>
+				<say target="我"><content>或许还能升级一下我们的雷鸣。</content></say>
+				<say target="鬼爵"><content>你们这样“拿来主义”好吗？</content></say>
+				<say target="文杰表哥"><content>你怎么像蚊子一样，每天都在嗡嗡作响，太烦人了！</content></say>
+				<say target="鬼爵"><content>我好喜欢这样的比喻啊！</content></say>
+				<say target="鬼爵"><content>雷霆的外壳使用的是最新的材料，这些材料本不属于这个时空，你们一辈子都找不到的。</content></say>
+				<say target="文杰表哥"><content>不想听你胡说八道，你还会时空穿越不成？</content></say>
+				<say target="鬼爵"><content>我不告诉你，哈哈哈……</content></say>
+				<say target="鬼爵"><content>对了，告诉你们一件事。上个月，我发现亚瑟在我们的实验室周围鬼鬼祟祟的。</content></say>
+				<say target="鬼爵"><content>还差点被我们的卫兵给抓了，看他那逃跑时的狼狈样，我足足笑了一天。哈哈哈。</content></say>
+				<say target="我"><content>亚瑟不是乘着飞船走了吗？怎么还在这大陆上？</content></say>
+				<say target="文杰表哥"><content>鬼爵嘴里没一句真话，不要跟他浪费时间了！我们走吧。</content></say>
+				<say target="鬼爵"><content>再陪我聊聊嘛……</content></say>
+			</sayList>
+		</level>
+		<level name="threePartner">
+			<sayList name="s1">
+				<say target="丛林特种兵"><content>谢谢你救了我们，我们愿意加入你们的队伍。</content></say>
+				<say target="p1"><content>太好了！我希望你们去保护我们的战斧主城。</content></say>
+				<say target="丛林特种兵"><content>没问题，包在我们身上！</content></say>
+				<say target="p1"><content>这样以后我就可以带上更多的队友一起外出战斗了！</content></say>
+			</sayList>
+		</level>
+		
+		
+		<level name="storyXiaoMei">
+			<sayList name="s1">
+				<say target="制毒师"><content>你带着小美要小心一点，不要让她给跑了。</content></say>
+				<say target="main2"><content>我相信她不会的。</content></say>
+				<say target="天鹰小美"><content>我只是想再回到出生的地方看看。</content></say>
+				<say target="天鹰小美"><content>等把这里的僵尸清理干净了，我就告诉你们我的身世。</content></say>
+				<say target="main2"><content>我一直觉得你和@Girl很像，有时候还会让我产生错觉……</content></say>
+				<say target="天鹰小美"><content>注意前面的僵尸，它们已经被改造过了，我们只能用弩来攻击它们！</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="main2"><content>现在可以说了吗？</content></say>
+				<say target="天鹰小美"><content>你说的没错，我和小樱长得很像，但我并不是她的克隆体。</content></say>
+				<say target="天鹰小美"><content>我和她是双胞胎！</content></say>
+				<say target="main2"><content>为什么小樱说她家里只有她一个小孩呢？</content></say>
+				<say target="天鹰小美"><content>她家人说谎了，有些事情，小樱不知道更好。</content></say>
+				<say target="天鹰小美"><content>当年我和小樱同时出生，但是我的体质太差了，染上严重的传染病，医生说我救不活了。</content></say>
+				<say target="天鹰小美"><content>于是……我就被遗弃了。是亚瑟把我带回了天鹰实验室，治好了我的病。</content></say>
+				<say target="天鹰小美"><content>亚瑟赋予了我新的生命。</content></say>
+				<say target="main2"><content>你当时还是婴儿，是没有记忆的，这些都是亚瑟告诉你的吧？</content></say>
+				<say target="天鹰小美"><content>没错！但是亚瑟不会骗我的，我相信他！</content></say>
+				<say target="main2"><content>那么多弃婴，亚瑟为什么偏偏选你呢？</content></say>
+				<say target="天鹰小美"><content>亚瑟确实不是什么好人，他选我是为了测试他的纳米机器人。</content></say>
+				<say target="天鹰小美"><content>但亚瑟并不是那么坏，地下城的每个小孩都是他救活的，而且亚瑟对小孩们都非常好。</content></say>
+				<say target="main2"><content>这点我持保留意见。</content></say>
+				<say target="天鹰小美"><content>确实，亚瑟后来被野心吞噬了，但是他曾拯救过整个霞光大陆！</content></say>
+				<say target="main2"><content>亚瑟也这么说过，但他自己做过这么多坏事，谁信呢？</content></say>
+				<say target="天鹰小美"><content>在僵尸席卷各大城市的时候，他在使用纳米机器人抑制住了大量僵尸的活性，有效控制住了僵尸的蔓延。</content></say>
+				<say target="天鹰小美"><content>你真以为霞光5年的宁静是因为高墙吗？</content></say>
+				<say target="main2"><content>为什么后来这些僵尸都成了他做坏事的帮凶呢？</content></say>
+				<say target="天鹰小美"><content>一部分僵尸病毒后来变异了，这些僵尸摆脱了纳米机器人的抑制，重新开始攻击城市。</content></say>
+				<say target="天鹰小美"><content>为了抵御这些僵尸，亚瑟启用了纳米机器人的AI程序，可以远程控制部分僵尸的行为，自此成立僵尸大军。</content></say>
+				<say target="天鹰小美"><content>用僵尸消灭僵尸，亚瑟真是太聪明了。</content></say>
+				<say target="天鹰小美"><content>亚瑟还用超能石增强僵尸大军的能力，但是当他发现自己越来越强大时，他被野心吞噬了。</content></say>
+				<say target="天鹰小美"><content>他不仅想成为霞光大陆的领袖，还想成为全世界的王者。</content></say>
+				<say target="main2"><content>你当时没有阻止他？</content></say>
+				<say target="天鹰小美"><content>在没有被你们俘虏之前，我对整个世界还是失望的，特别是憎恨遗弃我的父母！</content></say>
+				<say target="天鹰小美"><content>我会阻止他吗？追随他还来不及呢！</content></say>
+				<say target="main2"><content>那你现在还这样想吗？</content></say>
+				<say target="天鹰小美"><content>我……不知道。</content></say>
+				<say target="main2"><content>不为难你了，你知道亚瑟现在在哪吗？</content></say>
+				<say target="天鹰小美"><content>他没告诉我他去哪了，不过我猜应该藏在丛林深处。</content></say>
+				<say target="main2"><content>有些事情我得找他问清楚。</content></say>
+				<say target="天鹰小美"><content>纵然他以前犯下太多的罪孽，请你留他一条命，好吗？</content></say>
+				<say target="main2"><content>你想太多了，他哪有那么容易让我抓到呢？</content></say>
+			</sayList>
+		</level>
+	
+		<level name="missingArthur">
+			<sayList name="s1">
+				<say target="亚瑟"><content>好久不见了，@playerName！</content></say>
+				<say target="p1"><content>你果然在这，现身吧！</content></say>
+				<say target="亚瑟"><content>难道你不应该先把僵尸清理干净吗？</content></say>
+				<say target="亚瑟"><content>这些僵尸被鬼爵改造过了，可以抵挡所有远程攻击，你自己看着办吧。</content></say>
+				<say target="p1"><content>可恶！</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="亚瑟"><content>拿着最先进的武器，还是打不过你！我还能当霞光的领袖吗？</content></say>
+				<say target="p1"><content>你这段时间都去哪了？</content></say>
+				<say target="亚瑟"><content>我为什么要告诉你？</content></say>
+				<say target="p1"><content>小美都告诉我们了，你拯救过霞光大陆。</content></say>
+				<say target="亚瑟"><content>你怎么知道她说的都是事实？我也可以骗她的，你不知道吗？</content></say>
+				<say target="p1"><content>我相信她，我也相信你不会骗她。其实你人没那么坏。</content></say>
+				<say target="亚瑟"><content>呵呵……你还是太年轻了。</content></say>
+				<say target="亚瑟"><content>这么年轻……却比我还强……呜呜……</content></say>
+				<say target="p1"><content>唉，不习惯这么矫情的亚瑟。</content></say>
+				<say target="亚瑟"><content>这段时间，我们都在调查鬼爵，我觉得是他们控制了我的僵尸大军！</content></say>
+				<say target="亚瑟"><content>但却发现了另外一个秘密！</content></say>
+				<say target="亚瑟"><content>鬼爵似乎建造了一台时间机器，并从打算另外一个时空召唤帮手。</content></say>
+				<say target="p1"><content>你怎么知道那是时间机器？</content></say>
+				<say target="亚瑟"><content>我听到鬼爵说要去2060年找些新技术回来，没有时间机器，他怎么去呢？</content></say>
+				<say target="p1"><content>也许他只是吹吹牛而已。</content></say>
+				<say target="p1"><content>呵呵，2060年，我的孩子估计都成年了。</content></say>
+				<say target="亚瑟"><content>我确实看到一台用奇特材料制造的巨型机器人，应该不是现代技术能够造得出来的。</content></say>
+				<say target="p1"><content>你继续查下去吧，如果有新情况能告诉我吗？</content></say>
+				<say target="亚瑟"><content>你不抓我回去了？</content></say>
+				<say target="p1"><content>我本来就不是来抓你的……再见。</content></say>
+			</sayList>
+		</level>
+		<level name="rescueMocha">
+			<sayList name="s2">
+				<say target="摩卡"><content>还好你来的及时。</content></say>
+				<say target="p1"><content>我是来找你问个事情的。</content></say>
+				<say target="p1"><content>你之前为什么说战争狂人是你曾经想超越的人？你认识他？</content></say>
+				<say target="摩卡"><content>事实上，这件事只能让你一个人知道，你能保证不让别人知道吗？</content></say>
+				<say target="p1"><content>我保证。</content></say>
+				<say target="摩卡"><content>我原本不属于这个世界。</content></say>
+				<say target="摩卡"><content>我是来自2060的未来人。</content></say>
+				<say target="p1"><content>果然有时间机器！</content></say>
+				<say target="摩卡"><content>在我们那个时空，时间机器已经被造出来了。但是在这个世界，时间机器还没有，所以我暂时还回不去。</content></say>
+				<say target="p1"><content>你为什么来到这里？</content></say>
+				<say target="摩卡"><content>我来这里的目的，是要把战争狂人带回我们那个时空。</content></say>
+				<say target="p1"><content>战争狂人也是未来人？</content></say>
+				<say target="摩卡"><content>没错！他原本不叫战争狂人，也不像现在这样喜欢屠戮。</content></say>
+				<say target="摩卡"><content>他原是我敬仰的人，可是后来变了。</content></say>
+				<say target="摩卡"><content>他和你还有莫大的关系。</content></say>
+				<say target="p1"><content>什么！？</content></say>
+				<say target="摩卡"><content>但我现在不能告诉你。</content></say>
+				<say target="p1"><content>为什么？</content></say>
+				<say target="摩卡"><content>这是时空法则，而且你对我说的话也要保密，知道的人越多，越可能导致时空错乱。</content></say>
+				<say target="p1"><content>好吧，那你什么时候可以说呢？</content></say>
+				<say target="摩卡"><content>也许是我回家的那天。</content></say>
+			</sayList>
+		</level>
+		
+		<level name="doctorEsteem">
+			<sayList name="s1">
+				<say target="制毒师"><content>最近我找了一个助手来帮我，但是她有句话却刺痛了我。</content></say>
+				<say target="p1"><content>他说什么了？</content></say>
+				<say target="制毒师"><content>她说我的战斗力是团队里最弱的。</content></say>
+				<say target="p1"><content>这是……实话啊。</content></say>
+				<say target="制毒师"><content>那也不能当着我的面说啊，难道她不知道我的强项是科研能力吗？</content></say>
+				<say target="p1"><content>我有个好办法。</content></say>
+				<say target="p1"><content>你和我进行消灭敌人的比赛，只要我输给你，不就代表你的战斗力一点都不弱了吗？</content></say>
+				<say target="制毒师"><content>这样真的可以吗？</content></say>
+				<say target="p1"><content>没关系的。</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="制毒师"><content>我真的赢了！</content></say>
+				<say target="制毒师"><content>一个文武双全的制毒师，简直完美！</content></say>
+				<say target="p1"><content>看把你兴奋的。</content></say>
+				<say target="制毒师"><content>什么时候带你去见见我的新助手。</content></say>
+				<say target="制毒师"><content>她说她也想学学战斗技巧。</content></say>
+				<say target="p1"><content>找你不就行了，文武双全的制毒师，是吧。</content></say>
+				<say target="制毒师"><content>唉，我忙得跟狗一样，哪有时间。</content></say>
+				<say target="p1"><content>这事就交给@ZangShi吧，他一直闲得发慌。</content></say>
+			</sayList>
+			<sayList name="s3">
+				<say target="制毒师"><content>不是说好了要让我赢了吗？</content></say>
+				<say target="p1"><content>你的战斗力实在太弱了，我真的办不到。</content></say>
+				<say target="制毒师"><content>我对你好失望啊。</content></say>
+			</sayList>
+		</level>
+		
+		<level name="xinLingTrain">
+			<sayList name="s1">
+				<say target="制毒师"><content>你可得好好训练一下我的助手，不要让她失望了。</content></say>
+				<say target="p1"><content>包在我身上了！</content></say>
+				<say target="心零"><content>我叫心零，请多指教！</content></say>
+				<say target="p1"><content>这次我们来比赛清除僵尸的速度，你的目标是要超越我，明白了吗？</content></say>
+				<say target="心零"><content>明白了，记得手下留情哦！</content></say>
+				<say target="p1"><content>这个我得考虑一下，哈哈……</content></say>
+				<say target="心零"><content>我会尽力的。</content></say>
+				<say target="p1"><content>那我们开始吧！</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="p1"><content>竟然真的被你给赢了！</content></say>
+				<say target="心零"><content>看来你也不过如此嘛。</content></say>
+				<say target="p1"><content>是我让你的。</content></say>
+				<say target="心零"><content>没看出来，我看你已经使出全力了。</content></say>
+				<say target="p1"><content>不相信的话，咱们再比一场！</content></say>
+				<say target="心零"><content>不用不用了，我觉得我应该找个更厉害的老师才行。</content></say>
+				<say target="p1"><content>你也太自大了……这才哪跟哪啊。</content></say>
+				<say target="心零"><content>嘿嘿，累了累了，我得先回去休息一下。</content></say>
+			</sayList>
+			<sayList name="s3">
+				<say target="p1"><content>看来你还得多多练习。</content></say>
+				<say target="心零"><content>你就不能让让我吗？</content></say>
+				<say target="p1"><content>那我下次减慢一下射击速度。</content></say>
+			</sayList>
+		</level>
+		
+		
+		<level name="getXiaoMei">
+			<sayList name="s1">
+				<say target="小樱"><content>就是这里了。</content></say>
+				<say target="天鹰小美" pointer="亚瑟"><content>亚瑟，我终于找到你了！</content></say>
+				<say target="天鹰小美" pointer="亚瑟"><content>我现在就救你出去！</content></say>
+				<say target="亚瑟"><content>没用的，离开了这个生化罐，我就会死掉的。</content></say>
+				<say target="天鹰小美" pointer="亚瑟"><content>是战争狂人干的吗？</content></say>
+				<say target="亚瑟"><content>这不重要了，我现在已经放下一切了。</content></say>
+				<say target="亚瑟"><content>我希望你也能放下你心中的芥蒂。</content></say>
+				<say target="天鹰小美" pointer="亚瑟"><content>没有你，我还有活着的必要吗？</content></say>
+				<say target="亚瑟"><content>我孤身一人，但你还有亲人啊。</content></say>
+				<say target="天鹰小美" pointer="亚瑟"><content>我一出生，我的父母就抛弃了我！他们已经不再是我的亲人了！</content></say>
+				<say target="亚瑟"><content>孩子，那不是真相，是我骗了你。</content></say>
+				<say target="天鹰小美" pointer="亚瑟"><content>什么？</content></say>
+				<say target="天鹰小美" pointer="亚瑟"><content>你再说一遍……</content></say>
+				<say target="亚瑟"><content>当年，我在一片废墟中发现了你，也许是你父母抛弃了你，但也有可能……</content></say>
+				<say target="天鹰小美" pointer="亚瑟"><content>也有可能是什么？</content></say>
+				<say target="亚瑟"><content>也有可能是他们把你弄丢了。你被我抱走后，他们再也找不到你了。</content></say>
+				<say target="小樱" pointer="亚瑟"><content>所以你也不知道原因？</content></say>
+				<say target="亚瑟"><content>是的，我撒谎了，我给了你最冷酷的答案。</content></say>
+				<say target="天鹰小美" pointer="亚瑟"><content>你为什么要这么做？</content></say>
+				<say target="亚瑟"><content>因为我就是一个被父母抛弃的孤儿。</content></say>
+				<say target="天鹰小美" pointer="亚瑟"><content>这你跟我说过。</content></say>
+				<say target="亚瑟"><content>我希望每个我领养的孩子，都能和我有同样的身世。</content></say>
+				<say target="小樱" pointer="亚瑟"><content>就这么简单？</content></say>
+				<say target="亚瑟"><content>只有这样，我才能对你们付出真情，我从小缺失的爱才能从你们身上弥补回来。</content></say>
+				<say target="天鹰小美" pointer="亚瑟"><content>你现在让我如何是好？</content></say>
+				<say target="天鹰小美" pointer="亚瑟"><content>如果真相就是他们抛弃了我呢？</content></say>
+				<say target="亚瑟"><content>不管怎么样，你都应该当面问清楚。</content></say>
+				<say target="天鹰小美" pointer="亚瑟"><content>我不知道怎么面对他们。</content></say>
+				<say target="小樱"><content>小美，我去帮你问。</content></say>
+				<say target="天鹰小美" pointer="小樱"><content>小樱，过了这么多年，你觉得他们会说实话吗？</content></say>
+				<say target="小樱"><content>我……我也不敢向你保证。</content></say>
+				<say target="小樱"><content>但是，爸妈之前跟我说过，希望你能离开天鹰，加入爆枪小队。</content></say>
+				<say target="小樱"><content>他们还是关心你的。</content></say>
+				<say target="天鹰小美" pointer="亚瑟"><content>亚瑟，那你怎么办？</content></say>
+				<say target="亚瑟"><content>天鹰垮了，我也出不去了，你现在应该回家了。</content></say>
+				<say target="天鹰小美"><content>不管怎么样，您养育过我，我会想办法把你救出去的。</content></say>
+				<say target="小樱"><content>这个没问题，我们回去一起跟制毒师商量一下。</content></say>
+				<say target="天鹰小美"><content>好。</content></say>
+			</sayList>
+		</level>
+		
+		
+		<level name="shotgunBladeTrain">
+			<sayList name="s1" oneB="1">
+				<say target="雇佣兵"><content>为什么要学战斧呢？</content></say>
+				<say target="p1"><content>战斧是最难操控的武器之一。学会了它，其它武器就不在话下了。</content></say>
+				<say target="雇佣兵"><content>原来如此。</content></say>
+				<say target="p1"><content>认真看好了。</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="雇佣兵"><content>我应该很快就能学会了。</content></say>
+				<say target="雇佣兵"><content>以后高地就交给我吧！</content></say>
+				<say target="p1"><content>很好，不要辜负我们的期望哦。</content></say>
+				<say target="雇佣兵"><content>我保证。</content></say>
+			</sayList>
+		</level>
+	</father>
+</data>

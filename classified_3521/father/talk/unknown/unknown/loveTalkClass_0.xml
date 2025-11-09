@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data name="Girl"><father cn="物品">
+		<talk things="商券" type="like">我在一个商人那边看到一件衣服，好喜欢啊！但是那个商人说他们的商品都需要以物换物的方式来获得，而且还需要额外补偿他们一样东西。</talk>
+		<talk things="商券" type="like">从僵尸身上扒衣服是一件很恶心的事情，去哪里可以弄到各式各样的衣服，还不用花钱？</talk>
+		<talk things="商券" type="like">我记得有个市场每天都会提供不一样的装备商品。</talk>
+		<talk things="商券" type="hate">今天去神秘商人那什么都没弄到，我再也不想看到跟他相关的东西了。</talk>
+		<talk things="商券" type="hate">商人都是唯利是图，别跟我提他们，特别是神秘商人！</talk>
+		
+		<talk things="优胜券" type="like">听说幸存者们会经常在一起切磋技术，胜者会获得十分诱人的奖励。</talk>
+		<talk things="优胜券" type="like">我特别中意竞技场里的那把稀有枪！</talk>
+		<talk things="优胜券" type="like">不公平，差一点就赢了那家伙，今天又没拿到券！</talk>
+		<talk things="优胜券" type="hate">今天好多人耍诈都没人管，这种技术比赛一点意义都没有。</talk>
+		<talk things="优胜券" type="hate">好多人为了那些券打的头破血流，真不知道那东西有什么好的。</talk>
+		
+		<talk things="转化石" type="like">我很好奇，为什么有些石头是绿色的。</talk>
+		<talk things="转化石" type="like">我觉得我的装备需要升级一下了。</talk>
+		<talk things="转化石" type="like">我想变强，你有那种四边形的石头吗？</talk>
+		<talk things="转化石" type="hate">我最不喜欢有棱有角的东西，特别是带颜色的那种石头。</talk>
+		<talk things="转化石" type="hate">我看到跟鼻涕一样颜色的东西就恶心...</talk>
+		
+		<talk things="强化石" type="like">有种产自海底的深蓝色矿石，用来做项链一定很好看！</talk>
+		<talk things="强化石" type="like">今天蓝色是我的幸运色，希望你也能给我带来好运。</talk>
+		<talk things="强化石" type="like">唉，强化装备又失败了，我的材料所剩不多了。</talk>
+		<talk things="强化石" type="hate">今天被那个蓝色矿石搞得有点抑郁了，不想再看见它了。</talk>
+		<talk things="强化石" type="hate">这种石头用在装备上居然会失败，真是没用的东西！</talk>
+		
+		<talk things="超能石,神能石" type="like">听说以前南唐城下有一种矿石，我想见见是什么样的。</talk>
+		<talk things="超能石,神能石" type="like">妈妈说紫色和橙色的石头能带给我好运。</talk>
+		<talk things="超能石,神能石" type="like">如果我有很多很多超能力，就能拯救这个世界了。</talk>
+		<talk things="超能石,神能石" type="hate">青纱镇有个人受到了某种石头的辐射变成了丑八怪，真可怕！</talk>
+		<talk things="超能石,神能石" type="hate">超能力只有坚强意志的人才能控制得了，我只想做个普通人。</talk>
+		
+		<talk things="生命药瓶,队友生命药瓶" type="like">给大家做饭的时候，不小心割到手了，流了好多血。</talk>
+		<talk things="生命药瓶,队友生命药瓶" type="like">我医疗箱里的药品不多了，怎么办？</talk>
+		<talk things="生命药瓶,队友生命药瓶" type="like">制毒师失血过多，我们要想办法救救他。</talk>
+		<talk things="生命药瓶,队友生命药瓶" type="hate">我又不是医生，以后不要把药瓶放在我这了。</talk>
+		<talk things="生命药瓶,队友生命药瓶" type="hate">我小时候体弱多病，吃的药太多，已经吃怕了！</talk>
+		
+		<talk things="血石" type="like">我喜欢那种红色的石头。</talk>
+		<talk things="血石" type="like">我有只宠物，它的天资太差了，你有什么办法吗？</talk>
+		<talk things="血石" type="like">我在找一种能激发宠物潜能的石头，你有见到吗？</talk>
+		<talk things="血石" type="hate">接触这种红色石头久了会让人头晕，我要去休息会儿！</talk>
+		<talk things="血石" type="hate">听说红色的石头会带来血光之灾，挺吓人的！</talk>
+		
+		
+		<talk things="强化剂,催化剂" type="like">我想研究一下你包里的那些试管都装了什么东西。</talk>
+		<talk things="强化剂,催化剂" type="like">你的尸宠好弱呀，我用妈妈的化学技术把它们都变强吧！</talk>
+		<talk things="强化剂,催化剂" type="like">试剂不能对人乱用哟，把它们都交给我保管吧。</talk>
+		<talk things="强化剂,催化剂" type="hate">这些有毒的试剂也只有僵尸们喜欢。</talk>
+		<talk things="强化剂,催化剂" type="hate">我现在有点反胃，闻到那些试管里的东西就恶心。</talk>
+		
+		<talk things="武器箱,装备箱" type="like">给我些装备和武器，让我挑些厉害的帮你打僵尸！</talk>
+		<talk things="武器箱,装备箱" type="like">女生的眼光都比较好，让我看看木箱里都有些什么好装备。</talk>
+		<talk things="武器箱,装备箱" type="like">我需要一些方形的木箱。</talk>
+		<talk things="武器箱,装备箱" type="hate">箱子里面装的行头都发霉了，扔掉才是明智的选择。</talk>
+		<talk things="武器箱,装备箱" type="hate">这些带血迹的木箱脏死了，别放我这。</talk>
+		
+		<talk things="传奇宝箱,稀有宝箱" type="like">一些僵尸也会收集财宝，要是抓到了，让我研究研究它们。</talk>
+		<talk things="传奇宝箱,稀有宝箱" type="like">真扫兴，今天一个财宝僵尸都没抓到。</talk>
+		<talk things="传奇宝箱,稀有宝箱" type="like">如果你找到了宝藏，会和我一起分享吗？</talk>
+		<talk things="传奇宝箱,稀有宝箱" type="hate">传说那些财宝会带来厄运，我可不希望被恶灵诅咒了。</talk>
+		<talk things="传奇宝箱,稀有宝箱" type="hate">小心宝箱的机关，贪婪可能会害死你的。</talk>
+		
+		<talk things="钥匙" type="like">这箱子锁的真紧，有什么办法能打开吗？</talk>
+		<talk things="钥匙" type="like">我们房子的大门关着，一定有什么办法可以进去。</talk>
+		<talk things="钥匙" type="like">你能启动这辆车吗，快想想办法。</talk>
+		<talk things="钥匙" type="hate">房子里有扇阴森古怪的门，我不敢开！</talk>
+		<talk things="钥匙" type="hate">你身上挂的钥匙黏糊糊的，好恶心啊。</talk>
+		
+		<talk things="碎片" type="like">我们自己动手造辆车吧，你有部件和工具吗？</talk>
+		<talk things="碎片" type="like">我的车太落伍了，我想给它升级一下外观。</talk>
+		<talk things="碎片" type="like">坐在车里才更有安全感。</talk>
+		<talk things="碎片" type="hate">拼碎片这种事，我最不喜欢了。</talk>
+		<talk things="碎片" type="hate">我对造车完全没兴趣！</talk>
+		
+	</father>
+	
+	</data>

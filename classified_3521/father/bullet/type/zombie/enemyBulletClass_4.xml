@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="精英技能">		
+		<bullet cnName="万弹归宗">
+			<name>moreMissile_enemy</name>
+			<cnName>万弹归宗</cnName>
+			
+			<hurtRatio>0.3</hurtRatio>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>10</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>180</bulletAngle>
+			<bulletNum>4</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootAngle>60</shootAngle>					
+				
+			<followD value="2" delay="0.2" />	 
+			<penetrationGap>1000</penetrationGap>
+				
+			<shootPoint>-30,-60</shootPoint>
+			<bulletSpeed>20</bulletSpeed>
+			<speedD random="0.3" />
+			<gravity>0</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">bullet/missile_bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/microBoom2">boomEffect/boom1</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+		</bullet>
+		<bullet cnName="导弹召唤-逃出升天任务">
+			<name>sweep_runAway</name>
+			<cnName>导弹召唤-任务</cnName>
+			
+			<hurtRatio>99999999</hurtRatio>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>6</bulletLife>
+			<bulletWidth>10</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngleRange>360</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootGap>0</shootGap>					
+			<shootAngle>0</shootAngle>					
+			<positionD specialType="circle_inward" />
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<shootPoint>0,0</shootPoint>
+			<bulletSpeed>10</bulletSpeed>
+			<speedD random="0.3" />
+			<gravity>0</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl soundUrl="sound/imploding_enemy">skillEffect/imploding_enemy_bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/microBoom2">boomEffect/boom1</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">skillEffect/smallFire</smokeImgUrl>
+		</bullet>
+		
+	</father>
+	</data>

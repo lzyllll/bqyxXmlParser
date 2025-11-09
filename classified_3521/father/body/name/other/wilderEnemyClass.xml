@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="other" cnName="其他">
+		<body index="0" name="气泡" shell="other">
+		
+			<name>Bubbles</name>
+			<cnName>气泡</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/Bubbles.swf</swfUrl>
+			
+			<lifeRatio>0.7</lifeRatio>
+			<dieJumpMul>0</dieJumpMul>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,die1
+			</imgArr>
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>0</maxVx>
+			<motionD F_G="0.2" jumpMul="0.1" />
+			
+			<defaultAiOrder>no</defaultAiOrder>
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr>State_SpellImmunity</skillArr>
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>0</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<grapRect>-50,-111,100,105</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="反物质" shell="other">
+			
+			<name>Antimatter</name>
+			<cnName>反物质</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/Antimatter.swf</swfUrl>
+			
+			<lifeRatio>0.7</lifeRatio>
+			
+			<dieJumpMul>0</dieJumpMul>
+			<imgArr>
+				stand,move,die1
+				,__jumpUp,jumpUp,jumpDown,jumpDown__
+			</imgArr>
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			
+			<maxVx>9</maxVx>
+			<motionD F_G="0.3" jumpDelayT="0.001" />
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>Antimatter_AIExtra</extraAIClassLabel>
+			
+			<skillArr />
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<hurtArr>
+				
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>0.000001</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt><imgLabel>stand</imgLabel><noAiChooseB>1</noAiChooseB><hurtRatio>0.000001</hurtRatio><attackType>direct</attackType></hurt>
+				<hurt><imgLabel>jumpUp</imgLabel><noAiChooseB>1</noAiChooseB><hurtRatio>0.000001</hurtRatio><attackType>direct</attackType></hurt>
+				<hurt><imgLabel>jumpDown</imgLabel><noAiChooseB>1</noAiChooseB><hurtRatio>0.000001</hurtRatio><attackType>direct</attackType></hurt>
+				<hurt><imgLabel>__jumpUp</imgLabel><noAiChooseB>1</noAiChooseB><hurtRatio>0.000001</hurtRatio><attackType>direct</attackType></hurt>
+				<hurt><imgLabel>jumpDown__</imgLabel><noAiChooseB>1</noAiChooseB><hurtRatio>0.000001</hurtRatio><attackType>direct</attackType></hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="异龙蛋" shell="normal">
+		
+			<name>TriceratopsEgg</name><headIconUrl>IconGather/TriceratopsEgg</headIconUrl>
+			<cnName>异龙蛋</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/TriceratopsEgg.swf</swfUrl>
+			
+			<lifeRatio>0.7</lifeRatio>
+			<dieJumpMul>0</dieJumpMul>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move,die1
+			</imgArr>
+			<dieImg soundUrl="sound/water_hit">boomEffect/posion1</dieImg>
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			
+			<maxJumpNum>0</maxJumpNum>
+			<maxVx>0</maxVx>
+			
+			<defaultAiOrder>no</defaultAiOrder>
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr>State_SpellImmunity</skillArr>
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>0</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<grapRect>-50,-111,100,105</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="绿洲" shell="normal">
+		
+			<name>DesertOasis</name>
+			<cnName>绿洲</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/DesertOasis.swf</swfUrl>
+			
+			<lifeRatio>0.7</lifeRatio>
+			<dieJumpMul>0</dieJumpMul>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,birthAttack,die1
+			</imgArr>
+			<dieImg soundUrl="sound/water_hit">boomEffect/posion1</dieImg>
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			
+			<maxJumpNum>0</maxJumpNum>
+			<maxVx>0</maxVx>
+			
+			<defaultAiOrder>no</defaultAiOrder>
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr>State_SpellImmunity</skillArr>
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>stand</imgLabel>
+					<hurtRatio>0</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<grapRect>-50,-111,100,105</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="异龙蛋-装置召唤" shell="normal">
+			
+			<name>DinosaurEgg</name>
+			<cnName>无敌异龙蛋</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/DinosaurEgg.swf</swfUrl>
+			
+			<lifeRatio>0.7</lifeRatio>
+			
+			<imgType>normal</imgType>
+			<dieJumpMul>0</dieJumpMul>
+			<imgArr>
+				stand,move,die1
+			</imgArr>
+			<dieImg soundUrl="sound/water_hit">boomEffect/posion1</dieImg>
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			
+			<maxJumpNum>0</maxJumpNum>
+			<maxVx>0</maxVx>
+			
+			<defaultAiOrder>no</defaultAiOrder>
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr>State_SpellImmunity</skillArr>
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>0</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<grapRect>-50,-111,100,105</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="生化罐" shell="metal">
+		
+			<name>ChemicalTank</name>
+			<cnName>生化罐</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ChemicalTank.swf</swfUrl>
+			
+			<lifeRatio>1.4</lifeRatio>
+			<dieJumpMul>0</dieJumpMul>
+			
+			<imgType>normal</imgType>
+			<dieImg>boomEffect/posion1</dieImg>
+			<lifeBarExtraHeight>-130</lifeBarExtraHeight>
+			<imgArr>
+				stand,stand1,stand2,stand3,stand4,die1
+			</imgArr>
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			
+			<maxJumpNum>0</maxJumpNum>
+			<maxVx>0</maxVx>
+			
+			<defaultAiOrder>no</defaultAiOrder>
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr>fightReduct,defenceBounce_enemy,State_SpellImmunity,standImageByLife,ChemicalTank_Triceratops</skillArr>
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>stand</imgLabel>
+					<hurtRatio>0</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<grapRect>-50,-111,100,105</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>	
+	</father>
+</data>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill>
+			<name>consLeoSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>声电场</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>no</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>no</effectType>
+			<otherEffectImg name="consVirgoLineChild" />
+			<description>狮子座的吼声划破天际，迸发出的声电电流将撕裂周围的敌人。</description>
+		</skill>
+	</father>
+</data>

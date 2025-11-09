@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="smoke" cnName="尾烟" num="51">
+  <body con="filter" raNum="30" name="CivilianFit_main_smoke" cnName="镇山虎-主炮-尾烟">CivilianFit/smoke</body>
+  <body con="filter" raNum="15" name="DryFrog_shoot_smoke" cnName="投弹-尾烟">DryFrog/bulletSmoke</body>
+  <body con="filter" name="knifeBoom_FightKing_smoke" cnName="狂刃爆发-尾烟">FightKing/shoot_bullet</body>
+  <body con="filter" raNum="1" name="FightPig_shoot_smoke" cnName="狂野收割者-飞刀-尾烟">FightPig/smoke1</body>
+  <body con="filter" raNum="30" name="rocket_fight_smoke" cnName="狂战戟-尾烟">FightShooter/bullet</body>
+  <body con="filter" raNum="30" name="FireWolf_noName_smoke" cnName="虚炎狼-无名火-尾烟">FireWolf/noSmoke</body>
+  <body raNum="30" con="filter" name="FlyFit_main_smoke" cnName="霸空雕-主炮-尾烟">FlyFit/smoke</body>
+  <body con="filter" name="GasDefense_1_smoke" cnName="飞扳-尾烟">GasDefenseZombie/bullet</body>
+  <body con="filter" raNum="30" name="IceManShoot1_smoke" cnName="野帝-雪球-尾烟">IceMan/smoke</body>
+  <body con="add" name="LastdayMissle_smoke" cnName="跟踪导弹-尾烟">LastdayTank/smoke1</body>
+  <body con="filter" name="lingGun_smoke" cnName="鬼目射手-武器-尾烟">LingShooter/smoke</body>
+  <body con="add" raNum="30" name="Mammoth_missile_smoke" cnName="洲际导弹-尾烟">Mammoth/missileSmoke</body>
+  <body con="filter" raNum="1" name="PetTyphoonWitch_shoot2_smoke" cnName="飓风巫尸-聚能波-尾烟">PetTyphoonWitch/smoke2</body>
+  <body con="filter" raNum="1" name="PetZombieCleaver_1_smoke" cnName="屠刀僵尸-飞刀-尾烟">PetZombieCleaver/smoke</body>
+  <body con="add" name="RifleHornetShooter_smoke" cnName="赤鼬导弹发射器-尾烟">RifleHornetShooter/smoke1</body>
+  <body con="add" name="SaberTiger_missile_smoke" cnName="末日轰炸-尾烟">SaberTiger/smoke1</body>
+  <body con="filter" raNum="30" name="Sentry1_smoke" cnName="哨兵-激光-尾烟">Sentry/bullet1</body>
+  <body con="filter" raNum="1" name="SnowFattySprint_smoke" cnName="关东尸-冲撞前飞刀-尾烟">SnowFatty/bullet</body>
+  <body con="filter" raNum="30" name="SnowThinShoot_smoke" cnName="童灵尸-雪球-尾烟">SnowThin/smoke</body>
+  <body con="filter" raNum="1" name="TyphoonWitch_shoot2_smoke" cnName="飓风巫尸-聚能波-尾烟">TyphoonWitch/smoke2</body>
+  <body con="filter" raNum="1" name="ZombieCleaver_1_smoke" cnName="屠刀僵尸-飞刀-尾烟">ZombieCleaver/smoke</body>
+  <body con="filter" name="laser_ling_smoke" cnName="鬼目游尸-镭射眼-尾烟">ZombieLing/smoke</body>
+  <body con="filter" raNum="1" name="ZombiePrison_1_smoke" cnName="监狱僵尸-飞刀-尾烟">ZombiePrison/smoke</body>
+  <body con="filter" raNum="1" name="ZombieSilver_1_smoke" cnName="银锤-飞刀-尾烟">ZombieSilver/smoke</body>
+  <body raNum="60" con="filter" name="skyArch_smoke" cnName="天弓-尾烟">bullet/blueLaser</body>
+  <body raNum="30" con="filter" name="meteoriteRain_smoke" cnName="陨石雨-尾烟">bullet/fireball</body>
+  <body con="filter" raNum="30" name="redFire_smoke" cnName="猩焰-尾烟">bullet/fireballSmoke</body>
+  <body con="filter" raNum="30" name="hitMissile_outfit_smoke" cnName="派生导弹-套件-尾烟">bullet/laser</body>
+  <body raNum="30" con="filter" name="revengeArrow_smoke" cnName="复仇之箭-尾烟">bullet/redArrow</body>
+  <body con="add" raNum="1" name="squibDevice_smoke" cnName="爆竹-尾烟">bullet/squibSpark</body>
+  <body raNum="30" con="filter" name="waterFlamer_smoke" cnName="洪荒-尾烟">bullet/waterSmoke</body>
+  <body con="filter" raNum="30" name="fightBackBullet_smoke" cnName="反击导弹-尾烟">bulletHitEffect/fireSmoke</body>
+  <body con="filter" raNum="30" name="rocket1_smoke" cnName="火箭筒-尾烟">bulletHitEffect/smoke_small</body>
+  <body raNum="30" con="filter" name="snakeCrossbow_smoke" cnName="银蛇-尾烟">bulletHitEffect/smoke_small2</body>
+  <body con="filter" raNum="30" name="boom_headless_smoke" cnName="自爆僵尸炸弹-尾烟">bulletHitEffect/spark_motion</body>
+  <body con="filter" name="zoomOutBullet_smoke" cnName="放大-飞镖-尾烟">bulletHitEffect/spark_motion</body>
+  <body con="filter" raNum="45" name="ZombieKing_floor_smoke" cnName="僵尸王地滚弹-尾烟">bulletHitEffect/spark_motion</body>
+  <body con="add" name="babyBoom_skull_smoke" cnName="爆骷-婴儿潮-尾烟">generalEffect/crazy</body>
+  <body con="add" name="revengeGhost_smoke" cnName="复仇之魂-尾烟">generalEffect/lakeBuff</body>
+  <body con="add" name="blackHoleMad_smoke" cnName="黑洞-尾烟">lightEffect/orange</body>
+  <body con="add" name="magnetBullet_smoke" cnName="磁铁-尾烟">lightEffect/whiteDrop</body>
+  <body con="filter" raNum="30" name="electricBoom_enemy_smoke" cnName="电球爆发-尾烟">skillEffect/paralysis_enemy_bullet</body>
+  <body con="filter" raNum="30" name="yearCattle_smoke" cnName="丑牛-尾烟">skillEffect/poisonClaw_enemy</body>
+  <body con="filter" name="acidRain_SpiderKing_smoke" cnName="酸雨-尾烟">skillEffect/poisonousFog_hero</body>
+  <body con="filter" raNum="30" name="circle_inward_shell_smoke" cnName="僵尸炮兵总管-圆周弹-尾烟">skillEffect/smallFire</body>
+  <body con="filter" raNum="1" name="xiaoBoShoot_smoke" cnName="小波飞雷神-尾烟">skillEffect/stickShadowSmoke</body>
+  <body con="filter" raNum="1" name="TyphoonWitch_shoot1_smoke" cnName="飓风巫尸-能量波-尾烟">skillEffect/witchSmoke</body>
+  <body con="filter" raNum="30" name="flyDragonHead_smoke" cnName="火首-尾烟">specialGun/FlyDragonGunSmoke</body>
+  <body con="filter" raNum="30" name="beadCrossbow_smoke" cnName="烟花弩-尾烟">specialGun/electricLine</body>
+  <body con="filter" raNum="30" name="penGun_smoke" cnName="钢笔枪-尾烟">specialGun/penGunSmoke</body>
+  <body raNum="30" con="filter" name="sickle_godArmsSkill_smoke" cnName="青蜂-飞镰-尾烟">specialGun/rifleHornetBulletSmoke</body>
+</father>
+
+
+</data>

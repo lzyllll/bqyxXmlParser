@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicle" cnName="战车body">
+		<body index="0" name="挖掘者" shell="metal">
+			
+			<name>Diggers</name>
+			<cnName>挖掘者</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/vehicle/Diggers.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<rosRatio>1</rosRatio>
+			<headHurtMul>0.5</headHurtMul>
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<imgClass>CarImage</imgClass>
+			<imgType>normal</imgType>
+			<rotateBySlopeB>1</rotateBySlopeB>
+			<imgArr>
+				stand,move,die1,subAttack,subChangeAttack
+				,__jumpUp,jumpUp,jumpDown,jumpDown__
+			</imgArr>
+			
+			<hitRect>-30,-88,60,88</hitRect>
+			
+			<motionD F_G="0.8" jumpDelayT="0.15" F_I="0.6" F_F="0.7" moveWhenVB="1" />
+			<maxVx>17</maxVx>
+			<maxJumpNum>1</maxJumpNum>
+			
+			<attackAIClass>CarAttack_AI</attackAIClass>
+			<keyClass>CarBodyKey</keyClass>
+			<bulletLauncherClass>CarBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>7</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>subAttack</imgLabel>
+					<skillArr>highDrill,highDrillHit</skillArr>
+					<hurtRatio>0.69</hurtRatio><ingfollowB>1</ingfollowB>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>1</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>7</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpUp</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>7</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown__</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>7</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		
+		
+		<body index="0" name="腥红挖掘者" shell="metal">
+			
+			<name>SecDiggers</name>
+			<cnName>腥红挖掘者</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/vehicle/SecDiggers.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<rosRatio>1</rosRatio>
+			<headHurtMul>0.5</headHurtMul>
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<imgClass>CarImage</imgClass>
+			<imgType>normal</imgType>
+			<rotateBySlopeB>1</rotateBySlopeB>
+			<imgArr>
+				stand,move,die1,subAttack,subChangeAttack
+				,__jumpUp,jumpUp,jumpDown,jumpDown__
+			</imgArr>
+			
+			<hitRect>-30,-88,60,88</hitRect>
+			
+			<motionD F_G="0.8" jumpDelayT="0.15" F_I="0.6" F_F="0.7" moveWhenVB="1" />
+			<maxVx>17</maxVx>
+			<maxJumpNum>1</maxJumpNum>
+			
+			<attackAIClass>CarAttack_AI</attackAIClass>
+			<keyClass>CarBodyKey</keyClass>
+			<bulletLauncherClass>CarBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>7</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>subAttack</imgLabel>
+					<skillArr>superHighDrill,highDrillHit</skillArr>
+					<hurtRatio>0.69</hurtRatio><ingfollowB>1</ingfollowB>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>1</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>7</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpUp</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>7</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown__</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>7</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		<body name="炙热挖掘者" fixed="SecDiggers" shell="metal">
+			<name>ThirdDiggers</name>
+			<cnName>炙热挖掘者</cnName>
+			<swfUrl>swf/vehicle/ThirdDiggers.swf</swfUrl>
+			<bmpUrl>BodyImg/ThirdDiggers</bmpUrl>
+		</body>
+		
+		<body name="血锯挖掘者" shell="metal">
+			<name>FourDiggers</name>
+			<cnName>血锯挖掘者</cnName>
+			<swfUrl>swf/vehicle/FourDiggers333.swf</swfUrl>
+			<bmpUrl>BodyImg/FourDiggers</bmpUrl>
+			<raceType>robot</raceType>
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<imgClass>CarImage</imgClass>
+			<imgType>normal</imgType>
+			<rotateBySlopeB>1</rotateBySlopeB>
+			
+			<imgArr>
+				stand,move,die1,subAttack,subChangeAttack,sprintAttack
+				,__jumpUp,jumpUp,jumpDown,jumpDown__
+			</imgArr>
+			
+			
+			<hitRect>-30,-88,60,88</hitRect>
+			
+			<motionD F_G="0.8" jumpDelayT="0.15" F_I="0.6" F_F="0.7" moveWhenVB="1" />
+			<maxVx>17</maxVx>
+			<maxJumpNum>1</maxJumpNum>
+			
+			<attackAIClass>CarAttack_AI</attackAIClass>
+			<keyClass>CarBodyKey</keyClass>
+			<bulletLauncherClass>CarBulletLauncher</bulletLauncherClass>
+			<bossSkillArr>FourDiggersSprint,wheelStabsDiggers,KingRabbitTreater,thorns_pig,treater_knights,toLand</bossSkillArr>
+			
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>7</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>subAttack</imgLabel>
+					<skillArr>superHighDrill,highDrillHit</skillArr>
+					<hurtRatio>0.69</hurtRatio><ingfollowB>1</ingfollowB>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>1</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>7</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpUp</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>7</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown__</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>7</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				
+				
+				<hurt>
+					<imgLabel>sprintAttack</imgLabel><cn>聚力血锯</cn>
+					<hurtRatio>0.00000001</hurtRatio>
+					<hurtMul>0.20</hurtMul>
+					<attackType>holy</attackType>
+					<shakeValue>10</shakeValue><meBack>1</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		
+	</father>
+</data>

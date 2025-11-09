@@ -1,0 +1,324 @@
+{
+  "father": [
+    {
+      "name": "enemy",
+      "cnName": "敌方",
+      "body": {
+        "name": "IronDog",
+        "shell": "normal",
+        "cnName": "铁犬",
+        "raceType": "human",
+        "swfUrl": "swf/enemy/IronDog335.swf",
+        "rosRatio": 1,
+        "showLevel": 999,
+        "headIconUrl": "IconGather/IronDog",
+        "imgType": "normal",
+        "imgArr": "stand,move\n\t\t\t\t,normalAttack,die1\n\t\t\t\t,fiveAttack,mopAttack,daggerAttack,iceAttack,hideAttack\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+        "hitRect": "-12, -90, 24, 90",
+        "maxVx": 13,
+        "extraAIClassLabel": "IronDog_AIExtra",
+        "avtiveSkillCdOverT": 0.1,
+        "skillArr": "IronDogIce,IronDogDagger,IronDogFive,fastForward_enemy,IronDogBuff,verShield,underToLand,rigidBody_enemy,likeMissleNo,summonShortLife,findHide,State_SpellImmunity",
+        "bossSkillArr": "IronDogMop",
+        "bossSkillArrCn": null,
+        "wilderSkillArr": "weaponDefence",
+        "hurtArr": {
+          "hurt": [
+            {
+              "imgLabel": "normalAttack",
+              "cn": "刺砍",
+              "hurtRatio": 1,
+              "attackType": "holy",
+              "shakeValue": 4,
+              "hitImgUrl": {
+                "value": "bulletHitEffect/fitHit",
+                "con": "add",
+                "soundUrl": "sound/vehicle_hit",
+                "soundRan": 3
+              }
+            },
+            {
+              "info": "不加入ai选择",
+              "imgLabel": "fiveAttack",
+              "noAiChooseB": 1,
+              "hurtRatio": 1e-14,
+              "hurtMul": 0.6,
+              "attackType": "holy",
+              "skillArr": "invincibleEmp",
+              "grapRect": "-400,-111,100,105",
+              "hitImgUrl": {
+                "name": "IronDogFiveHit"
+              }
+            },
+            {
+              "info": "不加入ai选择",
+              "imgLabel": "mopAttack",
+              "noAiChooseB": 1,
+              "hurtRatio": 1e-14,
+              "hurtMul": 0.07,
+              "attackType": "holy",
+              "skillArr": "invincibleEmp",
+              "grapRect": "-400,-111,100,105",
+              "hitImgUrl": {
+                "name": "IronDogFiveHit"
+              }
+            },
+            {
+              "info": "不加入ai选择",
+              "imgLabel": "daggerAttack",
+              "noAiChooseB": 1,
+              "hurtRatio": 1,
+              "attackType": "holy",
+              "skillArr": "invincibleEmp",
+              "grapRect": "-400,-111,100,105",
+              "hitImgUrl": {
+                "name": "IronDogFiveHit"
+              }
+            },
+            {
+              "info": "不加入ai选择",
+              "imgLabel": "iceAttack",
+              "noAiChooseB": 1,
+              "hurtRatio": 1e-14,
+              "hurtMul": 0.15,
+              "attackType": "holy",
+              "skillArr": "invincibleEmp",
+              "grapRect": "-400,-111,100,105",
+              "hitImgUrl": {
+                "name": "IronDogFiveHit"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "enemy",
+      "cnName": "技能",
+      "bullet": [
+        {
+          "cnName": "七人斩-子弹",
+          "name": "IronDogFiveBullet",
+          "noMagneticB": 1,
+          "noBeClearB": 1,
+          "hurtMul": 0.5,
+          "attackType": "holy",
+          "bulletNum": 1,
+          "bulletAngle": 90,
+          "twoHitGap": 0.8,
+          "twoHitSameNameB": 1,
+          "noHitTime": 0.47,
+          "bulletLife": 0.56,
+          "imgClearDelay": 0.43,
+          "bulletWidth": 700,
+          "hitType": "longLine",
+          "penetrationGap": 1000,
+          "penetrationNum": 999,
+          "skillArr": "invincibleEmp",
+          "bulletImgUrl": {
+            "value": "IronDog/fiveBullet",
+            "con": "add"
+          },
+          "hitImgUrl": {
+            "name": "IronDogFiveHit"
+          }
+        },
+        {
+          "cnName": "冰魄斩-子弹",
+          "name": "IronDogIceBullet",
+          "noMagneticB": 1,
+          "noBeClearB": 1,
+          "hitType": "rect",
+          "hurtMul": 0.05,
+          "attackType": "holy",
+          "bulletNum": 1,
+          "bulletLife": 0.0001,
+          "imgClearDelay": 0.35,
+          "bulletWidth": 80,
+          "penetrationGap": 1000,
+          "penetrationNum": 999,
+          "skillArr": "invincibleEmp,IronDogIceHit",
+          "bulletImgUrl": {
+            "value": "IronDog/iceBullet",
+            "con": "add"
+          },
+          "hitImgUrl": {
+            "name": "IronDogFiveHit"
+          }
+        }
+      ]
+    },
+    {
+      "name": "enemy",
+      "cnName": "技能",
+      "skills": {
+        "IronDogBuff": {
+          "name": "IronDogBuff",
+          "cnName": "铁犬buff",
+          "noBeClearB": 1,
+          "noCopyB": 1,
+          "conditionType": "passive",
+          "condition": "add",
+          "target": "me",
+          "addType": "state",
+          "effectType": "IronDogBuff",
+          "stateEffectImg": {
+            "value": "generalEffect/purBigLight",
+            "con": "add",
+            "partType": "body,mouth,hand_left,hand_right,foot_left,foot_right"
+          },
+          "duration": 99999999
+        },
+        "IronDogFive": {
+          "name": "IronDogFive",
+          "cnName": "九人斩",
+          "noBeClearB": 1,
+          "ignoreNoSkillB": 1,
+          "ignoreSilenceB": 1,
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cd": 3,
+          "iconUrl36": "SkillIcon/IronDogFive_36",
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "IronDogFive",
+          "target": "me",
+          "addType": "state",
+          "effectType": "bullet_IronDogFive",
+          "obj": {
+            "name": "IronDogFiveBullet"
+          },
+          "duration": 1.6,
+          "meEffectImg": {
+            "name": "skillEffectTeleport"
+          },
+          "pointEffectImg": {
+            "name": "SaberTiger_laser_point"
+          },
+          "meActionLabel": "fiveAttack",
+          "description": "铁犬释放9个分身一起劈斩地面，对敌人造成重大伤害。作为魂卡时此动作将处于无敌状态。"
+        },
+        "IronDogMop": {
+          "name": "IronDogMop",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cnName": "飞横扫",
+          "noBeClearB": 1,
+          "ignoreNoSkillB": 1,
+          "ignoreSilenceB": 1,
+          "minTriggerT": 5,
+          "conditionType": "passive",
+          "condition": "underHit",
+          "otherConditionArr": "IronDogMop",
+          "target": "me",
+          "addType": "state",
+          "effectType": "IronDogMop",
+          "value": 2,
+          "duration": 5,
+          "pointEffectImg": {
+            "name": "SaberTiger_laser_point"
+          },
+          "meActionLabel": "mopAttack",
+          "description": "当敌人使用攻击效果时，铁犬将以极快的步伐左右横扫敌人。作为魂卡时此动作将处于无敌状态。"
+        },
+        "IronDogMopTask": {
+          "name": "IronDogMopTask",
+          "cnName": "飞横扫",
+          "noBeClearB": 1,
+          "ignoreNoSkillB": 1,
+          "ignoreSilenceB": 1,
+          "cd": 20,
+          "iconUrl36": "SkillIcon/fastForward_Cheetah_36",
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "target": "me",
+          "addType": "state",
+          "effectType": "IronDogMop",
+          "value": 2,
+          "duration": 5,
+          "pointEffectImg": {
+            "name": "SaberTiger_laser_point"
+          },
+          "meActionLabel": "mopAttack",
+          "description": null
+        },
+        "IronDogDagger": {
+          "name": "IronDogDagger",
+          "cnName": "翔空刺",
+          "noBeClearB": 1,
+          "ignoreNoSkillB": 1,
+          "ignoreSilenceB": 1,
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cd": 7,
+          "iconUrl36": "SkillIcon/IronDogDagger_36",
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "target": "me",
+          "addType": "state",
+          "effectType": "IronDogDagger",
+          "duration": 1.5,
+          "meActionLabel": "daggerAttack",
+          "stateEffectImg": {
+            "name": "groupSpeedUp_enemy_state",
+            "cnName": "腿部滑翔特效"
+          },
+          "pointEffectImg": {
+            "name": "skillEffectTeleport",
+            "cnName": "闪烁"
+          },
+          "otherEffectImg": {
+            "name": "skillEffectTeleportShow",
+            "cnName": "闪烁出现"
+          },
+          "description": "紧紧咬住对手，并在1秒内快速刺出6刀。此刻铁犬处于无敌状态。"
+        },
+        "IronDogIce": {
+          "name": "IronDogIce",
+          "cnName": "震魂斩",
+          "noBeClearB": 1,
+          "ignoreNoSkillB": 1,
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cd": 10,
+          "iconUrl36": "SkillIcon/IronDogIce_36",
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "target": "me",
+          "addType": "state",
+          "effectType": "bullet_IronDogIce",
+          "value": 13,
+          "mul": 0.066,
+          "secMul": 120,
+          "duration": 2.1,
+          "obj": {
+            "name": "IronDogIceBullet"
+          },
+          "meActionLabel": "iceAttack",
+          "description": "用力砍向地面，激发出向周围扩散的震魂波，震魂波将麻痹敌人。作为魂卡时此动作将处于无敌状态。"
+        },
+        "IronDogIceHit": {
+          "name": "IronDogIceHit",
+          "cnName": "震魂斩-麻痹沉默",
+          "noSkillDodgeB": 1,
+          "ignoreImmunityB": 1,
+          "noBeClearB": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "effectType": "IronDogIceHit",
+          "duration": 3,
+          "stateEffectImg": {
+            "name": "noMoveWarrior_state",
+            "cnName": "麻痹-状态"
+          },
+          "stateEffectImg2": {
+            "name": "silenceWarrior_state",
+            "cnName": "沉默状态"
+          }
+        }
+      }
+    }
+  ]
+}

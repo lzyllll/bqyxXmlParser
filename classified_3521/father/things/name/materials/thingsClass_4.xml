@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="materials" cnName="月卡">	
+		    
+		<things cnName="联邦总统">
+			<name>platinumMonthCard</name>
+			<cnName>白金月卡</cnName>
+			<iconUrl>ThingsIcon/platinumMonthCard</iconUrl>
+			<description>。</description>
+		</things>
+		<things cnName="联邦总统3天">
+			<name>platinumMonthCard3</name>
+			<cnName>白金月卡3天</cnName>
+			<iconUrl>ThingsIcon/platinumMonthCard3</iconUrl>
+			<description>。</description>
+		</things>
+		<things cnName="联邦国务卿">
+			<name>goldMonthCard</name>
+			<cnName>黄金月卡</cnName>
+			<iconUrl>ThingsIcon/goldMonthCard</iconUrl>
+			<description>。</description>
+		</things>
+		<things cnName="联邦部长">
+			<name>normalMonthCard</name>
+			<cnName>普通月卡</cnName>
+			<iconUrl>ThingsIcon/normalMonthCard</iconUrl>
+			<description>。</description>
+		</things>
+		
+	</father>	
+	</data>

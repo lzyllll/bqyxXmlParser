@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill index="0" name="召唤蝙蝠">
+			<name>fox_godArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>无敌蝙蝠</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>killTarget</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>summonedUnits</effectType>
+			<summonedUnitsB>1</summonedUnitsB>
+			<effectProArr>1</effectProArr>
+			<extraValueType>nowArmsTrueDps</extraValueType>
+			
+			<obj>"cnName":"吸血蝙蝠","num":1,"lifeMul":2,"dpsMul":1,"mulByFatherB":1,"cx":0,"cy":-80,"firstVx":10,"maxNum":10,"maxFromWeAllB":1,"noUnderHurtB":1,"noAiFindB":1,"noUnderHitB":1,"skillArr":["State_SpellImmunity","State_AddMove"]</obj>
+			<duration>90</duration>
+			
+			<description>消灭敌人后将召唤无敌吸血蝙蝠（上限10只）。</description>
+		</skill>
+		<skill name="强击蝙蝠">
+			<name>fox_godArmsSkill2</name><noRandomListB>1</noRandomListB><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+			<cnName>强击蝙蝠</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB><ignoreSilenceB>1</ignoreSilenceB>
+			
+			<conditionType>passive</conditionType>
+			<condition>killTarget</condition>
+			<target>me</target>
+			
+			<addType>instantAndState</addType><overlyingB>1</overlyingB>
+			<effectType>summonedUnitsFox</effectType>
+			<summonedUnitsB>1</summonedUnitsB>
+			<effectProArr>1</effectProArr>
+			<extraValueType>nowArmsTrueDps</extraValueType>
+			<obj>"cnName":"吸血蝙蝠","num":1,"lifeMul":2,"dpsMul":1.25,"mulByFatherB":1,"cx":0,"cy":-80,"firstVx":10,"maxNum":10,"maxFromWeAllB":1,"noUnderHurtB":1,"noAiFindB":1,"noUnderHitB":1,"skillArr":["State_SpellImmunity","State_AddMove"]</obj>
+			<duration>90</duration>
+			<mul>0.05</mul>
+			<secMul>1</secMul>
+			<stateEffectImg partType="arm_right_1,arm_left_1" con="add" raNum="30" followPartRaB="1">skillEffect/trueshot_enemy</stateEffectImg>
+			
+			<description>消灭敌人后将召唤无敌吸血蝙蝠（上限10只），同时永久增加银狐[mul]的伤害（最多可累加到[secMul]）。</description>
+		</skill>
+		
+		<skill name="群攻">
+			<name>purgoldFox</name><noBeClearB>1</noBeClearB>
+			<cnName>群攻</cnName><noRandomListB>1</noRandomListB><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType><haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			<condition>hit</condition><changeHurtB>1</changeHurtB>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>purgoldFox</effectType>
+			<extraValueType>nowArmsHurt</extraValueType>
+			<mul>3</mul>
+			<range>1000</range>
+			<pointEffectImg soundUrl="specialGun/purgoldFoxSound" />
+			<description>射击时有几率让[range]码内的所有我方单位对敌人发起攻击，并清除陨石雨，封锁旋转电球。</description>
+		</skill>
+		
+	</father>
+	
+	
+	</data>

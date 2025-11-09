@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill name="阻挡">
+			<name>greedySnakeSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>阻挡</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>greedySnakeSkill</effectType>
+			<mul>0</mul>
+			<secMul>5</secMul>
+			<duration>0.4</duration>
+			 
+			<stateEffectImg con="add" soundUrl="sound/paralysis_enemy_hit">skillEffect/paralysis_enemy</stateEffectImg>
+			<description>击中怪物时，让它无法移动，但也会大幅提升它的防御力。无视技能免疫。</description>
+		</skill>
+	</father>
+</data>

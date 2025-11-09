@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="petBodySkill" cnName="飓风巫尸">
+		<skill index="0" name="聚能力量">
+			<name>shoot2_PetTyphoonWitch</name>
+			<cnName>聚能力量</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<cd>51</cd>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>400</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>no</effectType>
+			
+			<meActionLabel>shootAttack2</meActionLabel>
+			<description>巫尸不断聚集巫术力量汇聚成能量光球，光球到达一定大小之后向外释放，对击中的目标造成10倍于巫尸战斗力的伤害，同时清除目标所有武器的弹药。</description>
+			
+			<growth>
+				<skill><cd>51</cd></skill>
+				<skill><cd>45</cd></skill>
+				<skill><cd>38</cd></skill>
+				<skill><cd>32</cd></skill>
+				<skill><cd>26</cd></skill>
+				<skill><cd>19</cd></skill>
+				<skill><cd>13</cd></skill>
+				<skill><cd>10</cd></skill>
+				<skill><cd>8</cd></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="飓风">
+			<name>wind_PetTyphoonWitch</name>
+			<cnName>飓风</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<cd>68</cd>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>400</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>no</effectType>
+			
+			<meActionLabel>windAttack</meActionLabel>
+			<description>巫尸向前释放1个缓慢前行的龙卷风，对经过的敌方单位造成伤害，同时使目标无法释放技能，龙卷风持续10秒。</description>
+			
+			<growth>
+				<skill><cd>68</cd></skill>
+				<skill><cd>59</cd></skill>
+				<skill><cd>51</cd></skill>
+				<skill><cd>42</cd></skill>
+				<skill><cd>34</cd></skill>
+				<skill><cd>25</cd></skill>
+				<skill><cd>17</cd></skill>
+				<skill><cd>14</cd></skill>
+				<skill><cd>11</cd></skill>
+			</growth>
+		</skill>
+		<skill index="0" cnName="巫尸之怒">
+			<name>wizardAnger_PetTyphoonWitch</name>
+			<cnName>巫尸之怒</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			<minTriggerT>145</minTriggerT>
+			<changeText>技能触发最小间隔：[minTriggerT]秒</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>beforeDie</condition>
+			<target>me</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>wizardAnger_wind</effectType>
+			<value>1</value>
+			<duration>5</duration>
+			
+			<meActionLabel>roarAttack</meActionLabel>
+			<meEffectImg soundUrl="sound/invisibility_hero" con="add" />
+			<stateEffectImg partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="filter" raNum="1">skillEffect/witchSmoke</stateEffectImg>
+			
+			<description>在受到必亡的伤害时，巫尸进入无敌状态，持续6秒，同时召唤无数的蝙蝠从四面八方而来，敌方单位被蝙蝠击中将回复巫尸一定的生命值。技能触发间隔不小于[minTriggerT]秒。</description>
+			
+			<growth>
+				<skill><minTriggerT>145</minTriggerT></skill>
+				<skill><minTriggerT>129</minTriggerT></skill>
+				<skill><minTriggerT>113</minTriggerT></skill>
+				<skill><minTriggerT>97</minTriggerT></skill>
+				<skill><minTriggerT>82</minTriggerT></skill>
+				<skill><minTriggerT>66</minTriggerT></skill>
+				<skill><minTriggerT>50</minTriggerT></skill>
+				<skill><minTriggerT>42</minTriggerT></skill>
+				<skill><minTriggerT>35</minTriggerT></skill>
+			</growth>
+		</skill>
+	</father>
+	</data>

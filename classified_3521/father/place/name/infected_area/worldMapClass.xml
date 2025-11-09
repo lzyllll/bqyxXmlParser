@@ -1,0 +1,981 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="infected_area" cnName="感染区">
+		<place lv="1" cnName="沃土镇">
+			<name>WoTu</name>
+			<cnName>沃土镇</cnName>
+			<geogType>town</geogType><demBossSkillArr>pioneerDemon,KingRabbitTreater,weaponDefence,noUnderFlyHit,killPet,selfBurn_enemy,paralysis_enemy,fastForward_enemy</demBossSkillArr>
+			<description /><demSkillArr>fightBackBullet</demSkillArr>
+			<linkArr>YangMei</linkArr>
+			<levelArr>
+				<level><name>WoTu_1</name></level>
+				<level><name>WoTu_2</name></level>
+			</levelArr>
+		</place>
+		<place lv="3" cnName="杨梅岭">
+			<name>YangMei</name>
+			<cnName>杨梅岭</cnName>
+			<geogType>hill</geogType><demBossSkillArr>pioneerDemon,treater_knights,killCharm,demCloned,invisibility_enemy</demBossSkillArr>
+			<description /><demSkillArr>shortLivedDisabled</demSkillArr>
+			<linkArr>XiaSha</linkArr>
+			<levelArr>
+				<level>
+					<name>YangMei_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="4" cnName="下沙">
+			<name>XiaSha</name>
+			<cnName>下沙</cnName>
+			<geogType>hill</geogType><demBossSkillArr>noDegradation,ruleRange,bladeWrap,screwBall</demBossSkillArr>
+			<description /><demSkillArr>corpsePoison,rigidBody_enemy</demSkillArr>
+			<linkArr>FengWei</linkArr>
+			<levelArr>
+				<level>
+					<name>XiaSha_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="5" cnName="凤尾洋">
+			<name>FengWei</name>
+			<cnName>凤尾洋</cnName>
+			<geogType>sea</geogType><demBossSkillArr>KingRabbitTreater,likeMissle_Shapers,enemyEmp,FoggyDefence,killPet,lightningFloor,silence_enemy</demBossSkillArr>
+			<description /><demSkillArr>revengeGhost,vertigoArmorIron</demSkillArr>
+			<linkArr>XiChi</linkArr>
+			<levelArr>
+				<level>
+					<name>FengWei_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="6" cnName="西池">
+			<name>XiChi</name>
+			<cnName>西池</cnName>
+			<geogType>sea</geogType><demBossSkillArr>findHide,State_SpellImmunity,FoggyDefence,resistMulHurt,weaponDefence,toLand</demBossSkillArr>
+			<description /><demSkillArr>revengeArrow,invincibleEmp,toLand</demSkillArr>
+			<linkArr>BaiLu</linkArr><noTaskB>1</noTaskB>
+			<levelArr>
+				<level>
+					<name>XiChi_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="7" cnName="白鹭镇">
+			<name>BaiLu</name>
+			<cnName>白鹭镇</cnName>
+			<geogType>town</geogType><demBossSkillArr>KingRabbitTreater,enemyEmp,invincibleEmp,deadlyArrow,deadlyGhost,fightBackBullet,MeatySkillBack</demBossSkillArr>
+			<description /><demSkillArr>fightBackBullet,toLand</demSkillArr>
+			<linkArr>ShuiSheng</linkArr>
+			<levelArr>
+				<level>
+					<name>BaiLu_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		<place lv="8" cnName="水升村" priority="9">
+			<name>ShuiSheng</name>
+			<cnName>水升村</cnName>
+			<geogType>town</geogType><demBossSkillArr>teleport_enemy,desertedHalo_enemy,State_SpellImmunity,findHide,bladeWrap,killCharm,BallLightningHurt,moreBullet,paralysis_enemy</demBossSkillArr>
+			<description /><demSkillArr>pioneerDemon,fastForward_enemy,moreBullet</demSkillArr>
+			<linkArr>BaiZhang</linkArr>
+			<levelArr>
+				<level>
+					<name>ShuiSheng_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		<place lv="9" cnName="百丈道">
+			<name>BaiZhang</name>
+			<cnName>百丈道</cnName>
+			<geogType>hill</geogType><demBossSkillArr>KingRabbitTreater,noDegradation,weaponDefence,noUnderFlyHit,deadlyArrow,silence_enemy</demBossSkillArr>
+			<description /><demSkillArr>shortLivedDisabled,KingRabbitTreater,silence_enemy,rigidBody_enemy</demSkillArr>
+			<linkArr>ZhuTou</linkArr>
+			<levelArr>
+				<level>
+					<name>BaiZhang_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="10" cnName="猪头洋">
+			<name>ZhuTou</name>
+			<cnName>猪头洋</cnName><demBossSkillArr>noUnderFlyHit,ruleRange,desertedHalo_enemy,magneticField_enemy,rigidBody_enemy,offPassSkill</demBossSkillArr>
+			<noTaskB>1</noTaskB><demSkillArr>offPassSkill,magneticField_enemy,rigidBody_enemy</demSkillArr>
+			<geogType>sea</geogType>
+			<description />
+			<linkArr>ShuangTa</linkArr>
+			<levelArr>
+				<level><name>ZhuTou_1</name></level>
+				<level><name>ZhuTou_2</name></level>
+			</levelArr>
+		</place>
+		<place lv="11" cnName="双塔村">
+			<name>ShuangTa</name>
+			<cnName>双塔村</cnName><demBossSkillArr>FoggyDefence,hammer_enemy,offPassSkill</demBossSkillArr>
+			<noTaskB>1</noTaskB><demSkillArr>KingRabbitTreater,paralysis_enemy,immune</demSkillArr>
+			<geogType>town</geogType>
+			<description />
+			<linkArr>BeiDou</linkArr>
+			<levelArr>
+				<level>
+					<name>ShuangTa_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="13" cnName="北斗城">
+			<name>BeiDou</name>
+			<cnName>北斗城</cnName><demBossSkillArr>State_SpellImmunity,enemyEmp,invincibleEmp,ruleRange,fitVehicleDefence,summonShortLife,killCharm,killPet,toLand,deadlyArrow,invisibility_enemy,fastForward_enemy</demBossSkillArr>
+			<geogType>town</geogType><demSkillArr>State_SpellImmunity,enemyEmp,invincibleEmp,summonShortLife,killCharm,killPet,toLand</demSkillArr>
+			<description />
+			<linkArr>DongShan</linkArr>
+			<levelArr>
+				<level>
+					<name>BeiDou_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="14" cnName="东山澳">
+			<name>DongShan</name>
+			<cnName>东山澳</cnName><demBossSkillArr>immune,magneticField_enemy,rigidBody_enemy,fitVehicleDefence,toLand,moreBullet,ironBody_enemy</demBossSkillArr>
+			<geogType>sea</geogType><demSkillArr>ironBody_enemy,rigidBody_enemy,toLand</demSkillArr>
+			<description />
+			<linkArr>QingSha</linkArr>
+			<levelArr>
+				<level>
+					<name>DongShan_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="15" cnName="青纱镇" priority="10">
+			<name>QingSha</name>
+			<cnName>青纱镇</cnName><demBossSkillArr>State_AddMove,extendCd,vertigoArmorIron,invincibleEmp,findHide,FoggyDefence,bladeWrap,summonShortLife,toLand,meteoriteRain,murderous_equip</demBossSkillArr>
+			<geogType>town</geogType><demSkillArr>FoggyDefence,toLand</demSkillArr>
+			<description />
+			<linkArr>QingMing</linkArr>
+			<levelArr>
+				<level>
+					<name>QingSha_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="16" cnName="清明岭" priority="10">
+			<name>QingMing</name>
+			<cnName>清明岭</cnName><demBossSkillArr>treater_knights,enemyEmp,invincibleEmp,findHide,desertedHalo_enemy,ruleRange,toLand,deadlyGhost,fastForward_enemy,ironBody_enemy</demBossSkillArr>
+			<geogType>hill</geogType><demSkillArr>revengeGhost,invincibleEmp,teleport_enemy</demSkillArr>
+			<description />
+			<linkArr>NanTang</linkArr>
+			<levelArr>
+				<level>
+					<name>QingMing_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="18" cnName="南唐城" priority="10">
+			<name>NanTang</name>
+			<cnName>南唐城</cnName><demBossSkillArr>immune,KingRabbitTreater,fitVehicleDefence,weaponDefence,killPet,lightningFloor,moreBullet,skillCopyTransport,feedback_enemy</demBossSkillArr>
+			<geogType>town</geogType><demSkillArr>shortLivedDisabled,skillCopyTransport,findHide,rigidBody_enemy</demSkillArr>
+			<firstShowB>1</firstShowB>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>NanTang_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		<place lv="32" cnName="幽灵谷" priority="10">
+			<name>YouLing</name>
+			<cnName>幽灵谷</cnName><demBossSkillArr>State_SpellImmunity,findHide,desertedHalo_enemy,screwBall,demCloned,groupSpeedUp_enemy</demBossSkillArr>
+			<mustWinShowB>1</mustWinShowB><demSkillArr>pioneerDemon,groupSpeedUp_enemy,groupCrazy_enemy,rigidBody_enemy</demSkillArr>
+			<geogType>hill</geogType>
+			<description />
+			
+			<levelArr>
+				<level><name>YouLing_2</name></level>
+				<level><name>YouLing_3</name></level>
+			</levelArr>
+		</place>
+		<place lv="35" cnName="西峰" priority="10">
+			<name>XiFeng</name>
+			<cnName>西峰</cnName><demBossSkillArr>State_AddMove,KingRabbitTreater,findHide,likeMissle_Shapers,FoggyDefence,bladeWrap,slowMoveHalo_enemy,fastForward_enemy</demBossSkillArr>
+			<mustWinShowB>1</mustWinShowB><demSkillArr>State_SpellImmunity,bladeWrap,noUnderFlyHit</demSkillArr>
+			<geogType>hill</geogType>
+			<description />
+			
+			<levelArr>
+				<level><name>XiFeng_2</name></level>
+				<level><name>XiFeng_3</name></level>
+			</levelArr>
+		</place>
+		
+		<place lv="44" cnName="绿森堡" priority="10">
+			<name>LvSen</name>
+			<cnName>绿森堡</cnName><demBossSkillArr>State_AddMove,pioneerDemon,treater_knights,cmldef2_enemy,noDegradation,noBounce_enemy,fitVehicleDefence,toLand,hammer_enemy,feedback_enemy</demBossSkillArr>
+			<mustWinShowB>1</mustWinShowB><demSkillArr>MeatySkillBack,rigidBody_enemy</demSkillArr>
+			<geogType>town</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>LvSen_shooter</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="45" cnName="毒窟" priority="10">
+			<name>DuKu</name><labelArr>地下</labelArr>
+			<cnName>毒窟</cnName><demBossSkillArr>State_SpellImmunity,likeMissle_Shapers,weaponDefence,toLand,teleport_enemy</demBossSkillArr>
+			<mustWinShowB>1</mustWinShowB><demSkillArr>shortLivedDisabled,revengeArrow</demSkillArr>
+			<geogType>hill</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>DuKu_poision</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="46" cnName="宝伦镇">
+			<name>BaoLun</name>
+			<cnName>宝伦镇</cnName><demBossSkillArr>findHide,ruleRange,resistMulHurt,noUnderFlyHit,fightBackBullet,screwBall,lightningFloor,ironBody_enemy</demBossSkillArr>
+			<mustWinShowB>1</mustWinShowB><demSkillArr>corpsePoison,fightBackBullet</demSkillArr>
+			<geogType>hill</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>BaoLun_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="47" cnName="炉屿">
+			<name>LuYu</name>
+			<cnName>炉屿</cnName>
+			<mustWinShowB>1</mustWinShowB>
+			<geogType>town</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>LuYu_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="48" cnName="霸王坡" priority="10">
+			<name>BaWang</name>
+			<cnName>霸王坡</cnName><demBossSkillArr>immune,noUnderLaser,screwBall,likeMissleNo</demBossSkillArr>
+			<mustWinShowB>1</mustWinShowB><demSkillArr>corpsePoison,demCloned,noUnderLaser,likeMissleNo</demSkillArr>
+			<geogType>hill</geogType><demNoModeArr>nocom</demNoModeArr>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>BaWang_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="49" cnName="平川">
+			<name>PingChuan</name>
+			<cnName>平川</cnName>
+			<mustWinShowB>1</mustWinShowB>
+			<geogType>hill</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>PingChuan_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="50" cnName="白沙村">
+			<name>BaiSha</name>
+			<cnName>白沙村</cnName>
+			<mustWinShowB>1</mustWinShowB>
+			<geogType>town</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>BaiSha_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="54" cnName="上沙">
+			<name>ShangSha</name>
+			<cnName>上沙</cnName><noTaskB>1</noTaskB>
+			<mustWinShowB>1</mustWinShowB>
+			<geogType>lab</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>ShangSha_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="55" cnName="东峰研究所">
+			<name>DongFeng</name><labelArr>室内</labelArr>
+			<cnName>东峰</cnName><noTaskB>1</noTaskB><demBossSkillArr>treater_knights,findHide,FoggyDefence,fitVehicleDefence,summonShortLife,crazy_skeleton,enemyToZombie</demBossSkillArr>
+			<mustWinShowB>1</mustWinShowB><demSkillArr>revengeGhost,summonShortLife,likeMissleNo</demSkillArr>
+			<geogType>lab</geogType><demNoModeArr>partner,nocom</demNoModeArr>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>DongFeng_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="56" cnName="研究中心">
+			<name>ZhongXin</name><labelArr>室内</labelArr>
+			<cnName>研究中心</cnName>
+			<mustWinShowB>1</mustWinShowB>
+			<geogType>lab</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>ZhongXin_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="60" cnName="地下城">
+			<name>DiXia</name><labelArr>地下</labelArr>
+			<cnName>地下城</cnName><demBossSkillArr>deadlyArrow,deadlyGhost,fightBackBullet,likeMissleNo,bladeWrap</demBossSkillArr>
+			<mustWinShowB>1</mustWinShowB><demSkillArr>FoggyDefence</demSkillArr>
+			<geogType>town</geogType><demNoModeArr>nocom</demNoModeArr>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>DiXia_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="63" cnName="后井">
+			<name>HouJin</name>
+			<cnName>后井</cnName><labelArr>沙漠</labelArr>
+			<mustWinShowB>1</mustWinShowB>
+			<geogType>lab</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>HouJin_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="64" cnName="沙江">
+			<name>ShaJiang</name>
+			<cnName>沙江</cnName><labelArr>沙漠</labelArr>
+			<mustWinShowB>1</mustWinShowB>
+			<geogType>lab</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>ShaJiang_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="65" cnName="沙漠中心">
+			<name>ShaMo</name>
+			<cnName>沙漠中心</cnName><labelArr>月亮,沙漠</labelArr>
+			<mustWinShowB>1</mustWinShowB><demBossSkillArr>treater_knights,findHide,noUnderLaser,noBounce_enemy,fitVehicleDefence,weaponDefence,likeMissleNo</demBossSkillArr>
+			<geogType>lab</geogType><demSkillArr>revengeArrow,fightBackBullet,noUnderLaser,summonShortLifeMax,bladeWrap</demSkillArr>
+			<description /><demNoModeArr>nocom</demNoModeArr>
+			
+			<levelArr>
+				<level>
+					<name>ShaMo_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		
+		<place lv="67" cnName="先驱号">
+			<name>XianQu</name>
+			<cnName>先驱号</cnName><labelArr>室内</labelArr>
+			<mustWinShowB>0</mustWinShowB>
+			<geogType>lab</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>XianQu_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="68" cnName="方舟第1层">
+			<name>FangZhouFirst</name>
+			<cnName>方舟第1层</cnName><labelArr>室内</labelArr>
+			<pointer>1604,146</pointer>
+			<mustWinShowB>0</mustWinShowB>
+			<geogType>lab</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>FangZhouFirst_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="69" cnName="方舟第2层">
+			<name>FangZhouSecond</name>
+			<cnName>方舟第2层</cnName><labelArr>室内</labelArr>
+			<pointer>1604,146</pointer>
+			<mustWinShowB>0</mustWinShowB>
+			<geogType>lab</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>FangZhouSecond_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="70" cnName="方舟顶层">
+			<name>FangZhouTop</name>
+			<cnName>方舟顶层</cnName><demBossSkillArr>noUnderLaser,underToLand,meltFlamerPurgold,extendCd,teleport_enemy</demBossSkillArr>
+			<pointer>1604,146</pointer><demSkillArr>FoggyDefence,posion7_wolf</demSkillArr>
+			<mustWinShowB>0</mustWinShowB>
+			<geogType>lab</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>FangZhouTop_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		<place lv="73" cnName="监狱大门">
+			<name>PrisonDoor</name>
+			<cnName>监狱大门</cnName><labelArr>星空,室内</labelArr>
+			<pointer>2547,430</pointer>
+			<mustWinShowB>0</mustWinShowB>
+			<geogType>hill</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>PrisonDoor_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="74" cnName="监狱第1层">
+			<name>PrisonFirst</name>
+			<cnName>监狱第1层</cnName><labelArr>星空,室内</labelArr>
+			<pointer>2547,430</pointer>
+			<mustWinShowB>0</mustWinShowB>
+			<geogType>hill</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>PrisonFirst_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="75" cnName="监狱深处">
+			<name>PrisonDeep</name><noTaskB>1</noTaskB>
+			<cnName>监狱深处</cnName><labelArr>星空,室内</labelArr>
+			<pointer>2547,430</pointer>
+			<mustWinShowB>0</mustWinShowB>
+			<geogType>hill</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>PrisonDeep_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="75" cnName="监狱出口">
+			<name>PrisonExport</name>
+			<cnName>监狱出口</cnName><labelArr>星空,室内</labelArr>
+			<pointer>2547,430</pointer>
+			<mustWinShowB>1</mustWinShowB>
+			<geogType>hill</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>PrisonExport_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		
+		<place lv="76" cnName="监狱外围">
+			<name>PrisonOutside</name>
+			<cnName>监狱外围</cnName><labelArr>星空,室内</labelArr>
+			<pointer>2547,430</pointer>
+			<mustWinShowB>1</mustWinShowB>
+			<geogType>hill</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>PrisonOutside_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="77" cnName="丛林外围">
+			<name>JungleOutside</name>
+			<cnName>丛林外围</cnName>
+			<pointer>2254,405</pointer>
+			<mustWinShowB>1</mustWinShowB>
+			<geogType>hill</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>JungleOutside_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="78" cnName="丛林深处">
+			<name>JungleDeep</name>
+			<cnName>丛林深处</cnName><demBossSkillArr>likeMissle_Shapers,weaponDefence,blackHoleDemon,rebirth_enemy</demBossSkillArr>
+			<pointer>2254,405</pointer><demSkillArr>fightBackBullet,noUnderLaser,ironBody_enemy</demSkillArr>
+			<mustWinShowB>1</mustWinShowB>
+			<geogType>hill</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>JungleDeep_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="79" cnName="洞窟入口">
+			<name>CavesEntrance</name>
+			<cnName>洞窟入口</cnName><labelArr>星空</labelArr>
+			<pointer>2122,429</pointer>
+			<mustWinShowB>1</mustWinShowB>
+			<geogType>hill</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>CavesEntrance_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="80" cnName="洞窟深处">
+			<name>CavesDeep</name>
+			<cnName>洞窟深处</cnName><labelArr>地下</labelArr>
+			<pointer>2122,429</pointer>
+			<mustWinShowB>1</mustWinShowB>
+			<geogType>hill</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>CavesDeep_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		<place lv="82" cnName="千叶谷">
+			<name>QianYe</name>
+			<cnName>千叶谷</cnName>
+			<mustWinShowB>1</mustWinShowB>
+			<geogType>lab</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>QianYe_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="83" cnName="腐木岗">
+			<name>FuMu</name>
+			<cnName>腐木岗</cnName>
+			<mustWinShowB>1</mustWinShowB>
+			<geogType>lab</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>FuMu_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="84" cnName="公墓入口">
+			<name>GongMu</name>
+			<cnName>公墓入口</cnName><labelArr>星空</labelArr>
+			<mustWinShowB>1</mustWinShowB>
+			<geogType>lab</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>GongMu_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="85" cnName="鬼王墓">
+			<name>GuiWang</name>
+			<cnName>鬼王墓</cnName><labelArr>地下</labelArr>
+			<mustWinShowB>1</mustWinShowB>
+			<geogType>lab</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>GuiWang_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		
+		
+		
+		
+		<place lv="86" cnName="冰窟">
+			<name>BingKu</name>
+			<cnName>冰窟</cnName><labelArr>冰雪,地下</labelArr>
+			<geogType>sea</geogType>
+			<mustWinShowB>1</mustWinShowB>
+			<pointer>2319,257</pointer>
+			<levelArr>
+				<level>
+					<name>BingKu_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="87" cnName="冰窟深处">
+			<name>BingKuDeep</name>
+			<cnName>冰窟深处</cnName><labelArr>冰雪,地下</labelArr>
+			<geogType>sea</geogType>
+			<mustWinShowB>1</mustWinShowB>
+			<pointer>2350,248</pointer>
+			<levelArr>
+				<level>
+					<name>BingKuDeep_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="88" cnName="无雪干谷">
+			<name>WuXue</name>
+			<cnName>无雪干谷</cnName><labelArr>月亮,冰雪</labelArr>
+			<geogType>sea</geogType>
+			<mustWinShowB>1</mustWinShowB>
+			<pointer>2395,249</pointer>
+			<levelArr>
+				<level>
+					<name>WuXue_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="89" cnName="千年冻湖">
+			<name>DongWu</name>
+			<cnName>千年冻湖</cnName><labelArr>冰雪</labelArr>
+			<geogType>sea</geogType>
+			<mustWinShowB>1</mustWinShowB>
+			<pointer>2418,225</pointer>
+			<levelArr>
+				<level>
+					<name>DongWu_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="90" cnName="不冻湖">
+			<name>BuDong</name>
+			<cnName>不冻湖</cnName><labelArr>月亮,冰雪</labelArr>
+			<geogType>sea</geogType>
+			<mustWinShowB>1</mustWinShowB>
+			<pointer>2444,212</pointer>
+			<levelArr>
+				<level>
+					<name>BuDong_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="90" cnName="缥缈森林">
+			<name>PiaoMiao</name>
+			<cnName>缥缈森林</cnName>
+			<geogType>hill</geogType>
+			<mustWinShowB>1</mustWinShowB>
+			<levelArr>
+				<level>
+					<name>PiaoMiao_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		
+		
+		
+		<place lv="91" cnName="寒光入口">
+			<name>HanGuang1</name>
+			<cnName>寒光入口</cnName>
+			<geogType>town</geogType>
+			<mustWinShowB>1</mustWinShowB>
+			<pointer>3100,442</pointer>
+			<levelArr>
+				<level>
+					<name>HanGuang1_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="92" cnName="寒光西城">
+			<name>HanGuang2</name>
+			<cnName>寒光西城</cnName><labelArr>月亮</labelArr>
+			<geogType>town</geogType>
+			<mustWinShowB>1</mustWinShowB>
+			<pointer>3120,404</pointer>
+			<levelArr>
+				<level>
+					<name>HanGuang2_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="93" cnName="寒光中心">
+			<name>HanGuang3</name>
+			<cnName>寒光中心</cnName><labelArr>月亮</labelArr>
+			<geogType>town</geogType>
+			<mustWinShowB>1</mustWinShowB>
+			<pointer>3156,412</pointer>
+			<levelArr>
+				<level>
+					<name>HanGuang3_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		<place lv="94" cnName="寒光之巅">
+			<name>HanGuang4</name>
+			<cnName>寒光之巅</cnName>
+			<geogType>town</geogType>
+			<mustWinShowB>1</mustWinShowB>
+			<pointer>3181,435</pointer>
+			<levelArr>
+				<level>
+					<name>HanGuang4_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="95" cnName="寒光末路">
+			<name>HanGuang5</name>
+			<cnName>寒光末路</cnName><labelArr>月亮</labelArr>
+			<geogType>town</geogType>
+			<mustWinShowB>1</mustWinShowB>
+			<pointer>3187,447</pointer>
+			<levelArr>
+				<level>
+					<name>HanGuang5_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		<place lv="96" cnName="实验室入口">
+			<name>Hospital1</name><labelArr>室内</labelArr>
+			<cnName>实验室入口</cnName><noTaskB>1</noTaskB>
+			<geogType>lab</geogType>
+			<mustWinShowB>1</mustWinShowB>
+			<pointer>3392,469</pointer>
+			<levelArr>
+				<level>
+					<name>Hospital1_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		<place lv="97" cnName="实验室底层">
+			<name>Hospital2</name><labelArr>室内</labelArr>
+			<cnName>实验室底层</cnName><noTaskB>1</noTaskB>
+			<geogType>lab</geogType>
+			<mustWinShowB>1</mustWinShowB>
+			<pointer>3410,459</pointer>
+			<levelArr>
+				<level>
+					<name>Hospital2_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="98" cnName="实验室中层">
+			<name>Hospital3</name><labelArr>室内</labelArr>
+			<cnName>实验室中层</cnName><noTaskB>1</noTaskB>
+			<geogType>lab</geogType>
+			<mustWinShowB>1</mustWinShowB>
+			<pointer>3415,452</pointer>
+			<levelArr>
+				<level>
+					<name>Hospital3_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="99" cnName="天空顶">
+			<name>SkyScene</name>
+			<cnName>天空顶</cnName><noTaskB>1</noTaskB>
+			<geogType>sky</geogType><noEndlessB>1</noEndlessB>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>Hospital4_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		<place lv="99" cnName="实验室顶层">
+			<name>Hospital5</name><labelArr>月亮</labelArr>
+			<cnName>实验室顶层</cnName><noTaskB>1</noTaskB>
+			<geogType>lab</geogType>
+			<mustWinShowB>1</mustWinShowB>
+			<levelArr>
+				<level>
+					<name>Hospital5_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="99" cnName="星谷" sweepMax="-1">
+			<name>XingGu</name><labelArr>星空</labelArr>
+			<cnName>星谷</cnName><noTaskB>1</noTaskB><noEndlessB>1</noEndlessB>
+			<geogType>sky</geogType>
+			<mustWinShowB>1</mustWinShowB>
+			<pointer>3466,451</pointer>
+			<levelArr>
+				<level>
+					<name>XingGu_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		
+		<place lv="99" cnName="星谷之巅" diffMax="6" sweepMax="-1">
+			<name>XingPeak</name><labelArr>星空</labelArr>
+			<cnName>星谷之巅</cnName><noTaskB>1</noTaskB><noEndlessB>1</noEndlessB>
+			<geogType>sky</geogType>
+			<mustWinShowB>1</mustWinShowB>
+			<pointer>3492,429</pointer>
+			<levelArr>
+				<level>
+					<name>XingPeak_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		
+		<place lv="99" cnName="绝壁窟" diffMax="8" sweepMax="-1">
+			<name>XiShan1</name><labelArr>地下</labelArr>
+			<cnName>绝壁窟</cnName><noTaskB>1</noTaskB><noEndlessB>1</noEndlessB>
+			<geogType>sky</geogType>
+			<levelArr>
+				<level>
+					<name>XiShan1_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		<place lv="99" cnName="溪山西" diffMax="8" sweepMax="-1">
+			<name>XiShan2</name>
+			<cnName>溪山西</cnName><noTaskB>1</noTaskB><noEndlessB>1</noEndlessB>
+			<geogType>sky</geogType><mustWinShowB>1</mustWinShowB>
+			<levelArr>
+				<level>
+					<name>XiShan2_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		<place lv="99" cnName="溪山南" diffMax="8" sweepMax="-1">
+			<name>XiShan3</name>
+			<cnName>溪山南</cnName><noTaskB>1</noTaskB><noEndlessB>1</noEndlessB>
+			<geogType>sky</geogType><mustWinShowB>1</mustWinShowB>
+			<levelArr>
+				<level>
+					<name>XiShan3_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		<place lv="99" cnName="溪山顶" diffMax="8" sweepMax="-1">
+			<name>XiShan4</name>
+			<cnName>溪山顶</cnName><noTaskB>1</noTaskB><noEndlessB>1</noEndlessB>
+			<geogType>sky</geogType><mustWinShowB>1</mustWinShowB>
+			<levelArr>
+				<level>
+					<name>XiShan4_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		<place lv="99" cnName="溪山东" diffMax="8" sweepMax="-1">
+			<name>XiShan5</name>
+			<cnName>溪山东</cnName><noTaskB>1</noTaskB><noEndlessB>1</noEndlessB>
+			<geogType>sky</geogType><mustWinShowB>1</mustWinShowB>
+			<levelArr>
+				<level>
+					<name>XiShan5_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		
+		
+		<place lv="99" diffMax="8" sweepMax="-1" unlockTask="GreenIs1_plot">
+			<name>GreenIs1</name>
+			<cnName>回头澳</cnName><noTaskB>1</noTaskB><noEndlessB>1</noEndlessB>
+			<geogType>sea</geogType><mustWinShowB>1</mustWinShowB>
+			<pointer>281,1078</pointer>
+			<levelArr>
+				<level>
+					<name>GreenIs1_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="99" diffMax="8" sweepMax="-1" unlockTask="no">
+			<name>GreenIs2</name>
+			<cnName>苍木道</cnName><noTaskB>1</noTaskB><noEndlessB>1</noEndlessB>
+			<geogType>sea</geogType><mustWinShowB>1</mustWinShowB>
+			<levelArr>
+				<level>
+					<name>GreenIs2_plot</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="99" diffMax="8" sweepMax="-1" unlockTask="no">
+			<name>GreenIs3</name>
+			<cnName>郁葱甸</cnName><noTaskB>1</noTaskB><noEndlessB>1</noEndlessB>
+			<geogType>hill</geogType><mustWinShowB>1</mustWinShowB>
+			<levelArr>
+				<level>
+					<name>GreenIs3_plot</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="99" diffMax="7" sweepMax="-1" unlockTask="GreenIs4_black">
+			<name>GreenIs4</name>
+			<cnName>郁葱坪</cnName><noTaskB>1</noTaskB><noEndlessB>1</noEndlessB>
+			<geogType>hill</geogType><mustWinShowB>1</mustWinShowB>
+			<levelArr>
+				<level>
+					<name>GreenIs4_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="99" diffMax="8" sweepMax="-1" unlockTask="GreenTown1_plot">
+			<name>GreenTown1</name>
+			<cnName>仙草镇入口</cnName><noTaskB>1</noTaskB><noEndlessB>1</noEndlessB>
+			<geogType>town</geogType><mustWinShowB>1</mustWinShowB>
+			<pointer>471,1073</pointer>
+			<levelArr>
+				<level>
+					<name>GreenTown1_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		
+		
+		
+		
+		
+		
+	</father>
+</data>

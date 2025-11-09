@@ -1,0 +1,155 @@
+{
+  "father": {
+    "name": "partsSkill",
+    "cnName": "零件技能",
+    "skill": [
+      {
+        "name": "huntParts",
+        "cnName": "猎击",
+        "noSkillDodgeB": 1,
+        "effectInfoArr": "伤害,单体",
+        "changeText": "造成[mul]倍的伤害",
+        "conditionType": "passive",
+        "condition": "hit",
+        "otherConditionArr": "lifePerMore",
+        "conditionRange": 0.9,
+        "target": "target",
+        "addType": "instant",
+        "changeHurtB": 1,
+        "effectType": "changeHurtNoCondition",
+        "mul": 1.3,
+        "description": "自身生命值大于90%时，对敌人造成[mul]的伤害。60%的概率无视技能免疫。",
+        "growth": {
+          "skill": [
+            {
+              "mul": 1.3
+            },
+            {
+              "mul": 2.0
+            },
+            {
+              "mul": 3.0
+            },
+            {
+              "mul": 3.2
+            }
+          ]
+        }
+      },
+      {
+        "name": "acidicParts",
+        "cnName": "酸性腐蚀",
+        "effectInfoArr": "伤害,单体",
+        "changeText": "造成[mul]倍的伤害",
+        "conditionType": "passive",
+        "condition": "hit",
+        "otherConditionArr": "raceType",
+        "conditionString": "robot",
+        "target": "target",
+        "addType": "state",
+        "effectType": "underHurtMul",
+        "duration": 1,
+        "mul": 1.05,
+        "description": "腐蚀机械体敌人的外壳，降低其[mul-1]的防御力。",
+        "stateEffectImg": {
+          "value": "generalEffect/bigPoison",
+          "partType": "body",
+          "con": "add"
+        },
+        "growth": {
+          "skill": [
+            {
+              "mul": 1.05
+            },
+            {
+              "mul": 1.2
+            },
+            {
+              "mul": 1.4
+            },
+            {
+              "mul": 1.55
+            }
+          ]
+        }
+      },
+      {
+        "name": "burstParts",
+        "cnName": "爆裂",
+        "effectInfoArr": "伤害,单体",
+        "changeText": "造成[mul]倍的伤害",
+        "conditionType": "passive",
+        "condition": "loopClick",
+        "target": "me",
+        "addType": "state",
+        "effectType": "setBulletNum",
+        "effectProArr": 0.06,
+        "value": 3,
+        "mul": 3,
+        "duration": 1,
+        "description": "持续射击[duration]秒，将有[effectProArr.0]概率产生[duration]秒的[value]倍散射效果。",
+        "stateEffectImg": {
+          "name": "burstParts"
+        },
+        "growth": {
+          "skill": [
+            {
+              "effectProArr": 0.06
+            },
+            {
+              "effectProArr": 0.19
+            }
+          ]
+        }
+      },
+      {
+        "name": "mooncakeParts",
+        "cnName": "吃月饼",
+        "effectInfoArr": "伤害,单体",
+        "changeText": "额外造成[mul-1]的伤害",
+        "conditionType": "passive",
+        "changeHurtB": 1,
+        "condition": "hit",
+        "otherConditionArr": "sceneLabelHave",
+        "conditionString": "月亮",
+        "target": "me",
+        "addType": "instant",
+        "effectType": "changeHurtNoCondition",
+        "mul": 1.2,
+        "description": "把子弹型的子弹外观变为月饼。在有月亮的地图中，对敌人造成额外[mul-1]的伤害。",
+        "growth": {
+          "skill": {
+            "mul": 1.2
+          }
+        }
+      },
+      {
+        "name": "demCapacityParts",
+        "cnName": "弹药补充",
+        "changeText": "[effectProArr.0]的概率",
+        "conditionType": "passive",
+        "condition": "heroShoot",
+        "otherConditionArr": "isDemon3OrUnend",
+        "target": "me",
+        "addType": "instant",
+        "effectType": "addCapacity",
+        "effectProArr": 0.3,
+        "value": 1,
+        "description": "在修罗（独战、冷门、决斗）模式中，或虚天塔中，每次射击都有[effectProArr.0]的概率补充[value]颗弹药。",
+        "targetEffectImg": {
+          "name": "addCapacity"
+        },
+        "growth": {
+          "skill": [
+            {
+              "effectProArr": 0.3
+            },
+            {
+              "effectProArr": 0.5
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

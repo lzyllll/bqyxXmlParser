@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="fashionSkill">
+		<skill>
+			<name>greatSageSkill</name>
+			<cnName>分身</cnName><ignoreNoSkillB>1</ignoreNoSkillB><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>isWeaponHurt,summonedNumLess</otherConditionArr>
+			<conditionRange>5</conditionRange>
+			<applyArr>great_stickAttack,snow_daggerAttack,ghost_swordAttack,sec_bladeAttack</applyArr>
+			<target>me</target>
+			<minTriggerT>0.1</minTriggerT>
+			
+			<addType>instant</addType>
+			<summonedUnitsB>1</summonedUnitsB>
+			<effectType>greatSageSkill</effectType>
+			<extraValueType>heroWeaponHurt</extraValueType>
+			<duration>40</duration>
+			<targetEffectImg name="cloned_BlackLaer_me" />
+			
+			<obj>"cnName":"大圣分身","num":1,"lifeMul":1,"dpsMul":0.1,"position":"hurtPoint","mulByFatherB":true,"skillArr":["State_noAiFind","State_InvincibleThrough","greatSageSkillHit"]</obj>
+			<description>初始拥有56%的怒气。使用沃龙牌棍棒时将有专属动作，并有较大攻击范围；专属动作砍击敌人时，都会召唤一个持续[duration]秒的分身，同时还能触发在场的所有分身的砍击动作，如果双击副手键还可以将分身拉自身边。分身不受伤害，分身伤害与副手伤害相关；分身每次攻击敌人还能给大圣添加1点的怒气。当前最多能同时存在[conditionRange]个分身。使用其他时装外观时，也将拥有以上分身效果。</description>
+		</skill>
+		<skill>
+			<name>greatSageSkillHit</name>
+			<cnName>分身吸取怒气</cnName><ignoreNoSkillB>1</ignoreNoSkillB><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>meSummonedFather</target>
+			
+			<addType>instant</addType>
+			<effectType>addAnger</effectType>
+			<minTriggerT>0.1</minTriggerT>
+			<value>1</value>
+			<description>每次攻击敌人都会给主人添加[value]点的怒气。</description>
+		</skill>
+		
+		
+	</father>
+</data>

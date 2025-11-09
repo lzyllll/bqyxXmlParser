@@ -1,0 +1,86 @@
+{
+  "father": [
+    {
+      "type": "weather",
+      "cnName": "气象枪",
+      "bullet": {
+        "cnName": "降雨炮",
+        "name": "rainGun",
+        "kind": "water",
+        "color": "black",
+        "composeLv": 99,
+        "chipB": true,
+        "chipNum": 100,
+        "dropLevelArr": 999,
+        "noHitB": 1,
+        "noMagneticB": 1,
+        "noBeClearB": 1,
+        "capacity": 9,
+        "attackGap": 2,
+        "reloadGap": 2,
+        "shakeAngle": 0,
+        "bulletWidth": 35,
+        "bulletShakeWidth": "0,0",
+        "bulletNum": 1,
+        "gunNum": 1,
+        "upValue": 5,
+        "shootShakeAngle": 30,
+        "shootRecoil": 15,
+        "screenShakeValue": 16,
+        "bulletLife": 1.5,
+        "hitType": "rect",
+        "dpsMul": 1,
+        "uiDpsMul": 5,
+        "bulletSpeed": 20,
+        "skillArr": null,
+        "godSkillArr": "rainGunSkill",
+        "bulletSkillArr": "rainGunDieEvent",
+        "boomD": {
+          "selfB": true,
+          "hurtMul": 0
+        },
+        "iconUrl": "newGun/rainGunChip",
+        "flipX": 1,
+        "bulletImgUrl": {
+          "name": "rainGunBullet"
+        },
+        "hitImgUrl": {
+          "name": "iceConeHit"
+        },
+        "fireImgUrl": {
+          "name": "enegryGunFire"
+        },
+        "selfBoomImgUrl": {
+          "name": "waterHit"
+        },
+        "shootSoundUrl": "sound/snowHit",
+        "bodyImgRange": "newGun/rainGun",
+        "bulletImgRange": "specialGun/bullet",
+        "description": "2025年暑期签到"
+      }
+    },
+    {
+      "name": "godArmsSkill",
+      "cnName": "神级武器技能",
+      "skills": {
+        "rainGunSkill": {
+          "name": "rainGunSkill",
+          "noSkillDodgeB": 1,
+          "ignoreImmunityB": 1,
+          "cnName": "人工降雨",
+          "noRandomListB": 1,
+          "noBeClearB": 1,
+          "conditionType": "passive",
+          "condition": "no",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "no",
+          "pointEffectImg": {
+            "name": "rainBulletBoom"
+          },
+          "description": "射出炮弹将制造持续10分钟的小雨，地下、室内地图无法使用。降雨将影响武器、副手怒气等各方面特性，将鼠标放置游戏右上角的天气图标上可查看详情。"
+        }
+      }
+    }
+  ]
+}

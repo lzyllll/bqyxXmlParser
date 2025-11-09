@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie">
+		<bullet>
+			<name>BallLightning_fire</name>
+			<cnName>火焰球</cnName>
+			<attackType>holy</attackType><hurtRatio>1.5</hurtRatio>
+			<bulletAngle>0</bulletAngle>
+			<bulletAngleRange>360</bulletAngleRange>
+			<bulletLife>5</bulletLife><bulletWidth>50</bulletWidth><hitType>rect</hitType>	
+			<penetrationGap>1000</penetrationGap>
+			<noMagneticB>1</noMagneticB>
+			<bulletSpeed>20</bulletSpeed>
+			<speedD random="0.3" />
+			<hitGap>0.06</hitGap>
+			<bounceD floor="20" />
+			<flipX>1</flipX><bulletImgUrl raNum="1" con="add">generalEffect/fireBall</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="sound/paralysis_enemy_hit">bulletHitEffect/fitHit</hitImgUrl>
+			<hitFloorImgUrl>no</hitFloorImgUrl>
+		</bullet>
+		
+		
+		<bullet>
+			<name>BallLightning_electric</name>
+			<cnName>电磁球</cnName><bulletSkillArr>BallLightning_electric</bulletSkillArr>
+			<attackType>holy</attackType><hurtRatio>1</hurtRatio>
+			<bulletAngle>0</bulletAngle><bulletLife>99999</bulletLife><bulletWidth>70</bulletWidth><hitType>rect</hitType>	
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			<bulletSpeed>0</bulletSpeed>
+			<flipX>1</flipX><bulletImgUrl con="add" raNum="1">generalEffect/electricBall</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="sound/paralysis_enemy_hit">bulletHitEffect/fitHit</hitImgUrl>
+		</bullet>
+		
+		<bullet>
+			<name>BallLightning_frozen</name>
+			<cnName>冰冻球</cnName><bulletSkillArr>BallLightning_electric</bulletSkillArr>
+			<attackType>holy</attackType><hurtRatio>0.5</hurtRatio>
+			<bulletAngle>0</bulletAngle><bulletLife>99999</bulletLife><bulletWidth>50</bulletWidth><hitType>rect</hitType>	
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			<bulletSpeed>0</bulletSpeed>
+			<flipX>1</flipX><bulletImgUrl con="add" raNum="1">generalEffect/frozenBall</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="sound/paralysis_enemy_hit">bulletHitEffect/fitHit</hitImgUrl>
+		</bullet>
+				<bullet>
+					<name>BallLightning_frozenLine</name>
+					<cnName>冰冻连线</cnName>
+					<attackType>holy</attackType><hurtRatio>0.15</hurtRatio>
+					<bulletAngle>0</bulletAngle><bulletLife>0.034</bulletLife><bulletWidth>530</bulletWidth><hitType>longLine</hitType>	
+					<penetrationGap>1000</penetrationGap>
+					<penetrationNum>999</penetrationNum>
+					<noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+					<bulletSpeed>0</bulletSpeed>
+					<flipX>1</flipX>
+					<bulletImgUrl raNum="30" con="add" len="50" time="0.034" waveAn="30" imgDieType="ranPlay">generalEffect/lineLightning</bulletImgUrl>
+					<hitImgUrl con="add" soundUrl="sound/paralysis_enemy_hit">bulletHitEffect/fitHit</hitImgUrl>
+				</bullet>
+	</father>	
+	
+	
+</data>

@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="otherEnemy" cnName="其他怪物技能">
+		<skill>
+			<name>feedbackHook</name>
+			<cnName>电离折射</cnName><iconUrl36>SkillIcon/feedback_hero_36</iconUrl36>
+			<cd>10</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>underHit</condition>
+			<otherConditionArr>underBossImg,attackTargetNoSameInvi</otherConditionArr>
+			<conditionString>HookWitch:rollAttack</conditionString>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>noUnderHurtB</effectType>
+			<value>1</value>
+			<duration>5</duration>
+			 
+			<passiveSkillArr>backHurt_enemy_link</passiveSkillArr>
+			
+			<meEffectImg soundUrl="sound/feedback_hero" />
+			<stateEffectImg partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" imgDieType="last">skillEffect/feedback_hero_part</stateEffectImg>
+			<description>释放技能后，单位将10%的伤害反弹给敌人，自身不受到伤害。持续5秒。</description>
+		</skill>
+		<skill>
+			<name>invincibleHole</name>
+			<cnName>无敌光环</cnName><ignoreNoSkillB>1</ignoreNoSkillB>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<iconUrl>SkillIcon/invincibleHole</iconUrl>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target noMeB="1">me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>invincibleAndThrough</effectType>
+			<duration>2</duration>
+			<range>99999</range>
+			
+			<stateEffectImg name="FoggyDefence_state" />
+			<description>让所有我方单位（排除自己）进入无敌状态。</description>
+		</skill>
+		<skill cnName="减速">
+			<name>slowMoveNoClear</name><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><noBeClearB>1</noBeClearB>
+			<cnName>减速</cnName><iconUrl36>SkillIcon/slowMoveHalo_pet_36</iconUrl36>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<value>0</value>
+			<mul>0.6</mul>
+			<duration>2</duration>
+			
+			<stateEffectImg partType="2foot">skillEffect/disabled_enemy</stateEffectImg>
+			<description>击中目标后降低其40%的移动速度，持续2秒。</description>
+		</skill>
+		<skill index="0" cnName="只受到铁锹的攻击">
+			<name>onlyUnderMiningSpade</name>
+			<cnName>只受到铁锹的攻击</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>hurtOnlyWeapon</effectType>
+			<valueString>miningSpade</valueString>
+			<mul>0</mul>
+			<value>0.033</value>
+		</skill>
+		<skill index="0" cnName="只受到铁铲的攻击">
+			<name>onlyUnderMiningShovels</name>
+			<cnName>只受到铁铲的攻击</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<conditionString>treaHitNum</conditionString>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>hurtOnlyWeapon</effectType>
+			<valueString>miningShovels</valueString>
+			<mul>0</mul>
+			<value>0.51</value>
+		</skill>
+		<skill cnName="只受圣诞礼炮攻击">
+			<name>onlyUnderChristmasGun</name>
+			<cnName>只受圣诞礼炮攻击</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underAllHit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>onlyUnderChristmasGun</effectType>
+		</skill>
+		
+		<skill cnName="不受任何元素伤害">
+			<name>noEleUnder</name>
+			<cnName>不受任何元素伤害</cnName>
+			<conditionType>passive</conditionType><condition>underHit</condition><target>me</target>
+			<addType>instant</addType><effectType>setEleMul</effectType><mul>0</mul>
+		</skill>
+		
+		<skill index="0" cnName="血条等级显示倒计时">
+			<name>lifeBarShowCd</name>
+			<cnName>血条等级显示倒计时</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>lifeBarShowCd</effectType>
+			<duration>9999999</duration>
+		</skill>
+		
+		
+		<skill index="0" cnName="矿石产生物品">
+			<name>orcCreateThings</name>
+			<cnName>矿石产生物品</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHurt</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>orcCreateThings</effectType>
+		</skill>
+	</father>
+</data>

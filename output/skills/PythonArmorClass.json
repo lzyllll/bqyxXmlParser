@@ -1,0 +1,35 @@
+{
+  "father": {
+    "name": "snake",
+    "cnName": "血蟒",
+    "body": {
+      "shell": "metal",
+      "name": "PythonArmor",
+      "movieLink": "CrossBone",
+      "cnName": "血蟒重甲兵",
+      "headIconUrl": "IconGather/PythonArmor",
+      "raceType": "human",
+      "swfUrl": "swf/hero/PythonArmor.swf",
+      "lifeRatio": 2.5,
+      "showLevel": 9999,
+      "lifeBarExtraHeight": -20,
+      "hitRect": "-12, -90, 24, 90",
+      "squatHitRect": "-12,-50,24,50",
+      "hurtRectArr": [
+        "-15,-38,30,38",
+        "-20, -110, 40, 110",
+        "-12, -40, 24, 40"
+      ],
+      "maxVx": 8,
+      "squatMaxVx": 5,
+      "armsNumber": 1,
+      "randomArmsRange": "shotgun1",
+      "extraAIClassLabel": null,
+      "oneAiLabel": "FightShooter",
+      "skillArr": null,
+      "bossSkillArr": "selfBurn_enemy",
+      "extraDropArmsB": 1,
+      "hurtArr": null
+    }
+  }
+}

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicle" cnName="战车body">
+		<body index="0" name="制裁者" shell="compound">
+			
+			<name>Punisher</name>
+			<cnName>制裁者</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/vehicle/Punisher.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<rosRatio>1</rosRatio>
+			<headHurtMul>0.5</headHurtMul>
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<rotateBySlopeB>1</rotateBySlopeB>
+			<imgClass>CarImage</imgClass>
+			<imgType>normal</imgType>
+			<flipCtrlBy>mouse</flipCtrlBy>
+			<imgArr>
+				stand,move,die1,mainAttack,subAttack,mainChangeAttack,subChangeAttack
+			</imgArr>
+			
+			<hitRect>-30,-60,60,70</hitRect>
+			
+			<motionClass>AircraftGroundMotion</motionClass>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<motionD jumpDelayT="0.15" moveWhenVB="1" />
+			<maxVx>15</maxVx>
+			<maxJumpNum>1</maxJumpNum>
+			
+			<attackAIClass>CarAttack_AI</attackAIClass>
+			<keyClass>CarBodyKey</keyClass>
+			<bulletLauncherClass>CarBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			
+			<hurtArr>
+			</hurtArr>
+		</body>
+		<body name="判决者" fixed="Punisher" shell="compound">
+			<name>Adjudicator</name>
+			<cnName>判决者</cnName>
+			<swfUrl>swf/vehicle/Adjudicator.swf</swfUrl>
+			<bmpUrl>BodyImg/Adjudicator</bmpUrl>
+		</body>
+		<body name="惩戒者" fixed="Punisher" shell="compound">
+			<name>Chastener</name>
+			<cnName>惩戒者</cnName>
+			<swfUrl>swf/vehicle/Chastener.swf</swfUrl>
+			<bmpUrl>BodyImg/Chastener</bmpUrl>
+		</body>
+		<body name="处决者" fixed="Punisher" shell="compound">
+			<name>Executioner</name>
+			<cnName>处决者</cnName>
+			<swfUrl>swf/vehicle/Executioner.swf</swfUrl>
+			<bmpUrl>BodyImg/Executioner</bmpUrl>
+		</body>
+	</father>
+</data>

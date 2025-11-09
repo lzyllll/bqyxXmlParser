@@ -1,0 +1,80 @@
+{
+  "father": [
+    {
+      "type": "blink",
+      "bullet": {
+        "consVirgo": {
+          "color": "purgold",
+          "kind": "particle",
+          "evoMaxLv": 2,
+          "evoMustFirstLv": 13,
+          "composeLv": 99,
+          "chipNum": 300,
+          "name": "consVirgo",
+          "extraMul": 1.2,
+          "cnName": "处女座",
+          "iconUrl": "newGun/consVirgoIcon",
+          "aiShootRange": 1700,
+          "attackType": "holy",
+          "dpsMul": 8,
+          "uiDpsMul": 2.27,
+          "capacity": 15,
+          "attackGap": 0.5,
+          "reloadGap": 1,
+          "bulletWidth": 180,
+          "bulletNum": 1,
+          "armsArmMul": 0.8,
+          "upValue": 0,
+          "shootShakeAngle": 45,
+          "shootRecoil": 5,
+          "screenShakeValue": 9,
+          "bulletLife": 0.001,
+          "hitType": "rect",
+          "bulletSpeed": 0.1,
+          "twoShootPro": 0.3,
+          "penetrationGap": 1000,
+          "penetrationNum": 999,
+          "bounceD": {
+            "floor": 0,
+            "body": 0
+          },
+          "critD": {
+            "mul": 2,
+            "pro": 0.3
+          },
+          "skillArr": "Hit_AddLifeMul_ArmsSkill,Kill_Spurting_ArmsSkill",
+          "godSkillArr": "Hit_atry_godArmsSkill,consVirgoSkill",
+          "shootSoundUrl": "newGun/consVirgoS4",
+          "imgClearDelay": 0.3,
+          "bulletVra": -0.00091,
+          "bulletImgUrl": null,
+          "hitImgUrl": null,
+          "fireImgUrl": null,
+          "bodyImgRange": "newGun/consVirgo",
+          "bulletImgRange": "specialGun/bullet",
+          "description": "消灭首领狂战神(99级)",
+          "armsType": "blink"
+        }
+      }
+    },
+    {
+      "name": "godArmsSkill",
+      "cnName": "神级武器技能",
+      "skill": {
+        "name": "consVirgoSkill",
+        "cnName": "星速子弹",
+        "noRandomListB": 1,
+        "ignoreNoSkillB": 1,
+        "conditionType": "passive",
+        "condition": "beforeAttack",
+        "target": "me",
+        "addType": "instant",
+        "effectType": "consVirgoSkill",
+        "otherEffectImg": {
+          "name": "consVirgoLine"
+        },
+        "description": "发射时，把子弹瞬移到鼠标点位置，中间不受任何障碍物的阻挡，且无视刚体。"
+      }
+    }
+  ]
+}

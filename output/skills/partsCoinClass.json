@@ -1,0 +1,111 @@
+{
+  "father": {
+    "name": "partsCoin",
+    "cnName": "零件券",
+    "priceType": "partsCoin",
+    "labelArr": "all",
+    "type": {
+      "goods": [
+        {
+          "defineLabel": "partsGridCard",
+          "price": 40,
+          "buyLimitNum": 25
+        },
+        {
+          "defineLabel": "noHurtParts_1",
+          "price": 5
+        },
+        {
+          "defineLabel": "mooncakeParts_1",
+          "dataType": "parts",
+          "price": 60,
+          "buyLimitNum": 1
+        },
+        {
+          "defineLabel": "lshapedParts_1",
+          "dataType": "parts",
+          "price": 40,
+          "buyLimitNum": 3
+        },
+        {
+          "defineLabel": "shockParts_1",
+          "dataType": "parts",
+          "price": 15,
+          "buyLimitNum": 20
+        },
+        {
+          "defineLabel": "hardeningParts_1",
+          "dataType": "parts",
+          "price": 15,
+          "buyLimitNum": 20
+        },
+        {
+          "defineLabel": "speedParts_1",
+          "dataType": "parts",
+          "price": 15,
+          "buyLimitNum": 20
+        },
+        {
+          "defineLabel": "downSpeedParts_1",
+          "dataType": "parts",
+          "price": 15,
+          "buyLimitNum": 20
+        },
+        {
+          "defineLabel": "twoShootParts_1",
+          "dataType": "parts",
+          "price": 30,
+          "buyLimitNum": 12
+        },
+        {
+          "defineLabel": "eleParts_1",
+          "dataType": "parts",
+          "price": 30,
+          "buyLimitNum": 12
+        },
+        {
+          "defineLabel": "redArmsParts_1",
+          "dataType": "parts",
+          "price": 30,
+          "buyLimitNum": 12
+        },
+        {
+          "defineLabel": "penbodyParts_1",
+          "dataType": "parts",
+          "price": 40,
+          "buyLimitNum": 12
+        },
+        {
+          "defineLabel": "digWallParts_1",
+          "dataType": "parts",
+          "price": 40,
+          "buyLimitNum": 1
+        },
+        {
+          "defineLabel": "degaussingParts_1",
+          "dataType": "parts",
+          "price": 25,
+          "buyLimitNum": 3
+        },
+        {
+          "defineLabel": "angleCtrlParts_1",
+          "dataType": "parts",
+          "price": 40,
+          "buyLimitNum": 2
+        },
+        {
+          "defineLabel": "fireParts_1",
+          "dataType": "parts",
+          "price": 50,
+          "buyLimitNum": 1
+        },
+        {
+          "defineLabel": "electricParts_1",
+          "dataType": "parts",
+          "price": 60,
+          "buyLimitNum": 1
+        }
+      ]
+    }
+  }
+}

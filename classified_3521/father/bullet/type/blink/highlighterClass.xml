@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="blink">
+		<bullet cnName="荧光笔" name="highlighter" color="black" composeLv="99">
+			<name>highlighter</name>
+			<cnName>荧光笔</cnName>
+			
+			
+			<capacity>200</capacity>
+			<attackGap>0.1</attackGap>
+			<reloadGap>0.5</reloadGap>
+			<bulletWidth>30</bulletWidth>
+			<noHitB>1</noHitB>
+			
+			<armsArmMul>0.65</armsArmMul>
+			<upValue>30</upValue>
+			<shootShakeAngle>10</shootShakeAngle>
+			<shootRecoil>4</shootRecoil>
+			<screenShakeValue>4</screenShakeValue>
+			
+			<bulletLife>10000</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>2</dpsMul>
+			<uiDpsMul>2</uiDpsMul>
+				
+			<bulletSpeed>0</bulletSpeed>
+			
+			<boomD selfB="1" radius="0" hurtMul="0" />
+			<penetrationGap>1000</penetrationGap>
+			<skillArr />
+			<godSkillArr>eraserArms,selfBoomArmsAll,armsToMousePoint</godSkillArr>
+			<bulletSkillArr>highlighterDieEvent</bulletSkillArr>
+			
+			<iconUrl />
+			<flipX>1</flipX>
+			<bulletImgUrl name="highlighterBullet" />
+			<hitImgUrl name="highlighterBulletSun" />
+			<selfBoomImgUrl name="highlighterBoom" />
+			<fireImgType />
+			<shootSoundUrl>hitSound/poisonHit1</shootSoundUrl>
+			
+			<bodyImgRange>specialGun/highlighter</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description />
+		</bullet>
+		
+		<otherBullet>
+			<name>highlighterSun</name>
+			<cnName>荧光笔烟花</cnName>
+			<noMagneticB>1</noMagneticB>
+			<noHitB>1</noHitB>
+			
+			<hurtRatio>0.2</hurtRatio>
+			
+			<bulletNum>1</bulletNum>
+			<bulletAngle>0</bulletAngle>
+			<bulletLife>2.5</bulletLife>
+			<lifeRandom>0.1</lifeRandom>
+			<bulletWidth>25</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<extendGap>10</extendGap>
+			<shootAngle>-90</shootAngle>
+			<shootShakeAngle>360</shootShakeAngle>
+				
+			<bulletSpeed>10</bulletSpeed>
+			<speedD random="0.2" />
+			<gravity>0.5</gravity>
+			<penetrationGap>1000</penetrationGap>
+			
+			
+			<flipX>1</flipX>
+			<bulletImgUrl name="highlighterBulletSun" />
+		</otherBullet>
+	</father>
+	
+	</data>

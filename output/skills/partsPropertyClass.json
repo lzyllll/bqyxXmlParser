@@ -1,0 +1,414 @@
+{
+  "father": {
+    "pro": [
+      {
+        "name": "bullet",
+        "cnName": "攻击等级",
+        "effectName": "dps",
+        "effectCnName": "伤害",
+        "range": [
+          {
+            "maxLevel": 15,
+            "max": 0.3
+          },
+          {
+            "maxLevel": 20,
+            "max": 0.3
+          },
+          {
+            "maxLevel": 25,
+            "max": 0.3
+          },
+          {
+            "maxLevel": 30,
+            "max": 0.3
+          },
+          {
+            "maxLevel": 35,
+            "max": 0.45
+          },
+          {
+            "maxLevel": 40,
+            "max": 0.6
+          },
+          {
+            "maxLevel": 45,
+            "max": 0.75
+          },
+          {
+            "maxLevel": 50,
+            "max": 0.9
+          },
+          {
+            "maxLevel": 55,
+            "max": 1.0
+          },
+          {
+            "maxLevel": 60,
+            "max": 1.1
+          },
+          {
+            "maxLevel": 65,
+            "max": 1.2
+          },
+          {
+            "maxLevel": 70,
+            "max": 1.3
+          },
+          {
+            "maxLevel": 84,
+            "max": 1.4
+          },
+          {
+            "maxLevel": 87,
+            "max": 1.5
+          },
+          {
+            "maxLevel": 999,
+            "max": 1.5
+          }
+        ]
+      },
+      {
+        "name": "shooter",
+        "cnName": "射速等级",
+        "effectName": "attackGap",
+        "effectCnName": "射击速度",
+        "range": [
+          {
+            "maxLevel": 15,
+            "max": -0.22
+          },
+          {
+            "maxLevel": 20,
+            "max": -0.26
+          },
+          {
+            "maxLevel": 25,
+            "max": -0.3
+          },
+          {
+            "maxLevel": 30,
+            "max": -0.34
+          },
+          {
+            "maxLevel": 35,
+            "max": -0.38
+          },
+          {
+            "maxLevel": 40,
+            "max": -0.42
+          },
+          {
+            "maxLevel": 45,
+            "max": -0.46
+          },
+          {
+            "maxLevel": 50,
+            "max": -0.5
+          },
+          {
+            "maxLevel": 55,
+            "max": -0.52
+          },
+          {
+            "maxLevel": 60,
+            "max": -0.54
+          },
+          {
+            "maxLevel": 65,
+            "max": -0.55
+          },
+          {
+            "maxLevel": 70,
+            "max": -0.56
+          },
+          {
+            "maxLevel": 84,
+            "max": -0.57
+          },
+          {
+            "maxLevel": 87,
+            "max": -0.58
+          },
+          {
+            "maxLevel": 999,
+            "max": -0.58
+          }
+        ]
+      },
+      {
+        "name": "capacity",
+        "cnName": "弹容等级",
+        "effectName": "capacityMul",
+        "effectCnName": "弹容",
+        "range": [
+          {
+            "maxLevel": 15,
+            "max": 0.25
+          },
+          {
+            "maxLevel": 20,
+            "max": 0.33
+          },
+          {
+            "maxLevel": 25,
+            "max": 0.41
+          },
+          {
+            "maxLevel": 30,
+            "max": 0.49
+          },
+          {
+            "maxLevel": 35,
+            "max": 0.57
+          },
+          {
+            "maxLevel": 40,
+            "max": 0.65
+          },
+          {
+            "maxLevel": 45,
+            "max": 0.73
+          },
+          {
+            "maxLevel": 50,
+            "max": 0.81
+          },
+          {
+            "maxLevel": 55,
+            "max": 0.83
+          },
+          {
+            "maxLevel": 60,
+            "max": 0.85
+          },
+          {
+            "maxLevel": 65,
+            "max": 0.86
+          },
+          {
+            "maxLevel": 70,
+            "max": 0.87
+          },
+          {
+            "maxLevel": 84,
+            "max": 0.88
+          },
+          {
+            "maxLevel": 87,
+            "max": 0.89
+          },
+          {
+            "maxLevel": 999,
+            "max": 0.89
+          }
+        ]
+      },
+      {
+        "name": "stabler",
+        "cnName": "稳定等级",
+        "effectName": "shakeAngle",
+        "effectCnName": "精准度",
+        "range": [
+          {
+            "maxLevel": 15,
+            "max": -0.2
+          },
+          {
+            "maxLevel": 20,
+            "max": -0.25
+          },
+          {
+            "maxLevel": 25,
+            "max": -0.3
+          },
+          {
+            "maxLevel": 30,
+            "max": -0.35
+          },
+          {
+            "maxLevel": 35,
+            "max": -0.4
+          },
+          {
+            "maxLevel": 40,
+            "max": -0.45
+          },
+          {
+            "maxLevel": 45,
+            "max": -0.5
+          },
+          {
+            "maxLevel": 50,
+            "max": -0.55
+          },
+          {
+            "maxLevel": 55,
+            "max": -0.57
+          },
+          {
+            "maxLevel": 60,
+            "max": -0.59
+          },
+          {
+            "maxLevel": 65,
+            "max": -0.61
+          },
+          {
+            "maxLevel": 70,
+            "max": -0.63
+          },
+          {
+            "maxLevel": 84,
+            "max": -0.64
+          },
+          {
+            "maxLevel": 87,
+            "max": -0.65
+          },
+          {
+            "maxLevel": 999,
+            "max": -0.65
+          }
+        ]
+      },
+      {
+        "name": "loader",
+        "cnName": "装载等级",
+        "effectName": "reload",
+        "effectCnName": "装弹速度",
+        "range": [
+          {
+            "maxLevel": 15,
+            "max": -0.2
+          },
+          {
+            "maxLevel": 20,
+            "max": -0.27
+          },
+          {
+            "maxLevel": 25,
+            "max": -0.34
+          },
+          {
+            "maxLevel": 30,
+            "max": -0.41
+          },
+          {
+            "maxLevel": 35,
+            "max": -0.48
+          },
+          {
+            "maxLevel": 40,
+            "max": -0.55
+          },
+          {
+            "maxLevel": 45,
+            "max": -0.62
+          },
+          {
+            "maxLevel": 50,
+            "max": -0.69
+          },
+          {
+            "maxLevel": 55,
+            "max": -0.72
+          },
+          {
+            "maxLevel": 60,
+            "max": -0.75
+          },
+          {
+            "maxLevel": 65,
+            "max": -0.77
+          },
+          {
+            "maxLevel": 66,
+            "max": -0.79
+          },
+          {
+            "maxLevel": 84,
+            "max": -0.8
+          },
+          {
+            "maxLevel": 87,
+            "max": -0.81
+          },
+          {
+            "maxLevel": 999,
+            "max": -0.81
+          }
+        ]
+      },
+      {
+        "name": "sight",
+        "cnName": "射程等级",
+        "effectName": "shootDistance",
+        "effectCnName": "射程",
+        "range": [
+          {
+            "maxLevel": 15,
+            "max": 150
+          },
+          {
+            "maxLevel": 20,
+            "max": 200
+          },
+          {
+            "maxLevel": 25,
+            "max": 250
+          },
+          {
+            "maxLevel": 30,
+            "max": 300
+          },
+          {
+            "maxLevel": 35,
+            "max": 350
+          },
+          {
+            "maxLevel": 40,
+            "max": 400
+          },
+          {
+            "maxLevel": 45,
+            "max": 450
+          },
+          {
+            "maxLevel": 50,
+            "max": 500
+          },
+          {
+            "maxLevel": 55,
+            "max": 525
+          },
+          {
+            "maxLevel": 60,
+            "max": 550
+          },
+          {
+            "maxLevel": 65,
+            "max": 570
+          },
+          {
+            "maxLevel": 70,
+            "max": 585
+          },
+          {
+            "maxLevel": 84,
+            "max": 600
+          },
+          {
+            "maxLevel": 87,
+            "max": 610
+          },
+          {
+            "maxLevel": 999,
+            "max": 610
+          }
+        ]
+      }
+    ]
+  }
+}

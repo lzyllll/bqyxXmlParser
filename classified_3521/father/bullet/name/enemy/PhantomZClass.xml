@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">	
+		<bullet>			
+			<name>shoot_PhantomZ</name>
+			<cnName>幻影Z型-激光炮</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			 
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			<bulletWidth>700</bulletWidth>
+			
+			<shootPoint>-60,-60</shootPoint>
+			<bulletAngle>179.9</bulletAngle>
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.33</attackDelay>
+			<bulletNum>1</bulletNum>				
+				
+			<bulletSpeed>0</bulletSpeed>
+			
+			
+			<flipX>1</flipX>
+			<lineD size="0" />
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl con="add">bulletHitEffect/fitHit</hitImgUrl>
+			
+		</bullet>
+		
+		
+	</father>
+	
+	</data>

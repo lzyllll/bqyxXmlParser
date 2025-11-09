@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicleSkillLink" cnName="英雄技能">
+		<skill index="0" name="狂战射手-击中麻痹">
+			<name>blade_blueMoto_link</name>
+			<cnName>降低攻击力</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>hurtMul</effectType>
+			<mul>0.6</mul>
+			<duration>0.5</duration>
+			 
+			<stateEffectImg con="add" soundUrl="sound/paralysis_enemy_hit">skillEffect/paralysis_enemy</stateEffectImg>
+			<description>击中目标后使其麻痹，持续2秒。</description>
+		</skill>
+		<skill index="0" name="特效">
+			<name>blueMoto_state</name>
+			<cnName>特效</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<duration>99999</duration>
+			<stateEffectImg partType="foot_left,foot_right" con="filter">generalEffect/bladeNormal</stateEffectImg>
+		</skill>
+		<skill index="0" name="特效">
+			<name>redMoto_state</name>
+			<cnName>特效</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<duration>99999</duration>
+			<stateEffectImg partType="foot_left,foot_right" con="filter">generalEffect/bladeNormal</stateEffectImg>
+		</skill>
+	</father>	
+</data>

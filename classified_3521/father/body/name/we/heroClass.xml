@@ -1,0 +1,725 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="we" cnName="我方">
+		
+		<body index="0" name="战士" shell="normal">
+			
+			<name>Striker</name>
+			<cnName>我</cnName>
+			<raceType>human</raceType>
+			<swfUrl>swf/hero/Striker351.swf</swfUrl>
+			
+			<rosRatio>0.02</rosRatio>
+			
+			<headIconUrl>IconGather/me</headIconUrl>
+			<showLevel>9999</showLevel>
+			
+			
+			<imgArr>
+				standStop,standForward,standBack,standStop__squatStop
+				,squatForward,squatStop,squatBack,squatStop__standStop
+				,jumpDown__,jumpDown,jumpUp__jumpDown,jumpUp,__jumpUp
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+				,die1,die2,__stru,stru
+				,rollingBackAttack,rollingForwardAttack
+				,normalAttack1
+				,swordAttack,swordAfterAttack,bladeAttack,daggerAttack,stickAttack,ghost_swordAttack,great_stickAttack,sec_bladeAttack,sec_daggerAttack,sec_stickAttack,dartsAttack,shovelsAttack,spadeAttack
+				,shotgunBladeAttack
+				,sickleAttack
+				,yanluoAttack
+				,equipStand
+				,BlueMotoRide,RedMotoRide,WatchEagleRide
+			</imgArr>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-12,-35,24,35</hurtRectArr> 
+			<hurtRectArr>-12, -70, 24, 70</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>11</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			<maxJumpNum>1</maxJumpNum>
+			<flyType>space</flyType><motionD F_AIR="6" />
+			
+			
+			<armsNumber>0</armsNumber>
+			<randomArmsRange>firstRifle</randomArmsRange>	
+			<oneAiLabel>striker</oneAiLabel>
+			<extraAIClassLabel>Hero_AIExtra</extraAIClassLabel>
+			
+			<skillArr />
+			<studyCnNameArr>狂暴,派生导弹,群体圣光,定点轰炸,吞噬,远视,群体隐身,万弹归宗,毒雾,反击,嗜爪,欺凌,金刚钻,魅惑,电离折射,馈赠,沉默,近视,先锋盾,精准,群体自燃,滑翔,翻滚,王者之翼,附身,全域光波</studyCnNameArr>
+			<p1SkillArr>吞噬,万弹归宗,远视,沉默,先锋盾,滑翔,翻滚,附身,全域光波</p1SkillArr>
+			
+			<moreD dpsMul="0.8" underHurtMul="0.4" studySkillLvAdd="1" firstLv="6" />
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<hurtRatio>0.15</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="Striker/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+				<hurt>
+					<imgLabel>sickleAttack</imgLabel><ingfollowB>1</ingfollowB>
+					<hurtRatio>0.05</hurtRatio>
+					<shakeValue>4</shakeValue><beatBack>2</beatBack>
+					<attackType>direct</attackType>
+					<hitImgUrl name="purpleSickle" />
+				</hurt>
+				
+				
+				<hurt>
+					<imgLabel>bladeAttack</imgLabel>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>12</shakeValue><beatBack>5</beatBack><screenShakeValue>10</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="sound/metal_hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+				<hurt>
+					<imgLabel>daggerAttack</imgLabel>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>8</shakeValue><beatBack>3</beatBack><screenShakeValue>6</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="sound/metal_hit2">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>sec_daggerAttack</imgLabel>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>8</shakeValue><beatBack>3</beatBack><screenShakeValue>6</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="sound/metal_hit2">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+				<hurt>
+					<imgLabel>stickAttack</imgLabel>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>10</shakeValue><beatBack>4</beatBack><screenShakeValue>8</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="Striker/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>sec_stickAttack</imgLabel>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>10</shakeValue><beatBack>4</beatBack><screenShakeValue>8</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="Striker/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>dartsAttack</imgLabel>
+					<hurtRatio>0.2</hurtRatio>
+					<bulletLabel>saberDartsBullet</bulletLabel>
+					<grapRect>-660,-150,560,190</grapRect>
+					<shakeValue>10</shakeValue><beatBack>4</beatBack><screenShakeValue>8</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="sound/body_hit">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+				
+				
+				
+				
+				
+				<hurt>
+					<imgLabel>spadeAttack</imgLabel>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>10</shakeValue><beatBack>4</beatBack><screenShakeValue>8</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit_stone">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shovelsAttack</imgLabel>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>10</shakeValue><beatBack>4</beatBack><screenShakeValue>8</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="Striker/hit1">bladeHitEffect/blood</hitImgUrl>
+					<grapRect>-171,-100,128,120</grapRect>
+				</hurt>
+				<hurt>
+					<imgLabel>shotgunBladeAttack</imgLabel>
+					<hurtRatio>0.3</hurtRatio>
+					<skillArr>shotgunBladeHero</skillArr>
+					<shakeValue>10</shakeValue><beatBack>4</beatBack><screenShakeValue>8</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="Striker/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+				<hurt>
+					<imgLabel>swordAttack</imgLabel>
+					<hurtRatio>0.2</hurtRatio>
+					<shakeValue>12</shakeValue><beatBack>5</beatBack><screenShakeValue>10</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="sound/metal_hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>swordAfterAttack</imgLabel>
+					<hurtRatio>0.1</hurtRatio>
+					<skillArr>sprintSwordHit_extra</skillArr>
+					<shakeValue>12</shakeValue><beatBack>5</beatBack><screenShakeValue>10</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="sound/metal_hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+				<hurt>
+					<imgLabel>sec_bladeAttack</imgLabel>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>15</shakeValue><beatBack>6</beatBack><screenShakeValue>12</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" soundUrl="sound/metal_hit2">bulletHitEffect/bluntBig</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>ghost_swordAttack</imgLabel>
+					<hurtRatio>0.45</hurtRatio>
+					<shakeValue>15</shakeValue><beatBack>7</beatBack><screenShakeValue>15</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl name="purpleHit" />
+				</hurt>
+				<hurt>
+					<imgLabel>great_stickAttack</imgLabel>
+					<hurtRatio>0.88</hurtRatio>
+					<shakeValue>15</shakeValue><beatBack>5</beatBack><screenShakeValue>10</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl name="yellowStickHit" />
+				</hurt>
+				
+				<hurt>
+					<imgLabel>snow_daggerAttack</imgLabel>
+					<hurtRatio>0.39</hurtRatio>
+					<grapRect>-660,-150,560,190</grapRect>
+					<shakeValue>15</shakeValue><beatBack>6</beatBack><screenShakeValue>12</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl name="blueHit" />
+				</hurt>
+				<hurt>
+					<imgLabel>officer_bladeAttack</imgLabel>
+					<hurtRatio>0.56</hurtRatio>
+					<shakeValue>15</shakeValue><beatBack>6</beatBack><screenShakeValue>12</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl name="yellowHit" />
+				</hurt>
+				<hurt>
+					<imgLabel>yanluoAttack</imgLabel>
+					<ingfollowB>1</ingfollowB>
+					<hurtRatio>0.02</hurtRatio>
+					<shakeValue>4</shakeValue><beatBack>2</beatBack>
+					<attackType>direct</attackType>
+					<hitImgUrl name="yanluoHit" />
+				</hurt>
+				
+			</hurtArr>
+		</body>	
+		<body index="0" name="小樱" shell="normal">
+			
+			<name>Girl</name>
+			<cnName>小樱</cnName>
+			<sex>female</sex>
+			<raceType>human</raceType>
+			<swfUrl>swf/hero/Girl351.swf</swfUrl>
+			<description>一位温柔可爱、性格单纯的女孩，她将成为爆枪联盟的第一位女队员，但身世却一直是个迷。</description>
+			
+			<rosRatio>0.02</rosRatio>
+			
+			<headIconUrl>IconGather/Girl</headIconUrl>
+			
+			
+			<imgArr>
+				standStop,standForward,standBack,standStop__squatStop
+				,squatForward,squatStop,squatBack,squatStop__standStop
+				,jumpDown__,jumpDown,jumpUp__jumpDown,jumpUp,__jumpUp
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,die1,__stru,stru
+				,normalAttack1,changeAttack
+				,rollingBackAttack,rollingForwardAttack
+				,swordAttack,swordAfterAttack,bladeAttack,daggerAttack,stickAttack,dartsAttack,shovelsAttack,spadeAttack
+				,snow_daggerAttack
+				,fox_dartsAttack
+				,shotgunBladeAttack
+				,sickleAttack
+				,officer_bladeAttack
+				,equipStand
+				,BlueMotoRide,RedMotoRide,WatchEagleRide
+			</imgArr>
+			<headPlayB>1</headPlayB>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-12,-35,24,35</hurtRectArr> 
+			<hurtRectArr>-12, -70, 24, 70</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>11</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			<maxJumpNum>1</maxJumpNum>
+			<flyType>space</flyType><motionD F_AIR="6" />
+			
+			
+			<armsNumber>1</armsNumber>
+			<randomArmsRange>pistol1</randomArmsRange>	
+			<oneAiLabel>mage</oneAiLabel>
+			<extraAIClassLabel>Hero_AIExtra</extraAIClassLabel>
+			
+			<skillArr />
+			<studyCnNameArr>智慧怒火,沉默,怒蜂,全域圣光,隐匿之雾,尖叫,反转术,妖魅,馈赠,金刚钻,近视,万弹归宗,远视,群体隐身,强击领域,精锐之师,先锋盾,滑翔,群蜂,合金护甲,翻滚,全域光波</studyCnNameArr>
+			<p1SkillArr>怒蜂,近视,万弹归宗,远视,群体隐身,强击领域,精锐之师,滑翔,群蜂,翻滚,全域光波</p1SkillArr>
+			<addMoreText>完成支线任务“寻找小樱”后入队</addMoreText>
+			<moreD dpsMul="0.65" underHurtMul="0.46" firstLv="35" studySkillLvAdd="1" />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<hurtRatio>0.15</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="Striker/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>sickleAttack</imgLabel><ingfollowB>1</ingfollowB>
+					<hurtRatio>0.05</hurtRatio>
+					<shakeValue>4</shakeValue><beatBack>2</beatBack>
+					<attackType>direct</attackType>
+					<hitImgUrl name="purpleSickle" />
+				</hurt>
+				
+				
+				<hurt>
+					<imgLabel>bladeAttack</imgLabel>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>12</shakeValue><beatBack>5</beatBack><screenShakeValue>10</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="sound/metal_hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>sec_bladeAttack</imgLabel>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>15</shakeValue><beatBack>6</beatBack><screenShakeValue>12</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" soundUrl="sound/metal_hit2">bulletHitEffect/bluntBig</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>daggerAttack</imgLabel>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>8</shakeValue><beatBack>3</beatBack><screenShakeValue>6</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="sound/metal_hit2">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>sec_daggerAttack</imgLabel>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>8</shakeValue><beatBack>3</beatBack><screenShakeValue>6</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="sound/metal_hit2">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+				<hurt>
+					<imgLabel>stickAttack</imgLabel>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>10</shakeValue><beatBack>4</beatBack><screenShakeValue>8</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="Striker/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>sec_stickAttack</imgLabel>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>10</shakeValue><beatBack>4</beatBack><screenShakeValue>8</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="Striker/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>dartsAttack</imgLabel>
+					<hurtRatio>0.2</hurtRatio>
+					<bulletLabel>saberDartsBullet</bulletLabel>
+					<grapRect>-171,-100,128,120</grapRect>
+					<shakeValue>10</shakeValue><beatBack>4</beatBack><screenShakeValue>8</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="sound/body_hit">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+				<hurt>
+					<imgLabel>spadeAttack</imgLabel>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>10</shakeValue><beatBack>4</beatBack><screenShakeValue>8</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit_stone">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shovelsAttack</imgLabel>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>10</shakeValue><beatBack>4</beatBack><screenShakeValue>8</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="Striker/hit1">bladeHitEffect/blood</hitImgUrl>
+					<grapRect>-171,-100,128,120</grapRect>
+				</hurt>
+				<hurt>
+					<imgLabel>shotgunBladeAttack</imgLabel>
+					<hurtRatio>0.3</hurtRatio>
+					<skillArr>shotgunBladeHero</skillArr>
+					<shakeValue>10</shakeValue><beatBack>4</beatBack><screenShakeValue>8</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="Striker/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+				<hurt>
+					<imgLabel>swordAttack</imgLabel>
+					<hurtRatio>0.2</hurtRatio>
+					<shakeValue>12</shakeValue><beatBack>5</beatBack><screenShakeValue>10</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="sound/metal_hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>swordAfterAttack</imgLabel>
+					<hurtRatio>0.1</hurtRatio>
+					<skillArr>sprintSwordHit_extra</skillArr>
+					<shakeValue>12</shakeValue><beatBack>5</beatBack><screenShakeValue>10</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="sound/metal_hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>ghost_swordAttack</imgLabel>
+					<hurtRatio>0.45</hurtRatio>
+					<shakeValue>15</shakeValue><beatBack>5</beatBack><screenShakeValue>10</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl name="purpleHit" />
+				</hurt>
+				<hurt>
+					<imgLabel>great_stickAttack</imgLabel>
+					<hurtRatio>0.88</hurtRatio>
+					<shakeValue>15</shakeValue><beatBack>5</beatBack><screenShakeValue>10</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl name="yellowStickHit" />
+				</hurt>
+				
+				<hurt>
+					<imgLabel>snow_daggerAttack</imgLabel>
+					<hurtRatio>0.4</hurtRatio>
+					<shakeValue>15</shakeValue><beatBack>6</beatBack><screenShakeValue>12</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl name="blueHit" />
+				</hurt>
+				<hurt>
+					<imgLabel>fox_dartsAttack</imgLabel>
+					<hurtRatio>0.8</hurtRatio>
+					<bulletLabel>saberDartsFox</bulletLabel>
+					<grapRect>-735,-181,625,293</grapRect>
+					<shakeValue>10</shakeValue><beatBack>4</beatBack><screenShakeValue>8</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl name="purpleHit" />
+				</hurt>
+				<hurt>
+					<imgLabel>officer_bladeAttack</imgLabel>
+					<hurtRatio>0.56</hurtRatio>
+					<shakeValue>15</shakeValue><beatBack>6</beatBack><screenShakeValue>12</screenShakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl name="yellowHit" />
+				</hurt>
+			</hurtArr>
+		</body>	
+		
+		<body index="0" name="心零" shell="normal">
+			
+			<name>XinLing</name>
+			<cnName>心零</cnName>
+			<sex>female</sex>
+			<raceType>human</raceType>
+			<movieLink>Girl</movieLink>
+			<swfUrl>swf/hero/XinLing.swf</swfUrl>
+			<description>制毒师的女助手，即将成为爆枪小队的第二位女成员。</description>
+			
+			<rosRatio>0.2</rosRatio>
+			
+			<headIconUrl>IconGather/XinLing</headIconUrl>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-12,-35,24,35</hurtRectArr> 
+			<hurtRectArr>-12, -70, 24, 70</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>11</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>2</armsNumber>
+			<randomArmsRange>rocket1</randomArmsRange>	
+			<oneAiLabel>sniper</oneAiLabel>
+			<extraAIClassLabel>Hero_AIExtra</extraAIClassLabel>
+			
+			<skillArr />
+			<studyCnNameArr>妖魅,嘲讽,遇强则刚,复仇,共鸣,暗夜信徒,恶爪</studyCnNameArr>
+			<addMoreText>完成支线任务“训练女助手”后入队</addMoreText>
+			<moreD dpsMul="0.55" underHurtMul="0.35" studySkillLvAdd="1" firstLv="50" />
+		</body>	
+		<body index="0" name="丛林特种兵" shell="normal">
+			
+			<name>Jungle</name>
+			<cnName>丛林特种兵</cnName>
+			<raceType>human</raceType>
+			<movieLink>Striker</movieLink>
+			<swfUrl>swf/hero/Jungle.swf</swfUrl>
+			
+			<rosRatio>0.02</rosRatio>
+			
+			<headIconUrl>IconGather/Jungle</headIconUrl>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-12,-35,24,35</hurtRectArr> 
+			<hurtRectArr>-12, -70, 24, 70</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>9</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>2</armsNumber>
+			<randomArmsRange>pistol_two,shotgun_two</randomArmsRange>	
+			<shootLenMul>1</shootLenMul>
+			<oneAiLabel>mage</oneAiLabel>
+			
+			<skillArr />
+			<studyCnNameArr>群体圣光,反击,远视,万弹归宗,吞噬,金刚钻,狂暴,嗜爪,毒雾,隐身,定点轰炸,派生导弹,欺凌,魅惑,电离折射,馈赠</studyCnNameArr>
+			<addMoreText>暂未开放</addMoreText>
+			
+		</body>
+		<body index="0" name="文杰表哥" shell="normal">
+			
+			<name>WenJie</name>
+			<cnName>文杰表哥</cnName>
+			<raceType>human</raceType>
+			<movieLink>Striker</movieLink>
+			<swfUrl>swf/hero/WenJie.swf</swfUrl>
+			
+			
+			<headIconUrl>IconGather/WenJie</headIconUrl>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-12,-35,24,35</hurtRectArr> 
+			<hurtRectArr>-12, -70, 24, 70</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>11</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>2</armsNumber>
+			<randomArmsRange>shotgun1</randomArmsRange>	
+			<oneAiLabel>shotgun</oneAiLabel>
+			<extraAIClassLabel>Hero_AIExtra</extraAIClassLabel>
+			
+			<bossSkillArr>myopia_hero_1</bossSkillArr>
+			<studyCnNameArr>真空,群体圣光,反击,反制,毒雾,群体隐身,吞噬,万弹归宗,欺凌,魅惑,加速扳机,电离折射,嗜爪,馈赠,翻滚,近视,滑翔,沉默,先锋盾,群体自燃,合金护甲,抵御,全域光波</studyCnNameArr>
+			<p1SkillArr>真空,欺凌,加速扳机,滑翔,沉默,翻滚,合金护甲,全域光波</p1SkillArr>
+			<addMoreText />
+			<moreD dpsMul="0.5" underHurtMul="0.3" arenaUnderHurtMul="2" studySkillLvAdd="1" firstLv="6" />
+			
+			
+			
+		</body>	
+		<body index="0" name="雇佣兵" shell="normal">
+			
+			<name>ATian</name>
+			<cnName>雇佣兵</cnName>
+			<raceType>human</raceType>
+			<movieLink>Striker</movieLink>
+			<swfUrl>swf/hero/ATian.swf</swfUrl>
+			
+			
+			<headIconUrl>IconGather/ATian</headIconUrl>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-12,-35,24,35</hurtRectArr> 
+			<hurtRectArr>-12, -70, 24, 70</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>9</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>2</armsNumber>
+			<randomArmsRange>ak47,shotgun1</randomArmsRange>	
+			
+			
+			<skillArr />
+			
+			
+		</body>
+		<body index="0" name="摩卡" shell="normal">
+			
+			<name>Mocha</name>
+			<cnName>摩卡</cnName>
+			<raceType>human</raceType>
+			<movieLink>Striker</movieLink>
+			<swfUrl>swf/hero/Mocha.swf</swfUrl>
+			
+			
+			<headIconUrl>IconGather/Mocha</headIconUrl>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-12,-35,24,35</hurtRectArr> 
+			<hurtRectArr>-12, -70, 24, 70</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>9</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>1</armsNumber>
+			<randomArmsRange>shotgunSkunkTwo</randomArmsRange>	
+			<oneAiLabel>shotgun</oneAiLabel>
+			
+			<skillArr />
+			
+		</body>	
+		<body index="0" name="藏师将军" shell="normal">
+			
+			<name>ZangShi</name>
+			<cnName>藏师将军</cnName>
+			<raceType>human</raceType>
+			<movieLink>Striker</movieLink>
+			<swfUrl>swf/hero/ZangShi.swf</swfUrl>
+			
+			
+			<headIconUrl>IconGather/ZangShi</headIconUrl>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-12,-35,24,35</hurtRectArr> 
+			<hurtRectArr>-12, -70, 24, 70</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>11</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>5</armsNumber>
+			<randomArmsRange>sniperRifle,rocket1,pistol1,ak47,shotgun1</randomArmsRange>	
+			<oneAiLabel>sniper</oneAiLabel>
+			<extraAIClassLabel>Hero_AIExtra</extraAIClassLabel>
+			
+			<skillArr>crazy_hero_2,through_hero_2,murderous_hero_2</skillArr>
+			<bossSkillArr>pointBoom_hero_2,hiding_hero_2</bossSkillArr>
+			<studyCnNameArr>万弹归宗,定点轰炸,欺凌,金刚钻,派生导弹,嗜爪,远视,狂暴,群体圣光,反击,精准,全局溅射,血盾,藐视,元素叠加</studyCnNameArr>
+			<addMoreText>完成主线任务“营救藏师”后入队</addMoreText>
+			<moreD dpsMul="1" underHurtMul="0.55" studySkillLvAdd="2" firstLv="16" />
+			
+			
+		</body>
+		<body index="0" name="沙漠特种兵" shell="normal">
+			
+			<name>DesertCommando</name>
+			<cnName>沙漠特种兵</cnName>
+			<raceType>human</raceType>
+			<movieLink>Striker</movieLink>
+			<swfUrl>swf/hero/DesertCommando.swf</swfUrl>
+			
+			
+			
+			<headIconUrl>IconGather/ZangShi</headIconUrl>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-12,-35,24,35</hurtRectArr> 
+			<hurtRectArr>-12, -70, 24, 70</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>9</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>2</armsNumber>
+			<randomArmsRange>pistol_two,shotgun_two</randomArmsRange>	
+			<oneAiLabel>shotgun</oneAiLabel>
+			
+			<skillArr />
+			
+		</body>	
+		
+		<body index="0" name="制毒师">
+			
+			<name>Doctor</name>
+			<cnName>制毒师</cnName>
+			<raceType>human</raceType>
+			<movieLink>Striker</movieLink><showLevel>9999</showLevel>
+			<swfUrl>swf/hero/Doctor.swf</swfUrl>
+			
+			
+			
+			<headIconUrl>IconGather/Doctor</headIconUrl>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-12,-35,24,35</hurtRectArr> 
+			<hurtRectArr>-12, -70, 24, 70</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>11</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>2</armsNumber>
+			<randomArmsRange>pistol2</randomArmsRange>	
+			
+			<skillArr>poisonousFog_hero_5,charm_hero_1</skillArr>
+			<addMoreText>暂未开放</addMoreText>
+			
+		</body>
+		<body index="0" name="“制毒师”">
+			
+			<name>Doctor2</name>
+			<cnName>“制毒师”</cnName>
+			<raceType>human</raceType>
+			<movieLink>Striker</movieLink>
+			<swfUrl>swf/hero/Doctor2.swf</swfUrl>
+			
+			
+			
+			<headIconUrl>IconGather/Doctor</headIconUrl>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-12,-35,24,35</hurtRectArr> 
+			<hurtRectArr>-12, -70, 24, 70</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>11</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>2</armsNumber>
+			<randomArmsRange>pistol2,shotgun_two</randomArmsRange>	
+			
+			<skillArr>poisonousFog_hero_5</skillArr>
+			<bossSkillArr>poisonClaw_enemy,Doctor2_cloned,corrosion_hugePosion,corrosion_enemy,disabledHalo_enemy</bossSkillArr>
+			<bossSkillArrCn>毒爪、毒雾、分身、蚀毒、腐蚀、致残光环</bossSkillArrCn>
+			<extraDropArmsB>1</extraDropArmsB>
+			
+		</body>
+		<body>
+			<name>Striker2</name>
+			<cnName>本我</cnName><showLevel>9999</showLevel>
+			<raceType>human</raceType>
+			<movieLink>Striker</movieLink>
+			<swfUrl>swf/hero/Striker351.swf</swfUrl>
+			<swfName>Striker</swfName>
+			
+			<rosRatio>0.02</rosRatio>
+			
+			<headIconUrl>IconGather/me</headIconUrl>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-12,-35,24,35</hurtRectArr> 
+			<hurtRectArr>-12, -70, 24, 70</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>12</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>3</armsNumber>
+			<randomArmsRange>ak47</randomArmsRange>	
+			
+			<skillArr />
+			<bossSkillArr />
+		</body>
+		
+		
+		
+	</father>
+	
+	</data>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="collection" cnName="收集">
+		<head name="weapon_4" cnName="兵器大亨" diff="80">
+			<condition fun="weapon_4" info="获得所有副手的{orange 第四级}。" progressInfo="[compare]" />
+			<addObjJson>{'bloodStoneDropPro':0.15}</addObjJson>
+		</head>
+		<head name="device_4" cnName="装置大亨" diff="40">
+			<condition fun="device_4" info="获得所有装置的{orange 第四级}。" progressInfo="[compare]" />
+			<addObjJson>{'lifeCatalystDropPro':0.20}</addObjJson>
+		</head>
+		
+		<head name="achieve_70" cnName="成就大亨" diff="50">
+			<condition fun="num" must="70" pro="getAchieveNum" info="获得[must]个成就。" progressInfo="[compare]个" />
+			<addObjJson>{'lifeMul':0.10}</addObjJson>
+		</head>
+		<head name="achieve_123" cnName="成就之王" diff="70">
+			<condition fun="num" must="123" pro="getAchieveNum" info="获得[must]个成就。" progressInfo="[compare]个" />
+			<addObjJson>{'dodge':0.03}</addObjJson>
+		</head>
+		<head name="dominating" cnName="独霸一方" diff="130">
+			<condition fun="dominating" info="同时装上仲裁者套装、小卡时装、四级副手、五级装置、盖亚载具。" progressInfo="[compare]" />
+			<addObjJson>{'critPro3':0.03}</addObjJson>
+		</head>
+	</father>
+	
+	</data>

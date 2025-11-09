@@ -1,0 +1,57 @@
+{
+  "wayGather": {
+    "way": [
+      {
+        "name": "same",
+        "cnName": "同类交易",
+        "taxMul": 1,
+        "info": "用同等级、同品质的物品交易同类型物品。"
+      },
+      {
+        "name": "different",
+        "cnName": "异类交易",
+        "taxMul": 2,
+        "info": "用同等级、同品质的物品交易不同类型物品。"
+      },
+      {
+        "name": "level",
+        "cnName": "升级交易",
+        "taxMul": 3,
+        "mustNum": 4,
+        "info": "用多个低等级物品交易高等级物品，二者必须同品质。"
+      },
+      {
+        "name": "color",
+        "cnName": "精炼交易",
+        "taxMul": 1.5,
+        "mustNum": 4,
+        "info": "用多个低品质物品交易高品质物品，二者必须同等级。"
+      }
+    ]
+  },
+  "mulGather": {
+    "colorMul": {
+      "white": 1,
+      "green": 1,
+      "blue": 1,
+      "purple": 1,
+      "orange": 3,
+      "red": 10
+    },
+    "typeMul": {
+      "arms": 3,
+      "equip": 6,
+      "parts": 0
+    },
+    "armsMul": {
+      "skill2": 1.5,
+      "special3": 1.5,
+      "rocket": 1
+    },
+    "equipMul": {
+      "hurt4": 1.3,
+      "hurt3": 1.3,
+      "skill1": 1.3
+    }
+  }
+}

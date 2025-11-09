@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="年兽">
+		<skill index="0" cnName="恶魔火">
+			<name>Nian_change</name>
+			<cnName>恶魔火</cnName><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<cd>30</cd>
+			<delay>0.3</delay>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>Nian_change</effectType>
+			<passiveSkillArr>Nian_change_link</passiveSkillArr>
+			<meActionLabel>changeAttack</meActionLabel>
+			<duration>10</duration>
+			<stateEffectImg partType="2eye,2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="filter">NianMonster/sparkBullet</stateEffectImg>
+			<description>年兽朝天怒吼，全身燃起恶魔火，不断燃烧周围的敌人。</description>
+		</skill>
+		<skill index="0" cnName="自燃-链接">
+			<name>Nian_change_link</name>
+			<cnName>自燃-链接</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,random,enemy</target>
+			
+			<addType>instant</addType>
+			<effectType>normal_hurt</effectType>
+			<extraValueType>nowArmsDpsOrNormal</extraValueType>
+			<mul>0.1</mul>
+			<duration>0.1</duration>
+			<range>150</range>
+			
+			<targetEffectImg con="add" randomRange="40">bulletHitEffect/spark_motion2</targetEffectImg>
+			<description>单位全身燃起熊熊烈火，对附近[range]范围内的敌人造成伤害，伤害值为当前武器实际战斗力的[mul]。</description>
+		</skill>
+		<skill index="0" cnName="驾驭星火">
+			<name>Nian_spark</name>
+			<cnName>驾驭星火</cnName><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<cd>10</cd>
+			<delay>0.76</delay>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>500</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet_Nian_spark</effectType>
+			<obj>"name":"Nian_spark"</obj>
+			<meActionLabel>sparkAttack</meActionLabel>
+			<description>年兽利用恶火之力砸向地面，驾驭溅起的火星对敌人发起攻击。</description>
+		</skill>
+		<skill cnName="击中麻痹">
+			<name>Nian_dartsParalysis</name>
+			<cnName>击中麻痹</cnName>
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<mul>0</mul>
+			<duration>0.5</duration>
+			 
+			<stateEffectImg con="add" soundUrl="sound/paralysis_enemy_hit">skillEffect/paralysis_enemy</stateEffectImg>
+		</skill>
+		
+	</father>	 
+	
+	</data>

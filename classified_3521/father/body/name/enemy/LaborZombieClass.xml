@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<body index="0" name="科研僵尸">
+			
+			<name>LaborZombie</name>
+			<cnName>科研僵尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/LaborZombie.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<showLevel>97</showLevel>
+			
+			<imgArr>
+				stand,move
+				,normalAttack,boomAttack,hurt1,hurt2,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			
+			<nextAttackTime>1</nextAttackTime>
+			
+			<skillArr>LaborZombieBoom,fastForward_enemy</skillArr>
+			<bossSkillArr />
+			<bossSkillArrCn />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" soundUrl="sound/body_hit" raNum="4">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>boomAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<bulletLabel>LaborZombie_1</bulletLabel>
+					<grapRect>-450,-111,350,105</grapRect>
+					<hurtRatio>0.1</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				
+			</hurtArr>
+		</body>
+		
+		<bullet cnName="爆瓶子弹">
+			<name>LaborZombie_1</name>
+			<cnName>爆瓶子弹</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>30</bulletLife>
+			<bulletWidth>10</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.43</attackDelay>
+			<bulletAngle>-90</bulletAngle>
+			<shootPoint>-68,-40</shootPoint>
+			<bulletSpeed>0</bulletSpeed>
+				
+			<hitGap>0.1</hitGap>
+			<skillArr>LaborZombieBoomBuff</skillArr>
+			<penetrationNum>999</penetrationNum>
+			<penetrationGap>1000</penetrationGap>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl name="LaborZombie_1_bullet" />
+			<bulletLeftImgUrl name="LaborZombie_1_bulletRed" />
+		</bullet>
+		
+		
+		
+		<skill cnName="爆瓶">
+			<name>LaborZombieBoom</name>
+			<cnName>爆瓶</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>4</cd>
+			<firstCd>5</firstCd>
+			<cdRandomRange>2</cdRandomRange>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			 
+			<meActionLabel>boomAttack</meActionLabel>
+			<description>打碎化学瓶，释放区域毒气，经过的敌人将被封锁主动和被动技能、降低攻击力。</description>
+		</skill>
+					<skill cnName="爆瓶buff">
+						<name>LaborZombieBoomBuff</name>
+						<cnName>爆瓶buff</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+						
+						<conditionType>passive</conditionType>
+						<condition>hit</condition>
+						<otherConditionArr>targetArmsNoMeltFlamerPurgold</otherConditionArr>
+						<target>target</target>
+						
+						<addType>state</addType>
+						<effectType>LaborZombieBoomBuff</effectType>
+						<mul>0.5</mul>
+						<duration>5</duration>
+						 
+						<stateEffectImg partType="mouth" con="add">skillEffect/poisonousFog_hero</stateEffectImg>
+					</skill>
+	</father>	
+	
+	
+</data>

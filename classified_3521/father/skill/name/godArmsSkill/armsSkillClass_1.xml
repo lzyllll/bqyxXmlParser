@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级技能">
+		<skill cnName="爆石">
+			<name>Hit_imploding_godArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>爆石</cnName>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>0.05</effectProArr>
+			<mul>40</mul>
+			<extraValueType>nowArmsHurt</extraValueType>
+			
+			<obj>"name":"imploding_godArmsSkill","site":"me","flipB":true</obj>
+			
+			<description>每次击中目标都有[effectProArr.0]的几率使自身爆发5颗石头，每颗石头伤害值为：[mul]*武器面板伤害*增伤Buff（排除武器技能、零件技能）。</description>
+		</skill>
+		
+		
+		
+		
+		
+		
+		<skill name="击中闪电">
+			<name>Hit_Lightning_godArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>击中闪电</cnName>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me,near,enemy</target>
+			
+			<addType>instant</addType>
+			<effectType>lightning_godArmsSkill</effectType>
+			<effectProArr>0.05</effectProArr>
+			<extraValueType>nowArmsDps</extraValueType>
+			<value>0</value>
+			<mul>1</mul>
+			<range>300</range>
+			
+			<meEffectImg />
+			<description>击中敌人后有[effectProArr.0]的几率产生高压电流，对[range]码内最近的敌人造成1倍于武器实际战斗力的伤害。</description>
+		</skill>
+		<skill index="2" name="击中眩晕">
+			<name>Hit_Hammer_godArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>击中眩晕</cnName>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>dizziness</effectType>
+			<effectProArr>0.07</effectProArr>
+			<duration>2</duration>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+			<description>击中目标有[effectProArr.0]的几率使目标陷入眩晕状态，持续[duration]秒。</description>
+		</skill>
+		<skill index="3" name="超级派生">
+			<name>Hit_SuperMissile_godArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>超级派生</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>0.09</effectProArr>
+			<mul>1</mul>
+			<extraValueType>nowArmsDps</extraValueType>
+			
+			<obj>"name":"hitMissile_hero","site":"shootPoint","flipB":false</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>每次射击都有9%的概率派生跟踪导弹。导弹伤害为当前武器实际战斗力值。</description>
+		</skill>
+		<skill name="超级减速">
+			<name>superHitSlow</name><noRandomListB>1</noRandomListB>
+			<cnName>超级减速</cnName><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<value>0</value>
+			<mul>0.5</mul>
+			<duration>2</duration>
+			<range>0</range>
+			
+			<meEffectImg />
+			<stateEffectImg partType="2foot">skillEffect/disabled_enemy</stateEffectImg>
+			<description>击中目标后减少其[1-mul]的移动速度，持续2秒。无视技能免疫。</description>
+		</skill>
+		<skill name="超级麻痹">
+			<name>Hit_Paralysis_ArmsSkill2</name><noRandomListB>1</noRandomListB>
+			<cnName>超级麻痹</cnName>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<effectProArr>0.02</effectProArr>
+			<mul>0</mul>
+			<duration>4</duration>
+			 
+			<targetEffectImg soundUrl="sound/paralysis_enemy_hit" />
+			<stateEffectImg con="add">skillEffect/paralysis_enemy</stateEffectImg>
+			<description>击中目标后，有[effectProArr.0]的几率使其麻痹，持续[duration]秒。</description>
+		</skill>
+		
+		<skill name="炎爆">
+			<name>Hit_burn_ArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>炎爆</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType><overlyingB>1</overlyingB>
+			<effectType>burn_arms</effectType>
+			<valueString>Hit_burn_ArmsSkill_link</valueString>
+			<value>100</value>
+			<duration>2</duration>
+			<stateEffectImg bodyColor="0xFF0000" />
+			<description>每次伤害都会给目标叠加1层持续[duration]秒的“火焰”，当叠加到[value]层时对目标造成巨大的爆炸伤害。</description>
+		</skill>
+		<skill name="冷凝">
+			<name>cold_ArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>冷凝</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType><overlyingB>1</overlyingB>
+			<effectType>cold_arms</effectType>
+			<value>40</value>
+			<mul>0.005</mul>
+			<duration>2</duration>
+			<stateEffectImg bodyColor="0x00E0F5" />
+			<description>每次伤害都会给目标叠加1层持续[duration]秒的“霜冻”，每层降低目标[mul]的防御力，最高叠加[value]层。</description>
+		</skill>
+		<skill name="蚀骨">
+			<name>erosion_ArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>蚀骨</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType><overlyingB>1</overlyingB>
+			<effectType>cold_arms</effectType>
+			<value>30</value>
+			<mul>0.01</mul>
+			<duration>2</duration>
+			<stateEffectImg bodyColor="0xFF33FF" />
+			<description>每次伤害都会给目标叠加1层持续[duration]秒的“腐蚀”，每层降低目标[mul]的防御力，最高叠加[value]层。</description>
+		</skill>
+		
+		<skill name="痛击">
+			<name>beatBack_ArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>痛击</cnName><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType><overlyingB>1</overlyingB>
+			<effectType>beatBack_arms</effectType>
+			<value>6</value>
+			<duration>2</duration>
+			<stateEffectImg bodyColor="0xFF0000" />
+			<description>击中同时推动目标一段距离，蓄力越久推动距离越远，无视技能免疫。</description>
+		</skill>
+		<skill name="连弩">
+			<name>combo_ArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>连弩</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>heroOneShoot</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>bullet_combo</effectType>
+			<extraValueType>nowArmsTrueDps</extraValueType>
+			<value>10</value>
+			<mul>0.04</mul>
+			<duration>2</duration>
+			
+			<obj>"name":"combo_crossbow"</obj>
+			
+			<description>每次射击都将发射连弩，蓄力越久连弩数量越多，单发连弩伤害为武器面板单伤*射速*[mul]。</description>
+		</skill>
+		<skill cnName="粘性">
+			<name>viscous_ArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>粘性</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>killTarget</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>no</effectType>
+			<description>礼炮发射出的糖果会粘在地面或者墙壁上，持续30秒，怪物经过时会引爆糖果。</description>
+		</skill>
+		<skill name="超级粘性">
+			<name>viscousSuper_ArmsSkill</name>
+			<cnName>超级粘性</cnName><noRandomListB>1</noRandomListB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>lostPro</effectType>
+			<mul>0.25</mul>
+			<duration>3</duration>
+			<stateEffectImg partType="2eye">skillEffect/disabled_enemy</stateEffectImg>
+			<description>发射的糖果会粘在地面或墙上，敌人经过时会引爆糖果，同时降低敌人攻击成功率。</description>
+		</skill>
+		
+		<skill name="火焰始祖">
+			<name>flyDragonHead</name><noRandomListB>1</noRandomListB>
+			<cnName>火焰始祖</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>loopClick</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<extraValueType>nowArmsTrueDps</extraValueType>
+			
+			<obj>"name":"flyDragonHead","site":"shootPoint","flipB":false</obj>
+			<duration>0.4</duration>
+			
+			<description>连续射击时候，每隔一段时间喷射出异祖龙的火焰，追击敌方单位，无子弹时候也能触发。</description>
+		</skill>
+		<skill name="贯穿波">
+			<name>bangerGunSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>贯穿波</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>loopClick</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<extraValueType>nowArmsTrueDps</extraValueType>
+			
+			<obj>"name":"bangerGunSkill","site":"shootPoint","flipB":false</obj>
+			<duration>1</duration>
+			
+			<description>连续射击时，每隔一段时间产生一个缓慢移动的光波，贯穿所有敌方单位。</description>
+		</skill>
+		<skill name="无限火力">
+			<name>infiniteFire</name><noRandomListB>1</noRandomListB>
+			<cnName>无限火力</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>loopClick</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>noReduceCapacityB</effectType>
+			<duration>0.5</duration>
+			
+			<description>连续射击超过1秒，武器将不消耗子弹。</description>
+		</skill>
+		<skill name="跳斩">
+			<name>shotgunBlade_ArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>跳斩</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>killTarget</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>no</effectType>
+			<description>使用副手（不包括死神副手）时，会瞬移到鼠标位置，发起跳斩攻击。</description>
+			<stateEffectImg con="add">Striker/bladeUpEffect</stateEffectImg>
+			<stateEffectImg2 con="add">Striker/bladeDownEffect</stateEffectImg2>
+		</skill>
+		<skill name="上帝之杖">
+			<name>godMace_ArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>上帝之杖</cnName>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>godMace_ArmsSkill</effectType>
+			<extraValueType>nowArmsHurt</extraValueType>
+			<effectProArr>0.05</effectProArr>
+			<value>4</value>
+			<range>250</range>
+			<duration>0.2</duration>
+			<targetEffectImg raNum="1" soundUrl="sound/laserShoot2">bulletHitEffect/purpleLaser</targetEffectImg>
+			<description>击中目标后有[effectProArr.0]概率对目标造成范围伤害，敌人越多伤害越高。</description>
+		</skill>
+	</father>	
+	</data>

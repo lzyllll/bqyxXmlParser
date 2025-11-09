@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="device" cnName="装置">
+		
+		<equip rareB="1" canNum="1" name="hurtMine" cnName="致命地雷T" skill="hurtMine" iconLabel="dropEffect/hurtMine" />
+	</father>
+	</data>

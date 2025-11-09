@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="cutter" cnName="切割枪">
+		<bullet name="yearTiger" color="darkgold" composeLv="99" dropLevelArr="999" evoMaxLv="2">
+			<name>yearTiger</name>
+			<cnName>寅虎</cnName><extraMul>1.6</extraMul>
+			<whippB>0</whippB><noBeClearB>1</noBeClearB>
+			<dpsMul>1.9</dpsMul>
+			<uiDpsMul>2.3</uiDpsMul>
+			
+			<capacity>8</capacity>
+			<attackGap>0.8</attackGap>
+			<reloadGap>2</reloadGap>
+			<shakeAngle>1</shakeAngle>
+			<bulletWidth>30</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>4</penetrationNum>
+			<penetrationGap>1000</penetrationGap>
+			<bounceD floor="0" body="0" />	
+			<critD mul="0" pro="0" />
+			<followD value="4" delay="999" hitIsTargetB="1" />
+			
+			<skillArr>Hit_Spurting_ArmsSkill,Hit_AddLifeMul_ArmsSkill</skillArr>
+			<godSkillArr>yearTigerSkill,yearTigerHurtSuper</godSkillArr>
+			
+			<bulletSpeed>25</bulletSpeed>
+			<hurtRatio>4</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.5</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>15</upValue>
+			
+			<shootShakeAngle>40</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>7</bulletLife>
+			<hitType>rect</hitType>
+			
+			<iconUrl>specialGun/yearTigerIcon</iconUrl>
+			<shootSoundUrl>specialGun/yearTigerSound</shootSoundUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl con="add" raNum="30">specialGun/yearTigerBullet</bulletImgUrl>
+			<hitImgUrl con="add">bulletHitEffect/fitHit</hitImgUrl>
+			<fireImgType />
+			
+			<bodyImgRange>specialGun/yearTiger</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description />
+		</bullet>
+	</father>
+	</data>

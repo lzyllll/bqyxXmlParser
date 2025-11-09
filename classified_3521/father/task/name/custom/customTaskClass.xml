@@ -1,0 +1,717 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="custom" cnName="反客" tipText="完成任务后自动解锁下一个任务。" autoUnlockByLevelB="1">
+		
+		<task name="cusWoTu" cnName="沃土镇" lv="1" unlockLv="30" levelIsTaskLvB="1">
+			<openD tk="PrisonExport_duke" />
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>WoTu</worldMapId>
+			<levelId>customTask/cusWoTu</levelId>
+			<gift>things;zombieBottle;2</gift>
+		</task>
+		<task name="cusYangMei" cnName="杨梅岭" lv="3" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>YangMei</worldMapId>
+			<levelId>customTask/cusYangMei</levelId>
+			<gift>things;skyArch;10</gift>
+		</task>
+		<task name="cusXiaSha" cnName="下沙" lv="4" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>XiaSha</worldMapId>
+			<levelId>customTask/cusXiaSha</levelId>
+			<gift>things;zombieBottle;2</gift>
+		</task>
+		<task name="cusFengWei" cnName="凤尾洋" lv="5" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>FengWei</worldMapId><enemyLifeMul>0.6</enemyLifeMul><enemyDpsMul>0.8</enemyDpsMul>
+			<levelId>customTask/cusFengWei</levelId>
+			<gift>things;skyArch;10</gift>
+		</task>
+		
+		<task name="cusXiChi" cnName="西池" lv="6" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>XiChi</worldMapId>
+			<levelId>customTask/cusXiChi</levelId>
+			<gift>things;zombieBottle;2</gift>
+		</task>
+		<task name="cusBaiLu" cnName="白鹭镇" lv="7" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>BaiLu</worldMapId>
+			<levelId>customTask/cusBaiLu</levelId>
+			<gift>things;skyArch;10</gift>
+		</task>
+		<task name="cusShuiSheng" cnName="水升村" lv="8" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>ShuiSheng</worldMapId><enemyLifeMul>1.6</enemyLifeMul><enemyDpsMul>1</enemyDpsMul>
+			<levelId>customTask/cusShuiSheng</levelId>
+			<gift>things;zombieBottle;2</gift>
+		</task>
+		<task name="cusZhuTou" cnName="猪头洋" lv="10" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>ZhuTou</worldMapId><enemyLifeMul>1.3</enemyLifeMul>
+			<levelId>customTask/cusZhuTou</levelId>
+			<gift>things;skyArch;10</gift>
+		</task>
+		
+		
+		
+		
+		
+		<task name="cusShuangTa" cnName="双塔村" lv="11" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description>熟练使用屠刀僵尸的生命置换技能（技能位2），将有助于你快速完成任务。</description>
+			
+			<worldMapId>ShuangTa</worldMapId><enemyLifeMul>2</enemyLifeMul>
+			<levelId>customTask/cusShuangTa</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;20</gift>
+		</task>
+		<task name="cusBeiDou" cnName="北斗城" lv="13" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>BeiDou</worldMapId><enemyLifeMul>1.3</enemyLifeMul>
+			<levelId>customTask/cusBeiDou</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;20</gift>
+		</task>
+		<task name="cusDongShan" cnName="东山澳" lv="14" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>DongShan</worldMapId><enemyLifeMul>1.3</enemyLifeMul>
+			<levelId>customTask/cusDongShan</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;20</gift>
+		</task>
+		<task name="cusQingSha" cnName="青纱镇" lv="15" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>QingSha</worldMapId><enemyLifeMul>1.3</enemyLifeMul><enemyDpsMul>0.8</enemyDpsMul>
+			<levelId>customTask/cusQingSha</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;20</gift>
+		</task>
+		<task name="cusQingMing" cnName="清明岭" lv="16" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>QingMing</worldMapId><enemyLifeMul>1.3</enemyLifeMul>
+			<levelId>customTask/cusQingMing</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;20</gift>
+		</task>
+		<task name="cusNanTang" cnName="南唐城" lv="18" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>NanTang</worldMapId><enemyLifeMul>1.1</enemyLifeMul>
+			<levelId>customTask/cusNanTang</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;20</gift>
+		</task>
+		<task name="cusWoTu_doctor" cnName="消灭制毒师" lv="19" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>消灭制毒师</shortText>
+			<uiConditionText>消灭制毒师</uiConditionText>
+			<description>一位有能力帮主角解毒的制毒师来到了沃土镇，请消灭他！</description>
+			
+			<worldMapId>WoTu</worldMapId><enemyLifeMul>1.8</enemyLifeMul><enemyDpsMul>0.8</enemyDpsMul>
+			<levelId>customTask/cusWoTu_doctor</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;20</gift>
+		</task>
+		<task name="cusBeiDou_mercenary" cnName="破坏佣兵计划" lv="23" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description>爆枪小队来北斗城招募雇佣兵，把他们一并消灭了吧！</description>
+			
+			<worldMapId>BeiDou</worldMapId><enemyLifeMul>0.9</enemyLifeMul><enemyDpsMul>0.4</enemyDpsMul>
+			<levelId>customTask/cusBeiDou_mercenary</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;20</gift>
+		</task>
+		<task name="cusShuangTa_defend" cnName="夺回双塔村" lv="27" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败雇佣兵。</shortText>
+			<uiConditionText>击败雇佣兵。</uiConditionText>
+			<description>爆枪小队远在南唐城寻找奇皇，你们趁现在夺回双塔村！</description>
+			
+			<worldMapId>ShuangTa</worldMapId><enemyLifeMul>2</enemyLifeMul><enemyDpsMul>0.6</enemyDpsMul>
+			<levelId>customTask/cusShuangTa_defend</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;20</gift>
+		</task>
+		<task name="cusDongShan_QiHuang" cnName="奇皇博士" lv="28" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>DongShan</worldMapId><enemyLifeMul>1.2</enemyLifeMul><enemyDpsMul>0.5</enemyDpsMul>
+			<levelId>customTask/cusDongShan_QiHuang</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;20</gift>
+		</task>
+		
+		
+		
+		
+		
+		
+		<task name="cusQingMing_Arthur" cnName="决战爆枪小队" lv="30" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>QingMing</worldMapId><enemyLifeMul>1.2</enemyLifeMul><enemyDpsMul>0.5</enemyDpsMul>
+			<levelId>customTask/cusQingMing_Arthur</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusYouLing" cnName="幽灵谷" lv="32" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>YouLing</worldMapId><enemyLifeMul>2.3</enemyLifeMul>
+			<levelId>customTask/cusYouLing</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusXiFeng" cnName="西峰" lv="40" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>XiFeng</worldMapId><enemyLifeMul>4</enemyLifeMul>
+			<levelId>customTask/cusXiFeng</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusLvSen" cnName="绿森堡" lv="44" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>LvSen</worldMapId><enemyLifeMul>3</enemyLifeMul><enemyDpsMul>0.5</enemyDpsMul>
+			<levelId>customTask/cusLvSen</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusDuKu" cnName="毒窟" lv="45" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>DuKu</worldMapId><enemyLifeMul>2</enemyLifeMul><enemyDpsMul>0.4</enemyDpsMul>
+			<levelId>customTask/cusDuKu</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusBaoLun" cnName="宝伦镇" lv="46" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>BaoLun</worldMapId><enemyLifeMul>2</enemyLifeMul>
+			<levelId>customTask/cusBaoLun</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		
+		<task name="cusLuYu" cnName="炉屿" lv="47" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>LuYu</worldMapId><enemyLifeMul>2.5</enemyLifeMul>
+			<levelId>customTask/cusLuYu</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		
+		<task name="cusBaWang" cnName="霸王坡" lv="47" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>BaWang</worldMapId><enemyLifeMul>3.7</enemyLifeMul>
+			<levelId>customTask/cusBaWang</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusPingChuan" cnName="平川" lv="49" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>PingChuan</worldMapId><enemyLifeMul>2.5</enemyLifeMul><enemyDpsMul>0.7</enemyDpsMul>
+			<levelId>customTask/cusPingChuan</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		
+		
+		
+		<task name="cusBaiSha" cnName="暴君" lv="50" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>BaiSha</worldMapId><enemyLifeMul>4</enemyLifeMul><enemyDpsMul>0.6</enemyDpsMul>
+			<levelId>customTask/cusBaiSha</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusDongFeng" cnName="东峰研究所" lv="55" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>DongFeng</worldMapId><enemyLifeMul>3.5</enemyLifeMul><enemyDpsMul>0.8</enemyDpsMul>
+			<levelId>customTask/cusDongFeng</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusZhongXin" cnName="研究中心" lv="56" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>ZhongXin</worldMapId><enemyLifeMul>3</enemyLifeMul><enemyDpsMul>0.4</enemyDpsMul>
+			<levelId>customTask/cusZhongXin</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusDiXia" cnName="地下城市" lv="60" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>DiXia</worldMapId><enemyLifeMul>4</enemyLifeMul><enemyDpsMul>0.6</enemyDpsMul>
+			<levelId>customTask/cusDiXia</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusHouJin" cnName="后井" lv="63" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>HouJin</worldMapId><enemyLifeMul>4</enemyLifeMul><enemyDpsMul>0.5</enemyDpsMul>
+			<levelId>customTask/cusHouJin</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusShaJiang" cnName="沙江" lv="64" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>ShaJiang</worldMapId><enemyLifeMul>4</enemyLifeMul><enemyDpsMul>1</enemyDpsMul>
+			<levelId>customTask/cusShaJiang</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusShaMo" cnName="沙漠中心" lv="65" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>ShaMo</worldMapId><enemyLifeMul>4.5</enemyLifeMul><enemyDpsMul>0.6</enemyDpsMul>
+			<levelId>customTask/cusShaMo</levelId>
+			<gift>things;yaRock;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		
+		
+		<task name="cusXianQu" cnName="先驱号" lv="67" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>XianQu</worldMapId><enemyLifeMul>1.4</enemyLifeMul><enemyDpsMul>0.5</enemyDpsMul>
+			<levelId>customTask/cusXianQu</levelId>
+			<gift>things;demStone;8</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusFangZhouFirst" cnName="诺亚方舟" lv="68" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>FangZhouFirst</worldMapId><enemyLifeMul>3.3</enemyLifeMul><enemyDpsMul>0.6</enemyDpsMul>
+			<levelId>customTask/cusFangZhouFirst</levelId>
+			<gift>things;demStone;8</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusFangZhouSecond" cnName="黑暗泰坦" lv="69" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>FangZhouSecond</worldMapId><enemyLifeMul>4</enemyLifeMul><enemyDpsMul>0.8</enemyDpsMul>
+			<levelId>customTask/cusFangZhouSecond</levelId>
+			<gift>things;demStone;8</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusFangZhouTop" cnName="无疆骑士" lv="70" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>FangZhouTop</worldMapId><enemyLifeMul>7</enemyLifeMul><enemyDpsMul>1</enemyDpsMul>
+			<levelId>customTask/cusFangZhouTop</levelId>
+			<gift>things;demStone;8</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		
+		
+		<task name="cusDongShan_shiti" cnName="水下奇景" lv="71" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>完成对话</shortText>
+			<uiConditionText>完成对话</uiConditionText>
+			<description />
+			
+			<worldMapId>DongShan</worldMapId><enemyLifeMul>7</enemyLifeMul><enemyDpsMul>1</enemyDpsMul>
+			<levelId>customTask/cusDongShan_shiti</levelId>
+			<gift>things;starTrails;30</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		
+		
+		
+		
+		
+		
+		
+		<task name="cusPrisonDoor" cnName="监狱大门" lv="73" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>PrisonDoor</worldMapId><enemyLifeMul>1.5</enemyLifeMul><enemyDpsMul>0.4</enemyDpsMul>
+			<levelId>customTask/cusPrisonDoor</levelId>
+			<gift>base;partsCoin;5</gift>
+			<gift>things;demStone;4</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusPrisonFirst" cnName="监狱第1层" lv="74" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>PrisonFirst</worldMapId><enemyLifeMul>4.5</enemyLifeMul><enemyDpsMul>1</enemyDpsMul>
+			<levelId>customTask/cusPrisonFirst</levelId>
+			<gift>base;partsCoin;5</gift>
+			<gift>things;demStone;4</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusPrisonExport" cnName="监狱出口" lv="75" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>PrisonExport</worldMapId><enemyLifeMul>4</enemyLifeMul><enemyDpsMul>1</enemyDpsMul>
+			<levelId>customTask/cusPrisonExport</levelId>
+			<gift>base;partsCoin;5</gift>
+			<gift>things;demStone;4</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusPrisonOutside" cnName="监狱外围" lv="76" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>PrisonOutside</worldMapId><enemyLifeMul>4</enemyLifeMul><enemyDpsMul>0.6</enemyDpsMul>
+			<levelId>customTask/cusPrisonOutside</levelId>
+			<gift>base;partsCoin;5</gift>
+			<gift>things;demStone;4</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		
+		
+		<task name="cusJungleOutside" cnName="丛林外围" lv="77" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>JungleOutside</worldMapId><enemyLifeMul>4</enemyLifeMul><enemyDpsMul>0.4</enemyDpsMul>
+			<levelId>customTask/cusJungleOutside</levelId>
+			<gift>base;partsCoin;5</gift>
+			<gift>things;demStone;4</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusJungleDeep" cnName="丛林深处" lv="78" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>JungleDeep</worldMapId><enemyLifeMul>1.2</enemyLifeMul><enemyDpsMul>0.8</enemyDpsMul>
+			<levelId>customTask/cusJungleDeep</levelId>
+			<gift>base;partsCoin;5</gift>
+			<gift>things;demStone;4</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusCavesEntrance" cnName="洞窟入口" lv="79" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>CavesEntrance</worldMapId><enemyLifeMul>2.7</enemyLifeMul><enemyDpsMul>0.6</enemyDpsMul>
+			<levelId>customTask/cusCavesEntrance</levelId>
+			<gift>base;partsCoin;5</gift>
+			<gift>things;demStone;4</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusCavesDeep" cnName="洞窟深处" lv="80" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>CavesDeep</worldMapId><enemyLifeMul>4</enemyLifeMul><enemyDpsMul>1</enemyDpsMul>
+			<levelId>customTask/cusCavesDeep</levelId>
+			<gift>base;partsCoin;5</gift>
+			<gift>things;demStone;4</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		
+		
+		<task name="cusQianYe" cnName="千叶谷" lv="82" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>QianYe</worldMapId><enemyLifeMul>3</enemyLifeMul><enemyDpsMul>0.5</enemyDpsMul>
+			<levelId>customTask/cusQianYe</levelId>
+			<gift>base;partsCoin;5</gift>
+			<gift>things;bossCardStamp;2</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusFuMu" cnName="腐木岗" lv="83" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>FuMu</worldMapId><enemyLifeMul>3.5</enemyLifeMul><enemyDpsMul>1.2</enemyDpsMul>
+			<levelId>customTask/cusFuMu</levelId>
+			<gift>base;partsCoin;5</gift>
+			<gift>things;bossCardStamp;2</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusGongMu" cnName="公墓入口" lv="84" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>GongMu</worldMapId><enemyLifeMul>2.5</enemyLifeMul><enemyDpsMul>0.5</enemyDpsMul>
+			<levelId>customTask/cusGongMu</levelId>
+			<gift>base;partsCoin;5</gift>
+			<gift>things;bossCardStamp;2</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusGuiWang" cnName="鬼王墓" lv="85" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>GuiWang</worldMapId><enemyLifeMul>4</enemyLifeMul><enemyDpsMul>0.7</enemyDpsMul>
+			<levelId>customTask/cusGuiWang</levelId>
+			<gift>base;partsCoin;5</gift>
+			<gift>things;bossCardStamp;2</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		
+		
+		
+		
+		
+		<task name="cusBingKu" cnName="冰窟" lv="86" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>BingKu</worldMapId><enemyLifeMul>3</enemyLifeMul><enemyDpsMul>0.7</enemyDpsMul>
+			<levelId>customTask/cusBingKu</levelId>
+			<gift>base;partsCoin;8</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusBingKuDeep" cnName="冰窟深处" lv="87" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>BingKuDeep</worldMapId><enemyLifeMul>2</enemyLifeMul><enemyDpsMul>0.7</enemyDpsMul>
+			<levelId>customTask/cusBingKuDeep</levelId>
+			<gift>base;partsCoin;8</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusWuXue" cnName="无雪干谷" lv="88" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>WuXue</worldMapId><enemyLifeMul>2</enemyLifeMul><enemyDpsMul>0.4</enemyDpsMul>
+			<levelId>customTask/cusWuXue</levelId>
+			<gift>base;partsCoin;8</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusDongWu" cnName="千年冻湖" lv="89" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>DongWu</worldMapId><enemyLifeMul>1.8</enemyLifeMul><enemyDpsMul>0.4</enemyDpsMul>
+			<levelId>customTask/cusDongWu</levelId>
+			<gift>base;partsCoin;8</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusBuDong" cnName="不冻湖" lv="90" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>BuDong</worldMapId><enemyLifeMul>2.5</enemyLifeMul><enemyDpsMul>0.6</enemyDpsMul>
+			<levelId>customTask/cusBuDong</levelId>
+			<gift>base;partsCoin;8</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		
+		
+		
+		<task name="cusPiaoMiao" cnName="缥缈森林" lv="90" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description>本关操纵的首领为“毒魔”，它的第二普通攻击为“抓捕”，可将敌人抓捕到自己面前，并让敌人处于眩晕状态。</description>
+			
+			<worldMapId>PiaoMiao</worldMapId><enemyLifeMul>1.5</enemyLifeMul><enemyDpsMul>0.5</enemyDpsMul>
+			<levelId>customTask/cusPiaoMiao</levelId>
+			<gift>base;partsCoin;8</gift>
+			<gift>base;tenCoin;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusHanGuang1" cnName="寒光入口" lv="91" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>HanGuang1</worldMapId><enemyLifeMul>2</enemyLifeMul><enemyDpsMul>0.6</enemyDpsMul>
+			<levelId>customTask/cusHanGuang1</levelId>
+			<gift>base;partsCoin;8</gift>
+			<gift>base;tenCoin;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusHanGuang2" cnName="寒光西城" lv="92" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>HanGuang2</worldMapId><enemyLifeMul>2.5</enemyLifeMul><enemyDpsMul>0.6</enemyDpsMul>
+			<levelId>customTask/cusHanGuang2</levelId>
+			<gift>base;partsCoin;8</gift>
+			<gift>base;tenCoin;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusHanGuang3" cnName="寒光中心" lv="93" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>HanGuang3</worldMapId><enemyLifeMul>3.5</enemyLifeMul><enemyDpsMul>0.8</enemyDpsMul>
+			<levelId>customTask/cusHanGuang3</levelId>
+			<gift>base;partsCoin;8</gift>
+			<gift>base;tenCoin;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusHanGuang4" cnName="寒光之巅" lv="94" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>HanGuang4</worldMapId><enemyLifeMul>3</enemyLifeMul><enemyDpsMul>0.45</enemyDpsMul>
+			<levelId>customTask/cusHanGuang4</levelId>
+			<gift>base;partsCoin;8</gift>
+			<gift>base;tenCoin;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		
+		
+		
+		<task name="cusHanGuang5" cnName="寒光末路" lv="95" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>HanGuang5</worldMapId><enemyLifeMul>2.5</enemyLifeMul><enemyDpsMul>0.45</enemyDpsMul>
+			<levelId>customTask/cusHanGuang5</levelId>
+			<gift>base;partsCoin;8</gift>
+			<gift>base;tenCoin;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		
+		
+		<task name="cusHospital1" cnName="实验室入口" lv="96" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>Hospital1</worldMapId><enemyLifeMul>3.1</enemyLifeMul><enemyDpsMul>0.6</enemyDpsMul>
+			<levelId>customTask/cusHospital1</levelId>
+			<gift>base;partsCoin;8</gift>
+			<gift>base;tenCoin;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusHospital2" cnName="实验室底层" lv="97" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>Hospital2</worldMapId><enemyLifeMul>3</enemyLifeMul><enemyDpsMul>0.5</enemyDpsMul>
+			<levelId>customTask/cusHospital2</levelId>
+			<gift>base;partsCoin;8</gift>
+			<gift>base;tenCoin;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		<task name="cusHospital3" cnName="实验室中层" lv="98" unlockLv="30" levelIsTaskLvB="1">
+			<shortText>击败爆枪小队。</shortText>
+			<uiConditionText>击败爆枪小队。</uiConditionText>
+			<description />
+			
+			<worldMapId>Hospital3</worldMapId><enemyLifeMul>2.2</enemyLifeMul><enemyDpsMul>1</enemyDpsMul>
+			<levelId>customTask/cusHospital3</levelId>
+			<gift>base;partsCoin;8</gift>
+			<gift>base;tenCoin;10</gift>
+			<gift>base;anniCoin;12</gift>
+		</task>
+		
+		
+		
+	</father>
+</data>

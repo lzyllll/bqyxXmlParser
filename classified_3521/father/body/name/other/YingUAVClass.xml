@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="other">
+		<body index="0" name="怒蜂" shell="metal">
+			
+			<name>YingUAV</name>
+			<cnName>怒蜂</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/YingUAV347.swf</swfUrl>
+			
+			<lifeRatio>0.6</lifeRatio>
+			<rosRatio>99</rosRatio>
+			<showLevel>9999</showLevel>
+			<motionState>fly</motionState><flyType>tween</flyType>
+			<dieImg name="midSpace" /><dieJumpMul>0</dieJumpMul>
+			<lifeBarExtraHeight>45</lifeBarExtraHeight>
+			<imgArr>
+				stand,move
+				,shootAttack
+				,die1
+			</imgArr>
+			
+			<hitRect>-14,-45,28,45</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>10</maxVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<skillArr>spellImmunityMax,toFlyCd,alloyShell_9,birthInvi5</skillArr>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><cn>射击</cn>
+					<hurtRatio>1.8</hurtRatio>
+					<bulletLabel>YingUAVShoot</bulletLabel>
+					<grapRect>-35,114,85,250</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>	
+	</father>		
+	</data>

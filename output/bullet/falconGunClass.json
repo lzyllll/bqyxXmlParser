@@ -1,0 +1,93 @@
+{
+  "father": [
+    {
+      "type": "energy",
+      "bullet": {
+        "falconGun": {
+          "color": "darkgold",
+          "evoMaxLv": 5,
+          "evoMustFirstLv": 9,
+          "composeLv": 99,
+          "chipNum": 150,
+          "name": "falconGun",
+          "extraMul": 1,
+          "cnName": "隼武",
+          "noMagneticB": 1,
+          "aiShootRange": 800,
+          "iconUrl": "specialGun/falconGunIcon2",
+          "attackType": "holy",
+          "dpsMul": 3.5,
+          "uiDpsMul": 2,
+          "capacity": 15,
+          "attackGap": 0.7,
+          "reloadGap": 1,
+          "bulletWidth": 25,
+          "bulletNum": 3,
+          "shootAngle": 1,
+          "armsArmMul": 0.5,
+          "upValue": 10,
+          "shootShakeAngle": 30,
+          "shootRecoil": 5,
+          "screenShakeValue": 9,
+          "bulletLife": 4,
+          "hitType": "rect",
+          "bulletSpeed": 35,
+          "bulletSkillArr": "falconGun",
+          "twoShootPro": 0.3,
+          "penetrationGap": 1000,
+          "bounceD": {
+            "floor": 0,
+            "body": 0
+          },
+          "critD": {
+            "mul": 0,
+            "pro": 0
+          },
+          "skillArr": "Kill_AddCharger_ArmsSkill,Hit_AddLifeMul_ArmsSkill",
+          "godSkillArr": "enemyEmp,falconGunSkill",
+          "shootSoundUrl": "specialGun/greedySnakeSound",
+          "bulletImgUrl": null,
+          "hitImgUrl": null,
+          "bodyImgRange": "specialGun/falconGun",
+          "bulletImgRange": "specialGun/bullet",
+          "description": "消灭首领僵尸治疗兵(99级)",
+          "armsType": "energy"
+        }
+      }
+    },
+    {
+      "name": "godArmsSkill",
+      "cnName": "神级武器技能",
+      "skill": [
+        {
+          "name": "falconGunSkill",
+          "noRandomListB": 1,
+          "cnName": "隼啸",
+          "changeHurtB": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "falconGunSkill",
+          "mul": 5,
+          "secMul": 2.8,
+          "pointEffectImg": {
+            "name": "waveBoom"
+          },
+          "description": "每次3颗子弹交汇处击中敌人，都会造成额外[mul-1]的伤害，其他区域伤害+[secMul-1]。"
+        },
+        {
+          "name": "falconGunSkill2",
+          "noRandomListB": 1,
+          "cnName": "穿透",
+          "conditionType": "passive",
+          "condition": "killTarget",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "no",
+          "description": "无视致盲效果，同时射程不会被负面技能影响（比如狭隘领域等）。"
+        }
+      ]
+    }
+  ]
+}

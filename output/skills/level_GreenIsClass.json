@@ -1,0 +1,4238 @@
+{
+  "father": {
+    "name": "normal",
+    "gather": [
+      {
+        "cnName": "绿岛外",
+        "level": [
+          {
+            "name": "YaShipsComing",
+            "info": {
+              "enemyLv": 99,
+              "diff": 2,
+              "allMoreB": true,
+              "noPetB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true
+            },
+            "sceneLabel": "MainUpland",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "we1",
+                  "camp": "we",
+                  "unit": {
+                    "id": "u1",
+                    "cnName": "氩星舰",
+                    "unitType": "boss"
+                  }
+                },
+                {
+                  "id": "we2",
+                  "camp": "we",
+                  "unit": {
+                    "id": "u2",
+                    "cnName": "氩星舰",
+                    "unitType": "boss"
+                  }
+                },
+                {
+                  "id": "we3",
+                  "camp": "we",
+                  "unit": {
+                    "id": "u3",
+                    "cnName": "氩星舰",
+                    "unitType": "boss"
+                  }
+                },
+                {
+                  "id": "we4",
+                  "camp": "we",
+                  "unit": {
+                    "id": "u4",
+                    "cnName": "氩星舰",
+                    "unitType": "boss"
+                  }
+                },
+                {
+                  "id": "we5",
+                  "camp": "we",
+                  "unit": {
+                    "id": "u5",
+                    "cnName": "氩星舰",
+                    "unitType": "boss"
+                  }
+                },
+                {
+                  "id": "we6",
+                  "camp": "we",
+                  "unit": {
+                    "id": "u6",
+                    "cnName": "氩星舰",
+                    "unitType": "boss"
+                  }
+                },
+                {
+                  "id": "we11",
+                  "camp": "we",
+                  "unit": {
+                    "id": "u11",
+                    "cnName": "氩星舰",
+                    "skillArr": "smallScale50"
+                  }
+                },
+                {
+                  "id": "we12",
+                  "camp": "we",
+                  "unit": {
+                    "id": "u12",
+                    "cnName": "氩星舰",
+                    "skillArr": "smallScale50"
+                  }
+                },
+                {
+                  "id": "we13",
+                  "camp": "we",
+                  "unit": {
+                    "id": "u13",
+                    "cnName": "氩星舰",
+                    "skillArr": "smallScale50"
+                  }
+                },
+                {
+                  "id": "we14",
+                  "camp": "we",
+                  "unit": {
+                    "id": "u14",
+                    "cnName": "氩星舰",
+                    "skillArr": "smallScale50"
+                  }
+                },
+                {
+                  "id": "we15",
+                  "camp": "we",
+                  "unit": {
+                    "id": "u15",
+                    "cnName": "氩星舰",
+                    "skillArr": "smallScale50"
+                  }
+                },
+                {
+                  "id": "we16",
+                  "camp": "we",
+                  "unit": {
+                    "id": "u16",
+                    "cnName": "氩星舰",
+                    "skillArr": "smallScale50"
+                  }
+                },
+                {
+                  "id": "we17",
+                  "camp": "we",
+                  "unit": {
+                    "id": "u17",
+                    "cnName": "氩星舰",
+                    "skillArr": "smallScale50"
+                  }
+                },
+                {
+                  "id": "we18",
+                  "camp": "we",
+                  "unit": {
+                    "id": "u18",
+                    "cnName": "氩星舰",
+                    "skillArr": "smallScale50"
+                  }
+                },
+                {
+                  "id": "we19",
+                  "camp": "we",
+                  "unit": {
+                    "id": "u19",
+                    "cnName": "氩星舰",
+                    "skillArr": "smallScale50"
+                  }
+                },
+                {
+                  "id": "we20",
+                  "camp": "we",
+                  "unit": {
+                    "id": "u20",
+                    "cnName": "氩星舰",
+                    "skillArr": "smallScale50"
+                  }
+                },
+                {
+                  "id": "we21",
+                  "camp": "we",
+                  "unit": {
+                    "id": "u21",
+                    "cnName": "氩星舰",
+                    "skillArr": "smallScale50"
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "80,145,1,1",
+                  "id": "y1"
+                },
+                {
+                  "value": "697 ,145,1,1",
+                  "id": "y2"
+                },
+                {
+                  "value": "1424 ,145,1,1",
+                  "id": "y3"
+                },
+                {
+                  "value": "309 ,344,1,1",
+                  "id": "y4"
+                },
+                {
+                  "value": "1068 ,344,1,1",
+                  "id": "y5"
+                },
+                {
+                  "value": "1818 ,344,1,1",
+                  "id": "y6"
+                },
+                {
+                  "value": "216 ,250,1,1",
+                  "id": "y11"
+                },
+                {
+                  "value": "837,250,1,1",
+                  "id": "y12"
+                },
+                {
+                  "value": "1231,250,1,1",
+                  "id": "y13"
+                },
+                {
+                  "value": "1668,250,1,1",
+                  "id": "y14"
+                },
+                {
+                  "value": "523,50,1,1",
+                  "id": "y15"
+                },
+                {
+                  "value": "999,50,1,1",
+                  "id": "y16"
+                },
+                {
+                  "value": "1443,50,1,1",
+                  "id": "y17"
+                },
+                {
+                  "value": "216 ,-50,1,1",
+                  "id": "y18"
+                },
+                {
+                  "value": "837,-50,1,1",
+                  "id": "y19"
+                },
+                {
+                  "value": "1231,-50,1,1",
+                  "id": "y20"
+                },
+                {
+                  "value": "1668,-50,1,1",
+                  "id": "y21"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": {
+                      "delay": 0.01
+                    },
+                    "order": [
+                      "recoverAllHeroHead",
+                      "noWearShop"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": [
+                      "body:小樱; followBody:文杰表哥",
+                      "body:藏师将军; followBody:小樱",
+                      "body:心零; followBody:藏师将军"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    },
+                    "order": "level; shake:beatMadboss"
+                  },
+                  {
+                    "condition": {
+                      "delay": 1.5
+                    },
+                    "order": "say; startList:s11"
+                  },
+                  {
+                    "condition": "say:listOver"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "createUnit:we18; y18:L_mid"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "createUnit:we19; y19:L_mid"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "createUnit:we20; y20:L_mid"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "createUnit:we21; y21:L_mid"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "createUnit:we15; y15:L_mid"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "createUnit:we16; y16:L_mid"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "createUnit:we17; y17:L_mid"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "createUnit:we11; y11:L_mid"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "createUnit:we12; y12:L_mid"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "createUnit:we13; y13:L_mid"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "createUnit:we14; y14:L_mid"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.2
+                    },
+                    "order": [
+                      "createUnit:we1; y3",
+                      "level; shake:ArgonShip"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.2
+                    },
+                    "order": [
+                      "createUnit:we2; y2",
+                      "level; shake:ArgonShip"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.2
+                    },
+                    "order": [
+                      "createUnit:we3; y1",
+                      "level; shake:ArgonShip"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.2
+                    },
+                    "order": [
+                      "createUnit:we4; y4",
+                      "level; shake:ArgonShip"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.2
+                    },
+                    "order": [
+                      "createUnit:we6; y6",
+                      "level; shake:ArgonShip"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.2
+                    },
+                    "order": [
+                      "createUnit:we5; y5",
+                      "level; shake:ArgonShip",
+                      "playMusic; music_face:Madboss"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "say; startList:s2"
+                  },
+                  {
+                    "condition": {
+                      "delay": 2
+                    },
+                    "order": [
+                      "sceneScale:0.75",
+                      "playSound:uiSound/giveupTask"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": [
+                      "sceneScale:0.50",
+                      "playSound:uiSound/giveupTask"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "delay": 3
+                    },
+                    "order": [
+                      "sceneScale:1",
+                      "playSound:uiSound/getTask"
+                    ]
+                  },
+                  {
+                    "condition": "say:listOver"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.2
+                    },
+                    "order": "body:u5;playBreak:disappearAttack"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.2
+                    },
+                    "order": "body:u1;playBreak:disappearAttack"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.2
+                    },
+                    "order": "body:u2;playBreak:disappearAttack"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.2
+                    },
+                    "order": "body:u3;playBreak:disappearAttack"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.2
+                    },
+                    "order": "body:u4;playBreak:disappearAttack"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.2
+                    },
+                    "order": "body:u6;playBreak:disappearAttack"
+                  },
+                  {
+                    "condition": null,
+                    "order": "sceneScale:0.7"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "body:u11;playBreak:disappearAttack"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "body:u12;playBreak:disappearAttack"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "body:u13;playBreak:disappearAttack"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "body:u14;playBreak:disappearAttack"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "body:u15;playBreak:disappearAttack"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "body:u16;playBreak:disappearAttack"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "body:u17;playBreak:disappearAttack"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "body:u18;playBreak:disappearAttack"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "body:u19;playBreak:disappearAttack"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "body:u20;playBreak:disappearAttack"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": "body:u21;playBreak:disappearAttack"
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "sceneScale:1"
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": [
+                      "say; startList:s3",
+                      "playMusic; music_face:funny"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 1
+                    },
+                    "order": [
+                      "say; startList:s4",
+                      "playMusic; music_face:suspense"
+                    ]
+                  },
+                  {
+                    "condition": "say:listOver",
+                    "order": [
+                      "task:now; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "RaysSeaBreak",
+            "info": {
+              "enemyLv": 99,
+              "preBulletArr": "",
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "mustSingleB": true,
+              "noDeviceB": true,
+              "firstLostB": true
+            },
+            "drop": {
+              "noB": true
+            },
+            "sceneLabel": "RaysSea",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "we1",
+                  "camp": "we",
+                  "unit": {
+                    "id": "weBoss",
+                    "cnName": "处决者",
+                    "lifeMul": 0.18,
+                    "dpsMul": 500,
+                    "skillArr": "crazy_vehicle_8,groupLightMadFly"
+                  }
+                },
+                {
+                  "id": "we2",
+                  "camp": "we",
+                  "numberType": "num",
+                  "unit": {
+                    "cnName": "大鹏",
+                    "num": 1,
+                    "lifeMul": 2
+                  }
+                },
+                {
+                  "id": "enemy1",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "大鹏",
+                      "num": 1,
+                      "lifeMul": 2
+                    },
+                    {
+                      "cnName": "潜伏者",
+                      "num": 1,
+                      "lifeMul": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "大鹏",
+                      "num": 2,
+                      "lifeMul": 2
+                    },
+                    {
+                      "cnName": "潜伏者",
+                      "num": 2,
+                      "lifeMul": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "super1",
+                  "numberType": "num",
+                  "unit": {
+                    "cnName": "潜影者",
+                    "lifeMul": 2,
+                    "unitType": "super",
+                    "skillArr": "crazy_vehicle_5,groupLight_enemy"
+                  }
+                },
+                {
+                  "id": "boss1",
+                  "numberType": "num",
+                  "unit": {
+                    "cnName": "鲲",
+                    "lifeMul": 2,
+                    "unitType": "boss",
+                    "skillArr": "crazy_vehicle_5,slowMove_enemy,groupSpeedUp_enemy"
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "condition": null,
+                      "order": [
+                        "weAllHeroNoShoot",
+                        "weAllHeroNoEquip",
+                        "createUnit:we1; r_birth",
+                        "heroEverParasitic:weBoss",
+                        "openInput"
+                      ]
+                    },
+                    {
+                      "order": "createUnit:we2; r2"
+                    },
+                    {
+                      "condition": {
+                        "delay": 1
+                      },
+                      "order": "say; startList:s1"
+                    },
+                    {
+                      "condition": "say:listOver",
+                      "order": [
+                        "body:大鹏; changeCamp:enemy",
+                        "body:大鹏; ai:patrolRandom",
+                        "body:大鹏; setAttackTarget:weBoss"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.1
+                      },
+                      "order": "say; startList:s11"
+                    },
+                    {
+                      "condition": {
+                        "delay": 1
+                      }
+                    },
+                    {
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "doNumber": 3
+                      },
+                      "order": "createUnit:enemy1; rEnemySpace2"
+                    },
+                    {
+                      "condition": "enemyNumber:less_1",
+                      "order": "createUnit:super1; rEnemySpace2"
+                    },
+                    {
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "doNumber": 3
+                      },
+                      "order": "createUnit:enemy1; rEnemySpace2"
+                    },
+                    {
+                      "condition": "enemyNumber:less_1",
+                      "order": "createUnit:super1; rEnemySpace2"
+                    },
+                    {
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "doNumber": 3
+                      },
+                      "order": "createUnit:enemy2; rEnemySpace2"
+                    },
+                    {
+                      "condition": "enemyNumber:less_1",
+                      "order": "createUnit:boss1; rEnemySpace2"
+                    },
+                    {
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "delay": 0.5
+                      },
+                      "order": "say; startList:s2"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.5
+                      },
+                      "order": [
+                        "task:now; complete",
+                        "level; showPointer:r_over"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "value": "bodyEvent:die; weBoss",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 任务失败！"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "RaysSeaBoss",
+            "info": {
+              "enemyLv": 99,
+              "preBulletArr": "",
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "mustSingleB": true,
+              "noDeviceB": true,
+              "firstLostB": true
+            },
+            "drop": {
+              "noB": true
+            },
+            "sceneLabel": "RaysSea",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "we1",
+                  "camp": "we",
+                  "unit": {
+                    "id": "weBoss",
+                    "cnName": "处决者",
+                    "lifeMul": 0.18,
+                    "dpsMul": 500,
+                    "skillArr": "crazy_vehicle_8,groupLightMadFly,executionerSkill_4"
+                  }
+                },
+                {
+                  "id": "enemy1",
+                  "numberType": "num",
+                  "unit": [
+                    {
+                      "cnName": "巨鲸",
+                      "num": 1,
+                      "lifeMul": 3
+                    },
+                    {
+                      "cnName": "大鹏",
+                      "num": 1,
+                      "lifeMul": 3
+                    },
+                    {
+                      "cnName": "潜伏者",
+                      "num": 1,
+                      "lifeMul": 3
+                    },
+                    {
+                      "cnName": "潜行者",
+                      "num": 1,
+                      "lifeMul": 3
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "血蟒雇佣兵",
+                      "num": 2,
+                      "lifeMul": 3,
+                      "skillArr": "toFlyState,slowMove_enemy"
+                    },
+                    {
+                      "cnName": "血蟒突击兵",
+                      "num": 1,
+                      "lifeMul": 3,
+                      "armsRange": "rifleDragon",
+                      "skillArr": "WatchEagleWing"
+                    },
+                    {
+                      "cnName": "血蟒狙击兵",
+                      "num": 1,
+                      "lifeMul": 2.5,
+                      "armsRange": "sniperSmilodon",
+                      "skillArr": "WatchEagleWing,feedback_enemy"
+                    }
+                  ]
+                },
+                {
+                  "id": "boss1",
+                  "numberType": "num",
+                  "unit": {
+                    "cnName": "霸空雕",
+                    "lifeMul": 5,
+                    "unitType": "boss",
+                    "dpsMul": 1,
+                    "skillArr": "crazy_vehicle_3"
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "condition": null,
+                      "order": [
+                        "weAllHeroNoShoot",
+                        "weAllHeroNoEquip",
+                        "createUnit:we1; r_birth",
+                        "heroEverParasitic:weBoss",
+                        "openInput"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "delay": 1
+                      },
+                      "order": "say; startList:s1"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.5
+                      }
+                    },
+                    {
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "doNumber": 4
+                      },
+                      "order": "createUnit:enemy1; rEnemySpace2"
+                    },
+                    {
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "doNumber": 4
+                      },
+                      "order": "createUnit:enemy2; rEnemySpace2"
+                    },
+                    {
+                      "condition": "enemyNumber:less_1",
+                      "order": "createUnit:boss1; rEnemySpace2"
+                    },
+                    {
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "delay": 0.5
+                      },
+                      "order": "say; startList:s2"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.5
+                      },
+                      "order": [
+                        "task:now; complete",
+                        "level; showPointer:r_over"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "value": "bodyEvent:die; weBoss",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 任务失败！"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "cnName": "绿岛内",
+        "level": [
+          {
+            "name": "GreenIs1_plot",
+            "info": {
+              "diy": "",
+              "enemyLv": 99,
+              "preBulletArr": "",
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "mustSingleB": true,
+              "noDeviceB": true,
+              "firstLostB": true
+            },
+            "sceneLabel": "GreenIs1",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "we1",
+                  "camp": "we",
+                  "unit": [
+                    {
+                      "id": "StrikerTask",
+                      "cnName": "我",
+                      "armsRange": "rifleLock,shotgunLock,sniperLock,pistolLock",
+                      "lifeMul": 0.06,
+                      "dpsMul": 1500,
+                      "skillArr": "addChargerMax2,heroSprint,gliding_hero_7",
+                      "aiOrder": "followBodyAttack:WenJieTask",
+                      "dieGotoState": "stru"
+                    },
+                    {
+                      "id": "WenJieTask",
+                      "cnName": "文杰表哥",
+                      "armsRange": "rifleLock,shotgunLock,sniperLock,pistolLock",
+                      "lifeMul": 0.06,
+                      "dpsMul": 1500,
+                      "skillArr": "addChargerMax2,heroSprint,gliding_hero_7",
+                      "aiOrder": "followBodyAttack:StrikerTask",
+                      "dieGotoState": "stru"
+                    }
+                  ]
+                },
+                {
+                  "id": "we2",
+                  "camp": "we",
+                  "unit": {
+                    "cnName": "处决者",
+                    "lifeMul": 9999999,
+                    "skillArr": "State_noAiFind,State_InvincibleThrough,noAttackOrder,noMoveSpeed"
+                  }
+                },
+                {
+                  "id": "enemy1",
+                  "unit": [
+                    {
+                      "cnName": "血蟒雇佣兵",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "血蟒突击兵",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "血蟒狙击兵",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "unit": [
+                    {
+                      "cnName": "血蟒雇佣兵",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "血蟒突击兵",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "血蟒狙击兵",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "boss1",
+                  "unit": {
+                    "cnName": "血蟒突击兵",
+                    "unitType": "boss",
+                    "dpsMul": 2,
+                    "lifeMul": 0.5,
+                    "onlyLevelSkillB": true,
+                    "skillArr": "imploding_enemy,moreMissile_enemy"
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": {
+                "value": "152,600,60,60",
+                "id": "fly1"
+              }
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "condition": null,
+                      "order": [
+                        "weAllHeroNoShoot",
+                        "weAllHeroNoEquip",
+                        "createUnit:we2; fly1",
+                        "body:处决者; flipToRight",
+                        "createUnit:we1; r_birth",
+                        "parasiticWeRolePan",
+                        "openInput"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "delay": 1
+                      },
+                      "order": "say; startList:s1"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.5
+                      }
+                    },
+                    {
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "doNumber": 4
+                      },
+                      "order": "createUnit:enemy1; hideRan"
+                    },
+                    {
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "doNumber": 4
+                      },
+                      "order": "createUnit:enemy2; hideRan"
+                    },
+                    {
+                      "condition": "enemyNumber:less_1",
+                      "order": "createUnit:boss1; hideRan"
+                    },
+                    {
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "delay": 0.5
+                      },
+                      "order": "say; startList:s2"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.5
+                      },
+                      "order": [
+                        "task:now; complete",
+                        "level; showPointer:r_over"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "value": "bodyEvent:die; sumByP1",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 任务失败！"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "GreenIs2_plot",
+            "info": {
+              "diy": "",
+              "enemyLv": 99,
+              "preBulletArr": "",
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "mustSingleB": true,
+              "noDeviceB": true,
+              "firstLostB": true
+            },
+            "sceneLabel": "GreenIs2",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "we1",
+                  "camp": "we",
+                  "unit": [
+                    {
+                      "id": "StrikerTask",
+                      "cnName": "我",
+                      "armsRange": "rifleLock,shotgunLock,sniperLock,pistolLock",
+                      "lifeMul": 0.06,
+                      "dpsMul": 1500,
+                      "skillArr": "addChargerMax2,heroSprint,gliding_hero_7",
+                      "aiOrder": "followBodyAttack:WenJieTask",
+                      "warningRange": 500,
+                      "dieGotoState": "stru"
+                    },
+                    {
+                      "id": "WenJieTask",
+                      "cnName": "文杰表哥",
+                      "armsRange": "rifleLock,shotgunLock,sniperLock,pistolLock",
+                      "lifeMul": 0.06,
+                      "dpsMul": 1500,
+                      "skillArr": "addChargerMax2,heroSprint,gliding_hero_7",
+                      "aiOrder": "followBodyAttack:StrikerTask",
+                      "warningRange": 500,
+                      "dieGotoState": "stru"
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy1",
+                  "unit": [
+                    {
+                      "cnName": "血蟒雇佣兵",
+                      "num": 4,
+                      "dpsMul": 1.5,
+                      "lifeMul": 2
+                    },
+                    {
+                      "cnName": "血蟒突击兵",
+                      "num": 4,
+                      "dpsMul": 1.5,
+                      "lifeMul": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "unit": [
+                    {
+                      "cnName": "血蟒雇佣兵",
+                      "num": 4,
+                      "dpsMul": 1.5,
+                      "lifeMul": 2
+                    },
+                    {
+                      "cnName": "血蟒突击兵",
+                      "num": 4,
+                      "dpsMul": 1.5,
+                      "lifeMul": 2
+                    },
+                    {
+                      "cnName": "血蟒狙击兵",
+                      "num": 2,
+                      "dpsMul": 1.5,
+                      "lifeMul": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "unit": [
+                    {
+                      "cnName": "血蟒雇佣兵",
+                      "num": 4,
+                      "dpsMul": 1.5,
+                      "lifeMul": 2
+                    },
+                    {
+                      "cnName": "血蟒突击兵",
+                      "num": 4,
+                      "dpsMul": 1.5,
+                      "lifeMul": 2
+                    },
+                    {
+                      "cnName": "血蟒狙击兵",
+                      "num": 4,
+                      "dpsMul": 1.5,
+                      "lifeMul": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "unit": {
+                    "cnName": "血蟒雇佣兵",
+                    "dpsMul": 3,
+                    "lifeMul": 0.5,
+                    "unitType": "boss",
+                    "onlyLevelSkillB": true,
+                    "skillArr": "imploding_enemy"
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "condition": null,
+                      "order": [
+                        "weAllHeroNoShoot",
+                        "weAllHeroNoEquip",
+                        "createUnit:we1; r_birth",
+                        "addEffectDropStop:hurtMineEffect; 466,1180",
+                        "parasiticWeRolePan",
+                        "openInput"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "delay": 1
+                      },
+                      "order": "say; startList:s1"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.5
+                      }
+                    },
+                    {
+                      "condition": {
+                        "doNumber": 1
+                      },
+                      "order": "createUnit:enemy1; r3"
+                    },
+                    {
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "doNumber": 4
+                      },
+                      "order": "createUnit:enemy2; hideRan"
+                    },
+                    {
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "doNumber": 4
+                      },
+                      "order": "createUnit:enemy3; hideRan"
+                    },
+                    {
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "doNumber": 1
+                      },
+                      "order": "createUnit:enemy4; hideRan"
+                    },
+                    {
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "delay": 0.5
+                      },
+                      "order": "say; startList:s2"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.5
+                      },
+                      "order": [
+                        "task:now; complete",
+                        "level; showPointer:r_birth"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "value": "bodyEvent:die; sumByP1",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 任务失败！"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "GreenIs2_plot2",
+            "info": {
+              "diy": "",
+              "enemyLv": 99,
+              "preSkillArr": "crazy_hero_5,armsSpeed_jie_5,jumpNumAdd1,rolling_hero_7,hyperopia_hero_10,myopia_hero_10",
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "mustSingleB": true,
+              "noDeviceB": true,
+              "firstLostB": true
+            },
+            "sceneLabel": "GreenIs2",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "we1",
+                  "camp": "we",
+                  "unit": [
+                    {
+                      "id": "StrikerTask",
+                      "cnName": "我",
+                      "armsRange": "rifleLock,shotgunLock,sniperLock,pistolLock",
+                      "lifeMul": 0.06,
+                      "dpsMul": 1500,
+                      "skillArr": "addChargerMax2,heroSprint,gliding_hero_7",
+                      "aiOrder": "followBody:WenJieTask",
+                      "warningRange": 500,
+                      "dieGotoState": "stru"
+                    },
+                    {
+                      "id": "WenJieTask",
+                      "cnName": "文杰表哥",
+                      "armsRange": "rifleLock,shotgunLock,sniperLock,pistolLock",
+                      "lifeMul": 0.06,
+                      "dpsMul": 1500,
+                      "skillArr": "addChargerMax2,heroSprint,gliding_hero_7",
+                      "aiOrder": "followBody:StrikerTask",
+                      "warningRange": 500,
+                      "dieGotoState": "stru"
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "unit": {
+                    "cnName": "泰坦",
+                    "dpsMul": 0.3,
+                    "lifeMul": 2,
+                    "unitType": "boss",
+                    "warningRange": 400
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "-451,1114,323,74",
+                  "id": "rboss1"
+                },
+                {
+                  "value": "3159,1086,230,75",
+                  "id": "rboss2"
+                }
+              ]
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "condition": null,
+                      "order": [
+                        "weAllHeroNoShoot",
+                        "weAllHeroNoEquip",
+                        "createUnit:we1; r_birth",
+                        "createUnit:enemy4; rboss2",
+                        "parasiticWeRolePan",
+                        "body:sumByP1; addTempDevice:hurtMine_6,70",
+                        "openInput"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "delay": 1
+                      },
+                      "order": "say; startList:s1"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.5
+                      }
+                    },
+                    {
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "delay": 0.5
+                      },
+                      "order": [
+                        "allWeHeroRebirth",
+                        "body:StrikerTask; addSkill:crazy_hero_5,jumpNumAdd1,rolling_hero_7,hyperopia_hero_10",
+                        "body:WenJieTask; addSkill:armsSpeed_jie_5,jumpNumAdd1,rolling_hero_7,myopia_hero_10"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.1
+                      },
+                      "order": "say; startList:s2"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      },
+                      "order": [
+                        "body:StrikerTask; doSkill:crazy_hero_5",
+                        "body:WenJieTask; doSkill:rolling_hero_7",
+                        "say; startList:s3"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      },
+                      "order": [
+                        "task:now; complete",
+                        "level; showPointer:r_over"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "event": {
+                    "condition": {
+                      "delay": 120
+                    },
+                    "order": "body:泰坦; warningRange:4000"
+                  }
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "value": "bodyEvent:die; sumByP1",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 任务失败！"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "GreenIs3_plot",
+            "info": {
+              "diy": "",
+              "enemyLv": 99,
+              "preSkillArr": "",
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "mustSingleB": true,
+              "noDeviceB": true,
+              "firstLostB": true
+            },
+            "sceneLabel": "GreenIs3",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "we1",
+                  "camp": "we",
+                  "unit": [
+                    {
+                      "id": "StrikerTask",
+                      "cnName": "我",
+                      "armsRange": "rifleLock,shotgunLock,sniperLock,pistolLock",
+                      "lifeMul": 0.05,
+                      "dpsMul": 2500,
+                      "skillArr": "crazy_hero_5,hyperopia_hero_10,addChargerMax2,jumpNumAdd1,heroSprint,gliding_hero_7,rolling_hero_7",
+                      "aiOrder": "followBodyAttack:WenJieTask",
+                      "dieGotoState": "stru"
+                    },
+                    {
+                      "id": "WenJieTask",
+                      "cnName": "文杰表哥",
+                      "armsRange": "rifleLock,shotgunLock,sniperLock,pistolLock",
+                      "lifeMul": 0.05,
+                      "dpsMul": 2500,
+                      "skillArr": "armsSpeed_jie_5,myopia_hero_10,addChargerMax2,jumpNumAdd1,heroSprint,gliding_hero_7,rolling_hero_7",
+                      "aiOrder": "followBodyAttack:StrikerTask",
+                      "dieGotoState": "stru"
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy1",
+                  "unit": [
+                    {
+                      "cnName": "巡逻狗",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "飞天狗",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "血蟒雇佣兵",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "unit": [
+                    {
+                      "cnName": "巡逻狗",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "飞天狗",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "血蟒突击兵",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "unit": [
+                    {
+                      "cnName": "巡逻狗",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "飞天狗",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "血蟒狙击兵",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "boss1",
+                  "unit": {
+                    "cnName": "血蟒狙击兵",
+                    "unitType": "boss",
+                    "dieGotoState": "stru",
+                    "onlyLevelSkillB": true,
+                    "skillArr": "sumLandDog,slowMove_enemy"
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "order": [
+                        "weAllHeroNoShoot",
+                        "weAllHeroNoEquip",
+                        "createUnit:we1; r_birth",
+                        "parasiticWeRolePan",
+                        "openInput"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "delay": 1
+                      },
+                      "order": "say; startList:s1"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.5
+                      }
+                    },
+                    {
+                      "condition": {
+                        "value": "liveEnemyNumber:less_1",
+                        "doNumber": 3
+                      },
+                      "order": "createUnit:enemy1; hideRan"
+                    },
+                    {
+                      "condition": {
+                        "value": "liveEnemyNumber:less_1",
+                        "doNumber": 3
+                      },
+                      "order": "createUnit:enemy2; hideRan"
+                    },
+                    {
+                      "condition": {
+                        "value": "liveEnemyNumber:less_1",
+                        "doNumber": 3
+                      },
+                      "order": "createUnit:enemy3; hideRan"
+                    },
+                    {
+                      "condition": {
+                        "value": "liveEnemyNumber:less_1",
+                        "doNumber": 1
+                      },
+                      "order": "createUnit:boss1; hideRan"
+                    },
+                    {
+                      "condition": {
+                        "value": "liveEnemyNumber:less_1",
+                        "delay": 0.5
+                      },
+                      "order": [
+                        "allWeHeroRebirth",
+                        "say; startList:s2"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.5
+                      }
+                    },
+                    {
+                      "condition": "hitMapRect:shop; sumByP1",
+                      "order": "say; startList:s3"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 1.5
+                      },
+                      "order": "say; startList:s4"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.5
+                      },
+                      "order": [
+                        "task:now; complete",
+                        "level; showPointer:r_birth"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "value": "bodyEvent:die; sumByP1",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 任务失败！"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "GreenIs3_domi",
+            "info": {
+              "diy": "",
+              "enemyLv": 99,
+              "preSkillArr": "",
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "mustSingleB": true,
+              "noDeviceB": true,
+              "firstLostB": true
+            },
+            "sceneLabel": "GreenIs3",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "we1",
+                  "camp": "we",
+                  "unit": [
+                    {
+                      "id": "StrikerTask",
+                      "cnName": "我",
+                      "armsRange": "rifleLock,shotgunLock,sniperLock,pistolLock",
+                      "lifeMul": 0.05,
+                      "dpsMul": 2500,
+                      "skillArr": "crazy_hero_5,hyperopia_hero_10,addChargerMax2,jumpNumAdd1,heroSprint,gliding_hero_7,rolling_hero_7",
+                      "aiOrder": "followBodyAttack:WenJieTask",
+                      "dieGotoState": "stru"
+                    },
+                    {
+                      "id": "WenJieTask",
+                      "cnName": "文杰表哥",
+                      "armsRange": "rifleLock,shotgunLock,sniperLock,pistolLock",
+                      "lifeMul": 0.05,
+                      "dpsMul": 2500,
+                      "skillArr": "armsSpeed_jie_5,myopia_hero_10,addChargerMax2,jumpNumAdd1,heroSprint,gliding_hero_7,rolling_hero_7",
+                      "aiOrder": "followBodyAttack:StrikerTask",
+                      "dieGotoState": "stru"
+                    }
+                  ]
+                },
+                {
+                  "id": "we2",
+                  "camp": "we",
+                  "unit": {
+                    "cnName": "多米诺",
+                    "armsRange": "pistolLock",
+                    "lifeMul": 0.07,
+                    "dpsMul": 1500,
+                    "skillArr": "",
+                    "aiOrder": "followBodyAttack:StrikerTask"
+                  }
+                },
+                {
+                  "id": "enemy1",
+                  "unit": [
+                    {
+                      "cnName": "巡逻狗",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "飞天狗",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "血蟒雇佣兵",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "血蟒重甲兵",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "unit": [
+                    {
+                      "cnName": "巡逻狗",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "飞天狗",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "血蟒突击兵",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "血蟒重甲兵",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "unit": [
+                    {
+                      "cnName": "巡逻狗",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "飞天狗",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "血蟒狙击兵",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "血蟒重甲兵",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "boss1",
+                  "unit": {
+                    "cnName": "血蟒重甲兵",
+                    "unitType": "boss",
+                    "onlyLevelSkillB": true,
+                    "skillArr": "feedback_enemy,sumAirDog,imploding_enemy"
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "order": [
+                        "weAllHeroNoShoot",
+                        "weAllHeroNoEquip",
+                        "createUnit:we1; r_birth",
+                        "parasiticWeRolePan",
+                        "openInput"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.1
+                      },
+                      "order": [
+                        "createUnit:enemy1; r3",
+                        "createUnit:we2; r3",
+                        "say; startList:s1"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.5
+                      }
+                    },
+                    {
+                      "condition": {
+                        "value": "liveEnemyNumber:less_1",
+                        "doNumber": 3
+                      },
+                      "order": "createUnit:enemy2; hideRan"
+                    },
+                    {
+                      "condition": {
+                        "value": "liveEnemyNumber:less_1",
+                        "doNumber": 3
+                      },
+                      "order": "createUnit:enemy3; hideRan"
+                    },
+                    {
+                      "condition": {
+                        "value": "liveEnemyNumber:less_1",
+                        "doNumber": 1
+                      },
+                      "order": "createUnit:boss1; hideRan"
+                    },
+                    {
+                      "condition": {
+                        "value": "liveEnemyNumber:less_1",
+                        "delay": 0.5
+                      },
+                      "order": [
+                        "allWeHeroRebirth",
+                        "say; startList:s2"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.5
+                      },
+                      "order": [
+                        "task:now; complete",
+                        "level; showPointer:r_over"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "value": "bodyEvent:die; sumByP1",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 任务失败！"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail2",
+                      "condition": {
+                        "value": "bodyEvent:die; 多米诺",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 多米诺倒下，任务失败！"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "GreenIs1_clearMine",
+            "info": {
+              "diy": "greenIsTask",
+              "enemyLv": 99,
+              "preBulletArr": "hurtMineBullet,hammerMineBullet",
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "mustSingleB": true,
+              "noDeviceB": true,
+              "firstLostB": true
+            },
+            "drop": {
+              "noChargerBasinB": true
+            },
+            "sceneLabel": "GreenIs1",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": {
+                "id": "we1",
+                "camp": "we",
+                "unit": {
+                  "cnName": "多米诺",
+                  "armsRange": "rocket1",
+                  "lifeMul": 0.05,
+                  "dpsMul": 1500,
+                  "skillArr": "jumpNumAdd1,gliding_hero_7"
+                }
+              }
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "condition": null,
+                      "order": [
+                        "weAllHeroNoShoot",
+                        "weAllHeroNoEquip",
+                        "createUnit:we1; r_birth",
+                        "heroEverParasitic:多米诺",
+                        "body:sumByP1; addTempDevice:hammerMine_6,60",
+                        "body:sumByP1; allArmsCapacity:11",
+                        "body:sumByP1; allArmsChargerMul:0",
+                        "openInput"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.1
+                      },
+                      "order": "GreenIs1_mine"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.1
+                      },
+                      "order": "say; startList:s1"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.5
+                      }
+                    },
+                    {
+                      "condition": {
+                        "value": "task:state; now:complete",
+                        "delay": 0.5,
+                        "doNumber": 1
+                      },
+                      "order": "say; startList:s2"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.5
+                      },
+                      "order": "level; showPointer:r_over"
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "value": "bodyEvent:die; sumByP1",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 任务失败！"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "GreenIs4_plot",
+            "info": {
+              "diy": "",
+              "enemyLv": 99,
+              "preSkillArr": "hiding_hero,moreMissile_hero,through_hero,underMurderous_jie,feedback_hero,charm_hero",
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "mustSingleB": true,
+              "noDeviceB": true,
+              "firstLostB": true
+            },
+            "sceneLabel": "GreenIs4",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "we1",
+                  "camp": "we",
+                  "unit": [
+                    {
+                      "id": "StrikerTask",
+                      "cnName": "我",
+                      "armsRange": "rifleLock,shotgunLock,sniperLock,pistolLock",
+                      "warningRange": 500,
+                      "lifeMul": 0.09,
+                      "dpsMul": 2500,
+                      "skillArr": "crazy_hero_10,hyperopia_hero_10,addChargerMax2,jumpNumAdd1,heroSprint,gliding_hero_7,rolling_hero_7",
+                      "aiOrder": "followBodyAttack:WenJieTask",
+                      "dieGotoState": "stru"
+                    },
+                    {
+                      "id": "WenJieTask",
+                      "cnName": "文杰表哥",
+                      "armsRange": "rifleLock,shotgunLock,sniperLock,pistolLock",
+                      "warningRange": 500,
+                      "lifeMul": 0.09,
+                      "dpsMul": 2500,
+                      "skillArr": "armsSpeed_jie_8,myopia_hero_10,addChargerMax2,jumpNumAdd1,heroSprint,gliding_hero_7,rolling_hero_7",
+                      "aiOrder": "followBodyAttack:StrikerTask",
+                      "dieGotoState": "stru"
+                    }
+                  ]
+                },
+                {
+                  "id": "we2",
+                  "camp": "we",
+                  "unit": {
+                    "cnName": "多米诺",
+                    "armsRange": "pistolLock",
+                    "lifeMul": 0.09,
+                    "dpsMul": 1500,
+                    "skillArr": "",
+                    "aiOrder": "followBodyAttack:sumByP1",
+                    "warningRange": 500,
+                    "dieGotoState": "stru"
+                  }
+                },
+                {
+                  "id": "boss1",
+                  "unit": {
+                    "cnName": "大地掠袭者",
+                    "dpsMul": 1,
+                    "lifeMul": 1,
+                    "unitType": "boss",
+                    "warningRange": 400,
+                    "onlyLevelSkillB": true,
+                    "skillArr": "defence100,floorTankSkill_8,sumAirDog"
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "-352,1240,174,84",
+                  "id": "rwe2"
+                },
+                {
+                  "value": "3159,1086,230,75",
+                  "id": "rboss2"
+                }
+              ]
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "condition": null,
+                      "order": [
+                        "weAllHeroNoShoot",
+                        "weAllHeroNoEquip",
+                        "createUnit:we1; r_birth",
+                        "createUnit:we2; rwe2",
+                        "parasiticWeRolePan",
+                        "openInput"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "delay": 1
+                      },
+                      "order": "say; startList:s1"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.5
+                      },
+                      "order": "createUnit:boss1; rboss2"
+                    },
+                    {
+                      "condition": {
+                        "delay": 1
+                      },
+                      "order": "say; startList:s2"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.5
+                      },
+                      "order": "body:sumByP1; addTempDevice:hammerMine_6,40"
+                    },
+                    {
+                      "condition": {
+                        "delay": 1
+                      },
+                      "order": "say; startList:s3"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.5
+                      }
+                    },
+                    {
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "delay": 0.5
+                      },
+                      "order": [
+                        "allWeHeroRebirth",
+                        "body:StrikerTask; addSkill:hiding_hero_6,moreMissile_hero_10,through_hero_5",
+                        "body:WenJieTask; addSkill:underMurderous_jie_5,feedback_hero_5,charm_hero_7"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.1
+                      },
+                      "order": "say; startList:s4"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.5
+                      }
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.1
+                      },
+                      "order": "say; startList:s5"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      },
+                      "order": [
+                        "task:now; complete",
+                        "level; showPointer:r_over"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "event": {
+                    "condition": {
+                      "delay": 100
+                    },
+                    "order": "body:大地掠袭者; warningRange:4000"
+                  }
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "value": "bodyEvent:die; sumByP1",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 任务失败！"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "GreenSomewhere_1",
+            "info": {
+              "enemyLv": 99,
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "noDeviceB": true,
+              "mustSingleB": true,
+              "firstLostB": true
+            },
+            "drop": {
+              "noB": true
+            },
+            "sceneLabel": "GreenSomewhere",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "we3",
+                  "camp": "we",
+                  "unit": {
+                    "id": "陆天启",
+                    "cnName": "空单位"
+                  }
+                },
+                {
+                  "id": "we1",
+                  "camp": "we",
+                  "unit": {
+                    "cnName": "沃龙"
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": null,
+                    "order": [
+                      "createUnit:we3; r_birth",
+                      "weAllHeroNoShoot",
+                      "weAllHeroNoEquip",
+                      "body:p1;noExist",
+                      "body:空单位;noExist",
+                      "body:空单位;setXY:539,474",
+                      "addNormalEffect:Wanda/lu;539,474:L_enemy,,die",
+                      "toPlotMode"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": [
+                      "say; startList:s1",
+                      "openInput"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 1
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "level; win"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "timeCapsule1",
+            "info": {
+              "diy": "",
+              "enemyLv": 99,
+              "preSkillArr": "timeCapsuleT",
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "mustSingleB": true,
+              "noDeviceB": true,
+              "firstLostB": true
+            },
+            "sceneLabel": "GreenIs3",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "we1",
+                  "camp": "we",
+                  "unit": [
+                    {
+                      "id": "StrikerTask",
+                      "cnName": "我",
+                      "armsRange": "rifleYellow,shotgunCrocodile,sniperSmilodon,pistolGod",
+                      "lifeMul": 0.05,
+                      "dpsMul": 2500,
+                      "skillArr": "reduceBulletHurtBy,shootSpeed2,crazy_hero_5,hyperopia_hero_10,addChargerMax2,jumpNumAdd1,heroSprint,gliding_hero_7,rolling_hero_7,hiding_hero_6,moreMissile_hero_10,through_hero_5",
+                      "aiOrder": "followBodyAttack:WenJieTask",
+                      "dieGotoState": "stru"
+                    },
+                    {
+                      "id": "WenJieTask",
+                      "cnName": "文杰表哥",
+                      "armsRange": "rifleYellow,shotgunCrocodile,sniperSmilodon,pistolGod",
+                      "lifeMul": 0.05,
+                      "dpsMul": 2500,
+                      "skillArr": "reduceBulletHurtBy,shootSpeed2,armsSpeed_jie_5,myopia_hero_10,addChargerMax2,jumpNumAdd1,heroSprint,gliding_hero_7,rolling_hero_7,underMurderous_jie_5,feedback_hero_5,charm_hero_7",
+                      "aiOrder": "followBodyAttack:StrikerTask",
+                      "dieGotoState": "stru"
+                    },
+                    {
+                      "cnName": "多米诺",
+                      "armsRange": "pistolRed",
+                      "lifeMul": 0.05,
+                      "dpsMul": 1500,
+                      "skillArr": "reduceBulletHurtBy",
+                      "aiOrder": "followBodyAttack:StrikerTask",
+                      "dieGotoState": "stru"
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy1",
+                  "unit": [
+                    {
+                      "cnName": "棍棒僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "古惑僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "伐木僵尸",
+                      "num": 3
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "unit": [
+                    {
+                      "cnName": "棍棒僵尸",
+                      "num": 8
+                    },
+                    {
+                      "cnName": "古惑僵尸",
+                      "num": 8
+                    },
+                    {
+                      "cnName": "伐木僵尸",
+                      "num": 5
+                    }
+                  ]
+                },
+                {
+                  "id": "boss1",
+                  "unit": {
+                    "cnName": "古惑僵尸",
+                    "unitType": "boss",
+                    "dpsMul": 1,
+                    "lifeMul": 0.5
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "order": [
+                        "weAllHeroNoShoot",
+                        "weAllHeroNoEquip",
+                        "createUnit:we1; r_birth",
+                        "parasiticWeRolePan",
+                        "openInput"
+                      ]
+                    },
+                    {
+                      "order": "say; startList:s1"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      }
+                    },
+                    {
+                      "order": "say; startList:s2"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      }
+                    },
+                    {
+                      "condition": {
+                        "value": "liveEnemyNumber:less_1",
+                        "doNumber": 3
+                      },
+                      "order": "createUnit:enemy1; hideRan"
+                    },
+                    {
+                      "condition": {
+                        "value": "liveEnemyNumber:less_1",
+                        "doNumber": 3
+                      },
+                      "order": "createUnit:enemy2; hideRan"
+                    },
+                    {
+                      "condition": {
+                        "value": "liveEnemyNumber:less_1",
+                        "doNumber": 1
+                      },
+                      "order": "createUnit:boss1; hideRan"
+                    },
+                    {
+                      "condition": {
+                        "value": "liveEnemyNumber:less_1",
+                        "delay": 0.5
+                      },
+                      "order": [
+                        "allWeHeroRebirth",
+                        "say; startList:s3"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      },
+                      "order": [
+                        "body:sumByP1; addTempDevice:timeCapsuleT_4,5",
+                        "task:now; complete",
+                        "level; showPointer:r_over"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "value": "bodyEvent:die; sumByP1",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 任务失败！"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "timeCapsule11",
+            "info": {
+              "diy": "",
+              "enemyLv": 99,
+              "preSkillArr": "timeCapsuleT",
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "mustSingleB": true,
+              "noDeviceB": true,
+              "firstLostB": true
+            },
+            "sceneLabel": "GreenIs4",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "we1",
+                  "camp": "we",
+                  "unit": [
+                    {
+                      "id": "StrikerTask",
+                      "cnName": "我",
+                      "armsRange": "rifleYellow,shotgunCrocodile,sniperSmilodon,pistolGod",
+                      "lifeMul": 0.01,
+                      "dpsMul": 2500,
+                      "skillArr": "reduceBulletHurtBy,shootSpeed2,crazy_hero_5,hyperopia_hero_10,addChargerMax2,jumpNumAdd1,heroSprint,gliding_hero_7,rolling_hero_7,hiding_hero_6,moreMissile_hero_10,through_hero_5",
+                      "aiOrder": "no",
+                      "dieGotoState": "stru"
+                    },
+                    {
+                      "id": "WenJieTask",
+                      "cnName": "文杰表哥",
+                      "armsRange": "rifleYellow,shotgunCrocodile,sniperSmilodon,pistolGod",
+                      "lifeMul": 0.01,
+                      "dpsMul": 2500,
+                      "skillArr": "reduceBulletHurtBy,shootSpeed2,armsSpeed_jie_5,myopia_hero_10,addChargerMax2,jumpNumAdd1,heroSprint,gliding_hero_7,rolling_hero_7,underMurderous_jie_5,pioneer_hero_5,charm_hero_7",
+                      "aiOrder": "no",
+                      "dieGotoState": "stru"
+                    },
+                    {
+                      "cnName": "多米诺",
+                      "armsRange": "pistolRed",
+                      "lifeMul": 0.01,
+                      "dpsMul": 1500,
+                      "skillArr": "reduceBulletHurtBy",
+                      "aiOrder": "no",
+                      "dieGotoState": "stru"
+                    }
+                  ]
+                },
+                {
+                  "id": "boss1",
+                  "unit": {
+                    "cnName": "古惑僵尸",
+                    "dpsMul": 1,
+                    "lifeMul": 20,
+                    "warningRange": 400
+                  }
+                },
+                {
+                  "id": "super1",
+                  "unit": {
+                    "num": 5,
+                    "unitType": "super",
+                    "cnName": "伐木僵尸",
+                    "dpsMul": 2,
+                    "lifeMul": 4,
+                    "onlyLevelSkillB": true,
+                    "skillArr": "State_AddMove,hammer_enemy,State_SpellImmunity,enemyEmp"
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "3315,1275,20,20",
+                  "id": "rboss2"
+                },
+                {
+                  "value": "10,1141,72,192",
+                  "id": "rOver2"
+                },
+                {
+                  "value": "3585,1177,323,156",
+                  "id": "rSuper1"
+                }
+              ]
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "order": [
+                        "weAllHeroNoShoot",
+                        "weAllHeroNoEquip",
+                        "createUnit:we1; r_birth",
+                        "parasiticWeRolePan",
+                        "openInput"
+                      ]
+                    },
+                    {
+                      "order": [
+                        "body:sumByP1; addTempDevice:timeCapsuleT_4,10",
+                        "createUnit:boss1; rboss2",
+                        "timeCapsule11_mine"
+                      ]
+                    },
+                    {
+                      "order": "say; startList:s1"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      }
+                    },
+                    {
+                      "condition": "mineNumber:less_40",
+                      "order": [
+                        "sceneScale:0.50",
+                        "playSound:uiSound/giveupTask"
+                      ]
+                    },
+                    {
+                      "condition": "mineNumber:less_5",
+                      "order": "sceneScale:1"
+                    },
+                    {
+                      "condition": {
+                        "value": "mineNumber:less_1",
+                        "delay": 0.5
+                      },
+                      "order": [
+                        "body:StrikerTask; ai:patrolRandom",
+                        "body:WenJieTask; ai:patrolRandom",
+                        "body:多米诺; ai:patrolRandom",
+                        "say; startList:s2"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      }
+                    },
+                    {
+                      "condition": "liveEnemyNumber:less_1",
+                      "order": "createUnit:super1; rSuper1"
+                    },
+                    {
+                      "condition": "liveEnemyNumber:less_1",
+                      "order": [
+                        "allWeHeroRebirth",
+                        "body:StrikerTask; followBody:sumByP1",
+                        "body:WenJieTask; followBody:sumByP1",
+                        "body:多米诺; followBody:sumByP1",
+                        "say; startList:s3"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      },
+                      "order": [
+                        "task:now; complete",
+                        "level; showPointer:rOver2"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "value": "bodyEvent:die; sumByP1",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 任务失败！"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "timeCapsule2",
+            "info": {
+              "diy": "",
+              "enemyLv": 99,
+              "preSkillArr": "timeCapsuleT",
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "mustSingleB": true,
+              "noDeviceB": true,
+              "firstLostB": true
+            },
+            "sceneLabel": "GreenIs4",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "we1",
+                  "camp": "we",
+                  "unit": [
+                    {
+                      "id": "StrikerTask",
+                      "cnName": "我",
+                      "armsRange": "rifleYellow,shotgunCrocodile,sniperSmilodon,pistolGod",
+                      "lifeMul": 0.05,
+                      "dpsMul": 2500,
+                      "skillArr": "reduceBulletHurtBy,shootSpeed2,crazy_hero_10,hyperopia_hero_10,addChargerMax2,jumpNumAdd1,heroSprint,gliding_hero_7,rolling_hero_7,hiding_hero_6,moreMissile_hero_10,through_hero_5",
+                      "aiOrder": "followBodyAttack:WenJieTask",
+                      "dieGotoState": "stru"
+                    },
+                    {
+                      "id": "WenJieTask",
+                      "cnName": "文杰表哥",
+                      "armsRange": "rifleYellow,shotgunCrocodile,sniperSmilodon,pistolGod",
+                      "lifeMul": 0.05,
+                      "dpsMul": 2500,
+                      "skillArr": "reduceBulletHurtBy,shootSpeed2,armsSpeed_jie_5,myopia_hero_10,addChargerMax2,jumpNumAdd1,heroSprint,gliding_hero_7,rolling_hero_7,underMurderous_jie_5,pioneer_hero_5,charm_hero_7",
+                      "aiOrder": "followBodyAttack:StrikerTask",
+                      "dieGotoState": "stru"
+                    },
+                    {
+                      "cnName": "多米诺",
+                      "armsRange": "pistolRed",
+                      "lifeMul": 0.05,
+                      "dpsMul": 1500,
+                      "skillArr": "reduceBulletHurtBy",
+                      "aiOrder": "followBodyAttack:StrikerTask",
+                      "dieGotoState": "stru"
+                    }
+                  ]
+                },
+                {
+                  "id": "boss1",
+                  "unit": {
+                    "cnName": "棍棒僵尸",
+                    "unitType": "boss",
+                    "dpsMul": 4,
+                    "lifeMul": 7,
+                    "warningRange": 400,
+                    "onlyLevelSkillB": true,
+                    "skillArr": "sumFoggyX"
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": {
+                "value": "3159,1086,230,75",
+                "id": "rboss2"
+              }
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "order": [
+                        "weAllHeroNoShoot",
+                        "weAllHeroNoEquip",
+                        "createUnit:we1; r_birth",
+                        "parasiticWeRolePan",
+                        "openInput"
+                      ]
+                    },
+                    {
+                      "order": [
+                        "body:sumByP1; addTempDevice:timeCapsuleT_4,5",
+                        "createUnit:boss1; rboss2"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "value": "liveEnemyNumber:less_1",
+                        "delay": 0.5
+                      },
+                      "order": [
+                        "allWeHeroRebirth",
+                        "say; startList:s3"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      },
+                      "order": [
+                        "task:now; complete",
+                        "level; showPointer:r_over"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "value": "bodyEvent:die; sumByP1",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 任务失败！"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "timeCapsule3",
+            "info": {
+              "diy": "",
+              "enemyLv": 99,
+              "preSkillArr": "timeCapsuleT",
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "mustSingleB": true,
+              "noDeviceB": true,
+              "firstLostB": true
+            },
+            "sceneLabel": "GreenTown1",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "we1",
+                  "camp": "we",
+                  "unit": [
+                    {
+                      "id": "StrikerTask",
+                      "cnName": "我",
+                      "armsRange": "rifleYellow,shotgunCrocodile,sniperSmilodon,pistolGod",
+                      "warningRange": 1400,
+                      "lifeMul": 0.05,
+                      "dpsMul": 2500,
+                      "skillArr": "reduceBulletHurtBy,shootSpeed2,crazy_hero_10,hyperopia_hero_10,addChargerMax2,jumpNumAdd1,heroSprint,gliding_hero_7,rolling_hero_7,hiding_hero_6,moreMissile_hero_10,through_hero_5",
+                      "aiOrder": "followBodyAttack:WenJieTask",
+                      "dieGotoState": "stru"
+                    },
+                    {
+                      "id": "WenJieTask",
+                      "cnName": "文杰表哥",
+                      "armsRange": "rifleYellow,shotgunCrocodile,sniperSmilodon,pistolGod",
+                      "warningRange": 1400,
+                      "lifeMul": 0.05,
+                      "dpsMul": 2500,
+                      "skillArr": "reduceBulletHurtBy,shootSpeed2,armsSpeed_jie_5,myopia_hero_10,addChargerMax2,jumpNumAdd1,heroSprint,gliding_hero_7,rolling_hero_7,underMurderous_jie_5,pioneer_hero_5,charm_hero_7",
+                      "aiOrder": "followBodyAttack:StrikerTask",
+                      "dieGotoState": "stru"
+                    },
+                    {
+                      "cnName": "多米诺",
+                      "armsRange": "pistolRed",
+                      "lifeMul": 0.05,
+                      "dpsMul": 1500,
+                      "skillArr": "reduceBulletHurtBy",
+                      "warningRange": 1400,
+                      "aiOrder": "followBodyAttack:StrikerTask",
+                      "dieGotoState": "stru"
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy1",
+                  "unit": {
+                    "cnName": "血蟒感染者",
+                    "dpsMul": 1.4,
+                    "lifeMul": 6,
+                    "warningRange": 1400,
+                    "armsRange": "lightCone",
+                    "skillArr": "through_enemy"
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "2333,809,10,10",
+                  "id": "e1"
+                },
+                {
+                  "value": "2477,749,10,10",
+                  "id": "e2"
+                },
+                {
+                  "value": "2621,644,10,10",
+                  "id": "e3"
+                },
+                {
+                  "value": "2797,644,10,10",
+                  "id": "e4"
+                },
+                {
+                  "value": "3078,723,10,10",
+                  "id": "e5"
+                },
+                {
+                  "value": "2943,821,10,10",
+                  "id": "e6"
+                },
+                {
+                  "value": "2806,906,10,10",
+                  "id": "e7"
+                },
+                {
+                  "value": "2688,988,10,10",
+                  "id": "e8"
+                },
+                {
+                  "value": "2564,1083,10,10",
+                  "id": "e9"
+                },
+                {
+                  "value": "2390,1193,10,10",
+                  "id": "e10"
+                },
+                {
+                  "value": "2537,1279,10,10",
+                  "id": "e11"
+                },
+                {
+                  "value": "2683,1327,10,10",
+                  "id": "e12"
+                },
+                {
+                  "value": "2874,1327,10,10",
+                  "id": "e13"
+                },
+                {
+                  "value": "3037,1327,10,10",
+                  "id": "e14"
+                },
+                {
+                  "value": "3200,1327,10,10",
+                  "id": "e15"
+                },
+                {
+                  "value": "2715,664,10,10",
+                  "id": "e16"
+                },
+                {
+                  "value": "3000,763,10,10",
+                  "id": "e17"
+                },
+                {
+                  "value": "2866,856,10,10",
+                  "id": "e18"
+                },
+                {
+                  "value": "2746,939,10,10",
+                  "id": "e19"
+                },
+                {
+                  "value": "2614,1309,10,10",
+                  "id": "e20"
+                },
+                {
+                  "value": "2795,1309,10,10",
+                  "id": "e21"
+                },
+                {
+                  "value": "2953,1309,10,10",
+                  "id": "e22"
+                },
+                {
+                  "value": "3120,1309,10,10",
+                  "id": "e23"
+                }
+              ]
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "order": [
+                        "weAllHeroNoShoot",
+                        "weAllHeroNoEquip",
+                        "createUnit:we1; r_birth",
+                        "parasiticWeRolePan",
+                        "openInput"
+                      ]
+                    },
+                    {
+                      "order": [
+                        "body:sumByP1; addTempDevice:timeCapsuleT_4,5",
+                        "createUnit:enemy1; e1",
+                        "createUnit:enemy1; e2",
+                        "createUnit:enemy1; e3",
+                        "createUnit:enemy1; e4",
+                        "createUnit:enemy1; e5",
+                        "createUnit:enemy1; e6",
+                        "createUnit:enemy1; e7",
+                        "createUnit:enemy1; e8",
+                        "createUnit:enemy1; e9",
+                        "createUnit:enemy1; e10",
+                        "createUnit:enemy1; e11",
+                        "createUnit:enemy1; e12",
+                        "createUnit:enemy1; e13",
+                        "createUnit:enemy1; e14",
+                        "createUnit:enemy1; e15",
+                        "createUnit:enemy1; e16",
+                        "createUnit:enemy1; e17",
+                        "createUnit:enemy1; e18",
+                        "createUnit:enemy1; e19",
+                        "createUnit:enemy1; e20",
+                        "createUnit:enemy1; e21",
+                        "createUnit:enemy1; e22",
+                        "createUnit:enemy1; e23"
+                      ]
+                    },
+                    {
+                      "order": "say; startList:s1"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      },
+                      "order": "sceneScale:0.66"
+                    },
+                    {
+                      "condition": {
+                        "value": "liveEnemyNumber:less_1",
+                        "delay": 0.5
+                      },
+                      "order": [
+                        "sceneScale:1",
+                        "allWeHeroRebirth",
+                        "say; startList:s2"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      },
+                      "order": "say; startList:s3"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      },
+                      "order": [
+                        "task:now; complete",
+                        "level; showPointer:r_birth"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "value": "bodyEvent:die; sumByP1",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 任务失败！"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "GreenTown1_plot",
+            "info": {
+              "diy": "",
+              "enemyLv": 99,
+              "noTreasureB": true
+            },
+            "sceneLabel": "GreenTown1",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": {
+                "id": "boss1",
+                "unit": {
+                  "cnName": "交叉骨",
+                  "dpsMul": 1,
+                  "lifeMul": 1,
+                  "unitType": "boss",
+                  "dieGotoState": "stru"
+                }
+              }
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "order": "createUnit:boss1; hideRan"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "level;taskTimingB:false",
+                      "allPartnerRebirth",
+                      "say; startList:s2"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "level; showPointer:r_birth",
+                      "level; win"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "GreenTown1_hostage",
+            "info": {
+              "enemyLv": 99,
+              "noTreasureB": true,
+              "firstLostB": true,
+              "mustSingleB": true,
+              "noPropsB": true,
+              "noDeviceB": true
+            },
+            "sceneLabel": "GreenTown1",
+            "rectG": {
+              "rect": [
+                {
+                  "value": "2386,1194,26,26",
+                  "id": "enemyRect"
+                },
+                {
+                  "value": "2444,1213,26,26",
+                  "id": "yuRect"
+                },
+                {
+                  "value": "2000,1328,26,26",
+                  "id": "weRect"
+                },
+                {
+                  "value": "1700,1328,26,26",
+                  "id": "moreRect"
+                },
+                {
+                  "value": "3989,1274,184,126",
+                  "id": "overRect"
+                }
+              ]
+            },
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "camp": "we",
+                  "unit": [
+                    {
+                      "cnName": "旺达",
+                      "num": 1,
+                      "aiOrder": "followBodyAttack:我",
+                      "skillArr": "teleport_skeleton,noUnderMulHurt,State_InvincibleThrough,State_noAiFind"
+                    },
+                    {
+                      "cnName": "血蟒突击兵",
+                      "num": 1,
+                      "aiOrder": "followBodyAttack:旺达"
+                    },
+                    {
+                      "cnName": "血蟒狙击兵",
+                      "num": 1,
+                      "aiOrder": "followBodyAttack:血蟒突击兵"
+                    },
+                    {
+                      "cnName": "血蟒重甲兵",
+                      "num": 1,
+                      "aiOrder": "followBodyAttack:血蟒重甲兵"
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "血蟒突击兵",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "血蟒狙击兵",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "血蟒重甲兵",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "mama",
+                  "camp": "we",
+                  "unit": {
+                    "cnName": "玉晴",
+                    "num": 1,
+                    "lifeMul": 0.07,
+                    "aiOrder": "followBody:旺达"
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "order": [
+                        "level; setSensitivity:1",
+                        "allBody:we; addSkill:State_noAllSkill",
+                        "setGamingAITrue",
+                        "createUnit:enemy1; r_over",
+                        "createUnit:mama; r_over"
+                      ]
+                    },
+                    {
+                      "order": [
+                        "body:旺达; followPoint:enemyRect",
+                        "body:旺达; lockShootXY:1656,1298",
+                        "body:玉晴; followPoint:yuRect",
+                        "body:p1; followPoint:weRect",
+                        "body:我; lockShootXY:2372,1177",
+                        "body:p1; lockShootXY:2372,1177"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "delay": 3
+                      },
+                      "order": "say; startList:s1"
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.4
+                      }
+                    },
+                    {
+                      "order": [
+                        "allBody:we; ai:no",
+                        "body:玉晴; moveSpeedMul:0.3",
+                        "body:玉晴; followPoint:moreRect",
+                        "body:我; moveSpeedMul:0.15",
+                        "body:我; followPoint:enemyRect"
+                      ]
+                    },
+                    {
+                      "condition": "bodyGap:less_350; 我:旺达",
+                      "order": "say; startList:s2"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.5
+                      },
+                      "order": [
+                        "body:我; ai:noAndStop",
+                        "body:玉晴; ai:noAndStop"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      }
+                    },
+                    {
+                      "order": "say; startList:s3"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.1
+                      },
+                      "order": [
+                        "body:旺达; rangeLimit:close",
+                        "body:旺达; addEffectPosition:teleport_BoomSkullS_me",
+                        "body:旺达; setXY:2818,1339",
+                        "body:旺达; followPoint:overRect",
+                        "body:旺达; moveSpeedMul:1.8"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      }
+                    },
+                    {
+                      "condition": "hitMapRect:overRect; 旺达",
+                      "order": "body:旺达; toDel"
+                    },
+                    {
+                      "order": [
+                        "setGamingAIFalse",
+                        "level; setSensitivity:-1",
+                        "body:玉晴; moveSpeedMul:1.5",
+                        "body:我; moveSpeedMul:1",
+                        "allBody:we; campToEnemyByUnitOrderId:enemy1",
+                        "allBody:we; ai:followBodyAttack:p1",
+                        "allBody:enemy; ai:patrolRandom",
+                        "body:玉晴; ai:followBody:p1",
+                        "openInput"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "value": "liveEnemyNumber:less_1",
+                        "doNumber": 5
+                      },
+                      "order": "createUnit:enemy2; r123"
+                    },
+                    {
+                      "condition": "enemyNumber:less_1",
+                      "order": [
+                        "allWeHeroRebirth",
+                        "say; startList:s4"
+                      ]
+                    },
+                    {
+                      "condition": {
+                        "value": "say:listOver",
+                        "delay": 0.1
+                      },
+                      "order": [
+                        "task:now; complete",
+                        "level; showPointer:r_birth"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail2",
+                      "condition": {
+                        "value": "bodyEvent:die; 玉晴",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 玉晴倒下，任务失败！"
+                    },
+                    {
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "GreenIs1_escort",
+            "info": {
+              "enemyLv": 99,
+              "preSkillArr": "iconGiftBox",
+              "noTreasureB": true,
+              "noPropsB": true,
+              "mustSingleB": true,
+              "noDeviceB": true
+            },
+            "sceneLabel": "GreenIs1",
+            "unitG": {
+              "unitOrder": {
+                "id": "we2",
+                "camp": "we",
+                "unit": [
+                  {
+                    "cnName": "处决者"
+                  },
+                  {
+                    "cnName": "玉晴"
+                  }
+                ]
+              }
+            },
+            "rectG": {
+              "rect": {
+                "value": "574,638,214,100",
+                "id": "fly1"
+              }
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": null,
+                    "order": [
+                      "allBody:we; setXY:733,638",
+                      "body:p1; setXY:633,638",
+                      "createUnit:we2; r_birth",
+                      "body:处决者; flipToRight",
+                      "body:处决者; setXY:188,910",
+                      "body:玉晴; flipToRight",
+                      "body:玉晴; setXY:408,861",
+                      "addWeather:rain; 2:99999"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.5
+                    }
+                  },
+                  {
+                    "order": "body:玉晴; followPoint:73,923"
+                  },
+                  {
+                    "condition": "bodyGap:less_70; 玉晴:处决者",
+                    "order": [
+                      "body:玉晴; addEffectPosition:oreBombShowFlower",
+                      "body:玉晴; toDel"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": [
+                      "body:处决者; rangeLimit:close",
+                      "body:处决者; followPoint:-393,-45"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "delay": 2
+                    },
+                    "order": "say; startList:s2"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "GreenIs4_black",
+            "info": {
+              "enemyLv": 99,
+              "diff": 2
+            },
+            "sceneLabel": "GreenIs4",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "unit": [
+                    {
+                      "cnName": "棍棒僵尸",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "古惑僵尸",
+                      "num": 6
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "unit": [
+                    {
+                      "cnName": "棍棒僵尸",
+                      "num": 5
+                    },
+                    {
+                      "cnName": "伐木僵尸",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "血蟒感染者",
+                      "num": 3
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "unit": [
+                    {
+                      "cnName": "古惑僵尸",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "棍棒僵尸",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "伐木僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "血蟒感染者",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "unit": {
+                    "cnName": "黑暗骑士",
+                    "unitType": "boss",
+                    "lifeMul": 3,
+                    "dpsMul": 2
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": {
+                      "delay": 0.5
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.5
+                    }
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "condition": "enemyNumber:less_1",
+                    "order": [
+                      "allWeHeroRebirth",
+                      "say; startList:s2"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.5
+                    }
+                  },
+                  {
+                    "order": [
+                      "task:now; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cnName": "绿岛关卡",
+        "level": [
+          {
+            "name": "GreenIs1_1",
+            "info": {
+              "enemyLv": 99,
+              "diff": 2
+            },
+            "sceneLabel": "GreenIs1",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "unit": [
+                    {
+                      "cnName": "古惑僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "棍棒僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "伐木僵尸",
+                      "num": 4
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "unit": [
+                    {
+                      "cnName": "古惑僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "棍棒僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "伐木僵尸",
+                      "num": 5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "unit": [
+                    {
+                      "cnName": "古惑僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "棍棒僵尸",
+                      "num": 6
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "unit": {
+                    "cnName": "棍棒僵尸",
+                    "unitType": "boss",
+                    "lifeMul": 3,
+                    "dpsMul": 2
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 1
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "liveEnemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "liveEnemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "liveEnemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "enemyNumber:less_1",
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "GreenTown1_1",
+            "info": {
+              "enemyLv": 99,
+              "diff": 2
+            },
+            "sceneLabel": "GreenTown1",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "unit": [
+                    {
+                      "cnName": "棍棒僵尸",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "伐木僵尸",
+                      "num": 6
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "unit": [
+                    {
+                      "cnName": "棍棒僵尸",
+                      "num": 5
+                    },
+                    {
+                      "cnName": "伐木僵尸",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "血蟒感染者",
+                      "num": 3
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "unit": {
+                    "cnName": "血蟒感染者",
+                    "num": 6
+                  }
+                },
+                {
+                  "id": "enemy4",
+                  "unit": {
+                    "cnName": "交叉骨",
+                    "unitType": "boss",
+                    "lifeMul": 3,
+                    "dpsMul": 2
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 1
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "liveEnemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "liveEnemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "liveEnemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "enemyNumber:less_1",
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "GreenIs4_1",
+            "info": {
+              "enemyLv": 99,
+              "diff": 2
+            },
+            "sceneLabel": "GreenIs4",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "unit": [
+                    {
+                      "cnName": "棍棒僵尸",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "古惑僵尸",
+                      "num": 6
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "unit": [
+                    {
+                      "cnName": "棍棒僵尸",
+                      "num": 5
+                    },
+                    {
+                      "cnName": "伐木僵尸",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "血蟒感染者",
+                      "num": 3
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "unit": [
+                    {
+                      "cnName": "古惑僵尸",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "棍棒僵尸",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "伐木僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "血蟒感染者",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "unit": {
+                    "cnName": "黑暗骑士",
+                    "unitType": "boss",
+                    "lifeMul": 3,
+                    "dpsMul": 2
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 1
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "liveEnemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "liveEnemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "liveEnemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "enemyNumber:less_1",
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

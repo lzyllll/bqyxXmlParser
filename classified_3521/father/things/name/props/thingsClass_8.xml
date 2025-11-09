@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="props" cnName="双倍卡片">	
+		<things cnName="双倍经验绿卡">
+			<name>doubleCard</name>
+			<cnName>双倍经验绿卡</cnName>
+			<zuobiNum>2000</zuobiNum>
+			<iconUrl>ThingsIcon/doubleCard</iconUrl>
+			<description>使用后获得20分钟的双倍经验时间。</description>
+			<effectD type="addGift" />
+			<gift>time;doubleExpTime;1200</gift>
+			<smeltD grade="0" addType="" price="5" />
+			</things>
+		<things cnName="双倍经验金卡">
+			<name>doubleHighCard</name>
+			<zuobiNum>1000</zuobiNum>
+			<cnName>双倍经验金卡</cnName>
+			<iconUrl>ThingsIcon/doubleHighCard</iconUrl>
+			<description>使用后获得60分钟的双倍经验时间。</description>
+			<effectD type="addGift" />
+			<gift>time;doubleExpTime;3600</gift>
+			<smeltD grade="0" addType="" price="10" />
+			</things>
+		
+		
+		<things cnName="双倍武器掉率卡">
+			<name>doubleArmsCard</name>
+			<cnName>双倍武器掉率卡</cnName>
+			<zuobiNum>2000</zuobiNum>
+			<iconUrl>ThingsIcon/doubleArmsCard</iconUrl>
+			<description>使用后获得20分钟的双倍武器掉率时间，武器包括橙色武器、红色武器、稀有武器、黑色武器碎片。</description>
+			<effectD type="addGift" />
+			<gift>time;doubleArmsDropTime;1200</gift>
+			<smeltD grade="1" addType="armsChip" price="10" />
+			<loveD num="0" />
+		</things>
+		<things cnName="双倍装备掉率卡">
+			<name>doubleEquipCard</name>
+			<cnName>双倍装备掉率卡</cnName>
+			<zuobiNum>2000</zuobiNum>
+			<iconUrl>ThingsIcon/doubleEquipCard</iconUrl>
+			<description>使用后获得20分钟的双倍装备掉率时间，装备包括橙色装备、红色装备、稀有装备、黑色装备碎片。</description>
+			<effectD type="addGift" />
+			<gift>time;doubleEquipDropTime;1200</gift>
+			<smeltD grade="1" addType="equipChip" price="8" />
+			<loveD num="0" />
+		</things>
+		<things cnName="双倍材料掉率卡">
+			<name>doubleMaterialsCard</name>
+			<cnName>双倍材料掉率卡</cnName>
+			<zuobiNum>2000</zuobiNum>
+			<iconUrl>ThingsIcon/doubleMaterialsCard</iconUrl>
+			<description>使用后获得15分钟的双倍材料掉率时间，材料包括神能石、转化石、生命催化剂、商券、血石。</description>
+			<effectD type="addGift" />
+			<gift>time;doubleMaterialsDropTime;900</gift>
+			<smeltD grade="1" addType="otherChip" price="5" />
+			<loveD num="0" />
+		</things>
+	</father>
+	</data>

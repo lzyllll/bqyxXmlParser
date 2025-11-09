@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="snake">
+		
+		<skill>
+			<name>rideFireWolf</name><cnName>骑射专家</cnName><conditionString>0.8,1</conditionString><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>99999</cd><firstCd>99999</firstCd><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition><otherConditionArr>targetNoVehicleB,targetLifePerRange</otherConditionArr><target>me</target>
+			<addType>instant</addType><summonedUnitsB>1</summonedUnitsB>
+			<effectType>rideShootVehicle</effectType><duration>89999</duration>
+			<valueString>虚炎狼</valueString>
+			<obj>"cnName":"虚炎狼坐骑","num":1,"lifeMul":0.15,"dpsMul":1,"mulByFatherB":1,"maxNum":1,"skillArr":["State_SpellImmunity","noUnderMulHurt","defenceWenjie"]</obj>
+			<meEffectImg name="changeToGaia_me" /><description>生命值每减少20%都会召唤出不同的载具，并进入骑射状态。</description>
+		</skill>
+		
+		<skill>
+			<name>rideFloorTank</name><cnName>掠袭者骑射</cnName><conditionString>0.6,0.8</conditionString>
+			<cd>99999</cd><firstCd>99999</firstCd><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition><otherConditionArr>targetNoVehicleB,targetLifePerRange</otherConditionArr><target>me</target>
+			<addType>instant</addType><summonedUnitsB>1</summonedUnitsB>
+			<effectType>rideShootVehicle</effectType><duration>89999</duration>
+			<valueString>大地掠袭者</valueString>
+			<obj>"cnName":"大地掠袭者","num":1,"lifeMul":0.1,"dpsMul":1,"mulByFatherB":1,"maxNum":1,"skillArr":["State_SpellImmunity","noUnderMulHurt","defenceWenjie","floorTankSkill"]</obj>
+			<meEffectImg name="changeToGaia_me" /><description>大地掠袭者骑射</description>
+		</skill>
+		
+		<skill>
+			<name>rideNian</name><cnName>切割者骑射</cnName><conditionString>0.4,0.6</conditionString>
+			<cd>99999</cd><firstCd>99999</firstCd><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition><otherConditionArr>targetNoVehicleB,targetLifePerRange</otherConditionArr><target>me</target>
+			<addType>instant</addType><summonedUnitsB>1</summonedUnitsB>
+			<effectType>rideShootVehicle</effectType><duration>89999</duration>
+			<valueString>切割者</valueString>
+			<obj>"cnName":"切割者","num":1,"lifeMul":0.15,"dpsMul":1,"mulByFatherB":1,"maxNum":1,"skillArr":["State_SpellImmunity","noUnderMulHurt","defenceWenjie","murderous_vehicle_10"]</obj>
+			<meEffectImg name="changeToGaia_me" /><description>切割者骑射</description>
+		</skill>
+		<skill>
+			<name>rideKun</name><cnName>鲲骑射</cnName><conditionString>0.2,0.4</conditionString>
+			<cd>99999</cd><firstCd>99999</firstCd><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition><otherConditionArr>targetNoVehicleB,targetLifePerRange</otherConditionArr><target>me</target>
+			<addType>instant</addType><summonedUnitsB>1</summonedUnitsB>
+			<effectType>rideShootVehicle</effectType><duration>89999</duration>
+			<valueString>鲲</valueString>
+			<obj>"cnName":"鲲","num":1,"lifeMul":0.1,"dpsMul":1,"mulByFatherB":1,"maxNum":1,"skillArr":["State_SpellImmunity","noUnderMulHurt","defenceWenjie"]</obj>
+			<meEffectImg name="changeToGaia_me" /><description>鲲骑射</description>
+		</skill>
+		
+		<skill>
+			<name>rideBlueMoto</name><cnName>飞魄骑射</cnName><conditionString>0,0.2</conditionString>
+			<cd>99999</cd><firstCd>99999</firstCd><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition><otherConditionArr>targetNoVehicleB,targetLifePerRange</otherConditionArr><target>me</target>
+			<addType>instant</addType><summonedUnitsB>1</summonedUnitsB>
+			<effectType>rideShootVehicle</effectType><duration>89999</duration>
+			<valueString>飞魄</valueString>
+			<obj>"cnName":"飞魄","num":1,"lifeMul":0.2,"dpsMul":1,"mulByFatherB":1,"maxNum":1,"skillArr":["State_SpellImmunity","noUnderMulHurt","defenceWenjie","blade_blueMoto_9","shockWave_10"]</obj>
+			<meEffectImg name="changeToGaia_me" /><description>飞魄骑射</description>
+		</skill>
+		
+		
+		<skill>
+			<name>sameInvi</name>
+			<cnName>均衡矩阵</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>sameInvi</effectType>
+			<duration>9999999</duration>
+			<stateEffectImg name="SaberTiger_shield_second_state" />
+			<description>目标无敌时，自身也进入无敌状态。</description>
+		</skill>
+		<skill>
+			<name>hurtWenjie</name>
+			<cnName>歧视文杰</cnName><ignoreNoSkillB>1</ignoreNoSkillB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>allHit</condition>
+			<otherConditionArr>p1Wenjie</otherConditionArr>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurtNoCondition</effectType>
+			<mul>2.5</mul>
+			
+			<description>对P1文杰造成[mul-1]的伤害。</description>
+		</skill>
+		<skill>
+			<name>defenceWenjie</name>
+			<cnName>防御文杰</cnName><ignoreNoSkillB>1</ignoreNoSkillB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underAllHit</condition>
+			<otherConditionArr>p1Wenjie</otherConditionArr>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurtNoCondition</effectType>
+			<mul>0.70</mul>
+			
+			<description>降低受到P1文杰[1-mul]的伤害。</description>
+		</skill>
+	</father>
+</data>

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="car" cnName="战车定义">
+		<equip name="RedMoto" cnName="赤焰" rideLabel="RedMotoRide" evolutionLabel="RedMotoSec">
+			<evolutionLv>2</evolutionLv>
+			<canComposeB>1</canComposeB>
+			<mustCash>500</mustCash>
+			<main label="RedMoto_main" dpsMul="0.8" len="35" minRa="-179" maxRa="-178.9" />
+			<sub label="Diggers_sub" dpsMul="0" hideB="1" />
+			<lifeMul>1.4</lifeMul>
+			<attackMul>1.4</attackMul>
+			<duration>40</duration>
+			<cd>120</cd>
+			<addObjJson>{'dpsAll':0.08,'lifeAll':0.08}</addObjJson>
+			<skillArr>vehicleFit_Civilian</skillArr>
+		</equip>
+		<equip name="RedMotoSec" cnName="烈焰" rideLabel="RedMotoRide" evolutionLabel="RedMotoThird">
+			<evolutionLv>4</evolutionLv>
+			<mustCash>250</mustCash>
+			<main label="RedMoto_main" dpsMul="1.2" len="35" minRa="-179" maxRa="-178.9" />
+			<sub label="Diggers_sub" dpsMul="0" hideB="1" />
+			<lifeMul>1.8</lifeMul>
+			<attackMul>1.8</attackMul>
+			<duration>40</duration>
+			<cd>120</cd>
+			<addObjJson>{'dpsAll':0.10,'lifeAll':0.10}</addObjJson>
+			<skillArr>vehicleFit_Civilian</skillArr>
+		</equip>
+		<equip name="RedMotoThird" cnName="圣焰" rideLabel="RedMotoRide">
+			<evolutionLv>5</evolutionLv>
+			<mustCash>250</mustCash>
+			<main label="RedMoto_main" dpsMul="1.7" len="35" minRa="-179" maxRa="-178.9" />
+			<sub label="Diggers_sub" dpsMul="0" hideB="1" />
+			<lifeMul>2.3</lifeMul>
+			<attackMul>2.2</attackMul>
+			<duration>40</duration>
+			<cd>120</cd>
+			<addObjJson>{'dpsAll':0.16,'lifeAll':0.16}</addObjJson>
+			<skillArr>redMoto3Skill,vehicleFit_Civilian</skillArr>
+		</equip>
+		
+		<bullet cnName="赤焰-主炮">
+			<name>RedMoto_main</name>
+			<cnName>赤焰-主炮</cnName>
+			
+			<hurtRatio>1.1</hurtRatio>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletNum>1</bulletNum>
+			<shootAngle>5</shootAngle>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.2</attackGap>
+				
+			<shootRecoil>15</shootRecoil>
+			<screenShakeValue>8</screenShakeValue>
+			<bulletSpeed>40</bulletSpeed>
+			<followD value="0.8" />
+			<penetrationGap>100</penetrationGap>
+			
+			<flipX>1</flipX>
+			<fireImgUrl soundUrl="sound/bigShoot">gunFire/f</fireImgUrl>
+			<bulletImgUrl raNum="30" con="filter">bullet/orangeBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/magicHit2" shake="2,0.2,10" con="add">boomEffect/boom3</hitImgUrl>
+		</bullet>
+	</father>
+	
+	
+	</data>

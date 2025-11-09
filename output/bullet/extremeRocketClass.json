@@ -1,0 +1,45 @@
+{
+  "father": [
+    {
+      "type": "rocket",
+      "cnName": "火炮",
+      "bullet": {
+        "extremeRocket": {
+          "color": "purgold",
+          "name": "extremeRocket",
+          "cnName": "擎天极源",
+          "noMagneticB": 1,
+          "noBeClearB": 1,
+          "aiShootRange": 700,
+          "attackType": "holy",
+          "dpsMul": 3,
+          "capacity": 30,
+          "attackGap": 0.7,
+          "reloadGap": 0.5,
+          "bulletWidth": 35,
+          "bulletNum": 3,
+          "shootAngle": 3,
+          "armsArmMul": 0.5,
+          "upValue": 20,
+          "shootShakeAngle": 20,
+          "shootRecoil": 20,
+          "screenShakeValue": 16,
+          "noShakeTime": 0.5,
+          "bulletLife": 2.5,
+          "hitType": "rect",
+          "bulletSpeed": 30,
+          "twoShootPro": 0.15,
+          "penetrationGap": 1000,
+          "skillArr": "enemyEmp,killPet",
+          "fireImgUrl": "boomEffect/boom2",
+          "shootSoundUrl": "sound/bigShoot",
+          "bulletImgUrl": "bullet/gaiaFit",
+          "hitImgUrl": "boomEffect/boom2",
+          "bodyImgRange": "specialGun/extremeRocket",
+          "armsType": "rocket"
+        }
+      }
+    },
+    null
+  ]
+}

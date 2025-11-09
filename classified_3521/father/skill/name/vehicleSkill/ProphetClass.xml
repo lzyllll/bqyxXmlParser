@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicleSkill" cnName="技能">
+		<skill>
+			<name>timeMachineSkill</name>
+			<cnName>多重回溯</cnName><iconUrl>SkillIcon/timeMachineSkill</iconUrl>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			<changeText>伤害增加[mul-1]</changeText>
+			
+			<conditionType>passive</conditionType><changeHurtB>1</changeHurtB>
+			<condition>hit</condition>
+			<otherConditionArr>hurtIsAttack</otherConditionArr>
+			<conditionString>metal</conditionString>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>timeMachineSkill</effectType><effectFather>vehicle</effectFather>
+			<valueString>attack</valueString>
+			<mul>1.2</mul>
+			<secMul>3</secMul>
+			<pointEffectImg name="orangeWaveBoom" />
+			<otherEffectImg name="yellowHitSilence" />
+			<description>下落时碾压敌人头部时，不断回到过去，造成多重伤害（伤害增加[mul-1]），对电磁敏感敌人的伤害再乘以3。</description>
+			
+			<growth>
+				<skill><mul>1.5</mul></skill>
+				<skill><mul>2</mul></skill>
+				<skill><mul>2.5</mul></skill>
+				<skill><mul>3</mul></skill>
+				<skill><mul>3.5</mul></skill>
+				<skill><mul>4</mul></skill>
+				<skill><mul>4.5</mul></skill>
+				<skill><mul>5</mul></skill>
+				<skill><mul>6</mul></skill>
+				<skill><mul>7</mul></skill>
+			</growth>
+		</skill>
+	</father>
+	
+	</data>

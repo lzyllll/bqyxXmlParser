@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="we" cnName="我方">
+		<body shell="normal">
+			<name>WangShu</name>
+			<cnName>望舒</cnName>
+			<sex>female</sex>
+			<raceType>human</raceType>
+			<swfUrl>swf/hero/WangShu.swf</swfUrl>
+			
+			<rosRatio>0.02</rosRatio>
+			<showLevel>9999</showLevel>
+			<movieLink>Girl</movieLink>
+			
+			<headIconUrl>wangShu/head_icon</headIconUrl>
+			<headPlayB>1</headPlayB>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-12,-35,24,35</hurtRectArr> 
+			<hurtRectArr>-12, -70, 24, 70</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>10</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			<maxJumpNum>1</maxJumpNum>
+			<flyType>tween</flyType>
+			
+			<armsNumber>2</armsNumber>
+			<randomArmsRange>yearSnake,yearChicken</randomArmsRange>	
+			<oneAiLabel>sniper</oneAiLabel>
+			<extraDropArmsB>1</extraDropArmsB>
+			<extraAIClassLabel>Hero_AIExtra</extraAIClassLabel>
+			
+			<skillArr>groupReverseHurt_hero_10,crazy_hero_10,murderous_hero_10,skillGift_hero_7,silence_hero_10,invisibility_hero_10,invincibleHole,vertigoArmorIron,meltFlamerPurgold,spellImmunityMax</skillArr>
+			
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<hurtRatio>0.15</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="Striker/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		
+	</father>
+</data>

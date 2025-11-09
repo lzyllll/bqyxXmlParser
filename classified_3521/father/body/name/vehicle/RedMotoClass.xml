@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicle" cnName="战车body">
+		<body index="0" name="赤焰" shell="compound">
+			
+			<name>RedMoto</name>
+			<cnName>赤焰</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/vehicle/RedMoto.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<rosRatio>1</rosRatio>
+			<headHurtMul>0.5</headHurtMul>
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<imgClass>CarImage</imgClass>
+			<imgType>normal</imgType>
+			<rotateBySlopeB>1</rotateBySlopeB>
+			<imgArr>
+				stand,move,die1
+				,__jumpUp,jumpUp,jumpDown,jumpDown__
+			</imgArr>
+			
+			<hitRect>-30,-88,60,88</hitRect>
+			
+			<motionD F_G="0.8" jumpDelayT="0.15" F_I="0.4" F_F="1" moveWhenVB="1" />
+			<maxVx>20</maxVx>
+			<maxJumpNum>1</maxJumpNum>
+			
+			<attackAIClass>CarAttack_AI</attackAIClass>
+			<keyClass>CarBodyKey</keyClass>
+			<bulletLauncherClass>CarBulletLauncher</bulletLauncherClass>
+			<skillArr>redMoto_state</skillArr>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>move</imgLabel><hurtRatio>0.69</hurtRatio><attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown</imgLabel><hurtRatio>0.69</hurtRatio><attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpUp</imgLabel><hurtRatio>0.69</hurtRatio><attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown__</imgLabel><hurtRatio>0.69</hurtRatio><attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		<body name="烈焰" fixed="RedMoto" shell="compound">
+			<name>RedMotoSec</name>
+			<cnName>烈焰</cnName>
+			<swfUrl>swf/vehicle/RedMotoSec.swf</swfUrl>
+			<bmpUrl>BodyImg/RedMotoSec</bmpUrl>
+		</body>
+		
+		<body name="圣焰" fixed="RedMoto" shell="compound">
+			<name>RedMotoThird</name>
+			<cnName>圣焰</cnName>
+			<swfUrl>swf/vehicle/RedMotoThird.swf</swfUrl>
+			<bmpUrl>BodyImg/RedMotoThird</bmpUrl>
+		</body>
+	</father>
+</data>

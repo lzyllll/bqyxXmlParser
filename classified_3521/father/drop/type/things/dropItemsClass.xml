@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="things">
+		<drop cnName="超能石">
+			<name>skillStone</name>
+			<cnName>超能石</cnName>
+			<text>获得物品</text>
+			<imgUrl>ThingsIcon/skillStone</imgUrl>
+		</drop>
+		
+		
+		<drop cnName="神能石">
+			<name>godStone</name>
+			<cnName>神能石</cnName>
+			<text>获得物品</text>
+			<imgUrl>ThingsIcon/godStone</imgUrl>
+		</drop>
+		<drop cnName="转化石">
+			<name>converStone</name>
+			<cnName>转化石</cnName>
+			<text>获得物品</text>
+			<imgUrl>ThingsIcon/converStone</imgUrl>
+		</drop>
+		<drop cnName="生命催化剂">
+			<name>lifeCatalyst</name>
+			<cnName>生命催化剂</cnName>
+			<text>获得物品</text>
+			<imgUrl>ThingsIcon/lifeCatalyst</imgUrl>
+		</drop>
+		<drop cnName="商券">
+			<name>taxStamp</name>
+			<cnName>商券</cnName>
+			<text>获得物品</text>
+			<imgUrl>ThingsIcon/taxStamp</imgUrl>
+		</drop>
+		<drop cnName="稀有宝箱">
+			<name>normalChest</name>
+			<cnName>稀有宝箱</cnName>
+			<text>获得物品</text>
+			<imgUrl>ThingsIcon/normalChest</imgUrl>
+		</drop>
+		
+		
+		<drop cnName="沙漠进袭者碎片">
+			<name>DesertTankCash</name>
+			<cnName>沙漠进袭者碎片</cnName>
+			<text>获得物品</text>
+			<imgUrl>ThingsIcon/DesertTankCash</imgUrl>
+		</drop>
+		<drop cnName="破晓碎片">
+			<name>DaybreakCash</name>
+			<cnName>破晓碎片</cnName>
+			<text>获得物品</text>
+			<imgUrl>ThingsIcon/DaybreakCash</imgUrl>
+		</drop>
+		<drop cnName="收割者碎片">
+			<name>RedReaperCash</name>
+			<cnName>收割者碎片</cnName>
+			<text>获得物品</text>
+			<imgUrl>ThingsIcon/RedReaperCash</imgUrl>
+		</drop>
+		<drop cnName="潜行者碎片">
+			<name>SeaSharkCash</name>
+			<cnName>潜行者碎片</cnName>
+			<text>获得物品</text>
+			<imgUrl>ThingsIcon/SeaSharkCash</imgUrl>
+		</drop>
+		<drop cnName="巨鲸碎片">
+			<name>BlueWhaleCash</name>
+			<cnName>巨鲸碎片</cnName>
+			<text>获得物品</text>
+			<imgUrl>ThingsIcon/BlueWhaleCash</imgUrl>
+		</drop>
+		
+		<drop cnName="先知碎片">
+			<name>ProphetCash</name>
+			<cnName>先知碎片</cnName>
+			<text>获得物品</text>
+			<imgUrl>ThingsIcon/ProphetCash</imgUrl>
+		</drop>
+		<drop cnName="制裁者碎片">
+			<name>TitansCash</name>
+			<cnName>碎片</cnName>
+			<text>获得物品</text>
+			<imgUrl>ThingsIcon/TitansCash</imgUrl>
+		</drop>
+		<drop cnName="泰坦碎片">
+			<name>PunisherCash</name>
+			<cnName>泰坦碎片</cnName>
+			<text>获得物品</text>
+			<imgUrl>ThingsIcon/PunisherCash</imgUrl>
+		</drop>
+		
+	</father>	
+	</data>

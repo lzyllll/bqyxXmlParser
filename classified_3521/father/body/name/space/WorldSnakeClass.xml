@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="space">
+		<body>
+			<name>WorldSnake</name>
+			<cnName>氩星吞噬者</cnName><lifeRatio>1</lifeRatio>
+			<raceType>ship</raceType>
+			<swfUrl>swf/ship/WorldSnake340.swf</swfUrl><headIconUrl>IconGather/WorldSnake</headIconUrl>
+			
+			<dieImg name="bigSpace" />
+			<dieJumpMul>0</dieJumpMul>
+			<rosRatio>0.2</rosRatio>
+			<imgType>normal</imgType>
+			<lifeBarExtraHeight>-120</lifeBarExtraHeight>
+			<imgArr>
+				stand,move,die1
+				,normalAttack,laserAttack
+			</imgArr>
+			
+			<hitRect>-20,-20,40,40</hitRect>
+			<hurtRectArr>-117,-90,180,180</hurtRectArr>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<motionD vRan="0" F_AIR="2" />
+			<maxVx>14</maxVx>
+			<attackAIClass />
+			<skillArr>WSnakeWave,WorldSnake_sum,dieWSnake,weaknessWSnake,noSR,strong_enemy,BallLightningHurt,noBounce_enemy</skillArr>
+			<bossSkillArr>hidingSnake,strollCardWSnake,shortShootWSnake,meltFlamerPurgold,fightReduct7,State_SpellImmunity,KingRabbitTreater,godShield,alloyShell_9</bossSkillArr>
+			<wilderSkillArr />
+			<preBulletArr>WorldSnakeLine</preBulletArr>
+			<hurtArr>
+				
+				<hurt cd="5">
+					<imgLabel>normalAttack</imgLabel><cn>吞噬</cn>
+					<hurtRatio>0.0000001</hurtRatio>
+					<hurtMul>0.15</hurtMul>
+					<shakeValue>10</shakeValue><mustGrapRectB>1</mustGrapRectB>
+					<attackType>holy</attackType>
+					<meBack>1</meBack>
+					<skillArr>Hit_silenceDemon</skillArr>
+					<hitImgUrl name="purpleHit" />
+				</hurt>
+				<hurt cd="5">
+					<imgLabel>laserAttack</imgLabel><cn>十字激光</cn>
+					<bulletLabel>WorldSnakeBullet</bulletLabel>
+					<hurtRatio>1</hurtRatio>
+					<attackType>holy</attackType>
+					<grapRect>-800,-110,560,350</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		
+		
+		<skill>
+			<name>weaknessWSnake</name><wantDescripB>1</wantDescripB>
+			<cnName>七寸</cnName><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<showInLifeBarB>1</showInLifeBarB><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underAllHurt</condition>
+			<otherConditionArr>weaknessWSnake</otherConditionArr>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>weaknessWSnake</effectType><effectFather>oreSpace</effectFather>
+			<value>1</value>
+			<mul>0.2</mul>
+			<duration>99999</duration>
+			 
+			<stateEffectImg name="weaknessWSnake" />
+			<description>生命值每减少[mul]，吞噬者就会进入无敌状态（并清除任何敌方技能效果），此时它身体的弱点将会发红。击爆它的弱点后，吞噬者才会取消无敌状态。</description>
+		</skill>
+		
+					<skill>
+						<name>dieWSnake</name><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+						<cnName>吞噬者死亡</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+						<conditionType>passive</conditionType>
+						<condition>die</condition>
+						<target>me</target>
+						
+						<addType>instant</addType>
+						<effectType>dieWSnake</effectType><effectFather>oreSpace</effectFather>
+					</skill>
+					
+					<skill>
+						<name>strollCardWSnake</name>
+						<cnName>神出鬼没</cnName><showInLifeBarB>1</showInLifeBarB>
+						
+						<cd>8</cd>
+						<firstCd>5</firstCd>
+						
+						<conditionType>active</conditionType>
+						<condition>avtiveSkillCdOver</condition>
+						<otherConditionArr>lifePerLess,noAttackImg</otherConditionArr>
+						<conditionRange>0.5</conditionRange>
+						<target>attackTarget</target>
+						
+						<addType>instant</addType>
+						<effectType>strollCardWSnake</effectType><effectFather>oreSpace</effectFather>
+						 
+						<meEffectImg soundUrl="sound/teleport_enemy" con="add">lightEffect/basinShow</meEffectImg>
+						<description>生命值少于[conditionRange]时开启瞬移技能。</description>
+					</skill>
+					
+					<skill>
+						<name>hidingSnake</name><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+						<cnName>群体隐匿</cnName><iconUrl36>SkillIcon/hiding_hero_36</iconUrl36><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+						<cd>10</cd>
+						
+						<conditionType>active</conditionType>
+						<condition>avtiveSkillCdOver</condition>
+						<otherConditionArr>diffOrTaskStar</otherConditionArr>
+						<conditionRange>5</conditionRange>
+						<target>me,range,we</target>
+						
+						<addType>state</addType>
+						<effectType>hidingBNoClear</effectType>
+						<duration>5</duration>
+						<range>2000</range>
+						
+						<meEffectImg soundUrl="sound/hiding_hero" con="add">skillEffect/hiding_hero</meEffectImg>
+						<description>关卡难度大于炼狱或者任务星级大于5时，让[range]以内所有我方单位进入隐匿状态，持续[duration]秒，对敌人发起攻击也不会打破隐匿状态。</description>
+					</skill>
+					<skill>
+						<name>shortShootWSnake</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+						<cnName>吞噬领域</cnName><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB><noSkillDodgeB>1</noSkillDodgeB><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+						
+						<conditionType>passive</conditionType>
+						<otherConditionArr>lifePerLess</otherConditionArr>
+						<conditionRange>0.2</conditionRange>
+						<condition>interval</condition>
+						<target>me,range,enemy</target>
+						
+						<addType>state</addType>
+						<effectType>limitShootRange</effectType>
+						<value>250</value>
+						<duration>1</duration>
+						<range>999999</range>
+						<stateEffectImg name="gunSmokeSmall" />
+						<description>生命值少于20%时，使所有持枪敌人的射程不超过[value]码。</description>
+					</skill>
+					
+						<skill>
+							<name>WSnakeWave</name>
+							<cnName>波动</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+							<conditionType>active</conditionType>
+							<condition>avtiveSkillCdOver</condition>
+							<otherConditionArr>lifePerLess</otherConditionArr>
+							<conditionRange>0.7</conditionRange>
+							<target>me</target>
+							<cd>25</cd>
+							
+							<addType>state</addType>
+							<effectType>OreWormWave</effectType><effectFather>oreSpace</effectFather>
+							<mul>2</mul>
+							<value>3</value>
+							<duration>10</duration>
+							<range>300</range>
+							<meEffectImg name="groupSpeedUp_enemy_me" />
+						</skill>
+						
+						<bullet>
+							<name>WorldSnakeBullet</name>
+							<cnName>氩星吞噬者-子弹</cnName><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+							<attackGap>1</attackGap>
+							<attackDelay>0.63</attackDelay>
+							<bulletWidth>500</bulletWidth>
+							<bulletNum>1</bulletNum>
+							<beatBack>2</beatBack>
+							<targetShakeValue>10</targetShakeValue>
+							<penetrationNum>999</penetrationNum>
+							<penetrationGap>1000</penetrationGap>
+							<noHitB>1</noHitB>
+							<skillArr />
+							
+							<shootPoint>-104,48</shootPoint>
+							<hurtRatio>0.1</hurtRatio>
+							<bulletAngle>179.9</bulletAngle>
+							<bulletAngleRange>30</bulletAngleRange>
+							<bulletSpeed>11</bulletSpeed>
+							<bulletSkillArr>WorldSnake</bulletSkillArr>
+							
+							<bulletLife>5</bulletLife>
+							<bulletImgUrl name="purpleLaserBig" />
+						</bullet>
+						
+						<bullet>
+							<name>WorldSnakeLine</name>
+							<cnName>氩星吞噬者-孙弹</cnName><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+							
+							<hurtMul>0.02</hurtMul>
+							<attackType>holy</attackType>
+							<hitGap>0.1</hitGap>
+							<noHitTime>0.1</noHitTime>
+							
+							<bulletLife>5</bulletLife>
+							<hitType>longLine</hitType>
+							<bulletWidth>200</bulletWidth>
+							
+							<shootPoint>-97,-84</shootPoint>
+							<shootAngle>135</shootAngle>
+							<bulletNum>4</bulletNum>
+							<bulletAngle>0</bulletAngle>
+											
+							<bulletSpeed>11</bulletSpeed>
+							<speedD selfVra="0.02" />
+							<skillArr>blindness_skeleton</skillArr>
+							
+							<penetrationNum>999</penetrationNum>
+							<penetrationGap>1000</penetrationGap>
+							
+							<flipX>1</flipX>
+							<bulletImgUrl name="extremeLaser_bullet" />
+							<hitImgUrl name="extremeLaser_hit" />
+						</bullet>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<body>
+			<name>WorldSnakeTail</name>
+			<cnName>世界蛇尾</cnName>
+			<raceType>ship</raceType>
+			<swfUrl>swf/ship/WorldSnakeTail.swf</swfUrl>
+			
+			<dieImg name="stoneBoom" />
+			<dieJumpMul>0</dieJumpMul>
+			<imgType>normal</imgType>
+			<lockLeftB>1</lockLeftB>
+			<imgArr>
+				stand1,stand2,stand3,die1
+			</imgArr>
+			
+			<hitRect>-20,-20,40,40</hitRect>
+			<hurtRectArr>-70,-70,140,140</hurtRectArr>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<motionD vRan="0" F_AIR="8" />
+			<maxVx>12</maxVx>
+			<attackAIClass />
+			<skillArr>fightReduct7,WorldSnakeTailAI,noSR,spellImmunityMax,meltFlamerPurgold,BallLightningHurt,alloyShell_9,noBounce_enemy</skillArr>
+			<hurtArr>
+				<hurt>
+					<imgLabel>stand1</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>10</shakeValue>
+					<meBack>5</meBack>
+					<hitImgUrl name="oreWormHit" />
+				</hurt>
+				<hurt>
+					<imgLabel>stand2</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>10</shakeValue>
+					<meBack>5</meBack>
+					<hitImgUrl name="oreWormHit" />
+				</hurt>
+				<hurt>
+					<imgLabel>stand3</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>10</shakeValue>
+					<meBack>5</meBack>
+					<hitImgUrl name="oreWormHit" />
+				</hurt>
+			</hurtArr>
+		</body>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+		<skill>
+			<name>WorldSnake_sum</name><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<cnName>氩星吞噬者召唤蛇尾</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<conditionType>passive</conditionType>
+			<condition>bodyAdd</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>WorldSnake_sum</effectType><effectFather>oreSpace</effectFather><summonedUnitsB>1</summonedUnitsB>
+			<value>10</value>
+			<obj>"cnName":"世界蛇尾","num":17,"lifeMul":0.10,"dpsMul":1,"mulByFatherB":1,"lifeTime":-1</obj>
+		</skill>
+		<skill>
+			<name>WorldSnakeTailAI</name><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<cnName>世界蛇尾buff</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>WorldSnakeTailAI</effectType><effectFather>oreSpace</effectFather>
+			<range>55</range>
+			<value>5</value>
+			<duration>9999999</duration>
+		</skill>
+		
+	</father>
+</data>

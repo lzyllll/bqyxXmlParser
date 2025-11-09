@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="equip">
+		
+		
+		
+		
+		
+		
+		
+		<drop cnName="头盔">
+			<name>head</name>
+			<cnName>头盔</cnName>
+			<text>获得装备</text>
+			<imgUrl>dropEffect/equip</imgUrl>
+		</drop>
+		<drop cnName="战衣">
+			<name>coat</name>
+			<cnName>战衣</cnName>
+			<text>获得装备</text>
+			<imgUrl>dropEffect/equip</imgUrl>
+		</drop>
+		<drop cnName="战裤">
+			<name>pants</name>
+			<cnName>战裤</cnName>
+			<text>获得装备</text>
+			<imgUrl>dropEffect/equip</imgUrl>
+		</drop>
+		<drop cnName="腰带">
+			<name>belt</name>
+			<cnName>腰带</cnName>
+			<text>获得装备</text>
+			<imgUrl>dropEffect/equip</imgUrl>
+		</drop>
+		
+		
+	</father>	
+	</data>

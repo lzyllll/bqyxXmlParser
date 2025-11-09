@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="outfitSkill" cnName="套件技能">
+		<skill index="1" name="战争抗体">
+			<name>outfit_follow</name>
+			<cnName>战争抗体</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>0.2</mul>
+			
+			<obj>"type":"followBullet","mulB":true</obj>
+			
+			<meEffectImg />
+			<description>抵挡跟踪型武器[1-mul]的伤害，包括百分比伤害。</description>
+		</skill>
+		<skill index="0" cnName="坏血">
+			<name>outfit_blood</name>
+			<cnName>坏血</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>outfitBlood</effectType>
+			<mul>0.2</mul>
+			<secMul>0.7</secMul>
+			<duration>1</duration>
+			<range>700</range>
+			<minRange>120</minRange>
+			
+			<stateEffectImg partType="head">skillEffect/rune_black_n</stateEffectImg>
+			<description>使[minRange]~[range]码以内敌人的生命回复效果降低[1-mul]、头部防御降低[1-secMul]。</description>
+		</skill>
+		
+		<skill index="3" name="猎手原形">
+			<name>outfit_shootMissile</name>
+			<cnName>猎手原形</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>heroShoot</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>0.30</effectProArr>
+			<mul>1</mul>
+			<extraValueType>nowArmsTrueDps</extraValueType>
+			
+			<obj>"name":"hitMissile_outfit","site":"shootPoint","flipB":false</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>每次射击都有[effectProArr.0]的概率派生跟踪子弹。子弹伤害为当前面板单伤*射速*0.2。</description>
+		</skill>
+		<skill index="3" name="悦动先锋">
+			<name>outfit_jump</name>
+			<cnName>悦动先锋</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>heroJump</condition>
+			<otherConditionArr>pistol</otherConditionArr>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>hurtMul</effectType>
+			<mul>1.9</mul>
+			<duration>1.5</duration>
+			
+			<meEffectImg />
+			<stateEffectImg2 partType="shootPoint" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg2>
+			<description>玩家握持手枪弹跳一次，会获得提高[mul-1]攻击力的状态，持续[duration]秒。</description>
+		</skill>
+		<skill index="3" name="饥饿行踪">
+			<name>outfit_crit</name>
+			<cnName>饥饿行踪</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>critExtraMul</effectType>
+			<mul>0.05</mul>
+			<range>300</range>
+			
+			<obj>"type":"hyperopia"</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>距离目标越远，射击时产生的暴击伤害越大，大于[range]码开始加成，每隔100码增加[mul]的暴击伤害，最大增加20%。对人物技能“隐身”的暴击无效。</description>
+		</skill>
+		<skill index="3" name="血脉沸腾">
+			<name>outfit_boom</name>
+			<cnName>血脉沸腾</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>heroShoot</condition>
+			<otherConditionArr>rocket</otherConditionArr>
+			<target>me</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>ctrlSkillCdLessThan</effectType>
+			<effectProArr>0.07</effectProArr>
+			<valueString>pointBoom_hero</valueString>
+			<value>0.3</value>
+			<duration>2.6</duration>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>火炮枪每次射击有[effectProArr.0]概率，使得人物技能“定点轰炸”的当前CD变为[value]秒，持续[duration]秒。</description>
+		</skill>
+		<skill index="3" name="沃龙隐">
+			<name>outfit_wolong</name>
+			<cnName>沃龙隐</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHurt</condition>
+			<otherConditionArr>awayTarget</otherConditionArr>
+			<conditionRange>250</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>wolongHiding</effectType>
+			<mul>1.8</mul>
+			<duration>1</duration>
+			
+			<linkArr>outfit_wolong_hurt</linkArr>
+			<meEffectImg />
+			<stateEffectImg partType="2hand" con="add" raNum="30" followPartRaB="1">skillEffect/trueshot_enemy</stateEffectImg>
+			<description>当单位受到伤害、同时与攻击者距离大于[conditionRange]码时，单位将进入隐身状态，攻击力提高[mul-1]，攻击时不会打破隐身状态，隐身持续[duration]秒，攻击力加成持续6秒。</description>
+		</skill>
+		
+							<skill index="3" name="沃龙隐-攻击力加成">
+								<name>outfit_wolong_hurt</name>
+								<cnName>沃龙隐</cnName>
+								
+								<conditionType>passive</conditionType>
+								<target>me</target>
+								
+								<addType>state</addType>
+								<effectType>hurtMul</effectType>
+								<mul>1.8</mul>
+								<duration>8</duration>
+								
+								<meEffectImg />
+								<stateEffectImg partType="2hand" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg>
+								<description>伤害加成</description>
+							</skill>
+							
+							
+		<skill name="鹰眼">
+			<name>outfit_eagle</name>
+			<cnName>鹰眼</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>isAirB</otherConditionArr>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt_head</effectType>
+			<mul>1.5</mul>
+			
+			<description>当敌人在空中时，对其头部造成额外[mul-1]的伤害。</description>
+		</skill>
+		<skill name="遁形">
+			<name>outfit_elephant</name>
+			<cnName>遁形</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>heroSquat</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>spellImmunitySquat</effectType>
+			<duration>4</duration>
+			
+			<stateEffectImg partType="body" con="add">generalEffect/spellImmunityShield</stateEffectImg>
+			<description>蹲下后将技能免疫，持续[duration]秒。</description>
+		</skill>
+		
+	</father>	
+</data>

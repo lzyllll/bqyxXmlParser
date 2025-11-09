@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="rocket" cnName="火炮-特殊">
+		<bullet index="44" cnName="钢笔枪" name="penGun" kind="water" color="black" composeLv="95" chipB="1" chipNum="400" dropLevelArr="999">
+			<name>penGun</name>
+			<cnName>钢笔枪</cnName>
+			
+			
+			<capacity>25</capacity>
+			<attackGap>1</attackGap>
+			<reloadGap>2</reloadGap>
+			<shakeAngle>7</shakeAngle>
+			<bulletWidth>30</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth><aiShootRange>610</aiShootRange>
+			<bulletNum>1</bulletNum>				
+			<gunNum>1</gunNum>
+			
+			
+			<armsArmMul>0.65</armsArmMul>
+			<upValue>5</upValue>
+			<upValue>0</upValue>
+			<shootShakeAngle>45</shootShakeAngle>
+			<shootRecoil>4</shootRecoil>
+			<screenShakeValue>8</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>3</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>2</dpsMul>
+			<uiDpsMul>2</uiDpsMul>
+			
+				
+			<bulletSpeed>26</bulletSpeed>
+			<speedD min="23" max="29" random="0.2" />
+			
+			<twoShootPro>0.2</twoShootPro>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="0" body="0" />	
+			<critD mul="2" pro="0.3" />
+			
+			
+			<skillArr>Hit_disabled_ArmsSkill,Hit_SlowMove_ArmsSkill</skillArr>
+			<godSkillArr>Hit_crazy_godArmsSkill,penGunSkill</godSkillArr>
+			
+			<iconUrl>specialGun/penGunIcon</iconUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl con="add" raNum="30">specialGun/penGunBullet</bulletImgUrl>
+			<smokeImgUrl con="filter" raNum="30">specialGun/penGunSmoke</smokeImgUrl>
+			
+			<hitImgUrl soundUrl="specialGun/water_hit">specialGun/christmasGunBoom</hitImgUrl>
+			<hitFloorImgUrl>no</hitFloorImgUrl>
+			<fireImgType />
+			<shootSoundUrl>specialGun/waterShoot</shootSoundUrl>
+			
+			<bodyImgRange>specialGun/penGun</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>秘境“古惑僵尸”</description>
+		</bullet>
+		
+	</father>
+	</data>

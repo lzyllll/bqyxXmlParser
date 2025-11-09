@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="energy">
+		<bullet color="yagold">
+			<name>falconArms</name>
+			<cnName>氩星隼武</cnName><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			<aiShootRange>800</aiShootRange>
+			<attackType>holy</attackType>
+			<dpsMul>1.5</dpsMul>
+			
+			<capacity>10</capacity>
+			<attackGap>1.1</attackGap>
+			<reloadGap>1</reloadGap>
+			<bulletWidth>25</bulletWidth>
+			<bulletNum>3</bulletNum>				
+			<shootAngle>1</shootAngle>
+			
+			<armsArmMul>0.5</armsArmMul>
+			<upValue>20</upValue>
+			<shootShakeAngle>20</shootShakeAngle>
+			<shootRecoil>20</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>4</bulletLife>
+			<hitType>rect</hitType>
+				
+			<bulletSpeed>12</bulletSpeed>
+			<bulletSkillArr>spiralMove3</bulletSkillArr>
+			
+			<penetrationGap>1000</penetrationGap>
+			<skillArr>enemyEmp,killPet</skillArr>
+			
+			<fireImgUrl name="falconArmsFire" />
+			<shootSoundUrl>specialGun/greedySnakeSound</shootSoundUrl>
+			<bulletImgUrl name="falconArmsBullet" />
+			<hitImgUrl name="greenEnergyHit" />
+			
+			
+			<bodyImgRange>specialGun/falconArms</bodyImgRange>
+		</bullet>
+	</father>
+	
+</data>

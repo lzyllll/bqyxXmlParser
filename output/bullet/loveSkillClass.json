@@ -1,0 +1,143 @@
+{
+  "father": {
+    "name": "loveSkill",
+    "cnName": "好感度技能",
+    "skill": [
+      {
+        "name": "dodge_loveSkill",
+        "cnName": "敏捷馈赠",
+        "wantDescripB": 1,
+        "conditionType": "passive",
+        "condition": "hit",
+        "target": "target",
+        "addType": "instant",
+        "effectType": "hurtAddByLove",
+        "mul": 0.4,
+        "description": "P1角色在战斗中获得相当于闪避概率[mul]的攻击力。",
+        "valueString": "Striker"
+      },
+      {
+        "name": "girlDefence_loveSkill",
+        "cnName": "防御力提升",
+        "everNoClearB": 1,
+        "conditionType": "passive",
+        "condition": "add",
+        "target": "me",
+        "addType": "state",
+        "duration": 99999,
+        "mul": 0.5,
+        "effectType": "underHurtMul",
+        "description": "战斗中永久提升[1-mul]的防御力。"
+      },
+      {
+        "name": "girlHurt_loveSkill",
+        "cnName": "攻击力提升",
+        "everNoClearB": 1,
+        "conditionType": "passive",
+        "condition": "add",
+        "target": "me",
+        "addType": "state",
+        "duration": 99999,
+        "mul": 1.3,
+        "effectType": "hurtMul",
+        "description": "战斗中永久提升小樱[mul-1]的攻击力。"
+      },
+      {
+        "name": "lovePower_loveSkill",
+        "everNoClearB": 1,
+        "cnName": "真情之力",
+        "wantDescripB": 1,
+        "conditionType": "passive",
+        "condition": "add",
+        "target": "me",
+        "addType": "state",
+        "duration": 99999,
+        "mul": 1.3,
+        "effectType": "hurtDefence",
+        "description": "战斗中永久提升P1角色[mul-1]的攻击力和防御力。",
+        "valueString": "Striker"
+      },
+      {
+        "cnName": "重生",
+        "name": "rebirth_loveSkill",
+        "wantDescripB": 1,
+        "conditionType": "passive",
+        "condition": "allDie",
+        "otherConditionArr": "rebirthNumLess,producerNoState",
+        "conditionRange": 1,
+        "conditionString": "lightConePurgold",
+        "target": "me",
+        "addType": "instantAndState",
+        "effectType": "rebirthAndHiding",
+        "value": 1,
+        "mul": 0.9,
+        "duration": 5,
+        "addSkillEffectImg": {
+          "value": "skillEffect/rune_green_r",
+          "partType": "mouth",
+          "con": "add"
+        },
+        "meEffectImg": {
+          "value": "skillEffect/groupLight_hero",
+          "soundUrl": "sound/groupLight_hero",
+          "con": "add"
+        },
+        "description": "单位倒下重生，回复[mul]的生命值，一次战斗只能重生1次。"
+      },
+      {
+        "name": "addLifeMul_loveSkill",
+        "cnName": "回复",
+        "wantDescripB": 1,
+        "conditionType": "passive",
+        "condition": "interval",
+        "intervalT": 1,
+        "target": "me",
+        "addType": "instant",
+        "effectType": "life",
+        "value": 0,
+        "mul": 0.03,
+        "description": "每秒回复最大生命值[mul]的生命值。"
+      },
+      {
+        "name": "lifeBottle_loveSkill",
+        "cnName": "真情治愈",
+        "wantDescripB": 1,
+        "conditionType": "passive",
+        "condition": "interval",
+        "intervalT": 15,
+        "target": "me",
+        "addType": "instant",
+        "effectType": "lifeBottle_loveSkill",
+        "description": "战斗中每隔[intervalT]秒，小樱产出1瓶血瓶，拾取可以回复30%生命值，只有P1角色可以拾取。"
+      },
+      {
+        "cnName": "分子虹吸",
+        "name": "element_loveSkill",
+        "wantDescripB": 1,
+        "conditionType": "passive",
+        "condition": "interval",
+        "intervalT": 1,
+        "target": "me,range,enemy",
+        "linkArr": "elementLifeBack_loveSkill",
+        "addType": "instant",
+        "effectType": "element_loveSkill",
+        "extraValueType": "targetMaxLife",
+        "value": 0,
+        "mul": 0.003,
+        "range": 800,
+        "description": "使[range]范围内的敌人每秒损失0.5%的血量（血量低于70%后无效），当范围内有敌方单位存在，自身每秒回复2%的生命。修罗模式下效果降低。"
+      },
+      {
+        "cnName": "分子虹吸-自身回血",
+        "name": "elementLifeBack_loveSkill",
+        "conditionType": "passive",
+        "condition": "interval",
+        "target": "me",
+        "addType": "instant",
+        "effectType": "elementLifeBack_loveSkill",
+        "mul": 0.02,
+        "range": 800
+      }
+    ]
+  }
+}

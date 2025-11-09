@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="rocket" cnName="火炮-特殊">
+		<bullet index="34" cnName="圣诞礼炮" color="red" rareDropLevel="999" chipB="1" chipNum="130" evoMaxLv="2">
+			<name>christmasGun</name>
+			<cnName>圣诞礼炮</cnName>
+			
+			
+			<capacity>12</capacity>
+			<attackGap>1</attackGap>
+			<reloadGap>1</reloadGap>
+			<shakeAngle>3</shakeAngle><aiShootRange>600</aiShootRange>
+			<bulletWidth>50</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>5</bulletNum>				
+			<shootAngle>15</shootAngle>
+			<gunNum>1</gunNum>
+			
+			<armsArmMul>0.65</armsArmMul>
+			<upValue>5</upValue>
+			<shootShakeAngle>30</shootShakeAngle>
+			<shootRecoil>12</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>30</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>0.8</dpsMul>
+				
+			<bulletSpeed>20</bulletSpeed>
+			<speedD random="0.3" selfVra="0.2" />
+			
+			<gravity>0.4</gravity>
+			<boomD bodyB="1" selfB="1" radius="130" />
+			<twoShootPro>0.3</twoShootPro>
+			<bounceD glueFloorB="1" />	
+			<critD mul="2" pro="0.2" />
+			<skillArr>Hit_SlowMove_ArmsSkill,Hit_disabled_ArmsSkill</skillArr>
+			<godSkillArr>Hit_crazy_godArmsSkill,viscous_ArmsSkill</godSkillArr>
+			
+			<iconUrl>specialGun/christmasGunIcon</iconUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30" urlRandomValue="3">specialGun/christmasGunBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="specialGun/christmasGunHit">specialGun/christmasGunBoom</hitImgUrl>
+			
+			<hitFloorImgUrl>no</hitFloorImgUrl>
+			<fireImgUrl raNum="15">specialGun/christmasGunFire</fireImgUrl>
+			<shootSoundUrl>specialGun/christmasGunShoot</shootSoundUrl>
+			
+			<bodyImgRange>specialGun/christmasGun</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			
+			<description>远古宝箱</description>
+		</bullet>
+		
+	</father>
+	
+	
+</data>

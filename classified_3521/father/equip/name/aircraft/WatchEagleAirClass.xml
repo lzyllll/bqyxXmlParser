@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="aircraft" cnName="战车定义">
+		<equip name="WatchEagleAir" cnName="守望之翼" rideLabel="RedMotoRide" defineType="normal">
+			<canComposeB>1</canComposeB>
+			<mustCash>80</mustCash>
+			<lifeMul>1.6</lifeMul>
+			<attackMul>2.3</attackMul><attackActionLabel>sprintAttack</attackActionLabel>
+			<duration>40</duration>
+			<cd>120</cd>
+			<addObjJson>{'dpsAll':0.08,'lifeAll':0.08}</addObjJson>
+			<skillArr>murderous_vehicle,WatchEagleAirDefence,vehicleFit_fly</skillArr>
+		</equip>
+	</father>
+	
+	
+	
+	
+	
+	
+	</data>

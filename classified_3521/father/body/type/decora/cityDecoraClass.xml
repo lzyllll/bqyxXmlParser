@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="decora">
+		
+		<body cnName="绿花罐" name="canGreen" />
+		<body cnName="黄花罐" name="canYellow" />
+		<body cnName="橙花盆" name="plateOrange" iconUrl="CityDecora/plateOrange" />
+		<body cnName="黄花盆" name="plateYellow" iconUrl="CityDecora/plateYellow" />
+		
+		<body cnName="木箱" name="boxOne" />
+		<body cnName="三木箱" name="boxThree" space="2" />
+		
+		
+		<body cnName="长椅" name="longChair" shadow="unit" space="2" />
+		<body cnName="花坛" name="flowerBeds" space="8" />
+		<body cnName="邮箱" name="mailBox" space="3" />
+		<body cnName="路灯" name="streetLamp" space="2" />
+		<body cnName="空售货机" name="vendingMachine" space="4" />
+		
+		<body cnName="拖车" name="trailer" shadow="unit" space="4" />
+		<body cnName="运货卡车" name="truck" shadow="vehicle" space="7" />
+	</father>
+</data>

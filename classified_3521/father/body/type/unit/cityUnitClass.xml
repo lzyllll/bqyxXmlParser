@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="unit">
+		<body cnName="宠物模板" name="pet" />
+		<body cnName="载具模板" name="vehicle" />
+	</father>
+	</data>

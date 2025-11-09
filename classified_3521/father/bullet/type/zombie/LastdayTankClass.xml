@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="子弹">
+		<bullet cnName="烟花炮-母弹">
+			<name>LastdayBig</name>
+			<cnName>烟花炮-母弹</cnName><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			<hurtRatio>1</hurtRatio>
+			<bulletSkillArr>LastdayBigDieEvent</bulletSkillArr>
+			
+			<bulletLife>1.5</bulletLife><bulletWidth>30</bulletWidth><bulletAngle>180</bulletAngle><hitType>rect</hitType>
+			<attackGap>0.4</attackGap><attackDelay>0.18</attackDelay><bulletNum>1</bulletNum><shootPoint>-222,-163</shootPoint>
+			<penetrationGap>1000</penetrationGap>
+			<boomD selfB="1" bodyB="1" radius="40" />
+			<bulletSpeed>12</bulletSpeed><speedD a="-0.3" min="4" />
+			
+			<bulletImgUrl con="add" raNum="30">bullet/fireball</bulletImgUrl><flipX>1</flipX>
+			<smokeImgUrl con="filter" raNum="30">bullet/fireballSmoke</smokeImgUrl>
+			<hitImgUrl soundUrl="boomSound/microBoom2">boomEffect/boom2</hitImgUrl>
+		</bullet>
+					<bullet cnName="烟花炮-子弹">
+						<name>LastdayBigChild</name>
+						<cnName>烟花炮-子弹</cnName><noMagneticB>1</noMagneticB>
+						<hurtRatio>1</hurtRatio>
+						
+						<bulletLife>2</bulletLife><lifeRandom>0.2</lifeRandom><bulletAngle>0</bulletAngle><bulletWidth>35</bulletWidth><hitType>rect</hitType>
+						<bulletNum>20</bulletNum><shootAngle>110</shootAngle>
+						<penetrationGap>1000</penetrationGap>
+						<bulletSpeed>15</bulletSpeed><speedD a="-1" min="5" random="0.2" />
+						
+						<bulletImgUrl raNum="30">bullet/gaiaBullet</bulletImgUrl><flipX>1</flipX>
+						<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+						<hitImgUrl soundUrl="boomSound/microBoom1" soundVolume="0.3">boomEffect/boom1</hitImgUrl>
+					</bullet>
+		<bullet cnName="跟踪导弹">
+			<name>LastdayMissle</name>
+			<cnName>跟踪导弹</cnName><noMagneticB>1</noMagneticB>
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>-161</bulletAngle><bulletLife>6</bulletLife><bulletWidth>30</bulletWidth><hitType>rect</hitType>
+			<attackGap>0.3</attackGap>
+			<attackDelay>0.12</attackDelay>
+			<bulletNum>2</bulletNum>			
+			<shootAngle>4</shootAngle>
+			<shootPoint>35,-228</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+			<followD value="0.6" delay="1" />
+				
+			<bulletSpeed>3</bulletSpeed>
+			<speedD max="10" min="3" a="5" random="0.2" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">LastdayTank/bullet1</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom2" soundVolume="0.3" shake="3,0.4,13">boomEffect/boom2</hitImgUrl>
+			<smokeImgUrl con="add">LastdayTank/smoke1</smokeImgUrl>
+		</bullet>
+		<bullet cnName="机关枪">
+			<name>LastdayViking</name>
+			<cnName>机关枪</cnName><noMagneticB>1</noMagneticB>
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletLife>1.5</bulletLife><bulletWidth>20</bulletWidth><bulletAngle>-175</bulletAngle><hitType>rect</hitType>
+			<attackGap>0.9</attackGap><attackDelay>0.27</attackDelay><bulletNum>5</bulletNum><shootAngle>40</shootAngle><shakeAngle>1</shakeAngle>
+			<shootNum>5</shootNum><shootGap>0.13</shootGap>
+			<shootPoint>-209,-91</shootPoint>
+			<penetrationGap>1000</penetrationGap>
+			<bulletSpeed>13</bulletSpeed><speedD a="-0.3" min="4" />
+			
+			<bulletImgUrl con="filter" raNum="60">bullet/blueLaser</bulletImgUrl><flipX>1</flipX>
+			<hitImgUrl soundUrl="sound/hand_hit">bulletHitEffect/fitHit</hitImgUrl>
+		</bullet>
+		<bullet cnName="三连炮">
+			<name>LastdayBig3</name>
+			<cnName>三连炮</cnName><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletLife>4</bulletLife><bulletWidth>40</bulletWidth><hitType>rect</hitType>
+			<attackGap>1.7</attackGap><attackDelay>0.5</attackDelay><bulletNum>1</bulletNum>
+			<shootNum>3</shootNum><shootGap>0.43</shootGap>
+			<positionD>
+				<point shootPoint="-225,-115" bulletAngle="163" />
+				<point shootPoint="-224,-139" bulletAngle="170" />
+				<point shootPoint="-225,-164" bulletAngle="180" />
+			</positionD>
+			<penetrationGap>1000</penetrationGap>
+			<bulletSpeed>13</bulletSpeed><speedD a="-0.3" min="4" />
+			
+			<bulletImgUrl raNum="30" con="filter">bullet/purpleFire</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom1" shake="2,0.2,10">boomEffect/boom3</hitImgUrl>
+		</bullet>
+	</father>
+	
+	</data>

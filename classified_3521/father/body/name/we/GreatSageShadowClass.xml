@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="we">
+		<body name="大圣分身" shell="normal">
+			
+			<name>GreatSageShadow</name>
+			<cnName>大圣分身</cnName>
+			<raceType>human</raceType>
+			<showLevel>9999</showLevel>
+			<swfUrl>swf/enemy/GreatSageShadow329.swf</swfUrl>
+			
+			<showLevel>999</showLevel>
+			<headIconUrl>greatSage/head_icon</headIconUrl>
+			<motionD vRan="0.2" />
+			<dieJumpMul>0</dieJumpMul>
+			<dieImg name="shadowDie" />
+			<imgType>bmp</imgType>
+			
+			<imgArr>
+				stand,move
+				,normalAttack1,normalAttack2,die1
+				,greatAttack
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+			</imgArr>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<maxVx>13</maxVx>
+			<avtiveSkillCdOverT>0.1</avtiveSkillCdOverT>
+			
+			<skillArr>State_SpellImmunity,greatSageFly</skillArr>
+			<hurtArr>
+				<hurt cd="3">
+					<imgLabel>normalAttack1</imgLabel><cn>戳棍</cn>
+					<hurtRatio>1</hurtRatio>
+					<attackType>holy</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl name="fistHit" />
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel><cn>挥棍</cn>
+					<hurtRatio>0.5</hurtRatio>
+					<attackType>holy</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl name="fistHit" />
+				</hurt>
+				
+				<hurt info="不加入ai选择">
+					<imgLabel>greatAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>4</hurtRatio>
+					<attackType>holy</attackType>
+					<hitImgUrl name="yellowStickHit" />
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		
+			<skill>
+				<name>greatSageFly</name>
+				<cnName>筋斗云</cnName><ignoreNoSkillB>1</ignoreNoSkillB><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+				
+				<conditionType>passive</conditionType>
+				<condition>add</condition>
+				<target>me</target>
+				
+				<addType>state</addType>
+				<effectType>greatSageFly</effectType>
+				<duration>9999999</duration>
+				<stateEffectImg name="greatSageCloud2" />
+				<stateEffectImg2 name="groupSpeedUp_enemy_state" />
+				
+				<description>在天空顶进入筋斗云飞行状态。</description>
+			</skill>
+	</father>
+	</data>

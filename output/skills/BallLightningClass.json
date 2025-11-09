@@ -1,0 +1,285 @@
+{
+  "father": [
+    {
+      "name": "enemy",
+      "skills": {
+        "BallLightning": {
+          "name": "BallLightning",
+          "shell": "normal",
+          "cnName": "球形闪电",
+          "headIconUrl": "IconGather/BallLightning",
+          "raceType": "robot",
+          "swfUrl": "swf/enemy/BallLightning.swf",
+          "lifeRatio": 1,
+          "rosRatio": 99,
+          "showLevel": 999,
+          "imgType": "normal",
+          "imgArr": "stand,move\n\t\t\t\t,hurt1,die1",
+          "hitRect": "-30,-30,60,60",
+          "maxJumpNum": 1,
+          "maxVx": 7,
+          "motionState": "fly",
+          "preBulletArr": "BallLightning_fire,BallLightning_electric,BallLightning_frozen,BallLightning_frozenLine",
+          "nextAttackTime": 0,
+          "extraAIClassLabel": "BallLightning_AIExtra",
+          "bossSkillArr": "BallLightningHurt,BallLightningCd,BallLightningUnder,BallLightningSkillUnder,BallLightning_fire,BallLightning_electric,BallLightning_frozen,noSpeedReduce,cmldef2_enemy,fightReduct,defenceBounce_enemy",
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "stand",
+                "cn": "无攻击",
+                "hurtRatio": 0.25,
+                "shakeValue": 4,
+                "attackType": "holy",
+                "skillArr": null,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/fitHit",
+                  "con": "add",
+                  "soundUrl": "sound/paralysis_enemy_hit"
+                }
+              },
+              {
+                "imgLabel": "move",
+                "cn": "无攻击",
+                "hurtRatio": 0.25,
+                "shakeValue": 4,
+                "attackType": "holy",
+                "skillArr": null,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/fitHit",
+                  "con": "add",
+                  "soundUrl": "sound/paralysis_enemy_hit"
+                }
+              }
+            ]
+          }
+        },
+        "BallLightningHurt": {
+          "name": "BallLightningHurt",
+          "cnName": "歧视",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "otherConditionArr": "noMainPlayer",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "changeHurtNoCondition",
+          "mul": 3,
+          "description": "对除玩家之外的队友造成额外[mul-1]的伤害。"
+        },
+        "BallLightningCd": {
+          "name": "BallLightningCd",
+          "cnName": "技能衰减",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "conditionType": "passive",
+          "noBeClearB": 1,
+          "ignoreImmunityB": 1,
+          "condition": "interval",
+          "target": "me,range,enemy",
+          "iconUrl": "SkillIcon/BallLightningCd",
+          "addType": "state",
+          "effectType": "cdMulAndMinTrigger",
+          "mul": 2,
+          "duration": 2,
+          "range": 99999,
+          "description": "使周围所有敌人的技能冷却时间延长1倍。"
+        },
+        "BallLightningUnder": {
+          "name": "BallLightningUnder",
+          "cnName": "元素操控",
+          "noCopyB": 1,
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "conditionType": "passive",
+          "condition": "underHit",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "BallLightningUnder",
+          "description": "每隔一段时间随机切换体表元素，同时切换不同攻击方式。切换至红色时，更容易受到火焰伤害；切换至黄色时，更容易受到电磁伤害；切换至蓝色时，更容易受到冷冻伤害。"
+        },
+        "BallLightningSkillUnder": {
+          "name": "BallLightningSkillUnder",
+          "cnName": "元素切换-技能",
+          "conditionType": "passive",
+          "condition": "underSkillHit",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "BallLightningUnder",
+          "description": "。"
+        },
+        "BallLightning_fire": {
+          "cnName": "火焰敏感",
+          "name": "BallLightning_fire",
+          "noBeClearB": 1,
+          "conditionType": "passive",
+          "condition": "no",
+          "target": "me",
+          "addType": "state",
+          "effectType": "no",
+          "duration": 99999,
+          "stateEffectImg": {
+            "value": "generalEffect/fireBallBig",
+            "partType": "body",
+            "con": "add"
+          }
+        },
+        "BallLightning_electric": {
+          "cnName": "电磁敏感",
+          "name": "BallLightning_electric",
+          "noBeClearB": 1,
+          "conditionType": "passive",
+          "condition": "no",
+          "target": "me",
+          "addType": "state",
+          "effectType": "no",
+          "duration": 99999,
+          "stateEffectImg": {
+            "value": "generalEffect/electricBallBig",
+            "partType": "body",
+            "con": "add"
+          }
+        },
+        "BallLightning_frozen": {
+          "cnName": "冷冻敏感",
+          "name": "BallLightning_frozen",
+          "noBeClearB": 1,
+          "conditionType": "passive",
+          "condition": "no",
+          "target": "me",
+          "addType": "state",
+          "effectType": "no",
+          "duration": 99999,
+          "stateEffectImg": {
+            "value": "generalEffect/frozenBallBig",
+            "partType": "body",
+            "con": "add"
+          }
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "bullet": [
+        {
+          "name": "BallLightning_fire",
+          "cnName": "火焰球",
+          "attackType": "holy",
+          "hurtRatio": 1.5,
+          "bulletAngle": 0,
+          "bulletAngleRange": 360,
+          "bulletLife": 5,
+          "bulletWidth": 50,
+          "hitType": "rect",
+          "penetrationGap": 1000,
+          "noMagneticB": 1,
+          "bulletSpeed": 20,
+          "speedD": {
+            "random": 0.3
+          },
+          "hitGap": 0.06,
+          "bounceD": {
+            "floor": 20
+          },
+          "flipX": 1,
+          "bulletImgUrl": {
+            "value": "generalEffect/fireBall",
+            "raNum": 1,
+            "con": "add"
+          },
+          "hitImgUrl": {
+            "value": "bulletHitEffect/fitHit",
+            "con": "add",
+            "soundUrl": "sound/paralysis_enemy_hit"
+          },
+          "hitFloorImgUrl": "no"
+        },
+        {
+          "name": "BallLightning_electric",
+          "cnName": "电磁球",
+          "bulletSkillArr": "BallLightning_electric",
+          "attackType": "holy",
+          "hurtRatio": 1,
+          "bulletAngle": 0,
+          "bulletLife": 99999,
+          "bulletWidth": 70,
+          "hitType": "rect",
+          "penetrationGap": 1000,
+          "penetrationNum": 999,
+          "noMagneticB": 1,
+          "noBeClearB": 1,
+          "bulletSpeed": 0,
+          "flipX": 1,
+          "bulletImgUrl": {
+            "value": "generalEffect/electricBall",
+            "con": "add",
+            "raNum": 1
+          },
+          "hitImgUrl": {
+            "value": "bulletHitEffect/fitHit",
+            "con": "add",
+            "soundUrl": "sound/paralysis_enemy_hit"
+          }
+        },
+        {
+          "name": "BallLightning_frozen",
+          "cnName": "冰冻球",
+          "bulletSkillArr": "BallLightning_electric",
+          "attackType": "holy",
+          "hurtRatio": 0.5,
+          "bulletAngle": 0,
+          "bulletLife": 99999,
+          "bulletWidth": 50,
+          "hitType": "rect",
+          "penetrationGap": 1000,
+          "penetrationNum": 999,
+          "noMagneticB": 1,
+          "noBeClearB": 1,
+          "bulletSpeed": 0,
+          "flipX": 1,
+          "bulletImgUrl": {
+            "value": "generalEffect/frozenBall",
+            "con": "add",
+            "raNum": 1
+          },
+          "hitImgUrl": {
+            "value": "bulletHitEffect/fitHit",
+            "con": "add",
+            "soundUrl": "sound/paralysis_enemy_hit"
+          }
+        },
+        {
+          "name": "BallLightning_frozenLine",
+          "cnName": "冰冻连线",
+          "attackType": "holy",
+          "hurtRatio": 0.15,
+          "bulletAngle": 0,
+          "bulletLife": 0.034,
+          "bulletWidth": 530,
+          "hitType": "longLine",
+          "penetrationGap": 1000,
+          "penetrationNum": 999,
+          "noMagneticB": 1,
+          "noBeClearB": 1,
+          "bulletSpeed": 0,
+          "flipX": 1,
+          "bulletImgUrl": {
+            "value": "generalEffect/lineLightning",
+            "raNum": 30,
+            "con": "add",
+            "len": 50,
+            "time": 0.034,
+            "waveAn": 30,
+            "imgDieType": "ranPlay"
+          },
+          "hitImgUrl": {
+            "value": "bulletHitEffect/fitHit",
+            "con": "add",
+            "soundUrl": "sound/paralysis_enemy_hit"
+          }
+        }
+      ]
+    }
+  ]
+}

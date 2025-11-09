@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="energy" cnName="火炮-特殊">
+		<bullet cnName="幻灭" name="dreamDie" color="yagold">
+			<name>dreamDie</name>
+			<cnName>幻灭</cnName>
+			
+			
+			<capacity>200</capacity>
+			<attackGap>0.12</attackGap>
+			<reloadGap>1</reloadGap>
+			<shakeAngle>1</shakeAngle>
+			<bulletWidth>30</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth><aiShootRange>610</aiShootRange>
+			
+			<armsArmMul>0.6</armsArmMul>
+			<upValue>10</upValue>
+			<shootShakeAngle>10</shootShakeAngle>
+			<shootRecoil>1</shootRecoil>
+			<screenShakeValue>3</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.65</bulletLife>
+			<hitType>rect</hitType>
+				
+			<bulletSpeed>40</bulletSpeed>
+			
+			<iconUrl>specialGun/dreamDieIcon</iconUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl name="SilverShipBullet" />
+			<fireImgUrl name="SilverShipFire" /><hitImgUrl name="gun_hit" />
+			
+			<shootSoundUrl>sound/laserShoot</shootSoundUrl>
+			
+			<bodyImgRange>specialGun/dreamDie</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description />
+		</bullet>
+		
+	</father>
+	
+	
+</data>

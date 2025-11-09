@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="car" cnName="战车定义">
+		<equip name="Thunder" cnName="雷鸣" evolutionLabel="Thunderbolt">
+			<evolutionLv>2</evolutionLv>
+			<specialInfoArr>二段跳跃</specialInfoArr>
+			<main label="Thunder_main" dpsMul="2.7" len="110" />
+			<sub label="Thunder_sub" dpsMul="2.7" len="55" minRa="174" maxRa="174.1" />
+			<lifeMul>2.5</lifeMul>
+			<attackMul>1.8</attackMul>
+			<duration>70</duration>
+			<cd>85</cd>
+			<skillArr>vehicleFit_Gaia</skillArr>
+			<addObjJson>{'dpsAll':0.22,'lifeAll':0.20}</addObjJson>
+		</equip>
+		
+		<equip name="Thunderbolt" cnName="雷霆">
+			<evolutionLv>4</evolutionLv><mustCash>50</mustCash>
+			<specialInfoArr>二段跳跃</specialInfoArr>
+			<main label="Thunder_main" dpsMul="3" len="110" />
+			<sub label="Thunder_sub" dpsMul="3.1" len="55" minRa="174" maxRa="174.1" />
+			<lifeMul>3.2</lifeMul>
+			<attackMul>2.1</attackMul>
+			<duration>70</duration>
+			<cd>85</cd>
+			<skillArr>vehicleFit_Gaia</skillArr>
+			<addObjJson>{'dpsAll':0.24,'lifeAll':0.20}</addObjJson>
+		</equip>
+		
+		<bullet cnName="雷鸣-主炮">
+			<name>Thunder_main</name>
+			<cnName>雷鸣-主炮</cnName>
+			
+			<hurtRatio>0.57</hurtRatio>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.3</attackGap>
+			
+				
+			<shootRecoil>15</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			<bulletSpeed>35</bulletSpeed>
+			<boomD bodyB="1" floorB="1" radius="120" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">rocket/rocketBullet</bulletImgUrl>
+			<fireImgUrl raNum="30" soundUrl="rocket/barrel_sound" con="add">gunFire/rocket</fireImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom1" shake="2,0.2,10">boomEffect/boom3</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+		</bullet>
+		<bullet cnName="雷鸣-副炮">
+			<name>Thunder_sub</name>
+			<cnName>雷鸣-副炮</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			<bulletWidth>500</bulletWidth>
+			<bulletShakeWidth>100</bulletShakeWidth>
+			
+			<attackGap>0.1</attackGap>
+			<attackDelay>0</attackDelay>
+				
+			<shootRecoil>4</shootRecoil>
+			<screenShakeValue>9</screenShakeValue>
+			<shakeAngle>3</shakeAngle>
+			<bulletSpeed>0</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<lineD lightColor="0x00FFFF" size="2" lightSize="6" />
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<fireImgUrl raNum="30" soundUrl="ak/barrel5_sound">gunFire/f</fireImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+		</bullet>
+	</father>
+	
+	
+	
+	
+	
+	
+	</data>

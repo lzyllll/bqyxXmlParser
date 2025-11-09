@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="deviceSkill_link" cnName="装置技能-link">
+		
+		<skill index="0" name="terroristBox_screaming" cnName="恐怖盒子-惊吓">
+			<name>terroristBox_screaming</name>
+			<cnName>惊吓</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target limitNum="10">target,range,enemy</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>screaming_hero</effectType>
+			<mul>0.4</mul>
+			<duration>8</duration>
+			<range>500</range>
+			 
+			<meEffectImg soundUrl="sound/magicHit1" />
+			<stateEffectImg partType="mouth" con="add">skillEffect/screaming_hero_target</stateEffectImg>
+		</skill>
+		<skill index="0" name="squibDevice_screaming" cnName="爆竹-惊吓">
+			<name>squibDevice_screaming</name>
+			<cnName>惊吓</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>tergetName</otherConditionArr>
+			<conditionString>NianMonster</conditionString>
+			<target>target</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>squibDevice_screaming</effectType>
+			<mul>0.7</mul>
+			<duration>5</duration>
+			 
+			<meEffectImg soundUrl="sound/magicHit1" />
+			<stateEffectImg partType="mouth" con="filter">skillEffect/screaming_hero_target</stateEffectImg>
+			<description />
+		</skill>
+		
+		
+		
+	</father>
+</data>

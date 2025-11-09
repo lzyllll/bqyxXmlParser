@@ -1,0 +1,554 @@
+{
+  "father": [
+    {
+      "name": "heroSkill",
+      "cnName": "英雄技能",
+      "skills": {
+        "tauntLing": {
+          "name": "tauntLing",
+          "cnName": "嘲讽",
+          "ignoreImmunityB": 1,
+          "noSkillDodgeB": 1,
+          "noBeClearB": 1,
+          "effectInfoArr": "增加防御力",
+          "addD": {
+            "pro": "cd",
+            "range": "-1,-3",
+            "info": "冷却时间[v]秒"
+          },
+          "cd": 70,
+          "changeText": "技能冷却时间：[cd]秒",
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "nearAttackTarget",
+          "conditionRange": 800,
+          "target": "me",
+          "addType": "state",
+          "effectType": "invincible",
+          "duration": 6,
+          "passiveSkillArr": "tauntLingBack_link_1",
+          "linkArr": "tauntLing_link",
+          "meEffectImg": {
+            "value": "skillEffect/screaming_hero",
+            "soundUrl": "sound/tauntLing",
+            "partType": "mouth"
+          },
+          "stateEffectImg": {
+            "value": "generalEffect/invincibleShield",
+            "partType": "body",
+            "con": "add"
+          },
+          "description": "自身无敌[duration]秒，期间逼迫900码内的敌人攻击自己。更高等级技能将会反弹伤害给敌人。",
+          "growth": {
+            "skill": [
+              {
+                "cd": 70
+              },
+              {
+                "cd": 65
+              },
+              {
+                "cd": 60
+              },
+              {
+                "cd": 55
+              },
+              {
+                "cd": 50
+              },
+              {
+                "cd": 45
+              },
+              {
+                "cd": 40
+              },
+              {
+                "cd": 35
+              },
+              {
+                "cd": 30,
+                "passiveSkillArr": "tauntLingBack_link_2",
+                "changeText": "反弹伤害倍数：0.5倍",
+                "description": "自身无敌[duration]秒，期间逼迫900码内的敌人攻击自己，并把伤害反弹给敌人，伤害等于心零当前武器实际战斗力的0.5倍。"
+              },
+              {
+                "cd": 30,
+                "passiveSkillArr": "tauntLingBack_link_3",
+                "changeText": "反弹伤害倍数：2倍",
+                "description": "自身无敌[duration]秒，期间逼迫900码内的敌人攻击自己，并把伤害反弹给敌人，伤害等于心零当前武器实际战斗力的2倍。"
+              }
+            ]
+          }
+        },
+        "strongLing": {
+          "name": "strongLing",
+          "cnName": "遇强则刚",
+          "effectInfoArr": "增加防御力",
+          "addD": {
+            "pro": "mul",
+            "range": "-2,-5",
+            "info": "受到伤害降低[v]"
+          },
+          "changeText": "受到伤害降低[1-mul]",
+          "conditionType": "passive",
+          "condition": "interval",
+          "target": {
+            "value": "me,range,we",
+            "systemType": "hero"
+          },
+          "addType": "state",
+          "effectType": "strongLing",
+          "mul": 0.9,
+          "secMul": 0.97,
+          "duration": 1,
+          "range": 99999,
+          "stateEffectImg": {
+            "value": "generalEffect/hurtDefence1",
+            "partType": "body",
+            "con": "add"
+          },
+          "description": "当目标敌人处于无敌状态时，自己和主角受到伤害降低[1-mul]、百分比伤害降低[1-secMul]。",
+          "growth": {
+            "skill": [
+              {
+                "mul": 0.9
+              },
+              {
+                "mul": 0.8
+              },
+              {
+                "mul": 0.7
+              },
+              {
+                "mul": 0.6
+              },
+              {
+                "mul": 0.5
+              },
+              {
+                "mul": 0.4
+              },
+              {
+                "mul": 0.3,
+                "secMul": 0.85,
+                "changeText": "受到百分比伤害降低[1-secMul]"
+              },
+              {
+                "mul": 0.3,
+                "secMul": 0.7,
+                "changeText": "受到百分比伤害降低[1-secMul]"
+              },
+              {
+                "mul": 0.3,
+                "secMul": 0.5,
+                "changeText": "受到百分比伤害降低[1-secMul]"
+              },
+              {
+                "mul": 0.3,
+                "secMul": 0.3,
+                "changeText": "受到百分比伤害降低[1-secMul]"
+              }
+            ]
+          }
+        },
+        "revengeLing": {
+          "name": "revengeLing",
+          "cnName": "复仇",
+          "noBeClearB": 1,
+          "effectInfoArr": "增加伤害输出",
+          "addD": {
+            "pro": "mul",
+            "range": "0.01,0.02",
+            "info": "角色殒命伤害提高[v]"
+          },
+          "changeText": "英雄角色殒命后造成伤害：[mul]{n}最多造成伤害：[secMul]",
+          "conditionType": "passive",
+          "condition": "interval",
+          "otherConditionArr": "noHardB,noUnendLevelB,noSkillNoTargetMaxLifeB",
+          "intervalT": 1,
+          "target": "me,range,we",
+          "addType": "instant",
+          "effectType": "revengeLingAddSkill",
+          "valueString": "revengeLing_link_1",
+          "mul": 0.04,
+          "secMul": 0.08,
+          "duration": 99999,
+          "range": 99999,
+          "description": "我方单位殒命时，对生命值高于20%的凶手造成百分比伤害（角色殒命造成[mul]伤害，其他殒命造成3%伤害），对同个凶手最多造成[secMul]的伤害。99级主线任务中该技能无效。",
+          "pointEffectImg": {
+            "value": "boomEffect/bigFire",
+            "soundUrl": "boomSound/boom"
+          },
+          "growth": {
+            "skill": [
+              {
+                "mul": 0.03,
+                "secMul": 0.04,
+                "valueString": "revengeLing_link_1"
+              },
+              {
+                "mul": 0.03,
+                "secMul": 0.08,
+                "valueString": "revengeLing_link_2"
+              },
+              {
+                "mul": 0.03,
+                "secMul": 0.12,
+                "valueString": "revengeLing_link_3"
+              },
+              {
+                "mul": 0.03,
+                "secMul": 0.16,
+                "valueString": "revengeLing_link_4"
+              },
+              {
+                "mul": 0.03,
+                "secMul": 0.2,
+                "valueString": "revengeLing_link_5"
+              },
+              {
+                "mul": 0.04,
+                "secMul": 0.25,
+                "valueString": "revengeLing_link_6"
+              },
+              {
+                "mul": 0.05,
+                "secMul": 0.3,
+                "valueString": "revengeLing_link_7"
+              },
+              {
+                "mul": 0.06,
+                "secMul": 0.35,
+                "valueString": "revengeLing_link_8"
+              },
+              {
+                "mul": 0.07,
+                "secMul": 0.4,
+                "valueString": "revengeLing_link_9"
+              },
+              {
+                "mul": 0.08,
+                "secMul": 0.45,
+                "valueString": "revengeLing_link_10"
+              }
+            ]
+          }
+        },
+        "resonanceLing": {
+          "name": "resonanceLing",
+          "cnName": "共鸣",
+          "effectInfoArr": "增加伤害输出",
+          "addD": {
+            "pro": "mul",
+            "range": "0.01,0.02",
+            "info": "伤害提高[v]"
+          },
+          "changeText": "伤害提升：[mul]",
+          "conditionType": "passive",
+          "condition": "interval",
+          "target": {
+            "value": "me,range,we",
+            "systemType": "hero"
+          },
+          "addType": "state",
+          "effectType": "resonanceLing",
+          "mul": 0.03,
+          "duration": 0.5,
+          "range": 9999999,
+          "stateEffectImg": {
+            "value": "skillEffect/purpleFire",
+            "partType": "shootPoint",
+            "con": "filter",
+            "raNum": 30,
+            "followPartRaB": true
+          },
+          "description": "当自己和队友持有同一类型枪支时，双方伤害提升[mul]。",
+          "growth": {
+            "skill": [
+              {
+                "mul": 0.03
+              },
+              {
+                "mul": 0.05
+              },
+              {
+                "mul": 0.07
+              },
+              {
+                "mul": 0.09
+              },
+              {
+                "mul": 0.11
+              },
+              {
+                "mul": 0.13
+              },
+              {
+                "mul": 0.16
+              },
+              {
+                "mul": 0.19
+              },
+              {
+                "mul": 0.22
+              },
+              {
+                "mul": 0.25
+              }
+            ]
+          }
+        },
+        "nightLing": {
+          "name": "nightLing",
+          "cnName": "暗夜信徒",
+          "everNoClearB": 1,
+          "effectInfoArr": "增加伤害输出",
+          "addD": {
+            "pro": "mul",
+            "range": "0.01,0.03",
+            "info": "继承战斗力[v]"
+          },
+          "changeText": "继承战斗力：[mul]{n}不超过自身战斗力的[secMul]",
+          "conditionType": "passive",
+          "otherConditionArr": "sceneLabelHave",
+          "conditionString": "月亮,星空",
+          "condition": "add",
+          "target": "me",
+          "addType": "state",
+          "effectType": "nightLing",
+          "mul": 0.05,
+          "secMul": 0.3,
+          "duration": 999999,
+          "stateEffectImg": {
+            "value": "skillEffect/nightLing",
+            "partType": "mouth",
+            "con": "add",
+            "raNum": 1
+          },
+          "description": "在星空或月亮的场景下，继承当前主角[mul]的战斗力，继承战斗力不超过自身战斗力的[secMul]。",
+          "growth": {
+            "skill": [
+              {
+                "mul": 0.05,
+                "secMul": 0.3
+              },
+              {
+                "mul": 0.1,
+                "secMul": 0.6
+              },
+              {
+                "mul": 0.15,
+                "secMul": 0.9
+              },
+              {
+                "mul": 0.2,
+                "secMul": 1.2
+              },
+              {
+                "mul": 0.25,
+                "secMul": 1.5
+              },
+              {
+                "mul": 0.3,
+                "secMul": 1.8
+              },
+              {
+                "mul": 0.35,
+                "secMul": 2.1
+              },
+              {
+                "mul": 0.4,
+                "secMul": 2.4
+              },
+              {
+                "mul": 0.45,
+                "secMul": 2.7
+              },
+              {
+                "mul": 0.5,
+                "secMul": 3.0
+              }
+            ]
+          }
+        },
+        "clawLing": {
+          "name": "clawLing",
+          "cnName": "恶爪",
+          "noSkillDodgeB": 1,
+          "effectInfoArr": null,
+          "addD": {
+            "pro": "mul",
+            "range": "0.01,0.03",
+            "info": "时间延长[v]"
+          },
+          "changeText": "时间延长：[mul-1]",
+          "conditionType": "passive",
+          "condition": "interval",
+          "intervalT": 0.1,
+          "target": "me,range,enemy",
+          "addType": "instant",
+          "effectType": "setEnemyStateTMul",
+          "mul": 1.03,
+          "range": 99999,
+          "description": "让所有敌人身上的负面状态时间延长[mul-1]。",
+          "growth": {
+            "skill": [
+              {
+                "mul": 1.03
+              },
+              {
+                "mul": 1.06
+              },
+              {
+                "mul": 1.09
+              },
+              {
+                "mul": 1.12
+              },
+              {
+                "mul": 1.15
+              },
+              {
+                "mul": 1.18
+              },
+              {
+                "mul": 1.21
+              },
+              {
+                "mul": 1.24
+              },
+              {
+                "mul": 1.27
+              },
+              {
+                "mul": 1.3,
+                "ignoreImmunityB": 1,
+                "changeText": "时间延长：[mul-1]{n}无视技能免疫",
+                "description": "让所有敌人身上的负面状态时间延长[mul-1]，无视技能免疫。"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "heroSkillLink",
+      "cnName": "英雄技能-链接",
+      "skills": {
+        "tauntLing_link": {
+          "name": "tauntLing_link",
+          "cnName": "嘲讽敌人",
+          "conditionType": "active",
+          "target": "me,range,enemy",
+          "addType": "state",
+          "effectType": "tauntLing",
+          "duration": 6,
+          "range": 900,
+          "stateEffectImg": {
+            "value": "generalEffect/fire",
+            "partType": "mouth",
+            "con": "add"
+          }
+        },
+        "tauntLingBack_link": {
+          "name": "tauntLingBack_link",
+          "cnName": "反弹伤害",
+          "conditionType": "passive",
+          "condition": "underHit",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "hurtFromChild",
+          "valueString": "backHurt",
+          "mul": 0,
+          "extraValueType": "nowArmsDpsOrNormal",
+          "growth": {
+            "skill": [
+              {
+                "mul": 0
+              },
+              {
+                "mul": 0.5
+              },
+              {
+                "mul": 2
+              }
+            ]
+          }
+        },
+        "revengeLing_link": {
+          "name": "revengeLing_link",
+          "cnName": "复仇伤害",
+          "ignoreImmunityB": 1,
+          "noSkillDodgeB": 1,
+          "conditionType": "passive",
+          "condition": "die",
+          "otherConditionArr": "revengeLingHurtLess,targetLifePerMore",
+          "conditionRange": 0.2,
+          "target": "target",
+          "addType": "instant",
+          "effectType": "revengeLingHurt",
+          "mul": 0.04,
+          "secMul": 0.08,
+          "targetEffectImg": {
+            "value": "boomEffect/bigFire",
+            "soundUrl": "boomSound/boom"
+          },
+          "growth": {
+            "skill": [
+              {
+                "mul": 0.03,
+                "secMul": 0.04,
+                "valueString": "revengeLing_link_1"
+              },
+              {
+                "mul": 0.03,
+                "secMul": 0.08,
+                "valueString": "revengeLing_link_2"
+              },
+              {
+                "mul": 0.03,
+                "secMul": 0.12,
+                "valueString": "revengeLing_link_3"
+              },
+              {
+                "mul": 0.03,
+                "secMul": 0.16,
+                "valueString": "revengeLing_link_4"
+              },
+              {
+                "mul": 0.03,
+                "secMul": 0.2,
+                "valueString": "revengeLing_link_5"
+              },
+              {
+                "mul": 0.04,
+                "secMul": 0.25,
+                "valueString": "revengeLing_link_6"
+              },
+              {
+                "mul": 0.05,
+                "secMul": 0.3,
+                "valueString": "revengeLing_link_7"
+              },
+              {
+                "mul": 0.06,
+                "secMul": 0.35,
+                "valueString": "revengeLing_link_8"
+              },
+              {
+                "mul": 0.07,
+                "secMul": 0.4,
+                "valueString": "revengeLing_link_9"
+              },
+              {
+                "mul": 0.08,
+                "secMul": 0.45,
+                "valueString": "revengeLing_link_10"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

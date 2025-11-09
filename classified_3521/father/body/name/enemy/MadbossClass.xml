@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="敌方">
+		<body index="0" name="战神" shell="normal">
+			
+			<name>Madboss</name>
+			<cnName>战神</cnName>
+			<raceType>human</raceType>
+			<swfUrl>swf/hero/Madboss335.swf</swfUrl>
+			
+			<showLevel>999</showLevel>
+			<headIconUrl>IconGather/Madboss</headIconUrl>
+			<lifeBarExtraHeight>-180</lifeBarExtraHeight>
+			
+			
+			<imgArr>
+				standStop,standForward,standBack,standStop__squatStop
+				,squatForward,squatStop,squatBack,squatStop__standStop
+				,jumpDown__,jumpDown,jumpUp__jumpDown,jumpUp,__jumpUp
+				,die1,__stru,stru
+				,armsAttack,birthAttack
+			</imgArr>
+			
+			<hitRect>-20, -90, 40, 90</hitRect>
+			<squatHitRect>-20,-50,40,50</squatHitRect>
+			<hurtRectArr>-40,-70,58,60</hurtRectArr> 
+			<hurtRectArr>-26, -197, 54, 176</hurtRectArr> 
+			<hurtRectArr>-26, -257, 54, 116</hurtRectArr> 
+			
+			<maxVx>10.5</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			<maxJumpNum>1</maxJumpNum><dieJumpMul>0</dieJumpMul>
+			<motionD jumpMul="1.5" />
+			<flyType>tween</flyType>
+			
+			<armsNumber>3</armsNumber>
+			<randomArmsRange>extremeRocket,extremeLightning,extremeLaser</randomArmsRange>
+			<oneAiLabel>Madboss</oneAiLabel>
+			
+			<skillArr>MadbossBuff,extremeLaserFire,MadPartner,State_SpellImmunity</skillArr>
+			<bossSkillArr>madArmsAttack,desertedHalo_enemy,crazyMad,findHide,toLand,summonShortLife,likeMissle_Shapers,rigidBody_enemy,MadbossUnderBuff,MadbossUnder</bossSkillArr>
+			<bossSkillArrCn />
+			<hurtArr>
+				<hurt cn="擎天斩">
+					<imgLabel>armsAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>1</hurtRatio>
+					<hurtMul>0.5</hurtMul>
+					<attackType>holy</attackType>
+					<skillArr>invincibleEmp</skillArr>
+					<shakeValue>6</shakeValue>
+					<grapRect>-350,-111,300,105</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>
+		
+	
+		<bullet>
+			<name>extremeLaserFire</name>
+			<cnName>烈焰大地</cnName><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			<hurtRatio>0</hurtRatio>
+			<hurtMul>0.04</hurtMul>
+			<attackType>holy</attackType>
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>7</bulletLife>
+			<bulletWidth>45</bulletWidth>
+			<hitType>rect</hitType>
+			<bulletAngle>-90</bulletAngle>
+			<bulletSpeed>0</bulletSpeed>
+			<boomD selfB="1" hurtMul="0" />
+				
+			<hitGap>0.2</hitGap>
+			<penetrationNum>999</penetrationNum>
+			<penetrationGap>1000</penetrationGap>
+			<bulletImgUrl con="add" soundUrl="sound/fireHit1">generalEffect/purfloorFire</bulletImgUrl>
+			<hitImgUrl con="add">bulletHitEffect/spark_motion</hitImgUrl>
+			<selfBoomImgUrl con="add">boomEffect/smoke2</selfBoomImgUrl>
+		</bullet>
+				<skill name="烈焰大地-缓存图像特效用">
+					<name>extremeLaserFire</name>
+					<cnName>烈焰大地</cnName><noRandomListB>1</noRandomListB>
+					<conditionType>passive</conditionType><condition>no</condition><target>target</target><addType>instant</addType><effectType>bullet</effectType>
+					<obj>"name":"extremeLaserFire"</obj>
+					<pointEffectImg con="add">boomEffect/smoke2</pointEffectImg>
+					<description>被激光灼烧的大地将燃起烈火。</description>
+				</skill>
+	
+		
+		<skill name="觉醒-生命值低于5%">
+			<name>crazyMad</name>
+			<cnName>觉醒</cnName><wantDescripB>1</wantDescripB>
+			
+			<cd>50</cd><firstCd>45</firstCd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>targetLifePerLess</otherConditionArr>
+			<conditionRange>0.05</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>crazy</effectType>
+			<mul>1.7</mul>
+			<duration>50</duration>
+			
+			<meEffectImg soundUrl="sound/crazy_hero" />
+			<stateEffectImg partType="2eye" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg>
+			<stateEffectImg2 partType="2eye" con="add">skillEffect/crazy_hero_eye</stateEffectImg2>
+			<description>生命值低于5%时，攻击速度增加50%。</description>
+		</skill>
+		
+		<skill name="擎天斩">
+			<name>madArmsAttack</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>擎天斩</cnName><iconUrl36>SkillIcon/jump_Cheetah_36</iconUrl36>
+			<cd>8</cd>
+			
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>madArmsAttack</otherConditionArr>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>madArmsAttack</effectType>
+			<duration>1.5</duration>
+			
+			<meActionLabel>armsAttack</meActionLabel>
+			<stateEffectImg con="filter">Madboss/armsAttEffect</stateEffectImg>
+			<pointEffectImg>boomEffect/boom3</pointEffectImg>
+			<otherEffectImg con="add">skillEffect/apertureBig</otherEffectImg>
+			<description>当自己生命值低于40%并且敌人在自身150码内时，释放擎天斩，对敌人造成巨大伤害。</description>
+		</skill>
+		
+		<skill cnName="近电">
+			<name>madCloseLightning</name>
+			<cnName>近电</cnName><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType><ignoreNoSkillB>1</ignoreNoSkillB><ignoreSilenceB>1</ignoreSilenceB>
+			<condition>interval</condition>
+			<target>me,near,enemy</target>
+			
+			<addType>instant</addType>
+			<effectType>madCloseLightning</effectType>
+			<extraValueType>producterDpsFactor</extraValueType>
+			<value>0</value>
+			<mul>0.5</mul>
+			<duration>0.25</duration>
+			<range>250</range>
+			
+			<targetEffectImg con="add" randomRange="10" soundUrl="sound/electric">bulletHitEffect/spark_motion2</targetEffectImg>
+			<description>每隔[duration]秒闪电攻击[range]范围内的敌人。</description>
+		</skill>
+		
+		<skill cnName="全身发光、走路带烟">
+			<name>MadbossBuff</name>
+			<cnName>全身发光、走路带烟</cnName><noCopyB>1</noCopyB><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><ignoreNoSkillB>1</ignoreNoSkillB><ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>passive</conditionType><condition>add</condition><target>me</target><addType>state</addType>
+			<effectType>MadbossBuff</effectType><duration>99999999</duration>
+			<stateEffectImg partType="leg_right_1,leg_left_1,arm_right_1,arm_left_1,mouth" con="add">generalEffect/purBigLight</stateEffectImg>
+			<pointEffectImg con="add">boomEffect/smoke2</pointEffectImg>
+			<otherEffectImg partType="hand_right,leg_right_1,eye_left,body">boomEffect/boom3</otherEffectImg>
+		</skill>
+		
+		<skill cnName="武器抵抗">
+			<name>MadbossUnderBuff</name><wantDescripB>1</wantDescripB>
+			<cnName>武器抵抗</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><ignoreNoSkillB>1</ignoreNoSkillB><ignoreSilenceB>1</ignoreSilenceB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>MadbossUnderBuff</effectType>
+			<duration>99999999</duration>
+			<stateEffectImg>Madboss/underBuff</stateEffectImg>
+			<description>每个生命阶段，对指定类型的武器或副手敏感（增伤100%），其他攻击方式伤害降低85%。</description>
+		</skill>
+				<skill cnName="受到攻击">
+					<name>MadbossUnder</name>
+					<cnName>武器抵抗-受到攻击</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><ignoreNoSkillB>1</ignoreNoSkillB><ignoreSilenceB>1</ignoreSilenceB>
+					
+					<conditionType>passive</conditionType>
+					<condition>underAllHit</condition>
+					<target>me</target>
+					
+					<addType>instant</addType>
+					<effectType>MadbossUnder</effectType>
+				</skill>
+				
+		<skill>
+			<name>MadPartner</name>
+			<cnName>歧视</cnName>
+			<wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>noMainPlayer</otherConditionArr>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurtNoCondition</effectType>
+			<mul>3</mul>
+			
+			<description>对除玩家之外的队友造成[mul-1]的伤害。</description>
+		</skill>
+	</father>
+	
+		
+</data>

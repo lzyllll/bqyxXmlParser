@@ -1,0 +1,108 @@
+{
+  "father": {
+    "name": "enemy",
+    "skills": {
+      "LaborZombie": {
+        "index": 0,
+        "name": "LaborZombie",
+        "cnName": "科研僵尸",
+        "raceType": "zombies",
+        "swfUrl": "swf/enemy/LaborZombie.swf",
+        "lifeRatio": 1,
+        "showLevel": 97,
+        "imgArr": "stand,move\n\t\t\t\t,normalAttack,boomAttack,hurt1,hurt2,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+        "hitRect": "-14,-76,28,76",
+        "maxJumpNum": 1,
+        "nextAttackTime": 1,
+        "skillArr": "LaborZombieBoom,fastForward_enemy",
+        "bossSkillArr": null,
+        "bossSkillArrCn": null,
+        "hurtArr": {
+          "hurt": [
+            {
+              "imgLabel": "normalAttack",
+              "hurtRatio": 2,
+              "shakeValue": 4,
+              "attackType": "direct",
+              "hitImgUrl": {
+                "value": "bulletHitEffect/fitHit",
+                "con": "add",
+                "soundUrl": "sound/body_hit",
+                "raNum": 4
+              }
+            },
+            {
+              "info": "不加入ai选择",
+              "imgLabel": "boomAttack",
+              "noAiChooseB": 1,
+              "bulletLabel": "LaborZombie_1",
+              "grapRect": "-450,-111,350,105",
+              "hurtRatio": 0.1,
+              "attackType": "direct"
+            }
+          ]
+        }
+      },
+      "LaborZombie_1": {
+        "cnName": "爆瓶子弹",
+        "name": "LaborZombie_1",
+        "shakeAngle": 5,
+        "bulletLife": 30,
+        "bulletWidth": 10,
+        "hitType": "rect",
+        "attackGap": 0.7,
+        "attackDelay": 0.43,
+        "bulletAngle": -90,
+        "shootPoint": "-68,-40",
+        "bulletSpeed": 0,
+        "hitGap": 0.1,
+        "skillArr": "LaborZombieBoomBuff",
+        "penetrationNum": 999,
+        "penetrationGap": 1000,
+        "flipX": 1,
+        "bulletImgUrl": {
+          "name": "LaborZombie_1_bullet"
+        },
+        "bulletLeftImgUrl": {
+          "name": "LaborZombie_1_bulletRed"
+        }
+      },
+      "LaborZombieBoom": {
+        "cnName": "爆瓶",
+        "name": "LaborZombieBoom",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "cd": 4,
+        "firstCd": 5,
+        "cdRandomRange": 2,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "target": "me",
+        "addType": "state",
+        "effectType": "no",
+        "meActionLabel": "boomAttack",
+        "description": "打碎化学瓶，释放区域毒气，经过的敌人将被封锁主动和被动技能、降低攻击力。"
+      },
+      "LaborZombieBoomBuff": {
+        "cnName": "爆瓶buff",
+        "name": "LaborZombieBoomBuff",
+        "noBeClearB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "conditionType": "passive",
+        "condition": "hit",
+        "otherConditionArr": "targetArmsNoMeltFlamerPurgold",
+        "target": "target",
+        "addType": "state",
+        "effectType": "LaborZombieBoomBuff",
+        "mul": 0.5,
+        "duration": 5,
+        "stateEffectImg": {
+          "value": "skillEffect/poisonousFog_hero",
+          "partType": "mouth",
+          "con": "add"
+        }
+      }
+    }
+  }
+}

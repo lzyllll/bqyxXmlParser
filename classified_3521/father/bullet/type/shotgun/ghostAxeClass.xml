@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="shotgun" cnName="散弹枪">
+		<bullet name="ghostAxe" color="black" composeLv="90" chipB="1" chipNum="50" dropLevelArr="999">
+			<name>ghostAxe</name>
+			<cnName>鬼斧</cnName>
+			<whippB>0</whippB>
+			<dpsMul>1.2</dpsMul>
+			<uiDpsMul>1.2</uiDpsMul>
+			
+			<capacity>6</capacity>
+			<attackGap>1.2</attackGap>
+			<reloadGap>2</reloadGap>
+			<shakeAngle>1</shakeAngle>
+			<bulletWidth>500</bulletWidth>
+			<bulletShakeWidth>100</bulletShakeWidth>
+			<bulletNum>13</bulletNum>				
+			<shootAngle>30</shootAngle>				
+			<beatBack>2</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>0</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="4" body="3" />	
+			<critD mul="2" pro="0.25" />
+			
+			<skillArr>Hit_Spurting_ArmsSkill,Hit_AddLifeMul_ArmsSkill</skillArr>
+			<godSkillArr>Hit_imploding_godArmsSkill,shotgunBlade_ArmsSkill</godSkillArr>
+			
+			<hurtRatio>4</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.6</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>4</upValue>
+			<shootShakeAngle>70</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			
+			<iconUrl>specialGun/ghostAxeIcon</iconUrl>
+			<shootSoundUrl>specialGun/shotgunRed_sound</shootSoundUrl>
+			<flipX>1</flipX>
+			<lineD lightColor="0x0099FF" size="2" lightSize="6" blendMode="add" />
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			<fireImgType />
+			
+			<bodyImgRange>specialGun/ghostAxe</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>神器宝箱中有一定几率获得</description>
+		</bullet>
+	</father>
+</data>

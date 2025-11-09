@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="bulletLine" cnName="线性子弹">
+		<body cnName="处女座射线" name="consVirgoLine" con="add" raNum="30" len="26" time="0.1" waveAn="90" everFleshB="1" imgDieType="stop">bullet/consVirgo</body>
+		<body cnName="橙色电流" name="orangeLightning" con="add" raNum="60" len="25" time="0.066" waveAn="90" everFleshB="1" imgDieType="stop">bullet/laserOrange</body>
+		<body cnName="幻银子弹射线" name="silverLine" con="add" raNum="30" len="35" time="0.1" waveAn="90" everFleshB="1" imgDieType="stop">bullet/blueLaserThin</body>
+		
+		<body cnName="幻银光波子弹" name="silverScreenBullet" raNum="4" con="add" len="69" everFleshB="1" imgDieType="die" time="-1" bottomLayerB="1">SilverShip/screenBullet</body>
+		<body cnName="技能复制线" name="skillCopyLine" raNum="1" con="add" len="45" time="0.2" waveAn="45" everFleshB="1" imgDieType="ranPlay" soundUrl="sound/skillCopy_enemy">skillEffect/skillCopy_enemy_bullet</body>
+		
+		<body cnName="狮子座子弹" name="consLeoLine" raNum="45" con="add" len="30">newGun/consLeoBullet</body>
+		<body cnName="狮子座子射线" name="consVirgoLineChild" con="add" raNum="30" len="26" time="0.01" waveAn="90" everFleshB="1" imgDieType="stop">newGun/consLeoChildBullet</body>
+		<body cnName="巨蟹座射线" name="consCancerLine" con="add" raNum="60" len="25" time="0.066" waveAn="35" everFleshB="1" imgDieType="stop">bullet/laserOrange</body>
+		
+	</father>
+	
+	
+	</data>

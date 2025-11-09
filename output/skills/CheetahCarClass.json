@@ -1,0 +1,284 @@
+{
+  "father": {
+    "name": "enemy",
+    "skills": {
+      "CheetahCar": {
+        "name": "CheetahCar",
+        "shell": "metal",
+        "cnName": "古飙",
+        "headIconUrl": "IconGather/CheetahCar",
+        "raceType": "robot",
+        "swfUrl": "swf/enemy/CheetahCar.swf",
+        "lifeRatio": 2,
+        "showLevel": 99,
+        "dieImg": {
+          "value": "boomEffect/boom3",
+          "soundUrl": "sound/pointBoom_hero",
+          "shake": "3,0.4,30"
+        },
+        "dieJumpMul": 0,
+        "imgType": "normal",
+        "rotateBySlopeB": 1,
+        "imgArr": "stand,move,run\n\t\t\t\t,normalAttack,shootAttack,fireAttack,shakeAttack,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__",
+        "hitRect": "-14,-30,28,30",
+        "lifeBarExtraHeight": -80,
+        "maxJumpNum": 1,
+        "maxVx": 14,
+        "runStartVx": 0,
+        "nextAttackTime": 0,
+        "bulletLauncherClass": "VehicleBulletLauncher",
+        "skillArr": null,
+        "bossSkillArr": "fastForward_Cheetah,fire_Cheetah,jump_Cheetah,defenceBounce_enemy,skillCopy_enemy",
+        "bossSkillArrCn": null,
+        "extraG": {
+          "label": "ExtraTaskAI",
+          "bossSkillArr": "fastForward_Cheetah,fire_Cheetah,jump_Cheetah,defenceBounce_enemy,skillCopy_enemy",
+          "extra": [
+            {
+              "lifeMin": 0.7,
+              "skillArr": ""
+            },
+            {
+              "lifeMin": 0.4,
+              "skillArr": ""
+            },
+            {
+              "lifeMin": 0,
+              "skillArr": ""
+            }
+          ]
+        },
+        "extraDropArmsB": 1,
+        "dropD": null,
+        "extraAIClassLabel": "CheetahCar_AIExtra",
+        "hurtArr": {
+          "hurt": [
+            {
+              "imgLabel": "normalAttack",
+              "cn": "爪击",
+              "hurtRatio": 3,
+              "shakeValue": 4,
+              "attackType": "direct",
+              "hitImgUrl": {
+                "value": "bulletHitEffect/energy",
+                "con": "add",
+                "soundUrl": "sound/body_hit",
+                "raNum": 30
+              }
+            },
+            {
+              "imgLabel": "shootAttack",
+              "cn": "喷火球",
+              "bulletLabel": "CheetahCarBullet",
+              "grapRect": "-350,-111,300,105",
+              "hurtRatio": 2,
+              "attackType": "direct"
+            },
+            {
+              "info": "不加入ai选择-古飙-巨焰",
+              "imgLabel": "fireAttack",
+              "noAiChooseB": 1,
+              "noUseOtherSkillB": 1,
+              "bulletLabel": "CheetahCarFire",
+              "grapRect": "-350,-111,300,105",
+              "hurtRatio": 0,
+              "hurtMul": 0.2,
+              "attackType": "holy"
+            },
+            {
+              "info": "不加入ai选择-砸击",
+              "imgLabel": "shakeAttack",
+              "noAiChooseB": 1,
+              "noUseOtherSkillB": 1,
+              "hurtRatio": 0,
+              "hurtMul": 0.3,
+              "attackType": "holy"
+            },
+            {
+              "imgLabel": "run",
+              "noAiChooseB": 1,
+              "hurtRatio": 0.69,
+              "attackType": "through",
+              "shakeValue": 10,
+              "meBack": 5,
+              "hitMaxNum": 1,
+              "hitImgUrl": {
+                "name": "oreWormHit"
+              }
+            },
+            {
+              "imgLabel": "move",
+              "noAiChooseB": 1,
+              "hurtRatio": 0.69,
+              "attackType": "through",
+              "shakeValue": 10,
+              "meBack": 5,
+              "hitMaxNum": 1,
+              "hitImgUrl": {
+                "name": "oreWormHit"
+              }
+            },
+            {
+              "imgLabel": "jumpDown",
+              "noAiChooseB": 1,
+              "hurtRatio": 0.69,
+              "attackType": "through",
+              "shakeValue": 10,
+              "meBack": 5,
+              "hitMaxNum": 1,
+              "hitImgUrl": {
+                "name": "oreWormHit"
+              }
+            },
+            {
+              "imgLabel": "jumpUp",
+              "noAiChooseB": 1,
+              "hurtRatio": 0.69,
+              "attackType": "through",
+              "shakeValue": 10,
+              "meBack": 5,
+              "hitMaxNum": 1,
+              "hitImgUrl": {
+                "name": "oreWormHit"
+              }
+            },
+            {
+              "imgLabel": "jumpDown__",
+              "noAiChooseB": 1,
+              "hurtRatio": 0.69,
+              "attackType": "through",
+              "shakeValue": 10,
+              "meBack": 5,
+              "hitMaxNum": 1,
+              "hitImgUrl": {
+                "name": "oreWormHit"
+              }
+            }
+          ]
+        }
+      },
+      "CheetahCarBullet": {
+        "cnName": "古飙火球",
+        "name": "CheetahCarBullet",
+        "shakeAngle": 5,
+        "bulletLife": 3,
+        "bulletWidth": 20,
+        "hitType": "rect",
+        "attackGap": 1,
+        "attackDelay": 0.7,
+        "bulletAngle": 185,
+        "bulletAngleRange": 50,
+        "bulletNum": 1,
+        "shootNum": 1,
+        "shootPoint": "-151,-67",
+        "bulletSpeed": 15,
+        "gravity": 0.5,
+        "penetrationGap": 1000,
+        "flipX": 1,
+        "bulletImgUrl": {
+          "value": "CheetahCar/bullet",
+          "raNum": 30,
+          "con": "filter"
+        },
+        "hitImgUrl": {
+          "value": "boomEffect/boom1",
+          "soundUrl": "sound/fireHit2"
+        }
+      },
+      "CheetahCarFire": {
+        "cnName": "古飙-巨焰",
+        "name": "CheetahCarFire",
+        "hurtRatio": 0,
+        "hurtMul": 0.2,
+        "attackType": "holy",
+        "attackGap": 2.3,
+        "attackDelay": 1.6,
+        "bulletAngle": 179,
+        "shakeAngle": 2,
+        "bulletLife": 0.62,
+        "shootNum": 15,
+        "bulletNum": 5,
+        "shootAngle": 35,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "shootPoint": "-127,-63",
+        "speedD": {
+          "random": 0.1,
+          "max": 30
+        },
+        "bulletSpeed": 30,
+        "penetrationGap": 1000,
+        "twoHitGap": 2,
+        "twoHitSameNameB": 1,
+        "shootSoundUrl": null,
+        "bulletImgUrl": {
+          "name": "fireFlamer_bullet"
+        },
+        "hitImgUrl": {
+          "value": "bulletHitEffect/smoke_motion",
+          "raNum": 30
+        },
+        "hitFloorImgUrl": {
+          "value": "bulletHitEffect/smoke_motion",
+          "raNum": 30
+        },
+        "fireImgType": "no"
+      },
+      "fastForward_Cheetah": {
+        "cnName": "冲刺",
+        "name": "fastForward_Cheetah",
+        "iconUrl36": "SkillIcon/fastForward_Cheetah_36",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "cd": 4,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "nowImgLabel,followingTarget",
+        "conditionString": "run",
+        "target": "me",
+        "addType": "instant",
+        "effectType": "fastForward",
+        "meEffectImg": {
+          "value": "CheetahCar/fastForward",
+          "soundUrl": "CheetahCar/hp_in",
+          "con": "add"
+        },
+        "description": "迅速减短自身的前进路径。"
+      },
+      "fire_Cheetah": {
+        "cnName": "巨焰",
+        "name": "fire_Cheetah",
+        "iconUrl36": "SkillIcon/fire_Cheetah_36",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "cd": 10,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "nearAttackTarget",
+        "conditionRange": 800,
+        "target": "me",
+        "addType": "instant",
+        "effectType": "flipToAttackTarget",
+        "meActionLabel": "fireAttack",
+        "description": "向前喷射几条巨焰，对敌人造成巨大伤害。"
+      },
+      "jump_Cheetah": {
+        "cnName": "泰山压顶",
+        "name": "jump_Cheetah",
+        "iconUrl36": "SkillIcon/jump_Cheetah_36",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "cd": 12,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "lifePerLess",
+        "conditionRange": 1.4,
+        "target": "me",
+        "addType": "state",
+        "effectType": "no",
+        "meActionLabel": "shakeAttack",
+        "description": "瞬移到敌人头顶，从天而降，对敌人造成巨大伤害，有几率触发多次（最少2次、最多6次）。"
+      }
+    }
+  }
+}

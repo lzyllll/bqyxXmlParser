@@ -1,0 +1,1704 @@
+{
+  "father": {
+    "name": "normal",
+    "gather": [
+      {
+        "name": "监狱外围",
+        "level": [
+          {
+            "name": "PrisonOutside_light",
+            "info": {
+              "enemyLv": 76
+            },
+            "sceneLabel": "PrisonOutside",
+            "fixed": {
+              "target": "PrisonOutside_1",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "no"
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 1
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": "level; rebirthAllMore"
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "say:listOver; s1",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "worldMap:levelName; PrisonOutside:PrisonOutside_1",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "PrisonOutside_1",
+            "info": {
+              "enemyLv": 76
+            },
+            "sceneLabel": "PrisonOutside",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "unit": {
+                    "cnName": "独眼僵尸",
+                    "num": 6
+                  }
+                },
+                {
+                  "id": "enemy2",
+                  "unit": {
+                    "cnName": "监狱僵尸",
+                    "num": 6
+                  }
+                },
+                {
+                  "id": "enemy3",
+                  "unit": [
+                    {
+                      "cnName": "独眼僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "监狱僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "unit": {
+                    "cnName": "冥刃游尸",
+                    "unitType": "boss",
+                    "lifeMul": 2.3,
+                    "hurtMul": 6
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "44,1952,356,104",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "3360,1924,76,164",
+                  "id": "r_over"
+                },
+                {
+                  "value": "664,1208,460,144",
+                  "id": "r1"
+                },
+                {
+                  "value": "1564,758,583,120",
+                  "id": "r2"
+                },
+                {
+                  "value": "2500,1452,384,120",
+                  "id": "r3"
+                },
+                {
+                  "value": "732,884,45,45",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "2800,1632,45,45",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 1
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 4,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 4,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 4,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "enemyNumber:less_1",
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "丛林外围",
+        "level": [
+          {
+            "name": "JungleOutside_war",
+            "info": {
+              "enemyLv": 77
+            },
+            "sceneLabel": "JungleOutside",
+            "fixed": {
+              "target": "JungleOutside_1",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "no"
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 1
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": "level; rebirthAllMore"
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "say:listOver; s1",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "worldMap:levelName; JungleOutside:JungleOutside_1",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "JungleOutside_1",
+            "info": {
+              "enemyLv": 77
+            },
+            "sceneLabel": "JungleOutside",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "unit": {
+                    "cnName": "鬼目游尸",
+                    "num": 6
+                  }
+                },
+                {
+                  "id": "enemy2",
+                  "unit": {
+                    "cnName": "冥刃游尸",
+                    "num": 6
+                  }
+                },
+                {
+                  "id": "enemy3",
+                  "unit": [
+                    {
+                      "cnName": "鬼目游尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "unit": {
+                    "cnName": "暴君",
+                    "unitType": "boss",
+                    "lifeMul": 2,
+                    "hurtMul": 1.5,
+                    "imgType": "normal"
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1076,702,288,78",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "2464,298,44,106",
+                  "id": "r_over"
+                },
+                {
+                  "value": "104,99,333,89",
+                  "id": "r1"
+                },
+                {
+                  "value": "996,94,504,92",
+                  "id": "r2"
+                },
+                {
+                  "value": "1926,90,394,96",
+                  "id": "r3"
+                },
+                {
+                  "value": "636,230,45,45",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "1792,294,45,45",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 1
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "enemyNumber:less_1",
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "丛林深处",
+        "level": [
+          {
+            "name": "JungleDeep_show",
+            "info": {
+              "enemyLv": 78
+            },
+            "sceneLabel": "JungleDeep",
+            "fixed": {
+              "target": "JungleDeep_1",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "no"
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 1
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "worldMap:levelName; JungleDeep:JungleDeep_1",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "JungleDeep_1",
+            "info": {
+              "enemyLv": 78
+            },
+            "sceneLabel": "JungleDeep",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "鬼目游尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 9
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "鬼目游尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 1.5
+                    },
+                    {
+                      "cnName": "天鹰特种兵",
+                      "lifeMul": 2,
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "鬼目游尸",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "天鹰特种兵",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "天鹰空降兵",
+                      "lifeMul": 2,
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "战斗干尸",
+                    "unitType": "boss",
+                    "lifeMul": 2.1,
+                    "dpsMul": 6
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "608,788,212,72",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "3628,1216,64,112",
+                  "id": "r_over"
+                },
+                {
+                  "value": "268,84,616,108",
+                  "id": "r1"
+                },
+                {
+                  "value": "1448,104,724,140",
+                  "id": "r2"
+                },
+                {
+                  "value": "2784,148,700,168",
+                  "id": "r3"
+                },
+                {
+                  "value": "348,516,45,45",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "3256,540,45,45",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 1
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "enemyNumber:less_1",
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "洞窟入口",
+        "level": [
+          {
+            "name": "CavesEntrance_clouds",
+            "info": {
+              "enemyLv": 79
+            },
+            "sceneLabel": "CavesEntrance",
+            "fixed": {
+              "target": "CavesEntrance_1",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "no"
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 1
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": "level; rebirthAllMore"
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "say:listOver; s1",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "worldMap:levelName; CavesEntrance:CavesEntrance_1",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "CavesEntrance_1",
+            "info": {
+              "enemyLv": 79
+            },
+            "sceneLabel": "CavesEntrance",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "战斗干尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "银锤",
+                      "num": 9
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "战斗干尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "银锤",
+                      "num": 1.5
+                    },
+                    {
+                      "cnName": "僵尸暴枪兵",
+                      "lifeMul": 2,
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "银锤",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "战斗干尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "僵尸暴枪兵",
+                      "lifeMul": 2,
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "星锤干尸",
+                    "unitType": "boss",
+                    "lifeMul": 2.4,
+                    "dpsMul": 6
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "36,362,192,80",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "2430,1312,52,92",
+                  "id": "r_over"
+                },
+                {
+                  "value": "84,676,420,120",
+                  "id": "r1"
+                },
+                {
+                  "value": "1068,252,500,132",
+                  "id": "r2"
+                },
+                {
+                  "value": "2184,688,400,108",
+                  "id": "r3"
+                },
+                {
+                  "value": "146,922,45,45",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "2556,914,45,45",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 1
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "enemyNumber:less_1",
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "CavesEntrance_chase",
+            "info": {
+              "enemyLv": 81
+            },
+            "fixed": {
+              "target": "CavesEntrance_1",
+              "info": "no",
+              "drop": "all",
+              "unitG": "no",
+              "rectG": "no",
+              "eventG": "no"
+            },
+            "sceneLabel": "CavesEntrance",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "战斗干尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "银锤",
+                      "num": 9
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "战斗干尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "银锤",
+                      "num": 1.5
+                    },
+                    {
+                      "cnName": "僵尸暴枪兵",
+                      "lifeMul": 2,
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "银锤",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "战斗干尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "僵尸暴枪兵",
+                      "lifeMul": 2,
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "哨兵",
+                    "unitType": "boss",
+                    "lifeMul": 1.2,
+                    "dpsMul": 0.8
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "2430,1312,52,92",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "36,362,192,80",
+                  "id": "r_over"
+                },
+                {
+                  "value": "84,676,420,120",
+                  "id": "r1"
+                },
+                {
+                  "value": "1068,252,500,132",
+                  "id": "r2"
+                },
+                {
+                  "value": "2184,688,400,108",
+                  "id": "r3"
+                },
+                {
+                  "value": "146,922,45,45",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "2556,914,45,45",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e1_1",
+                    "condition": {
+                      "delay": 2
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "id": "e2_0",
+                    "condition": "say:listOver; s1"
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 1
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": "level; rebirthAllMore"
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "say; startList:s2"
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "say:listOver; s2",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "worldMap:levelName; CavesEntrance:CavesEntrance_2",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "CavesEntrance_2",
+            "info": {
+              "enemyLv": 81
+            },
+            "fixed": {
+              "target": "CavesEntrance_1",
+              "info": "no",
+              "drop": "all",
+              "unitG": "no",
+              "rectG": "all",
+              "eventG": "all"
+            },
+            "sceneLabel": "CavesEntrance",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "战斗干尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "银锤",
+                      "num": 9
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "战斗干尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "银锤",
+                      "num": 1.5
+                    },
+                    {
+                      "cnName": "僵尸暴枪兵",
+                      "lifeMul": 2,
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "银锤",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "战斗干尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "僵尸暴枪兵",
+                      "lifeMul": 2,
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "哨兵",
+                    "unitType": "boss",
+                    "lifeMul": 1,
+                    "dpsMul": 1
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "洞窟深处",
+        "level": [
+          {
+            "name": "CavesDeep_wolf",
+            "info": {
+              "enemyLv": 80
+            },
+            "sceneLabel": "CavesDeep",
+            "fixed": {
+              "target": "CavesDeep_1",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "no"
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "say:listOver; s1",
+                      "delay": 0.5
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "worldMap:levelName; CavesDeep:CavesDeep_1",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "CavesDeep_1",
+            "info": {
+              "enemyLv": 80
+            },
+            "sceneLabel": "CavesDeep",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "战斗干尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "星锤干尸",
+                      "num": 9
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "战斗干尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "星锤干尸",
+                      "num": 1.5
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "lifeMul": 2,
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "星锤干尸",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "战斗干尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "lifeMul": 2,
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "狂战狼",
+                    "unitType": "boss",
+                    "lifeMul": 2,
+                    "dpsMul": 1
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "58,388,246,130",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "2454,1166,82,130",
+                  "id": "r_over"
+                },
+                {
+                  "value": "52,1072,440,148",
+                  "id": "r1"
+                },
+                {
+                  "value": "944,320,552,152",
+                  "id": "r2"
+                },
+                {
+                  "value": "2176,476,448,132",
+                  "id": "r3"
+                },
+                {
+                  "value": "920,952,45,45",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "1556,936,45,45",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 1
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "enemyNumber:less_1",
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

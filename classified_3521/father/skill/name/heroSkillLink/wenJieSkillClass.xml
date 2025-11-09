@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="heroSkillLink" cnName="英雄技能-链接">
+		<skill index="0" name="真空-无敌">
+			<name>vacuumJie_link</name>
+			<cnName>真空-无敌</cnName>
+			
+			<conditionType>active</conditionType>
+			<target>me,range,we</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>vacuumJie_link</effectType>
+			<duration>1.5</duration>
+			<range>500</range>
+			<stateEffectImg name="FoggyDefence_state" />
+		</skill>
+	</father>
+</data>

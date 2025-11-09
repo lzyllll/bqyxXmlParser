@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="car" cnName="战车定义">
+		<equip name="BlueMoto" cnName="幽鬼" rideLabel="BlueMotoRide" evolutionLabel="BlueMotoSec">
+			<evolutionLv>2</evolutionLv>
+			<shopB>1</shopB>
+			<main label="BlueMoto_main" dpsMul="1.7" len="42" minRa="-179" maxRa="-178.9" />
+			<sub label="Diggers_sub" dpsMul="0" hideB="1" />
+			<lifeMul>2</lifeMul>
+			<attackMul>1.8</attackMul>
+			<duration>80</duration>
+			<cd>120</cd>
+			<addObjJson>{'dpsAll':0.18,'lifeAll':0.18}</addObjJson>
+			<skillArr>vehicleFit_Gaia,blade_blueMoto</skillArr>
+		</equip>
+		<equip name="BlueMotoSec" cnName="血魂" rideLabel="BlueMotoRide" evolutionLabel="BlueMotoThird">
+			<evolutionLv>4</evolutionLv>
+			<mustCash>300</mustCash>
+			<main label="BlueMoto_main" dpsMul="3" len="42" minRa="-179" maxRa="-178.9" />
+			<sub label="Diggers_sub" dpsMul="0" hideB="1" />
+			<lifeMul>2.9</lifeMul>
+			<attackMul>2.5</attackMul>
+			<duration>80</duration>
+			<cd>120</cd>
+			<addObjJson>{'dpsAll':0.21,'lifeAll':0.21}</addObjJson>
+			<skillArr>vehicleFit_Gaia,vehicleFit_fly,vehicleFit_Civilian,blade_blueMoto</skillArr>
+		</equip>
+		<equip name="BlueMotoThird" cnName="飞魄" rideLabel="BlueMotoRide">
+			<evolutionLv>5</evolutionLv>
+			<mustCash>200</mustCash>
+			<main label="BlueMoto_main" dpsMul="3.5" len="42" minRa="-179" maxRa="-178.9" />
+			<sub label="Diggers_sub" dpsMul="0" hideB="1" />
+			<lifeMul>3.3</lifeMul>
+			<attackMul>3</attackMul>
+			<duration>80</duration>
+			<cd>120</cd>
+			<addObjJson>{'dpsAll':0.27,'lifeAll':0.27}</addObjJson>
+			<skillArr>vehicleFit_Gaia,vehicleFit_fly,vehicleFit_Civilian,blade_blueMoto,rideShootMoto</skillArr>
+		</equip>
+		
+		
+		<bullet cnName="幽鬼-主炮">
+			<name>BlueMoto_main</name>
+			<cnName>幽鬼-主炮</cnName>
+			
+			<hurtRatio>1.2</hurtRatio>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletNum>1</bulletNum>
+			<shootAngle>5</shootAngle>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.2</attackGap>
+				
+			<shootRecoil>15</shootRecoil>
+			<screenShakeValue>8</screenShakeValue>
+			<bulletSpeed>40</bulletSpeed>
+			<boomD bodyB="1" floorB="1" radius="120" />
+			<followD value="1" />
+			<penetrationGap>100</penetrationGap>
+			
+			
+			<flipX>1</flipX>
+			<fireImgUrl soundUrl="GaiaFit/shoot">gunFire/f</fireImgUrl>
+			<bulletImgUrl raNum="30" con="filter">bullet/blueFire</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/magicHit2" shake="2,0.2,10" con="add">boomEffect/boom2</hitImgUrl>
+		</bullet>
+	</father>
+	
+	
+	</data>

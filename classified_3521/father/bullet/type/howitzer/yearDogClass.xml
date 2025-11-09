@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="howitzer" cnName="榴弹炮">
+		<bullet index="40" cnName="戌狗" name="yearDog" color="black" composeLv="95" chipB="1" chipNum="200" dropLevelArr="999">
+			<name>yearDog</name>
+			<cnName>戌狗</cnName>
+			
+			
+			<capacity>4</capacity>
+			<attackGap>1</attackGap>
+			<reloadGap>3</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>30</bulletWidth><aiShootRange>610</aiShootRange>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<gunNum>1</gunNum>
+			
+			<armsArmMul>0.5</armsArmMul>
+			<upValue>5</upValue>
+			<shootShakeAngle>40</shootShakeAngle>
+			<shootRecoil>12</shootRecoil>
+			<screenShakeValue>8</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>15</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>2</dpsMul>
+			<uiDpsMul>1.5</uiDpsMul>
+			<extraMul>0.5</extraMul>
+				
+			<bulletSpeed>16</bulletSpeed>
+			<bulletVra>15</bulletVra>
+			
+			<bounceD floor="20" hurtNumAdd="0.7" />
+			<boomD bodyB="1" floorB="1" selfB="1" radius="150" noExcludeBodyB="1" hurtMul="1" />
+			<twoShootPro>0</twoShootPro>
+			<penetrationNum>0</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<critD mul="2" pro="0.3" />
+			<gravity>1.7</gravity>
+			
+			<skillArr />
+			<godSkillArr>yearDogSkill</godSkillArr>
+			
+			<iconUrl>specialGun/yearDogIcon</iconUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">bullet/grenade</bulletImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bullet/fireballSmoke</smokeImgUrl>
+			<selfBoomImgUrl soundUrl="boomSound/midBoom2" soundVolume="0.7" shake="3,0.4,13">boomEffect/bigCircle</selfBoomImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			<fireImgType />
+			<shootSoundUrl>specialGun/yearDog_sound</shootSoundUrl>
+			
+			<bodyImgRange>specialGun/yearDog</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>每日签到礼包、物品合成、纪念币商店、黄金商店、竞技宝箱</description>
+		</bullet>
+		
+	</father>
+	</data>

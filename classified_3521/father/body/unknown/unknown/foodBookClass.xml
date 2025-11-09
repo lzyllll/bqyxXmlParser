@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father>
+		<body cnName="炒土豆丝" name="potato_pepper" rawCnArr="青椒,土豆" unlockMust="0" profi="0" />
+<body cnName="胡萝卜番茄汁" name="carrot_tomato" rawCnArr="胡萝卜,番茄" unlockMust="0" profi="0" />
+<body cnName="孜然土豆" name="onion_potato" rawCnArr="洋葱,土豆" unlockMust="0" profi="4" />
+<body cnName="洋葱拌番茄" name="onion_tomato" rawCnArr="洋葱,番茄" unlockMust="0" profi="8" />
+<body cnName="胡萝卜土豆丁" name="carrot_potato" rawCnArr="胡萝卜,土豆" unlockMust="0" profi="12" />
+<body cnName="青椒炒蛋" name="pepper_egg" rawCnArr="青椒,鸡蛋" unlockMust="0" profi="16" />
+<body cnName="鸡蛋土豆泥" name="egg_potato" rawCnArr="鸡蛋,土豆" unlockMust="0" profi="20" />
+<body cnName="番茄炒蛋" name="tomato_egg" rawCnArr="鸡蛋,番茄" unlockMust="0" profi="24" />
+<body cnName="胡萝卜炒蛋" name="carrots_egg" rawCnArr="鸡蛋,胡萝卜" unlockMust="0" profi="28" />
+<body cnName="洋葱鸡蛋饼" name="onion_egg" rawCnArr="鸡蛋,洋葱" unlockMust="0" profi="32" />
+<body cnName="青椒炒鸡胸" name="pepper_chicken" rawCnArr="鸡肉,青椒" unlockMust="3" profi="40" />
+<body cnName="番茄鸡片" name="tomato_chicken" rawCnArr="鸡肉,番茄" unlockMust="3" profi="50" />
+<body cnName="洋葱蒸鸡" name="onion_chicken" rawCnArr="鸡肉,洋葱" unlockMust="3" profi="60" />
+<body cnName="农家小炒肉" name="pig_pepper" rawCnArr="猪肉,青椒" unlockMust="4" profi="70" />
+<body cnName="肉末蒸蛋" name="pig_egg" rawCnArr="猪肉,鸡蛋" unlockMust="4" profi="80" />
+<body cnName="肉末土豆" name="pig_potato" rawCnArr="猪肉,土豆" unlockMust="4" profi="90" />
+<body cnName="番茄酱排骨" name="pig_tomato" rawCnArr="猪肉,番茄" unlockMust="4" profi="100" />
+<body cnName="猪肉洋葱馅饼" name="pig_onion" rawCnArr="猪肉,洋葱" unlockMust="5" profi="110" />
+<body cnName="青椒牛肉" name="cattle_pepper" rawCnArr="牛肉,青椒" unlockMust="5" profi="120" />
+<body cnName="滑蛋牛肉" name="cattle_egg" rawCnArr="牛肉,鸡蛋" unlockMust="5" profi="130" />
+<body cnName="亲子丼" name="oyakodon" rawCnArr="鸡肉,鸡蛋,洋葱" unlockMust="10" profi="150" />
+<body cnName="宫保鸡丁" name="gongBao" rawCnArr="鸡肉,鸡蛋,青椒" unlockMust="10" profi="170" />
+<body cnName="黄焖鸡" name="huangMen" rawCnArr="鸡肉,土豆,青椒" unlockMust="10" profi="190" />
+<body cnName="木须肉" name="muXu" rawCnArr="猪肉,鸡蛋,胡萝卜" unlockMust="15" profi="210" />
+<body cnName="鱼香肉丝" name="yuxiang" rawCnArr="猪肉,胡萝卜,青椒" unlockMust="15" profi="230" />
+<body cnName="土豆焖牛腩 " name="cattle_potato_carrot" rawCnArr="牛肉,土豆,胡萝卜" unlockMust="15" profi="250" />
+<body cnName="番茄土豆炖牛肉" name="cattle_potato_tomato" rawCnArr="牛肉,土豆,番茄" unlockMust="20" profi="270" />
+<body cnName="牛肉汉堡" name="beefBurger" rawCnArr="牛肉,鸡蛋,洋葱,番茄" unlockMust="25" profi="330" />
+
+
+
+	</father>
+	
+</data>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="其他">
+		<skill index="0" name="飓风载体">
+			<name>snowWind</name>
+			<cnName>飓风载体</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>no</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<obj>"name":"snowWind"</obj>
+		</skill>
+		
+		<skill index="0" name="诱击对玩家单位伤害降低">
+			<name>RifleHornetShooterHurt</name>
+			<cnName>诱击对玩家单位伤害降低</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>0.1</mul>
+			
+			<obj>"type":"player"</obj>
+		</skill>
+		
+		<skill index="0" cnName="摩卡护体">
+			<name>escapeInvincible</name>
+			<cnName>摩卡护体</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>beforeDie</condition>
+			<target>me</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>escapeInvincible</effectType>
+			<duration>8</duration>
+		</skill>
+	</father>		
+</data>

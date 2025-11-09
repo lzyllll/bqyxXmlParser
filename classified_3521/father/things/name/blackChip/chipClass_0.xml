@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="blackChip" cnName="黑色碎片">
+		<things><cnName>神谕头盔碎片</cnName><name>oracleSuit_head</name>
+			<description>{b}{font color='#FF66FF'}也是进阶黑色装备到第七级的必需品。{/font}{/b}</description>
+		</things>
+		<things><cnName>神谕腰带碎片</cnName><name>oracleSuit_belt</name>
+			<description>{b}{font color='#FF66FF'}也是进阶黑色装备到第七级的必需品。{/font}{/b}</description>
+		</things>
+		<things><cnName>神谕战衣碎片</cnName><name>oracleSuit_coat</name>
+			<description>{b}{font color='#FF66FF'}也是进阶黑色战衣、腰带到第八级的必需品。{/font}{/b}</description>
+		</things>
+		<things><cnName>神谕战裤碎片</cnName><name>oracleSuit_pants</name>
+			<description>纪念币商店获取。</description>
+		</things>
+	</father>
+	</data>

@@ -1,0 +1,25 @@
+{
+  "father": {
+    "type": "props",
+    "bullet": {
+      "cnName": "大碗",
+      "name": "bowlGun",
+      "color": "black",
+      "composeLv": 95,
+      "dropLevelArr": 999,
+      "capacity": 1,
+      "attackGap": 10,
+      "reloadGap": 4,
+      "shakeAngle": 0,
+      "bulletNum": 1,
+      "gunNum": 1,
+      "armsArmMul": 0.65,
+      "upValue": 5,
+      "bulletLife": 0,
+      "hitType": "rect",
+      "bodyImgRange": "newGun/bowlGun",
+      "bulletImgRange": "specialGun/bullet",
+      "description": null
+    }
+  }
+}

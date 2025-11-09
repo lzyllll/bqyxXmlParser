@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<task>
+		<one name="dailySign" 			cnName="签到礼包" 	num="1" 		active="5" />
+		
+		<one name="endlessLevel" 	cnName="进行无尽模式" 	num="1" 		active="20"/>
+		<one name="dayTask" 			cnName="每日任务" 	num="1" 		active="15" />
+		<one name="treasureTask" 	cnName="寻宝任务" 	num="1" 		active="10" />
+		<one name="kingTask" 			cnName="擒王任务" 	num="1" 		active="10" />
+		<one name="extraTask" 		cnName="副本任务" 	num="1" 		active="15" />
+		<one name="normalLevel" 		cnName="完成关卡" 			num="1" 	active="30" 	noGotoB="1"/>
+		<one name="wilder" 			cnName="秘境胜利" 	num="1" 		active="10" />
+		<one name="gm3" 			cnName="GM三人组" 	num="1" 		active="10" />
+		<one name="smelt" 			cnName="主城熔炼" 	num="1" 		active="10" />
+		<one name="loveGift" 			cnName="送礼物给队友" num="1" 		active="5" noGotoB="1"/>
+		<one name="ask" 				cnName="趣味问答" 	num="1" 		active="10" />
+		
+		<one name="strength" 		cnName="强化武器装备" 	num="1" 		active="10" noGotoB="1"/>
+		<one name="petDispatch" 		cnName="宠物派遣" 	num="1" 		active="5" />
+		<one name="unionCoin" 		cnName="军队银币贡献" 	num="1" 		active="15" />
+		<one name="unionMoney" 		cnName="军队黄金贡献" 	num="1" 		active="15" />
+		<one name="unionFederal" cnName="军队联邦任务" 	num="1" 		active="10" />
+		<one name="arena" 				cnName="竞技场胜利" num="1" 		active="20" />
+		<one name="useExploitCards" cnName="使用军队功勋牌" 	num="1" 		active="5" 	/>
+		<one name="treasure" cnName="遭遇财宝僵尸" 			num="1" 		active="5" 	noGotoB="1"/>
+		<one name="wilderKey" cnName="使用秘境钥匙" 			num="1" 		active="5" 	noGotoB="1"/>
+		<one name="useArenaStamp" cnName="使用优胜券" 			num="1" 		active="5" 	/>
+		<one name="vipDay" 			cnName="VIP每日礼包" num="1" 		active="5" />
+		<one name="useMoney" 		cnName="使用黄金" 			num="1" 		active="35" 	noGotoB="1" />
+		
+		
+	</task>
+	<gift>
+		<one name="active_1" 	must="50">
+			<gift>things;skillFleshCard;1</gift>
+			<gift>things;dressStamp;1</gift>
+			<gift>things;arenaStamp;400</gift>
+		</one>
+		<one name="active_2" 	must="70">
+			<gift>things;teamRebirthCard;1</gift>
+			<gift>things;strengthenStone;1</gift>
+			<gift>things;armsRadium;3</gift>
+			<gift>things;equipEchelonCard;4</gift>
+		</one>
+		<one name="active_3" 	must="90">
+			<gift>things;rebirthStone;1</gift>
+			<gift>things;strengthenStone;2</gift>
+			<gift>things;armsRadium;5</gift>
+			<gift>things;armsEchelonCard;4</gift>
+			<gift>things;dressStamp;2</gift>
+			<gift>things;zodiacBag;1</gift>
+		</one>
+		<one name="active_4" 	must="120">
+			<gift>things;exploitCards;1</gift>
+			<gift>things;energyCatalyst;3</gift>
+			<gift>things;strengthenStone;4</gift>
+			<gift>things;armsRadium;5</gift>
+			<gift>things;highEquipEchelonCard;1</gift>
+			<gift>things;zodiacBag;1</gift>
+		</one>
+		<one name="active_5" 	must="150">
+			<gift>things;normalChest;1</gift>
+			<gift>things;tigerChest;1</gift>
+			<gift>things;energyCatalyst;7</gift>
+			<gift>things;strengthenStone;3</gift>
+			<gift>things;armsRadium;4</gift>
+			<gift>things;armsTitanium;4</gift>
+			<gift>things;highArmsEchelonCard;1</gift>
+			
+		</one>
+		<one name="active_6" 	must="180">
+			<gift>things;zodiacCash;1</gift>
+			<gift>things;bossCardStamp;3</gift>
+			<gift>things;weaponChest;10</gift>
+			<gift>things;deviceChest;8</gift>
+			<gift>base;wilderKey;1</gift>
+		</one>
+	</gift>
+</data>

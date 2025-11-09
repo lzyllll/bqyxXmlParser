@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="spreadTask">
+		<level name="madDefect">
+			<sayList name="s1">
+				<say target="战争狂人"><content>没想到他们的实力这么强，接连打败了我和狂人机器！</content></say>
+				<say target="战争狂人"><content>哎呦，真是丢脸丢到了氩星！</content></say>
+				<say target="战争狂人"><content>还有鬼爵造的那些，都是什么破烂玩意儿，一点用的都没有。</content></say>
+				<say target="战争狂人"><content>想起来我就来气！</content></say>
+				<say target="战争狂人"><content>鬼爵！鬼爵！</content></say>
+				<say target="鬼爵"><content>小的在。</content></say>
+				<say target="战争狂人"><content>爆枪小队到哪了？</content></say>
+				<say target="鬼爵"><content>他们已经攻到了实验室。</content></say>
+				<say target="战争狂人"><content>这么快？！</content></say>
+				<say target="鬼爵"><content>请放心，看门狗正在蹂躏这群小毛孩，我看他们应该坚持不了多久了。</content></say>
+				<say target="战争狂人"><content>你一定要给我守住！</content></say>
+				<say target="鬼爵"><content>我保证！</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="亚瑟"><content>什么时候放我们走？</content></say>
+				<say target="战争狂人"><content>亚瑟，你在做什么美梦呢？</content></say>
+				<say target="战争狂人"><content>我要让你们两个痛不欲生！</content></say>
+				<say target="奇皇博士"><content>穿着外星的铠甲……你到底是谁？</content></say>
+				<say target="战争狂人"><content>鬼爵应该说过了，我只是一个被你们折磨过的未来人而已。</content></say>
+				<say target="奇皇博士"><content>你撒谎，时空穿越是不可能实现的。</content></say>
+
+			</sayList>
+			
+			<sayList name="s3">
+				<say target="战争狂人"><content>怎么回事？！腹部好痛啊！</content></say>
+				<say target="鬼爵"><content>看门狗突然出现了故障，爆枪小队乘人之危，把看门狗给毁了！</content></say>
+				<say target="鬼爵"><content>但是，@Striker已经受了重伤，后面的防毒僵尸一定会将其拿下的！</content></say>
+				<say target="战争狂人"><content>你……给我……争气点……</content></say>
+				<say target="鬼爵"><content>这次一定不会让您失望的！</content></say>
+
+			</sayList>
+			<sayList name="s4">
+				<say target="奇皇博士"><content>哈哈哈哈……没想到啊……</content></say>
+				<say target="战争狂人"><content>你……笑什么！</content></say>
+				<say target="奇皇博士"><content>你根本就不是未来人！</content></say>
+				<say target="战争狂人"><content>你说什么？</content></say>
+				<say target="奇皇博士"><content>你是@Striker的克隆体！</content></say>
+				<say target="战争狂人"><content>…………</content></say>
+				<say target="奇皇博士"><content>主体一旦受到重大伤害，克隆体也会承受同样的伤害。</content></say>
+				<say target="奇皇博士"><content>所有的克隆体都有这样的基因缺陷，你也不例外！</content></say>
+				<say target="战争狂人"><content>你为何如此肯定？</content></say>
+				<say target="奇皇博士"><content>@Striker的克隆体就是我造的，刚才那种伤害联动的情况，我见了几百次了，不可能会错的。</content></say>
+				<say target="战争狂人"><content>原来如此……</content></say>
+				<say target="战争狂人"><content>难怪我打不过@Striker……</content></say>
+				<say target="战争狂人"><content>原来这是这个原因……</content></say>
+				<say target="亚瑟"><content>那你永远都无法打败@Striker，除非你和他同归于尽。</content></say>
+				<say target="亚瑟"><content>不过，只要你放了我，我还可以给你提供一个完美的方案。</content></say>
+				<say target="战争狂人"><content>哼……我不会上当的。</content></say>
+				<say target="战争狂人"><content>你俩活不过今晚，因为你们知道的太多了！</content></say>
+				<say target="奇皇博士"><content>悉随尊便！</content></say>
+				<say target="亚瑟"><content>不要啊！求求你了！</content></say>
+
+			</sayList>
+			<sayList name="s5">
+				<say target="战争狂人"><content>呼叫铁犬。</content></say>
+				<say target="铁犬"><content>在，主人。</content></say>
+				<say target="战争狂人"><content>现在我该怎么办？</content></say>
+				<say target="铁犬"><content>只能换一个宿主了。</content></say>
+				<say target="铁犬"><content>但这会用掉您最后一次附身机会</content></say>
+				<say target="战争狂人"><content>没办法，只能这么做了。</content></say>
+				<say target="战争狂人"><content>关键要找什么样的宿主呢？我只能附身没有意识的躯体。</content></say>
+				<say target="铁犬"><content>不用找，我们可以用极源宝石造一具强大的生化复合体。</content></say>
+				<say target="战争狂人"><content>极源宝石？</content></say>
+				<say target="战争狂人"><content>飞船爆炸后，我们的极源宝石也失踪了。我至今都没有见过它们。</content></say>
+				<say target="铁犬"><content>根据我的元素探测器显示，有大量的极源宝石漂浮在寒光市的郊外。</content></say>
+				<say target="战争狂人"><content>果真如此？</content></say>
+				<say target="铁犬"><content>是的。在白天的光线下，极源宝石会呈现隐形状态，所以一直没有被人发现。</content></say>
+				<say target="战争狂人"><content>很好，我得马上去寒光市，免得让它们落入别人之手。</content></say>
+
+
+			</sayList>
+		</level>
+		
+		<level name="madFly1">
+			
+		</level>
+		
+		<level name="madFly2">
+			<sayList name="s1">
+				<say target="判决者"><content>鬼爵，现在怎么样了？</content></say>
+				<say target="鬼爵"><content>唉，爆枪小队太狡猾了，防毒僵尸已惨遭毒手！</content></say>
+				<say target="判决者"><content>没关系，你已经尽力了。</content></say>
+				<say target="判决者"><content>你接下来的任务，就是活捉@Striker。</content></say>
+				<say target="判决者"><content>如果活捉不成，宁愿放了他，也不能伤害他。</content></say>
+				<say target="鬼爵"><content>为什么？我恨不得把他给撕成碎片！</content></say>
+				<say target="判决者"><content>这个说来就话长。</content></say>
+				<say target="判决者"><content>你只要你知道，如果你不这么做，你未来的命运将会变得非常悲惨。</content></say>
+				<say target="鬼爵"><content>好吧，您是未来人，我听您的！</content></say>
+			</sayList>
+		</level>
+		
+		<level name="madFly3">
+			<sayList name="s1">
+				<say target="铁犬"><content>主人，生化复合体项目正式确立，内部代号为“战神”。</content></say>
+				<say target="铁犬"><content>等你收集好宝石，我们就可以加快进度了。</content></say>
+				<say target="判决者"><content>很好，我继续加把劲。</content></say>
+				<say target="判决者"><content>可恶！前面好像有人类在抢我的宝石！</content></say>
+			</sayList>
+		</level>
+		
+		<level name="madFly4">
+			<sayList name="s1">
+				<say target="判决者"><content>极源宝石收集得差不多了。</content></say>
+				<say target="铁犬"><content>主人，不好了！</content></say>
+				<say target="判决者"><content>怎么了？</content></say>
+				<say target="铁犬"><content>鬼爵执意要用末日坦克灭掉@Striker。</content></say>
+				<say target="判决者"><content>莫非鬼爵发现了我的身份？</content></say>
+				<say target="判决者"><content>真烦人，先把他关起来再说。</content></say>
+				<say target="铁犬"><content>好，我这就去办。</content></say>
+				<say target="判决者"><content>等一下……</content></say>
+				<say target="判决者"><content>如果一直放纵爆枪小队，他们迟早会毁了整个实验室，到时候战神也将难产。</content></say>
+				<say target="判决者"><content>既然灭不了@Striker，那就把他变成“朋友”。</content></say>
+				<say target="铁犬"><content>喔？您的计划是？</content></say>
+				<say target="判决者"><content>我已经成功的塑造了“未来人”的身份，而我又和@Striker长得一摸一样，那不如……</content></say>
+				<say target="判决者"><content>就让我变成未来的“他”？</content></say>
+				<say target="铁犬"><content>他会相信您吗？</content></say>
+				<say target="判决者"><content>有了造梦机，即便狡猾如鬼爵，也会被骗的团团转，更何况爆枪小队那群小毛孩。</content></say>
+				<say target="判决者"><content>你把鬼爵给囚禁起来，接着就可以安心制造战神了。</content></say>
+				<say target="判决者"><content>在此期间，我先跟这些小屁孩玩一玩过家家。</content></say>
+				<say target="铁犬"><content>好的，主人。</content></say>
+			</sayList>
+		</level>
+		<level name="madBossShow">
+			<sayList name="s1">
+				<say target="战争狂人"><content>可以操控吗？让我来试一下！</content></say>
+				<say target="铁犬"><content>您可以拿这里的僵尸试试战神的威力。</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="铁犬"><content>感觉怎么样？</content></say>
+				<say target="战争狂人"><content>体型太庞大了，有攻击盲区。</content></say>
+				<say target="战争狂人"><content>武器只有一种，过于单一。</content></say>
+				<say target="战争狂人"><content>还有，那些隐身敌人挺烦人的，最好能装个红外眼</content></say>
+				<say target="铁犬"><content>知道了，我再改进一下。</content></say>
+				<say target="战争狂人"><content>对了，@Striker现在在哪里？</content></say>
+				<say target="铁犬"><content>他还在暮光市。</content></say>
+				<say target="铁犬"><content>通过他和队友的对话，我们可以断定，他确实要离开爆枪小队很长一段时间。</content></say>
+				<say target="战争狂人"><content>很好，接下去你派人去把他的通讯器给偷了。</content></say>
+				<say target="铁犬"><content>好的，主人。</content></say>
+			</sayList>
+		</level>
+		
+		<level name="madBossPhone">
+			<sayList name="s1">
+				<say target="铁犬"><content>我们成功偷走了@Striker的通讯器，现在他已经和高地上的队友们断掉了联系。</content></say>
+				<say target="战神"><content>嘿嘿，你赶紧把通讯器送到我这来。</content></say>
+				<say target="铁犬"><content>好的。</content></say>
+				<say target="战神"><content>我先测试一下改进后的战神。</content></say>
+
+			</sayList>
+			
+			<sayList name="s2">
+				<say target="战争狂人"><content>战神还是没有达到预期，机动性太差了，最后肯定会沦为一个活靶子！</content></say>
+				<say target="铁犬"><content>实在抱歉，我已经尽力了！</content></say>
+				<say target="铁犬"><content>要不我再重新造一台吧？</content></say>
+				<say target="战争狂人"><content>不用了，我不打算附身战神了。</content></say>
+				<say target="铁犬"><content>啊？</content></say>
+				<say target="战争狂人"><content>我想了很久，这是我最后一次附身机会，我要留着。</content></say>
+				<say target="战争狂人"><content>如果我附身战神后，战神也被消灭了，那我也就完了！</content></say>
+				<say target="铁犬"><content>铁犬完全理解主人的顾虑。</content></say>
+				<say target="铁犬"><content>通讯器已经到了。</content></say>
+
+			</sayList>
+			
+			<sayList name="s3">
+				<say target="铁犬"><content>那您打算怎么做？</content></say>
+				<say target="战争狂人"><content>我早就想好了，我要狸猫换太子。</content></say>
+				<say target="铁犬"><content>什么意思？</content></say>
+				<say target="战争狂人"><content>这是人类的一个历史典故，你不需要理解。</content></say>
+				<say target="战争狂人"><content>你只要知道，我要伪装成@Striker，然后以他的身份回到战斧高地。</content></say>
+				<say target="铁犬"><content>这……这可行吗？</content></say>
+				<say target="战争狂人"><content>嘿嘿，现在我手持他的通讯器，让你看看效果吧。</content></say>
+
+			</sayList>
+			
+			<sayList name="sPartner">
+				<say target="战争狂人"><content>咳……咳……</content></say>
+				<say target="战争狂人"><content>小樱！表哥！藏师！心零！出大事了！</content></say>
+				<say target="小樱/手机"><content>出啥事了？</content></say>
+				<say target="文杰表哥/手机"><content>能有什么事？就是想我们了呗。</content></say>
+				<say target="战争狂人"><content>不开玩笑，是真的有事！</content></say>
+				<say target="战争狂人"><content>狂人将派遣新型的狂人机器攻击战斧高地，你们要做好准备！</content></say>
+				<say target="心零/手机"><content>那机器不就一垃圾吗？</content></say>
+				<say target="战争狂人"><content>确实，但狂人的目的在于消耗你们，他后面还有大招。</content></say>
+				<say target="战争狂人"><content>所以你们要佯装战败，保存好体力，等我回来。</content></say>
+				<say target="心零/手机"><content>没问题，演戏我在行！</content></say>
+				<say target="藏师将军/手机"><content>你要回来？!</content></say>
+				<say target="小樱/手机"><content>你真的要回来？</content></say>
+				<say target="战争狂人"><content>是的，之前我被狂人骗了，才会离开大家的。</content></say>
+				<say target="战争狂人"><content>我以为我做的梦都是真的，所以相信了他的预言。</content></say>
+				<say target="战争狂人"><content>而只有离开大家，才能改变我未来悲惨的命运。</content></say>
+				<say target="战争狂人"><content>没想到那些都是造梦机搞的鬼。</content></say>
+				<say target="文杰表哥/手机"><content>果然，你还是太单纯了。</content></say>
+				<say target="战争狂人"><content>有空再跟你们细说，现在时间紧迫，大家先做好准备。</content></say>
+				<say target="小樱/手机"><content>好，你一定要安全回来。</content></say>
+
+			</sayList>
+			
+			<sayList name="s4">
+				<say target="战争狂人"><content>哈哈哈……真有意思！</content></say>
+				<say target="战争狂人"><content>我变成了@Striker，那谁来扮演我呢？</content></say>
+				<say target="战争狂人"><content>铁犬！</content></say>
+				<say target="铁犬"><content>在！</content></say>
+				<say target="战争狂人"><content>你带上变音器，模拟我的声音，以后你就是狂人了！</content></say>
+				<say target="铁犬"><content>这真的可行吗？</content></say>
+				<say target="战争狂人"><content>只要你不现身，就没人能够发现。</content></say>
+				<say target="战争狂人"><content>等狂人机器从高地回来，我们来演一场戏，看看效果。</content></say>
+				<say target="铁犬"><content>好的。</content></say>
+				<say target="战争狂人"><content>剧本我都想好了，你照着念就行了。</content></say>
+				<say target="铁犬"><content>那我得认真学一下主人的语气才行。</content></say>
+			</sayList>	
+		</level>
+		
+		<level name="madWarriorSec" cnName="狂人篇-剧本">
+			<sayList name="s1">
+				<say target="p1"><content>脱下头盔！</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="p1"><content>狂人机器出场！</content></say>
+			</sayList>
+			<sayList name="s3">
+				<say target="战争狂人"><content>这么强大的狂人机器，还是被你给击败了！怎么回事？！</content></say>
+				<say target="p1"><content>因为我做好了十足的准备！</content></say>
+				<say target="p1"><content>你肯定不知道，你的诡计早就被识破了！</content></say>
+				<say target="战争狂人"><content>是吗？什么时候？</content></say>
+				<say target="p1"><content>当你第一次脱下头盔的时候。</content></say>
+				<say target="战争狂人"><content>怎么可能？！</content></say>
+				<say target="p1"><content>虽然那张脸和我长得一摸一样，但是它少了一样非常重要的东西。</content></say>
+				<say target="战争狂人"><content>什么东西？</content></say>
+				<say target="p1"><content>我后脑勺的胎记！</content></say>
+				<say target="战争狂人"><content>呵呵呵，你还真够细心的。</content></say>
+				<say target="p1"><content>后来我还比对过你的DNA，证实我们根本不是同一个人！</content></say>
+				<say target="战争狂人"><content>那真是辛苦你了，陪我演了一路的戏。</content></say>
+				<say target="p1"><content>我就是想看看你能耍出什么样的花招。</content></say>
+				<say target="战争狂人"><content>不跟你废话了！你的队友已经全部倒下，现在我要干掉你简直易如反掌！</content></say>
+				<say target="p1"><content>对付你这个弱者，我一人足矣！</content></say>
+				<say target="战争狂人"><content>狂人机器只是开胃菜，正餐还没上呢！</content></say>
+				<say target="战争狂人"><content>还记得生化罐里的亚瑟、奇皇、狂战狼，还有你的克隆体吗？我提取了他们的变异基因。</content></say>
+				<say target="p1"><content>你想干什么？</content></say>
+				<say target="战争狂人"><content>快来战斧高地，让你见识一下世面！</content></say>
+			</sayList>
+			
+			<sayList name="s4">
+				<say target="铁犬"><content>主人，我刚才说话的声音像您吗？</content></say>
+				<say target="p1"><content>哈哈哈……太像了！根本没人能看出破绽。</content></say>
+				<say target="铁犬"><content>就是这些对话让我有点晕。</content></say>
+				<say target="p1"><content>这是我瞎编的，不用管它。</content></say>
+				<say target="p1"><content>接下来才是重头戏。</content></say>
+				<say target="p1"><content>铁犬！等我回到战斧高地，你再操控战神来犯。</content></say>
+				<say target="铁犬"><content>好的，主人。</content></say>
+				<say target="p1"><content>我打败战神后，你一定要让爆枪小队觉得，狂人已经和战神一起毁灭了。</content></say>
+				<say target="铁犬"><content>我……我尽量！</content></say>
+				<say target="p1"><content>在那之后，我将正式成为@Striker！</content></say>
+				<say target="p1"><content>而千里之外的@Striker，可能都没想到……</content></say>
+				<say target="p1"><content>自己已然成了替身！</content></say>
+			</sayList>
+		</level>
+	</father>
+</data>

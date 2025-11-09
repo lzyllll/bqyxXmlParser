@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="materials" cnName="其他消耗品">
+		
+		<things cnName="强化剂">
+			<name>strengthenDrug</name>
+			<cnName>强化剂</cnName><addDropDefineB>1</addDropDefineB>
+			<zuobiNum>10000000</zuobiNum>
+			<iconUrl>ThingsIcon/strengthenDrug</iconUrl>
+			<description>
+				用于强化尸宠的战斗力、生命值、头部防御，还可用于直接升级尸宠等级。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]分解基因体
+				[n]商店购买
+			</description>
+			<loveD num="30" />
+			<smeltD type="pet" grade="0" addType="" price="0.2" />
+		</things>
+		<things cnName="战宠号角">
+			<name>petSuppleCard</name>
+			<cnName>战宠号角</cnName><addDropDefineB>1</addDropDefineB>
+			<zuobiNum>100000</zuobiNum>
+			<iconUrl>ThingsIcon/petSuppleCard</iconUrl>
+			<description>
+				用于获得宠物的替补功能。放生宠物后，系统也会返还一定的战宠号角。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]秘境
+			</description>
+			<loveD num="10" />
+			<smeltD type="pet" grade="1" addType="" price="10" />
+		</things>
+		
+		
+		<things cnName="生命催化剂">
+			<name>lifeCatalyst</name>
+			<cnName>生命催化剂</cnName>
+			<iconUrl>ThingsIcon/lifeCatalyst</iconUrl>
+			<description>
+				用于进化尸宠。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]1、商店购买
+				[n]2、消灭75级以上怪物掉落，掉率与转化石相同
+			</description>
+			<loveD num="8" />
+			<smeltD type="pet" grade="1" addType="" price="1" />
+		</things>
+		<things cnName="能量催化剂">
+			<name>energyCatalyst</name>
+			<cnName>能量催化剂</cnName>
+			<iconUrl>ThingsIcon/energyCatalyst</iconUrl>
+			<description>
+				用于进化尸宠。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]1、商店购买
+				[n]2、活跃礼包领取
+			</description>
+			<loveD num="8" />
+			<smeltD type="pet" grade="1" addType="" price="1" />
+		</things>
+		<things cnName="变异催化剂">
+			<name>variationCatalyst</name>
+			<cnName>变异催化剂</cnName>
+			<iconUrl>ThingsIcon/variationCatalyst</iconUrl>
+			<description>
+				用于进化尸宠。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]1、商店购买
+				[n]2、竞技场商店兑换
+			</description>
+			<loveD num="8" />
+			<smeltD type="pet" grade="1" addType="" price="1" />
+		</things>
+	</father>	
+	</data>

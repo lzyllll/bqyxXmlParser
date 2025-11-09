@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data type="dataList"><father name="cityDress">
+		<body name="dressStampMust" cnName="装扮券所需" len="10">
+			10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+		</body>
+		<body name="dressStampGoldMust_unit" cnName="黄金装扮券所需-单位" len="10">
+			0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+		</body>
+		
+		<body name="dressStampHighMust" cnName="高级装扮券所需-装扮物" len="60">
+			3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+		</body>
+		<body name="dressStampGoldMust_decora" cnName="黄金装扮券所需-装扮物" len="60">
+			0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+5
+		</body>
+	</father>
+</data>

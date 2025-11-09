@@ -1,0 +1,29 @@
+{
+  "pro": [
+    {
+      "value": "100 \n200 \n300 \n400 \n500 \n600 \n700 \n800 \n900 \n1000",
+      "name": "postExp",
+      "cnName": "职务等级经验"
+    },
+    {
+      "value": "4%\n8%\n12%\n16%\n20%\n24%\n28%\n32%\n36%\n40%",
+      "name": "lifeAll",
+      "cnName": "属性附加-生命值"
+    },
+    {
+      "value": "4%\n8%\n12%\n16%\n20%\n24%\n28%\n32%\n36%\n40%",
+      "name": "dpsAll",
+      "cnName": "属性附加-战斗力"
+    },
+    {
+      "value": "4%\n8%\n12%\n16%\n20%\n24%\n28%\n32%\n36%\n40%",
+      "name": "hurtAll",
+      "cnName": "属性附加-伤害"
+    },
+    {
+      "value": "3 \n6 \n9 \n12 \n15 \n18 \n21 \n24 \n27 \n30",
+      "name": "lottery",
+      "cnName": "属性附加-幸运值"
+    }
+  ]
+}

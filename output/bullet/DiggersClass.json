@@ -1,0 +1,609 @@
+{
+  "father": [
+    {
+      "name": "car",
+      "cnName": "战车定义",
+      "bullet": {
+        "Diggers": {
+          "name": "Diggers",
+          "cnName": "挖掘者",
+          "evolutionLabel": "SecDiggers",
+          "canComposeB": 1,
+          "shopB": 1,
+          "mustCash": 400,
+          "specialInfoArr": "动能推撞",
+          "main": {
+            "label": "Diggers_main",
+            "dpsMul": 0.6,
+            "len": 100
+          },
+          "sub": {
+            "label": "Diggers_sub",
+            "dpsMul": 0,
+            "len": 47,
+            "actionLabel": "subAttack",
+            "swapLabel": "subChangeAttack"
+          },
+          "mainFrontB": 1,
+          "firstArmsIsSubB": 1,
+          "lifeMul": 1.9,
+          "attackMul": 0.8,
+          "attackBulletNum": 2,
+          "duration": 70,
+          "cd": 120,
+          "addObjJson": {
+            "dpsAll": 0.11,
+            "lifeAll": 0.11
+          },
+          "armsType": null
+        },
+        "SecDiggers": {
+          "name": "SecDiggers",
+          "cnName": "腥红挖掘者",
+          "evolutionLabel": "ThirdDiggers",
+          "mustCash": 400,
+          "evolutionLv": 2,
+          "specialInfoArr": "超能推撞",
+          "main": {
+            "label": "Diggers_main",
+            "dpsMul": 0.9,
+            "len": 100
+          },
+          "sub": {
+            "label": "Diggers_sub",
+            "dpsMul": 0,
+            "len": 47,
+            "actionLabel": "subAttack",
+            "swapLabel": "subChangeAttack"
+          },
+          "mainFrontB": 1,
+          "firstArmsIsSubB": 1,
+          "lifeMul": 2.3,
+          "attackMul": 1,
+          "attackBulletNum": 2,
+          "duration": 80,
+          "cd": 120,
+          "addObjJson": {
+            "dpsAll": 0.18,
+            "lifeAll": 0.18
+          },
+          "skillArr": "vehicleFit_Gaia",
+          "armsType": null
+        },
+        "ThirdDiggers": {
+          "name": "ThirdDiggers",
+          "cnName": "炙热挖掘者",
+          "evolutionLabel": "FourDiggers",
+          "mustCash": 500,
+          "evolutionLv": 4,
+          "specialInfoArr": "超能推撞",
+          "main": {
+            "label": "Diggers_main",
+            "dpsMul": 1.2,
+            "len": 100
+          },
+          "sub": {
+            "label": "Diggers_sub",
+            "dpsMul": 0,
+            "len": 47,
+            "actionLabel": "subAttack",
+            "swapLabel": "subChangeAttack"
+          },
+          "mainFrontB": 1,
+          "firstArmsIsSubB": 1,
+          "lifeMul": 2.7,
+          "attackMul": 1.3,
+          "attackBulletNum": 2,
+          "duration": 80,
+          "cd": 120,
+          "addObjJson": {
+            "dpsAll": 0.2,
+            "lifeAll": 0.2
+          },
+          "skillArr": "vehicleFit_Gaia",
+          "armsType": null
+        },
+        "FourDiggers": {
+          "name": "FourDiggers",
+          "cnName": "血锯挖掘者",
+          "mustCash": 300,
+          "evolutionLv": 5,
+          "specialInfoArr": "血锯推撞",
+          "main": {
+            "label": "Diggers_main",
+            "dpsMul": 1.6,
+            "len": 100
+          },
+          "sub": {
+            "label": "Diggers_sub",
+            "dpsMul": 0,
+            "len": 47,
+            "actionLabel": "subAttack",
+            "swapLabel": "subChangeAttack"
+          },
+          "mainFrontB": 1,
+          "firstArmsIsSubB": 1,
+          "lifeMul": 3,
+          "attackMul": 1.5,
+          "attackBulletNum": 2,
+          "duration": 80,
+          "cd": 120,
+          "addObjJson": {
+            "dpsAll": 0.24,
+            "lifeAll": 0.24
+          },
+          "skillArr": "vehicleFit_Gaia,FourDiggersSkill",
+          "armsType": null
+        },
+        "Diggers_main": {
+          "cnName": "挖掘者-散弹",
+          "name": "Diggers_main",
+          "hurtRatio": 0.66,
+          "bulletLife": 0.001,
+          "hitType": "longLine",
+          "bulletWidth": 800,
+          "bulletShakeWidth": 100,
+          "attackGap": 0.15,
+          "attackDelay": 0,
+          "bulletNum": 3,
+          "shootAngle": 10,
+          "shootRecoil": 2,
+          "screenShakeValue": 3,
+          "shakeAngle": 3,
+          "bulletSpeed": 0,
+          "flipX": 1,
+          "lineD": {
+            "lightColor": 65535,
+            "size": 2,
+            "lightSize": 6
+          },
+          "bulletImgUrl": "longLine",
+          "fireImgUrl": "gunFire/f",
+          "hitImgUrl": "bulletHitEffect/yellow_motion",
+          "armsType": null
+        },
+        "Diggers_sub": {
+          "cnName": "挖掘者-空炮",
+          "name": "Diggers_sub",
+          "hurtRatio": 0,
+          "bulletLife": 0,
+          "hitType": "longLine",
+          "bulletWidth": 0,
+          "attackGap": 0.4,
+          "attackDelay": 0,
+          "shootRecoil": 4,
+          "screenShakeValue": 9,
+          "shakeAngle": 3,
+          "bulletSpeed": 0,
+          "flipX": 1,
+          "lineD": {
+            "lightColor": 16776960,
+            "size": 2,
+            "lightSize": 6
+          },
+          "bulletImgUrl": "longLine",
+          "armsType": null
+        },
+        "wheelStabsDiggersBullet": {
+          "name": "wheelStabsDiggersBullet",
+          "cnName": "轮刺",
+          "noMagneticB": 1,
+          "noBeClearB": 1,
+          "hurtRatio": 0,
+          "hurtMul": 0.04,
+          "attackType": "holy",
+          "shakeAngle": 5,
+          "bulletLife": 12,
+          "bulletWidth": 50,
+          "hitType": "rect",
+          "bulletAngle": -90,
+          "bulletSpeed": 0,
+          "boomD": {
+            "selfB": true,
+            "hurtMul": 0
+          },
+          "skillArr": "offAllSkill",
+          "hitGap": 0.2,
+          "penetrationNum": 999,
+          "penetrationGap": 1000,
+          "bulletImgUrl": null,
+          "hitImgUrl": null,
+          "selfBoomImgUrl": "boomEffect/smoke2",
+          "armsType": null
+        }
+      }
+    },
+    {
+      "name": "vehicleSkill",
+      "cnName": "技能",
+      "skill": {
+        "name": "FourDiggersSkill",
+        "cnName": "风驰血锯",
+        "effectInfoArr": "增加伤害输出",
+        "cd": 100,
+        "changeText": "碾压伤害提升：[mul-1]",
+        "conditionType": "active",
+        "condition": "beforeAttack",
+        "target": "me",
+        "addType": "state",
+        "effectType": "attackMul",
+        "mul": 1.5,
+        "duration": 5,
+        "meEffectImg": {
+          "soundUrl": "sound/murderous_hero"
+        },
+        "stateEffectImg": {
+          "name": "FourDiggersSkill"
+        },
+        "description": "释放技能后，普通伤害、碾压伤害提升[mul-1]，持续[duration]秒。",
+        "growth": {
+          "skill": [
+            {
+              "mul": 1.5
+            },
+            {
+              "mul": 1.9
+            },
+            {
+              "mul": 2.3
+            },
+            {
+              "mul": 2.7
+            },
+            {
+              "mul": 3.1
+            },
+            {
+              "mul": 3.5
+            },
+            {
+              "mul": 3.9
+            },
+            {
+              "mul": 4.3
+            },
+            {
+              "mul": 4.8
+            },
+            {
+              "mul": 5.2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "enemySkill",
+      "cnName": "首领技能",
+      "skill": [
+        {
+          "name": "wheelStabsDiggers",
+          "noBeClearB": 1,
+          "ignoreNoSkillB": 1,
+          "ignoreSilenceB": 1,
+          "cnName": "轮刺",
+          "iconUrl36": "SkillIcon/redWiperSkill_36",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cd": 25,
+          "firstCd": 24,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "target": "me",
+          "addType": "state",
+          "effectType": "bullet_wheelStabsDiggers",
+          "effectFather": "vehicle",
+          "obj": "\"name\":\"wheelStabsDiggersBullet\"",
+          "duration": 10,
+          "meEffectImg": {
+            "name": "through_hero_me"
+          },
+          "stateEffectImg": {
+            "name": "wheelStabsDiggers"
+          },
+          "description": "释放技能后，挖掘者的后轮会持续在地面上释放持续12秒的尖刺。敌人被尖刺触碰后将受到伤害，同时被封锁。"
+        },
+        {
+          "name": "FourDiggersSprint",
+          "cnName": "聚力血锯",
+          "noBeClearB": 1,
+          "ignoreNoSkillB": 1,
+          "ignoreSilenceB": 1,
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cd": 8,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "target": "me",
+          "addType": "state",
+          "effectType": "FourDiggersSprint",
+          "effectFather": "vehicle",
+          "mul": 0.1,
+          "duration": 1.5,
+          "meActionLabel": "sprintAttack",
+          "description": "挖掘者疯狂转动血锯聚集能量，随后向前发出猛烈一击，最敌人造成重大伤害。"
+        }
+      ]
+    },
+    {
+      "name": "vehicle",
+      "cnName": "战车body",
+      "body": [
+        {
+          "index": 0,
+          "name": "Diggers",
+          "shell": "metal",
+          "cnName": "挖掘者",
+          "raceType": "robot",
+          "swfUrl": "swf/vehicle/Diggers.swf",
+          "lifeRatio": 1,
+          "rosRatio": 1,
+          "headHurtMul": 0.5,
+          "dieImg": {
+            "value": "boomEffect/boom3",
+            "soundUrl": "sound/pointBoom_hero",
+            "shake": "3,0.4,30"
+          },
+          "dieJumpMul": 0,
+          "imgClass": "CarImage",
+          "imgType": "normal",
+          "rotateBySlopeB": 1,
+          "imgArr": "stand,move,die1,subAttack,subChangeAttack\n\t\t\t\t,__jumpUp,jumpUp,jumpDown,jumpDown__",
+          "hitRect": "-30,-88,60,88",
+          "motionD": {
+            "F_G": 0.8,
+            "jumpDelayT": 0.15,
+            "F_I": 0.6,
+            "F_F": 0.7,
+            "moveWhenVB": true
+          },
+          "maxVx": 17,
+          "maxJumpNum": 1,
+          "attackAIClass": "CarAttack_AI",
+          "keyClass": "CarBodyKey",
+          "bulletLauncherClass": "CarBulletLauncher",
+          "skillArr": null,
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "move",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 7,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "subAttack",
+                "skillArr": "highDrill,highDrillHit",
+                "hurtRatio": 0.69,
+                "ingfollowB": 1,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 1,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "jumpDown",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 7,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "jumpUp",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 7,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "jumpDown__",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 7,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "SecDiggers",
+          "shell": "metal",
+          "cnName": "腥红挖掘者",
+          "raceType": "robot",
+          "swfUrl": "swf/vehicle/SecDiggers.swf",
+          "lifeRatio": 1,
+          "rosRatio": 1,
+          "headHurtMul": 0.5,
+          "dieImg": {
+            "value": "boomEffect/boom3",
+            "soundUrl": "sound/pointBoom_hero",
+            "shake": "3,0.4,30"
+          },
+          "dieJumpMul": 0,
+          "imgClass": "CarImage",
+          "imgType": "normal",
+          "rotateBySlopeB": 1,
+          "imgArr": "stand,move,die1,subAttack,subChangeAttack\n\t\t\t\t,__jumpUp,jumpUp,jumpDown,jumpDown__",
+          "hitRect": "-30,-88,60,88",
+          "motionD": {
+            "F_G": 0.8,
+            "jumpDelayT": 0.15,
+            "F_I": 0.6,
+            "F_F": 0.7,
+            "moveWhenVB": true
+          },
+          "maxVx": 17,
+          "maxJumpNum": 1,
+          "attackAIClass": "CarAttack_AI",
+          "keyClass": "CarBodyKey",
+          "bulletLauncherClass": "CarBulletLauncher",
+          "skillArr": null,
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "move",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 7,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "subAttack",
+                "skillArr": "superHighDrill,highDrillHit",
+                "hurtRatio": 0.69,
+                "ingfollowB": 1,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 1,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "jumpDown",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 7,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "jumpUp",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 7,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "jumpDown__",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 7,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              }
+            ]
+          }
+        },
+        {
+          "name": "ThirdDiggers",
+          "fixed": "SecDiggers",
+          "shell": "metal",
+          "cnName": "炙热挖掘者",
+          "swfUrl": "swf/vehicle/ThirdDiggers.swf",
+          "bmpUrl": "BodyImg/ThirdDiggers"
+        },
+        {
+          "name": "FourDiggers",
+          "shell": "metal",
+          "cnName": "血锯挖掘者",
+          "swfUrl": "swf/vehicle/FourDiggers333.swf",
+          "bmpUrl": "BodyImg/FourDiggers",
+          "raceType": "robot",
+          "dieImg": {
+            "value": "boomEffect/boom3",
+            "soundUrl": "sound/pointBoom_hero",
+            "shake": "3,0.4,30"
+          },
+          "dieJumpMul": 0,
+          "imgClass": "CarImage",
+          "imgType": "normal",
+          "rotateBySlopeB": 1,
+          "imgArr": "stand,move,die1,subAttack,subChangeAttack,sprintAttack\n\t\t\t\t,__jumpUp,jumpUp,jumpDown,jumpDown__",
+          "hitRect": "-30,-88,60,88",
+          "motionD": {
+            "F_G": 0.8,
+            "jumpDelayT": 0.15,
+            "F_I": 0.6,
+            "F_F": 0.7,
+            "moveWhenVB": true
+          },
+          "maxVx": 17,
+          "maxJumpNum": 1,
+          "attackAIClass": "CarAttack_AI",
+          "keyClass": "CarBodyKey",
+          "bulletLauncherClass": "CarBulletLauncher",
+          "bossSkillArr": "FourDiggersSprint,wheelStabsDiggers,KingRabbitTreater,thorns_pig,treater_knights,toLand",
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "move",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 7,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "subAttack",
+                "skillArr": "superHighDrill,highDrillHit",
+                "hurtRatio": 0.69,
+                "ingfollowB": 1,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 1,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "jumpDown",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 7,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "jumpUp",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 7,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "jumpDown__",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 7,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "sprintAttack",
+                "cn": "聚力血锯",
+                "hurtRatio": 1e-08,
+                "hurtMul": 0.2,
+                "attackType": "holy",
+                "shakeValue": 10,
+                "meBack": 1,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

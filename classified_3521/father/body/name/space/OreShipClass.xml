@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="space">
+		<body>
+			<name>OreShip</name>
+			<cnName>拉矿船</cnName>
+			<raceType>ship</raceType><lifeRatio>0.6</lifeRatio>
+			<swfUrl>swf/ship/OreShip.swf</swfUrl>
+			
+			<dieImg name="stoneBoom" /><imgType>normal</imgType>
+			<dieJumpMul>0</dieJumpMul>
+			<lockLeftB>1</lockLeftB>
+			<imgArr>
+				stand,die1
+			</imgArr>
+			
+			<hitRect>-37,-30,74,60</hitRect>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<maxVx>6</maxVx>
+			<skillArr>hitCheckDie,spaceMoveLeftNoAI,OreShipSum</skillArr>
+		</body>
+				<skill>
+					<name>OreShipSum</name><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+					<cnName>召唤矿石</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+					<conditionType>passive</conditionType>
+					<condition>bodyAdd</condition>
+					<target>me</target>
+					
+					<addType>instant</addType><summonedUnitsB>1</summonedUnitsB>
+					<effectType>OreShipSum</effectType><effectFather>oreSpace</effectFather>
+					<obj>"cnName":"矿船矿石","num":7,"lifeMul":1,"dpsMul":1,"mulByFatherB":1,"maxNum":7,"lifeTime":-1</obj>
+					<pointEffectImg name="blackHoleShow" />
+				</skill>
+	</father>
+</data>

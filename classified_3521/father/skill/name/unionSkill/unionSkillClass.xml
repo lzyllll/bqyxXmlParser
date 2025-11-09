@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="unionSkill" cnName="公会技能">
+		
+		<skill index="0" name="怪物猎人">
+			<name>watchmanHurtNormal</name>
+			<cnName>怪物猎人</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<valueString>normal</valueString>
+			<mul>1.10</mul>
+			
+			<obj>"type":"enemyType"</obj>
+			
+			<description>对普通怪物造成的伤害提高[mul-1]。</description>
+		</skill>
+		<skill index="0" name="精英克星">
+			<name>watchmanHurtSuper</name>
+			<cnName>精英克星</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<valueString>super</valueString>
+			<mul>1.10</mul>
+			
+			<obj>"type":"enemyType"</obj>
+			
+			<description>对精英怪物造成的伤害提高[mul-1]。</description>
+		</skill>
+		<skill index="0" name="人类克星">
+			<name>watchmanHurtHuman</name>
+			<cnName>人类克星</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>raceType</otherConditionArr>
+			<conditionString>human</conditionString>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurtNoCondition</effectType>
+			<mul>1.1</mul>
+			
+			<description>对人类造成额外[mul-1]的伤害。</description>
+		</skill>
+		
+		
+		<skill index="0" name="恶魔猎手">
+			<name>watchmanHurtBoss</name>
+			<cnName>恶魔猎手</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<valueString>boss</valueString>
+			<mul>1.10</mul>
+			
+			<obj>"type":"enemyType"</obj>
+			
+			<description>对首领造成的伤害提高[mul-1]。</description>
+		</skill>
+		
+		<skill index="0" name="恶魔屠刀">
+			<name>superWatchmanHurtBoss</name>
+			<cnName>恶魔屠刀</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<valueString>boss</valueString>
+			<mul>1.20</mul>
+			
+			<obj>"type":"enemyType"</obj>
+			
+			<description>对首领造成的伤害提高[mul-1]。</description>
+		</skill>
+		
+		
+		<skill cnName="上帝之眼">
+			<name>godEyes</name>
+			<cnName>上帝之眼</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>skillCombo</condition>
+			<otherConditionArr>skillCombo</otherConditionArr>
+			<conditionRange>9</conditionRange>
+			<conditionString>feedback_hero,pointBoom_hero|feedback_hero,hiding_hero|invisibility_hero,hiding_hero</conditionString>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>bullet_godEyes</effectType>
+			<extraValueType>nowArmsTrueDps</extraValueType>
+			<range>600</range>
+			<value>0.2</value>
+			<duration>0.2</duration>
+			
+			<obj>"name":"godEyes"</obj>
+			
+			<description>同时触发人物技能组合：电离折射、定点轰炸（或者电离折射、群体隐身，或者隐匿之雾、群体隐身），技能要求最低等级为9级，将启动二元化学激光，原本无毒的化学激光交叉碰撞后，迅速产生光化学毒素，伤害范围内的人并破坏他们10%的防御力，持续20秒。</description>
+		</skill>
+		
+		<skill cnName="上帝之杖">
+			<name>godMace</name>
+			<cnName>上帝之杖</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>skillCombo</condition>
+			<otherConditionArr>skillCombo</otherConditionArr>
+			<conditionRange>9</conditionRange>
+			<conditionString>crazy_hero,tenacious_hero,through_hero|tenacious_hero,poisonousFog_hero,vacuumJie|groupReverseHurt_hero,globalLight_hero,through_hero</conditionString>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>bullet_godMace</effectType>
+			<extraValueType>nowArmsTrueDps</extraValueType>
+			<range>600</range>
+			<value>0.2</value>
+			<duration>2</duration>
+			
+			<obj>"name":"godMace"</obj>
+			<pointEffectImg raNum="1" soundUrl="sound/laserShoot2">bulletHitEffect/purpleLaser</pointEffectImg>
+			
+			<description>同时触发人物技能组合：反击、狂暴、金刚钻（或者反击、毒雾、真空，或者反转术、全域圣光、金刚钻），技能要求最低等级为9级，之后将引导太空中的天基动能卫星，向地面发射巨大的金属柱，形成人造陨石轰击地面，造成堪比核弹的灾难性打击，冲击波能让敌人降低20%防御力，持续20秒。</description>
+		</skill>
+		
+		
+		<skill cnName="鬼步">
+			<name>heroSprint</name>
+			<cnName>鬼步</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>moveCombo</condition>
+			<otherConditionArr>airMoveCombo</otherConditionArr>
+			<conditionString>left,left|right,right</conditionString>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>heroSprint</effectType>
+			<mul>0</mul>
+			<value>35</value>
+			<duration>0.3</duration>
+			
+			<stateEffectImg xGap="30" con="filter" raNum="1">skillEffect/sprintShadow</stateEffectImg>
+			
+			<description>人物在空中，双击前进或者后退按钮，可以向指定方向冲刺一段距离。</description>
+		</skill>
+		
+					<skill index="0" cnName="上帝之眼-防御力降低">
+						<name>godEyesDefence</name>
+						<cnName>上帝之眼-防御力降低</cnName>
+						
+						<conditionType>passive</conditionType>
+						<condition>hit</condition>
+						<target>target</target>
+						
+						<addType>state</addType>
+						<effectType>underHurtMul</effectType>
+						<mul>1.1</mul>
+						<duration>20</duration>
+						
+						<description>击中目标后削弱其[mul-1]的防御力。</description>
+					</skill>
+					<skill index="0" cnName="上帝之杖-防御力降低">
+						<name>godMaceDefence</name>
+						<cnName>上帝之杖-防御力降低</cnName>
+						
+						<conditionType>passive</conditionType>
+						<condition>hit</condition>
+						<target>target</target>
+						
+						<addType>state</addType>
+						<effectType>underHurtMul</effectType>
+						<mul>1.2</mul>
+						<duration>20</duration>
+						
+						<description>击中目标后削弱其[mul-1]的防御力。</description>
+					</skill>
+					
+		<skill>
+			<name>petHurtHole</name>
+			<cnName>暴力尸宠</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,we,pet</target>
+			
+			<addType>state</addType>
+			<effectType>hurtMul</effectType>
+			<mul>1.15</mul>
+			<duration>2</duration>
+			<range>99999</range>
+			
+			<stateEffectImg name="bodyGreenSmoke" />
+			<description>提升我方尸宠[mul-1]的伤害。</description>
+		</skill>
+		<skill>
+			<name>towerHurter</name><ignoreNoSkillB>1</ignoreNoSkillB>
+			<cnName>虚幻猎手</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>isTowerLevelB</otherConditionArr>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurtNoCondition</effectType>
+			<mul>1.2</mul>
+			
+			<description>对虚幻塔的敌人造成额外[mul-1]的伤害。</description>
+		</skill>
+		
+	</father>
+</data>

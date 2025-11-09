@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="materials" cnName="钥匙" smeltType="stone">
+		<things cnName="幻想钥匙"><addDropDefineB>1</addDropDefineB>
+			<name>dreamKey</name>
+			<cnName>幻想钥匙</cnName>
+			<dropLevelArr>76,84</dropLevelArr>
+			<iconUrl>ThingsIcon/dreamKey</iconUrl>
+			<description>
+				开启某些任务所需物品。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]1、消灭76、84级普通关卡首领有一定几率掉落。
+				[n]2、钥匙箱开出。
+			</description>
+			<loveD num="4" />
+			<smeltD grade="0" addType="" price="1" />
+			
+		</things>
+		<things cnName="勇气钥匙"><addDropDefineB>1</addDropDefineB>
+			<name>courageKey</name>
+			<cnName>勇气钥匙</cnName>
+			<dropLevelArr>77,83</dropLevelArr>
+			<iconUrl>ThingsIcon/courageKey</iconUrl>
+			<description>
+				开启某些任务所需物品。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]1、消灭77、83级普通关卡首领有一定几率掉落。
+				[n]2、钥匙箱开出。
+			</description>
+			<loveD num="4" />
+			<smeltD grade="0" addType="" price="1" />
+		</things>
+		<things cnName="能量钥匙"><addDropDefineB>1</addDropDefineB>
+			<name>energyKey</name>
+			<cnName>能量钥匙</cnName>
+			<dropLevelArr>78,82</dropLevelArr>
+			<iconUrl>ThingsIcon/energyKey</iconUrl>
+			<description>
+				开启某些任务所需物品。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]1、消灭78、82级普通关卡首领有一定几率掉落。
+				[n]2、钥匙箱开出。
+			</description>
+			<loveD num="4" />
+			<smeltD grade="0" addType="" price="1" />
+		</things>
+		<things cnName="胜利钥匙"><addDropDefineB>1</addDropDefineB>
+			<name>victoryKey</name>
+			<cnName>胜利钥匙</cnName>
+			<dropLevelArr>79,81</dropLevelArr>
+			<iconUrl>ThingsIcon/victoryKey</iconUrl>
+			<description>
+				开启某些任务所需物品。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]1、消灭79、81级普通关卡首领有一定几率掉落。
+				[n]2、钥匙箱开出。
+			</description>
+			<loveD num="4" />
+			<smeltD grade="0" addType="" price="1" />
+		</things>
+		
+		
+	</father>
+</data>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="虚洪螈">
+		<bullet cnName="虚洪螈-射击">
+			<name>Salamander_shoot</name>
+			<cnName>虚洪螈-射击</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>175</bulletAngle>
+			<bulletAngleRange>30</bulletAngleRange>
+			<bulletLife>4</bulletLife>
+			<bulletWidth>25</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.6</attackGap>
+			<attackDelay>0.4</attackDelay>
+			<bulletNum>1</bulletNum>					
+			<shootPoint>-101,-128</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+			<followD value="0.1" />
+				
+			<bulletSpeed>15</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">Salamander/bullet1</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/water_hit">bulletHitEffect/energy</hitImgUrl>
+			
+		</bullet>
+		
+		<bullet cnName="虚洪螈-水柱">
+			<name>Salamander_water</name>
+			<cnName>虚洪螈-水柱</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>175</bulletAngle>
+			<bulletAngleRange>30</bulletAngleRange>
+			<bulletLife>10</bulletLife>
+			<bulletWidth>25</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.9</attackGap>
+			<attackDelay>0.6</attackDelay>
+			<bulletNum>2</bulletNum>					
+			<shootAngle>10</shootAngle>
+			<shootPoint>-101,-128</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+			<followD value="0.5" />
+				
+			<bulletSpeed>30</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30" con="filter">Salamander/waterBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/water_hit">bulletHitEffect/energy</hitImgUrl>
+		
+		</bullet>
+		
+	</father>
+	</data>

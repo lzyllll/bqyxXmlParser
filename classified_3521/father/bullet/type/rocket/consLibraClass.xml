@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="rocket" cnName="火炮-特殊">
+		<bullet cnName="天秤座" name="consLibra" kind="particle" color="darkgold" composeLv="99" chipB="1" chipNum="120" dropLevelArr="999">
+			<name>consLibra</name>
+			<cnName>天秤座</cnName>
+			
+			
+			<capacity>10</capacity>
+			<attackGap>0.8</attackGap>
+			<reloadGap>2</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>40</bulletWidth>
+			<bulletNum>1</bulletNum>				
+			<gunNum>1</gunNum>
+			
+			
+			<armsArmMul>0.60</armsArmMul>
+			<upValue>0</upValue>
+			<shootShakeAngle>40</shootShakeAngle>
+			<shootRecoil>12</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			
+			<bulletLife>3</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>1</dpsMul>
+			<uiDpsMul>1.8</uiDpsMul>
+			
+				
+			<bulletSpeed>30</bulletSpeed>
+			
+			<twoShootPro>0.4</twoShootPro>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="2" />	
+			<critD mul="2" pro="0.3" />
+			<skillArr>Hit_hitMissile_godArmsSkill,Hit_silence_ArmsSkill</skillArr>
+			<godSkillArr>Hit_finalkill_godArmsSkill,consLibraSkill</godSkillArr>
+			
+			<iconUrl>newGun/consLibraIcon</iconUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl name="consLibraBullet" />
+			<smokeImgUrl name="consLibraSmoke" />
+			<hitImgUrl name="consPurpleHit" />
+			<fireImgUrl name="purpleSpurtingFire" />
+			<shootSoundUrl>specialGun/yearMonkeySound</shootSoundUrl>
+			
+			<bodyImgRange>newGun/consLibra</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>十一周年活动</description>
+		</bullet>
+		
+	</father>
+	</data>

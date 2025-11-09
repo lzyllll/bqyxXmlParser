@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="deviceSkill" cnName="装置技能">
+		<skill cnName="致命地雷">
+			<name>hurtMine</name>
+			<cnName>致命地雷</cnName>
+			
+			<cd>20</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<doCondition>nearNoMine</doCondition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<extraValueType>showDps</extraValueType>
+			<mul>10</mul>
+			<obj>"name":"hurtMineBullet","site":"meMid","minYB":true</obj>
+			
+			<meEffectImg name="putMineEffect" />
+			<description>埋下可敌人造成重大伤害的致命地雷。</description>
+			
+			<growth>
+				<skill><cd>20</cd></skill>
+				<skill><cd>15</cd></skill>
+				<skill><cd>10</cd></skill>
+				<skill><cd>8</cd></skill>
+				<skill><cd>6</cd></skill>
+				<skill><cd>1</cd></skill>
+			</growth>
+		</skill>
+		
+		
+		<bullet>
+			<name>hurtMineBullet</name>
+			<cnName>致命地雷-子弹</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			<attackType>holy</attackType>
+			
+			<bulletAngle>90</bulletAngle>
+			<bulletLife>9999999</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+				
+			<noHitTime>1</noHitTime>
+			<hideTime>5</hideTime>
+			<boomD selfB="1" radius="240" bodyB="1" maxHurtNum="999" />
+			<bounceD glueFloorB="1" />
+			<bulletSkillArr />
+				
+			<bulletSpeed>0</bulletSpeed> 
+			
+			<flipX>1</flipX>
+			<bulletImgUrl name="hurtMineBulletEnemy" />
+			<bulletLeftImgUrl name="hurtMineBullet" />
+			<selfBoomImgUrl name="bigBoomSputtering" />
+		</bullet>
+	</father>
+	</data>

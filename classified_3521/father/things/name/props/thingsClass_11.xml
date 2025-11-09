@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="props" cnName="活动道具" smeltType="festival">
+		<things cnName="月饼">
+			<name>moonCake</name><addDropDefineB>1</addDropDefineB>
+			<cnName>月饼</cnName>
+			<zuobiNum>5000</zuobiNum>
+			<iconUrl>ThingsIcon/moonCake</iconUrl>
+			<stateD skill="moonCake" time="300" gamingB="1" demNoneB="1" />
+			<description>使用后将增加战斗中100%的攻击力（99级主线任务、修罗模式无效），持续5分钟。</description> 
+			<loveD num="0" />
+			<smeltD grade="-1" addType="" price="20" maxNum="1" />
+		</things>
+		<things cnName="汤圆">
+			<name>tangyuan</name><addDropDefineB>1</addDropDefineB>
+			<cnName>汤圆</cnName>
+			<zuobiNum>1000</zuobiNum>
+			<iconUrl>ThingsIcon/tangyuan</iconUrl>
+			<stateD skill="tangyuan" time="120" gamingB="1" demNoneB="1" />
+			<description>使用后将增加战斗中100%的攻击力（99级主线任务、修罗模式无效），持续2分钟。</description> 
+			<loveD num="0" />
+			<smeltD grade="-1" addType="" price="10" maxNum="1" />
+		</things>
+		<things cnName="饺子">
+			<name>jiaozi</name><addDropDefineB>1</addDropDefineB>
+			<cnName>饺子</cnName>
+			<zuobiNum>1000</zuobiNum>
+			<iconUrl>ThingsIcon/jiaozi</iconUrl>
+			<stateD skill="jiaozi" time="60" gamingB="1" demNoneB="1" />
+			<description>使用后在战斗中将处于无敌状态（99级主线任务、修罗模式无效），持续1分钟。</description> 
+			<loveD num="0" />
+			<smeltD grade="-1" addType="" price="10" maxNum="1" />
+		</things>
+		<things cnName="九层糕">
+			<name>nineCake</name><addDropDefineB>1</addDropDefineB>
+			<cnName>九层糕</cnName>
+			<zuobiNum>1000</zuobiNum>
+			<iconUrl>ThingsIcon/nineCake</iconUrl>
+			<stateD skill="nineCake" time="60" gamingB="1" demNoneB="1" />
+			<description>使用后将增加战斗中100%的射速（99级主线任务、修罗模式无效），持续1分钟。</description> 
+			<loveD num="0" />
+			<smeltD grade="-1" addType="" price="10" maxNum="1" />
+		</things>
+		
+		<things cnName="树叶">
+			<name>leafArbor</name><addDropDefineB>1</addDropDefineB>
+			<cnName>树叶</cnName>
+			<zuobiNum>1000</zuobiNum>
+			<iconUrl>ThingsIcon/leafArbor</iconUrl>
+			<stateD skill="armsDropDoubleAndGem" time="1800" gamingB="1" />
+			<description>使用后增加100%的稀有武器、黑色武器掉率，增加30%的元素宝石掉落，持续30分钟。</description> 
+			<loveD num="0" />
+			<smeltD grade="-1" addType="" price="20" maxNum="1" />
+		</things>
+		<things cnName="种子">
+			<name>seedArbor</name><addDropDefineB>1</addDropDefineB>
+			<cnName>种子</cnName>
+			<zuobiNum>1000</zuobiNum>
+			<iconUrl>ThingsIcon/seedArbor</iconUrl>
+			<stateD skill="equipDropDoubleAndEquipGem" time="1800" gamingB="1" />
+			<description>使用后增加100%的稀有装备、黑色装备掉率，增加30%的装备宝石掉落，持续30分钟。</description> 
+			<loveD num="0" />
+			<smeltD grade="-1" addType="" price="20" maxNum="1" />
+		</things>
+		
+		<things cnName="尸宠基因盒">
+			<name>geneBox</name><addDropDefineB>1</addDropDefineB>
+			<cnName>尸宠基因盒</cnName>
+			<zuobiNum>1000</zuobiNum>
+			<iconUrl>ThingsIcon/geneBox</iconUrl>
+			<description>使用后将随机获得一个基因体（不包括商店出售的基因体），品质在紫色到红色之间。</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<gift>gene;box;1;</gift>
+			<loveD num="1" />
+			<smeltD price="30" />
+			</things>
+		
+	</father>
+	
+	</data>

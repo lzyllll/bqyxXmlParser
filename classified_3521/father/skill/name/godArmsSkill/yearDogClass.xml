@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill>
+			<name>yearDogSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>弹力能</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>killTarget</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>no</effectType>
+			<description>每次地面反弹都会增加武器子弹70%的伤害，最大增伤1200%。自身开启“金刚钻”后不会穿透地形；无视敌人的“空虚”、“胶性表皮”技能。</description>
+		</skill>
+		
+	</father>
+</data>

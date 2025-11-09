@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="heroSkill" cnName="英雄技能">
+		<skill>
+			<name>underMurderous_jie</name><iconUrl>SkillIcon/sacrifice</iconUrl>
+			<cnName>反制</cnName>
+			<effectInfoArr>增加伤害输出,增加防御力</effectInfoArr>
+			
+			<addD pro="duration" range="0.2,0.4" info="持续时间[v]秒" />
+			<changeText>伤害增加[mul-1]{n}防御力增加[secMul-1]</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>underAllHit_before</condition>
+			<target>me</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>underMurderous_jie</effectType>
+			<mul>1.2</mul>
+			<secMul>2</secMul>
+			<duration>2</duration>
+			<stateEffectImg name="moonCake_state" />
+			<description>受到攻击时单位增加[mul-1]的伤害，防御力增加[secMul-1]，持续[duration]秒。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description>
+			
+			<growth>
+				<skill><mul>1.2</mul><secMul>1.6</secMul></skill>
+				<skill><mul>1.3</mul><secMul>1.7</secMul></skill>
+				<skill><mul>1.4</mul><secMul>1.8</secMul></skill>
+				<skill><mul>1.5</mul><secMul>1.9</secMul></skill>
+				<skill><mul>1.6</mul><secMul>2.0</secMul></skill>
+				<skill><mul>1.7</mul><secMul>2.1</secMul></skill>
+				<skill><mul>1.77</mul><secMul>2.2</secMul></skill>
+				<skill><mul>1.84</mul><secMul>2.3</secMul></skill>
+				<skill><mul>1.90</mul><secMul>2.4</secMul></skill>
+				<skill><mul>1.95</mul><secMul>2.5</secMul></skill>
+				
+				<skill><mul>1.95</mul><secMul>2.5</secMul><ignoreNoSkillB>1</ignoreNoSkillB><changeText>无视封锁</changeText></skill>
+				<skill><mul>2.0</mul><secMul>2.6</secMul><ignoreNoSkillB>1</ignoreNoSkillB></skill>
+				<skill><mul>2.04</mul><secMul>2.7</secMul><ignoreNoSkillB>1</ignoreNoSkillB></skill>
+				<skill><mul>2.04</mul><secMul>2.7</secMul><ignoreNoSkillB>1</ignoreNoSkillB><noNeedEquipB>1</noNeedEquipB><changeText>无需装备技能也会有技能效果</changeText></skill>
+			</growth>
+		</skill>
+		
+		
+		<skill>
+			<name>vacuumJie</name><iconUrl>SkillIcon/vacuumJie</iconUrl>
+			<cnName>真空</cnName>
+			<effectInfoArr>增加伤害输出,增加防御力</effectInfoArr>
+			<cd>5</cd>
+			
+			<addD pro="mul" range="-0.03,-0.06" info="敌人防御力[v]" />
+			<changeText>技能冷却时间[cd]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>attackTargetNoSameInvi</otherConditionArr>
+			<target limitNum="40">me,range,enemy</target>
+			
+			<addType>stateAndInstant</addType>
+			<effectType>vacuumJie</effectType>
+			<range>99999</range>
+			<mul>0.50</mul>
+			<duration>2</duration>
+			<linkArr>vacuumJie_link</linkArr>
+			<meEffectImg name="vacuumJieSound" />
+			<targetEffectImg name="vacuumJie" />
+			<description>使500码范围内的我方单位无敌1.5秒（虚天塔中只会提高防御力），并将全图敌人吸附到自己身边（争霸中无效），上限40个。同时降低这些敌人[1-mul]的防御力，持续[duration]秒；自身载具也可使用该技能。</description>
+			
+			<growth>
+				<skill><cd>22</cd></skill>
+				<skill><cd>20</cd></skill>
+				<skill><cd>18</cd></skill>
+				<skill><cd>16</cd></skill>
+				<skill><cd>14</cd></skill>
+				<skill><cd>12</cd></skill>
+				<skill><cd>11</cd></skill>
+				<skill><cd>10</cd></skill>
+				<skill><cd>9</cd></skill>
+				<skill><cd>8</cd></skill>
+				
+				<skill><cd>7</cd><ignoreImmunityB>1</ignoreImmunityB><changeText>技能冷却时间[cd]秒{n}无视技能免疫</changeText></skill>
+				<skill><cd>6</cd><ignoreImmunityB>1</ignoreImmunityB><ignoreSilenceB>1</ignoreSilenceB><changeText>技能冷却时间[cd]秒{n}无视沉默</changeText></skill>
+				<skill><cd>5</cd><ignoreImmunityB>1</ignoreImmunityB><ignoreSilenceB>1</ignoreSilenceB></skill>
+				<skill><cd>4.5</cd><ignoreImmunityB>1</ignoreImmunityB><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB><changeText>技能冷却时间[cd]秒{n}无视封锁</changeText></skill>
+			</growth>
+		</skill>
+		
+		
+		<skill>
+			<name>armsSpeed_jie</name>
+			<cnName>加速扳机</cnName><ignoreNoSkillB>1</ignoreNoSkillB><noBeClearB>1</noBeClearB>
+			<effectInfoArr>增加伤害输出</effectInfoArr><iconUrl>SkillIcon/armsSpeed_jie</iconUrl>
+			
+			<addD pro="mul" range="0.02,0.05" info="射速增加[v]" />
+			
+			<changeText>武器射速增加[mul-1]</changeText>
+			
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>armsSpeed_jie</effectType>
+			<mul>1.1</mul>
+			<secMul>5</secMul>
+			<duration>0.3</duration>
+			<stateEffectImg name="armsSpeed_jie" />
+			<description>增加所有武器[mul-1]的射速。对看门狗、斩之使者额外造成[secMul-1]的伤害。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description>
+			
+			<growth>
+				<skill><mul>1.10</mul></skill>
+				<skill><mul>1.15</mul></skill>
+				<skill><mul>1.20</mul></skill>
+				<skill><mul>1.25</mul></skill>
+				<skill><mul>1.30</mul></skill>
+				<skill><mul>1.34</mul></skill>
+				<skill><mul>1.38</mul></skill>
+				<skill><mul>1.41</mul></skill>
+				<skill><mul>1.44</mul></skill>
+				<skill><mul>1.47</mul></skill>
+				<skill><mul>1.50</mul></skill>
+				
+				<skill><mul>1.53</mul></skill>
+				<skill><mul>1.55</mul></skill>
+				<skill><mul>1.55</mul><noNeedEquipB>1</noNeedEquipB><changeText>无需装备技能也会有技能效果</changeText></skill>
+				
+			</growth>
+		</skill>
+		
+		<skill name="合金护甲">
+			<name>alloyShell_jie</name>
+			<cnName>合金护甲</cnName>
+			<iconUrl>SkillIcon/alloyShell</iconUrl>
+			<effectInfoArr>增加防御力</effectInfoArr>
+			
+			<addD pro="mul" range="-0.02,-0.05" info="受到百分比伤害[v]" />
+			
+			<changeText>减少[1-mul]百分比伤害</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>me</target>
+			<addType>instant</addType>
+			<effectType>changeHurtMul</effectType>
+			<mul>0.91</mul>
+			<description>减少[1-mul]受到的百分比伤害。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description>
+			
+			<growth>
+				<skill><mul>0.90</mul></skill>
+				<skill><mul>0.85</mul></skill>
+				<skill><mul>0.80</mul></skill>
+				<skill><mul>0.75</mul></skill>
+				<skill><mul>0.70</mul></skill>
+				<skill><mul>0.65</mul></skill>
+				<skill><mul>0.60</mul></skill>
+				<skill><mul>0.55</mul></skill>
+				<skill><mul>0.50</mul></skill>
+				<skill><mul>0.45</mul></skill>
+				
+				<skill><mul>0.40</mul></skill>
+				<skill><mul>0.35</mul></skill>
+				<skill><mul>0.30</mul></skill>
+				<skill><mul>0.30</mul><noNeedEquipB>1</noNeedEquipB><changeText>无需装备技能也会有技能效果</changeText></skill>
+			</growth>
+		</skill>
+	</father>
+	</data>

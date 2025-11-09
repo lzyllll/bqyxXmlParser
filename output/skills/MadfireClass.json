@@ -1,0 +1,197 @@
+{
+  "father": [
+    {
+      "name": "other",
+      "skills": {
+        "Madfire": {
+          "name": "Madfire",
+          "shell": "other",
+          "cnName": "火种",
+          "raceType": "human",
+          "swfUrl": "swf/enemy/Madfire.swf",
+          "dieJumpMul": 0,
+          "imgType": "normal",
+          "imgArr": "stand,move,die1",
+          "hitRect": "-14,-30,28,30",
+          "maxVx": 9,
+          "motionState": "fly",
+          "flyUseSpiderB": 1,
+          "flyType": "tween",
+          "skillArr": "State_SpellImmunity,noAiFindAndHit",
+          "avtiveSkillCdOverT": 0,
+          "hurtArr": null
+        },
+        "noAiFindAndHit": {
+          "name": "noAiFindAndHit",
+          "cnName": "不受ai发现和伤害",
+          "noSkillDodgeB": 1,
+          "ignoreImmunityB": 1,
+          "conditionType": "passive",
+          "condition": "add",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "noAiFindAndHit",
+          "otherEffectImg": {
+            "soundUrl": "sound/earthquake"
+          },
+          "pointEffectImg": {
+            "soundUrl": "boomSound/bigBoom"
+          }
+        },
+        "firePossession": {
+          "name": "firePossession",
+          "cnName": "附身",
+          "noSkillDodgeB": 1,
+          "ignoreImmunityB": 1,
+          "iconUrl": "SkillIcon/possession_hero",
+          "iconUrl36": "SkillIcon/possession_hero_36",
+          "cd": 10,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "nearAttackTarget",
+          "conditionRange": 0,
+          "target": {
+            "value": "alertTarget",
+            "alert": "wePossession"
+          },
+          "addType": "instant",
+          "effectType": "firePossession",
+          "duration": 99999,
+          "range": 200,
+          "value": 0,
+          "mul": 2,
+          "secMul": 0,
+          "meEffectImg": {
+            "soundUrl": "skillEffect/possession_s"
+          },
+          "targetEffectImg": {
+            "value": "skillEffect/possession",
+            "con": "add",
+            "partType": "head"
+          },
+          "pointEffectImg": {
+            "value": "generalEffect/headTip",
+            "partType": "head"
+          },
+          "otherEffectImg": {
+            "value": "generalEffect/blackHoleHide",
+            "partType": "head,body",
+            "soundUrl": "sound/vehicleFit"
+          },
+          "description": "附身鼠标处的我方宠物，控制其攻击、技能，持续[duration]秒。6级之后可附身敌方首领。"
+        },
+        "madfireHiding": {
+          "name": "madfireHiding",
+          "cnName": "隐身",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cd": 15,
+          "iconUrl36": "SkillIcon/hiding_hero_36",
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "nearAttackTarget",
+          "conditionRange": 1000,
+          "target": "me",
+          "addType": "state",
+          "effectType": "hidingB_hugePosion",
+          "value": 1,
+          "mul": 1.6,
+          "duration": 7,
+          "meEffectImg": {
+            "value": "skillEffect/hiding_hero",
+            "soundUrl": "sound/hiding_hero",
+            "con": "add"
+          }
+        },
+        "madfireParalysis": {
+          "name": "madfireParalysis",
+          "cnName": "被敌人麻痹",
+          "conditionType": "passive",
+          "condition": "no",
+          "target": "me",
+          "addType": "state",
+          "effectType": "madfireParalysis",
+          "duration": 99999,
+          "stateEffectImg": {
+            "value": "skillEffect/paralysis_enemy",
+            "con": "add"
+          }
+        }
+      }
+    },
+    {
+      "name": "task",
+      "skills": {
+        "zomSkillBullet": {
+          "cnName": "闪电球",
+          "name": "zomSkillBullet",
+          "noMagneticB": 1,
+          "noBeClearB": 1,
+          "hurtRatio": 1,
+          "attackType": "holy",
+          "bulletLife": 20,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "bulletAngle": 180,
+          "bulletSpeed": 7,
+          "speedD": {
+            "random": 0.3
+          },
+          "penetrationGap": 1000,
+          "skillArr": "zomSkillBulletHit",
+          "flipX": 1,
+          "bulletImgUrl": {
+            "value": "skillEffect/paralysis_enemy_bullet",
+            "con": "add"
+          },
+          "hitImgUrl": {
+            "soundUrl": "sound/paralysis_enemy_hit"
+          }
+        },
+        "zomSkillBulletHit": {
+          "name": "zomSkillBulletHit",
+          "cnName": "闪电球减速",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "effectType": "moveSpeed",
+          "value": 0,
+          "mul": 0.3,
+          "duration": 3,
+          "stateEffectImg": {
+            "value": "skillEffect/paralysis_enemy",
+            "con": "add"
+          },
+          "description": "击中目标后降低其70%的移动速度，持续3秒。"
+        },
+        "madfireTeleport": {
+          "name": "madfireTeleport",
+          "cnName": "瞬移",
+          "iconUrl36": "SkillIcon/flash_pet_36",
+          "cd": 8,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "nearAttackTarget",
+          "conditionRange": 1000,
+          "target": "me",
+          "addType": "instant",
+          "effectType": "teleport",
+          "valueString": "attackTarget",
+          "pointEffectImg": {
+            "value": "generalEffect/vehicleFit",
+            "noFollowB": true,
+            "soundUrl": "sound/skillCopy_enemy",
+            "con": "add"
+          },
+          "meEffectImg": {
+            "value": "lightEffect/basinShow",
+            "soundUrl": "sound/teleport_enemy",
+            "con": "add"
+          },
+          "description": "瞬间移动到单位攻击目标的位置，不适用与远战单位。"
+        }
+      }
+    }
+  ]
+}

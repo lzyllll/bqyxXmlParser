@@ -1,0 +1,614 @@
+{
+  "father": {
+    "name": "spread",
+    "cnName": "外传",
+    "tipText": "完成任务后自动解锁下一个任务。",
+    "autoUnlockByLevelB": true,
+    "task": [
+      {
+        "name": "zomFire",
+        "cnName": "僵尸篇-火种",
+        "lv": 50,
+        "unlockLv": 50,
+        "uiShowTime": 999999,
+        "shortText": "在指定时间内活下来。",
+        "conditionText": "坚持 [time]",
+        "uiConditionText": "坚持 [time]",
+        "description": "一个不明飞行物在霞光上空发生了爆炸，它会给地球带来什么呢？",
+        "worldMapId": "XiaSha",
+        "levelId": "zomFire",
+        "growth": {
+          "task": [
+            {
+              "condition": {
+                "time": 110,
+                "timeType": "win",
+                "timeFirst": "剩余 "
+              },
+              "gift": "base;anniCoin;12"
+            },
+            {
+              "condition": {
+                "time": 140,
+                "timeType": "win",
+                "timeFirst": "剩余 "
+              },
+              "gift": [
+                "base;anniCoin;12",
+                "things;highArmsEchelonCard;5",
+                "things;highEquipEchelonCard;1"
+              ]
+            },
+            {
+              "condition": {
+                "time": 180,
+                "timeType": "win",
+                "timeFirst": "剩余 "
+              },
+              "gift": [
+                "base;anniCoin;12",
+                "things;highArmsEchelonCard;5",
+                "things;highEquipEchelonCard;5",
+                "things;demonSpreadCard;1"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "zomEnemy",
+        "cnName": "僵尸篇-天敌",
+        "lv": 50,
+        "unlockLv": 50,
+        "uiShowTime": 999999,
+        "conditionText": "剩余时间 [time][n]血滴 [nowNum]/[num]",
+        "uiConditionText": "在时间 [time] 之内收集血滴 [num]",
+        "description": "火种的躯体被击毙后，接下来它会找哪个宿主呢？",
+        "worldMapId": "BeiDou",
+        "levelId": "zomEnemy",
+        "growth": {
+          "task": [
+            {
+              "condition": {
+                "type": "collect",
+                "target": "hitDrop",
+                "targetId": "bloodDrop",
+                "value": 110,
+                "cumulativeType": "no",
+                "time": 100,
+                "timeType": "fail",
+                "timeFirst": "倒计时 "
+              },
+              "gift": "base;anniCoin;12"
+            },
+            {
+              "condition": {
+                "type": "collect",
+                "target": "hitDrop",
+                "targetId": "bloodDrop",
+                "value": 124,
+                "cumulativeType": "no",
+                "time": 80,
+                "timeType": "fail",
+                "timeFirst": "倒计时 "
+              },
+              "gift": [
+                "base;anniCoin;12",
+                "things;allBlackEquipCash;20",
+                "things;allBlackEquipCash;5"
+              ]
+            },
+            {
+              "condition": {
+                "type": "collect",
+                "target": "hitDrop",
+                "targetId": "bloodDrop",
+                "value": 124,
+                "cumulativeType": "no",
+                "time": 65,
+                "timeType": "fail",
+                "timeFirst": "倒计时 "
+              },
+              "gift": [
+                "base;anniCoin;12",
+                "things;allBlackCash;20",
+                "things;allBlackEquipCash;20",
+                "things;demonSpreadCard;1"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "zomControl",
+        "cnName": "僵尸篇-恶源",
+        "lv": 50,
+        "unlockLv": 50,
+        "uiShowTime": 999999,
+        "conditionText": "剩余时间 [time][n]血滴 [nowNum]/[num]",
+        "uiConditionText": "在时间 [time] 之内收集血滴 [num]",
+        "description": "人类和僵尸是天敌，那谁才是罪恶之源？",
+        "worldMapId": "XiFeng",
+        "levelId": "zomControl",
+        "growth": {
+          "task": [
+            {
+              "condition": {
+                "type": "collect",
+                "target": "hitDrop",
+                "targetId": "bloodDrop",
+                "value": 170,
+                "cumulativeType": "no",
+                "time": 130,
+                "timeType": "fail",
+                "timeFirst": "倒计时 "
+              },
+              "gift": "base;anniCoin;12"
+            },
+            {
+              "condition": {
+                "type": "collect",
+                "target": "hitDrop",
+                "targetId": "bloodDrop",
+                "value": 184,
+                "cumulativeType": "no",
+                "time": 90,
+                "timeType": "fail",
+                "timeFirst": "倒计时 "
+              },
+              "gift": [
+                "base;anniCoin;12",
+                "parts;huntParts_1;5",
+                "parts;acidicParts_1;1"
+              ]
+            },
+            {
+              "condition": {
+                "type": "collect",
+                "target": "hitDrop",
+                "targetId": "bloodDrop",
+                "value": 184,
+                "cumulativeType": "no",
+                "time": 70,
+                "timeType": "fail",
+                "timeFirst": "倒计时 "
+              },
+              "gift": [
+                "base;anniCoin;12",
+                "parts;huntParts_1;5",
+                "parts;acidicParts_1;5",
+                "things;demonSpreadCard;1"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "zomSkill",
+        "cnName": "僵尸篇-超能",
+        "lv": 50,
+        "unlockLv": 50,
+        "uiShowTime": 999999,
+        "conditionText": "剩余时间 [time][n]超能石 [nowNum]/[num]",
+        "uiConditionText": "在时间 [time] 之内收集超能石 [num]",
+        "description": "接下来，超能石将发挥它重要的作用。",
+        "worldMapId": "NanTang",
+        "levelId": "zomSkill",
+        "growth": {
+          "task": [
+            {
+              "condition": {
+                "type": "collect",
+                "target": "hitDrop",
+                "targetId": "skillStoneTask",
+                "value": 140,
+                "cumulativeType": "no",
+                "time": 200,
+                "timeType": "fail",
+                "timeFirst": "倒计时 "
+              },
+              "gift": "base;anniCoin;12"
+            },
+            {
+              "condition": {
+                "type": "collect",
+                "target": "hitDrop",
+                "targetId": "skillStoneTask",
+                "value": 152,
+                "cumulativeType": "no",
+                "time": 120,
+                "timeType": "fail",
+                "timeFirst": "倒计时 "
+              },
+              "gift": [
+                "base;anniCoin;12",
+                "base;wilderKey;8"
+              ]
+            },
+            {
+              "condition": {
+                "type": "collect",
+                "target": "hitDrop",
+                "targetId": "skillStoneTask",
+                "value": 152,
+                "cumulativeType": "no",
+                "time": 90,
+                "timeType": "fail",
+                "timeFirst": "倒计时 "
+              },
+              "gift": [
+                "base;anniCoin;12",
+                "base;wilderKey;10",
+                "things;demonSpreadCard;1"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "zomExcape",
+        "cnName": "僵尸篇-逃亡",
+        "lv": 50,
+        "unlockLv": 50,
+        "uiShowTime": 999999,
+        "shortText": "在指定时间内活下来。",
+        "conditionText": "坚持 [time]",
+        "uiConditionText": "坚持 [time]",
+        "description": "亚瑟将对失控的僵尸展开屠戮，你要在指定时间内活下来！",
+        "worldMapId": "NanTang",
+        "levelId": "zomExcape",
+        "growth": {
+          "task": [
+            {
+              "condition": {
+                "time": 100,
+                "timeType": "win",
+                "timeFirst": "剩余 "
+              },
+              "gift": "base;anniCoin;12"
+            },
+            {
+              "condition": {
+                "time": 150,
+                "timeType": "win",
+                "timeFirst": "剩余 "
+              },
+              "gift": [
+                "base;anniCoin;12",
+                "things;armsGemChest;10",
+                "things;equipGemChest;4"
+              ]
+            },
+            {
+              "condition": {
+                "time": 190,
+                "timeType": "win",
+                "timeFirst": "剩余 "
+              },
+              "gift": [
+                "base;anniCoin;12",
+                "things;armsGemChest;10",
+                "things;equipGemChest;10",
+                "things;demonSpreadCard;1"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "zomNewborn",
+        "cnName": "僵尸篇-新生",
+        "lv": 50,
+        "unlockLv": 50,
+        "shortText": "完成剧情流程。",
+        "uiConditionText": "完成剧情流程。",
+        "description": "被抓走的僵尸，最后命运会怎么样？",
+        "worldMapId": "YanJiuA",
+        "levelId": "zomNewborn",
+        "gift": [
+          "base;anniCoin;12",
+          "things;partsChest84;1"
+        ]
+      },
+      {
+        "name": "madSame",
+        "cnName": "狂人篇-计划",
+        "lv": 50,
+        "unlockLv": 50,
+        "shortText": "击败天鹰特种兵首领。",
+        "uiConditionText": "击败天鹰特种兵首领。",
+        "description": "狂人的计划是什么？",
+        "worldMapId": "ShangSha",
+        "levelId": "madSame",
+        "growth": {
+          "task": [
+            {
+              "enemyLifeMul": 0.6,
+              "enemyDpsMul": 0.6,
+              "gift": "base;anniCoin;12"
+            },
+            {
+              "enemyLifeMul": 0.9,
+              "enemyDpsMul": 0.9,
+              "gift": [
+                "base;anniCoin;12",
+                "things;zodiacCash;5"
+              ]
+            },
+            {
+              "enemyLifeMul": 1.3,
+              "enemyDpsMul": 1.2,
+              "gift": [
+                "base;anniCoin;12",
+                "things;zodiacCash;10"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "madDefect",
+        "cnName": "狂人篇-缺陷",
+        "lv": 96,
+        "unlockLv": 96,
+        "openD": {
+          "tk": "Hospital1_plot"
+        },
+        "shortText": "完成剧情流程。",
+        "uiConditionText": "完成剧情流程。",
+        "description": "狂人和鬼爵的灭世计划屡屡遭到爆枪小队的破坏。更令狂人感到耻辱的是，他在寒光末路首次登场，就被爆枪小队大败（故事发生在95级主线任务“战争狂人”）。之后狂人狼狈地逃回了实验室，而这里等待他的却是另一个更巨大的打击。",
+        "worldMapId": "HospitalUnder",
+        "levelId": "madDefect",
+        "gift": [
+          "base;anniCoin;10",
+          "things;skyArch;5"
+        ]
+      },
+      {
+        "name": "madFly1",
+        "cnName": "狂人篇-宝石一",
+        "lv": 96,
+        "unlockLv": 96,
+        "shortText": "收集极源宝石",
+        "conditionText": "丢失宝石不超过 [num]个",
+        "uiConditionText": "丢失宝石不超过 [num]个",
+        "description": "为摆脱自己的克隆之身，狂人要制造一个新宿主——战神，而制造战神的材料“极源宝石”就漂浮在寒光郊外。此刻，狂人正驾驶着判决者，向着寒光市飞驰而去。极源宝石极为稀有，请尽可能收集全部的宝石。如果丢失的宝石超过指定数量，任务将失败。",
+        "worldMapId": "HanGuangSub",
+        "levelId": "madFly1",
+        "condition": {
+          "type": "value",
+          "value": 1
+        },
+        "growth": {
+          "task": [
+            {
+              "condition": {
+                "type": "value",
+                "value": 30
+              },
+              "gift": "base;anniCoin;12"
+            },
+            {
+              "condition": {
+                "type": "value",
+                "value": 10
+              },
+              "gift": [
+                "base;anniCoin;12",
+                "things;doubleArmsCard;3"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "madFly2",
+        "cnName": "狂人篇-宝石二",
+        "lv": 97,
+        "unlockLv": 97,
+        "shortText": "收集极源宝石",
+        "conditionText": "丢失宝石不超过 [num]个",
+        "uiConditionText": "丢失宝石不超过 [num]个",
+        "description": "收集极源宝石，如果丢失的宝石超过指定数量，任务将失败。",
+        "worldMapId": "HanGuangSub",
+        "levelId": "madFly2",
+        "condition": {
+          "type": "value",
+          "value": 1
+        },
+        "growth": {
+          "task": [
+            {
+              "condition": {
+                "type": "value",
+                "value": 30
+              },
+              "gift": "base;anniCoin;12"
+            },
+            {
+              "condition": {
+                "type": "value",
+                "value": 10
+              },
+              "gift": [
+                "base;anniCoin;12",
+                "things;demStone;5"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "madFly3",
+        "cnName": "狂人篇-宝石三",
+        "lv": 98,
+        "unlockLv": 98,
+        "shortText": "收集极源宝石",
+        "conditionText": "丢失宝石不超过 [num]个",
+        "uiConditionText": "丢失宝石不超过 [num]个",
+        "description": "收集极源宝石，如果丢失的宝石超过指定数量，任务将失败。",
+        "worldMapId": "HanGuangSub",
+        "levelId": "madFly3",
+        "condition": {
+          "type": "value",
+          "value": 1
+        },
+        "growth": {
+          "task": [
+            {
+              "condition": {
+                "type": "value",
+                "value": 30
+              },
+              "gift": "base;anniCoin;12"
+            },
+            {
+              "condition": {
+                "type": "value",
+                "value": 10
+              },
+              "gift": [
+                "base;anniCoin;12",
+                "things;nuclearStone;3"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "madFly4",
+        "cnName": "狂人篇-抢夺",
+        "lv": 99,
+        "unlockLv": 99,
+        "openD": {
+          "tk": "leavePartner,leavePartner_WenJie"
+        },
+        "shortText": "击败人类飞行器",
+        "conditionText": "击败人类飞行器",
+        "uiConditionText": "击败人类飞行器",
+        "description": "狂人在寒光市抢夺宝石，而另一边，爆枪小队已经把实验室搅得天翻地覆。鬼爵为了对付爆枪小队，决定派出末日坦克给予主角致命一击。如果主角殒命，那么狂人也将灭亡。最终结果到底会如何呢？",
+        "worldMapId": "HanGuangSub",
+        "levelId": "madFly4",
+        "growth": {
+          "task": [
+            {
+              "enemyLifeMul": 0.6,
+              "enemyDpsMul": 0.7,
+              "gift": "base;anniCoin;12"
+            },
+            {
+              "enemyLifeMul": 1,
+              "enemyDpsMul": 1,
+              "gift": [
+                "base;anniCoin;12",
+                "things;doubleEquipCard;3"
+              ]
+            },
+            {
+              "enemyLifeMul": 1.6,
+              "enemyDpsMul": 1,
+              "gift": [
+                "base;anniCoin;12",
+                "things;doubleEquipCard;5",
+                "things;demonSpreadCard;1"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "madBossShow",
+        "cnName": "狂人篇-初代战神",
+        "lv": 99,
+        "unlockLv": 99,
+        "conditionText": null,
+        "uiConditionText": "操控战神通关",
+        "description": "狂人利用造梦机成功地骗过了主角。在主线任务“弥天大谎”之后，主角已经受到蛊惑，离开了战斧高地，离开了爆枪小队。而实验室这里，经过铁犬的不懈努力，战神初代机终于完成了！目前战神只能被远程遥控，但狂人已经迫不及待要试验它的威力了。",
+        "worldMapId": "Hospital5",
+        "levelId": "madBossShow",
+        "growth": {
+          "task": [
+            {
+              "enemyLifeMul": 0.8,
+              "enemyDpsMul": 0.5,
+              "gift": "base;anniCoin;12"
+            },
+            {
+              "enemyLifeMul": 1,
+              "enemyDpsMul": 1,
+              "gift": [
+                "base;anniCoin;12",
+                "things;madheart;3"
+              ]
+            },
+            {
+              "enemyLifeMul": 1.6,
+              "enemyDpsMul": 1,
+              "gift": [
+                "base;anniCoin;12",
+                "things;madheart;5",
+                "things;demonSpreadCard;1"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "madBossPhone",
+        "cnName": "狂人篇-通讯器",
+        "lv": 99,
+        "unlockLv": 99,
+        "conditionText": null,
+        "uiConditionText": "操控战神通关",
+        "description": "在主角离开战斧高地之际，狂人命铁犬偷走主角的通讯器，他有何目的？",
+        "worldMapId": "Hospital1",
+        "levelId": "madBossPhone",
+        "growth": {
+          "task": [
+            {
+              "enemyLifeMul": 0.8,
+              "enemyDpsMul": 0.5,
+              "gift": "base;anniCoin;12"
+            },
+            {
+              "enemyLifeMul": 1,
+              "enemyDpsMul": 1,
+              "gift": [
+                "base;anniCoin;12",
+                "things;arenaChest;3"
+              ]
+            },
+            {
+              "enemyLifeMul": 1.6,
+              "enemyDpsMul": 1,
+              "gift": [
+                "base;anniCoin;12",
+                "things;arenaChest;5",
+                "things;demonSpreadCard;1"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "madWarriorSec",
+        "cnName": "狂人篇-主角",
+        "lv": 99,
+        "unlockLv": 99,
+        "uiShowTime": 999999,
+        "openD": {
+          "tk": "captureUpland"
+        },
+        "shortText": "击败狂人机器X",
+        "uiConditionText": "击败狂人机器X",
+        "description": "主线任务“败露”中所发生的一切，其实就是狂人和铁犬的一次荒诞的演出。但重头戏还在后头……那之后，狂人将正式成为“主角”。",
+        "worldMapId": "BaiSha",
+        "levelId": "madWarriorSec",
+        "gift": [
+          "base;anniCoin;12",
+          "things;demBall;8"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="僵尸王">	
+		<bullet cnName="僵尸王-地滚弹">
+			<name>ZombieKing_floor</name>
+			<cnName>僵尸王地滚弹</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.35</attackDelay>
+			<bulletAngle>200</bulletAngle>
+			<bulletAngleRange>60</bulletAngleRange>
+			<bulletNum>3</bulletNum>				
+			<shootNum>1</shootNum>								
+			<shootAngle>30</shootAngle>					
+				
+			<bounceD floor="1000" />	
+				
+			<shootPoint>-57,-50</shootPoint>
+			<bulletSpeed>20</bulletSpeed>
+			<gravity>1</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">ZombieKing/bullet_floor</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/smallBoom">boomEffect/boom1</hitImgUrl>
+			<hitFloorImgUrl soundUrl="ZombieKing/hitFloor2" raNum="30">bulletHitEffect/smoke_small</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="45">bulletHitEffect/spark_motion</smokeImgUrl>
+		</bullet>
+		<bullet cnName="僵尸王-背部火炮">
+			<name>ZombieKing_gun</name>
+			<cnName>僵尸王-背部火炮</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.35</attackDelay>
+			<bulletAngle>200</bulletAngle>
+			<bulletAngleRange>20</bulletAngleRange>
+			<bulletNum>3</bulletNum>				
+			<shootNum>3</shootNum>					
+			<shootGap>0.2</shootGap>					
+			<shootAngle>30</shootAngle>					
+				
+			<bounceD floor="999" />	
+				
+			<shootPoint>-45,-106</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<gravity>1</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">ZombieKing/bullet_floor</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/smallBoom">boomEffect/boom1</hitImgUrl>
+			<hitFloorImgUrl soundUrl="ZombieKing/hitFloor2" raNum="30">bulletHitEffect/smoke_small</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="45">bulletHitEffect/spark_motion</smokeImgUrl>
+		</bullet>
+		
+		
+		
+		<bullet cnName="僵尸王-尸宠-地滚弹">
+			<name>PetZombieKing_floor</name>
+			<cnName>僵尸王地滚弹</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.35</attackDelay>
+			<bulletAngle>200</bulletAngle>
+			<bulletAngleRange>60</bulletAngleRange>
+			<bulletNum>3</bulletNum>				
+			<shootNum>1</shootNum>								
+			<shootAngle>30</shootAngle>					
+				
+			<bounceD floor="1000" />	
+				
+			<shootPoint>-57,-50</shootPoint>
+			<bulletSpeed>20</bulletSpeed>
+			<gravity>1</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">PetZombieKing/bullet_floor</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/smallBoom">boomEffect/boom1</hitImgUrl>
+			<hitFloorImgUrl soundUrl="PetZombieKing/hitFloor2" raNum="30">bulletHitEffect/smoke_small</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="45">bulletHitEffect/spark_motion</smokeImgUrl>
+		</bullet>
+		<bullet cnName="僵尸王-尸宠-背部火炮">
+			<name>PetZombieKing_gun</name>
+			<cnName>僵尸王-尸宠-背部火炮</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.35</attackDelay>
+			<bulletAngle>200</bulletAngle>
+			<bulletAngleRange>20</bulletAngleRange>
+			<bulletNum>3</bulletNum>				
+			<shootNum>3</shootNum>					
+			<shootGap>0.2</shootGap>					
+			<shootAngle>30</shootAngle>					
+				
+			<bounceD floor="999" />	
+				
+			<shootPoint>-45,-106</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<gravity>0.3</gravity>
+			<followD value="0.6" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">PetZombieKing/bullet_floor</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/smallBoom">boomEffect/boom1</hitImgUrl>
+			<hitFloorImgUrl soundUrl="PetZombieKing/hitFloor2" raNum="30">bulletHitEffect/smoke_small</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="45">bulletHitEffect/spark_motion</smokeImgUrl>
+		</bullet>
+		
+		<bullet cnName="钢铁僵尸王-尸宠-地滚弹">
+			<name>PetIronZombieKing_floor</name>
+			<cnName>僵尸王地滚弹</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.35</attackDelay>
+			<bulletAngle>200</bulletAngle>
+			<bulletAngleRange>60</bulletAngleRange>
+			<bulletNum>3</bulletNum>				
+			<shootNum>1</shootNum>									
+			<shootAngle>30</shootAngle>					
+				
+			<bounceD floor="1000" />	
+				
+			<shootPoint>-57,-50</shootPoint>
+			<bulletSpeed>20</bulletSpeed>
+			<gravity>1</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">PetIronZombieKing/bullet_floor</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/smallBoom">boomEffect/boom1</hitImgUrl>
+			<hitFloorImgUrl soundUrl="PetIronZombieKing/hitFloor2" raNum="30">bulletHitEffect/smoke_small</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="45">bulletHitEffect/spark_motion</smokeImgUrl>
+		</bullet>
+		<bullet cnName="钢铁僵尸王-尸宠-背部火炮">
+			<name>PetIronZombieKing_gun</name>
+			<cnName>钢铁僵尸王-尸宠-背部火炮</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.35</attackDelay>
+			<bulletAngle>200</bulletAngle>
+			<bulletAngleRange>20</bulletAngleRange>
+			<bulletNum>3</bulletNum>				
+			<shootNum>3</shootNum>					
+			<shootGap>0.2</shootGap>					
+			<shootAngle>30</shootAngle>					
+				
+			<bounceD floor="999" />	
+				
+			<shootPoint>-45,-106</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<gravity>0.3</gravity>
+			<followD value="0.6" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">PetIronZombieKing/bullet_floor</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/smallBoom">boomEffect/boom1</hitImgUrl>
+			<hitFloorImgUrl soundUrl="PetIronZombieKing/hitFloor2" raNum="30">bulletHitEffect/smoke_small</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="45">bulletHitEffect/spark_motion</smokeImgUrl>
+		</bullet>
+	</father>
+	
+	</data>

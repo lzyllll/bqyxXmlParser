@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="rocket" cnName="火炮-特殊">
+		<bullet index="44" cnName="弦音" name="pianoGun" kind="wave" color="black" composeLv="95" chipB="1" chipNum="150" dropLevelArr="999">
+			<name>pianoGun</name>
+			<cnName>弦音</cnName>
+			<recordD piano="123112313453455654315654312+512+51" />
+			
+			<capacity>40</capacity>
+			<attackGap>0.5</attackGap>
+			<reloadGap>2</reloadGap>
+			<shakeAngle>7</shakeAngle>
+			<bulletWidth>30</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<gunNum>1</gunNum>
+			
+			
+			<armsArmMul>0.6</armsArmMul>
+			<upValue>15</upValue>
+			<upValue>0</upValue>
+			<shootShakeAngle>45</shootShakeAngle>
+			<shootRecoil>4</shootRecoil>
+			<screenShakeValue>8</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>3</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>2</dpsMul>
+			<uiDpsMul>2</uiDpsMul>
+			
+				
+			<bulletSpeed>30</bulletSpeed>
+			<speedD selfVra="0.5" />
+			
+			<twoShootPro>0</twoShootPro>
+			<penetrationGap>1000</penetrationGap>
+			<bounceD floor="0" body="0" />	
+			<critD mul="0" pro="0" />
+			<skillArr>Hit_Paralysis_ArmsSkill,Hit_SlowMove_ArmsSkill</skillArr>
+			<godSkillArr>Hit_crazy_godArmsSkill,pianoGunSkill</godSkillArr>
+			
+			<iconUrl>specialGun/pianoGunIcon</iconUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl con="add" raNum="30" urlRandomValue="3">specialGun/pianoGunBullet</bulletImgUrl>
+			
+			<hitImgUrl soundUrl="">specialGun/christmasGunBoom</hitImgUrl>
+			<hitFloorImgUrl>no</hitFloorImgUrl>
+			<fireImgType />
+			
+			<bodyImgRange>specialGun/pianoGun</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>纪念币兑换</description>
+		</bullet>
+		
+	</father>
+	</data>

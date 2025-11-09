@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicle" cnName="战车body">
+		<body index="0" name="虚炎狼坐骑" shell="compound">
+			
+			<name>FireWolfCar</name>
+			<cnName>虚炎狼坐骑</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/vehicle/FireWolfCar.swf</swfUrl>
+			
+			<imgClass>CarImage</imgClass>
+			<imgType>normal</imgType>
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			
+			<imgArr>
+				stand,move,die1
+				,sprintAttack
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+			</imgArr>
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			<lifeBarExtraHeight>-120</lifeBarExtraHeight>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>9</maxVx>
+			
+			<attackAIClass />
+			<keyClass>VehicleBodyKey</keyClass>
+			<bulletLauncherClass>VehicleBulletLauncher</bulletLauncherClass>
+			<extraAIClassLabel>FireWolf_AIExtra</extraAIClassLabel>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>0.39</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit2">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown</imgLabel>
+					<hurtRatio>0.39</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/body_hit">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown__</imgLabel>
+					<hurtRatio>0.39</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/body_hit">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>sprintAttack</imgLabel>
+					<hurtRatio>1.6</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>3</meBack>
+					<hitImgUrl con="add" soundUrl="sound/body_hit" raNum="30">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+			</hurtArr>
+		</body>
+	</father>
+</data>

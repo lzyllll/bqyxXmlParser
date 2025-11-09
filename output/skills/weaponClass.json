@@ -1,0 +1,350 @@
+{
+  "father": {
+    "name": "weapon",
+    "cnName": "兵器",
+    "equip": [
+      {
+        "lv": 1,
+        "hurtMul": 5,
+        "baseLabel": "butcherBlade",
+        "hitNum": 2,
+        "weaponType": "blade",
+        "cnName": "屠夫",
+        "armsType": "sniper",
+        "anger": 38,
+        "description": ""
+      },
+      {
+        "lv": 2,
+        "hurtMul": 10,
+        "baseLabel": "butcherBlade"
+      },
+      {
+        "lv": 3,
+        "hurtMul": 15,
+        "baseLabel": "butcherBlade"
+      },
+      {
+        "lv": 4,
+        "hurtMul": 19,
+        "baseLabel": "butcherBlade"
+      },
+      {
+        "lv": 5,
+        "hurtMul": 23,
+        "baseLabel": "butcherBlade"
+      },
+      {
+        "lv": 6,
+        "hurtMul": 27,
+        "baseLabel": "butcherBlade"
+      },
+      {
+        "lv": 7,
+        "hurtMul": 35,
+        "baseLabel": "butcherBlade"
+      },
+      {
+        "lv": 8,
+        "hurtMul": 54,
+        "baseLabel": "butcherBlade",
+        "skillArr": "weaponEmp",
+        "anger": 33
+      },
+      {
+        "lv": 9,
+        "hurtMul": 75,
+        "baseLabel": "butcherBlade",
+        "skillArr": "weaponEmp,cutLife",
+        "anger": 33,
+        "iconLabel": "weapon/butcherBlade_4_icon",
+        "weaponUrl": "weapon/butcherBlade_4"
+      },
+      {
+        "lv": 1,
+        "hurtMul": 2.5,
+        "baseLabel": "moonDagger",
+        "hitNum": 2,
+        "weaponType": "dagger",
+        "cnName": "月刺",
+        "armsType": "rifle",
+        "anger": 12
+      },
+      {
+        "lv": 2,
+        "hurtMul": 5,
+        "baseLabel": "moonDagger"
+      },
+      {
+        "lv": 3,
+        "hurtMul": 7.5,
+        "baseLabel": "moonDagger"
+      },
+      {
+        "lv": 4,
+        "hurtMul": 9.5,
+        "baseLabel": "moonDagger"
+      },
+      {
+        "lv": 5,
+        "hurtMul": 11.5,
+        "baseLabel": "moonDagger"
+      },
+      {
+        "lv": 6,
+        "hurtMul": 13.5,
+        "baseLabel": "moonDagger"
+      },
+      {
+        "lv": 7,
+        "hurtMul": 19,
+        "baseLabel": "moonDagger"
+      },
+      {
+        "lv": 8,
+        "hurtMul": 27,
+        "baseLabel": "moonDagger",
+        "skillArr": "weaponEmp"
+      },
+      {
+        "lv": 9,
+        "hurtMul": 35,
+        "baseLabel": "moonDagger",
+        "skillArr": "weaponEmp,cutLife",
+        "iconLabel": "weapon/moonDagger_4_icon",
+        "weaponUrl": "weapon/moonDagger_4"
+      },
+      {
+        "lv": 1,
+        "hurtMul": 2.5,
+        "baseLabel": "wolongStick",
+        "hitNum": 2,
+        "weaponType": "stick",
+        "cnName": "沃龙牌棍棒",
+        "armsType": "rocket",
+        "anger": 28
+      },
+      {
+        "lv": 2,
+        "hurtMul": 5,
+        "baseLabel": "wolongStick"
+      },
+      {
+        "lv": 3,
+        "hurtMul": 7.5,
+        "baseLabel": "wolongStick"
+      },
+      {
+        "lv": 4,
+        "hurtMul": 9.5,
+        "baseLabel": "wolongStick"
+      },
+      {
+        "lv": 5,
+        "hurtMul": 11.5,
+        "baseLabel": "wolongStick"
+      },
+      {
+        "lv": 6,
+        "hurtMul": 13,
+        "baseLabel": "wolongStick"
+      },
+      {
+        "lv": 7,
+        "hurtMul": 20,
+        "baseLabel": "wolongStick"
+      },
+      {
+        "lv": 8,
+        "hurtMul": 29,
+        "baseLabel": "wolongStick",
+        "skillArr": "weaponEmp"
+      },
+      {
+        "lv": 9,
+        "hurtMul": 40,
+        "baseLabel": "wolongStick",
+        "skillArr": "weaponEmp,cutLife",
+        "iconLabel": "weapon/wolongStick_4_icon",
+        "weaponUrl": "weapon/wolongStick_4"
+      },
+      {
+        "rareB": true,
+        "lv": 1,
+        "hurtMul": 27,
+        "baseLabel": "saberDarts",
+        "proAddLv": 3,
+        "hitNum": 2,
+        "weaponType": "darts",
+        "cnName": "剑齿镖",
+        "armsType": "pistol",
+        "anger": 25,
+        "upgradeNum": 3,
+        "description": "[n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}     [n]秘境“异齿虎”     [n]成就“关卡>秘境”     [n]商店购买"
+      },
+      {
+        "rareB": true,
+        "lv": 2,
+        "hurtMul": 48,
+        "baseLabel": "saberDarts",
+        "proAddLv": 4
+      },
+      {
+        "rareB": true,
+        "lv": 3,
+        "hurtMul": 57,
+        "baseLabel": "saberDarts",
+        "proAddLv": 4,
+        "iconLabel": "weapon/saberDarts_icon_2",
+        "weaponUrl": "weapon/saberDarts_2"
+      },
+      {
+        "rareB": true,
+        "lv": 4,
+        "hurtMul": 84,
+        "baseLabel": "saberDarts",
+        "proAddLv": 4,
+        "iconLabel": "weapon/saberDarts_icon_3",
+        "weaponUrl": "weapon/saberDarts_3",
+        "skillArr": "weaponEmp"
+      },
+      {
+        "rareB": true,
+        "lv": 1,
+        "hurtMul": 12,
+        "skillArr": "sprintSwordHit",
+        "baseLabel": "sprintSword",
+        "proAddLv": 3,
+        "hitNum": 2,
+        "weaponType": "sword",
+        "cnName": "凯撒",
+        "armsType": "sniper",
+        "anger": 25,
+        "upgradeNum": 3,
+        "description": "[n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}     [n]秘境“虚晶蝎”     [n]成就“关卡>秘境”     [n]商店购买"
+      },
+      {
+        "rareB": true,
+        "lv": 2,
+        "hurtMul": 23,
+        "skillArr": "sprintSwordHit",
+        "baseLabel": "sprintSword",
+        "proAddLv": 4
+      },
+      {
+        "rareB": true,
+        "lv": 3,
+        "hurtMul": 25,
+        "skillArr": "sprintSwordHit",
+        "baseLabel": "sprintSword",
+        "proAddLv": 4,
+        "iconLabel": "weapon/sprintSword_2_icon",
+        "weaponUrl": "weapon/sprintSword_2"
+      },
+      {
+        "rareB": true,
+        "lv": 4,
+        "hurtMul": 35,
+        "skillArr": "sprintSwordHit,weaponEmp",
+        "baseLabel": "sprintSword",
+        "proAddLv": 4,
+        "iconLabel": "weapon/sprintSword_3_icon",
+        "weaponUrl": "weapon/sprintSword_3"
+      },
+      {
+        "rareB": true,
+        "lv": 5,
+        "hurtMul": 48,
+        "skillArr": "sprintSwordHit,weaponEmp,cutLife",
+        "baseLabel": "sprintSword",
+        "proAddLv": 4,
+        "iconLabel": "weapon/sprintSword_4_icon",
+        "weaponUrl": "weapon/sprintSword_4"
+      },
+      {
+        "rareB": true,
+        "lv": 1,
+        "hurtMul": 13,
+        "composeMustNum": 70,
+        "skillArr": "",
+        "baseLabel": "sickleScythe",
+        "proAddLv": 3,
+        "hitNum": 8,
+        "weaponType": "sickle",
+        "cnName": "死神",
+        "armsType": "flamer",
+        "anger": 3,
+        "hitAnger": 2,
+        "upgradeNum": 3,
+        "description": "[n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}     [n]秘境“血锯挖掘者”     [n]商店购买"
+      },
+      {
+        "rareB": true,
+        "lv": 2,
+        "hurtMul": 27,
+        "skillArr": "",
+        "baseLabel": "sickleScythe",
+        "proAddLv": 4
+      },
+      {
+        "rareB": true,
+        "lv": 3,
+        "hurtMul": 39,
+        "skillArr": "",
+        "baseLabel": "sickleScythe",
+        "proAddLv": 4,
+        "iconLabel": "weapon/sickleScythe_2_icon",
+        "weaponUrl": "weapon/sickleScythe_2"
+      },
+      {
+        "rareB": true,
+        "lv": 4,
+        "hurtMul": 57,
+        "skillArr": "weaponEmp",
+        "baseLabel": "sickleScythe",
+        "proAddLv": 4,
+        "iconLabel": "weapon/sickleScythe_3_icon",
+        "weaponUrl": "weapon/sickleScythe_3"
+      },
+      {
+        "cnName": "黄金铁锹",
+        "baseLabel": "goldSpade",
+        "skillArr": "goldSpadeSkill",
+        "iconLabel": "weapon/goldSpade_icon_1",
+        "life": 12,
+        "rareB": true,
+        "lv": 1,
+        "hurtMul": 25,
+        "proAddLv": 6,
+        "weaponType": "spade",
+        "armsType": "shotgun",
+        "anger": 50,
+        "angerAddMul": 3.3,
+        "layerIndex": 1,
+        "description": "[n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}     [n]活跃度礼包"
+      },
+      {
+        "rareB": true,
+        "lv": 1,
+        "hurtMul": 0.0001,
+        "baseLabel": "miningSpade",
+        "weaponType": "spade",
+        "cnName": "挖矿铁锹",
+        "armsType": "sniper",
+        "anger": 0,
+        "layerIndex": 1
+      },
+      {
+        "rareB": true,
+        "lv": 1,
+        "hurtMul": 0.0001,
+        "baseLabel": "miningShovels",
+        "weaponType": "shovels",
+        "cnName": "挖矿铁铲",
+        "armsType": "sniper",
+        "anger": 0,
+        "layerIndex": 1
+      }
+    ]
+  }
+}

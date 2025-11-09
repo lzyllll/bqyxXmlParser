@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="petBodySkill" cnName="屠刀僵尸">
+		<skill index="0" name="远视">
+			<name>hyperopia_pet</name>
+			<cnName>远视</cnName><ignoreImmunityB>1</ignoreImmunityB>
+			<iconUrl>SkillIcon/hyperopia_hero</iconUrl>
+			
+			<changeText>每隔100码增加：[mul]</changeText>
+			
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>0.05</mul>
+			<range>100</range>
+			
+			<obj>"type":"hyperopia","exceptSkillB":true</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>距离目标越远伤害越大，大于[range]码开始加成，每隔100码增加[mul]的伤害，最大增加100%。</description>
+			
+			<growth>
+				<skill><mul>0.07</mul></skill>
+				<skill><mul>0.11</mul></skill>
+				<skill><mul>0.15</mul></skill>
+				<skill><mul>0.19</mul></skill>
+				<skill><mul>0.23</mul></skill>
+				<skill><mul>0.27</mul></skill>
+				<skill><mul>0.31</mul></skill>
+				<skill><mul>0.35</mul></skill>
+				<skill><mul>0.38</mul></skill>
+			</growth>
+		</skill>
+	</father>
+	</data>

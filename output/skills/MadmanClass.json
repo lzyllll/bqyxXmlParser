@@ -1,0 +1,32 @@
+{
+  "father": {
+    "name": "enemy",
+    "cnName": "敌方",
+    "body": {
+      "index": 0,
+      "name": "Madman",
+      "shell": "normal",
+      "cnName": "战争狂人",
+      "raceType": "human",
+      "movieLink": "Striker",
+      "swfUrl": "swf/hero/Madman266.swf",
+      "showLevel": 999,
+      "headIconUrl": "IconGather/Madman",
+      "hitRect": "-12, -90, 24, 90",
+      "squatHitRect": "-12,-50,24,50",
+      "hurtRectArr": [
+        "-12,-35,24,35",
+        "-12, -70, 24, 70",
+        "-12, -40, 24, 40"
+      ],
+      "maxVx": 11,
+      "squatMaxVx": 5,
+      "armsNumber": 2,
+      "randomArmsRange": "meltFlamer",
+      "skillArr": null,
+      "bossSkillArr": "pointBoom_enemy,selfBurn_enemy,imploding_enemy,sweep_shell,UnderRos_AddMove_Battle,crazy_enemy",
+      "bossSkillArrCn": null,
+      "extraDropArmsB": 1
+    }
+  }
+}

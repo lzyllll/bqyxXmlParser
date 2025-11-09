@@ -1,0 +1,5529 @@
+{
+  "father": {
+    "name": "normal",
+    "gather": [
+      {
+        "name": "幽灵谷关卡",
+        "level": [
+          {
+            "name": "YouLing_mystery",
+            "info": {
+              "enemyLv": 33
+            },
+            "sceneLabel": "YouLing",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "unit": {
+                    "cnName": "鬼目游尸",
+                    "num": 6
+                  }
+                },
+                {
+                  "id": "enemy2",
+                  "unit": {
+                    "cnName": "冥刃游尸",
+                    "num": 6
+                  }
+                },
+                {
+                  "id": "enemy3",
+                  "unit": {
+                    "cnName": "鬼目射手",
+                    "num": 5
+                  }
+                },
+                {
+                  "id": "enemy4",
+                  "unit": [
+                    {
+                      "cnName": "鬼目游尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy5",
+                  "unit": {
+                    "cnName": "冥刃游尸",
+                    "unitType": "boss"
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1392,1200,372,100",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "3740,708,78,163",
+                  "id": "r_over"
+                },
+                {
+                  "value": "553,358,652,110",
+                  "id": "r1"
+                },
+                {
+                  "value": "1517,418,652,110",
+                  "id": "r2"
+                },
+                {
+                  "value": "2519,534,652,110",
+                  "id": "r3"
+                },
+                {
+                  "value": "842,618,98,64",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "2632,724,98,64",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_2",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_4",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy5; r1",
+                      "createUnit:enemy5; r2",
+                      "createUnit:enemy5; r3"
+                    ]
+                  },
+                  {
+                    "id": "e_win",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "YouLing_2",
+            "info": {
+              "enemyLv": 33
+            },
+            "sceneLabel": "YouLing",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "unit": {
+                    "cnName": "鬼目游尸",
+                    "num": 6
+                  }
+                },
+                {
+                  "id": "enemy2",
+                  "unit": {
+                    "cnName": "冥刃游尸",
+                    "num": 6
+                  }
+                },
+                {
+                  "id": "enemy3",
+                  "unit": {
+                    "cnName": "鬼目射手",
+                    "num": 5
+                  }
+                },
+                {
+                  "id": "enemy4",
+                  "unit": [
+                    {
+                      "cnName": "鬼目游尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy5",
+                  "unit": {
+                    "cnName": "冥刃游尸",
+                    "unitType": "boss"
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1392,1200,372,100",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "3740,708,78,163",
+                  "id": "r_over"
+                },
+                {
+                  "value": "553,358,652,110",
+                  "id": "r1"
+                },
+                {
+                  "value": "1517,418,652,110",
+                  "id": "r2"
+                },
+                {
+                  "value": "2519,534,652,110",
+                  "id": "r3"
+                },
+                {
+                  "value": "842,618,98,64",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "2632,724,98,64",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_2",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_4",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy5; r1",
+                      "createUnit:enemy5; r2",
+                      "createUnit:enemy5; r3"
+                    ]
+                  },
+                  {
+                    "id": "e_win",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 0.5
+                    },
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "YouLing_king",
+            "info": {
+              "enemyLv": 38
+            },
+            "sceneLabel": "YouLing",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "unit": {
+                    "cnName": "鬼目游尸",
+                    "num": 6
+                  }
+                },
+                {
+                  "id": "enemy2",
+                  "unit": {
+                    "cnName": "冥刃游尸",
+                    "num": 6
+                  }
+                },
+                {
+                  "id": "enemy3",
+                  "unit": {
+                    "cnName": "鬼目射手",
+                    "num": 5
+                  }
+                },
+                {
+                  "id": "enemy4",
+                  "unit": [
+                    {
+                      "cnName": "鬼目游尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy5",
+                  "unit": {
+                    "cnName": "游尸王",
+                    "unitType": "boss"
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1392,1200,372,100",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "3740,708,78,163",
+                  "id": "r_over"
+                },
+                {
+                  "value": "553,358,652,110",
+                  "id": "r1"
+                },
+                {
+                  "value": "1517,418,652,110",
+                  "id": "r2"
+                },
+                {
+                  "value": "2519,534,652,110",
+                  "id": "r3"
+                },
+                {
+                  "value": "842,618,98,64",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "2632,724,98,64",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_2",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_4",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy5; r1",
+                      "createUnit:enemy5; r2",
+                      "createUnit:enemy5; r3"
+                    ]
+                  },
+                  {
+                    "id": "e_win",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "worldMap:levelName; YouLing:YouLing_3",
+                      "task:now; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "YouLing_3",
+            "info": {
+              "enemyLv": 38
+            },
+            "sceneLabel": "YouLing",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "unit": {
+                    "cnName": "鬼目游尸",
+                    "num": 6
+                  }
+                },
+                {
+                  "id": "enemy2",
+                  "unit": {
+                    "cnName": "冥刃游尸",
+                    "num": 6
+                  }
+                },
+                {
+                  "id": "enemy3",
+                  "unit": {
+                    "cnName": "鬼目射手",
+                    "num": 5
+                  }
+                },
+                {
+                  "id": "enemy4",
+                  "unit": [
+                    {
+                      "cnName": "鬼目游尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy5",
+                  "unit": {
+                    "cnName": "游尸王",
+                    "unitType": "boss"
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1392,1200,372,100",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "3740,708,78,163",
+                  "id": "r_over"
+                },
+                {
+                  "value": "553,358,652,110",
+                  "id": "r1"
+                },
+                {
+                  "value": "1517,418,652,110",
+                  "id": "r2"
+                },
+                {
+                  "value": "2519,534,652,110",
+                  "id": "r3"
+                },
+                {
+                  "value": "842,618,98,64",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "2632,724,98,64",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_2",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_4",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy5; r1",
+                      "createUnit:enemy5; r2",
+                      "createUnit:enemy5; r3"
+                    ]
+                  },
+                  {
+                    "id": "e_win",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 0.5
+                    },
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "YouLing_back",
+            "info": {
+              "enemyLv": 62
+            },
+            "sceneLabel": "YouLing",
+            "fixed": {
+              "target": "YouLing_3",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "no"
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_2",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_4",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy5; r1",
+                      "createUnit:enemy5; r2",
+                      "createUnit:enemy5; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": [
+                      "level; rebirthAllMore",
+                      "level; shake:YouLing"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "say:listOver; s1",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "worldMap:levelName; YouLing:YouLing_4",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "YouLing_4",
+            "info": {
+              "enemyLv": 62
+            },
+            "sceneLabel": "YouLing",
+            "fixed": {
+              "target": "YouLing_3",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "all"
+            }
+          }
+        ]
+      },
+      {
+        "name": "西峰关卡",
+        "level": [
+          {
+            "name": "XiFeng_first",
+            "info": {
+              "enemyLv": 37
+            },
+            "sceneLabel": "XiFeng",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "鬼目游尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "num": 0.5
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 0.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "鬼目游尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "num": 1.5
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "unit": {
+                    "cnName": "亚瑟",
+                    "unitType": "boss",
+                    "dieGotoState": "stru"
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1292,1900,224,84",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "2924,1576,92,184",
+                  "id": "r_over"
+                },
+                {
+                  "value": "50,1440,152,220",
+                  "id": "r1"
+                },
+                {
+                  "value": "1012,484,96,128",
+                  "id": "r2"
+                },
+                {
+                  "value": "2524,984,396,140",
+                  "id": "r3"
+                },
+                {
+                  "value": "536,1848,74,74",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "2752,1656,74,74",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "760,484,74,74",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": "enemyNumber:less_1",
+                    "order": "createUnit:enemy1; r1"
+                  },
+                  {
+                    "id": "e2_2",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 4,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 4,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_5",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e_win",
+                    "condition": {
+                      "value": "bodyEvent:die; 亚瑟",
+                      "delay": 0.5
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "say:listOver; s1",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "body:亚瑟; rebirth",
+                      "body:亚瑟; toDie:die"
+                    ]
+                  },
+                  {
+                    "id": "e_win",
+                    "condition": {
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "worldMap:levelName; XiFeng:XiFeng_2",
+                      "task:now; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "XiFeng_2",
+            "info": {
+              "enemyLv": 37
+            },
+            "sceneLabel": "XiFeng",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "鬼目游尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "num": 0.5
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 0.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "鬼目游尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "num": 1.5
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "unit": {
+                    "cnName": "亚瑟",
+                    "unitType": "boss"
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1292,1900,224,84",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "2924,1576,92,184",
+                  "id": "r_over"
+                },
+                {
+                  "value": "50,1440,152,220",
+                  "id": "r1"
+                },
+                {
+                  "value": "1012,484,96,128",
+                  "id": "r2"
+                },
+                {
+                  "value": "2524,984,396,140",
+                  "id": "r3"
+                },
+                {
+                  "value": "536,1848,74,74",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "2752,1656,74,74",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "760,484,74,74",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": "enemyNumber:less_1",
+                    "order": "createUnit:enemy1; r1"
+                  },
+                  {
+                    "id": "e2_2",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 4,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 4,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_5",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e_win",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 0.5
+                    },
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "XiFeng_FightKing",
+            "info": {
+              "enemyLv": 40
+            },
+            "sceneLabel": "XiFeng",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "鬼目游尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "num": 0.5
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 0.5
+                    },
+                    {
+                      "cnName": "僵尸空降兵",
+                      "num": 0.5
+                    },
+                    {
+                      "cnName": "僵尸空军总管",
+                      "num": 0.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "鬼目游尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "僵尸空降兵",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "僵尸空军总管",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "unit": {
+                    "cnName": "狂战尸",
+                    "unitType": "boss",
+                    "imgType": "normal",
+                    "dpsMul": 0.75,
+                    "lifeMul": 1.2
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1292,1900,224,84",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "2924,1576,92,184",
+                  "id": "r_over"
+                },
+                {
+                  "value": "50,1440,152,220",
+                  "id": "r1"
+                },
+                {
+                  "value": "1012,484,96,128",
+                  "id": "r2"
+                },
+                {
+                  "value": "2524,984,396,140",
+                  "id": "r3"
+                },
+                {
+                  "value": "536,1848,74,74",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "2752,1656,74,74",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "760,484,74,74",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": "enemyNumber:less_1",
+                    "order": "createUnit:enemy1; r1"
+                  },
+                  {
+                    "id": "e2_2",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 4,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 4,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_5",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e_win",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "worldMap:levelName; XiFeng:XiFeng_3",
+                      "task:now; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "XiFeng_3",
+            "info": {
+              "enemyLv": 40
+            },
+            "sceneLabel": "XiFeng",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "鬼目游尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "num": 0.5
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 0.5
+                    },
+                    {
+                      "cnName": "僵尸空降兵",
+                      "num": 0.5
+                    },
+                    {
+                      "cnName": "僵尸空军总管",
+                      "num": 0.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "鬼目游尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "僵尸空降兵",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "僵尸空军总管",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "unit": {
+                    "cnName": "狂战尸",
+                    "unitType": "boss",
+                    "imgType": "normal",
+                    "dpsMul": 0.75,
+                    "lifeMul": 1.2
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1292,1900,224,84",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "2924,1576,92,184",
+                  "id": "r_over"
+                },
+                {
+                  "value": "50,1440,152,220",
+                  "id": "r1"
+                },
+                {
+                  "value": "1012,484,96,128",
+                  "id": "r2"
+                },
+                {
+                  "value": "2524,984,396,140",
+                  "id": "r3"
+                },
+                {
+                  "value": "536,1848,74,74",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "2752,1656,74,74",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "760,484,74,74",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": "enemyNumber:less_1",
+                    "order": "createUnit:enemy1; r1"
+                  },
+                  {
+                    "id": "e2_2",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 4,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 4,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_5",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2"
+                    ]
+                  },
+                  {
+                    "id": "e_win",
+                    "condition": "enemyNumber:less_1",
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "XiFeng_fight2",
+            "info": {
+              "enemyLv": 59
+            },
+            "sceneLabel": "XiFeng",
+            "fixed": {
+              "target": "XiFeng_3",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "no"
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": "enemyNumber:less_1",
+                    "order": "createUnit:enemy1; r1"
+                  },
+                  {
+                    "id": "e2_2",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 4,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 4,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_5",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2"
+                    ]
+                  },
+                  {
+                    "id": "e_win",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "worldMap:levelName; XiFeng:XiFeng_4",
+                      "worldMap:levelName; BaiLu:BaiLu_5",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "XiFeng_4",
+            "info": {
+              "enemyLv": 59
+            },
+            "sceneLabel": "XiFeng",
+            "fixed": {
+              "target": "XiFeng_3",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "all"
+            }
+          },
+          {
+            "name": "XiFeng_re",
+            "info": {
+              "enemyLv": 15,
+              "diy": "wotuBack",
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "mustSingleB": true
+            },
+            "drop": {
+              "arms": 0,
+              "equip": 0
+            },
+            "sceneLabel": "XiFeng",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "we3",
+                  "camp": "we",
+                  "unit": {
+                    "cnName": "狂战尸",
+                    "lifeMul": 10,
+                    "dpsMul": 1,
+                    "skillArr": "groupCrazy_enemy,FightKing_cloned,murderous_hero_6,strong_enemy,reverseHurt_enemy"
+                  }
+                },
+                {
+                  "id": "enemy1",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 5
+                    },
+                    {
+                      "cnName": "鬼目游尸",
+                      "num": 5
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "num": 0.5
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 0.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 5
+                    },
+                    {
+                      "cnName": "鬼目游尸",
+                      "num": 5
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 5
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "num": 1.5
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "unit": {
+                    "cnName": "游尸王",
+                    "unitType": "boss",
+                    "dpsMul": 1.2,
+                    "lifeMul": 0.5
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1292,1900,224,84",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "2924,1576,92,184",
+                  "id": "r_over"
+                },
+                {
+                  "value": "50,1440,152,220",
+                  "id": "r1"
+                },
+                {
+                  "value": "1012,484,96,128",
+                  "id": "r2"
+                },
+                {
+                  "value": "2524,984,396,140",
+                  "id": "r3"
+                },
+                {
+                  "value": "536,1848,74,74",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "2752,1656,74,74",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "760,484,74,74",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "id": "e1_1",
+                      "condition": null,
+                      "order": [
+                        "createUnit:we3; r_birth",
+                        "heroEverParasitic:狂战尸",
+                        "P2EverParasitic:无"
+                      ]
+                    },
+                    {
+                      "id": "e1_1",
+                      "condition": {
+                        "delay": 1
+                      },
+                      "order": "say; startList:s1"
+                    },
+                    {
+                      "id": "e2_0",
+                      "condition": "say:listOver; s1"
+                    },
+                    {
+                      "id": "e2_1",
+                      "condition": {
+                        "delay": 1
+                      }
+                    },
+                    {
+                      "id": "e2_1",
+                      "condition": "enemyNumber:less_1",
+                      "order": "createUnit:enemy1; r1"
+                    },
+                    {
+                      "id": "e2_2",
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "doNumber": 1,
+                        "orderChooseType": "randomOne"
+                      },
+                      "order": [
+                        "createUnit:enemy1; r1",
+                        "createUnit:enemy1; r2",
+                        "createUnit:enemy1; r3"
+                      ]
+                    },
+                    {
+                      "id": "e2_3",
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "doNumber": 1,
+                        "orderChooseType": "randomOne"
+                      },
+                      "order": [
+                        "createUnit:enemy2; r1",
+                        "createUnit:enemy2; r2",
+                        "createUnit:enemy2; r3"
+                      ]
+                    },
+                    {
+                      "id": "e2_3",
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "doNumber": 1,
+                        "orderChooseType": "randomOne"
+                      },
+                      "order": [
+                        "createUnit:enemy3; r1",
+                        "createUnit:enemy3; r2",
+                        "createUnit:enemy3; r3"
+                      ]
+                    },
+                    {
+                      "id": "e2_7",
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "delay": 1
+                      },
+                      "order": [
+                        "task:now; complete",
+                        "level; showPointer:r_over"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "value": "bodyEvent:die; 狂战尸",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 任务失败！"
+                    },
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "绿森堡关卡",
+        "level": [
+          {
+            "name": "LvSen_shooter",
+            "info": {
+              "enemyLv": 44
+            },
+            "sceneLabel": "LvSen",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "drop": {
+                "coin": 0.75,
+                "exp": 0.75,
+                "arms": 0.8,
+                "equip": 0.8,
+                "skillStone": 0.8,
+                "taxStamp": 0.5
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "毒蛛",
+                    "num": 10
+                  }
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "毒蛛",
+                    "num": 15
+                  }
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "毒蛛",
+                    "num": 20
+                  }
+                },
+                {
+                  "id": "enemy4",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "狂战射手",
+                    "num": 1,
+                    "dpsMul": 1.6,
+                    "lifeMul": 1.2,
+                    "unitType": "boss"
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "70,1192,244,96",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "3250,1186,60,122",
+                  "id": "r_over"
+                },
+                {
+                  "value": "1633,721,118,100",
+                  "id": "r1"
+                },
+                {
+                  "value": "1400,1146,143,100",
+                  "id": "r2"
+                },
+                {
+                  "value": "1829,1142,143,98",
+                  "id": "r3"
+                },
+                {
+                  "value": "700,1100,54,42",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "2660,1100,54,42",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_5",
+                      "doNumber": 4,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_4",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "enemyNumber:less_1",
+                    "order": [
+                      "task:LvSen_shooter; complete",
+                      "worldMap:levelName; LvSen:LvSen_shooter",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "LvSen_again",
+            "info": {
+              "enemyLv": 50
+            },
+            "sceneLabel": "LvSen",
+            "fixed": {
+              "target": "LvSen_2",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "no"
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_5",
+                      "doNumber": 4,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_4",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "enemyNumber:less_1",
+                    "order": [
+                      "task:now; complete",
+                      "worldMap:levelName; LvSen:LvSen_2",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "LvSen_2",
+            "info": {
+              "enemyLv": 53
+            },
+            "sceneLabel": "LvSen",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "drop": {
+                "coin": 0.75,
+                "exp": 0.75,
+                "arms": 0.8,
+                "equip": 0.8,
+                "skillStone": 0.8,
+                "taxStamp": 0.5
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "屠刀僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "毒蛛",
+                      "num": 7
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "屠刀僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "毒蛛",
+                      "num": 12
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "屠刀僵尸",
+                      "num": 5
+                    },
+                    {
+                      "cnName": "毒蛛",
+                      "num": 15
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "狂战射手",
+                    "num": 1,
+                    "dpsMul": 1.6,
+                    "lifeMul": 1.6,
+                    "unitType": "boss",
+                    "skillArr": "silence_enemy"
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "70,1192,244,96",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "3250,1186,60,122",
+                  "id": "r_over"
+                },
+                {
+                  "value": "1633,721,118,100",
+                  "id": "r1"
+                },
+                {
+                  "value": "1400,1146,143,100",
+                  "id": "r2"
+                },
+                {
+                  "value": "1829,1142,143,98",
+                  "id": "r3"
+                },
+                {
+                  "value": "700,1100,54,42",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "2660,1100,54,42",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:enemy1; rFlesh"
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:enemy1; rFlesh"
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_5",
+                      "doNumber": 4
+                    },
+                    "order": "createUnit:enemy1; rFlesh"
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_4",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "enemyNumber:less_1",
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "LvSen_re",
+            "info": {
+              "enemyLv": 16,
+              "diy": "wotuBack",
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "mustSingleB": true
+            },
+            "drop": {
+              "arms": 0,
+              "equip": 0
+            },
+            "sceneLabel": "LvSen",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "we3",
+                  "camp": "we",
+                  "unit": {
+                    "cnName": "狂战尸",
+                    "lifeMul": 10,
+                    "dpsMul": 1.5,
+                    "skillArr": "groupCrazy_enemy,FightKing_cloned,murderous_hero_6,strong_enemy,reverseHurt_enemy"
+                  }
+                },
+                {
+                  "id": "enemy1",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "屠刀僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "毒蛛",
+                      "num": 7
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "屠刀僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "毒蛛",
+                      "num": 12
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "屠刀僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "毒蛛",
+                      "num": 15
+                    },
+                    {
+                      "cnName": "天鹰特种兵",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "亚瑟",
+                    "num": 1,
+                    "dpsMul": 4.5,
+                    "lifeMul": 0.5,
+                    "unitType": "boss",
+                    "dieGotoState": "stru"
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "70,1192,244,96",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "3250,1186,60,122",
+                  "id": "r_over"
+                },
+                {
+                  "value": "1633,721,118,100",
+                  "id": "r1"
+                },
+                {
+                  "value": "1400,1146,143,100",
+                  "id": "r2"
+                },
+                {
+                  "value": "1829,1142,143,98",
+                  "id": "r3"
+                },
+                {
+                  "value": "700,1100,54,42",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "2660,1100,54,42",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "id": "e1_1",
+                      "condition": null,
+                      "order": [
+                        "createUnit:we3; r_birth",
+                        "heroEverParasitic:狂战尸",
+                        "P2EverParasitic:无"
+                      ]
+                    },
+                    {
+                      "id": "e2_1",
+                      "condition": {
+                        "value": "enemyNumber:less_1",
+                        "doNumber": 2,
+                        "orderChooseType": "randomOne"
+                      },
+                      "order": [
+                        "createUnit:enemy1; r1",
+                        "createUnit:enemy1; r2",
+                        "createUnit:enemy1; r3"
+                      ]
+                    },
+                    {
+                      "id": "e2_1",
+                      "condition": {
+                        "value": "enemyNumber:less_3",
+                        "doNumber": 2,
+                        "orderChooseType": "randomOne"
+                      },
+                      "order": [
+                        "createUnit:enemy2; r1",
+                        "createUnit:enemy2; r2",
+                        "createUnit:enemy2; r3"
+                      ]
+                    },
+                    {
+                      "id": "e2_1",
+                      "condition": {
+                        "value": "enemyNumber:less_5",
+                        "doNumber": 2,
+                        "orderChooseType": "randomOne"
+                      },
+                      "order": [
+                        "createUnit:enemy3; r1",
+                        "createUnit:enemy3; r2",
+                        "createUnit:enemy3; r3"
+                      ]
+                    },
+                    {
+                      "id": "e2_1",
+                      "condition": {
+                        "value": "enemyNumber:less_4",
+                        "doNumber": 1,
+                        "orderChooseType": "randomOne"
+                      },
+                      "order": [
+                        "createUnit:enemy4; r1",
+                        "createUnit:enemy4; r2",
+                        "createUnit:enemy4; r3"
+                      ]
+                    },
+                    {
+                      "id": "e2_7",
+                      "condition": {
+                        "value": "bodyEvent:die; 亚瑟",
+                        "delay": 1
+                      },
+                      "order": "say; startList:s2"
+                    },
+                    {
+                      "id": "e2_11",
+                      "condition": "say:listOver; s2",
+                      "order": [
+                        "task:now; complete",
+                        "level; showPointer:r_over"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "value": "bodyEvent:die; 狂战尸",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 任务失败！"
+                    },
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "毒窟关卡",
+        "level": {
+          "name": "DuKu_poision",
+          "info": {
+            "enemyLv": 45
+          },
+          "sceneLabel": "DuKu",
+          "unitG": {
+            "allDefault": {
+              "aiOrder": "patrolGlobal"
+            },
+            "unitOrder": [
+              {
+                "id": "enemy1",
+                "numberType": "number",
+                "unit": [
+                  {
+                    "cnName": "橄榄僵尸",
+                    "num": 2
+                  },
+                  {
+                    "cnName": "鬼目游尸",
+                    "num": 2
+                  },
+                  {
+                    "cnName": "冥刃游尸",
+                    "num": 2
+                  },
+                  {
+                    "cnName": "鬼目射手",
+                    "num": 1
+                  }
+                ]
+              },
+              {
+                "id": "enemy2",
+                "numberType": "number",
+                "unit": [
+                  {
+                    "cnName": "橄榄僵尸",
+                    "num": 3
+                  },
+                  {
+                    "cnName": "鬼目游尸",
+                    "num": 3
+                  },
+                  {
+                    "cnName": "冥刃游尸",
+                    "num": 3
+                  },
+                  {
+                    "cnName": "鬼目射手",
+                    "num": 1.5
+                  }
+                ]
+              },
+              {
+                "id": "enemy3",
+                "numberType": "number",
+                "unit": [
+                  {
+                    "cnName": "橄榄僵尸",
+                    "num": 3
+                  },
+                  {
+                    "cnName": "鬼目游尸",
+                    "num": 3
+                  },
+                  {
+                    "cnName": "冥刃游尸",
+                    "num": 3
+                  },
+                  {
+                    "cnName": "鬼目射手",
+                    "num": 2
+                  }
+                ]
+              },
+              {
+                "id": "enemy4",
+                "numberType": "number",
+                "unit": {
+                  "cnName": "巨毒尸",
+                  "unitType": "boss",
+                  "lifeMul": 1,
+                  "dpsMul": 1,
+                  "num": 1,
+                  "imgType": "normal"
+                }
+              }
+            ]
+          },
+          "rectG": {
+            "rect": [
+              {
+                "value": "1351,927,300,110",
+                "id": "r_birth"
+              },
+              {
+                "value": "2900,683,70,110",
+                "id": "r_over"
+              },
+              {
+                "value": "22,435,228,110",
+                "id": "r1"
+              },
+              {
+                "value": "1500,70,370,110",
+                "id": "r2"
+              },
+              {
+                "value": "2380,270,300,122",
+                "id": "r3"
+              },
+              {
+                "value": "266,750,78,52",
+                "label": "addCharger"
+              },
+              {
+                "value": "2668,822,78,52",
+                "label": "addCharger"
+              }
+            ]
+          },
+          "eventG": {
+            "group": {
+              "event": [
+                {
+                  "id": "e2_1",
+                  "condition": {
+                    "value": "enemyNumber:less_1",
+                    "doNumber": 3,
+                    "orderChooseType": "randomOne"
+                  },
+                  "order": [
+                    "createUnit:enemy1; r1",
+                    "createUnit:enemy1; r2",
+                    "createUnit:enemy1; r3"
+                  ]
+                },
+                {
+                  "id": "e2_1",
+                  "condition": {
+                    "value": "enemyNumber:less_1",
+                    "doNumber": 3,
+                    "orderChooseType": "randomOne"
+                  },
+                  "order": [
+                    "createUnit:enemy2; r1",
+                    "createUnit:enemy2; r2",
+                    "createUnit:enemy2; r3"
+                  ]
+                },
+                {
+                  "id": "e2_1",
+                  "condition": {
+                    "value": "enemyNumber:less_2",
+                    "doNumber": 2,
+                    "orderChooseType": "randomOne"
+                  },
+                  "order": [
+                    "createUnit:enemy3; r1",
+                    "createUnit:enemy3; r2",
+                    "createUnit:enemy3; r3"
+                  ]
+                },
+                {
+                  "id": "e2_1",
+                  "condition": {
+                    "value": "enemyNumber:less_2",
+                    "doNumber": 1,
+                    "orderChooseType": "randomOne"
+                  },
+                  "order": [
+                    "createUnit:enemy4; r1",
+                    "createUnit:enemy4; r2",
+                    "createUnit:enemy4; r3"
+                  ]
+                },
+                {
+                  "id": "e2_11",
+                  "condition": "enemyNumber:less_1",
+                  "order": [
+                    "task:DuKu_poision; complete",
+                    "worldMap:levelName; DuKu:DuKu_poision",
+                    "level; showPointer:r_over"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "宝伦镇关卡",
+        "level": [
+          {
+            "name": "BaoLun_back",
+            "info": {
+              "enemyLv": 46
+            },
+            "sceneLabel": "BaoLun",
+            "fixed": {
+              "target": "BaoLun_1",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "no"
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 5
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy5; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_4",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy6; r1",
+                      "createUnit:enemy6; r2",
+                      "createUnit:enemy6; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_show",
+                    "condition": "enemyNumber:less_1",
+                    "order": [
+                      "createUnit:we2; r_over",
+                      "level; rebirthAllMore"
+                    ]
+                  },
+                  {
+                    "id": "e2_8",
+                    "condition": {
+                      "value": "bodyGap:less_350; p1:制毒师",
+                      "delay": 0.1
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "id": "e2_9",
+                    "condition": {
+                      "value": "say:listOver; s1",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "body:制毒师; rangeLimit:close",
+                      "body:制毒师; followPoint:r_back",
+                      "task:now; complete",
+                      "worldMap:levelName; BaoLun:BaoLun_1",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "BaoLun_1",
+            "info": {
+              "enemyLv": 46
+            },
+            "sceneLabel": "BaoLun",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "we2",
+                  "camp": "we",
+                  "unit": {
+                    "cnName": "制毒师",
+                    "num": 1,
+                    "lifeMul": 2,
+                    "aiOrder": "followBodyAttack:p1",
+                    "dieGotoState": "stru"
+                  }
+                },
+                {
+                  "id": "enemy1",
+                  "numberType": "pro",
+                  "unit": {
+                    "cnName": "僵尸突击兵",
+                    "num": 3
+                  }
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": {
+                    "cnName": "屠刀僵尸",
+                    "num": 7
+                  }
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "pro",
+                  "unit": {
+                    "cnName": "僵尸炮兵总管",
+                    "num": 3
+                  }
+                },
+                {
+                  "id": "enemy4",
+                  "numberType": "pro",
+                  "unit": {
+                    "cnName": "僵尸炮兵总管",
+                    "num": 2
+                  }
+                },
+                {
+                  "id": "enemy5",
+                  "numberType": "pro",
+                  "unit": {
+                    "cnName": "僵尸突击兵",
+                    "num": 2
+                  }
+                },
+                {
+                  "id": "enemy6",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "屠刀僵尸",
+                    "unitType": "boss",
+                    "lifeMul": 1.4,
+                    "dpsMul": 1.3
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1429,571,188,62",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "2955,548,57,121",
+                  "id": "r_over"
+                },
+                {
+                  "value": "-300,548,57,121",
+                  "id": "r_back"
+                },
+                {
+                  "value": "28,64,394,108",
+                  "id": "r1"
+                },
+                {
+                  "value": "2578,64,394,108",
+                  "id": "r2"
+                },
+                {
+                  "value": "1230,-40,394,108",
+                  "id": "r3"
+                },
+                {
+                  "value": "2161,203,84,84",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "931,203,84,84",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 5
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy5; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy6; r1",
+                      "createUnit:enemy6; r2",
+                      "createUnit:enemy6; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_show",
+                    "condition": "enemyNumber:less_1",
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "BaoLun_cyclopia",
+            "info": {
+              "enemyLv": 71
+            },
+            "sceneLabel": "BaoLun",
+            "fixed": {
+              "target": "BaoLun_2",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "no"
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 5
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy5; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy6; r1",
+                      "createUnit:enemy6; r2",
+                      "createUnit:enemy6; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": "level; rebirthAllMore"
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "say:listOver; s1",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "worldMap:levelName; BaoLun:BaoLun_2",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "BaoLun_2",
+            "info": {
+              "enemyLv": 71
+            },
+            "sceneLabel": "BaoLun",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "pro",
+                  "unit": {
+                    "cnName": "僵尸突击兵",
+                    "num": 3
+                  }
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": {
+                    "cnName": "屠刀僵尸",
+                    "num": 7
+                  }
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "pro",
+                  "unit": {
+                    "cnName": "僵尸炮兵总管",
+                    "num": 3
+                  }
+                },
+                {
+                  "id": "enemy4",
+                  "numberType": "pro",
+                  "unit": {
+                    "cnName": "僵尸炮兵总管",
+                    "num": 2
+                  }
+                },
+                {
+                  "id": "enemy5",
+                  "numberType": "pro",
+                  "unit": {
+                    "cnName": "僵尸突击兵",
+                    "num": 2
+                  }
+                },
+                {
+                  "id": "enemy6",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "独眼僵尸",
+                    "unitType": "boss",
+                    "lifeMul": 1.4,
+                    "dpsMul": 4
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1429,571,188,62",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "2955,548,57,121",
+                  "id": "r_over"
+                },
+                {
+                  "value": "-300,548,57,121",
+                  "id": "r_back"
+                },
+                {
+                  "value": "28,64,394,108",
+                  "id": "r1"
+                },
+                {
+                  "value": "2578,64,394,108",
+                  "id": "r2"
+                },
+                {
+                  "value": "1230,-40,394,108",
+                  "id": "r3"
+                },
+                {
+                  "value": "2161,203,84,84",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "931,203,84,84",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 5
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy5; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy6; r1",
+                      "createUnit:enemy6; r2",
+                      "createUnit:enemy6; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_show",
+                    "condition": "enemyNumber:less_1",
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "炉屿关卡",
+        "level": [
+          {
+            "name": "LuYu_enemies",
+            "info": {
+              "enemyLv": 47
+            },
+            "sceneLabel": "LuYu",
+            "fixed": {
+              "target": "LuYu_1",
+              "info": "no",
+              "drop": "all",
+              "unitG": "no",
+              "rectG": "all",
+              "eventG": "no"
+            },
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "战斗僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "僵尸暴枪兵",
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 5
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 5
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "“制毒师”",
+                    "unitType": "boss",
+                    "lifeMul": 1.4,
+                    "dpsMul": 1.3,
+                    "dieGotoState": "stru"
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "say:listOver; s1",
+                      "delay": 1.5
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e_win",
+                    "condition": {
+                      "value": "bodyEvent:die; “制毒师”",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "level; rebirthAllMore",
+                      "say; startList:s2"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "say:listOver; s2",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "body:“制毒师”; rebirth",
+                      "body:“制毒师”; toDie:die",
+                      "say; startList:s3"
+                    ]
+                  },
+                  {
+                    "id": "e2_9",
+                    "condition": {
+                      "value": "say:listOver; s3",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "worldMap:levelName; LuYu:LuYu_1",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "LuYu_1",
+            "info": {
+              "enemyLv": 47
+            },
+            "sceneLabel": "LuYu",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "战斗僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "僵尸暴枪兵",
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 5
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 5
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "“制毒师”",
+                    "unitType": "boss",
+                    "lifeMul": 1,
+                    "dpsMul": 1
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1575,1230,278,101",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "2940,1222,62,125",
+                  "id": "r_over"
+                },
+                {
+                  "value": "1386,422,94,112",
+                  "id": "r1"
+                },
+                {
+                  "value": "2391,580,278,104",
+                  "id": "r2"
+                },
+                {
+                  "value": "20,700,278,104",
+                  "id": "r3"
+                },
+                {
+                  "value": "2230,864,84,84",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "916,842,84,84",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "enemyNumber:less_1",
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "霸王坡关卡",
+        "level": [
+          {
+            "name": "BaWang_king",
+            "info": {
+              "enemyLv": 48
+            },
+            "sceneLabel": "BaWang",
+            "fixed": {
+              "target": "BaWang_1",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "no"
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 2,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 2,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_5",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy5; r1",
+                      "createUnit:enemy5; r2",
+                      "createUnit:enemy5; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": [
+                      "level; rebirthAllMore",
+                      "say; startList:s1"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "say:listOver; s1",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "worldMap:levelName; BaWang:BaWang_1",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "BaWang_1",
+            "info": {
+              "enemyLv": 48
+            },
+            "sceneLabel": "BaWang",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "毒蛛",
+                    "num": 8
+                  }
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "携弹僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "僵尸空降兵",
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "战斗僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "僵尸空军总管",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "战斗僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "携弹僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "僵尸空降兵",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "僵尸空军总管",
+                      "num": 0.2
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy5",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "霸王毒蛛",
+                    "unitType": "boss",
+                    "lifeMul": 1
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1578,962,226,82",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "2928,1200,84,157",
+                  "id": "r_over"
+                },
+                {
+                  "value": "16,616,254,112",
+                  "id": "r1"
+                },
+                {
+                  "value": "2726,694,254,112",
+                  "id": "r2"
+                },
+                {
+                  "value": "1548,418,254,112",
+                  "id": "r3"
+                },
+                {
+                  "value": "2540,731,84,84",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "690,723,84,84",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 2,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 2,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_5",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy5; r1",
+                      "createUnit:enemy5; r2",
+                      "createUnit:enemy5; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 0.5
+                    },
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "平川关卡",
+        "level": [
+          {
+            "name": "PingChuan_true",
+            "info": {
+              "enemyLv": 49
+            },
+            "sceneLabel": "PingChuan",
+            "fixed": {
+              "target": "PingChuan_1",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "no"
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": "enemyNumber:less_1",
+                    "order": "createUnit:enemy1; r1"
+                  },
+                  {
+                    "id": "e2_2",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 4,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 4,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_5",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": [
+                      "level; rebirthAllMore",
+                      "say; startList:s1"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "say:listOver; s1",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "worldMap:levelName; PingChuan:PingChuan_1",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "PingChuan_1",
+            "info": {
+              "enemyLv": 49
+            },
+            "sceneLabel": "PingChuan",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "毒蛛",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "无头自爆僵尸",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "num": 0.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "毒蛛",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "无头自爆僵尸",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "僵尸狙击兵",
+                      "num": 0.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "unit": [
+                    {
+                      "cnName": "战斗僵尸",
+                      "num": 1,
+                      "unitType": "super",
+                      "dropLabel": "no",
+                      "lifeMul": 3
+                    },
+                    {
+                      "cnName": "僵尸狙击兵",
+                      "num": 1,
+                      "unitType": "super",
+                      "dropLabel": "no",
+                      "lifeMul": 3
+                    },
+                    {
+                      "cnName": "鬼目游尸",
+                      "num": 1,
+                      "unitType": "boss",
+                      "lifeMul": 1.6,
+                      "dpsMul": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "888,832,172,76",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "2916,700,88,152",
+                  "id": "r_over"
+                },
+                {
+                  "value": "16,304,280,120",
+                  "id": "r1"
+                },
+                {
+                  "value": "2670,653,280,120",
+                  "id": "r2"
+                },
+                {
+                  "value": "1642,650,280,120",
+                  "id": "r3"
+                },
+                {
+                  "value": "406,664,118,64",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "2638,864,118,64",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": "enemyNumber:less_1",
+                    "order": "createUnit:enemy1; r1"
+                  },
+                  {
+                    "id": "e2_2",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 4,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 4,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_5",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 0.5
+                    },
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "白沙村关卡",
+        "level": [
+          {
+            "name": "BaiSha_skeleton",
+            "info": {
+              "enemyLv": 50
+            },
+            "sceneLabel": "BaiSha",
+            "fixed": {
+              "target": "BaiSha_1",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "no"
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_2",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_4",
+                      "doNumber": 1
+                    },
+                    "order": [
+                      "createUnit:enemy5; r2",
+                      "createUnit:we2; r2"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": [
+                      "level; rebirthAllMore",
+                      "say; startList:s1"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "say:listOver; s1",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "worldMap:levelName; BaiSha:BaiSha_1",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "BaiSha_1",
+            "info": {
+              "enemyLv": 50
+            },
+            "sceneLabel": "BaiSha",
+            "unitG": {
+              "unitOrder": [
+                {
+                  "id": "we2",
+                  "camp": "we",
+                  "unit": {
+                    "cnName": "亚瑟",
+                    "lifeMul": 0.3,
+                    "dieGotoState": "stru"
+                  }
+                },
+                {
+                  "id": "enemy1",
+                  "unit": {
+                    "cnName": "鬼目游尸",
+                    "num": 5
+                  }
+                },
+                {
+                  "id": "enemy2",
+                  "unit": {
+                    "cnName": "冥刃游尸",
+                    "num": 5
+                  }
+                },
+                {
+                  "id": "enemy3",
+                  "unit": {
+                    "cnName": "鬼目射手",
+                    "num": 6
+                  }
+                },
+                {
+                  "id": "enemy4",
+                  "unit": [
+                    {
+                      "cnName": "鬼目游尸",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy5",
+                  "unit": {
+                    "cnName": "暴君",
+                    "unitType": "boss",
+                    "lifeMul": 1.6,
+                    "imgType": "normal"
+                  }
+                }
+              ],
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              }
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "1494,886,212,92",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "3386,1084,48,100",
+                  "id": "r_over"
+                },
+                {
+                  "value": "30,754,280,120",
+                  "id": "r1"
+                },
+                {
+                  "value": "1327,318,280,120",
+                  "id": "r2"
+                },
+                {
+                  "value": "3060,713,280,120",
+                  "id": "r3"
+                },
+                {
+                  "value": "2156,638  ,118,64",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "813,820,118,64",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_2",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_2",
+                      "doNumber": 2,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_4",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy5; r1",
+                      "createUnit:enemy5; r2"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 0.5
+                    },
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "BaiSha_gather",
+            "info": {
+              "enemyLv": 66
+            },
+            "sceneLabel": "BaiSha",
+            "fixed": {
+              "target": "BaiSha_1",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "no"
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_2",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "id": "e2_2",
+                    "condition": "say:listOver; s1"
+                  },
+                  {
+                    "id": "e2_2",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_2",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_3",
+                    "condition": {
+                      "value": "enemyNumber:less_4",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy5; r1",
+                      "createUnit:enemy5; r2",
+                      "createUnit:enemy5; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "worldMap:levelName; BaiSha:BaiSha_2",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "BaiSha_2",
+            "info": {
+              "enemyLv": 66
+            },
+            "sceneLabel": "BaiSha",
+            "fixed": {
+              "target": "BaiSha_1",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "all"
+            }
+          }
+        ]
+      },
+      {
+        "name": "上沙关卡",
+        "level": [
+          {
+            "name": "ShangSha_super",
+            "info": {
+              "enemyLv": 54
+            },
+            "sceneLabel": "ShangSha",
+            "fixed": {
+              "target": "ShangSha_1",
+              "info": "no",
+              "drop": "all",
+              "unitG": "all",
+              "rectG": "all",
+              "eventG": "no"
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "say:listOver; s1",
+                      "delay": 0.5
+                    }
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 2,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 2,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 2,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "enemyNumber:less_1",
+                    "order": [
+                      "task:now; complete",
+                      "worldMap:levelName; ShangSha:ShangSha_1",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "ShangSha_1",
+            "info": {
+              "enemyLv": 54
+            },
+            "drop": {
+              "arms": 0.3,
+              "equip": 0.3,
+              "skillStone": 0.3,
+              "taxStamp": 0.3
+            },
+            "sceneLabel": "ShangSha",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 1,
+                      "unitType": "super"
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "num": 1,
+                      "unitType": "super"
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 1,
+                      "unitType": "super"
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 1,
+                      "unitType": "super"
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 1,
+                      "unitType": "super"
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "num": 1,
+                      "unitType": "super"
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 1,
+                      "unitType": "super"
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 1,
+                      "unitType": "super"
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "num": 1,
+                      "unitType": "super"
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "肥胖僵尸",
+                      "dpsMul": 2,
+                      "lifeMul": 2,
+                      "num": 1,
+                      "skillArr": "groupLight_enemy",
+                      "unitType": "super"
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "dpsMul": 2,
+                      "lifeMul": 2,
+                      "num": 1,
+                      "skillArr": "recoveryHalo_enemy",
+                      "unitType": "super"
+                    },
+                    {
+                      "cnName": "鬼目射手",
+                      "dpsMul": 2,
+                      "lifeMul": 2,
+                      "num": 1,
+                      "skillArr": "trueshot_enemy",
+                      "unitType": "super"
+                    },
+                    {
+                      "cnName": "僵尸突击兵",
+                      "dpsMul": 2,
+                      "lifeMul": 2,
+                      "num": 1,
+                      "skillArr": "groupSpeedUp_enemy",
+                      "unitType": "super"
+                    }
+                  ]
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "308,852,167,104",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "3204,1120,108,175",
+                  "id": "r_over"
+                },
+                {
+                  "value": "1380,1152,156,132",
+                  "id": "r1"
+                },
+                {
+                  "value": "3080,816,188,92",
+                  "id": "r2"
+                },
+                {
+                  "value": "1656,-356,492,140",
+                  "id": "r3"
+                },
+                {
+                  "value": "83,972,112,104",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "2280,1024,112,104",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 2,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 2,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 2,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_1",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "enemyNumber:less_1",
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "ShangSha_re",
+            "info": {
+              "enemyLv": 13,
+              "diy": "wotuBack",
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true
+            },
+            "drop": {
+              "arms": 0,
+              "equip": 0
+            },
+            "sceneLabel": "ShangSha",
+            "unitG": {
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "unit": [
+                    {
+                      "cnName": "亚瑟",
+                      "lifeMul": 9999999,
+                      "dpsMul": 1.3,
+                      "skillArr": "teleport_enemy15,crazy_hero_9,feedback_hero_5,hiding_hero_8,rolling_hero_10,gliding_hero_8",
+                      "noSuperB": true
+                    },
+                    {
+                      "cnName": "天鹰特种兵",
+                      "dpsMul": 1.3,
+                      "lifeMul": 1.9,
+                      "num": 3,
+                      "aiOrder": "followBodyAttack:亚瑟",
+                      "noSuperB": true
+                    }
+                  ]
+                },
+                {
+                  "id": "we1",
+                  "camp": "we",
+                  "numberType": "num",
+                  "unit": [
+                    {
+                      "cnName": "橄榄僵尸",
+                      "num": 3,
+                      "skillArr": "State_AddMove",
+                      "lifeMul": 0.2,
+                      "dpsMul": 0.1,
+                      "aiOrder": "followBodyAttack:战斗僵尸",
+                      "noSuperB": true
+                    },
+                    {
+                      "cnName": "肥胖僵尸",
+                      "num": 5,
+                      "skillArr": "State_AddMove",
+                      "lifeMul": 0.2,
+                      "dpsMul": 0.1,
+                      "aiOrder": "followBodyAttack:战斗僵尸",
+                      "noSuperB": true
+                    },
+                    {
+                      "cnName": "冥刃游尸",
+                      "num": 3,
+                      "skillArr": "State_AddMove",
+                      "lifeMul": 0.2,
+                      "dpsMul": 0.1,
+                      "aiOrder": "followBodyAttack:战斗僵尸",
+                      "noSuperB": true
+                    },
+                    {
+                      "cnName": "鬼目游尸",
+                      "num": 3,
+                      "skillArr": "State_AddMove",
+                      "lifeMul": 0.2,
+                      "dpsMul": 0.1,
+                      "aiOrder": "followBodyAttack:战斗僵尸",
+                      "noSuperB": true
+                    }
+                  ]
+                },
+                {
+                  "id": "we2",
+                  "camp": "we",
+                  "numberType": "num",
+                  "unit": {
+                    "cnName": "战斗僵尸",
+                    "num": 1,
+                    "lifeMul": 3,
+                    "dpsMul": 2,
+                    "skillCloseB": true,
+                    "skillArr": "State_AddMove,paralysis_enemy,groupReverseHurt_hero_3,groupLight_hero_4",
+                    "noSuperB": true
+                  }
+                }
+              ],
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              }
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "308,852,167,104",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "3204,1120,108,175",
+                  "id": "r_over"
+                },
+                {
+                  "value": "1380,1152,156,132",
+                  "id": "r1"
+                },
+                {
+                  "value": "3080,816,188,92",
+                  "id": "r2"
+                },
+                {
+                  "value": "1656,-356,492,140",
+                  "id": "r3"
+                },
+                {
+                  "value": "83,972,112,104",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "2280,1024,112,104",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": [
+                {
+                  "event": [
+                    {
+                      "id": "e1_1",
+                      "condition": null,
+                      "order": [
+                        "createUnit:we2; r1",
+                        "createUnit:we1; r1",
+                        "heroEverParasitic:战斗僵尸",
+                        "P2EverParasitic:肥胖僵尸",
+                        "level;taskTimingB:false"
+                      ]
+                    },
+                    {
+                      "id": "e1_1",
+                      "condition": {
+                        "delay": 0.5
+                      },
+                      "order": "say; startList:s1"
+                    },
+                    {
+                      "id": "e2_0",
+                      "condition": "say:listOver; s1"
+                    },
+                    {
+                      "id": "e2_1",
+                      "condition": {
+                        "delay": 0.1
+                      }
+                    },
+                    {
+                      "id": "e2_1",
+                      "condition": null,
+                      "order": [
+                        "createUnit:enemy1; r3",
+                        "level;taskTimingB:true"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "event": {
+                    "id": "e1_1",
+                    "condition": {
+                      "value": "task:state; ShangSha_re:complete",
+                      "delay": 0.01
+                    },
+                    "order": [
+                      "body:战斗僵尸; noUnderHurt:true",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                },
+                {
+                  "event": [
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "value": "bodyEvent:die; 战斗僵尸",
+                        "delay": 1
+                      },
+                      "order": "alert:yes; 任务失败！"
+                    },
+                    {
+                      "id": "e_fail",
+                      "condition": {
+                        "delay": 0.03
+                      },
+                      "order": "level; fail"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "东峰研究所关卡",
+        "level": [
+          {
+            "name": "DongFeng_lab",
+            "info": {
+              "enemyLv": 55
+            },
+            "sceneLabel": "DongFeng",
+            "fixed": {
+              "target": "DongFeng_1",
+              "info": "no",
+              "drop": "all",
+              "unitG": "no",
+              "rectG": "all",
+              "eventG": "no"
+            },
+            "unitG": {
+              "unitOrder": [
+                {
+                  "id": "we2",
+                  "camp": "we",
+                  "unit": {
+                    "cnName": "制毒师",
+                    "num": 1,
+                    "lifeMul": 999999,
+                    "noUnderHurtB": true,
+                    "aiOrder": "followBodyAttack:p1"
+                  }
+                },
+                {
+                  "id": "enemy1",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "战斗僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "防暴僵尸",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "屠刀僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "携弹僵尸",
+                      "num": 3
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "战斗僵尸",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "屠刀僵尸",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "携弹僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "防暴僵尸",
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "天鹰小美",
+                    "unitType": "boss",
+                    "lifeMul": 1.6,
+                    "dpsMul": 1.3,
+                    "dieGotoState": "stru"
+                  }
+                }
+              ],
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              }
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "bodyEvent:die; 天鹰小美",
+                      "delay": 1
+                    },
+                    "order": [
+                      "createUnit:we2; r_over",
+                      "level; rebirthAllMore",
+                      "say; startList:s1"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": {
+                      "value": "say:listOver; s1",
+                      "delay": 0.5
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "worldMap:levelName; DongFeng:DongFeng_1",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "DongFeng_1",
+            "info": {
+              "enemyLv": 55
+            },
+            "sceneLabel": "DongFeng",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "战斗僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "防暴僵尸",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy2",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "屠刀僵尸",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "携弹僵尸",
+                      "num": 3
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "number",
+                  "unit": [
+                    {
+                      "cnName": "战斗僵尸",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "屠刀僵尸",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "携弹僵尸",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "防暴僵尸",
+                      "num": 1.5
+                    }
+                  ]
+                },
+                {
+                  "id": "enemy4",
+                  "numberType": "number",
+                  "unit": {
+                    "cnName": "天鹰小美",
+                    "unitType": "boss",
+                    "lifeMul": 1.6,
+                    "dpsMul": 1.3
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "30,467,210,110",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "3218,875,84,160",
+                  "id": "r_over"
+                },
+                {
+                  "value": "1530,516,178,146",
+                  "id": "r1"
+                },
+                {
+                  "value": "3141,449,164,146",
+                  "id": "r2"
+                },
+                {
+                  "value": "3135,1090,164,146",
+                  "id": "r3"
+                },
+                {
+                  "value": "3116,945,90,70",
+                  "label": "addCharger"
+                },
+                {
+                  "value": "46,943,90,70",
+                  "label": "addCharger"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy1; r1",
+                      "createUnit:enemy1; r2",
+                      "createUnit:enemy1; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy2; r1",
+                      "createUnit:enemy2; r2",
+                      "createUnit:enemy2; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_3",
+                      "doNumber": 3,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy3; r1",
+                      "createUnit:enemy3; r2",
+                      "createUnit:enemy3; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "value": "enemyNumber:less_6",
+                      "doNumber": 1,
+                      "orderChooseType": "randomOne"
+                    },
+                    "order": [
+                      "createUnit:enemy4; r1",
+                      "createUnit:enemy4; r2",
+                      "createUnit:enemy4; r3"
+                    ]
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "enemyNumber:less_1",
+                    "order": "level; showPointer:r_over"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

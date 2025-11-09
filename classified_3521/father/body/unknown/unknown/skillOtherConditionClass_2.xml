@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father cnName="动画">
+		<body cnName="" name="nowImgLabel" tip="释放者当前动画(组)" conditionString="动画标签组" />
+		<body cnName="" name="targetNoImgLabel" tip="释放者当前动画不是" conditionString="动画标签" />
+		<body cnName="" name="standOrRun" tip="释放者当前处于站立或奔跑状态" />
+		<body cnName="" name="producerImgLabel" tip="释放者当前动画" conditionString="动画标签" />
+		<body cnName="" name="noAttackImg" tip="释放者当前不处于攻击动作" />
+	</father>
+	</data>

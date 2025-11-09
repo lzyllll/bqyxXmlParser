@@ -1,0 +1,425 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="props" cnName="节日礼包">
+		<things cnName="清明节礼包">
+			<name>qingming2017Gift</name>
+			<cnName>清明节礼包</cnName>
+			<iconUrl>ThingsIcon/normalGift</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店银币购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="1" />
+			<useSave>shopAuto</useSave>
+			<showGiftB>1</showGiftB>
+			<gift>things;normalChest;1</gift>
+			<gift>things;doubleHighCard;2</gift>
+			<gift>things;armsTitanium;20</gift>
+			<gift>things;armsRadium;20</gift>
+			<gift>things;strengthenStone;50</gift>
+			<gift>things;rifleHornet;5</gift>
+
+		</things>
+		
+		
+		<things cnName="绿色家园礼包">
+			<name>arborDayGift</name>
+			<cnName>绿色家园礼包</cnName>
+			<iconUrl>ThingsIcon/normalGift</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店银币购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="1" />
+			<useSave>shopAuto</useSave>
+			<showGiftB>1</showGiftB>
+			<gift>things;skillFleshCard;5</gift>
+			<gift>things;coinHeap_3;1</gift>
+			<gift>things;lifeCatalyst;100</gift>
+			<gift>things;energyCatalyst;100</gift>
+			<gift>things;variationCatalyst;100</gift>
+			<gift>things;magicChest;1</gift>
+			<gift>things;armsTitanium;50</gift>
+			<gift>things;armsRadium;80</gift>
+		</things>
+		
+		
+		<things cnName="感恩节全民礼包">
+			<name>normalGratitudeGift</name>
+			<cnName>感恩节全民礼包</cnName>
+			<iconUrl>ThingsIcon/normalGift</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店银币购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<useSave>shopAuto</useSave>
+			<showGiftB>1</showGiftB>
+			<gift>things;bloodStone;20</gift>
+			<gift>things;godStone;80</gift>
+			<gift>things;skillStone;120</gift>
+			<gift>things;converStone;80</gift>
+		</things>
+		<things cnName="感恩节豪华礼包">
+			<name>goldGratitudeGift</name>
+			<cnName>感恩节豪华礼包</cnName>
+			<iconUrl>ThingsIcon/goldGift</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店黄金购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<useSave>shopAuto</useSave>
+			<showGiftB>1</showGiftB>
+			<gift>things;sniperSmilodon;2</gift>
+			<gift>things;rebirthStone;2</gift>
+			<gift>things;skillFleshCard;2</gift>
+			<gift>things;strengthenStone;20</gift>
+			<gift>things;converStone;20</gift>
+		</things>
+		
+		<things cnName="元宵节全民礼包">
+			<name>normalYuanGift2016</name>
+			<cnName>元宵节全民礼包</cnName>
+			<iconUrl>ThingsIcon/normalGift</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店银币购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<useSave>shopAuto</useSave>
+			<showGiftB>1</showGiftB>
+			<gift>things;armsEchelonCard;10</gift>
+			<gift>things;equipEchelonCard;10</gift>
+			<gift>things;strengthenStone;20</gift>
+			<gift>things;godStone;20</gift>
+		</things>
+		<things cnName="元宵节黄金礼包">
+			<name>goldYuanGift2016</name>
+			<cnName>元宵节黄金礼包</cnName>
+			<iconUrl>ThingsIcon/goldGift</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店黄金购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<useSave>shopAuto</useSave>
+			<showGiftB>1</showGiftB>
+			<gift>things;anniversaryCash;10</gift>
+			<gift>things;armsEchelonCard;10</gift>
+			<gift>things;equipEchelonCard;10</gift>
+			<gift>things;strengthenStone;20</gift>
+			<gift>things;godStone;20</gift>
+		</things>
+		
+		<things cnName="元宵节畅玩礼包">
+			<name>normalYuanGift2017</name>
+			<cnName>元宵节全民礼包</cnName>
+			<iconUrl>ThingsIcon/normalGift</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店银币购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<useSave>shopAuto</useSave>
+			<showGiftB>1</showGiftB>
+			<gift>things;strengthenStone;20</gift>
+			<gift>things;doubleMaterialsCard;5</gift>
+			<gift>things;doubleEquipCard;5</gift>
+			<gift>things;keyChest;10</gift>
+			<gift>things;coinHeap_1;2</gift>
+			<gift>things;anniversaryCash;50</gift>
+			<gift>things;allBlackCash;10</gift>
+			<gift>things;teamRebirthCard;3</gift>
+			<gift>things;skillFleshCard;3</gift>
+
+		</things>
+		<things cnName="元宵节豪华礼包">
+			<name>goldYuanGift2017</name>
+			<cnName>元宵节黄金礼包</cnName>
+			<iconUrl>ThingsIcon/goldGift</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店黄金购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<useSave>shopAuto</useSave>
+			<showGiftB>1</showGiftB>
+			<gift>things;bloodStone;20</gift>
+			<gift>things;deviceChest;5</gift>
+			<gift>things;rebirthStone;2</gift>
+			<gift>things;highArmsEchelonCard;5</gift>
+			<gift>things;highEquipEchelonCard;5</gift>
+			<gift>things;armsTitanium;20</gift>
+			<gift>things;armsRadium;20</gift>
+			<gift>things;allBlackCash;20</gift>
+			<gift>things;allBlackEquipCash;20</gift>
+			<gift>things;oracleSuit_belt;10</gift>
+		</things>
+		
+		
+		<things cnName="儿童节全民礼包">
+			<name>normalChildrenGift</name>
+			<cnName>儿童节全民礼包</cnName>
+			<iconUrl>ThingsIcon/normalGift</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店银币购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<useSave>shopAuto</useSave>
+			<showGiftB>1</showGiftB>
+			<gift>things;shotgunBlade;2</gift>
+			<gift>things;FlyDragonGun;2</gift>
+			<gift>things;normalChest;1</gift>
+			<gift>things;converStone;80</gift>
+			<gift>things;strengthenStone;50</gift>
+			<gift>things;rebirthStone;1</gift>
+		</things>
+		<things cnName="儿童节豪华礼包">
+			<name>goldChildrenGift</name>
+			<cnName>儿童节豪华礼包</cnName>
+			<iconUrl>ThingsIcon/goldGift</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店黄金购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<useSave>shopAuto</useSave>
+			<showGiftB>1</showGiftB>
+			<gift>things;rifleHornet;2</gift>
+			<gift>things;shotgunBlade;3</gift>
+			<gift>things;FlyDragonGun;3</gift>
+			<gift>things;magicChest;1</gift>
+			<gift>things;strengthenStone;80</gift>
+			<gift>things;rebirthStone;2</gift>
+		</things>
+		
+		
+		
+		
+		<things cnName="六一全民礼包2017">
+			<name>normalChildrenGift2017</name>
+			<cnName>六一全民礼包</cnName>
+			<iconUrl>ThingsIcon/normalGift</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店银币购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<useSave>shopAuto</useSave>
+			<showGiftB>1</showGiftB>
+			<gift>things;strengthenStone;30</gift>
+			<gift>things;normalChest;1</gift>
+			<gift>things;doubleHighCard;2</gift>
+			<gift>things;allBlackCash;10</gift>
+			<gift>things;allBlackEquipCash;10</gift>
+
+		</things>
+		<things cnName="儿童节豪华礼包2017">
+			<name>goldChildrenGift2017</name>
+			<cnName>六一节豪华礼包</cnName>
+			<iconUrl>ThingsIcon/goldGift</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店黄金购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<useSave>shopAuto</useSave>
+			<showGiftB>1</showGiftB>
+			<gift>things;bloodStone;20</gift>
+			<gift>things;deviceChest;5</gift>
+			<gift>things;highArmsEchelonCard;5</gift>
+			<gift>things;highEquipEchelonCard;5</gift>
+			<gift>things;armsTitanium;20</gift>
+			<gift>things;armsRadium;20</gift>
+			<gift>things;allBlackCash;20</gift>
+			<gift>things;allBlackEquipCash;20</gift>
+
+		</things>
+		
+		
+		
+		
+		<things cnName="开学礼包2016">
+			<name>kaixueGift2016</name>
+			<cnName>开学礼包</cnName>
+			<iconUrl>ThingsIcon/normalGift</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店银币购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<useSave>shopAuto</useSave>
+			<showGiftB>1</showGiftB>
+			<gift>things;magicChest;1</gift>
+			<gift>things;duelistClaw_1;5</gift>
+			<gift>things;knightsMedal_1;5</gift>
+			<gift>things;WatchEagleAirCash;5</gift>
+			<gift>things;rolling_heroChip;5</gift>
+			<gift>things;godStone;100</gift>
+			<gift>things;converStone;100</gift>
+			<gift>things;bloodStone;50</gift>
+			<gift>things;strengthenStone;50</gift>
+
+		</things>
+		
+		<things cnName="国庆畅玩礼包">
+			<name>normalNationalGift</name>
+			<cnName>国庆畅玩礼包</cnName>
+			<iconUrl>ThingsIcon/normalGift</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店银币购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<useSave>shopAuto</useSave>
+			<showGiftB>1</showGiftB>
+			<gift>things;strengthenStone;5</gift>
+			<gift>things;doubleCard;5</gift>
+			<gift>things;armsTitanium;2</gift>
+			<gift>things;armsRadium;2</gift>
+			<gift>things;strengthenDrug;30</gift>
+			<gift>things;lifeCatalyst;30</gift>
+			<gift>things;energyCatalyst;30</gift>
+			<gift>things;variationCatalyst;30</gift>
+			<gift>things;keyChest;5</gift>
+			<gift>things;magicChest;1</gift>
+			<gift>things;allBlackCash;2</gift>
+		</things>
+		<things cnName="国庆豪华礼包">
+			<name>goldNationalGift</name>
+			<cnName>国庆豪华礼包</cnName>
+			<iconUrl>ThingsIcon/goldGift</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店黄金购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<useSave>shopAuto</useSave>
+			<showGiftB>1</showGiftB>
+			<gift>things;rebirthStone;1</gift>
+			<gift>things;armsTitanium;5</gift>
+			<gift>things;armsRadium;5</gift>
+			<gift>things;strengthenStone;20</gift>
+			<gift>things;bloodStone;20</gift>
+			<gift>things;lightStone;10</gift>
+			<gift>things;armsEchelonCard;20</gift>
+			<gift>things;equipEchelonCard;20</gift>
+			<gift>things;dragonChest;1</gift>
+			<gift>things;allBlackCash;10</gift>
+		</things>
+		
+		
+		
+		
+		
+		
+		<things cnName="周年畅玩礼包">
+			<name>normalAnniverGift</name>
+			<cnName>周年畅玩礼包</cnName>
+			<iconUrl>ThingsIcon/postNormalChest</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店银币购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<useSave>shopAuto</useSave>
+			<showGiftB>1</showGiftB>
+			<gift>things;bloodStone;10</gift>
+			<gift>things;doubleCard;5</gift>
+			<gift>things;armsTitanium;2</gift>
+			<gift>things;armsRadium;2</gift>
+			<gift>things;lifeCatalyst;30</gift>
+			<gift>things;energyCatalyst;30</gift>
+			<gift>things;variationCatalyst;20</gift>
+			<gift>things;erosionFlamer;2</gift>
+			<gift>things;magicChest;1</gift>
+		</things>
+		<things cnName="周年豪华礼包">
+			<name>goldAnniverGift</name>
+			<cnName>周年豪华礼包</cnName>
+			<iconUrl>ThingsIcon/postPlatinumChest</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店黄金购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<useSave>shopAuto</useSave>
+			<showGiftB>1</showGiftB>
+			<gift>things;rebirthStone;1</gift>
+			<gift>things;armsTitanium;5</gift>
+			<gift>things;armsRadium;5</gift>
+			<gift>things;strengthenStone;20</gift>
+			<gift>things;bloodStone;30</gift>
+			<gift>things;armsEchelonCard;20</gift>
+			<gift>things;equipEchelonCard;20</gift>
+			<gift>things;dragonChest;1</gift>
+			<gift>things;erosionFlamer;10</gift>
+			<gift>things;allBlackCash;10</gift>
+		</things>
+		
+		
+		
+		<things cnName="开学畅玩礼包">
+			<name>kaixueGift2017_1</name>
+			<cnName>开学畅玩礼包</cnName>
+			<iconUrl>ThingsIcon/postNormalChest</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店银币购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<useSave>shopAuto</useSave>
+			<showGiftB>1</showGiftB>
+			<gift>things;doubleArmsCard;3</gift>
+			<gift>things;allBlackCash;20</gift>
+			<gift>things;godStone;100</gift>
+			<gift>things;converStone;100</gift>
+			<gift>things;bloodStone;50</gift>
+			<gift>things;ultiArmsEchelonCard;5</gift>
+
+		</things>
+		<things cnName="开学豪华礼包">
+			<name>kaixueGift2017_2</name>
+			<cnName>开学豪华礼包</cnName>
+			<iconUrl>ThingsIcon/postPlatinumChest</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店黄金购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<useSave>shopAuto</useSave>
+			<showGiftB>1</showGiftB>
+			<gift>things;magicChest;1</gift>
+			<gift>things;doubleArmsCard;5</gift>
+			<gift>things;oracleSuit_belt;10</gift>
+			<gift>things;oracleSuit_head;10</gift>
+			<gift>things;allBlackCash;30</gift>
+			<gift>things;godStone;200</gift>
+			<gift>things;converStone;200</gift>
+			<gift>things;bloodStone;60</gift>
+			<gift>things;fineStone;10</gift>
+
+		</things>
+	</father>	
+	
+	</data>

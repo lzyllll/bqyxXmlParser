@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicle" cnName="机械之渊" info="">
+		<body name="FourDiggers" cnName="血锯挖掘者" scene="FangZhouSecond" lifeMul="3" openTime="2024-11-25" day="33" noMoreB="1">
+			<drop cnName="死神碎片" pro="1" d7="14" d6="13" d5="12" d4="11" d3="10" d2="9" d1="8" d0="7">
+				<gift>things;sickleScythe_1;1</gift>
+			</drop>
+		</body>
+	</father>
+	
+	
+	
+	</data>

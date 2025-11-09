@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="sputtering" cnName="溅射">
+		<body name="greenBlood" urlRandomValue="4" time="3">sputtering/greenBlood</body>
+		<body name="spark" urlRandomValue="4" time="3">sputtering/spark</body>
+		<body name="whiteBlood" urlRandomValue="4" time="3">sputtering/whiteBlood</body>
+		<body name="fire" urlRandomValue="4" time="3">sputtering/fire</body>
+		<body name="stone" urlRandomValue="4" time="3">sputtering/stone</body>
+		
+		
+		<body cnName="爆炸物-中" name="boomMove" sm="boomMoveSmoke" time="1.5" raNum="20" urlRandomValue="4">sputtering/bigFire</body>
+		<body cnName="爆炸物-小" name="boomMoveSmall" sm="boomMoveSmokeSmall" time="1.5" raNum="20" urlRandomValue="4">sputtering/bigFire</body>
+		<body cnName="爆炸石头" name="stoneMoveSmall" sm="midGreySmoke" time="1.5" raNum="20" urlRandomValue="4">sputtering/bigFire</body>
+	</father>
+	
+	
+	
+	</data>

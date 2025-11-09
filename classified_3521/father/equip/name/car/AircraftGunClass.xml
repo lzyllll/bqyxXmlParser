@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="car" cnName="战车定义">
+		<equip name="AircraftGun" cnName="狩猎者">
+			<canComposeB>1</canComposeB>
+			<mustSightMul>0.3</mustSightMul>
+			<main label="AircraftGun_main" dpsMul="1.6" len="136" yGap="7" minRa="170" maxRa="20" />
+			<sub label="Diggers_sub" hideB="1" dpsMul="0" />
+			<lifeMul>2</lifeMul>
+			<attackMul>1</attackMul>
+			<duration>60</duration>
+			<cd>120</cd>
+			<mustCash>300</mustCash>
+			<addObjJson>{'dpsAll':0.08,'lifeAll':0.08}</addObjJson>
+		</equip>
+		
+		<bullet cnName="狩猎者">
+			<name>AircraftGun_main</name>
+			<cnName>狩猎者</cnName>
+			
+			<hurtRatio>2</hurtRatio>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.35</attackGap>
+			<attackDelay>0.2</attackDelay>
+			
+				
+			<shootRecoil>15</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			<bulletSpeed>35</bulletSpeed>
+			<boomD bodyB="1" floorB="1" radius="120" />
+			<penetrationGap>1000</penetrationGap>
+			
+			<flipX>1</flipX>
+			<fireImgUrl soundUrl="AircraftGun/shoot" />
+			<bulletImgUrl raNum="30" con="filter">AircraftGun/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/magicHit2" shake="2,0.2,10" con="add">AircraftGun/hit</hitImgUrl>
+		</bullet>
+	</father>
+	
+	
+	
+	
+	
+	
+	</data>

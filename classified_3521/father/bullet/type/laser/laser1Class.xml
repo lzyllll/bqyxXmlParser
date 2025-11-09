@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="laser" cnName="激光枪">
+		<bullet name="激光枪">
+			<name>laser1</name>
+			<cnName>激光枪</cnName>
+			<randomPro>1</randomPro>
+			<iconUrl>laser/icon</iconUrl>
+			
+			<capacity>6,12</capacity> 
+			<attackGap>0.30,0.50</attackGap>
+			<reloadGap>1.5,2.5</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>600,950</bulletWidth>
+			<bulletNum>1</bulletNum>
+			<beatBack>2</beatBack>
+			<targetShakeValue>3</targetShakeValue>
+			
+			<hurtRatio>4</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.5</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>3</upValue>
+			
+			<shootShakeAngle>25</shootShakeAngle>
+			<shootRecoil>4</shootRecoil>
+			
+			<bulletLife>0.1</bulletLife>
+			<hitType>longLine</hitType>
+			
+			<dpsMul>0.9</dpsMul>
+			<uiDpsMul>2.1</uiDpsMul>
+			
+			<shootSoundUrl />
+			<flipX>1</flipX>
+			<fireImgUrl name="blueLaserShoot" />
+			<bulletImgUrl raNum="60" con="add" len="20" everFleshB="1" imgDieType="die" time="-1" bottomLayerB="1">bullet/blueLaser</bulletImgUrl>
+			<hitImgUrl name="blueLaserShoot" />
+			
+			<allImgRange>laser</allImgRange>
+			<bodyImgRange>laser/body2</bodyImgRange>
+			<barrelImgRange>laser/barrel2,laser/barrel3</barrelImgRange>
+			<stockImgRange>laser/stock2</stockImgRange>
+			<gripImgRange>laser/grip2</gripImgRange>
+			<glassImgRange>laser/glass,laser/glass2</glassImgRange>
+		</bullet>
+	</father>
+</data>

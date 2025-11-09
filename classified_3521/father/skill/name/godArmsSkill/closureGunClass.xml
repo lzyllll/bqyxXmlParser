@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill name="墙">
+			<name>closureGunSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>墙</cnName><changeHurtB>1</changeHurtB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>closureGunSkill</effectType>
+			<description>生成一道墙，挡住目标前进，对尸体无效。</description>
+		</skill>
+	</father>
+</data>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data name="Girl"><father cn="功能">
+		<talk type="gift300" cn="惊喜">你怎么知道我喜欢这个！我都不知道怎么报答了……</talk>
+		<talk type="gift300" cn="惊喜">你真了解我！</talk>
+		<talk type="gift100" cn="喜欢">谢谢你的礼物，我很喜欢！</talk>
+		<talk type="gift100" cn="喜欢">你真是个细心的人，知道我喜欢这个，谢谢你！</talk>
+		<talk type="gift50" cn="贵重">这么贵重的东西，我真的可以收下吗？</talk>
+		<talk type="gift50" cn="贵重">恭敬不如从命。</talk>
+		<talk type="gift1" cn="一般">好吧，虽然我不是很需要这个东西，但是还是要谢谢你。</talk>
+		<talk type="gift_50" cn="讨厌">我现在不怎么喜欢这个东西。</talk>
+		<talk type="gift_50" cn="讨厌">我觉得你还不够了解我的喜好。</talk>
+		
+		
+		<talk type="beforeGift" cn="送礼物之前">你是打算送我礼物吗？</talk>
+		<talk type="beforeGift" cn="送礼物之前">让我看看你有多了解我。</talk>
+		<talk type="beforeGift" cn="送礼物之前">你知道我喜欢什么吗？</talk>
+		
+		
+		<talk type="beforeGift3" cn="送礼物之前">你是打算给我点惊喜？</talk>
+		<talk type="beforeGift3" cn="送礼物之前">难道你已经看透了我的心思？</talk>
+	</father>
+</data>

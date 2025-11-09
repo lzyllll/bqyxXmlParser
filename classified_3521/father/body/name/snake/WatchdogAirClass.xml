@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="snake" cnName="血蟒">
+		<body index="0" name="小飞天狗" shell="metal">
+			
+			<name>WatchdogAir</name>
+			<cnName>飞天狗</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/WatchdogAir.swf</swfUrl>
+			
+			<lifeRatio>0.6</lifeRatio>
+			<rosRatio>99</rosRatio>
+			<showLevel>9999</showLevel>
+			<motionState>fly</motionState><flyType>space</flyType>
+			<dieImg name="midSpace" /><dieJumpMul>0</dieJumpMul>
+			<lifeBarExtraHeight>45</lifeBarExtraHeight>
+			<imgArr>
+				stand,move
+				,shootAttack,machineAttack
+				,die1
+			</imgArr>
+			
+			<hitRect>-14,-45,28,45</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>7</maxVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<bossSkillArr>noSpeedReduce,offPassSkill,defenceBounce_enemy</bossSkillArr>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><cn>射击</cn>
+					<hurtRatio>1</hurtRatio>
+					<bulletLabel>WatchdogAirShoot</bulletLabel>
+					<grapRect>-35,114,85,370</grapRect>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>machineAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<grapRect>-400,-111,100,105</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>	
+	</father>		
+	</data>

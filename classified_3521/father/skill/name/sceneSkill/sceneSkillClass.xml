@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="sceneSkill" cnName="">
+		<skill>
+			<name>stoneSeaBuff</name><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<cnName>石海buff</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>stoneSeaBuff</effectType>
+			<mul>0.03</mul>
+			<pointEffectImg name="stoneSeaWalk" />
+			<duration>99999999</duration>
+		</skill>
+	</father>
+</data>

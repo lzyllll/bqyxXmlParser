@@ -1,0 +1,716 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="petSkill" cnName="尸宠技能">
+		<skill index="0" name="狂暴">
+			<name>crazy_pet</name>
+			<cnName>狂暴</cnName>
+			<iconUrl>SkillIcon/crazy_hero</iconUrl>
+			
+			<cd>100</cd>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			
+			<conditionType>active</conditionType>
+			<condition>beforeAttack</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>crazy</effectType>
+			<mul>2</mul>
+			<duration>5</duration>
+			
+			
+			<meEffectImg soundUrl="sound/crazy_hero" />
+			<stateEffectImg partType="2eye" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg>
+			<stateEffectImg2 partType="2eye" con="add">skillEffect/crazy_hero_eye</stateEffectImg2>
+			<description>释放技能后，本身若为射击单位，则增加100%的射击速度；若为非射击单位，则提升100%的移动速度、增加30%的攻击力。持续5秒。</description>
+			
+			<growth>
+				<skill><cd>100</cd></skill>
+				<skill><cd>90</cd></skill>
+				<skill><cd>80</cd></skill>
+				<skill><cd>70</cd></skill>
+				<skill><cd>60</cd></skill>
+				<skill><cd>50</cd></skill>
+				<skill><cd>40</cd></skill>
+				<skill><cd>35</cd></skill>
+				<skill><cd>30</cd></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="沉默">
+			<name>silence_pet</name>
+			<cnName>沉默</cnName>
+			<iconUrl>SkillIcon/silence_hero</iconUrl>
+			
+			<cd>60</cd>
+			<changeText>技能冷却时间：[cd]秒{n}作用范围：[range]码{n}持续时间：[duration]秒</changeText>
+			
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>500</conditionRange>
+			<target>me,range,enemy</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>silenceBAndClearState</effectType>
+			<value>1</value>
+			<range>400</range>
+			<duration>5</duration>
+			 
+			<meEffectImg soundUrl="sound/silence_enemy" />
+			<stateEffectImg partType="mouth" con="add">skillEffect/silence_enemy</stateEffectImg>
+			<description>使[range]码以内的所有敌方单位无法释放技能，持续[duration]秒，同时清除目标身上的隐身、狂暴、嗜爪、电离折射、电离反转的状态。</description>
+			
+			<growth>
+				<skill><cd>60</cd><range>350</range><duration>5</duration></skill>
+				<skill><cd>60</cd><range>550</range><duration>5</duration></skill>
+				<skill><cd>50</cd><range>550</range><duration>6</duration></skill>
+				<skill><cd>50</cd><range>750</range><duration>6</duration></skill>
+				<skill><cd>40</cd><range>750</range><duration>7</duration></skill>
+				<skill><cd>40</cd><range>1000</range><duration>7</duration></skill>
+				<skill><cd>30</cd><range>1500</range><duration>8</duration></skill>
+				<skill><cd>27</cd><range>1500</range><duration>8</duration></skill>
+				<skill><cd>25</cd><range>1500</range><duration>8</duration></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="群体圣光">
+			<name>groupLight_pet</name>
+			<cnName>群体圣光</cnName>
+			<iconUrl>SkillIcon/groupLight_hero</iconUrl>
+			
+			<cd>120</cd>
+			<changeText>技能冷却时间：[cd]秒{n}回满生命值的概率：[obj.pro]</changeText>
+			
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>weLifePerLess</otherConditionArr>
+			<conditionRange>0.7</conditionRange>
+			<target>me,range,we</target>
+			
+			<addType>instant</addType>
+			<effectType>life</effectType>
+			<mul>0.3</mul>
+			<range>300</range>
+			 
+			<meEffectImg soundUrl="sound/groupLight_hero" />
+			<targetEffectImg con="add">skillEffect/groupLight_hero</targetEffectImg>
+			<description>单位技能释放后，回复单位周围[range]码以内的所有友方单位30%的生命值，每个单位都有[obj.pro]的概率直接回满生命值。</description>
+			<obj>"pro":0.1</obj>
+			
+			<growth>
+				<skill><cd>120</cd><obj>"pro":0.1</obj></skill>
+				<skill><cd>110</cd><obj>"pro":0.15</obj></skill>
+				<skill><cd>100</cd><obj>"pro":0.2</obj></skill>
+				<skill><cd>90</cd><obj>"pro":0.25</obj></skill>
+				<skill><cd>80</cd><obj>"pro":0.3</obj></skill>
+				<skill><cd>70</cd><obj>"pro":0.35</obj></skill>
+				<skill><cd>60</cd><obj>"pro":0.4</obj></skill>
+				<skill><cd>55</cd><obj>"pro":0.45</obj></skill>
+				<skill><cd>50</cd><obj>"pro":0.5</obj></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="反击">
+			<name>tenacious_pet</name>
+			<cnName>反击</cnName>
+			<iconUrl>SkillIcon/tenacious_hero</iconUrl>
+			
+			<cd>100</cd>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			
+			<conditionType>active</conditionType>
+			<condition>beforeAttack</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>0.6</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>suckBlood</effectType>
+			
+			<mul>0.3</mul>
+			<duration>8</duration>
+			
+			<meEffectImg soundUrl="sound/tenacious_hero" />
+			<stateEffectImg partType="2hand" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg>
+			<description>释放技能后，单位开启[mul]的吸血状态，持续[duration]秒。</description>
+			
+			<growth>
+				<skill><cd>100</cd></skill>
+				<skill><cd>90</cd></skill>
+				<skill><cd>80</cd></skill>
+				<skill><cd>70</cd></skill>
+				<skill><cd>60</cd></skill>
+				<skill><cd>50</cd></skill>
+				<skill><cd>40</cd></skill>
+				<skill><cd>35</cd></skill>
+				<skill><cd>30</cd></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="电离折射">
+			<name>feedback_pet</name>
+			<cnName>电离折射</cnName>
+			<iconUrl>SkillIcon/feedback_hero</iconUrl>
+			<isInvincibleB>1</isInvincibleB><isDefenceB>1</isDefenceB>
+			
+			<cd>90</cd>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			
+			<conditionType>active</conditionType>
+			<condition>underHit</condition>
+			<otherConditionArr>attackTargetNoSameInvi</otherConditionArr>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>noUnderHurtB</effectType>
+			<value>2</value>
+			<duration>5</duration>
+			 
+			<passiveSkillArr>backHurt_hero_link</passiveSkillArr>
+			
+			<meEffectImg soundUrl="sound/feedback_hero" />
+			<stateEffectImg partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" imgDieType="last">skillEffect/feedback_hero_part</stateEffectImg>
+			<description>释放技能后，单位将200%的伤害反弹给敌人，自身不受到伤害。持续5秒。</description>
+			
+			<growth>
+				<skill><cd>90</cd></skill>
+				<skill><cd>80</cd></skill>
+				<skill><cd>70</cd></skill>
+				<skill><cd>60</cd></skill>
+				<skill><cd>50</cd></skill>
+				<skill><cd>42</cd></skill>
+				<skill><cd>35</cd></skill>
+				<skill><cd>30</cd></skill>
+				<skill><cd>27</cd></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="馈赠">
+			<name>skillGift_pet</name>
+			<cnName>馈赠</cnName>
+			<iconUrl>SkillIcon/skillGift_hero</iconUrl>
+			
+			<changeText>概率：[effectProArr.0]</changeText>
+			
+			
+			<conditionType>passive</conditionType>
+			<condition>useSkill</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>skillFullCd</effectType>
+			<effectProArr>0.10</effectProArr>
+			<value>2</value>
+			
+			<meEffectImg soundUrl="sound/skillFlesh" />
+			<targetEffectImg />
+			<description>每次单位释放完主动技能，就有[effectProArr.0]的几率大幅度回复该主动技能的冷却时间。</description>
+			
+			<growth>
+				<skill><effectProArr>0.10</effectProArr></skill>
+				<skill><effectProArr>0.14</effectProArr></skill>
+				<skill><effectProArr>0.18</effectProArr></skill>
+				<skill><effectProArr>0.22</effectProArr></skill>
+				<skill><effectProArr>0.26</effectProArr></skill>
+				<skill><effectProArr>0.30</effectProArr></skill>
+				<skill><effectProArr>0.34</effectProArr></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="pioneer_hero" cnName="先锋盾">
+			<name>pioneer_pet</name>
+			<cnName>先锋盾</cnName>
+			<iconUrl>SkillIcon/pioneer_hero</iconUrl>
+			
+			<changeText>受到的伤害减少[1-mul]</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>0.7</mul>
+			
+			<obj>"type":"lifePerMore","per":0.8</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>单位生命值大于[obj.per]时，受到的伤害减少[1-mul]。</description>
+			
+			<growth>
+				<skill><mul>0.70</mul></skill>
+				<skill><mul>0.60</mul></skill>
+				<skill><mul>0.52</mul></skill>
+				<skill><mul>0.45</mul></skill>
+				<skill><mul>0.40</mul></skill>
+				<skill><mul>0.36</mul></skill>
+				<skill><mul>0.32</mul></skill>
+				<skill><mul>0.29</mul></skill>
+				<skill><mul>0.26</mul></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="电离反转">
+			<name>groupReverseHurt_pet</name>
+			<cnName>电离反转</cnName>
+			<iconUrl>SkillIcon/groupReverseHurt_hero</iconUrl>
+			<isInvincibleB>1</isInvincibleB><isDefenceB>1</isDefenceB>
+			
+			<cd>90</cd>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>weLifePerLess,attackTargetNoSameInvi</otherConditionArr>
+			<conditionRange>0.6</conditionRange>
+			<target>me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>reverseHurt</effectType>
+			<value>1</value>
+			<duration>6</duration>
+			
+			<meEffectImg soundUrl="sound/reverseHurt_enemy" />
+			<stateEffectImg partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" imgDieType="last">skillEffect/reverseHurt_enemy</stateEffectImg>
+			<description>使[range]码范围内的友方单位进入电离反转状态，拥有该状态的单位所受到伤害都会转化为自己的生命值。持续6秒。</description>
+			
+			<growth>
+				<skill><cd>90</cd><range>400</range></skill>
+				<skill><cd>85</cd><range>480</range></skill>
+				<skill><cd>80</cd><range>560</range></skill>
+				<skill><cd>75</cd><range>640</range></skill>
+				<skill><cd>70</cd><range>720</range></skill>
+				<skill><cd>65</cd><range>800</range></skill>
+				<skill><cd>50</cd><range>880</range></skill>
+				<skill><cd>46</cd><range>950</range></skill>
+				<skill><cd>43</cd><range>1200</range></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="毒雾">
+			<name>poisonousFog_pet</name>
+			<cnName>毒雾</cnName>
+			<iconUrl>SkillIcon/poisonousFog_hero</iconUrl>
+			
+			<cd>100</cd>
+			<changeText>技能冷却时间：[cd]秒{n}作用范围：[range]码</changeText>
+			
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>600</conditionRange>
+			<target>mouse,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<mul>0.3</mul>
+			<duration>10</duration>
+			<range>200</range>
+			 
+			<linkArr>poisonousFog_hero_link</linkArr>
+			 
+			<meEffectImg soundUrl="sound/poisonousFog_hero" />
+			<stateEffectImg partType="mouth" con="add">skillEffect/poisonousFog_hero</stateEffectImg>
+			
+			<description>在单位周围释放毒雾，感染[range]码以内的敌人，使他们降低[1-mul]移动速度并且每秒减少0.5%生命值，持续10秒。</description>
+			
+			<growth>
+				<skill><cd>100</cd><range>200</range></skill>
+				<skill><cd>90</cd><range>250</range></skill>
+				<skill><cd>80</cd><range>300</range></skill>
+				<skill><cd>70</cd><range>400</range></skill>
+				<skill><cd>60</cd><range>450</range></skill>
+				<skill><cd>50</cd><range>450</range></skill>
+				<skill><cd>40</cd><range>450</range></skill>
+				<skill><cd>35</cd><range>500</range></skill>
+				<skill><cd>30</cd><range>550</range></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="定点轰炸">
+			<name>pointBoom_pet</name>
+			<cnName>定点轰炸</cnName>
+			<iconUrl>SkillIcon/pointBoom_hero</iconUrl>
+			
+			<cd>140</cd>
+			<changeText>技能冷却时间：[cd]秒{n}释放多次的概率：[effectProArr.1]</changeText>
+			
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>700</conditionRange>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>1.12,0.1,0.03,0.01</effectProArr>
+			<extraValueType>nowArmsDps</extraValueType>
+			
+			<obj>"name":"pointBoom_hero","site":"mouse","flipB":false</obj>
+			
+			<meActionLabel>skillAttack1</meActionLabel>
+			<description>在鼠标位置引爆一颗炸弹，对周围100码内的所有敌人造成伤害，伤害值为当前武器实际战斗力值的2倍。并且有[effectProArr.1]的几率释放2~4次。</description>
+			
+			<growth>
+				<skill>
+					<cd>140</cd>
+					<effectProArr>1.12,0.1,0.03,0.01</effectProArr>
+				</skill>
+				<skill>
+					<cd>125</cd>
+					<effectProArr>1.12,0.2,0.06,0.02</effectProArr>
+				</skill>
+				<skill>
+					<cd>110</cd>
+					<effectProArr>0.98,0.3,0.09,0.03</effectProArr>
+				</skill>
+				<skill>
+					<cd>95</cd>
+					<effectProArr>0.84,0.4,0.12,0.04</effectProArr>
+				</skill>
+				<skill>
+					<cd>80</cd>
+					<effectProArr>0.7,0.5,0.15,0.05</effectProArr>
+				</skill>
+				<skill>
+					<cd>70</cd>
+					<effectProArr>0.56,0.6,0.18,0.06</effectProArr>
+				</skill>
+				<skill>
+					<cd>60</cd>
+					<effectProArr>0.42,0.7,0.21,0.07</effectProArr>
+				</skill>
+				<skill>
+					<cd>55</cd>
+					<effectProArr>0.38,0.8,0.24,0.08</effectProArr>
+				</skill>
+				<skill>
+					<cd>50</cd>
+					<effectProArr>0.34,0.9,0.27,0.09</effectProArr>
+				</skill>
+			</growth>
+		</skill>
+		<skill index="0" name="欺凌">
+			<name>bullying_pet</name>
+			<cnName>欺凌</cnName><ignoreImmunityB>1</ignoreImmunityB>
+			<iconUrl>SkillIcon/bullying_hero</iconUrl>
+			
+			<changeText>伤害比例：[mul]</changeText>
+			
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>1.5</mul>
+			
+			<obj>"type":"lifePerLess","per":0.2</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>攻击生命低于[obj.per]的敌人，会对它造成[mul]的伤害。</description>
+			
+			<growth>
+				<skill><mul>1.5</mul></skill>
+				<skill><mul>1.7</mul></skill>
+				<skill><mul>1.9</mul></skill>
+				<skill><mul>2.1</mul></skill>
+				<skill><mul>2.3</mul></skill>
+				<skill><mul>2.5</mul></skill>
+				<skill><mul>2.7</mul></skill>
+				<skill><mul>2.9</mul></skill>
+				<skill><mul>3.1</mul></skill>
+			</growth>
+		</skill>
+		
+		
+		<skill index="0" name="flash_pet" cnName="闪烁">
+			<name>flash_pet</name>
+			<cnName>闪烁</cnName>
+			
+			<cd>30</cd>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>1000</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>teleport</effectType>
+			<valueString>attackTarget</valueString>
+			<mul>2</mul>
+			 
+			<linkArr>flash_pet_link_1,godHiding_Pet</linkArr>
+			 
+			<meEffectImg soundUrl="sound/teleport_enemy" con="add">lightEffect/basinShow</meEffectImg>
+			<description>瞬间移动目标单位的位置，自身隐身无敌3秒，同时在目标位置引爆炸弹，对周围100码的敌人造成相当于施法者战斗力[mul]的伤害。</description>
+			
+			<growth>
+				<skill><cd>30</cd></skill>
+				<skill><cd>26</cd></skill>
+				<skill><cd>22</cd></skill>
+				<skill><cd>19</cd></skill>
+				<skill><cd>15</cd></skill>
+				<skill><cd>11</cd></skill>
+				<skill><cd>7</cd></skill>
+				<skill><cd>7</cd><linkArr>flash_pet_link_2,godHiding_Pet</linkArr><mul>2.5</mul><changeText>伤害倍数[mul]</changeText></skill>
+				<skill><cd>7</cd><linkArr>flash_pet_link_3,godHiding_Pet</linkArr><mul>3</mul><changeText>伤害倍数[mul]</changeText></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="gngerFire_pet" cnName="怒火">
+			<name>gngerFire_pet</name>
+			<cnName>怒火</cnName>
+			
+			<changeText>伤害值为当前总战斗力的[mul]</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHurt</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<mul>0.2</mul>
+			<duration>5</duration>
+			 
+			<passiveSkillArr>selfBurn_pet_1</passiveSkillArr>
+			
+			 <iconUrl>SkillIcon/selfBurn_hero</iconUrl>
+			<stateEffectImg partType="arm_right_1,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" raNum="25">skillEffect/smallFire</stateEffectImg>
+			<description>单位受到攻击都能使自己燃起怒火，每1秒对附近150码内的所有敌人造成伤害，伤害值为总战斗力的[mul]，持续[duration]秒。</description>
+			
+			<growth>
+				<skill><mul>0.2</mul><passiveSkillArr>selfBurn_pet_1</passiveSkillArr></skill>
+				<skill><mul>0.3</mul><passiveSkillArr>selfBurn_pet_2</passiveSkillArr></skill>
+				<skill><mul>0.4</mul><passiveSkillArr>selfBurn_pet_3</passiveSkillArr></skill>
+				<skill><mul>0.5</mul><passiveSkillArr>selfBurn_pet_4</passiveSkillArr></skill>
+				<skill><mul>0.6</mul><passiveSkillArr>selfBurn_pet_5</passiveSkillArr></skill>
+				<skill><mul>0.7</mul><passiveSkillArr>selfBurn_pet_6</passiveSkillArr></skill>
+				<skill><mul>0.8</mul><passiveSkillArr>selfBurn_pet_7</passiveSkillArr></skill>
+				<skill><mul>1.1</mul><passiveSkillArr>selfBurn_pet_8</passiveSkillArr></skill>
+				<skill><mul>1.5</mul><passiveSkillArr>selfBurn_pet_9</passiveSkillArr></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="paralysis_pet" cnName="闪电麻痹">
+			<name>paralysis_pet</name>
+			<cnName>闪电麻痹</cnName>
+			
+			<cd>70</cd>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>500</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			
+			<obj>"name":"paralysis_pet","site":"me","flipB":true</obj>
+			
+			<meEffectImg soundUrl="sound/paralysis_enemy_shoot" />
+			<description>从单位背后发出3颗闪电球，击中目标后使其受到伤害并且无法移动5秒。</description>
+			
+			<growth>
+				<skill><cd>70</cd></skill>
+				<skill><cd>63</cd></skill>
+				<skill><cd>55</cd></skill>
+				<skill><cd>48</cd></skill>
+				<skill><cd>40</cd></skill>
+				<skill><cd>33</cd></skill>
+				<skill><cd>25</cd></skill>
+				<skill><cd>21</cd></skill>
+				<skill><cd>18</cd></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="imploding_pet" cnName="爆石">
+			<name>imploding_pet</name>
+			<cnName>爆石</cnName>
+			
+			<cd>75</cd>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>400</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>0.5,0.3,0.2,0.05</effectProArr>
+			<extraValueType>meDpsFactor</extraValueType>
+			
+			<obj>"name":"imploding_pet","site":"me","flipB":true</obj>
+			
+			<meEffectImg soundUrl="sound/imploding_enemy" />
+			<description>从单位背后爆发出5颗石头，每颗伤害为单位战斗力的2倍，并且有几率释放多次。</description>
+			
+			<growth>
+				<skill><cd>75</cd></skill>
+				<skill><cd>66</cd></skill>
+				<skill><cd>57</cd></skill>
+				<skill><cd>48</cd></skill>
+				<skill><cd>38</cd></skill>
+				<skill><cd>29</cd></skill>
+				<skill><cd>20</cd></skill>
+				<skill><cd>16</cd></skill>
+				<skill><cd>12</cd></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="strong_pet" cnName="顽强">
+			<name>strong_pet</name>
+			<cnName>顽强</cnName>
+			<changeText>生命值小于[obj.per]时触发效果</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>0.40</mul>
+			
+			<obj>"type":"lifePerLess","per":0.06</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>单位生命值小于[obj.per]时，受到的伤害降低[1-mul]。</description>
+			
+			<growth>
+				<skill><obj>"type":"lifePerLess","per":0.13</obj></skill>
+				<skill><obj>"type":"lifePerLess","per":0.20</obj></skill>
+				<skill><obj>"type":"lifePerLess","per":0.27</obj></skill>
+				<skill><obj>"type":"lifePerLess","per":0.33</obj></skill>
+				<skill><obj>"type":"lifePerLess","per":0.40</obj></skill>
+				<skill><obj>"type":"lifePerLess","per":0.47</obj></skill>
+				<skill><obj>"type":"lifePerLess","per":0.53</obj></skill>
+				<skill><obj>"type":"lifePerLess","per":0.57</obj></skill>
+				<skill><obj>"type":"lifePerLess","per":0.62</obj></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="trueshot_pet" cnName="强击光环">
+			<name>trueshot_pet</name>
+			<cnName>强击光环</cnName>
+			<changeText>增加[mul-1]的攻击力</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>hurtMul</effectType>
+			<mul>1.07</mul>
+			<duration>2</duration>
+			<range>300</range>
+			
+			<stateEffectImg partType="2hand" con="add" raNum="30" followPartRaB="1">skillEffect/trueshot_enemy</stateEffectImg>
+			<description>提升周围[range]码以内的我方单位[mul-1]的攻击力。</description>
+			<growth>
+				<skill><mul>1.07</mul></skill>
+				<skill><mul>1.11</mul></skill>
+				<skill><mul>1.15</mul></skill>
+				<skill><mul>1.19</mul></skill>
+				<skill><mul>1.23</mul></skill>
+				<skill><mul>1.27</mul></skill>
+				<skill><mul>1.31</mul></skill>
+				<skill><mul>1.33</mul></skill>
+				<skill><mul>1.35</mul></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="recoveryHalo_pet" cnName="复原光环">
+			<name>recoveryHalo_pet</name>
+			<cnName>复原光环</cnName>
+			<changeText>回复目标自身[mul]的生命值</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>lifeRate</effectType>
+			<mul>0.004</mul>
+			<duration>2</duration>
+			<range>200</range>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/rune_red_e</stateEffectImg>
+			<description>为周围[range]码以内的我方单位增加生命回复效果，每秒回复目标自身[mul]的生命值。</description>
+			<growth>
+				<skill><mul>0.004</mul></skill>
+				<skill><mul>0.006</mul></skill>
+				<skill><mul>0.008</mul></skill>
+				<skill><mul>0.010</mul></skill>
+				<skill><mul>0.012</mul></skill>
+				<skill><mul>0.014</mul></skill>
+				<skill><mul>0.016</mul></skill>
+				<skill><mul>0.017</mul></skill>
+				<skill><mul>0.018</mul></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="disabledHalo_pet" cnName="致残光环">
+			<name>disabledHalo_pet</name>
+			<cnName>致残光环</cnName>
+			<changeText>降低敌人[1-mul]的攻击力。</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>hurtMul</effectType>
+			<mul>0.96</mul>
+			<duration>2</duration>
+			<range>400</range>
+			
+			<stateEffectImg partType="2hand">skillEffect/disabled_enemy</stateEffectImg>
+			<description>降低周围[range]码以内的敌方单位[1-mul]的攻击力。</description>
+			<growth>
+				<skill><mul>0.96</mul></skill>
+				<skill><mul>0.92</mul></skill>
+				<skill><mul>0.88</mul></skill>
+				<skill><mul>0.84</mul></skill>
+				<skill><mul>0.80</mul></skill>
+				<skill><mul>0.76</mul></skill>
+				<skill><mul>0.72</mul></skill>
+				<skill><mul>0.69</mul></skill>
+				<skill><mul>0.66</mul></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="slowMoveHalo_pet" cnName="减速光环">
+			<name>slowMoveHalo_pet</name>
+			<cnName>减速光环</cnName>
+			<changeText>作用范围[range]码</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<value>0</value>
+			<mul>0.75</mul>
+			<duration>2</duration>
+			<range>250</range>
+			
+			<stateEffectImg partType="2foot">skillEffect/disabled_enemy</stateEffectImg>
+			<description>降低周围[range]码以内的敌方单位[1-mul]的移动速度。</description>
+			<growth>
+				<skill><range>250</range></skill>
+				<skill><range>350</range></skill>
+				<skill><range>450</range></skill>
+				<skill><range>550</range></skill>
+				<skill><range>650</range></skill>
+				<skill><range>750</range></skill>
+				<skill><range>900</range></skill>
+				<skill><range>1050</range></skill>
+				<skill><range>1200</range></skill>
+			</growth>
+		</skill>
+	</father>	
+	
+	
+</data>

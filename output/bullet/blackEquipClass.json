@@ -1,0 +1,283 @@
+{
+  "gather": {
+    "cnName": "黑色",
+    "range": "999,999,999,999",
+    "father": [
+      {
+        "cnName": "灰烬",
+        "color": "black",
+        "name": "ashesSuit",
+        "imgSwf": "ashesSuit91",
+        "suitPro": "hurtAll:1.15",
+        "image": [
+          {
+            "type": "head",
+            "itemsLevel": 81,
+            "blackDropLevelArr": "82,83",
+            "cnName": "灰烬头盔",
+            "otherObjJson": {
+              "dpsAllBlack": 0.16,
+              "lifeAllBlack": 0.75
+            }
+          },
+          {
+            "type": "coat",
+            "cnName": "灰烬战衣",
+            "itemsLevel": 81,
+            "blackDropLevelArr": 85,
+            "otherObjJson": {
+              "dpsAllBlack": 0.16,
+              "fightDedut": 0.41
+            },
+            "addArmsType": "pistol"
+          },
+          {
+            "type": "pants",
+            "cnName": "灰烬战裤",
+            "itemsLevel": 81,
+            "blackDropLevelArr": 84,
+            "otherObjJson": {
+              "dpsAllBlack": 0.15,
+              "moveMul": 0.27
+            },
+            "addArmsType": "rifle"
+          },
+          {
+            "type": "belt",
+            "cnName": "灰烬腰带",
+            "itemsLevel": 81,
+            "blackDropLevelArr": "81,83",
+            "otherObjJson": {
+              "dpsAllBlack": 0.17,
+              "lifeRateBlack": 11553
+            },
+            "addArmsType": "rocket"
+          }
+        ]
+      },
+      {
+        "cnName": "苍鹰",
+        "color": "black",
+        "name": "goshawkSuit",
+        "imgSwf": "goshawkSuit91",
+        "suitPro": "dpsAll:1.15",
+        "image": [
+          {
+            "type": "head",
+            "itemsLevel": 81,
+            "blackDropLevelArr": "82,83",
+            "cnName": "苍鹰头盔",
+            "otherObjJson": {
+              "dpsAllBlack": 0.15,
+              "dodge": 0.33
+            }
+          },
+          {
+            "type": "coat",
+            "cnName": "苍鹰战衣",
+            "itemsLevel": 81,
+            "blackDropLevelArr": 85,
+            "otherObjJson": {
+              "dpsAllBlack": 0.16,
+              "bulletDedut": 0.38
+            },
+            "addArmsType": "pistol"
+          },
+          {
+            "type": "pants",
+            "cnName": "苍鹰战裤",
+            "itemsLevel": 81,
+            "blackDropLevelArr": 84,
+            "otherObjJson": {
+              "dpsAllBlack": 0.16,
+              "cdMul": 0.27
+            },
+            "addArmsType": "rifle"
+          },
+          {
+            "type": "belt",
+            "cnName": "苍鹰腰带",
+            "itemsLevel": 81,
+            "blackDropLevelArr": "81,83",
+            "otherObjJson": {
+              "dpsAllBlack": 0.17,
+              "lifeRateBlack": 11553
+            },
+            "addArmsType": "rocket"
+          }
+        ]
+      },
+      {
+        "cnName": "雷霆",
+        "color": "black",
+        "name": "thunderSuit",
+        "imgSwf": "thunderSuit",
+        "evoB": true,
+        "suitPro": "dpsAll:1.25",
+        "chipNum": 50,
+        "resolveB": true,
+        "image": [
+          {
+            "type": "head",
+            "itemsLevel": 86,
+            "blackDropLevelArr": "89,94",
+            "cnName": "雷霆头盔",
+            "otherObjJson": {
+              "dpsAllBlack": 0.15,
+              "lifeAllBlack": 0.75
+            }
+          },
+          {
+            "type": "coat",
+            "cnName": "雷霆战衣",
+            "itemsLevel": 86,
+            "blackDropLevelArr": "88,93",
+            "otherObjJson": {
+              "dpsAllBlack": 0.16,
+              "fightDedut": 0.41
+            },
+            "addArmsType": "pistol"
+          },
+          {
+            "type": "pants",
+            "cnName": "雷霆战裤",
+            "itemsLevel": 86,
+            "blackDropLevelArr": "90,95,97",
+            "otherObjJson": {
+              "dpsAllBlack": 0.16,
+              "moveMul": 0.27
+            },
+            "addArmsType": "rifle"
+          },
+          {
+            "type": "belt",
+            "cnName": "雷霆腰带",
+            "itemsLevel": 86,
+            "blackDropLevelArr": "86,87,91,92",
+            "otherObjJson": {
+              "dpsAllBlack": 0.17,
+              "lifeRateBlack": 11553
+            },
+            "addArmsType": "rocket"
+          }
+        ]
+      },
+      {
+        "cnName": "鬼鲛",
+        "color": "black",
+        "name": "aintSuit",
+        "imgSwf": "aintSuit",
+        "evoB": true,
+        "suitPro": "hurtAll:1.25",
+        "chipNum": 50,
+        "resolveB": true,
+        "image": [
+          {
+            "type": "head",
+            "itemsLevel": 86,
+            "blackDropLevelArr": "89,94",
+            "cnName": "鬼鲛头盔",
+            "otherObjJson": {
+              "dpsAllBlack": 0.15,
+              "dodge": 0.33
+            }
+          },
+          {
+            "type": "coat",
+            "cnName": "鬼鲛战衣",
+            "itemsLevel": 86,
+            "blackDropLevelArr": "88,93",
+            "otherObjJson": {
+              "dpsAllBlack": 0.16,
+              "bulletDedut": 0.38
+            },
+            "addArmsType": "pistol"
+          },
+          {
+            "type": "pants",
+            "cnName": "鬼鲛战裤",
+            "itemsLevel": 86,
+            "blackDropLevelArr": "90,95,97",
+            "otherObjJson": {
+              "dpsAllBlack": 0.16,
+              "cdMul": 0.27
+            },
+            "addArmsType": "rifle"
+          },
+          {
+            "type": "belt",
+            "cnName": "鬼鲛腰带",
+            "itemsLevel": 86,
+            "blackDropLevelArr": "86,87,91,92",
+            "otherObjJson": {
+              "dpsAllBlack": 0.17,
+              "lifeRateBlack": 11553
+            },
+            "addArmsType": "rocket"
+          }
+        ]
+      },
+      {
+        "cnName": "神谕",
+        "color": "black",
+        "name": "oracleSuit",
+        "imgSwf": "oracleSuit",
+        "suitPro": "hurtAll:1.30",
+        "chipNum": 180,
+        "resolveB": true,
+        "composeProConstB": true,
+        "image": [
+          {
+            "type": "head",
+            "itemsLevel": 86,
+            "blackDropLevelArr": null,
+            "cnName": "神谕头盔",
+            "otherObjJson": {
+              "dpsAllBlack": 0.18,
+              "lifeAllBlack": 0.85
+            },
+            "skillArr": "godHand_equip",
+            "description": "秘境“狂战狼”、纪念币商店、神器宝箱、军队商店"
+          },
+          {
+            "type": "coat",
+            "cnName": "神谕战衣",
+            "itemsLevel": 86,
+            "blackDropLevelArr": null,
+            "otherObjJson": {
+              "dpsAllBlack": 0.19,
+              "bulletDedut": 0.38
+            },
+            "addArmsType": "pistol",
+            "skillArr": "refraction_equip",
+            "description": "神护碎片合成、纪念币商店、神器宝箱、商店"
+          },
+          {
+            "type": "pants",
+            "cnName": "神谕战裤",
+            "itemsLevel": 86,
+            "blackDropLevelArr": null,
+            "otherObjJson": {
+              "dpsAllBlack": 0.19,
+              "cdMul": 0.27
+            },
+            "addArmsType": "rifle"
+          },
+          {
+            "type": "belt",
+            "cnName": "神谕腰带",
+            "itemsLevel": 86,
+            "blackDropLevelArr": null,
+            "otherObjJson": {
+              "dpsAllBlack": 0.2,
+              "blackArmsDropPro": 0.2
+            },
+            "skillArr": "murderous_equip",
+            "addArmsType": "rocket",
+            "description": "秘境“飓风巫尸”、纪念币商店、神器宝箱。"
+          }
+        ]
+      }
+    ]
+  }
+}

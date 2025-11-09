@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill>
+			<name>rainGunSkill</name><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<cnName>人工降雨</cnName><noRandomListB>1</noRandomListB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>no</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>no</effectType>
+			<pointEffectImg name="rainBulletBoom" />
+			<description>射出炮弹将制造持续10分钟的小雨，地下、室内地图无法使用。降雨将影响武器、副手怒气等各方面特性，将鼠标放置游戏右上角的天气图标上可查看详情。</description>
+		</skill>
+	</father>
+</data>

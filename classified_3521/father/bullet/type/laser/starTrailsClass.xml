@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="laser" cnName="激光枪">
+		<bullet name="星轨" color="black" dropLevelArr="999" composeLv="99" chipNum="150" chipB="1">
+			<name>starTrails</name>
+			<cnName>星轨</cnName>
+			<iconUrl>specialGun/starTrailsChip</iconUrl>
+			
+			<capacity>8</capacity> 
+			<attackGap>1</attackGap>
+			<reloadGap>2</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>600</bulletWidth>
+			<bulletNum>2</bulletNum>
+			<shootAngle>2</shootAngle>	
+			<beatBack>2</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<speedD raBackV="8" />
+			<bounceD floor="0" body="0" noDieB="1" />	
+			<critD mul="2" pro="0.2" />
+			<penetrationNum>4</penetrationNum>
+			<skillArr>Hit_Spurting_ArmsSkill,Kill_Spurting_ArmsSkill</skillArr>
+			<godSkillArr>Hit_atry_godArmsSkill,Hit_crazy_godArmsSkill</godSkillArr>
+			
+			<hurtRatio>15</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.5</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>3</upValue>
+			<shootRecoil>2</shootRecoil>
+			
+			<bulletLife>1</bulletLife>
+			<hitType>longLine</hitType>
+			
+			<dpsMul>1.5</dpsMul>
+			<uiDpsMul>2.65</uiDpsMul>
+			
+			<flipX>1</flipX>
+			<fireImgUrl cacheB="1" imgDieType="die" con="add">bulletHitEffect/blueLaser</fireImgUrl>
+			<bulletImgUrl raNum="60" con="add" len="20" everFleshB="1" imgDieType="die" time="-1" bottomLayerB="1">bullet/blueLaser</bulletImgUrl>
+			<hitImgUrl cacheB="1" imgDieType="die" con="add">bulletHitEffect/blueLaser</hitImgUrl>
+			
+			<bodyImgRange>specialGun/starTrails</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<shootSoundUrl>specialGun/lightConeSound</shootSoundUrl>
+			<description>十年币兑换</description>
+		</bullet>
+	</father>
+	</data>

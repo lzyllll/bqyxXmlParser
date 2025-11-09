@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">	
+		<skill cnName="斩击">
+			<name>FoggyZombieShake</name>
+			<cnName>斩击</cnName><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>6</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>teleportToAttackBody</effectType>
+			<value>0.6</value>
+			<valueString>85,0</valueString>
+			
+			<meActionLabel>shakeAttack</meActionLabel>
+			<description>腾空而起，对目标发起斩击，让目标失去50%的生命值，并在后面的10秒内护盾无效，并且无法恢复生命值。</description>
+		</skill>
+					<skill cnName="斩击buff">
+						<name>FoggyShakeHit</name>
+						<cnName>斩击buff</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+						
+						<conditionType>passive</conditionType>
+						<condition>hit</condition>
+						<target>target</target>
+						
+						<addType>state</addType>
+						<effectType>FoggyShakeHit</effectType>
+						<duration>10</duration>
+						 
+						<stateEffectImg partType="mouth" con="add">generalEffect/purpleFace</stateEffectImg>
+					</skill>
+					
+		<skill cnName="钝击">
+			<name>FoggyZombieImpact</name>
+			<cnName>钝击</cnName><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>5</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>teleportToAttackBody</effectType>
+			<value>0.4</value>
+			<valueString>96,0</valueString>
+			
+			<meActionLabel>impactAttack</meActionLabel>
+			<description>用斧头钝击目标，使其失去30%的生命值，在接下来的5秒内，只要移动就会被眩晕。</description>
+		</skill>
+					<skill cnName="钝击buff">
+						<name>FoggyImpactHit</name>
+						<cnName>钝击buff</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+						
+						<conditionType>passive</conditionType>
+						<condition>hit</condition>
+						<target>target</target>
+						
+						<addType>state</addType>
+						<effectType>FoggyImpactHit</effectType>
+						<duration>5</duration>
+						<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+					</skill>
+					
+			<skill cnName="抵御">
+				<name>FoggyDefence</name>
+				<cnName>抵御</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+				<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+				
+				<conditionType>passive</conditionType>
+				<condition>underAllHurt</condition>
+				<otherConditionArr>canFoggyDef</otherConditionArr>
+				<target>me</target>
+				
+				<addType>instantAndState</addType>
+				<effectType>FoggyDefence</effectType>
+				<effectProArr>0.38</effectProArr>
+				<duration>0.2</duration>
+				 
+				<stateEffectImg partType="body">generalEffect/invincibleShield</stateEffectImg>
+				<description>每次受伤都有30%的概率无敌[duration]秒。</description>
+			</skill>
+	</father>	
+	
+	
+</data>

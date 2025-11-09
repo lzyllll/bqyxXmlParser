@@ -1,0 +1,1260 @@
+{
+  "gather": [
+    {
+      "name": "bossEdit",
+      "cnName": "首领大厅",
+      "father": [
+        {
+          "name": "bossEdit_1",
+          "cnName": "2星",
+          "id": 2110,
+          "uploadType": "bossEdit",
+          "objType": "bossEdit"
+        },
+        {
+          "name": "bossEdit_3",
+          "cnName": "3星",
+          "id": 2112,
+          "uploadType": "bossEdit",
+          "objType": "bossEdit",
+          "replaceLabel": "bossEdit_1"
+        },
+        {
+          "name": "bossEdit_4",
+          "cnName": "4星",
+          "id": 2113,
+          "uploadType": "bossEdit",
+          "objType": "bossEdit",
+          "replaceLabel": "bossEdit_1"
+        },
+        {
+          "name": "bossEdit_5",
+          "cnName": "5星",
+          "id": 2114,
+          "uploadType": "bossEdit",
+          "objType": "bossEdit",
+          "replaceLabel": "bossEdit_1"
+        },
+        {
+          "name": "bossEdit_6",
+          "cnName": "6星",
+          "id": 2115,
+          "uploadType": "bossEdit",
+          "objType": "bossEdit",
+          "replaceLabel": "bossEdit_1"
+        },
+        {
+          "name": "bossEdit_7",
+          "cnName": "7星",
+          "id": 2116,
+          "uploadType": "bossEdit",
+          "objType": "bossEdit",
+          "replaceLabel": "bossEdit_1"
+        },
+        {
+          "name": "bossEdit_8",
+          "cnName": "8星",
+          "id": 2117,
+          "uploadType": "bossEdit",
+          "objType": "bossEdit",
+          "replaceLabel": "bossEdit_1"
+        }
+      ]
+    },
+    {
+      "name": "arena",
+      "cnName": "竞技场",
+      "father": [
+        {
+          "name": "arena_5",
+          "cnName": "40级榜",
+          "id": 1501,
+          "uploadType": "arena",
+          "objType": "arena",
+          "maxLevel": 40,
+          "info": "50,20,50",
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "用户名",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "人物等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "积分",
+              "proUrl": "score"
+            }
+          ]
+        },
+        {
+          "name": "arena_4",
+          "cnName": "60级榜",
+          "id": 1500,
+          "objType": "arena",
+          "uploadType": "arena",
+          "replaceLabel": "arena_5",
+          "maxLevel": 60,
+          "info": "55,25,55"
+        },
+        {
+          "name": "arena_3",
+          "cnName": "70级榜",
+          "id": 2001,
+          "objType": "arena",
+          "uploadType": "arena",
+          "replaceLabel": "arena_5",
+          "maxLevel": 70,
+          "info": "60,30,60"
+        },
+        {
+          "name": "arena_2",
+          "cnName": "80级榜",
+          "id": 2000,
+          "objType": "arena",
+          "uploadType": "arena",
+          "replaceLabel": "arena_5",
+          "maxLevel": 80,
+          "info": "65,35,65"
+        },
+        {
+          "name": "arena_1",
+          "cnName": "90级榜",
+          "id": 1999,
+          "objType": "arena",
+          "uploadType": "arena",
+          "replaceLabel": "arena_5",
+          "maxLevel": 90,
+          "info": "80,40,60"
+        },
+        {
+          "name": "arena_max",
+          "cnName": "最高等级榜",
+          "id": 1998,
+          "objType": "arena",
+          "uploadType": "arena",
+          "replaceLabel": "arena_5",
+          "maxLevel": 999,
+          "info": "120,70,35"
+        }
+      ]
+    },
+    {
+      "name": "ask",
+      "cnName": "问答",
+      "father": {
+        "name": "askScore",
+        "cnName": "问答",
+        "id": 1970,
+        "objType": "dps",
+        "uploadType": "askScore",
+        "bar": [
+          {
+            "cnName": "排名",
+            "proUrl": "rank"
+          },
+          {
+            "cnName": "用户名",
+            "proUrl": "extraObj.player"
+          },
+          {
+            "cnName": "积分",
+            "proUrl": "score"
+          }
+        ]
+      }
+    },
+    {
+      "name": "main",
+      "cnName": "玩家",
+      "normalB": true,
+      "father": [
+        {
+          "name": "dps",
+          "cnName": "战斗力",
+          "id": 2109,
+          "objType": "dps",
+          "scoreMul": 0.01,
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "用户名",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "人物等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "头部防御",
+              "proUrl": "extraObj.headDef"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            }
+          ]
+        },
+        {
+          "name": "life",
+          "cnName": "生命值",
+          "id": 998,
+          "objType": "dps",
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "用户名",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "人物等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "头部防御",
+              "proUrl": "extraObj.headDef"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "score"
+            }
+          ]
+        },
+        {
+          "name": "headDefence",
+          "cnName": "头部防御",
+          "id": 999,
+          "objType": "dps",
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "用户名",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "人物等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            },
+            {
+              "cnName": "头部防御",
+              "proUrl": "score"
+            }
+          ]
+        },
+        {
+          "name": "lifeRate",
+          "cnName": "生命恢复速度",
+          "id": 1000,
+          "objType": "dps",
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "用户名",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "人物等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            },
+            {
+              "cnName": "生命回复速度",
+              "proUrl": "score"
+            }
+          ]
+        },
+        {
+          "name": "loveValue",
+          "cnName": "好感度",
+          "id": 1479,
+          "objType": "dps",
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "用户名",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "人物等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            },
+            {
+              "cnName": "好感度",
+              "proUrl": "score"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "endless",
+      "cnName": "无尽模式",
+      "normalB": true,
+      "father": {
+        "name": "endlessScore",
+        "cnName": "最高评分",
+        "id": 1131,
+        "objType": "dps",
+        "bar": [
+          {
+            "cnName": "排名",
+            "proUrl": "rank"
+          },
+          {
+            "cnName": "用户名",
+            "proUrl": "extraObj.player"
+          },
+          {
+            "cnName": "人物等级",
+            "proUrl": "extraObj.lv"
+          },
+          {
+            "cnName": "生命值",
+            "proUrl": "extraObj.life"
+          },
+          {
+            "cnName": "战斗力",
+            "proUrl": "extraObj.dps"
+          },
+          {
+            "cnName": "最高评分",
+            "proUrl": "score"
+          }
+        ]
+      }
+    },
+    {
+      "name": "more",
+      "cnName": "队友",
+      "normalB": true,
+      "father": [
+        {
+          "name": "Girl",
+          "cnName": "小樱",
+          "id": 1001,
+          "objType": "dps",
+          "scoreMul": 0.01,
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "拥有者",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "头部防御",
+              "proUrl": "extraObj.headDef"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            }
+          ]
+        },
+        {
+          "name": "WenJie",
+          "cnName": "表哥",
+          "id": 850,
+          "objType": "dps",
+          "scoreMul": 0.01,
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "拥有者",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "头部防御",
+              "proUrl": "extraObj.headDef"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            }
+          ]
+        },
+        {
+          "name": "ZangShi",
+          "cnName": "藏师",
+          "id": 851,
+          "objType": "dps",
+          "scoreMul": 0.01,
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "拥有者",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "头部防御",
+              "proUrl": "extraObj.headDef"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pet",
+      "cnName": "尸宠",
+      "normalB": true,
+      "father": [
+        {
+          "name": "petDps",
+          "cnName": "尸宠战斗力",
+          "id": 2320,
+          "objType": "dps",
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "名称",
+              "proUrl": "extraObj.equip"
+            },
+            {
+              "cnName": "拥有者",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "score"
+            }
+          ]
+        },
+        {
+          "name": "petLife",
+          "cnName": "尸宠生命值",
+          "id": 2321,
+          "objType": "dps",
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "名称",
+              "proUrl": "extraObj.equip"
+            },
+            {
+              "cnName": "拥有者",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "score"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "arms",
+      "cnName": "武器战斗力",
+      "normalB": true,
+      "father": [
+        {
+          "name": "rifle",
+          "cnName": "步枪",
+          "id": 852,
+          "objType": "arms",
+          "scoreMul": 0.01,
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "名称",
+              "proUrl": "extraObj.name"
+            },
+            {
+              "cnName": "等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "伤害",
+              "proUrl": "extraObj.hurt"
+            },
+            {
+              "cnName": "拥有者",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            }
+          ]
+        },
+        {
+          "name": "sniper",
+          "cnName": "狙击枪",
+          "id": 853,
+          "objType": "arms",
+          "scoreMul": 0.01,
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "名称",
+              "proUrl": "extraObj.name"
+            },
+            {
+              "cnName": "等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "伤害",
+              "proUrl": "extraObj.hurt"
+            },
+            {
+              "cnName": "拥有者",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            }
+          ]
+        },
+        {
+          "name": "shotgun",
+          "cnName": "散弹枪",
+          "id": 854,
+          "objType": "arms",
+          "scoreMul": 0.01,
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "名称",
+              "proUrl": "extraObj.name"
+            },
+            {
+              "cnName": "等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "伤害",
+              "proUrl": "extraObj.hurt"
+            },
+            {
+              "cnName": "拥有者",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            }
+          ]
+        },
+        {
+          "name": "pistol",
+          "cnName": "手枪",
+          "id": 855,
+          "objType": "arms",
+          "scoreMul": 0.01,
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "名称",
+              "proUrl": "extraObj.name"
+            },
+            {
+              "cnName": "等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "伤害",
+              "proUrl": "extraObj.hurt"
+            },
+            {
+              "cnName": "拥有者",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            }
+          ]
+        },
+        {
+          "name": "rocket",
+          "cnName": "火炮",
+          "id": 856,
+          "objType": "arms",
+          "scoreMul": 0.01,
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "名称",
+              "proUrl": "extraObj.name"
+            },
+            {
+              "cnName": "等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "伤害",
+              "proUrl": "extraObj.hurt"
+            },
+            {
+              "cnName": "拥有者",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            }
+          ]
+        },
+        {
+          "name": "crossbow",
+          "cnName": "弩",
+          "id": 1502,
+          "objType": "arms",
+          "scoreMul": 0.01,
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "名称",
+              "proUrl": "extraObj.name"
+            },
+            {
+              "cnName": "等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "伤害",
+              "proUrl": "extraObj.hurt"
+            },
+            {
+              "cnName": "拥有者",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            }
+          ]
+        },
+        {
+          "name": "flamer",
+          "cnName": "喷火器",
+          "id": 1503,
+          "objType": "arms",
+          "scoreMul": 0.01,
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "名称",
+              "proUrl": "extraObj.name"
+            },
+            {
+              "cnName": "等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "伤害",
+              "proUrl": "extraObj.hurt"
+            },
+            {
+              "cnName": "拥有者",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "task",
+      "cnName": "任务与成就",
+      "normalB": true,
+      "father": [
+        {
+          "name": "maxKingLevel",
+          "cnName": "擒王之最",
+          "id": 1009,
+          "objType": "dps",
+          "info": "消灭擒王首领最高等级",
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "用户名",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "人物等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            },
+            {
+              "cnName": "首领最高等级",
+              "proUrl": "score"
+            }
+          ]
+        },
+        {
+          "name": "maxCompleteAchieve",
+          "cnName": "成就之最",
+          "id": 1013,
+          "objType": "dps",
+          "info": "已完成成就数量",
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "用户名",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "人物等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            },
+            {
+              "cnName": "数量",
+              "proUrl": "score"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "killAndDie",
+      "cnName": "灭敌与殒命",
+      "normalB": true,
+      "father": [
+        {
+          "name": "killNum",
+          "cnName": "消灭敌人数量",
+          "id": 1002,
+          "objType": "dps",
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "用户名",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "人物等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            },
+            {
+              "cnName": "数量",
+              "proUrl": "score"
+            }
+          ]
+        },
+        {
+          "name": "killBossNum",
+          "cnName": "消灭首领数量",
+          "id": 1003,
+          "objType": "dps",
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "用户名",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "人物等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            },
+            {
+              "cnName": "数量",
+              "proUrl": "score"
+            }
+          ]
+        },
+        {
+          "name": "dieNum",
+          "cnName": "殒命次数",
+          "id": 1004,
+          "objType": "dps",
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "用户名",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "人物等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            },
+            {
+              "cnName": "数量",
+              "proUrl": "score"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "drop",
+      "cnName": "物品与掉落",
+      "normalB": true,
+      "father": [
+        {
+          "name": "dropArmsNum",
+          "cnName": "武器掉落数量",
+          "id": 1005,
+          "objType": "dps",
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "用户名",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "人物等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            },
+            {
+              "cnName": "数量",
+              "proUrl": "score"
+            }
+          ]
+        },
+        {
+          "name": "dropEquipNum",
+          "cnName": "装备掉落数量",
+          "id": 1006,
+          "objType": "dps",
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "用户名",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "人物等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            },
+            {
+              "cnName": "数量",
+              "proUrl": "score"
+            }
+          ]
+        },
+        {
+          "name": "lotteryAllOrangeNum",
+          "cnName": "我爱橙色",
+          "id": 1010,
+          "objType": "dps",
+          "info": "抽奖中获得橙色物品的数量累计",
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "用户名",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "人物等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            },
+            {
+              "cnName": "数量",
+              "proUrl": "score"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "skill",
+      "cnName": "技能",
+      "normalB": true,
+      "father": [
+        {
+          "name": "skillGiftNum",
+          "cnName": "馈赠之最",
+          "id": 1029,
+          "objType": "dps",
+          "info": "一关之内触发馈赠技能次数之最",
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "用户名",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "人物等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            },
+            {
+              "cnName": "次数",
+              "proUrl": "score"
+            }
+          ]
+        },
+        {
+          "name": "charmMaxNum",
+          "cnName": "魅惑之最",
+          "id": 1007,
+          "objType": "dps",
+          "info": "一关之内最多同时存在的魅惑单位数量之最",
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "用户名",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "人物等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            },
+            {
+              "cnName": "数量",
+              "proUrl": "score"
+            }
+          ]
+        },
+        {
+          "name": "moreMissileMaxNum",
+          "cnName": "万弹归宗之最",
+          "id": 1008,
+          "objType": "dps",
+          "info": "一关之内累计释放万弹归宗导弹的数量之最",
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "用户名",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "人物等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            },
+            {
+              "cnName": "数量",
+              "proUrl": "score"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "move",
+      "cnName": "运动",
+      "normalB": true,
+      "father": [
+        {
+          "name": "maxFlyHigh",
+          "cnName": "升空",
+          "id": 1030,
+          "objType": "dps",
+          "info": "最高升空高度",
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "用户名",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "人物等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            },
+            {
+              "cnName": "高度",
+              "proUrl": "score"
+            }
+          ]
+        },
+        {
+          "name": "maxFallHigh",
+          "cnName": "坠落",
+          "id": 1031,
+          "objType": "dps",
+          "info": "最高坠落高度",
+          "bar": [
+            {
+              "cnName": "排名",
+              "proUrl": "rank"
+            },
+            {
+              "cnName": "用户名",
+              "proUrl": "extraObj.player"
+            },
+            {
+              "cnName": "人物等级",
+              "proUrl": "extraObj.lv"
+            },
+            {
+              "cnName": "生命值",
+              "proUrl": "extraObj.life"
+            },
+            {
+              "cnName": "战斗力",
+              "proUrl": "extraObj.dps"
+            },
+            {
+              "cnName": "高度",
+              "proUrl": "score"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

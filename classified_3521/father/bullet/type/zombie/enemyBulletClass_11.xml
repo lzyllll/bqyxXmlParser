@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="飓风巫尸">	
+		<bullet cnName="飓风巫尸-能量波">
+			<name>TyphoonWitch_shoot1</name>
+			<cnName>飓风巫尸-能量波</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.3</attackGap>
+			<attackDelay>0.3</attackDelay>
+			<bulletAngle>180</bulletAngle>
+			<bulletAngleRange>20</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>3</shootNum>					
+			<shootGap>0.25</shootGap>					
+				
+			<bounceD floor="10" />	
+				
+			<shootPoint>-63,-96</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<followD value="0.2" />	
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">TyphoonWitch/bullet1</bulletImgUrl>
+			<hitImgUrl soundUrl="TyphoonWitch/hit1">bulletHitEffect/energy</hitImgUrl>
+			<hitFloorImgUrl>bulletHitEffect/energy</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="1">skillEffect/witchSmoke</smokeImgUrl>
+		</bullet>
+		<bullet cnName="飓风巫尸-聚能波">
+			<name>TyphoonWitch_shoot2</name>
+			<cnName>飓风巫尸-聚能波</cnName>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>3</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>2.2</attackGap>
+			<attackDelay>1.6</attackDelay>
+			<bulletAngle>180</bulletAngle>
+			<bulletAngleRange>10</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+				
+			<penetrationGap>1000</penetrationGap>
+			<skillArr>emp_wind</skillArr>
+				
+			<shootPoint>-73,-96</shootPoint>
+			<bulletSpeed>35</bulletSpeed>
+			<targetShakeValue>20</targetShakeValue>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">TyphoonWitch/bullet2</bulletImgUrl>
+			<hitImgUrl soundUrl="TyphoonWitch/hit1">bulletHitEffect/energy</hitImgUrl>
+			<hitFloorImgUrl soundUrl="TyphoonWitch/hit1">bulletHitEffect/energy</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="1">TyphoonWitch/smoke2</smokeImgUrl>
+		</bullet>
+		<bullet cnName="飓风巫尸-蝙蝠阵">
+			<name>TyphoonWitch_bat</name>
+			<cnName>飓风巫尸-蝙蝠阵</cnName>
+			
+			<shakeAngle>15</shakeAngle>
+			<bulletLife>3</bulletLife>
+			<bulletWidth>25</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.6</attackGap>
+			<attackDelay>0.5</attackDelay>
+			<bulletAngle>180</bulletAngle>
+			<bulletAngleRange>20</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>12</shootNum>					
+			<shootGap>0.03</shootGap>					
+			<positionD specialType="TyphoonWitch_bat" />
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<twoHitGap>0.5</twoHitGap>
+				
+			<shootPoint>255,-81</shootPoint>
+			<bulletSpeed>20</bulletSpeed>
+			<speedD random="0.3" />
+			<followD value="0.25" />	
+			
+			<skillArr>blindness_skeleton</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1">TyphoonWitch/batBullet1</bulletImgUrl>
+			<bulletLeftImgUrl raNum="1">TyphoonWitch/batBullet2</bulletLeftImgUrl>
+			<hitImgUrl soundUrl="TyphoonWitch/hit2">bladeHitEffect/blood</hitImgUrl>
+		</bullet>
+		<bullet cnName="飓风巫尸-飓风">
+			<name>TyphoonWitch_wind</name>
+			<cnName>飓风巫尸-飓风</cnName>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>13</bulletLife>
+			<bulletWidth>60</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.4</attackGap>
+			<attackDelay>0.55</attackDelay>
+			<bulletAngle>180</bulletAngle>
+			<bulletNum>1</bulletNum>				
+				
+			<penetrationNum>999</penetrationNum>
+			<penetrationGap>1000</penetrationGap>
+			<twoHitGap>0.2</twoHitGap>
+			
+				
+			<shootPoint>-151,-55</shootPoint>
+			<bulletSpeed>15</bulletSpeed>
+			<speedD max="25" min="4" a="-4" />
+			<skillArr>slowMove_wind,silence_wind</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1">TyphoonWitch/windEffect</bulletImgUrl>
+			<hitImgUrl soundUrl="TyphoonWitch/hit2">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		<bullet cnName="飓风巫尸-巫师之怒">
+			<name>TyphoonWitch_anger</name>
+			<cnName>巫师之怒</cnName>
+			
+			<shakeAngle>40</shakeAngle>
+			<bulletLife>3.5</bulletLife>
+			<bulletWidth>25</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.9</attackGap>
+			<attackDelay>0.15</attackDelay>
+			<bulletAngle>270</bulletAngle>
+			<bulletNum>3</bulletNum>				
+			<shootAngle>90</shootAngle>
+			<shootNum>30</shootNum>					
+			<shootGap>0.01</shootGap>					
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<twoHitGap>0.5</twoHitGap>
+				
+			<shootPoint>0,-60</shootPoint>
+			<bulletSpeed>20</bulletSpeed>
+			<extendGap>30</extendGap>
+			<speedD max="20" min="6" a="4" random="0.3" />
+			<followD value="0.2" />	
+			
+			<skillArr>wizardAnger_wind_blood,blindness_skeleton</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1">TyphoonWitch/batBullet1</bulletImgUrl>
+			<bulletLeftImgUrl raNum="1">TyphoonWitch/batBullet2</bulletLeftImgUrl>
+			<hitImgUrl soundUrl="TyphoonWitch/hit2">bladeHitEffect/blood</hitImgUrl>
+		</bullet>
+		
+		
+		<bullet cnName="飓风巫尸-能量波">
+			<name>PetTyphoonWitch_shoot1</name>
+			<cnName>飓风巫尸-能量波</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.3</attackGap>
+			<attackDelay>0.3</attackDelay>
+			<bulletAngle>180</bulletAngle>
+			<bulletAngleRange>20</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>3</shootNum>					
+			<shootGap>0.25</shootGap>					
+				
+			<bounceD floor="10" />	
+				
+			<shootPoint>-63,-96</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<followD value="0.2" />	
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">PetTyphoonWitch/bullet1</bulletImgUrl>
+			<hitImgUrl soundUrl="PetTyphoonWitch/hit1">bulletHitEffect/energy</hitImgUrl>
+			<hitFloorImgUrl>bulletHitEffect/energy</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="1">skillEffect/witchSmoke</smokeImgUrl>
+		</bullet>
+		<bullet cnName="飓风巫尸-聚能波">
+			<name>PetTyphoonWitch_shoot2</name>
+			<cnName>飓风巫尸-聚能波</cnName>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>3</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>2.2</attackGap>
+			<attackDelay>1.6</attackDelay>
+			<bulletAngle>180</bulletAngle>
+			<bulletAngleRange>10</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+				
+			<penetrationGap>1000</penetrationGap>
+			<skillArr>emp_wind</skillArr>
+				
+			<shootPoint>-73,-96</shootPoint>
+			<bulletSpeed>35</bulletSpeed>
+			<targetShakeValue>20</targetShakeValue>
+			<followD value="0.5" />	
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">PetTyphoonWitch/bullet2</bulletImgUrl>
+			<hitImgUrl soundUrl="PetTyphoonWitch/hit1">bulletHitEffect/energy</hitImgUrl>
+			<hitFloorImgUrl soundUrl="PetTyphoonWitch/hit1">bulletHitEffect/energy</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="1">PetTyphoonWitch/smoke2</smokeImgUrl>
+		</bullet>
+		<bullet cnName="飓风巫尸-飓风">
+			<name>PetTyphoonWitch_wind</name>
+			<cnName>飓风巫尸-飓风</cnName>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>13</bulletLife>
+			<bulletWidth>60</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.4</attackGap>
+			<attackDelay>0.55</attackDelay>
+			<bulletAngle>180</bulletAngle>
+			<bulletNum>1</bulletNum>				
+				
+			<penetrationNum>999</penetrationNum>
+			<penetrationGap>1000</penetrationGap>
+			<twoHitGap>0.2</twoHitGap>
+			
+				
+			<shootPoint>-151,-55</shootPoint>
+			<bulletSpeed>8</bulletSpeed>
+			<speedD max="8" min="4" a="-4" />
+			<skillArr>slowMove_wind,silence_wind</skillArr>
+			<followD value="0.5" />	
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1">PetTyphoonWitch/windEffect</bulletImgUrl>
+			<hitImgUrl soundUrl="PetTyphoonWitch/hit2">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		<bullet cnName="飓风巫尸-巫师之怒">
+			<name>PetTyphoonWitch_anger</name>
+			<cnName>宠-巫师之怒</cnName>
+			
+			<shakeAngle>40</shakeAngle>
+			<bulletLife>3.5</bulletLife>
+			<bulletWidth>25</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.9</attackGap>
+			<attackDelay>0.15</attackDelay>
+			<bulletAngle>270</bulletAngle>
+			<bulletNum>3</bulletNum>				
+			<shootAngle>90</shootAngle>
+			<shootNum>30</shootNum>					
+			<shootGap>0.01</shootGap>					
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<twoHitGap>0.5</twoHitGap>
+				
+			<shootPoint>0,-60</shootPoint>
+			<bulletSpeed>20</bulletSpeed>
+			<extendGap>30</extendGap>
+			<speedD max="20" min="6" a="4" random="0.3" />
+			<followD value="0.2" />	
+			
+			<skillArr>wizardAnger_wind_blood,blindness_skeleton</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1">PetTyphoonWitch/batBullet1</bulletImgUrl>
+			<bulletLeftImgUrl raNum="1">PetTyphoonWitch/batBullet2</bulletLeftImgUrl>
+			<hitImgUrl soundUrl="PetTyphoonWitch/hit2">bladeHitEffect/blood</hitImgUrl>
+		</bullet>
+	</father>	
+	</data>

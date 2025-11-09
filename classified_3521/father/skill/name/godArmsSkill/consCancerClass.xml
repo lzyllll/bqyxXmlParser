@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill>
+			<name>consCancerSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>电离层</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType><overlyingB>1</overlyingB>
+			<effectType>cold_arms</effectType>
+			<value>3</value>
+			<mul>0.1</mul>
+			<duration>5</duration>
+			<stateEffectImg bodyColor="0xFFB600" />
+			<description>每次伤害都会给目标叠加1层持续[duration]秒的“电离层”，每层降低目标[mul]的防御力，最高叠加[value]层。无视技能免疫、免疫、净化器。</description>
+		</skill>
+	</father>
+</data>

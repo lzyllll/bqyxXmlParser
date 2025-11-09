@@ -1,0 +1,545 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="treasure" cnName="寻宝" dayNum="1" buyNum="1" tipText="每天第一次上线将清除前一天的任务进度。" autoUnlockByLevelB="1" maxLvLimitB="1">
+		
+		
+		<task name="skillStoneThings" cnName="超能石宝藏" unlockLv="11" uiShowTime="999999" levelIsTaskLvB="1" completeLimitNum="-1" moreKillEnemyNumIsMe="1" superAddNumB="1">
+			<shortText>前往[map]消灭僵尸。</shortText>
+			<conditionText>僵尸 [nowNum]/[num]</conditionText>
+			<uiConditionText>累计消灭怪物 [nowNum]/[num] 只</uiConditionText>
+			<description>在指定地点消灭指定数量的怪物，你将获得超丰厚的奖励！</description>
+			
+			<worldMapType>random</worldMapType>
+			
+			<growth>
+				<task>
+					<diff>0.8</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;2;;;;LevelEnemyExp</gift>
+					<gift>base;coin;4;;;;LevelEnemyCoin</gift>
+					<gift>things;skillStone;33</gift>
+				</task>
+				<task>
+					<diff>1.7</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;4;;;;LevelEnemyExp</gift>
+					<gift>base;coin;7;;;;LevelEnemyCoin</gift>
+					<gift>things;skillStone;36</gift>
+				</task>
+				<task>
+					<diff>4</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;5;;;;LevelEnemyExp</gift>
+					<gift>base;coin;10;;;;LevelEnemyCoin</gift>
+					<gift>things;skillStone;39</gift>
+				</task>
+				<task>
+					<diff>10</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;7;;;;LevelEnemyExp</gift>
+					<gift>base;coin;14;;;;LevelEnemyCoin</gift>
+					<gift>things;skillStone;41</gift>
+				</task>
+				<task>
+					<diff>25</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;9;;;;LevelEnemyExp</gift>
+					<gift>base;coin;17;;;;LevelEnemyCoin</gift>
+					<gift>things;skillStone;44</gift>
+				</task>
+			</growth>
+		</task>
+		
+		<task name="coinBase" cnName="银币宝藏" unlockLv="13" uiShowTime="999999" levelIsTaskLvB="1" completeLimitNum="-1" moreKillEnemyNumIsMe="1" superAddNumB="1">
+			<shortText>前往[map]消灭僵尸。</shortText>
+			<conditionText>僵尸 [nowNum]/[num]</conditionText>
+			<uiConditionText>累计消灭怪物 [nowNum]/[num] 只</uiConditionText>
+			<description>在指定地点消灭指定数量的怪物，你将获得超丰厚的银币宝藏奖励！</description>
+			
+			<worldMapType>random</worldMapType>
+			
+			<growth>
+				<task>
+					<diff>0.8</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;2;;;;LevelEnemyExp</gift>
+					<gift>base;coin;40;;;;LevelEnemyCoin</gift>
+				</task>
+				<task>
+					<diff>1.7</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;4;;;;LevelEnemyExp</gift>
+					<gift>base;coin;70;;;;LevelEnemyCoin</gift>
+				</task>
+				<task>
+					<diff>4</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;5;;;;LevelEnemyExp</gift>
+					<gift>base;coin;100;;;;LevelEnemyCoin</gift>
+				</task>
+				<task>
+					<diff>10</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;7;;;;LevelEnemyExp</gift>
+					<gift>base;coin;134;;;;LevelEnemyCoin</gift>
+				</task>
+				<task>
+					<diff>25</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;9;;;;LevelEnemyExp</gift>
+					<gift>base;coin;167;;;;LevelEnemyCoin</gift>
+				</task>
+			</growth>
+		</task>
+		<task name="expBase" cnName="经验宝藏" unlockLv="15" uiShowTime="999999" levelIsTaskLvB="1" completeLimitNum="-1" moreKillEnemyNumIsMe="1" superAddNumB="1">
+			<shortText>前往[map]消灭僵尸。</shortText>
+			<conditionText>僵尸 [nowNum]/[num]</conditionText>
+			<uiConditionText>累计消灭怪物 [nowNum]/[num] 只</uiConditionText>
+			<description>在指定地点消灭指定数量的怪物，你将获得超丰厚的经验宝藏奖励！</description>
+			
+			<worldMapType>random</worldMapType>
+			
+			<growth>
+				<task>
+					<diff>0.8</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;5;;;;LevelEnemyExp</gift>
+					<gift>base;coin;4;;;;LevelEnemyCoin</gift>
+				</task>
+				<task>
+					<diff>1.7</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;10;;;;LevelEnemyExp</gift>
+					<gift>base;coin;7;;;;LevelEnemyCoin</gift>
+				</task>
+				<task>
+					<diff>4</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;15;;;;LevelEnemyExp</gift>
+					<gift>base;coin;10;;;;LevelEnemyCoin</gift>
+				</task>
+				<task>
+					<diff>10</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;20;;;;LevelEnemyExp</gift>
+					<gift>base;coin;14;;;;LevelEnemyCoin</gift>
+				</task>
+				<task>
+					<diff>25</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;24;;;;LevelEnemyExp</gift>
+					<gift>base;coin;17;;;;LevelEnemyCoin</gift>
+				</task>
+			</growth>
+		</task>
+		<task name="taxStampThings" cnName="商券宝藏" unlockLv="35" uiShowTime="999999" levelIsTaskLvB="1" completeLimitNum="-1" moreKillEnemyNumIsMe="1" superAddNumB="1">
+			<shortText>前往[map]消灭僵尸。</shortText>
+			<conditionText>僵尸 [nowNum]/[num]</conditionText>
+			<uiConditionText>累计消灭怪物 [nowNum]/[num] 只</uiConditionText>
+			<description>在指定地点消灭指定数量的怪物，你将获得一定的商券奖励。</description>
+			
+			<worldMapType>random</worldMapType>
+			
+			<growth>
+				<task>
+					<diff>0.8</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;2;;;;LevelEnemyExp</gift>
+					<gift>base;coin;4;;;;LevelEnemyCoin</gift>
+					<gift>things;taxStamp;9</gift>
+				</task>
+				<task>
+					<diff>1.7</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;4;;;;LevelEnemyExp</gift>
+					<gift>base;coin;7;;;;LevelEnemyCoin</gift>
+					<gift>things;taxStamp;12</gift>
+				</task>
+				<task>
+					<diff>4</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;5;;;;LevelEnemyExp</gift>
+					<gift>base;coin;10;;;;LevelEnemyCoin</gift>
+					<gift>things;taxStamp;20</gift>
+				</task>
+				<task>
+					<diff>10</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;7;;;;LevelEnemyExp</gift>
+					<gift>base;coin;14;;;;LevelEnemyCoin</gift>
+					<gift>things;taxStamp;25</gift>
+				</task>
+				<task>
+					<diff>25</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;9;;;;LevelEnemyExp</gift>
+					<gift>base;coin;17;;;;LevelEnemyCoin</gift>
+					<gift>things;taxStamp;30</gift>
+				</task>
+			</growth>
+		</task>
+		<task name="catalystThings" cnName="催化剂宝藏" unlockLv="75" uiShowTime="999999" levelIsTaskLvB="1" completeLimitNum="-1" moreKillEnemyNumIsMe="1" superAddNumB="1">
+			<shortText>前往[map]消灭僵尸。</shortText>
+			<conditionText>僵尸 [nowNum]/[num]</conditionText>
+			<uiConditionText>累计消灭怪物 [nowNum]/[num] 只</uiConditionText>
+			<description>在指定地点消灭指定数量的怪物，你将获得一定的催化剂奖励。</description>
+			
+			<worldMapType>random</worldMapType>
+			
+			<growth>
+				<task>
+					<diff>1.7</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>things;lifeCatalyst;7</gift>
+				</task>
+				<task>
+					<diff>2.3</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>things;variationCatalyst;7</gift>
+				</task>
+				<task>
+					<diff>3</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>things;energyCatalyst;7</gift>
+				</task>
+				<task>
+					<diff>5</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>things;lifeCatalyst;3</gift>
+					<gift>things;variationCatalyst;3</gift>
+					<gift>things;energyCatalyst;4</gift>
+				</task>
+				<task>
+					<diff>10</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>things;lifeCatalyst;5</gift>
+					<gift>things;variationCatalyst;5</gift>
+					<gift>things;energyCatalyst;5</gift>
+				</task>
+				
+			</growth>
+		</task>
+		
+		<task name="strengthenStoneThings" cnName="强化石宝藏" unlockLv="40" uiShowTime="999999" levelIsTaskLvB="1" completeLimitNum="-1" moreKillEnemyNumIsMe="1" superAddNumB="1">
+			<shortText>前往[map]消灭僵尸。</shortText>
+			<conditionText>僵尸 [nowNum]/[num]</conditionText>
+			<uiConditionText>累计消灭怪物 [nowNum]/[num] 只</uiConditionText>
+			<description>在指定地点消灭指定数量的怪物，你将获得一定的强化石奖励。</description>
+			
+			<worldMapType>random</worldMapType>
+			
+			<growth>
+				<task>
+					<diff>1</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>things;strengthenStone;9</gift>
+				</task>
+				<task>
+					<diff>2</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>things;strengthenStone;11</gift>
+				</task>
+				<task>
+					<diff>3</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>things;strengthenStone;13</gift>
+				</task>
+				<task>
+					<diff>8</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>things;strengthenStone;15</gift>
+				</task>
+				<task>
+					<diff>20</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>things;strengthenStone;17</gift>
+				</task>
+				
+				<task>
+					<diff>20</diff><enemyLifeMul>3</enemyLifeMul><enemyDpsMul>1.2</enemyDpsMul>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>things;strengthenStone;19</gift>
+				</task>
+			</growth>
+		</task>
+		
+		<task name="bloodStoneThings" cnName="血石宝藏" unlockLv="40" uiShowTime="999999" levelIsTaskLvB="1" completeLimitNum="-1" moreKillEnemyNumIsMe="1" superAddNumB="1">
+			<shortText>前往[map]消灭僵尸。</shortText>
+			<conditionText>僵尸 [nowNum]/[num]</conditionText>
+			<uiConditionText>累计消灭怪物 [nowNum]/[num] 只</uiConditionText>
+			<description>在指定地点消灭指定数量的怪物，你将获得一定的血石奖励。</description>
+			
+			<worldMapType>random</worldMapType>
+			
+			<growth>
+				<task>
+					<diff>1.7</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>things;bloodStone;9</gift>
+				</task>
+				<task>
+					<diff>2.3</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>things;bloodStone;11</gift>
+				</task>
+				<task>
+					<diff>3</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>things;bloodStone;13</gift>
+				</task>
+				<task>
+					<diff>8</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>things;bloodStone;15</gift>
+				</task>
+				<task>
+					<diff>20</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>things;bloodStone;17</gift>
+				</task>
+				
+				<task>
+					<diff>20</diff><enemyLifeMul>3</enemyLifeMul><enemyDpsMul>1.2</enemyDpsMul>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>things;bloodStone;19</gift>
+				</task>
+			</growth>
+		</task>
+		
+		<task name="arenaStampThings" cnName="优胜券宝藏" unlockLv="45" uiShowTime="999999" levelIsTaskLvB="1" completeLimitNum="-1" moreKillEnemyNumIsMe="1" superAddNumB="1">
+			<shortText>前往[map]消灭僵尸。</shortText>
+			<conditionText>僵尸 [nowNum]/[num]</conditionText>
+			<uiConditionText>累计消灭怪物 [nowNum]/[num] 只</uiConditionText>
+			<description>在指定地点消灭指定数量的怪物，你将获得一定的优胜券奖励。</description>
+			
+			<worldMapType>random</worldMapType>
+			
+			<growth>
+				<task>
+					<diff>1</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;2;;;;LevelEnemyExp</gift>
+					<gift>base;coin;4;;;;LevelEnemyCoin</gift>
+					<gift>things;arenaStamp;67</gift>
+				</task>
+				<task>
+					<diff>2.5</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;4;;;;LevelEnemyExp</gift>
+					<gift>base;coin;7;;;;LevelEnemyCoin</gift>
+					<gift>things;arenaStamp;84</gift>
+				</task>
+				<task>
+					<diff>4</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;5;;;;LevelEnemyExp</gift>
+					<gift>base;coin;10;;;;LevelEnemyCoin</gift>
+					<gift>things;arenaStamp;100</gift>
+				</task>
+				<task>
+					<diff>10</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;7;;;;LevelEnemyExp</gift>
+					<gift>base;coin;14;;;;LevelEnemyCoin</gift>
+					<gift>things;arenaStamp;117</gift>
+				</task>
+				<task>
+					<diff>25</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;9;;;;LevelEnemyExp</gift>
+					<gift>base;coin;17;;;;LevelEnemyCoin</gift>
+					<gift>things;arenaStamp;134</gift>
+				</task>
+			</growth>
+		</task>
+		
+		<task name="rifleArms" cnName="步枪宝藏" unlockLv="9" uiShowTime="999999" levelIsTaskLvB="1" completeLimitNum="-1" moreKillEnemyNumIsMe="1" superAddNumB="1">
+			<shortText>前往[map]消灭僵尸。</shortText>
+			<conditionText>僵尸 [nowNum]/[num]</conditionText>
+			<uiConditionText>累计消灭怪物 [nowNum]/[num] 只</uiConditionText>
+			<description>在指定地点消灭指定数量的怪物，你将获得超丰厚的奖励！</description>
+			
+			<worldMapType>random</worldMapType>
+			
+			<growth>
+				<task>
+					<diff>0.8</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;2;;;;LevelEnemyExp</gift>
+					<gift>base;coin;4;;;;LevelEnemyCoin</gift>
+					<gift>things;rifleBox;4</gift>
+				</task>
+				<task>
+					<diff>1.7</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;4;;;;LevelEnemyExp</gift>
+					<gift>base;coin;7;;;;LevelEnemyCoin</gift>
+					<gift>things;rifleBox;7</gift>
+				</task>
+				<task>
+					<diff>4</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;5;;;;LevelEnemyExp</gift>
+					<gift>base;coin;10;;;;LevelEnemyCoin</gift>
+					<gift>things;rifleBox;10</gift>
+				</task>
+				<task>
+					<diff>10</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;7;;;;LevelEnemyExp</gift>
+					<gift>base;coin;14;;;;LevelEnemyCoin</gift>
+					<gift>things;rifleBox;12</gift>
+				</task>
+				<task>
+					<diff>25</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;9;;;;LevelEnemyExp</gift>
+					<gift>base;coin;17;;;;LevelEnemyCoin</gift>
+					<gift>things;rifleBox;14</gift>
+				</task>
+			</growth>
+		</task>
+		
+		<task name="sniperArms" cnName="狙击枪宝藏" unlockLv="9" uiShowTime="999999" levelIsTaskLvB="1" completeLimitNum="-1" moreKillEnemyNumIsMe="1" superAddNumB="1">
+			<shortText>前往[map]消灭僵尸。</shortText>
+			<conditionText>僵尸 [nowNum]/[num]</conditionText>
+			<uiConditionText>累计消灭怪物 [nowNum]/[num] 只</uiConditionText>
+			<description>在指定地点消灭指定数量的怪物，你将获得超丰厚的奖励！</description>
+			
+			<worldMapType>random</worldMapType>
+			
+			<growth>
+				<task>
+					<diff>0.8</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;2;;;;LevelEnemyExp</gift>
+					<gift>base;coin;4;;;;LevelEnemyCoin</gift>
+					<gift>things;sniperBox;4</gift>
+				</task>
+				<task>
+					<diff>1.7</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;4;;;;LevelEnemyExp</gift>
+					<gift>base;coin;7;;;;LevelEnemyCoin</gift>
+					<gift>things;sniperBox;7</gift>
+				</task>
+				<task>
+					<diff>4</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;5;;;;LevelEnemyExp</gift>
+					<gift>base;coin;10;;;;LevelEnemyCoin</gift>
+					<gift>things;sniperBox;10</gift>
+				</task>
+				<task>
+					<diff>10</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;7;;;;LevelEnemyExp</gift>
+					<gift>base;coin;14;;;;LevelEnemyCoin</gift>
+					<gift>things;sniperBox;12</gift>
+				</task>
+				<task>
+					<diff>25</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;9;;;;LevelEnemyExp</gift>
+					<gift>base;coin;17;;;;LevelEnemyCoin</gift>
+					<gift>things;sniperBox;14</gift>
+				</task>
+			</growth>
+		</task>
+		
+		<task name="shotgunArms" cnName="散弹枪宝藏" unlockLv="9" uiShowTime="999999" levelIsTaskLvB="1" completeLimitNum="-1" moreKillEnemyNumIsMe="1" superAddNumB="1">
+			<shortText>前往[map]消灭僵尸。</shortText>
+			<conditionText>僵尸 [nowNum]/[num]</conditionText>
+			<uiConditionText>累计消灭怪物 [nowNum]/[num] 只</uiConditionText>
+			<description>在指定地点消灭指定数量的怪物，你将获得超丰厚的奖励！</description>
+			
+			<worldMapType>random</worldMapType>
+			
+			<growth>
+				<task>
+					<diff>0.8</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;2;;;;LevelEnemyExp</gift>
+					<gift>base;coin;4;;;;LevelEnemyCoin</gift>
+					<gift>things;shotgunBox;4</gift>
+				</task>
+				<task>
+					<diff>1.7</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;4;;;;LevelEnemyExp</gift>
+					<gift>base;coin;7;;;;LevelEnemyCoin</gift>
+					<gift>things;shotgunBox;7</gift>
+				</task>
+				<task>
+					<diff>4</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;5;;;;LevelEnemyExp</gift>
+					<gift>base;coin;10;;;;LevelEnemyCoin</gift>
+					<gift>things;shotgunBox;10</gift>
+				</task>
+				<task>
+					<diff>10</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;7;;;;LevelEnemyExp</gift>
+					<gift>base;coin;14;;;;LevelEnemyCoin</gift>
+					<gift>things;shotgunBox;12</gift>
+				</task>
+				<task>
+					<diff>25</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;9;;;;LevelEnemyExp</gift>
+					<gift>base;coin;17;;;;LevelEnemyCoin</gift>
+					<gift>things;shotgunBox;14</gift>
+				</task>
+			</growth>
+		</task>
+		
+		<task name="pistolArms" cnName="手枪宝藏" unlockLv="9" uiShowTime="999999" levelIsTaskLvB="1" completeLimitNum="-1" moreKillEnemyNumIsMe="1" superAddNumB="1">
+			<shortText>前往[map]消灭僵尸。</shortText>
+			<conditionText>僵尸 [nowNum]/[num]</conditionText>
+			<uiConditionText>累计消灭怪物 [nowNum]/[num] 只</uiConditionText>
+			<description>在指定地点消灭指定数量的怪物，你将获得超丰厚的奖励！</description>
+			
+			<worldMapType>random</worldMapType>
+			
+			<growth>
+				<task>
+					<diff>0.8</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;2;;;;LevelEnemyExp</gift>
+					<gift>base;coin;4;;;;LevelEnemyCoin</gift>
+					<gift>things;pistolBox;4</gift>
+				</task>
+				<task>
+					<diff>1.7</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;4;;;;LevelEnemyExp</gift>
+					<gift>base;coin;7;;;;LevelEnemyCoin</gift>
+					<gift>things;pistolBox;7</gift>
+				</task>
+				<task>
+					<diff>4</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;5;;;;LevelEnemyExp</gift>
+					<gift>base;coin;10;;;;LevelEnemyCoin</gift>
+					<gift>things;pistolBox;10</gift>
+				</task>
+				<task>
+					<diff>10</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;7;;;;LevelEnemyExp</gift>
+					<gift>base;coin;14;;;;LevelEnemyCoin</gift>
+					<gift>things;pistolBox;12</gift>
+				</task>
+				<task>
+					<diff>25</diff>
+					<condition type="collect" target="killEnemyNum" value="60" />
+					<gift>base;exp;9;;;;LevelEnemyExp</gift>
+					<gift>base;coin;17;;;;LevelEnemyCoin</gift>
+					<gift>things;pistolBox;14</gift>
+				</task>
+			</growth>
+		</task>
+		
+		
+	</father>
+</data>

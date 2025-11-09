@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="normal">
+		<gather>
+			<level name="QiuYe_1">
+				<sceneLabel>QiuYe</sceneLabel>
+				
+				<rectG>
+					<rect id="r_birth">926,750,222,76</rect>
+					<rect id="r_over">2462,740,52,116</rect>
+					<rect id="r1">16,594,192,96</rect>
+					<rect id="r2">1032,182,284,98</rect>
+					<rect id="r3">2288,528,182,82</rect>
+					
+					<rect label="addCharger">454,408,45,45</rect>
+					<rect label="addCharger">1962,238,45,45</rect>
+				</rectG>
+			</level>
+			<level name="HuangMo2_1">
+				<sceneLabel>HuangMo2</sceneLabel>
+				
+				<rectG>
+					<rect id="r_birth">26,1722,128,56</rect>
+					<rect id="r_over">1170,1714,34,76</rect>
+					<rect id="r1">468,280,228,84</rect>
+					<rect id="r2">468,280,228,84</rect>
+					<rect id="r3">468,280,228,84</rect>
+					
+					<rect label="addCharger">834,620,45,45</rect>
+					<rect label="addCharger">892,1458,45,45</rect>
+				</rectG>
+			</level>
+			<level name="HuangMo3_1">
+				<sceneLabel>HuangMo3</sceneLabel>
+				
+				<rectG>
+					<rect id="r_birth">190,1274,126,60</rect>
+					<rect id="r_over">2238,1294,44,44</rect>
+					<rect id="r1">2380,1090,18,18</rect>
+					<rect id="r2">2380,1090,18,18</rect>
+					<rect id="r3">2380,1090,18,18</rect>
+					
+					<rect label="addCharger">426,838,45,45</rect>
+					<rect label="addCharger">2102,1052,45,45</rect>
+				</rectG>
+			</level>
+			
+			<level name="XuWu1_1">
+				<sceneLabel>XuWu1</sceneLabel>
+				
+				<rectG>
+					<rect id="r_birth">618,1156,268,90</rect>
+					<rect id="r_over">2788,1098,40,100</rect>
+					<rect id="r1">2012,1096,42,42</rect>
+					<rect id="r2">2012,1096,42,42</rect>
+					<rect id="r3">2012,1096,42,42</rect>
+					
+					
+					<rect label="addCharger">292,660,45,45</rect>
+					<rect label="addCharger">2552,654,45,45</rect>
+				</rectG>
+			</level>
+			<level name="KuRong_1">
+				<sceneLabel>KuRong</sceneLabel>
+			</level>
+			<level name="LangXue_1">
+				<sceneLabel>LangXue</sceneLabel>
+			</level>
+			<level name="Hospital_1">
+				<sceneLabel>Hospital</sceneLabel>
+			</level>
+			<level name="FlySkyScene_1">
+				<sceneLabel>FlySkyScene</sceneLabel>
+			</level>
+		</gather>
+	</father>
+</data>

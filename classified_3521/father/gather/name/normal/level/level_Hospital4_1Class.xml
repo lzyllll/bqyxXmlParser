@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="normal">
+		<gather name="实验室">
+			
+			<level name="Hospital4_plot">
+				
+				<info enemyLv="98" diy="diy98_2" dropNoGravityTime="0.2" noMoreB="1" noTreasureB="1" preSkillArr="greatSageFly" />
+				<fixed target="Hospital4_1" info="no" drop="all" unitG="all" rectG="all" eventG="no" />
+				
+				<sceneLabel>SkyScene</sceneLabel>
+				
+				<eventG>
+					<group>
+						<event id="e1_1"><condition delay="1" /><order>say; startList:s1</order></event>
+						<event id="e2_0"><condition>say:listOver; s1</condition></event><event id="e2_1"><condition delay="1" /></event>
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order><order>createUnit:enemy1; r3</order></event> 
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy2; r1</order><order>createUnit:enemy2; r2</order><order>createUnit:enemy2; r3</order></event> 
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy3; r1</order><order>createUnit:enemy3; r2</order><order>createUnit:enemy3; r3</order></event> 
+						<event id="e2_1"><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy4; r1</order><order>createUnit:enemy4; r2</order><order>createUnit:enemy4; r3</order></event> 
+						<event id="e2_11"><condition delay="1">enemyNumber:less_1</condition><order>level; rebirthAllMore</order></event>	
+						<event id="e2_11"><condition delay="1" /><order>say; startList:s2</order></event>	
+						<event id="e2_11">
+							<condition delay="0.1">enemyNumber:less_1</condition>
+							<order>level; rebirthAllMore</order>
+							<order>task:now; complete</order>
+							<order>worldMap:levelName; Hospital4:Hospital4_1</order>
+							<order>level; showPointer:r_over</order>
+						</event>	
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="Hospital4_1">
+				
+				<info enemyLv="98" diff="1.7" diy="diy98_2" dropNoGravityTime="0.2" noMoreB="1" noTreasureB="1" />
+				<sceneLabel>SkyScene</sceneLabel>
+				
+				<unitG><allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="冥刃游尸" num="4" />
+						<unit cnName="鬼目游尸" num="6" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>number</numberType>
+						<unit cnName="冥刃游尸" num="9" />
+						<unit cnName="鬼目射手" num="3" />
+						
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>number</numberType>
+						<unit cnName="冥刃游尸" num="8" />
+						<unit cnName="鬼目游尸" num="3" />
+						<unit cnName="鬼目射手" num="3" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="冥王" unitType="boss" lifeMul="1" dpsMul="1" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e2_1"><condition delay="1" /></event>
+						<event id="e2_1"><condition doNumber="2" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order><order>createUnit:enemy1; r3</order></event> 
+						<event id="e2_1"><condition doNumber="2" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy2; r1</order><order>createUnit:enemy2; r2</order><order>createUnit:enemy2; r3</order></event> 
+						<event id="e2_1"><condition doNumber="2" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy3; r1</order><order>createUnit:enemy3; r2</order><order>createUnit:enemy3; r3</order></event> 
+						<event id="e2_1"><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy4; r1</order><order>createUnit:enemy4; r2</order><order>createUnit:enemy4; r3</order></event> 
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+	</father>
+</data>

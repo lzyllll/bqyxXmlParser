@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<pro name="bulletLife" cnName="子弹寿命" first="+" unit="%" typeArr="rect"></pro>
+	<pro name="bulletWidth" cnName="子弹碰撞体积" first="+" unit="%" typeArr="rect"></pro>
+	<pro name="bulletSpeed" cnName="子弹速度" first="+"  unit="%" typeArr="rect"></pro>
+	<pro name="followValue" cnName="跟踪度" first="+" unit="%" typeArr="rect"></pro>
+	<pro name="shootDistanceAddMul" cnName="射程" first="+" unit="%"></pro>
+	<pro name="aiShootRange" cnName="AI射程" first="+" unit="码"></pro>
+	
+	<pro name="gravity" cnName="子弹重力" typeArr="rect"></pro>
+	
+	<pro name="penetrationNum" cnName="穿人个数" first="+"></pro>
+	<pro name="penetrationGap" cnName="穿墙深度" first="+"></pro>
+	<pro name="twoShootPro" cnName="瞬间连发概率" first="+" unit="%"></pro>
+	<pro name="eleHurtMul" cnName="元素伤害" first="+" unit="%"></pro>
+	<pro name="fireEleB" cnName="火焰元素" gatherColor="redness"></pro>
+	<pro name="frozenEleB" cnName="冷冻元素" gatherColor="blove"></pro>
+	<pro name="poisonEleB" cnName="生化元素" gatherColor="greeness"></pro>
+	<pro name="electricEleB" cnName="电磁元素" gatherColor="purpleness"></pro>
+	<pro name="noMagneticB" cnName="磁力场免疫"></pro>
+	<pro name="shootAngleCtrlB" cnName="散射角控制"></pro>
+	
+	<pro name="redHurtMul" cnName="红橙武器伤害" first="+" unit="%"></pro>
+	<pro name="uidpsMul" cnName="显示战斗力" first="+" unit="%"></pro>
+	<pro name="rareHurtMul" cnName="伤害(稀有)" first="+" unit="%"></pro>
+	<pro name="demCapacityMul" cnName="修罗弹容" first="+" unit="%"></pro>
+	
+	<pro name="color" cnName="品质" child="itemsColor"></pro>
+	<pro name="colorHurtMul" cnName="品质伤害" first="+" unit="%"></pro>
+	<pro name="rareSkillArr" cnName="技能" child="skill"></pro>
+	
+	
+</data>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill name="周四大吉">
+			<name>yearMouseSkill</name><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<cnName>周四大吉</cnName><noRandomListB>1</noRandomListB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>puWe,noMainTask,noHardB,dayPan,yearArmsFalse,targetUnitType,noUnionBattle</otherConditionArr>
+			<conditionRange>4</conditionRange>
+			<conditionString>boss</conditionString>
+			<target>target</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>yearMouseSkill</effectType>
+			<duration>9999</duration>
+			
+			<targetEffectImg soundUrl="sound/silence_enemy" />
+			<stateEffectImg partType="mouth" con="add">skillEffect/silenceMore</stateEffectImg>
+			<stateEffectImg2 partType="body" con="add">generalEffect/nothing</stateEffectImg2>
+			<description>每周四可以沉默并封锁一个首领的所有技能，持续无限时间，无视技能免疫、不会被清除。主线任务、军队争霸中该技能无效。</description>
+		</skill>
+	</father>
+</data>

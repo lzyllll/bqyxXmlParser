@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="normal">
+		<gather name="极限射速">
+			<level name="maxSpeedTask">
+				<sceneLabel>BaiLu</sceneLabel>
+				
+				<info noMoreB="1" noVehicleB="1" noTreasureB="1" />
+				<drop coin="0" exp="0" arms="0" equip="0" skillStone="0" taxStamp="0" />
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					
+					<unitOrder id="enemy1">
+						<numberType>pro</numberType>
+						<unit cnName="战斗僵尸" num="2" skillArr="State_AddMove,weaponDefence,resistMulHurt,State_SpellImmunity" lifeMul="0.2" dpsMul="0.02" skillCloseB="1" />
+						<unit cnName="肥胖僵尸" num="1" skillArr="State_AddMove,weaponDefence,resistMulHurt,State_SpellImmunity" lifeMul="0.2" dpsMul="0.02" skillCloseB="1" />
+						<unit cnName="冥刃游尸" num="1" skillArr="State_AddMove,weaponDefence,resistMulHurt,State_SpellImmunity" lifeMul="0.2" dpsMul="0.02" skillCloseB="1" />
+						<unit cnName="无头自爆僵尸" num="1" skillArr="State_AddMove,weaponDefence,resistMulHurt,State_SpellImmunity" lifeMul="0.2" dpsMul="0.02" skillCloseB="1" />
+					</unitOrder>
+					
+				</unitG>
+				
+				<rectG>
+					<rect id="r_birth">1070,234,160,50</rect>
+					<rect id="r_over">2946,363,71,130</rect>
+					<rect id="r1">30,250,220,64</rect>
+					<rect id="r2">2770,427,220,64</rect>
+					<rect id="r3">1144,621,220,64</rect>
+					<rect label="addCharger">2286,300,74,44</rect>
+					<rect label="addCharger">437,230,74,44</rect>
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition delay="0.1" />
+							<order>body:p1; addSkill:maxSpeedTask</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="8" orderChooseType="randomOne">enemyNumber:less_20</condition>
+							<order>createUnit:enemy1; r_topLong</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="20" orderChooseType="randomOne">enemyNumber:less_25</condition>
+							<order>createUnit:enemy1; r_topLong</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="40" orderChooseType="randomOne">enemyNumber:less_30</condition>
+							<order>createUnit:enemy1; r_topLong</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="550" orderChooseType="randomOne">enemyNumber:less_35</condition>
+							<order>createUnit:enemy1; r_topLong</order>
+						</event>
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+					<group>
+						<event id="e_win">
+							<condition delay="0.01">task:state; maxSpeedTask:complete</condition>
+							<order>level; noEnemy</order>
+							<order>level; addSuperBulletNumArr</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		<gather name="超级散射">
+			<level name="aniver22">
+				<sceneLabel>YangMei</sceneLabel>
+				
+				<info noMoreB="1" noVehicleB="1" noTreasureB="1" />
+				<drop coin="0" exp="0" arms="0" equip="0" skillStone="0" taxStamp="0" />
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					
+					<unitOrder id="enemy1">
+						<numberType>pro</numberType>
+						<unit cnName="战斗干尸" num="2" skillArr="State_AddMove" lifeMul="0.5" dpsMul="0.02" skillCloseB="1" />
+						<unit cnName="水管僵尸" num="1" skillArr="State_AddMove" lifeMul="0.5" dpsMul="0.02" skillCloseB="1" />
+						<unit cnName="科研僵尸" num="1" skillArr="State_AddMove" lifeMul="0.5" dpsMul="0.02" skillCloseB="1" />
+						<unit cnName="毒蛛" num="1" skillArr="State_AddMove" lifeMul="0.5" dpsMul="0.02" skillCloseB="1" />
+					</unitOrder>
+					
+				</unitG>
+				
+				<rectG>
+					<rect id="r_birth">173,490,246,148</rect>
+					<rect id="r1">1300,757,400,60</rect>
+					<rect id="r2">2357,515,455,86</rect>
+					<rect id="r3">2600,-200,314,66</rect>
+					<rect id="r_over">-20,-129,63,117</rect>
+					
+					<rect label="addCharger">212,578,78,30</rect>
+					<rect label="addCharger">2704,578,78,30</rect>
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition delay="0.1" />
+							<order>body:p1; addSkill:superMoreBullet</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="8" orderChooseType="randomOne">enemyNumber:less_40</condition>
+							<order>createUnit:enemy1; r_topLong</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="20" orderChooseType="randomOne">enemyNumber:less_50</condition>
+							<order>createUnit:enemy1; r_topLong</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="40" orderChooseType="randomOne">enemyNumber:less_60</condition>
+							<order>createUnit:enemy1; r_topLong</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="550" orderChooseType="randomOne">enemyNumber:less_70</condition>
+							<order>createUnit:enemy1; r_topLong</order>
+						</event>
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+					<group>
+						<event id="e_win">
+							<condition delay="0.01">task:state; aniver22:complete</condition>
+							<order>level; noEnemy</order>
+							<order>level; addSuperBulletNumArr</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+	</father>
+</data>

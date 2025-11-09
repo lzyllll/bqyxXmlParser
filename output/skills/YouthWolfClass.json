@@ -1,0 +1,227 @@
+{
+  "father": [
+    {
+      "name": "wilder",
+      "body": {
+        "name": "YouthWolf",
+        "shell": "normal",
+        "cnName": "阿巴达斯",
+        "raceType": "zombies",
+        "swfUrl": "swf/enemy/YouthWolf.swf",
+        "rosRatio": 1,
+        "lifeRatio": 1.8,
+        "showLevel": 999,
+        "imgType": "normal",
+        "imgArr": "stand,move,run\n\t\t\t\t,shootAttack,shakeAttack,comboAttack,obliqueAttack\n\t\t\t\t,hurt1,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+        "lifeBarExtraHeight": -40,
+        "handAddRa": 90,
+        "hitRect": "-18,-96,36,96",
+        "maxJumpNum": 1,
+        "maxVx": 12,
+        "runStartVx": 8,
+        "nextAttackTime": 0,
+        "extraAIClassLabel": "YouthWolf_AIExtra",
+        "skillArr": null,
+        "bossSkillArr": "YouthWolf_crazy,YouthWolf_combo,YouthWolf_oblique,YouthWolf_shake,KingRabbitTreater,cmldef_enemy,fightReduct2,defenceBounce_enemy",
+        "bossSkillArrCn": null,
+        "hurtArr": {
+          "hurt": [
+            {
+              "imgLabel": "shootAttack",
+              "bulletLabel": "YouthWolfShoot",
+              "grapRect": "-800,-95,750,108",
+              "hurtMul": 0.2,
+              "shakeValue": 4,
+              "attackType": "holy"
+            },
+            {
+              "info": "斜拳",
+              "imgLabel": "obliqueAttack",
+              "noAiChooseB": 1,
+              "grapRect": "-400,-111,100,150",
+              "hurtMul": 0.3,
+              "shakeValue": 4,
+              "attackType": "holy",
+              "hitImgUrl": {
+                "value": "bulletHitEffect/fitHit",
+                "soundUrl": "sound/hand_hit"
+              }
+            },
+            {
+              "info": "抱拳",
+              "imgLabel": "shakeAttack",
+              "noAiChooseB": 1,
+              "grapRect": "-400,-111,100,150",
+              "skillArr": "slowMove_GasBomb",
+              "hurtMul": 0.6,
+              "shakeValue": 4,
+              "attackType": "holy",
+              "hitImgUrl": {
+                "value": "bulletHitEffect/fitHit",
+                "soundUrl": "sound/vehicle_hit4"
+              }
+            },
+            {
+              "info": "连拳",
+              "imgLabel": "comboAttack",
+              "noAiChooseB": 1,
+              "grapRect": "-400,-111,100,150",
+              "hurtMul": 0.3,
+              "shakeValue": 4,
+              "attackType": "holy",
+              "hitImgUrl": {
+                "value": "bulletHitEffect/fitHit",
+                "soundUrl": "sound/hand_hit"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "enemy",
+      "skills": {
+        "YouthWolfShoot": {
+          "cnName": "地波",
+          "name": "YouthWolfShoot",
+          "bulletLife": 10,
+          "bulletWidth": 30,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.4,
+          "bulletAngle": 180.01,
+          "shootPoint": "-82,-17",
+          "bulletSpeed": 20,
+          "penetrationGap": 1000,
+          "flipX": 1,
+          "bulletImgUrl": {
+            "value": "YouthWolf/bulletRight",
+            "raNum": 1,
+            "con": "add"
+          },
+          "bulletLeftImgUrl": {
+            "value": "YouthWolf/bulletLeft",
+            "raNum": 1,
+            "con": "add"
+          },
+          "hitImgUrl": {
+            "value": "bulletHitEffect/fitHit",
+            "con": "add",
+            "soundUrl": "sound/magicHit2"
+          }
+        },
+        "YouthWolf_oblique": {
+          "name": "YouthWolf_oblique",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cnName": "斜拳",
+          "cd": 7,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "nearAttackTarget",
+          "conditionRange": 250,
+          "target": "me",
+          "addType": "state",
+          "effectType": "invincible",
+          "duration": 1,
+          "meActionLabel": "obliqueAttack",
+          "description": "阿巴达斯从空中向敌人发起俯冲拳攻击。"
+        },
+        "YouthWolf_shake": {
+          "name": "YouthWolf_shake",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cnName": "抱拳",
+          "cd": 9,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "target": "me",
+          "addType": "state",
+          "effectType": "invincible",
+          "duration": 1,
+          "meActionLabel": "shakeAttack",
+          "description": "阿巴达斯腾空而起，对脚下的敌人发起抱拳震击，并减速敌人。"
+        },
+        "YouthWolf_combo": {
+          "name": "YouthWolf_combo",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cnName": "连拳",
+          "cd": 11,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "target": "me",
+          "addType": "state",
+          "effectType": "no",
+          "duration": 1.3,
+          "meActionLabel": "comboAttack",
+          "pointEffectImg": {
+            "value": "YouthWolf/shadowRight",
+            "raNum": 1,
+            "con": "filter"
+          },
+          "otherEffectImg": {
+            "value": "YouthWolf/shadowLeft",
+            "raNum": 1,
+            "con": "filter"
+          },
+          "description": "阿巴达斯闪烁到任意位置进行拳击，并有几率再次闪烁，如果玩家此时处于无敌状态，则该几率为100%。"
+        },
+        "YouthWolf_crazy": {
+          "name": "YouthWolf_crazy",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cnName": "虚无狂暴",
+          "conditionType": "passive",
+          "condition": "no",
+          "target": "me",
+          "addType": "state",
+          "effectType": "no",
+          "duration": 0.1,
+          "pointEffectImg": {
+            "value": "bulletHitEffect/headshot",
+            "con": "add",
+            "soundUrl": "sound/fireHit2"
+          },
+          "otherEffectImg": {
+            "value": "bulletHitEffect/purpleLaser",
+            "con": "add",
+            "soundUrl": "sound/crazy_hero"
+          },
+          "description": "生命值低于30%时进入虚无狂暴状态，此时除副手攻击外，其他伤害降低至0%（虚天塔中降低至25%）。"
+        },
+        "YouthWolfUnder": {
+          "cnName": "只受副手攻击",
+          "name": "YouthWolfUnder",
+          "noBeClearB": 1,
+          "noSkillDodgeB": 1,
+          "ignoreImmunityB": 1,
+          "conditionType": "passive",
+          "condition": "underAllHit",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "YouthWolfUnder",
+          "mul": 0.03,
+          "description": "只受副手攻击"
+        },
+        "YouthWolfHeroAngerAdd": {
+          "index": 0,
+          "name": "YouthWolfHeroAngerAdd",
+          "noSkillDodgeB": 1,
+          "ignoreImmunityB": 1,
+          "ignoreNoSkillB": 1,
+          "cnName": "激怒",
+          "conditionType": "passive",
+          "condition": "interval",
+          "target": "me,range,enemy",
+          "addType": "state",
+          "effectType": "angerAddMul",
+          "mul": 6,
+          "duration": 1,
+          "range": 99999,
+          "description": "所有敌人的怒气回复速度增加6倍。"
+        }
+      }
+    }
+  ]
+}

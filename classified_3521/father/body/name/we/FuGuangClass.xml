@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="we" cnName="我方">
+		<body name="扶光" shell="compound">
+			
+			<name>FuGuang</name>
+			<cnName>扶光</cnName>
+			<raceType>human</raceType>
+			<swfUrl>swf/hero/FuGuang.swf</swfUrl>
+			
+			<showLevel>9999</showLevel>
+			<headIconUrl>fuGuang/head_icon</headIconUrl>
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move
+				,normalAttack,die1
+				,comboAttack,mopAttack,daggerAttack,shakeAttack
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<maxVx>12</maxVx>
+			<avtiveSkillCdOverT>0.1</avtiveSkillCdOverT>
+			
+			<skillArr>FuGuangBuff,noDegradation,vertigoArmorIron,meltFlamerPurgold</skillArr>
+			<bossSkillArr>addWangShu,FuGuangCombo,FuGuangShake,FuGuangMop</bossSkillArr>
+			<bossSkillArrCn />
+			<wilderSkillArr />
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel><cn>挥砍</cn>
+					<hurtRatio>1</hurtRatio>
+					<attackType>holy</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl name="redSteel" />
+				</hurt>
+				<hurt cd="3">
+					<imgLabel>daggerAttack</imgLabel><cn>金炎</cn>
+					<hurtRatio>3</hurtRatio>
+					<attackType>holy</attackType>
+					<bulletLabel>FuGuang_1</bulletLabel>
+					<skillArr>invincibleEmp,silence_SnowSoldiers</skillArr>
+					<grapRect>-700,-150,400,230</grapRect>
+					<hitImgUrl name="redSteel" />
+				</hurt>
+				
+				<hurt>
+					<imgLabel>comboAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.00000000000001</hurtRatio>
+					<hurtMul>0.1</hurtMul>
+					<attackType>holy</attackType>
+					<skillArr>invincibleEmp</skillArr>
+					<hitImgUrl name="redSteel" />
+				</hurt>
+				<hurt>
+					<imgLabel>shakeAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.00000000000001</hurtRatio>
+					<hurtMul>0.3</hurtMul>
+					<attackType>holy</attackType>
+					<skillArr>invincibleEmp</skillArr>
+					<hitImgUrl name="redSteel" />
+				</hurt>
+				<hurt>
+					<imgLabel>mopAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.00000000000001</hurtRatio>
+					<hurtMul>0.05</hurtMul>
+					<attackType>holy</attackType>
+					<skillArr>invincibleEmp</skillArr>
+					<hitImgUrl name="redSteel" />
+				</hurt>
+				
+			</hurtArr>
+		</body>
+	</father>
+	</data>

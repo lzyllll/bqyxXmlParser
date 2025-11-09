@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="food">
+		<body cnName="洋葱" name="onion" dropPro="100" />
+				<skill><name>onionFoodSkill</name>
+					<conditionType>passive</conditionType>
+					<target>me</target>
+					<addType>state</addType>
+					<effectType>angerAddMul</effectType>
+					<mul>3</mul>
+					<duration>1</duration>
+					<description>怒气值速度增加3倍。</description>
+				</skill>
+		
+		<body cnName="青椒" name="pepper" dropPro="100" />
+				<skill><name>pepperFoodSkill</name>
+					<conditionType>passive</conditionType>
+					<target>me</target>
+					<addType>state</addType>
+					<effectType>noSpeedReduce</effectType>
+					<mul>1</mul>
+					<duration>1</duration>
+					<description>不受减速技能影响。</description>
+				</skill>
+				
+		<body cnName="土豆" name="potato" dropPro="100" />
+				<skill><name>potatoFoodSkill</name>
+					<conditionType>passive</conditionType>
+					<target>me</target>
+					<addType>state</addType>
+					<effectType>speedNoReduceB</effectType>
+					<duration>1</duration>
+					<description>射击速度不会受到负面技能效果影响。</description>
+				</skill>
+				
+		<body cnName="番茄" name="tomato" dropPro="100" />
+				<skill><name>tomatoFoodSkill</name>
+					<conditionType>passive</conditionType>
+					<target>me</target>
+					<addType>state</addType>
+					<effectType>noLostAndNoDodgeB</effectType>
+					<duration>1</duration>
+					<description>攻击不丢失，攻击无视闪避。</description>
+				</skill>
+				
+		<body cnName="胡萝卜" name="carrot" dropPro="100" />
+				<skill><name>carrotFoodSkill</name>
+					<conditionType>passive</conditionType>
+					<target>me</target>
+					<addType>state</addType>
+					<effectType>noUnderCritAndBack</effectType>
+					<duration>1</duration>
+					<description>不受暴击、反弹伤害。</description>
+				</skill>
+				
+		<body cnName="鸡蛋" name="egg" dropPro="60" />
+				<skill><name>eggFoodSkill</name>
+					<conditionType>passive</conditionType>
+					<target>me</target>
+					<addType>state</addType>
+					<effectType>noDizzinessB</effectType>
+					<duration>1</duration>
+					<description>不受眩晕技能影响。</description>
+					
+				</skill>
+				
+		<body cnName="鸡肉" name="chicken" dropPro="20" />
+				<skill><name>chickenFoodSkill</name>
+					<conditionType>passive</conditionType>
+					<target>me</target>
+					<addType>state</addType>
+					<effectType>airHurtMul</effectType>
+					<mul>1.25</mul>
+					<duration>1</duration>
+					<description>增加对空中敌人25%的伤害。</description>
+				</skill>
+				
+		<body cnName="猪肉" name="pig" dropPro="20" />
+				<skill><name>pigFoodSkill</name>
+					<conditionType>passive</conditionType>
+					<target>me</target>
+					<addType>state</addType>
+					<effectType>landHurtMul</effectType>
+					<mul>1.25</mul>
+					<duration>1</duration>
+					<description>增加对地面敌人25%的伤害。</description>
+				</skill>
+				
+		<body cnName="牛肉" name="cattle" dropPro="15" />
+				<skill><name>cattleFoodSkill</name>
+					<conditionType>passive</conditionType>
+					<target>me</target>
+					<addType>state</addType>
+					<effectType>bossHurtMul</effectType>
+					<mul>1.27</mul>
+					<duration>1</duration>
+					<description>增加对首领27%的伤害。</description>
+				</skill>
+				
+	</father>
+	
+	</data>

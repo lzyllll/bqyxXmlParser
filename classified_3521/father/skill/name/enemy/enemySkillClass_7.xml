@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="狂战狼">
+		<skill index="0" name="狂战狼-野性召唤">
+			<name>summon_FightWolf</name>
+			<cnName>野性召唤</cnName><iconUrl36>SkillIcon/summon_PetFightWolf_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>12</cd>
+			
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>0.3</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>noUnderHurtB</effectType>
+			<value>1</value>
+			<mul>1</mul>
+			<duration>2</duration>
+			
+			<meActionLabel>summonAttack</meActionLabel>
+			<description>召唤成群的尸狼灵魂向前狂奔，对敌人造成伤害。</description>
+		</skill>
+		<skill index="0" name="狂战狼-大地之怒">
+			<name>anger_FightWolf</name>
+			<cnName>大地之怒</cnName><iconUrl36>SkillIcon/anger_PetFightWolf_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>9</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>0.5</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>noUnderHurtB</effectType>
+			<value>1</value>
+			<mul>1</mul>
+			<duration>2</duration>
+			
+			<meActionLabel>stoneAttack</meActionLabel>
+			<description>向大地猛捶6下，爆出的土壤将对敌人造成伤害。</description>
+		</skill>
+		<skill index="0" cnName="铁拳冲撞">
+			<name>hammer_FightWolf</name>
+			<cnName>铁拳冲撞</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target noRaceType="robot">target</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>dizziness</effectType>
+			<effectProArr>0.25</effectProArr>
+			<duration>2</duration>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+			<description>释放2个铁拳幻影，降低目标移动速度并可能造成眩晕。</description>
+		</skill>
+		<skill index="0" cnName="灼热视线">
+			<name>laser_FightWolf</name>
+			<cnName>灼热视线</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>poison</effectType>
+			<extraValueType>targetMaxLife</extraValueType>
+			<mul>0.05</mul>
+			<doGap>1</doGap>
+			<duration>3</duration>
+			 
+			<stateEffectImg partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" raNum="1">skillEffect/laserHeat</stateEffectImg>
+			<description>双眼向前释放出强大的光线，被击中的敌人将不断受伤。</description>
+		</skill>
+		<skill index="0" cnName="狼图腾">
+			<name>treater_FightWolf</name>
+			<cnName>狼图腾</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<mul>0.01</mul>
+			<intervalT>4</intervalT>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>clearEnemyState_FightWolf</effectType>
+			 
+			<description>每隔[intervalT]秒清除自身负面状态，根据负面状态数量回复生命值。</description>
+		</skill>
+	</father>
+	
+	</data>

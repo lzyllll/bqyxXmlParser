@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill name="蛇刺">
+			<name>yearSnakeSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>蛇刺</cnName>
+			
+			<conditionType>passive</conditionType><changeHurtB>1</changeHurtB>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>stateAndInstant</addType><overlyingB>1</overlyingB>
+			<effectType>yearSnakeSkill</effectType>
+			<duration>2</duration>
+			<value>5</value>
+			<mul>4</mul>
+			<stateEffectImg partType="body" con="add" imgDieType="stop">specialGun/yearSnakeState</stateEffectImg>
+			<pointEffectImg soundUrl="boomSound/midBoom2" partType="body" con="add">boomEffect/midCan</pointEffectImg>
+			<description>巳蛇发出的蛇刺将插在敌人身上，蛇刺数量到达[value]时将爆炸，对敌人造成额外[mul-1]的伤害。</description>
+		</skill>
+	</father>
+</data>

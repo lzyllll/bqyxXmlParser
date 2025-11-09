@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="petBodySkill" cnName="僵尸王">
+		<skill index="0" name="僵尸王-极速炮轰">
+			<name>shelling_ZombieKing</name>
+			<cnName>极速炮轰</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<cd>33</cd>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>400</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<duration>0.1</duration>
+			
+			<meActionLabel>gunAttack</meActionLabel>
+			<description>僵尸王集中所有弹药至背部火炮，俯身向前连续发射3次火球群，对敌人造成伤害！</description>
+			
+			<growth>
+				<skill><cd>33</cd></skill>
+				<skill><cd>29</cd></skill>
+				<skill><cd>25</cd></skill>
+				<skill><cd>21</cd></skill>
+				<skill><cd>17</cd></skill>
+				<skill><cd>13</cd></skill>
+				<skill><cd>9</cd></skill>
+				<skill><cd>8</cd></skill>
+				<skill><cd>7</cd></skill>
+			</growth>
+		</skill>
+	</father>
+	</data>

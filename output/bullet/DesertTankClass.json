@@ -1,0 +1,370 @@
+{
+  "father": [
+    {
+      "name": "car",
+      "cnName": "战车定义",
+      "bullet": {
+        "DesertTank": {
+          "name": "DesertTank",
+          "cnName": "沙漠进袭者",
+          "evolutionLabel": "ForestTank",
+          "canComposeB": 1,
+          "main": {
+            "dpsMul": 1.1,
+            "len": 55,
+            "minRa": 174,
+            "maxRa": -138
+          },
+          "sub": {
+            "dpsMul": 0.6,
+            "len": 45
+          },
+          "lifeMul": 1.3,
+          "attackMul": 1,
+          "duration": 40,
+          "cd": 120,
+          "mustCash": 90,
+          "addObjJson": {
+            "dpsAll": 0.03,
+            "lifeAll": 0.03
+          },
+          "armsType": null
+        },
+        "ForestTank": {
+          "name": "ForestTank",
+          "cnName": "丛林狂袭者",
+          "evolutionLabel": "DarkTank",
+          "evolutionLv": 2,
+          "main": {
+            "label": "DesertTank_main",
+            "dpsMul": 1.3,
+            "len": 55,
+            "minRa": 174,
+            "maxRa": -138
+          },
+          "sub": {
+            "label": "DesertTank_sub",
+            "dpsMul": 0.8,
+            "len": 45
+          },
+          "lifeMul": 1.3,
+          "attackMul": 1.3,
+          "duration": 40,
+          "cd": 120,
+          "mustCash": 90,
+          "addObjJson": {
+            "dpsAll": 0.05,
+            "lifeAll": 0.05
+          },
+          "skillArr": "vehicleFit_Civilian",
+          "armsType": null
+        },
+        "DarkTank": {
+          "name": "DarkTank",
+          "cnName": "暗夜侵袭者",
+          "evolutionLabel": "FloorTank",
+          "evolutionLv": 4,
+          "main": {
+            "label": "DesertTank_main",
+            "dpsMul": 1.6,
+            "len": 55,
+            "minRa": 174,
+            "maxRa": -138
+          },
+          "sub": {
+            "label": "DesertTank_sub",
+            "dpsMul": 1.1,
+            "len": 45
+          },
+          "lifeMul": 1.8,
+          "attackMul": 1.5,
+          "duration": 40,
+          "cd": 120,
+          "mustCash": 120,
+          "addObjJson": {
+            "dpsAll": 0.09,
+            "lifeAll": 0.09
+          },
+          "skillArr": "vehicleFit_Civilian",
+          "armsType": null
+        },
+        "FloorTank": {
+          "name": "FloorTank",
+          "cnName": "大地掠袭者",
+          "evolutionLv": 5,
+          "main": {
+            "label": "DesertTank_main",
+            "dpsMul": 2.3,
+            "len": 74,
+            "minRa": 164,
+            "maxRa": -55
+          },
+          "sub": {
+            "label": "DesertTank_sub",
+            "dpsMul": 1.5,
+            "len": 53
+          },
+          "lifeMul": 2.3,
+          "attackMul": 1.9,
+          "duration": 40,
+          "cd": 120,
+          "mustCash": 120,
+          "addObjJson": {
+            "dpsAll": 0.16,
+            "lifeAll": 0.16
+          },
+          "skillArr": "floorTankSkill,vehicleFit_Civilian",
+          "armsType": null
+        },
+        "DesertTank_main": {
+          "cnName": "沙漠进袭者主炮",
+          "name": "DesertTank_main",
+          "hurtRatio": 2.2,
+          "shakeAngle": 1,
+          "bulletLife": 2,
+          "bulletWidth": 30,
+          "hitType": "rect",
+          "attackGap": 0.5,
+          "shootRecoil": 15,
+          "screenShakeValue": 16,
+          "bulletSpeed": 45,
+          "boomD": {
+            "bodyB": true,
+            "floorB": true,
+            "radius": 120
+          },
+          "flipX": 1,
+          "bulletImgUrl": "rocket/rocketBullet",
+          "fireImgUrl": "gunFire/rocket",
+          "hitImgUrl": "boomEffect/boom3",
+          "smokeImgUrl": "bulletHitEffect/smoke_small",
+          "armsType": null
+        },
+        "DesertTank_sub": {
+          "cnName": "沙漠进袭者副炮",
+          "name": "DesertTank_sub",
+          "hurtRatio": 1,
+          "bulletLife": 0.001,
+          "hitType": "longLine",
+          "bulletWidth": 800,
+          "bulletShakeWidth": 100,
+          "attackGap": 0.15,
+          "attackDelay": 0,
+          "shootRecoil": 4,
+          "screenShakeValue": 9,
+          "shakeAngle": 3,
+          "bulletSpeed": 0,
+          "flipX": 1,
+          "lineD": {
+            "lightColor": 16776960,
+            "size": 2,
+            "lightSize": 6
+          },
+          "bulletImgUrl": "longLine",
+          "fireImgUrl": "gunFire/f",
+          "hitImgUrl": "bulletHitEffect/yellow_motion",
+          "armsType": null
+        }
+      }
+    },
+    {
+      "name": "vehicleSkill",
+      "cnName": "技能",
+      "skill": [
+        {
+          "name": "floorTankSkill",
+          "noBeClearB": 1,
+          "cnName": "威猛火药",
+          "iconUrl": "SkillIcon/floorTankSkill",
+          "effectInfoArr": "增加伤害输出",
+          "cd": 70,
+          "changeText": "主炮射速提升[mul-1]",
+          "conditionType": "active",
+          "condition": "beforeAttack",
+          "target": "me",
+          "passiveSkillArr": "floorTankSkill_link",
+          "addType": "state",
+          "effectType": "floorTankSkill",
+          "effectFather": "vehicle",
+          "mul": 1.3,
+          "secMul": 3,
+          "duration": 5,
+          "meEffectImg": {
+            "name": "through_hero_me"
+          },
+          "stateEffectImg": {
+            "name": "burstParts"
+          },
+          "description": "开启技能后，主炮射速提升[mul-1]，主炮对生化敏感的敌人提升[secMul]的伤害，持续[duration]秒。",
+          "growth": {
+            "skill": [
+              {
+                "mul": 1.3
+              },
+              {
+                "mul": 1.6
+              },
+              {
+                "mul": 2
+              },
+              {
+                "mul": 2.4
+              },
+              {
+                "mul": 2.8
+              },
+              {
+                "mul": 3.2
+              },
+              {
+                "mul": 3.6
+              },
+              {
+                "mul": 4
+              },
+              {
+                "mul": 4.5
+              },
+              {
+                "mul": 6
+              }
+            ]
+          }
+        },
+        {
+          "name": "floorTankSkill_link",
+          "cnName": "对生化敏感提升",
+          "noRandomListB": 1,
+          "ignoreImmunityB": 1,
+          "noSkillDodgeB": 1,
+          "conditionType": "passive",
+          "changeHurtB": 1,
+          "condition": "hit",
+          "conditionString": "normal",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "vehicleSkillEle",
+          "effectFather": "vehicle",
+          "valueString": "DesertTank_main",
+          "mul": 2.3,
+          "pointEffectImg": {
+            "name": "orangeWaveBoom"
+          }
+        }
+      ]
+    },
+    {
+      "name": "vehicle",
+      "cnName": "战车body",
+      "body": [
+        {
+          "index": 0,
+          "name": "DesertTank",
+          "shell": "metal",
+          "cnName": "沙漠进袭者",
+          "raceType": "robot",
+          "swfUrl": "swf/vehicle/DesertTank38.swf",
+          "lifeRatio": 1,
+          "rosRatio": 1,
+          "headHurtMul": 0.5,
+          "dieImg": {
+            "value": "boomEffect/boom3",
+            "soundUrl": "sound/pointBoom_hero",
+            "shake": "3,0.4,30"
+          },
+          "dieJumpMul": 0,
+          "imgClass": "CarImage",
+          "imgType": "normal",
+          "rotateBySlopeB": 1,
+          "imgArr": "stand,move,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpDown,jumpDown__",
+          "hitRect": "-30,-88,60,88",
+          "motionD": {
+            "F_G": 0.6,
+            "jumpDelayT": 0.15,
+            "F_I": 0.2,
+            "F_F": 0.9,
+            "moveWhenVB": true
+          },
+          "maxVx": 14,
+          "maxJumpNum": 1,
+          "attackAIClass": "CarAttack_AI",
+          "keyClass": "CarBodyKey",
+          "bulletLauncherClass": "CarBulletLauncher",
+          "skillArr": null,
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "move",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "jumpDown",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "jumpUp",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "jumpDown__",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              }
+            ]
+          }
+        },
+        {
+          "name": "ForestTank",
+          "fixed": "DesertTank",
+          "shell": "metal",
+          "cnName": "丛林狂袭者",
+          "swfUrl": "swf/vehicle/ForestTank59.swf",
+          "bmpUrl": "BodyImg/ForestTank"
+        },
+        {
+          "name": "DarkTank",
+          "fixed": "DesertTank",
+          "shell": "metal",
+          "cnName": "暗夜侵袭者",
+          "swfUrl": "swf/vehicle/DarkTank.swf",
+          "bmpUrl": "BodyImg/DarkTank"
+        },
+        {
+          "name": "FloorTank",
+          "fixed": "DesertTank",
+          "shell": "metal",
+          "cnName": "大地掠袭者",
+          "swfUrl": "swf/vehicle/FloorTank342.swf",
+          "bmpUrl": "BodyImg/FloorTank",
+          "bossSkillArr": "floorTankSkill_8",
+          "motionD": {
+            "F_G": 0.6,
+            "jumpDelayT": 0.15,
+            "F_I": 0.7,
+            "F_F": 0.6,
+            "moveWhenVB": true
+          }
+        }
+      ]
+    }
+  ]
+}

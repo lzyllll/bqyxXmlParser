@@ -1,0 +1,57 @@
+{
+  "father": [
+    {
+      "type": "howitzer",
+      "cnName": "榴弹炮",
+      "bullet": {
+        "arcHow": {
+          "cnName": "撒旦",
+          "color": "darkgold",
+          "composeLv": 99,
+          "dropLevelArr": 999,
+          "name": "arcHow",
+          "dpsMul": 2,
+          "uiDpsMul": 2,
+          "capacity": 20,
+          "attackGap": 1.2,
+          "attackDelay": 1.6,
+          "crossbowD": {
+            "focoB": true,
+            "minDelayMul": 0.3,
+            "vAtt": 1
+          },
+          "reloadGap": 1.5,
+          "bulletWidth": 30,
+          "armsArmMul": 0.65,
+          "upValue": 10,
+          "shootShakeAngle": 30,
+          "shootRecoil": 7,
+          "screenShakeValue": 8,
+          "noShakeTime": 0.5,
+          "bulletLife": 5,
+          "hitType": "rect",
+          "bulletSpeed": 30,
+          "speedD": {
+            "min": 10
+          },
+          "gravity": 1,
+          "skillArr": null,
+          "godSkillArr": null,
+          "iconUrl": "specialGun/arcHowIcon",
+          "flipX": 1,
+          "bulletImgUrl": null,
+          "smokeImgUrl": null,
+          "hitImgUrl": null,
+          "hitFloorImgUrl": null,
+          "fireImgUrl": null,
+          "shootSoundUrl": "specialGun/arcHowSound",
+          "bodyImgRange": "specialGun/arcHow",
+          "bulletImgRange": "specialGun/bullet",
+          "description": null,
+          "armsType": "howitzer"
+        }
+      }
+    },
+    null
+  ]
+}

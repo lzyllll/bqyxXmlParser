@@ -1,0 +1,111 @@
+{
+  "father": {
+    "name": "space",
+    "bullet": {
+      "OreFighter": {
+        "name": "OreFighter",
+        "cnName": "矿场战机",
+        "lifeRatio": 2,
+        "raceType": "ship",
+        "swfUrl": "swf/ship/OreFighter.swf",
+        "dieImg": {
+          "name": "stoneBoom"
+        },
+        "dieJumpMul": 0,
+        "imgArr": "stand,normalAttack,die1",
+        "hitRect": "-20,-20,40,40",
+        "hurtRectArr": "-40,-25,80,50",
+        "motionState": "fly",
+        "flyType": "space",
+        "flipCtrlBy": "target",
+        "motionD": {
+          "F_AIR": 2
+        },
+        "maxVx": 8,
+        "skillArr": "hitCheckDie",
+        "hurtArr": {
+          "hurt": {
+            "cd": 3,
+            "imgLabel": "normalAttack",
+            "bulletLabel": "OreFighterBullet",
+            "grapRect": "-500,-35,350,87",
+            "hurtRatio": 1
+          }
+        },
+        "armsType": null
+      },
+      "OreFighterBullet": {
+        "name": "OreFighterBullet",
+        "cnName": "矿场战机子弹",
+        "hurtRatio": 0.3,
+        "bulletLife": 4,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "attackGap": 0.3,
+        "attackDelay": 0.13,
+        "bulletAngle": 180,
+        "bulletNum": 1,
+        "shootNum": 2,
+        "shootGap": 0.1,
+        "shootAngle": 15,
+        "penetrationGap": 10000,
+        "shootPoint": "-50,20",
+        "bulletSpeed": 12,
+        "bulletImgUrl": null,
+        "hitImgUrl": null,
+        "armsType": null
+      },
+      "OreBird": {
+        "name": "OreBird",
+        "cnName": "鸟头机",
+        "lifeRatio": 3,
+        "raceType": "ship",
+        "swfUrl": "swf/ship/OreBird.swf",
+        "dieImg": {
+          "name": "stoneBoom"
+        },
+        "dieJumpMul": 0,
+        "lockLeftB": 1,
+        "imgArr": "stand,normalAttack,die1",
+        "hitRect": "-40,-25,80,50",
+        "motionState": "fly",
+        "flyType": "space",
+        "motionD": {
+          "F_AIR": 4
+        },
+        "maxVx": 5,
+        "skillArr": "spaceMoveLeft,oreAutoAttack,hitCheckDie",
+        "hurtArr": {
+          "hurt": {
+            "cd": 2,
+            "imgLabel": "normalAttack",
+            "bulletLabel": "OreBirdBullet",
+            "grapRect": "-10000,-10000,20000,20000",
+            "hurtRatio": 1
+          }
+        },
+        "armsType": null
+      },
+      "OreBirdBullet": {
+        "name": "OreBirdBullet",
+        "cnName": "鸟头机-十字弹",
+        "hurtRatio": 0.3,
+        "bulletLife": 4,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "attackGap": 0.4,
+        "attackDelay": 0.2,
+        "bulletAngle": 0,
+        "bulletNum": 4,
+        "shootNum": 4,
+        "shootGap": 0.1,
+        "shootAngle": 135,
+        "shootPoint": "5,11",
+        "bulletSpeed": 12,
+        "bulletImgUrl": null,
+        "hitImgUrl": null,
+        "armsType": null
+      }
+    }
+  }
+}

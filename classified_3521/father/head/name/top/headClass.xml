@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="top" cnName="排行榜">
+		<head name="dpsTop_1" cnName="战神" diff="150" unlockLv="75" noEquip="1">
+			<condition fun="num" must="500000000" pro="getDps" info="主角战斗力到达[must]。" progressInfo="[compare]" />
+			<addObjJson>{'weaponDropPro':0.10}</addObjJson>
+		</head>
+		<head name="arena_1" cnName="竞技之王" diff="100" unlockLv="50" noEquip="1">
+			<condition fun="num" must="240" pro="getArenaNum" info="累计在竞技场中挑战超过[must]次。" progressInfo="[compare]次" />
+			<addObjJson>{'arenaStampDropNum':8}</addObjJson>
+		</head>
+		<head name="rifle_1" cnName="步枪之王" diff="90" unlockLv="70">
+			<condition fun="num" must="600000000" pro="getMaxDps_rifle" info="装上一把战斗力达到[must]的{green 步枪}。" progressInfo="[compare]" />
+			<addObjJson>{'dpsMul_rifle':0.04}</addObjJson>
+		</head>
+		<head name="sniper_1" cnName="狙击之王" diff="90" unlockLv="70">
+			<condition fun="num" must="700000000" pro="getMaxDps_sniper" info="装上一把战斗力达到[must]的{green 狙击}。" progressInfo="[compare]" />
+			<addObjJson>{'dpsMul_sniper':0.04}</addObjJson>
+		</head>
+		<head name="shotgun_1" cnName="散弹之王" diff="90" unlockLv="70">
+			<condition fun="num" must="800000000" pro="getMaxDps_shotgun" info="装上一把战斗力达到[must]的{green 散弹}。" progressInfo="[compare]" />
+			<addObjJson>{'dpsMul_shotgun':0.04}</addObjJson>
+		</head>
+		<head name="pistol_1" cnName="手枪之王" diff="90" unlockLv="70">
+			<condition fun="num" must="900000000" pro="getMaxDps_pistol" info="装上一把战斗力达到[must]的{green 手枪}。" progressInfo="[compare]" />
+			<addObjJson>{'dpsMul_pistol':0.04}</addObjJson>
+		</head>
+		<head name="rocket_1" cnName="火炮之王" diff="90" unlockLv="70">
+			<condition fun="num" must="1000000000" pro="getMaxDps_rocket" info="装上一把战斗力达到[must]的{green 火炮}。" progressInfo="[compare]" />
+			<addObjJson>{'dpsMul_rocket':0.04}</addObjJson>
+		</head>
+		<head name="almighty_10" cnName="十项全能" diff="80" unlockLv="50">
+			<condition fun="num" must="10" pro="get10YiArmsTypeNum" info="背包中拥有[must]把类型不同并且战力达到5亿的武器。" progressInfo="[compare]个" />
+			<addObjJson>{'dpsAll':0.10}</addObjJson>
+		</head>
+	</father>
+	
+	</data>

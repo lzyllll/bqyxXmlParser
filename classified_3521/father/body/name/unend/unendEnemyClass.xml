@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="unend">
+		<body name="unendEnemy" cnName="小怪-近战" noEncodeB="1">
+			战斗僵尸:2
+肥胖僵尸:2
+毒蛛:2
+卫队尸:1.5
+吸血蝙蝠:1.5
+独眼僵尸:1.5
+监狱僵尸:1.5
+战斗干尸:1.5
+科研僵尸:1.5
+		</body>
+		<body name="unendEnemyFar" cnName="小怪-远程" noEncodeB="1">
+携弹僵尸:1.5
+橄榄僵尸:1.5
+屠刀僵尸:1.5
+鬼目游尸:1.5
+冥刃游尸:1.5
+银锤:1.5
+童灵尸:0.8
+关东尸:1.5
+星锤干尸:1.5
+水管僵尸:1.5
+会计尸:1.5
+制图尸:1.5
+		</body>
+		<body name="unendEnemySuper" cnName="小怪-超级" noEncodeB="1">
+嗜血尸狼
+哨兵
+窃听者
+伏地尸
+女爵尸
+防毒僵尸:0.6
+利爪僵尸:0.4
+古惑僵尸
+僵尸治疗兵
+矿工僵尸:0.6
+		</body>
+		<body name="unendBoss" cnName="首领" noEncodeB="1">
+僵尸王
+游尸王
+狂战尸
+巨毒尸
+霸王毒蛛
+暴君
+钢铁僵尸王
+飓风巫尸
+无疆骑士:0.5
+火炮尸狼
+狂战狼
+掘金尸
+狂野收割者
+野帝
+毒魔
+狂人机器:0.8
+战争狂人
+古飙
+幻影X
+斩之使者
+异火龙
+球形闪电
+冥王
+铁犬:1:0.4
+战神:0.7:0.3
+双头僵尸
+狂战神:0.5
+		</body>
+		<body name="unendWilder" cnName="秘境首领" noEncodeB="1">
+年兽
+守望者
+运毒尸:0.6
+电棍僵尸
+决斗者
+极速守卫
+炸裂者
+虚炎狼:0.5
+虚晶蝎:0.3
+虚空客:0.7
+黑暗雷尔
+幻影Z:0.4
+阿巴达斯
+骷髅巫师
+王者兔:0.6
+编织者
+多肉
+异角龙
+异齿虎:1
+掘地兽:0.6
+		</body>
+		<body name="unendLast" cnName="厉害首领" noEncodeB="1">
+矿工僵尸
+僵尸治疗兵:0.6
+利爪僵尸
+双头僵尸
+氩星吞噬者:0.3
+		</body>
+		
+		
+		
+		
+		<body name="unendMap" cnName="地图" noEncodeB="1">
+			WoTu
+YangMei
+XiaSha
+FengWei
+XiChi
+BaiLu
+ShuiSheng
+BaiZhang
+ZhuTou
+ShuangTa
+BeiDou
+DongShan
+QingSha
+QingMing
+NanTang
+YouLing
+XiFeng
+LvSen
+DuKu
+BaoLun
+LuYu
+BaWang
+PingChuan
+BaiSha
+ShangSha
+DongFeng
+ZhongXin
+DiXia
+HouJin
+ShaJiang
+ShaMo
+XianQu
+FangZhouFirst
+FangZhouSecond
+FangZhouTop
+PrisonDoor
+PrisonFirst
+PrisonDeep
+PrisonExport
+PrisonOutside
+JungleOutside
+JungleDeep
+CavesEntrance
+CavesDeep
+QianYe
+FuMu
+GongMu
+GuiWang
+BingKu
+BingKuDeep
+WuXue
+DongWu
+BuDong
+PiaoMiao
+HanGuang1
+HanGuang2
+HanGuang3
+HanGuang4
+HanGuang5
+Hospital1
+Hospital2
+Hospital3
+Hospital5
+XingGu
+XiShan1
+XiShan2
+XiShan3
+XiShan4
+XiShan5
+XingPeak
+		</body>
+	</father>
+</data>

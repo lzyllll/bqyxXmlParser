@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="gene">
+		<drop cnName="基因体">
+			<name>gene</name>
+			<cnName>基因体</cnName>
+			<text>获得基因体</text>
+			<imgUrl>dropEffect/gene</imgUrl>
+		</drop>
+	</father>	
+</data>

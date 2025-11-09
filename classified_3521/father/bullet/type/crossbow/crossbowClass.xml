@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="crossbow" cnName="弩">
+		<bullet index="23" name="银蛇" color="red" rareDropLevel="76">
+			<name>snakeCrossbow</name><cnName>银蛇</cnName>
+			<dpsMul>3.2</dpsMul>
+			
+			<capacity>14,17</capacity>
+			<attackGap>1.5</attackGap>
+			<reloadGap>2,2.5</reloadGap>
+			<shakeAngle>0,0</shakeAngle>
+			<bulletWidth>20</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<shootAngle>3,5</shootAngle>
+			
+			<armsArmMul>0.5</armsArmMul><upValue>10</upValue><shootShakeAngle>30</shootShakeAngle><shootRecoil>7</shootRecoil><screenShakeValue>10</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime><bulletLife>2.5</bulletLife>
+			<hitType>rect</hitType>
+				
+			<bulletSpeed>40</bulletSpeed>
+				
+			<attackDelay>1.5</attackDelay>
+			<crossbowD focoB="1" minDelayMul="0.2" />
+			<godSkillArr>Hit_crazy_godArmsSkill,combo_ArmsSkill</godSkillArr>
+			
+			<shootSoundUrl>specialGun/arrowAttack</shootSoundUrl>
+			<bulletImgUrl raNum="30" con="add">specialGun/snakeBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="specialGun/arrowImpact">bulletHitEffect/yellow_motion</hitImgUrl>
+			<hitFloorImgUrl>bulletHitEffect/yellow_motion</hitFloorImgUrl>
+			<smokeImgUrl raNum="30" con="filter">bulletHitEffect/smoke_small2</smokeImgUrl>
+			<fireImgType>no</fireImgType>
+			
+			<bodyImgRange>specialGun/snakeCrossbow</bodyImgRange><bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>76级以上关卡和每周任务(武器-处决)</description>
+		</bullet>
+		<bullet index="22" name="刺蝎" color="red" rareDropLevel="81">
+			<name>scorpionCrossbow</name><cnName>刺蝎</cnName>
+			<dpsMul>3.2</dpsMul>
+			<extraMul>2</extraMul>
+			
+			<capacity>6,8</capacity>
+			<attackGap>1</attackGap>
+			<reloadGap>2,2.5</reloadGap>
+			<shakeAngle>0,0</shakeAngle>
+			<bulletWidth>20</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<shootAngle>3,5</shootAngle>
+			
+			<armsArmMul>0.5</armsArmMul><upValue>10</upValue><shootShakeAngle>30</shootShakeAngle><shootRecoil>7</shootRecoil><screenShakeValue>10</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime><bulletLife>2.5</bulletLife>
+			<hitType>rect</hitType>
+				
+			<bulletSpeed>40</bulletSpeed>
+				
+			<attackDelay>1.5</attackDelay>
+			<crossbowD focoB="1" minDelayMul="0.2" />
+			<godSkillArr>beatBack_ArmsSkill,Hit_posion7_godArmsSkill</godSkillArr>
+			
+			<shootSoundUrl>specialGun/arrowAttack</shootSoundUrl>
+			<bulletImgUrl raNum="30" con="add">specialGun/scorpionBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="specialGun/arrowImpact">bulletHitEffect/yellow_motion</hitImgUrl>
+			<hitFloorImgUrl>bulletHitEffect/yellow_motion</hitFloorImgUrl>
+			<smokeImgUrl raNum="30" con="filter">bulletHitEffect/smoke_small2</smokeImgUrl>
+			<fireImgType>no</fireImgType>
+			
+			<bodyImgRange>specialGun/scorpionCrossbow</bodyImgRange><bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>81级以上关卡和每周任务(武器-处决)</description>
+		</bullet>
+		
+		
+		<bullet index="0" name="烟花弩" kind="boom" color="black" dropLevelArr="999" evoB="0" composeLv="86" chipNum="180">
+			<name>beadCrossbow</name><cnName>烟花弩</cnName>
+			<dpsMul>3.2</dpsMul>
+			<uiDpsMul>1.2</uiDpsMul>
+			<extraMul>2</extraMul>
+			<noHitB>1</noHitB>
+			
+			<capacity>14,17</capacity>`
+			<attackDelay>1.5</attackDelay><aiShootRange>570</aiShootRange>
+			<attackGap>1.5</attackGap>
+			<reloadGap>2,2.5</reloadGap>
+			<shakeAngle>0,0</shakeAngle>
+			<bulletWidth>20</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<shootAngle>3,5</shootAngle>
+			
+			<armsArmMul>0.5</armsArmMul><upValue>10</upValue><shootShakeAngle>30</shootShakeAngle><shootRecoil>7</shootRecoil><screenShakeValue>10</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime><bulletLife>0.3</bulletLife>
+			<hitType>rect</hitType>
+				
+			<bulletSpeed>40</bulletSpeed>
+			<speedD max="40" min="5" a="-20" />
+				
+			<boomD selfB="1" radius="0" hurtMul="0" />
+			<crossbowD focoB="1" minDelayMul="0.2" />
+			<skillArr>Kill_Crazy_ArmsSkill</skillArr>
+			<godSkillArr>beadCrossbow_ArmsSkill</godSkillArr>
+			<bulletSkillArr>fireworksDieEvent</bulletSkillArr>
+			
+			<shootSoundUrl>specialGun/arrowAttack</shootSoundUrl>
+			<bulletImgUrl con="add">specialGun/beadBullet</bulletImgUrl>
+			<selfBoomImgUrl soundUrl="boomSound/midBoom2" soundVolume="0.5" con="add">specialGun/beadBoom</selfBoomImgUrl>
+			<smokeImgUrl con="filter" raNum="30">specialGun/electricLine</smokeImgUrl>
+			<fireImgType>no</fireImgType>
+			
+			<bodyImgRange>specialGun/beadCrossbow</bodyImgRange><bulletImgRange>specialGun/bullet</bulletImgRange>
+			
+			<description>秘境“年兽”、纪念币商店</description>
+		</bullet>
+		
+	</father>
+</data>

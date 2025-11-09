@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="materials" cnName="兑换币" smeltType="currency">
+		<things cnName="优胜券">
+			<name>arenaStamp</name>
+			<cnName>优胜券</cnName>
+			<zuobiNum>400000</zuobiNum>
+			<iconUrl>ThingsIcon/arenaStamp</iconUrl>
+			<description>
+				可用来兑换极为稀有的竞技场奖励，在竞技场的“奖励兑换”界面中使用。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]挑战竞技场可获得优胜券
+			</description>
+			<loveD num="100" />
+			<smeltD price="0.02" />
+		</things>
+		<things cnName="军队功勋牌">
+			<name>exploitCards</name>
+			<cnName>军队功勋牌</cnName>
+			<iconUrl>ThingsIcon/exploitCards</iconUrl>
+			<description>
+				可在军队功勋商店里兑换指定商品。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]1、在军队中进行黄金捐献
+				[n]2、完成活跃任务领取活跃礼包
+			</description>
+			<smeltD price="10" />
+		</things>
+		<things cnName="军备物资">
+			<name>militarySupplies</name>
+			<cnName>军备物资</cnName>
+			<iconUrl>ThingsIcon/militarySupplies</iconUrl>
+			<description>
+				用于升级军队中守望者的饲养等级、联邦大厦的权利等级、炊事馆的食用等级。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]军队每日福利礼包
+				[n]军队建筑“联邦大厦”中获得
+				[n]通过军队功勋牌兑换获得
+				[n]商店购买（限购）
+			</description>
+			<loveD num="20" />
+			<smeltD price="0.1" />
+		</things>
+		<things cnName="商券">
+			<name>taxStamp</name>
+			<cnName>商券</cnName>
+			<iconUrl>ThingsIcon/taxStamp</iconUrl>
+			<description>
+				想要从神秘商人那购买物品，你必须缴纳对应数量的商券。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]无尽模式(产量很高)
+				[n]寻宝任务奖励
+				[n]30级以上怪物掉落
+				[n]商店购买
+			</description>
+			<loveD num="2" growB="1" />
+			<smeltD price="0.3" />
+		</things>
+	</father>
+	</data>

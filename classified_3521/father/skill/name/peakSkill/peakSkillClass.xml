@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="peakSkill" cnName="巅峰技能">
+		<skill name="核爆">
+			<name>nuclear_peak</name>
+			<cnName>核爆</cnName>
+			<effectInfoArr>伤害,群体</effectInfoArr>
+			
+			<changeText>范围[range]码{n}减少首领[mul]的生命值</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>useSkill</condition>
+			<otherConditionArr>useSkillLabelIndexOf</otherConditionArr>
+			<conditionString>murderous_hero|invisibility_hero</conditionString>
+			<target>mouse,range,enemy</target>
+			
+			<addType>instant</addType>
+			<effectType>nuclear_peak</effectType>
+			<mul>0.02</mul>
+			<range>150</range>
+			 
+			<targetPointEffectB>1</targetPointEffectB>
+			<pointEffectImg soundUrl="boomSound/bigBoom" soundVolume="1">boomEffect/bigCircle</pointEffectImg>
+			<targetEffectImg>boomEffect/bigFire</targetEffectImg>
+			<description>释放嗜爪或隐匿之雾技能时，在鼠标处引爆炸弹伤害周围敌人，瞬秒小怪（不高于人物等级），减少精英怪、小怪（高于人物等级）25%的生命值，减少首领[mul]的生命值（首领生命值需不低于30%）。修罗模式、99级主线任务中伤害百分比减半。</description>
+			
+			<growth>
+				<skill><range>150</range><mul>0.02</mul></skill>
+				<skill><range>200</range><mul>0.04</mul></skill>
+				<skill><range>250</range><mul>0.05</mul></skill>
+				<skill><range>300</range><mul>0.06</mul></skill>
+				<skill><range>350</range><mul>0.07</mul></skill>
+				<skill><range>400</range><mul>0.08</mul></skill>
+				<skill><range>450</range><mul>0.09</mul></skill>
+				<skill><range>500</range><mul>0.10</mul></skill>
+			</growth>
+		</skill>
+		
+		<skill iname="注视">
+			<name>gaze_peak</name>
+			<cnName>注视</cnName>
+			<effectInfoArr>伤害,单体</effectInfoArr>
+			
+			<changeText>暴击几率+[mul]</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>floorState</otherConditionArr>
+			<conditionString>squat</conditionString>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>critExtraPro</effectType>
+			<mul>0.03</mul>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>在人物有暴击属性时，下蹲可增加[mul]的暴击几率。</description>
+			
+			<growth>
+				<skill><mul>0.03</mul></skill>
+				<skill><mul>0.06</mul></skill>
+				<skill><mul>0.09</mul></skill>
+				<skill><mul>0.12</mul></skill>
+				<skill><mul>0.15</mul></skill>
+				<skill><mul>0.17</mul></skill>
+				<skill><mul>0.19</mul></skill>
+				<skill><mul>0.21</mul></skill>
+			</growth>
+		</skill>
+		
+		
+		<skill iname="搏命">
+			<name>sacrifice_peak</name>
+			<cnName>搏命</cnName>
+			<effectInfoArr>伤害,单体</effectInfoArr>
+			
+			<changeText>伤害+[mul]</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>sacrifice_peak</effectType>
+			<mul>0.03</mul>
+			
+			<description>每减少5%生命值，就增加[mul]的伤害，最高增加150%的伤害。</description>
+			
+			<growth>
+				<skill><mul>0.03</mul></skill>
+				<skill><mul>0.05</mul></skill>
+				<skill><mul>0.07</mul></skill>
+				<skill><mul>0.09</mul></skill>
+				<skill><mul>0.11</mul></skill>
+				<skill><mul>0.12</mul></skill>
+				<skill><mul>0.13</mul></skill>
+				<skill><mul>0.14</mul></skill>
+			</growth>
+		</skill>
+	</father>
+	
+</data>

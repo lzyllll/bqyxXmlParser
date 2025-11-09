@@ -1,0 +1,203 @@
+{
+  "father": [
+    {
+      "name": "enemy",
+      "bullet": {
+        "Warrior": {
+          "name": "Warrior",
+          "shell": "compound",
+          "cnName": "狂人机器",
+          "headIconUrl": "IconGather/Warrior",
+          "raceType": "robot",
+          "swfUrl": "swf/enemy/Warrior.swf",
+          "showLevel": 999,
+          "lifeRatio": 1.8,
+          "rateRatio": 0.05,
+          "imgType": "normal",
+          "dieImg": {
+            "value": "boomEffect/boom3",
+            "soundUrl": "sound/pointBoom_hero",
+            "shake": "3,0.4,30"
+          },
+          "dieJumpMul": 0,
+          "imgArr": "stand,move,run\n\t\t\t\t,normalAttack,shootAttack,shakeAttack\n\t\t\t\t,hurt1,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+          "lifeBarExtraHeight": -50,
+          "handAddRa": 90,
+          "hitRect": "-18,-96,36,96",
+          "maxJumpNum": 1,
+          "maxVx": 15,
+          "runStartVx": 8,
+          "nextAttackTime": 0,
+          "skillArr": null,
+          "bossSkillArr": "WarriorShield,WarriorShoot,WarriorSprint,cmldef_enemy,fightReduct2,defenceBounce_enemy",
+          "bossSkillArrCn": "60%近战防御、80%防毒、胶性表皮",
+          "extraDropArmsB": 1,
+          "extraAIClassLabel": "Warrior_AIExtra",
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "move",
+                "noAiChooseB": 1,
+                "hurtRatio": 0.4,
+                "attackType": "direct",
+                "skillArr": null,
+                "shakeValue": 4,
+                "hitImgUrl": "bulletHitEffect/fitHit"
+              },
+              {
+                "imgLabel": "normalAttack",
+                "cn": "竖劈",
+                "hurtRatio": 3,
+                "attackType": "direct",
+                "skillArr": null,
+                "shakeValue": 4,
+                "hitImgUrl": "bulletHitEffect/fitHit"
+              },
+              {
+                "imgLabel": "shootAttack",
+                "noAiChooseB": 1,
+                "hurtRatio": 3,
+                "attackType": "holy",
+                "bulletLabel": "WarriorBullet",
+                "grapRect": "-650,-200,380,200",
+                "skillArr": "silenceWarrior,noMoveWarrior",
+                "shakeValue": 4,
+                "hitImgUrl": "bulletHitEffect/fitHit"
+              },
+              {
+                "imgLabel": "shakeAttack",
+                "noAiChooseB": 1,
+                "hurtMul": 0.9,
+                "attackType": "holy",
+                "skillArr": null,
+                "shakeValue": 4,
+                "hitImgUrl": "bulletHitEffect/fitHit"
+              }
+            ]
+          },
+          "armsType": null
+        },
+        "WarriorBullet": {
+          "cnName": "狂人机器剑气",
+          "name": "WarriorBullet",
+          "shakeAngle": 5,
+          "bulletLife": 7,
+          "bulletWidth": 70,
+          "hitType": "rect",
+          "skillArr": "silenceWarrior",
+          "twoHitGap": 0.5,
+          "attackGap": 1,
+          "attackDelay": 0.9,
+          "bulletAngle": 179.9,
+          "bulletAngleRange": 5,
+          "bulletNum": 1,
+          "shootNum": 1,
+          "shootPoint": "-300,-74",
+          "bulletSpeed": 35,
+          "penetrationNum": 999,
+          "penetrationGap": 1000,
+          "flipX": 1,
+          "bulletImgUrl": "Warrior/bullet",
+          "hitImgUrl": "bulletHitEffect/fitHit",
+          "armsType": null
+        }
+      }
+    },
+    {
+      "name": "other",
+      "cnName": "其他",
+      "skill": [
+        {
+          "name": "WarriorShoot",
+          "iconUrl36": "SkillIcon/WarriorShoot_36",
+          "cnName": "狂人飞刃",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cd": 5,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "nearAttackTarget",
+          "conditionRange": 500,
+          "target": "me",
+          "addType": "no",
+          "meActionLabel": "shootAttack",
+          "description": "狂人机器瞬移至敌人面前，发出狂人飞刃，被击中的目标将被沉默并且无法动弹。"
+        },
+        {
+          "name": "WarriorSprint",
+          "iconUrl36": "SkillIcon/WarriorSprint_36",
+          "cnName": "狂人斩",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cd": 11,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "nearAttackTarget",
+          "conditionRange": 700,
+          "target": "me",
+          "addType": "no",
+          "meActionLabel": "shakeAttack",
+          "description": "狂人机器腾空而起，斩击地面的敌人，对其造成重大伤害！"
+        },
+        {
+          "name": "WarriorShield",
+          "cnName": "空虚装甲",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "conditionType": "passive",
+          "condition": "interval",
+          "otherConditionArr": "lifePerLess,standOrRunNoCostom",
+          "conditionRange": 0.3,
+          "target": "me",
+          "addType": "state",
+          "effectType": "noUnderHitB",
+          "duration": 0.5,
+          "stateEffectImg": {
+            "value": "generalEffect/nothing",
+            "partType": "body",
+            "con": "add"
+          },
+          "description": "生命值低于30%时并且在站立或者行走时开启空虚装甲，不受到任何物理攻击。注：在反客任务中只有在站立时才生效。"
+        },
+        {
+          "index": 0,
+          "name": "silenceWarrior",
+          "cnName": "沉默",
+          "noBeClearB": 1,
+          "ignoreImmunityB": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "effectType": "silenceB",
+          "value": 1,
+          "duration": 5,
+          "stateEffectImg": {
+            "value": "skillEffect/silence_enemy",
+            "partType": "mouth",
+            "con": "add"
+          },
+          "description": "击中目标后使其无法释放技能，持续[duration]秒。"
+        },
+        {
+          "index": 0,
+          "name": "noMoveWarrior",
+          "cnName": "麻痹",
+          "noBeClearB": 1,
+          "ignoreImmunityB": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "effectType": "moveSpeed",
+          "mul": 0,
+          "duration": 3,
+          "stateEffectImg": {
+            "value": "skillEffect/paralysis_enemy",
+            "con": "add"
+          }
+        }
+      ]
+    }
+  ]
+}

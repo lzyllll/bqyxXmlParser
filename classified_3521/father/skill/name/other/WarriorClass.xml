@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="other" cnName="其他">
+		<skill name="狂人飞刃">
+			<name>WarriorShoot</name><iconUrl36>SkillIcon/WarriorShoot_36</iconUrl36>
+			<cnName>狂人飞刃</cnName><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>5</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>500</conditionRange><target>me</target>
+			<addType>no</addType>
+			<meActionLabel>shootAttack</meActionLabel>
+			<description>狂人机器瞬移至敌人面前，发出狂人飞刃，被击中的目标将被沉默并且无法动弹。</description>
+		</skill>
+		<skill name="狂人斩">
+			<name>WarriorSprint</name><iconUrl36>SkillIcon/WarriorSprint_36</iconUrl36>
+			<cnName>狂人斩</cnName><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>11</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>700</conditionRange><target>me</target>
+			<addType>no</addType>
+			<meActionLabel>shakeAttack</meActionLabel>
+			<description>狂人机器腾空而起，斩击地面的敌人，对其造成重大伤害！</description>
+		</skill>
+		<skill name="空虚装甲" cnName="空虚装甲">
+			<name>WarriorShield</name>
+			<cnName>空虚装甲</cnName><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<otherConditionArr>lifePerLess,standOrRunNoCostom</otherConditionArr>
+			<conditionRange>0.3</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>noUnderHitB</effectType>
+			<duration>0.5</duration>
+			
+			<stateEffectImg partType="body" con="add">generalEffect/nothing</stateEffectImg>
+			<description>生命值低于30%时并且在站立或者行走时开启空虚装甲，不受到任何物理攻击。注：在反客任务中只有在站立时才生效。</description>
+		</skill>
+		
+		
+		
+		<skill index="0" name="沉默">
+			<name>silenceWarrior</name>
+			<cnName>沉默</cnName>
+			<noBeClearB>1</noBeClearB>
+			<ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>silenceB</effectType>
+			<value>1</value>
+			<duration>5</duration>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/silence_enemy</stateEffectImg>
+			<description>击中目标后使其无法释放技能，持续[duration]秒。</description>
+		</skill>
+		<skill index="0" name="麻痹">
+			<name>noMoveWarrior</name>
+			<cnName>麻痹</cnName>
+			<noBeClearB>1</noBeClearB>
+			<ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<mul>0</mul>
+			<duration>3</duration>
+			 
+			<stateEffectImg con="add">skillEffect/paralysis_enemy</stateEffectImg>
+		</skill>
+	</father>
+</data>

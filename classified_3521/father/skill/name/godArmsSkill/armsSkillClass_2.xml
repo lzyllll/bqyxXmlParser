@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级技能">
+		<skill name="风雷">
+			<name>windThunder_ArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>风雷</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>windThunder</effectType>
+			<extraValueType>nowArmsTrueDps</extraValueType>
+			<mul>0.12</mul>
+			<value>33</value>
+			<range>200</range>
+			<duration>0.2</duration>
+			<description>移动能够积蓄电能，击中目标后消耗电能，同时产生6条闪电随机轰击附近的敌方单位。</description>
+			<stateEffectImg noShowB="1" noFollowB="1" randomRange="1" con="add">bullet/lightning1</stateEffectImg>
+			<stateEffectImg2 noShowB="1" noFollowB="1" randomRange="1" con="add">bullet/lightning2</stateEffectImg2>
+		</skill>
+		<skill name="影灭">
+			<name>laserKill_godArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>影灭</cnName>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>floorState</otherConditionArr>
+			<conditionString>squat</conditionString>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<extraValueType>nowArmsHurt</extraValueType>
+			
+			<obj>"name":"laserKill_godArmsSkill","site":"shootPoint","flipB":false</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>下蹲状态下，每次射击都会额外向目标发射激光炮，激光伤害为当前武器面板单伤的20%。</description>
+		</skill>
+		
+		<skill cnName="爆沙">
+			<name>imploding_blackArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>爆沙</cnName>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>0.1</effectProArr>
+			<mul>20</mul>
+			<extraValueType>nowArmsHurt</extraValueType>
+			
+			<obj>"name":"imploding_blackArmsSkill","site":"me","flipB":true</obj>
+			
+			<meEffectImg soundUrl="sound/imploding_enemy" />
+			<description>击中目标后有[effectProArr.0]概率向前方爆裂出4条火花，轰炸前方所有目标，每条火花伤害为：20*武器面板伤害*增伤Buff（排除武器技能、零件技能）。</description>
+		</skill>
+		
+		<skill name="爆胆">
+			<name>fear_godArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>爆胆</cnName>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>noState</otherConditionArr>
+			<conditionString>fear_noBuff</conditionString>
+			<target arenaB="0">target</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>armsFear</effectType>
+			<extraValueType>nowArmsHurt</extraValueType>
+			<effectProArr>0.5</effectProArr>
+			<mul>0.6</mul>
+			<duration>2</duration>
+			<linkArr>fear_noBuff</linkArr>
+			
+			<stateEffectImg partType="mouth" con="filter">skillEffect/screaming_hero_target</stateEffectImg>
+			<targetEffectImg soundUrl="sound/magicHit1" partType="mouth" con="add">skillEffect/screaming_hero</targetEffectImg>
+			<description>击中后有[effectProArr.0]概率恐惧目标并造成额外伤害(武器面板单伤x[mul])。</description>
+		</skill>
+		<skill name="爆震">
+			<name>fear_godArmsSkill2</name><mustLv>2</mustLv>
+			<cnName>爆震</cnName><noRandomListB>1</noRandomListB>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>noState</otherConditionArr>
+			<conditionString>fear_noBuff</conditionString>
+			<target arenaB="0">target</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>armsFear</effectType>
+			<extraValueType>nowArmsHurt</extraValueType>
+			<effectProArr>0.5</effectProArr>
+			<mul>1</mul>
+			<duration>2</duration>
+			<linkArr>fear_noBuff</linkArr>
+			
+			<stateEffectImg partType="mouth" con="filter">skillEffect/screaming_hero_target</stateEffectImg>
+			<targetEffectImg soundUrl="sound/magicHit1" partType="mouth" con="add">skillEffect/screaming_hero</targetEffectImg>
+			<description>击中后有[effectProArr.0]概率恐惧目标并造成额外伤害(武器面板单伤x[mul])，并减速目标。</description>
+		</skill>
+		
+		
+		
+		<skill name="飞镰">
+			<name>sickle_godArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>飞镰</cnName>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>0.1</effectProArr>
+			<extraValueType>nowArmsHurt</extraValueType>
+			<mul>4</mul>
+			
+			
+			<obj>"name":"sickle_godArmsSkill","site":"hitPosition","flipB":false</obj>
+			
+			<description>击中目标后有[effectProArr.0]概率产生连续弹射的飞镰，飞镰最多弹射5次。</description>
+		</skill>
+		<skill name="跟踪飞镰">
+			<name>sickle_godArmsSkill2</name><noRandomListB>1</noRandomListB>
+			<cnName>跟踪飞镰</cnName>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>0.1</effectProArr>
+			<extraValueType>nowArmsHurt</extraValueType>
+			<mul>5</mul>
+			
+			<obj>"name":"sickle_godArmsSkill2","site":"hitPosition","flipB":false</obj>
+			
+			<description>击中目标后有[effectProArr.0]概率产生连续弹射的跟踪飞镰，无视防弹外壳、防弹钢甲，并对此类敌人额外造成40%的伤害。</description>
+		</skill>
+		<skill name="战修罗">
+			<name>demonAddHurt</name>
+			<cnName>战修罗</cnName><noRandomListB>1</noRandomListB><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType><changeHurtB>1</changeHurtB>
+			<condition>hit</condition>
+			<otherConditionArr>isDemon</otherConditionArr>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurtNoCondition</effectType>
+			<mul>1.20</mul>
+			<description>修罗模式下伤害增加[mul-1]。</description>
+		</skill>
+		
+		<skill name="突袭">
+			<name>noFoggyDef</name><noBeClearB>1</noBeClearB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<cnName>突袭</cnName><noRandomListB>1</noRandomListB><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>loopClick</condition>
+			<otherConditionArr />
+			
+			<target>me,range,enemy</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>noFoggyDefB</effectType>
+			<duration>0.2</duration>
+			<range>999999</range>
+			<description>持续射击会封锁在场所有敌人的“抵御”技能。</description>
+		</skill>
+		<skill name="惩罚">
+			<name>immuneNemesis</name><noBeClearB>1</noBeClearB>
+			<cnName>惩罚</cnName><noRandomListB>1</noRandomListB><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType><changeHurtB>1</changeHurtB>
+			<condition>hit</condition>
+			<otherConditionArr>haveSkillOr</otherConditionArr>
+			<conditionString>State_SpellImmunity,immune,treater_knights,FoggyDefence</conditionString>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>immuneNemesis</effectType>
+			<mul>1.6</mul>
+			<description>对拥有技能净化器、免疫、技能免疫、抵御的敌人造成额外[mul-1]的伤害。</description>
+		</skill>
+		
+		
+		
+		
+		
+		
+		
+		<skill name="打滑">
+			<name>trackslipGod</name>
+			<cnName>打滑</cnName><noRandomListB>1</noRandomListB>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>trackslipGod</effectType>
+			<extraValueType>armsBaseAttackGap</extraValueType>
+			<duration>0.1</duration>
+			<description>使敌人走路很滑，持续时间是武器初始射击间隔的2倍。</description>
+			<stateEffectImg name="waterFoot" />
+		</skill>
+		<skill name="超级共振">
+			<name>resonateGodSuper</name>
+			<cnName>超级共振</cnName><noRandomListB>1</noRandomListB>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>resonateGod</effectType>
+			<description>随机选一把携带武器（步枪、手枪、喷火器、能量枪必须为同类武器），触发其神级技能（突袭、粘性、跳斩、子母弹、烟花、轨迹绘制等武器技能无效）。装有改变品质成色的零件该技能无效。</description>
+		</skill>
+		
+		<skill cnName="子母弹">
+			<name>lash_ArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>子母弹</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>killTarget</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>no</effectType>
+			<description>母弹自爆后内部弹射出7颗更小的子弹，每颗伤害为母弹的90%。</description>
+		</skill>
+		
+		<skill cnName="烟花">
+			<name>beadCrossbow_ArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>烟花</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>killTarget</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>no</effectType>
+			<description>这就是一把烟花炮！释放烟花后，坠落的烟花对敌人造成伤害。</description>
+		</skill>
+		<skill name="陈年老糖">
+			<name>oldSugar</name>
+			<cnName>陈年老糖</cnName><noRandomListB>1</noRandomListB><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType><changeHurtB>1</changeHurtB>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>oldSugar</effectType>
+			<mul>0.7</mul>
+			<secMul>7</secMul>
+			<description>子弹每存在1秒，就增加[mul]的伤害，最高增加[secMul]的伤害。</description>
+		</skill>
+		
+		
+		<skill cnName="轨迹绘制">
+			<name>editBulletPath</name><noRandomListB>1</noRandomListB>
+			<cnName>轨迹编辑</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>no</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>no</effectType>
+			<description>玩家可绘制子弹运动轨迹。</description>
+		</skill>
+	</father>	
+	
+	
+	
+	
+	
+	
+	</data>

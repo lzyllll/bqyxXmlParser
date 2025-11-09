@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="state">
+		<body cnName="伤害" name="allHurtMul" add="0.01" max="50" />
+		<body cnName="技能回速" name="cdMul" add="0.003" max="40" />
+		<body cnName="怒气回速" name="angerMul" add="0.02" max="50" />
+		<body cnName="防御力" name="defenceMul" add="0.03" max="60" />
+	</father>
+	</data>

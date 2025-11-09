@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="hit" cnName="击打" num="161">
+<body name="pistol1_hit" cnName="一般枪支击中">bulletHitEffect/yellow_motion</body>
+<body name="gun_hit" cnName="枪支击中带音效" soundUrl="hitSound/bulletHitBody" soundRan="5" soundVolume="0.2">bulletHitEffect/yellow_motion</body>
+<body soundUrl="ZombieLing/hit2" name="laser_ling_hit" cnName="鬼目游尸-镭射眼-击中">bulletHitEffect/yellow_motion</body>
+  <body soundUrl="LingShooter/hit2" name="lingGun_hit" cnName="鬼目射手-武器-击中">bulletHitEffect/yellow_motion</body>
+  <body soundUrl="ZombieFootball/hit2" name="ZombieFootball_1_hit" cnName="橄榄僵尸-击中">bulletHitEffect/yellow_motion</body>
+  <body soundUrl="DryFrog/skill7" con="filter" name="DryFrogPour_hitFloor" cnName="倒炸弹-击地">bulletHitEffect/yellow_motion</body>
+  <body soundUrl="PetZombieFootball/hit2" name="PetZombieFootball_1_hit" cnName="橄榄僵尸-击中">bulletHitEffect/yellow_motion</body>
+  <body soundUrl="specialGun/arrowImpact" name="snakeCrossbow_hit" cnName="银蛇-击中">bulletHitEffect/yellow_motion</body>
+  <body soundUrl="PetZombieHelmet/hit2" name="PetZombieHelmet_1_hit" cnName="橄榄僵尸-击中">bulletHitEffect/yellow_motion</body>
+  <body soundUrl="sound/metal_hit1" name="Nian_darts_hit" cnName="年兽-晶火刃-击中">bulletHitEffect/yellow_motion</body>
+  <body soundUrl="sound/hitFloor" name="squibDevice_hitFloor" cnName="爆竹-击地">bulletHitEffect/yellow_motion</body>
+  
+  <body soundUrl="sound/fireHit1" name="lightBall_BlackLaer_hit" cnName="黑暗雷尔-辐射光球-音效" />
+  <body soundUrl="sound/lifeReplace_enemy_hit" name="lifeReplace_enemy_hit" cnName="生命置换-音效" />
+  <body soundUrl="sound/paralysis_enemy_hit" name="zomSkillBullet_hit" cnName="闪电球-音效" />
+  <body soundUrl="sound/magicHit2" shake="2,0.2,10" con="add" name="AircraftGun_main_hit" cnName="狩猎者-击中">AircraftGun/hit</body>
+  <body soundUrl="sound/magicHit2" shake="2,0.2,10" con="add" name="CivilianFit_main_hit" cnName="镇山虎-主炮-击中">CivilianFit/hit</body>
+  <body soundUrl="boomSound/microBoom" name="DryFrog_shoot_hit" cnName="投弹-击中">DryFrog/boom</body>
+  <body soundUrl="sound/hummer_hit" raNum="4" name="OfficeZombie_1_hit" cnName="办公僵尸-击中">OfficeZombie/hitEffect</body>
+  <body con="add" soundUrl="sound/fireHit2" name="SkeletalMageShoot_hit" cnName="法球-击中">SkeletalMage/boom</body>
+  <body soundUrl="sound/fireHit1" con="add" name="VanityKer_dreamland_hit" cnName="虚空客-虚幻镜像-击中">VanityKer/lightHit</body>
+  <body con="add" soundUrl="sound/hummer_hit" name="WatchEagle_shoot_hit" cnName="守望者-激光球-击中">WatchEagle/hit</body>
+  <body con="add" soundUrl="ZombieCleaver/hit1" name="ZombieCleaver_1_hit" cnName="屠刀僵尸-飞刀-击中">bladeHitEffect/blood</body>
+  <body con="add" soundUrl="PetZombieCleaver/hit1" name="PetZombieCleaver_1_hit" cnName="屠刀僵尸-飞刀-击中">bladeHitEffect/blood</body>
+  <body con="add" soundUrl="sound/vehicle_hit1" name="HammerMummy_1_hit" cnName="星锤干尸-飞锤-击中">bladeHitEffect/blood</body>
+  <body con="add" soundUrl="sound/body_hit" name="anger_FightWolf_hit" cnName="狂战狼-大地之怒-击中">bladeHitEffect/blood</body>
+  <body con="add" soundUrl="PetZombieCleaver/hit1" soundVolume="0.4" name="PetZombieCleaver_1_hitFloor" cnName="屠刀僵尸-飞刀-击地">bladeHitEffect/blood</body>
+  <body soundUrl="FightKing/hit2" con="add" name="knifeBoom_FightKing_hit" cnName="狂刃爆发-击中">bladeHitEffect/blood</body>
+  <body soundUrl="TyphoonWitch/hit2" name="TyphoonWitch_bat_hit" cnName="飓风巫尸-蝙蝠阵-击中">bladeHitEffect/blood</body>
+  <body con="add" soundUrl="sound/vehicle_hit1" soundVolume="0.4" name="HammerMummy_1_hitFloor" cnName="星锤干尸-飞锤-击地">bladeHitEffect/blood</body>
+  <body con="add" name="knife_skeleton_hit" cnName="骷髅-地狱剑-击中">bladeHitEffect/blood</body>
+  <body soundUrl="PetTyphoonWitch/hit2" name="PetTyphoonWitch_anger_hit" cnName="宠-巫师之怒-击中">bladeHitEffect/blood</body>
+  <body soundUrl="PetChaosKing/hit2" con="add" name="PetChaosKing_shoot_hit" cnName="狂战尸-狂刃追踪-击中">bladeHitEffect/blood</body>
+  <body con="add" soundUrl="sound/vehicle_hit2" name="ZombiePrison_1_hit" cnName="监狱僵尸-飞刀-击中">bladeHitEffect/blood</body>
+  <body con="add" soundUrl="sound/vehicle_hit2" soundVolume="0.4" name="ZombiePrison_1_hitFloor" cnName="监狱僵尸-飞刀-击地">bladeHitEffect/blood</body>
+  <body con="add" soundUrl="ZombieCleaver/hit1" soundVolume="0.4" name="ZombieCleaver_1_hitFloor" cnName="屠刀僵尸-飞刀-击地">bladeHitEffect/blood</body>
+  <body soundUrl="PetFightKing/hit2" con="add" name="PetFightKing_shoot_hit" cnName="狂战尸-狂刃追踪-击中">bladeHitEffect/blood</body>
+  
+  
+  
+  
+  
+  
+  <body cacheB="1" imgDieType="die" con="add" name="lightCone_hit" cnName="矿锯尾烟">bulletHitEffect/blueLaser</body>
+  
+  
+  
+  <body soundUrl="uiSound/lotteryProps" con="add" name="blackHoleMad_hit" cnName="黑洞-击中">bulletHitEffect/bluntBig</body>
+  <body soundUrl="uiSound/gradeUp" con="add" name="magnetBullet_hit" cnName="磁铁-击中">bulletHitEffect/bluntBig</body>
+  <body soundUrl="sound/magicHit2" name="godMace_hit" cnName="上帝之杖-击中">bulletHitEffect/energy</body>
+  <body soundUrl="sound/body_hit" name="KingRabbit_shoot_hit" cnName="王者兔-射击-击中">bulletHitEffect/energy</body>
+  <body soundUrl="sound/magicHit1" name="pounce_spider_hit" cnName="毒蛛-反扑-击中">bulletHitEffect/energy</body>
+  <body soundUrl="sound/vehicle_hit1" con="add" name="PetIronChiefS_shoot1_hit" cnName="冥王-光波-击中">bulletHitEffect/energy</body>
+  <body soundUrl="sound/hummer_hit" name="hammer_enemy_hit" cnName="眩晕之锤-击中">bulletHitEffect/energy</body>
+  <body soundUrl="sound/hand_hit" name="shoot_Watchdog_hit" cnName="看门狗-射击-击中">bulletHitEffect/energy</body>
+  <body soundUrl="sound/fireHit1" name="shoot_BlackLaer_hit" cnName="黑暗雷尔-射击-击中">bulletHitEffect/energy</body>
+  <body con="add" soundUrl="sound/vehicle_hit2" name="TransportZombieShoot_hit" cnName="飞刀-击中">bulletHitEffect/energy</body>
+  <body soundUrl="boomSound/midBoom2" soundVolume="0.3" name="fireworksSun_hit" cnName="烟花-子弹-击中">bulletHitEffect/energy</body>
+  <body name="shoot_PhantomX_hit" cnName="幻影X型-激光炮-击中">bulletHitEffect/energy</body>
+  <body soundUrl="FightShooter/armsHit" shake="3,0.4,5" name="rocket_fight_hit" cnName="狂战戟-击中">bulletHitEffect/energy</body>
+  <body soundUrl="sound/vehicle_hit1" soundVolume="1" name="summonWolf_bigBoss_hit" cnName="大Boss群狼-击中">bulletHitEffect/energy</body>
+  <body soundUrl="PetTyphoonWitch/hit2" name="PetTyphoonWitch_wind_hit" cnName="飓风巫尸-飓风-击中">bulletHitEffect/energy</body>
+  <body soundUrl="sound/magicHit2" shake="2,0.2,10" con="add" name="FlyFit_main_hit" cnName="霸空雕-主炮-击中">bulletHitEffect/energy</body>
+  <body con="add" soundUrl="ZombieSilver/hit1" name="ZombieSilver_1_hit" cnName="银锤-飞刀-击中">bulletHitEffect/energy</body>
+  <body con="add" soundUrl="ZombieSilver/hit1" soundVolume="0.4" name="ZombieSilver_1_hitFloor" cnName="银锤-飞刀-击地">bulletHitEffect/energy</body>
+  <body con="add" soundUrl="sound/snowHit" name="IceManShake_hit" cnName="野帝-暴怒一击-击中">bulletHitEffect/energy</body>
+  <body soundUrl="sound/fireHit1" con="add" name="PetIronChiefThird_shoot1_hit" cnName="哈迪斯-光波-击中">bulletHitEffect/energy</body>
+  <body con="add" soundUrl="sound/water_hit" name="Mammoth_shoot_hit" cnName="异猛象-喷球-击中">bulletHitEffect/energy</body>
+  <body soundUrl="TyphoonWitch/hit2" name="TyphoonWitch_wind_hit" cnName="飓风巫尸-飓风-击中">bulletHitEffect/energy</body>
+  <body soundUrl="sound/paralysis_enemy_hit" name="lightningFloor_hit" cnName="大地闪电-修罗-击中">bulletHitEffect/energy</body>
+  <body con="add" soundUrl="sound/magicHit2" name="Mammoth_electricity_hit" cnName="异猛象-电磁风暴-击中">bulletHitEffect/energy</body>
+  <body con="add" name="SaberTiger_laser_hit" cnName="骷髅-量子光束-击中">bulletHitEffect/energy</body>
+  <body soundUrl="TyphoonWitch/hit1" name="TyphoonWitch_shoot1_hit" cnName="飓风巫尸-能量波-击中">bulletHitEffect/energy</body>
+  <body soundUrl="PetTyphoonWitch/hit1" name="PetTyphoonWitch_shoot1_hit" cnName="飓风巫尸-能量波-击中">bulletHitEffect/energy</body>
+  <body soundUrl="sound/water_hit" name="Salamander_shoot_hit" cnName="虚洪螈-射击-击中">bulletHitEffect/energy</body>
+  <body soundUrl="sound/body_hit" name="revengeArrow_hit" cnName="复仇之箭-击中">bulletHitEffect/energyPurple</body>
+  <body soundUrl="sound/magicHit2" name="laserKill_godArmsSkill_hit" cnName="影灭-击中">bulletHitEffect/energyPurple</body>
+  <body soundUrl="sound/magicHit2" name="imploding_blackArmsSkill_hit" cnName="沙金-击中">bulletHitEffect/energyYellow</body>
+  <body name="yearChicken_hit" cnName="酉鸡-击中">bulletHitEffect/energyYellow</body>
+  
+  <body con="add" name="yearDragon_hit" cnName="辰龙-击中">bulletHitEffect/fitHit</body>
+  <body name="yearSheep_hit" cnName="未羊-击中">bulletHitEffect/fitHit</body>
+  
+  <body soundUrl="sound/magicHit2" name="MeatyShieldBullet_hit" cnName="反击粒子-击中">bulletHitEffect/fitHit</body>
+  <body soundUrl="sound/water_hit" name="MeatyBackBullet_hit" cnName="反弹粒子-击中">bulletHitEffect/fitHit</body>
+  <body con="add" soundUrl="sound/vehicle_hit1" name="WarriorBullet_hit" cnName="狂人机器剑气-击中">bulletHitEffect/fitHit</body>
+  <body con="add" soundUrl="sound/magicHit2" name="YouthWolfShoot_hit" cnName="地波-击中">bulletHitEffect/fitHit</body>
+  
+  <body soundUrl="sound/vehicle_hit" soundRan="3" con="add" name="hurtBulletMad_hit" cnName="尖锥-击中">bulletHitEffect/fitHit</body>
+  <body soundUrl="specialGun/arrowImpact" name="yearSnake_hit" cnName="巳蛇-击中">bulletHitEffect/fitHit</body>
+  <body soundUrl="sound/hand_hit" name="LastdayViking_hit" cnName="机关枪-击中">bulletHitEffect/fitHit</body>
+  <body raNum="4" con="add" name="yearMonkey_hit" cnName="申猴-击中">bulletHitEffect/fitHit</body>
+  <body con="add" soundUrl="sound/paralysis_enemy_hit" name="BallLightning_fire_hit" cnName="火焰球-击中">bulletHitEffect/fitHit</body>
+  <body con="add" soundUrl="sound/paralysis_enemy_hit" soundVolume="0.3" name="paralysisHit" cnName="电流击中-小声">bulletHitEffect/fitHit</body>
+  <body soundUrl="sound/paralysis_enemy_hit" name="PoliceZombieShake_hit" cnName="电流-击中">bulletHitEffect/fitHit</body>
+  <body con="add" soundUrl="sound/body_hit" raNum="4" name="GasDefense_1_hit" cnName="飞扳-击中">bulletHitEffect/fitHit</body>
+  
+  
+  <body cacheB="1" imgDieType="die" con="add" name="extremeLaser_hit" cnName="激光极源-击中">bulletHitEffect/purLaser</body>
+  <body raNum="30" name="fireFlamer_hit" cnName="炽焰-击中">bulletHitEffect/smoke_motion</body>
+  <body soundUrl="PetIronZombieKing/hitFloor2" raNum="30" name="PetIronZombieKing_floor_hitFloor" cnName="僵尸王地滚弹-击地">bulletHitEffect/smoke_small</body>
+  <body soundUrl="SwimKing/hitFloor2" soundVolume="0.2" raNum="30" name="SwimKing_gun_hitFloor" cnName="僵尸王-背部火炮-击地">bulletHitEffect/smoke_small</body>
+  <body soundUrl="ZombieKing/hitFloor2" raNum="30" name="ZombieKing_floor_hitFloor" cnName="僵尸王地滚弹-击地">bulletHitEffect/smoke_small</body>
+  <body soundUrl="SwimKing/hitFloor2" raNum="30" name="SwimKing_floor_hitFloor" cnName="游尸王地滚弹-击地">bulletHitEffect/smoke_small</body>
+  <body soundUrl="IronZombieKing/hitFloor2" raNum="30" name="IronZombieKing_floor_hitFloor" cnName="僵尸王地滚弹-击地">bulletHitEffect/smoke_small</body>
+  <body soundUrl="boomSound/microBoom1" name="boom_headless_hitFloor" cnName="自爆僵尸炸弹-击地">bulletHitEffect/smoke_small</body>
+  <body soundUrl="PetZombieKing/hitFloor2" raNum="30" name="PetZombieKing_floor_hitFloor" cnName="僵尸王地滚弹-击地">bulletHitEffect/smoke_small</body>
+  <body soundUrl="sound/hitFloor" raNum="30" name="BoomWolf_bullet_hitFloor" cnName="火炮尸狼-火炮-击地">bulletHitEffect/smoke_small</body>
+  <body soundUrl="sound/snowHit" raNum="1" con="add" name="SnowThinRotate_hit" cnName="童灵尸-旋转雪球-击中">bulletHitEffect/snowBigHit</body>
+  <body raNum="8" con="add" name="SnowThinShoot_hitFloor" cnName="童灵尸-雪球-击地">bulletHitEffect/snowHit</body>
+  <body soundUrl="sound/snowHit" raNum="8" name="IceManShoot1_hit" cnName="野帝-雪球-击中">bulletHitEffect/snowHit</body>
+  <body raNum="8" name="IceManShoot1_hitFloor" cnName="野帝-雪球-击地">bulletHitEffect/snowHit</body>
+  <body soundUrl="sound/snowHit" raNum="8" con="add" name="SnowThinShoot_hit" cnName="童灵尸-雪球-击中">bulletHitEffect/snowHit</body>
+  <body con="add" name="extremeLaserFire_hit" cnName="烈焰大地-击中">bulletHitEffect/spark_motion</body>
+  <body soundUrl="uiSound/getDrop" soundRan="6" con="add" name="extremeGemDrop_hit" cnName="极源宝石-击中">bulletHitEffect/yellow</body>
+
+  <body soundUrl="sound/paralysis_enemy_hit" shake="2,0.2,10" con="filter" name="extremeLightning_hit" cnName="闪电极源-击中">generalEffect/frozenBallHide</body>
+  <body name="DryFrogPour_zero_hitFloor" cnName="倒炸弹-空弹-击地">generalEffect/headSmoke</body>
+  <body name="christmasGun_hitFloor" cnName="圣诞礼炮-击地">no</body>
+  <body soundUrl="specialGun/christmasGunHit" name="christmasGun_hit" cnName="圣诞礼炮-击中">specialGun/christmasGunBoom</body>
+  <body soundUrl="" name="pianoGun_hit" cnName="弦音-击中">specialGun/christmasGunBoom</body>
+  <body soundUrl="specialGun/water_hit" name="penGun_hit" cnName="钢笔枪-击中">specialGun/christmasGunBoom</body>
+  
+  <body name="bulletHitRed" cnName="子弹击中-红" raNum="4">bulletHitEffect/red</body>
+  <body name="IronDogFiveHit" cnName="五人斩-击中" con="add" soundUrl="sound/vehicle_hit" soundRan="3">bulletHitEffect/bigBlue</body>
+  <body name="iceConeHit" cnName="冰锥击中" con="add" soundUrl="sound/fragHit">boomEffect/midCan</body>
+  
+</father>
+
+
+</data>

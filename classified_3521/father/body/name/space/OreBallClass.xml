@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="space">
+		
+		
+		
+		
+		
+		<body>
+			<name>OreBall</name>
+			<cnName>采矿球</cnName><lifeRatio>0.7</lifeRatio>
+			<raceType>ship</raceType>
+			<swfUrl>swf/ship/OreBall.swf</swfUrl>
+			
+			<dieImg name="stoneBoom" />
+			<dieJumpMul>0</dieJumpMul>
+			<lockLeftB>1</lockLeftB>
+			<imgArr>
+				stand,die1
+			</imgArr>
+			
+			<hitRect>-25,-25,50,50</hitRect>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<motionD vRan="0.2" F_AIR="2" />
+			<maxVx>7</maxVx>
+			<attackAIClass />
+			<skillArr>OreBallAI,hitCheckDie</skillArr>
+		</body>
+		<body>
+			<name>GoldOreBall</name>
+			<cnName>采矿金球</cnName><lifeRatio>1</lifeRatio>
+			<raceType>ship</raceType>
+			<swfUrl>swf/ship/GoldOreBall.swf</swfUrl>
+			
+			<dieImg name="stoneBoom" />
+			<dieJumpMul>0</dieJumpMul>
+			<lockLeftB>1</lockLeftB>
+			<imgArr>
+				stand,die1
+			</imgArr>
+			
+			<hitRect>-25,-25,50,50</hitRect>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<motionD vRan="0" F_AIR="2" />
+			<maxVx>7</maxVx>
+			<attackAIClass />
+			<skillArr>sumOreBall,OreBallAI,hitCheckDie</skillArr>
+		</body>
+		<skill>
+			<name>OreBallAI</name><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<cnName>矿弹buff</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>OreBallAI</effectType><effectFather>oreSpace</effectFather>
+			<mul>1</mul>
+			<value>2</value>
+			<duration>9999999</duration>
+		</skill>
+		<skill>
+			<name>sumOreBall</name><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<cnName>召唤采矿球矩阵</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType><summonedUnitsB>1</summonedUnitsB>
+			<effectType>sumOreBall</effectType><effectFather>oreSpace</effectFather>
+			<mul>0.066</mul>
+			
+			<obj>"cnName":"采矿球","num":1,"lifeMul":1,"dpsMul":1,"mulByFatherB":1,"lifeTime":-1</obj>
+			<duration>10</duration>
+			<pointEffectImg name="oreBombShow" />
+		</skill>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</father>
+</data>

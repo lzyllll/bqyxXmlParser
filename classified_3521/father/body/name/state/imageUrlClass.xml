@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="state" cnName="状态" num="135">
+  <body partType="mouth" name="gmMask3_state" cnName="丛安面具-状态">AnniverUI/congan</body>
+  <body partType="mouth" name="gmMask1_state" cnName="花火面具-状态">AnniverUI/huahuo</body>
+  <body partType="mouth" name="gmMask2_state" cnName="沃龙面具-状态">AnniverUI/wolong</body>
+  <body con="filter" name="Antimatter_hammer_add" cnName="击中眩晕-添加">Antimatter/effect</body>
+  <body partType="foot_left,foot_right" con="filter" name="blade_blueMoto_state" cnName="冻血刀锋-状态">BlueMoto/blade</body>
+  <body partType="body" con="add" name="Bubbles_blue_state" cnName="蓝-状态">Bubbles/blue</body>
+  <body partType="body" con="add" name="Bubbles_green_state" cnName="绿-状态">Bubbles/green</body>
+  <body partType="" con="filter" name="DuelistEffect_state" cnName="决斗者-特效预处理-状态">Duelist/kickEffect</body>
+  <body partType="body" con="add" name="eleField_FastGuards_link_state" cnName="静电场-吸附-状态">FastGuards/eleHit</body>
+  <body con="filter" name="FastGuards_spring_state" cnName="极速伤害-状态">FastGuards/springEffect</body>
+  <body partType="hand_left" con="add" name="windAttack_FightShooter_state" cnName="旋风刀-状态">FightShooter/shoot_bullet</body>
+  <body partType="body" con="add" soundUrl="LastdayTank/shield1" name="LastdaySpellImmunity_state" cnName="免疫护罩-状态">LastdayTank/spellImmunityShield</body>
+  <body con="filter" name="madArmsAttack_state" cnName="擎天斩-状态">Madboss/armsAttEffect</body>
+  <body name="MadbossUnderBuff_state" cnName="武器抵抗-状态">Madboss/underBuff</body>
+  <body con="add" name="Mammoth_missileChip_state" cnName="洲际导弹-自爆-状态">Mammoth/blueElec</body>
+  <body con="add" name="Mammoth_missileChip_state2" cnName="洲际导弹-自爆-状态2">Mammoth/redElec</body>
+  <body partType="2eye,2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="filter" name="Nian_change_state" cnName="恶魔火-状态">NianMonster/sparkBullet</body>
+  <body partType="mouth" con="add" name="SaberTiger_shield_anger_state" cnName="超导电幕-怒气-状态">SaberTiger/angerEffect</body>
+  <body partType="body" con="add" name="SaberTiger_shield_first_state" cnName="超导电幕-第一阶段-状态">SaberTiger/shield1</body>
+  <body con="add" noShowB="1" name="SaberTiger_shield_state" cnName="超导电幕-状态">SaberTiger/shield1</body>
+  <body con="add" noShowB="1" name="SaberTiger_shield_state2" cnName="超导电幕-状态2">SaberTiger/shield2</body>
+  <body partType="body" con="add" name="SaberTiger_shield_second_state" cnName="超导电幕-第二阶段-状态">SaberTiger/shield2</body>
+  <body partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" name="Salamander_back_state" cnName="融弹回血-状态">Salamander/bubbling</body>
+  <body con="add" name="shotgunBlade_ArmsSkill_state2" cnName="跳斩-状态2">Striker/bladeDownEffect</body>
+  <body con="add" name="shotgunBlade_ArmsSkill_state" cnName="跳斩-状态">Striker/bladeUpEffect</body>
+  <body partType="body" con="add" name="invincible_eeg_state" cnName="无敌光环-状态">Triceratops/energyShield</body>
+  <body partType="body" con="add" name="VanityKer_rayBuff_state" cnName="解析射线-状态">VanityKer/rayBuff</body>
+  <body noShowB="1" noFollowB="1" randomRange="1" con="add" name="windThunder_ArmsSkill_state" cnName="风雷-状态">bullet/lightning1</body>
+  <body noShowB="1" noFollowB="1" randomRange="1" con="add" name="windThunder_ArmsSkill_state2" cnName="风雷-状态2">bullet/lightning2</body>
+  <body partType="shootPoint" con="add" raNum="1" name="yearDragonSkill_state" cnName="电爆-状态">bulletHitEffect/blueLaser</body>
+  <body partType="shootPoint" con="filter" raNum="30" name="cyanArmySkill_state" cnName="无敌之怒-状态">bulletHitEffect/fireSmoke</body>
+  <body partType="shootPoint" raNum="25" followPartRaB="1" name="KingRabbitKingHit_state2" cnName="王者之箭-击中-状态2">bulletHitEffect/smoke_black</body>
+  <body partType="shootPoint,hand_left,hand_right" raNum="25" followPartRaB="1" name="rainBulletHitIron_state" cnName="腐蚀-状态">bulletHitEffect/smoke_black</body>
+  <body partType="2eye" raNum="25" followPartRaB="1" name="blindnessPhantomHit_state" cnName="腐蚀-状态">bulletHitEffect/smoke_black</body>
+  <body partType="arm_right_1,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="filter" raNum="30" name="invisibility_enemy_state" cnName="隐匿之雾-状态">bulletHitEffect/smoke_small</body>
+  <body partType="mouth" con="filter" raNum="30" name="Triceratops_deserted_state2" cnName="饥荒-状态2">bulletHitEffect/smoke_small</body>
+  <body partType="2hand" con="add" raNum="30" name="SnowFattySprint_state" cnName="千斤顶-状态">bulletHitEffect/smoke_small</body>
+  <body partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" raNum="30" name="ironBody_enemy_state" cnName="钢铁之躯-状态">bulletHitEffect/smoke_small</body>
+  <body partType="2foot" con="add" raNum="30" name="groupSpeedUp_enemy_state" cnName="群体加速-状态">bulletHitEffect/smoke_small</body>
+  <body partType="hand_right" con="filter" raNum="30" name="boom_headless_add" cnName="自爆炸弹-添加">bulletHitEffect/spark_motion</body>
+  <body partType="body" con="add" name="acidicParts_state" cnName="酸性腐蚀-状态">generalEffect/bigPoison</body>
+  <body partType="foot_left,foot_right" con="filter" name="blueMoto_state_state" cnName="特效-状态">generalEffect/bladeNormal</body>
+  <body partType="body" con="add" name="skeletonCard_link_state" cnName="骷髅卡扣血-状态">generalEffect/bloodLoss</body>
+  <body partType="hand_right" con="add" name="murderous_vehicle_state" cnName="核动力-状态">generalEffect/crazy</body>
+  <body con="add" partType="body" name="KingRabbitKingHit_state" cnName="王者之箭-击中-状态">generalEffect/crazy</body>
+  <body partType="body" con="add" name="BallLightning_electric_state" cnName="电磁敏感-状态">generalEffect/electricBallBig</body>
+  <body partType="body" con="add" name="gas_WatchEagle_state" cnName="燃气-状态">generalEffect/fire</body>
+  <body partType="mouth" con="add" name="tauntLing_link_state" cnName="嘲讽敌人-状态">generalEffect/fire</body>
+  <body partType="body" con="add" name="BallLightning_fire_state" cnName="火焰敏感-状态">generalEffect/fireBallBig</body>
+  <body partType="head" con="add" name="ballPhantomZ_state" cnName="闪电外壳-状态">generalEffect/frozenBallBig</body>
+  <body partType="body" con="add" name="BallLightning_frozen_state" cnName="冷冻敏感-状态">generalEffect/frozenBallBig</body>
+  <body partType="mouth" con="add" name="Triceratops_deserted_state" cnName="饥荒-状态">generalEffect/headSmoke</body>
+  <body partType="body" con="add" name="strongLing_state" cnName="遇强则刚-状态">generalEffect/hurtDefence1</body>
+  <body partType="body" name="FoggyDefence_state" cnName="抵御-状态">generalEffect/invincibleShield</body>
+  <body partType="body" con="add" name="MeatyShield_state" cnName="反击护盾-状态">generalEffect/invincibleShield</body>
+  <body partType="body" con="add" raNum="1" name="charged_BlackLaer_state" cnName="充能-状态">generalEffect/lakeBuff</body>
+  <body partType="body" con="add" name="nearAddLifeLove_state" cnName="靠近回血-状态">generalEffect/lifeReply</body>
+  <body partType="shootPoint" con="add" raNum="30" followPartRaB="1" name="crazy_vehicle_state" cnName="核弹头-状态">generalEffect/murderous</body>
+  <body partType="body" con="add" name="WarriorShield_state" cnName="空虚装甲-状态">generalEffect/nothing</body>
+  <body partType="leg_right_1,leg_left_1,arm_right_1,arm_left_1,mouth" con="add" name="MadbossBuff_state" cnName="全身发光、走路带烟-状态">generalEffect/purBigLight</body>
+  <body partType="mouth" con="add" name="FoggyShakeHit_state" cnName="斩击buff-状态">generalEffect/purpleFace</body>
+  <body partType="body" con="add" name="outfit_elephant_state" cnName="遁形-状态">generalEffect/spellImmunityShield</body>
+  <body con="filter" partType="body" name="WatchEagleAirDefence_state" cnName="守望之盾-状态">generalEffect/subductionEffect</body>
+  <body partType="head" con="add" name="waterFlamer_ArmsSkill_state" cnName="湿身-状态">generalEffect/waterFace</body>
+  <body partType="head" name="onlyWeaponHurtBattle_add" cnName="只受副手伤害-添加">generalEffect/weaponKill</body>
+  <body partType="head" name="pumpkinDropEffect_state" cnName="怪物带着南关头-状态">pumpkinHead/effect</body>
+  <body partType="2eye" con="add" name="crazyMad_state2" cnName="觉醒-状态2">skillEffect/crazy_hero_eye</body>
+  <body partType="2hand,shootPoint" name="shortLivedDisabledUnderHit_state" cnName="短命之仇-受到攻击-状态">skillEffect/disabledBig</body>
+  <body partType="2hand" name="MeatyDesertedHalo_state" cnName="荒芜光环-状态">skillEffect/disabled_enemy</body>
+  <body partType="2foot" name="PoisonDemonHit_state" cnName="闪击-减速目标-状态">skillEffect/disabled_enemy</body>
+  <body partType="2hand,arm_right_0,arm_right_1,arm_left_0,arm_left_1" name="shotgunBladeHero_state" cnName="英雄跳斩-降低目标攻击力-状态">skillEffect/disabled_enemy</body>
+  <body partType="2eye" name="lightConeSkill_state" cnName="炫目-状态">skillEffect/disabled_enemy</body>
+  <body partType="mouth" con="add" soundUrl="sound/vehicle_hit1" name="Antimatter_hammer_state" cnName="击中眩晕-状态">skillEffect/dizziness</body>
+  <body partType="mouth" con="add" name="pullAttackHit_state" cnName="抓捕-击中-状态">skillEffect/dizziness</body>
+  <body partType="mouth" con="add" name="eleOverlap_hero_state" cnName="元素叠加-状态">skillEffect/eleOverlap</body>
+  <body con="add" name="jiaozi_state" cnName="饺子无敌状态-状态">skillEffect/energyShield</body>
+  <body partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" imgDieType="last" name="feedback_enemy_state" cnName="电离折射-状态">skillEffect/feedback_hero_part</body>
+  <body partType="2hand" con="add" name="globalSpurting_enemy_state" cnName="全局溅射-状态">skillEffect/globalSpurting_enemy</body>
+  <body partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" raNum="1" name="laser_FightWolf_state" cnName="灼热视线-状态">skillEffect/laserHeat</body>
+  <body partType="head" con="add" name="shortLivedDisabled_state" cnName="短命之仇-状态">skillEffect/lifeReplace_enemy_bullet</body>
+  <body partType="mouth" con="add" raNum="1" name="lightLake_state" cnName="光能-状态">skillEffect/lightLake</body>
+  <body partType="mouth" con="add" name="lookDown_hero_state" cnName="藐视-状态">skillEffect/lookDown</body>
+  <body partType="mouth" con="add" name="electromagnet_state" cnName="磁力场-状态">skillEffect/magneticField</body>
+  <body partType="body" con="add" raNum="30" followPartRaB="1" name="boundless_enemy_link_state" cnName="无疆统治-吸附-状态">skillEffect/magneticField_paralysis</body>
+  <body partType="shootPoint" con="add" raNum="30" followPartRaB="1" name="ballPhantomZ_link_state" cnName="闪电外壳-曲扭光环-状态">skillEffect/magneticField_paralysis</body>
+  <body partType="2hand" con="add" raNum="30" followPartRaB="1" name="murderous_hero_state" cnName="嗜爪-状态">skillEffect/murderous_enemy</body>
+  <body partType="2hand" con="add" raNum="15" followPartRaB="1" name="murderous_enemy_state" cnName="嗜爪-状态">skillEffect/murderous_enemy</body>
+  <body partType="mouth" con="add" raNum="1" name="nightLing_state" cnName="暗夜信徒-状态">skillEffect/nightLing</body>
+  <body con="add" name="noMoveWarrior_state" cnName="麻痹-状态">skillEffect/paralysis_enemy</body>
+  <body con="add" soundUrl="sound/paralysis_enemy_hit" name="BlackLaer_hitParalysis_state" cnName="静电麻痹-状态">skillEffect/paralysis_enemy</body>
+  <body partType="2hand" con="filter" raNum="30" name="corrosion_hugePosion_state" cnName="蚀毒-状态">skillEffect/poisonClaw_enemy</body>
+  <body partType="2foot" con="filter" raNum="30" name="TransportZombieThrowHit_state" cnName="击退-状态">skillEffect/poisonClaw_enemy</body>
+  <body partType="2hand" con="filter" raNum="20" name="poisonClaw_enemy_add" cnName="毒爪-添加">skillEffect/poisonClaw_enemy</body>
+  <body partType="2hand" con="filter" raNum="20" name="posion7_hugePosion_add" cnName="七步毒-添加">skillEffect/poisonousFog_hero</body>
+  <body partType="hand_right" con="filter" raNum="20" name="corrosion_hugePosion_add" cnName="蚀毒-添加">skillEffect/poisonousFog_hero</body>
+  <body partType="mouth" con="add" name="LaborZombieBoomBuff_state" cnName="爆瓶buff-状态">skillEffect/poisonousFog_hero</body>
+  <body partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="filter" raNum="30" name="yearCattleSkill_state" cnName="周二大吉-状态">skillEffect/poisonousFog_hero</body>
+  <body partType="body,head" con="filter" raNum="20" name="suicide_GasBomb_add" cnName="毒气弹-靠近自爆-添加">skillEffect/poisonousFog_hero</body>
+  <body partType="shootPoint" con="filter" raNum="30" followPartRaB="1" name="resonanceLing_state" cnName="共鸣-状态">skillEffect/purpleFire</body>
+  <body partType="body,arm_right_1,arm_left_1,leg_right_1,leg_left_1" con="add" raNum="25" name="wisdomAnger_hero_state" cnName="智慧怒火-状态">skillEffect/purpleFire</body>
+  <body partType="2hand" con="add" name="moreBullet_state" cnName="超级散射-状态">skillEffect/redCircle</body>
+  <body partType="arm_right_1,arm_left_1,leg_right_1,leg_left_1" con="add" raNum="30" name="xiaoAiShoot_state" cnName="小炎戒-状态">skillEffect/redFire</body>
+  <body partType="arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="filter" raNum="30" name="superHighDrill_state" cnName="超能推撞-状态">skillEffect/redFire</body>
+  <body partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" imgDieType="last" name="groupReverseHurt_enemy_state" cnName="反转术-状态">skillEffect/reverseHurt_enemy</body>
+  <body xGap="30" con="filter" raNum="1" name="rolling_hero_state" cnName="翻滚-状态">skillEffect/rollingShadow</body>
+  <body partType="head" name="outfit_blood_state" cnName="坏血-状态">skillEffect/rune_black_n</body>
+  <body partType="mouth" con="add" name="armyCommanderSkill_state" cnName="鼓舞士气-状态">skillEffect/rune_blue_shield</body>
+  <body partType="body" con="add" name="vertigoArmorIron_state" cnName="眩晕护甲-状态">skillEffect/rune_blue_shield</body>
+  <body partType="mouth" con="add" name="rebirth_enemy_add" cnName="重生-添加">skillEffect/rune_green_r</body>
+  <body partType="mouth" con="add" name="recovery_enemy_add" cnName="复原-添加">skillEffect/rune_red_e</body>
+  <body partType="mouth" con="add" name="strongHalo_equip_state" cnName="顽强光环-状态">skillEffect/rune_red_shield</body>
+  <body partType="mouth" con="add" name="comboPhantomZHit_state" cnName="减速-状态">skillEffect/screaming_hero_target</body>
+  <body partType="mouth" con="filter" name="elementsBlue_state" cnName="使自身恐惧-状态">skillEffect/screaming_hero_target</body>
+  <body partType="mouth" con="add" name="PoliceZombieShakeHit_state" cnName="封锁被动技能-状态">skillEffect/silenceMore</body>
+  <body partType="mouth" con="add" name="silenceWarrior_state" cnName="沉默-状态">skillEffect/silence_enemy</body>
+  <body partType="2eye" con="filter" raNum="30" name="PoliceZombieCharge_state" cnName="充能-状态">skillEffect/smallFire</body>
+  <body partType="2eye,2hand" con="filter" raNum="30" name="maxSpeedTask_state" cnName="极限射速-状态">skillEffect/smallFire</body>
+  <body partType="2hand,2leg" con="filter" raNum="30" name="crazy_sanji_state" cnName="恶魔风脚-状态">skillEffect/smallFire</body>
+  <body partType="shootPoint" con="filter" raNum="30" name="globalSpurting_hero_state2" cnName="全局溅射-状态2">skillEffect/smallFire</body>
+  <body partType="2hand" con="filter" raNum="30" name="moonCake_state" cnName="月饼增加攻击力-状态">skillEffect/smallFire</body>
+  <body partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" raNum="30" name="selfBurn_task_add" cnName="自燃-添加">skillEffect/smallFire</body>
+  <body partType="2hand,2foot" con="filter" raNum="30" name="feeding_wolf_state" cnName="反哺-状态">skillEffect/smallFire</body>
+  <body partType="hand_left" con="filter" name="knife_skeleton_state" cnName="地狱之刃-状态">skillEffect/smallFire</body>
+  <body partType="2hand" con="add" raNum="30" name="agile_PetLake_state" cnName="敏捷光环-状态">skillEffect/smallFire</body>
+  <body partType="shootPoint" con="filter" raNum="30" followPartRaB="1" name="sameArmsHurtAddZang_state" cnName="相同武器伤害叠加-状态">skillEffect/smallFire</body>
+  <body partType="arm_right_1,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" raNum="25" name="gngerFire_pet_state" cnName="怒火-状态">skillEffect/smallFire</body>
+  <body xGap="30" con="filter" raNum="1" name="heroSprint_state" cnName="鬼步-状态">skillEffect/sprintShadow</body>
+  <body partType="shootPoint" con="add" raNum="30" followPartRaB="1" name="through_enemy_add" cnName="永久金刚钻-添加">skillEffect/through_hero</body>
+  <body partType="2hand" con="add" raNum="30" followPartRaB="1" name="trueshotLaer_state" cnName="强击光环-状态">skillEffect/trueshot_enemy</body>
+  <body partType="arm_right_1,arm_left_1" con="add" raNum="30" followPartRaB="1" name="fox_godArmsSkill2_state" cnName="强击蝙蝠-状态">skillEffect/trueshot_enemy</body>
+  <body partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="filter" raNum="1" name="wizardAnger_wind_state" cnName="巫尸之怒-状态">skillEffect/witchSmoke</body>
+  <body partType="2eye" con="add" name="penGunSkill_state" cnName="封眼-状态">specialGun/penGunBuff</body>
+  <body partType="head" con="add" name="pianoGunSkill_state" cnName="音爆-状态">specialGun/pianoGunBuff</body>
+  <body partType="body" con="add" name="yearRabbitSkill_state" cnName="包裹-状态">specialGun/yearRabbitBuff</body>
+  <body partType="body" con="add" imgDieType="stop" name="yearSnakeSkill_state" cnName="蛇刺-状态">specialGun/yearSnakeState</body>
+  
+  <body con="add" name="paralysisEyes" partType="2eye" cnName="闪电眼">skillEffect/paralysis_enemy_bullet</body>
+  <body cnName="竖盾状态" name="verShieldState" con="add">skillEffect/verShield</body>
+  <body cnName="竖盾状态2" name="verShieldMadState" con="add">skillEffect/verShield2</body>
+  <body cnName="红光眼" name="redEyes" con="add" partType="2eye">skillEffect/trueBoss</body>
+  
+  <body cnName="冰冻状态" name="frozenState" con="add" partType="body">generalEffect/frozen</body>
+	
+  
+  
+</father>
+
+
+</data>

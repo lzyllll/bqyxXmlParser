@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="窃听者">
+		<bullet cnName="窃听者-激光">
+			<name>Shapers1</name>
+			<cnName>窃听者-激光</cnName>
+			
+			<shakeAngle>0</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>10</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.8</attackGap>
+			<attackDelay>1</attackDelay>
+			<bulletAngle>179</bulletAngle>
+			<bulletAngleRange>40</bulletAngleRange>
+			<shootNum>15</shootNum>
+				
+			<shootPoint>-51,-21</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<penetrationGap>1000</penetrationGap>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30" con="add">Shapers/bullet1</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/magicHit2">bulletHitEffect/energy</hitImgUrl>
+			
+		</bullet>
+	</father>		
+	</data>

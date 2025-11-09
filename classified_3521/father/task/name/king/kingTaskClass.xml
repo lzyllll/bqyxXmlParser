@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="king" cnName="擒王" clearCompleteAfterBuyNumB="1" dayNum="2" buyNum="2" buyMustDefineName="buyKingTaskNum" tipText="每天第一次上线将清除前一天的任务进度。" autoUnlockByLevelB="1">
+		
+		<task lv="10" name="ZombieShell" cnName="消灭僵尸炮兵总管" uiShowTime="999999" unlockLv="10" moreKillEnemyNumIsMe="1">
+			<shortText>前往[map]消灭僵尸炮兵总管，获得掉落奖励</shortText>
+			<uiConditionText>消灭僵尸炮兵总管，获得掉落奖励</uiConditionText>
+			<description>僵尸炮兵总管：领袖型僵尸，擅长运用各种火炮、导弹，特别是当他作为首领出现时，他将拥有“导弹召唤”、“万弹归宗”、“定点轰炸”等诸多技能，是最恐怖的火力输出僵尸。</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>kingTask/ZombieShell</fixedLevelUrl>
+			
+			<drop dropName="king" />
+			<diff>0.85</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>base;coin;8;;;;LevelEnemyCoin</gift>
+			<gift>things;armsHighBox;2</gift>
+			<gift>things;equipHighBox;2</gift>
+			<gift>things;partsChest75;1</gift>
+		</task>
+		<task lv="15" name="ZombieKing" cnName="消灭僵尸王" uiShowTime="999999" unlockLv="15" moreKillEnemyNumIsMe="1">
+			<shortText>前往[map]消灭僵尸王，获得掉落奖励</shortText>
+			<uiConditionText>消灭僵尸王，获得掉落奖励</uiConditionText>
+			<description>僵尸王：僵尸病毒超重度感染者，背着一支威力极强的火炮。它还在超能矿石的辐射下产生变异，拥有4种恐怖技能。在狂战尸出现之前，它是最强的非携枪类僵尸，被人们封为“僵尸王”！</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>kingTask/ZombieKing</fixedLevelUrl>
+			
+			<drop dropName="king" />
+			<diff>0.85</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>base;coin;8;;;;LevelEnemyCoin</gift>
+			<gift>things;armsHighBox;2</gift>
+			<gift>things;equipHighBox;2</gift>
+			<gift>things;partsChest75;1</gift>
+		</task>
+		<task lv="20" name="ZombieBoomKing" cnName="消灭火炮僵尸王" uiShowTime="999999" unlockLv="20" moreKillEnemyNumIsMe="1">
+			<shortText>前往[map]消灭火炮僵尸王，获得掉落奖励</shortText>
+			<uiConditionText>消灭火炮僵尸王，获得掉落奖励</uiConditionText>
+			<description>火炮僵尸王：由僵尸王克隆而来，并且学会了使用各种枪支，同时具有更多攻击性技能！恐怖的破坏力让人不寒而栗！</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>kingTask/ZombieBoomKing</fixedLevelUrl>
+			
+			<drop dropName="king" />
+			<diff>0.85</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>base;coin;8;;;;LevelEnemyCoin</gift>
+			<gift>things;armsHighBox;2</gift>
+			<gift>things;equipHighBox;2</gift>
+			<gift>things;partsChest75;1</gift>
+		</task>
+		<task lv="25" name="QiHuang" cnName="消灭奇皇博士" uiShowTime="999999" unlockLv="25" moreKillEnemyNumIsMe="1">
+			<shortText>前往[map]消灭奇皇博士，获得掉落奖励</shortText>
+			<uiConditionText>消灭奇皇博士，获得掉落奖励</uiConditionText>
+			<description>奇皇博士：隶属天鹰研究院，是僵尸克隆项目的负责人。</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>kingTask/QiHuang</fixedLevelUrl>
+			
+			<drop dropName="king" />
+			<diff>0.85</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>base;coin;8;;;;LevelEnemyCoin</gift>
+			<gift>things;armsHighBox;2</gift>
+			<gift>things;equipHighBox;2</gift>
+			<gift>things;partsChest75;1</gift>
+		</task>
+		<task lv="30" name="Arthur" cnName="消灭亚瑟" uiShowTime="999999" unlockLv="30" moreKillEnemyNumIsMe="1">
+			<shortText>前往[map]消灭亚瑟，获得掉落奖励</shortText>
+			<uiConditionText>消灭亚瑟，获得掉落奖励</uiConditionText>
+			<description>亚瑟：天鹰军团总司令，拥有的技能不计其数，配合盔甲的天生保护技能，使他成为地球上最强的人类战士！</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>kingTask/Arthur</fixedLevelUrl>
+			
+			<drop dropName="king" />
+			<diff>0.85</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>base;coin;8;;;;LevelEnemyCoin</gift>
+			<gift>things;armsHighBox;2</gift>
+			<gift>things;equipHighBox;2</gift>
+			<gift>things;partsChest75;1</gift>
+		</task>
+		<task lv="35" name="SwimKing" cnName="消灭游尸王" uiShowTime="999999" unlockLv="35" moreKillEnemyNumIsMe="1">
+			<shortText>前往[map]消灭游尸王，获得掉落奖励</shortText>
+			<uiConditionText>消灭游尸王，获得掉落奖励</uiConditionText>
+			<description>游尸王：克隆僵尸王失败后的产物，是游尸群的领导者。</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>kingTask/SwimKing</fixedLevelUrl>
+			
+			<drop dropName="king" />
+			<diff>0.85</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>base;coin;8;;;;LevelEnemyCoin</gift>
+			<gift>things;armsHighBox;2</gift>
+			<gift>things;equipHighBox;2</gift>
+			<gift>things;partsChest75;1</gift>
+		</task>
+		<task lv="40" name="FightKing" cnName="消灭狂战尸" uiShowTime="999999" unlockLv="40" moreKillEnemyNumIsMe="1">
+			<shortText>前往[map]消灭狂战尸，获得掉落奖励</shortText>
+			<uiConditionText>消灭狂战尸，获得掉落奖励</uiConditionText>
+			<description>狂战尸：天鹰军团正在秘密培育的冷兵器僵尸，成型之后将成为霞光大陆迄今为止最强大的僵尸，拥有分身、生命置换等诸多可怕的技能。</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>kingTask/FightKing</fixedLevelUrl>
+			
+			<drop dropName="king" />
+			<diff>0.85</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>base;coin;8;;;;LevelEnemyCoin</gift>
+			<gift>things;armsHighBox;2</gift>
+			<gift>things;equipHighBox;2</gift>
+			<gift>things;partsChest75;1</gift>
+		</task>
+		<task lv="44" name="FightShooter" cnName="消灭狂战射手" uiShowTime="999999" unlockLv="44" moreKillEnemyNumIsMe="1">
+			<shortText>前往[map]消灭狂战射手，获得掉落奖励</shortText>
+			<uiConditionText>消灭狂战射手，获得掉落奖励</uiConditionText>
+			<description>狂战射手：狂战尸的进化体，手持“狂战银枪”，具有更远的攻击范围以及更快的攻击速度。</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>kingTask/FightShooter</fixedLevelUrl>
+			
+			<drop dropName="king" />
+			<diff>0.85</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>base;coin;8;;;;LevelEnemyCoin</gift>
+			<gift>things;armsHighBox;2</gift>
+			<gift>things;equipHighBox;2</gift>
+			<gift>things;partsChest75;1</gift>
+		</task>
+		<task lv="47" name="HugePoison" cnName="消灭巨毒尸" uiShowTime="999999" unlockLv="47" moreKillEnemyNumIsMe="1">
+			<shortText>前往[map]消灭巨毒尸，获得掉落奖励</shortText>
+			<uiConditionText>消灭巨毒尸，获得掉落奖励</uiConditionText>
+			<description>巨毒尸：深藏在毒窟内的巨型僵尸，鼓起的肚子里全是致命毒液，它是迄今为止最恶心的僵尸。</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>kingTask/HugePoison</fixedLevelUrl>
+			
+			<drop dropName="king" />
+			<diff>0.85</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>base;coin;8;;;;LevelEnemyCoin</gift>
+			<gift>things;armsHighBox;2</gift>
+			<gift>things;equipHighBox;2</gift>
+			<gift>things;partsChest75;1</gift>
+		</task>
+		<task lv="50" name="SpiderKing" cnName="消灭霸王毒蛛" uiShowTime="999999" unlockLv="50" moreKillEnemyNumIsMe="1">
+			<shortText>前往[map]消灭霸王毒蛛，获得掉落奖励</shortText>
+			<uiConditionText>消灭霸王毒蛛，获得掉落奖励</uiConditionText>
+			<description>霸王毒蛛：被新型僵尸病毒感染从而变异的巨型蜘蛛。能够哺育无数的小毒蛛，是毒蛛之源。</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>kingTask/SpiderKing</fixedLevelUrl>
+			
+			<drop dropName="king" />
+			<diff>0.85</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>base;coin;8;;;;LevelEnemyCoin</gift>
+			<gift>things;armsHighBox;2</gift>
+			<gift>things;equipHighBox;2</gift>
+			<gift>things;partsChest75;1</gift>
+		</task>
+		<task lv="55" name="Skeleton" cnName="消灭暴君" uiShowTime="999999" unlockLv="55" moreKillEnemyNumIsMe="1">
+			<shortText>前往[map]消灭暴君，获得掉落奖励</shortText>
+			<uiConditionText>消灭暴君，获得掉落奖励</uiConditionText>
+			<description>暴君：前身为僵尸王尸体，在天鹰实验室里被剔除了肉身之后，它的双手还被嵌入地狱剑以及全能火炮，全面替代狂战尸成为最强的陆地战士！</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>kingTask/Skeleton</fixedLevelUrl>
+			
+			<drop dropName="king" />
+			<diff>0.85</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>base;coin;8;;;;LevelEnemyCoin</gift>
+			<gift>things;armsHighBox;2</gift>
+			<gift>things;equipHighBox;2</gift>
+			<gift>things;partsChest75;1</gift>
+		</task>
+		<task lv="60" name="IronZombieKing" cnName="消灭钢铁僵尸王" uiShowTime="999999" unlockLv="60" moreKillEnemyNumIsMe="1">
+			<shortText>前往[map]消灭钢铁僵尸王，获得掉落奖励</shortText>
+			<uiConditionText>消灭钢铁僵尸王，获得掉落奖励</uiConditionText>
+			<description>钢铁僵尸王：僵尸王的钢铁形态，头戴磁力头盔，让它拥有控制金属的能力！</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>kingTask/IronZombieKing</fixedLevelUrl>
+			
+			<drop dropName="king" />
+			<diff>1.3</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>base;coin;8;;;;LevelEnemyCoin</gift>
+			<gift>things;armsHighBox;2</gift>
+			<gift>things;equipHighBox;2</gift>
+			<gift>things;partsChest75;1</gift>
+		</task>
+		<task lv="65" name="TyphoonWitch" cnName="消灭飓风巫尸" uiShowTime="999999" unlockLv="65" moreKillEnemyNumIsMe="1">
+			<shortText>前往[map]消灭飓风巫尸，获得掉落奖励</shortText>
+			<uiConditionText>消灭飓风巫尸，获得掉落奖励</uiConditionText>
+			<description>飓风巫尸：她似乎是导致暮光市沙漠化的罪魁祸首！拥有召唤飓风和吸血蝙蝠的能力。</description>
+			
+			<worldMapType>random</worldMapType>
+			<fixedLevelUrl>kingTask/TyphoonWitch</fixedLevelUrl>
+			
+			<drop dropName="king" />
+			<diff>1.3</diff>
+			<condition type="collect" target="killEnemyNum" targetId="boss" value="1" />
+			<gift>base;coin;8;;;;LevelEnemyCoin</gift>
+			<gift>things;armsHighBox;2</gift>
+			<gift>things;equipHighBox;2</gift>
+			<gift>things;partsChest75;1</gift>
+		</task>
+		
+	</father>
+</data>

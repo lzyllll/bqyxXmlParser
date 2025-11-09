@@ -1,0 +1,223 @@
+{
+  "father": [
+    {
+      "type": "pistol",
+      "cnName": "手枪",
+      "bullet": {
+        "index": 30,
+        "name": "pistolFox",
+        "color": "black",
+        "dropLevelArr": 90,
+        "dropBodyArr": "PoisonDemon",
+        "evoMaxLv": 12,
+        "evoMustFirstLv": 4,
+        "composeLv": 90,
+        "chipNum": 150,
+        "cnName": "银狐",
+        "extraMul": 1.5,
+        "capacity": 19,
+        "attackGap": 0.25,
+        "reloadGap": 1.5,
+        "shakeAngle": 1,
+        "bulletWidth": 500,
+        "bulletShakeWidth": "0,50",
+        "bulletNum": 1,
+        "twoShootPro": 0.3,
+        "penetrationNum": 2,
+        "penetrationGap": 0,
+        "bounceD": {
+          "floor": 0,
+          "body": 3
+        },
+        "critD": {
+          "mul": 2,
+          "pro": 0.3
+        },
+        "skillArr": "Hit_SlowMove_ArmsSkill,Hit_Paralysis_ArmsSkill",
+        "godSkillArr": "fox_godArmsSkill,Hit_crazy_godArmsSkill",
+        "dpsMul": 1.6,
+        "uiDpsMul": 1.4,
+        "hurtRatio": 5,
+        "gunNum": 1,
+        "armsArmMul": 1.05,
+        "armsWeight": 5,
+        "upValue": 0,
+        "shootShakeAngle": 45,
+        "shootRecoil": 4,
+        "screenShakeValue": 8,
+        "noShakeTime": 0.5,
+        "bulletLife": 0.001,
+        "hitType": "longLine",
+        "shootSoundUrl": "pistol1/barrel5_sound",
+        "flipX": 1,
+        "lineD": {
+          "lightColor": 49134,
+          "size": 2,
+          "lightSize": 6,
+          "blendMode": "add",
+          "type": "one"
+        },
+        "bulletImgUrl": "longLine",
+        "hitImgUrl": "bulletHitEffect/yellow_motion",
+        "bodyImgRange": "specialGun/pistolFox",
+        "bulletImgRange": "specialGun/bullet",
+        "description": "消灭首领毒魔(90级)"
+      }
+    },
+    {
+      "name": "godArmsSkill",
+      "cnName": "神级武器技能",
+      "skills": {
+        "fox_godArmsSkill": {
+          "index": 0,
+          "name": "fox_godArmsSkill",
+          "noRandomListB": 1,
+          "cnName": "无敌蝙蝠",
+          "conditionType": "passive",
+          "condition": "killTarget",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "summonedUnits",
+          "summonedUnitsB": 1,
+          "effectProArr": 1,
+          "extraValueType": "nowArmsTrueDps",
+          "obj": {
+            "cnName": "吸血蝙蝠",
+            "num": 1,
+            "lifeMul": 2,
+            "dpsMul": 1,
+            "mulByFatherB": 1,
+            "cx": 0,
+            "cy": -80,
+            "firstVx": 10,
+            "maxNum": 10,
+            "maxFromWeAllB": 1,
+            "noUnderHurtB": 1,
+            "noAiFindB": 1,
+            "noUnderHitB": 1,
+            "skillArr": [
+              "State_SpellImmunity",
+              "State_AddMove"
+            ]
+          },
+          "duration": 90,
+          "description": "消灭敌人后将召唤无敌吸血蝙蝠（上限10只）。"
+        },
+        "fox_godArmsSkill2": {
+          "name": "fox_godArmsSkill2",
+          "noRandomListB": 1,
+          "noBeClearB": 1,
+          "everNoClearB": 1,
+          "cnName": "强击蝙蝠",
+          "ignoreImmunityB": 1,
+          "noSkillDodgeB": 1,
+          "ignoreSilenceB": 1,
+          "conditionType": "passive",
+          "condition": "killTarget",
+          "target": "me",
+          "addType": "instantAndState",
+          "overlyingB": 1,
+          "effectType": "summonedUnitsFox",
+          "summonedUnitsB": 1,
+          "effectProArr": 1,
+          "extraValueType": "nowArmsTrueDps",
+          "obj": {
+            "cnName": "吸血蝙蝠",
+            "num": 1,
+            "lifeMul": 2,
+            "dpsMul": 1.25,
+            "mulByFatherB": 1,
+            "cx": 0,
+            "cy": -80,
+            "firstVx": 10,
+            "maxNum": 10,
+            "maxFromWeAllB": 1,
+            "noUnderHurtB": 1,
+            "noAiFindB": 1,
+            "noUnderHitB": 1,
+            "skillArr": [
+              "State_SpellImmunity",
+              "State_AddMove"
+            ]
+          },
+          "duration": 90,
+          "mul": 0.05,
+          "secMul": 1,
+          "stateEffectImg": {
+            "value": "skillEffect/trueshot_enemy",
+            "partType": "arm_right_1,arm_left_1",
+            "con": "add",
+            "raNum": 30,
+            "followPartRaB": true
+          },
+          "description": "消灭敌人后将召唤无敌吸血蝙蝠（上限10只），同时永久增加银狐[mul]的伤害（最多可累加到[secMul]）。"
+        },
+        "purgoldFox": {
+          "name": "purgoldFox",
+          "noBeClearB": 1,
+          "cnName": "群攻",
+          "noRandomListB": 1,
+          "ignoreImmunityB": 1,
+          "noSkillDodgeB": 1,
+          "conditionType": "passive",
+          "haveEffectBuletHitNum": 1,
+          "condition": "hit",
+          "changeHurtB": 1,
+          "target": "target",
+          "addType": "instant",
+          "effectType": "purgoldFox",
+          "extraValueType": "nowArmsHurt",
+          "mul": 3,
+          "range": 1000,
+          "pointEffectImg": {
+            "soundUrl": "specialGun/purgoldFoxSound"
+          },
+          "description": "射击时有几率让[range]码内的所有我方单位对敌人发起攻击，并清除陨石雨，封锁旋转电球。"
+        }
+      }
+    },
+    {
+      "type": "pistol",
+      "cnName": "手枪",
+      "bullet": {
+        "name": "pistolFoxYa",
+        "color": "yagold",
+        "cnName": "氩星银狐",
+        "capacity": 30,
+        "attackGap": 0.16,
+        "reloadGap": 0.8,
+        "shakeAngle": 1,
+        "bulletWidth": 950,
+        "bulletShakeWidth": "0,50",
+        "bulletNum": 1,
+        "dpsMul": 1,
+        "uiDpsMul": 1,
+        "hurtRatio": 5,
+        "armsArmMul": 0.9,
+        "armsWeight": 5,
+        "upValue": 0,
+        "shootShakeAngle": 45,
+        "shootRecoil": 4,
+        "screenShakeValue": 8,
+        "noShakeTime": 0.5,
+        "bulletLife": 0.001,
+        "hitType": "longLine",
+        "twoShootPro": 0.2,
+        "skillArr": "Hit_Paralysis_ArmsSkill2",
+        "shootSoundUrl": "pistol1/barrel5_sound",
+        "flipX": 1,
+        "lineD": {
+          "lightColor": 49134,
+          "size": 2,
+          "lightSize": 6,
+          "blendMode": "add",
+          "type": "one"
+        },
+        "bulletImgUrl": "longLine",
+        "hitImgUrl": "bulletHitEffect/yellow_motion",
+        "bodyImgRange": "specialGun/pistolFox6",
+        "bulletImgRange": "specialGun/bullet"
+      }
+    }
+  ]
+}

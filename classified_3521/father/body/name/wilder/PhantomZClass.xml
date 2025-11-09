@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="wilder">
+		<body index="0" name="幻影Z" shell="metal">
+			
+			<name>PhantomZ</name>
+			<cnName>幻影Z</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/PhantomZ.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<showLevel>999</showLevel>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move
+				,normalAttack,shootAttack,comboAttack,lightAttack,ballAttack
+				,hurt1,die1
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			<lifeBarExtraHeight>-70</lifeBarExtraHeight>
+			
+			<hitRect>-25,-50,50,50</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>9</maxVx>
+			<motionState>fly</motionState>
+			<flyUseSpiderB>1</flyUseSpiderB>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>PhantomZ_AIExtra</extraAIClassLabel>
+			<bossSkillArr>comboPhantomZ,ballPhantomZ,blindnessPhantomZ,noSpeedReduce,treater_knights,fightReduct2,defenceBounce_enemy</bossSkillArr>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/body_hit">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<bulletLabel>shoot_PhantomZ</bulletLabel>
+					<grapRect>-450,-88,351,77</grapRect>
+				</hurt>
+				
+				<hurt info="不加入ai选择-猛击">
+					<imgLabel>comboAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0</hurtRatio>
+					<hurtMul>0.08</hurtMul>
+					<attackType>holy</attackType>
+					<shakeValue>4</shakeValue>
+					<skillArr>comboPhantomZHit</skillArr>
+					<hitImgUrl con="add" soundUrl="sound/body_hit">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				
+				<hurt info="不加入ai选择-哨兵之门">
+					<imgLabel>lightAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0</hurtRatio>
+					<hurtMul>0.1</hurtMul>
+					<attackType>holy</attackType>
+					<shakeValue>4</shakeValue>
+					<skillArr>blindnessPhantomZHit</skillArr>
+					<hitImgUrl con="add" soundUrl="sound/body_hit">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				
+			</hurtArr>
+		</body>	
+		
+	</father>
+	</data>

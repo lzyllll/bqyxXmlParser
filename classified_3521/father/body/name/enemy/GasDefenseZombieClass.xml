@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<body index="0" name="防毒僵尸">
+			
+			<name>GasDefenseZombie</name>
+			<cnName>防毒僵尸</cnName><headIconUrl>IconGather/GasDefenseZombie</headIconUrl>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/GasDefenseZombie185.swf</swfUrl>
+			
+			<lifeRatio>1.2</lifeRatio>
+			<rosRatio>0.4</rosRatio>
+			<showLevel>97</showLevel>
+			
+			<imgArr>
+				stand,move
+				,normalAttack,shootAttack,beatAttack,shakeAttack
+				,hurt1,hurt2,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			<bossImgArr>beatAttack,shakeAttack</bossImgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>6</maxVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>GasDefense_AIExtra</extraAIClassLabel>
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<skillArr />
+			<bossSkillArr>State_SpellImmunity,GasDefenseShake,GasDefenseBeat,strong_enemy</bossSkillArr>
+			<bossSkillArrCn />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel><cn>扳击</cn>
+					<hurtRatio>2</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<skillArr>GasDefenseAttackHit</skillArr>
+					<hitImgUrl con="add" soundUrl="sound/body_hit">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><cn>飞扳</cn>
+					<bulletLabel>GasDefense_1</bulletLabel>
+					<grapRect>-450,-111,350,105</grapRect>
+					<hurtRatio>1.5</hurtRatio>
+					<attackType>holy</attackType>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>beatAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<grapRect>-450,-111,350,105</grapRect>
+					<hurtRatio>0.000000001</hurtRatio>
+					<hurtMul>0.3</hurtMul>
+					<attackType>holy</attackType>
+					<skillArr>GasDefenseBeatHit,GasDefenseBeatNoHurt</skillArr>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>shakeAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<grapRect>-450,-111,350,105</grapRect>
+					<hurtRatio>0.000000001</hurtRatio>
+					<hurtMul>0.45</hurtMul>
+					<attackType>holy</attackType>
+					<skillArr>GasDefenseShakeHit</skillArr>
+				</hurt>
+			</hurtArr>
+
+		</body>
+		
+		
+		<bullet cnName="飞扳">
+			<name>GasDefense_1</name>
+			<cnName>飞扳</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>3</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.4</attackDelay>
+			<bulletAngle>-179</bulletAngle>
+			<bulletAngleRange>50</bulletAngleRange>
+			<shootPoint>-67,-76</shootPoint>
+			<bulletSpeed>20</bulletSpeed>
+				
+			<skillArr>GasDefenseHit</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>GasDefenseZombie/bullet</bulletImgUrl>
+			<smokeImgUrl con="filter">GasDefenseZombie/bullet</smokeImgUrl>
+			<hitImgUrl con="add" soundUrl="sound/body_hit" raNum="4">bulletHitEffect/fitHit</hitImgUrl>
+		</bullet>
+					<skill cnName="条件眩晕">
+						<name>GasDefenseHit</name>
+						<cnName>条件眩晕</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB>
+						
+						<conditionType>passive</conditionType>
+						<condition>hit</condition>
+						<otherConditionArr>haveStateOr</otherConditionArr>
+						<conditionString>crazy_hero,murderous_hero,through_hero</conditionString>
+						<target>target</target>
+						
+						<addType>instantAndState</addType>
+						<effectType>dizziness</effectType>
+						<duration>3</duration>
+						
+						<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+						<description>目标如果处于伤害加成状态或者射速加速状态，则100%被击晕。</description>
+					</skill>
+					
+					<skill cnName="3倍伤害">
+						<name>GasDefenseAttackHit</name>
+						<cnName>3倍伤害</cnName><noBeClearB>1</noBeClearB>
+						
+						<conditionType>passive</conditionType>
+						<condition>hit</condition>
+						<otherConditionArr>raceType</otherConditionArr>
+						<conditionString>human</conditionString>
+						<target>target</target>
+						
+						<effectType>crit</effectType>
+						<extraValueType>hurtValue</extraValueType>
+						<value>1</value>
+						<mul>3</mul>
+						
+						<description>对人类造成3倍的暴击伤害。</description>
+					</skill>
+					
+					
+		<skill cnName="连续扳击">
+			<name>GasDefenseBeat</name>
+			<cnName>连续扳击</cnName><iconUrl36>SkillIcon/GasDefenseBeat_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<cd>7</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<mul>0.5</mul>
+			<duration>2.5</duration>
+			<range>999999</range>
+			 
+			<meActionLabel>beatAttack</meActionLabel>
+			<description>全场减速，闪烁至周围敌人面前并击晕他，生命值低于40%时可能连续发动多次攻击。不会击晕蹲下的敌人。</description>
+			<stateEffectImg partType="2foot">skillEffect/disabled_enemy</stateEffectImg>
+		</skill>
+					<skill cnName="站着眩晕">
+						<name>GasDefenseBeatHit</name>
+						<cnName>站着眩晕</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+						
+						<conditionType>passive</conditionType>
+						<condition>hit</condition>
+						<otherConditionArr>isStand</otherConditionArr>
+						<target>target</target>
+						
+						<addType>instantAndState</addType>
+						<effectType>dizziness</effectType>
+						<duration>2</duration>
+						
+						<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+						<description>目标如果处于站立状态，则100%被击晕。</description>
+					</skill>
+					<skill cnName="蹲下不受伤">
+						<name>GasDefenseBeatNoHurt</name>
+						<cnName>蹲下不受伤</cnName><ignoreImmunityB>1</ignoreImmunityB>
+						
+						<conditionType>passive</conditionType>
+						<condition>hit</condition>
+						<otherConditionArr>targetFloorState</otherConditionArr>
+						<conditionString>squat</conditionString>
+						<target>target</target>
+						
+						<addType>instant</addType>
+						<effectType>noHurt</effectType>
+					</skill>
+					
+		<skill cnName="当头扳击">
+			<name>GasDefenseShake</name>
+			<cnName>当头扳击</cnName><iconUrl36>SkillIcon/GasDefenseShake_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB>
+			<cd>9</cd>
+			<delay>0.5</delay>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me,range,enemy</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>noAllSkillPanMeltFlamerPurgold</effectType>
+			<duration>3</duration>
+			<range>999999</range>
+			 
+			<meEffectImg soundUrl="sound/silence_enemy" />
+			<stateEffectImg partType="mouth" con="add">skillEffect/silence_enemy</stateEffectImg>
+			<meActionLabel>shakeAttack</meActionLabel>
+			<description>防毒僵尸一跃而起时，全场封锁，并给目标当头一击，生命值低于40%时可能连续发动多次攻击。如果你此时跳起，将会躲过攻击。</description>
+		</skill>
+					<skill cnName="跳起不受伤">
+						<name>GasDefenseShakeHit</name>
+						<cnName>跳起不受伤</cnName><ignoreImmunityB>1</ignoreImmunityB>
+						
+						<conditionType>passive</conditionType>
+						<condition>hit</condition>
+						<otherConditionArr>isAirB,targetIsHero</otherConditionArr>
+						<target>target</target>
+						
+						<addType>instant</addType>
+						<effectType>noHurt</effectType>
+					</skill>
+			
+	</father>	
+	
+	
+</data>

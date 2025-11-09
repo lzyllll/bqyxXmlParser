@@ -1,0 +1,24 @@
+{
+  "father": [
+    {
+      "type": "unit",
+      "body": [
+        {
+          "cnName": "宠物模板",
+          "name": "pet"
+        },
+        {
+          "cnName": "载具模板",
+          "name": "vehicle"
+        }
+      ]
+    },
+    {
+      "type": "player",
+      "body": {
+        "cnName": "角色模板",
+        "name": "player"
+      }
+    }
+  ]
+}

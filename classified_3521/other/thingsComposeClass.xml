@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	
+	
+	
+	
+	<things name="allBlackCash">
+		<must><gift>things;skeletonWand_1;		1</gift></must>
+		<must><gift>things;kingWing_heroChip;		1</gift></must>
+		<must><gift>things;wolfFashion;		1</gift></must>
+		<must><gift>things;electromagnet;		1</gift></must>
+	</things>
+	<things name="allBlackEquipCash" mustLv="85">
+		<must><gift>things;allBlackCash;		3</gift></must>
+	</things>
+	<things name="dressStampGold"><must><gift>things;dressStamp;		10</gift></must></things>
+	<things name="fineStone"><must><gift>things;bloodStone;		15</gift></must></things>
+	
+	
+	
+	<things name="AircraftGunCash"><must><gift>things;beadCrossbow;		1</gift></must></things>
+	<things name="beadCrossbow"><must><gift>things;AircraftGunCash;		2</gift></must></things>
+	
+	<things name="godStone">
+		<must><gift>things;skillStone;		12</gift></must>
+		<must><gift>things;converStone;		1</gift></must>
+	</things>
+	<things name="converStone"><must><gift>things;skillStone;		12</gift></must></things>
+	<things name="lightStone">
+		<must>
+			<gift>things;skillStone;		50</gift>
+			<gift>things;godStone;		8</gift>
+			<gift>things;converStone;		8</gift>
+		</must>
+	</things>
+	<things name="partsChest72" mustLv="80"><must><gift>things;partsChest69;6</gift></must></things>
+	<things name="partsChest75" mustLv="85">
+		<must><gift>things;partsChest72;			6</gift></must>
+		<must><gift>things;armsBox;			120</gift></must>
+		<must><gift>things;armsHighBox;		80</gift></must>
+		<must><gift>things;rifleBox;				80</gift></must>
+		<must><gift>things;sniperBox;			80</gift></must>
+		<must><gift>things;shotgunBox;		80</gift></must>
+		<must><gift>things;pistolBox;			80</gift></must>
+		<must><gift>things;equipBox;			600</gift></must>
+		<must><gift>things;equipHighBox;	400</gift></must>
+	</things>
+	<things name="partsChest78" mustLv="85"><must><gift>things;partsChest75;6</gift></must></things>
+	<things name="partsChest81" mustLv="85"><must><gift>things;partsChest78;6</gift></must></things>
+	<things name="partsChest84" mustLv="90"><must><gift>things;partsChest81;6</gift></must></things>
+	<things name="partsChest87" mustLv="90"><must><gift>things;partsChest84;3</gift></must></things>
+	
+	
+	<things name="ultiEquipEchelonCard"><must><gift>things;highEquipEchelonCard;		4</gift></must></things>
+	<things name="ultiArmsEchelonCard"><must><gift>things;highArmsEchelonCard;		4</gift></must></things>
+	
+	<things name="highEquipEchelonCard"><must><gift>things;equipEchelonCard;		10</gift></must></things>
+	<things name="highArmsEchelonCard"><must><gift>things;armsEchelonCard;		10</gift></must></things>
+	
+	
+	
+	
+	
+	<things name="shotgunCrocodile" mustLv="80">
+		<must><gift>things;anniversaryCash;		2</gift></must>
+	</things>
+	<things name="sniperSmilodon" mustLv="80">
+		<must>
+			<gift>things;anniversaryCash;		2</gift>
+		</must>
+	</things>
+	<things name="rifleDragon" mustLv="80">
+		<must>
+			<gift>things;anniversaryCash;		2</gift>
+		</must>
+	</things>
+	
+	<things name="rocketMammoth" mustLv="80">
+		<must>
+			<gift>things;rolling_heroChip;		1</gift>
+			<gift>things;WatchEagleAirCash;		1</gift>
+			<gift>things;knightsMedal_1;		1</gift>
+			<gift>things;duelistClaw_1;		2</gift>
+		</must>
+	</things>
+	<things name="ashesSuit_head" mustLv="80"><must><gift>things;anniversaryCash;		2</gift></must></things>
+	<things name="ashesSuit_coat" mustLv="80"><must><gift>things;anniversaryCash;		2</gift></must></things>
+	<things name="ashesSuit_pants" mustLv="80"><must><gift>things;anniversaryCash;		2</gift></must></things>
+	<things name="ashesSuit_belt" mustLv="80"><must><gift>things;anniversaryCash;		2</gift></must></things>
+	<things name="goshawkSuit_head" mustLv="80"><must><gift>things;anniversaryCash;		2</gift></must></things>
+	<things name="goshawkSuit_coat" mustLv="80"><must><gift>things;anniversaryCash;		2</gift></must></things>
+	<things name="goshawkSuit_pants" mustLv="80"><must><gift>things;anniversaryCash;		2</gift></must></things>
+	<things name="goshawkSuit_belt" mustLv="80"><must><gift>things;anniversaryCash;		2</gift></must></things>
+	
+	
+	
+	<things name="rifleHornet" mustLv="85">
+		<must><gift>things;allBlackCash;		2</gift></must>
+	</things>
+	<things name="shotgunSkunk" mustLv="85"><must><gift>things;allBlackCash;		2</gift></must></things>
+	<things name="sniperCicada" mustLv="85"><must><gift>things;allBlackCash;		2</gift></must></things>
+	<things name="pistolFox" mustLv="90">
+		<must><gift>things;allBlackCash;		3</gift></must>
+		<must><gift>things;skeletonWand_1;		2</gift></must>
+	</things>
+	<things name="redFire" mustLv="90">
+		<must><gift>things;allBlackCash;		3</gift></must>
+		<must><gift>things;kingWing_heroChip;		2</gift></must>
+	</things>
+	<things name="rocketCate" mustLv="90"><must><gift>things;wolfFashion;		2</gift></must></things>
+	<things name="meltFlamer" mustLv="95">
+		<must><gift>things;allBlackCash;		3</gift></must>
+		<must><gift>things;electromagnet;		2</gift></must>
+	</things>
+	
+	<things name="thunderSuit_head" mustLv="85">
+		<must><gift>things;wisdomGem;		2</gift></must>
+		<must><gift>things;allBlackEquipCash;		2</gift></must>
+	</things>
+	<things name="thunderSuit_coat" mustLv="85"><must><gift>things;allBlackEquipCash;		2</gift></must></things>
+	<things name="thunderSuit_pants" mustLv="85"><must><gift>things;allBlackEquipCash;		2</gift></must></things>
+	<things name="thunderSuit_belt" mustLv="85"><must><gift>things;allBlackEquipCash;		2</gift></must></things>
+	
+	<things name="aintSuit_head" mustLv="85">
+		<must><gift>things;wisdomGem;		2</gift></must>
+		<must><gift>things;allBlackEquipCash;		2</gift></must>
+	</things>
+	<things name="aintSuit_coat" mustLv="85"><must><gift>things;allBlackEquipCash;		2</gift></must></things>
+	<things name="aintSuit_pants" mustLv="85"><must><gift>things;allBlackEquipCash;		2</gift></must></things>
+	<things name="aintSuit_belt" mustLv="85"><must><gift>things;allBlackEquipCash;		2</gift></must></things>
+	
+	<things name="oracleSuit_coat" mustLv="85"><must><gift>things;allBlackEquipCash;		2</gift></must></things>
+	
+	
+	
+	<things name="DesertTankCash"><must><gift>things;vehicleCash;		1</gift></must></things>
+	<things name="DaybreakCash"><must><gift>things;vehicleCash;		1</gift></must></things>
+	<things name="RedReaperCash"><must><gift>things;vehicleCash;		1</gift></must></things>
+	<things name="SeaSharkCash"><must><gift>things;vehicleCash;		1</gift></must></things>
+	<things name="BlueWhaleCash"><must><gift>things;vehicleCash;		1</gift></must></things>
+	<things name="ProphetCash"><must><gift>things;vehicleCash;		1</gift></must></things>
+	<things name="PunisherCash"><must><gift>things;vehicleCash;		1</gift></must></things>
+	<things name="DiggersCash"><must><gift>things;vehicleCash;		1</gift></must></things>
+	<things name="TitansCash"><must><gift>things;vehicleCash;		1</gift></must></things>
+	
+	
+	<things name="yearSnake" mustLv="90">
+		<must><gift>things;zodiacCash;			1</gift></must>
+		<must><gift>things;yearDog;			2</gift></must>
+		<must><gift>things;yearHourse;			2</gift></must>
+		<must><gift>things;yearMonkey;			2</gift></must>
+		<must><gift>things;yearPig;			2</gift></must>
+	</things>
+	<things name="yearMonkey" mustLv="90">
+		<must><gift>things;zodiacCash;			1</gift></must>
+		<must><gift>things;yearDog;			4</gift></must>
+		<must><gift>things;yearHourse;			3</gift></must>
+		<must><gift>things;yearSnake;			3</gift></must>
+		<must><gift>things;yearPig;			2</gift></must>
+	</things>
+	<things name="yearRabbit" mustLv="90">
+		<must><gift>things;zodiacCash;			1</gift></must>
+		<must><gift>things;yearDog;			4</gift></must>
+		<must><gift>things;yearHourse;			3</gift></must>
+		<must><gift>things;yearSnake;			3</gift></must>
+		<must><gift>things;yearMouse;			2</gift></must>
+	</things>
+	<things name="yearCattle" mustLv="90">
+		<must><gift>things;zodiacCash;			1</gift></must>
+		<must><gift>things;yearDog;			4</gift></must>
+		<must><gift>things;yearHourse;			3</gift></must>
+		<must><gift>things;yearSnake;			3</gift></must>
+		<must><gift>things;yearPig;			2</gift></must>
+	</things>
+	<things name="yearMouse" mustLv="90">
+		<must><gift>things;zodiacCash;			1</gift></must>
+		<must><gift>things;yearDog;			4</gift></must>
+		<must><gift>things;yearHourse;			3</gift></must>
+		<must><gift>things;yearSnake;			3</gift></must>
+		<must><gift>things;yearRabbit;			2</gift></must>
+	</things>
+	<things name="yearPig" mustLv="90">
+		<must><gift>things;zodiacCash;			1</gift></must>
+		<must><gift>things;yearDog;			4</gift></must>
+		<must><gift>things;yearHourse;			3</gift></must>
+		<must><gift>things;yearSnake;			3</gift></must>
+		<must><gift>things;yearMonkey;			2</gift></must>
+	</things>
+	<things name="yearDog" mustLv="90">
+		<must><gift>things;zodiacCash;			1</gift></must>
+	</things>
+	<things name="yearHourse" mustLv="90">
+		<must><gift>things;zodiacCash;			1</gift></must>
+	</things>
+	<things name="pianoGun" mustLv="90">
+		<must><gift>things;zodiacCash;			1</gift></must>
+	</things>
+	
+	<things name="frozenGem" mustLv="90">
+		<must><gift>things;defenceGem;			2</gift></must>
+		<must><gift>things;agileGem;			2</gift></must>
+	</things>
+	<things name="electricGem" mustLv="96">
+		<must><gift>things;fireGem;			2</gift></must>
+	</things>
+	<things name="fireGem" mustLv="96">
+		<must><gift>things;electricGem;			2</gift></must>
+	</things>
+	<things name="defenceGem" mustLv="90">
+		<must><gift>things;frozenGem;			2</gift></must>
+	</things>
+	<things name="armsRadium" mustLv="80">
+		<must><gift>things;armsTitanium;			1</gift></must>
+		<must><gift>things;anniversaryCash;			3</gift></must>
+		<must><gift>things;beadCrossbow;			1</gift></must>
+		<must><gift>things;ghostAxe;			1</gift></must>
+		<must><gift>things;christmasGun;			1</gift></must>
+		<must><gift>things;FlyDragonGun;			1</gift></must>
+		<must><gift>things;shotgunBlade;			1</gift></must>
+		<must><gift>things;rolling_heroChip;			1</gift></must>
+		<must><gift>things;gliding_heroChip;			1</gift></must>
+		<must><gift>things;kingWing_heroChip;			1</gift></must>
+		<must><gift>things;boneRing_1;			1</gift></must>
+		<must><gift>things;duelistClaw_1;			1</gift></must>
+		<must><gift>things;crabShell;			1</gift></must>
+		<must><gift>things;antMan;			1</gift></must>
+		<must><gift>things;wolfFashion;			1</gift></must>
+		<must><gift>things;soldier76;			1</gift></must>
+		<must><gift>things;terroristBox_1;			1</gift></must>
+		<must><gift>things;skeletonWand_1;			1</gift></must>
+	</things>
+	<things name="armsTitanium" mustLv="80">
+		<must><gift>things;armsRadium;			1</gift></must>
+	</things>
+
+
+	
+	<things name="Thunder" giftType="equip"><must><gift>things;magicChest;		240</gift></must></things>
+	<things name="FlyDragonAir" giftType="equip"><must><gift>things;dragonChest;		180</gift></must></things>
+	
+	<things name="xiaoMing" giftType="equip"><must><gift>things;arenaChest;		50</gift></must></things>
+	<things name="xiaoBo" giftType="equip"><must><gift>things;arenaChest;		40</gift></must></things>
+	<things name="xiaoAi" giftType="equip"><must><gift>things;arenaChest;		50</gift></must></things>
+	
+	<things name="xiaoKa" giftType="equip"><must><gift>things;normalChest;		400</gift></must></things>
+	<things name="xiaoLong" giftType="equip"><must><gift>things;normalChest;		200</gift></must></things>
+	<things name="xiaoNa" giftType="equip"><must><gift>things;normalChest;		350</gift></must></things>
+	<things name="xiaoTian" giftType="equip"><must><gift>things;normalChest;		200</gift></must></things>
+	
+	<things name="superHero" giftType="head"><must><gift>things;arenaChest;		40</gift></must></things>
+	<things name="specialSoldiers" giftType="head"><must><gift>things;arenaChest;		30</gift></must></things>
+	<things name="demCapacityParts_1" giftType="parts"><must><gift>things;demonChest;		18</gift></must></things>
+	<things name="purgoldCpu_1" giftType="parts" all="1">
+		<must><gift>things;zodiacCash;		100</gift><gift>things;demBall;		700</gift><gift>things;demStone;		600</gift></must>
+	</things>
+	<things name="poisonParts_1" giftType="parts" all="1"><must><gift>things;madheart;		300</gift><gift>things;demStone;		300</gift></must></things>
+	
+	<things name="ghostStone" week="25">
+		<must><gift>things;yaStone;			2</gift></must>
+		<must><gift>things;yaRock;			2</gift></must>
+		<must><gift>things;zodiacCash;			2</gift></must>
+	</things>
+	<things name="profiStamp"><must><gift>things;nuclearStone;		10</gift></must></things>
+	<things name="yaStone" week="100"><must><gift>things;nuclearStone;		5</gift></must></things>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</data>

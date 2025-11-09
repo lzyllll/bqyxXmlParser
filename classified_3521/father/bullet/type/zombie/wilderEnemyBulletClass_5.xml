@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="虚空客">
+		<bullet cnName="虚空客-射击">
+			<name>VanityKer_shoot</name>
+			<cnName>虚空客-射击</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>179.9</bulletAngle>
+			<bulletAngleRange>5</bulletAngleRange>
+			<bulletLife>3</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.6</attackGap>
+			<attackDelay>0.3</attackDelay>
+			<bulletNum>3</bulletNum>					
+			<shootAngle>2</shootAngle>
+			<shootPoint>-83,7</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<bulletSpeed>25</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30" con="filter">VanityKer/bullet1</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/fireHit1">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		
+		<bullet cnName="虚空客-导弹">
+			<name>VanityKer_missle</name>
+			<cnName>虚空客-导弹</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>179.9</bulletAngle>
+			<bulletAngleRange>5</bulletAngleRange>
+			<bulletLife>5</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.5</attackGap>
+			<attackDelay>0.2</attackDelay>
+			<bulletNum>1</bulletNum>					
+			<shootPoint>-48,75</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+			<boomD selfB="1" bodyB="1" radius="140" />
+			<followD value="0.8" />
+				
+			<bulletSpeed>10</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">VanityKer/bullet2</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom2">boomEffect/boom1</hitImgUrl>
+		</bullet>
+		
+		<bullet cnName="虚空客-星际尘埃">
+			<name>VanityKer_comet</name>
+			<cnName>星际尘埃</cnName>
+			
+			<hurtRatio>0</hurtRatio>
+			<attackType>holy</attackType>
+			
+			<bulletAngle>90</bulletAngle>
+			<bulletLife>30</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+				
+			<penetrationGap>1000</penetrationGap>
+			<skillArr>VanityKer_cometBuff</skillArr>
+				
+			<bulletSpeed>5</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="add">VanityKer/comet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/fireHit1" con="add">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		
+		<bullet cnName="虚空客-虚幻镜像">
+			<name>VanityKer_dreamland</name>
+			<cnName>虚空客-虚幻镜像</cnName>
+			
+			<hurtRatio>0.00001</hurtRatio>
+			<attackType>holy</attackType>
+			
+			<bulletAngle>270</bulletAngle>
+			<bulletLife>8</bulletLife>
+			<bulletWidth>440</bulletWidth>
+			<hitType>longLine</hitType>
+			
+			<shootPoint>-378,130</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<oneHitBodyB>1</oneHitBodyB>
+				
+			<bulletSpeed>0</bulletSpeed>
+			<skillArr>VanityKer_dreamlandUnit</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="add">VanityKer/lightWall</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/fireHit1" con="add">VanityKer/lightHit</hitImgUrl>
+		</bullet>
+		
+	</father>		
+	</data>

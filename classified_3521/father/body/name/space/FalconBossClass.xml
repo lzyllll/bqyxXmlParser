@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="space" cnName="敌方">
+		<body name="黄金隼" shell="normal">
+			<name>FalconBoss</name>
+			<cnName>黄金隼</cnName>
+			<raceType>ship</raceType>
+			<swfUrl>swf/hero/FalconBoss335.swf</swfUrl>
+			
+			<showLevel>999</showLevel>
+			<headIconUrl>goldFalcon/bossIcon</headIconUrl>
+			<lifeBarExtraHeight>-190</lifeBarExtraHeight>
+			<aircraft>wing2</aircraft>
+			<imgArr>
+				standStop,standForward,standBack,standStop__squatStop
+				,squatForward,squatStop,squatBack,squatStop__standStop
+				,jumpDown__,jumpDown,jumpUp__jumpDown,jumpUp,__jumpUp
+				,die1,__stru,stru
+				,armsAttack,birthAttack
+			</imgArr>
+			<preBulletArr>extremeLaserFire</preBulletArr>
+			
+			<hitRect>-20, -90, 40, 90</hitRect>
+			<squatHitRect>-20,-50,40,50</squatHitRect>
+			<hurtRectArr>-40,-70,58,60</hurtRectArr> 
+			<hurtRectArr>-26, -197, 54, 176</hurtRectArr> 
+			<hurtRectArr>-26, -257, 54, 116</hurtRectArr> 
+			
+			<maxVx>10.5</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			<maxJumpNum>1</maxJumpNum><dieJumpMul>0</dieJumpMul>
+			<motionD jumpMul="1.5" />
+			
+			
+			<flyUseSpiderB>1</flyUseSpiderB>
+			<flyType>tween</flyType>
+			
+			<armsNumber>3</armsNumber>
+			<randomArmsRange>sawEmitter,falconArms</randomArmsRange>
+			<oneAiLabel>Madboss</oneAiLabel>
+			
+			<skillArr>FalconBossBuff</skillArr>
+			<bossSkillArr>falconSaw,FalconFly,crazyMad,State_SpellImmunity,strong_enemy,findHide</bossSkillArr>
+			<bossSkillArrCn />
+			<wilderSkillArr>pioneerDemon,noUnderLaser,midLightning,likeMissleNo,godShield</wilderSkillArr>
+			<hurtArr>
+				<hurt cn="擎天斩">
+					<imgLabel>armsAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>1</hurtRatio>
+					<hurtMul>0.5</hurtMul>
+					<attackType>holy</attackType>
+					<skillArr>invincibleEmp</skillArr>
+					<shakeValue>6</shakeValue>
+					<grapRect>-350,-111,300,105</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		
+		
+		<skill>
+			<name>falconSaw</name><wantDescripB>1</wantDescripB>
+			<cnName>召唤拉矿船</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess50</otherConditionArr>
+			<target>me</target>
+			<cd>25</cd>
+			
+			<addType>state</addType><summonedUnitsB>1</summonedUnitsB>
+			<effectType>sumSaw</effectType><effectFather>falconBoss</effectFather>
+			<obj>"cnName":"拉矿船","num":1.5,"lifeMul":1,"dpsMul":1,"lifeTime":-1,"position":"mouse","cx":700,"cy":-70,"flipB":false,"pointEf":1</obj>
+			<value>5</value>
+			<secMul>1.5</secMul>
+			<duration>11</duration>
+			<pointEffectImg name="oreBombShowFlower" />
+			<meEffectImg name="falconHide" />
+			<description>生命值少于50%时，隐身自己，并召唤大量的拉矿船（红武敏感）。</description>
+		</skill>
+		
+		
+		<skill>
+			<name>FalconFly</name>
+			<cnName>飞行</cnName><ignoreNoSkillB>1</ignoreNoSkillB><ignoreSilenceB>1</ignoreSilenceB>
+			<cd>20</cd>
+			<conditionType>active</conditionType>
+			<doCondition>canLand</doCondition>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget,lifePerLess80</otherConditionArr>
+			<conditionRange>1200</conditionRange>
+			<target>me</target>
+			<addType>instant</addType>
+			<effectType>flyOrLand</effectType><effectFather>falconBoss</effectFather>
+		</skill>
+		
+		<skill cnName="全身发光、走路带烟">
+			<name>FalconBossBuff</name>
+			<cnName>全身发光、走路带烟</cnName><noCopyB>1</noCopyB><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><ignoreNoSkillB>1</ignoreNoSkillB><ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>passive</conditionType><condition>add</condition><target>me</target><addType>state</addType>
+			<effectType>buff</effectType><effectFather>falconBoss</effectFather>
+			<duration>99999999</duration>
+			<meEffectImg name="madArmsAttack_state" />
+			<stateEffectImg partType="leg_right_1,leg_left_1,arm_right_1,arm_left_1,mouth" con="add">generalEffect/purBigLight</stateEffectImg>
+			<pointEffectImg con="add">boomEffect/smoke2</pointEffectImg>
+			<otherEffectImg partType="hand_right,leg_right_1,eye_left,body">boomEffect/boom3</otherEffectImg>
+		</skill>
+		
+		
+		<skill>
+			<name>verShield30</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>薄命竖盾</cnName><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB><ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>passive</conditionType>
+			<otherConditionArr>skillSpecialNumLess,lifePerLess30</otherConditionArr>
+			<conditionRange>0</conditionRange>
+			<condition>underHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType><summonedUnitsB>1</summonedUnitsB>
+			<effectType>summonedUnitsAndCount</effectType>
+			
+			
+			<obj>"cnName":"竖盾","num":2,"lifeMul":1,"dpsMul":0,"lifeTime":9999999,"mulByFatherB":1,"maxNum":2,"skillArr":["verShieldBuff"]</obj>
+			
+			<description>生命值少于30%时，左右两侧竖起高高的护盾，抵挡任何攻击。</description>
+		</skill>
+		
+	</father>
+</data>

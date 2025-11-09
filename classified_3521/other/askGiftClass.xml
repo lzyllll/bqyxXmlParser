@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<normal>
+		
+		<one name="askBaseGift" cnName="答题原始奖励">
+			<gift>things;skillStone;3</gift>
+			<gift>things;godStone;1</gift>
+			<gift>things;converStone;1</gift>
+			<gift>things;taxStamp;5</gift>
+			<gift>things;strengthenDrug;2</gift>
+			
+			<gift>things;armsTitanium;1</gift>
+			<gift>things;allBlackCash;1.4</gift>
+			<gift>things;allBlackEquipCash;1.4</gift>
+			<gift>things;weaponChest;0.5</gift>
+			<gift>base;anniCoin;0.7</gift>
+
+		</one>
+		<one name="askExtraGift" cnName="全部答对额外奖励">
+			<gift>things;skillFleshCard;1</gift>
+			<gift>things;rebirthStone;1</gift>
+			<gift>things;weaponChest;2</gift>
+			<gift>things;armsRadium;8</gift>
+			<gift>things;allBlackCash;10</gift>
+			<gift>base;anniCoin;5</gift>
+
+		</one>
+		
+		
+		<one name="endlessGift" cnName="无尽模式奖励比例">
+			<gift>things;skillStone;8</gift>
+			<gift>things;godStone;2</gift>
+			<gift>things;converStone;2</gift>
+			<gift>things;taxStamp;5</gift>
+			<gift>things;anniversaryCash;2</gift>
+			<gift>things;partsChest69;2</gift>
+		</one>
+		<one name="treasureGift" cnName="财宝僵尸奖励">
+			<gift>base;coin;30000</gift>
+			<gift>things;skillStone;30</gift>
+			<gift>things;godStone;20</gift>
+			<gift>things;converStone;20</gift>
+			<gift>things;taxStamp;25</gift>
+			<gift>things;dressStampHigh;1</gift>
+			<gift>things;normalChest;1</gift>
+			<gift>things;magicChest;1</gift>
+		</one>
+	</normal>
+</data>

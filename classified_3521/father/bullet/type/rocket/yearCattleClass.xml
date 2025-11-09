@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="rocket" cnName="火炮-特殊">
+		<bullet index="40" cnName="丑牛" kind="poison" name="yearCattle" color="black" composeLv="95" chipB="1" chipNum="110" dropLevelArr="999">
+			<name>yearCattle</name>
+			<cnName>丑牛</cnName>
+			
+			
+			<capacity>5</capacity>
+			<attackGap>1.3</attackGap>
+			<reloadGap>4</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>30</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<gunNum>1</gunNum>
+			
+			
+			<armsArmMul>0.65</armsArmMul>
+			<upValue>5</upValue>
+			<shootShakeAngle>40</shootShakeAngle>
+			<shootRecoil>12</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>2</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>1.8</dpsMul>
+			<uiDpsMul>2</uiDpsMul>
+			
+				
+			<bulletSpeed>25</bulletSpeed>
+			
+			<twoShootPro>0.4</twoShootPro>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="0" body="0" />	
+			<critD mul="2" pro="0.3" />
+			
+			
+			<skillArr>Hit_Poison_ArmsSkill,Hit_Paralysis_ArmsSkill</skillArr>
+			<godSkillArr>yearCattleSkill</godSkillArr>
+			
+			<iconUrl>specialGun/yearCattleIcon</iconUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl con="add" raNum="1">specialGun/yearCattleBullet</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="HugePoison/shoot_hit">boomEffect/posion1</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">skillEffect/poisonClaw_enemy</smokeImgUrl>
+			<fireImgType />
+			<shootSoundUrl>specialGun/yearCattleSound</shootSoundUrl>
+			
+			<bodyImgRange>specialGun/yearCattle</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>生肖碎片包(活跃值礼包)、物品合成、纪念币商店、万能球商店、黄金商店、竞技宝箱</description>
+		</bullet>	
+	</father>
+	</data>

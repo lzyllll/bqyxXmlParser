@@ -1,0 +1,141 @@
+{
+  "father": {
+    "name": "enemy",
+    "cnName": "怪物技能",
+    "skill": [
+      {
+        "index": 0,
+        "name": "summonedSpider_spiderKing",
+        "cnName": "召唤毒蛛",
+        "iconUrl36": "SkillIcon/summonedSpider_spiderKing_36",
+        "showInLifeBarB": 1,
+        "cd": 18,
+        "delay": 0.25,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "nearAttackTarget",
+        "conditionRange": 700,
+        "target": "me",
+        "addType": "instant",
+        "effectType": "summonedUnits",
+        "obj": "\"cnName\":\"毒蛛\",\"num\":5,\"lifeMul\":3,\"maxNum\":10,\"cx\":48,\"cy\":-15,\"skillArr\":[\"feeding_spider\",\"pounce_spider\"]",
+        "meActionLabel": "birthAttack",
+        "description": "释放技能后，霸王毒蛛从尾部生产出5只毒蛛。"
+      },
+      {
+        "index": 0,
+        "name": "feeding_spider",
+        "cnName": "反哺",
+        "conditionType": "passive",
+        "condition": "dieEvent",
+        "otherConditionArr": "noLevelName",
+        "conditionString": "children2020",
+        "target": {
+          "value": "meSummonedFather",
+          "targetMustLiveB": true
+        },
+        "addType": "instant",
+        "effectType": "life",
+        "extraValueType": "meMaxLife",
+        "value": 1,
+        "mul": 0,
+        "targetEffectImg": {
+          "value": "skillEffect/groupLight_hero",
+          "con": "add",
+          "soundUrl": "sound/groupLight_hero",
+          "soundVolume": 0.3
+        },
+        "description": "单位倒下后，回复召唤主一定的生命值，回复量为单位的最大生命值。"
+      },
+      {
+        "index": 0,
+        "name": "pounce_spider",
+        "cnName": "反扑",
+        "conditionType": "passive",
+        "condition": "dieEvent",
+        "target": "me",
+        "addType": "instant",
+        "effectType": "bullet",
+        "extraValueType": "meDpsFactor",
+        "obj": "\"name\":\"pounce_spider\",\"site\":\"me\",\"flipB\":true",
+        "description": "单位倒下后，释放出一颗紫色球体，击中目标后对目标造成伤害。"
+      },
+      {
+        "index": 0,
+        "name": "electricBoom_enemy",
+        "cnName": "电球爆发",
+        "showInLifeBarB": 1,
+        "iconUrl36": "SkillIcon/paralysis_pet_36",
+        "cd": 15,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "nearAttackTarget",
+        "conditionRange": 600,
+        "target": "me",
+        "addType": "instant",
+        "effectType": "bullet",
+        "effectProArr": "0.6,0.3,0.05,0.05",
+        "extraValueType": "meDpsFactor",
+        "obj": "\"name\":\"electricBoom_enemy\",\"site\":\"me\",\"flipB\":true",
+        "meEffectImg": {
+          "soundUrl": "sound/imploding_enemy"
+        },
+        "description": "从单位背后爆发出多颗闪电球，击中目标后使目标麻痹。有几率释放多次。"
+      },
+      {
+        "index": 0,
+        "name": "invisibility_SpiderKing",
+        "cnName": "永久隐身",
+        "conditionType": "passive",
+        "target": "me",
+        "addType": "state",
+        "effectType": "invisibility_hero",
+        "value": 1,
+        "mul": 1,
+        "duration": 99999,
+        "description": "单位处于永久隐身状态。隐身单位攻击敌人或者受到敌人攻击都不会打破隐身状态。"
+      },
+      {
+        "index": 0,
+        "name": "acidRain_SpiderKing",
+        "cnName": "酸雨",
+        "showInLifeBarB": 1,
+        "ignoreSilenceB": 1,
+        "cd": 7,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "nearAttackTarget",
+        "conditionRange": 1400,
+        "target": "me",
+        "addType": "instant",
+        "effectType": "bullet",
+        "effectProArr": "10.1,0.03,0.01",
+        "extraValueType": "nowArmsDps",
+        "obj": "\"name\":\"acidRain_SpiderKing\",\"site\":\"mouse\",\"flipB\":true,\"launcherB\":true",
+        "meActionLabel": "skillAttack1",
+        "meEffectImg": {
+          "soundUrl": "sound/moreMissile_hero"
+        },
+        "description": "向鼠标点位置释放酸雨。"
+      },
+      {
+        "index": 0,
+        "name": "summonedSpider_spiderKing_extra",
+        "cnName": "召唤毒蛛",
+        "showInLifeBarB": 1,
+        "cd": 8,
+        "delay": 0.25,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "nearAttackTarget",
+        "conditionRange": 1400,
+        "target": "me",
+        "addType": "instant",
+        "effectType": "summonedUnits",
+        "obj": "\"cnName\":\"毒蛛\",\"num\":5,\"lifeMul\":0.03,\"dpsMul\":1,\"maxNum\":10,\"cx\":48,\"cy\":-15,\"skillArr\":[\"feeding_spider\",\"pounce_spider\",\"State_SpellImmunity\",\"hiding_enemy\"]",
+        "meActionLabel": "birthAttack",
+        "description": "释放技能后，霸王毒蛛从尾部生产出5只毒蛛。"
+      }
+    ]
+  }
+}

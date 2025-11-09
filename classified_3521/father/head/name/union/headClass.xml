@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="union" cnName="军队">
+		<head name="unionIsMyHome" cnName="公会是我家" diff="85">
+			<condition fun="num" must="153600" pro="getUnionContribution" info="个人军队贡献超过[must]。" progressInfo="[compare][n]{purple （打开军队界面后才能刷新以上数据）}" />
+			<addObjJson>{'dpsMul':0.05}</addObjJson>
+		</head>
+		
+	</father>
+	</data>

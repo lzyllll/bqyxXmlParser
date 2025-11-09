@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="wilder">
+		<body name="电棍僵尸">
+			
+			<name>PoliceZombie</name>
+			<cnName>电棍僵尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/PoliceZombie213.swf</swfUrl>
+			
+			<rosRatio>1</rosRatio>
+			<lifeRatio>1.8</lifeRatio>
+			<showLevel>999</showLevel>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move,run
+				,normalAttack,shootAttack,electricAttack,chargeAttack,shakeAttack
+				,hurt1,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			<lifeBarExtraHeight>-40</lifeBarExtraHeight>
+			<handAddRa>90</handAddRa>
+			
+			<hitRect>-18,-96,36,96</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>12</maxVx>
+			<runStartVx>8</runStartVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel />
+			
+			<skillArr />
+			<bossSkillArr>PoliceZombieCharge,PoliceZombieElectric,PoliceZombieShoot,PoliceZombieShake,fightReduct2,defenceBounce_enemy</bossSkillArr>
+			<bossSkillArrCn />
+			
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/hand_hit">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt cd="3">
+					<imgLabel>shootAttack</imgLabel>
+					<bulletLabel>PoliceZombieBullet</bulletLabel>
+					<grapRect>-650,-171,600,305</grapRect>
+					<hurtRatio>5</hurtRatio>
+					<attackType>holy</attackType>
+				</hurt>
+				<hurt info="电击">
+					<imgLabel>electricAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0</hurtRatio>
+					<hurtMul>0.15</hurtMul>
+					<attackType>holy</attackType>
+					<shakeValue>4</shakeValue>
+					<skillArr>PoliceZombieElectricHit</skillArr>
+					<hitImgUrl con="add" soundUrl="sound/hand_hit">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt info="爬行电流">
+					<imgLabel>shakeAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<bulletLabel>PoliceZombieShake</bulletLabel>
+					<grapRect>-550,-151,500,205</grapRect>
+					<hurtRatio>0</hurtRatio>
+					<hurtMul>0.2</hurtMul>
+					<attackType>holy</attackType>
+					
+				</hurt>
+			</hurtArr>
+		</body>	
+	</father>
+	</data>

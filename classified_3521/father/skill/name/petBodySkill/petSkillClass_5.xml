@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="petBodySkill" cnName="铁魁">
+		<skill index="0" cnName="牺牲">
+			<name>sacrifice_PetIronChief</name>
+			<cnName>牺牲</cnName>
+			<iconUrl>SkillIcon/sacrifice</iconUrl>
+			<changeText>增加值为伤害值的[mul]</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHurt</condition>
+			<target>me,range,we</target>
+			
+			<addType>instant</addType>
+			<effectType>sacrifice</effectType>
+			<mul>0.07</mul>
+			<range>450</range>
+			<description>每次受到伤害都能增加[range]范围内我方单位的生命值，增加值为伤害值的[mul]。</description>
+			
+			<growth>
+				<skill><mul>0.07</mul></skill>
+				<skill><mul>0.11</mul></skill>
+				<skill><mul>0.15</mul></skill>
+				<skill><mul>0.19</mul></skill>
+				<skill><mul>0.23</mul></skill>
+				<skill><mul>0.27</mul></skill>
+				<skill><mul>0.31</mul></skill>
+				<skill><mul>0.34</mul></skill>
+				<skill><mul>0.37</mul></skill>
+			</growth>
+		</skill>
+		<skill index="0" cnName="防御光环">
+			<name>defenceAuras_PetIronChief</name>
+			<cnName>防御光环</cnName>
+			<iconUrl>SkillIcon/defenceAuras</iconUrl>
+			<changeText>防御增加：[1-mul]</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>underHurtMul</effectType>
+			<mul>0.93</mul>
+			<duration>2</duration>
+			<range>500</range>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/rune_blue_shield</stateEffectImg>
+			<description>为周围[range]码以内的我方单位增加[1-mul]的防御力。</description>
+			
+			<growth>
+				<skill><mul>0.93</mul></skill>
+				<skill><mul>0.90</mul></skill>
+				<skill><mul>0.86</mul></skill>
+				<skill><mul>0.83</mul></skill>
+				<skill><mul>0.79</mul></skill>
+				<skill><mul>0.76</mul></skill>
+				<skill><mul>0.72</mul></skill>
+				<skill><mul>0.70</mul></skill>
+				<skill><mul>0.68</mul></skill>
+			</growth>
+		</skill>
+		<skill index="0" cnName="上帝的护佑">
+			<name>godHand_PetIronChief</name>
+			<cnName>上帝的护佑</cnName>
+			<iconUrl>SkillIcon/godHand</iconUrl>
+			<changeText>技能触发最小间隔：[minTriggerT]秒</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>beforeDie</condition>
+			<minTriggerT>96</minTriggerT>
+			<target>me</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>godHand</effectType>
+			<value>1</value>
+			<duration>3</duration>
+			
+			<meEffectImg soundUrl="sound/invisibility_hero" con="add" />
+			<description>在受到必亡的伤害时，你将接受上帝的护佑，进入隐身无敌模式，持续[duration]秒，同时剩余1点生命值。技能触发间隔不小于[minTriggerT]秒。</description>
+			<growth>
+				<skill><minTriggerT>96</minTriggerT></skill>
+				<skill><minTriggerT>86</minTriggerT></skill>
+				<skill><minTriggerT>76</minTriggerT></skill>
+				<skill><minTriggerT>66</minTriggerT></skill>
+				<skill><minTriggerT>55</minTriggerT></skill>
+				<skill><minTriggerT>45</minTriggerT></skill>
+				<skill><minTriggerT>35</minTriggerT></skill>
+				<skill><minTriggerT>32</minTriggerT></skill>
+				<skill><minTriggerT>30</minTriggerT></skill>
+			</growth>
+		</skill>
+	</father>
+	</data>

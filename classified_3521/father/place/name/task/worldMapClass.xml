@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="task" cnName="剧情任务">
+		<place lv="999">
+			<name>GreenSomewhere</name>
+			<cnName>绿岛某处</cnName>
+			<geogType>ya</geogType>
+			<levelArr><level><name>GreenSomewhere_1</name></level></levelArr>
+		</place>
+		
+		
+		<place lv="999" cnName="研究室A">
+			<name>YanJiuA</name><labelArr>室内</labelArr>
+			<cnName>研究室A</cnName><noTaskB>1</noTaskB>
+			<geogType>lab</geogType>
+			<mustWinShowB>1</mustWinShowB>
+			<levelArr>
+				<level>
+					<name>zomNewborn</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="999" cnName="实验室地下">
+			<name>HospitalUnder</name><labelArr>室内</labelArr>
+			<cnName>实验室地下</cnName><noTaskB>1</noTaskB>
+			<geogType>lab</geogType>
+			<levelArr>
+				<level>
+					<name>HospitalUnder_re</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="999" cnName="战斧高地">
+			<name>MainUpland</name>
+			<cnName>战斧高地</cnName><noTaskB>1</noTaskB>
+			<geogType>city</geogType>
+			<mustWinShowB>1</mustWinShowB>
+			<levelArr>
+				<level>
+					<name>MainUpland_re</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="999" cnName="战斧高地2053">
+			<name>FutureUpland</name>
+			<cnName>战斧高地2053</cnName><noTaskB>1</noTaskB>
+			<geogType>city</geogType>
+			<mustWinShowB>1</mustWinShowB>
+			<levelArr>
+				<level>
+					<name>xiaohuUpland</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="999" cnName="寒光郊外">
+			<name>HanGuangSub</name>
+			<cnName>寒光郊外</cnName><noTaskB>1</noTaskB>
+			<geogType>city</geogType>
+			<mustWinShowB>1</mustWinShowB>
+			<levelArr>
+				<level>
+					<name>madFly1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		<place lv="999" cnName="七夕天空">
+			<name>QixiScene</name>
+			<cnName>七夕天空</cnName><labelArr>天空</labelArr>
+			<geogType>hill</geogType>
+			<levelArr><level><name>qixi2019</name></level></levelArr>
+		</place>
+		<place lv="999">
+			<name>GreenLand1</name>
+			<cnName>绿岛外围</cnName>
+			<geogType>hill</geogType>
+			<levelArr><level><name>bwallGreenLand1</name></level></levelArr>
+		</place>
+		<place lv="999" cnName="霞光海峡">
+			<name>RaysSea</name>
+			<cnName>霞光海峡</cnName><noTaskB>1</noTaskB>
+			<geogType>sky</geogType><noEndlessB>1</noEndlessB>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>Hospital4_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+		
+		
+		
+		
+		<place lv="999">
+			<name>DaoTa</name>
+			<cnName>倒塔村</cnName>
+			<geogType>hill</geogType>
+			<levelArr><level><name>bwallDaoTa</name></level></levelArr>
+		</place>
+		<place lv="999" cnName="星谷之顶">
+			<name>XingTop</name>
+			<cnName>星谷之顶</cnName>
+			<geogType>hill</geogType>
+			<levelArr><level><name>newYearBlessing</name></level></levelArr>
+		</place>
+	</father>
+	
+	
+	
+	</data>

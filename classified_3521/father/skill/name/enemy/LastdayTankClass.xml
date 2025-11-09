@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father cn="技能" name="enemy">
+		<skill>
+			<name>LastdayAttackDefend</name><noCopyB>1</noCopyB>
+			<cnName>元素部件</cnName><wantDescripB>1</wantDescripB>
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<duration>0.1</duration>
+			<description>坦克的部件，包括大炮(生化敏感)、机关枪(冷冻敏感)、导弹发射器(电磁敏感)、后轮胎(火焰敏感)。这些部件被打破之后，坦克将防御力大幅下降到只剩下10%。</description>
+		</skill>
+		<skill>
+			<name>LastdayAir</name>
+			<cnName>空中压制</cnName><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<ignoreSilenceB>1</ignoreSilenceB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<otherConditionArr>lifePerLess30</otherConditionArr>
+			<target>me,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>airMoveSpeed</effectType>
+			<value>0</value>
+			<mul>0.4</mul>
+			<duration>0.5</duration>
+			<range>99999</range>
+			
+			<stateEffectImg partType="2foot">skillEffect/disabled_enemy</stateEffectImg>
+			<description>生命值低于30%时，降低敌人在空中的移动速度。</description>
+		</skill>
+		<skill>
+			<name>LastdaySpellImmunity</name>
+			<cnName>免疫护罩</cnName><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>15</cd>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>spellImmunityB</effectType>
+			<duration>10</duration>
+			
+			<stateEffectImg partType="body" con="add" soundUrl="LastdayTank/shield1">LastdayTank/spellImmunityShield</stateEffectImg>
+			<description>释放免疫护罩，使自己对敌人的技能效果免疫，持续[duration]秒。</description>
+		</skill>
+		<skill>
+			<name>LastdayHit</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>破壳</cnName><noSkillDodgeB>1</noSkillDodgeB>
+			<ignoreNoSkillB>1</ignoreNoSkillB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>attackGapMul</effectType>
+			<effectProArr>0.2</effectProArr>
+			<mul>0.1</mul>
+			<duration>5</duration>
+			<stateEffectImg partType="shootPoint,hand_left,hand_right" raNum="25" followPartRaB="1">bulletHitEffect/smoke_black</stateEffectImg>
+			<description>击中敌人有几率使其枪支失效，持续[duration]秒。</description>
+		</skill>
+		
+		
+					<skill>
+						<name>LastdayPartUnder</name>
+						<cnName>部件受伤</cnName>
+						<noBeClearB>1</noBeClearB><ignoreNoSkillB>1</ignoreNoSkillB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+						
+						<conditionType>passive</conditionType>
+						<condition>underHit</condition>
+						<target>me</target>
+						
+						<addType>instantAndState</addType><noReStateB>1</noReStateB>
+						<effectType>LastdayPartUnder</effectType>
+						<mul>4</mul>
+						<duration>0.1</duration>
+						<description>各个部件对元素敏感不同；受到伤害使部件变红</description>
+					</skill>
+					<skill>
+						<name>LastdayPartDie</name>
+						<cnName>部件死亡</cnName>
+						<noBeClearB>1</noBeClearB><ignoreNoSkillB>1</ignoreNoSkillB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+						
+						<conditionType>passive</conditionType>
+						<condition>die</condition>
+						<target>me</target>
+						
+						<addType>instant</addType>
+						<effectType>LastdayPartDie</effectType>
+					</skill>
+	</father>
+</data>

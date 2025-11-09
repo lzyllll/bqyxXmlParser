@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="其他">
+		<bullet cnName="飓风">
+			<name>snowWind</name>
+			<cnName>飓风</cnName>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>999999999</bulletLife>
+			<bulletWidth>60</bulletWidth>
+			<hitType>rect</hitType>
+			<noHitB>1</noHitB>
+			
+			<bulletAngle>180</bulletAngle>
+			<bulletNum>1</bulletNum>				
+				
+			<penetrationNum>999</penetrationNum>
+			<penetrationGap>1000</penetrationGap>
+				
+			<bulletSpeed>1</bulletSpeed>
+			<followD value="1" />	
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1">generalEffect/windEffect</bulletImgUrl>
+		</bullet>
+	</father>
+</data>

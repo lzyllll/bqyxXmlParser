@@ -1,0 +1,293 @@
+{
+  "father": {
+    "name": "normal",
+    "gather": [
+      {
+        "name": "实验室地下",
+        "level": {
+          "name": "HospitalUnder_re",
+          "info": {
+            "enemyLv": 99,
+            "diff": 2,
+            "noMoreB": true,
+            "noVehicleB": true,
+            "noTreasureB": true,
+            "noPropsB": true,
+            "mustSingleB": true
+          },
+          "sceneLabel": "HospitalUnder",
+          "unitG": {
+            "allDefault": {
+              "aiOrder": "patrolGlobal"
+            },
+            "unitOrder": {
+              "id": "we2",
+              "camp": "we",
+              "unit": {
+                "cnName": "战争狂人",
+                "num": 1,
+                "aiOrder": "followBody:p1",
+                "skillArr": "madmanHead"
+              }
+            }
+          },
+          "eventG": {
+            "group": {
+              "event": [
+                {
+                  "id": "e2_1",
+                  "condition": {
+                    "delay": 0.01
+                  },
+                  "order": [
+                    "recoverAllHeroHead",
+                    "noWearShop",
+                    "createUnit:we2; r2",
+                    "playMusic; music_face:suspense"
+                  ]
+                },
+                {
+                  "id": "e1_1",
+                  "condition": {
+                    "delay": 1
+                  },
+                  "order": "say; startList:s1"
+                },
+                {
+                  "id": "e2_0",
+                  "condition": "say:listOver; s1",
+                  "order": [
+                    "body:战争狂人; doSkill:madmanHead",
+                    "playMusic; music_face:piano"
+                  ]
+                },
+                {
+                  "id": "e2_1",
+                  "condition": {
+                    "delay": 1.5
+                  },
+                  "order": "say; startList:s2"
+                },
+                {
+                  "id": "e2_11",
+                  "condition": "say:listOver; s2",
+                  "order": [
+                    "task:now; complete",
+                    "level; showPointer:r_over"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "战斧高地",
+        "level": [
+          {
+            "name": "MainUpland_re",
+            "info": {
+              "enemyLv": 99,
+              "diff": 2,
+              "allMoreB": true,
+              "noPetB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true
+            },
+            "sceneLabel": "MainUpland",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              }
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e1_1",
+                    "condition": {
+                      "delay": 0.01
+                    },
+                    "order": [
+                      "recoverAllHeroHead",
+                      "noWearShop",
+                      "playMusic; music_face:funny"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": [
+                      "body:小樱; followBody:文杰表哥",
+                      "body:藏师将军; followBody:小樱",
+                      "body:心零; followBody:藏师将军"
+                    ]
+                  },
+                  {
+                    "id": "e1_1",
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "id": "e2_11",
+                    "condition": "say:listOver; s1",
+                    "order": [
+                      "task:now; complete",
+                      "playMusic; music_face:descent",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "leavePartner_WenJie",
+            "info": {
+              "enemyLv": 99,
+              "diff": 2,
+              "allMoreB": true,
+              "noPetB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true
+            },
+            "sceneLabel": "MainUpland",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              }
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e1_1",
+                    "condition": {
+                      "delay": 0.01
+                    },
+                    "order": [
+                      "recoverAllHeroHead",
+                      "noWearShop"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": [
+                      "body:小樱; followBody:文杰表哥",
+                      "body:藏师将军; followBody:小樱",
+                      "body:心零; followBody:藏师将军"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver; s1",
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "say; startList:s2"
+                  },
+                  {
+                    "condition": "say:listOver",
+                    "order": [
+                      "task:now; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "madPlot_WenJie",
+            "info": {
+              "enemyLv": 99,
+              "diff": 2,
+              "allMoreB": true,
+              "noPetB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true
+            },
+            "sceneLabel": "MainUpland",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal"
+              }
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "id": "e1_1",
+                    "condition": {
+                      "delay": 0.01
+                    },
+                    "order": [
+                      "recoverAllHeroHead",
+                      "noWearShop"
+                    ]
+                  },
+                  {
+                    "id": "e2_1",
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": [
+                      "body:小樱; followBody:文杰表哥",
+                      "body:藏师将军; followBody:小樱",
+                      "body:心零; followBody:藏师将军"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver; s1",
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "say; startList:s2"
+                  },
+                  {
+                    "condition": "say:listOver",
+                    "order": [
+                      "task:now; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

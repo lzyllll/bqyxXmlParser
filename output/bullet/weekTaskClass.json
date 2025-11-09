@@ -1,0 +1,488 @@
+{
+  "father": {
+    "name": "week",
+    "cnName": "每周",
+    "dayNum": 2,
+    "tipText": "每周（周一为时间点）玩家将获得1次任务次数，上周未完成的任务次数将作废。",
+    "autoUnlockByLevelB": true,
+    "levelIsTaskLvB": true,
+    "maxLvLimitB": true,
+    "task": [
+      {
+        "name": "weekMadboss",
+        "cnName": "战神之怒",
+        "lv": 99,
+        "unlockLv": 30,
+        "openD": {
+          "tk": "beatMadboss"
+        },
+        "shortText": "击败战神",
+        "conditionText": "剩余时间 [time]",
+        "uiConditionText": "在时间 [time] 之内击败战神",
+        "description": "任务中，战神拥有“上帝之盾”技能：每0.5秒抵挡1次必亡伤害；每周还会更替若干个技能；",
+        "worldMapId": "XingGu",
+        "levelId": "weekMadboss",
+        "diff": 1,
+        "growth": {
+          "task": [
+            {
+              "condition": {
+                "time": 480,
+                "timeType": "fail",
+                "timeFirst": "倒计时 "
+              },
+              "enemyLifeMul": 2,
+              "enemyDpsMul": 0.4,
+              "gift": "things;madheart;20"
+            },
+            {
+              "condition": {
+                "time": 480,
+                "timeType": "fail",
+                "timeFirst": "倒计时 "
+              },
+              "enemyLifeMul": 10,
+              "enemyDpsMul": 0.7,
+              "gift": "things;madheart;22"
+            },
+            {
+              "condition": {
+                "time": 480,
+                "timeType": "fail",
+                "timeFirst": "倒计时 "
+              },
+              "enemyLifeMul": 22,
+              "enemyDpsMul": 1,
+              "gift": "things;madheart;24"
+            },
+            {
+              "condition": {
+                "time": 480,
+                "timeType": "fail",
+                "timeFirst": "倒计时 "
+              },
+              "enemyLifeMul": 50,
+              "enemyDpsMul": 1.2,
+              "gift": "things;madheart;26"
+            },
+            {
+              "condition": {
+                "time": 480,
+                "timeType": "fail",
+                "timeFirst": "倒计时 "
+              },
+              "enemyLifeMul": 100,
+              "enemyDpsMul": 1.5,
+              "gift": "things;madheart;28"
+            },
+            {
+              "condition": {
+                "time": 480,
+                "timeType": "fail",
+                "timeFirst": "倒计时 "
+              },
+              "enemyLifeMul": 200,
+              "enemyDpsMul": 2,
+              "gift": "things;madheart;30"
+            },
+            {
+              "condition": {
+                "time": 480,
+                "timeType": "fail",
+                "timeFirst": "倒计时 "
+              },
+              "enemyLifeMul": 400,
+              "enemyDpsMul": 2.5,
+              "gift": "things;madheart;32"
+            },
+            {
+              "condition": {
+                "time": 480,
+                "timeType": "fail",
+                "timeFirst": "倒计时 "
+              },
+              "enemyLifeMul": 800,
+              "enemyDpsMul": 3,
+              "gift": "things;madheart;34"
+            }
+          ]
+        }
+      },
+      {
+        "name": "weekParts",
+        "cnName": "零件–屠戮",
+        "uiShowTime": 999999,
+        "unlockLv": 30,
+        "maxLvLimitB": false,
+        "openD": {
+          "tk": "BuDong_plot"
+        },
+        "diff": 20,
+        "shortText": "前往[map]消灭守关首领！",
+        "conditionText": "消灭守关首领",
+        "uiConditionText": "消灭守关首领",
+        "description": "鬼爵养的真是一群亡命暴徒，要从他们身上要到零件箱比登天还难，一不做二不休，把他们逼到角落，以暴制暴！",
+        "worldMapType": "random",
+        "fixedLevelUrl": "weekTask/weekParts",
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "gift": [
+          "things;partsChest78;6",
+          "base;partsCoin;20"
+        ]
+      },
+      {
+        "name": "weekHourse",
+        "cnName": "午马–践踏",
+        "uiShowTime": 999999,
+        "unlockLv": 30,
+        "maxLvLimitB": false,
+        "openD": {
+          "tk": "BuDong_plot"
+        },
+        "diff": 20,
+        "shortText": "前往[map]消灭守关首领！",
+        "conditionText": "消灭守关首领",
+        "uiConditionText": "消灭守关首领",
+        "description": "鬼爵养的真是一群亡命暴徒，要从他们身上要到午马碎片比登天还难，一不做二不休，把他们逼到角落，以暴制暴！",
+        "worldMapType": "random",
+        "fixedLevelUrl": "weekTask/weekHourse",
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "gift": "things;yearHourse;7"
+      },
+      {
+        "name": "weekHeadBlack",
+        "cnName": "头盔–暗物质",
+        "uiShowTime": 999999,
+        "unlockLv": 30,
+        "openD": [
+          {
+            "tk": "GuiWang_breath"
+          },
+          {
+            "mustB": true,
+            "closeAffterCompleteB": true,
+            "must": [
+              "things;dreamKey;4",
+              "things;courageKey;12",
+              "things;energyKey;4",
+              "things;victoryKey;4"
+            ]
+          }
+        ],
+        "remarks": "head",
+        "diff": 0.7,
+        "shortText": "前往[map]消灭守关首领！",
+        "conditionText": "消灭守关首领",
+        "uiConditionText": "消灭守关首领",
+        "description": "以战争狂人和鬼爵为首的黑暗势力不断蔓延，请英雄尽快集齐由暗物质打造的装备碎片，粉碎黑暗势力的阴谋。",
+        "worldMapType": "random",
+        "fixedLevelUrl": "weekTask/weekHeadBlack",
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "gift": "things;equipHighBox;10"
+      },
+      {
+        "name": "weekCoatBlack",
+        "cnName": "战衣–暗物质",
+        "uiShowTime": 999999,
+        "unlockLv": 30,
+        "openD": [
+          {
+            "tk": "GuiWang_breath"
+          },
+          {
+            "mustB": true,
+            "closeAffterCompleteB": true,
+            "must": [
+              "things;dreamKey;4",
+              "things;courageKey;4",
+              "things;energyKey;12",
+              "things;victoryKey;4"
+            ]
+          }
+        ],
+        "remarks": "coat",
+        "diff": 0.7,
+        "shortText": "前往[map]消灭守关首领！",
+        "conditionText": "消灭守关首领",
+        "uiConditionText": "消灭守关首领",
+        "description": "以战争狂人和鬼爵为首的黑暗势力不断蔓延，请英雄尽快集齐由暗物质打造的装备碎片，粉碎黑暗势力的阴谋。",
+        "worldMapType": "random",
+        "fixedLevelUrl": "weekTask/weekCoatBlack",
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "gift": "things;equipHighBox;10"
+      },
+      {
+        "name": "weekPantsBlack",
+        "cnName": "战裤–暗物质",
+        "uiShowTime": 999999,
+        "unlockLv": 30,
+        "openD": [
+          {
+            "tk": "GuiWang_breath"
+          },
+          {
+            "mustB": true,
+            "closeAffterCompleteB": true,
+            "must": [
+              "things;dreamKey;4",
+              "things;courageKey;4",
+              "things;energyKey;4",
+              "things;victoryKey;12"
+            ]
+          }
+        ],
+        "remarks": "pants",
+        "diff": 0.7,
+        "shortText": "前往[map]消灭守关首领！",
+        "conditionText": "消灭守关首领",
+        "uiConditionText": "消灭守关首领",
+        "description": "以战争狂人和鬼爵为首的黑暗势力不断蔓延，请英雄尽快集齐由暗物质打造的装备碎片，粉碎黑暗势力的阴谋。",
+        "worldMapType": "random",
+        "fixedLevelUrl": "weekTask/weekPantsBlack",
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "gift": "things;equipHighBox;10"
+      },
+      {
+        "name": "weekBeltBlack",
+        "cnName": "腰带–暗物质",
+        "uiShowTime": 999999,
+        "unlockLv": 30,
+        "openD": [
+          {
+            "tk": "GuiWang_breath"
+          },
+          {
+            "mustB": true,
+            "closeAffterCompleteB": true,
+            "must": [
+              "things;dreamKey;12",
+              "things;courageKey;4",
+              "things;energyKey;4",
+              "things;victoryKey;4"
+            ]
+          }
+        ],
+        "remarks": "belt",
+        "diff": 0.7,
+        "shortText": "前往[map]消灭守关首领！",
+        "conditionText": "消灭守关首领",
+        "uiConditionText": "消灭守关首领",
+        "description": "以战争狂人和鬼爵为首的黑暗势力不断蔓延，请英雄尽快集齐由暗物质打造的装备碎片，粉碎黑暗势力的阴谋。",
+        "worldMapType": "random",
+        "fixedLevelUrl": "weekTask/weekBeltBlack",
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "gift": "things;equipHighBox;10"
+      },
+      {
+        "name": "weekHead",
+        "cnName": "头盔–威慑",
+        "uiShowTime": 999999,
+        "unlockLv": 30,
+        "openD": [
+          {
+            "tk": "BaiSha_skeleton"
+          },
+          {
+            "mustB": true,
+            "closeAffterCompleteB": true,
+            "must": [
+              "things;dreamKey;4",
+              "things;courageKey;12",
+              "things;energyKey;4",
+              "things;victoryKey;4"
+            ]
+          }
+        ],
+        "remarks": "head",
+        "diff": 0.7,
+        "shortText": "前往[map]消灭守关首领！",
+        "conditionText": "消灭守关首领",
+        "uiConditionText": "消灭守关首领",
+        "description": "运气不错，从鬼爵那释放了一群不太疯狂的暴徒，看来稍加武力威慑，就能从他们那要到不错的稀有装备！",
+        "worldMapType": "random",
+        "fixedLevelUrl": "weekTask/weekHead",
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "gift": "things;equipHighBox;10"
+      },
+      {
+        "name": "weekCoat",
+        "cnName": "战衣–铲除",
+        "uiShowTime": 999999,
+        "unlockLv": 30,
+        "openD": [
+          {
+            "tk": "BaiSha_skeleton"
+          },
+          {
+            "mustB": true,
+            "closeAffterCompleteB": true,
+            "must": [
+              "things;dreamKey;4",
+              "things;courageKey;4",
+              "things;energyKey;12",
+              "things;victoryKey;4"
+            ]
+          }
+        ],
+        "remarks": "coat",
+        "diff": 0.7,
+        "shortText": "前往[map]消灭守关首领！",
+        "conditionText": "消灭守关首领",
+        "uiConditionText": "消灭守关首领",
+        "description": "“真是有其父必有其子”，这批暴徒跟鬼爵一样狡诈无信，必须将他们全部铲除，否则后患无穷。",
+        "worldMapType": "random",
+        "fixedLevelUrl": "weekTask/weekCoat",
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "gift": "things;equipHighBox;10"
+      },
+      {
+        "name": "weekPants",
+        "cnName": "战裤–制服",
+        "uiShowTime": 999999,
+        "unlockLv": 30,
+        "openD": [
+          {
+            "tk": "BaiSha_skeleton"
+          },
+          {
+            "mustB": true,
+            "closeAffterCompleteB": true,
+            "must": [
+              "things;dreamKey;4",
+              "things;courageKey;4",
+              "things;energyKey;4",
+              "things;victoryKey;12"
+            ]
+          }
+        ],
+        "remarks": "pants",
+        "diff": 0.7,
+        "shortText": "前往[map]消灭守关首领！",
+        "conditionText": "消灭守关首领",
+        "uiConditionText": "消灭守关首领",
+        "description": "不好，竟然释放了一群有通天本事的亡命暴徒，如不尽快制服他们，必遭他们的祸害。",
+        "worldMapType": "random",
+        "fixedLevelUrl": "weekTask/weekPants",
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "gift": "things;equipHighBox;10"
+      },
+      {
+        "name": "weekBelt",
+        "cnName": "腰带–监禁",
+        "uiShowTime": 999999,
+        "unlockLv": 30,
+        "openD": [
+          {
+            "tk": "BaiSha_skeleton"
+          },
+          {
+            "mustB": true,
+            "closeAffterCompleteB": true,
+            "must": [
+              "things;dreamKey;12",
+              "things;courageKey;4",
+              "things;energyKey;4",
+              "things;victoryKey;4"
+            ]
+          }
+        ],
+        "remarks": "belt",
+        "diff": 0.7,
+        "shortText": "前往[map]消灭守关首领！",
+        "conditionText": "消灭守关首领",
+        "uiConditionText": "消灭守关首领",
+        "description": "鬼爵真是养了一群奇怪的暴徒，不想伤害我，却也不想给我任何好处，看来只好先打败他们，将他们重新监禁起来了。",
+        "worldMapType": "random",
+        "fixedLevelUrl": "weekTask/weekBelt",
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "gift": "things;equipHighBox;10"
+      },
+      {
+        "name": "weekArms",
+        "cnName": "武器–处决",
+        "uiShowTime": 999999,
+        "unlockLv": 30,
+        "openD": [
+          {
+            "tk": "BaiSha_skeleton"
+          },
+          {
+            "mustB": true,
+            "closeAffterCompleteB": true,
+            "must": [
+              "things;dreamKey;8",
+              "things;courageKey;8",
+              "things;energyKey;4",
+              "things;victoryKey;4"
+            ]
+          }
+        ],
+        "remarks": "arms",
+        "diff": 0.7,
+        "shortText": "前往[map]消灭守关首领！",
+        "conditionText": "消灭守关首领",
+        "uiConditionText": "消灭守关首领",
+        "description": "鬼爵养的真是一群亡命暴徒，要从他们身上要到武器比登天还难，一不做二不休，把他们逼到角落，以暴制暴！",
+        "worldMapType": "random",
+        "fixedLevelUrl": "weekTask/weekArms",
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "gift": "things;armsHighBox;10"
+      }
+    ]
+  }
+}

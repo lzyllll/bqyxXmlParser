@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<bullet cnName="小飞天狗-射击">
+			<name>WatchdogAirShoot</name>
+			<cnName>小飞天狗-射击</cnName>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.9</attackGap>
+			<attackDelay>0.6</attackDelay>
+			<bulletAngle>90</bulletAngle>
+			<bulletAngleRange>10</bulletAngleRange>
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<shootPoint>0,34</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl name="shoot_Watchdog_bullet" />
+			<hitImgUrl name="gun_hit" />
+		</bullet>
+	</father>	
+	
+	
+</data>

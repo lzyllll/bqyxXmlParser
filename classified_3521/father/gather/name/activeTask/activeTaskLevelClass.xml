@@ -1,0 +1,671 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="activeTask">
+		
+		<gather name="新年祝福语">
+			<level name="newYearBlessing">
+				<sceneLabel>XingTop</sceneLabel>
+				<info enemyLv="99" diff="1" noMoreB="1" noTreasureB="1" overBackB="1" preBulletArr="highlighter" />
+				<drop noB="1" />
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+				</unitG>
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>body:p1; onlyNewArms:highlighter</order>
+							<order>body:p1; addState:State_noAllSkill</order>
+							<order>sceneScale:0.66</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		<gather name="南瓜怪">
+			<level name="pumpkinBoss">
+				<sceneLabel>MainUpland</sceneLabel>
+				<fixed info="all" drop="all" unitG="all" eventG="all" />
+				<info enemyLv="99" diff="1" noTreasureB="1" noPropsB="1" firstLostB="1" hb="1" overBackB="1" />
+				<drop noB="1" />
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="enemy1">
+						<unit id="nangua" cnName="南瓜怪" unitType="boss" lifeMul="18142.16" />
+					</unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>openInput</order>
+							<order>createUnit:enemy1; r1</order>
+							<order>body:nangua; flipToRight</order>
+						</event>
+						<event>
+							<condition>liveEnemyNumber:less_1</condition>
+							<order>pumpkinBossOver</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		
+		<gather name="氩星吞噬者">
+			<level name="worldSnakeActive">
+				<sceneLabel>JungleDeep</sceneLabel>
+				<info enemyLv="99" diff="1" noTreasureB="1" />
+				<drop noB="1" />
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="enemy1">
+						<unit cnName="氩星吞噬者" unitType="boss" />
+					</unitOrder>
+				</unitG>
+				<rectG>
+					<rect id="r_birth">608,788,212,72</rect>
+					<rect id="r_over">3628,1216,64,112</rect>
+					<rect id="r1">268,84,616,108</rect>
+					<rect id="r2">1448,104,724,140</rect>
+					<rect id="r3">2784,148,700,168</rect>
+					
+					<rect label="addCharger">348,516,45,45</rect>
+					<rect label="addCharger">3256,540,45,45</rect>
+				</rectG>
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>createUnit:enemy1; r123</order>
+						</event>
+						<event>
+							<condition>enemyNumber:less_1</condition>
+							<order>task:worldSnakeActive; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		
+		<gather name="三雄">
+			<level name="doubleBoss">
+				<sceneLabel>PingChuan</sceneLabel>
+				<info enemyLv="99" diff="1" noTreasureB="1" />
+				<drop coin="0.01" exp="0.005" life="0.2" arms="0" equip="0" skillStone="0" taxStamp="0" />
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="enemy1">
+						<unit cnName="僵尸突击兵" unitType="boss" />
+						
+						<unit cnName="火炮尸狼" unitType="boss" />
+						<unit cnName="末日坦克" unitType="boss" />
+					</unitOrder>
+				</unitG>
+				<rectG>
+					<rect id="r_birth">888,832,172,76</rect>
+					<rect id="r_over">2916,700,88,152</rect>
+					<rect id="r1">16,304,280,120</rect>
+					<rect id="r2">2670,653,280,120</rect>
+					<rect id="r3">1642,650,280,120</rect>
+					
+					<rect label="addCharger">406,664,118,64</rect>
+					<rect label="addCharger">2638,864,118,64</rect>
+					
+				</rectG>
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>createUnit:enemy1; r123</order>
+						</event>
+						<event>
+							<condition>enemyNumber:less_1</condition>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		<gather name="黄金隼的试炼">
+			<level name="falconTestTask">
+				<sceneLabel>XiFeng</sceneLabel>
+				
+				<info enemyLv="99" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" mustSingleB="1" noDeviceB="1" />
+				<drop coin="0" exp="0" arms="0" equip="0" skillStone="0" taxStamp="0" />
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="we1" camp="we">
+						<unit id="ME" cnName="黄金隼" lifeMul="0.02" dpsMul="400" armsRange="extremeLaser,extremeLightning,extremeRocket" skillArr="crazy_pet_9,through_hero_7,moreBullet,madArmsAttack,sumBossAtten,State_AddMove50,strong_enemy" />
+					</unitOrder>
+					<unitOrder id="enemy1">
+						<numberType>pro</numberType>
+						<unit cnName="战斗僵尸" num="4" skillArr="State_AddMove" lifeMul="0.2" dpsMul="0.02" skillCloseB="1" />
+						<unit cnName="肥胖僵尸" num="2" skillArr="State_AddMove" lifeMul="0.2" dpsMul="0.02" skillCloseB="1" />
+						<unit cnName="冥刃游尸" num="2" skillArr="State_AddMove" lifeMul="0.2" dpsMul="0.02" skillCloseB="1" />
+						<unit cnName="无头自爆僵尸" num="2" skillArr="State_AddMove" lifeMul="0.2" dpsMul="0.02" skillCloseB="1" />
+					</unitOrder>
+					
+				</unitG>
+				
+				<rectG>
+					<rect id="r_birth">1292,1900,224,84</rect>
+					<rect id="r_over">2924,1576,92,184</rect>
+					<rect id="r1">50,1440,152,220</rect>
+					<rect id="r2">1012,484,96,128</rect>
+					<rect id="r3">2524,984,396,140</rect>
+					
+					<rect label="addCharger">536,1848,74,74</rect>
+					<rect label="addCharger">2752,1656,74,74</rect>
+					<rect label="addCharger">760,484,74,74</rect>
+					
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>weAllHeroNoShoot</order><order>weAllHeroNoEquip</order>
+							<order>createUnit:we1; r_birth</order><order>heroEverParasitic:ME</order>
+						</event>
+						<event>
+							<condition doNumber="10" orderChooseType="randomOne">enemyNumber:less_30</condition>
+							<order>createUnit:enemy1; r_topLong</order>
+						</event>
+						<event>
+							<condition doNumber="10" orderChooseType="randomOne">enemyNumber:less_45</condition>
+							<order>createUnit:enemy1; r_topLong</order>
+						</event>
+						<event>
+							<condition doNumber="15" orderChooseType="randomOne">enemyNumber:less_60</condition>
+							<order>createUnit:enemy1; r_topLong</order>
+						</event>
+						<event>
+							<condition doNumber="20" orderChooseType="randomOne">enemyNumber:less_75</condition>
+							<order>createUnit:enemy1; r_topLong</order>
+						</event>
+						<event>
+							<condition>enemyNumber:less_1</condition>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+					<group>
+						<event id="e_fail"><condition delay="1">bodyEvent:die; ME</condition><order>alert:yes; 任务失败！</order></event>
+						<event><condition delay="0.03" /><order>level; fail</order></event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		<gather name="贪吃蛇">
+			<level name="bossTask23_10">
+				
+				<fixed info="all" drop="all" unitG="before" eventG="before" />
+				
+				<info enemyLv="99" diff="1" noPartnerB="1" noPetB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" overBackB="1" />
+				<drop noB="1" />
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="weNew" camp="we">
+						<unit id="weBoss" cnName="蛇型采矿机" lifeMul="0.15" dpsMul="600" noSuperB="1" skillArr="OreWormInviTail,defenceAurasWorm,WormHurtSuper,State_SpellImmunity,rigidBody_enemy,noSR,sumBossAtten3,alloyShell_8,State_AddMove50" />
+					</unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event id="e1_1">
+							<order>weAllHeroNoShoot</order><order>weAllHeroNoEquip</order>
+							<order>createUnit:weNew; r_birth</order><order>heroEverParasitic:weBoss</order>
+							<order>level;enemyNormalMul:2</order>
+						</event>
+					</group>
+					<group>
+						<event id="e_fail"><condition delay="1">bodyEvent:die; weBoss</condition><order>alert:yes; 任务失败！</order></event>
+						<event id="e_fail"><condition delay="0.03" /><order>level; fail</order></event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition>level:win</condition>
+							<order>level;taskTimingB:false</order>
+							<order>task:bossTask23_10; complete</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		<gather name="氩星贪吃蛇">
+			<level name="bossTask25_10">
+				
+				<fixed info="all" drop="all" unitG="before" eventG="before" />
+				
+				<info enemyLv="99" diff="1" noPartnerB="1" noPetB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" overBackB="1" firstLostB="1" noAIB="1" />
+				<drop noB="1" />
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="weNew" camp="we">
+						<unit id="weBoss" cnName="氩星吞噬者" lifeMul="0.15" dpsMul="200" noSuperB="1" onlyLevelSkillB="1" skillArr="WorldSnake_sum,dieWSnake,noSR,strong_enemy,noBounce_enemy,State_AddMove50,shortShootWSnake,meltFlamerPurgold,fightReduct7,State_SpellImmunity,KingRabbitTreater,godShield,alloyShell_9" />
+					</unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event id="e1_1">
+							<order>weAllHeroNoShoot</order><order>weAllHeroNoEquip</order>
+							<order>createUnit:weNew; r_birth</order><order>heroEverParasitic:weBoss</order>
+							<order>level;enemyNormalMul:4</order>
+							<order>openInput</order>
+						</event>
+					</group>
+					<group>
+						<event id="e_fail"><condition delay="1">bodyEvent:die; weBoss</condition><order>alert:yes; 任务失败！</order></event>
+						<event id="e_fail"><condition delay="0.03" /><order>level; fail</order></event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition>level:win</condition>
+							<order>level;taskTimingB:false</order>
+							<order>task:bossTask25_10; complete</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		<gather name="极速撞击">
+			<level name="fastCar">
+				
+				<info diy="fastCar" enemyLv="1" noMoreB="1" noTreasureB="1" noPropsB="1" mustSingleB="1" noDeviceB="1" firstLostB="1" dropSmallMapB="1" preSkillArr="vacuumJie_14,teleport_enemy" />
+				<drop noB="1" />
+				
+				<sceneLabel>NanTang</sceneLabel>
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					
+					<unitOrder id="enemy1">
+						<unit cnName="制图尸" num="1" skillArr="vehicleSensitive,noAttackOrder,noSkillHurt,noBulletHurt,State_SpellImmunity" lifeMul="0.2" skillCloseB="1" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<unit cnName="会计尸" num="1" skillArr="vehicleSensitive,noAttackOrder,noSkillHurt,noBulletHurt,State_SpellImmunity" lifeMul="0.2" skillCloseB="1" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<unit cnName="防毒僵尸" num="1" skillArr="vehicleSensitive,noAttackOrder,State_SpellImmunity" lifeMul="0.2" skillCloseB="1" />
+					</unitOrder>
+				</unitG>
+				<rectG>
+					<rect id="r_birth">1555,744,174,55</rect>
+					<rect id="r_over">3742,700,73,115</rect>
+				</rectG>
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>weAllHeroNoShoot</order>
+							<order>weAllHeroNoSkill</order>
+							<order>openInput</order>
+							<order>level; diyEvent:start</order>
+						</event>
+						<event>
+							<condition>liveEnemyNumber:less_1</condition>
+							<order>addUnitMapSpider:enemy1</order>
+						</event>
+						<event>
+							<condition>liveEnemyNumber:less_1</condition>
+							<order>addUnitMapSpider:enemy2</order>
+						</event>
+						<event>
+							<condition>liveEnemyNumber:less_1</condition>
+							<order>addUnitMapSpider:enemy3</order>
+						</event>
+						<event>
+							<condition>liveEnemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+							<order>level; diyEvent:complete</order>
+							<order>task:fastCar; complete</order>
+						</event>
+						
+					</group>
+				</eventG>
+			</level>
+		</gather>	
+		<gather name="神武驾临">
+			<level name="armsEdit23">
+				
+				<fixed info="all" drop="all" unitG="before" eventG="before" />
+				
+				<info diy="armsEdit23" enemyLv="99" diff="1" noPartnerB="1" noPetB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" overBackB="1" mustSingleB="1" />
+				<drop noB="1" />
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="weNew" camp="we">
+						<unit id="weBoss" cnName="本我" lifeMul="0.1" dpsMul="400" noSuperB="1" skillArr="crazy_hero_13,groupLight_hero_13,hiding_hero_13,charm_hero_13,globalSpurting_hero_13,devour_hero_13,gliding_hero_13,rolling_hero_10" />
+					</unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event id="e1_1">
+							<order>weAllHeroNoShoot</order><order>weAllHeroNoEquip</order>
+							<order>createUnit:weNew; r_birth</order><order>armsEdit23:weBoss</order>
+							<order>level;enemyNormalMul:2</order>
+						</event>
+					</group>
+					<group>
+						<event id="e_fail"><condition delay="1">bodyEvent:die; weBoss</condition><order>alert:yes; 任务失败！</order></event>
+						<event id="e_fail"><condition delay="0.03" /><order>level; fail</order></event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition>level:win</condition>
+							<order>level;taskTimingB:false</order>
+							<order>task:armsEdit23; complete</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		
+		<gather name="跟屁虫">
+			<level name="killToSnakeTail">
+				<sceneLabel>QingMing</sceneLabel>
+				
+				<fixed info="all" drop="all" unitG="before" eventG="before" />
+				
+				<info enemyLv="99" diff="1" mustSingleB="1" noPartnerB="1" noPetB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" overBackB="1" />
+				<drop noB="1" />
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="weNew" camp="we">
+						<unit id="weBoss" cnName="斩之使者" lifeMul="0.03" dpsMul="800" noSuperB="1" skillArr="teleport_enemy20,HookWitchHook,HookWitchShake,killToSnakeTail,dieSnakeTail" />
+					</unitOrder>
+					
+					<unitOrder id="enemy1">
+						<unit cnName="独眼僵尸" num="5" />
+						<unit cnName="监狱僵尸" num="1" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<unit cnName="独眼僵尸" num="3" />
+						<unit cnName="监狱僵尸" num="4" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<unit cnName="独眼僵尸" num="3" />
+						<unit cnName="监狱僵尸" num="2" />
+						<unit cnName="鬼目射手" num="2" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<unit cnName="橄榄僵尸" unitType="boss" lifeMul="0.2" hurtMul="1" />
+					</unitOrder>
+				</unitG>
+				 
+				<rectG>
+					<rect id="r_birth">1850,820,330,106</rect>
+					<rect id="r_over">-30,800,80,135</rect>
+					<rect id="r1">20,50,330,106</rect>
+					<rect id="r2">2768,192,330,106</rect>
+					<rect id="r3">1280,46,330,106</rect>
+				</rectG>
+				<eventG>
+					<group>
+						<event id="e1_1">
+							<order>weAllHeroNoShoot</order><order>weAllHeroNoEquip</order>
+							<order>createUnit:weNew; r_birth</order><order>heroEverParasitic:weBoss</order>
+						</event>
+						<event>
+							<condition doNumber="3">enemyNumber:less_3</condition>
+							<order>createUnit:enemy1; r123</order> 
+						</event>
+						<event>
+							<condition doNumber="3">enemyNumber:less_3</condition>
+							<order>createUnit:enemy2; r123</order> 
+						</event>
+						<event>
+							<condition doNumber="5">enemyNumber:less_3</condition>
+							<order>createUnit:enemy3; r123</order> 
+						</event>
+						<event>
+							<condition>enemyNumber:less_1</condition>
+							<order>createUnit:enemy4; r123</order> 
+						</event>
+						<event>
+							<condition>enemyNumber:less_1</condition>
+							<order>killToSnakeTail</order> 
+						</event>
+					</group>
+					<group>
+						<event><condition>bodyEvent:die; weBoss</condition><order>killToSnakeTailDie</order></event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		
+		<gather name="狂野的试炼">
+			<level name="bossTask24_8">
+				
+				<fixed info="all" drop="all" unitG="before" eventG="before" />
+				
+				<info enemyLv="99" diff="1" mustSingleB="1" noPartnerB="1" noPetB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" overBackB="1" />
+				<drop noB="1" />
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="weNew" camp="we">
+						<unit id="weBoss" cnName="狂野收割者" lifeMul="0.10" dpsMul="700" noSuperB="1" skillArr="State_AddMoveValue6,State_SpellImmunity,liveReplace_enemy,roll_pig,collision_pig,noBounce_enemy,fleshFeast_pig,thorns_pig,thunder_pig,noSR,sumBossAtten3,defenceBounce_enemy" />
+					</unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event id="e1_1">
+							<order>weAllHeroNoShoot</order><order>weAllHeroNoEquip</order>
+							<order>createUnit:weNew; r_birth</order><order>heroEverParasitic:weBoss</order>
+							<order>level;enemyNormalMul:2</order>
+						</event>
+					</group>
+					<group>
+						<event id="e_fail"><condition delay="1">bodyEvent:die; weBoss</condition><order>alert:yes; 任务失败！</order></event>
+						<event id="e_fail"><condition delay="0.03" /><order>level; fail</order></event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition>level:win</condition>
+							<order>level;taskTimingB:false</order>
+							<order>task:bossTask24_8; complete</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		
+		<gather name="古飙的试炼">
+			<level name="bossTask23_5">
+				
+				<fixed info="all" drop="all" unitG="before" eventG="before" />
+				
+				<info enemyLv="99" diff="1" noPartnerB="1" noPetB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" overBackB="1" />
+				<drop noB="1" />
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="weNew" camp="we">
+						<unit id="weBoss" cnName="古飙" lifeMul="0.1" dpsMul="400" noSuperB="1" skillArr="groupLight_hero_5,fastForward_Cheetah,fire_Cheetah,jump_Cheetah,noSR,sumBossAtten3,defenceBounce_enemy" />
+					</unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event id="e1_1">
+							<order>weAllHeroNoShoot</order><order>weAllHeroNoEquip</order>
+							<order>createUnit:weNew; r_birth</order><order>heroEverParasitic:weBoss</order>
+							<order>level;enemyNormalMul:2</order>
+						</event>
+					</group>
+					<group>
+						<event id="e_fail"><condition delay="1">bodyEvent:die; weBoss</condition><order>alert:yes; 任务失败！</order></event>
+						<event id="e_fail"><condition delay="0.03" /><order>level; fail</order></event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition>level:win</condition>
+							<order>level;taskTimingB:false</order>
+							<order>task:bossTask23_5; complete</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		
+		<gather name="究极散射">
+			<level name="anniverTask23">
+				
+				<fixed info="all" drop="all" unitG="before" eventG="before" />
+				
+				<info enemyLv="99" diff="1" noPartnerB="1" noPetB="1" noTreasureB="1" overBackB="1" />
+				<drop noB="1" />
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>level;enemyNormalMul:3</order>
+						</event>
+						<event>
+							<condition delay="0.1" />
+							<order>body:p1; addSkill:superMoreBullet</order>
+							<order>body:p1; addSkill:superSkillGift</order>
+						</event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition>level:win</condition>
+							<order>level;taskTimingB:false</order>
+							<order>level; addSuperBulletNumArr</order>
+							<order>task:anniverTask23; complete</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		
+		<gather name="决斗者历险">
+			<level name="bossTask22_10">
+				
+				<fixed info="all" drop="all" unitG="before" eventG="before" />
+				
+				<info enemyLv="99" diff="1" noPartnerB="1" noPetB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" overBackB="1" />
+				<drop noB="1" />
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="weNew" camp="we">
+						<unit id="weBoss" cnName="决斗者" lifeMul="0.1" dpsMul="400" noSuperB="1" skillArr="sumBossAtten2,State_AddMove50,recovery_enemy,jumpNumAdd1,DuelistShoot,DuelistShake,DuelistCombo,DuelistSummoned" />
+					</unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event id="e1_1">
+							<order>weAllHeroNoShoot</order><order>weAllHeroNoEquip</order>
+							<order>createUnit:weNew; r_birth</order><order>heroEverParasitic:weBoss</order>
+							<order>level;enemyNormalMul:2</order>
+						</event>
+					</group>
+					<group>
+						<event id="e_fail"><condition delay="1">bodyEvent:die; weBoss</condition><order>alert:yes; 任务失败！</order></event>
+						<event id="e_fail"><condition delay="0.03" /><order>level; fail</order></event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition>level:win</condition>
+							<order>level;taskTimingB:false</order>
+							<order>task:bossTask22_10; complete</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		
+		<gather name="首领闯关">
+			
+			<level name="sumBossTask">
+				
+				<fixed info="all" drop="all" unitG="before" eventG="before" />
+				
+				<info enemyLv="99" diff="1" noPartnerB="1" noPetB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" />
+				<drop coin="0.01" exp="0.005" life="0.2" arms="0" equip="0" skillStone="0" taxStamp="0" />
+				<eventG>
+					<group>
+						<event id="e1_1">
+							<order>weAllHeroNoShoot</order>
+							<order>weAllHeroNoEquip</order>
+							<order>weAllHeroFollowSumBoss</order>
+							<order>level;enemyNormalMul:2</order>
+						</event>
+					</group>
+					<group>
+						<event id="e_fail"><condition delay="1">bodyEvent:die; sumBoss</condition><order>alert:yes; 任务失败！</order></event>
+						<event id="e_fail"><condition delay="0.03" /><order>level; fail</order></event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition>level:win</condition>
+							<order>level;taskTimingB:false</order>
+							<order>task:sumBossTask; complete</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		
+		
+		<gather name="狂人的新品">
+			<level name="activeWarrior">
+				
+				<fixed info="all" drop="all" unitG="before" eventG="before" />
+				
+				<info enemyLv="99" diff="1" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" mustSingleB="1" />
+				<drop coin="0.01" exp="0.005" life="0.2" arms="0" equip="0" skillStone="0" taxStamp="0" />
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="we2" camp="we">
+						<unit cnName="狂人机器X" dpsMul="1000" lifeMul="0.10" skillCloseB="1" skillArr="enemyEmp,groupCrazy_enemy,WarriorShoot,WarriorSprint,State_SpellImmunity,fightReduct2,rigidBody_enemy,summSentry,recovery_enemy,hurtBossAdd,alloyShell_8" />
+					</unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event id="e1_1">
+							<order>createUnit:we2; r_birth</order>
+							<order>heroEverParasitic:狂人机器X</order>
+							<order>level;enemyNormalMul:2</order>
+						</event>
+					</group>
+					<group>
+						<event id="e_fail"><condition delay="1">bodyEvent:die; 狂人机器X</condition><order>alert:yes; 任务失败！</order></event>
+						<event id="e_fail"><condition delay="0.03" /><order>level; fail</order></event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition>level:win</condition>
+							<order>level;taskTimingB:false</order>
+							<order>task:activeWarrior; complete</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		<gather name="神宠历险">
+			<level name="highPet">
+				
+				<fixed info="all" drop="no" unitG="no" eventG="no" />
+				
+				<info diff="2" diy="highPet" noPartnerB="1" noVehicleB="1" noPropsB="1" noTreasureB="1" mustSingleB="1" />
+			</level>
+		</gather>
+	</father>
+	
+	</data>

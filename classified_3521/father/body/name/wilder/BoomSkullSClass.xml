@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="wilder">
+		<body index="0" name="爆骷S" shell="compound">
+		
+			<name>BoomSkullS</name>
+			<cnName>爆骷S</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/BoomSkullS.swf</swfUrl>
+			<headIconUrl>IconGather/PetBoomSkullS</headIconUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<rosRatio>1</rosRatio>
+			<headHurtMul>0.5</headHurtMul>
+			<showLevel>999</showLevel>
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move,die1
+				,followAttack,paraAttack,generalAttack,boxAttack,boomAttack
+			</imgArr>
+			<lifeBarExtraHeight>-50</lifeBarExtraHeight>
+			
+			<hitRect>-30,-88,60,88</hitRect>
+			
+			<maxVx>7</maxVx>
+			<motionState>fly</motionState>
+			<flyUseSpiderB>1</flyUseSpiderB>
+			<flyType>tween</flyType>
+			
+			<bossSkillArr>State_InvincibleThrough,teleport_BoomSkullS,desertedHalo_BoomSkullS</bossSkillArr>
+			<wilderSkillArr>moreBullet</wilderSkillArr>
+			
+			<hurtArr>
+				<hurt cd="2">
+					<imgLabel>generalAttack</imgLabel>
+					<bulletLabel>BoomSkullS_general</bulletLabel>
+					<grapRect>-9999,-9999,19999,19999</grapRect>
+					<hurtRatio>0.000000001</hurtRatio>
+					<hurtMul>0.2</hurtMul>
+					<attackType>holy</attackType>
+				</hurt>
+				<hurt cd="3">
+					<imgLabel>boomAttack</imgLabel>
+					<bulletLabel>BoomSkullS_boom</bulletLabel>
+					<grapRect>-9999,-9999,19999,19999</grapRect>
+					<hurtRatio>0.000000001</hurtRatio>
+					<hurtMul>0.35</hurtMul>
+					<attackType>holy</attackType>
+				</hurt>
+				<hurt>
+					<imgLabel>followAttack</imgLabel>
+					<bulletLabel>BoomSkullS_follow</bulletLabel>
+					<grapRect>-9999,-9999,19999,19999</grapRect>
+					<hurtRatio>0.000000001</hurtRatio>
+					<hurtMul>0.2</hurtMul>
+					<attackType>holy</attackType>
+				</hurt>
+				<hurt>
+					<imgLabel>paraAttack</imgLabel>
+					<bulletLabel>BoomSkullS_para</bulletLabel>
+					<grapRect>-9999,-9999,19999,19999</grapRect>
+					<hurtRatio>0.000000001</hurtRatio>
+					<hurtMul>0.35</hurtMul>
+					<attackType>holy</attackType>
+				</hurt>
+				<hurt cd="8">
+					<imgLabel>boxAttack</imgLabel>
+					<bulletLabel>BoomSkullS_box</bulletLabel>
+					<grapRect>-9999,-9999,19999,19999</grapRect>
+					<hurtRatio>0.000000001</hurtRatio>
+					<hurtMul>0.1</hurtMul>
+					<attackType>holy</attackType>
+				</hurt>
+			</hurtArr>
+		</body>
+	</father>
+	</data>

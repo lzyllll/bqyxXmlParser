@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="thingsEffect" cnName="物品使用效果">
+		<skill>
+			<name>zombieBottle</name>
+			<cnName>僵尸血瓶</cnName><everNoClearB>1</everNoClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<conditionType>active</conditionType><noBeClearB>1</noBeClearB>
+			<target>me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>noAiFind</effectType>
+			<duration>999999</duration>
+			<range>99999</range>
+			
+			<description>给在场所有我方单位抹上僵尸血液，使其不会成为敌人的攻击目标。</description>
+		</skill>
+		<skill>
+			<name>glutinous</name>
+			<cnName>辣椒糯米饭</cnName><everNoClearB>1</everNoClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<conditionType>active</conditionType><noBeClearB>1</noBeClearB>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>glutinous</effectType>
+			<mul>1.5</mul>
+			<duration>999999</duration>
+			<stateEffectImg name="mouthSmoke" />
+			<description>无限怒气。</description>
+		</skill>
+		
+		<skill>
+			<name>iconGiftBox</name>
+			<cnName>圣诞铁箱</cnName>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>summonedUnits</effectType>
+			<obj>"cnName":"圣诞铁箱","num":1,"lifeMul":1000,"maxNum":1,"noUnderHurtB":1,"pointEf":1</obj>
+			<pointEffectImg name="oreBombShowFlower" />
+			<addSkillEffectImg name="iconGiftBoxBuff" />
+			<duration>120</duration>
+			
+			<description>。</description>
+		</skill>
+					<skill>
+						<name>iconGiftBoxBuff</name>
+						<cnName>圣诞铁箱-buff</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB><ignoreSilenceB>1</ignoreSilenceB>
+						
+						<conditionType>passive</conditionType>
+						<condition>interval</condition><intervalT>0.1</intervalT>
+						<otherConditionArr>targetNoNowBuffUnlessMe</otherConditionArr>
+						<target>me,range,enemy</target>
+						
+						<addType>stateAndInstant</addType>
+						<effectType>lockTargetMe</effectType>
+						<duration>1</duration>
+						<range>99999</range>
+						
+						<stateEffectImg name="FoggyShakeHit_state" />
+						<description>强制吸引周围[range]码以内的敌方攻击自己。</description>
+					</skill>
+		
+		
+		<skill cnName="无敌隐身-重生石">
+			<name>godHiding_things</name>
+			<cnName>无敌隐身-重生石</cnName><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB><ignoreNoSkillB>1</ignoreNoSkillB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>godHiding_things</effectType>
+			<value>1</value>
+			<duration>3</duration>
+			
+			<meEffectImg soundUrl="sound/hiding_hero" con="add">skillEffect/hiding_hero</meEffectImg>
+			<description>释放技能后，单位进入无敌隐身状态，持续[duration]秒。如果你对敌人发起攻击会打破隐身状态。</description>
+		</skill>
+		<skill index="0" name="godHiding_Pet" cnName="无敌隐身">
+			<name>godHiding_Pet</name>
+			<cnName>无敌隐身</cnName>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>godHidingB</effectType>
+			<value>1</value>
+			<duration>3</duration>
+			
+			<meEffectImg soundUrl="sound/hiding_hero" con="add">skillEffect/hiding_hero</meEffectImg>
+			<description>释放技能后，单位进入无敌隐身状态，持续[duration]秒。如果你对敌人发起攻击会打破隐身状态。</description>
+		</skill>
+		
+		<skill index="0" name="moonCake" cnName="增加攻击力">
+			<name>moonCake</name>
+			<cnName>月饼增加攻击力</cnName>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>hurtMul</effectType>
+			<mul>2</mul>
+			<duration>1</duration>
+			
+			<stateEffectImg partType="2hand" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg>
+			<description>使用后将增加战斗中100%的攻击力。</description>
+		</skill>
+		
+		<skill index="0" name="tangyuan" cnName="汤圆攻击力">
+			<name>tangyuan</name>
+			<cnName>汤圆增加攻击力</cnName>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>hurtMul</effectType>
+			<mul>2</mul>
+			<duration>1</duration>
+			
+			<stateEffectImg partType="2hand" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg>
+			<description>使用后将增加战斗中100%的攻击力。</description>
+		</skill>
+		<skill>
+			<name>nineCake</name>
+			<cnName>九层糕增加射速</cnName>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>attackGapMul</effectType>
+			<mul>2</mul>
+			<duration>1</duration>
+			
+			<stateEffectImg name="globalSpurting_hero_state2" />
+			<description>使用后将增加战斗中100%的射速。</description>
+		</skill>
+		
+		<skill index="0" name="jiaozi" cnName="饺子无敌状态">
+			<name>jiaozi</name>
+			<cnName>饺子无敌状态</cnName>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>1</duration>
+			
+			<stateEffectImg con="add">skillEffect/energyShield</stateEffectImg>
+			<description>使用无敌。</description>
+		</skill>
+		<skill name="armsDropDouble" cnName="双倍黑色武器掉落">
+			<name>armsDropDouble</name>
+			<cnName>双倍黑色武器掉落</cnName>
+			<conditionType>active</conditionType>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>armsDrop</effectType>
+			<mul>1</mul>
+			<duration>1</duration>
+			<description>双倍黑色武器掉落</description>
+		</skill>
+		<skill name="equipDropDouble" cnName="双倍黑色装备掉落">
+			<name>equipDropDouble</name>
+			<cnName>双倍黑色装备掉落</cnName>
+			<conditionType>active</conditionType>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>equipDrop</effectType>
+			<mul>1</mul>
+			<duration>1</duration>
+			<description>双倍黑色装备掉落</description>
+		</skill>
+		
+		<skill name="armsDropDoubleAndGem" cnName="双倍黑色武器掉落和30%宝石掉落">
+			<name>armsDropDoubleAndGem</name>
+			<cnName>双倍黑色武器掉落</cnName>
+			<conditionType>active</conditionType>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>armsDropAndGem</effectType>
+			<mul>1</mul>
+			<value>0.3</value>
+			<duration>1</duration>
+			<description>双倍黑色武器掉落</description>
+		</skill>
+		<skill name="equipDropDoubleAndEquipGem" cnName="双倍黑色装备掉落和30%宝石掉落">
+			<name>equipDropDoubleAndEquipGem</name>
+			<cnName>双倍黑色装备掉落</cnName>
+			<conditionType>active</conditionType>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>equipDropAndGem</effectType>
+			<mul>1</mul>
+			<value>0.3</value>
+			<duration>1</duration>
+			<description>双倍黑色装备掉落</description>
+		</skill>
+		
+		
+		
+		
+		
+		
+		
+		<skill name="highPetCard" cnName="神宠卡片">
+			<name>highPetCard</name>
+			<cnName>神宠卡片</cnName>
+			<everNoClearB>1</everNoClearB>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>highPetCard</effectType>
+			<duration>1</duration>
+			
+			<description>4倍宠物伤害</description>
+		</skill>
+		<skill name="highVehicleCard" cnName="神车卡片">
+			<name>highVehicleCard</name>
+			<cnName>神车卡片</cnName>
+			<everNoClearB>1</everNoClearB>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>highVehicleCard</effectType>
+			<duration>1</duration>
+			
+			<description>4倍载具伤害</description>
+		</skill>
+				<skill name="highCardState" cnName="神宠卡片、神车卡片状态">
+					<name>highCardState</name>
+					<cnName>4倍载具伤害</cnName>
+					<everNoClearB>1</everNoClearB>
+					
+					<conditionType>passive</conditionType>
+					<target>me</target>
+					
+					<addType>state</addType>
+					<effectType>otherHurtMul</effectType>
+					<mul>4</mul>
+					<duration>1</duration>
+					
+					<description>4倍伤害</description>
+				</skill>
+				
+				
+		<skill name="highPartnerCard" cnName="神队卡片">
+			<name>highPartnerCard</name>
+			<cnName>神队卡片</cnName>
+			<everNoClearB>1</everNoClearB>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>highPartnerCard</effectType>
+			<duration>1</duration>
+			
+			<description>1倍持枪队友伤害</description>
+		</skill>
+				<skill name="highPartnerState" cnName="神队卡片状态">
+					<name>highPartnerState</name>
+					<cnName>1倍队友伤害</cnName>
+					<everNoClearB>1</everNoClearB>
+					
+					<conditionType>passive</conditionType>
+					<target>me</target>
+					
+					<addType>state</addType>
+					<effectType>otherHurtMul</effectType>
+					<mul>2</mul>
+					<duration>1</duration>
+					
+					<description>1倍伤害</description>
+				</skill>
+				
+				
+				
+		<skill index="0" cnName="磁力场">
+			<name>electromagnet</name>
+			<cnName>磁力场</cnName>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>magneticB</effectType>
+			<duration>1</duration>
+			<range>200</range>
+			 
+			<passiveSkillArr>magneticField_enemy_link</passiveSkillArr>
+			 
+			<stateEffectImg partType="mouth" con="add">skillEffect/magneticField</stateEffectImg>
+			<description>向外释放磁力场，使700码的范围内的所有敌方子弹偏离轨道。</description>
+		</skill>
+		
+		
+		<skill index="0" cnName="超级散射卡">
+			<name>superSpreadCard</name>
+			<cnName>超级散射卡</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>setBulletNum</effectType>
+			<value>5</value>
+			<mul>5</mul>
+			<duration>1</duration>
+		</skill>
+		
+		<skill index="0" cnName="骷髅卡">
+			<name>skeletonCard</name>
+			<cnName>骷髅卡</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<duration>1</duration>
+			<passiveSkillArr>skeletonCard_link</passiveSkillArr>	
+			<description />
+		</skill>
+					<skill>
+						<name>skeletonCard_link</name>
+						<cnName>骷髅卡扣血</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><noBeClearB>1</noBeClearB>
+						
+						<conditionType>active</conditionType>
+						<condition>interval</condition>
+						<target>me,range,enemy</target>
+						
+						<addType>state</addType>
+						<effectType>skeletonCard</effectType>
+						<mul>0.02</mul>
+						<duration>1</duration>
+						<range>99999</range>
+						 
+						<stateEffectImg partType="body" con="add">generalEffect/bloodLoss</stateEffectImg>
+						<description>使用后在关卡中（任务、修罗模式无效）让敌人每秒损失2%的生命值（首领每秒损失1%，生命低于15%时不再损失）。</description>
+					</skill>
+		
+		
+		
+		
+		
+		
+		
+		
+	</father>	
+	</data>

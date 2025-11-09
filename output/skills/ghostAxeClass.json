@@ -1,0 +1,67 @@
+{
+  "father": {
+    "type": "shotgun",
+    "cnName": "散弹枪",
+    "bullet": {
+      "name": "ghostAxe",
+      "color": "black",
+      "composeLv": 90,
+      "chipB": true,
+      "chipNum": 50,
+      "dropLevelArr": 999,
+      "cnName": "鬼斧",
+      "whippB": 0,
+      "dpsMul": 1.2,
+      "uiDpsMul": 1.2,
+      "capacity": 6,
+      "attackGap": 1.2,
+      "reloadGap": 2,
+      "shakeAngle": 1,
+      "bulletWidth": 500,
+      "bulletShakeWidth": 100,
+      "bulletNum": 13,
+      "shootAngle": 30,
+      "beatBack": 2,
+      "targetShakeValue": 10,
+      "twoShootPro": 0.3,
+      "penetrationNum": 0,
+      "penetrationGap": 0,
+      "bounceD": {
+        "floor": 4,
+        "body": 3
+      },
+      "critD": {
+        "mul": 2,
+        "pro": 0.25
+      },
+      "skillArr": "Hit_Spurting_ArmsSkill,Hit_AddLifeMul_ArmsSkill",
+      "godSkillArr": "Hit_imploding_godArmsSkill,shotgunBlade_ArmsSkill",
+      "hurtRatio": 4,
+      "gunNum": 1,
+      "armsArmMul": 0.6,
+      "armsWeight": 5,
+      "upValue": 4,
+      "shootShakeAngle": 70,
+      "shootRecoil": 10,
+      "screenShakeValue": 15,
+      "noShakeTime": 0.5,
+      "bulletLife": 0.001,
+      "hitType": "longLine",
+      "iconUrl": "specialGun/ghostAxeIcon",
+      "shootSoundUrl": "specialGun/shotgunRed_sound",
+      "flipX": 1,
+      "lineD": {
+        "lightColor": 39423,
+        "size": 2,
+        "lightSize": 6,
+        "blendMode": "add"
+      },
+      "bulletImgUrl": "longLine",
+      "hitImgUrl": "bulletHitEffect/yellow_motion",
+      "fireImgType": null,
+      "bodyImgRange": "specialGun/ghostAxe",
+      "bulletImgRange": "specialGun/bullet",
+      "description": "神器宝箱中有一定几率获得"
+    }
+  }
+}

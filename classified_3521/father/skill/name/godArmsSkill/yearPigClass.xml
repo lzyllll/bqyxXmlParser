@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill index="0" name="周五大吉">
+			<name>yearPigSkill</name><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<cnName>周五大吉</cnName><noRandomListB>1</noRandomListB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>puWe,noDemonOnlyBoss,noMainTask,noHardB,dayPan,yearArmsFalse,targetUnitType,noUnionBattle</otherConditionArr>
+			<conditionRange>5</conditionRange>
+			<conditionString>boss</conditionString>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>yearArmsKill</effectType>
+			
+			<meEffectImg />
+			<targetEffectImg soundUrl="sound/pointBoom_hero">boomEffect/bigCircle</targetEffectImg>
+			<description>每周五可以直接瞬秒一个首领，无视技能免疫。主线任务、困难模式、修罗决斗模式、军队争霸中该技能无效。</description>
+		</skill>
+	</father>
+</data>

@@ -1,0 +1,2565 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="normal">
+		<gather name="幽灵谷关卡">
+			<level name="YouLing_mystery">
+				
+				<info enemyLv="33" />
+				
+				<sceneLabel>YouLing</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					
+					<unitOrder id="enemy1">
+						<unit cnName="鬼目游尸" num="6" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<unit cnName="冥刃游尸" num="6" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<unit cnName="鬼目射手" num="5" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<unit cnName="鬼目游尸" num="3" />
+						<unit cnName="冥刃游尸" num="3" />
+						<unit cnName="鬼目射手" num="2" />
+					</unitOrder>
+					<unitOrder id="enemy5">
+						<unit cnName="冥刃游尸" unitType="boss" />
+					</unitOrder>
+				</unitG>
+				
+				
+				<rectG>
+					<rect id="r_birth">1392,1200,372,100</rect>
+					<rect id="r_over">3740,708,78,163</rect>
+					<rect id="r1">553,358,652,110</rect>
+					<rect id="r2">1517,418,652,110</rect>
+					<rect id="r3">2519,534,652,110</rect>
+					
+					<rect label="addCharger">842,618,98,64</rect>
+					<rect label="addCharger">2632,724,98,64</rect>
+					
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						<event id="e2_2">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_2</condition>
+							<order>createUnit:enemy2; r1</order>
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition>
+							<order>createUnit:enemy3; r1</order>
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_2</condition>
+							<order>createUnit:enemy4; r1</order>
+							<order>createUnit:enemy4; r2</order>
+							<order>createUnit:enemy4; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_4</condition>
+							<order>createUnit:enemy5; r1</order>
+							<order>createUnit:enemy5; r2</order>
+							<order>createUnit:enemy5; r3</order>
+						</event>
+						<event id="e_win">
+							<condition delay="0.5">enemyNumber:less_1</condition>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+					
+				</eventG>
+			</level>
+			<level name="YouLing_2">
+				
+				<info enemyLv="33" />
+				
+				<sceneLabel>YouLing</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					
+					<unitOrder id="enemy1">
+						<unit cnName="鬼目游尸" num="6" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<unit cnName="冥刃游尸" num="6" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<unit cnName="鬼目射手" num="5" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<unit cnName="鬼目游尸" num="3" />
+						<unit cnName="冥刃游尸" num="3" />
+						<unit cnName="鬼目射手" num="2" />
+					</unitOrder>
+					<unitOrder id="enemy5">
+						<unit cnName="冥刃游尸" unitType="boss" />
+					</unitOrder>
+				</unitG>
+				
+				
+				<rectG>
+					<rect id="r_birth">1392,1200,372,100</rect>
+					<rect id="r_over">3740,708,78,163</rect>
+					<rect id="r1">553,358,652,110</rect>
+					<rect id="r2">1517,418,652,110</rect>
+					<rect id="r3">2519,534,652,110</rect>
+					
+					<rect label="addCharger">842,618,98,64</rect>
+					<rect label="addCharger">2632,724,98,64</rect>
+					
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						<event id="e2_2">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_2</condition>
+							<order>createUnit:enemy2; r1</order>
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition>
+							<order>createUnit:enemy3; r1</order>
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_2</condition>
+							<order>createUnit:enemy4; r1</order>
+							<order>createUnit:enemy4; r2</order>
+							<order>createUnit:enemy4; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_4</condition>
+							<order>createUnit:enemy5; r1</order>
+							<order>createUnit:enemy5; r2</order>
+							<order>createUnit:enemy5; r3</order>
+						</event>
+						<event id="e_win">
+							<condition delay="0.5">enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+					
+				</eventG>
+			</level>
+			<level name="YouLing_king">
+				
+				<info enemyLv="38" />
+				
+				<sceneLabel>YouLing</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					
+					<unitOrder id="enemy1">
+						<unit cnName="鬼目游尸" num="6" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<unit cnName="冥刃游尸" num="6" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<unit cnName="鬼目射手" num="5" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<unit cnName="鬼目游尸" num="3" />
+						<unit cnName="冥刃游尸" num="3" />
+						<unit cnName="鬼目射手" num="2" />
+					</unitOrder>
+					<unitOrder id="enemy5">
+						<unit cnName="游尸王" unitType="boss" />
+					</unitOrder>
+				</unitG>
+				
+				
+				<rectG>
+					<rect id="r_birth">1392,1200,372,100</rect>
+					<rect id="r_over">3740,708,78,163</rect>
+					<rect id="r1">553,358,652,110</rect>
+					<rect id="r2">1517,418,652,110</rect>
+					<rect id="r3">2519,534,652,110</rect>
+					
+					<rect label="addCharger">842,618,98,64</rect>
+					<rect label="addCharger">2632,724,98,64</rect>
+					
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						<event id="e2_2">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_2</condition>
+							<order>createUnit:enemy2; r1</order>
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition>
+							<order>createUnit:enemy3; r1</order>
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_2</condition>
+							<order>createUnit:enemy4; r1</order>
+							<order>createUnit:enemy4; r2</order>
+							<order>createUnit:enemy4; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_4</condition>
+							<order>createUnit:enemy5; r1</order>
+							<order>createUnit:enemy5; r2</order>
+							<order>createUnit:enemy5; r3</order>
+						</event>
+						<event id="e_win">
+							<condition delay="0.5">enemyNumber:less_1</condition>
+							<order>worldMap:levelName; YouLing:YouLing_3</order>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+					
+				</eventG>
+			</level>
+			<level name="YouLing_3">
+				
+				<info enemyLv="38" />
+				
+				<sceneLabel>YouLing</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					
+					<unitOrder id="enemy1">
+						<unit cnName="鬼目游尸" num="6" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<unit cnName="冥刃游尸" num="6" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<unit cnName="鬼目射手" num="5" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<unit cnName="鬼目游尸" num="3" />
+						<unit cnName="冥刃游尸" num="3" />
+						<unit cnName="鬼目射手" num="2" />
+					</unitOrder>
+					<unitOrder id="enemy5">
+						<unit cnName="游尸王" unitType="boss" />
+					</unitOrder>
+				</unitG>
+				
+				
+				<rectG>
+					<rect id="r_birth">1392,1200,372,100</rect>
+					<rect id="r_over">3740,708,78,163</rect>
+					<rect id="r1">553,358,652,110</rect>
+					<rect id="r2">1517,418,652,110</rect>
+					<rect id="r3">2519,534,652,110</rect>
+					
+					<rect label="addCharger">842,618,98,64</rect>
+					<rect label="addCharger">2632,724,98,64</rect>
+					
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						<event id="e2_2">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_2</condition>
+							<order>createUnit:enemy2; r1</order>
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition>
+							<order>createUnit:enemy3; r1</order>
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_2</condition>
+							<order>createUnit:enemy4; r1</order>
+							<order>createUnit:enemy4; r2</order>
+							<order>createUnit:enemy4; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_4</condition>
+							<order>createUnit:enemy5; r1</order>
+							<order>createUnit:enemy5; r2</order>
+							<order>createUnit:enemy5; r3</order>
+						</event>
+						<event id="e_win">
+							<condition delay="0.5">enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+					
+				</eventG>
+			</level>
+			<level name="YouLing_back">
+				<info enemyLv="62" />
+				
+				<sceneLabel>YouLing</sceneLabel>
+				<fixed target="YouLing_3" info="no" drop="all" unitG="all" rectG="all" eventG="no" />
+				
+				<eventG>
+					<group>
+						<event id="e2_2">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_2</condition>
+							<order>createUnit:enemy2; r1</order>
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition>
+							<order>createUnit:enemy3; r1</order>
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_2</condition>
+							<order>createUnit:enemy4; r1</order>
+							<order>createUnit:enemy4; r2</order>
+							<order>createUnit:enemy4; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_4</condition>
+							<order>createUnit:enemy5; r1</order>
+							<order>createUnit:enemy5; r2</order>
+							<order>createUnit:enemy5; r3</order>
+						</event>
+						<event id="e2_11">
+							<condition delay="1">enemyNumber:less_1</condition>
+							<order>level; rebirthAllMore</order>
+							<order>level; shake:YouLing</order>
+						</event>	
+						<event id="e2_11">
+							<condition delay="1" />
+							<order>say; startList:s1</order>
+						</event>	
+						<event id="e2_11">
+							<condition delay="0.5">say:listOver; s1</condition>
+							<order>task:now; complete</order>
+							<order>worldMap:levelName; YouLing:YouLing_4</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			<level name="YouLing_4">
+				<info enemyLv="62" />
+				
+				<sceneLabel>YouLing</sceneLabel>
+				<fixed target="YouLing_3" info="no" drop="all" unitG="all" rectG="all" eventG="all" />
+			</level>
+		</gather>
+		<gather name="西峰关卡">
+			<level name="XiFeng_first">
+				
+				<info enemyLv="37" />
+				
+				<sceneLabel>XiFeng</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					
+					<unitOrder id="enemy1">
+						<numberType>pro</numberType>
+						<unit cnName="肥胖僵尸" num="3" />
+						<unit cnName="鬼目游尸" num="3" />
+						<unit cnName="冥刃游尸" num="2" />
+						<unit cnName="鬼目射手" num="0.5" />
+						<unit cnName="僵尸突击兵" num="0.5" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>pro</numberType>
+						<unit cnName="肥胖僵尸" num="3" />
+						<unit cnName="鬼目游尸" num="3" />
+						<unit cnName="冥刃游尸" num="3" />
+						<unit cnName="鬼目射手" num="1.5" />
+						<unit cnName="僵尸突击兵" num="1.5" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<unit cnName="亚瑟" unitType="boss" dieGotoState="stru" />
+					</unitOrder>
+				</unitG>
+				
+				
+				<rectG>
+					<rect id="r_birth">1292,1900,224,84</rect>
+					<rect id="r_over">2924,1576,92,184</rect>
+					<rect id="r1">50,1440,152,220</rect>
+					<rect id="r2">1012,484,96,128</rect>
+					<rect id="r3">2524,984,396,140</rect>
+					
+					<rect label="addCharger">536,1848,74,74</rect>
+					<rect label="addCharger">2752,1656,74,74</rect>
+					<rect label="addCharger">760,484,74,74</rect>
+					
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition>enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+						</event>
+						<event id="e2_2">
+							<condition doNumber="4" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="4" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r1</order>
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_5</condition>
+							<order>createUnit:enemy3; r1</order>
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e_win">
+							<condition delay="0.5">bodyEvent:die; 亚瑟</condition>
+							<order>say; startList:s1</order>
+						</event>
+						<event id="e2_11">
+							<condition delay="0.5">say:listOver; s1</condition>
+							<order>body:亚瑟; rebirth</order>
+							<order>body:亚瑟; toDie:die</order>
+						</event>	
+						<event id="e_win">
+							<condition delay="0.5" />
+							<order>worldMap:levelName; XiFeng:XiFeng_2</order>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			<level name="XiFeng_2">
+				
+				<info enemyLv="37" />
+				
+				<sceneLabel>XiFeng</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					
+					<unitOrder id="enemy1">
+						<numberType>pro</numberType>
+						<unit cnName="肥胖僵尸" num="3" />
+						<unit cnName="鬼目游尸" num="3" />
+						<unit cnName="冥刃游尸" num="2" />
+						<unit cnName="鬼目射手" num="0.5" />
+						<unit cnName="僵尸突击兵" num="0.5" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>pro</numberType>
+						<unit cnName="肥胖僵尸" num="3" />
+						<unit cnName="鬼目游尸" num="3" />
+						<unit cnName="冥刃游尸" num="3" />
+						<unit cnName="鬼目射手" num="1.5" />
+						<unit cnName="僵尸突击兵" num="1.5" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<unit cnName="亚瑟" unitType="boss" />
+					</unitOrder>
+				</unitG>
+				
+				
+				<rectG>
+					<rect id="r_birth">1292,1900,224,84</rect>
+					<rect id="r_over">2924,1576,92,184</rect>
+					<rect id="r1">50,1440,152,220</rect>
+					<rect id="r2">1012,484,96,128</rect>
+					<rect id="r3">2524,984,396,140</rect>
+					
+					<rect label="addCharger">536,1848,74,74</rect>
+					<rect label="addCharger">2752,1656,74,74</rect>
+					<rect label="addCharger">760,484,74,74</rect>
+					
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition>enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+						</event>
+						<event id="e2_2">
+							<condition doNumber="4" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="4" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r1</order>
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_5</condition>
+							<order>createUnit:enemy3; r1</order>
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						
+						<event id="e_win">
+							<condition delay="0.5">enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			<level name="XiFeng_FightKing">
+				
+				<info enemyLv="40" />
+				
+				<sceneLabel>XiFeng</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					
+					<unitOrder id="enemy1">
+						<numberType>pro</numberType>
+						<unit cnName="肥胖僵尸" num="3" />
+						<unit cnName="鬼目游尸" num="3" />
+						<unit cnName="冥刃游尸" num="2" />
+						<unit cnName="鬼目射手" num="0.5" />
+						<unit cnName="僵尸突击兵" num="0.5" />
+						<unit cnName="僵尸空降兵" num="0.5" />
+						<unit cnName="僵尸空军总管" num="0.5" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>pro</numberType>
+						<unit cnName="肥胖僵尸" num="3" />
+						<unit cnName="鬼目游尸" num="3" />
+						<unit cnName="冥刃游尸" num="2" />
+						<unit cnName="鬼目射手" num="1" />
+						<unit cnName="僵尸突击兵" num="1" />
+						<unit cnName="僵尸空降兵" num="1" />
+						<unit cnName="僵尸空军总管" num="1" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<unit cnName="狂战尸" unitType="boss" imgType="normal" dpsMul="0.75" lifeMul="1.2" />
+					</unitOrder>
+				</unitG>
+				
+				
+				<rectG>
+					<rect id="r_birth">1292,1900,224,84</rect>
+					<rect id="r_over">2924,1576,92,184</rect>
+					<rect id="r1">50,1440,152,220</rect>
+					<rect id="r2">1012,484,96,128</rect>
+					<rect id="r3">2524,984,396,140</rect>
+					
+					<rect label="addCharger">536,1848,74,74</rect>
+					<rect label="addCharger">2752,1656,74,74</rect>
+					<rect label="addCharger">760,484,74,74</rect>
+					
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition>enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+						</event>
+						<event id="e2_2">
+							<condition doNumber="4" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="4" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r1</order>
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_5</condition>
+							<order>createUnit:enemy3; r1</order>
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e_win">
+							<condition delay="0.5">enemyNumber:less_1</condition>
+							<order>worldMap:levelName; XiFeng:XiFeng_3</order>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			<level name="XiFeng_3">
+				
+				<info enemyLv="40" />
+				
+				<sceneLabel>XiFeng</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					
+					<unitOrder id="enemy1">
+						<numberType>pro</numberType>
+						<unit cnName="肥胖僵尸" num="3" />
+						<unit cnName="鬼目游尸" num="3" />
+						<unit cnName="冥刃游尸" num="2" />
+						<unit cnName="鬼目射手" num="0.5" />
+						<unit cnName="僵尸突击兵" num="0.5" />
+						<unit cnName="僵尸空降兵" num="0.5" />
+						<unit cnName="僵尸空军总管" num="0.5" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>pro</numberType>
+						<unit cnName="肥胖僵尸" num="3" />
+						<unit cnName="鬼目游尸" num="3" />
+						<unit cnName="冥刃游尸" num="2" />
+						<unit cnName="鬼目射手" num="1" />
+						<unit cnName="僵尸突击兵" num="1" />
+						<unit cnName="僵尸空降兵" num="1" />
+						<unit cnName="僵尸空军总管" num="1" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<unit cnName="狂战尸" unitType="boss" imgType="normal" dpsMul="0.75" lifeMul="1.2" />
+					</unitOrder>
+				</unitG>
+				
+				
+				<rectG>
+					<rect id="r_birth">1292,1900,224,84</rect>
+					<rect id="r_over">2924,1576,92,184</rect>
+					<rect id="r1">50,1440,152,220</rect>
+					<rect id="r2">1012,484,96,128</rect>
+					<rect id="r3">2524,984,396,140</rect>
+					
+					<rect label="addCharger">536,1848,74,74</rect>
+					<rect label="addCharger">2752,1656,74,74</rect>
+					<rect label="addCharger">760,484,74,74</rect>
+					
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition>enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+						</event>
+						<event id="e2_2">
+							<condition doNumber="4" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="4" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r1</order>
+							<order>createUnit:enemy2; r2</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_5</condition>
+							<order>createUnit:enemy3; r1</order>
+							<order>createUnit:enemy3; r2</order>
+						</event>
+						<event id="e_win">
+							<condition>enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			<level name="XiFeng_fight2">
+				<info enemyLv="59" />
+				
+				<sceneLabel>XiFeng</sceneLabel>
+				<fixed target="XiFeng_3" info="no" drop="all" unitG="all" rectG="all" eventG="no" />
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition>enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+						</event>
+						<event id="e2_2">
+							<condition doNumber="4" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="4" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r1</order><order>createUnit:enemy2; r2</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_5</condition>
+							<order>createUnit:enemy3; r1</order><order>createUnit:enemy3; r2</order>
+						</event>
+						<event id="e_win">
+							<condition delay="0.5">enemyNumber:less_1</condition>
+							<order>task:now; complete</order>
+							<order>worldMap:levelName; XiFeng:XiFeng_4</order>
+							<order>worldMap:levelName; BaiLu:BaiLu_5</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>	
+			<level name="XiFeng_4">
+				<info enemyLv="59" />
+				
+				<sceneLabel>XiFeng</sceneLabel>
+				<fixed target="XiFeng_3" info="no" drop="all" unitG="all" rectG="all" eventG="all" />
+			</level>
+			
+			<level name="XiFeng_re">
+				
+				<info enemyLv="15" diy="wotuBack" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" mustSingleB="1" />
+				<drop arms="0" equip="0" />
+				
+				<sceneLabel>XiFeng</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					
+					<unitOrder id="we3" camp="we">
+						<unit cnName="狂战尸" lifeMul="10" dpsMul="1" skillArr="groupCrazy_enemy,FightKing_cloned,murderous_hero_6,strong_enemy,reverseHurt_enemy" />
+					</unitOrder>
+					
+					
+					<unitOrder id="enemy1">
+						<numberType>pro</numberType>
+						<unit cnName="肥胖僵尸" num="5" />
+						<unit cnName="鬼目游尸" num="5" />
+						<unit cnName="冥刃游尸" num="2" />
+						<unit cnName="鬼目射手" num="0.5" />
+						<unit cnName="僵尸突击兵" num="0.5" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>pro</numberType>
+						<unit cnName="肥胖僵尸" num="5" />
+						<unit cnName="鬼目游尸" num="5" />
+						<unit cnName="冥刃游尸" num="5" />
+						<unit cnName="鬼目射手" num="1.5" />
+						<unit cnName="僵尸突击兵" num="1.5" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<unit cnName="游尸王" unitType="boss" dpsMul="1.2" lifeMul="0.5" />
+					</unitOrder>
+				</unitG>
+				
+				
+				<rectG>
+					<rect id="r_birth">1292,1900,224,84</rect>
+					<rect id="r_over">2924,1576,92,184</rect>
+					<rect id="r1">50,1440,152,220</rect>
+					<rect id="r2">1012,484,96,128</rect>
+					<rect id="r3">2524,984,396,140</rect>
+					
+					<rect label="addCharger">536,1848,74,74</rect>
+					<rect label="addCharger">2752,1656,74,74</rect>
+					<rect label="addCharger">760,484,74,74</rect>
+					
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						
+						<event id="e1_1">
+							<condition />
+							<order>createUnit:we3; r_birth</order>
+							<order>heroEverParasitic:狂战尸</order>
+							<order>P2EverParasitic:无</order>
+						</event>
+						<event id="e1_1"><condition delay="1" /><order>say; startList:s1</order></event>
+						<event id="e2_0"><condition>say:listOver; s1</condition></event><event id="e2_1"><condition delay="1" /></event>
+						
+						<event id="e2_1">
+							<condition>enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+						</event>
+						<event id="e2_2">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r1</order>
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy3; r1</order>
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						
+						
+						<event id="e2_7">
+							<condition delay="1">enemyNumber:less_1</condition>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+					<group>
+						
+						<event id="e_fail">
+							<condition delay="1">bodyEvent:die; 狂战尸</condition>
+							<order>alert:yes; 任务失败！</order>
+						</event>
+						<event id="e_fail">
+							<condition delay="0.03" />
+							<order>level; fail</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		<gather name="绿森堡关卡">
+			<level name="LvSen_shooter">
+				
+				<info enemyLv="44" />
+				
+				<sceneLabel>LvSen</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					<drop coin="0.75" exp="0.75" arms="0.8" equip="0.8" skillStone="0.8" taxStamp="0.5" />
+					
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="毒蛛" num="10" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>number</numberType>
+						<unit cnName="毒蛛" num="15" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>number</numberType>
+						<unit cnName="毒蛛" num="20" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="狂战射手" num="1" dpsMul="1.6" lifeMul="1.2" unitType="boss" />
+					</unitOrder>
+				</unitG>
+				
+				
+				<rectG>
+					<rect id="r_birth">70,1192,244,96</rect>
+					<rect id="r_over">3250,1186,60,122</rect>
+					<rect id="r1">1633,721,118,100</rect>
+					<rect id="r2">1400,1146,143,100</rect>
+					<rect id="r3">1829,1142,143,98</rect>
+					
+					<rect label="addCharger">700,1100,54,42</rect>
+					<rect label="addCharger">2660,1100,54,42</rect>
+				</rectG>
+				
+				
+				<eventG>
+					
+					<group>
+						
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order> 
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition>
+							<order>createUnit:enemy2; r1</order> 
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="4" orderChooseType="randomOne">enemyNumber:less_5</condition>
+							<order>createUnit:enemy3; r1</order> 
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_4</condition>
+							<order>createUnit:enemy4; r1</order> 
+							<order>createUnit:enemy4; r2</order>
+							<order>createUnit:enemy4; r3</order>
+						</event>
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>task:LvSen_shooter; complete</order>
+							<order>worldMap:levelName; LvSen:LvSen_shooter</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			<level name="LvSen_again">
+				
+				<info enemyLv="50" />
+				
+				<sceneLabel>LvSen</sceneLabel>
+				<fixed target="LvSen_2" info="no" drop="all" unitG="all" rectG="all" eventG="no" />
+				
+				
+				<eventG>
+					<group>
+						
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order> 
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition>
+							<order>createUnit:enemy2; r1</order> 
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="4" orderChooseType="randomOne">enemyNumber:less_5</condition>
+							<order>createUnit:enemy3; r1</order> 
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_4</condition>
+							<order>createUnit:enemy4; r1</order> 
+							<order>createUnit:enemy4; r2</order>
+							<order>createUnit:enemy4; r3</order>
+						</event>
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>task:now; complete</order>
+							<order>worldMap:levelName; LvSen:LvSen_2</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			<level name="LvSen_2">
+				
+				<info enemyLv="53" />
+				
+				<sceneLabel>LvSen</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					<drop coin="0.75" exp="0.75" arms="0.8" equip="0.8" skillStone="0.8" taxStamp="0.5" />
+					
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="屠刀僵尸" num="3" />
+						<unit cnName="毒蛛" num="7" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>number</numberType>
+						<unit cnName="屠刀僵尸" num="3" />
+						<unit cnName="毒蛛" num="12" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>number</numberType>
+						<unit cnName="屠刀僵尸" num="5" />
+						<unit cnName="毒蛛" num="15" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="狂战射手" num="1" dpsMul="1.6" lifeMul="1.6" unitType="boss" skillArr="silence_enemy" />
+					</unitOrder>
+				</unitG>
+				
+				
+				<rectG>
+					<rect id="r_birth">70,1192,244,96</rect>
+					<rect id="r_over">3250,1186,60,122</rect>
+					<rect id="r1">1633,721,118,100</rect>
+					<rect id="r2">1400,1146,143,100</rect>
+					<rect id="r3">1829,1142,143,98</rect>
+					
+					<rect label="addCharger">700,1100,54,42</rect>
+					<rect label="addCharger">2660,1100,54,42</rect>
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						
+						<event id="e2_1">
+							<condition doNumber="3">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; rFlesh</order> 
+						</event>
+						<event id="e2_1">
+							<condition doNumber="3">enemyNumber:less_3</condition>
+							<order>createUnit:enemy1; rFlesh</order> 
+						</event>
+						<event id="e2_1">
+							<condition doNumber="4">enemyNumber:less_5</condition>
+							<order>createUnit:enemy1; rFlesh</order> 
+						</event>
+						<event id="e2_1">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_4</condition>
+							<order>createUnit:enemy4; r1</order> 
+							<order>createUnit:enemy4; r2</order>
+							<order>createUnit:enemy4; r3</order>
+						</event>
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="LvSen_re">
+				
+				<info enemyLv="16" diy="wotuBack" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" mustSingleB="1" />
+				<drop arms="0" equip="0" />
+				
+				<sceneLabel>LvSen</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					
+					<unitOrder id="we3" camp="we">
+						<unit cnName="狂战尸" lifeMul="10" dpsMul="1.5" skillArr="groupCrazy_enemy,FightKing_cloned,murderous_hero_6,strong_enemy,reverseHurt_enemy" />
+					</unitOrder>
+					
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="屠刀僵尸" num="3" />
+						<unit cnName="毒蛛" num="7" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>number</numberType>
+						<unit cnName="屠刀僵尸" num="3" />
+						<unit cnName="毒蛛" num="12" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>number</numberType>
+						<unit cnName="屠刀僵尸" num="3" />
+						<unit cnName="毒蛛" num="15" />
+						<unit cnName="天鹰特种兵" num="2" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="亚瑟" num="1" dpsMul="4.5" lifeMul="0.5" unitType="boss" dieGotoState="stru" />
+					</unitOrder>
+				</unitG>
+				
+				
+				<rectG>
+					<rect id="r_birth">70,1192,244,96</rect>
+					<rect id="r_over">3250,1186,60,122</rect>
+					<rect id="r1">1633,721,118,100</rect>
+					<rect id="r2">1400,1146,143,100</rect>
+					<rect id="r3">1829,1142,143,98</rect>
+					
+					<rect label="addCharger">700,1100,54,42</rect>
+					<rect label="addCharger">2660,1100,54,42</rect>
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						
+						<event id="e1_1">
+							<condition />
+							<order>createUnit:we3; r_birth</order>
+							<order>heroEverParasitic:狂战尸</order>
+							<order>P2EverParasitic:无</order>
+						</event>
+						
+						<event id="e2_1">
+							<condition doNumber="2" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order> 
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="2" orderChooseType="randomOne">enemyNumber:less_3</condition>
+							<order>createUnit:enemy2; r1</order> 
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="2" orderChooseType="randomOne">enemyNumber:less_5</condition>
+							<order>createUnit:enemy3; r1</order> 
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_4</condition>
+							<order>createUnit:enemy4; r1</order> 
+							<order>createUnit:enemy4; r2</order>
+							<order>createUnit:enemy4; r3</order>
+						</event>
+						
+						<event id="e2_7"><condition delay="1">bodyEvent:die; 亚瑟</condition><order>say; startList:s2</order></event>
+						<event id="e2_11"><condition>say:listOver; s2</condition><order>task:now; complete</order><order>level; showPointer:r_over</order></event>
+
+					</group>
+					<group>
+						
+						<event id="e_fail">
+							<condition delay="1">bodyEvent:die; 狂战尸</condition>
+							<order>alert:yes; 任务失败！</order>
+						</event>
+						<event id="e_fail">
+							<condition delay="0.03" />
+							<order>level; fail</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="毒窟关卡">
+			<level name="DuKu_poision">
+				
+				<info enemyLv="45" />
+				
+				<sceneLabel>DuKu</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="橄榄僵尸" num="2" />
+						<unit cnName="鬼目游尸" num="2" />
+						<unit cnName="冥刃游尸" num="2" />
+						<unit cnName="鬼目射手" num="1" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>number</numberType>
+						<unit cnName="橄榄僵尸" num="3" />
+						<unit cnName="鬼目游尸" num="3" />
+						<unit cnName="冥刃游尸" num="3" />
+						<unit cnName="鬼目射手" num="1.5" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>number</numberType>
+						<unit cnName="橄榄僵尸" num="3" />
+						<unit cnName="鬼目游尸" num="3" />
+						<unit cnName="冥刃游尸" num="3" />
+						<unit cnName="鬼目射手" num="2" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="巨毒尸" unitType="boss" lifeMul="1" dpsMul="1" num="1" imgType="normal" />
+					</unitOrder>
+				</unitG>
+				
+				
+				<rectG>
+					<rect id="r_birth">1351,927,300,110</rect>
+					<rect id="r_over">2900,683,70,110</rect>
+					<rect id="r1">22,435,228,110</rect>
+					<rect id="r2">1500,70,370,110</rect>
+					<rect id="r3">2380,270,300,122</rect>
+					
+					<rect label="addCharger">266,750,78,52</rect>
+					<rect label="addCharger">2668,822,78,52</rect>
+				</rectG>
+				
+				
+				<eventG>
+					
+					<group>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order> 
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r1</order> 
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="2" orderChooseType="randomOne">enemyNumber:less_2</condition>
+							<order>createUnit:enemy3; r1</order> 
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_2</condition>
+							<order>createUnit:enemy4; r1</order> 
+							<order>createUnit:enemy4; r2</order>
+							<order>createUnit:enemy4; r3</order>
+						</event>
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>task:DuKu_poision; complete</order>
+							<order>worldMap:levelName; DuKu:DuKu_poision</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		
+		<gather name="宝伦镇关卡">
+			<level name="BaoLun_back">
+				
+				<info enemyLv="46" />
+				
+				<sceneLabel>BaoLun</sceneLabel>
+				<fixed target="BaoLun_1" info="no" drop="all" unitG="all" rectG="all" eventG="no" />
+				
+				<eventG>
+					<group>
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order> 
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r1</order> 
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy3; r1</order> 
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_1"><condition doNumber="5">enemyNumber:less_1</condition>
+							<order>createUnit:enemy4; r1</order> 
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy5; r3</order>
+						</event>
+						<event id="e2_1"><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_4</condition>
+							<order>createUnit:enemy6; r1</order> 
+							<order>createUnit:enemy6; r2</order>
+							<order>createUnit:enemy6; r3</order>
+						</event>
+						<event id="e2_show">
+							<condition>enemyNumber:less_1</condition>
+							<order>createUnit:we2; r_over</order> 
+							<order>level; rebirthAllMore</order>
+						</event>
+						<event id="e2_8">
+							<condition delay="0.1">bodyGap:less_350; p1:制毒师</condition>
+							<order>say; startList:s1</order>
+						</event>
+						<event id="e2_9">
+							<condition delay="0.5">say:listOver; s1</condition>
+							<order>body:制毒师; rangeLimit:close</order>
+							<order>body:制毒师; followPoint:r_back</order>
+							<order>task:now; complete</order>
+							<order>worldMap:levelName; BaoLun:BaoLun_1</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			<level name="BaoLun_1">
+				
+				<info enemyLv="46" />
+				
+				<sceneLabel>BaoLun</sceneLabel>
+				
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="we2" camp="we">
+						<unit cnName="制毒师" num="1" lifeMul="2" aiOrder="followBodyAttack:p1" dieGotoState="stru" />
+					</unitOrder>
+					
+					<unitOrder id="enemy1">
+						<numberType>pro</numberType>
+						<unit cnName="僵尸突击兵" num="3" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>pro</numberType>
+						<unit cnName="屠刀僵尸" num="7" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>pro</numberType>
+						<unit cnName="僵尸炮兵总管" num="3" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>pro</numberType>
+						<unit cnName="僵尸炮兵总管" num="2" />
+					</unitOrder>
+					<unitOrder id="enemy5">
+						<numberType>pro</numberType>
+						<unit cnName="僵尸突击兵" num="2" />
+					</unitOrder>
+					<unitOrder id="enemy6">
+						<numberType>number</numberType>
+						<unit cnName="屠刀僵尸" unitType="boss" lifeMul="1.4" dpsMul="1.3" />
+					</unitOrder>
+				</unitG>
+				
+				<rectG>
+					<rect id="r_birth">1429,571,188,62</rect>
+					<rect id="r_over">2955,548,57,121</rect>
+					<rect id="r_back">-300,548,57,121</rect>
+					<rect id="r1">28,64,394,108</rect>
+					<rect id="r2">2578,64,394,108</rect>
+					<rect id="r3">1230,-40,394,108</rect>
+					
+					<rect label="addCharger">2161,203,84,84</rect>
+					<rect label="addCharger">931,203,84,84</rect>
+				</rectG>
+				
+				<eventG>
+					<group>
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order> 
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r1</order> 
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy3; r1</order> 
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_1"><condition doNumber="5">enemyNumber:less_1</condition>
+							<order>createUnit:enemy4; r1</order> 
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy5; r3</order>
+						</event>
+						<event id="e2_1"><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_6</condition>
+							<order>createUnit:enemy6; r1</order> 
+							<order>createUnit:enemy6; r2</order>
+							<order>createUnit:enemy6; r3</order>
+						</event>
+						<event id="e2_show">
+							<condition>enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="BaoLun_cyclopia">
+				<info enemyLv="71" />
+				
+				<sceneLabel>BaoLun</sceneLabel>
+				<fixed target="BaoLun_2" info="no" drop="all" unitG="all" rectG="all" eventG="no" />
+				
+				<eventG>
+					<group>
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order> 
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r1</order> 
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy3; r1</order> 
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_1"><condition doNumber="5">enemyNumber:less_1</condition>
+							<order>createUnit:enemy4; r1</order> 
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy5; r3</order>
+						</event>
+						<event id="e2_1"><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_6</condition>
+							<order>createUnit:enemy6; r1</order> 
+							<order>createUnit:enemy6; r2</order>
+							<order>createUnit:enemy6; r3</order>
+						</event>
+						<event id="e2_11">
+							<condition delay="1">enemyNumber:less_1</condition>
+							<order>level; rebirthAllMore</order>
+						</event>	
+						<event id="e2_11">
+							<condition delay="1" />
+							<order>say; startList:s1</order>
+						</event>	
+						<event id="e2_11">
+							<condition delay="0.5">say:listOver; s1</condition>
+							<order>task:now; complete</order>
+							<order>worldMap:levelName; BaoLun:BaoLun_2</order>
+							<order>level; showPointer:r_over</order>
+						</event>	
+					</group>
+				</eventG>
+			</level>
+			<level name="BaoLun_2">
+				
+				<info enemyLv="71" />
+				
+				<sceneLabel>BaoLun</sceneLabel>
+				
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					
+					<unitOrder id="enemy1">
+						<numberType>pro</numberType>
+						<unit cnName="僵尸突击兵" num="3" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>pro</numberType>
+						<unit cnName="屠刀僵尸" num="7" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>pro</numberType>
+						<unit cnName="僵尸炮兵总管" num="3" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>pro</numberType>
+						<unit cnName="僵尸炮兵总管" num="2" />
+					</unitOrder>
+					<unitOrder id="enemy5">
+						<numberType>pro</numberType>
+						<unit cnName="僵尸突击兵" num="2" />
+					</unitOrder>
+					<unitOrder id="enemy6">
+						<numberType>number</numberType>
+						<unit cnName="独眼僵尸" unitType="boss" lifeMul="1.4" dpsMul="4" />
+					</unitOrder>
+				</unitG>
+				
+				<rectG>
+					<rect id="r_birth">1429,571,188,62</rect>
+					<rect id="r_over">2955,548,57,121</rect>
+					<rect id="r_back">-300,548,57,121</rect>
+					<rect id="r1">28,64,394,108</rect>
+					<rect id="r2">2578,64,394,108</rect>
+					<rect id="r3">1230,-40,394,108</rect>
+					
+					<rect label="addCharger">2161,203,84,84</rect>
+					<rect label="addCharger">931,203,84,84</rect>
+				</rectG>
+				
+				<eventG>
+					<group>
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order> 
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r1</order> 
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy3; r1</order> 
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_1"><condition doNumber="5">enemyNumber:less_1</condition>
+							<order>createUnit:enemy4; r1</order> 
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy5; r3</order>
+						</event>
+						<event id="e2_1"><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_6</condition>
+							<order>createUnit:enemy6; r1</order> 
+							<order>createUnit:enemy6; r2</order>
+							<order>createUnit:enemy6; r3</order>
+						</event>
+						<event id="e2_show">
+							<condition>enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="炉屿关卡">
+			<level name="LuYu_enemies">
+				
+				<info enemyLv="47" />
+				
+				<sceneLabel>LuYu</sceneLabel>
+				<fixed target="LuYu_1" info="no" drop="all" unitG="no" rectG="all" eventG="no" />
+			
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					
+					<unitOrder id="enemy1">
+						<numberType>pro</numberType>
+						<unit cnName="战斗僵尸" num="6" />
+						<unit cnName="僵尸暴枪兵" num="1.5" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>pro</numberType>
+						<unit cnName="肥胖僵尸" num="6" />
+						<unit cnName="僵尸突击兵" num="1.5" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>pro</numberType>
+						<unit cnName="肥胖僵尸" num="5" />
+						<unit cnName="僵尸突击兵" num="1" />
+						<unit cnName="肥胖僵尸" num="5" />
+						<unit cnName="僵尸突击兵" num="1" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="“制毒师”" unitType="boss" lifeMul="1.4" dpsMul="1.3" dieGotoState="stru" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<order>say; startList:s1</order>
+						</event>
+						<event id="e2_1">
+							<condition delay="1.5">say:listOver; s1</condition>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order> 
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r1</order> 
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_2</condition>
+							<order>createUnit:enemy3; r1</order> 
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_6</condition>
+							<order>createUnit:enemy4; r1</order> 
+							<order>createUnit:enemy4; r2</order>
+							<order>createUnit:enemy4; r3</order>
+						</event>
+						<event id="e_win">
+							<condition delay="0.5">bodyEvent:die; “制毒师”</condition>
+							<order>level; rebirthAllMore</order>
+							<order>say; startList:s2</order>
+						</event>
+						<event id="e2_11">
+							<condition delay="0.5">say:listOver; s2</condition>
+							<order>body:“制毒师”; rebirth</order>
+							<order>body:“制毒师”; toDie:die</order>
+							<order>say; startList:s3</order>
+						</event>	
+						<event id="e2_9">
+							<condition delay="0.5">say:listOver; s3</condition>
+							<order>task:now; complete</order>
+							<order>worldMap:levelName; LuYu:LuYu_1</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			<level name="LuYu_1">
+				
+				<info enemyLv="47" />
+				
+				<sceneLabel>LuYu</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					
+					<unitOrder id="enemy1">
+						<numberType>pro</numberType>
+						<unit cnName="战斗僵尸" num="6" />
+						<unit cnName="僵尸暴枪兵" num="1.5" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>pro</numberType>
+						<unit cnName="肥胖僵尸" num="6" />
+						<unit cnName="僵尸突击兵" num="1.5" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>pro</numberType>
+						<unit cnName="肥胖僵尸" num="5" />
+						<unit cnName="僵尸突击兵" num="1" />
+						<unit cnName="肥胖僵尸" num="5" />
+						<unit cnName="僵尸突击兵" num="1" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="“制毒师”" unitType="boss" lifeMul="1" dpsMul="1" />
+					</unitOrder>
+				</unitG>
+				
+				<rectG>
+					<rect id="r_birth">1575,1230,278,101</rect>
+					<rect id="r_over">2940,1222,62,125</rect>
+					<rect id="r1">1386,422,94,112 </rect>
+					<rect id="r2">2391,580,278,104</rect>
+					<rect id="r3">20,700,278,104</rect>
+					
+					<rect label="addCharger">2230,864,84,84</rect>
+					<rect label="addCharger">916,842,84,84</rect>
+				</rectG>
+				
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order> 
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r1</order> 
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_2</condition>
+							<order>createUnit:enemy3; r1</order> 
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_6</condition>
+							<order>createUnit:enemy4; r1</order> 
+							<order>createUnit:enemy4; r2</order>
+							<order>createUnit:enemy4; r3</order>
+						</event>
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="霸王坡关卡">
+			<level name="BaWang_king">
+				
+				<info enemyLv="48" />
+				
+				<sceneLabel>BaWang</sceneLabel>
+				<fixed target="BaWang_1" info="no" drop="all" unitG="all" rectG="all" eventG="no" />
+				
+				<eventG>
+					
+					<group>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="2" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r1</order> 
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="2" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy3; r1</order> 
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition>
+							<order>createUnit:enemy4; r1</order> 
+							<order>createUnit:enemy4; r2</order>
+							<order>createUnit:enemy4; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_5</condition>
+							<order>createUnit:enemy5; r1</order> 
+							<order>createUnit:enemy5; r2</order>
+							<order>createUnit:enemy5; r3</order>
+						</event>
+						<event id="e2_11">
+							<condition delay="1">enemyNumber:less_1</condition>
+							<order>level; rebirthAllMore</order>
+							<order>say; startList:s1</order>
+						</event>	
+						<event id="e2_11">
+							<condition delay="0.5">say:listOver; s1</condition>
+							<order>task:now; complete</order>
+							<order>worldMap:levelName; BaWang:BaWang_1</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			<level name="BaWang_1">
+				
+				<info enemyLv="48" />
+				
+				<sceneLabel>BaWang</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="毒蛛" num="8" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>number</numberType>
+						<unit cnName="携弹僵尸" num="6" />
+						<unit cnName="僵尸空降兵" num="1.5" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>number</numberType>
+						<unit cnName="战斗僵尸" num="6" />
+						<unit cnName="僵尸空军总管" num="1" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="战斗僵尸" num="3" />
+						<unit cnName="携弹僵尸" num="3" />
+						<unit cnName="僵尸空降兵" num="1" />
+						<unit cnName="僵尸空军总管" num="0.2" />
+					</unitOrder>
+					<unitOrder id="enemy5">
+						<numberType>number</numberType>
+						<unit cnName="霸王毒蛛" unitType="boss" lifeMul="1" />
+					</unitOrder>
+				</unitG>
+				
+				
+				<rectG>
+					<rect id="r_birth">1578,962,226,82</rect>
+					<rect id="r_over">2928,1200,84,157</rect>
+					<rect id="r1">16,616,254,112</rect>
+					<rect id="r2">2726,694,254,112</rect>
+					<rect id="r3">1548,418,254,112</rect>
+					
+					<rect label="addCharger">2540,731,84,84</rect>
+					<rect label="addCharger">690,723,84,84</rect>
+				</rectG>
+				
+				
+				<eventG>
+					
+					<group>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="2" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r1</order> 
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="2" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy3; r1</order> 
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition>
+							<order>createUnit:enemy4; r1</order> 
+							<order>createUnit:enemy4; r2</order>
+							<order>createUnit:enemy4; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_5</condition>
+							<order>createUnit:enemy5; r1</order> 
+							<order>createUnit:enemy5; r2</order>
+							<order>createUnit:enemy5; r3</order>
+						</event>
+						<event id="e2_11">
+							<condition delay="0.5">enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>	
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		<gather name="平川关卡">
+			<level name="PingChuan_true">
+				
+				<info enemyLv="49" />
+				
+				<sceneLabel>PingChuan</sceneLabel>
+				<fixed target="PingChuan_1" info="no" drop="all" unitG="all" rectG="all" eventG="no" />
+				
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition>enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+						</event>
+						<event id="e2_2">
+							<condition doNumber="4" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="4" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r1</order>
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_5</condition>
+							<order>createUnit:enemy3; r1</order>
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_11">
+							<condition delay="1">enemyNumber:less_1</condition>
+							<order>level; rebirthAllMore</order>
+							<order>say; startList:s1</order>
+						</event>	
+						<event id="e2_11">
+							<condition delay="0.5">say:listOver; s1</condition>
+							<order>task:now; complete</order>
+							<order>worldMap:levelName; PingChuan:PingChuan_1</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			<level name="PingChuan_1">
+				
+				<info enemyLv="49" />
+				
+				<sceneLabel>PingChuan</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					
+					<unitOrder id="enemy1">
+						<numberType>pro</numberType>
+						<unit cnName="肥胖僵尸" num="3" />
+						<unit cnName="毒蛛" num="3" />
+						<unit cnName="无头自爆僵尸" num="1" />
+						<unit cnName="鬼目射手" num="0.5" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>pro</numberType>
+						<unit cnName="肥胖僵尸" num="3" />
+						<unit cnName="毒蛛" num="3" />
+						<unit cnName="无头自爆僵尸" num="4" />
+						<unit cnName="僵尸狙击兵" num="0.5" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<unit cnName="战斗僵尸" num="1" unitType="super" dropLabel="no" lifeMul="3" />
+						<unit cnName="僵尸狙击兵" num="1" unitType="super" dropLabel="no" lifeMul="3" />
+						<unit cnName="鬼目游尸" num="1" unitType="boss" lifeMul="1.6" dpsMul="2" />
+					</unitOrder>
+				</unitG>
+				
+				
+				<rectG>
+					<rect id="r_birth">888,832,172,76</rect>
+					<rect id="r_over">2916,700,88,152</rect>
+					<rect id="r1">16,304,280,120</rect>
+					<rect id="r2">2670,653,280,120</rect>
+					<rect id="r3">1642,650,280,120</rect>
+					
+					<rect label="addCharger">406,664,118,64</rect>
+					<rect label="addCharger">2638,864,118,64</rect>
+					
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition>enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+						</event>
+						<event id="e2_2">
+							<condition doNumber="4" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="4" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r1</order>
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_5</condition>
+							<order>createUnit:enemy3; r1</order>
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_11">
+							<condition delay="0.5">enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>	
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="白沙村关卡">
+			<level name="BaiSha_skeleton">
+				
+				<info enemyLv="50" />
+				
+				<sceneLabel>BaiSha</sceneLabel>
+				<fixed target="BaiSha_1" info="no" drop="all" unitG="all" rectG="all" eventG="no" />
+				
+				<eventG>
+					<group>
+						<event id="e2_2">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_2</condition>
+							<order>createUnit:enemy2; r1</order>
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition>
+							<order>createUnit:enemy3; r1</order>
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_2</condition>
+							<order>createUnit:enemy4; r1</order>
+							<order>createUnit:enemy4; r2</order>
+							<order>createUnit:enemy4; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="1">enemyNumber:less_4</condition>
+							<order>createUnit:enemy5; r2</order>
+							<order>createUnit:we2; r2</order>
+						</event>
+						<event id="e2_11">
+							<condition delay="1">enemyNumber:less_1</condition>
+							<order>level; rebirthAllMore</order>
+							<order>say; startList:s1</order>
+						</event>	
+						<event id="e2_11">
+							<condition delay="0.5">say:listOver; s1</condition>
+							<order>task:now; complete</order>
+							<order>worldMap:levelName; BaiSha:BaiSha_1</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="BaiSha_1">
+				
+				<info enemyLv="50" />
+				
+				<sceneLabel>BaiSha</sceneLabel>
+				
+				<unitG>
+					<unitOrder id="we2" camp="we">
+						<unit cnName="亚瑟" lifeMul="0.3" dieGotoState="stru" />
+					</unitOrder>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					
+					
+					<unitOrder id="enemy1">
+						<unit cnName="鬼目游尸" num="5" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<unit cnName="冥刃游尸" num="5" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<unit cnName="鬼目射手" num="6" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<unit cnName="鬼目游尸" num="4" />
+						<unit cnName="冥刃游尸" num="4" />
+						<unit cnName="鬼目射手" num="2" />
+					</unitOrder>
+					<unitOrder id="enemy5">
+						<unit cnName="暴君" unitType="boss" lifeMul="1.6" imgType="normal" />
+					</unitOrder>
+					
+				</unitG>
+				
+				<rectG>
+					<rect id="r_birth">1494,886,212,92 </rect>
+					<rect id="r_over">3386,1084,48,100</rect>
+					<rect id="r1">30,754,280,120</rect>
+					<rect id="r2">1327,318,280,120</rect>
+					<rect id="r3">3060,713,280,120</rect>
+					
+					<rect label="addCharger">2156,638  ,118,64</rect>
+					<rect label="addCharger">813,820,118,64</rect>
+					
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						<event id="e2_2">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_2</condition>
+							<order>createUnit:enemy2; r1</order>
+							<order>createUnit:enemy2; r2</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition>
+							<order>createUnit:enemy3; r1</order>
+							<order>createUnit:enemy3; r2</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="2" orderChooseType="randomOne">enemyNumber:less_2</condition>
+							<order>createUnit:enemy4; r1</order>
+							<order>createUnit:enemy4; r2</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_4</condition>
+							<order>createUnit:enemy5; r1</order>
+							<order>createUnit:enemy5; r2</order>
+						</event>
+						<event id="e2_11">
+							<condition delay="0.5">enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>	
+					</group>
+				</eventG>
+			</level>
+			<level name="BaiSha_gather">
+				
+				<info enemyLv="66" />
+				
+				<sceneLabel>BaiSha</sceneLabel>
+				<fixed target="BaiSha_1" info="no" drop="all" unitG="all" rectG="all" eventG="no" />
+				
+				<eventG>
+					<group>
+						<event id="e2_2">
+							<condition delay="1">enemyNumber:less_1</condition>
+							<order>say; startList:s1</order>
+						</event>
+						<event id="e2_2">
+							<condition>say:listOver; s1</condition>
+						</event>
+						<event id="e2_2">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_2</condition>
+							<order>createUnit:enemy2; r1</order>
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition>
+							<order>createUnit:enemy3; r1</order>
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_2</condition>
+							<order>createUnit:enemy4; r1</order>
+							<order>createUnit:enemy4; r2</order>
+							<order>createUnit:enemy4; r3</order>
+						</event>
+						<event id="e2_3">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_4</condition>
+							<order>createUnit:enemy5; r1</order>
+							<order>createUnit:enemy5; r2</order>
+							<order>createUnit:enemy5; r3</order>
+						</event>
+						<event id="e2_11">
+							<condition delay="0.5">enemyNumber:less_1</condition>
+							<order>task:now; complete</order>
+							<order>worldMap:levelName; BaiSha:BaiSha_2</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			<level name="BaiSha_2">
+				
+				<info enemyLv="66" />
+				
+				<sceneLabel>BaiSha</sceneLabel>
+				<fixed target="BaiSha_1" info="no" drop="all" unitG="all" rectG="all" eventG="all" />
+			</level>
+			
+		</gather>
+		
+		<gather name="上沙关卡">
+			<level name="ShangSha_super">
+				
+				<info enemyLv="54" />
+				
+				<sceneLabel>ShangSha</sceneLabel>
+				<fixed target="ShangSha_1" info="no" drop="all" unitG="all" rectG="all" eventG="no" />
+				<eventG>
+					<group>
+						<event id="e2_11">
+							<condition delay="1">enemyNumber:less_1</condition>
+							<order>say; startList:s1</order>
+						</event>	
+						<event id="e2_11">
+							<condition delay="0.5">say:listOver; s1</condition>
+						</event>		
+						
+						<event id="e2_1">
+							<condition doNumber="2" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="2" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r1</order>
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="2" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy3; r1</order>
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy4; r1</order>
+							<order>createUnit:enemy4; r2</order>
+							<order>createUnit:enemy4; r3</order>
+						</event>
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>task:now; complete</order>
+							<order>worldMap:levelName; ShangSha:ShangSha_1</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>	
+			<level name="ShangSha_1">
+				
+				<info enemyLv="54" />
+				<drop arms="0.3" equip="0.3" skillStone="0.3" taxStamp="0.3" />
+				
+				<sceneLabel>ShangSha</sceneLabel>
+				
+				<unitG>
+					
+					
+					<allDefault aiOrder="patrolGlobal" />
+					
+					
+					<unitOrder id="enemy1">
+						<numberType>pro</numberType>
+						<unit cnName="肥胖僵尸" num="1" unitType="super" />
+						<unit cnName="鬼目射手" num="1" unitType="super" />
+						<unit cnName="僵尸突击兵" num="1" unitType="super" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>pro</numberType>
+						<unit cnName="肥胖僵尸" num="1" unitType="super" />
+						<unit cnName="冥刃游尸" num="1" unitType="super" />
+						<unit cnName="鬼目射手" num="1" unitType="super" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>pro</numberType>
+						<unit cnName="肥胖僵尸" num="1" unitType="super" />
+						<unit cnName="冥刃游尸" num="1" unitType="super" />
+						<unit cnName="僵尸突击兵" num="1" unitType="super" />  
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>pro</numberType>
+						<unit cnName="肥胖僵尸" dpsMul="2" lifeMul="2" num="1" skillArr="groupLight_enemy" unitType="super" />
+						<unit cnName="冥刃游尸" dpsMul="2" lifeMul="2" num="1" skillArr="recoveryHalo_enemy" unitType="super" />
+						<unit cnName="鬼目射手" dpsMul="2" lifeMul="2" num="1" skillArr="trueshot_enemy" unitType="super" />
+						<unit cnName="僵尸突击兵" dpsMul="2" lifeMul="2" num="1" skillArr="groupSpeedUp_enemy" unitType="super" />
+					</unitOrder>
+				</unitG>
+				
+				
+				<rectG>
+					<rect id="r_birth">308,852,167,104</rect>
+					<rect id="r_over">3204,1120,108,175</rect>
+					<rect id="r1">1380,1152,156,132</rect>
+					<rect id="r2">3080,816,188,92</rect>
+					<rect id="r3">1656,-356,492,140</rect>
+					
+					<rect label="addCharger">83,972,112,104</rect>
+					<rect label="addCharger">2280,1024,112,104</rect>
+					
+				</rectG>
+				
+				<eventG>
+					
+					<group>
+						
+						<event id="e2_1">
+							<condition doNumber="2" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="2" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r1</order>
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="2" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy3; r1</order>
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy4; r1</order>
+							<order>createUnit:enemy4; r2</order>
+							<order>createUnit:enemy4; r3</order>
+						</event>
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="ShangSha_re">
+				
+				<info enemyLv="13" diy="wotuBack" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" />
+				<drop arms="0" equip="0" />
+				
+				<sceneLabel>ShangSha</sceneLabel>
+				
+				<unitG>
+					
+					
+					<unitOrder id="enemy1">
+						<unit cnName="亚瑟" lifeMul="9999999" dpsMul="1.3" skillArr="teleport_enemy15,crazy_hero_9,feedback_hero_5,hiding_hero_8,rolling_hero_10,gliding_hero_8" noSuperB="1" />
+						<unit cnName="天鹰特种兵" dpsMul="1.3" lifeMul="1.9" num="3" aiOrder="followBodyAttack:亚瑟" noSuperB="1" />
+					</unitOrder>
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					
+					<unitOrder id="we1" camp="we">
+						<numberType>num</numberType>
+						<unit cnName="橄榄僵尸" num="3" skillArr="State_AddMove" lifeMul="0.2" dpsMul="0.1" aiOrder="followBodyAttack:战斗僵尸" noSuperB="1" />
+						<unit cnName="肥胖僵尸" num="5" skillArr="State_AddMove" lifeMul="0.2" dpsMul="0.1" aiOrder="followBodyAttack:战斗僵尸" noSuperB="1" />
+						<unit cnName="冥刃游尸" num="3" skillArr="State_AddMove" lifeMul="0.2" dpsMul="0.1" aiOrder="followBodyAttack:战斗僵尸" noSuperB="1" />
+						<unit cnName="鬼目游尸" num="3" skillArr="State_AddMove" lifeMul="0.2" dpsMul="0.1" aiOrder="followBodyAttack:战斗僵尸" noSuperB="1" />
+					</unitOrder>
+					<unitOrder id="we2" camp="we">
+						<numberType>num</numberType>
+						<unit cnName="战斗僵尸" num="1" lifeMul="3" dpsMul="2" skillCloseB="1" skillArr="State_AddMove,paralysis_enemy,groupReverseHurt_hero_3,groupLight_hero_4" noSuperB="1" />
+					</unitOrder>
+				</unitG>
+				<rectG>
+					<rect id="r_birth">308,852,167,104</rect>
+					<rect id="r_over">3204,1120,108,175</rect>
+					<rect id="r1">1380,1152,156,132</rect>
+					<rect id="r2">3080,816,188,92</rect>
+					<rect id="r3">1656,-356,492,140</rect>
+					
+					<rect label="addCharger">83,972,112,104</rect>
+					<rect label="addCharger">2280,1024,112,104</rect>
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						
+						<event id="e1_1">
+							<condition />
+							<order>createUnit:we2; r1</order>
+							<order>createUnit:we1; r1</order>
+							<order>heroEverParasitic:战斗僵尸</order>
+							<order>P2EverParasitic:肥胖僵尸</order>
+							<order>level;taskTimingB:false</order>
+						</event>
+						<event id="e1_1"><condition delay="0.5" /><order>say; startList:s1</order></event>
+						<event id="e2_0"><condition>say:listOver; s1</condition></event>
+						
+						<event id="e2_1"><condition delay="0.1" /></event>
+						<event id="e2_1">
+							<condition />
+							<order>createUnit:enemy1; r3</order>
+							<order>level;taskTimingB:true</order>
+						</event>
+					</group>
+					<group>
+						<event id="e1_1">
+							<condition delay="0.01">task:state; ShangSha_re:complete</condition>
+							<order>body:战斗僵尸; noUnderHurt:true</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+					<group>
+						
+						<event id="e_fail">
+							<condition delay="1">bodyEvent:die; 战斗僵尸</condition>
+							<order>alert:yes; 任务失败！</order>
+						</event>
+						<event id="e_fail">
+							<condition delay="0.03" />
+							<order>level; fail</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+		</gather>
+		
+		<gather name="东峰研究所关卡">
+			<level name="DongFeng_lab">
+			
+				<info enemyLv="55" />
+				
+				<sceneLabel>DongFeng</sceneLabel>
+				<fixed target="DongFeng_1" info="no" drop="all" unitG="no" rectG="all" eventG="no" />
+				<unitG>
+					
+					<unitOrder id="we2" camp="we">
+						<unit cnName="制毒师" num="1" lifeMul="999999" noUnderHurtB="1" aiOrder="followBodyAttack:p1" />
+					</unitOrder>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="战斗僵尸" num="6" />
+						<unit cnName="防暴僵尸" num="2" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>pro</numberType>
+						<unit cnName="屠刀僵尸" num="6" />
+						<unit cnName="携弹僵尸" num="3" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>number</numberType>
+						<unit cnName="战斗僵尸" num="4" />
+						<unit cnName="屠刀僵尸" num="4" />
+						<unit cnName="携弹僵尸" num="3" />
+						<unit cnName="防暴僵尸" num="1.5" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="天鹰小美" unitType="boss" lifeMul="1.6" dpsMul="1.3" dieGotoState="stru" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition>
+							<order>createUnit:enemy1; r1</order> 
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition>
+							<order>createUnit:enemy2; r1</order> 
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition>
+							<order>createUnit:enemy3; r1</order> 
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_6</condition>
+							<order>createUnit:enemy4; r1</order> 
+							<order>createUnit:enemy4; r2</order>
+							<order>createUnit:enemy4; r3</order>
+						</event>
+						<event id="e2_11">
+							<condition delay="1">bodyEvent:die; 天鹰小美</condition>
+							<order>createUnit:we2; r_over</order> 
+							<order>level; rebirthAllMore</order>
+							<order>say; startList:s1</order>
+						</event>	
+						<event id="e2_11">
+							<condition delay="0.5">say:listOver; s1</condition>
+							<order>task:now; complete</order>
+							<order>worldMap:levelName; DongFeng:DongFeng_1</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			<level name="DongFeng_1">
+			
+				<info enemyLv="55" />
+				
+				<sceneLabel>DongFeng</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" />
+					
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="战斗僵尸" num="6" />
+						<unit cnName="防暴僵尸" num="2" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>pro</numberType>
+						<unit cnName="屠刀僵尸" num="6" />
+						<unit cnName="携弹僵尸" num="3" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>number</numberType>
+						<unit cnName="战斗僵尸" num="4" />
+						<unit cnName="屠刀僵尸" num="4" />
+						<unit cnName="携弹僵尸" num="3" />
+						<unit cnName="防暴僵尸" num="1.5" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="天鹰小美" unitType="boss" lifeMul="1.6" dpsMul="1.3" />
+					</unitOrder>
+				</unitG>
+				
+				<rectG>
+					<rect id="r_birth">30,467,210,110</rect>
+					<rect id="r_over">3218,875,84,160</rect>
+					<rect id="r1">1530,516,178,146</rect>
+					<rect id="r2">3141,449,164,146</rect>
+					<rect id="r3">3135,1090,164,146</rect>
+					
+					<rect label="addCharger">3116,945,90,70</rect>
+					<rect label="addCharger">46,943,90,70</rect>
+					
+				</rectG>
+				
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition>
+							<order>createUnit:enemy1; r1</order> 
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition>
+							<order>createUnit:enemy2; r1</order> 
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition>
+							<order>createUnit:enemy3; r1</order> 
+							<order>createUnit:enemy3; r2</order>
+							<order>createUnit:enemy3; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_6</condition>
+							<order>createUnit:enemy4; r1</order> 
+							<order>createUnit:enemy4; r2</order>
+							<order>createUnit:enemy4; r3</order>
+						</event>
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>	
+		
+	</father>
+</data>

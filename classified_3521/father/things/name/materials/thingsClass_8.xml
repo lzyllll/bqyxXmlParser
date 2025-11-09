@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="materials" cnName="载具碎片" smeltType="vehicle">
+		<things cnName="沙漠进袭者碎片">
+			<name>DesertTankCash</name>
+			<cnName>沙漠进袭者碎片</cnName>
+			<iconUrl>ThingsIcon/DesertTankCash</iconUrl>
+			<description>
+				用于合成和进化载具“沙漠进袭者”。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店购买。
+				[n]副本任务“狂刃之尸”奖励和掉落。
+			</description>
+			<loveD num="20" />
+			<smeltD grade="0" addType="" price="2" />
+		</things>
+		
+		<things cnName="破晓碎片">
+			<name>DaybreakCash</name>
+			<cnName>破晓碎片</cnName>
+			<iconUrl>ThingsIcon/DaybreakCash</iconUrl>
+			<description>
+				用于合成和进化载具“破晓”。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店购买。
+				[n]副本任务“幽灵毒气弹”奖励和掉落。
+			</description>
+			<loveD num="20" />
+			<smeltD grade="0" addType="" price="2" />
+		</things>
+		<things cnName="收割者碎片">
+			<name>RedReaperCash</name>
+			<cnName>收割者碎片</cnName>
+			<iconUrl>ThingsIcon/RedReaperCash</iconUrl>
+			<description>
+				用于合成和进化载具“收割者”。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店购买。
+				[n]副本任务“酸雨城”奖励和掉落。
+			</description>
+			<loveD num="20" />
+			<smeltD grade="0" addType="" price="2" />
+		</things>
+		<things cnName="潜行者碎片">
+			<name>SeaSharkCash</name>
+			<cnName>潜行者碎片</cnName>
+			<iconUrl>ThingsIcon/SeaSharkCash</iconUrl>
+			<description>
+				用于合成和进化载具“潜行者”。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店购买。
+				[n]副本任务“眩晕之锤”奖励和掉落。
+			</description>
+			<loveD num="20" />
+			<smeltD grade="0" addType="" price="2" />
+		</things>
+		<things cnName="巨鲸碎片">
+			<name>BlueWhaleCash</name>
+			<cnName>巨鲸碎片</cnName>
+			<iconUrl>ThingsIcon/BlueWhaleCash</iconUrl>
+			<description>
+				用于合成和进化载具“巨鲸”。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店购买。
+				[n]副本任务“克隆之魂”奖励和掉落。
+			</description>
+			<loveD num="20" />
+			<smeltD grade="0" addType="" price="2" />
+		</things>
+		
+		
+		<things cnName="先知碎片">
+			<name>ProphetCash</name>
+			<cnName>先知碎片</cnName>
+			<iconUrl>ThingsIcon/ProphetCash</iconUrl>
+			<description>
+				进化载具“先知”所需的物品。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店购买。
+				[n]副本任务“钢铁之躯”奖励和掉落。
+			</description>
+			<loveD num="20" />
+			<smeltD grade="2" addType="" price="3" />
+		</things>
+		<things cnName="制裁者碎片">
+			<name>PunisherCash</name>
+			<cnName>制裁者碎片</cnName>
+			<iconUrl>ThingsIcon/PunisherCash</iconUrl>
+			<description>
+				进化载具“制裁者”所需的物品。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店购买。
+				[n]副本任务“飓风力量”奖励和掉落。
+			</description>
+			<loveD num="20" />
+			<smeltD grade="2" addType="" price="3" />
+		</things>
+		<things cnName="挖掘者碎片">
+			<name>DiggersCash</name><addDropDefineB>1</addDropDefineB>
+			<cnName>挖掘者碎片</cnName>
+			<iconUrl>ThingsIcon/DiggersCash</iconUrl>
+			<description>
+				进化载具“挖掘者”所需的物品。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店购买。
+				[n]副本任务“鬼爵降临”奖励和掉落。
+			</description>
+			<loveD num="20" />
+			<smeltD grade="1" addType="" price="3" />
+		</things>
+		<things cnName="泰坦碎片">
+			<name>TitansCash</name>
+			<cnName>泰坦碎片</cnName>
+			<iconUrl>ThingsIcon/TitansCash</iconUrl>
+			<description>
+				进化载具“泰坦”、“黑暗泰坦”所需的物品。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店购买。
+				[n]副本任务“无疆统治”奖励和掉落。
+			</description>
+			<loveD num="20" />
+			<smeltD grade="2" addType="" price="3" />
+		</things>
+		<things cnName="赤焰碎片">
+			<name>RedMotoCash</name><addDropDefineB>1</addDropDefineB>
+			<cnName>赤焰碎片</cnName>
+			<iconUrl>ThingsIcon/RedMotoCash</iconUrl>
+			<description>
+				合成载具“赤焰”所需的物品。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]秘境“虚空客”掉落。
+			</description>
+			<loveD num="20" />
+			<smeltD grade="1" addType="" price="1" />
+		</things>
+		
+		<things cnName="狩猎者碎片">
+			<name>AircraftGunCash</name><addDropDefineB>1</addDropDefineB>
+			<cnName>狩猎者碎片</cnName>
+			<iconUrl>ThingsIcon/AircraftGunCash</iconUrl>
+			<description>
+				用于合成和进化载具“狩猎者”，也是武器进化到第八级所需的材料。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]秘境“钢铁僵尸王”奖励。
+				[n]纪念币商店。
+			</description>
+			<loveD num="20" />
+			<smeltD grade="1" addType="" price="8" />
+		</things>
+		
+		
+		<things cnName="守望之翼碎片">
+			<name>WatchEagleAirCash</name><addDropDefineB>1</addDropDefineB>
+			<cnName>守望之翼碎片</cnName>
+			<iconUrl>ThingsIcon/WatchEagleAirCash</iconUrl>
+			<description>
+				用于合成飞行器“守望之翼”。[n]{b}{font color='#FF66FF'}也是合成黑色武器“熔炉”必需品之一，需求40个。{/font}{/b}
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]秘境“极速守卫”。
+			</description>
+			<loveD num="20" />
+			<smeltD grade="1" addType="" price="8" />
+		</things>
+		
+		<things cnName="异齿虎碎片">
+			<name>SaberTigerCarCash</name><addDropDefineB>1</addDropDefineB>
+			<cnName>异齿虎碎片</cnName>
+			<iconUrl>ThingsIcon/SaberTigerCarCash</iconUrl>
+			<description>
+				用于合成载具“异齿虎”。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]异虎宝箱
+			</description>
+			<loveD num="20" />
+			<smeltD grade="-1" addType="" price="8" />
+		</things>
+		<things cnName="年兽碎片">
+			<name>NianCarCash</name><addDropDefineB>1</addDropDefineB>
+			<cnName>年兽碎片</cnName>
+			<iconUrl>ThingsIcon/NianCarCash</iconUrl>
+			<description>
+				进化载具的材料，也可以用于合成载具“年兽”。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]秘境年兽
+			</description>
+			<loveD num="20" />
+			<smeltD grade="-1" addType="" price="8" />
+		</things>
+		
+	</father>	
+	</data>

@@ -1,0 +1,134 @@
+{
+  "father": {
+    "name": "device",
+    "cnName": "装置",
+    "equip": [
+      {
+        "name": "earthquakeGenerator",
+        "cnName": "地震发生器",
+        "skill": "earthquake"
+      },
+      {
+        "name": "endlessRocket",
+        "cnName": "无尽轰炮",
+        "skill": "endlessRocket"
+      },
+      {
+        "name": "lightningTower",
+        "cnName": "闪电塔",
+        "skill": "lightningTower"
+      },
+      {
+        "name": "energyShield",
+        "cnName": "能量外壳",
+        "skill": "energyShield"
+      },
+      {
+        "name": "electricDevicer",
+        "cnName": "全域电击器",
+        "skill": "electricDevicer"
+      },
+      {
+        "rareB": true,
+        "name": "shuttleDevicer",
+        "cnName": "镭射穿梭器",
+        "skill": "shuttleDevicer",
+        "description": "小樱好感度到达15000可领取，同时可在商店中购买。"
+      },
+      {
+        "rareB": true,
+        "name": "dinosaurEgg",
+        "cnName": "异龙蛋",
+        "skill": "dinosaurEgg",
+        "rareMul": 4,
+        "composeMustNum": 90,
+        "mustMul": 0.5
+      },
+      {
+        "rareB": true,
+        "name": "squibDevice",
+        "cnName": "爆竹",
+        "skill": "squibDevice",
+        "rareMul": 2
+      },
+      {
+        "rareB": true,
+        "name": "terroristBox",
+        "cnName": "恐怖盒子",
+        "skill": "terroristBox",
+        "rareMul": 2,
+        "composeMustNum": 90,
+        "life": 20
+      },
+      {
+        "rareB": true,
+        "name": "knightsMedal",
+        "cnName": "无疆之章",
+        "skill": "knightsMedal",
+        "rareMul": 3.5,
+        "composeMustNum": 60,
+        "mustMul": 0.5
+      },
+      {
+        "rareB": true,
+        "name": "skeletonWand",
+        "cnName": "骷髅权杖",
+        "skill": "skeletonWand",
+        "rareMul": 3.5,
+        "composeMustNum": 80,
+        "mustMul": 0.5
+      },
+      {
+        "rareB": true,
+        "name": "blackHoleDevicer",
+        "cnName": "黑洞发生器",
+        "skill": "blackHoleDevicer",
+        "rareMul": 2.5,
+        "description": "藏师忠诚度到达24000可领取。"
+      },
+      {
+        "rareB": true,
+        "name": "skeletonMedal",
+        "cnName": "暴君之骷",
+        "skill": "skeletonMedal",
+        "rareMul": 3.5,
+        "composeMustNum": 150,
+        "mustMul": 0.5
+      },
+      {
+        "rareB": true,
+        "name": "hookDevice",
+        "cnName": "斩之核心",
+        "skill": "hookDevice",
+        "rareMul": 3.5,
+        "composeMustNum": 150,
+        "mustMul": 0.5
+      },
+      {
+        "rareB": true,
+        "name": "phantomDevice",
+        "cnName": "幻影成像仪",
+        "skill": "phantomDevice",
+        "rareMul": 3.5,
+        "life": 12
+      },
+      {
+        "rareB": true,
+        "name": "timeCapsule",
+        "cnName": "悬停沙漏",
+        "skill": "timeCapsule",
+        "rareMul": 5,
+        "composeMustNum": 80,
+        "description": "绿岛“仙草镇入口”掉落。"
+      },
+      {
+        "rareB": true,
+        "canNum": 1,
+        "name": "timeCapsuleT",
+        "cnName": "悬停沙漏T",
+        "skill": "timeCapsuleT",
+        "iconLabel": "ThingsIcon/timeCapsule"
+      }
+    ]
+  }
+}

@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<body name="古飙" shell="metal">
+			
+			<name>CheetahCar</name>
+			<cnName>古飙</cnName><headIconUrl>IconGather/CheetahCar</headIconUrl>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/CheetahCar.swf</swfUrl>
+			
+			<lifeRatio>2</lifeRatio>
+			<showLevel>99</showLevel>
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<imgType>normal</imgType>
+			<rotateBySlopeB>1</rotateBySlopeB>
+			
+			<imgArr>
+				stand,move,run
+				,normalAttack,shootAttack,fireAttack,shakeAttack,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+			</imgArr>
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			<lifeBarExtraHeight>-80</lifeBarExtraHeight>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>14</maxVx>
+			<runStartVx>0</runStartVx>
+			
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			<bulletLauncherClass>VehicleBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			<bossSkillArr>fastForward_Cheetah,fire_Cheetah,jump_Cheetah,defenceBounce_enemy,skillCopy_enemy</bossSkillArr>
+			<bossSkillArrCn />
+			<extraG label="ExtraTaskAI" bossSkillArr="fastForward_Cheetah,fire_Cheetah,jump_Cheetah,defenceBounce_enemy,skillCopy_enemy">
+				<extra lifeMin="0.7" skillArr="" />
+				<extra lifeMin="0.4" skillArr="" />
+				<extra lifeMin="0" skillArr="" />
+			</extraG>
+			<extraDropArmsB>1</extraDropArmsB>
+			<dropD />
+			<extraAIClassLabel>CheetahCar_AIExtra</extraAIClassLabel>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel><cn>爪击</cn>
+					<hurtRatio>3</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" soundUrl="sound/body_hit" raNum="30">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><cn>喷火球</cn>
+					<bulletLabel>CheetahCarBullet</bulletLabel>
+					<grapRect>-350,-111,300,105</grapRect>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				
+				<hurt info="不加入ai选择-古飙-巨焰">
+					<imgLabel>fireAttack</imgLabel><noAiChooseB>1</noAiChooseB><noUseOtherSkillB>1</noUseOtherSkillB>
+					<bulletLabel>CheetahCarFire</bulletLabel>
+					<grapRect>-350,-111,300,105</grapRect>
+					<hurtRatio>0</hurtRatio>
+					<hurtMul>0.2</hurtMul>
+					<attackType>holy</attackType>
+				</hurt>
+				<hurt info="不加入ai选择-砸击">
+					<imgLabel>shakeAttack</imgLabel><noAiChooseB>1</noAiChooseB><noUseOtherSkillB>1</noUseOtherSkillB>
+					<hurtRatio>0</hurtRatio>
+					<hurtMul>0.3</hurtMul>
+					<attackType>holy</attackType>
+				</hurt>
+				
+				
+				<hurt>
+					<imgLabel>run</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>5</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl name="oreWormHit" />
+				</hurt>
+				<hurt>
+					<imgLabel>move</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>5</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl name="oreWormHit" />
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>5</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl name="oreWormHit" />
+				</hurt>
+				<hurt>
+					<imgLabel>jumpUp</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>5</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl name="oreWormHit" />
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown__</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>5</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl name="oreWormHit" />
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		
+		<bullet cnName="古飙火球">
+			<name>CheetahCarBullet</name>
+			<cnName>古飙火球</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>3</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1</attackGap>
+			<attackDelay>0.7</attackDelay>
+			<bulletAngle>185</bulletAngle>
+			<bulletAngleRange>50</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootPoint>-151,-67</shootPoint>
+			<bulletSpeed>15</bulletSpeed>
+			<gravity>0.5</gravity>
+			<penetrationGap>1000</penetrationGap>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30" con="filter">CheetahCar/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/fireHit2">boomEffect/boom1</hitImgUrl>
+		</bullet>
+		
+		<bullet cnName="古飙-巨焰">
+			<name>CheetahCarFire</name>
+			<cnName>古飙-巨焰</cnName>
+			
+			<hurtRatio>0</hurtRatio>
+			<hurtMul>0.2</hurtMul>
+			<attackType>holy</attackType>
+			
+			<attackGap>2.3</attackGap>
+			<attackDelay>1.6</attackDelay>
+			
+			<bulletAngle>179</bulletAngle>
+			<shakeAngle>2</shakeAngle>
+			<bulletLife>0.62</bulletLife>
+			<shootNum>15</shootNum>
+			<bulletNum>5</bulletNum>
+			<shootAngle>35</shootAngle>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+				
+			<shootPoint>-127,-63</shootPoint>
+			<speedD random="0.1" max="30" />
+			<bulletSpeed>30</bulletSpeed>
+			
+			
+			<penetrationGap>1000</penetrationGap>
+			<twoHitGap>2</twoHitGap>
+			<twoHitSameNameB>1</twoHitSameNameB>
+			
+			<shootSoundUrl />
+			<bulletImgUrl name="fireFlamer_bullet" />
+			<hitImgUrl raNum="30">bulletHitEffect/smoke_motion</hitImgUrl>
+			<hitFloorImgUrl raNum="30">bulletHitEffect/smoke_motion</hitFloorImgUrl>
+			<fireImgType>no</fireImgType>
+		</bullet>
+		
+		
+		<skill cnName="冲刺">
+			<name>fastForward_Cheetah</name>
+			<cnName>冲刺</cnName><iconUrl36>SkillIcon/fastForward_Cheetah_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<cd>4</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nowImgLabel,followingTarget</otherConditionArr>
+			<conditionString>run</conditionString>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>fastForward</effectType>
+			 
+			<meEffectImg soundUrl="CheetahCar/hp_in" con="add">CheetahCar/fastForward</meEffectImg>
+			<description>迅速减短自身的前进路径。</description>
+		</skill>
+		<skill cnName="巨焰">
+			<name>fire_Cheetah</name>
+			<cnName>巨焰</cnName><iconUrl36>SkillIcon/fire_Cheetah_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>10</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>800</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>flipToAttackTarget</effectType>
+			 
+			<meActionLabel>fireAttack</meActionLabel>
+			<description>向前喷射几条巨焰，对敌人造成巨大伤害。</description>
+		</skill>
+		
+		<skill cnName="泰山压顶">
+			<name>jump_Cheetah</name>
+			<cnName>泰山压顶</cnName><iconUrl36>SkillIcon/jump_Cheetah_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>12</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>1.4</conditionRange>
+			
+			<target>me</target>
+			
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			 
+			<meActionLabel>shakeAttack</meActionLabel>
+			<description>瞬移到敌人头顶，从天而降，对敌人造成巨大伤害，有几率触发多次（最少2次、最多6次）。</description>
+		</skill>
+	</father>
+	
+	
+	
+</data>

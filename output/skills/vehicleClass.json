@@ -1,0 +1,71 @@
+{
+  "father": [
+    null,
+    {
+      "name": "car",
+      "cnName": "合体",
+      "equip": [
+        {
+          "name": "GaiaFit",
+          "cnName": "轰天雷",
+          "isFitB": 1,
+          "main": {
+            "label": "GaiaFit_main",
+            "dpsMul": 1,
+            "len": 100
+          },
+          "sub": {
+            "label": "Diggers_sub",
+            "hideB": true
+          },
+          "mainFrontB": 1,
+          "lifeMul": 1,
+          "attackMul": 1
+        },
+        {
+          "name": "CivilianFit",
+          "cnName": "镇山虎",
+          "isFitB": 1,
+          "main": {
+            "label": "CivilianFit_main",
+            "dpsMul": 0.6,
+            "len": 100,
+            "yGap": 20,
+            "minRa": 166,
+            "maxRa": -157
+          },
+          "sub": {
+            "label": "Diggers_sub",
+            "hideB": true
+          },
+          "mainFrontB": 1,
+          "lifeMul": 1,
+          "attackMul": 1
+        }
+      ]
+    },
+    {
+      "name": "aircraft",
+      "cnName": "合体飞行器",
+      "equip": {
+        "name": "FlyFit",
+        "cnName": "霸空雕",
+        "isFitB": 1,
+        "main": {
+          "label": "FlyFit_main",
+          "dpsMul": 0.6,
+          "len": 63,
+          "yGap": -21,
+          "minRa": 113,
+          "maxRa": -163
+        },
+        "sub": {
+          "label": "Diggers_sub",
+          "hideB": true
+        },
+        "lifeMul": 1,
+        "attackMul": 1
+      }
+    }
+  ]
+}

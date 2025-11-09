@@ -1,0 +1,44 @@
+{
+  "name": "XinLing",
+  "level": [
+    null,
+    null,
+    {
+      "lv": 3,
+      "must": 2000,
+      "cn": "低",
+      "skillNameArr": "defenceLing"
+    },
+    {
+      "lv": 4,
+      "must": 3500,
+      "cn": "中",
+      "skillNameArr": "noHurt10Lings"
+    },
+    {
+      "lv": 5,
+      "must": 5500,
+      "cn": "高",
+      "skillNameArr": "resistPerLing4,hurtStrikerLing"
+    },
+    {
+      "lv": 6,
+      "must": 9000,
+      "cn": "高",
+      "skillNameArr": "hurtLing40,vehicleLing40"
+    },
+    {
+      "lv": 7,
+      "must": 15000,
+      "cn": "亲密",
+      "skillNameArr": "ironBodyLing",
+      "gift": "things;poisonGem;2"
+    },
+    {
+      "lv": 8,
+      "must": 24000,
+      "cn": "挚爱",
+      "skillNameArr": "eleStrikerLing,dropStrikerLing"
+    }
+  ]
+}

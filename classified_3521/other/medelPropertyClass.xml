@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<pro name="dpsMul" v="0.15"/>
+	<pro name="dpsMul_rifle" v="0.2"/>
+	<pro name="dpsMul_sniper" v="0.2"/>
+	<pro name="dpsMul_shotgun" v="0.2"/>
+	<pro name="dpsMul_pistol" v="0.2"/>
+	<pro name="dpsMul_rocket" v="0.2"/>
+	<pro name="dpsMul_flamer" v="0.2"/>
+	
+	<pro name="damageMul" v="0.04"/>
+	
+	
+	<pro name="hurtMul" v="0.15"/>
+	<pro name="hurtMul_rifle" v="0.2"/>
+	<pro name="hurtMul_sniper" v="0.2"/>
+	
+	<pro name="reload" v="0.3"/>
+	<pro name="chargerMul" v="0.2"/>
+	
+	
+	<pro name="lifeMul" v="0.2"/>
+	<pro name="lifeRateMul" v="0.5"/>
+	<pro name="headMul" v="0.5"/>
+	
+	
+	<pro name="dodge" v="0.10"/>
+	<pro name="cdMul" v="0.10"/>
+	<pro name="moveMul" v="0.10"/>
+	<pro name="fightDedut" v="0.10"/>
+	<pro name="critPro3" v="0.10"/>
+	
+	
+	<pro name="coinMul" v="0.4"/>
+	
+	<pro name="lottery" v="10"/>
+	<pro name="bulletDedut" v="0.2"/>
+	
+	<pro name="gemDropPro" v="0.15"/>
+	
+	<pro name="blackEquipDropPro" v="0.10"/>
+	
+	<pro name="moreLifeMul" v="0.20"/>
+	<pro name="dayLoveAdd" v="20"/>
+	<pro name="blackArmsDropPro" v="0.05"/>
+	<pro name="moreDpsMul" v="0.1"/>
+	<pro name="vehicleDpsMul" v="0.1"/>
+	<pro name="vehicleDefMul" v="0.2"/>
+	<pro name="specialPartsDropPro" v="0.06"/>
+	
+	
+	
+	
+	<pro name="rareGeneDropPro" v="0.20"/>
+	<pro name="petBookDropPro" v="0.10"/>
+	<pro name="expMul" v="0.06"/>
+	
+	
+	<pro name="bloodStoneDropPro" v="0.06"/>
+	<pro name="weaponDropPro" v="0.06"/>
+	
+	<pro name="rareArmsDropPro" v="0.25"/>
+	<pro name="rareEquipDropPro" v="0.25"/>
+	<pro name="ranBlackArmsDropPro" v="0.5"/>
+	
+	
+	
+	
+	
+	
+	
+</data>

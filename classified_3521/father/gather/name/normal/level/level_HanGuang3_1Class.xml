@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="normal">
+		<gather name="寒光市">
+			
+			<level name="HanGuang3_city">
+				
+				<info enemyLv="93" />
+				<fixed target="HanGuang3_1" info="no" drop="all" unitG="all" rectG="all" eventG="no" />
+				
+				<sceneLabel>HanGuang3</sceneLabel>
+				
+				<eventG>
+					<group>
+						<event id="e1_1"><condition delay="2" /><order>say; startList:s1</order></event>
+						<event id="e2_0"><condition>say:listOver; s1</condition></event><event id="e2_1"><condition delay="1" /></event>
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order><order>createUnit:enemy1; r3</order></event> 
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy2; r1</order><order>createUnit:enemy2; r2</order><order>createUnit:enemy2; r3</order></event> 
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy3; r1</order><order>createUnit:enemy3; r2</order><order>createUnit:enemy3; r3</order></event> 
+						<event id="e2_1"><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy4; r1</order><order>createUnit:enemy4; r2</order><order>createUnit:enemy4; r3</order></event> 
+						<event id="e2_11"><condition delay="1">enemyNumber:less_1</condition><order>level; rebirthAllMore</order></event>	
+						<event id="e2_11"><condition delay="1" /><order>say; startList:s2</order></event>	
+						<event id="e2_11">
+							<condition delay="0.1">say:listOver; s2</condition>
+							<order>task:now; complete</order>
+							<order>worldMap:levelName; HanGuang3:HanGuang3_1</order>
+							<order>level; showPointer:r_over</order>
+						</event>	
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="HanGuang3_1">
+				
+				<info enemyLv="93" diff="2" />
+				<sceneLabel>HanGuang3</sceneLabel>
+				
+				<unitG><allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="会计尸" num="5" />
+						<unit cnName="独眼僵尸" num="5" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>number</numberType>
+						<unit cnName="水管僵尸" num="6" />
+						<unit cnName="独眼僵尸" num="5" />
+						
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>number</numberType>
+						<unit cnName="水管僵尸" num="8" />
+						<unit cnName="会计尸" num="3" />
+						<unit cnName="独眼僵尸" num="5" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="斩之使者" unitType="boss" lifeMul="2" dpsMul="2" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e2_1"><condition delay="1" /></event>
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order><order>createUnit:enemy1; r3</order></event> 
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy2; r1</order><order>createUnit:enemy2; r2</order><order>createUnit:enemy2; r3</order></event> 
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy3; r1</order><order>createUnit:enemy3; r2</order><order>createUnit:enemy3; r3</order></event> 
+						<event id="e2_1"><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy4; r1</order><order>createUnit:enemy4; r2</order><order>createUnit:enemy4; r3</order></event> 
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+	</father>
+</data>

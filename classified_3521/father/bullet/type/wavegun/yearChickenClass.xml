@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="wavegun" cnName="声波枪">
+		<bullet name="酉鸡" color="black" evoB="0" composeLv="97" chipNum="150" chipB="1" dropLevelArr="999">
+			<name>yearChicken</name>
+			<cnName>酉鸡</cnName>
+			<dpsMul>1.5</dpsMul>
+			<uiDpsMul>1.7</uiDpsMul>
+			<extraMul>1.2</extraMul>
+			
+			<capacity>6</capacity> 
+			<attackGap>0.7</attackGap>
+			<reloadGap>2</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>600</bulletWidth>
+			<bulletShakeWidth>50</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<shootAngle>0</shootAngle>				
+			<beatBack>10</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<twoShootPro>0.2</twoShootPro>
+			<penetrationNum>20</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="0" body="0" />	
+			<critD mul="2" pro="0.2" />
+			
+			<skillArr>Hit_disabled_ArmsSkill</skillArr>
+			<godSkillArr>yearChickenSkill</godSkillArr>
+			
+			<hurtRatio>15</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.5</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>3</upValue>
+			<shootShakeAngle>15</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			
+			
+			<shootSoundUrl>sound/waveShoot</shootSoundUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30" con="filter" len="30" time="0.03" waveAn="15" imgDieType="die">specialGun/yearChickenBullet</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/energyYellow</hitImgUrl>
+			
+			<bodyImgRange>specialGun/yearChicken</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+		</bullet>
+	</father>
+	</data>

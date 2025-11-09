@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="守望者技能">
+		
+		<skill index="0" name="守望者-烈焰风暴-清除燃气">
+			<name>clearGas_WatchEagle</name>
+			<cnName>清除燃气</cnName>
+			<noBeClearB>1</noBeClearB><changeHurtB>1</changeHurtB>
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>clearGas_WatchEagle</effectType>
+			<valueString>gas_WatchEagle</valueString>
+			
+			<description />
+		</skill>
+		<skill index="0" name="守望者-冲刺-燃气">
+			<name>gas_WatchEagle</name><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<cnName>燃气</cnName>
+			<noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>wind_WatchEagle</effectType>
+			<mul>0.05</mul>
+			<value>0.5</value>
+			<duration>999999</duration>
+			
+			<stateEffectImg partType="body" con="add">generalEffect/fire</stateEffectImg>
+			<description>对击中的目标附加“燃气”效果，使目标移动速度降低50%，每秒减少3%最大生命值，碰撞焦灼烈焰后消失。</description>
+		</skill>
+		
+		
+		<skill index="0" name="守望者-冲刺">
+			<name>sprint_WatchEagle</name><wantDescripB>1</wantDescripB>
+			<cnName>原力俯冲</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<cd>20</cd>
+			
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>400</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>3.1</duration>
+			
+			
+			<meActionLabel>sprintAttack</meActionLabel>
+			<description>隐匿行踪，从敌人头上快速俯冲而下，造成巨大伤害。</description>
+		</skill>
+		
+		<skill index="0" name="守望者-烈焰风暴">
+			<name>wind_WatchEagle</name><wantDescripB>1</wantDescripB>
+			<cnName>焦灼烈焰</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<cd>6</cd>
+			
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>500</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<mul>1</mul>
+			<value>5</value>
+			<duration>2</duration>
+			
+			<meActionLabel>windAttack</meActionLabel>
+			<description>释放不会消失的火焰旋风，对碰触到的敌人造成爆炸伤害，扣除目标20%的生命值，火焰最多存在10个。</description>
+		</skill>
+		
+		
+	 </father>
+	 
+	 </data>

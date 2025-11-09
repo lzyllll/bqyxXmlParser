@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="虚洪螈">
+		<skill index="0" name="水卷风">
+			<name>Salamander_wather</name>
+			<cnName>水卷风</cnName>
+			
+			<cd>6</cd>
+			
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>300</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>1.1</duration>
+			
+			<meActionLabel>windAttack</meActionLabel>
+		</skill>
+		
+		<skill index="0" name="水汽溅腾">
+			<name>Salamander_wather</name><wantDescripB>1</wantDescripB>
+			<cnName>水汽溅腾</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<cd>5</cd>
+			
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerMore</otherConditionArr>
+			<conditionRange>0</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<duration>0.6</duration>
+			
+			<meActionLabel>waterAttack</meActionLabel>
+			<description>压缩全身气流，向目标喷射污水柱，并造成巨大伤害。</description>
+		</skill>
+		<skill index="0" name="地精">
+			<name>Salamander_burrow</name><wantDescripB>1</wantDescripB>
+			<cnName>地精</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<cd>5</cd>
+			
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>0.5</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>no</effectType>
+			
+			<meActionLabel>inAttack</meActionLabel>
+			<description>当生命低于50%时，发动高频率的钻地技能，碰撞气泡后会停止行动。</description>
+		</skill>
+		<skill index="0" cnName="融弹回血">
+			<name>Salamander_back</name>
+			<cnName>融弹回血</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB><noBeClearB>1</noBeClearB><ignoreSilenceB>1</ignoreSilenceB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underRos</condition>
+			<otherConditionArr>noState</otherConditionArr>
+			<conditionString>Salamander_back</conditionString>
+			<target>me</target>
+			
+			<addType>stateAndInstant</addType>
+			<effectType>Salamander_back</effectType>
+			<value>0.5</value>
+			<duration>999999</duration>
+			 
+			<stateEffectImg partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add">Salamander/bubbling</stateEffectImg>
+			<description>每损失15%生命值发动融弹回血，将受到的伤害转变为自身生命值，击破5个气泡后融弹回血解除。</description>
+		</skill>
+		<skill index="0" cnName="反转气泡">
+			<name>Salamander_bubbles</name><noCopyB>1</noCopyB>
+			<cnName>反转气泡</cnName><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<cd>2</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>Salamander_bubbles</effectType>
+			<summonedUnitsB>1</summonedUnitsB>
+			
+			<obj>"cnName":"气泡","num":1,"lifeMul":0.15,"dpsMul":0,"lifeTime":20,"mulByFatherB":1,"maxNum":10,"skillArr":["BubblesJump","bubblesDie","bubblesGotoCamp","Bubbles_blue","Bubbles_green","State_SpellImmunity","bubbles_hammer"],"position":"randomMap"</obj>
+			<duration>20</duration>
+			
+			<description>每隔一段时间，随机出现气泡，可以抵挡首领的某些攻击，同时可以削弱首领的能力。</description>
+		</skill>
+	</father>
+	
+	</data>

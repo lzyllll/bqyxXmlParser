@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="虚晶蝎">
+		<bullet cnName="虚晶蝎-射击">
+			<name>VirtualScorpion_shoot</name>
+			<cnName>虚晶蝎-射击</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>179</bulletAngle>
+			<bulletAngleRange>30</bulletAngleRange>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>25</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.4</attackGap>
+			<attackDelay>0.85</attackDelay>
+			<bulletNum>1</bulletNum>
+			<shootNum>4</shootNum>
+			<shootGap>0</shootGap>
+			<shootPoint>-171,-37</shootPoint>
+			<positionD specialType="vertical" />
+				
+			<penetrationGap>1000</penetrationGap>
+			<followD value="0.05" />
+				
+			<bulletSpeed>20</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">VirtualScorpion/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/body_hit">bulletHitEffect/energy</hitImgUrl>
+			
+		</bullet>
+		<bullet cnName="虚晶蝎-阴风">
+			<name>VirtualScorpion_yinWind</name>
+			<cnName>虚晶蝎-阴风</cnName>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>13</bulletLife>
+			<bulletWidth>60</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.4</attackGap>
+			<attackDelay>0.6</attackDelay>
+			<bulletAngle>180</bulletAngle>
+			<bulletNum>1</bulletNum>				
+				
+			<penetrationNum>999</penetrationNum>
+			<penetrationGap>1000</penetrationGap>
+			<twoHitGap>1</twoHitGap>
+				
+			<shootPoint>-103,-80</shootPoint>
+			<bulletSpeed>5</bulletSpeed>
+			<speedD max="5" min="2" a="-4" />
+			<skillArr />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1">VirtualScorpion/wind1</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/water_hit">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		<bullet cnName="虚晶蝎-阳风">
+			<name>VirtualScorpion_yangWind</name>
+			<cnName>虚晶蝎-阳风</cnName>
+			<noHurtEffectB>1</noHurtEffectB>
+			<hurtRatio>0</hurtRatio>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>13</bulletLife>
+			<bulletWidth>60</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.4</attackGap>
+			<attackDelay>0.8</attackDelay>
+			<bulletAngle>0</bulletAngle>
+			<bulletNum>1</bulletNum>				
+				
+			<penetrationNum>999</penetrationNum>
+			<penetrationGap>1000</penetrationGap>
+			<twoHitGap>1</twoHitGap>
+				
+			<shootPoint>-103,-80</shootPoint>
+			<bulletSpeed>5</bulletSpeed>
+			<speedD max="5" min="2" a="-4" />
+			<skillArr>VirtualScorpion_windHurt</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1">VirtualScorpion/wind2</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/water_hit">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+	</father>
+	
+	</data>

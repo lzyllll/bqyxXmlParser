@@ -1,0 +1,370 @@
+{
+  "father": [
+    {
+      "name": "aircraft",
+      "cnName": "战车定义",
+      "equip": [
+        {
+          "name": "Punisher",
+          "cnName": "制裁者",
+          "evolutionLabel": "Adjudicator",
+          "canComposeB": 1,
+          "shopB": 1,
+          "main": {
+            "dpsMul": 1.6,
+            "len": 20,
+            "minRa": -180,
+            "maxRa": -179.9,
+            "actionLabel": "mainAttack",
+            "swapLabel": "mainChangeAttack",
+            "swapSoundUrl": "Punisher/s_mainSwap"
+          },
+          "sub": {
+            "dpsMul": 1.6,
+            "len": 0,
+            "minRa": 90,
+            "maxRa": -160,
+            "actionLabel": "subAttack",
+            "swapLabel": "subChangeAttack",
+            "swapSoundUrl": "Punisher/s_subSwap"
+          },
+          "lifeMul": 1.5,
+          "attackMul": 0,
+          "duration": 80,
+          "cd": 120,
+          "mustCash": 250,
+          "addObjJson": {
+            "dpsAll": 0.12,
+            "lifeAll": 0.12
+          }
+        },
+        {
+          "name": "Adjudicator",
+          "cnName": "判决者",
+          "evolutionLabel": "Chastener",
+          "evolutionLv": 2,
+          "mustCash": 250,
+          "main": {
+            "label": "Punisher_main",
+            "dpsMul": 2.3,
+            "len": 20,
+            "minRa": -180,
+            "maxRa": -179.9,
+            "actionLabel": "mainAttack",
+            "swapLabel": "mainChangeAttack",
+            "swapSoundUrl": "Adjudicator/s_mainSwap"
+          },
+          "sub": {
+            "label": "Punisher_sub",
+            "dpsMul": 2.3,
+            "len": 0,
+            "minRa": 90,
+            "maxRa": -160,
+            "actionLabel": "subAttack",
+            "swapLabel": "subChangeAttack",
+            "swapSoundUrl": "Adjudicator/s_subSwap"
+          },
+          "lifeMul": 2,
+          "attackMul": 0,
+          "duration": 80,
+          "cd": 120,
+          "addObjJson": {
+            "dpsAll": 0.16,
+            "lifeAll": 0.16
+          },
+          "skillArr": "vehicleFit_fly,vehicleFit_Gaia"
+        },
+        {
+          "name": "Chastener",
+          "cnName": "惩戒者",
+          "evolutionLabel": "Executioner",
+          "evolutionLv": 4,
+          "mustCash": 300,
+          "main": {
+            "label": "Punisher_main",
+            "dpsMul": 2.7,
+            "len": 20,
+            "minRa": -180,
+            "maxRa": -179.9,
+            "actionLabel": "mainAttack",
+            "swapLabel": "mainChangeAttack",
+            "swapSoundUrl": "Chastener/s_mainSwap"
+          },
+          "sub": {
+            "label": "Punisher_sub",
+            "dpsMul": 2.7,
+            "len": 0,
+            "minRa": 90,
+            "maxRa": -160,
+            "actionLabel": "subAttack",
+            "swapLabel": "subChangeAttack",
+            "swapSoundUrl": "Chastener/s_subSwap"
+          },
+          "lifeMul": 2.7,
+          "attackMul": 0,
+          "duration": 80,
+          "cd": 120,
+          "addObjJson": {
+            "dpsAll": 0.2,
+            "lifeAll": 0.2
+          },
+          "skillArr": "vehicleFit_fly,vehicleFit_Gaia"
+        },
+        {
+          "name": "Executioner",
+          "cnName": "处决者",
+          "evolutionLv": 5,
+          "mustCash": 300,
+          "main": {
+            "label": "Punisher_main",
+            "dpsMul": 3.3,
+            "len": 20,
+            "minRa": -180,
+            "maxRa": -179.9,
+            "actionLabel": "mainAttack",
+            "swapLabel": "mainChangeAttack",
+            "swapSoundUrl": "Executioner/s_mainSwap"
+          },
+          "sub": {
+            "label": "Punisher_sub",
+            "dpsMul": 3.3,
+            "len": 0,
+            "minRa": 90,
+            "maxRa": -160,
+            "actionLabel": "subAttack",
+            "swapLabel": "subChangeAttack",
+            "swapSoundUrl": "Executioner/s_subSwap"
+          },
+          "lifeMul": 3.2,
+          "attackMul": 0,
+          "duration": 80,
+          "cd": 120,
+          "addObjJson": {
+            "dpsAll": 0.26,
+            "lifeAll": 0.26
+          },
+          "skillArr": "executionerSkill,vehicleFit_fly,vehicleFit_Gaia"
+        }
+      ],
+      "bullet": [
+        {
+          "cnName": "制裁者-主炮",
+          "name": "Punisher_main",
+          "hurtRatio": 0.28,
+          "shakeAngle": 1,
+          "bulletLife": 2,
+          "bulletWidth": 30,
+          "hitType": "rect",
+          "attackGap": 0.5,
+          "attackDelay": 0.15,
+          "bulletNum": 3,
+          "shootAngle": 5,
+          "shootRecoil": 15,
+          "screenShakeValue": 16,
+          "bulletSpeed": 45,
+          "boomD": {
+            "bodyB": true,
+            "floorB": true,
+            "radius": 120,
+            "maxHurtNum": 99
+          },
+          "flipX": 1,
+          "fireImgUrl": {
+            "soundUrl": "sound/bigShoot"
+          },
+          "bulletImgUrl": {
+            "value": "bullet/purpleFire",
+            "raNum": 30,
+            "con": "filter"
+          },
+          "hitImgUrl": {
+            "value": "boomEffect/boom3",
+            "soundUrl": "boomSound/midBoom1",
+            "shake": "2,0.2,10"
+          }
+        },
+        {
+          "cnName": "制裁者-副炮",
+          "name": "Punisher_sub",
+          "hurtRatio": 0.22,
+          "bulletLife": 0.001,
+          "hitType": "longLine",
+          "bulletWidth": 800,
+          "bulletShakeWidth": 100,
+          "attackGap": 0.13,
+          "attackDelay": 0,
+          "bulletNum": 3,
+          "shootAngle": 3,
+          "shootRecoil": 4,
+          "screenShakeValue": 9,
+          "shakeAngle": 3,
+          "bulletSpeed": 0,
+          "flipX": 1,
+          "lineD": {
+            "lightColor": 16711935,
+            "size": 3,
+            "lightSize": 8,
+            "blendMode": "add",
+            "type": "one"
+          },
+          "fireImgUrl": {
+            "soundUrl": "sound/laserShoot"
+          },
+          "bulletImgUrl": "longLine",
+          "hitImgUrl": "bulletHitEffect/yellow_motion"
+        }
+      ]
+    },
+    {
+      "name": "vehicleSkill",
+      "cnName": "技能",
+      "skills": {
+        "executionerSkill": {
+          "name": "executionerSkill",
+          "noBeClearB": 1,
+          "cnName": "处决形态",
+          "iconUrl": "SkillIcon/executionerSkill",
+          "effectInfoArr": "增加伤害输出",
+          "cd": 80,
+          "changeText": "持续时间[duration]秒",
+          "conditionType": "active",
+          "condition": "beforeAttack",
+          "target": "me",
+          "passiveSkillArr": "executionerSkill_link",
+          "addType": "state",
+          "effectType": "executionerSkill",
+          "effectFather": "vehicle",
+          "value": 4,
+          "mul": 0.5,
+          "duration": 1.7,
+          "meEffectImg": {
+            "name": "bladeShield_me"
+          },
+          "stateEffectImg": {
+            "name": "burstParts"
+          },
+          "description": "使自己身体放大2倍，进入无敌状态，并开启4倍超级散射，对机械体的敌人提升150%的伤害。持续[duration]秒。",
+          "growth": {
+            "skill": [
+              {
+                "duration": 1.6
+              },
+              {
+                "duration": 2
+              },
+              {
+                "duration": 2.5
+              },
+              {
+                "duration": 3
+              },
+              {
+                "duration": 3.5
+              },
+              {
+                "duration": 4
+              },
+              {
+                "duration": 4.5
+              },
+              {
+                "duration": 5
+              },
+              {
+                "duration": 5.5
+              },
+              {
+                "duration": 7
+              }
+            ]
+          }
+        },
+        "executionerSkill_link": {
+          "name": "executionerSkill_link",
+          "cnName": "对机械体提升",
+          "noRandomListB": 1,
+          "ignoreImmunityB": 1,
+          "noSkillDodgeB": 1,
+          "conditionType": "passive",
+          "changeHurtB": 1,
+          "condition": "hit",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "changeHurt_raceType",
+          "valueString": "robot",
+          "mul": 2.5,
+          "pointEffectImg": {
+            "name": "orangeWaveBoom"
+          }
+        }
+      }
+    },
+    {
+      "name": "vehicle",
+      "cnName": "战车body",
+      "body": [
+        {
+          "index": 0,
+          "name": "Punisher",
+          "shell": "compound",
+          "cnName": "制裁者",
+          "raceType": "robot",
+          "swfUrl": "swf/vehicle/Punisher.swf",
+          "lifeRatio": 1,
+          "rosRatio": 1,
+          "headHurtMul": 0.5,
+          "dieImg": {
+            "value": "boomEffect/boom3",
+            "soundUrl": "sound/pointBoom_hero",
+            "shake": "3,0.4,30"
+          },
+          "dieJumpMul": 0,
+          "rotateBySlopeB": 1,
+          "imgClass": "CarImage",
+          "imgType": "normal",
+          "flipCtrlBy": "mouse",
+          "imgArr": "stand,move,die1,mainAttack,subAttack,mainChangeAttack,subChangeAttack",
+          "hitRect": "-30,-60,60,70",
+          "motionClass": "AircraftGroundMotion",
+          "motionState": "fly",
+          "flyType": "space",
+          "motionD": {
+            "jumpDelayT": 0.15,
+            "moveWhenVB": true
+          },
+          "maxVx": 15,
+          "maxJumpNum": 1,
+          "attackAIClass": "CarAttack_AI",
+          "keyClass": "CarBodyKey",
+          "bulletLauncherClass": "CarBulletLauncher",
+          "skillArr": null,
+          "hurtArr": null
+        },
+        {
+          "name": "Adjudicator",
+          "fixed": "Punisher",
+          "shell": "compound",
+          "cnName": "判决者",
+          "swfUrl": "swf/vehicle/Adjudicator.swf",
+          "bmpUrl": "BodyImg/Adjudicator"
+        },
+        {
+          "name": "Chastener",
+          "fixed": "Punisher",
+          "shell": "compound",
+          "cnName": "惩戒者",
+          "swfUrl": "swf/vehicle/Chastener.swf",
+          "bmpUrl": "BodyImg/Chastener"
+        },
+        {
+          "name": "Executioner",
+          "fixed": "Punisher",
+          "shell": "compound",
+          "cnName": "处决者",
+          "swfUrl": "swf/vehicle/Executioner.swf",
+          "bmpUrl": "BodyImg/Executioner"
+        }
+      ]
+    }
+  ]
+}

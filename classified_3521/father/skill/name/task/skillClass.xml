@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="task" cnName="">
+		<skill cnName="翻滚">
+			<name>rollingFast</name>
+			<cnName>翻滚</cnName>
+			<iconUrl>SkillIcon/rolling_hero</iconUrl>
+			
+			<conditionType>passive</conditionType>
+			<condition>moveCombo</condition>
+			<otherConditionArr>moveCombo</otherConditionArr>
+			<conditionString>left,left|right,right</conditionString>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>heroRolling</effectType>
+			<minTriggerT>1</minTriggerT>
+			<mul>0</mul>
+			<value>500</value>
+			<valueString />
+			<duration>0.5</duration>
+			
+			<stateEffectImg xGap="30" con="filter" raNum="1">skillEffect/rollingShadow</stateEffectImg>
+			
+			<description>双击移动按键可向前翻滚[value]码，期间不受攻击、子弹碰撞，最短触发间隔[minTriggerT]秒。</description>
+		</skill>
+		<skill>
+			<name>speedUpTask</name>
+			<cnName>加速</cnName><iconUrl36>SkillIcon/groupSpeedUp_enemy_36</iconUrl36>
+			
+			<cd>20</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<value>10</value>
+			<duration>5</duration>
+			 
+			<meEffectImg soundUrl="sound/groupSpeedUp_enemy" />
+			<stateEffectImg partType="2foot" con="add" raNum="30">bulletHitEffect/smoke_small</stateEffectImg>
+			<description>技能释放后，提升自身移动速度。</description>
+		</skill>
+		
+		
+		<skill name="超级散射">
+			<name>superMoreBullet</name>
+			<cnName>超级散射</cnName><everNoClearB>1</everNoClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>setBulletNum</effectType>
+			<value>5</value>
+			<mul>5</mul>
+			<valueString>week</valueString>
+			<duration>999999</duration>
+			
+			<description>增加[value]倍散射子弹。</description>
+		</skill>
+		<skill name="无限馈赠">
+			<name>superSkillGift</name>
+			<cnName>无限馈赠</cnName><everNoClearB>1</everNoClearB>
+			<conditionType>passive</conditionType>
+			<condition>useSkill</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>heroSkillFullCd</effectType>
+			<value>2</value>
+		</skill>
+		
+		<skill name="极限射速">
+			<name>maxSpeedTask</name>
+			<cnName>极限射速</cnName><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>maxSpeedTask</effectType>
+			<mul>5</mul>
+			<duration>99999</duration>
+			<description>增加[mul]倍的射击速度。</description>
+			<stateEffectImg partType="2eye,2hand" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg>
+		</skill>
+		
+		<skill name="战争狂人脱下头盔">
+			<name>madmanHead</name>
+			<cnName>战争狂人脱下头盔</cnName>
+			<conditionType>active</conditionType><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+			<condition>no</condition>
+			<target>me</target>
+			<addType>instant</addType>
+			<effectType>madmanHead</effectType>
+			<meEffectImg soundUrl="uiSound/swapHero" con="add" partType="head">generalEffect/blackHoleHide</meEffectImg>
+			<targetEffectImg partType="head">generalEffect/blackHoleHide</targetEffectImg>
+		</skill>
+		<skill name="丛林特种兵技能">
+			<name>betHit</name>
+			<cnName>丛林特种兵技能</cnName>
+			<conditionType>passive</conditionType><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+			<condition>hit</condition>
+			<target>me</target>
+			<addType>instant</addType>
+			<effectType>betHit</effectType>
+			
+		</skill>
+		<skill name="瞬秒所有">
+			<name>killAll</name>
+			<cnName>瞬秒</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreNoSkillB>1</ignoreNoSkillB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>kill</effectType>
+		</skill>
+		<skill>
+			<name>attackNoDodge</name>
+			<cnName>攻击无视闪避</cnName>
+			<conditionType>passive</conditionType><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+			<condition>add</condition>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>attackNoDodge</effectType>
+			<duration>99999</duration>
+		</skill>
+		<skill>
+			<name>findHide</name>
+			<cnName>红外眼</cnName><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<conditionType>passive</conditionType><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+			<condition>add</condition>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>findHideB</effectType>
+			<duration>999999</duration>
+			<description>可看见隐身敌人。</description>
+		</skill>
+		
+		<skill>
+			<name>invincibleZombieEnemyHit</name>
+			<cnName>无敌自爆僵尸攻击P1角色</cnName>
+			<conditionType>passive</conditionType><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<condition>hit</condition>
+			<target>me</target>
+			<addType>instant</addType>
+			<effectType>onlyHurtMul</effectType>
+			<mul>0.55</mul>
+		</skill>
+		
+		
+		<skill>
+			<name>sniperKingBuff</name>
+			<cnName>狙击之王任务P1角色状态</cnName>
+			<conditionType>passive</conditionType><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+			<condition>add</condition>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>sniperKingBuff</effectType>
+			<duration>99999</duration>
+		</skill>
+						<skill>
+							<name>sniperKingEnemyHit</name>
+							<cnName>狙击之王怪物攻击P1角色</cnName>
+							<conditionType>passive</conditionType><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+							<condition>hit</condition>
+							<target>me</target>
+							<addType>instant</addType>
+							<effectType>sniperKingEnemyHit</effectType>
+							<pointEffectImg>skillEffect/paralysis_enemy</pointEffectImg>
+						</skill>
+						
+						<skill>
+							<name>sniperKingEnemyUnder</name>
+							<cnName>狙击之王怪物受攻击</cnName>
+							<conditionType>passive</conditionType><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+							<condition>underHit</condition>
+							<target>me</target>
+							<addType>instant</addType>
+							<effectType>sniperKingEnemyUnder</effectType>
+						</skill>
+						<skill>
+							<name>sniperKingEnemyUnder2</name>
+							<cnName>狙击之王怪物受攻击-技能</cnName>
+							<conditionType>passive</conditionType><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+							<condition>underSkillHit</condition>
+							<target>me</target>
+							<addType>instant</addType>
+							<effectType>sniperKingEnemyUnder</effectType>
+						</skill>
+						
+		<skill>
+			<name>bulletRainBallHit</name>
+			<cnName>子弹碰撞</cnName>
+			<conditionType>passive</conditionType><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<condition>hit</condition>
+			<target>me</target>
+			<addType>instant</addType>
+			<effectType>bulletRainBallHit</effectType>
+		</skill>
+		<skill>
+			<name>flySkyBatBuff</name>
+			<cnName>蝙蝠状态</cnName>
+			<conditionType>passive</conditionType><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+			<condition>add</condition>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<stateEffectImg con="add" partType="body">generalEffect/nothing</stateEffectImg>
+			<pointEffectImg soundUrl="sound/body_hit">boomEffect/midWood</pointEffectImg>
+			<duration>99999</duration>
+		</skill>
+		
+		
+		
+	</father>
+</data>

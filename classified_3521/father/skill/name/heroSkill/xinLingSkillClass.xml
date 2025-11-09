@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="heroSkill" cnName="英雄技能">
+		<skill name="嘲讽">
+			<name>tauntLing</name>
+			<cnName>嘲讽</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB><noBeClearB>1</noBeClearB>
+			<effectInfoArr>增加防御力</effectInfoArr>
+			<addD pro="cd" range="-1,-3" info="冷却时间[v]秒" />
+			<cd>70</cd>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>800</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>6</duration>
+			<passiveSkillArr>tauntLingBack_link_1</passiveSkillArr>
+			<linkArr>tauntLing_link</linkArr>
+			 
+			<meEffectImg soundUrl="sound/tauntLing" partType="mouth">skillEffect/screaming_hero</meEffectImg>
+			<stateEffectImg partType="body" con="add">generalEffect/invincibleShield</stateEffectImg>
+			<description>自身无敌[duration]秒，期间逼迫900码内的敌人攻击自己。更高等级技能将会反弹伤害给敌人。</description>
+			
+			<growth>
+				<skill><cd>70</cd></skill>
+				<skill><cd>65</cd></skill>
+				<skill><cd>60</cd></skill>
+				<skill><cd>55</cd></skill>
+				<skill><cd>50</cd></skill>
+				<skill><cd>45</cd></skill>
+				<skill><cd>40</cd></skill>
+				<skill><cd>35</cd></skill>
+				<skill><cd>30</cd><passiveSkillArr>tauntLingBack_link_2</passiveSkillArr><changeText>反弹伤害倍数：0.5倍</changeText><description>自身无敌[duration]秒，期间逼迫900码内的敌人攻击自己，并把伤害反弹给敌人，伤害等于心零当前武器实际战斗力的0.5倍。</description></skill>
+				<skill><cd>30</cd><passiveSkillArr>tauntLingBack_link_3</passiveSkillArr><changeText>反弹伤害倍数：2倍</changeText><description>自身无敌[duration]秒，期间逼迫900码内的敌人攻击自己，并把伤害反弹给敌人，伤害等于心零当前武器实际战斗力的2倍。</description></skill>
+			</growth>
+		</skill>
+		<skill name="遇强则刚">
+			<name>strongLing</name>
+			<cnName>遇强则刚</cnName>
+			<effectInfoArr>增加防御力</effectInfoArr>
+			<addD pro="mul" range="-2,-5" info="受到伤害降低[v]" />
+			<changeText>受到伤害降低[1-mul]</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target systemType="hero">me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>strongLing</effectType>
+			<mul>0.9</mul>
+			<secMul>0.97</secMul>
+			<duration>1</duration>
+			<range>99999</range>
+			<stateEffectImg partType="body" con="add">generalEffect/hurtDefence1</stateEffectImg>
+			<description>当目标敌人处于无敌状态时，自己和主角受到伤害降低[1-mul]、百分比伤害降低[1-secMul]。</description>
+			
+			<growth>
+				<skill><mul>0.9</mul></skill>
+				<skill><mul>0.8</mul></skill>
+				<skill><mul>0.7</mul></skill>
+				<skill><mul>0.6</mul></skill>
+				<skill><mul>0.5</mul></skill>
+				<skill><mul>0.4</mul></skill>
+				<skill><mul>0.3</mul><secMul>0.85</secMul><changeText>受到百分比伤害降低[1-secMul]</changeText></skill>
+				<skill><mul>0.3</mul><secMul>0.70</secMul><changeText>受到百分比伤害降低[1-secMul]</changeText></skill>
+				<skill><mul>0.3</mul><secMul>0.50</secMul><changeText>受到百分比伤害降低[1-secMul]</changeText></skill>
+				<skill><mul>0.3</mul><secMul>0.30</secMul><changeText>受到百分比伤害降低[1-secMul]</changeText></skill>
+			</growth>
+		</skill>
+		<skill name="复仇">
+			<name>revengeLing</name>
+			<cnName>复仇</cnName><noBeClearB>1</noBeClearB>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			<addD pro="mul" range="0.01,0.02" info="角色殒命伤害提高[v]" />
+			<changeText>英雄角色殒命后造成伤害：[mul]{n}最多造成伤害：[secMul]</changeText>
+			
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<otherConditionArr>noHardB,noUnendLevelB,noSkillNoTargetMaxLifeB</otherConditionArr>
+			<intervalT>1</intervalT>
+			<target>me,range,we</target>
+			
+			<addType>instant</addType>
+			<effectType>revengeLingAddSkill</effectType>
+			<valueString>revengeLing_link_1</valueString>
+			<mul>0.04</mul>
+			<secMul>0.08</secMul>
+			<duration>99999</duration>
+			<range>99999</range>
+			<description>我方单位殒命时，对生命值高于20%的凶手造成百分比伤害（角色殒命造成[mul]伤害，其他殒命造成3%伤害），对同个凶手最多造成[secMul]的伤害。99级主线任务中该技能无效。</description>
+			<pointEffectImg soundUrl="boomSound/boom">boomEffect/bigFire</pointEffectImg>
+			
+			<growth>
+				<skill><mul>0.03</mul><secMul>0.04</secMul><valueString>revengeLing_link_1</valueString></skill>
+				<skill><mul>0.03</mul><secMul>0.08</secMul><valueString>revengeLing_link_2</valueString></skill>
+				<skill><mul>0.03</mul><secMul>0.12</secMul><valueString>revengeLing_link_3</valueString></skill>
+				<skill><mul>0.03</mul><secMul>0.16</secMul><valueString>revengeLing_link_4</valueString></skill>
+				<skill><mul>0.03</mul><secMul>0.20</secMul><valueString>revengeLing_link_5</valueString></skill>
+				<skill><mul>0.04</mul><secMul>0.25</secMul><valueString>revengeLing_link_6</valueString></skill>
+				<skill><mul>0.05</mul><secMul>0.30</secMul><valueString>revengeLing_link_7</valueString></skill>
+				<skill><mul>0.06</mul><secMul>0.35</secMul><valueString>revengeLing_link_8</valueString></skill>
+				<skill><mul>0.07</mul><secMul>0.40</secMul><valueString>revengeLing_link_9</valueString></skill>
+				<skill><mul>0.08</mul><secMul>0.45</secMul><valueString>revengeLing_link_10</valueString></skill>
+			</growth>
+		</skill>
+		<skill name="共鸣">
+			<name>resonanceLing</name>
+			<cnName>共鸣</cnName>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			<addD pro="mul" range="0.01,0.02" info="伤害提高[v]" />
+			<changeText>伤害提升：[mul]</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target systemType="hero">me,range,we</target>
+			<addType>state</addType>
+			<effectType>resonanceLing</effectType>
+			<mul>0.03</mul>
+			<duration>0.5</duration>
+			<range>9999999</range>
+			<stateEffectImg partType="shootPoint" con="filter" raNum="30" followPartRaB="1">skillEffect/purpleFire</stateEffectImg>
+			<description>当自己和队友持有同一类型枪支时，双方伤害提升[mul]。</description>
+			
+			<growth>
+				<skill><mul>0.03</mul></skill>
+				<skill><mul>0.05</mul></skill>
+				<skill><mul>0.07</mul></skill>
+				<skill><mul>0.09</mul></skill>
+				<skill><mul>0.11</mul></skill>
+				<skill><mul>0.13</mul></skill>
+				<skill><mul>0.16</mul></skill>
+				<skill><mul>0.19</mul></skill>
+				<skill><mul>0.22</mul></skill>
+				<skill><mul>0.25</mul></skill>
+			</growth>
+		</skill>
+		<skill name="暗夜信徒">
+			<name>nightLing</name>
+			<cnName>暗夜信徒</cnName><everNoClearB>1</everNoClearB>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			<addD pro="mul" range="0.01,0.03" info="继承战斗力[v]" />
+			<changeText>继承战斗力：[mul]{n}不超过自身战斗力的[secMul]</changeText>
+			
+			<conditionType>passive</conditionType>
+			<otherConditionArr>sceneLabelHave</otherConditionArr>
+			<conditionString>月亮,星空</conditionString>
+			<condition>add</condition>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>nightLing</effectType>
+			<mul>0.05</mul>
+			<secMul>0.30</secMul>
+			<duration>999999</duration>
+			<stateEffectImg partType="mouth" con="add" raNum="1">skillEffect/nightLing</stateEffectImg>
+			<description>在星空或月亮的场景下，继承当前主角[mul]的战斗力，继承战斗力不超过自身战斗力的[secMul]。</description>
+			
+			<growth>
+				<skill><mul>0.05</mul><secMul>0.30</secMul></skill>
+				<skill><mul>0.10</mul><secMul>0.60</secMul></skill>
+				<skill><mul>0.15</mul><secMul>0.90</secMul></skill>
+				<skill><mul>0.20</mul><secMul>1.20</secMul></skill>
+				<skill><mul>0.25</mul><secMul>1.50</secMul></skill>
+				<skill><mul>0.30</mul><secMul>1.80</secMul></skill>
+				<skill><mul>0.35</mul><secMul>2.10</secMul></skill>
+				<skill><mul>0.40</mul><secMul>2.40</secMul></skill>
+				<skill><mul>0.45</mul><secMul>2.70</secMul></skill>
+				<skill><mul>0.50</mul><secMul>3.00</secMul></skill>
+			</growth>
+		</skill>
+		<skill name="恶爪">
+			<name>clawLing</name>
+			<cnName>恶爪</cnName><noSkillDodgeB>1</noSkillDodgeB>
+			<effectInfoArr />
+			<addD pro="mul" range="0.01,0.03" info="时间延长[v]" />
+			<changeText>时间延长：[mul-1]</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<intervalT>0.1</intervalT>
+			<target>me,range,enemy</target>
+			<addType>instant</addType>
+			<effectType>setEnemyStateTMul</effectType>
+			<mul>1.03</mul>
+			<range>99999</range>
+			<description>让所有敌人身上的负面状态时间延长[mul-1]。</description>
+			
+			<growth>
+				<skill><mul>1.03</mul></skill>
+				<skill><mul>1.06</mul></skill>
+				<skill><mul>1.09</mul></skill>
+				<skill><mul>1.12</mul></skill>
+				<skill><mul>1.15</mul></skill>
+				<skill><mul>1.18</mul></skill>
+				<skill><mul>1.21</mul></skill>
+				<skill><mul>1.24</mul></skill>
+				<skill><mul>1.27</mul></skill>
+				<skill><mul>1.30</mul><ignoreImmunityB>1</ignoreImmunityB><changeText>时间延长：[mul-1]{n}无视技能免疫</changeText><description>让所有敌人身上的负面状态时间延长[mul-1]，无视技能免疫。</description></skill>
+			</growth>
+		</skill>
+	</father>
+	</data>

@@ -1,0 +1,256 @@
+{
+  "father": {
+    "name": "enemy",
+    "skills": {
+      "ClawsZombie": {
+        "shell": "compound",
+        "name": "ClawsZombie",
+        "cnName": "利爪僵尸",
+        "headIconUrl": "IconGather/ClawsZombie",
+        "raceType": "zombies",
+        "swfUrl": "swf/enemy/ClawsZombie310.swf",
+        "lifeRatio": 1,
+        "showLevel": 999,
+        "imgArr": "stand,move,run\n\t\t\t\t,normalAttack,shootAttack\n\t\t\t\t,comboAttack,dartleAttack,shakeAttack\n\t\t\t\t,hurt1,hurt2,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+        "bossImgArr": "comboAttack,dartleAttack,shakeAttack",
+        "hitRect": "-14,-76,28,76",
+        "maxJumpNum": 2,
+        "maxVx": 7,
+        "nextAttackTime": 0,
+        "extraAIClassLabel": null,
+        "avtiveSkillCdOverT": 0,
+        "skillArr": "noBounce_enemy,reflectiveShell,reverseHurt_enemy",
+        "bossSkillArr": "clawsCombo,clawsDartle,clawsShake,immune,treater_knights,magneticField_enemy,bladeShield,invincibleEmp",
+        "bossSkillArrCn": null,
+        "hurtArr": {
+          "hurt": [
+            {
+              "imgLabel": "normalAttack",
+              "cn": "爪击",
+              "hurtRatio": 1.2,
+              "shakeValue": 4,
+              "attackType": "direct",
+              "skillArr": null,
+              "hitImgUrl": {
+                "name": "clawHit"
+              }
+            },
+            {
+              "imgLabel": "shootAttack",
+              "cn": "火爪",
+              "bulletLabel": "ClawsZombie_1",
+              "grapRect": "-600,-132,450,133",
+              "hurtRatio": 1.5,
+              "attackType": "holy"
+            },
+            {
+              "imgLabel": "comboAttack",
+              "cn": "侵略之爪",
+              "noAiChooseB": 1,
+              "hurtRatio": 2,
+              "shakeValue": 4,
+              "attackType": "holy",
+              "skillArr": null,
+              "hitImgUrl": {
+                "name": "clawHit"
+              }
+            },
+            {
+              "imgLabel": "shakeAttack",
+              "cn": "侵占之跃",
+              "noAiChooseB": 1,
+              "hurtRatio": 10,
+              "shakeValue": 4,
+              "attackType": "holy",
+              "skillArr": "pullAttackHammer",
+              "hitImgUrl": {
+                "name": "clawHit"
+              }
+            },
+            {
+              "imgLabel": "dartleAttack",
+              "cn": "侵袭之火",
+              "noAiChooseB": 1,
+              "bulletLabel": "clawsDartleBullet",
+              "grapRect": "-600,-132,450,133",
+              "hurtRatio": 0.5,
+              "shakeValue": 4,
+              "attackType": "holy"
+            }
+          ]
+        }
+      },
+      "ClawsZombie_1": {
+        "name": "ClawsZombie_1",
+        "cnName": "火爪",
+        "shakeAngle": 5,
+        "bulletLife": 3,
+        "bulletWidth": 40,
+        "hitType": "rect",
+        "attackGap": 0.8,
+        "attackDelay": 0.6,
+        "bulletAngle": -179,
+        "bulletAngleRange": 50,
+        "shootPoint": "-111,-78",
+        "bulletSpeed": 18,
+        "penetrationGap": 1000,
+        "skillArr": null,
+        "flipX": 1,
+        "bulletImgUrl": {
+          "name": "clawsBullet"
+        },
+        "hitImgUrl": {
+          "name": "rocketCate_hit"
+        }
+      },
+      "clawsDartleBullet": {
+        "name": "clawsDartleBullet",
+        "cnName": "侵袭之火",
+        "shakeAngle": 5,
+        "bulletLife": 4,
+        "bulletWidth": 40,
+        "hitType": "rect",
+        "attackGap": 1.6,
+        "attackDelay": 0.5,
+        "bulletAngle": -179,
+        "bulletAngleRange": 50,
+        "bulletNum": 10,
+        "shootAngle": 60,
+        "shootGap": 0.26,
+        "shootNum": 5,
+        "shootPoint": "-111,-78",
+        "bulletSpeed": 15,
+        "followD": {
+          "value": 2,
+          "delay": 0.2,
+          "maxTime": 1.5
+        },
+        "penetrationGap": 1000,
+        "speedD": {
+          "random": 0.3
+        },
+        "skillArr": null,
+        "flipX": 1,
+        "bulletImgUrl": {
+          "name": "clawsBullet"
+        },
+        "smokeImgUrl": {
+          "value": "bullet/fireballSmoke",
+          "con": "filter",
+          "raNum": 30
+        },
+        "hitImgUrl": {
+          "name": "rocketCate_hit"
+        }
+      },
+      "acidicBlood": {
+        "name": "acidicBlood",
+        "cnName": "侵蚀之血",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "noBeClearB": 1,
+        "conditionType": "passive",
+        "condition": "underHit",
+        "otherConditionArr": "hurtArmsBulletNumMore",
+        "conditionRange": 1,
+        "target": "target",
+        "addType": "state",
+        "effectType": "setBulletNum",
+        "value": 0.3,
+        "mul": 2,
+        "duration": 3,
+        "stateEffectImg": {
+          "name": "gunSmokeSmall"
+        },
+        "description": "受到散射枪支攻击后，侵蚀目标70%的散射子弹，持续[duration]秒。"
+      },
+      "clawsCombo": {
+        "name": "clawsCombo",
+        "cnName": "侵略之爪",
+        "iconUrl36": null,
+        "ignoreNoSkillB": 1,
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "noBeClearB": 1,
+        "noSkillDodgeB": 1,
+        "cd": 11,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "noAttackImg",
+        "target": "me",
+        "addType": "state",
+        "effectType": "clawsCombo",
+        "duration": 1.9,
+        "passiveSkillArr": "clawsComboSlow",
+        "meActionLabel": "comboAttack",
+        "description": "利爪僵尸发出侵略之爪，连续对敌人造成重大伤害。"
+      },
+      "clawsComboSlow": {
+        "name": "clawsComboSlow",
+        "cnName": "侵略之爪-全体减速",
+        "ignoreNoSkillB": 1,
+        "noBeClearB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "conditionType": "active",
+        "target": "me,range,enemy",
+        "addType": "state",
+        "effectType": "moveSpeed",
+        "value": 0,
+        "mul": 0.4,
+        "duration": 2,
+        "range": 999999,
+        "stateEffectImg": {
+          "value": "skillEffect/disabled_enemy",
+          "partType": "2foot"
+        }
+      },
+      "clawsShake": {
+        "name": "clawsShake",
+        "cnName": "侵占之跃",
+        "iconUrl36": null,
+        "ignoreNoSkillB": 1,
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "noBeClearB": 1,
+        "noSkillDodgeB": 1,
+        "cd": 15,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "noAttackImg",
+        "target": "me",
+        "addType": "state",
+        "effectType": "clawsShake",
+        "duration": 1.2,
+        "meActionLabel": "shakeAttack",
+        "otherEffectImg": {
+          "value": "skillEffect/apertureBig",
+          "con": "add"
+        },
+        "description": "利爪僵尸一跃而起，对敌人发起重击，造成重大伤害，并眩晕敌人。"
+      },
+      "clawsDartle": {
+        "name": "clawsDartle",
+        "cnName": "侵袭之火",
+        "iconUrl36": null,
+        "ignoreNoSkillB": 1,
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "noBeClearB": 1,
+        "noSkillDodgeB": 1,
+        "cd": 12,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "noAttackImg",
+        "target": "me",
+        "addType": "state",
+        "effectType": "invincible",
+        "duration": 1.6,
+        "meActionLabel": "dartleAttack",
+        "description": "利爪僵尸瞬间发出几十条跟踪火焰攻击敌人。"
+      }
+    }
+  }
+}

@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<body name="斩之使者" shell="normal">
+			
+			<name>HookWitch</name>
+			<cnName>斩之使者</cnName><headIconUrl>IconGather/HookWitch</headIconUrl>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/HookWitch316.swf</swfUrl>
+			
+			<lifeRatio>1.8</lifeRatio>
+			<showLevel>999</showLevel>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move,run
+				,normalAttack,pullAttack,rollAttack,rollAttack__,__rollAttack,shakeAttack
+				,hurt1,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			<lifeBarExtraHeight>-50</lifeBarExtraHeight>
+			<handAddRa>90</handAddRa>
+			
+			<hitRect>-18,-96,36,96</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>12</maxVx>
+			<runStartVx>8</runStartVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>HookWitch_AIExtra</extraAIClassLabel>
+			
+			<skillArr />
+			<bossSkillArr>fightReduct2,defenceBounce_enemy,HookWitchHook,HookWitchRoll,HookWitchShake,HookWitchVehicle</bossSkillArr>
+			<wilderSkillArr>shortShootRangeHole,weaponNo,godShield,fitVehicleDefence</wilderSkillArr>
+			<bossSkillArrCn />
+			<extraDropArmsB>1</extraDropArmsB>
+			<dropD blackArmsBodyB="1" />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel><cn>普通攻击</cn>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<grapMaxLen>160</grapMaxLen>
+					<grapMinLen>50</grapMinLen>
+					<skillArr />
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit1">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				
+				
+				<hurt info="爆怒一击"><noAiChooseB>1</noAiChooseB>
+					<imgLabel>shakeAttack</imgLabel>
+					<hurtMul>0.7</hurtMul>
+					<hurtRatio>0.000000001</hurtRatio>
+					<attackType>holy</attackType>
+					<noUseOtherSkillB>1</noUseOtherSkillB>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>pullAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.5</hurtRatio>
+					<attackType>holy</attackType>
+					<skillArr>HookWitchHookHit</skillArr>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				
+				<hurt info="不加入ai选择">
+					<imgLabel>rollAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<noShootB>1</noShootB><ingfollowB>1</ingfollowB>
+					<hurtRatio>0.000000001</hurtRatio>
+					<hurtMul>0.025</hurtMul><transBackMul>0.5</transBackMul>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>	
+		
+		
+		<skill index="0" name="夺命斩">
+			<name>HookWitchShake</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>夺命斩</cnName><iconUrl36>SkillIcon/HookWitchShake_36</iconUrl36>
+			<cd>9</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>1.8</duration>
+			<meActionLabel>shakeAttack</meActionLabel>
+			<description>斩之使者腾空而起，向地面的敌人发起夺命斩，造成巨大伤害。</description>
+		</skill>
+		<skill index="0" name="勾魂斩">
+			<name>HookWitchHook</name>
+			<cnName>勾魂斩</cnName><iconUrl36>SkillIcon/HookWitchHook_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>5</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>700</conditionRange><target>me</target>
+			<addType>no</addType>
+			<meActionLabel>pullAttack</meActionLabel>
+			<description>斩之使者向前释放镰刀，把敌人勾到自己的面前，并眩晕敌人。</description>
+		</skill>
+				<skill index="0" name="钩拉-击中麻痹">
+					<name>HookWitchHookHit</name>
+					<cnName>钩拉-击中麻痹</cnName>
+					
+					<conditionType>passive</conditionType>
+					<condition>hit</condition>
+					<target>target</target>
+					<noBeClearB>1</noBeClearB>
+					<noSkillDodgeB>1</noSkillDodgeB>
+					<ignoreImmunityB>1</ignoreImmunityB>
+					
+					<addType>state</addType>
+					<effectType>SnowGirlPullHit</effectType>
+					<mul>36</mul>
+					<secMul>50</secMul>
+					<valueString>belt</valueString>
+					<duration>2.4</duration>
+					 
+					<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+				</skill>
+				
+		<skill index="0" name="旋风斩">
+			<name>HookWitchRoll</name>
+			<cnName>旋风斩</cnName><iconUrl36>SkillIcon/HookWitchRoll_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<cd>20</cd>
+			
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>0.6</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>HookWitchRoll</effectType>
+			<mul>1</mul>
+			<duration>15</duration>
+			
+			<meEffectImg />
+			<description>斩之使者进入旋风状态，旋转镰刀对敌人进行追击，持续[duration]秒。斩之使者弹跳时也会取消旋风状态。</description>
+		</skill>
+		
+		<skill cnName="绝地反击">
+			<name>HookWitchVehicle</name>
+			<cnName>绝地反击</cnName><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>HookWitchVehicle</effectType>
+			<mul>0.4</mul>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>单位生命值小于[mul]时，不受任何载具的伤害。</description>
+		</skill>
+		
+		
+		<skill>
+			<name>shortShootRangeHole</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>狭隘领域</cnName><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB><noSkillDodgeB>1</noSkillDodgeB><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>limitShootRange</effectType>
+			<value>100</value>
+			<duration>1</duration>
+			<range>999999</range>
+			<description>使所有持枪敌人的射程不超过[value]码。</description>
+		</skill>
+	</father>
+</data>

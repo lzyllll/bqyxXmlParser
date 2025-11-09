@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="petBodySkill" cnName="爆骷">
+		<skill index="0" name="无尽轰炸">
+			<name>endlessBombing_skull</name>
+			<cnName>无尽轰炸</cnName>
+			<cd>150</cd>
+			<iconUrl>SkillIcon/endlessBombing_skull</iconUrl>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>500</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<extraValueType>nowArmsDps</extraValueType>
+			<mul>0.6</mul>
+			
+			<obj>"name":"PetBoomSkull_endlessBombing","site":"me","flipB":true,"launcherB":true,"followB":true</obj>
+			
+			<description>爆骷在5秒之内向外释放出50颗跟踪弹，每颗跟踪弹的伤害为爆骷当前战斗力的[mul]。</description>
+			<growth>
+				<skill><cd>150</cd></skill>
+				<skill><cd>131</cd></skill>
+				<skill><cd>113</cd></skill>
+				<skill><cd>94</cd></skill>
+				<skill><cd>75</cd></skill>
+				<skill><cd>56</cd></skill>
+				<skill><cd>38</cd></skill>
+				<skill><cd>38</cd><mul>0.7</mul><changeText>伤害倍数[mul]</changeText></skill>
+				<skill><cd>38</cd><mul>0.8</mul><changeText>伤害倍数[mul]</changeText></skill>
+			</growth>
+		</skill>
+		<skill index="0" cnName="聚能电流">
+			<name>current_skull</name>
+			<cnName>聚能电流</cnName>
+			<iconUrl>SkillIcon/current</iconUrl>
+			<changeText>释放间隔：[duration]秒</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,near,enemy</target>
+			
+			<addType>instant</addType>
+			<effectType>current</effectType>
+			<extraValueType>nowArmsDps</extraValueType>
+			<mul>9</mul>
+			<range>350</range>
+			<duration>39</duration>
+			<meEffectImg soundUrl="sound/electric" />
+			
+			<description>爆骷每[duration]秒向外释放一次闪电，击中[range]范围内的最近目标，伤害值为爆骷当前战斗力的[mul]。</description>
+			
+			<growth>
+				<skill><duration>39</duration></skill>
+				<skill><duration>33</duration></skill>
+				<skill><duration>28</duration></skill>
+				<skill><duration>23</duration></skill>
+				<skill><duration>19</duration></skill>
+				<skill><duration>14</duration></skill>
+				<skill><duration>9</duration></skill>
+				<skill><duration>9</duration><mul>11</mul><changeText>伤害倍数[mul]</changeText></skill>
+				<skill><duration>9</duration><mul>13</mul><changeText>伤害倍数[mul]</changeText></skill>
+			</growth>
+		</skill>
+		<skill index="0" cnName="退化光环">
+			<name>degradation_PetBoomSkull</name>
+			<cnName>退化光环</cnName>
+			<iconUrl>SkillIcon/degradation</iconUrl>
+			<changeText>防御降低：[mul-1]</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>underHurtMul</effectType>
+			<mul>1.07</mul>
+			<duration>2</duration>
+			<range>400</range>
+			
+			<description>降低周围[range]码以内敌方单位的[mul-1]的防御力。</description>
+			
+			<growth>
+				<skill><mul>1.07</mul></skill>
+				<skill><mul>1.11</mul></skill>
+				<skill><mul>1.15</mul></skill>
+				<skill><mul>1.19</mul></skill>
+				<skill><mul>1.23</mul></skill>
+				<skill><mul>1.27</mul></skill>
+				<skill><mul>1.31</mul></skill>
+				<skill><mul>1.33</mul></skill>
+				<skill><mul>1.35</mul></skill>
+			</growth>
+		</skill>
+	</father>
+	</data>

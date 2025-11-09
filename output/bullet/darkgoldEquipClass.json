@@ -1,0 +1,339 @@
+{
+  "gather": [
+    {
+      "cnName": "暗金",
+      "range": "999999,999999,999999,999999",
+      "father": {
+        "cnName": "狂人",
+        "color": "darkgold",
+        "name": "madamor",
+        "imgSwf": "madamor",
+        "evoB": true,
+        "suitPro": "hurtAll:1.35",
+        "image": [
+          {
+            "type": "head",
+            "itemsLevel": 95,
+            "cnName": "狂人头盔",
+            "otherObjJson": {
+              "dpsAllBlack": 0.16,
+              "lifeAllBlack": 0.45,
+              "dodge": 0.2
+            }
+          },
+          {
+            "type": "coat",
+            "itemsLevel": 95,
+            "cnName": "狂人战衣",
+            "otherObjJson": {
+              "dpsAllBlack": 0.16,
+              "fightDedut": 0.29,
+              "bulletDedut": 0.27
+            }
+          },
+          {
+            "type": "pants",
+            "itemsLevel": 95,
+            "cnName": "狂人战裤",
+            "otherObjJson": {
+              "dpsAllBlack": 0.16,
+              "cdMul": 0.27,
+              "moveMul": 0.27
+            }
+          },
+          {
+            "type": "belt",
+            "itemsLevel": 95,
+            "cnName": "狂人腰带",
+            "otherObjJson": {
+              "dpsAllBlack": 0.17,
+              "lifeRateBlack": 17329
+            }
+          }
+        ]
+      }
+    },
+    {
+      "cnName": "紫金",
+      "range": "999999,999999,999999,999999",
+      "father": {
+        "cnName": "战神",
+        "color": "purgold",
+        "name": "madpur",
+        "imgSwf": "madpur",
+        "evoB": true,
+        "suitPro": "hurtAll:1.50,critPro3:0.03",
+        "image": [
+          {
+            "type": "head",
+            "itemsLevel": 99,
+            "cnName": "战神的蔑视",
+            "skillArr": "madpurHurt",
+            "otherObjJson": {
+              "dpsAllBlack": 0.16,
+              "lifeAllBlack": 0.45,
+              "dodge": 0.2
+            }
+          },
+          {
+            "type": "coat",
+            "itemsLevel": 99,
+            "cnName": "战神的戒严",
+            "skillArr": "madpurUnder",
+            "otherObjJson": {
+              "dpsAllBlack": 0.16,
+              "fightDedut": 0.29,
+              "bulletDedut": 0.27
+            }
+          },
+          {
+            "type": "pants",
+            "itemsLevel": 99,
+            "cnName": "战神的讨伐",
+            "skillArr": "madpurPants",
+            "otherObjJson": {
+              "dpsAllBlack": 0.16,
+              "cdMul": 0.27,
+              "moveMul": 0.27
+            }
+          },
+          {
+            "type": "belt",
+            "itemsLevel": 99,
+            "cnName": "战神的降临",
+            "skillArr": "madpurBelt",
+            "otherObjJson": {
+              "dpsAllBlack": 0.17,
+              "lifeRateBlack": 17329
+            }
+          }
+        ]
+      }
+    },
+    {
+      "cnName": "氩星",
+      "range": "999999,999999,999999,999999",
+      "father": {
+        "cnName": "战神",
+        "color": "yagold",
+        "name": "madya",
+        "imgSwf": "madya",
+        "evoB": true,
+        "suitPro": "hurtAll:1.55,critPro3:0.03",
+        "image": [
+          {
+            "type": "head",
+            "itemsLevel": 99,
+            "cnName": "战神的藐视",
+            "otherObjJson": {
+              "dpsAllBlack": 0.16,
+              "lifeAllBlack": 0.45,
+              "dodge": 0.2
+            }
+          },
+          {
+            "type": "coat",
+            "itemsLevel": 99,
+            "cnName": "战神的封锁",
+            "otherObjJson": {
+              "dpsAllBlack": 0.16,
+              "fightDedut": 0.29,
+              "bulletDedut": 0.27
+            }
+          },
+          {
+            "type": "pants",
+            "itemsLevel": 99,
+            "cnName": "战神的诛灭",
+            "skillArr": "yaMadPants",
+            "otherObjJson": {
+              "dpsAllBlack": 0.16,
+              "cdMul": 0.27,
+              "moveMul": 0.27
+            }
+          },
+          {
+            "type": "belt",
+            "itemsLevel": 99,
+            "cnName": "战神的驾临",
+            "otherObjJson": {
+              "dpsAllBlack": 0.17,
+              "lifeRateBlack": 17329
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "father": {
+    "name": "purgoldEquip",
+    "skill": [
+      {
+        "name": "madpurHurt",
+        "cnName": "蔑视",
+        "ignoreNoSkillB": 1,
+        "ignoreSilenceB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "conditionType": "passive",
+        "otherConditionArr": "targetIsHero",
+        "condition": "hit",
+        "target": "target",
+        "addType": "instant",
+        "effectType": "changeHurtNoCondition",
+        "mul": 1.2,
+        "description": "对持枪敌人造成额外[mul-1]的伤害。"
+      },
+      {
+        "name": "madpurHurt2",
+        "cnName": "真视",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "conditionType": "passive",
+        "noBeClearB": 1,
+        "everNoClearB": 1,
+        "condition": "add",
+        "target": "me",
+        "addType": "state",
+        "effectType": "findHideB2",
+        "duration": 999999,
+        "description": "可看见隐身敌人。"
+      },
+      {
+        "name": "madpurUnder",
+        "cnName": "戒严",
+        "ignoreNoSkillB": 1,
+        "ignoreSilenceB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "conditionType": "passive",
+        "otherConditionArr": "targetIsHero",
+        "condition": "underAllHit",
+        "target": "target",
+        "addType": "instant",
+        "effectType": "changeHurtAndMul",
+        "mul": 0.75,
+        "description": "受到持枪敌人的伤害减少[1-mul]。"
+      },
+      {
+        "name": "madpurUnder2",
+        "cnName": "惩戒",
+        "ignoreNoSkillB": 1,
+        "ignoreSilenceB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "conditionType": "passive",
+        "otherConditionArr": "isMulHurt",
+        "condition": "underAllHit",
+        "target": "target",
+        "addType": "instant",
+        "effectProArr": 0.1,
+        "effectType": "madpurUnder2",
+        "mul": 0.3,
+        "description": "受到百分比伤害时，有[effectProArr.0]的概率让敌人受到同样的百分比伤害（百分比不超过[mul]）。"
+      },
+      {
+        "name": "madpurPants",
+        "cnName": "讨伐",
+        "ignoreNoSkillB": 1,
+        "ignoreSilenceB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "conditionType": "passive",
+        "otherConditionArr": "isDemon",
+        "condition": "hit",
+        "target": "target",
+        "addType": "instant",
+        "effectType": "changeHurtNoCondition",
+        "mul": 1.2,
+        "description": "修罗模式下伤害增加[mul-1]。"
+      },
+      {
+        "name": "madpurPants2",
+        "cnName": "远征",
+        "ignoreNoSkillB": 1,
+        "ignoreSilenceB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "conditionType": "passive",
+        "otherConditionArr": "haveArmsSenB",
+        "condition": "hit",
+        "target": "target",
+        "addType": "instant",
+        "effectType": "changeHurtNoCondition",
+        "mul": 1.2,
+        "description": "对拥有武器敏感的敌人额外造成[mul-1]的伤害。"
+      },
+      {
+        "name": "yaMadPants",
+        "cnName": "诛灭",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "conditionType": "passive",
+        "noBeClearB": 1,
+        "everNoClearB": 1,
+        "condition": "add",
+        "target": "me",
+        "addType": "state",
+        "effectType": "yaMadPants",
+        "value": 60,
+        "mul": 0.1,
+        "secMul": 0.3,
+        "duration": 999999,
+        "description": "每过[value]秒，角色就增加[mul]的伤害，最多增加[secMul]。时间停止期间不计时。"
+      },
+      {
+        "name": "madpurBelt",
+        "cnName": "降临",
+        "ignoreNoSkillB": 1,
+        "ignoreSilenceB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "conditionType": "passive",
+        "condition": "allDie",
+        "otherConditionArr": "haveAllMadpur,noMainAndSpreadTask,noArena,noDayTask6,noAntimatter_die",
+        "target": "me",
+        "minTriggerT": 300,
+        "addType": "instant",
+        "summonedUnitsB": 1,
+        "effectType": "madpurBelt",
+        "extraValueType": "nowArmsDpsOrNormal",
+        "duration": 15,
+        "obj": "\"cnName\":\"战神\",\"num\":1,\"lifeMul\":100000000,\"dpsMul\":20,\"mulByFatherB\":1,\"maxNum\":1,\"skillArr\":[\"crazy_pet_9\",\"alloyShell_8\",\"offBossAtten\",\"madArmsAttack\",\"desertedHalo_enemy\",\"madCloseLightning\",\"findHide\",\"summonShortLife\",\"rigidBody_enemy\",\"MadbossUnder\"]",
+        "meEffectImg": {
+          "value": "generalEffect/vehicleFit",
+          "noFollowB": true,
+          "soundUrl": "sound/vehicleFit",
+          "con": "add"
+        },
+        "description": "身穿全套战神装，在受到必亡伤害时将变身战神！持续[duration]秒，最短触发间隔[minTriggerT]秒。主线支线任务、竞技场无效。"
+      },
+      {
+        "name": "madpurBelt2",
+        "cnName": "降临II",
+        "ignoreNoSkillB": 1,
+        "ignoreSilenceB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "conditionType": "passive",
+        "condition": "allDie",
+        "otherConditionArr": "haveAllMadpur,noMainAndSpreadTask,noArena,noDayTask6,noAntimatter_die",
+        "target": "me",
+        "minTriggerT": 300,
+        "addType": "instant",
+        "summonedUnitsB": 1,
+        "effectType": "madpurBelt",
+        "extraValueType": "nowArmsDpsOrNormal",
+        "duration": 20,
+        "obj": "\"cnName\":\"战神\",\"num\":1,\"lifeMul\":1000000000,\"dpsMul\":25,\"mulByFatherB\":1,\"maxNum\":1,\"skillArr\":[\"noUnderMulHurt\",\"spellImmunityMax\",\"meltFlamerPurgold\",\"crazy_pet_9\",\"alloyShell_8\",\"offBossAtten\",\"madArmsAttack\",\"desertedHalo_enemy\",\"madCloseLightning\",\"findHide\",\"summonShortLife\",\"rigidBody_enemy\",\"MadbossUnder\"]",
+        "meEffectImg": {
+          "value": "generalEffect/vehicleFit",
+          "noFollowB": true,
+          "soundUrl": "sound/vehicleFit",
+          "con": "add"
+        },
+        "description": "身穿全套战神装，在受到必亡伤害时将变身战神（新增技能：钢骨、化锁、技能免除）！持续[duration]秒，最短触发间隔[minTriggerT]秒。主线支线任务、竞技场无效。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<skill name="龙破">
+			<name>FireDragonSprint</name>
+			<cnName>龙破</cnName><iconUrl36>SkillIcon/laser_PetFightWolf_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>12</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>700</conditionRange><target>me</target>
+			<addType>no</addType>
+			<meActionLabel>sprintAttack</meActionLabel>
+			<description>向目标连续冲刺3次，造成巨大伤害。</description>
+		</skill>
+		
+		<skill name="龙焰">
+			<name>FireDragonFire</name>
+			<cnName>龙焰</cnName><iconUrl36>SkillIcon/FireDragonFire_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>8</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>700</conditionRange><target>me</target>
+			<addType>no</addType>
+			
+			<meActionLabel>fireAttack</meActionLabel>
+			<description>瞬移至目标前方，释放高温火焰，灼伤敌人！</description>
+		</skill>
+		
+		<skill name="龙雨">
+			<name>FireDragonCombo</name>
+			<cnName>龙雨</cnName><iconUrl36>SkillIcon/FireDragonCombo_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>15</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>0.3</conditionRange>
+			<target>me</target>
+			<addType>no</addType>
+			
+			<meActionLabel>comboAttack</meActionLabel>
+			<description>当生命值低于30%时，向空中释放大量的限时跟踪火球，此时异飞龙无敌。</description>
+		</skill>
+	</father>
+	
+</data>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father cnName="敌我关系">
+		<body cnName="" name="nearEnemy" tip="附近多少码内有敌人" conditionRange="距离" />
+		<body cnName="" name="followingTarget" tip="释放者处于跟踪状态" />
+		<body cnName="" name="awayTarget" tip="距离目标远于" conditionRange="距离" />
+		<body cnName="" name="nearAttackTarget" tip="距离索敌" conditionRange="距离" />
+		<body cnName="" name="attackTargetUnitType" tip="索敌的单位类型" conditionString="单位类型" />
+		<body cnName="" name="gapLess" tip="与目标的距离小于" conditionRange="距离" />
+		<body cnName="" name="upAttackTargetByRange" tip="索敌距离我头顶多高" conditionRange="距离" />
+	</father>
+	</data>

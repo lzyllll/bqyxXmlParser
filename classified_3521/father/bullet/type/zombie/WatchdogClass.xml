@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="看门狗">
+		<bullet cnName="看门狗-射击">
+			<name>shoot_Watchdog</name>
+			<cnName>看门狗-射击</cnName>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.9</attackGap>
+			<attackDelay>0.3</attackDelay>
+			<bulletAngle>180</bulletAngle>
+			<bulletAngleRange>10</bulletAngleRange>
+			<shootNum>9</shootNum>
+			<shootGap>0.05</shootGap>
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<shootPoint>-60,-95</shootPoint>
+			<bulletSpeed>25</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30" con="add">bullet/laser</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/hand_hit">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		
+		<bullet cnName="大地闪电">
+			<name>lightningWatchdog</name>
+			<cnName>大地闪电</cnName>
+			
+			<hurtMul>0.65</hurtMul>
+			<attackType>holy</attackType>
+			
+			<bulletLife>0.0001</bulletLife>
+			
+			<bulletWidth>220</bulletWidth>
+			<hitType>longLine</hitType>
+			
+			<bulletAngle>270</bulletAngle>
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<skillArr>lightningWatchdogHit</skillArr>
+				
+			<shootPoint>0,0</shootPoint>
+			<bulletSpeed>0</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<imgClearDelay>0.23</imgClearDelay>
+			<bulletImgUrl con="add">bullet/lightning1</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+	</father>	
+	
+	
+</data>

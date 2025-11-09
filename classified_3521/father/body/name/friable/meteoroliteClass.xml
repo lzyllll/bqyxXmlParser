@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="friable">
+		<body>
+			<name>spaceZero</name>
+			<cnName>太空空单位</cnName>
+			<raceType>robot</raceType>
+			<swfName>Zero</swfName>
+			<swfUrl>swf/enemy/Zero.swf</swfUrl>
+			
+			<lifeRatio>0.7</lifeRatio>
+			<dieImg name="stoneBoom" />
+			<dieJumpMul>0</dieJumpMul>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,die1
+			</imgArr>
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			
+			<motionState>fly</motionState>
+			<maxJumpNum>0</maxJumpNum>
+			<maxVx>0</maxVx>
+			
+			<defaultAiOrder>no</defaultAiOrder>
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr>State_SpellImmunity</skillArr>
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>0</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<grapRect>-50,-111,100,105</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>	
+		
+		<body>
+			<name>MeteoriteFast</name>
+			<cnName>飞速陨石</cnName><lifeRatio>0.6</lifeRatio>
+			<raceType>stone</raceType>
+			<swfUrl>swf/ship/MeteoriteFast.swf</swfUrl>
+			
+			<dieImg name="stoneBoom" />
+			<dieJumpMul>0</dieJumpMul>
+			<lockLeftB>1</lockLeftB>
+			<imgArr>
+				stand,die1
+			</imgArr>
+			
+			<hitRect>-20,-20,40,40</hitRect>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<maxVx>20</maxVx>
+			<skillArr>hitCheckDie,spaceMoveLeftNoAI,boomMoveSmokeState,addTeleportEnemyY</skillArr>
+		</body>
+					
+					<skill>
+						<name>boomMoveSmokeState</name><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+						<cnName>火烟特效</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+						<conditionType>passive</conditionType>
+						<condition>add</condition>
+						<target>me</target>
+						
+						<addType>state</addType>
+						<effectType>no</effectType>
+						<stateEffectImg name="stoneSmoke" />
+						<duration>9999999</duration>
+					</skill>
+					
+		<body>
+			<name>MeteoriteGold</name>
+			<cnName>矿船矿石</cnName><lifeRatio>0.8</lifeRatio>
+			<raceType>stone</raceType>
+			<swfUrl>swf/ship/MeteoriteGold.swf</swfUrl>
+			
+			<dieImg name="stoneBoom" />
+			<dieJumpMul>0</dieJumpMul>
+			<lockLeftB>1</lockLeftB>
+			<imgArr>
+				stand1,stand2,stand3,stand4,stand5,die1
+			</imgArr>
+			
+			<hitRect>-20,-20,40,40</hitRect>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<maxVx>8</maxVx>
+			<skillArr>hitCheckDie,spaceMoveLeftNoAI</skillArr>
+		</body>
+		
+		
+		<body>
+			<name>MeteoriteSmall</name>
+			<cnName>小陨石</cnName>
+			<raceType>stone</raceType>
+			<swfUrl>swf/ship/MeteoriteSmall.swf</swfUrl>
+			
+			<dieImg name="stoneBoom" />
+			<dieJumpMul>0</dieJumpMul>
+			<lockLeftB>1</lockLeftB>
+			<imgArr>
+				stand1,stand2,stand3,stand4,stand5,stand6,stand7,stand8,die1
+			</imgArr>
+			
+			<hitRect>-20,-20,40,40</hitRect>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<maxVx>6</maxVx>
+			<skillArr>hitCheckDie,spaceMoveLeftNoAI</skillArr>
+		</body>
+		<body>
+			<name>MeteoriteMid</name>
+			<cnName>中陨石</cnName><lifeRatio>2</lifeRatio>
+			<raceType>stone</raceType>
+			<swfUrl>swf/ship/MeteoriteMid.swf</swfUrl>
+			
+			<dieImg name="stoneBoom" />
+			<dieJumpMul>0</dieJumpMul>
+			<lockLeftB>1</lockLeftB>
+			<imgArr>
+				stand1,stand2,stand3,stand4,die1
+			</imgArr>
+			
+			<hitRect>-25,-25,50,50</hitRect>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<maxVx>5</maxVx>
+			<skillArr>hitCheckDie,spaceMoveLeftNoAI</skillArr>
+		</body>
+		
+		<body>
+			<name>MeteoriteOre</name>
+			<cnName>陨石矿</cnName><lifeRatio>5</lifeRatio>
+			<raceType>stone</raceType>
+			<swfUrl>swf/ship/MeteoriteOre.swf</swfUrl>
+			
+			<dieImg name="midSpace" />
+			<dieJumpMul>0</dieJumpMul>
+			<lockLeftB>1</lockLeftB>
+			<imgType>normal</imgType>
+			<imgArr>
+				stand1,stand2,stand3,stand4,die1
+			</imgArr>
+			
+			<hitRect>-80,-60,160,140</hitRect>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<maxVx>4</maxVx>
+			<skillArr>hitCheckDie,spaceMoveLeftNoAI</skillArr>
+		</body>
+		
+		
+		
+		
+		
+	</father>
+</data>

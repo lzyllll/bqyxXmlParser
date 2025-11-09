@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="野帝">
+		<skill index="0" cnName="腐蚀">
+			<name>IceManCorrosion</name>
+			<cnName>腐蚀</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>attackGapMul</effectType>
+			<mul>0.2</mul>
+			<duration>5</duration>
+			<applyArr>shootAttack,normalAttack1,normalAttack2</applyArr>
+			<stateEffectImg partType="shootPoint" raNum="25" followPartRaB="1">bulletHitEffect/smoke_black</stateEffectImg>
+			<description>击中目标后腐蚀对方手上的枪支，降低枪支[1-mul]的射击速度，持续[duration]秒。</description>
+		</skill>
+		<skill index="0" name="飞雪连舞">
+			<name>IceManRotate</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>飞雪连舞</cnName><iconUrl36>SkillIcon/IceManRotate_36</iconUrl36>
+			<cd>18</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>800</conditionRange><target>me</target>
+			
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>1.4</duration>
+			<meActionLabel>smashAttack</meActionLabel>
+			<description>跳向目标，挥舞生化罐，对范围内的敌方单位造成持续伤害。</description>
+		</skill>
+		<skill index="0" name="雪引冲锋">
+			<name>IceManStrike</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>雪引冲锋</cnName><iconUrl36>SkillIcon/IceManStrike_36</iconUrl36>
+			<cd>17</cd>
+			<delay>0.5</delay>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>200</conditionRange><target>me,range,enemy</target>
+			<addType>state</addType>
+			<effectType>IceManStrike</effectType>
+			<value>14</value>
+			<mul>0.6</mul>
+			<duration>1.1</duration>
+			<range>999999</range>
+			<meActionLabel>strikeAttack</meActionLabel>
+			<description>向敌方发起冲锋，强大的引力使周围敌人全部向其聚拢，最后一击猛踢生化罐，射出生化球击飞全部敌人。</description>
+		</skill>
+		<skill index="0" name="爆怒一击">
+			<name>IceManShake</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>爆怒一击</cnName><iconUrl36>SkillIcon/IceManShake_36</iconUrl36>
+			<cd>19</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>4.9</duration>
+			<meActionLabel>shakeAttack</meActionLabel>
+			<description>用生化罐猛捶地面，一段时间后，制造雪崩对所有敌人造成百分比伤害。</description>
+			<pointEffectImg>IceMan/boom</pointEffectImg>
+		</skill>
+		<skill index="0" name="踢爆">
+			<name>IceManKick</name><showInLifeBarB>1</showInLifeBarB>
+			<cnName>踢爆</cnName><iconUrl36>SkillIcon/IceManKick_36</iconUrl36>
+			<cd>20</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>200</conditionRange><target>me</target>
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>2</duration>
+			<meActionLabel>kickAttack</meActionLabel>
+			<description>野帝猛踢生化罐，让其内部的雪汇聚成子弹向前发射。</description>
+		</skill>
+		
+		<skill cnName="召唤雪人">
+			<name>IceManSnowman</name>
+			<cnName>召唤雪人</cnName><iconUrl36>SkillIcon/IceManSnowman_36</iconUrl36>
+			
+			<cd>15</cd>
+			<summonedUnitsB>1</summonedUnitsB>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>Triceratops_oasis</effectType>
+			<obj>"cnName":"雪人","num":5,"lifeMul":1000,"maxNum":100,"noUnderHurtB":1,"noAiFindB":1,"noUnderHitB":1,"skillArr":["State_SpellImmunity"]</obj>
+			<duration>15</duration>
+			
+			<description>召唤雪人。</description>
+		</skill>
+		<skill name="飞雪连舞-动作引用-避免被其他技能打断">
+			<name>IceManRotateLink</name>
+			<cnName>飞雪连舞</cnName>
+			<conditionType>active</conditionType>
+			<condition>no</condition>
+			<cd>99999999999</cd>
+			<target>me</target>
+			<addType>no</addType>
+			<meActionLabel>rotateAttack</meActionLabel>
+		</skill>
+		<skill index="0" name="雪引冲锋-冲撞">
+			<name>IceManStrikeHit</name>
+			<cnName>雪引冲锋-冲撞</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>IceManStrikeHit</effectType>
+			<duration>0.2</duration>
+			
+			<description>冲撞目标。</description>
+		</skill>
+		<skill index="0" name="踢爆-冲撞">
+			<name>IceManKickHit</name>
+			<cnName>踢爆-冲撞</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>IceManKickHit</effectType>
+			<value>25</value>
+			<duration>1.4</duration>
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+			
+			<description>冲撞目标。</description>
+		</skill>
+	</father>	
+	</data>

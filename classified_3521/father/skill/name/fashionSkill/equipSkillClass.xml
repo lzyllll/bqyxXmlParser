@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="fashionSkill">
+		<skill cnName="召唤群狼">
+			<name>summonWolf_bigBoss</name>
+			<cnName>召唤群狼</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>usebutcherBlade</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<extraValueType>nowArmsTrueDps</extraValueType>
+			<mul>1</mul>
+			
+			<obj>"name":"summonWolf_bigBoss","site":"me","flipB":true,"launcherB":true</obj>
+			
+			<description>每次挥舞屠夫都将召唤成群的尸狼灵魂向前狂奔，对被冲撞的敌人造成伤害。</description>
+		</skill>
+		<skill cnName="装甲压制">
+			<name>zoomOut</name>
+			<cnName>装甲压制</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<intervalT>5</intervalT>
+			<target noExistB="1">me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet_zoomOut</effectType>
+			<extraValueType>nowArmsTrueDps</extraValueType>
+			<mul>3</mul>
+			<range>99999</range>
+			
+			<obj>"name":"zoomOutBullet","nameArr":["zoomOutGaia"],"site":"me","flipB":true,"launcherB":1</obj>
+			
+			<description>在骑乘赤焰、幽鬼等街跑载具时，每隔[intervalT]秒，向敌方丢出3辆变大的玩具坦克，产生3*武器面板伤害*射速的爆炸伤害。</description>
+		</skill>
+	</father>
+	
+	</data>

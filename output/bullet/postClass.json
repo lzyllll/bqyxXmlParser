@@ -1,0 +1,44 @@
+{
+  "father": {
+    "name": "base",
+    "body": [
+      {
+        "name": "normalMonthCard",
+        "cnName": "联邦部长",
+        "postExpMul": 1,
+        "bodyExpMul": 1,
+        "sweepingNum": 2,
+        "loveAdd": 20,
+        "lotteryNum": 1,
+        "noDeductLoveB": 1,
+        "proName": "lifeAll,hurtAll"
+      },
+      {
+        "name": "goldMonthCard",
+        "cnName": "联邦国务卿",
+        "postExpMul": 2,
+        "bodyExpMul": 1.5,
+        "sweepingNum": 4,
+        "loveAdd": 40,
+        "lotteryNum": 2,
+        "noDeductLoveB": 1,
+        "autoDesB": 1,
+        "proName": "lifeAll,hurtAll,lottery"
+      },
+      {
+        "name": "platinumMonthCard",
+        "cnName": "联邦总统",
+        "havePresidentB": 1,
+        "postExpMul": 3,
+        "bodyExpMul": 2,
+        "sweepingNum": 6,
+        "loveAdd": 60,
+        "lotteryNum": 3,
+        "noDeductLoveB": 1,
+        "autoDesB": 1,
+        "dropFollowB": 1,
+        "proName": "lifeAll,hurtAll,dpsAll,lottery"
+      }
+    ]
+  }
+}

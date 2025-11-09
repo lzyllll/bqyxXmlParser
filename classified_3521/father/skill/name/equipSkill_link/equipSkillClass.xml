@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="equipSkill_link" cnName="装备技能-链接">
+		<skill index="0" name="magneticField_enemy_link" cnName="磁力场-曲扭光环">
+			<name>magneticField_enemy_link</name>
+			<cnName>磁力场-曲扭光环</cnName>
+			
+			<conditionType>active</conditionType>
+			<condition>interval</condition>
+			<target>me,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>magneticField</effectType>
+			<range>800</range>
+			<duration>0.5</duration>
+			 
+			<stateEffectImg partType="shootPoint" con="add" raNum="30" followPartRaB="1">skillEffect/magneticField_paralysis</stateEffectImg>
+			<description>使目标射出的子弹偏离轨道，持续[duration]秒。</description>
+		</skill>
+		<skill index="0" cnName="折射-不受伤害">
+			<name>refraction_equip_link</name>
+			<cnName>折射</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>noUnderHurtB</effectType>
+		</skill>
+	</father>	
+	</data>

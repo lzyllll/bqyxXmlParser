@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="props">
+		<bullet cnName="大碗" name="bowlGun" color="black" composeLv="95" dropLevelArr="999">
+			<name>bowlGun</name>
+			<cnName>大碗</cnName>
+			
+			
+			<capacity>1</capacity>
+			<attackGap>10</attackGap>
+			<reloadGap>4</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletNum>1</bulletNum>				
+			<gunNum>1</gunNum>
+			
+			
+			<armsArmMul>0.65</armsArmMul>
+			<upValue>5</upValue>
+			<bulletLife>0</bulletLife>
+			<hitType>rect</hitType>
+			
+			<bodyImgRange>newGun/bowlGun</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description />
+		</bullet>
+		
+	</father>
+</data>

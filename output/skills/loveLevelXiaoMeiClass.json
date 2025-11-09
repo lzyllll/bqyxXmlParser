@@ -1,0 +1,45 @@
+{
+  "name": "XiaoMei",
+  "level": [
+    null,
+    null,
+    {
+      "lv": 3,
+      "must": 2000,
+      "cn": "低",
+      "skillNameArr": "cdMulMei"
+    },
+    {
+      "lv": 4,
+      "must": 3500,
+      "cn": "中",
+      "skillNameArr": "girlDefence_loveSkill"
+    },
+    {
+      "lv": 5,
+      "must": 5500,
+      "cn": "高",
+      "skillNameArr": "cdHoleMei,enemyCdMei"
+    },
+    {
+      "lv": 6,
+      "must": 9000,
+      "cn": "高",
+      "skillNameArr": "hurtZang,angerHoleMei"
+    },
+    {
+      "lv": 7,
+      "must": 15000,
+      "cn": "亲密",
+      "skillNameArr": "dieOffMei,alloyShell_4"
+    },
+    {
+      "lv": 8,
+      "must": 24000,
+      "cn": "挚爱",
+      "skillNameArr": "degradationMei",
+      "appLabel": "稀有饰品碎片",
+      "gift": "things;corpseTeeth_1;10"
+    }
+  ]
+}

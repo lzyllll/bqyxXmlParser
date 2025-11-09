@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="blackChip" cnName="黑色碎片">
+		<things cnName="碎片">
+			<name>blackChip</name><hideB>1</hideB><addDropDefineB>1</addDropDefineB>
+			<cnName>碎片</cnName>
+			<btnList>compose,conver</btnList>
+			<iconUrl>ThingsIcon/blackChip</iconUrl>
+			<description>。</description>
+		</things>
+		<things><cnName>青蜂之触</cnName><name>rifleHornet</name></things>
+		<things><cnName>赤鼬之心</cnName><name>shotgunSkunk</name></things>
+		<things><cnName>金蝉之翼</cnName><name>sniperCicada</name></things>
+		<things><cnName>银狐之眼</cnName><name>pistolFox</name><smeltD price="15" /></things>
+		<things><cnName>猩之焰</cnName><name>redFire</name></things>
+		<things><cnName>卡特巨炮碎片</cnName><name>rocketCate</name></things>
+		<things><cnName>铄金之源</cnName><name>meltFlamer</name></things>
+		<things><cnName>光锥碎片</cnName><name>lightCone</name><iconUrl>specialGun/lightConeIcon</iconUrl></things>
+		<things><cnName>隼武碎片</cnName><name>falconGun</name><iconUrl>specialGun/falconGunIcon</iconUrl><smeltD grade="-1" /></things>
+		<things><cnName>极源碎片</cnName><name>extremeGun</name><iconUrl>specialGun/extremeGunIcon</iconUrl><smeltD grade="-1" /></things>
+		<things><cnName>巨蟹座碎片</cnName><name>consCancer</name><iconUrl>newGun/consCancerIcon</iconUrl><smeltD grade="-1" /></things>
+		<things><cnName>处女座碎片</cnName><name>consVirgo</name><iconUrl>newGun/consVirgoIcon</iconUrl><smeltD grade="-1" /></things>
+		<things><cnName>天秤座碎片</cnName><name>consLibra</name><iconUrl>newGun/consLibraIcon</iconUrl><smeltD grade="-1" /></things>
+		<things><cnName>降雨炮碎片</cnName><name>rainGun</name><iconUrl>newGun/rainGunChip</iconUrl><smeltD grade="-1" /></things>
+		
+		
+		<things><cnName>蚀骨碎片</cnName><name>erosionFlamer</name>
+			<description>{b}{font color='#FF66FF'}也是进阶黑色武器到第七级的必需品。{/font}{/b}</description>
+			<smeltD grade="1" price="10" />
+		</things>
+		<things><cnName>烟花弩碎片</cnName><name>beadCrossbow</name>
+			<description>{b}{font color='#FF66FF'}也是进阶黑色战裤、头盔到第八级的必需品。{/font}{/b}</description>
+			<smeltD grade="1" price="8" />
+		</things>
+		<things><cnName>鬼斧碎片</cnName><name>ghostAxe</name><iconUrl>specialGun/ghostAxeIcon</iconUrl></things>
+		<things><cnName>亥猪碎片</cnName><name>yearPig</name><iconUrl>specialGun/yearPigIcon</iconUrl></things>
+		<things><cnName>戌狗碎片</cnName><name>yearDog</name><iconUrl>specialGun/yearDogIcon</iconUrl>
+			<description>{b}{font color='#FF66FF'}也是进阶暗金武器的消耗品。{/font}{/b}</description>
+		</things>
+		<things><cnName>巳蛇碎片</cnName><name>yearSnake</name><iconUrl>specialGun/yearSnakeIcon</iconUrl>
+			<description>{b}{font color='#FF66FF'}进阶青蜂至暗金的必需品。{/font}{/b}</description>
+		</things>
+		<things><cnName>酉鸡碎片</cnName><name>yearChicken</name><iconUrl>specialGun/yearChickenIcon</iconUrl></things>
+		<things><cnName>午马碎片</cnName><name>yearHourse</name><iconUrl>specialGun/yearHourseIcon</iconUrl></things>
+		<things><cnName>子鼠碎片</cnName><name>yearMouse</name><iconUrl>specialGun/yearMouseIcon</iconUrl></things>
+		<things><addDropDefineB>1</addDropDefineB><cnName>申猴碎片</cnName><name>yearMonkey</name><iconUrl>specialGun/yearMonkeyIcon</iconUrl></things>
+		<things><cnName>卯兔碎片</cnName><name>yearRabbit</name><iconUrl>specialGun/yearRabbitIcon</iconUrl></things>
+		<things><cnName>钢笔枪碎片</cnName><name>penGun</name><iconUrl>specialGun/penGunIcon</iconUrl></things>
+		<things><addDropDefineB>1</addDropDefineB><cnName>丑牛碎片</cnName><name>yearCattle</name><iconUrl>specialGun/yearCattleIcon</iconUrl></things>
+		<things><cnName>贪吃蛇碎片</cnName><name>greedySnake</name><iconUrl>specialGun/greedySnakeIcon</iconUrl></things>
+		<things><cnName>弦音碎片</cnName><name>pianoGun</name><iconUrl>specialGun/pianoGunIcon</iconUrl></things>
+		<things><cnName>天弓碎片</cnName><name>skyArch</name><iconUrl>specialGun/skyArchIcon</iconUrl></things>
+		<things><cnName>冰锥碎片</cnName><name>iceCone</name><iconUrl>specialGun/iceConeIcon</iconUrl></things>
+		<things><cnName>荒芒碎片</cnName><name>barrenAwn</name><iconUrl>specialGun/barrenAwnIcon</iconUrl></things>
+		<things><cnName>星轨碎片</cnName><name>starTrails</name><iconUrl>specialGun/starTrailsChip</iconUrl></things>
+		<things><cnName>漫游碎片</cnName><name>roamRocket</name><iconUrl>specialGun/roamRocketIcon</iconUrl></things>
+		
+	</father>
+	</data>

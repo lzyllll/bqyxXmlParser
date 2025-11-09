@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill>
+			<name>yearChickenSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>周末快乐</cnName>
+			
+			<conditionType>passive</conditionType>
+			<otherConditionArr>puWe,weekend</otherConditionArr>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurtNoCondition</effectType>
+			<mul>2</mul>
+			
+			<description>周末期间双倍伤害。</description>
+		</skill>
+	</father>
+</data>

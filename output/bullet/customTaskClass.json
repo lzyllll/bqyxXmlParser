@@ -1,0 +1,1159 @@
+{
+  "father": {
+    "name": "custom",
+    "cnName": "反客",
+    "tipText": "完成任务后自动解锁下一个任务。",
+    "autoUnlockByLevelB": true,
+    "task": [
+      {
+        "name": "cusWoTu",
+        "cnName": "沃土镇",
+        "lv": 1,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "openD": {
+          "tk": "PrisonExport_duke"
+        },
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "WoTu",
+        "levelId": "customTask/cusWoTu",
+        "gift": "things;zombieBottle;2"
+      },
+      {
+        "name": "cusYangMei",
+        "cnName": "杨梅岭",
+        "lv": 3,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "YangMei",
+        "levelId": "customTask/cusYangMei",
+        "gift": "things;skyArch;10"
+      },
+      {
+        "name": "cusXiaSha",
+        "cnName": "下沙",
+        "lv": 4,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "XiaSha",
+        "levelId": "customTask/cusXiaSha",
+        "gift": "things;zombieBottle;2"
+      },
+      {
+        "name": "cusFengWei",
+        "cnName": "凤尾洋",
+        "lv": 5,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "FengWei",
+        "enemyLifeMul": 0.6,
+        "enemyDpsMul": 0.8,
+        "levelId": "customTask/cusFengWei",
+        "gift": "things;skyArch;10"
+      },
+      {
+        "name": "cusXiChi",
+        "cnName": "西池",
+        "lv": 6,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "XiChi",
+        "levelId": "customTask/cusXiChi",
+        "gift": "things;zombieBottle;2"
+      },
+      {
+        "name": "cusBaiLu",
+        "cnName": "白鹭镇",
+        "lv": 7,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "BaiLu",
+        "levelId": "customTask/cusBaiLu",
+        "gift": "things;skyArch;10"
+      },
+      {
+        "name": "cusShuiSheng",
+        "cnName": "水升村",
+        "lv": 8,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "ShuiSheng",
+        "enemyLifeMul": 1.6,
+        "enemyDpsMul": 1,
+        "levelId": "customTask/cusShuiSheng",
+        "gift": "things;zombieBottle;2"
+      },
+      {
+        "name": "cusZhuTou",
+        "cnName": "猪头洋",
+        "lv": 10,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "ZhuTou",
+        "enemyLifeMul": 1.3,
+        "levelId": "customTask/cusZhuTou",
+        "gift": "things;skyArch;10"
+      },
+      {
+        "name": "cusShuangTa",
+        "cnName": "双塔村",
+        "lv": 11,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": "熟练使用屠刀僵尸的生命置换技能（技能位2），将有助于你快速完成任务。",
+        "worldMapId": "ShuangTa",
+        "enemyLifeMul": 2,
+        "levelId": "customTask/cusShuangTa",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;20"
+        ]
+      },
+      {
+        "name": "cusBeiDou",
+        "cnName": "北斗城",
+        "lv": 13,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "BeiDou",
+        "enemyLifeMul": 1.3,
+        "levelId": "customTask/cusBeiDou",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;20"
+        ]
+      },
+      {
+        "name": "cusDongShan",
+        "cnName": "东山澳",
+        "lv": 14,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "DongShan",
+        "enemyLifeMul": 1.3,
+        "levelId": "customTask/cusDongShan",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;20"
+        ]
+      },
+      {
+        "name": "cusQingSha",
+        "cnName": "青纱镇",
+        "lv": 15,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "QingSha",
+        "enemyLifeMul": 1.3,
+        "enemyDpsMul": 0.8,
+        "levelId": "customTask/cusQingSha",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;20"
+        ]
+      },
+      {
+        "name": "cusQingMing",
+        "cnName": "清明岭",
+        "lv": 16,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "QingMing",
+        "enemyLifeMul": 1.3,
+        "levelId": "customTask/cusQingMing",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;20"
+        ]
+      },
+      {
+        "name": "cusNanTang",
+        "cnName": "南唐城",
+        "lv": 18,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "NanTang",
+        "enemyLifeMul": 1.1,
+        "levelId": "customTask/cusNanTang",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;20"
+        ]
+      },
+      {
+        "name": "cusWoTu_doctor",
+        "cnName": "消灭制毒师",
+        "lv": 19,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "消灭制毒师",
+        "uiConditionText": "消灭制毒师",
+        "description": "一位有能力帮主角解毒的制毒师来到了沃土镇，请消灭他！",
+        "worldMapId": "WoTu",
+        "enemyLifeMul": 1.8,
+        "enemyDpsMul": 0.8,
+        "levelId": "customTask/cusWoTu_doctor",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;20"
+        ]
+      },
+      {
+        "name": "cusBeiDou_mercenary",
+        "cnName": "破坏佣兵计划",
+        "lv": 23,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": "爆枪小队来北斗城招募雇佣兵，把他们一并消灭了吧！",
+        "worldMapId": "BeiDou",
+        "enemyLifeMul": 0.9,
+        "enemyDpsMul": 0.4,
+        "levelId": "customTask/cusBeiDou_mercenary",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;20"
+        ]
+      },
+      {
+        "name": "cusShuangTa_defend",
+        "cnName": "夺回双塔村",
+        "lv": 27,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败雇佣兵。",
+        "uiConditionText": "击败雇佣兵。",
+        "description": "爆枪小队远在南唐城寻找奇皇，你们趁现在夺回双塔村！",
+        "worldMapId": "ShuangTa",
+        "enemyLifeMul": 2,
+        "enemyDpsMul": 0.6,
+        "levelId": "customTask/cusShuangTa_defend",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;20"
+        ]
+      },
+      {
+        "name": "cusDongShan_QiHuang",
+        "cnName": "奇皇博士",
+        "lv": 28,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "DongShan",
+        "enemyLifeMul": 1.2,
+        "enemyDpsMul": 0.5,
+        "levelId": "customTask/cusDongShan_QiHuang",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;20"
+        ]
+      },
+      {
+        "name": "cusQingMing_Arthur",
+        "cnName": "决战爆枪小队",
+        "lv": 30,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "QingMing",
+        "enemyLifeMul": 1.2,
+        "enemyDpsMul": 0.5,
+        "levelId": "customTask/cusQingMing_Arthur",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusYouLing",
+        "cnName": "幽灵谷",
+        "lv": 32,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "YouLing",
+        "enemyLifeMul": 2.3,
+        "levelId": "customTask/cusYouLing",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusXiFeng",
+        "cnName": "西峰",
+        "lv": 40,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "XiFeng",
+        "enemyLifeMul": 4,
+        "levelId": "customTask/cusXiFeng",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusLvSen",
+        "cnName": "绿森堡",
+        "lv": 44,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "LvSen",
+        "enemyLifeMul": 3,
+        "enemyDpsMul": 0.5,
+        "levelId": "customTask/cusLvSen",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusDuKu",
+        "cnName": "毒窟",
+        "lv": 45,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "DuKu",
+        "enemyLifeMul": 2,
+        "enemyDpsMul": 0.4,
+        "levelId": "customTask/cusDuKu",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusBaoLun",
+        "cnName": "宝伦镇",
+        "lv": 46,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "BaoLun",
+        "enemyLifeMul": 2,
+        "levelId": "customTask/cusBaoLun",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusLuYu",
+        "cnName": "炉屿",
+        "lv": 47,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "LuYu",
+        "enemyLifeMul": 2.5,
+        "levelId": "customTask/cusLuYu",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusBaWang",
+        "cnName": "霸王坡",
+        "lv": 47,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "BaWang",
+        "enemyLifeMul": 3.7,
+        "levelId": "customTask/cusBaWang",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusPingChuan",
+        "cnName": "平川",
+        "lv": 49,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "PingChuan",
+        "enemyLifeMul": 2.5,
+        "enemyDpsMul": 0.7,
+        "levelId": "customTask/cusPingChuan",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusBaiSha",
+        "cnName": "暴君",
+        "lv": 50,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "BaiSha",
+        "enemyLifeMul": 4,
+        "enemyDpsMul": 0.6,
+        "levelId": "customTask/cusBaiSha",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusDongFeng",
+        "cnName": "东峰研究所",
+        "lv": 55,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "DongFeng",
+        "enemyLifeMul": 3.5,
+        "enemyDpsMul": 0.8,
+        "levelId": "customTask/cusDongFeng",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusZhongXin",
+        "cnName": "研究中心",
+        "lv": 56,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "ZhongXin",
+        "enemyLifeMul": 3,
+        "enemyDpsMul": 0.4,
+        "levelId": "customTask/cusZhongXin",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusDiXia",
+        "cnName": "地下城市",
+        "lv": 60,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "DiXia",
+        "enemyLifeMul": 4,
+        "enemyDpsMul": 0.6,
+        "levelId": "customTask/cusDiXia",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusHouJin",
+        "cnName": "后井",
+        "lv": 63,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "HouJin",
+        "enemyLifeMul": 4,
+        "enemyDpsMul": 0.5,
+        "levelId": "customTask/cusHouJin",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusShaJiang",
+        "cnName": "沙江",
+        "lv": 64,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "ShaJiang",
+        "enemyLifeMul": 4,
+        "enemyDpsMul": 1,
+        "levelId": "customTask/cusShaJiang",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusShaMo",
+        "cnName": "沙漠中心",
+        "lv": 65,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "ShaMo",
+        "enemyLifeMul": 4.5,
+        "enemyDpsMul": 0.6,
+        "levelId": "customTask/cusShaMo",
+        "gift": [
+          "things;yaRock;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusXianQu",
+        "cnName": "先驱号",
+        "lv": 67,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "XianQu",
+        "enemyLifeMul": 1.4,
+        "enemyDpsMul": 0.5,
+        "levelId": "customTask/cusXianQu",
+        "gift": [
+          "things;demStone;8",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusFangZhouFirst",
+        "cnName": "诺亚方舟",
+        "lv": 68,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "FangZhouFirst",
+        "enemyLifeMul": 3.3,
+        "enemyDpsMul": 0.6,
+        "levelId": "customTask/cusFangZhouFirst",
+        "gift": [
+          "things;demStone;8",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusFangZhouSecond",
+        "cnName": "黑暗泰坦",
+        "lv": 69,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "FangZhouSecond",
+        "enemyLifeMul": 4,
+        "enemyDpsMul": 0.8,
+        "levelId": "customTask/cusFangZhouSecond",
+        "gift": [
+          "things;demStone;8",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusFangZhouTop",
+        "cnName": "无疆骑士",
+        "lv": 70,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "FangZhouTop",
+        "enemyLifeMul": 7,
+        "enemyDpsMul": 1,
+        "levelId": "customTask/cusFangZhouTop",
+        "gift": [
+          "things;demStone;8",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusDongShan_shiti",
+        "cnName": "水下奇景",
+        "lv": 71,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "完成对话",
+        "uiConditionText": "完成对话",
+        "description": null,
+        "worldMapId": "DongShan",
+        "enemyLifeMul": 7,
+        "enemyDpsMul": 1,
+        "levelId": "customTask/cusDongShan_shiti",
+        "gift": [
+          "things;starTrails;30",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusPrisonDoor",
+        "cnName": "监狱大门",
+        "lv": 73,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "PrisonDoor",
+        "enemyLifeMul": 1.5,
+        "enemyDpsMul": 0.4,
+        "levelId": "customTask/cusPrisonDoor",
+        "gift": [
+          "base;partsCoin;5",
+          "things;demStone;4",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusPrisonFirst",
+        "cnName": "监狱第1层",
+        "lv": 74,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "PrisonFirst",
+        "enemyLifeMul": 4.5,
+        "enemyDpsMul": 1,
+        "levelId": "customTask/cusPrisonFirst",
+        "gift": [
+          "base;partsCoin;5",
+          "things;demStone;4",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusPrisonExport",
+        "cnName": "监狱出口",
+        "lv": 75,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "PrisonExport",
+        "enemyLifeMul": 4,
+        "enemyDpsMul": 1,
+        "levelId": "customTask/cusPrisonExport",
+        "gift": [
+          "base;partsCoin;5",
+          "things;demStone;4",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusPrisonOutside",
+        "cnName": "监狱外围",
+        "lv": 76,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "PrisonOutside",
+        "enemyLifeMul": 4,
+        "enemyDpsMul": 0.6,
+        "levelId": "customTask/cusPrisonOutside",
+        "gift": [
+          "base;partsCoin;5",
+          "things;demStone;4",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusJungleOutside",
+        "cnName": "丛林外围",
+        "lv": 77,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "JungleOutside",
+        "enemyLifeMul": 4,
+        "enemyDpsMul": 0.4,
+        "levelId": "customTask/cusJungleOutside",
+        "gift": [
+          "base;partsCoin;5",
+          "things;demStone;4",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusJungleDeep",
+        "cnName": "丛林深处",
+        "lv": 78,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "JungleDeep",
+        "enemyLifeMul": 1.2,
+        "enemyDpsMul": 0.8,
+        "levelId": "customTask/cusJungleDeep",
+        "gift": [
+          "base;partsCoin;5",
+          "things;demStone;4",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusCavesEntrance",
+        "cnName": "洞窟入口",
+        "lv": 79,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "CavesEntrance",
+        "enemyLifeMul": 2.7,
+        "enemyDpsMul": 0.6,
+        "levelId": "customTask/cusCavesEntrance",
+        "gift": [
+          "base;partsCoin;5",
+          "things;demStone;4",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusCavesDeep",
+        "cnName": "洞窟深处",
+        "lv": 80,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "CavesDeep",
+        "enemyLifeMul": 4,
+        "enemyDpsMul": 1,
+        "levelId": "customTask/cusCavesDeep",
+        "gift": [
+          "base;partsCoin;5",
+          "things;demStone;4",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusQianYe",
+        "cnName": "千叶谷",
+        "lv": 82,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "QianYe",
+        "enemyLifeMul": 3,
+        "enemyDpsMul": 0.5,
+        "levelId": "customTask/cusQianYe",
+        "gift": [
+          "base;partsCoin;5",
+          "things;bossCardStamp;2",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusFuMu",
+        "cnName": "腐木岗",
+        "lv": 83,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "FuMu",
+        "enemyLifeMul": 3.5,
+        "enemyDpsMul": 1.2,
+        "levelId": "customTask/cusFuMu",
+        "gift": [
+          "base;partsCoin;5",
+          "things;bossCardStamp;2",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusGongMu",
+        "cnName": "公墓入口",
+        "lv": 84,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "GongMu",
+        "enemyLifeMul": 2.5,
+        "enemyDpsMul": 0.5,
+        "levelId": "customTask/cusGongMu",
+        "gift": [
+          "base;partsCoin;5",
+          "things;bossCardStamp;2",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusGuiWang",
+        "cnName": "鬼王墓",
+        "lv": 85,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "GuiWang",
+        "enemyLifeMul": 4,
+        "enemyDpsMul": 0.7,
+        "levelId": "customTask/cusGuiWang",
+        "gift": [
+          "base;partsCoin;5",
+          "things;bossCardStamp;2",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusBingKu",
+        "cnName": "冰窟",
+        "lv": 86,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "BingKu",
+        "enemyLifeMul": 3,
+        "enemyDpsMul": 0.7,
+        "levelId": "customTask/cusBingKu",
+        "gift": [
+          "base;partsCoin;8",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusBingKuDeep",
+        "cnName": "冰窟深处",
+        "lv": 87,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "BingKuDeep",
+        "enemyLifeMul": 2,
+        "enemyDpsMul": 0.7,
+        "levelId": "customTask/cusBingKuDeep",
+        "gift": [
+          "base;partsCoin;8",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusWuXue",
+        "cnName": "无雪干谷",
+        "lv": 88,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "WuXue",
+        "enemyLifeMul": 2,
+        "enemyDpsMul": 0.4,
+        "levelId": "customTask/cusWuXue",
+        "gift": [
+          "base;partsCoin;8",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusDongWu",
+        "cnName": "千年冻湖",
+        "lv": 89,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "DongWu",
+        "enemyLifeMul": 1.8,
+        "enemyDpsMul": 0.4,
+        "levelId": "customTask/cusDongWu",
+        "gift": [
+          "base;partsCoin;8",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusBuDong",
+        "cnName": "不冻湖",
+        "lv": 90,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "BuDong",
+        "enemyLifeMul": 2.5,
+        "enemyDpsMul": 0.6,
+        "levelId": "customTask/cusBuDong",
+        "gift": [
+          "base;partsCoin;8",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusPiaoMiao",
+        "cnName": "缥缈森林",
+        "lv": 90,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": "本关操纵的首领为“毒魔”，它的第二普通攻击为“抓捕”，可将敌人抓捕到自己面前，并让敌人处于眩晕状态。",
+        "worldMapId": "PiaoMiao",
+        "enemyLifeMul": 1.5,
+        "enemyDpsMul": 0.5,
+        "levelId": "customTask/cusPiaoMiao",
+        "gift": [
+          "base;partsCoin;8",
+          "base;tenCoin;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusHanGuang1",
+        "cnName": "寒光入口",
+        "lv": 91,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "HanGuang1",
+        "enemyLifeMul": 2,
+        "enemyDpsMul": 0.6,
+        "levelId": "customTask/cusHanGuang1",
+        "gift": [
+          "base;partsCoin;8",
+          "base;tenCoin;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusHanGuang2",
+        "cnName": "寒光西城",
+        "lv": 92,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "HanGuang2",
+        "enemyLifeMul": 2.5,
+        "enemyDpsMul": 0.6,
+        "levelId": "customTask/cusHanGuang2",
+        "gift": [
+          "base;partsCoin;8",
+          "base;tenCoin;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusHanGuang3",
+        "cnName": "寒光中心",
+        "lv": 93,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "HanGuang3",
+        "enemyLifeMul": 3.5,
+        "enemyDpsMul": 0.8,
+        "levelId": "customTask/cusHanGuang3",
+        "gift": [
+          "base;partsCoin;8",
+          "base;tenCoin;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusHanGuang4",
+        "cnName": "寒光之巅",
+        "lv": 94,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "HanGuang4",
+        "enemyLifeMul": 3,
+        "enemyDpsMul": 0.45,
+        "levelId": "customTask/cusHanGuang4",
+        "gift": [
+          "base;partsCoin;8",
+          "base;tenCoin;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusHanGuang5",
+        "cnName": "寒光末路",
+        "lv": 95,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "HanGuang5",
+        "enemyLifeMul": 2.5,
+        "enemyDpsMul": 0.45,
+        "levelId": "customTask/cusHanGuang5",
+        "gift": [
+          "base;partsCoin;8",
+          "base;tenCoin;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusHospital1",
+        "cnName": "实验室入口",
+        "lv": 96,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "Hospital1",
+        "enemyLifeMul": 3.1,
+        "enemyDpsMul": 0.6,
+        "levelId": "customTask/cusHospital1",
+        "gift": [
+          "base;partsCoin;8",
+          "base;tenCoin;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusHospital2",
+        "cnName": "实验室底层",
+        "lv": 97,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "Hospital2",
+        "enemyLifeMul": 3,
+        "enemyDpsMul": 0.5,
+        "levelId": "customTask/cusHospital2",
+        "gift": [
+          "base;partsCoin;8",
+          "base;tenCoin;10",
+          "base;anniCoin;12"
+        ]
+      },
+      {
+        "name": "cusHospital3",
+        "cnName": "实验室中层",
+        "lv": 98,
+        "unlockLv": 30,
+        "levelIsTaskLvB": true,
+        "shortText": "击败爆枪小队。",
+        "uiConditionText": "击败爆枪小队。",
+        "description": null,
+        "worldMapId": "Hospital3",
+        "enemyLifeMul": 2.2,
+        "enemyDpsMul": 1,
+        "levelId": "customTask/cusHospital3",
+        "gift": [
+          "base;partsCoin;8",
+          "base;tenCoin;10",
+          "base;anniCoin;12"
+        ]
+      }
+    ]
+  }
+}

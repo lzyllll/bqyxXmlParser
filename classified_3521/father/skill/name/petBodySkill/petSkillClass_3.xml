@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="petBodySkill" cnName="橄榄僵尸">
+		<skill index="0" cnName="补给头盔">
+			<name>helmet_PetZombieFootball</name>
+			<cnName>补给头盔</cnName>
+			<changeText>补给量为伤害值的[mul]</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHurt</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>life</effectType>
+			<extraValue>hurtValue</extraValue>
+			<mul>0.33</mul>
+			<description>橄榄僵尸每次受到伤害，都能够补给一定的生命值，补给量为伤害值的[mul]。</description>
+			
+			<growth>
+				<skill><mul>0.33</mul></skill>
+				<skill><mul>0.50</mul></skill>
+				<skill><mul>0.66</mul></skill>
+				<skill><mul>0.83</mul></skill>
+				<skill><mul>1.00</mul></skill>
+				<skill><mul>1.16</mul></skill>
+				<skill><mul>1.33</mul></skill>
+				<skill><mul>1.48</mul></skill>
+				<skill><mul>1.63</mul></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="橄榄僵尸-弹性世界">
+			<name>shoot_PetZombieFootball</name>
+			<cnName>弹性世界</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<cd>96</cd>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>300</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<duration>0.1</duration>
+			
+			<meActionLabel>shootAttack2</meActionLabel>
+			<description>橄榄僵尸向外投掷出8个弹性极强的橄榄球，橄榄球击中敌人后使目标减速同时造成伤害，每颗橄榄球在2秒后将消失。</description>
+			
+			<growth>
+				<skill><cd>96</cd></skill>
+				<skill><cd>84</cd></skill>
+				<skill><cd>72</cd></skill>
+				<skill><cd>60</cd></skill>
+				<skill><cd>48</cd></skill>
+				<skill><cd>36</cd></skill>
+				<skill><cd>24</cd></skill>
+				<skill><cd>19</cd></skill>
+				<skill><cd>15</cd></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="全域圣光">
+			<name>globalLight_PetZombieFootball</name>
+			<cnName>全域圣光</cnName>
+			<iconUrl>SkillIcon/globalLight_hero</iconUrl>
+			
+			<cd>115</cd>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>weLifePerLess</otherConditionArr>
+			<conditionRange>0.7</conditionRange>
+			<target>me,range,we</target>
+			
+			<addType>instant</addType>
+			<effectType>life</effectType>
+			<mul>0.7</mul>
+			<range>9999</range>
+			 
+			<meEffectImg soundUrl="sound/globalLight_hero" />
+			<targetEffectImg con="add">skillEffect/groupLight_hero</targetEffectImg>
+			<description>单位技能释放后，回复所有友方单位70%的生命值。</description>
+			
+			<growth>
+				<skill><cd>100</cd></skill>
+				<skill><cd>90</cd></skill>
+				<skill><cd>82</cd></skill>
+				<skill><cd>74</cd></skill>
+				<skill><cd>66</cd></skill>
+				<skill><cd>60</cd></skill>
+				<skill><cd>55</cd></skill>
+				<skill><cd>50</cd></skill>
+				<skill><cd>45</cd></skill>
+			</growth>
+		</skill>
+	</father>
+	</data>

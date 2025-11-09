@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="snake" cnName="血蟒">
+		<body shell="normal">
+			<name>Domino</name>
+			<cnName>多米诺</cnName><headIconUrl>IconGather/Domino</headIconUrl>
+			<raceType>human</raceType>
+			<swfUrl>swf/hero/Domino.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<showLevel>9999</showLevel>
+			
+			<imgArr>
+				standStop,standForward,standBack,standStop__squatStop
+				,squatForward,squatStop,squatBack,squatStop__standStop
+				,die1,die2,__stru,stru
+				,throwAttack
+				,jumpDown__,jumpDown,jumpUp__jumpDown,jumpUp,__jumpUp
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			<lowerImgArr>
+				thigh
+				,leg_left_1
+				,leg_left_0
+				,foot_left
+				,leg_right_1
+				,leg_right_0
+				,foot_right
+			</lowerImgArr>
+			<lifeBarExtraHeight>-20</lifeBarExtraHeight>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-15,-38,30,38</hurtRectArr> 
+			<hurtRectArr>-12, -100, 24, 95</hurtRectArr> 
+			<hurtRectArr>-12, -50, 24, 50</hurtRectArr> 
+			
+			<maxVx>9</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>1</armsNumber>
+			<randomArmsRange>pistol2</randomArmsRange>	
+			<extraAIClassLabel />
+			<oneAiLabel>striker</oneAiLabel>
+			
+			<skillArr />
+			<bossSkillArr>rebirth_enemy</bossSkillArr>
+			<extraDropArmsB>1</extraDropArmsB>
+			
+			
+			<hurtArr>
+				
+			</hurtArr>
+		</body>
+	</father>	
+	
+</data>

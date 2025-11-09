@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="boom" cnName="爆炸火光" num="24">
+<body soundUrl="boomSound/smallBoom" name="imploding_enemy_hit" cnName="小爆炸">boomEffect/boom1</body>
+<body soundUrl="boomSound/midBoom1" name="squibDevice_hit" cnName="中爆炸">boomEffect/boom2</body>
+<body soundUrl="sound/pointBoom_hero" shake="3,0.4,30" name="pointBoom_hero_hit" cnName="大爆炸">boomEffect/boom3</body>
+<body soundUrl="boomSound/bigBoom" shake="5,0.4,13" name="BoomSkullS_boom_hit" cnName="大爆炸-快速">boomEffect/bigCircle</body>
+<body con="add" soundUrl="SpiderKing/shoot_hit" name="SpiderKing_shoot_hit" cnName="小毒爆">boomEffect/posion1</body>
+<body soundUrl="sound/pointBoom_hero" shake="3,0.4,30" name="selfBoom_GasBomb_hit" cnName="大毒爆">boomEffect/posion3</body>
+<body con="add" soundUrl="sound/hummer_hit" name="revengeGhost_hit" cnName="固体爆裂">boomEffect/midCan</body>
+  <body soundUrl="boomSound/boom" shake="3,0.4,13" name="BoomSkullS_box_hit" cnName="木头爆炸">boomEffect/midWood</body>
+  
+<body con="add" name="extremeLaserFire_boom" cnName="烈焰大地-冒烟">boomEffect/smoke2</body>
+  <body con="add" name="extremeLightning_boom" cnName="闪电极源-自爆">generalEffect/frozenBallHide</body>
+  <body soundUrl="boomSound/midBoom2" soundVolume="0.5" con="add" name="beadCrossbow_boom" cnName="烟花弩-自爆">specialGun/beadBoom</body>
+  
+
+
+  
+ <body soundUrl="boomSound/bigBoom" name="defendBeiDou_hitFloor" cnName="保卫北斗-爆炸">boomEffect/bigCircle</body>
+  <body soundUrl="boomSound/midBoom2" soundVolume="0.7" shake="3,0.4,13" name="yearDog_boom" cnName="戌狗-爆炸">boomEffect/bigCircle</body>
+  <body con="add" soundUrl="sound/fireHit2" name="skeletonWandBullet_hit" cnName="骷髅权杖-子弹-爆炸">boomEffect/bigCircle</body>
+  <body soundUrl="boomSound/smallBoom" soundVolume="0.3" shake="3,0.4,13" name="RifleHornetShooter_hit" cnName="赤鼬导弹发射器-小爆">boomEffect/boom1</body>
+  <body soundUrl="boomSound/midBoom2" soundVolume="0.3" name="rocketMammothSun_hit" cnName="熔炉-子弹-小爆">boomEffect/boom1</body>
+  <body soundUrl="sound/body_hit" name="fightBackBullet_hit" cnName="反击导弹-小爆">boomEffect/boom1</body>
+  <body soundUrl="boomSound/midBoom2" name="VanityKer_missle_hit" cnName="虚空客-导弹-小爆">boomEffect/boom1</body>
+  <body soundUrl="boomSound/midBoom1" soundVolume="0.3" shake="3,0.4,13" name="Mammoth_missileChip_hit" cnName="洲际导弹碎片-小爆">boomEffect/boom1</body>
+  <body soundUrl="boomSound/microBoom2" soundVolume="0.1" name="FastGuards_missileSun_hit" cnName="超级弹幕-孙弹-小爆">boomEffect/boom1</body>
+  <body soundUrl="sound/fireHit1" shake="3,0.4,9" soundVolume="0.5" con="add" name="yearPig_hitFloor" cnName="亥猪-小爆">boomEffect/boom1</body>
+  <body soundUrl="sound/fireHit2" name="CheetahCarBullet_hit" cnName="古飙火球-小爆">boomEffect/boom1</body>
+  <body soundUrl="sound/fireHit2" soundVolume="0.3" name="rocketCate_hit" cnName="卡特巨炮-小爆">boomEffect/boom1</body>
+  <body soundUrl="boomSound/microBoom2" name="XiaoMei_pistol_hit" cnName="小美-手枪-小爆">boomEffect/boom1</body>
+  <body soundUrl="sound/fireHit1" soundVolume="0.5" name="redFire_hitFloor" cnName="猩焰-小爆">boomEffect/boom1</body>
+  <body soundUrl="sound/fireHit1" name="redFire_hitFloor" cnName="火球-小爆">boomEffect/boom1</body>
+  <body shake="3,0.3,15" name="ArthurRocket180_hit" cnName="超范围火炮-小爆">boomEffect/boom1</body>
+  <body soundUrl="boomSound/midBoom2" shake="3,0.4,13" name="PetBoomSkullS_shoot1_hit" cnName="爆骷S-跟踪导弹-小爆">boomEffect/boom1</body>
+  
+  <body soundUrl="boomSound/smallBoom" shake="3,0.4,9" soundVolume="0.5" name="rocket1_hitFloor" cnName="火箭筒-小爆">boomEffect/boom1</body>
+  <body soundUrl="boomSound/microBoom" name="imploding_godArmsSkill_hit" cnName="爆石-小爆">boomEffect/boom1</body>
+  <body soundUrl="boomSound/midBoom2" soundVolume="0.3" shake="3,0.4,13" name="endlessRocket_hit" cnName="无尽轰炮-小爆">boomEffect/boom1</body>
+  <body soundUrl="boomSound/microBoom1" soundVolume="0.3" name="LastdayBigChild_hit" cnName="烟花炮-子弹-小爆">boomEffect/boom1</body>
+  <body soundUrl="boomSound/microBoom" soundVolume="0.5" name="endlessRocket_hitFloor" cnName="无尽轰炮-小爆">boomEffect/boom1</body>
+  
+  
+  <body con="add" name="extremeRocket_fire" cnName="一般中爆">boomEffect/boom2</body>
+  <body soundUrl="boomSound/midBoom1" shake="3,0.4,15" name="old_rocket_hit" cnName="古老的火炮-中爆">boomEffect/boom2</body>
+  <body soundUrl="sound/magicHit2" shake="2,0.2,10" con="add" name="extremeRocket_hit" cnName="擎天极源-中爆">boomEffect/boom2</body>
+  <body soundUrl="boomSound/midBoom1" soundVolume="0.3" shake="3,0.3,15" name="ZombieShell_rocket_hit" cnName="僵尸炮兵总管-火炮-中爆">boomEffect/boom2</body>
+  <body soundUrl="sound/fireHit2" soundVolume="0.3" name="redFire_hit" cnName="猩焰-中爆">boomEffect/boom2</body>
+  <body soundUrl="sound/fireHit2" name="WatchEagle_wind_hit" cnName="守望者-飓风-中爆">boomEffect/boom2</body>
+  <body soundUrl="boomSound/microBoom2" shake="3,0.4,13" name="BoomSkullS_general_hit" cnName="爆骷S-普通导弹-中爆">boomEffect/boom2</body>
+  <body soundUrl="sound/fireHit1" soundVolume="0.3" shake="3,0.4,13" name="Nian_spark_hit" cnName="驾驭星火-中爆">boomEffect/boom2</body>
+  <body soundUrl="boomSound/midBoom1" soundVolume="0.3" shake="3,0.4,13" name="rocket1_hit" cnName="火箭筒-中爆">boomEffect/boom2</body>
+  <body soundUrl="boomSound/midBoom2" shake="3,0.4,13" name="BoomSkullS_follow_hit" cnName="爆骷S-跟踪导弹-中爆">boomEffect/boom2</body>
+  <body soundUrl="sound/fireHit2" soundVolume="0.3" shake="3,0.4,13" con="add" name="yearPig_hit" cnName="亥猪-中爆">boomEffect/boom2</body>
+  <body soundVolume="0.4" soundUrl="boomSound/midBoom2" name="rainBulletIron_hit" cnName="冥王暴雨-中爆">boomEffect/boom2</body>
+  <body soundUrl="boomSound/microBoom2" name="LastdayBig_hit" cnName="烟花炮-母弹-中爆">boomEffect/boom2</body>
+  <body soundUrl="sound/vehicle_hit1" name="babyBoom_skull_hit" cnName="爆骷-婴儿潮-中爆">boomEffect/boom2</body>
+  <body soundUrl="boomSound/midBoom2" soundVolume="0.3" shake="3,0.4,13" name="LastdayMissle_hit" cnName="跟踪导弹-中爆">boomEffect/boom2</body>
+  <body soundVolume="0.2" soundUrl="boomSound/midBoom2" name="DiggingRainBullet_hit" cnName="锥雨-蓝色-中爆">boomEffect/boom2</body>
+  <body soundUrl="sound/magicHit2" name="bangerGunSkill_hit" cnName="炮仗-中爆">boomEffect/boom2</body>
+  
+  <body shake="2,0.2,15" soundUrl="boomSound/midBoom2" name="boom_headless_hit" cnName="自爆僵尸炸弹-中爆">boomEffect/boom2</body>
+  <body soundUrl="boomSound/midBoom2" name="bulletRainBullet_hit" cnName="枪林弹雨-导弹-中爆">boomEffect/boom2</body>
+  
+  <body soundUrl="sound/fireHit2" name="defendBeiDou_boom" cnName="保卫北斗-大爆">boomEffect/boom3</body>
+  <body soundUrl="boomSound/midBoom2" name="PoliceZombieBullet_hit" cnName="炸弹-大爆">boomEffect/boom3</body>
+  <body soundUrl="boomSound/midBoom1" shake="2,0.2,10" name="LastdayBig3_hit" cnName="三连炮-大爆">boomEffect/boom3</body>
+  <body soundUrl="sound/magicHit2" shake="2,0.2,10" con="add" name="GaiaFit_main_hit" cnName="轰天雷-主炮-大爆">boomEffect/boom3</body>
+  
+  <body con="add" soundUrl="HugePoison/shoot_hit" name="yearCattle_hit" cnName="丑牛-毒爆">boomEffect/posion1</body>
+  <body con="add" soundUrl="HugePoison/shoot_hit" soundVolume="0.3" name="HugePoison_shake_hit" cnName="巨毒尸-毒震-毒爆">boomEffect/posion1</body>
+  <body con="add" soundUrl="sound/water_hit" name="ZombieWolf_shoot_hit" cnName="嗜血尸狼-喷毒-毒爆">boomEffect/posion1</body>
+  
+ <body soundUrl="boomSound/midBoom2" soundVolume="0.7" shake="3,0.4,13" name="bigSoilBoom" cnName="垂直爆炸">boomEffect/bigSoil</body>
+   
+  
+   <body soundUrl="sound/changeToZombie_enemy" con="add" name="zoomOutBullet_hit" cnName="大闪光">boomEffect/showLight</body>
+  <body soundUrl="sound/bigShoot" name="RedMoto_main_fire" cnName="赤焰-主炮-火光">gunFire/f</body>
+  <body soundUrl="GaiaFit/shoot" name="BlueMoto_main_fire" cnName="幽鬼-主炮-火光">gunFire/f</body>
+  <body raNum="30" soundUrl="pistol1/barrel4_sound" name="DesertTank_sub_fire" cnName="沙漠进袭者-副炮-火光">gunFire/f</body>
+  <body raNum="30" soundUrl="ak/barrel2_sound" name="Daybreak_sub_fire" cnName="破晓-副炮-火光">gunFire/f</body>
+  <body raNum="30" soundUrl="ak/barrel5_sound" name="Diggers_main_fire" cnName="挖掘者-散弹-火光">gunFire/f</body>
+  <body raNum="30" soundUrl="m4/barrel_sound" name="Prophet_sub_fire" cnName="先知-副炮-火光">gunFire/f</body>
+  <body raNum="30" soundUrl="ak/barrel5_sound" name="Titans_sub_fire" cnName="泰坦-副炮-火光">gunFire/f1</body>
+  <body raNum="30" soundUrl="rocket/barrel_sound" con="add" name="Prophet_main_fire" cnName="先知-主炮-火光">gunFire/rocket</body>
+  <body raNum="30" soundUrl="rocket/barrel2_sound" con="add" name="DesertTank_main_fire" cnName="沙漠进袭者-主炮-火光">gunFire/rocket</body>
+  <body raNum="30" con="add" name="gunFireRocket" cnName="火炮火光">gunFire/rocket</body>
+  <body raNum="1" con="add" name="yearMonkey_fire" cnName="申猴-火光">specialGun/christmasGunBoom</body>
+  <body raNum="15" name="christmasGun_fire" cnName="圣诞礼炮-火光">specialGun/christmasGunFire</body>
+  <body soundUrl="terroristBoxEffect/hit1" name="terroristBox_boom" cnName="恐怖盒子-自爆">terroristBoxEffect/effect</body>
+  
+  <body soundUrl="GaiaFit/shoot" name="GaiaFit_main_fire" cnName="轰天雷-主炮-音效" />
+  <body soundUrl="AircraftGun/shoot" name="AircraftGun_main_fire" cnName="狩猎者-音效" />
+  <body soundUrl="CivilianFit/shoot" name="CivilianFit_main_fire" cnName="镇山虎-主炮-音效" />
+  <body soundUrl="sound/laserShoot" name="Punisher_sub_fire" cnName="制裁者-副炮-音效" />
+  <body soundUrl="FlyFit/shoot" name="FlyFit_main_fire" cnName="霸空雕-主炮-音效" />
+  <body soundUrl="sound/bigShoot" name="Punisher_main_fire" cnName="制裁者-主炮-音效" />
+</father>
+
+
+</data>

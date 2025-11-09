@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="关东尸">
+		<skill index="0" name="千斤顶">
+			<name>SnowFattySprint</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>千斤顶</cnName><iconUrl36>SkillIcon/IceManStrike_36</iconUrl36>
+			<cd>10</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>500</conditionRange><target>me</target>
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>1.1</duration>
+			<meActionLabel>sprintShootAttack</meActionLabel>
+			<stateEffectImg partType="2hand" con="add" raNum="30">bulletHitEffect/smoke_small</stateEffectImg>
+			<description>丢出斧头，命中后冲向目标，并用大肚猛烈顶撞。</description>	
+		</skill>
+		
+		<skill cnName="冲撞前飞刀">
+			<name>SnowFattySprintHit</name>
+			<cnName>千斤顶</cnName>
+			<noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>SnowFattySprintHit</effectType>
+		</skill>
+		<skill cnName="白色血液效果">
+			<name>hitBloodWhite</name>
+			<cnName>白色血液效果</cnName>
+			<noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>hitBlood</effectType>
+			<valueString>whiteBlood</valueString>
+			<value>30</value>
+			<mul>12</mul>
+			<range>2.5</range>
+		</skill>
+		<skill cnName="绿色血液效果">
+			<name>hitBloodGreen</name>
+			<cnName>绿色血液效果</cnName>
+			<noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>hitBlood</effectType>
+			<valueString>greenBlood</valueString>
+			<value>30</value>
+			<mul>12</mul>
+			<range>2.5</range>
+		</skill>
+	</father>
+	</data>

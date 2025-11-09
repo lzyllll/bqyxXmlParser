@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="shotgun" cnName="散弹枪">
+		<bullet index="34" name="shotgunSkunk" color="black" dropLevelArr="89" evoMaxLv="16" composeLv="86" chipNum="50">
+			<name>shotgunSkunk</name>
+			<cnName>赤鼬</cnName><extraMul>1.4</extraMul>
+			<whippB>0</whippB>
+			
+			<capacity>6,10</capacity>
+			<attackGap>0.95,1.2</attackGap>
+			<reloadGap>2,2.5</reloadGap>
+			<shakeAngle>1</shakeAngle>
+			<bulletWidth>500</bulletWidth>
+			<bulletShakeWidth>100</bulletShakeWidth>
+			<bulletNum>11</bulletNum>				
+			<shootAngle>22</shootAngle>				
+			<beatBack>2</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>0</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="4" body="3" />	
+			<critD mul="2" pro="0.2" />
+			
+			<skillArr>Hit_AddLifeMul_ArmsSkill,Hit_Spurting_ArmsSkill</skillArr>
+			<godSkillArr>booby_godArmsSkill,Hit_imploding_godArmsSkill</godSkillArr>
+			
+			<hurtRatio>4</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.6</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>14</upValue>
+			<shootShakeAngle>70</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			
+			<shootSoundUrl>specialGun/shotgunRed_sound</shootSoundUrl>
+			<flipX>1</flipX>
+			<lineD lightColor="0xFF0000" size="2" lightSize="6" blendMode="add" />
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			<fireImgType />
+			
+			<bodyImgRange>specialGun/shotgunSkunk</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+		</bullet>
+		
+		
+		
+		
+		
+		
+		<bullet name="shotgunSkunkYa" color="yagold">
+			<name>shotgunSkunkYa</name>
+			<cnName>氩星赤鼬</cnName>
+			<whippB>0</whippB>
+			
+			<capacity>20</capacity>
+			<attackGap>0.5</attackGap>
+			<reloadGap>1</reloadGap>
+			<shakeAngle>1</shakeAngle>
+			<bulletWidth>600</bulletWidth>
+			<bulletShakeWidth>100</bulletShakeWidth>
+			<bulletNum>11</bulletNum>				
+			<shootAngle>22</shootAngle>				
+			<beatBack>2</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<bounceD floor="4" body="3" />	
+			
+			<hurtRatio>4</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.6</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>14</upValue>
+			<shootShakeAngle>70</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			
+			<shootSoundUrl>specialGun/shotgunRed_sound</shootSoundUrl>
+			<flipX>1</flipX>
+			<lineD lightColor="0xFF0000" size="2" lightSize="6" blendMode="add" />
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			<fireImgType />
+			
+			<bodyImgRange>specialGun/shotgunSkunk6</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+		</bullet>
+	</father>
+	</data>

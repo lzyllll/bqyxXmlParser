@@ -1,0 +1,303 @@
+{
+  "father": [
+    {
+      "name": "car",
+      "cnName": "战车定义",
+      "equip": [
+        {
+          "name": "RedMoto",
+          "cnName": "赤焰",
+          "rideLabel": "RedMotoRide",
+          "evolutionLabel": "RedMotoSec",
+          "evolutionLv": 2,
+          "canComposeB": 1,
+          "mustCash": 500,
+          "main": {
+            "label": "RedMoto_main",
+            "dpsMul": 0.8,
+            "len": 35,
+            "minRa": -179,
+            "maxRa": -178.9
+          },
+          "sub": {
+            "label": "Diggers_sub",
+            "dpsMul": 0,
+            "hideB": true
+          },
+          "lifeMul": 1.4,
+          "attackMul": 1.4,
+          "duration": 40,
+          "cd": 120,
+          "addObjJson": {
+            "dpsAll": 0.08,
+            "lifeAll": 0.08
+          },
+          "skillArr": "vehicleFit_Civilian"
+        },
+        {
+          "name": "RedMotoSec",
+          "cnName": "烈焰",
+          "rideLabel": "RedMotoRide",
+          "evolutionLabel": "RedMotoThird",
+          "evolutionLv": 4,
+          "mustCash": 250,
+          "main": {
+            "label": "RedMoto_main",
+            "dpsMul": 1.2,
+            "len": 35,
+            "minRa": -179,
+            "maxRa": -178.9
+          },
+          "sub": {
+            "label": "Diggers_sub",
+            "dpsMul": 0,
+            "hideB": true
+          },
+          "lifeMul": 1.8,
+          "attackMul": 1.8,
+          "duration": 40,
+          "cd": 120,
+          "addObjJson": {
+            "dpsAll": 0.1,
+            "lifeAll": 0.1
+          },
+          "skillArr": "vehicleFit_Civilian"
+        },
+        {
+          "name": "RedMotoThird",
+          "cnName": "圣焰",
+          "rideLabel": "RedMotoRide",
+          "evolutionLv": 5,
+          "mustCash": 250,
+          "main": {
+            "label": "RedMoto_main",
+            "dpsMul": 1.7,
+            "len": 35,
+            "minRa": -179,
+            "maxRa": -178.9
+          },
+          "sub": {
+            "label": "Diggers_sub",
+            "dpsMul": 0,
+            "hideB": true
+          },
+          "lifeMul": 2.3,
+          "attackMul": 2.2,
+          "duration": 40,
+          "cd": 120,
+          "addObjJson": {
+            "dpsAll": 0.16,
+            "lifeAll": 0.16
+          },
+          "skillArr": "redMoto3Skill,vehicleFit_Civilian"
+        }
+      ],
+      "bullet": {
+        "cnName": "赤焰-主炮",
+        "name": "RedMoto_main",
+        "hurtRatio": 1.1,
+        "shakeAngle": 5,
+        "bulletLife": 2,
+        "bulletNum": 1,
+        "shootAngle": 5,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "attackGap": 0.2,
+        "shootRecoil": 15,
+        "screenShakeValue": 8,
+        "bulletSpeed": 40,
+        "followD": {
+          "value": 0.8
+        },
+        "penetrationGap": 100,
+        "flipX": 1,
+        "fireImgUrl": {
+          "value": "gunFire/f",
+          "soundUrl": "sound/bigShoot"
+        },
+        "bulletImgUrl": {
+          "value": "bullet/orangeBullet",
+          "raNum": 30,
+          "con": "filter"
+        },
+        "hitImgUrl": {
+          "value": "boomEffect/boom3",
+          "soundUrl": "sound/magicHit2",
+          "shake": "2,0.2,10",
+          "con": "add"
+        }
+      }
+    },
+    {
+      "name": "vehicleSkill",
+      "cnName": "技能",
+      "skills": {
+        "redMoto3Skill": {
+          "name": "redMoto3Skill",
+          "cnName": "车卷风",
+          "iconUrl": "SkillIcon/redMoto3Skill",
+          "effectInfoArr": null,
+          "changeText": "时间间隔[intervalT]秒",
+          "conditionType": "passive",
+          "condition": "interval",
+          "intervalT": 1,
+          "target": "me",
+          "addType": "instant",
+          "effectType": "redMoto3Skill",
+          "effectFather": "vehicle",
+          "description": "每过[intervalT]秒，清除一次载具附近的爆瓶毒雾、战神地面火焰。同时自身不会被封锁。",
+          "pointEffectImg": {
+            "name": "extremeLaserFire_boom"
+          },
+          "growth": {
+            "skill": [
+              {
+                "intervalT": 1.0
+              },
+              {
+                "intervalT": 0.9
+              },
+              {
+                "intervalT": 0.8
+              },
+              {
+                "intervalT": 0.7
+              },
+              {
+                "intervalT": 0.6
+              },
+              {
+                "intervalT": 0.5
+              },
+              {
+                "intervalT": 0.4
+              },
+              {
+                "intervalT": 0.3
+              },
+              {
+                "intervalT": 0.2
+              },
+              {
+                "intervalT": 0.1
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "vehicle",
+      "cnName": "战车body",
+      "body": [
+        {
+          "index": 0,
+          "name": "RedMoto",
+          "shell": "compound",
+          "cnName": "赤焰",
+          "raceType": "robot",
+          "swfUrl": "swf/vehicle/RedMoto.swf",
+          "lifeRatio": 1,
+          "rosRatio": 1,
+          "headHurtMul": 0.5,
+          "dieImg": {
+            "value": "boomEffect/boom3",
+            "soundUrl": "sound/pointBoom_hero",
+            "shake": "3,0.4,30"
+          },
+          "dieJumpMul": 0,
+          "imgClass": "CarImage",
+          "imgType": "normal",
+          "rotateBySlopeB": 1,
+          "imgArr": "stand,move,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpDown,jumpDown__",
+          "hitRect": "-30,-88,60,88",
+          "motionD": {
+            "F_G": 0.8,
+            "jumpDelayT": 0.15,
+            "F_I": 0.4,
+            "F_F": 1,
+            "moveWhenVB": true
+          },
+          "maxVx": 20,
+          "maxJumpNum": 1,
+          "attackAIClass": "CarAttack_AI",
+          "keyClass": "CarBodyKey",
+          "bulletLauncherClass": "CarBulletLauncher",
+          "skillArr": "redMoto_state",
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "move",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/energy",
+                  "con": "add",
+                  "soundUrl": "sound/vehicle_hit4"
+                }
+              },
+              {
+                "imgLabel": "jumpDown",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/energy",
+                  "con": "add",
+                  "soundUrl": "sound/vehicle_hit4"
+                }
+              },
+              {
+                "imgLabel": "jumpUp",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/energy",
+                  "con": "add",
+                  "soundUrl": "sound/vehicle_hit4"
+                }
+              },
+              {
+                "imgLabel": "jumpDown__",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/energy",
+                  "con": "add",
+                  "soundUrl": "sound/vehicle_hit4"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "RedMotoSec",
+          "fixed": "RedMoto",
+          "shell": "compound",
+          "cnName": "烈焰",
+          "swfUrl": "swf/vehicle/RedMotoSec.swf",
+          "bmpUrl": "BodyImg/RedMotoSec"
+        },
+        {
+          "name": "RedMotoThird",
+          "fixed": "RedMoto",
+          "shell": "compound",
+          "cnName": "圣焰",
+          "swfUrl": "swf/vehicle/RedMotoThird.swf",
+          "bmpUrl": "BodyImg/RedMotoThird"
+        }
+      ]
+    }
+  ]
+}

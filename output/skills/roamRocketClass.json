@@ -1,0 +1,74 @@
+{
+  "father": {
+    "type": "rocket",
+    "cnName": "火炮-特殊",
+    "bullet": {
+      "color": "black",
+      "composeLv": 99,
+      "chipB": true,
+      "chipNum": 100,
+      "dropLevelArr": 999,
+      "name": "roamRocket",
+      "cnName": "漫游",
+      "dpsMul": 2.5,
+      "uiDpsMul": 2,
+      "aiShootRange": 600,
+      "capacity": "6,8",
+      "attackGap": 0.7,
+      "reloadGap": 2,
+      "shakeAngle": 5,
+      "bulletWidth": "20,25",
+      "bulletShakeWidth": "0,0",
+      "bulletNum": 1,
+      "shootAngle": "3,10",
+      "armsArmMul": 0.5,
+      "upValue": 5,
+      "shootShakeAngle": 30,
+      "shootRecoil": 12,
+      "screenShakeValue": 35,
+      "noShakeTime": 0.5,
+      "bulletLife": 10,
+      "hitType": "rect",
+      "godSkillArr": "superHitSlow",
+      "penetrationGap": 1000,
+      "bulletSpeed": 10,
+      "speedD": {
+        "random": 0.1,
+        "max": 10,
+        "min": 2,
+        "a": -5
+      },
+      "noHitTime": 0.5,
+      "followD": {
+        "value": 0.3,
+        "delay": 0.5,
+        "noLM": 1
+      },
+      "boomD": {
+        "bodyB": true,
+        "floorB": true,
+        "selfB": true,
+        "radius": 80
+      },
+      "flipX": 1,
+      "bulletImgUrl": {
+        "name": "roamRocketBullet"
+      },
+      "hitImgUrl": {
+        "name": "midSpace"
+      },
+      "smokeImgUrl": {
+        "value": "bulletHitEffect/smoke_small",
+        "con": "filter",
+        "raNum": 30
+      },
+      "fireImgUrl": {
+        "name": "gunFireRocket"
+      },
+      "shootSoundUrl": "specialGun/roamRocketSound",
+      "bodyImgRange": "specialGun/roamRocket",
+      "bulletImgRange": "specialGun/bullet",
+      "description": null
+    }
+  }
+}

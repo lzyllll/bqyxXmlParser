@@ -1,0 +1,68 @@
+{
+  "father": [
+    {
+      "type": "sniper",
+      "cnName": "狙击枪",
+      "bullet": {
+        "closureGun": {
+          "name": "closureGun",
+          "color": "black",
+          "composeLv": 99,
+          "cnName": "围墙",
+          "capacity": 1,
+          "attackGap": 1,
+          "reloadGap": 5,
+          "shakeAngle": 0,
+          "bulletWidth": 400,
+          "bulletNum": 1,
+          "shootAngle": 0,
+          "beatBack": 10,
+          "targetShakeValue": 10,
+          "dpsMul": 1,
+          "hurtRatio": 15,
+          "gunNum": 1,
+          "armsArmMul": 0.5,
+          "armsWeight": 5,
+          "upValue": 3,
+          "shootShakeAngle": 15,
+          "shootRecoil": 10,
+          "screenShakeValue": 15,
+          "godSkillArr": "closureGunSkill",
+          "bulletLife": 5,
+          "hitType": "longLine",
+          "bounceD": {
+            "floor": 0,
+            "body": 0,
+            "noDieB": true
+          },
+          "penetrationNum": 999,
+          "penetrationGap": 10000,
+          "shootSoundUrl": "hitSound/bigLaser1",
+          "flipX": 1,
+          "bulletImgUrl": null,
+          "bodyImgRange": "specialGun/closureGun",
+          "bulletImgRange": "specialGun/bullet",
+          "armsType": "sniper"
+        }
+      }
+    },
+    {
+      "name": "godArmsSkill",
+      "cnName": "神级武器技能",
+      "skill": {
+        "name": "closureGunSkill",
+        "noRandomListB": 1,
+        "cnName": "墙",
+        "changeHurtB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "conditionType": "passive",
+        "condition": "hit",
+        "target": "target",
+        "addType": "instant",
+        "effectType": "closureGunSkill",
+        "description": "生成一道墙，挡住目标前进，对尸体无效。"
+      }
+    }
+  ]
+}

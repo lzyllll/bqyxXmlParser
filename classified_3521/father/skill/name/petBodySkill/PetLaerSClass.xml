@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="petBodySkill">
+		<skill>
+			<cnName>光能</cnName>
+			<name>lightLake</name>
+			<iconUrl>SkillIcon/lightLake</iconUrl>
+			<changeText>加成效果：[mul]</changeText>
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target systemType="hero">me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>lightLake</effectType>
+			<mul>0.05</mul>
+			<duration>0.5</duration>
+			<range>999999</range>
+			
+			<stateEffectImg partType="mouth" con="add" raNum="1">skillEffect/lightLake</stateEffectImg>
+			<description>让我方持枪单位在任何掉落物的附近都可以获得[mul]的攻击力加成和[mul]的防御加成。</description>
+			<growth>
+				<skill><mul>0.05</mul></skill>
+				<skill><mul>0.10</mul></skill>
+				<skill><mul>0.15</mul></skill>
+				<skill><mul>0.20</mul></skill>
+				<skill><mul>0.25</mul></skill>
+				<skill><mul>0.30</mul></skill>
+				<skill><mul>0.35</mul></skill>
+				<skill><mul>0.40</mul></skill>
+				<skill><mul>0.45</mul></skill>
+			</growth>
+		</skill>
+	</father>
+</data>

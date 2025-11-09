@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="other" cnName="其他">
+		<body shell="other">
+			<name>LastdayTankUnder</name>
+			<cnName>末日坦克部件</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/LastdayTankUnder.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<dieJumpMul>0</dieJumpMul>
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<imgType>normal</imgType>
+			<imgArr>stand,die1</imgArr>
+			<hitRect>-1,-1,2,2</hitRect>
+			<motionState>fly</motionState><maxJumpNum>0</maxJumpNum><maxVx>0</maxVx>
+			<defaultAiOrder>no</defaultAiOrder><nextAttackTime>0</nextAttackTime>
+			<skillArr>State_SpellImmunity,rigidBody_enemy,LastdayPartUnder,LastdayPartDie</skillArr>
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<hurtArr><hurt>
+				<imgLabel>move</imgLabel>
+				<hurtRatio>0</hurtRatio>
+				<shakeValue>4</shakeValue>
+				<attackType>direct</attackType>
+				<grapRect>-50,-111,100,105</grapRect>
+			</hurt></hurtArr>
+		</body>	
+	</father>
+	</data>

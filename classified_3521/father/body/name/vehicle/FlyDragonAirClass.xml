@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicle" cnName="战车body">
+		<body index="0" name="异祖龙飞行器" shell="normal">
+			
+			<name>FlyDragonAir</name>
+			<cnName>异祖龙飞行器</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/vehicle/FlyDragonAir110.swf</swfUrl>
+			
+			<imgType>normal</imgType>
+			<flipCtrlBy>mouse</flipCtrlBy>
+			<showLevel>999</showLevel>
+			<imgArr>
+				stand,move,hurt1,die1
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,sprintAttack
+			</imgArr>
+			
+			<hitRect>-27,-23,50,54</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>15</maxVx>
+			<motionState>fly</motionState><flyUseSpiderB>1</flyUseSpiderB><flyType>space</flyType>
+			<motionD F_AIR="3" />
+			
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>FlyDragonAir_AIExtra</extraAIClassLabel>
+			
+			<bulletLauncherClass>VehicleBulletLauncher</bulletLauncherClass>
+			<keyClass>VehicleBodyKey</keyClass>
+			<bossSkillArrCn />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>sprintAttack</imgLabel><mustGrapRectB>1</mustGrapRectB>
+					<hurtRatio>0.8</hurtRatio><meBack>35</meBack>
+					<grapRect>-350,-17,270,97</grapRect>
+					<attackType>through</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl soundUrl="sound/body_hit">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+			</hurtArr>
+		</body>
+		
+		<body name="冰霜祖龙" fixed="FlyDragonAir" shell="normal">
+			<name>FrozenDragonAir</name>
+			<cnName>冰霜祖龙</cnName>
+			<swfUrl>swf/vehicle/FrozenDragonAir.swf</swfUrl>
+			<bmpUrl>BodyImg/FrozenDragonAir</bmpUrl>
+		</body>
+	</father>
+</data>

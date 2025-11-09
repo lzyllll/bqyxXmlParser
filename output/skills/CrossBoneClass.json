@@ -1,0 +1,273 @@
+{
+  "father": [
+    {
+      "name": "snake",
+      "cnName": "血蟒",
+      "body": {
+        "shell": "metal",
+        "name": "CrossBone",
+        "cnName": "交叉骨",
+        "headIconUrl": "IconGather/CrossBone",
+        "raceType": "human",
+        "swfUrl": "swf/hero/CrossBone.swf",
+        "lifeRatio": 2.5,
+        "showLevel": 9999,
+        "imgArr": "standStop,standForward,standBack,standStop__squatStop\n\t\t\t\t,squatForward,squatStop,squatBack,squatStop__standStop\n\t\t\t\t,die1,die2,__stru,stru\n\t\t\t\t,throwAttack\n\t\t\t\t,jumpDown__,jumpDown,jumpUp__jumpDown,jumpUp,__jumpUp\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1\n\t\t\t\t,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2\n\t\t\t\t,BlueMotoRide,WatchEagleRide",
+        "lowerImgArr": "thigh\n\t\t\t\t,leg_left_1\n\t\t\t\t,leg_left_0\n\t\t\t\t,foot_left\n\t\t\t\t,leg_right_1\n\t\t\t\t,leg_right_0\n\t\t\t\t,foot_right",
+        "lifeBarExtraHeight": -20,
+        "hitRect": "-12, -90, 24, 90",
+        "squatHitRect": "-12,-50,24,50",
+        "hurtRectArr": [
+          "-15,-38,30,38",
+          "-20, -110, 40, 110",
+          "-12, -40, 24, 40"
+        ],
+        "maxVx": 12,
+        "squatMaxVx": 5,
+        "armsNumber": 1,
+        "randomArmsRange": "yearSheep$cb",
+        "extraAIClassLabel": null,
+        "oneAiLabel": "FightShooter",
+        "bossSkillArr": "cardNoAttackSkill,meltFlamerPurgold,noUnderMulHurt,defenceWenjie,godShield,KingRabbitTreater,treater_knights,through_hero_10,sameInvi,rideBlueMoto,rideFireWolf,rideKun,rideNian,rideFloorTank",
+        "extraDropArmsB": 1,
+        "hurtArr": null
+      }
+    },
+    {
+      "name": "snake",
+      "skills": {
+        "rideFireWolf": {
+          "name": "rideFireWolf",
+          "cnName": "骑射专家",
+          "conditionString": "0.8,1",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cd": 99999,
+          "firstCd": 99999,
+          "ignoreSilenceB": 1,
+          "ignoreNoSkillB": 1,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "targetNoVehicleB,targetLifePerRange",
+          "target": "me",
+          "addType": "instant",
+          "summonedUnitsB": 1,
+          "effectType": "rideShootVehicle",
+          "duration": 89999,
+          "valueString": "虚炎狼",
+          "obj": {
+            "cnName": "虚炎狼坐骑",
+            "num": 1,
+            "lifeMul": 0.15,
+            "dpsMul": 1,
+            "mulByFatherB": 1,
+            "maxNum": 1,
+            "skillArr": [
+              "State_SpellImmunity",
+              "noUnderMulHurt",
+              "defenceWenjie"
+            ]
+          },
+          "meEffectImg": {
+            "name": "changeToGaia_me"
+          },
+          "description": "生命值每减少20%都会召唤出不同的载具，并进入骑射状态。"
+        },
+        "rideFloorTank": {
+          "name": "rideFloorTank",
+          "cnName": "掠袭者骑射",
+          "conditionString": "0.6,0.8",
+          "cd": 99999,
+          "firstCd": 99999,
+          "ignoreSilenceB": 1,
+          "ignoreNoSkillB": 1,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "targetNoVehicleB,targetLifePerRange",
+          "target": "me",
+          "addType": "instant",
+          "summonedUnitsB": 1,
+          "effectType": "rideShootVehicle",
+          "duration": 89999,
+          "valueString": "大地掠袭者",
+          "obj": {
+            "cnName": "大地掠袭者",
+            "num": 1,
+            "lifeMul": 0.1,
+            "dpsMul": 1,
+            "mulByFatherB": 1,
+            "maxNum": 1,
+            "skillArr": [
+              "State_SpellImmunity",
+              "noUnderMulHurt",
+              "defenceWenjie",
+              "floorTankSkill"
+            ]
+          },
+          "meEffectImg": {
+            "name": "changeToGaia_me"
+          },
+          "description": "大地掠袭者骑射"
+        },
+        "rideNian": {
+          "name": "rideNian",
+          "cnName": "切割者骑射",
+          "conditionString": "0.4,0.6",
+          "cd": 99999,
+          "firstCd": 99999,
+          "ignoreSilenceB": 1,
+          "ignoreNoSkillB": 1,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "targetNoVehicleB,targetLifePerRange",
+          "target": "me",
+          "addType": "instant",
+          "summonedUnitsB": 1,
+          "effectType": "rideShootVehicle",
+          "duration": 89999,
+          "valueString": "切割者",
+          "obj": {
+            "cnName": "切割者",
+            "num": 1,
+            "lifeMul": 0.15,
+            "dpsMul": 1,
+            "mulByFatherB": 1,
+            "maxNum": 1,
+            "skillArr": [
+              "State_SpellImmunity",
+              "noUnderMulHurt",
+              "defenceWenjie",
+              "murderous_vehicle_10"
+            ]
+          },
+          "meEffectImg": {
+            "name": "changeToGaia_me"
+          },
+          "description": "切割者骑射"
+        },
+        "rideKun": {
+          "name": "rideKun",
+          "cnName": "鲲骑射",
+          "conditionString": "0.2,0.4",
+          "cd": 99999,
+          "firstCd": 99999,
+          "ignoreSilenceB": 1,
+          "ignoreNoSkillB": 1,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "targetNoVehicleB,targetLifePerRange",
+          "target": "me",
+          "addType": "instant",
+          "summonedUnitsB": 1,
+          "effectType": "rideShootVehicle",
+          "duration": 89999,
+          "valueString": "鲲",
+          "obj": {
+            "cnName": "鲲",
+            "num": 1,
+            "lifeMul": 0.1,
+            "dpsMul": 1,
+            "mulByFatherB": 1,
+            "maxNum": 1,
+            "skillArr": [
+              "State_SpellImmunity",
+              "noUnderMulHurt",
+              "defenceWenjie"
+            ]
+          },
+          "meEffectImg": {
+            "name": "changeToGaia_me"
+          },
+          "description": "鲲骑射"
+        },
+        "rideBlueMoto": {
+          "name": "rideBlueMoto",
+          "cnName": "飞魄骑射",
+          "conditionString": "0,0.2",
+          "cd": 99999,
+          "firstCd": 99999,
+          "ignoreSilenceB": 1,
+          "ignoreNoSkillB": 1,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "targetNoVehicleB,targetLifePerRange",
+          "target": "me",
+          "addType": "instant",
+          "summonedUnitsB": 1,
+          "effectType": "rideShootVehicle",
+          "duration": 89999,
+          "valueString": "飞魄",
+          "obj": {
+            "cnName": "飞魄",
+            "num": 1,
+            "lifeMul": 0.2,
+            "dpsMul": 1,
+            "mulByFatherB": 1,
+            "maxNum": 1,
+            "skillArr": [
+              "State_SpellImmunity",
+              "noUnderMulHurt",
+              "defenceWenjie",
+              "blade_blueMoto_9",
+              "shockWave_10"
+            ]
+          },
+          "meEffectImg": {
+            "name": "changeToGaia_me"
+          },
+          "description": "飞魄骑射"
+        },
+        "sameInvi": {
+          "name": "sameInvi",
+          "cnName": "均衡矩阵",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "noSkillDodgeB": 1,
+          "ignoreImmunityB": 1,
+          "noBeClearB": 1,
+          "everNoClearB": 1,
+          "conditionType": "passive",
+          "condition": "add",
+          "target": "me",
+          "addType": "state",
+          "effectType": "sameInvi",
+          "duration": 9999999,
+          "stateEffectImg": {
+            "name": "SaberTiger_shield_second_state"
+          },
+          "description": "目标无敌时，自身也进入无敌状态。"
+        },
+        "hurtWenjie": {
+          "name": "hurtWenjie",
+          "cnName": "歧视文杰",
+          "ignoreNoSkillB": 1,
+          "noSkillDodgeB": 1,
+          "ignoreImmunityB": 1,
+          "conditionType": "passive",
+          "condition": "allHit",
+          "otherConditionArr": "p1Wenjie",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "changeHurtNoCondition",
+          "mul": 2.5,
+          "description": "对P1文杰造成[mul-1]的伤害。"
+        },
+        "defenceWenjie": {
+          "name": "defenceWenjie",
+          "cnName": "防御文杰",
+          "ignoreNoSkillB": 1,
+          "noSkillDodgeB": 1,
+          "ignoreImmunityB": 1,
+          "conditionType": "passive",
+          "condition": "underAllHit",
+          "otherConditionArr": "p1Wenjie",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "changeHurtNoCondition",
+          "mul": 0.7,
+          "description": "降低受到P1文杰[1-mul]的伤害。"
+        }
+      }
+    }
+  ]
+}

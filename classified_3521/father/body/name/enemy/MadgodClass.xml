@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="敌方">
+		<body name="狂战神" shell="compound">
+			<name>Madgod</name>
+			<cnName>狂战神</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/Madgod339.swf</swfUrl>
+			<rosRatio>1</rosRatio>
+			
+			<showLevel>9999</showLevel>
+			<headHurtMul>0.3</headHurtMul>
+			<headIconUrl>IconGather/Madgod</headIconUrl>
+			<imgType>normal</imgType>
+			<lifeBarExtraHeight>-180</lifeBarExtraHeight>
+			<imgArr>
+				stand,move
+				,normalAttack,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,die1
+				,birthAttack
+				,rotateAttack,shakeAttack,sprintAttack,magicAttack
+			</imgArr>
+			
+			<hitRect>-20, -90, 40, 90</hitRect>
+			<maxVx>11</maxVx>
+			<extraAIClassLabel />
+			<preBulletArr>extremeLaserFire,MadgodSmoke</preBulletArr>
+			<dieJumpMul>0</dieJumpMul>
+			<motionD jumpMul="1.5" />
+			
+			<avtiveSkillCdOverT>0.06</avtiveSkillCdOverT>
+			<skillArr>MadgodBuff,MadgodHit,verShieldMad,meltFlamerPurgold,vertigoArmorIron,cardNoAttackSkill,findHide,spellImmunityMax,noBounce_enemy,underHurt50</skillArr>
+			<bossSkillArr>magicMadgod,rotateMadgod,shakeMadgod,sprintMadgod,weaponDefence2,enemyToZombie,strong_enemy</bossSkillArr>
+			<bossSkillArrCn />
+			<wilderSkillArr />
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel><cn>挥砍</cn>
+					<hurtRatio>2</hurtRatio>
+					<attackType>holy</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl name="blueHit" />
+				</hurt>
+				
+				<hurt><cn>乾坤斩</cn>
+					<imgLabel>rotateAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>1</hurtRatio>
+					<hurtMul>0.1</hurtMul>
+					<attackType>holy</attackType>
+					<skillArr />
+					<hitImgUrl name="blueHit" />
+				</hurt>
+				<hurt><cn>现身</cn>
+					<imgLabel>birthAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.00000000000001</hurtRatio>
+					<grapRect>-400,-111,100,105</grapRect>
+					<skillArr />
+				</hurt>
+				<hurt><cn>擎天斩</cn>
+					<imgLabel>shakeAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>2</hurtRatio>
+					<hurtMul>0.4</hurtMul>
+					<attackType>holy</attackType>
+					<hitImgUrl name="blueHit" />
+				</hurt>
+				<hurt><cn>疾风刺</cn>
+					<imgLabel>sprintAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>2</hurtRatio>
+					<hurtMul>0.05</hurtMul>
+					<attackType>holy</attackType>
+					<hitImgUrl name="blueHit" />
+				</hurt>
+				<hurt><cn>虚空之雷</cn>
+					<imgLabel>magicAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.00000000000001</hurtRatio>
+					<grapRect>-400,-111,100,105</grapRect>
+				</hurt>
+				
+			</hurtArr>
+		</body>
+		
+		<bullet cnName="爆瓶子弹">
+			<name>MadgodSmoke</name>
+			<cnName>爆瓶子弹</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>30</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+								
+			<bulletSpeed>0</bulletSpeed>
+				
+			<hitGap>0.1</hitGap>
+			<skillArr>LaborZombieBoomBuff</skillArr>
+			<penetrationNum>999</penetrationNum>
+			<penetrationGap>1000</penetrationGap>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl name="LaborZombie_1_bullet" />
+		</bullet>
+		
+	</father>
+	</data>

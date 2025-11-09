@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="spaceLevel">
+		<level name="YaSomewhere_1">
+			<sayList name="s1">
+				<say target="吸血蝙蝠"><content>核能石找的怎么样？</content></say>
+				<say target="空单位"><content>它的辐射量太低了，很难被探测到。</content></say>
+				<say target="空单位"><content>不过，我们的采矿队正在太阳系日以继夜的工作，我相信很快就会有收获了。</content></say>
+				<say target="吸血蝙蝠"><content>继续加油吧。</content></say>
+				<say target="空单位"><content>父亲，为何只有获得核能石的人，才有资格成为大统领的候选人呢？</content></say>
+				<say target="吸血蝙蝠"><content>按照氩星的传统，你确实拥有统领之位的继承权。</content></say>
+				<say target="吸血蝙蝠"><content>但你要明白，核能石是制备曲率引擎的关键，它对氩星来说非常重要。</content></say>
+				<say target="吸血蝙蝠"><content>若不做出点贡献，即便日后你坐上统领之位，也难以服众。</content></say>
+				<say target="空单位"><content>我明白了！</content></say>
+				<say target="吸血蝙蝠"><content>对了，你弟还在地球吗？</content></say>
+				<say target="空单位"><content>是啊，他玩得不想回来了。</content></say>
+				<say target="吸血蝙蝠"><content>还给自己取了个什么地球名字？</content></say>
+				<say target="空单位"><content>叫狂人。</content></say>
+				<say target="吸血蝙蝠"><content>真幼稚，他什么时候才能长大成人啊？</content></say>
+				<say target="吸血蝙蝠"><content>幸亏有你，否则我们家族的辉煌恐怕持续不了多久了。</content></say>
+				<say target="空单位"><content>主要是因为父亲教导有方。</content></say>
+			</sayList>
+		</level>
+		<level name="MadmanPlot">
+			<sayList name="s1">
+				<say target="摩卡"><content>说了这么多，你听明白了吗？</content></say>
+				<say target="本我"><content>我懂了，这么说，现在狂人还在战斧高地假扮我？</content></say>
+				<say target="摩卡"><content>是的。</content></say>
+				<say target="本我"><content>太可怕了！</content></say>
+				<say target="本我"><content>问题是，他绕这么一大圈，图什么呀？就是为了好玩？</content></say>
+				<say target="摩卡"><content>当然不是。他说高地上有他的需要的矿石，但我不知道是什么矿石。</content></say>
+				<say target="本我"><content>矿石？</content></say>
+				<say target="本我"><content>不会吧？！</content></say>
+				<say target="本我"><content>难道他的目标是秘密仓库？</content></say>
+				<say target="摩卡"><content>秘密仓库？</content></say>
+				<say target="本我"><content>那里囤积着我们所有的物资和矿石！</content></say>
+				<say target="本我"><content>除了我之外，只有小樱知道仓库的位置。</content></say>
+				<say target="摩卡"><content>希望小樱能守住这个秘密。</content></say>
+				<say target="本我"><content>趁他还没得逞之前，我们得赶紧回去！</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="氩星舰"><content>晚了……</content></say>
+				<say target="本我"><content>是……是狂人的声音。</content></say>
+				<say target="氩星舰"><content>仓库里的东西，现在都在这架飞船上了。</content></say>
+				<say target="氩星舰"><content>虽然我只需要其中的核能石，但我被你折磨了这么久，多拿点补偿不过分吧？</content></say>
+				<say target="本我"><content>狂人！你一个外星人，要我们的核能石干嘛？！</content></say>
+				<say target="氩星舰"><content>你们不要以为我只是一个来自外星的纨绔子弟。</content></say>
+				<say target="氩星舰"><content>作为大统领的第二个儿子，我必须在家人面前装成一副人畜无害的样子。</content></say>
+				<say target="氩星舰"><content>否则以我哥那秉性，我是活不到今天的。</content></say>
+				<say target="氩星舰"><content>他为寻找核能石，派遣大部队在木星那边翻江倒海，还不如我在这略施小计。</content></say>
+				<say target="氩星舰"><content>哎呦，说这些你们也听不懂。总之，你们的核能石将助我打一个漂亮的翻身仗。</content></say>
+				<say target="本我"><content>这些物资是我们的命脉，你不能拿走！</content></say>
+				<say target="氩星舰"><content>现在求我已经没用了，我得赶紧把这些带回氩星，拜拜咯……</content></say>
+			</sayList>
+			<sayList name="s3">
+				<say target="摩卡"><content>赶紧开飞行载具追他啊！</content></say>
+				<say target="本我"><content>没用的，我们的载具根本上不了太空。</content></say>
+				<say target="摩卡"><content>那怎么办？</content></say>
+			</sayList>
+			<sayList name="s4">
+				<say target="文杰表哥"><content>我的老表弟，你怎么也下山了？是不是特地来安慰我的？</content></say>
+				<say target="本我"><content>说来话长，现在有一件更紧急的事。</content></say>
+				<say target="文杰表哥"><content>怎么了？</content></say>
+				<say target="本我"><content>狂人偷了秘密仓库里的所有东西，已经开着飞船离开了，我们怎么样才能追上他？</content></say>
+				<say target="文杰表哥"><content>什么情况？！</content></say>
+				<say target="文杰表哥"><content>狂人肯定是忌惮我的实力！一看我离开高地，就马上动手！都怪我呀！</content></say>
+				<say target="本我"><content>这个时候就别吹牛了，赶紧想想办法！</content></say>
+				<say target="文杰表哥"><content>那有什么办法？我们又没有宇宙飞船。</content></say>
+				<say target="本我"><content>赶紧问问制毒师！</content></say>
+				<say target="文杰表哥"><content>等等，我想起来了。</content></say>
+				<say target="文杰表哥"><content>前几天我跟姨妈通电话的时候，她说绿岛的多米诺博士已经成功研发出了宇宙飞船。</content></say>
+				<say target="文杰表哥"><content>我当时就在想，这人怎么比我还会吹牛。</content></say>
+				<say target="本我"><content>不管了，即使希望渺茫，我们也要去碰碰运气。</content></say>
+			</sayList>
+		</level>
+		
+		<level name="EarthSkyTask">
+			<sayList name="s1">
+				<say target="藏师将军/手机"><content>没想到啊，狂人最早坠毁的飞船，是落在了绿岛上。</content></say>
+				<say target="藏师将军/手机"><content>经过多博士改造后，这艘飞船竟能成功飞上太空，太神奇了。</content></say>
+				<say target="我"><content>而且它的性能还远超目前地球上的任何一艘飞船。</content></say>
+				<say target="我"><content>由于共享了氩星广播系统，这飞船还能实时定位狂人当前的坐标。</content></say>
+				<say target="藏师将军/手机"><content>多博士怎么肯把这宝贝借给你？</content></say>
+				<say target="我"><content>这个日后有空再跟你细说。</content></say>
+				<say target="藏师将军/手机"><content>那你和文杰就放心去吧，高地交给我就行了。</content></say>
+				<say target="我"><content>好好照顾@Girl和@XinLing。</content></say>
+				<say target="藏师将军/手机"><content>这还用你说？</content></say>
+				<say target="藏师将军/手机"><content>@WenJie呢？他怎么不出来说几句？</content></say>
+				<say target="我"><content>他有点晕船，正躺着呢。</content></say>
+				<say target="藏师将军/手机"><content>@WenJie的表现果然不出所料。</content></say>
+				<say target="我"><content>不好，前方有大量陨石！先不跟你聊了。</content></say>
+				<say target="藏师将军/手机"><content>好，你们小心一点！</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="我"><content>奇怪，地球上空怎么会有这么多陨石？</content></say>
+				<say target="战争狂人"><content>@Striker！</content></say>
+				<say target="战争狂人"><content>你怎么驾驶着我的飞船？！</content></say>
+				<say target="我"><content>嘿嘿，被你发现了。</content></say>
+				<say target="战争狂人"><content>你这人真是阴魂不散！</content></say>
+				<say target="我"><content>快还我矿石！</content></say>
+				<say target="战争狂人"><content>哼，你靠那些武器装备，在地球上还能耍耍威风。现在是在太空，你算老几？</content></say>
+				<say target="战争狂人"><content>马上，我们的采矿队就来了！准备让你的队友给你收尸吧！</content></say>
+			</sayList>
+		</level>
+		
+		<level name="SolarInsideEnemy">
+			<sayList name="s2">
+				<say target="我"><content>难怪地球周边有这么多的陨石，原来是他们在这里这采矿。</content></say>
+				<say target="我"><content>采矿队拖慢了我们的速度，得尽快解决它们才行。</content></say>
+			</sayList>
+		</level>
+		
+		<level name="SolarInsideBoss">
+			<sayList name="s1">
+				<say target="我"><content>制毒师，帮我看看这个彩色矿石是什么？</content></say>
+				<say target="制毒师"><content>从你传来的元素图谱上看，这并不是地球上的矿石，你从哪里弄来的？</content></say>
+				<say target="我"><content>氩星飞船的残骸里捡的。</content></say>
+				<say target="制毒师"><content>你还是留着，或许以后有用。</content></say>
+				<say target="我"><content>好的。</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="战争狂人"><content>你完了！你毁了一艘氩星采矿舰，你这是在向整个氩星宣战！</content></say>
+				<say target="我"><content>吓唬我？我才不怕！</content></say>
+				<say target="战争狂人"><content>我在谷神星，你有种就来吧！</content></say>
+			</sayList>
+		</level>
+		
+		<level name="CeresSouthBoss">
+			<sayList name="s2">
+				<say target="战争狂人"><content>你小子腿脚还挺麻溜？都追到这了！</content></say>
+				<say target="我"><content>氩星采矿队这么大阵仗，就是为了倒腾核能石？</content></say>
+				<say target="战争狂人"><content>你不懂，核能石可是个宝贝，躺在你那仓库里就是暴殄天物！</content></say>
+				<say target="我"><content>那你们的彩色矿石又是什么？</content></say>
+				<say target="战争狂人"><content>什么彩色矿石？</content></say>
+				<say target="我"><content>我从采矿机的残骸上捡到的。</content></say>
+				<say target="战争狂人"><content>氩石嘛，一点都不稀罕，我们那多的是。</content></say>
+				<say target="我"><content>氩石……有什么用？</content></say>
+				<say target="战争狂人"><content>我们把它称为“太空点火石”，它可以帮助武器适应没有助燃剂的环境。</content></say>
+				<say target="我"><content>那还是挺有用的嘛。</content></say>
+				<say target="战争狂人"><content>哎呀，我跟你说这些干啥？</content></say>
+				<say target="战争狂人"><content>我现在准备去木卫三，你得加把劲了。</content></say>
+				<say target="我"><content>你能不能别做个缩头乌龟？</content></say>
+				<say target="战争狂人"><content>我有要事在身，没空跟你玩。</content></say>
+
+			</sayList>
+		</level>
+		
+		<level name="GanymedeBoss">
+			<sayList name="s2">
+				<say target="我"><content>这条蛇真是太危险了！</content></say>
+				<say target="我"><content>坐标显示，狂人就在这附近，他一定是藏在某个洞穴里。</content></say>
+				<say target="我"><content>表哥，你在飞船上好好休息，我要下去找他。</content></say>
+				<say target="我"><content>真的吗？终于可以找个地方落脚了，快晕死我了！</content></say>
+			</sayList>
+		</level>
+		
+		<level name="GanymedeCaveEnemy">
+			<sayList name="s1" oneB="1">
+				<say target="文杰表哥/手机"><content>你这套宇航服还合身吗？</content></say>
+				<say target="p1"><content>有点宽大，凑合穿吧。</content></say>
+				<say target="文杰表哥/手机"><content>关键是它能实时共享飞船的技能。</content></say>
+				<say target="p1"><content>真的吗？那太好了！</content></say>
+				<say target="文杰表哥/手机"><content>还有你手上那把氩星武器，它能在任何环境下无障碍地使用。</content></say>
+				<say target="p1"><content>好久没摸枪了，我正手痒痒呢！</content></say>
+				<say target="文杰表哥/手机"><content>你的前方正停着一艘采矿舰，正好可以试试手。</content></say>
+				<say target="p1"><content>我看过了，里面什么都没有。</content></say>
+				<say target="文杰表哥/手机"><content>那你小心一点，我还得继续躺会儿……</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="p1"><content>我听到前方有奇怪的声音。</content></say>
+				<say target="文杰表哥/手机"><content>什么声音？</content></say>
+				<say target="p1"><content>好像是一只大鸟扇翅膀的声音。</content></say>
+				<say target="文杰表哥/手机"><content>你先找个地方掩护一下吧。</content></say>
+			</sayList>
+		</level>
+		
+		<level name="GanymedeCaveBoss">
+			<sayList name="s1" oneB="1">
+				<say target="战争狂人"><content>别躲了，我们的黄金隼已经发现你了！</content></say>
+				<say target="p1"><content>黄金隼？</content></say>
+				<say target="战争狂人"><content>和战神类似，它也属于氩星机甲中的一种。</content></say>
+				<say target="战争狂人"><content>只不过在黄金隼面前，战神就是个弟弟。</content></say>
+				<say target="p1"><content>哼！在我面前，你们都是弟弟！</content></say>
+				<say target="战争狂人"><content>太嚣张了！黄金隼，干掉他！</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="战争狂人"><content>没想到啊，你竟然还有别的氩星武器？</content></say>
+				<say target="p1"><content>这不得多亏了你们的氩石？</content></say>
+				<say target="战争狂人"><content>不跟你废话了，我现在就要回氩星了。</content></say>
+				<say target="p1"><content>啊？你怎么回去啊？</content></say>
+				<say target="战争狂人"><content>我现在已经开启了这里的虫洞发生器，就差最后一步了。</content></say>
+				<say target="战争狂人"><content>再见了爆枪小队，等我登上了统领之位，再回来好好收拾你们！</content></say>
+				<say target="p1"><content>你休想走！</content></say>
+				<say target="战争狂人"><content>嘿嘿，我留着这个虫洞，就看你敢不敢追来。</content></say>
+				<say target="战争狂人"><content>你敢来氩星，我们氩星人不得把你的皮给扒了？！</content></say>
+				<say target="p1"><content>我就去了怎么着？</content></say>
+				<say target="文杰表哥/手机"><content>表弟！别冲动啊！</content></say>
+				<say target="文杰表哥/手机"><content>狂人这是在激将你，你去了氩星哪有活路啊？</content></say>
+				<say target="p1"><content>我先追上去再说。</content></say>
+			</sayList>
+		</level>
+		
+		<level name="GanymedeCavernTask">
+			<sayList name="s1">
+				<say target="p1"><content>我刚刚看到狂人消失在这黑漆漆的洞里。</content></say>
+				<say target="p1"><content>这应该就是虫洞吧？</content></say>
+				<say target="文杰表哥/手机"><content>你可别轻举妄动啊。</content></say>
+				<say target="p1"><content>我怕后面追不上他了。</content></say>
+				<say target="p1"><content>可恶，狂人又招来了这些飞虫来拖慢我的速度！</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="文杰表哥/手机"><content>你先回到飞船上，我们从长计议。</content></say>
+				<say target="p1"><content>不行，不能再等了！</content></say>
+				<say target="文杰表哥/手机"><content>你这猴急的性格什么时候能改改？</content></say>
+				<say target="p1"><content>我先去了，表哥你稍后再跟上。</content></say>
+				<say target="文杰表哥/手机"><content>唉，我的身体还没恢复呢！</content></say>
+			</sayList>
+		</level>
+	</father>
+</data>

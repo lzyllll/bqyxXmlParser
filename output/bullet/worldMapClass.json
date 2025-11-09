@@ -1,0 +1,1566 @@
+{
+  "father": [
+    {
+      "name": "space",
+      "cnName": "太空",
+      "place": [
+        {
+          "lv": 999,
+          "unlockTask": "EarthSky_1",
+          "name": "EarthSky",
+          "cnName": "地球上空",
+          "geogType": "solar",
+          "levelArr": {
+            "level": {
+              "name": "EarthSky_1"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "unlockTask": "SolarInsideBoss",
+          "name": "SolarInside",
+          "cnName": "内太阳系",
+          "geogType": "solar",
+          "levelArr": {
+            "level": {
+              "name": "SolarInside_1"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "unlockTask": "CeresSouthBoss",
+          "name": "CeresSouth",
+          "cnName": "谷神星",
+          "geogType": "solar",
+          "levelArr": {
+            "level": {
+              "name": "CeresSouth_1"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "unlockTask": "GanymedeBoss",
+          "name": "Ganymede",
+          "cnName": "木卫三",
+          "geogType": "solar",
+          "levelArr": {
+            "level": {
+              "name": "Ganymede_1"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "unlockTask": "GanymedeCaveBoss",
+          "name": "GanymedeCave",
+          "cnName": "木卫三洞穴",
+          "geogType": "solar",
+          "levelArr": {
+            "level": {
+              "name": "GanymedeCave_1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "spaceTask",
+      "cnName": "太空剧情",
+      "place": [
+        {
+          "lv": 999,
+          "name": "YaSomewhere",
+          "cnName": "氩星某处",
+          "geogType": "ya",
+          "levelArr": {
+            "level": {
+              "name": "YaSomewhere_1"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "name": "StoneSea1",
+          "cnName": "氩星石海",
+          "geogType": "ya",
+          "levelArr": {
+            "level": {
+              "name": "bwallStoneSea"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "name": "GanymedeCavern",
+          "cnName": "木卫三洞内",
+          "geogType": "solar",
+          "levelArr": {
+            "level": {
+              "name": "GanymedeCavernTask"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "big",
+      "cnName": "大地图",
+      "place": {
+        "lv": 999,
+        "cnName": "感染区",
+        "name": "infected_area",
+        "description": null,
+        "swfUrl": "MainUI/infected_area"
+      }
+    },
+    {
+      "name": "other",
+      "cnName": "其他",
+      "place": [
+        {
+          "lv": 999,
+          "cnName": "洞窟深处",
+          "name": "CavesDeep",
+          "labelArr": "地下",
+          "geogType": "hill",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "geology"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "cnName": "丘野",
+          "name": "QiuYe",
+          "noTaskB": 1,
+          "geogType": "hill",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "QiuYe_1"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "cnName": "荒漠",
+          "name": "HuangMo2",
+          "labelArr": "沙漠,室内",
+          "noTaskB": 1,
+          "geogType": "hill",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "HuangMo2_1"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "cnName": "大荒漠",
+          "name": "HuangMo3",
+          "labelArr": "沙漠,室内",
+          "noTaskB": 1,
+          "geogType": "hill",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "HuangMo3_1"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "cnName": "虚无之森",
+          "name": "XuWu1",
+          "noTaskB": 1,
+          "geogType": "hill",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "XuWu1_1"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "cnName": "枯荣镇",
+          "name": "KuRong",
+          "noTaskB": 1,
+          "geogType": "town",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "KuRong_1"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "cnName": "狼穴",
+          "name": "LangXue",
+          "labelArr": "地下",
+          "noTaskB": 1,
+          "geogType": "hill",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "LangXue_1"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "cnName": "时光洞",
+          "name": "Hospital",
+          "labelArr": "室内",
+          "noTaskB": 1,
+          "geogType": "lab",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "Hospital_1"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "cnName": "穹顶",
+          "name": "FlySkyScene",
+          "noTaskB": 1,
+          "geogType": "lab",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "FlySkyScene_1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "task",
+      "cnName": "剧情任务",
+      "place": [
+        {
+          "lv": 999,
+          "name": "GreenSomewhere",
+          "cnName": "绿岛某处",
+          "geogType": "ya",
+          "levelArr": {
+            "level": {
+              "name": "GreenSomewhere_1"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "cnName": "研究室A",
+          "name": "YanJiuA",
+          "labelArr": "室内",
+          "noTaskB": 1,
+          "geogType": "lab",
+          "mustWinShowB": 1,
+          "levelArr": {
+            "level": {
+              "name": "zomNewborn"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "cnName": "实验室地下",
+          "name": "HospitalUnder",
+          "labelArr": "室内",
+          "noTaskB": 1,
+          "geogType": "lab",
+          "levelArr": {
+            "level": {
+              "name": "HospitalUnder_re"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "cnName": "战斧高地",
+          "name": "MainUpland",
+          "noTaskB": 1,
+          "geogType": "city",
+          "mustWinShowB": 1,
+          "levelArr": {
+            "level": {
+              "name": "MainUpland_re"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "cnName": "战斧高地2053",
+          "name": "FutureUpland",
+          "noTaskB": 1,
+          "geogType": "city",
+          "mustWinShowB": 1,
+          "levelArr": {
+            "level": {
+              "name": "xiaohuUpland"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "cnName": "寒光郊外",
+          "name": "HanGuangSub",
+          "noTaskB": 1,
+          "geogType": "city",
+          "mustWinShowB": 1,
+          "levelArr": {
+            "level": {
+              "name": "madFly1"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "cnName": "七夕天空",
+          "name": "QixiScene",
+          "labelArr": "天空",
+          "geogType": "hill",
+          "levelArr": {
+            "level": {
+              "name": "qixi2019"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "name": "GreenLand1",
+          "cnName": "绿岛外围",
+          "geogType": "hill",
+          "levelArr": {
+            "level": {
+              "name": "bwallGreenLand1"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "cnName": "霞光海峡",
+          "name": "RaysSea",
+          "noTaskB": 1,
+          "geogType": "sky",
+          "noEndlessB": 1,
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "Hospital4_1"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "name": "DaoTa",
+          "cnName": "倒塔村",
+          "geogType": "hill",
+          "levelArr": {
+            "level": {
+              "name": "bwallDaoTa"
+            }
+          }
+        },
+        {
+          "lv": 999,
+          "cnName": "星谷之顶",
+          "name": "XingTop",
+          "geogType": "hill",
+          "levelArr": {
+            "level": {
+              "name": "newYearBlessing"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "infected_area",
+      "cnName": "感染区",
+      "place": [
+        {
+          "lv": 1,
+          "cnName": "沃土镇",
+          "name": "WoTu",
+          "geogType": "town",
+          "demBossSkillArr": "pioneerDemon,KingRabbitTreater,weaponDefence,noUnderFlyHit,killPet,selfBurn_enemy,paralysis_enemy,fastForward_enemy",
+          "description": null,
+          "demSkillArr": "fightBackBullet",
+          "linkArr": "YangMei",
+          "levelArr": {
+            "level": [
+              {
+                "name": "WoTu_1"
+              },
+              {
+                "name": "WoTu_2"
+              }
+            ]
+          }
+        },
+        {
+          "lv": 3,
+          "cnName": "杨梅岭",
+          "name": "YangMei",
+          "geogType": "hill",
+          "demBossSkillArr": "pioneerDemon,treater_knights,killCharm,demCloned,invisibility_enemy",
+          "description": null,
+          "demSkillArr": "shortLivedDisabled",
+          "linkArr": "XiaSha",
+          "levelArr": {
+            "level": {
+              "name": "YangMei_1"
+            }
+          }
+        },
+        {
+          "lv": 4,
+          "cnName": "下沙",
+          "name": "XiaSha",
+          "geogType": "hill",
+          "demBossSkillArr": "noDegradation,ruleRange,bladeWrap,screwBall",
+          "description": null,
+          "demSkillArr": "corpsePoison,rigidBody_enemy",
+          "linkArr": "FengWei",
+          "levelArr": {
+            "level": {
+              "name": "XiaSha_1"
+            }
+          }
+        },
+        {
+          "lv": 5,
+          "cnName": "凤尾洋",
+          "name": "FengWei",
+          "geogType": "sea",
+          "demBossSkillArr": "KingRabbitTreater,likeMissle_Shapers,enemyEmp,FoggyDefence,killPet,lightningFloor,silence_enemy",
+          "description": null,
+          "demSkillArr": "revengeGhost,vertigoArmorIron",
+          "linkArr": "XiChi",
+          "levelArr": {
+            "level": {
+              "name": "FengWei_1"
+            }
+          }
+        },
+        {
+          "lv": 6,
+          "cnName": "西池",
+          "name": "XiChi",
+          "geogType": "sea",
+          "demBossSkillArr": "findHide,State_SpellImmunity,FoggyDefence,resistMulHurt,weaponDefence,toLand",
+          "description": null,
+          "demSkillArr": "revengeArrow,invincibleEmp,toLand",
+          "linkArr": "BaiLu",
+          "noTaskB": 1,
+          "levelArr": {
+            "level": {
+              "name": "XiChi_1"
+            }
+          }
+        },
+        {
+          "lv": 7,
+          "cnName": "白鹭镇",
+          "name": "BaiLu",
+          "geogType": "town",
+          "demBossSkillArr": "KingRabbitTreater,enemyEmp,invincibleEmp,deadlyArrow,deadlyGhost,fightBackBullet,MeatySkillBack",
+          "description": null,
+          "demSkillArr": "fightBackBullet,toLand",
+          "linkArr": "ShuiSheng",
+          "levelArr": {
+            "level": {
+              "name": "BaiLu_1"
+            }
+          }
+        },
+        {
+          "lv": 8,
+          "cnName": "水升村",
+          "priority": 9,
+          "name": "ShuiSheng",
+          "geogType": "town",
+          "demBossSkillArr": "teleport_enemy,desertedHalo_enemy,State_SpellImmunity,findHide,bladeWrap,killCharm,BallLightningHurt,moreBullet,paralysis_enemy",
+          "description": null,
+          "demSkillArr": "pioneerDemon,fastForward_enemy,moreBullet",
+          "linkArr": "BaiZhang",
+          "levelArr": {
+            "level": {
+              "name": "ShuiSheng_1"
+            }
+          }
+        },
+        {
+          "lv": 9,
+          "cnName": "百丈道",
+          "name": "BaiZhang",
+          "geogType": "hill",
+          "demBossSkillArr": "KingRabbitTreater,noDegradation,weaponDefence,noUnderFlyHit,deadlyArrow,silence_enemy",
+          "description": null,
+          "demSkillArr": "shortLivedDisabled,KingRabbitTreater,silence_enemy,rigidBody_enemy",
+          "linkArr": "ZhuTou",
+          "levelArr": {
+            "level": {
+              "name": "BaiZhang_1"
+            }
+          }
+        },
+        {
+          "lv": 10,
+          "cnName": "猪头洋",
+          "name": "ZhuTou",
+          "demBossSkillArr": "noUnderFlyHit,ruleRange,desertedHalo_enemy,magneticField_enemy,rigidBody_enemy,offPassSkill",
+          "noTaskB": 1,
+          "demSkillArr": "offPassSkill,magneticField_enemy,rigidBody_enemy",
+          "geogType": "sea",
+          "description": null,
+          "linkArr": "ShuangTa",
+          "levelArr": {
+            "level": [
+              {
+                "name": "ZhuTou_1"
+              },
+              {
+                "name": "ZhuTou_2"
+              }
+            ]
+          }
+        },
+        {
+          "lv": 11,
+          "cnName": "双塔村",
+          "name": "ShuangTa",
+          "demBossSkillArr": "FoggyDefence,hammer_enemy,offPassSkill",
+          "noTaskB": 1,
+          "demSkillArr": "KingRabbitTreater,paralysis_enemy,immune",
+          "geogType": "town",
+          "description": null,
+          "linkArr": "BeiDou",
+          "levelArr": {
+            "level": {
+              "name": "ShuangTa_1"
+            }
+          }
+        },
+        {
+          "lv": 13,
+          "cnName": "北斗城",
+          "name": "BeiDou",
+          "demBossSkillArr": "State_SpellImmunity,enemyEmp,invincibleEmp,ruleRange,fitVehicleDefence,summonShortLife,killCharm,killPet,toLand,deadlyArrow,invisibility_enemy,fastForward_enemy",
+          "geogType": "town",
+          "demSkillArr": "State_SpellImmunity,enemyEmp,invincibleEmp,summonShortLife,killCharm,killPet,toLand",
+          "description": null,
+          "linkArr": "DongShan",
+          "levelArr": {
+            "level": {
+              "name": "BeiDou_1"
+            }
+          }
+        },
+        {
+          "lv": 14,
+          "cnName": "东山澳",
+          "name": "DongShan",
+          "demBossSkillArr": "immune,magneticField_enemy,rigidBody_enemy,fitVehicleDefence,toLand,moreBullet,ironBody_enemy",
+          "geogType": "sea",
+          "demSkillArr": "ironBody_enemy,rigidBody_enemy,toLand",
+          "description": null,
+          "linkArr": "QingSha",
+          "levelArr": {
+            "level": {
+              "name": "DongShan_1"
+            }
+          }
+        },
+        {
+          "lv": 15,
+          "cnName": "青纱镇",
+          "priority": 10,
+          "name": "QingSha",
+          "demBossSkillArr": "State_AddMove,extendCd,vertigoArmorIron,invincibleEmp,findHide,FoggyDefence,bladeWrap,summonShortLife,toLand,meteoriteRain,murderous_equip",
+          "geogType": "town",
+          "demSkillArr": "FoggyDefence,toLand",
+          "description": null,
+          "linkArr": "QingMing",
+          "levelArr": {
+            "level": {
+              "name": "QingSha_1"
+            }
+          }
+        },
+        {
+          "lv": 16,
+          "cnName": "清明岭",
+          "priority": 10,
+          "name": "QingMing",
+          "demBossSkillArr": "treater_knights,enemyEmp,invincibleEmp,findHide,desertedHalo_enemy,ruleRange,toLand,deadlyGhost,fastForward_enemy,ironBody_enemy",
+          "geogType": "hill",
+          "demSkillArr": "revengeGhost,invincibleEmp,teleport_enemy",
+          "description": null,
+          "linkArr": "NanTang",
+          "levelArr": {
+            "level": {
+              "name": "QingMing_1"
+            }
+          }
+        },
+        {
+          "lv": 18,
+          "cnName": "南唐城",
+          "priority": 10,
+          "name": "NanTang",
+          "demBossSkillArr": "immune,KingRabbitTreater,fitVehicleDefence,weaponDefence,killPet,lightningFloor,moreBullet,skillCopyTransport,feedback_enemy",
+          "geogType": "town",
+          "demSkillArr": "shortLivedDisabled,skillCopyTransport,findHide,rigidBody_enemy",
+          "firstShowB": 1,
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "NanTang_1"
+            }
+          }
+        },
+        {
+          "lv": 32,
+          "cnName": "幽灵谷",
+          "priority": 10,
+          "name": "YouLing",
+          "demBossSkillArr": "State_SpellImmunity,findHide,desertedHalo_enemy,screwBall,demCloned,groupSpeedUp_enemy",
+          "mustWinShowB": 1,
+          "demSkillArr": "pioneerDemon,groupSpeedUp_enemy,groupCrazy_enemy,rigidBody_enemy",
+          "geogType": "hill",
+          "description": null,
+          "levelArr": {
+            "level": [
+              {
+                "name": "YouLing_2"
+              },
+              {
+                "name": "YouLing_3"
+              }
+            ]
+          }
+        },
+        {
+          "lv": 35,
+          "cnName": "西峰",
+          "priority": 10,
+          "name": "XiFeng",
+          "demBossSkillArr": "State_AddMove,KingRabbitTreater,findHide,likeMissle_Shapers,FoggyDefence,bladeWrap,slowMoveHalo_enemy,fastForward_enemy",
+          "mustWinShowB": 1,
+          "demSkillArr": "State_SpellImmunity,bladeWrap,noUnderFlyHit",
+          "geogType": "hill",
+          "description": null,
+          "levelArr": {
+            "level": [
+              {
+                "name": "XiFeng_2"
+              },
+              {
+                "name": "XiFeng_3"
+              }
+            ]
+          }
+        },
+        {
+          "lv": 44,
+          "cnName": "绿森堡",
+          "priority": 10,
+          "name": "LvSen",
+          "demBossSkillArr": "State_AddMove,pioneerDemon,treater_knights,cmldef2_enemy,noDegradation,noBounce_enemy,fitVehicleDefence,toLand,hammer_enemy,feedback_enemy",
+          "mustWinShowB": 1,
+          "demSkillArr": "MeatySkillBack,rigidBody_enemy",
+          "geogType": "town",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "LvSen_shooter"
+            }
+          }
+        },
+        {
+          "lv": 45,
+          "cnName": "毒窟",
+          "priority": 10,
+          "name": "DuKu",
+          "labelArr": "地下",
+          "demBossSkillArr": "State_SpellImmunity,likeMissle_Shapers,weaponDefence,toLand,teleport_enemy",
+          "mustWinShowB": 1,
+          "demSkillArr": "shortLivedDisabled,revengeArrow",
+          "geogType": "hill",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "DuKu_poision"
+            }
+          }
+        },
+        {
+          "lv": 46,
+          "cnName": "宝伦镇",
+          "name": "BaoLun",
+          "demBossSkillArr": "findHide,ruleRange,resistMulHurt,noUnderFlyHit,fightBackBullet,screwBall,lightningFloor,ironBody_enemy",
+          "mustWinShowB": 1,
+          "demSkillArr": "corpsePoison,fightBackBullet",
+          "geogType": "hill",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "BaoLun_1"
+            }
+          }
+        },
+        {
+          "lv": 47,
+          "cnName": "炉屿",
+          "name": "LuYu",
+          "mustWinShowB": 1,
+          "geogType": "town",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "LuYu_1"
+            }
+          }
+        },
+        {
+          "lv": 48,
+          "cnName": "霸王坡",
+          "priority": 10,
+          "name": "BaWang",
+          "demBossSkillArr": "immune,noUnderLaser,screwBall,likeMissleNo",
+          "mustWinShowB": 1,
+          "demSkillArr": "corpsePoison,demCloned,noUnderLaser,likeMissleNo",
+          "geogType": "hill",
+          "demNoModeArr": "nocom",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "BaWang_1"
+            }
+          }
+        },
+        {
+          "lv": 49,
+          "cnName": "平川",
+          "name": "PingChuan",
+          "mustWinShowB": 1,
+          "geogType": "hill",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "PingChuan_1"
+            }
+          }
+        },
+        {
+          "lv": 50,
+          "cnName": "白沙村",
+          "name": "BaiSha",
+          "mustWinShowB": 1,
+          "geogType": "town",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "BaiSha_1"
+            }
+          }
+        },
+        {
+          "lv": 54,
+          "cnName": "上沙",
+          "name": "ShangSha",
+          "noTaskB": 1,
+          "mustWinShowB": 1,
+          "geogType": "lab",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "ShangSha_1"
+            }
+          }
+        },
+        {
+          "lv": 55,
+          "cnName": "东峰",
+          "name": "DongFeng",
+          "labelArr": "室内",
+          "noTaskB": 1,
+          "demBossSkillArr": "treater_knights,findHide,FoggyDefence,fitVehicleDefence,summonShortLife,crazy_skeleton,enemyToZombie",
+          "mustWinShowB": 1,
+          "demSkillArr": "revengeGhost,summonShortLife,likeMissleNo",
+          "geogType": "lab",
+          "demNoModeArr": "partner,nocom",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "DongFeng_1"
+            }
+          }
+        },
+        {
+          "lv": 56,
+          "cnName": "研究中心",
+          "name": "ZhongXin",
+          "labelArr": "室内",
+          "mustWinShowB": 1,
+          "geogType": "lab",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "ZhongXin_1"
+            }
+          }
+        },
+        {
+          "lv": 60,
+          "cnName": "地下城",
+          "name": "DiXia",
+          "labelArr": "地下",
+          "demBossSkillArr": "deadlyArrow,deadlyGhost,fightBackBullet,likeMissleNo,bladeWrap",
+          "mustWinShowB": 1,
+          "demSkillArr": "FoggyDefence",
+          "geogType": "town",
+          "demNoModeArr": "nocom",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "DiXia_1"
+            }
+          }
+        },
+        {
+          "lv": 63,
+          "cnName": "后井",
+          "name": "HouJin",
+          "labelArr": "沙漠",
+          "mustWinShowB": 1,
+          "geogType": "lab",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "HouJin_1"
+            }
+          }
+        },
+        {
+          "lv": 64,
+          "cnName": "沙江",
+          "name": "ShaJiang",
+          "labelArr": "沙漠",
+          "mustWinShowB": 1,
+          "geogType": "lab",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "ShaJiang_1"
+            }
+          }
+        },
+        {
+          "lv": 65,
+          "cnName": "沙漠中心",
+          "name": "ShaMo",
+          "labelArr": "月亮,沙漠",
+          "mustWinShowB": 1,
+          "demBossSkillArr": "treater_knights,findHide,noUnderLaser,noBounce_enemy,fitVehicleDefence,weaponDefence,likeMissleNo",
+          "geogType": "lab",
+          "demSkillArr": "revengeArrow,fightBackBullet,noUnderLaser,summonShortLifeMax,bladeWrap",
+          "description": null,
+          "demNoModeArr": "nocom",
+          "levelArr": {
+            "level": {
+              "name": "ShaMo_1"
+            }
+          }
+        },
+        {
+          "lv": 67,
+          "cnName": "先驱号",
+          "name": "XianQu",
+          "labelArr": "室内",
+          "mustWinShowB": 0,
+          "geogType": "lab",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "XianQu_1"
+            }
+          }
+        },
+        {
+          "lv": 68,
+          "cnName": "方舟第1层",
+          "name": "FangZhouFirst",
+          "labelArr": "室内",
+          "pointer": "1604,146",
+          "mustWinShowB": 0,
+          "geogType": "lab",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "FangZhouFirst_1"
+            }
+          }
+        },
+        {
+          "lv": 69,
+          "cnName": "方舟第2层",
+          "name": "FangZhouSecond",
+          "labelArr": "室内",
+          "pointer": "1604,146",
+          "mustWinShowB": 0,
+          "geogType": "lab",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "FangZhouSecond_1"
+            }
+          }
+        },
+        {
+          "lv": 70,
+          "cnName": "方舟顶层",
+          "name": "FangZhouTop",
+          "demBossSkillArr": "noUnderLaser,underToLand,meltFlamerPurgold,extendCd,teleport_enemy",
+          "pointer": "1604,146",
+          "demSkillArr": "FoggyDefence,posion7_wolf",
+          "mustWinShowB": 0,
+          "geogType": "lab",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "FangZhouTop_1"
+            }
+          }
+        },
+        {
+          "lv": 73,
+          "cnName": "监狱大门",
+          "name": "PrisonDoor",
+          "labelArr": "星空,室内",
+          "pointer": "2547,430",
+          "mustWinShowB": 0,
+          "geogType": "hill",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "PrisonDoor_1"
+            }
+          }
+        },
+        {
+          "lv": 74,
+          "cnName": "监狱第1层",
+          "name": "PrisonFirst",
+          "labelArr": "星空,室内",
+          "pointer": "2547,430",
+          "mustWinShowB": 0,
+          "geogType": "hill",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "PrisonFirst_1"
+            }
+          }
+        },
+        {
+          "lv": 75,
+          "cnName": "监狱深处",
+          "name": "PrisonDeep",
+          "noTaskB": 1,
+          "labelArr": "星空,室内",
+          "pointer": "2547,430",
+          "mustWinShowB": 0,
+          "geogType": "hill",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "PrisonDeep_1"
+            }
+          }
+        },
+        {
+          "lv": 75,
+          "cnName": "监狱出口",
+          "name": "PrisonExport",
+          "labelArr": "星空,室内",
+          "pointer": "2547,430",
+          "mustWinShowB": 1,
+          "geogType": "hill",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "PrisonExport_1"
+            }
+          }
+        },
+        {
+          "lv": 76,
+          "cnName": "监狱外围",
+          "name": "PrisonOutside",
+          "labelArr": "星空,室内",
+          "pointer": "2547,430",
+          "mustWinShowB": 1,
+          "geogType": "hill",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "PrisonOutside_1"
+            }
+          }
+        },
+        {
+          "lv": 77,
+          "cnName": "丛林外围",
+          "name": "JungleOutside",
+          "pointer": "2254,405",
+          "mustWinShowB": 1,
+          "geogType": "hill",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "JungleOutside_1"
+            }
+          }
+        },
+        {
+          "lv": 78,
+          "cnName": "丛林深处",
+          "name": "JungleDeep",
+          "demBossSkillArr": "likeMissle_Shapers,weaponDefence,blackHoleDemon,rebirth_enemy",
+          "pointer": "2254,405",
+          "demSkillArr": "fightBackBullet,noUnderLaser,ironBody_enemy",
+          "mustWinShowB": 1,
+          "geogType": "hill",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "JungleDeep_1"
+            }
+          }
+        },
+        {
+          "lv": 79,
+          "cnName": "洞窟入口",
+          "name": "CavesEntrance",
+          "labelArr": "星空",
+          "pointer": "2122,429",
+          "mustWinShowB": 1,
+          "geogType": "hill",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "CavesEntrance_1"
+            }
+          }
+        },
+        {
+          "lv": 80,
+          "cnName": "洞窟深处",
+          "name": "CavesDeep",
+          "labelArr": "地下",
+          "pointer": "2122,429",
+          "mustWinShowB": 1,
+          "geogType": "hill",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "CavesDeep_1"
+            }
+          }
+        },
+        {
+          "lv": 82,
+          "cnName": "千叶谷",
+          "name": "QianYe",
+          "mustWinShowB": 1,
+          "geogType": "lab",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "QianYe_1"
+            }
+          }
+        },
+        {
+          "lv": 83,
+          "cnName": "腐木岗",
+          "name": "FuMu",
+          "mustWinShowB": 1,
+          "geogType": "lab",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "FuMu_1"
+            }
+          }
+        },
+        {
+          "lv": 84,
+          "cnName": "公墓入口",
+          "name": "GongMu",
+          "labelArr": "星空",
+          "mustWinShowB": 1,
+          "geogType": "lab",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "GongMu_1"
+            }
+          }
+        },
+        {
+          "lv": 85,
+          "cnName": "鬼王墓",
+          "name": "GuiWang",
+          "labelArr": "地下",
+          "mustWinShowB": 1,
+          "geogType": "lab",
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "GuiWang_1"
+            }
+          }
+        },
+        {
+          "lv": 86,
+          "cnName": "冰窟",
+          "name": "BingKu",
+          "labelArr": "冰雪,地下",
+          "geogType": "sea",
+          "mustWinShowB": 1,
+          "pointer": "2319,257",
+          "levelArr": {
+            "level": {
+              "name": "BingKu_1"
+            }
+          }
+        },
+        {
+          "lv": 87,
+          "cnName": "冰窟深处",
+          "name": "BingKuDeep",
+          "labelArr": "冰雪,地下",
+          "geogType": "sea",
+          "mustWinShowB": 1,
+          "pointer": "2350,248",
+          "levelArr": {
+            "level": {
+              "name": "BingKuDeep_1"
+            }
+          }
+        },
+        {
+          "lv": 88,
+          "cnName": "无雪干谷",
+          "name": "WuXue",
+          "labelArr": "月亮,冰雪",
+          "geogType": "sea",
+          "mustWinShowB": 1,
+          "pointer": "2395,249",
+          "levelArr": {
+            "level": {
+              "name": "WuXue_1"
+            }
+          }
+        },
+        {
+          "lv": 89,
+          "cnName": "千年冻湖",
+          "name": "DongWu",
+          "labelArr": "冰雪",
+          "geogType": "sea",
+          "mustWinShowB": 1,
+          "pointer": "2418,225",
+          "levelArr": {
+            "level": {
+              "name": "DongWu_1"
+            }
+          }
+        },
+        {
+          "lv": 90,
+          "cnName": "不冻湖",
+          "name": "BuDong",
+          "labelArr": "月亮,冰雪",
+          "geogType": "sea",
+          "mustWinShowB": 1,
+          "pointer": "2444,212",
+          "levelArr": {
+            "level": {
+              "name": "BuDong_1"
+            }
+          }
+        },
+        {
+          "lv": 90,
+          "cnName": "缥缈森林",
+          "name": "PiaoMiao",
+          "geogType": "hill",
+          "mustWinShowB": 1,
+          "levelArr": {
+            "level": {
+              "name": "PiaoMiao_1"
+            }
+          }
+        },
+        {
+          "lv": 91,
+          "cnName": "寒光入口",
+          "name": "HanGuang1",
+          "geogType": "town",
+          "mustWinShowB": 1,
+          "pointer": "3100,442",
+          "levelArr": {
+            "level": {
+              "name": "HanGuang1_1"
+            }
+          }
+        },
+        {
+          "lv": 92,
+          "cnName": "寒光西城",
+          "name": "HanGuang2",
+          "labelArr": "月亮",
+          "geogType": "town",
+          "mustWinShowB": 1,
+          "pointer": "3120,404",
+          "levelArr": {
+            "level": {
+              "name": "HanGuang2_1"
+            }
+          }
+        },
+        {
+          "lv": 93,
+          "cnName": "寒光中心",
+          "name": "HanGuang3",
+          "labelArr": "月亮",
+          "geogType": "town",
+          "mustWinShowB": 1,
+          "pointer": "3156,412",
+          "levelArr": {
+            "level": {
+              "name": "HanGuang3_1"
+            }
+          }
+        },
+        {
+          "lv": 94,
+          "cnName": "寒光之巅",
+          "name": "HanGuang4",
+          "geogType": "town",
+          "mustWinShowB": 1,
+          "pointer": "3181,435",
+          "levelArr": {
+            "level": {
+              "name": "HanGuang4_1"
+            }
+          }
+        },
+        {
+          "lv": 95,
+          "cnName": "寒光末路",
+          "name": "HanGuang5",
+          "labelArr": "月亮",
+          "geogType": "town",
+          "mustWinShowB": 1,
+          "pointer": "3187,447",
+          "levelArr": {
+            "level": {
+              "name": "HanGuang5_1"
+            }
+          }
+        },
+        {
+          "lv": 96,
+          "cnName": "实验室入口",
+          "name": "Hospital1",
+          "labelArr": "室内",
+          "noTaskB": 1,
+          "geogType": "lab",
+          "mustWinShowB": 1,
+          "pointer": "3392,469",
+          "levelArr": {
+            "level": {
+              "name": "Hospital1_1"
+            }
+          }
+        },
+        {
+          "lv": 97,
+          "cnName": "实验室底层",
+          "name": "Hospital2",
+          "labelArr": "室内",
+          "noTaskB": 1,
+          "geogType": "lab",
+          "mustWinShowB": 1,
+          "pointer": "3410,459",
+          "levelArr": {
+            "level": {
+              "name": "Hospital2_1"
+            }
+          }
+        },
+        {
+          "lv": 98,
+          "cnName": "实验室中层",
+          "name": "Hospital3",
+          "labelArr": "室内",
+          "noTaskB": 1,
+          "geogType": "lab",
+          "mustWinShowB": 1,
+          "pointer": "3415,452",
+          "levelArr": {
+            "level": {
+              "name": "Hospital3_1"
+            }
+          }
+        },
+        {
+          "lv": 99,
+          "cnName": "天空顶",
+          "name": "SkyScene",
+          "noTaskB": 1,
+          "geogType": "sky",
+          "noEndlessB": 1,
+          "description": null,
+          "levelArr": {
+            "level": {
+              "name": "Hospital4_1"
+            }
+          }
+        },
+        {
+          "lv": 99,
+          "cnName": "实验室顶层",
+          "name": "Hospital5",
+          "labelArr": "月亮",
+          "noTaskB": 1,
+          "geogType": "lab",
+          "mustWinShowB": 1,
+          "levelArr": {
+            "level": {
+              "name": "Hospital5_1"
+            }
+          }
+        },
+        {
+          "lv": 99,
+          "cnName": "星谷",
+          "sweepMax": -1,
+          "name": "XingGu",
+          "labelArr": "星空",
+          "noTaskB": 1,
+          "noEndlessB": 1,
+          "geogType": "sky",
+          "mustWinShowB": 1,
+          "pointer": "3466,451",
+          "levelArr": {
+            "level": {
+              "name": "XingGu_1"
+            }
+          }
+        },
+        {
+          "lv": 99,
+          "cnName": "星谷之巅",
+          "diffMax": 6,
+          "sweepMax": -1,
+          "name": "XingPeak",
+          "labelArr": "星空",
+          "noTaskB": 1,
+          "noEndlessB": 1,
+          "geogType": "sky",
+          "mustWinShowB": 1,
+          "pointer": "3492,429",
+          "levelArr": {
+            "level": {
+              "name": "XingPeak_1"
+            }
+          }
+        },
+        {
+          "lv": 99,
+          "cnName": "绝壁窟",
+          "diffMax": 8,
+          "sweepMax": -1,
+          "name": "XiShan1",
+          "labelArr": "地下",
+          "noTaskB": 1,
+          "noEndlessB": 1,
+          "geogType": "sky",
+          "levelArr": {
+            "level": {
+              "name": "XiShan1_1"
+            }
+          }
+        },
+        {
+          "lv": 99,
+          "cnName": "溪山西",
+          "diffMax": 8,
+          "sweepMax": -1,
+          "name": "XiShan2",
+          "noTaskB": 1,
+          "noEndlessB": 1,
+          "geogType": "sky",
+          "mustWinShowB": 1,
+          "levelArr": {
+            "level": {
+              "name": "XiShan2_1"
+            }
+          }
+        },
+        {
+          "lv": 99,
+          "cnName": "溪山南",
+          "diffMax": 8,
+          "sweepMax": -1,
+          "name": "XiShan3",
+          "noTaskB": 1,
+          "noEndlessB": 1,
+          "geogType": "sky",
+          "mustWinShowB": 1,
+          "levelArr": {
+            "level": {
+              "name": "XiShan3_1"
+            }
+          }
+        },
+        {
+          "lv": 99,
+          "cnName": "溪山顶",
+          "diffMax": 8,
+          "sweepMax": -1,
+          "name": "XiShan4",
+          "noTaskB": 1,
+          "noEndlessB": 1,
+          "geogType": "sky",
+          "mustWinShowB": 1,
+          "levelArr": {
+            "level": {
+              "name": "XiShan4_1"
+            }
+          }
+        },
+        {
+          "lv": 99,
+          "cnName": "溪山东",
+          "diffMax": 8,
+          "sweepMax": -1,
+          "name": "XiShan5",
+          "noTaskB": 1,
+          "noEndlessB": 1,
+          "geogType": "sky",
+          "mustWinShowB": 1,
+          "levelArr": {
+            "level": {
+              "name": "XiShan5_1"
+            }
+          }
+        },
+        {
+          "lv": 99,
+          "diffMax": 8,
+          "sweepMax": -1,
+          "unlockTask": "GreenIs1_plot",
+          "name": "GreenIs1",
+          "cnName": "回头澳",
+          "noTaskB": 1,
+          "noEndlessB": 1,
+          "geogType": "sea",
+          "mustWinShowB": 1,
+          "pointer": "281,1078",
+          "levelArr": {
+            "level": {
+              "name": "GreenIs1_1"
+            }
+          }
+        },
+        {
+          "lv": 99,
+          "diffMax": 8,
+          "sweepMax": -1,
+          "unlockTask": "no",
+          "name": "GreenIs2",
+          "cnName": "苍木道",
+          "noTaskB": 1,
+          "noEndlessB": 1,
+          "geogType": "sea",
+          "mustWinShowB": 1,
+          "levelArr": {
+            "level": {
+              "name": "GreenIs2_plot"
+            }
+          }
+        },
+        {
+          "lv": 99,
+          "diffMax": 8,
+          "sweepMax": -1,
+          "unlockTask": "no",
+          "name": "GreenIs3",
+          "cnName": "郁葱甸",
+          "noTaskB": 1,
+          "noEndlessB": 1,
+          "geogType": "hill",
+          "mustWinShowB": 1,
+          "levelArr": {
+            "level": {
+              "name": "GreenIs3_plot"
+            }
+          }
+        },
+        {
+          "lv": 99,
+          "diffMax": 7,
+          "sweepMax": -1,
+          "unlockTask": "GreenIs4_black",
+          "name": "GreenIs4",
+          "cnName": "郁葱坪",
+          "noTaskB": 1,
+          "noEndlessB": 1,
+          "geogType": "hill",
+          "mustWinShowB": 1,
+          "levelArr": {
+            "level": {
+              "name": "GreenIs4_1"
+            }
+          }
+        },
+        {
+          "lv": 99,
+          "diffMax": 8,
+          "sweepMax": -1,
+          "unlockTask": "GreenTown1_plot",
+          "name": "GreenTown1",
+          "cnName": "仙草镇入口",
+          "noTaskB": 1,
+          "noEndlessB": 1,
+          "geogType": "town",
+          "mustWinShowB": 1,
+          "pointer": "471,1073",
+          "levelArr": {
+            "level": {
+              "name": "GreenTown1_1"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

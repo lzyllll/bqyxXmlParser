@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father index="5" name="superBox" cnName="用于武器装备特级箱子">
+		<body>
+				<name>			coin,			life,			charger,		skillStone,		equip,		arms</name>
+				<normalPro>	0.1,			0.04,		0.02,			0.013,				0.015,		0.015	</normalPro>
+				<superPro>		1,				0.5,			1,					0.13,				0.4,			0.4</superPro>
+				<bossPro>		1,				2,				1,					0.66,				0.4,			0.4</bossPro>
+		</body>
+		<equip>
+				<name>			white,		green,		blue,		purple,		orange,		red</name>
+				<normalNum>	1,				2,				2,				2,				2,					2</normalNum>
+				<specialNum>	0,				0,				1,				2,				3,					3</specialNum>
+				<redNum>		0,				0,				0,				0,				0,					1</redNum>
+				<lvRange>		-5~0,		-5~0,		-4~-1,		-1~0,		-1~0,			0~1</lvRange>
+				<normalPro>	0.65,		0.3,			0.04,		0.009,		0.001,			0</normalPro>
+				<superPro>		0,				0.85,		0.13,			0.018,		0.002,		0</superPro>
+				<bossPro>		0,				0.85,		0.13,			0.018,		0.002,		0</bossPro>
+				
+				<itemsLvRange>	-7~-3,		-6~-2,		-4~-1,		-2~0,	-1~0,			0~0</itemsLvRange>
+		</equip>
+		<arms>
+				<name>			white,		green,		blue,		purple,		orange,		red</name>
+				<specialNum>	0,				0,				0,				1,				2,					3</specialNum>
+				<skillNum>		0,				0,				0.85,		1,				1,					2</skillNum>
+				<godSkillNum>0,				0,				0,				0,				0,					1</godSkillNum>
+				<proPro>			0.9,			0.8,			0.6,			0.6,			0.4,				0.5</proPro>
+				<dpsRange>	-5~0,		-5~0,		-4~-2,		-1~0,		-0.5~0,		0~1</dpsRange>
+			
+				<normalPro>	0.65,		0.3,			0.04,			0.009,		0.001,		0</normalPro>
+				<superPro>		0,				0.85,		0.13,			0.018,		0.002,		0</superPro>
+				<bossPro>		0,				0.85,		0.13,			0.018,		0.002,		0</bossPro>
+				
+				<itemsLvRange>	-7~-3,		-6~-2,		-4~-2,		-2~0,	-1~0,			0~0</itemsLvRange>
+		</arms>
+	</father>
+	
+	
+	
+	
+	
+	</data>

@@ -1,0 +1,1175 @@
+{
+  "father": [
+    {
+      "name": "system",
+      "cnName": "系统",
+      "body": [
+        {
+          "name": "setFrame",
+          "cnName": "设置帧数",
+          "input": "num",
+          "string": 30,
+          "localB": true
+        },
+        {
+          "name": "setToLocalTime",
+          "cnName": "本地时间开关"
+        },
+        {
+          "name": "newDay",
+          "cnName": "新的一天"
+        },
+        {
+          "name": "newWeek",
+          "cnName": "新的一周"
+        },
+        {
+          "name": "newWeek6",
+          "cnName": "新一周（周六刷新）"
+        },
+        {
+          "name": "speedOnlineTime",
+          "cnName": "在线时间加速",
+          "input": "num",
+          "string": 0
+        },
+        {
+          "name": "timerTest",
+          "cnName": "时钟测试",
+          "localB": true
+        },
+        {
+          "name": "showFlashPlayerVer",
+          "cnName": "显示Flash版本"
+        },
+        {
+          "name": "setInitErrorB",
+          "cnName": "设置错误输出开关"
+        }
+      ]
+    },
+    {
+      "name": "player",
+      "cnName": "玩家",
+      "body": [
+        {
+          "name": "noZuobi",
+          "cnName": "解除作弊"
+        },
+        {
+          "name": "isZuobi",
+          "cnName": "设定为作弊"
+        },
+        {
+          "name": "showZuobi",
+          "cnName": "作弊原因"
+        },
+        {
+          "name": "setHeroLv",
+          "cnName": "设定人物等级",
+          "input": "num",
+          "string": 85
+        },
+        {
+          "name": "addHeroExp",
+          "cnName": "增加人物经验",
+          "input": "num",
+          "string": 10000
+        },
+        {
+          "name": "addCoin",
+          "cnName": "添加银币",
+          "input": "num",
+          "string": 100
+        },
+        {
+          "name": "addSore",
+          "cnName": "添加积分",
+          "input": "num",
+          "string": 100
+        },
+        {
+          "name": "clearAllDoubleAdd",
+          "cnName": "清除所有双倍时间"
+        },
+        {
+          "name": "setLoveValue",
+          "cnName": "设置好感度值",
+          "input": "num",
+          "string": 10000
+        },
+        {
+          "name": "initKeySetting",
+          "cnName": "初始化按键设置"
+        },
+        {
+          "name": "setMainXY",
+          "cnName": "设置主角坐标",
+          "input": "str",
+          "string": "600,100"
+        },
+        {
+          "name": "openNewPartner",
+          "cnName": "增加上场队友"
+        },
+        {
+          "name": "setHeroDefine",
+          "cnName": "设置主角定义",
+          "input": "str",
+          "string": "小樱"
+        },
+        {
+          "name": "toP1",
+          "cnName": "设置为p1",
+          "input": "str",
+          "string": "文杰表哥"
+        }
+      ]
+    },
+    {
+      "name": "pay",
+      "cnName": "黄金",
+      "body": [
+        {
+          "name": "pay",
+          "cnName": "充值",
+          "input": "num",
+          "string": 1000,
+          "localB": true
+        },
+        {
+          "name": "testYue",
+          "cnName": "设置黄金",
+          "input": "num",
+          "string": 10000,
+          "localB": true
+        },
+        {
+          "name": "testChongZhi",
+          "cnName": "设置黄金累计充值",
+          "input": "num",
+          "string": 10000,
+          "localB": true
+        },
+        {
+          "name": "showPayCount",
+          "cnName": "显示购买记录"
+        }
+      ]
+    },
+    {
+      "name": "save",
+      "cnName": "存档",
+      "body": [
+        {
+          "name": "initPlayerSave",
+          "cnName": "初始化存档",
+          "localB": true
+        },
+        {
+          "name": "savePlayerSave",
+          "cnName": "存档"
+        },
+        {
+          "name": "getSaveData",
+          "cnName": "复制存档"
+        },
+        {
+          "name": "getSaveThin",
+          "cnName": "复制存档-缩减"
+        },
+        {
+          "name": "getSaveNoThin",
+          "cnName": "复制存档-未缩减"
+        },
+        {
+          "name": "get4399Save",
+          "cnName": "复制4399存档"
+        },
+        {
+          "name": "get4399SaveThin",
+          "cnName": "复制4399存档-缩减"
+        },
+        {
+          "name": "get4399SaveNoThin",
+          "cnName": "复制4399存档-未缩减"
+        },
+        {
+          "name": "supplePlayerSave",
+          "cnName": "存档补充处理",
+          "localB": true
+        },
+        {
+          "name": "seeSave",
+          "cnName": "debug存档",
+          "localB": true
+        },
+        {
+          "name": "setSuppleSummer",
+          "cnName": "设置暑假修复状态",
+          "input": "num",
+          "string": 0,
+          "inputTitle": "【0】待修复 【1】修复完无卡bug 【2】修复完使用了卡bug 【3】已经返回扣除的物品"
+        },
+        {
+          "name": "suppleSummer",
+          "cnName": "修复暑假签到"
+        },
+        {
+          "name": "recoverSummer",
+          "cnName": "恢复暑假签到修复前状态"
+        },
+        {
+          "name": "logout",
+          "cnName": "退出登录"
+        },
+        {
+          "name": "autoSaveTime",
+          "cnName": "设置自动存档时间间隔",
+          "input": "num",
+          "string": 300
+        }
+      ]
+    },
+    {
+      "name": "things",
+      "cnName": "物品",
+      "body": [
+        {
+          "name": "addAllThings",
+          "cnName": "添加所有物品",
+          "input": "num",
+          "string": 1
+        },
+        {
+          "name": "addAllKey",
+          "cnName": "添加所有钥匙",
+          "input": "num",
+          "string": 100
+        },
+        {
+          "name": "addPartsAll",
+          "cnName": "添加所有零件",
+          "input": "str",
+          "string": "72,10",
+          "inputTitle": "输入格式“等级,个数”"
+        },
+        {
+          "name": "addSpecialParts",
+          "cnName": "添加特殊零件",
+          "input": "str",
+          "string": 10,
+          "inputTitle": "输入格式“个数”"
+        },
+        {
+          "name": "clearBag",
+          "cnName": "清除当前背包"
+        },
+        {
+          "name": "clearHouse",
+          "cnName": "清除当前仓库"
+        },
+        {
+          "name": "setBagLock",
+          "cnName": "设置背包解锁位置数",
+          "input": "num",
+          "string": 24
+        },
+        {
+          "name": "sortByTime",
+          "cnName": "按照日期排序"
+        },
+        {
+          "name": "delNoPositionThings",
+          "cnName": "清除位置溢出的物品"
+        },
+        {
+          "name": "getThingsStrByPrice",
+          "cnName": "输出指定价值的物品",
+          "input": "num",
+          "string": 50,
+          "inputTitle": "输入物品价值"
+        }
+      ]
+    },
+    {
+      "name": "arena",
+      "cnName": "竞技场",
+      "body": [
+        {
+          "name": "setArenaNum",
+          "cnName": "设置竞技场次数",
+          "input": "num",
+          "string": 5
+        },
+        {
+          "name": "setArenaScore",
+          "cnName": "设置竞技场分数",
+          "input": "num",
+          "string": 1
+        },
+        {
+          "name": "setArenaScore",
+          "cnName": "设置竞技场分数",
+          "input": "num",
+          "string": 1
+        },
+        {
+          "name": "addArenaGift",
+          "cnName": "添加竞技场排名奖励",
+          "input": "num",
+          "string": 1,
+          "inputTitle": "输入排名"
+        },
+        {
+          "name": "setArenaTimeMul",
+          "cnName": "设置竞技场时间速度",
+          "input": "num",
+          "string": 1,
+          "inputTitle": "输入时间倍数，推荐30"
+        },
+        {
+          "name": "toOldTopId",
+          "cnName": "换成老排行榜id"
+        },
+        {
+          "name": "toNewTopId",
+          "cnName": "换成新排行榜id"
+        },
+        {
+          "name": "getTopData",
+          "cnName": "输出排行榜数据",
+          "input": "str",
+          "string": "",
+          "inputTitle": "id,页码,每页数量"
+        }
+      ]
+    },
+    {
+      "name": "union",
+      "cnName": "军队",
+      "body": [
+        {
+          "name": "showUnionInfo",
+          "cnName": "显示军队当前建筑数据",
+          "localB": true
+        },
+        {
+          "name": "clearUnionData",
+          "cnName": "清除军队数据",
+          "localB": true
+        },
+        {
+          "name": "setUnionRankLevel",
+          "cnName": "设置军衔等级",
+          "input": "num",
+          "string": 10
+        },
+        {
+          "name": "setCreateUnionMoney",
+          "cnName": "设置创建军队所需黄金",
+          "input": "num",
+          "string": 200,
+          "localB": true
+        },
+        {
+          "name": "setContribution",
+          "cnName": "设置个人贡献",
+          "input": "num",
+          "string": 10000,
+          "localB": true
+        },
+        {
+          "name": "doVatiables",
+          "cnName": "执行军队变量",
+          "input": "num",
+          "string": 0,
+          "tip": "防作弊变量id：134，值为奇数则关闭防作弊，值为偶数开启防作弊。"
+        },
+        {
+          "name": "getVatiables",
+          "cnName": "获得军队变量",
+          "input": "num",
+          "string": 0,
+          "tip": "防作弊变量id：134，值为奇数则关闭防作弊，值为偶数开启防作弊。"
+        },
+        {
+          "name": "completeAllUnionTask",
+          "cnName": "完成所有军队任务"
+        },
+        {
+          "name": "showSuppliesNum",
+          "cnName": "显示最大物资预估数量"
+        },
+        {
+          "name": "doUnionTask",
+          "cnName": "完成军队任务id",
+          "input": "num",
+          "string": 0,
+          "localB": true
+        },
+        {
+          "name": "fastUpgradeUnionLv",
+          "cnName": "快速升级军队",
+          "input": "num",
+          "string": 0
+        },
+        {
+          "name": "setUnionTitle",
+          "cnName": "设置军队",
+          "input": "str",
+          "string": "",
+          "localB": true,
+          "inputTitle": "输入名称"
+        },
+        {
+          "name": "setNowMapMax",
+          "cnName": "取消争霸贡献限制"
+        },
+        {
+          "name": "openUnionRole",
+          "cnName": "开启职位任免权"
+        },
+        {
+          "name": "showLog",
+          "cnName": "显示军队日志",
+          "input": "str",
+          "string": "1,20",
+          "localB": true,
+          "inputTitle": "输入格式“页码,1页条数”"
+        }
+      ]
+    },
+    {
+      "name": "level",
+      "cnName": "关卡",
+      "body": [
+        {
+          "name": "unlockGoto",
+          "cnName": "解锁地图到",
+          "input": "str",
+          "string": "星谷之巅"
+        },
+        {
+          "name": "unlockAllMap",
+          "cnName": "解锁所有地图"
+        },
+        {
+          "name": "winAllMap",
+          "cnName": "通关所有地图"
+        },
+        {
+          "name": "unlockAllDiff",
+          "cnName": "解锁所有关卡难度"
+        },
+        {
+          "name": "setDpsMul",
+          "cnName": "设置英雄战斗力倍数",
+          "input": "num",
+          "string": 99999
+        },
+        {
+          "name": "setAnger",
+          "cnName": "设置怒气值",
+          "input": "num",
+          "string": 100
+        },
+        {
+          "name": "testEnemy",
+          "cnName": "小怪出兵开关"
+        },
+        {
+          "name": "winLevel",
+          "cnName": "通关"
+        },
+        {
+          "name": "testLevel",
+          "cnName": "沃土镇设为测试状态"
+        },
+        {
+          "name": "restart",
+          "cnName": "重玩关卡"
+        },
+        {
+          "name": "setEndlessLv",
+          "cnName": "设置无尽模式层级",
+          "input": "num",
+          "string": 1
+        },
+        {
+          "name": "setBossLifePer",
+          "cnName": "设置所有敌人生命值%",
+          "input": "num",
+          "string": 0
+        },
+        {
+          "name": "setWeLifePer",
+          "cnName": "设置我方生命值%",
+          "input": "num",
+          "string": 0
+        },
+        {
+          "name": "killAllPartner",
+          "cnName": "杀死所有我方队友"
+        },
+        {
+          "name": "stopAccOpen",
+          "cnName": "防加速检测"
+        },
+        {
+          "name": "setAllDemDiy",
+          "cnName": "设置全部修罗地图模式",
+          "input": "str",
+          "string": "partner"
+        },
+        {
+          "name": "gotoLevelDefine",
+          "cnName": "前往关卡定义",
+          "input": "str",
+          "string": ""
+        },
+        {
+          "name": "showPlayerSkillText",
+          "cnName": "输出所有角色当前技能"
+        },
+        {
+          "name": "lottery",
+          "cnName": "当前关卡抽奖",
+          "input": "num",
+          "string": 1,
+          "inputTitle": "输入次数"
+        },
+        {
+          "name": "openAllSweeping",
+          "cnName": "开启所有难度扫荡"
+        },
+        {
+          "name": "clearMainCharger",
+          "cnName": "清空当前P1的弹夹和携弹量"
+        },
+        {
+          "name": "moveBody",
+          "cnName": "移动id到坐标",
+          "input": "str",
+          "string": "p1,-200,0",
+          "inputTitle": "单位id,x,y"
+        }
+      ]
+    },
+    {
+      "name": "wilder",
+      "cnName": "秘境战场",
+      "body": [
+        {
+          "name": "unlockAllWider",
+          "cnName": "解锁所有秘境"
+        },
+        {
+          "name": "setNowWiderNum",
+          "cnName": "设置当前秘境已使用次数",
+          "input": "num",
+          "string": 0
+        },
+        {
+          "name": "ulockAllBossEditLevel",
+          "cnName": "解锁所有战场首领"
+        }
+      ]
+    },
+    {
+      "name": "ai",
+      "cnName": "游戏AI",
+      "body": [
+        {
+          "name": "heroAI",
+          "cnName": "主角AI开关"
+        },
+        {
+          "name": "stopEnemy",
+          "cnName": "敌方AI开关"
+        },
+        {
+          "name": "stopWe",
+          "cnName": "我方AI开关"
+        },
+        {
+          "name": "parasiticBoss",
+          "cnName": "寄生当前Boss"
+        },
+        {
+          "name": "parasiticPet",
+          "cnName": "寄生当前宠物"
+        },
+        {
+          "name": "parasiticId",
+          "cnName": "寄生id",
+          "input": "str",
+          "string": "小樱"
+        },
+        {
+          "name": "charmAndParasiticNear",
+          "cnName": "寄生最近敌人"
+        },
+        {
+          "name": "drawMapSniper",
+          "cnName": "绘制蜘蛛网"
+        },
+        {
+          "name": "showWeWarningRange",
+          "cnName": "显示我方寻敌范围"
+        },
+        {
+          "name": "aiTestMode",
+          "cnName": "AI测试模式",
+          "input": "str",
+          "string": "weHurt",
+          "tip": "enemyHurt,weHurt,bulletHit,enemyFollow"
+        }
+      ]
+    },
+    {
+      "name": "count",
+      "cnName": "统计",
+      "body": [
+        {
+          "name": "showLevelCount",
+          "cnName": "统计关卡数据"
+        },
+        {
+          "name": "showPayTest",
+          "cnName": "统计所需货币"
+        },
+        {
+          "name": "sendCount",
+          "cnName": "发送统计事件"
+        },
+        {
+          "name": "setArmsTestDiyData",
+          "cnName": "设置武器测试参数",
+          "input": "str",
+          "string": "0,10",
+          "tip": "武器编号,武器数量"
+        },
+        {
+          "name": "startDemonMapTest",
+          "cnName": "开始修罗模式测试",
+          "input": "str",
+          "string": "11,0",
+          "tip": "难度,地图编号"
+        }
+      ]
+    },
+    {
+      "name": "drop",
+      "cnName": "掉落",
+      "body": [
+        {
+          "name": "dropTest",
+          "cnName": "掉落测试",
+          "input": "num",
+          "string": 100,
+          "inputTitle": "输入测试次数"
+        },
+        {
+          "name": "closeDropTest",
+          "cnName": "关闭掉落测试"
+        },
+        {
+          "name": "showDropAdd",
+          "cnName": "显示掉率加成"
+        }
+      ]
+    },
+    {
+      "name": "equip",
+      "cnName": "武器装备",
+      "body": [
+        {
+          "name": "showArmsCreator",
+          "cnName": "显示武器制作"
+        },
+        {
+          "name": "setStrengthenLv",
+          "cnName": "设置强化等级",
+          "input": "num",
+          "string": 20,
+          "tip": "设置当前强化界面中的武器、装备的强化等级"
+        },
+        {
+          "name": "setEvoLv",
+          "cnName": "设置进化等级",
+          "input": "num",
+          "string": 1,
+          "tip": "设置当前进化界面中的武器、装备的进化等级"
+        },
+        {
+          "name": "addArmsChip",
+          "cnName": "添加所有武器碎片",
+          "input": "num",
+          "string": 1,
+          "inputTitle": "输入个数"
+        },
+        {
+          "name": "addRareArms",
+          "cnName": "添加所有稀有武器"
+        },
+        {
+          "name": "addBlackArms",
+          "cnName": "添加所有黑色武器"
+        },
+        {
+          "name": "addEquipChip",
+          "cnName": "添加所有装备碎片",
+          "input": "num",
+          "string": 1,
+          "inputTitle": "输入个数"
+        },
+        {
+          "name": "addSuit",
+          "cnName": "添加所有套装"
+        },
+        {
+          "name": "addAllFashion",
+          "cnName": "添加所有时装"
+        },
+        {
+          "name": "addAllDevice",
+          "cnName": "添加所有装置1级"
+        },
+        {
+          "name": "addAllWeapon",
+          "cnName": "添加所有副手1级"
+        },
+        {
+          "name": "dealAllArms",
+          "cnName": "修复主角武器基础伤害"
+        },
+        {
+          "name": "sameToFirst",
+          "cnName": "拉动背包所有武器"
+        },
+        {
+          "name": "bagSameToFirst",
+          "cnName": "设置背包所有随机武器"
+        },
+        {
+          "name": "setFirstArmsGodSkill",
+          "cnName": "设置第一把武器神技",
+          "input": "str",
+          "string": "穿刺,绝灭",
+          "tip": "技能中文名，用英文字母逗号隔开"
+        },
+        {
+          "name": "addRedArms",
+          "cnName": "添加红色随机武器",
+          "input": "str",
+          "string": "laser1,99,diff_8,10",
+          "tip": "armsName,lv,dropName,num"
+        },
+        {
+          "name": "addRanBlackArms",
+          "cnName": "添加黑色随机武器",
+          "input": "str",
+          "string": "99,1",
+          "tip": "等级,数量"
+        },
+        {
+          "name": "testBlackArms",
+          "cnName": "测试黑色随机武器",
+          "input": "str",
+          "string": "60,99",
+          "tip": "等级范围"
+        },
+        {
+          "name": "addBlackArmsPro",
+          "cnName": "增加黑色随机武器掉率"
+        }
+      ]
+    },
+    {
+      "name": "pet",
+      "cnName": "飞船宠物",
+      "body": [
+        {
+          "name": "addNowCraftExp",
+          "cnName": "当前飞船+经验值",
+          "input": "num",
+          "string": 10000,
+          "inputTitle": "输入经验值"
+        },
+        {
+          "name": "setNowCraftLv",
+          "cnName": "当前飞船设置等级",
+          "input": "num",
+          "string": 10,
+          "inputTitle": "输入等级"
+        },
+        {
+          "name": "clearAllPet",
+          "cnName": "清除所有宠物"
+        },
+        {
+          "name": "setPetLv",
+          "cnName": "设置当前尸宠等级",
+          "input": "num",
+          "string": 85
+        },
+        {
+          "name": "addNowGenePro",
+          "cnName": "添加基因体掉落概率",
+          "tip": "添加当前图鉴界面基因体掉落概率",
+          "input": "num",
+          "string": 100,
+          "inputTitle": "输入概率，例如：100，就是100%"
+        }
+      ]
+    },
+    {
+      "name": "skill",
+      "cnName": "技能",
+      "body": [
+        {
+          "name": "unlockSkill",
+          "cnName": "解锁技能系统"
+        },
+        {
+          "name": "clearNowSkill",
+          "cnName": "删除当前界面技能"
+        },
+        {
+          "name": "getAllEnemySkillStr",
+          "cnName": "获得所有怪物技能说明"
+        },
+        {
+          "name": "addProfi",
+          "cnName": "添加熟练度",
+          "input": "num",
+          "string": 1,
+          "inputTitle": "输入熟练度"
+        },
+        {
+          "name": "setProfi",
+          "cnName": "设置熟练度",
+          "input": "num",
+          "string": 10000,
+          "inputTitle": "输入熟练度"
+        },
+        {
+          "name": "setDayProfi",
+          "cnName": "设置今日熟练度",
+          "input": "num",
+          "string": 1,
+          "inputTitle": "输入熟练度"
+        },
+        {
+          "name": "bossCardSkillConver",
+          "cnName": "魂卡技能中文转代码",
+          "input": "str",
+          "string": "",
+          "inputTitle": "输入技能中文名，用空格间隔"
+        },
+        {
+          "name": "skillCnArrTo",
+          "cnName": "工厂技能中文转数组",
+          "input": "str",
+          "string": "",
+          "inputTitle": "输入技能中文名，用,间隔"
+        }
+      ]
+    },
+    {
+      "name": "task",
+      "cnName": "任务",
+      "body": [
+        {
+          "name": "unlockTask",
+          "cnName": "解锁任务系统"
+        },
+        {
+          "name": "unlockMainTask",
+          "cnName": "解锁所有主线任务"
+        },
+        {
+          "name": "nowTaskComplete",
+          "cnName": "完成当前任务"
+        },
+        {
+          "name": "nowTaskGet",
+          "cnName": "接取当前任务"
+        },
+        {
+          "name": "delMainTaskMore",
+          "cnName": "删除某个任务后的所有主线",
+          "input": "str",
+          "string": "Hospital5_plot",
+          "inputTitle": "输入任务英文名"
+        }
+      ]
+    },
+    {
+      "name": "ui",
+      "cnName": "UI界面",
+      "body": [
+        {
+          "name": "showApp",
+          "cnName": "显示App",
+          "input": "str",
+          "string": "food",
+          "inputTitle": "输入app名称"
+        },
+        {
+          "name": "hideStat",
+          "cnName": "隐藏/显示性能"
+        },
+        {
+          "name": "hideUI",
+          "cnName": "隐藏/显示所有UI"
+        },
+        {
+          "name": "stopHandUp",
+          "cnName": "显示防挂机窗口"
+        },
+        {
+          "name": "showGuide",
+          "cnName": "显示教程"
+        },
+        {
+          "name": "showHurt",
+          "cnName": "所有伤害显示开关"
+        },
+        {
+          "name": "setEffectUrl",
+          "cnName": "设定指定特效的Url",
+          "input": "str",
+          "string": "highlighterBoom:",
+          "inputTitle": "特效名:地址"
+        },
+        {
+          "name": "setBulletEffectUrl",
+          "cnName": "设定指定子弹图像的Url",
+          "input": "str",
+          "string": "highlighterSun:",
+          "inputTitle": "子弹名:地址"
+        },
+        {
+          "name": "scaleScene",
+          "cnName": "缩放视野",
+          "input": "num",
+          "string": 100
+        }
+      ]
+    },
+    {
+      "name": "achieve",
+      "cnName": "魂卡成就",
+      "body": [
+        {
+          "name": "addBosscardByXml",
+          "cnName": "添加魂卡XML",
+          "input": "str",
+          "string": "",
+          "inputTitle": "输入xml格式的魂卡"
+        },
+        {
+          "name": "createBosscard",
+          "cnName": "生成魂卡XML",
+          "input": "str",
+          "string": "",
+          "inputTitle": "举例“战斗僵尸 5”"
+        },
+        {
+          "name": "reachieve",
+          "cnName": "清空当前成就列表状态"
+        },
+        {
+          "name": "completeAllAchieve",
+          "cnName": "完成所有成就"
+        }
+      ]
+    },
+    {
+      "name": "post",
+      "cnName": "职务",
+      "body": [
+        {
+          "name": "addPostExp",
+          "cnName": "添加职务经验",
+          "input": "num",
+          "string": 100,
+          "inputTitle": "输入职务经验"
+        },
+        {
+          "name": "setPostLv",
+          "cnName": "设置职务等级",
+          "input": "num",
+          "string": 1,
+          "inputTitle": "输入职务等级"
+        }
+      ]
+    },
+    {
+      "name": "head",
+      "cnName": "称号",
+      "body": {
+        "name": "addNowHead",
+        "cnName": "添加当前界面称号"
+      }
+    },
+    {
+      "name": "peak",
+      "cnName": "巅峰",
+      "body": [
+        {
+          "name": "setPeakLv",
+          "cnName": "设置巅峰等级",
+          "input": "num",
+          "string": 1
+        },
+        {
+          "name": "setPeakExp",
+          "cnName": "设置巅峰经验",
+          "input": "num",
+          "string": 10000000
+        }
+      ]
+    },
+    {
+      "name": "other",
+      "cnName": "其他",
+      "body": [
+        {
+          "name": "setTestCode",
+          "cnName": "设置测试代码",
+          "input": "str",
+          "string": "",
+          "inputTitle": "输入测试代码"
+        },
+        {
+          "name": "setQixi2019High",
+          "cnName": "设置七夕升天高度",
+          "input": "num",
+          "string": 1,
+          "inputTitle": "输入高度，关卡内有效"
+        },
+        {
+          "name": "setPartnerExploit",
+          "cnName": "设置当前队友功勋值",
+          "input": "num",
+          "string": 1,
+          "inputTitle": "输入功勋值"
+        },
+        {
+          "name": "setActive",
+          "cnName": "设置活跃值",
+          "input": "num",
+          "string": 1,
+          "inputTitle": "输入活跃值，输入0则清除设置"
+        },
+        {
+          "name": "setSweepingNum",
+          "cnName": "设置扫荡次数",
+          "input": "num",
+          "string": 5
+        },
+        {
+          "name": "testChipBattleGift",
+          "cnName": "测试国庆大作战礼包"
+        },
+        {
+          "name": "testBowlIndex",
+          "cnName": "元宵跳一跳设定编号",
+          "input": "num",
+          "string": 200
+        },
+        {
+          "name": "testSeverTime",
+          "cnName": "测试服务器时间",
+          "input": "num",
+          "string": 50
+        },
+        {
+          "name": "testUplevelBug",
+          "cnName": "循环测试升级bug"
+        },
+        {
+          "name": "testUplevelBug2",
+          "cnName": "循环测试升级bug-快速"
+        },
+        {
+          "name": "showParts90",
+          "cnName": "87级零件数量"
+        },
+        {
+          "name": "addAllFood",
+          "cnName": "添加所有食材",
+          "input": "num",
+          "string": 10,
+          "inputTitle": "输入数量"
+        },
+        {
+          "name": "setFoodProfiAll",
+          "cnName": "设置厨艺值",
+          "input": "num",
+          "string": 10,
+          "inputTitle": "输入数量"
+        },
+        {
+          "name": "getTopData",
+          "cnName": "获得排行榜数据",
+          "input": "str",
+          "string": "849,1,20",
+          "inputTitle": "输入格式：id,pageNum,pageSize"
+        },
+        {
+          "name": "testTop",
+          "cnName": "测试排行榜",
+          "input": "num",
+          "string": 27,
+          "inputTitle": "输入积分"
+        },
+        {
+          "name": "setSimTopScore",
+          "cnName": "设置本地排行榜模拟分数",
+          "input": "num",
+          "string": 10,
+          "inputTitle": "输入分数"
+        },
+        {
+          "name": "md5",
+          "cnName": "md5",
+          "input": "str",
+          "string": "",
+          "inputTitle": "输入文本"
+        },
+        {
+          "name": "base64ToJson",
+          "cnName": "base64转Json",
+          "input": "str",
+          "string": "",
+          "inputTitle": "输入文本"
+        },
+        {
+          "name": "jsonToBase64",
+          "cnName": "Json转base64",
+          "input": "str",
+          "string": "",
+          "inputTitle": "输入文本"
+        },
+        {
+          "name": "base64ToXml",
+          "cnName": "base64ToXml",
+          "input": "str",
+          "string": "",
+          "inputTitle": "输入文本"
+        },
+        {
+          "name": "decodeText32",
+          "cnName": "decodeText32",
+          "input": "str",
+          "string": "",
+          "inputTitle": "输入文本"
+        }
+      ]
+    }
+  ]
+}

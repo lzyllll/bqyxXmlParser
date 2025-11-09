@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="kingTask">
+		<gather name="消灭僵尸炮兵总管">
+			<level name="ZombieShell">
+				
+				<fixed info="all" drop="all" unitG="all" eventG="all" />
+				
+				<info noRestartB="1" diy="king" />
+				<drop coin="0.5" exp="0.5" arms="1" equip="1" skillStone="1" />
+				
+				<unitG><allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="enemy1"><unit cnName="僵尸炮兵总管" unitType="boss" num="1" dpsMul="1.5" /></unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition delay="1" doNumber="9999">enemyNumber:less_1</condition>
+							<order>level; diyEvent</order>
+						</event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition delay="0.5" doNumber="1">task:state; now:complete</condition>
+							<order>level; diyEvent:save</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="消灭僵尸王">
+			<level name="ZombieKing">
+				
+				<fixed info="all" drop="all" unitG="all" eventG="all" />
+				
+				<info noRestartB="1" diy="king" />
+				<drop coin="0.5" exp="0.5" arms="1" equip="1" skillStone="1" />
+				
+				<unitG><allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="enemy1"><unit cnName="僵尸王" unitType="boss" num="1" dpsMul="1.3" imgType="normal" /></unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition delay="1" doNumber="9999">enemyNumber:less_1</condition>
+							<order>level; diyEvent</order>
+						</event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition delay="0.5" doNumber="1">task:state; now:complete</condition>
+							<order>level; diyEvent:save</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="消灭火炮僵尸王">
+			<level name="ZombieBoomKing">
+				
+				<fixed info="all" drop="all" unitG="all" eventG="all" />
+				
+				<info noRestartB="1" diy="king" />
+				<drop coin="0.5" exp="0.5" arms="1" equip="1" skillStone="1" />
+				
+				<unitG><allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="enemy1"><unit cnName="火炮僵尸王" unitType="boss" num="1" dpsMul="1.2" /></unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition delay="1" doNumber="9999">enemyNumber:less_1</condition>
+							<order>level; diyEvent</order>
+						</event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition delay="0.5" doNumber="1">task:state; now:complete</condition>
+							<order>level; diyEvent:save</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="消灭奇皇博士">
+			<level name="QiHuang">
+				
+				<fixed info="all" drop="all" unitG="all" eventG="all" />
+				
+				<info noRestartB="1" diy="king" />
+				<drop coin="0.5" exp="0.5" arms="1" equip="1" skillStone="1" />
+				
+				<unitG><allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="enemy1"><unit cnName="奇皇博士" unitType="boss" num="1" dpsMul="1.2" /></unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition delay="1" doNumber="9999">enemyNumber:less_1</condition>
+							<order>level; diyEvent</order>
+						</event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition delay="0.5" doNumber="1">task:state; now:complete</condition>
+							<order>level; diyEvent:save</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="消灭亚瑟">
+			<level name="Arthur">
+				
+				<fixed info="all" drop="all" unitG="all" eventG="all" />
+				
+				<info noRestartB="1" diy="king" />
+				<drop coin="0.5" exp="0.5" arms="1" equip="1" skillStone="1" />
+				
+				<unitG><allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="enemy1"><unit cnName="亚瑟" unitType="boss" num="1" /></unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition delay="1" doNumber="9999">enemyNumber:less_1</condition>
+							<order>level; diyEvent</order>
+						</event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition delay="0.5" doNumber="1">task:state; now:complete</condition>
+							<order>level; diyEvent:save</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="消灭游尸王">
+			<level name="SwimKing">
+				
+				<fixed info="all" drop="all" unitG="all" eventG="all" />
+				
+				<info noRestartB="1" diy="king" />
+				<drop coin="0.5" exp="0.5" arms="1" equip="1" skillStone="1" />
+				
+				<unitG><allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="enemy1"><unit cnName="游尸王" unitType="boss" num="1" imgType="normal" /></unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition delay="1" doNumber="9999">enemyNumber:less_1</condition>
+							<order>level; diyEvent</order>
+						</event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition delay="0.5" doNumber="1">task:state; now:complete</condition>
+							<order>level; diyEvent:save</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		<gather name="消灭狂战尸">
+			<level name="FightKing">
+				
+				<fixed info="all" drop="all" unitG="all" eventG="all" />
+				
+				<info noRestartB="1" diy="king" />
+				<drop coin="0.5" exp="0.5" arms="1" equip="1" skillStone="1" />
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					
+					<unitOrder id="enemy1">
+						<unit cnName="狂战尸" unitType="boss" num="1" dpsMul="0.85" lifeMul="1.3" imgType="normal" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition delay="1" doNumber="9999">enemyNumber:less_1</condition>
+							<order>level; diyEvent</order>
+						</event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition delay="0.5" doNumber="1">task:state; now:complete</condition>
+							<order>level; diyEvent:save</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+		</gather>
+		<gather name="消灭狂战射手">
+			<level name="FightShooter">
+				
+				<fixed info="all" drop="all" unitG="all" eventG="all" />
+				
+				<info noRestartB="1" diy="king" />
+				<drop coin="0.5" exp="0.5" arms="1" equip="1" skillStone="1" />
+				
+				<unitG><allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="enemy1"><unit cnName="狂战射手" unitType="boss" num="1" dpsMul="2" lifeMul="1.2" /></unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition delay="1" doNumber="9999">enemyNumber:less_1</condition>
+							<order>level; diyEvent</order>
+						</event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition delay="0.5" doNumber="1">task:state; now:complete</condition>
+							<order>level; diyEvent:save</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="消灭巨毒尸">
+			<level name="HugePoison">
+				
+				<fixed info="all" drop="all" unitG="all" eventG="all" />
+				
+				<info noRestartB="1" diy="king" />
+				<drop coin="0.5" exp="0.5" arms="1" equip="1" skillStone="1" />
+				
+				<unitG><allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="enemy1"><unit cnName="巨毒尸" unitType="boss" num="1" lifeMul="1.6" dpsMul="1.6" imgType="normal" /></unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition delay="1" doNumber="9999">enemyNumber:less_1</condition>
+							<order>level; diyEvent</order>
+						</event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition delay="0.5" doNumber="1">task:state; now:complete</condition>
+							<order>level; diyEvent:save</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="消灭霸王毒蛛">
+			<level name="SpiderKing">
+				
+				<fixed info="all" drop="all" unitG="all" eventG="all" />
+				
+				<info noRestartB="1" diy="king" />
+				<drop coin="0.5" exp="0.5" arms="1" equip="1" skillStone="1" />
+				
+				<unitG><allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="enemy1"><unit cnName="霸王毒蛛" unitType="boss" lifeMul="1.6" /></unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition delay="1" doNumber="9999">enemyNumber:less_1</condition>
+							<order>level; diyEvent</order>
+						</event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition delay="0.5" doNumber="1">task:state; now:complete</condition>
+							<order>level; diyEvent:save</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="消灭暴君">
+			<level name="Skeleton">
+				
+				<fixed info="all" drop="all" unitG="all" eventG="all" />
+				
+				<info noRestartB="1" diy="king" />
+				<drop coin="0.5" exp="0.5" arms="1" equip="1" skillStone="1" />
+				
+				<unitG><allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="enemy1"><unit cnName="暴君" unitType="boss" lifeMul="1.8" imgType="normal" /></unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition delay="1" doNumber="9999">enemyNumber:less_1</condition>
+							<order>level; diyEvent</order>
+						</event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition delay="0.5" doNumber="1">task:state; now:complete</condition>
+							<order>level; diyEvent:save</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		<gather name="消灭钢铁僵尸王">
+			<level name="IronZombieKing">
+				
+				<fixed info="all" drop="all" unitG="all" eventG="all" />
+				
+				<info noRestartB="1" diy="king" />
+				<drop coin="0.5" exp="0.5" arms="1" equip="1" skillStone="1" />
+				
+				<unitG><allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="enemy1"><unit cnName="钢铁僵尸王" unitType="boss" lifeMul="1.4" dpsMul="1.3" imgType="normal" /></unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition delay="1" doNumber="9999">enemyNumber:less_1</condition>
+							<order>level; diyEvent</order>
+						</event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition delay="0.5" doNumber="1">task:state; now:complete</condition>
+							<order>level; diyEvent:save</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="消灭飓风巫尸">
+			<level name="TyphoonWitch">
+				
+				<fixed info="all" drop="all" unitG="all" eventG="all" />
+				
+				<info noRestartB="1" diy="king" />
+				<drop coin="0.5" exp="0.5" arms="1" equip="1" skillStone="1" />
+				
+				<unitG><allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="enemy1"><unit cnName="飓风巫尸" unitType="boss" lifeMul="2" dpsMul="1.6" imgType="normal" /></unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition delay="1" doNumber="9999">enemyNumber:less_1</condition>
+							<order>level; diyEvent</order>
+						</event>
+					</group>
+					<group>
+						<event id="e2_1">
+							<condition delay="0.5" doNumber="1">task:state; now:complete</condition>
+							<order>level; diyEvent:save</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+	</father>
+	
+	</data>

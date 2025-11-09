@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="异龙蛋">
+		<skill cnName="异龙蛋-无敌光环">
+			<name>invincible_eeg</name>
+			<cnName>无敌光环</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>meSummonedFather</target>
+			
+			<addType>state</addType>
+			<effectType>invincibleAndThrough</effectType>
+			<duration>0.1</duration>
+			
+			<stateEffectImg partType="body" con="add">Triceratops/energyShield</stateEffectImg>
+			<description>对召唤者施加无敌光环</description>
+		</skill>
+		<skill index="0" cnName="无敌异龙蛋-磁力场">
+			<name>magneticField_egg</name>
+			<cnName>磁力场</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<intervalT>1</intervalT>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>magneticB</effectType>
+			<value>1</value>
+			<mul>0.2</mul>
+			<duration>1</duration>
+			<range>200</range>
+			 
+			<passiveSkillArr>magneticField_enemy_link</passiveSkillArr>
+			 
+			<description>每过[intervalT]秒向外释放磁力场，使700码的范围内的所有敌方子弹偏离轨道，持续[duration]秒。</description>
+		</skill>
+		<skill index="0" cnName="无敌异龙蛋-墙">
+			<name>block_egg</name>
+			<cnName>墙</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<intervalT>0.1</intervalT>
+			<target>me,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>block</effectType>
+			<duration>0.2</duration>
+			<range>70</range>
+			 
+			<description>每过[intervalT]秒向外释放磁力场，使700码的范围内的所有敌方子弹偏离轨道，持续[duration]秒。</description>
+		</skill>
+		<skill index="0" name="trueshot_eeg" cnName="无敌异龙蛋-强击光环">
+			<name>trueshot_eeg</name>
+			<cnName>强击光环</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>hurtMul</effectType>
+			<mul>1.10</mul>
+			<duration>0.1</duration>
+			<range>300</range>
+			
+			<stateEffectImg partType="2hand" con="add" raNum="30" followPartRaB="1">skillEffect/trueshot_enemy</stateEffectImg>
+			<description>周围400码以内的我方单位被动提升[mul-1]的攻击力。</description>
+		</skill>
+		<skill index="8" name="被击中麻痹">
+			<name>underHit_Paralysis_link</name>
+			<cnName>被击中麻痹</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<mul>0.4</mul>
+			<duration>4</duration>
+			 
+			<targetEffectImg soundUrl="sound/paralysis_enemy_hit" />
+			<stateEffectImg con="add">skillEffect/paralysis_enemy</stateEffectImg>
+			<description>。</description>
+		</skill>
+	</father>	 
+	
+	</data>

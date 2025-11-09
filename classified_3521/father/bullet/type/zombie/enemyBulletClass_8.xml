@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="毒蛛">		
+		<bullet cnName="霸王毒蛛-喷毒">
+			<name>SpiderKing_shoot</name>
+			<cnName>霸王毒蛛-喷毒</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>-170</bulletAngle>
+			<shakeAngle>15</shakeAngle>
+			<bulletAngleRange>20</bulletAngleRange>
+			<bulletLife>3</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.6</attackGap>
+			<attackDelay>0.2</attackDelay>
+			<bulletNum>5</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootGap>0</shootGap>					
+			<shootAngle>10</shootAngle>					
+			<shootPoint>-54,-54</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<bulletSpeed>30</bulletSpeed>
+			<speedD random="0.5" max="30" min="15" a="-15" />
+			<gravity>0.2</gravity>
+			
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">skillEffect/poisonClaw_enemy</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="SpiderKing/shoot_hit">boomEffect/posion1</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">skillEffect/poisonClaw_enemy</smokeImgUrl>
+		</bullet>
+		<bullet cnName="霸王毒蛛-酸雨-副本">
+			<name>acidRain_SpiderKing</name>
+			<cnName>酸雨</cnName>
+			
+			<hurtMul>0.17</hurtMul>
+			<attackType>holy</attackType>
+			
+			<bulletAngle>90</bulletAngle>
+			<shakeAngle>3</shakeAngle>
+			<bulletLife>6</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.5</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletNum>1</bulletNum>				
+			<shootNum>10</shootNum>					
+			<shootGap>0.05</shootGap>					
+			<shootAngle>0</shootAngle>					
+			<positionD>
+				<point shootPoint="-400,-1250" />
+				<point shootPoint="-300,-1250" />
+				<point shootPoint="-200,-1250" />
+				<point shootPoint="-100,-1250" />
+				<point shootPoint="0,-1250" />
+				<point shootPoint="100,-1250" />
+				<point shootPoint="200,-1250" />
+				<point shootPoint="300,-1250" />
+				<point shootPoint="400,-1250" />
+				<point shootPoint="500,-1250" />
+			</positionD>
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<shootPoint>0,0</shootPoint>
+			<bulletSpeed>10</bulletSpeed>
+			<speedD random="0.3" />
+			<gravity>0</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>skillEffect/poisonousFog_hero</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="SpiderKing/shoot_hit">boomEffect/posion1</hitImgUrl>
+			<smokeImgUrl con="filter">skillEffect/poisonousFog_hero</smokeImgUrl>
+		</bullet>
+	</father>
+	</data>

@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="异猛象">
+		<bullet cnName="异猛象-喷球">
+			<name>Mammoth_shoot</name>
+			<cnName>异猛象-喷球</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>179</bulletAngle>
+			<shakeAngle>0</shakeAngle>
+			<bulletAngleRange>10</bulletAngleRange>
+			<bulletLife>9</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<shootNum>2</shootNum>
+			<shootGap>0.13</shootGap>
+			<attackGap>0.8</attackGap>
+			<attackDelay>0.5</attackDelay>
+			<bulletNum>1</bulletNum>				
+			<shootPoint>-390,-216</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<bulletSpeed>10</bulletSpeed>
+			<followD value="0.7" delay="0.5" maxTime="6" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="filter" raNum="15">Mammoth/ball</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="sound/water_hit">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		<bullet cnName="异猛象-电磁风暴">
+			<name>Mammoth_electricity</name>
+			<cnName>异猛象-电磁风暴</cnName>
+			
+			<hurtRatio>0</hurtRatio>
+			<hurtMul>0.1</hurtMul>
+			<attackType>holy</attackType>
+			
+			<attackGap>5</attackGap>
+			<bulletAngle>179.9</bulletAngle>
+			<shakeAngle>0</shakeAngle>
+			<bulletLife>20</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<bulletNum>1</bulletNum>				
+			<shootNum>4</shootNum>
+			<shootGap>0.8</shootGap>
+			<shootPoint>-390,-216</shootPoint>
+			<twoHitGap>1</twoHitGap>
+			<twoHitSameNameB>1</twoHitSameNameB>
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+				
+			<bulletSpeed>10</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="add">Mammoth/elecBullet</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="sound/magicHit2">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		<bullet cnName="异猛象-洲际导弹">
+			<name>Mammoth_missile</name>
+			<cnName>洲际导弹</cnName>
+			
+			<hurtRatio>0</hurtRatio>
+			<hurtMul>0.175</hurtMul>
+			<attackType>holy</attackType>
+			
+			<shakeAngle>15</shakeAngle>
+			<bulletAngle>-105</bulletAngle>
+			<bulletLife>99</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<shootNum>2</shootNum>
+			<shootGap>0.15</shootGap>
+			<attackGap>0.8</attackGap>
+			<attackDelay>0.43</attackDelay>
+			<bulletNum>1</bulletNum>				
+			<shootPoint>98,-263</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+			<bulletSkillArr>Mammoth_missile</bulletSkillArr>
+			<boomD selfB="1" bodyB="1" radius="140" />
+			<followD value="1" delay="10" />
+			<bindingD cnName="空单位" lifeMul="0.006" skillArr="Mammoth_missileChip" />
+				
+			<bulletSpeed>5</bulletSpeed>
+			<speedD max="45" min="2" a="-2" random="0.1" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">Mammoth/missile</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom2" soundVolume="0.3" shake="3,0.4,13">boomEffect/boom2</hitImgUrl>
+			<smokeImgUrl con="add" raNum="30">Mammoth/missileSmoke</smokeImgUrl>
+		</bullet>
+		
+		<bullet cnName="异猛象-洲际导弹-爆炸后碎片">
+			<name>Mammoth_missileChip</name>
+			<cnName>洲际导弹碎片</cnName>
+			
+			<sameCampB>0</sameCampB>
+			<hurtRatio>0</hurtRatio>
+			<hurtMul>0.006</hurtMul>
+			<attackType>holy</attackType>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletAngle>-90</bulletAngle>
+			<bulletLife>4</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<bulletNum>3</bulletNum>				
+			<shootAngle>10</shootAngle>
+				
+			<penetrationGap>1000</penetrationGap>
+			<gravity>1</gravity>
+				
+			<bulletSpeed>3</bulletSpeed>
+			<speedD max="30" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">Mammoth/missileChip</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom1" soundVolume="0.3" shake="3,0.4,13">boomEffect/boom1</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+		</bullet>
+		<bullet cnName="机械核心-自爆">
+			<name>Mammoth_core_die</name>
+			<cnName>机械核心-自爆</cnName>
+			
+			<hurtRatio>0</hurtRatio>
+			<hurtMul>1</hurtMul>
+			<attackType>holy</attackType>
+			
+			<shakeAngle>15</shakeAngle>
+			<bulletLife>0.0001</bulletLife>
+			<bulletWidth>140</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<bulletNum>1</bulletNum>				
+			<shootNum>5</shootNum>
+			<shootPoint>0,90</shootPoint>
+			<positionD>
+				<point shootPoint="0,90" />
+				<point shootPoint="-50,18" />
+				<point shootPoint="-78,67" />
+				<point shootPoint="102,59" />
+				<point shootPoint="89,-17" />
+			</positionD>
+				
+			<twoHitGap>0.1</twoHitGap>
+			<twoHitSameNameB>1</twoHitSameNameB>
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+				
+			<bulletSpeed>0</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<imgClearDelay>0.65</imgClearDelay>
+			<bulletImgUrl>boomEffect/boom3</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom2" soundVolume="0.3" shake="3,0.4,13">boomEffect/boom2</hitImgUrl>
+		</bullet>
+		
+	</father>	
+	</data>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="snake" cnName="血蟒">
+		<body shell="metal">
+			<name>PythonArmor</name><movieLink>CrossBone</movieLink>
+			<cnName>血蟒重甲兵</cnName><headIconUrl>IconGather/PythonArmor</headIconUrl>
+			<raceType>human</raceType>
+			<swfUrl>swf/hero/PythonArmor.swf</swfUrl>
+			
+			
+			<lifeRatio>2.5</lifeRatio>
+			<showLevel>9999</showLevel>
+			<lifeBarExtraHeight>-20</lifeBarExtraHeight>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-15,-38,30,38</hurtRectArr> 
+			<hurtRectArr>-20, -110, 40, 110</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>8</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>1</armsNumber>
+			<randomArmsRange>shotgun1</randomArmsRange>	
+			<extraAIClassLabel />
+			<oneAiLabel>FightShooter</oneAiLabel>
+			
+			<skillArr />
+			<bossSkillArr>selfBurn_enemy</bossSkillArr>
+			<extraDropArmsB>1</extraDropArmsB>
+			
+			
+			<hurtArr>
+				
+			</hurtArr>
+		</body>
+	</father>	
+	
+</data>

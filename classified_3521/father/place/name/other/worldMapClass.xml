@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="other" cnName="其他">
+		
+		
+		<place lv="999" cnName="洞窟深处">
+			<name>CavesDeep</name>
+			<cnName>洞窟深处</cnName><labelArr>地下</labelArr>
+			<geogType>hill</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>geology</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="999" cnName="丘野">
+			<name>QiuYe</name>
+			<cnName>丘野</cnName><noTaskB>1</noTaskB>
+			<geogType>hill</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>QiuYe_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="999" cnName="荒漠2">
+			<name>HuangMo2</name><labelArr>沙漠,室内</labelArr>
+			<cnName>荒漠</cnName><noTaskB>1</noTaskB>
+			<geogType>hill</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>HuangMo2_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="999" cnName="荒漠3">
+			<name>HuangMo3</name><labelArr>沙漠,室内</labelArr>
+			<cnName>大荒漠</cnName><noTaskB>1</noTaskB>
+			<geogType>hill</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>HuangMo3_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="999" cnName="虚无之森1">
+			<name>XuWu1</name>
+			<cnName>虚无之森</cnName><noTaskB>1</noTaskB>
+			<geogType>hill</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>XuWu1_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="999" cnName="枯荣镇">
+			<name>KuRong</name>
+			<cnName>枯荣镇</cnName><noTaskB>1</noTaskB>
+			<geogType>town</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>KuRong_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="999" cnName="狼穴">
+			<name>LangXue</name><labelArr>地下</labelArr>
+			<cnName>狼穴</cnName><noTaskB>1</noTaskB>
+			<geogType>hill</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>LangXue_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="999" cnName="时光洞">
+			<name>Hospital</name><labelArr>室内</labelArr>
+			<cnName>时光洞</cnName><noTaskB>1</noTaskB>
+			<geogType>lab</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>Hospital_1</name>
+				</level>
+			</levelArr>
+		</place>
+		<place lv="999" cnName="穹顶">
+			<name>FlySkyScene</name>
+			<cnName>穹顶</cnName><noTaskB>1</noTaskB>
+			<geogType>lab</geogType>
+			<description />
+			
+			<levelArr>
+				<level>
+					<name>FlySkyScene_1</name>
+				</level>
+			</levelArr>
+		</place>
+		
+	</father>
+	
+	</data>

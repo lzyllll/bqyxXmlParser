@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="car" cnName="战车定义">
+		<equip name="Prophet" cnName="先知" evolutionLabel="Temmoku">
+			<canComposeB>1</canComposeB>
+			<shopB>1</shopB>
+			<main dpsMul="1.4" len="130" minRa="165" maxRa="17" />
+			<sub dpsMul="1.4" len="55" />
+			<lifeMul>1.7</lifeMul>
+			<attackMul>1.4</attackMul>
+			<duration>70</duration>
+			<cd>120</cd>
+			<mustCash>220</mustCash>
+			<addObjJson>{'dpsAll':0.10,'lifeAll':0.10}</addObjJson>
+		</equip>
+		<equip name="Temmoku" cnName="天目" evolutionLabel="SourceCode">
+			<evolutionLv>2</evolutionLv>
+			<main label="Prophet_main" dpsMul="1.7" len="130" minRa="165" maxRa="17" />
+			<sub label="Prophet_sub" dpsMul="1.7" len="55" />
+			<lifeMul>2</lifeMul>
+			<attackMul>1.7</attackMul>
+			<duration>70</duration>
+			<cd>120</cd>
+			<mustCash>220</mustCash>
+			<addObjJson>{'dpsAll':0.14,'lifeAll':0.14}</addObjJson>
+			<skillArr>vehicleFit_Gaia,vehicleFit_Civilian</skillArr>
+		</equip>
+		<equip name="SourceCode" cnName="源代码" evolutionLabel="TimeMachine">
+			<evolutionLv>4</evolutionLv>
+			<main label="Prophet_main" dpsMul="2.1" len="130" minRa="165" maxRa="17" />
+			<sub label="Prophet_sub" dpsMul="2.1" len="55" />
+			<lifeMul>2.5</lifeMul>
+			<attackMul>2</attackMul>
+			<duration>70</duration>
+			<cd>120</cd>
+			<mustCash>300</mustCash>
+			<addObjJson>{'dpsAll':0.17,'lifeAll':0.17}</addObjJson>
+			<skillArr>vehicleFit_Gaia,vehicleFit_Civilian</skillArr>
+		</equip>
+		<equip name="TimeMachine" cnName="时光机">
+			<evolutionLv>5</evolutionLv>
+			<main label="Prophet_main" dpsMul="2.4" len="130" minRa="165" maxRa="17" />
+			<sub label="Prophet_sub" dpsMul="2.4" len="55" />
+			<lifeMul>3</lifeMul>
+			<attackMul>2.5</attackMul>
+			<duration>70</duration>
+			<cd>120</cd>
+			<mustCash>300</mustCash>
+			<addObjJson>{'dpsAll':0.24,'lifeAll':0.24}</addObjJson>
+			<skillArr>timeMachineSkill,vehicleFit_Gaia,vehicleFit_Civilian</skillArr>
+		</equip>
+		
+		<bullet cnName="先知-主炮">
+			<name>Prophet_main</name>
+			<cnName>先知-主炮</cnName>
+			
+			<hurtRatio>0.83</hurtRatio>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.5</attackGap>
+			
+				
+			<shootRecoil>15</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			<bulletSpeed>45</bulletSpeed>
+			<boomD bodyB="1" floorB="1" radius="120" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">rocket/rocketBullet</bulletImgUrl>
+			<fireImgUrl raNum="30" soundUrl="rocket/barrel_sound" con="add">gunFire/rocket</fireImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom1" shake="2,0.2,10">boomEffect/boom3</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+		</bullet>
+		<bullet cnName="先知-副炮">
+			<name>Prophet_sub</name>
+			<cnName>先知-副炮</cnName>
+			
+			<hurtRatio>0.66</hurtRatio>
+			
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			<bulletWidth>800</bulletWidth>
+			<bulletShakeWidth>100</bulletShakeWidth>
+			
+			<attackGap>0.1</attackGap>
+			<attackDelay>0</attackDelay>
+				
+			<shootRecoil>4</shootRecoil>
+			<screenShakeValue>9</screenShakeValue>
+			<shakeAngle>3</shakeAngle>
+			<bulletSpeed>0</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<lineD lightColor="0x00FFFF" size="2" lightSize="6" />
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<fireImgUrl raNum="30" soundUrl="m4/barrel_sound">gunFire/f</fireImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+		</bullet>
+	</father>
+	
+	
+	
+	
+	</data>

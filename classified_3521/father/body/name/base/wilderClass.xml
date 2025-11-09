@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="base" cnName="联军基地">
+		<body id="0" name="GM3" cnName="GM三人组" scene="DiXia" openTime="2023-5-17" day="9999" dropTipStr="神护碎片、神武碎片">
+		</body>
+		
+		<body id="14" name="WatchEagle" cnName="守望者" scene="DiXia" lifeMul="2" openTime="2020-3-30" day="14">
+			<drop cnName="滑翔技能碎片" pro="1" d7="28" d6="27" d5="25" d4="22" d3="18" d2="12" d1="9" d0="6">
+				<gift>things;gliding_heroChip;1</gift>
+			</drop>
+			<drop cnName="战宠号角" num="1" d7="1" d6="1" d5="1" d4="1" d3="0.6" d2="0.4" d1="0.3" d0="0.2" noDropMax="1">
+				<gift>things;petSuppleCard;1</gift>
+			</drop>
+		</body>
+		
+		<body id="15" name="BlackLaer" cnName="黑暗雷尔" scene="DiXia" lifeMul="3" openTime="2019-12-9" day="60">
+			<drop cnName="雷斯图鉴" pro="1" d7="18" d6="17" d5="16" d4="15" d3="14" d2="13" d1="12" d0="11">
+				<gift>things;PetLakeBook;1</gift>
+			</drop>
+			
+		</body>
+		<body id="16" name="BoomSkullS" cnName="爆骷S" scene="LangXue" levelDiy="BoomSkullS" noMoreB="1" lifeMul="0.05" dpsMul="0.05" openTime="2019-12-23" day="14">
+			<drop cnName="爆骷S图鉴" pro="1" d7="18" d6="17" d5="16" d4="15" d3="14" d2="13" d1="12" d0="11">
+				<gift>things;PetBoomSkullBook;1</gift>
+			</drop>
+		</body>
+	</father>
+	
+	</data>

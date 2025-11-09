@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="heroSkillLink" cnName="英雄技能-链接">
+		<skill>
+			<name>tauntLing_link</name>
+			<cnName>嘲讽敌人</cnName>
+			<conditionType>active</conditionType>
+			<target>me,range,enemy</target>
+			<addType>state</addType>
+			<effectType>tauntLing</effectType>
+			<duration>6</duration>
+			<range>900</range>
+			<stateEffectImg partType="mouth" con="add">generalEffect/fire</stateEffectImg>
+		</skill>
+		<skill>
+			<name>tauntLingBack_link</name>
+			<cnName>反弹伤害</cnName>
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>target</target>
+			<addType>instant</addType>
+			<effectType>hurtFromChild</effectType>
+			<valueString>backHurt</valueString>
+			<mul>0</mul>
+			<extraValueType>nowArmsDpsOrNormal</extraValueType>
+			<growth>
+				<skill><mul>0</mul></skill>
+				<skill><mul>0.5</mul></skill>
+				<skill><mul>2</mul></skill>
+			</growth>
+		</skill>
+		<skill>
+			<name>revengeLing_link</name>
+			<cnName>复仇伤害</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			<conditionType>passive</conditionType>
+			<condition>die</condition>
+			<otherConditionArr>revengeLingHurtLess,targetLifePerMore</otherConditionArr>
+			<conditionRange>0.2</conditionRange>
+			<target>target</target>
+			<addType>instant</addType>
+			<effectType>revengeLingHurt</effectType>
+			<mul>0.04</mul>
+			<secMul>0.08</secMul>
+			<targetEffectImg soundUrl="boomSound/boom">boomEffect/bigFire</targetEffectImg>
+			<growth>
+				<skill><mul>0.03</mul><secMul>0.04</secMul><valueString>revengeLing_link_1</valueString></skill>
+				<skill><mul>0.03</mul><secMul>0.08</secMul><valueString>revengeLing_link_2</valueString></skill>
+				<skill><mul>0.03</mul><secMul>0.12</secMul><valueString>revengeLing_link_3</valueString></skill>
+				<skill><mul>0.03</mul><secMul>0.16</secMul><valueString>revengeLing_link_4</valueString></skill>
+				<skill><mul>0.03</mul><secMul>0.20</secMul><valueString>revengeLing_link_5</valueString></skill>
+				<skill><mul>0.04</mul><secMul>0.25</secMul><valueString>revengeLing_link_6</valueString></skill>
+				<skill><mul>0.05</mul><secMul>0.30</secMul><valueString>revengeLing_link_7</valueString></skill>
+				<skill><mul>0.06</mul><secMul>0.35</secMul><valueString>revengeLing_link_8</valueString></skill>
+				<skill><mul>0.07</mul><secMul>0.40</secMul><valueString>revengeLing_link_9</valueString></skill>
+				<skill><mul>0.08</mul><secMul>0.45</secMul><valueString>revengeLing_link_10</valueString></skill>
+			</growth>
+		</skill>
+	</father>
+</data>

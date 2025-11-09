@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicle" cnName="战车body">
+		<body index="0" name="巨鲸" shell="metal">
+			
+			<name>BlueWhale</name>
+			<cnName>巨鲸</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/vehicle/BlueWhale.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<rosRatio>1</rosRatio>
+			<headHurtMul>0.5</headHurtMul>
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<imgClass>CarImage</imgClass>
+			<imgType>normal</imgType>
+			<rotateBySlopeB>1</rotateBySlopeB>
+			<flipCtrlBy>mouse</flipCtrlBy>
+			<imgArr>
+				stand,move,die1
+			</imgArr>
+			
+			<hitRect>-30,-88,60,88</hitRect>
+			
+			<motionClass>AircraftGroundMotion</motionClass>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<motionD F_G="0.8" jumpDelayT="0.15" F_I="0.3" F_F="0.9" moveWhenVB="1" F_AIR="3" />
+			<maxVx>12</maxVx>
+			<maxJumpNum>1</maxJumpNum>
+			
+			<attackAIClass>CarAttack_AI</attackAIClass>
+			<keyClass>CarBodyKey</keyClass>
+			<bulletLauncherClass>CarBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			
+			<hurtArr>
+				
+			</hurtArr>
+		</body>
+		
+		<body name="雄鹰" fixed="BlueWhale" shell="metal">
+			<name>TheEagle</name>
+			<cnName>雄鹰</cnName>
+			<swfUrl>swf/vehicle/TheEagle.swf</swfUrl>
+			<bmpUrl>BodyImg/TheEagle</bmpUrl>
+		</body>
+		<body name="大鹏" fixed="BlueWhale" shell="metal">
+			<name>TheRoc</name>
+			<cnName>大鹏</cnName>
+			<swfUrl>swf/vehicle/TheRoc.swf</swfUrl>
+			<bmpUrl>BodyImg/TheRoc</bmpUrl>
+		</body>
+		<body name="鲲" fixed="BlueWhale" shell="metal">
+			<name>TheKun</name>
+			<cnName>鲲</cnName>
+			<swfUrl>swf/vehicle/TheKun342.swf</swfUrl>
+			<bmpUrl>BodyImg/TheKun</bmpUrl>
+		</body>
+	</father>
+</data>

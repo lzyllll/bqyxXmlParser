@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill>
+			<name>eraserArms</name>
+			<cnName>橡皮擦</cnName><noRandomListB>1</noRandomListB><ignoreNoSkillB>1</ignoreNoSkillB>
+			
+			<conditionType>passive</conditionType>
+			<condition>replaceWeapon</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>eraserArms</effectType>
+			<range>50</range>
+			
+			<pointEffectImg name="burstParts" />
+			<description>按下副手键时，擦除鼠标位置的相关子弹。</description>
+		</skill>
+		<skill>
+			<name>selfBoomArmsAll</name>
+			<cnName>自爆</cnName><noRandomListB>1</noRandomListB><ignoreNoSkillB>1</ignoreNoSkillB>
+			
+			<conditionType>passive</conditionType>
+			<condition>replaceDevice</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>selfBoomArms</effectType>
+			<range>99999</range>
+			
+			<pointEffectImg name="highlighterBoomSound" />
+			<description>按下装置键时，让在场所有的相关子弹都自爆。</description>
+		</skill>
+		
+		<skill>
+			<name>armsToMousePoint</name>
+			<cnName>子弹瞬移</cnName><noRandomListB>1</noRandomListB><ignoreNoSkillB>1</ignoreNoSkillB>
+			
+			<conditionType>passive</conditionType>
+			<condition>beforeAttack</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>armsToMousePoint</effectType>
+			<description>发射时，把子弹瞬移到鼠标点位置。</description>
+		</skill>
+	</father>
+	
+</data>

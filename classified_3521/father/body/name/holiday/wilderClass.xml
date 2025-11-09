@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="holiday" cnName="特别" sortIndex="99">
+		<body id="13" name="NianMonster" cnName="年兽" scene="PrisonDoor" lifeMul="0.5" openTime="2019-2-26" day="21">
+			<drop cnName="烟花弩碎片" pro="1" d7="22" d6="21" d5="20" d4="19" d3="18" d2="17" d1="16" d0="15">
+				<gift>things;beadCrossbow;1</gift>
+			</drop>
+			<drop cnName="年兽碎片" pro="1" d7="12" d6="11" d5="10" d4="9" d3="8" d2="7" d1="6" d0="5">
+				<gift>things;NianCarCash;1</gift>
+			</drop>
+		</body>
+		
+		
+		<body name="Skeleton" cnName="暴君" scene="JungleOutside" lifeMul="6" dpsMul="1.5" openTime="2022-1-15" day="30">
+			<drop cnName="暴君之骷碎片" pro="1" d7="13" d6="12" d5="11" d4="10" d3="9" d2="8" d1="7" d0="6">
+				<gift>things;skeletonMedal_1;1</gift>
+			</drop>
+		</body>
+		
+		<body name="OreWorm" cnName="蛇型采矿机" scene="XuWu1" lifeMul="12" dpsMul="1" openTime="2024-11-5" day="9999" noExchangeB="1" noBuyB="1" noMoreB="1" limitAll="35">
+			<drop cnName="战神之心" pro="1" d6="5" d5="4" d4="4" d3="3" d2="3" d1="2" d0="2">
+				<gift>things;madheart;1</gift>
+			</drop>
+			<drop cnName="无双水晶" pro="1" d6="10" d5="9" d4="8" d3="7" d2="6" d1="5" d0="4">
+				<gift>things;demStone;1</gift>
+			</drop>
+			<drop cnName="纪念币" pro="1" d6="20" d5="20" d4="19" d3="19" d2="18" d1="18" d0="17">
+				<gift>base;anniCoin;1</gift>
+			</drop>
+		</body>
+		
+		<body name="IronDog" cnName="铁犬" scene="XuWu1" lifeMul="6" dpsMul="0.3" openTime="2024-11-5" day="9999" noExchangeB="1" noBuyB="1" noMoreB="1" limitAll="111">
+			<drop cnName="纪念币" pro="1" d6="12" d5="10" d4="8" d3="7" d2="6" d1="5" d0="4">
+				<gift>base;anniCoin;1</gift>
+			</drop>
+			<drop cnName="全域光波碎片" pro="1" d6="3" d5="3" d4="3" d3="2" d2="2" d1="2" d0="2">
+				<gift>things;silverScreen_heroChip;1</gift>
+			</drop>
+			<drop cnName="氩石" pro="1" d6="2" d5="2" d4="2" d3="2" d2="2" d1="1" d0="1">
+				<gift>things;yaStone;1</gift>
+			</drop>
+		</body>
+		<body name="FalconBoss" cnName="黄金隼" scene="XuWu1" lifeMul="6" dpsMul="1" openTime="2024-11-5" day="9999" noExchangeB="1" noBuyB="1" noMoreB="1" limitAll="65">
+			
+			<drop cnName="纪念币" pro="1" d6="20" d5="18" d4="16" d3="16" d2="14" d1="12" d0="10">
+				<gift>base;anniCoin;1</gift>
+			</drop>
+			<drop cnName="抵御碎片" pro="1" d6="3" d5="3" d4="3" d3="2" d2="2" d1="2" d0="2">
+				<gift>things;FoggyHeroChip;1</gift>
+			</drop>
+			<drop cnName="修罗散射卡" pro="1" d6="1" d5="0" d4="0" d3="0" d2="0" d1="0" d0="0">
+				<gift>things;demonSpreadCard;1</gift>
+			</drop>
+			<drop cnName="超级散射卡" pro="1" d6="0" d5="1" d4="0" d3="0" d2="0" d1="0" d0="0">
+				<gift>things;superSpreadCard;1</gift>
+			</drop>
+		</body>
+		
+		<body name="HookWitch" cnName="斩之使者" scene="XuWu1" lifeMul="15" dpsMul="1.5" openTime="2024-3-7" noMoreB="1" day="30">
+			<drop cnName="斩之核心碎片" pro="1" d7="9" d6="8" d5="7" d4="6" d3="5" d2="4" d1="3" d0="2">
+				<gift>things;hookDevice_1;1</gift>
+			</drop>
+		</body>
+		
+		
+		<body name="FuGuang" cnName="扶光" scene="XuWu1" lifeMul="5" dpsMul="1" openTime="2025-8-3" day="27" noExchangeB="1" noBuyB="1" noMoreB="1" limitAll="26">
+			<drop cnName="扶光时装碎片" pro="1" d6="20" d5="19" d4="18" d3="17" d2="16" d1="15" d0="14">
+				<gift>things;fuGuang;1</gift>
+			</drop>
+			<drop cnName="望舒时装碎片" pro="1" d6="20" d5="19" d4="18" d3="17" d2="16" d1="15" d0="14">
+				<gift>things;wangShu;1</gift>
+			</drop>
+		</body>
+	</father>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</data>

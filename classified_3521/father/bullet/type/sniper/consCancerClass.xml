@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="sniper">
+		<bullet color="purgold" kind="electric" evoMaxLv="2" evoMustFirstLv="13" composeLv="99" chipNum="300">
+			<name>consCancer</name><extraMul>2.5</extraMul><dpsMul>2.4</dpsMul><uiDpsMul>1.525</uiDpsMul>
+			<cnName>巨蟹座</cnName><iconUrl>newGun/consCancerIcon</iconUrl>
+			
+			<capacity>8</capacity>
+			<attackGap>0.8</attackGap>
+			<reloadGap>2.5</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>1700</bulletWidth>
+			<bulletShakeWidth>50</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<shootAngle>0</shootAngle>				
+			<beatBack>10</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>0</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<critD mul="2" pro="0.2" />
+			
+			<skillArr>Hit_Spurting_ArmsSkill,Kill_AddLifeMul_ArmsSkill</skillArr>
+			<godSkillArr>consCancerSkill,Hit_crazy_godArmsSkill</godSkillArr>
+			
+			<hurtRatio>15</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.5</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>3</upValue>
+			<shootShakeAngle>15</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			
+			
+			<shootSoundUrl>newGun/consCancerSound</shootSoundUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl name="consCancerLine" />
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			
+			<bodyImgRange>newGun/consCancer</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>消灭首领黑暗骑士(99级)</description>
+		</bullet>
+	</father>
+	</data>

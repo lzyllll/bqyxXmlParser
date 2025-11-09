@@ -1,0 +1,73 @@
+{
+  "father": [
+    {
+      "type": "wavegun",
+      "cnName": "闪电球",
+      "bullet": {
+        "consLeo": {
+          "name": "consLeo",
+          "kind": "electric",
+          "color": "yagold",
+          "composeLv": 99,
+          "dropLevelArr": 999,
+          "cnName": "狮子座",
+          "noMagneticB": 1,
+          "aiShootRange": 2000,
+          "attackType": "holy",
+          "dpsMul": 51,
+          "extraMul": 1.3,
+          "uiDpsMul": 4.98,
+          "capacity": 17,
+          "attackGap": 0.45,
+          "reloadGap": 1.3,
+          "shakeAngle": 0,
+          "bulletWidth": 1100,
+          "beatBack": 2,
+          "targetShakeValue": 10,
+          "bulletSkillArr": "consLeo",
+          "noHitB": 1,
+          "penetrationGap": 1000,
+          "penetrationNum": 999,
+          "skillArr": "Hit_AddLifeMul_ArmsSkill,Hit_Spurting_ArmsSkill",
+          "godSkillArr": "consLeoSkill",
+          "hurtRatio": 15,
+          "gunNum": 1,
+          "armsArmMul": 0.5,
+          "armsWeight": 5,
+          "upValue": 3,
+          "shootShakeAngle": 10,
+          "shootRecoil": 7,
+          "screenShakeValue": 10,
+          "bulletLife": 0.001,
+          "hitType": "longLine",
+          "shootSoundUrl": "newGun/consLeoSound",
+          "flipX": 1,
+          "bulletImgUrl": null,
+          "hitImgUrl": null,
+          "bodyImgRange": "newGun/consLeo",
+          "bulletImgRange": "specialGun/bullet",
+          "info": "拥有光锥的射程，极源的攻击范围，隼武的无视地形，铄金的无限穿人，以及第一梯队的伤害输出和当前版本最高的面板战斗力，这就是第一把究极武器——狮子座！",
+          "armsType": "wavegun"
+        }
+      }
+    },
+    {
+      "name": "godArmsSkill",
+      "cnName": "神级武器技能",
+      "skill": {
+        "name": "consLeoSkill",
+        "noRandomListB": 1,
+        "cnName": "声电场",
+        "conditionType": "passive",
+        "condition": "no",
+        "target": "me",
+        "addType": "instant",
+        "effectType": "no",
+        "otherEffectImg": {
+          "name": "consVirgoLineChild"
+        },
+        "description": "狮子座的吼声划破天际，迸发出的声电电流将撕裂周围的敌人。"
+      }
+    }
+  ]
+}

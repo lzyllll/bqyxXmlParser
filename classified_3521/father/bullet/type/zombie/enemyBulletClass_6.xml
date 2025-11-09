@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="鬼目游尸">		
+		<bullet cnName="灵游尸-镭射眼">
+			<name>laser_ling</name>
+			<cnName>鬼目游尸-镭射眼</cnName>
+			
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>10</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.2</attackGap>
+			<attackDelay>0.7</attackDelay>
+			<bulletAngle>185</bulletAngle>
+			<bulletAngleRange>40</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>2</shootNum>					
+								
+			<shootAngle>0</shootAngle>					
+				
+			<penetrationGap>1000</penetrationGap>
+			<bulletSpeed>30</bulletSpeed>
+			<positionD>
+				<point shootPoint="-16,-72" />
+				<point shootPoint="-28,-72" />
+			</positionD>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>ZombieLing/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="ZombieLing/hit2">bulletHitEffect/yellow_motion</hitImgUrl>
+			<smokeImgUrl con="filter">ZombieLing/smoke</smokeImgUrl>
+		</bullet>
+	</father>
+	</data>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicleSkill" cnName="技能">
+		<skill>
+			<name>executionerSkill</name><noBeClearB>1</noBeClearB>
+			<cnName>处决形态</cnName><iconUrl>SkillIcon/executionerSkill</iconUrl>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			
+			<cd>80</cd>
+			<changeText>持续时间[duration]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>beforeAttack</condition>
+			<target>me</target>
+			<passiveSkillArr>executionerSkill_link</passiveSkillArr>
+			
+			<addType>state</addType>
+			<effectType>executionerSkill</effectType><effectFather>vehicle</effectFather>
+			<value>4</value>
+			<mul>0.5</mul>
+			<duration>1.7</duration>
+			
+			
+			<meEffectImg name="bladeShield_me" />
+			<stateEffectImg name="burstParts" />
+			<description>使自己身体放大2倍，进入无敌状态，并开启4倍超级散射，对机械体的敌人提升150%的伤害。持续[duration]秒。</description>
+			
+			<growth>
+				<skill><duration>1.6</duration></skill>
+				<skill><duration>2</duration></skill>
+				<skill><duration>2.5</duration></skill>
+				<skill><duration>3</duration></skill>
+				<skill><duration>3.5</duration></skill>
+				<skill><duration>4</duration></skill>
+				<skill><duration>4.5</duration></skill>
+				<skill><duration>5</duration></skill>
+				<skill><duration>5.5</duration></skill>
+				<skill><duration>7</duration></skill>
+			</growth>
+		</skill>
+				<skill>
+					<name>executionerSkill_link</name>
+					<cnName>对机械体提升</cnName><noRandomListB>1</noRandomListB><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+					
+					<conditionType>passive</conditionType><changeHurtB>1</changeHurtB>
+					<condition>hit</condition>
+					<target>target</target>
+					
+					<addType>instant</addType>
+					<effectType>changeHurt_raceType</effectType>
+					<valueString>robot</valueString>
+					<mul>2.5</mul>
+					<pointEffectImg name="orangeWaveBoom" />
+				</skill>
+	</father>
+	
+	
+	
+	
+	
+	</data>

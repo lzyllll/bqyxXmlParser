@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<gameBox>
+		
+		<one codeExchangeId="37701" name="sign2025_9_1" cnName="9月1天" startTime="2025-9-1 00:00:00" endTime="2025-10-1 00:00:00" hideOutTimeB="1">
+			<codeUrl>http://news.4399.com/gonglue/bqyx/xinwen/471939.html</codeUrl>
+			<gift>base;tenCoin;30</gift>
+			<gift>things;weaponChest;3</gift>
+			<gift>things;keyChest;3</gift>
+			<gift>things;deviceChest;3</gift>
+		</one>
+		<one codeExchangeId="37702" name="sign2025_9_5" cnName="9月5天" startTime="2025-9-1 00:00:00" endTime="2025-10-1 00:00:00" hideOutTimeB="1">
+			<codeUrl>http://news.4399.com/gonglue/bqyx/xinwen/471939.html</codeUrl>
+			<gift>base;tenCoin;50</gift>
+			<gift>things;weaponChest;7</gift>
+			<gift>things;keyChest;7</gift>
+			<gift>things;deviceChest;7</gift>
+		</one>
+		<one codeExchangeId="37703" name="sign2025_9_14" cnName="9月14天" startTime="2025-9-1 00:00:00" endTime="2025-10-1 00:00:00" hideOutTimeB="1">
+			<codeUrl>http://news.4399.com/gonglue/bqyx/xinwen/471939.html</codeUrl>
+			<gift>base;tenCoin;70</gift>
+			<gift>things;weaponChest;15</gift>
+			<gift>things;keyChest;15</gift>
+			<gift>things;deviceChest;15</gift>
+		</one>
+		<one codeExchangeId="37704" name="sign2025_9_25" cnName="9月25天" startTime="2025-9-1 00:00:00" endTime="2025-10-1 00:00:00" hideOutTimeB="1">
+			<codeUrl>http://news.4399.com/gonglue/bqyx/xinwen/471939.html</codeUrl>
+			<gift>base;tenCoin;100</gift>
+			<gift>things;weaponChest;25</gift>
+			<gift>things;keyChest;25</gift>
+			<gift>things;deviceChest;25</gift>
+		</one>
+		<one codeExchangeId="37705" name="sign2025_9_30" cnName="9月满勤" startTime="2025-9-1 00:00:00" endTime="2025-10-1 00:00:00" hideOutTimeB="1">
+			<codeUrl>http://news.4399.com/gonglue/bqyx/xinwen/471939.html</codeUrl>
+			<gift>base;tenCoin;250</gift>
+			<gift>parts;huntParts_1;35</gift>
+			<gift>parts;acidicParts_1;35</gift>
+		</one>
+			
+		
+		
+		
+		<one codeExchangeId="37728" name="sign2025_10_1" cnName="10月1天" startTime="2025-10-1 00:00:00" endTime="2025-11-1 00:00:00" hideOutTimeB="1">
+			<codeUrl>http://news.4399.com/gonglue/bqyx/xinwen/471939.html</codeUrl>
+			<gift>things;doubleArmsCard;2</gift>
+			<gift>things;doubleEquipCard;2</gift>
+			<gift>things;strengthenStone;20</gift>
+			<gift>things;armsEchelonCard;2</gift>
+		</one>
+		<one codeExchangeId="37729" name="sign2025_10_5" cnName="10月5天" startTime="2025-10-1 00:00:00" endTime="2025-11-1 00:00:00" hideOutTimeB="1">
+			<codeUrl>http://news.4399.com/gonglue/bqyx/xinwen/471939.html</codeUrl>
+			<gift>things;doubleArmsCard;3</gift>
+			<gift>things;doubleEquipCard;3</gift>
+			<gift>things;strengthenStone;35</gift>
+			<gift>things;armsEchelonCard;3</gift>
+		</one>
+		<one codeExchangeId="37730" name="sign2025_10_14" cnName="10月14天" startTime="2025-10-1 00:00:00" endTime="2025-11-1 00:00:00" hideOutTimeB="1">
+			<codeUrl>http://news.4399.com/gonglue/bqyx/xinwen/471939.html</codeUrl>
+			<gift>things;doubleArmsCard;4</gift>
+			<gift>things;doubleEquipCard;4</gift>
+			<gift>things;strengthenStone;50</gift>
+			<gift>things;armsEchelonCard;4</gift>
+		</one>
+		<one codeExchangeId="37731" name="sign2025_10_25" cnName="10月25天" startTime="2025-10-1 00:00:00" endTime="2025-11-1 00:00:00" hideOutTimeB="1">
+			<codeUrl>http://news.4399.com/gonglue/bqyx/xinwen/471939.html</codeUrl>
+			<gift>things;doubleArmsCard;5</gift>
+			<gift>things;doubleEquipCard;5</gift>
+			<gift>things;strengthenStone;60</gift>
+			<gift>things;armsEchelonCard;5</gift>
+		</one>
+		<one codeExchangeId="37732" name="sign2025_10_30" cnName="10月满勤" startTime="2025-10-1 00:00:00" endTime="2025-11-1 00:00:00" hideOutTimeB="1">
+			<codeUrl>http://news.4399.com/gonglue/bqyx/xinwen/471939.html</codeUrl>
+			<gift>things;ultiArmsEchelonCard;5</gift>
+			<gift>things;strengthenStone;100</gift>
+		</one>
+		
+		
+	</gameBox>
+</data>

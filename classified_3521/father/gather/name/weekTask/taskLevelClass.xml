@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="weekTask">
+		<gather name="每周任务">
+			<level name="weekHead">
+				
+				<fixed info="all" drop="no" unitG="no" eventG="no" />
+				
+				<info diff="3" diy="weekTask" />
+			</level>
+			<level name="weekCoat">
+				
+				<fixed info="all" drop="no" unitG="no" eventG="no" />
+				
+				<info diff="3" diy="weekTask" />
+			</level>
+			<level name="weekPants">
+				
+				<fixed info="all" drop="no" unitG="no" eventG="no" />
+				
+				<info diff="3" diy="weekTask" />
+			</level>
+			<level name="weekBelt">
+				
+				<fixed info="all" drop="no" unitG="no" eventG="no" />
+				
+				<info diff="3" diy="weekTask" />
+			</level>
+			
+			<level name="weekHeadBlack">
+				
+				<fixed info="all" drop="no" unitG="no" eventG="no" />
+				
+				<info diff="3" diy="weekTask" />
+			</level>
+			<level name="weekCoatBlack">
+				
+				<fixed info="all" drop="no" unitG="no" eventG="no" />
+				
+				<info diff="3" diy="weekTask" />
+			</level>
+			<level name="weekPantsBlack">
+				
+				<fixed info="all" drop="no" unitG="no" eventG="no" />
+				
+				<info diff="3" diy="weekTask" />
+			</level>
+			<level name="weekBeltBlack">
+				
+				<fixed info="all" drop="no" unitG="no" eventG="no" />
+				
+				<info diff="3" diy="weekTask" />
+			</level>
+			
+			
+			<level name="weekArms">
+				
+				<fixed info="all" drop="no" unitG="no" eventG="no" />
+				
+				<info diff="3" diy="weekTask" />
+			</level>
+			<level name="weekParts">
+				
+				<fixed info="all" drop="no" unitG="no" eventG="no" />
+				
+				<info diff="3" diy="weekTask" />
+			</level>
+			<level name="weekHourse">
+				
+				<fixed info="all" drop="no" unitG="no" eventG="no" />
+				
+				<info diff="3" diy="weekTask" />
+			</level>
+		</gather>
+	</father>
+</data>

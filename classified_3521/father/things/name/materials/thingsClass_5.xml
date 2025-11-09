@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="materials" cnName="石头消耗品" smeltType="stone">
+		<things cnName="超能石">
+			<name>skillStone</name>
+			<cnName>超能石</cnName>
+			<iconUrl>ThingsIcon/skillStone</iconUrl>
+			<description>
+				学习和升级技能所需的石头。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]无尽模式(产量很高)
+				[n]消灭怪物掉落
+				[n]商店购买、竞技场兑换
+			</description>
+			<loveD num="3" growB="1" />
+			<smeltD grade="0" addType="" price="0.1" />
+		</things>
+		<things cnName="神能石">
+			<name>godStone</name>
+			<cnName>神能石</cnName>
+			<iconUrl>ThingsIcon/godStone</iconUrl>
+			<description>
+				学习和升级技能所需的稀有石头，同时还可以用于重造武器、替换尸宠资质、升级载具。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]无尽模式(产量很高)
+				[n]消灭怪物掉落
+				[n]商店购买、竞技场兑换
+			</description>
+			<loveD num="1" growB="1" />
+			<smeltD grade="0" addType="" price="0.4" />
+		</things>
+		<things cnName="光能石">
+			<name>lightStone</name><addDropDefineB>1</addDropDefineB>
+			<cnName>光能石</cnName>
+			<iconUrl>ThingsIcon/lightStone</iconUrl>
+			<description>
+				学习和升级技能高等级所需的稀有石头。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]锻造合成所得
+				[n]商店购买、竞技场兑换
+			</description>
+			<smeltD grade="1" addType="" price="3" />
+		</things>
+		<things cnName="核能石">
+			<name>nuclearStone</name>
+			<cnName>核能石</cnName>
+			<iconUrl>ThingsIcon/nuclearStone</iconUrl>
+			<loveD num="0" />
+			<description>
+				升级载具技能至最高级所需的稀有石头。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店购买
+			</description>
+		</things>
+		
+		
+		
+		<things cnName="转化石">
+			<name>converStone</name>
+			<cnName>转化石</cnName>
+			<iconUrl>ThingsIcon/converStone</iconUrl>
+			<description>
+				可用于转化生成套装、升级武器和装备、升级尸宠资质的稀有石头。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]无尽模式(产量很高)
+				[n]消灭怪物掉落
+				[n]商店购买、竞技场兑换
+			</description>
+			<loveD num="1" growB="1" />
+			<smeltD grade="0" addType="" price="0.4" />
+		</things>
+		<things cnName="强化石">
+			<name>strengthenStone</name><addDropDefineB>1</addDropDefineB>
+			<cnName>强化石</cnName>
+			<iconUrl>ThingsIcon/strengthenStone</iconUrl>
+			<description>
+				可用于强化装备、武器。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]1、活跃礼包领取
+				[n]2、每日任务“银币追逐者”
+				[n]3、寻宝任务“强化石宝藏”
+				[n]4、商店购买、竞技场兑换
+			</description>
+			<loveD num="10" />
+			<smeltD grade="0" addType="" price="1.5" />
+		</things>
+		<things cnName="血石">
+			<name>bloodStone</name><addDropDefineB>1</addDropDefineB>
+			<cnName>血石</cnName>
+			<iconUrl>ThingsIcon/bloodStone</iconUrl>
+			<description>
+				可用于培养尸宠的资质、强化载具。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]签到礼包领取
+				[n]消灭50级以上的首领掉落
+				[n]商店购买、竞技场兑换
+				[n]寻宝任务“血石宝藏”
+			</description>
+			<loveD num="10" />
+			<smeltD grade="1" addType="" price="2" />
+		</things>
+		<things cnName="精石">
+			<name>fineStone</name><addDropDefineB>1</addDropDefineB>
+			<cnName>精石</cnName>
+			<iconUrl>ThingsIcon/fineStone</iconUrl>
+			<description>
+				可用于强化载具。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]秘境掉落，8月14日截止
+				[n]血石合成（锻造&gt;物品合成）
+				[n]商店购买
+			</description>
+			<loveD num="10" />
+			<smeltD grade="1" addType="" price="15" />
+		</things>
+		
+		
+		
+		<things cnName="钛晶">
+			<name>armsTitanium</name>
+			<cnName>钛晶</cnName>
+			<iconUrl>ThingsIcon/armsTitanium</iconUrl>
+			<description>
+				进化武器所需材料。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]分解黑色武器装备碎片
+				[n]分解80级以上黑色、稀有武器装备
+				[n]商店购买
+				[n]竞技场兑换
+				[n]功勋牌兑换
+			</description>
+			<loveD num="1" growB="1" />
+			<smeltD type="armsEquip" grade="1" addType="" price="3" />
+		</things>
+		<things cnName="镭晶">
+			<name>armsRadium</name><addDropDefineB>1</addDropDefineB>
+			<cnName>镭晶</cnName>
+			<iconUrl>ThingsIcon/armsRadium</iconUrl>
+			<description>
+				进化武器所需材料。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]竞技场兑换
+				[n]功勋牌兑换
+				[n]每日签到、活跃礼包
+				[n]商店购买
+			</description>
+			<loveD num="1" growB="1" />
+			<smeltD type="armsEquip" grade="1" addType="" price="2" />
+		</things>
+		
+		
+		
+	</father>
+	</data>

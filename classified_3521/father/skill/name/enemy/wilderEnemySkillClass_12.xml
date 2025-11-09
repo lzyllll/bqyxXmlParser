@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="炸裂者">
+		<skill name="毒舌钩">
+			<name>DryFrogPull</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>毒舌钩</cnName><iconUrl36>SkillIcon/DryFrogPull_36</iconUrl36>
+			<cd>9</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>360</conditionRange><target>me</target>
+			<addType>no</addType>
+			<meActionLabel>pullAttack</meActionLabel>
+			<description>炸裂者伸出毒蛇，把目标勾到自己面前，同时对目标释放七步毒。</description>	
+		</skill>
+		<skill index="0" name="炸裂者-舌头钩-击中">
+			<name>DryFrogPullHit</name>
+			<cnName>炸裂者-舌头钩-击中</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>SnowGirlPullHit</effectType>
+			<mul>19</mul>
+			<secMul>23</secMul>
+			<valueString>belt</valueString>
+			<duration>0.2</duration>
+			 
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+		</skill>
+		<skill index="0" name="舌头钩-击中后移动则受到伤害">
+			<name>DryFrogPullPosion</name>
+			<cnName>舌头钩-击中后移动则受到伤害</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>poison7</effectType>
+			<extraValueType>producterDpsFactor</extraValueType>
+			<mul>0.2</mul>
+			<doGap>0.15</doGap>
+			<duration>3</duration>
+			 
+			<stateEffectImg partType="2foot" con="filter" raNum="30">skillEffect/poisonClaw_enemy</stateEffectImg>
+			<description>被七步毒感染的目标，如果移动将持续受到伤害。同样，如果静止不动，将不会受到伤害。</description>
+		</skill>
+		
+		
+		<skill index="0" name="雷阵风暴">
+			<name>DryFrogRotate</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>布雷风暴</cnName><iconUrl36>SkillIcon/DryFrogRotate_36</iconUrl36>
+			<cd>11</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>500</conditionRange><target>me</target>
+			
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>1.1</duration>
+			<meActionLabel>rotateAttack</meActionLabel>
+			<description>炸裂者一跃而起，向地面投射数颗粘性地雷。</description>
+		</skill>
+		<skill index="0" name="地雷陷阱">
+			<name>DryFrogPour</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>地雷陷阱</cnName><iconUrl36>SkillIcon/DryFrogPour_36</iconUrl36>
+			<cd>15</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>900</conditionRange><target>me</target>
+			
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>1.7</duration>
+			<meActionLabel>pourAttack</meActionLabel>
+			<description>炸裂者向地面倾倒隐形地雷，隐形地雷会持续长达30秒。</description>
+			
+		</skill>
+		
+		<skill name="暗影突袭">
+			<name>DryFrogJump</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>暗影突袭</cnName><iconUrl36>SkillIcon/DryFrogJump_36</iconUrl36>
+			<cd>5</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>0.4</conditionRange>
+			<target>me</target>
+			<effectType>invincible</effectType>
+			<duration>0.9</duration>
+			<meActionLabel>leapAttack</meActionLabel>
+			<pointEffectImg con="add">skillEffect/aperture</pointEffectImg>
+			<description>当炸裂者生命值少于一定值时，炸裂者会不断的闪烁到目标身上，造成巨大伤害，同时清空目标一定量的子弹。</description>	
+		</skill>
+	</father>
+	
+	</data>

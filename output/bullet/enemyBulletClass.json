@@ -1,0 +1,2544 @@
+{
+  "father": [
+    {
+      "type": "zombie",
+      "cnName": "僵尸",
+      "bullet": {
+        "boom_headless": {
+          "cnName": "自爆僵尸炸弹",
+          "name": "boom_headless",
+          "hurtRatio": 2.5,
+          "attackType": "holy",
+          "noMagneticB": 1,
+          "shakeAngle": 20,
+          "bulletLife": 0.8,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.6,
+          "bulletAngle": 180,
+          "bulletAngleRange": 160,
+          "bulletNum": 1,
+          "shootNum": 1,
+          "shootAngle": 0,
+          "shootPoint": "-18,-52",
+          "bulletSpeed": 10,
+          "gravity": 1,
+          "boomD": {
+            "selfB": true,
+            "bodyB": true,
+            "radius": 80
+          },
+          "bounceD": {
+            "floor": 10
+          },
+          "flipX": 1,
+          "bulletImgUrl": "ZombieHeadless/bullet",
+          "hitImgUrl": "boomEffect/boom2",
+          "hitFloorImgUrl": "bulletHitEffect/smoke_small",
+          "smokeImgUrl": "bulletHitEffect/spark_motion",
+          "armsType": "zombie"
+        },
+        "ZombieBomb_1": {
+          "cnName": "携弹僵尸",
+          "name": "ZombieBomb_1",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 10,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.6,
+          "bulletAngle": 185,
+          "bulletAngleRange": 40,
+          "bulletNum": 1,
+          "shootNum": 1,
+          "shootAngle": 0,
+          "shootPoint": "-64,-82",
+          "bulletSpeed": 25,
+          "gravity": 1,
+          "flipX": 1,
+          "bulletImgUrl": "ZombieIncapable/bullet",
+          "hitImgUrl": "boomEffect/boom1",
+          "smokeImgUrl": "bulletHitEffect/spark_motion",
+          "armsType": "zombie"
+        },
+        "ZombieFootball_1": {
+          "cnName": "橄榄僵尸",
+          "name": "ZombieFootball_1",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 10,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.6,
+          "bulletAngle": 210,
+          "bulletAngleRange": 40,
+          "bulletNum": 1,
+          "shootNum": 1,
+          "shootAngle": 0,
+          "bounceD": {
+            "floor": 2,
+            "num": 0.8
+          },
+          "shootPoint": "-64,-82",
+          "bulletSpeed": 20,
+          "gravity": 1.4,
+          "flipX": 1,
+          "bulletImgUrl": "ZombieFootball/bullet",
+          "hitImgUrl": "bulletHitEffect/yellow_motion",
+          "smokeImgUrl": "bulletHitEffect/smoke_small",
+          "armsType": "zombie"
+        },
+        "PetZombieFootball_1": {
+          "cnName": "橄榄僵尸",
+          "name": "PetZombieFootball_1",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 10,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.6,
+          "bulletAngle": 210,
+          "bulletAngleRange": 40,
+          "bulletNum": 1,
+          "shootNum": 1,
+          "shootAngle": 0,
+          "bounceD": {
+            "floor": 2,
+            "num": 0.8
+          },
+          "shootPoint": "-64,-82",
+          "bulletSpeed": 20,
+          "gravity": 1.4,
+          "flipX": 1,
+          "bulletImgUrl": "PetZombieFootball/bullet",
+          "hitImgUrl": "bulletHitEffect/yellow_motion",
+          "smokeImgUrl": "bulletHitEffect/smoke_small",
+          "armsType": "zombie"
+        },
+        "PetZombieFootball_2": {
+          "cnName": "橄榄僵尸-弹性世界",
+          "name": "PetZombieFootball_2",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 10,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.6,
+          "bulletAngle": 210,
+          "bulletAngleRange": 40,
+          "bulletNum": 8,
+          "shootNum": 1,
+          "shootAngle": 20,
+          "bounceD": {
+            "floor": 999
+          },
+          "penetrationNum": 999,
+          "twoHitGap": 0.2,
+          "skillArr": "slowMove_enemy",
+          "shootPoint": "-64,-82",
+          "bulletSpeed": 20,
+          "gravity": 1.3,
+          "flipX": 1,
+          "bulletImgUrl": "PetZombieFootball/bullet",
+          "hitImgUrl": "bulletHitEffect/yellow_motion",
+          "smokeImgUrl": "bulletHitEffect/smoke_small",
+          "armsType": "zombie"
+        },
+        "PetZombieHelmet_1": {
+          "cnName": "橄榄僵尸",
+          "name": "PetZombieHelmet_1",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 10,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.6,
+          "bulletAngle": 210,
+          "bulletAngleRange": 40,
+          "bulletNum": 1,
+          "shootNum": 1,
+          "shootAngle": 0,
+          "bounceD": {
+            "floor": 2,
+            "num": 0.8
+          },
+          "shootPoint": "-64,-82",
+          "bulletSpeed": 20,
+          "gravity": 1.4,
+          "flipX": 1,
+          "bulletImgUrl": "PetZombieHelmet/bullet",
+          "hitImgUrl": "bulletHitEffect/yellow_motion",
+          "smokeImgUrl": "bulletHitEffect/smoke_small",
+          "armsType": "zombie"
+        },
+        "PetZombieHelmet_2": {
+          "cnName": "橄榄僵尸-弹性世界",
+          "name": "PetZombieHelmet_2",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 10,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.6,
+          "bulletAngle": 210,
+          "bulletAngleRange": 40,
+          "bulletNum": 8,
+          "shootNum": 1,
+          "shootAngle": 20,
+          "bounceD": {
+            "floor": 999
+          },
+          "penetrationNum": 999,
+          "twoHitGap": 0.2,
+          "skillArr": "slowMove_enemy",
+          "shootPoint": "-64,-82",
+          "bulletSpeed": 20,
+          "gravity": 1.3,
+          "flipX": 1,
+          "bulletImgUrl": "PetZombieHelmet/bullet",
+          "hitImgUrl": "bulletHitEffect/yellow_motion",
+          "smokeImgUrl": "bulletHitEffect/smoke_small",
+          "armsType": "zombie"
+        },
+        "ZombieCleaver_1": {
+          "cnName": "屠刀僵尸-飞刀",
+          "name": "ZombieCleaver_1",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 15,
+          "hitType": "rect",
+          "attackGap": 1.1,
+          "attackDelay": 0.4,
+          "bulletAngle": 185,
+          "bulletAngleRange": 40,
+          "bulletNum": 1,
+          "shootNum": 1,
+          "shootAngle": 0,
+          "shootPoint": "-60,-90",
+          "bulletSpeed": 30,
+          "gravity": 0.7,
+          "flipX": 1,
+          "bulletImgUrl": "ZombieCleaver/bullet",
+          "hitImgUrl": "bladeHitEffect/blood",
+          "hitFloorImgUrl": "bladeHitEffect/blood",
+          "smokeImgUrl": "ZombieCleaver/smoke",
+          "armsType": "zombie"
+        },
+        "PetZombieCleaver_1": {
+          "cnName": "屠刀僵尸-飞刀",
+          "name": "PetZombieCleaver_1",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 15,
+          "hitType": "rect",
+          "attackGap": 1.1,
+          "attackDelay": 0.4,
+          "bulletAngle": 185,
+          "bulletAngleRange": 40,
+          "bulletNum": 1,
+          "shootNum": 1,
+          "shootAngle": 0,
+          "shootPoint": "-60,-90",
+          "bulletSpeed": 30,
+          "gravity": 0.7,
+          "flipX": 1,
+          "bulletImgUrl": "PetZombieCleaver/bullet",
+          "hitImgUrl": "bladeHitEffect/blood",
+          "hitFloorImgUrl": "bladeHitEffect/blood",
+          "smokeImgUrl": "PetZombieCleaver/smoke",
+          "armsType": "zombie"
+        },
+        "ZombieSilver_1": {
+          "cnName": "银锤-飞刀",
+          "name": "ZombieSilver_1",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 15,
+          "hitType": "rect",
+          "attackGap": 0.8,
+          "attackDelay": 0.3,
+          "bulletAngle": 185,
+          "bulletAngleRange": 40,
+          "bulletNum": 1,
+          "shootNum": 1,
+          "shootAngle": 0,
+          "shootPoint": "-52,-75",
+          "bulletSpeed": 30,
+          "gravity": 0.7,
+          "flipX": 1,
+          "bulletImgUrl": "ZombieSilver/bullet",
+          "hitImgUrl": "bulletHitEffect/energy",
+          "hitFloorImgUrl": "bulletHitEffect/energy",
+          "smokeImgUrl": "ZombieSilver/smoke",
+          "armsType": "zombie"
+        },
+        "ZombiePrison_1": {
+          "cnName": "监狱僵尸-飞刀",
+          "name": "ZombiePrison_1",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 10,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.6,
+          "bulletAngle": 185,
+          "bulletAngleRange": 40,
+          "bulletNum": 1,
+          "shootNum": 1,
+          "shootAngle": 0,
+          "shootPoint": "-64,-82",
+          "bulletSpeed": 25,
+          "gravity": 0.6,
+          "bounceD": {
+            "floor": 999
+          },
+          "flipX": 1,
+          "bulletImgUrl": "ZombiePrison/bullet",
+          "hitImgUrl": "bladeHitEffect/blood",
+          "hitFloorImgUrl": "bladeHitEffect/blood",
+          "smokeImgUrl": "ZombiePrison/smoke",
+          "armsType": "zombie"
+        },
+        "HammerMummy_1": {
+          "cnName": "星锤干尸-飞锤",
+          "name": "HammerMummy_1",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 25,
+          "hitType": "rect",
+          "attackGap": 1.1,
+          "attackDelay": 0.4,
+          "bulletAngle": 185,
+          "bulletAngleRange": 40,
+          "bulletNum": 1,
+          "shootNum": 1,
+          "shootAngle": 0,
+          "shootPoint": "-60,-90",
+          "bulletSpeed": 30,
+          "gravity": 0.7,
+          "flipX": 1,
+          "bulletImgUrl": "HammerMummy/bullet",
+          "hitImgUrl": "bladeHitEffect/blood",
+          "hitFloorImgUrl": "bladeHitEffect/blood",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "僵尸王",
+      "bullet": {
+        "ZombieKing_floor": {
+          "cnName": "僵尸王地滚弹",
+          "name": "ZombieKing_floor",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.35,
+          "bulletAngle": 200,
+          "bulletAngleRange": 60,
+          "bulletNum": 3,
+          "shootNum": 1,
+          "shootAngle": 30,
+          "bounceD": {
+            "floor": 1000
+          },
+          "shootPoint": "-57,-50",
+          "bulletSpeed": 20,
+          "gravity": 1,
+          "flipX": 1,
+          "bulletImgUrl": "ZombieKing/bullet_floor",
+          "hitImgUrl": "boomEffect/boom1",
+          "hitFloorImgUrl": "bulletHitEffect/smoke_small",
+          "smokeImgUrl": "bulletHitEffect/spark_motion",
+          "armsType": "zombie"
+        },
+        "ZombieKing_gun": {
+          "cnName": "僵尸王-背部火炮",
+          "name": "ZombieKing_gun",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.35,
+          "bulletAngle": 200,
+          "bulletAngleRange": 20,
+          "bulletNum": 3,
+          "shootNum": 3,
+          "shootGap": 0.2,
+          "shootAngle": 30,
+          "bounceD": {
+            "floor": 999
+          },
+          "shootPoint": "-45,-106",
+          "bulletSpeed": 30,
+          "gravity": 1,
+          "flipX": 1,
+          "bulletImgUrl": "ZombieKing/bullet_floor",
+          "hitImgUrl": "boomEffect/boom1",
+          "hitFloorImgUrl": "bulletHitEffect/smoke_small",
+          "smokeImgUrl": "bulletHitEffect/spark_motion",
+          "armsType": "zombie"
+        },
+        "PetZombieKing_floor": {
+          "cnName": "僵尸王地滚弹",
+          "name": "PetZombieKing_floor",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.35,
+          "bulletAngle": 200,
+          "bulletAngleRange": 60,
+          "bulletNum": 3,
+          "shootNum": 1,
+          "shootAngle": 30,
+          "bounceD": {
+            "floor": 1000
+          },
+          "shootPoint": "-57,-50",
+          "bulletSpeed": 20,
+          "gravity": 1,
+          "flipX": 1,
+          "bulletImgUrl": "PetZombieKing/bullet_floor",
+          "hitImgUrl": "boomEffect/boom1",
+          "hitFloorImgUrl": "bulletHitEffect/smoke_small",
+          "smokeImgUrl": "bulletHitEffect/spark_motion",
+          "armsType": "zombie"
+        },
+        "PetZombieKing_gun": {
+          "cnName": "僵尸王-尸宠-背部火炮",
+          "name": "PetZombieKing_gun",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.35,
+          "bulletAngle": 200,
+          "bulletAngleRange": 20,
+          "bulletNum": 3,
+          "shootNum": 3,
+          "shootGap": 0.2,
+          "shootAngle": 30,
+          "bounceD": {
+            "floor": 999
+          },
+          "shootPoint": "-45,-106",
+          "bulletSpeed": 30,
+          "gravity": 0.3,
+          "followD": {
+            "value": 0.6
+          },
+          "flipX": 1,
+          "bulletImgUrl": "PetZombieKing/bullet_floor",
+          "hitImgUrl": "boomEffect/boom1",
+          "hitFloorImgUrl": "bulletHitEffect/smoke_small",
+          "smokeImgUrl": "bulletHitEffect/spark_motion",
+          "armsType": "zombie"
+        },
+        "PetIronZombieKing_floor": {
+          "cnName": "僵尸王地滚弹",
+          "name": "PetIronZombieKing_floor",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.35,
+          "bulletAngle": 200,
+          "bulletAngleRange": 60,
+          "bulletNum": 3,
+          "shootNum": 1,
+          "shootAngle": 30,
+          "bounceD": {
+            "floor": 1000
+          },
+          "shootPoint": "-57,-50",
+          "bulletSpeed": 20,
+          "gravity": 1,
+          "flipX": 1,
+          "bulletImgUrl": "PetIronZombieKing/bullet_floor",
+          "hitImgUrl": "boomEffect/boom1",
+          "hitFloorImgUrl": "bulletHitEffect/smoke_small",
+          "smokeImgUrl": "bulletHitEffect/spark_motion",
+          "armsType": "zombie"
+        },
+        "PetIronZombieKing_gun": {
+          "cnName": "钢铁僵尸王-尸宠-背部火炮",
+          "name": "PetIronZombieKing_gun",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.35,
+          "bulletAngle": 200,
+          "bulletAngleRange": 20,
+          "bulletNum": 3,
+          "shootNum": 3,
+          "shootGap": 0.2,
+          "shootAngle": 30,
+          "bounceD": {
+            "floor": 999
+          },
+          "shootPoint": "-45,-106",
+          "bulletSpeed": 30,
+          "gravity": 0.3,
+          "followD": {
+            "value": 0.6
+          },
+          "flipX": 1,
+          "bulletImgUrl": "PetIronZombieKing/bullet_floor",
+          "hitImgUrl": "boomEffect/boom1",
+          "hitFloorImgUrl": "bulletHitEffect/smoke_small",
+          "smokeImgUrl": "bulletHitEffect/spark_motion",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "游尸王",
+      "bullet": {
+        "SwimKing_floor": {
+          "cnName": "游尸王地滚弹",
+          "name": "SwimKing_floor",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.35,
+          "bulletAngle": 200,
+          "bulletAngleRange": 80,
+          "bulletNum": 6,
+          "shootNum": 1,
+          "shootAngle": 30,
+          "bounceD": {
+            "floor": 1000
+          },
+          "shootPoint": "-57,-50",
+          "bulletSpeed": 25,
+          "gravity": 1,
+          "flipX": 1,
+          "bulletImgUrl": "SwimKing/bullet_floor",
+          "hitImgUrl": "boomEffect/boom1",
+          "hitFloorImgUrl": "bulletHitEffect/smoke_small",
+          "smokeImgUrl": "bulletHitEffect/spark_motion",
+          "armsType": "zombie"
+        },
+        "SwimKing_gun": {
+          "cnName": "僵尸王-背部火炮",
+          "name": "SwimKing_gun",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.35,
+          "bulletAngle": 200,
+          "bulletAngleRange": 20,
+          "bulletNum": 6,
+          "shootNum": 3,
+          "shootGap": 0.2,
+          "shootAngle": 40,
+          "bounceD": {
+            "floor": 999
+          },
+          "followD": {
+            "value": 0.5,
+            "maxTime": 0.8
+          },
+          "shootPoint": "-45,-106",
+          "bulletSpeed": 20,
+          "gravity": 1,
+          "positionD": {
+            "point": [
+              {
+                "shootPoint": "-76,-97",
+                "bulletAngle": -144
+              },
+              {
+                "shootPoint": "10,-133",
+                "bulletAngle": -109
+              },
+              {
+                "shootPoint": "38,-73",
+                "bulletAngle": -21
+              }
+            ]
+          },
+          "flipX": 1,
+          "bulletImgUrl": "SwimKing/bullet_floor",
+          "hitImgUrl": "boomEffect/boom1",
+          "hitFloorImgUrl": "bulletHitEffect/smoke_small",
+          "smokeImgUrl": "bulletHitEffect/spark_motion",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "炮兵总管",
+      "bullet": {
+        "circle_inward_shell": {
+          "cnName": "圆周弹",
+          "name": "circle_inward_shell",
+          "hurtRatio": 1,
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 10,
+          "hitType": "rect",
+          "attackGap": 1,
+          "attackDelay": 0,
+          "bulletAngleRange": 360,
+          "bulletNum": 1,
+          "shootNum": 5,
+          "shootGap": 0.05,
+          "shootAngle": 0,
+          "positionD": {
+            "specialType": "circle_inward"
+          },
+          "followD": {
+            "value": 0.3
+          },
+          "penetrationGap": 1000,
+          "shootPoint": "0,0",
+          "bulletSpeed": 25,
+          "speedD": {
+            "random": 0.3
+          },
+          "gravity": 0,
+          "flipX": 1,
+          "bulletImgUrl": "bullet/missile_bullet",
+          "hitImgUrl": "boomEffect/boom1",
+          "smokeImgUrl": "skillEffect/smallFire",
+          "armsType": "zombie"
+        },
+        "sweep_shell": {
+          "cnName": "横扫弹",
+          "name": "sweep_shell",
+          "hurtRatio": 1,
+          "bulletAngle": 128,
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 1,
+          "attackDelay": 0,
+          "bulletNum": 1,
+          "shootNum": 5,
+          "shootGap": 0.05,
+          "shootAngle": 0,
+          "positionD": {
+            "point": [
+              {
+                "shootPoint": "200,-350"
+              },
+              {
+                "shootPoint": "300,-350"
+              },
+              {
+                "shootPoint": "400,-350"
+              },
+              {
+                "shootPoint": "500,-350"
+              },
+              {
+                "shootPoint": "600,-350"
+              }
+            ]
+          },
+          "penetrationGap": 1000,
+          "shootPoint": "0,0",
+          "bulletSpeed": 15,
+          "speedD": {
+            "random": 0.3
+          },
+          "gravity": 0,
+          "flipX": 1,
+          "bulletImgUrl": "bullet/missile_bullet",
+          "hitImgUrl": "boomEffect/boom1",
+          "smokeImgUrl": "bulletHitEffect/spark_motion",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "精英技能",
+      "bullet": {
+        "moreMissile_enemy": {
+          "cnName": "万弹归宗",
+          "name": "moreMissile_enemy",
+          "hurtRatio": 0.3,
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 10,
+          "hitType": "rect",
+          "attackGap": 1,
+          "attackDelay": 0,
+          "bulletAngle": 180,
+          "bulletNum": 4,
+          "shootNum": 1,
+          "shootAngle": 60,
+          "followD": {
+            "value": 2,
+            "delay": 0.2
+          },
+          "penetrationGap": 1000,
+          "shootPoint": "-30,-60",
+          "bulletSpeed": 20,
+          "speedD": {
+            "random": 0.3
+          },
+          "gravity": 0,
+          "flipX": 1,
+          "bulletImgUrl": "bullet/missile_bullet",
+          "hitImgUrl": "boomEffect/boom1",
+          "smokeImgUrl": "bulletHitEffect/smoke_small",
+          "armsType": "zombie"
+        },
+        "sweep_runAway": {
+          "cnName": "导弹召唤-任务",
+          "name": "sweep_runAway",
+          "hurtRatio": 99999999,
+          "shakeAngle": 5,
+          "bulletLife": 6,
+          "bulletWidth": 10,
+          "hitType": "rect",
+          "attackGap": 0,
+          "attackDelay": 0,
+          "bulletAngleRange": 360,
+          "bulletNum": 1,
+          "shootNum": 1,
+          "shootGap": 0,
+          "shootAngle": 0,
+          "positionD": {
+            "specialType": "circle_inward"
+          },
+          "penetrationGap": 1000,
+          "shootPoint": "0,0",
+          "bulletSpeed": 10,
+          "speedD": {
+            "random": 0.3
+          },
+          "gravity": 0,
+          "flipX": 1,
+          "bulletImgUrl": "skillEffect/imploding_enemy_bullet",
+          "hitImgUrl": "boomEffect/boom1",
+          "smokeImgUrl": "skillEffect/smallFire",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "狂战尸",
+      "bullet": {
+        "knifeBoom_FightKing": {
+          "cnName": "狂刃爆发",
+          "name": "knifeBoom_FightKing",
+          "hurtMul": 0.1,
+          "attackType": "holy",
+          "shakeAngle": 10,
+          "bulletLife": 3.5,
+          "bulletWidth": 45,
+          "hitType": "rect",
+          "attackGap": 0.1,
+          "attackDelay": 0,
+          "bulletAngle": 270,
+          "bulletNum": 8,
+          "shootNum": 1,
+          "shootAngle": 100,
+          "extendGap": 50,
+          "shootPoint": "0,-60",
+          "bulletSpeed": 15,
+          "speedD": {
+            "random": 0.3
+          },
+          "gravity": 0.3,
+          "penetrationGap": 1000,
+          "flipX": 1,
+          "bulletImgUrl": "FightKing/shoot_bullet",
+          "hitImgUrl": "bladeHitEffect/blood",
+          "smokeImgUrl": "FightKing/shoot_bullet",
+          "armsType": "zombie"
+        },
+        "FightKing_shoot": {
+          "cnName": "狂战尸-旋风宗",
+          "name": "FightKing_shoot",
+          "hurtRatio": 1,
+          "shakeAngle": 60,
+          "bulletLife": 3.5,
+          "bulletWidth": 45,
+          "hitType": "rect",
+          "attackGap": 1.3,
+          "attackDelay": 0.4,
+          "bulletAngle": 270,
+          "bulletNum": 1,
+          "shootNum": 1,
+          "shootGap": 0.05,
+          "extendGap": 0,
+          "shootPoint": "-49,-176",
+          "bulletSpeed": 15,
+          "speedD": {
+            "random": 0.2
+          },
+          "penetrationNum": 999,
+          "penetrationGap": 1000,
+          "followD": {
+            "value": 0.8,
+            "maxTime": 3
+          },
+          "flipX": 1,
+          "bulletImgUrl": "FightKing/shoot_bullet",
+          "hitImgUrl": "bladeHitEffect/blood",
+          "armsType": "zombie"
+        },
+        "PetFightKing_shoot": {
+          "cnName": "狂战尸-狂刃追踪",
+          "name": "PetFightKing_shoot",
+          "hurtRatio": 1,
+          "shakeAngle": 60,
+          "bulletLife": 4.5,
+          "bulletWidth": 50,
+          "hitType": "rect",
+          "attackGap": 1.3,
+          "attackDelay": 0.4,
+          "bulletAngle": 270,
+          "bulletNum": 3,
+          "shootNum": 1,
+          "shootGap": 0.05,
+          "extendGap": 0,
+          "shootPoint": "-49,-176",
+          "bulletSpeed": 11,
+          "speedD": {
+            "random": 0.2
+          },
+          "penetrationNum": 999,
+          "penetrationGap": 1000,
+          "followD": {
+            "value": 1.5
+          },
+          "flipX": 1,
+          "bulletImgUrl": "PetFightKing/shoot_bullet",
+          "hitImgUrl": "bladeHitEffect/blood",
+          "armsType": "zombie"
+        },
+        "PetChaosKing_shoot": {
+          "cnName": "狂战尸-狂刃追踪",
+          "name": "PetChaosKing_shoot",
+          "hurtRatio": 1,
+          "shakeAngle": 60,
+          "bulletLife": 4.5,
+          "bulletWidth": 50,
+          "hitType": "rect",
+          "attackGap": 1.3,
+          "attackDelay": 0.4,
+          "bulletAngle": 270,
+          "bulletNum": 3,
+          "shootNum": 1,
+          "shootGap": 0.05,
+          "extendGap": 0,
+          "shootPoint": "-49,-176",
+          "bulletSpeed": 11,
+          "speedD": {
+            "random": 0.2
+          },
+          "penetrationNum": 999,
+          "penetrationGap": 1000,
+          "followD": {
+            "value": 1.5
+          },
+          "flipX": 1,
+          "bulletImgUrl": "PetChaosKing/shoot_bullet",
+          "hitImgUrl": "bladeHitEffect/blood",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "鬼目游尸",
+      "bullet": {
+        "laser_ling": {
+          "cnName": "鬼目游尸-镭射眼",
+          "name": "laser_ling",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 10,
+          "hitType": "rect",
+          "attackGap": 1.2,
+          "attackDelay": 0.7,
+          "bulletAngle": 185,
+          "bulletAngleRange": 40,
+          "bulletNum": 1,
+          "shootNum": 2,
+          "shootAngle": 0,
+          "penetrationGap": 1000,
+          "bulletSpeed": 30,
+          "positionD": {
+            "point": [
+              {
+                "shootPoint": "-16,-72"
+              },
+              {
+                "shootPoint": "-28,-72"
+              }
+            ]
+          },
+          "flipX": 1,
+          "bulletImgUrl": "ZombieLing/bullet",
+          "hitImgUrl": "bulletHitEffect/yellow_motion",
+          "smokeImgUrl": "ZombieLing/smoke",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "巨毒尸",
+      "bullet": {
+        "HugePoison_shoot": {
+          "cnName": "巨毒尸-喷毒",
+          "name": "HugePoison_shoot",
+          "hurtRatio": 1,
+          "bulletAngle": 128,
+          "shakeAngle": 15,
+          "bulletAngleRange": 30,
+          "bulletLife": 3,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 1.2,
+          "attackDelay": 0.33,
+          "bulletNum": 1,
+          "shootNum": 18,
+          "shootGap": 0,
+          "shootAngle": 3,
+          "positionD": {
+            "point": [
+              {
+                "shootPoint": "-43,-144",
+                "bulletAngle": -180
+              },
+              {
+                "shootPoint": "-42,-145",
+                "bulletAngle": -176
+              },
+              {
+                "shootPoint": "-40,-147",
+                "bulletAngle": -172
+              },
+              {
+                "shootPoint": "-38,-149",
+                "bulletAngle": -168
+              },
+              {
+                "shootPoint": "-37,-152",
+                "bulletAngle": -164
+              },
+              {
+                "shootPoint": "-35,-153",
+                "bulletAngle": -160
+              },
+              {
+                "shootPoint": "-33,-155",
+                "bulletAngle": -156
+              },
+              {
+                "shootPoint": "-35,-153",
+                "bulletAngle": -160
+              },
+              {
+                "shootPoint": "-37,-152",
+                "bulletAngle": -164
+              },
+              {
+                "shootPoint": "-38,-149",
+                "bulletAngle": -168
+              },
+              {
+                "shootPoint": "-40,-147",
+                "bulletAngle": -172
+              },
+              {
+                "shootPoint": "-42,-145",
+                "bulletAngle": -176
+              },
+              {
+                "shootPoint": "-43,-144",
+                "bulletAngle": 180
+              },
+              {
+                "shootPoint": "-42,-145",
+                "bulletAngle": -176
+              },
+              {
+                "shootPoint": "-40,-147",
+                "bulletAngle": -172
+              },
+              {
+                "shootPoint": "-38,-149",
+                "bulletAngle": -168
+              },
+              {
+                "shootPoint": "-37,-152",
+                "bulletAngle": -164
+              },
+              {
+                "shootPoint": "-35,-153",
+                "bulletAngle": -160
+              },
+              {
+                "shootPoint": "-33,-155",
+                "bulletAngle": -156
+              }
+            ]
+          },
+          "penetrationGap": 1000,
+          "shootPoint": "0,0",
+          "bulletSpeed": 15,
+          "extendGap": 15,
+          "speedD": {
+            "random": 0.4,
+            "max": 15,
+            "min": 5,
+            "a": -15
+          },
+          "gravity": 0.5,
+          "followD": {
+            "value": 0.5,
+            "maxTime": 0.3
+          },
+          "flipX": 1,
+          "bulletImgUrl": "skillEffect/poisonClaw_enemy",
+          "hitImgUrl": "boomEffect/posion1",
+          "smokeImgUrl": "skillEffect/poisonClaw_enemy",
+          "armsType": "zombie"
+        },
+        "HugePoison_shake": {
+          "cnName": "巨毒尸-毒震",
+          "name": "HugePoison_shake",
+          "hurtRatio": 1,
+          "bulletAngle": 270,
+          "bulletAngleRange": 30,
+          "bulletLife": 0.001,
+          "bulletWidth": 40,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.35,
+          "bulletNum": 1,
+          "shootNum": 10,
+          "shootGap": 0,
+          "positionD": {
+            "specialType": "HugePoison_shake"
+          },
+          "skillArr": "posion7_hugePosion",
+          "shootPoint": "0,0",
+          "bulletSpeed": 0,
+          "flipX": 1,
+          "bulletImgUrl": "boomEffect/posion1",
+          "hitImgUrl": "boomEffect/posion1",
+          "armsType": "zombie"
+        },
+        "splash_HugePoison": {
+          "cnName": "巨毒尸-反溅",
+          "name": "splash_HugePoison",
+          "hurtRatio": 1,
+          "bulletAngle": 270,
+          "shakeAngle": 5,
+          "bulletLife": 1,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 0,
+          "attackDelay": 0,
+          "bulletNum": 15,
+          "shootAngle": 100,
+          "shootPoint": "0,-40",
+          "bulletSpeed": 20,
+          "extendGap": 15,
+          "speedD": {
+            "random": 0.5,
+            "max": 20,
+            "min": 5,
+            "a": -15
+          },
+          "flipX": 1,
+          "bulletImgUrl": "skillEffect/poisonClaw_enemy",
+          "hitImgUrl": "boomEffect/posion1",
+          "smokeImgUrl": "skillEffect/poisonClaw_enemy",
+          "armsType": "zombie"
+        },
+        "selfBoom_GasBomb": {
+          "cnName": "毒气弹-爆毒",
+          "name": "selfBoom_GasBomb",
+          "hurtMul": 0.4,
+          "attackType": "holy",
+          "shakeAngle": 5,
+          "bulletLife": 0.001,
+          "bulletWidth": 0,
+          "hitType": "rect",
+          "attackGap": 0,
+          "attackDelay": 0,
+          "bulletAngle": 270,
+          "bulletNum": 1,
+          "shootNum": 1,
+          "shootAngle": 0,
+          "boomD": {
+            "selfB": true,
+            "radius": 160
+          },
+          "skillArr": "slowMove_GasBomb",
+          "shootPoint": "0,0",
+          "bulletSpeed": 0,
+          "flipX": 1,
+          "bulletImgUrl": "bullet/missile_bullet",
+          "hitImgUrl": "boomEffect/posion3",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "毒蛛",
+      "bullet": {
+        "SpiderKing_shoot": {
+          "cnName": "霸王毒蛛-喷毒",
+          "name": "SpiderKing_shoot",
+          "hurtRatio": 1,
+          "bulletAngle": -170,
+          "shakeAngle": 15,
+          "bulletAngleRange": 20,
+          "bulletLife": 3,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 0.6,
+          "attackDelay": 0.2,
+          "bulletNum": 5,
+          "shootNum": 1,
+          "shootGap": 0,
+          "shootAngle": 10,
+          "shootPoint": "-54,-54",
+          "penetrationGap": 1000,
+          "bulletSpeed": 30,
+          "speedD": {
+            "random": 0.5,
+            "max": 30,
+            "min": 15,
+            "a": -15
+          },
+          "gravity": 0.2,
+          "flipX": 1,
+          "bulletImgUrl": "skillEffect/poisonClaw_enemy",
+          "hitImgUrl": "boomEffect/posion1",
+          "smokeImgUrl": "skillEffect/poisonClaw_enemy",
+          "armsType": "zombie"
+        },
+        "acidRain_SpiderKing": {
+          "cnName": "酸雨",
+          "name": "acidRain_SpiderKing",
+          "hurtMul": 0.17,
+          "attackType": "holy",
+          "bulletAngle": 90,
+          "shakeAngle": 3,
+          "bulletLife": 6,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 0.5,
+          "attackDelay": 0,
+          "bulletNum": 1,
+          "shootNum": 10,
+          "shootGap": 0.05,
+          "shootAngle": 0,
+          "positionD": {
+            "point": [
+              {
+                "shootPoint": "-400,-1250"
+              },
+              {
+                "shootPoint": "-300,-1250"
+              },
+              {
+                "shootPoint": "-200,-1250"
+              },
+              {
+                "shootPoint": "-100,-1250"
+              },
+              {
+                "shootPoint": "0,-1250"
+              },
+              {
+                "shootPoint": "100,-1250"
+              },
+              {
+                "shootPoint": "200,-1250"
+              },
+              {
+                "shootPoint": "300,-1250"
+              },
+              {
+                "shootPoint": "400,-1250"
+              },
+              {
+                "shootPoint": "500,-1250"
+              }
+            ]
+          },
+          "penetrationGap": 1000,
+          "shootPoint": "0,0",
+          "bulletSpeed": 10,
+          "speedD": {
+            "random": 0.3
+          },
+          "gravity": 0,
+          "flipX": 1,
+          "bulletImgUrl": "skillEffect/poisonousFog_hero",
+          "hitImgUrl": "boomEffect/posion1",
+          "smokeImgUrl": "skillEffect/poisonousFog_hero",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "暴君",
+      "bullet": {
+        "Skeleton_bullet": {
+          "cnName": "骷髅-跟踪导弹",
+          "name": "Skeleton_bullet",
+          "hurtRatio": 1,
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.4,
+          "bulletAngle": 175,
+          "bulletAngleRange": 0,
+          "bulletNum": 3,
+          "shootNum": 1,
+          "shootAngle": 20,
+          "bounceD": {
+            "floor": 6
+          },
+          "followD": {
+            "value": 1,
+            "maxTime": 0.6
+          },
+          "shootPoint": "-97,-84",
+          "bulletSpeed": 35,
+          "flipX": 1,
+          "bulletImgUrl": "rocket/rocketBullet",
+          "hitImgUrl": "boomEffect/boom2",
+          "hitFloorImgUrl": "boomEffect/boom1",
+          "smokeImgUrl": "skillEffect/smallFire",
+          "armsType": "zombie"
+        },
+        "Skeleton_machine": {
+          "index": 0,
+          "name": "Skeleton_machine",
+          "cnName": "骷髅-散弹枪",
+          "hurtRatio": 1,
+          "bulletLife": 0.001,
+          "hitType": "longLine",
+          "bulletWidth": 800,
+          "bulletShakeWidth": 100,
+          "shootPoint": "-97,-84",
+          "bulletAngle": 175,
+          "attackGap": 1,
+          "attackDelay": 0.4,
+          "bulletNum": 6,
+          "shootNum": 4,
+          "shootGap": 0.07,
+          "shootAngle": 20,
+          "shakeAngle": 3,
+          "bulletSpeed": 0,
+          "bounceD": {
+            "floor": 6,
+            "body": 0,
+            "num": 0
+          },
+          "flipX": 1,
+          "lineD": {
+            "lightColor": 65535,
+            "size": 2,
+            "lightSize": 6
+          },
+          "bulletImgUrl": "longLine",
+          "hitImgUrl": "bulletHitEffect/yellow_motion",
+          "armsType": "zombie"
+        },
+        "knife_skeleton": {
+          "cnName": "骷髅-地狱剑",
+          "name": "knife_skeleton",
+          "hurtRatio": 1,
+          "shakeAngle": 5,
+          "bulletLife": 0.04,
+          "bulletWidth": 100,
+          "hitType": "rect",
+          "attackGap": 0,
+          "attackDelay": 0,
+          "bulletAngle": 270,
+          "bulletNum": 1,
+          "shootNum": 1,
+          "shootAngle": 0,
+          "penetrationGap": 1000,
+          "shootPoint": "0,0",
+          "bulletSpeed": 0,
+          "flipX": 1,
+          "imgClearDelay": 0.4,
+          "bulletImgUrl": "Skeleton/knifeEffect",
+          "hitImgUrl": "bladeHitEffect/blood",
+          "armsType": "zombie"
+        },
+        "knife_skeleton_extra": {
+          "cnName": "骷髅-地狱剑-副本",
+          "name": "knife_skeleton_extra",
+          "hurtMul": 0.25,
+          "attackType": "holy",
+          "shakeAngle": 5,
+          "bulletLife": 0.04,
+          "bulletWidth": 100,
+          "hitType": "rect",
+          "attackGap": 0,
+          "attackDelay": 0,
+          "bulletAngle": 270,
+          "bulletNum": 1,
+          "shootNum": 1,
+          "shootAngle": 0,
+          "penetrationGap": 1000,
+          "skillArr": "knife_skeleton_hammer",
+          "shootPoint": "0,0",
+          "bulletSpeed": 0,
+          "flipX": 1,
+          "imgClearDelay": 0.4,
+          "bulletImgUrl": "Skeleton/knifeEffect",
+          "hitImgUrl": "bladeHitEffect/blood",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "钢铁僵尸王",
+      "bullet": {
+        "IronZombieKing_floor": {
+          "cnName": "僵尸王地滚弹",
+          "name": "IronZombieKing_floor",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.35,
+          "bulletAngle": 200,
+          "bulletAngleRange": 60,
+          "bulletNum": 3,
+          "shootNum": 1,
+          "shootAngle": 30,
+          "bounceD": {
+            "floor": 1000
+          },
+          "shootPoint": "-57,-50",
+          "bulletSpeed": 20,
+          "gravity": 1,
+          "flipX": 1,
+          "bulletImgUrl": "IronZombieKing/bullet_floor",
+          "hitImgUrl": "boomEffect/boom1",
+          "hitFloorImgUrl": "bulletHitEffect/smoke_small",
+          "smokeImgUrl": "bulletHitEffect/spark_motion",
+          "armsType": "zombie"
+        },
+        "IronZombieKing_gun": {
+          "cnName": "钢铁僵尸王-背部火炮",
+          "name": "IronZombieKing_gun",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.35,
+          "bulletAngle": 200,
+          "bulletAngleRange": 20,
+          "bulletNum": 3,
+          "shootNum": 3,
+          "shootGap": 0.2,
+          "shootAngle": 30,
+          "bounceD": {
+            "floor": 999
+          },
+          "shootPoint": "-45,-106",
+          "bulletSpeed": 30,
+          "gravity": 1,
+          "flipX": 1,
+          "bulletImgUrl": "IronZombieKing/bullet_floor",
+          "hitImgUrl": "boomEffect/boom1",
+          "hitFloorImgUrl": "bulletHitEffect/smoke_small",
+          "smokeImgUrl": "bulletHitEffect/spark_motion",
+          "armsType": "zombie"
+        },
+        "IronZombieKing_bitBack": {
+          "cnName": "钢铁僵尸王-磁力反击",
+          "name": "IronZombieKing_bitBack",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 1.8,
+          "attackDelay": 1.4,
+          "bulletAngle": 270,
+          "bulletAngleRange": 30,
+          "extendGap": 30,
+          "bulletNum": 30,
+          "shootNum": 1,
+          "shootAngle": 150,
+          "bounceD": {
+            "floor": 999
+          },
+          "penetrationGap": 1000,
+          "speedD": {
+            "random": 0.2
+          },
+          "shootPoint": "0,-73",
+          "bulletSpeed": 30,
+          "followD": {
+            "value": 0.2
+          },
+          "flipX": 1,
+          "bulletImgUrl": "IronZombieKing/bullet_floor",
+          "hitImgUrl": "boomEffect/boom1",
+          "hitFloorImgUrl": "bulletHitEffect/smoke_small",
+          "smokeImgUrl": "bulletHitEffect/spark_motion",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "飓风巫尸",
+      "bullet": {
+        "TyphoonWitch_shoot1": {
+          "cnName": "飓风巫尸-能量波",
+          "name": "TyphoonWitch_shoot1",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 1.3,
+          "attackDelay": 0.3,
+          "bulletAngle": 180,
+          "bulletAngleRange": 20,
+          "bulletNum": 1,
+          "shootNum": 3,
+          "shootGap": 0.25,
+          "bounceD": {
+            "floor": 10
+          },
+          "shootPoint": "-63,-96",
+          "bulletSpeed": 30,
+          "followD": {
+            "value": 0.2
+          },
+          "flipX": 1,
+          "bulletImgUrl": "TyphoonWitch/bullet1",
+          "hitImgUrl": "bulletHitEffect/energy",
+          "hitFloorImgUrl": "bulletHitEffect/energy",
+          "smokeImgUrl": "skillEffect/witchSmoke",
+          "armsType": "zombie"
+        },
+        "TyphoonWitch_shoot2": {
+          "cnName": "飓风巫尸-聚能波",
+          "name": "TyphoonWitch_shoot2",
+          "shakeAngle": 1,
+          "bulletLife": 3,
+          "bulletWidth": 30,
+          "hitType": "rect",
+          "attackGap": 2.2,
+          "attackDelay": 1.6,
+          "bulletAngle": 180,
+          "bulletAngleRange": 10,
+          "bulletNum": 1,
+          "penetrationGap": 1000,
+          "skillArr": "emp_wind",
+          "shootPoint": "-73,-96",
+          "bulletSpeed": 35,
+          "targetShakeValue": 20,
+          "flipX": 1,
+          "bulletImgUrl": "TyphoonWitch/bullet2",
+          "hitImgUrl": "bulletHitEffect/energy",
+          "hitFloorImgUrl": "bulletHitEffect/energy",
+          "smokeImgUrl": "TyphoonWitch/smoke2",
+          "armsType": "zombie"
+        },
+        "TyphoonWitch_bat": {
+          "cnName": "飓风巫尸-蝙蝠阵",
+          "name": "TyphoonWitch_bat",
+          "shakeAngle": 15,
+          "bulletLife": 3,
+          "bulletWidth": 25,
+          "hitType": "rect",
+          "attackGap": 1.6,
+          "attackDelay": 0.5,
+          "bulletAngle": 180,
+          "bulletAngleRange": 20,
+          "bulletNum": 1,
+          "shootNum": 12,
+          "shootGap": 0.03,
+          "positionD": {
+            "specialType": "TyphoonWitch_bat"
+          },
+          "penetrationGap": 1000,
+          "penetrationNum": 999,
+          "twoHitGap": 0.5,
+          "shootPoint": "255,-81",
+          "bulletSpeed": 20,
+          "speedD": {
+            "random": 0.3
+          },
+          "followD": {
+            "value": 0.25
+          },
+          "skillArr": "blindness_skeleton",
+          "flipX": 1,
+          "bulletImgUrl": "TyphoonWitch/batBullet1",
+          "bulletLeftImgUrl": "TyphoonWitch/batBullet2",
+          "hitImgUrl": "bladeHitEffect/blood",
+          "armsType": "zombie"
+        },
+        "TyphoonWitch_wind": {
+          "cnName": "飓风巫尸-飓风",
+          "name": "TyphoonWitch_wind",
+          "shakeAngle": 1,
+          "bulletLife": 13,
+          "bulletWidth": 60,
+          "hitType": "rect",
+          "attackGap": 1.4,
+          "attackDelay": 0.55,
+          "bulletAngle": 180,
+          "bulletNum": 1,
+          "penetrationNum": 999,
+          "penetrationGap": 1000,
+          "twoHitGap": 0.2,
+          "shootPoint": "-151,-55",
+          "bulletSpeed": 15,
+          "speedD": {
+            "max": 25,
+            "min": 4,
+            "a": -4
+          },
+          "skillArr": "slowMove_wind,silence_wind",
+          "flipX": 1,
+          "bulletImgUrl": "TyphoonWitch/windEffect",
+          "hitImgUrl": "bulletHitEffect/energy",
+          "armsType": "zombie"
+        },
+        "TyphoonWitch_anger": {
+          "cnName": "巫师之怒",
+          "name": "TyphoonWitch_anger",
+          "shakeAngle": 40,
+          "bulletLife": 3.5,
+          "bulletWidth": 25,
+          "hitType": "rect",
+          "attackGap": 0.9,
+          "attackDelay": 0.15,
+          "bulletAngle": 270,
+          "bulletNum": 3,
+          "shootAngle": 90,
+          "shootNum": 30,
+          "shootGap": 0.01,
+          "penetrationGap": 1000,
+          "penetrationNum": 999,
+          "twoHitGap": 0.5,
+          "shootPoint": "0,-60",
+          "bulletSpeed": 20,
+          "extendGap": 30,
+          "speedD": {
+            "max": 20,
+            "min": 6,
+            "a": 4,
+            "random": 0.3
+          },
+          "followD": {
+            "value": 0.2
+          },
+          "skillArr": "wizardAnger_wind_blood,blindness_skeleton",
+          "flipX": 1,
+          "bulletImgUrl": "TyphoonWitch/batBullet1",
+          "bulletLeftImgUrl": "TyphoonWitch/batBullet2",
+          "hitImgUrl": "bladeHitEffect/blood",
+          "armsType": "zombie"
+        },
+        "PetTyphoonWitch_shoot1": {
+          "cnName": "飓风巫尸-能量波",
+          "name": "PetTyphoonWitch_shoot1",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 1.3,
+          "attackDelay": 0.3,
+          "bulletAngle": 180,
+          "bulletAngleRange": 20,
+          "bulletNum": 1,
+          "shootNum": 3,
+          "shootGap": 0.25,
+          "bounceD": {
+            "floor": 10
+          },
+          "shootPoint": "-63,-96",
+          "bulletSpeed": 30,
+          "followD": {
+            "value": 0.2
+          },
+          "flipX": 1,
+          "bulletImgUrl": "PetTyphoonWitch/bullet1",
+          "hitImgUrl": "bulletHitEffect/energy",
+          "hitFloorImgUrl": "bulletHitEffect/energy",
+          "smokeImgUrl": "skillEffect/witchSmoke",
+          "armsType": "zombie"
+        },
+        "PetTyphoonWitch_shoot2": {
+          "cnName": "飓风巫尸-聚能波",
+          "name": "PetTyphoonWitch_shoot2",
+          "shakeAngle": 1,
+          "bulletLife": 3,
+          "bulletWidth": 30,
+          "hitType": "rect",
+          "attackGap": 2.2,
+          "attackDelay": 1.6,
+          "bulletAngle": 180,
+          "bulletAngleRange": 10,
+          "bulletNum": 1,
+          "penetrationGap": 1000,
+          "skillArr": "emp_wind",
+          "shootPoint": "-73,-96",
+          "bulletSpeed": 35,
+          "targetShakeValue": 20,
+          "followD": {
+            "value": 0.5
+          },
+          "flipX": 1,
+          "bulletImgUrl": "PetTyphoonWitch/bullet2",
+          "hitImgUrl": "bulletHitEffect/energy",
+          "hitFloorImgUrl": "bulletHitEffect/energy",
+          "smokeImgUrl": "PetTyphoonWitch/smoke2",
+          "armsType": "zombie"
+        },
+        "PetTyphoonWitch_wind": {
+          "cnName": "飓风巫尸-飓风",
+          "name": "PetTyphoonWitch_wind",
+          "shakeAngle": 1,
+          "bulletLife": 13,
+          "bulletWidth": 60,
+          "hitType": "rect",
+          "attackGap": 1.4,
+          "attackDelay": 0.55,
+          "bulletAngle": 180,
+          "bulletNum": 1,
+          "penetrationNum": 999,
+          "penetrationGap": 1000,
+          "twoHitGap": 0.2,
+          "shootPoint": "-151,-55",
+          "bulletSpeed": 8,
+          "speedD": {
+            "max": 8,
+            "min": 4,
+            "a": -4
+          },
+          "skillArr": "slowMove_wind,silence_wind",
+          "followD": {
+            "value": 0.5
+          },
+          "flipX": 1,
+          "bulletImgUrl": "PetTyphoonWitch/windEffect",
+          "hitImgUrl": "bulletHitEffect/energy",
+          "armsType": "zombie"
+        },
+        "PetTyphoonWitch_anger": {
+          "cnName": "宠-巫师之怒",
+          "name": "PetTyphoonWitch_anger",
+          "shakeAngle": 40,
+          "bulletLife": 3.5,
+          "bulletWidth": 25,
+          "hitType": "rect",
+          "attackGap": 0.9,
+          "attackDelay": 0.15,
+          "bulletAngle": 270,
+          "bulletNum": 3,
+          "shootAngle": 90,
+          "shootNum": 30,
+          "shootGap": 0.01,
+          "penetrationGap": 1000,
+          "penetrationNum": 999,
+          "twoHitGap": 0.5,
+          "shootPoint": "0,-60",
+          "bulletSpeed": 20,
+          "extendGap": 30,
+          "speedD": {
+            "max": 20,
+            "min": 6,
+            "a": 4,
+            "random": 0.3
+          },
+          "followD": {
+            "value": 0.2
+          },
+          "skillArr": "wizardAnger_wind_blood,blindness_skeleton",
+          "flipX": 1,
+          "bulletImgUrl": "PetTyphoonWitch/batBullet1",
+          "bulletLeftImgUrl": "PetTyphoonWitch/batBullet2",
+          "hitImgUrl": "bladeHitEffect/blood",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "铁魁",
+      "bullet": {
+        "PetIronChief_shoot1": {
+          "name": "PetIronChief_shoot1",
+          "cnName": "铁魁-散弹枪",
+          "hurtRatio": 0.33,
+          "bulletLife": 0.001,
+          "hitType": "longLine",
+          "bulletWidth": 800,
+          "bulletShakeWidth": 100,
+          "shootPoint": "-82,2",
+          "bulletAngle": 179,
+          "attackGap": 0.7,
+          "attackDelay": 0.27,
+          "bulletNum": 6,
+          "shootAngle": 20,
+          "shakeAngle": 3,
+          "bulletSpeed": 0,
+          "bounceD": {
+            "floor": 6,
+            "body": 0,
+            "num": 0
+          },
+          "flipX": 1,
+          "lineD": {
+            "lightColor": 65535,
+            "size": 2,
+            "lightSize": 6
+          },
+          "bulletImgUrl": "longLine",
+          "hitImgUrl": "bulletHitEffect/yellow_motion",
+          "armsType": "zombie"
+        },
+        "PetIronChief_shoot2": {
+          "cnName": "铁魁-跟踪导弹",
+          "name": "PetIronChief_shoot2",
+          "hurtRatio": 0.3,
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.27,
+          "bulletAngle": 179,
+          "bulletNum": 3,
+          "shootNum": 1,
+          "shootAngle": 20,
+          "bounceD": {
+            "floor": 6
+          },
+          "followD": {
+            "value": 1,
+            "maxTime": 0.6
+          },
+          "penetrationGap": 1000,
+          "shootPoint": "-44,-11",
+          "bulletSpeed": 35,
+          "flipX": 1,
+          "bulletImgUrl": "rocket/rocketBullet",
+          "hitImgUrl": "boomEffect/boom2",
+          "hitFloorImgUrl": "boomEffect/boom1",
+          "smokeImgUrl": "skillEffect/smallFire",
+          "armsType": "zombie"
+        },
+        "PetIronChiefThird_shoot1": {
+          "name": "PetIronChiefThird_shoot1",
+          "cnName": "哈迪斯-光波",
+          "hurtRatio": 1,
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 60,
+          "hitType": "rect",
+          "attackGap": 0.8,
+          "attackDelay": 0.5,
+          "bulletAngle": 179,
+          "bulletNum": 1,
+          "bounceD": {
+            "floor": 6
+          },
+          "penetrationNum": 999,
+          "penetrationGap": 1000,
+          "twoHitGap": 0.2,
+          "shootPoint": "-120,-67",
+          "bulletSpeed": 30,
+          "flipX": 1,
+          "bulletImgUrl": "PetIronChiefThird/bullet",
+          "hitImgUrl": "bulletHitEffect/energy",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "爆骷",
+      "bullet": {
+        "PetBoomSkull_shoot1": {
+          "cnName": "爆骷-跟踪导弹",
+          "name": "PetBoomSkull_shoot1",
+          "hurtRatio": 0.3,
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 40,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.3,
+          "bulletAngle": 179,
+          "bulletNum": 2,
+          "shootNum": 1,
+          "shootAngle": 20,
+          "followD": {
+            "value": 1
+          },
+          "penetrationGap": 1000,
+          "boomD": {
+            "selfB": true,
+            "bodyB": true,
+            "radius": 140
+          },
+          "shootPoint": "-78,-90",
+          "bulletSpeed": 30,
+          "flipX": 1,
+          "bulletImgUrl": "PetBoomSkull/bullet1",
+          "hitImgUrl": "boomEffect/boom2",
+          "smokeImgUrl": "bulletHitEffect/smoke_small",
+          "armsType": "zombie"
+        },
+        "PetBoomSkullSecond_shoot1": {
+          "cnName": "爆骷-跟踪导弹",
+          "name": "PetBoomSkullSecond_shoot1",
+          "hurtRatio": 0.3,
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 40,
+          "hitType": "rect",
+          "attackGap": 0.7,
+          "attackDelay": 0.3,
+          "bulletAngle": 179,
+          "bulletNum": 2,
+          "shootNum": 1,
+          "shootAngle": 20,
+          "followD": {
+            "value": 1
+          },
+          "penetrationGap": 1000,
+          "boomD": {
+            "selfB": true,
+            "bodyB": true,
+            "radius": 140
+          },
+          "shootPoint": "-78,-90",
+          "bulletSpeed": 30,
+          "flipX": 1,
+          "bulletImgUrl": "PetBoomSkullSecond/bullet1",
+          "hitImgUrl": "boomEffect/boom2",
+          "smokeImgUrl": "bulletHitEffect/smoke_small",
+          "armsType": "zombie"
+        },
+        "PetBoomSkullThird_shoot1": {
+          "cnName": "爆骷X3-跟踪导弹",
+          "name": "PetBoomSkullThird_shoot1",
+          "hurtRatio": 0.3,
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 40,
+          "hitType": "rect",
+          "attackGap": 0.8,
+          "attackDelay": 0.4,
+          "bulletAngle": 179,
+          "bulletNum": 1,
+          "shootNum": 1,
+          "shootAngle": 20,
+          "followD": {
+            "value": 1
+          },
+          "penetrationGap": 1000,
+          "boomD": {
+            "selfB": true,
+            "bodyB": true,
+            "radius": 200
+          },
+          "shootPoint": "-108,-173",
+          "bulletSpeed": 35,
+          "flipX": 1,
+          "bulletImgUrl": "PetBoomSkullThird/bullet1",
+          "hitImgUrl": "boomEffect/boom1",
+          "smokeImgUrl": "bulletHitEffect/smoke_small",
+          "armsType": "zombie"
+        },
+        "PetBoomSkullThird_machine": {
+          "index": 0,
+          "name": "PetBoomSkullThird_machine",
+          "cnName": "爆骷X3-机关枪",
+          "hurtRatio": 1,
+          "bulletLife": 0.001,
+          "hitType": "longLine",
+          "bulletWidth": 800,
+          "bulletShakeWidth": 100,
+          "shootPoint": "-97,-84",
+          "bulletAngle": 175,
+          "attackGap": 1.3,
+          "attackDelay": 0.5,
+          "bulletNum": 3,
+          "shootNum": 7,
+          "shootGap": 0.08,
+          "shootAngle": 10,
+          "shakeAngle": 3,
+          "bulletSpeed": 0,
+          "positionD": {
+            "point": [
+              {
+                "shootPoint": "-69,-48",
+                "bulletAngle": 145
+              },
+              {
+                "shootPoint": "-78,-67",
+                "bulletAngle": 152
+              },
+              {
+                "shootPoint": "-86,-87",
+                "bulletAngle": 159
+              },
+              {
+                "shootPoint": "-94,-106",
+                "bulletAngle": 166
+              },
+              {
+                "shootPoint": "-99,-119",
+                "bulletAngle": 171
+              },
+              {
+                "shootPoint": "-103,-133",
+                "bulletAngle": 176
+              },
+              {
+                "shootPoint": "-106,-142",
+                "bulletAngle": 179
+              }
+            ]
+          },
+          "bounceD": {
+            "floor": 6,
+            "body": 0,
+            "num": 0
+          },
+          "flipX": 1,
+          "lineD": {
+            "lightColor": 65535,
+            "size": 2,
+            "lightSize": 6
+          },
+          "bulletImgUrl": "longLine",
+          "hitImgUrl": "bulletHitEffect/yellow_motion",
+          "armsType": "zombie"
+        },
+        "PetBoomSkullThird_shoot3": {
+          "cnName": "爆骷X3-跟踪导弹",
+          "name": "PetBoomSkullThird_shoot3",
+          "hurtRatio": 0.3,
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 40,
+          "hitType": "rect",
+          "attackGap": 1,
+          "attackDelay": 0.5,
+          "bulletAngle": 179,
+          "bulletNum": 1,
+          "shootNum": 2,
+          "shootGap": 0.16,
+          "followD": {
+            "value": 1
+          },
+          "shootPoint": "-100,-185",
+          "bulletSpeed": 25,
+          "positionD": {
+            "point": [
+              {
+                "shootPoint": "-100,-185"
+              },
+              {
+                "shootPoint": "-100,-156"
+              }
+            ]
+          },
+          "flipX": 1,
+          "bulletImgUrl": "PetBoomSkullThird/bullet3",
+          "hitImgUrl": "boomEffect/boom2",
+          "smokeImgUrl": "bulletHitEffect/smoke_small",
+          "armsType": "zombie"
+        },
+        "PetBoomSkull_endlessBombing": {
+          "cnName": "爆骷-无尽轰炸",
+          "name": "PetBoomSkull_endlessBombing",
+          "hurtRatio": 1,
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 40,
+          "hitType": "rect",
+          "attackGap": 5,
+          "attackDelay": 0,
+          "bulletAngle": 179,
+          "bulletNum": 1,
+          "shootNum": 50,
+          "shootGap": 0.1,
+          "followD": {
+            "value": 1
+          },
+          "penetrationGap": 1000,
+          "shootPoint": "-78,-90",
+          "bulletSpeed": 30,
+          "flipX": 1,
+          "bulletImgUrl": "skillEffect/PetBoomSkull_bullet2",
+          "hitImgUrl": "boomEffect/boom1",
+          "hitFloorImgUrl": "boomEffect/boom1",
+          "smokeImgUrl": "bulletHitEffect/smoke_small",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "雷克",
+      "bullet": {
+        "shoot_PetLake": {
+          "cnName": "雷克-射击",
+          "name": "shoot_PetLake",
+          "shakeAngle": 1,
+          "bulletLife": 2,
+          "bulletWidth": 40,
+          "hitType": "rect",
+          "attackGap": 0.9,
+          "attackDelay": 0.5,
+          "bulletAngle": 180,
+          "bulletAngleRange": 30,
+          "bulletNum": 1,
+          "penetrationGap": 1000,
+          "shootPoint": "-59,-51",
+          "bulletSpeed": 30,
+          "followD": {
+            "value": 0.3
+          },
+          "flipX": 1,
+          "bulletImgUrl": "PetLake/bullet",
+          "hitImgUrl": "bulletHitEffect/energy",
+          "armsType": "zombie"
+        },
+        "lightBall_PetLake": {
+          "cnName": "雷克-辐射光球",
+          "name": "lightBall_PetLake",
+          "shakeAngle": 1,
+          "bulletLife": 13,
+          "bulletWidth": 60,
+          "hitType": "rect",
+          "attackGap": 1,
+          "attackDelay": 0.55,
+          "bulletAngle": 180,
+          "bulletNum": 1,
+          "penetrationNum": 999,
+          "penetrationGap": 1000,
+          "twoHitGap": 0.1,
+          "followD": {
+            "value": 1,
+            "maxTime": 2
+          },
+          "shootPoint": "-92,-43",
+          "bulletSpeed": 10,
+          "speedD": {
+            "max": 25,
+            "min": 1,
+            "a": -4
+          },
+          "skillArr": "lightBall_PetLake_slow,silence_wind",
+          "flipX": 1,
+          "bulletImgUrl": "PetLake/ball",
+          "hitImgUrl": "bulletHitEffect/energy",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "雷尔",
+      "bullet": {
+        "shoot_PetLaer": {
+          "cnName": "雷尔-射击",
+          "name": "shoot_PetLaer",
+          "shakeAngle": 1,
+          "bulletLife": 2,
+          "bulletWidth": 40,
+          "hitType": "rect",
+          "attackGap": 0.9,
+          "attackDelay": 0.5,
+          "bulletAngle": 180,
+          "bulletAngleRange": 30,
+          "bulletNum": 1,
+          "penetrationGap": 1000,
+          "shootPoint": "-86,-55",
+          "bulletSpeed": 30,
+          "followD": {
+            "value": 0.3
+          },
+          "flipX": 1,
+          "bulletImgUrl": "PetLaer/bullet",
+          "hitImgUrl": "bulletHitEffect/energy",
+          "armsType": "zombie"
+        },
+        "lightBall_PetLaer": {
+          "cnName": "雷尔-辐射光球",
+          "name": "lightBall_PetLaer",
+          "shakeAngle": 1,
+          "bulletLife": 13,
+          "bulletWidth": 60,
+          "hitType": "rect",
+          "attackGap": 1,
+          "attackDelay": 0.55,
+          "bulletAngle": 180,
+          "bulletNum": 1,
+          "penetrationNum": 999,
+          "penetrationGap": 1000,
+          "twoHitGap": 0.1,
+          "followD": {
+            "value": 1,
+            "maxTime": 2
+          },
+          "shootPoint": "-92,-43",
+          "bulletSpeed": 10,
+          "speedD": {
+            "max": 25,
+            "min": 1,
+            "a": -4
+          },
+          "skillArr": "lightBall_PetLake_slow,silence_wind",
+          "flipX": 1,
+          "bulletImgUrl": "PetLaer/ball",
+          "hitImgUrl": "bulletHitEffect/energy",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "无疆骑士",
+      "bullet": {
+        "Knights_shoot1": {
+          "cnName": "无疆骑士-流星拳",
+          "name": "Knights_shoot1",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 30,
+          "hitType": "rect",
+          "attackGap": 1.35,
+          "attackDelay": 0.27,
+          "bulletAngle": 157,
+          "bulletAngleRange": 20,
+          "bulletNum": 3,
+          "shootNum": 2,
+          "shootAngle": 20,
+          "shootGap": 0.39,
+          "penetrationGap": 1000,
+          "shootPoint": "-106,-199",
+          "bulletSpeed": 35,
+          "followD": {
+            "value": 0.5
+          },
+          "flipX": 1,
+          "bulletImgUrl": "Knights/bullet1",
+          "hitImgUrl": "boomEffect/boom2",
+          "hitFloorImgUrl": "boomEffect/boom1",
+          "smokeImgUrl": "bulletHitEffect/smoke_small",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "尸狼",
+      "bullet": {
+        "ZombieWolf_shoot": {
+          "cnName": "嗜血尸狼-喷毒",
+          "name": "ZombieWolf_shoot",
+          "hurtRatio": 1,
+          "bulletAngle": -175,
+          "shakeAngle": 5,
+          "bulletAngleRange": 20,
+          "bulletLife": 3,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 1.2,
+          "attackDelay": 0.33,
+          "bulletNum": 1,
+          "shootNum": 9,
+          "shootGap": 0,
+          "shootAngle": 5,
+          "penetrationGap": 1000,
+          "shootPoint": "-73,-31",
+          "bulletSpeed": 20,
+          "speedD": {
+            "random": 0.5,
+            "max": 20,
+            "min": 5,
+            "a": -10
+          },
+          "followD": {
+            "value": 0.5,
+            "maxTime": 0.3
+          },
+          "extendGap": 15,
+          "flipX": 1,
+          "bulletImgUrl": "skillEffect/poisonClaw_enemy",
+          "hitImgUrl": "boomEffect/posion1",
+          "smokeImgUrl": "skillEffect/poisonClaw_enemy",
+          "armsType": "zombie"
+        },
+        "BoomWolf_bullet": {
+          "cnName": "火炮尸狼-火炮",
+          "name": "BoomWolf_bullet",
+          "shakeAngle": 5,
+          "bulletLife": 2,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 1.1,
+          "attackDelay": 0.27,
+          "bulletAngle": 200,
+          "bulletAngleRange": 20,
+          "bulletNum": 3,
+          "shootNum": 3,
+          "shootGap": 0.2,
+          "shootAngle": 30,
+          "bounceD": {
+            "floor": 999
+          },
+          "shootPoint": "-49,-61",
+          "bulletSpeed": 30,
+          "gravity": 0.6,
+          "flipX": 1,
+          "bulletImgUrl": "BoomWolf/bullet_floor",
+          "hitImgUrl": "boomEffect/boom1",
+          "hitFloorImgUrl": "bulletHitEffect/smoke_small",
+          "smokeImgUrl": "bulletHitEffect/spark_motion",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "狂战狼",
+      "bullet": {
+        "summonWolf_FightWolf": {
+          "cnName": "狂战狼-召唤群狼",
+          "name": "summonWolf_FightWolf",
+          "hurtRatio": 0,
+          "hurtMul": 0.05,
+          "bulletAngle": 179.9,
+          "shakeAngle": 0,
+          "bulletLife": 4,
+          "bulletWidth": 40,
+          "hitType": "rect",
+          "attackGap": 1.8,
+          "attackDelay": 0.3,
+          "bulletNum": 1,
+          "shootNum": 20,
+          "shootGap": 0.05,
+          "shootAngle": 0,
+          "positionD": {
+            "specialType": "summonWolf_FightWolf"
+          },
+          "penetrationGap": 1000,
+          "penetrationNum": 999,
+          "twoHitGap": 0.5,
+          "shootPoint": "0,0",
+          "bulletSpeed": 23,
+          "speedD": {
+            "random": 0.2
+          },
+          "gravity": 0,
+          "flipX": 1,
+          "bulletImgUrl": "generalEffect/wolfSummonBullet",
+          "bulletLeftImgUrl": "generalEffect/wolfSummonBullet2",
+          "hitImgUrl": "bulletHitEffect/energy",
+          "armsType": "zombie"
+        },
+        "summonWolf_FightWolf_slow": {
+          "cnName": "狂战狼-召唤群狼",
+          "name": "summonWolf_FightWolf_slow",
+          "hurtRatio": 0,
+          "hurtMul": 0.05,
+          "bulletAngle": 179.9,
+          "shakeAngle": 0,
+          "bulletLife": 4,
+          "bulletWidth": 40,
+          "hitType": "rect",
+          "attackGap": 1.8,
+          "attackDelay": 0.3,
+          "bulletNum": 1,
+          "shootNum": 20,
+          "shootGap": 0.05,
+          "shootAngle": 0,
+          "positionD": {
+            "specialType": "summonWolf_FightWolf"
+          },
+          "penetrationGap": 1000,
+          "penetrationNum": 999,
+          "twoHitGap": 0.5,
+          "shootPoint": "0,0",
+          "bulletSpeed": 23,
+          "speedD": {
+            "random": 0.2
+          },
+          "gravity": 0,
+          "flipX": 1,
+          "bulletImgUrl": "generalEffect/wolfSummonBullet",
+          "bulletLeftImgUrl": "generalEffect/wolfSummonBullet2",
+          "hitImgUrl": "bulletHitEffect/energy",
+          "armsType": "zombie"
+        },
+        "anger_FightWolf": {
+          "cnName": "狂战狼-大地之怒",
+          "name": "anger_FightWolf",
+          "hurtRatio": 0,
+          "hurtMul": 0.05,
+          "shakeAngle": 5,
+          "bulletLife": 0.04,
+          "bulletWidth": 100,
+          "hitType": "rect",
+          "attackGap": 0,
+          "attackDelay": 0,
+          "bulletAngle": 270,
+          "bulletNum": 1,
+          "shootNum": 24,
+          "shootGap": 0.03,
+          "shootAngle": 0,
+          "positionD": {
+            "specialType": "anger_FightWolf"
+          },
+          "penetrationGap": 1000,
+          "skillArr": "blindness_anger_PetFightWolf",
+          "shootPoint": "0,0",
+          "bulletSpeed": 0,
+          "flipX": 1,
+          "imgClearDelay": 0.3,
+          "bulletImgUrl": "boomEffect/blackBoom",
+          "hitImgUrl": "bladeHitEffect/blood",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "哨兵",
+      "bullet": {
+        "Sentry1": {
+          "cnName": "哨兵-激光",
+          "name": "Sentry1",
+          "shakeAngle": 0,
+          "bulletLife": 2,
+          "bulletWidth": 15,
+          "hitType": "rect",
+          "attackGap": 0.8,
+          "attackDelay": 0.46,
+          "bulletAngle": 179,
+          "bulletAngleRange": 5,
+          "shootPoint": "-50,-60",
+          "bulletSpeed": 40,
+          "penetrationGap": 1000,
+          "flipX": 1,
+          "bulletImgUrl": "Sentry/bullet1",
+          "hitImgUrl": "bulletHitEffect/energy",
+          "smokeImgUrl": "Sentry/bullet1",
+          "armsType": "zombie"
+        },
+        "Sentry2": {
+          "cnName": "哨兵-慢速导弹",
+          "name": "Sentry2",
+          "shakeAngle": 5,
+          "bulletLife": 10,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 0.6,
+          "attackDelay": 0.2,
+          "bulletAngle": 210,
+          "bulletAngleRange": 10,
+          "followD": {
+            "value": 0.5,
+            "maxTime": 3
+          },
+          "penetrationGap": 1000,
+          "shootPoint": "-5,-106",
+          "bulletSpeed": 4,
+          "flipX": 1,
+          "bulletImgUrl": "Sentry/bullet2",
+          "hitImgUrl": "boomEffect/boom1",
+          "smokeImgUrl": "bulletHitEffect/spark_motion",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "窃听者",
+      "bullet": {
+        "Shapers1": {
+          "cnName": "窃听者-激光",
+          "name": "Shapers1",
+          "shakeAngle": 0,
+          "bulletLife": 2,
+          "bulletWidth": 10,
+          "hitType": "rect",
+          "attackGap": 1.8,
+          "attackDelay": 1,
+          "bulletAngle": 179,
+          "bulletAngleRange": 40,
+          "shootNum": 15,
+          "shootPoint": "-51,-21",
+          "bulletSpeed": 30,
+          "penetrationGap": 1000,
+          "flipX": 1,
+          "bulletImgUrl": "Shapers/bullet1",
+          "hitImgUrl": "bulletHitEffect/energy",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "掘金尸",
+      "bullet": {
+        "knife_Nuggets": {
+          "cnName": "掘金尸-疾风斩",
+          "name": "knife_Nuggets",
+          "hurtMul": 0.2,
+          "shakeAngle": 5,
+          "bulletLife": 0.06,
+          "bulletWidth": 90,
+          "hitType": "rect",
+          "twoHitGap": 0.5,
+          "twoHitSameNameB": 1,
+          "bulletAngle": 270,
+          "bulletNum": 1,
+          "penetrationGap": 1000,
+          "penetrationNum": 999,
+          "flipX": 1,
+          "imgClearDelay": 0.12,
+          "bulletImgUrl": "NuggetsZombie/piercingLeft",
+          "secondBulletImgUrl": "NuggetsZombie/piercingRight",
+          "hitImgUrl": "bulletHitEffect/energy",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "伏地尸",
+      "bullet": {
+        "Crawler_shoot": {
+          "cnName": "伏地尸-喷毒",
+          "name": "Crawler_shoot",
+          "hurtRatio": 1,
+          "bulletAngle": -170,
+          "shakeAngle": 15,
+          "bulletAngleRange": 20,
+          "bulletLife": 0.4,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 0.6,
+          "attackDelay": 0.3,
+          "bulletNum": 3,
+          "shootNum": 1,
+          "shootGap": 0,
+          "shootAngle": 10,
+          "shootPoint": "-98,-38",
+          "penetrationGap": 1000,
+          "bulletSpeed": 20,
+          "speedD": {
+            "random": 0.5,
+            "max": 30,
+            "min": 15,
+            "a": -15
+          },
+          "gravity": 0.2,
+          "flipX": 1,
+          "bulletImgUrl": "skillEffect/poisonClaw_enemy",
+          "hitImgUrl": "boomEffect/posion1",
+          "smokeImgUrl": "skillEffect/poisonClaw_enemy",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "狂野收割者",
+      "bullet": {
+        "FightPig_shoot": {
+          "cnName": "狂野收割者飞刀",
+          "name": "FightPig_shoot",
+          "shakeAngle": 5,
+          "bulletLife": 8,
+          "bulletWidth": 30,
+          "hitType": "rect",
+          "attackGap": 1.1,
+          "attackDelay": 0.4,
+          "bulletAngle": 185,
+          "bulletAngleRange": 40,
+          "bulletNum": 1,
+          "shootNum": 1,
+          "shootAngle": 0,
+          "shootPoint": "-97,-58",
+          "bulletSpeed": 25,
+          "gravity": 0.6,
+          "bounceD": {
+            "floor": 999
+          },
+          "flipX": 1,
+          "bulletImgUrl": "FightPig/bullet1",
+          "hitImgUrl": "bladeHitEffect/blood",
+          "hitFloorImgUrl": "bladeHitEffect/blood",
+          "smokeImgUrl": "FightPig/smoke1",
+          "armsType": "zombie"
+        },
+        "FightPig_thunder": {
+          "cnName": "雷霆斧击",
+          "name": "FightPig_thunder",
+          "hurtRatio": 1,
+          "bulletLife": 0.0001,
+          "bulletWidth": 320,
+          "hitType": "longLine",
+          "twoHitGap": 0.5,
+          "twoHitSameNameB": 1,
+          "bulletAngle": 270,
+          "penetrationGap": 1000,
+          "penetrationNum": 999,
+          "shootPoint": "0,0",
+          "bulletSpeed": 0,
+          "flipX": 1,
+          "imgClearDelay": 0.36,
+          "bulletImgUrl": "FightPig/thunderBullet1",
+          "hitImgUrl": "bulletHitEffect/energy",
+          "armsType": "zombie"
+        }
+      }
+    }
+  ]
+}

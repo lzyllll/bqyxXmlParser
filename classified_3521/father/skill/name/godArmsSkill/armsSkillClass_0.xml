@@ -1,0 +1,362 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能-参加随机">
+		
+		
+		<skill name="震动炮">
+			<name>throwExplodeGod</name><secString>texture/throwExplodeGod</secString>
+			<cnName>震动炮</cnName><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType><condition>hit</condition><target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>throwExplodeGod</effectType><effectFather>arms</effectFather><changeHurtB>1</changeHurtB>
+			<mul>1.4</mul>
+			<pointEffectImg name="redWaveBoom" />
+			<description>敌人移动时将会引爆你子弹内的“震动炮”，对敌人额外造成[mul-1]的伤害。无视技能免疫。</description>
+		</skill>
+		
+		<skill name="背刺">
+			<name>backstabGod</name><secString>texture/backstabGod</secString>
+			<cnName>背刺</cnName><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType><condition>hit</condition><target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>backstabGod</effectType><effectFather>arms</effectFather><changeHurtB>1</changeHurtB>
+			<mul>1.6</mul>
+			<secMul>2.5</secMul>
+			<pointEffectImg name="purpleClawSmall" />
+			<otherEffectImg name="purpleClaw" />
+			<description>当你面朝着敌人背面时，对敌人可造成额外[mul-1]的伤害，如果敌人以你为攻击目标时，则该伤害则会提升至[secMul-1]。无视技能免疫。</description>
+		</skill>
+		
+		<skill cnName="爆岩">
+			<name>implodingGod</name><secString>texture/implodingGod</secString>
+			<cnName>爆岩</cnName>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>0.05</effectProArr>
+			<mul>25</mul>
+			<extraValueType>nowArmsHurt</extraValueType>
+			
+			<obj>"name":"implodingGod","site":"me","flipB":true</obj>
+			
+			<description>每次击中目标都有[effectProArr.0]的几率使自身爆发5颗石头，每颗石头伤害值为：[mul]*武器面板伤害*增伤Buff（排除武器技能、零件技能）。</description>
+		</skill>
+		
+		<skill name="裂空波">
+			<name>airHurtGod</name><secString>texture/airHurtGod</secString>
+			<cnName>裂空波</cnName><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType><condition>hit</condition><target>target</target>
+			<otherConditionArr>isAirB</otherConditionArr>
+			
+			<addType>instant</addType>
+			<effectType>airHurtGod</effectType><effectFather>arms</effectFather><changeHurtB>1</changeHurtB>
+			<mul>1.7</mul>
+			<secMul>1.25</secMul>
+			<pointEffectImg name="blueWaveBoom" />
+			<description>对离开地面的敌人施加“裂空波”，对其造成额外[mul-1]的伤害；如果敌人为空中单位，则只造成额外[secMul-1]的伤害。无视技能免疫。</description>
+		</skill>
+		
+		
+		<skill name="穿刺">
+			<name>punctureGod</name><secString>texture/punctureGod</secString>
+			<cnName>穿刺</cnName><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType><condition>hit</condition><target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>punctureGod</effectType><effectFather>arms</effectFather><changeHurtB>1</changeHurtB>
+			<mul>0.4</mul>
+			<secMul>0.8</secMul>
+			<pointEffectImg name="redSteelSin" />
+			<description>子弹穿人后不衰减，且每次穿人增伤[mul]，最大增伤[secMul]。无视技能免疫。</description>
+		</skill>
+		<skill name="弹力回收">
+			<name>elasticRecoveryGod</name><secString>texture/elasticRecoveryGod</secString>
+			<cnName>弹力回收</cnName><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType><condition>hit</condition><target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>elasticRecoveryGod</effectType><effectFather>arms</effectFather><changeHurtB>1</changeHurtB>
+			<mul>0.5</mul>
+			<secMul>1.2</secMul>
+			<pointEffectImg name="elasticRecoveryGod" />
+			<description>子弹每次反弹增伤[mul]，最大增伤[secMul]。无视“空虚”技能，无视技能免疫。</description>
+		</skill>
+		
+		<skill name="盛血绞杀">
+			<name>fullCrushGod</name><secString>texture/fullCrushGod</secString>
+			<cnName>盛血绞杀</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType><condition>hit</condition><target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>fullCrushGod</effectType><effectFather>arms</effectFather><changeHurtB>1</changeHurtB>
+			<mul>0.95</mul>
+			<secMul>4</secMul>
+			<pointEffectImg name="fullCrushGod" />
+			<description>对于生命值大于[mul]的敌人造成[secMul]伤害。无视免疫和技能免疫。</description>
+		</skill>
+		
+		<skill name="膝跳反应">
+			<name>jumpAutoGod</name><secString>texture/jumpAutoGod</secString>
+			<cnName>膝跳反应</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType><condition>hit</condition><target>target</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>jumpAutoGod</effectType><changeHurtB>1</changeHurtB>
+			<mul>1.15</mul>
+			<duration>0.2</duration>
+			<description>每次射击都会让敌人不由自主的弹跳，并对敌人额外造成[mul-1]的伤害。无视免疫和技能免疫。</description>
+		</skill>
+		
+		<skill name="静电反应">
+			<name>hideHurtGod</name><secString>texture/t10</secString>
+			<cnName>静电反应</cnName><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType><condition>hit</condition><target>target</target>
+			<otherConditionArr>targetIsHide</otherConditionArr>
+			
+			<addType>instant</addType>
+			<effectType>hideHurtGod</effectType><effectFather>arms</effectFather><changeHurtB>1</changeHurtB>
+			<mul>3</mul>
+			<pointEffectImg name="staticLightning" />
+			<description>子弹经过隐身敌人时产生“静电反应”，对其额外造成[mul-1]的伤害。无视技能免疫。</description>
+		</skill>
+		<skill name="迷失电流">
+			<name>positionErrorGod</name>
+			<cnName>迷失电流</cnName><secString>texture/t6</secString>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>positionErrorGod</effectType><effectFather>arms</effectFather>
+			<mul>1.3</mul>
+			<duration>0.5</duration>
+			<description>给击中敌人下身加上一层“迷失电流”，使它无法瞬移，但会增加敌人[mul-1]的移动速度，持续[duration]秒。无视技能免疫。</description>
+			<stateEffectImg name="upElectric" />
+		</skill>
+		
+		
+		
+		<skill name="共振">
+			<name>resonateGod</name>
+			<cnName>共振</cnName><secString>texture/t8</secString>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>resonateGod</effectType>
+			<description>随机选一把携带的同类武器，触发其神级技能（突袭、粘性、跳斩、子母弹、烟花、轨迹绘制、弹爆等武器技能无效），最多触发2个，且不会触发已有技能。装有改变品质成色的零件时该技能无效。</description>
+		</skill>
+		<skill name="老练">
+			<name>seasonedGod</name>
+			<cnName>老练</cnName><secString>texture/t11</secString>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>seasonedGod</effectType><changeHurtB>1</changeHurtB>
+			<mul>0.05</mul>
+			<secMul>3</secMul>
+			<description>从武器获得之日起，每过1天，武器在战斗中的伤害就增加[mul]，最高增加[secMul]（装有改变品质成色的零件时，最高增加30%）。</description>
+		</skill>
+		<skill name="远射">
+			<name>longShootGod</name>
+			<cnName>远射</cnName><secString>texture/t4</secString>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>longShootGod</effectType>
+			<extraValueType>armsShootRange</extraValueType>
+			<value>500</value>
+			<mul>0.0001</mul>
+			<secMul>0.2</secMul>
+			<duration>3</duration>
+			<description>击中敌人后给自己附上增伤状态，增加伤害=(武器射程-[value])*0.0001，最高增加[secMul]，持续[duration]秒。</description>
+			<stateEffectImg name="crazy_vehicle_state" />
+		</skill>
+		
+		
+		
+		<skill name="超重">
+			<name>overweightGod</name>
+			<cnName>超重</cnName><secString>texture/overweightGod</secString>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>overweightGod</effectType>
+			<extraValueType>armsBaseAttackGap</extraValueType>
+			<duration>0.1</duration>
+			<description>使敌人重力变大，持续时间是武器初始射击间隔的3倍。</description>
+			<stateEffectImg name="stoneFoot" />
+		</skill>
+		
+		
+		
+		<skill name="瞬秒">
+			<name>Hit_seckill_godArmsSkill</name><secString>texture/t12</secString>
+			<cnName>瞬秒</cnName>
+			<createByArmsTypePro>effectProArr</createByArmsTypePro>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>seckill</effectType>
+			<extraValueType>nowArmsDps</extraValueType>
+			<effectProArr>0.03</effectProArr>
+			<mul>50</mul>
+			<targetEffectImg />
+			<description>当敌人的血量低于60%同时血量少于这把武器实际战斗力的200倍时，击中它就有[effectProArr.0]的几率直接击毙它！</description>
+		</skill>
+		<skill name="绝灭">
+			<name>Hit_finalkill_godArmsSkill</name><secString>texture/t12</secString>
+			<cnName>绝灭</cnName>
+			<createByArmsTypePro>effectProArr</createByArmsTypePro>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>seckill</effectType>
+			<extraValueType>nowArmsDps</extraValueType>
+			<effectProArr>0.13</effectProArr>
+			<mul>20</mul>
+			<targetEffectImg />
+			<description>当敌人的血量低于60%同时血量少于这把武器实际战斗力的80倍时，击中它就有[effectProArr.0]的几率直接击毙它！</description>
+		</skill>
+		<skill name="快感">
+			<name>Hit_crazy_godArmsSkill</name><secString>texture/t12</secString>
+			<cnName>快感</cnName>
+			<createByArmsTypePro>effectProArr</createByArmsTypePro>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>crazyGun</effectType>
+			<effectProArr>0.02</effectProArr>
+			<mul>1.5</mul>
+			<duration>3</duration>
+			
+			<meEffectImg soundUrl="sound/crazy_hero" />
+			<stateEffectImg partType="2eye" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg>
+			<stateEffectImg2 partType="2eye" con="add">skillEffect/crazy_hero_eye</stateEffectImg2>
+			<description>击中目标有[effectProArr.0]的几率使自己进入狂暴状态，攻击速度加倍，不消耗子弹（非修罗模式），持续4秒。</description>
+		</skill>
+		<skill name="搏命">
+			<name>Hit_atry_godArmsSkill</name><secString>texture/m13</secString>
+			<cnName>搏命</cnName>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>0.25</mul>
+			
+			<obj>"type":"atry","per":0.6</obj>
+			<description>自身生命值低于[obj.per]的时候，生命值越低攻击力越高，最高加成150%的攻击力。</description>
+		</skill>
+		<skill name="七步毒">
+			<name>Hit_posion7_godArmsSkill</name><secString>texture/posion</secString>
+			<cnName>七步毒</cnName>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType><noSkillDodgeB>1</noSkillDodgeB>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>poison7</effectType>
+			<extraValueType>hurtValue</extraValueType>
+			<mul>0.2</mul>
+			<doGap>0.2</doGap>
+			<duration>3</duration>
+			 
+			<stateEffectImg partType="2foot" con="filter" raNum="30">skillEffect/poisonClaw_enemy</stateEffectImg>
+			<description>击中目标后，目标移动身体则每0.2秒都将受到伤害，伤害值为武器所造成伤害的[mul]。状态持续[duration]秒。</description>
+		</skill>
+		
+		<skill cnName="引爆">
+			<name>Hit_pointBoom_godArmsSkill</name><secString>texture/m25</secString>
+			<cnName>引爆</cnName>
+			<createByArmsTypePro>effectProArr</createByArmsTypePro>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>0.03</effectProArr>
+			<extraValueType>nowArmsDps</extraValueType>
+			
+			<obj>"name":"pointBoom_hero","site":"hitPosition","flipB":false</obj>
+			<description>每次击中目标都有[effectProArr.0]的几率在目标处引爆炸弹，对周围100码内的敌人造成伤害，伤害值为武器实际战斗力的2倍。</description>
+			
+		</skill>
+		<skill cnName="刷新">
+			<name>Hit_fleshSkill_godArmsSkill</name><secString>texture/t9</secString>
+			<cnName>刷新</cnName>
+			<createByArmsTypePro>effectProArr</createByArmsTypePro>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>fleshLastSkill</effectType>
+			<effectProArr>0.02</effectProArr>
+			<mul>0.15</mul>
+			
+			<meEffectImg soundUrl="sound/skillFlesh" />
+			<description>每次击中目标都有[effectProArr.0]的几率使最近使用的那一个主动技能的冷却时间回复20%。</description>
+		</skill>
+		
+		
+		
+		
+		
+		
+	</father>	
+	</data>

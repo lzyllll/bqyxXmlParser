@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="技能">
+		<skill>
+			<name>IronDogBuff</name>
+			<cnName>铁犬buff</cnName><noBeClearB>1</noBeClearB><noCopyB>1</noCopyB>
+			<conditionType>passive</conditionType><condition>add</condition><target>me</target>
+			<addType>state</addType>
+			<effectType>IronDogBuff</effectType>
+			<stateEffectImg con="add" partType="body,mouth,hand_left,hand_right,foot_left,foot_right">generalEffect/purBigLight</stateEffectImg>
+			<duration>99999999</duration>
+		</skill>
+		<skill>
+			<name>IronDogFive</name>
+			<cnName>九人斩</cnName><noBeClearB>1</noBeClearB><ignoreNoSkillB>1</ignoreNoSkillB><ignoreSilenceB>1</ignoreSilenceB>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>3</cd><iconUrl36>SkillIcon/IronDogFive_36</iconUrl36>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>IronDogFive</otherConditionArr>
+			<target>me</target>
+			
+			
+			<addType>state</addType>
+			<effectType>bullet_IronDogFive</effectType>
+			<obj>"name":"IronDogFiveBullet"</obj>
+			<duration>1.6</duration>
+			<meEffectImg name="skillEffectTeleport" />
+			<pointEffectImg name="SaberTiger_laser_point" />
+			<meActionLabel>fiveAttack</meActionLabel>
+			<description>铁犬释放9个分身一起劈斩地面，对敌人造成重大伤害。作为魂卡时此动作将处于无敌状态。</description>
+		</skill>
+		
+		<skill>
+			<name>IronDogMop</name>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>飞横扫</cnName>
+			<noBeClearB>1</noBeClearB>
+			<ignoreNoSkillB>1</ignoreNoSkillB>
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<minTriggerT>5</minTriggerT>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<otherConditionArr>IronDogMop</otherConditionArr>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>IronDogMop</effectType>
+			<value>2</value>
+			<duration>5</duration>
+			<pointEffectImg name="SaberTiger_laser_point" />
+			<meActionLabel>mopAttack</meActionLabel>
+			<description>当敌人使用攻击效果时，铁犬将以极快的步伐左右横扫敌人。作为魂卡时此动作将处于无敌状态。</description>
+		</skill>
+					<skill>
+						<name>IronDogMopTask</name>
+						<cnName>飞横扫</cnName><noBeClearB>1</noBeClearB><ignoreNoSkillB>1</ignoreNoSkillB><ignoreSilenceB>1</ignoreSilenceB>
+						<cd>20</cd><iconUrl36>SkillIcon/fastForward_Cheetah_36</iconUrl36>
+						<conditionType>active</conditionType>
+						<condition>avtiveSkillCdOver</condition>
+						<target>me</target>
+						
+						<addType>state</addType>
+						<effectType>IronDogMop</effectType>
+						<value>2</value>
+						<duration>5</duration>
+						<pointEffectImg name="SaberTiger_laser_point" />
+						<meActionLabel>mopAttack</meActionLabel>
+						<description />
+					</skill>
+		<skill>
+			<name>IronDogDagger</name>
+			<cnName>翔空刺</cnName><noBeClearB>1</noBeClearB><ignoreNoSkillB>1</ignoreNoSkillB><ignoreSilenceB>1</ignoreSilenceB>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>7</cd><iconUrl36>SkillIcon/IronDogDagger_36</iconUrl36>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>IronDogDagger</effectType>
+			<duration>1.5</duration>
+			<meActionLabel>daggerAttack</meActionLabel>
+			<stateEffectImg name="groupSpeedUp_enemy_state" cnName="腿部滑翔特效" />
+			<pointEffectImg name="skillEffectTeleport" cnName="闪烁" />
+			<otherEffectImg name="skillEffectTeleportShow" cnName="闪烁出现" />
+			<description>紧紧咬住对手，并在1秒内快速刺出6刀。此刻铁犬处于无敌状态。</description>
+		</skill>
+		<skill>
+			<name>IronDogIce</name>
+			<cnName>震魂斩</cnName><noBeClearB>1</noBeClearB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>10</cd><iconUrl36>SkillIcon/IronDogIce_36</iconUrl36>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>bullet_IronDogIce</effectType>
+			<value>13</value>
+			<mul>0.066</mul>
+			<secMul>120</secMul>
+			<duration>2.1</duration>
+			<obj>"name":"IronDogIceBullet"</obj>
+			<meActionLabel>iceAttack</meActionLabel>
+			<description>用力砍向地面，激发出向周围扩散的震魂波，震魂波将麻痹敌人。作为魂卡时此动作将处于无敌状态。</description>
+		</skill>
+					<skill>
+						<name>IronDogIceHit</name>
+						<cnName>震魂斩-麻痹沉默</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><noBeClearB>1</noBeClearB>
+						
+						<conditionType>passive</conditionType>
+						<condition>hit</condition>
+						<target>target</target>
+						
+						<addType>state</addType>
+						<effectType>IronDogIceHit</effectType>
+						<duration>3</duration>
+						 
+						<stateEffectImg name="noMoveWarrior_state" cnName="麻痹-状态" />
+						<stateEffectImg2 name="silenceWarrior_state" cnName="沉默状态" />
+					</skill>
+	</father>	
+</data>

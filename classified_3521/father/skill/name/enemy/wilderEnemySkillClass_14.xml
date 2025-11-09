@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="编织者">
+		<skill cnName="瘟疫">
+			<name>Weaver_smoke</name>
+			<cnName>瘟疫</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<cd>10</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>800</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<duration>1.3</duration>
+			 
+			<meActionLabel>smokeAttack</meActionLabel>
+			<description>在周围产生持续一段时间的致命瘟疫，持续对感染者产生伤害。</description>
+		</skill>
+		<skill cnName="织网">
+			<name>Weaver_web</name>
+			<cnName>织网</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<cd>16</cd>
+			<delay>0.57</delay>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>650</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<obj>"name":"Weaver_web","flipB":false,"site":"me"</obj>
+			 
+			<meActionLabel>webAttack</meActionLabel>
+			<description>编织一张蜘蛛网，编织者在网内可隐身、增加移动速度并且不断回复生命值。</description>
+		</skill>
+		<skill index="0" cnName="织网-隐身">
+			<name>Weaver_web_hiding</name>
+			<cnName>织网-隐身</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>Weaver_web_hidingB</effectType>
+			<mul>2</mul>
+			<duration>2.1</duration>
+			
+			<description>进入织网后进入隐身状态。</description>
+		</skill>
+		<skill index="0" cnName="织网-回血">
+			<name>Weaver_web_life</name>
+			<cnName>织网-回血</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>life</effectType>
+			<mul>0.01</mul>
+			<value>0</value>
+			
+			<description>进入织网后回复生命。</description>
+		</skill>
+		
+		
+		<skill index="0" cnName="繁殖">
+			<name>Weaver_summoned</name>
+			<cnName>繁殖</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<cd>22</cd>
+			<delay>0.8</delay>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>700</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>summonedUnits</effectType>
+			
+			<obj>"cnName":"毒蛛","num":10,"lifeMul":2,"maxNum":10,"cx":92,"cy":-31,"lifeTime":40,"skillArr":[]</obj>
+			
+			<meActionLabel>summonedAttack</meActionLabel>
+			<description>从尾部生产出5只毒蛛参加战斗。</description>
+		</skill>
+		
+		<skill cnName="复仇之刺">
+			<name>Weaver_thorn</name>
+			<cnName>复仇之刺</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<cd>5</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget,lifePerLess30</otherConditionArr>
+			<conditionRange>500</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<duration>1.3</duration>
+			 
+			<meActionLabel>thornAttack</meActionLabel>
+			<description>编织者生命低于一定值时，会不断地使用尾刺对敌人进行攻击。</description>
+		</skill>
+		<skill index="0" cnName="复仇之刺-击中被拖行">
+			<name>Weaver_thorn_hit</name>
+			<cnName>复仇之刺-击中被拖行</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>Weaver_thorn_hit</effectType>
+			<duration>2</duration>
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+			
+			<description />
+		</skill>
+		
+		
+	</father>
+	</data>

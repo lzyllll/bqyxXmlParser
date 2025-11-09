@@ -1,0 +1,797 @@
+{
+  "father": {
+    "name": "extra",
+    "cnName": "副本",
+    "clearCompleteAfterBuyNumB": true,
+    "dayNum": 1,
+    "buyNum": 1,
+    "buyMustDefineName": "buyExtraTaskNum",
+    "tipText": "每天第一次上线将清除前一天的任务进度。",
+    "autoUnlockByLevelB": true,
+    "maxLvLimitB": true,
+    "task": [
+      {
+        "name": "extra_CheetahCar",
+        "cnName": "迅捷古飙",
+        "uiShowTime": 999999,
+        "unlockLv": 96,
+        "moreKillEnemyNumIsMe": 1,
+        "completeLimitNum": -1,
+        "maxLvLimitB": false,
+        "shortText": "前往[map]消灭古飙",
+        "uiConditionText": "消灭古飙",
+        "description": "未来尼古拉工业生产的超能载具。",
+        "worldMapId": "HanGuang2",
+        "fixedLevelUrl": "extraTask/extra_CheetahCar",
+        "drop": {
+          "dropName": "diff_4"
+        },
+        "diff": 15,
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "growth": {
+          "task": [
+            {
+              "diff": 15,
+              "gift": [
+                "base;coin;40;;;;LevelEnemyCoin",
+                "things;armsGemChest;6"
+              ]
+            },
+            {
+              "diff": 30,
+              "gift": [
+                "base;coin;40;;;;LevelEnemyCoin",
+                "things;armsGemChest;7"
+              ]
+            },
+            {
+              "diff": 60,
+              "gift": [
+                "base;coin;40;;;;LevelEnemyCoin",
+                "things;armsGemChest;8"
+              ]
+            },
+            {
+              "diff": 120,
+              "gift": [
+                "base;coin;40;;;;LevelEnemyCoin",
+                "things;armsGemChest;9"
+              ]
+            },
+            {
+              "diff": 140,
+              "gift": [
+                "base;coin;40;;;;LevelEnemyCoin",
+                "things;equipGemChest;9"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "extra_PoisonDemon",
+        "cnName": "变种毒魔",
+        "uiShowTime": 999999,
+        "unlockLv": 91,
+        "moreKillEnemyNumIsMe": 1,
+        "completeLimitNum": -1,
+        "maxLvLimitB": false,
+        "shortText": "前往[map]消灭毒魔",
+        "uiConditionText": "消灭毒魔",
+        "description": "鬼爵部队最新研发出的战争变种人，栖身与缥缈森林，以动物为食，适应能力超强，柔软的身体可以远距离抓捕猎物。",
+        "worldMapId": "JungleDeep",
+        "fixedLevelUrl": "extraTask/extra_PoisonDemon",
+        "drop": {
+          "dropName": "diff_4"
+        },
+        "diff": 15,
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "growth": {
+          "task": [
+            {
+              "diff": 15,
+              "gift": [
+                "base;coin;40;;;;LevelEnemyCoin",
+                "parts;huntParts_1;4",
+                "parts;acidicParts_1;1"
+              ]
+            },
+            {
+              "diff": 30,
+              "gift": [
+                "base;coin;40;;;;LevelEnemyCoin",
+                "parts;acidicParts_1;4",
+                "parts;huntParts_1;2"
+              ]
+            },
+            {
+              "diff": 60,
+              "gift": [
+                "base;coin;40;;;;LevelEnemyCoin",
+                "parts;huntParts_1;4",
+                "parts;acidicParts_1;4"
+              ]
+            },
+            {
+              "diff": 120,
+              "gift": [
+                "base;coin;40;;;;LevelEnemyCoin",
+                "parts;huntParts_1;5",
+                "parts;acidicParts_1;5"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "extra_IceMan",
+        "cnName": "雪王野帝",
+        "uiShowTime": 999999,
+        "unlockLv": 90,
+        "moreKillEnemyNumIsMe": 1,
+        "completeLimitNum": -1,
+        "maxLvLimitB": false,
+        "shortText": "前往[map]消灭野帝",
+        "uiConditionText": "消灭野帝",
+        "description": "冰雪世界的王者，你能打败它吗？",
+        "worldMapId": "BuDong",
+        "fixedLevelUrl": "extraTask/extra_IceMan",
+        "drop": {
+          "dropName": "diff_4"
+        },
+        "diff": 15,
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "growth": {
+          "task": [
+            {
+              "diff": 15,
+              "gift": [
+                "base;coin;40;;;;LevelEnemyCoin",
+                "things;partsChest75;4"
+              ]
+            },
+            {
+              "diff": 30,
+              "gift": [
+                "base;coin;40;;;;LevelEnemyCoin",
+                "things;partsChest75;5"
+              ]
+            },
+            {
+              "diff": 60,
+              "gift": [
+                "base;coin;40;;;;LevelEnemyCoin",
+                "things;partsChest75;6"
+              ]
+            },
+            {
+              "diff": 120,
+              "gift": [
+                "base;coin;40;;;;LevelEnemyCoin",
+                "things;partsChest75;7"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "extra_FightKing",
+        "cnName": "狂刃之尸",
+        "uiShowTime": 999999,
+        "unlockLv": 30,
+        "moreKillEnemyNumIsMe": 1,
+        "completeLimitNum": -1,
+        "shortText": "前往[map]消灭变种狂战尸",
+        "uiConditionText": "消灭变种狂战尸",
+        "description": "变种狂战尸将额外拥有“召唤冥刃”、“狂刃爆发”2个技能，其中“狂刃爆发”将会对我方造成致命伤害，务必小心！该首领有一定概率掉落“沙漠进袭者碎片”。",
+        "worldMapId": "ShuiSheng",
+        "fixedLevelUrl": "extraTask/extra_FightKing",
+        "drop": {
+          "dropName": "diff_2"
+        },
+        "diff": 1.5,
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "growth": {
+          "task": [
+            {
+              "diff": 0.2,
+              "gift": [
+                "base;coin;4;;;;LevelEnemyCoin",
+                "things;skillStone;5",
+                "things;godStone;5",
+                "things;converStone;5",
+                "things;DesertTankCash;16"
+              ]
+            },
+            {
+              "diff": 1,
+              "gift": [
+                "base;coin;5;;;;LevelEnemyCoin",
+                "things;armsTitanium;4",
+                "things;godStone;6",
+                "things;converStone;6",
+                "things;DesertTankCash;17"
+              ]
+            },
+            {
+              "diff": 5,
+              "gift": [
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsTitanium;5",
+                "things;godStone;7",
+                "things;converStone;7",
+                "things;DesertTankCash;18"
+              ]
+            },
+            {
+              "diff": 25,
+              "gift": [
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsTitanium;6",
+                "things;godStone;8",
+                "things;converStone;8",
+                "things;DesertTankCash;19"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "extra_HugePoison",
+        "cnName": "幽灵毒气弹",
+        "uiShowTime": 999999,
+        "unlockLv": 35,
+        "moreKillEnemyNumIsMe": 1,
+        "completeLimitNum": -1,
+        "shortText": "前往[map]消灭变种巨毒尸",
+        "uiConditionText": "消灭变种巨毒尸",
+        "description": "变种巨毒尸拥有生产幽灵毒气弹的能力，毒气弹爆炸后威力不可小觑，千万不要靠近它。该首领有一定概率掉落“破晓碎片”。",
+        "worldMapId": "YouLing",
+        "fixedLevelUrl": "extraTask/extra_HugePoison",
+        "drop": {
+          "dropName": "diff_2"
+        },
+        "diff": 1.5,
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "growth": {
+          "task": [
+            {
+              "diff": 0.2,
+              "gift": [
+                "base;coin;4;;;;LevelEnemyCoin",
+                "things;skillStone;3",
+                "things;godStone;5",
+                "things;converStone;5",
+                "things;DaybreakCash;15"
+              ]
+            },
+            {
+              "diff": 1,
+              "gift": [
+                "base;coin;5;;;;LevelEnemyCoin",
+                "things;armsTitanium;4",
+                "things;godStone;6",
+                "things;converStone;6",
+                "things;DaybreakCash;16"
+              ]
+            },
+            {
+              "diff": 5,
+              "gift": [
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsTitanium;5",
+                "things;godStone;7",
+                "things;converStone;7",
+                "things;DaybreakCash;17"
+              ]
+            },
+            {
+              "diff": 25,
+              "gift": [
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsTitanium;6",
+                "things;godStone;8",
+                "things;converStone;8",
+                "things;DaybreakCash;18"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "extra_SpiderKing",
+        "cnName": "酸雨城",
+        "uiShowTime": 999999,
+        "unlockLv": 40,
+        "moreKillEnemyNumIsMe": 1,
+        "completeLimitNum": -1,
+        "shortText": "前往[map]消灭变种霸王毒蛛",
+        "uiConditionText": "消灭变种霸王毒蛛",
+        "description": "每次我方使用主动技能都有可能触发霸王毒蛛的酸雨技能，被酸雨击中后将扣除大量生命，务必小心！该首领有一定概率掉落“收割者碎片”。",
+        "worldMapId": "LvSen",
+        "fixedLevelUrl": "extraTask/extra_SpiderKing",
+        "drop": {
+          "dropName": "diff_2"
+        },
+        "diff": 1.5,
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "growth": {
+          "task": [
+            {
+              "diff": 0.2,
+              "gift": [
+                "base;coin;4;;;;LevelEnemyCoin",
+                "things;skillStone;6",
+                "things;godStone;2",
+                "things;converStone;2",
+                "things;RedReaperCash;16"
+              ]
+            },
+            {
+              "diff": 1,
+              "gift": [
+                "base;coin;5;;;;LevelEnemyCoin",
+                "things;armsTitanium;2",
+                "things;godStone;4",
+                "things;converStone;4",
+                "things;RedReaperCash;17"
+              ]
+            },
+            {
+              "diff": 5,
+              "gift": [
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsTitanium;4",
+                "things;godStone;6",
+                "things;converStone;6",
+                "things;RedReaperCash;18"
+              ]
+            },
+            {
+              "diff": 25,
+              "gift": [
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsTitanium;6",
+                "things;godStone;8",
+                "things;converStone;8",
+                "things;RedReaperCash;19"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "extra_Skeleton",
+        "cnName": "眩晕之锤",
+        "uiShowTime": 999999,
+        "unlockLv": 45,
+        "moreKillEnemyNumIsMe": 1,
+        "completeLimitNum": -1,
+        "shortText": "前往[map]消灭变种暴君",
+        "uiConditionText": "消灭变种暴君",
+        "description": "变种暴君的眩晕之锤将拥有非常恐怖的眩晕能力，它会让你完全丧失攻击能力，甚至连逃生的机会都没有！该首领有一定概率掉落“潜行者碎片”。",
+        "worldMapId": "YangMei",
+        "fixedLevelUrl": "extraTask/extra_Skeleton",
+        "drop": {
+          "dropName": "diff_2"
+        },
+        "diff": 1.5,
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "growth": {
+          "task": [
+            {
+              "diff": 0.2,
+              "gift": [
+                "base;coin;4;;;;LevelEnemyCoin",
+                "things;skillStone;6",
+                "things;godStone;2",
+                "things;converStone;2",
+                "things;SeaSharkCash;16"
+              ]
+            },
+            {
+              "diff": 1,
+              "gift": [
+                "base;coin;5;;;;LevelEnemyCoin",
+                "things;armsTitanium;2",
+                "things;godStone;4",
+                "things;converStone;4",
+                "things;SeaSharkCash;17"
+              ]
+            },
+            {
+              "diff": 5,
+              "gift": [
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsTitanium;4",
+                "things;godStone;6",
+                "things;converStone;6",
+                "things;SeaSharkCash;18"
+              ]
+            },
+            {
+              "diff": 20,
+              "gift": [
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsTitanium;6",
+                "things;godStone;8",
+                "things;converStone;8",
+                "things;SeaSharkCash;19"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "extra_XiaoMei",
+        "cnName": "克隆之魂",
+        "uiShowTime": 999999,
+        "unlockLv": 50,
+        "moreKillEnemyNumIsMe": 1,
+        "completeLimitNum": -1,
+        "shortText": "前往[map]消灭天鹰小美",
+        "uiConditionText": "消灭天鹰小美",
+        "description": "天鹰总部参谋长，长相与小樱 极为相似，精通各种神技，尤其是“技能复制”与“尸化”，使她成为爆枪联盟最难缠的对手之一。该首领有一定概率掉落“巨鲸碎片”。",
+        "worldMapId": "ZhongXin",
+        "fixedLevelUrl": "extraTask/extra_XiaoMei",
+        "drop": {
+          "dropName": "diff_2"
+        },
+        "diff": 3,
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "growth": {
+          "task": [
+            {
+              "diff": 0.2,
+              "gift": [
+                "base;coin;4;;;;LevelEnemyCoin",
+                "things;skillStone;6",
+                "things;godStone;2",
+                "things;converStone;2",
+                "things;BlueWhaleCash;16"
+              ]
+            },
+            {
+              "diff": 1,
+              "gift": [
+                "base;coin;5;;;;LevelEnemyCoin",
+                "things;armsTitanium;2",
+                "things;godStone;4",
+                "things;converStone;4",
+                "things;BlueWhaleCash;17"
+              ]
+            },
+            {
+              "diff": 5,
+              "gift": [
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsTitanium;4",
+                "things;godStone;6",
+                "things;converStone;6",
+                "things;BlueWhaleCash;18"
+              ]
+            },
+            {
+              "diff": 20,
+              "gift": [
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsTitanium;6",
+                "things;godStone;8",
+                "things;converStone;8",
+                "things;BlueWhaleCash;19"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "extra_IronZombieKing",
+        "cnName": "钢铁之躯",
+        "uiShowTime": 999999,
+        "unlockLv": 55,
+        "moreKillEnemyNumIsMe": 1,
+        "completeLimitNum": -1,
+        "shortText": "前往[map]消灭钢铁僵尸王",
+        "uiConditionText": "消灭钢铁僵尸王",
+        "description": "僵尸王的钢铁形态，头戴磁力头盔，让它拥有控制金属的能力。该首领有一定概率掉落“先知碎片”。",
+        "worldMapId": "ZhongXin",
+        "fixedLevelUrl": "extraTask/extra_IronZombieKing",
+        "drop": {
+          "dropName": "diff_2"
+        },
+        "diff": 3,
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "growth": {
+          "task": [
+            {
+              "diff": 0.2,
+              "gift": [
+                "base;coin;4;;;;LevelEnemyCoin",
+                "things;skillStone;6",
+                "things;godStone;2",
+                "things;converStone;2",
+                "things;ProphetCash;18"
+              ]
+            },
+            {
+              "diff": 1,
+              "gift": [
+                "base;coin;5;;;;LevelEnemyCoin",
+                "things;armsTitanium;2",
+                "things;godStone;4",
+                "things;converStone;4",
+                "things;ProphetCash;19"
+              ]
+            },
+            {
+              "diff": 5,
+              "gift": [
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsTitanium;4",
+                "things;godStone;6",
+                "things;converStone;6",
+                "things;ProphetCash;20"
+              ]
+            },
+            {
+              "diff": 20,
+              "gift": [
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsTitanium;6",
+                "things;godStone;8",
+                "things;converStone;8",
+                "things;ProphetCash;21"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "extra_TyphoonWitch",
+        "cnName": "飓风力量",
+        "uiShowTime": 999999,
+        "unlockLv": 60,
+        "moreKillEnemyNumIsMe": 1,
+        "completeLimitNum": -1,
+        "shortText": "前往[map]消灭飓风巫尸",
+        "uiConditionText": "消灭飓风巫尸",
+        "description": "导致暮光市沙漠化的罪魁祸首！拥有召唤飓风和吸血蝙蝠的能力。该首领有一定概率掉落“制裁者碎片”。",
+        "worldMapId": "ZhongXin",
+        "fixedLevelUrl": "extraTask/extra_TyphoonWitch",
+        "drop": {
+          "dropName": "diff_2"
+        },
+        "diff": 3,
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "growth": {
+          "task": [
+            {
+              "diff": 0.2,
+              "gift": [
+                "base;coin;4;;;;LevelEnemyCoin",
+                "things;skillStone;6",
+                "things;godStone;2",
+                "things;converStone;2",
+                "things;PunisherCash;19"
+              ]
+            },
+            {
+              "diff": 1,
+              "gift": [
+                "base;coin;5;;;;LevelEnemyCoin",
+                "things;armsTitanium;2",
+                "things;godStone;4",
+                "things;converStone;4",
+                "things;PunisherCash;20"
+              ]
+            },
+            {
+              "diff": 5,
+              "gift": [
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsTitanium;4",
+                "things;godStone;6",
+                "things;converStone;6",
+                "things;PunisherCash;21"
+              ]
+            },
+            {
+              "diff": 20,
+              "gift": [
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsTitanium;6",
+                "things;godStone;8",
+                "things;converStone;8",
+                "things;PunisherCash;22"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "extra_Knights",
+        "cnName": "无疆统治",
+        "uiShowTime": 999999,
+        "unlockLv": 60,
+        "moreKillEnemyNumIsMe": 1,
+        "completeLimitNum": -1,
+        "shortText": "前往[map]消灭无疆骑士",
+        "uiConditionText": "消灭无疆骑士",
+        "description": "天鹰“诺亚”项目的另外一个实验品，这个庞然大物的力量巨大无比，每个动作都能使大地颤抖。该首领有一定概率掉落“泰坦碎片”。",
+        "worldMapId": "ZhongXin",
+        "fixedLevelUrl": "extraTask/extra_Knights",
+        "drop": {
+          "dropName": "diff_2"
+        },
+        "diff": 3,
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "growth": {
+          "task": [
+            {
+              "diff": 0.2,
+              "gift": [
+                "base;coin;4;;;;LevelEnemyCoin",
+                "things;skillStone;6",
+                "things;godStone;2",
+                "things;converStone;2",
+                "things;TitansCash;22"
+              ]
+            },
+            {
+              "diff": 1,
+              "gift": [
+                "base;coin;5;;;;LevelEnemyCoin",
+                "things;armsTitanium;2",
+                "things;godStone;4",
+                "things;converStone;4",
+                "things;TitansCash;23"
+              ]
+            },
+            {
+              "diff": 5,
+              "gift": [
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsTitanium;4",
+                "things;godStone;6",
+                "things;converStone;6",
+                "things;TitansCash;24"
+              ]
+            },
+            {
+              "diff": 20,
+              "gift": [
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsTitanium;6",
+                "things;godStone;8",
+                "things;converStone;8",
+                "things;TitansCash;25"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "extra_GhostDuke",
+        "cnName": "鬼爵降临",
+        "uiShowTime": 999999,
+        "unlockLv": 65,
+        "moreKillEnemyNumIsMe": 1,
+        "completeLimitNum": -1,
+        "shortText": "前往[map]消灭鬼爵",
+        "uiConditionText": "消灭鬼爵",
+        "description": "鬼影部队的总司令，身份成迷。该首领有一定概率掉落“挖掘者碎片”。",
+        "worldMapId": "PrisonExport",
+        "fixedLevelUrl": "extraTask/extra_GhostDuke",
+        "drop": {
+          "dropName": "diff_2"
+        },
+        "diff": 3,
+        "condition": {
+          "type": "collect",
+          "target": "killEnemyNum",
+          "targetId": "boss",
+          "value": 1
+        },
+        "growth": {
+          "task": [
+            {
+              "diff": 0.2,
+              "gift": [
+                "base;coin;4;;;;LevelEnemyCoin",
+                "things;skillStone;6",
+                "things;godStone;2",
+                "things;converStone;2",
+                "things;DiggersCash;19"
+              ]
+            },
+            {
+              "diff": 1,
+              "gift": [
+                "base;coin;5;;;;LevelEnemyCoin",
+                "things;armsTitanium;2",
+                "things;godStone;4",
+                "things;converStone;4",
+                "things;DiggersCash;20"
+              ]
+            },
+            {
+              "diff": 5,
+              "gift": [
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsTitanium;4",
+                "things;godStone;6",
+                "things;converStone;6",
+                "things;DiggersCash;21"
+              ]
+            },
+            {
+              "diff": 20,
+              "gift": [
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsTitanium;6",
+                "things;godStone;8",
+                "things;converStone;8",
+                "things;DiggersCash;22"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

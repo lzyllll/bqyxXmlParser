@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father>
+		<body cnName="" name="canFoggyDef" tip="可以触发自身抵御技能" />
+		<body cnName="" name="targetIsInvincible" tip="目标处于无敌状态" />
+		<body cnName="" name="hurtUnderIsInvincible" tip="伤害的目标处于无敌状态" />
+		<body cnName="" name="producerNoInvincible" tip="释放者不处于无敌状态" />
+		<body cnName="" name="skillSpecialNumLess" tip="技能特殊参数少于" conditionRange="数量" />
+		<body cnName="" name="haveSkillOr" tip="拥有其中某个技能" conditionString="技能组" />
+		<body cnName="" name="noState" tip="目标没有某个状态" conditionString="状态组" />
+		<body cnName="" name="haveStateOr" tip="目标有某个状态" conditionString="状态组" />
+		<body cnName="" name="meHaveStateOr" tip="释放者有某个状态" conditionString="状态组" />
+		<body cnName="" name="meHaveState" tip="释放者有状态" conditionString="状态" />
+		<body cnName="" name="floorState" tip="释放者的下蹲状态" conditionString="下蹲状态" />
+		<body cnName="" name="targetFloorState" tip="目标的下蹲状态" conditionString="下蹲状态" />
+		<body cnName="" name="isStand" tip="目标处于站立" />
+		<body cnName="" name="isFlyB" tip="目标是飞行单位" />
+		<body cnName="" name="isFlyState" tip="目标当前是飞行单位" />
+		<body cnName="" name="isAirB" tip="目标处于空中" />
+		<body cnName="" name="isGroundB" tip="目标处于地面" />
+		<body cnName="" name="isHero" tip="目标是持枪" />
+	</father>
+	</data>

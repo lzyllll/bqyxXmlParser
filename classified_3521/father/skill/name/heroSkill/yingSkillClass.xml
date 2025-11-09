@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="heroSkill" cnName="英雄技能">
+		<skill name="怒蜂">
+			<name>uavYing</name>
+			<cnName>怒蜂</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			<effectInfoArr>召唤</effectInfoArr>
+			
+			<changeText>最多召唤[value]只</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>uavYing</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>uavYing</effectType>
+			<summonedUnitsB>1</summonedUnitsB>
+			<extraValueType>nowArmsDpsUI</extraValueType>
+			<obj>"cnName":"怒蜂","num":1,"lifeMul":2,"dpsMul":1,"mulByFatherB":1,"cx":0,"cy":-80,"noAiFindB":1,"skillArr":[]</obj>
+			<duration>9999999999</duration>
+			<value>4</value>
+			 
+			<otherEffectImg name="oreBombShowFlower" />
+			<description>以下情况可召唤怒蜂无人机：击杀持枪敌人(33%的概率)、击杀普通敌人(13%概率)、我方单位被杀死(100%概率)。一关最多召唤[value]只，它的伤害为当前武器面板战斗力的[obj.dpsMul]倍。{font color='#00FF00'}升级至第14级后，无需装备技能也会有技能效果。{/font}</description>
+			
+			<growth>
+				<skill><value>7</value></skill>
+				<skill><value>8</value></skill>
+				<skill><value>9</value></skill>
+				<skill><value>11</value></skill>
+				<skill><value>13</value></skill>
+				<skill><value>15</value></skill>
+				<skill><value>17</value></skill>
+				<skill><value>21</value></skill>
+				<skill><value>25</value></skill>
+				<skill><value>30</value></skill>
+				
+				<skill><value>35</value></skill>
+				<skill><value>40</value></skill>
+				<skill><value>50</value></skill>
+				<skill><value>50</value><changeText>技能效果无需装备</changeText><noNeedEquipB>1</noNeedEquipB></skill>
+				
+			</growth>
+		</skill>
+		
+		<skill name="群蜂">
+			<name>moreUav</name>
+			<cnName>群蜂</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			<effectInfoArr>召唤</effectInfoArr>
+			<changeText>技能冷却时间：[cd]秒{n}上限[value]只</changeText>
+			<cd>55</cd>
+			<firstCd>85</firstCd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr />
+			<doCondition>moreUav</doCondition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>moreUav</effectType>
+			<summonedUnitsB>1</summonedUnitsB>
+			<extraValueType>nowArmsDpsUI</extraValueType>
+			<obj>"cnName":"怒蜂","num":1,"lifeMul":5,"dpsMul":1,"mulByFatherB":1,"cx":0,"cy":-80,"noAiFindB":1,"skillArr":[]</obj>
+			<duration>9999999999</duration>
+			<value>15</value>
+			 
+			<otherEffectImg name="oreBombShowFlower" />
+			<description>如果在场怒蜂无人机的数量少于[value]个，则一次性补全到[value]个。怒蜂的伤害为当前武器面板战斗力的[obj.dpsMul]倍。</description>
+			
+			<growth>
+				<skill><cd>55</cd><value>4</value></skill>
+				<skill><cd>50</cd><value>4</value></skill>
+				<skill><cd>45</cd><value>4</value></skill>
+				<skill><cd>40</cd><value>4</value></skill>
+				<skill><cd>35</cd><value>4</value></skill>
+				<skill><cd>30</cd><value>4</value></skill>
+				<skill><cd>25</cd><value>4</value></skill>
+				<skill><cd>25</cd><value>5</value></skill>
+				<skill><cd>25</cd><value>6</value></skill>
+				<skill><cd>25</cd><value>7</value></skill>
+				
+				<skill><cd>25</cd><value>8</value></skill>
+				<skill><cd>20</cd><value>9</value></skill>
+				<skill><cd>20</cd><value>10</value></skill>
+				<skill><cd>20</cd><value>12</value><changeText>技能冷却时间：[cd]秒{n}上限[value]只{n}太空中可用第5级</changeText></skill>
+			</growth>
+		</skill>
+		
+		<skill>
+			<name>hurtAddYing</name>
+			<cnName>精锐之师</cnName><everNoClearB>1</everNoClearB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			<changeText>提升[mul]的伤害{n}上限[secMul]</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>hurtAddYing</effectType>
+			<mul>0.05</mul>
+			<secMul>2</secMul>
+			<duration>1</duration>
+			<range>999999</range>
+			<description>场上每存在1个我方单位，小樱和所有怒蜂的伤害就提升[mul]（不衰减），最高提升[secMul]。{font color='#00FF00'}升级至第14级后，无需装备技能也会有技能效果。{/font}</description>
+			<growth>
+				<skill><mul>0.05</mul><secMul>0.2</secMul></skill>
+				<skill><mul>0.05</mul><secMul>0.4</secMul></skill>
+				<skill><mul>0.05</mul><secMul>0.6</secMul></skill>
+				<skill><mul>0.05</mul><secMul>0.8</secMul></skill>
+				<skill><mul>0.05</mul><secMul>1.0</secMul></skill>
+				<skill><mul>0.05</mul><secMul>1.2</secMul></skill>
+				<skill><mul>0.05</mul><secMul>1.4</secMul></skill>
+				<skill><mul>0.05</mul><secMul>1.6</secMul></skill>
+				<skill><mul>0.05</mul><secMul>1.8</secMul></skill>
+				<skill><mul>0.06</mul><secMul>2</secMul></skill>
+				
+				<skill><mul>0.07</mul><secMul>2.1</secMul></skill>
+				<skill><mul>0.08</mul><secMul>2.4</secMul></skill>
+				<skill><mul>0.09</mul><secMul>2.7</secMul></skill>
+				<skill><mul>0.10</mul><secMul>2.7</secMul><changeText>增加[mul]的伤害{n}技能效果无需装备</changeText><noNeedEquipB>1</noNeedEquipB></skill>
+				
+			</growth>
+			
+		</skill>
+		
+		<skill>
+			<name>trueshotYing</name>
+			<cnName>强击领域</cnName>
+			<effectInfoArr>增加伤害输出</effectInfoArr><ignoreNoSkillB>1</ignoreNoSkillB>
+			<changeText>增加[mul-1]的伤害</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>allHurtMul</effectType>
+			<mul>1.07</mul>
+			<duration>2</duration>
+			<range>99999</range>
+			
+			<description>提升所有我方单位[mul-1]的伤害（不衰减）。{font color='#00FF00'}升级至第14级后，无需装备技能也会有技能效果。{/font}</description>
+			
+			<growth>
+				<skill><mul>1.07</mul></skill>
+				<skill><mul>1.10</mul></skill>
+				<skill><mul>1.13</mul></skill>
+				<skill><mul>1.16</mul></skill>
+				<skill><mul>1.19</mul></skill>
+				<skill><mul>1.22</mul></skill>
+				<skill><mul>1.25</mul></skill>
+				<skill><mul>1.27</mul></skill>
+				<skill><mul>1.30</mul></skill>
+				<skill><mul>1.33</mul></skill>
+				
+				<skill><mul>1.37</mul></skill>
+				<skill><mul>1.42</mul></skill>
+				<skill><mul>1.46</mul></skill>
+				<skill><mul>1.50</mul><changeText>增加[mul-1]的伤害{n}技能效果无需装备</changeText><noNeedEquipB>1</noNeedEquipB></skill>
+				
+			</growth>
+			
+		</skill>
+		
+		
+	</father>
+</data>

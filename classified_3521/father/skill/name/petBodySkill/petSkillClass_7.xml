@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="petBodySkill" cnName="狂战狼">
+		<skill index="0" name="狂战狼-野性召唤">
+			<name>summon_PetFightWolf</name>
+			<cnName>野性召唤</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			<cd>50</cd>
+			
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>600</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>underHurtMul</effectType>
+			<value>1</value>
+			<mul>0.5</mul>
+			<duration>8</duration>
+			
+			<meActionLabel>summonAttack</meActionLabel>
+			<description>狂战狼向空中发出狼嚎，自身增加[1-mul]的防御力，持续[duration]秒，同时召唤成群的尸狼灵魂向前狂奔，对被冲撞的敌人造成伤害。</description>
+			<growth>
+				<skill><cd>50</cd></skill>
+				<skill><cd>45</cd></skill>
+				<skill><cd>40</cd></skill>
+				<skill><cd>35</cd></skill>
+				<skill><cd>30</cd></skill>
+				<skill><cd>25</cd></skill>
+				<skill><cd>20</cd></skill>
+				<skill><cd>17</cd></skill>
+				<skill><cd>15</cd></skill>
+			</growth>
+		</skill>
+		<skill index="0" cnName="灼热视线">
+			<name>laser_PetFightWolf</name>
+			<cnName>灼热射线</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			<cd>60</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>400</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<value>1</value>
+			<mul>1</mul>
+			<duration>1</duration>
+			 
+			<meActionLabel>laserAttack</meActionLabel>
+			<description>单位释放出强大的光线扫射前方的敌人，被击中的敌人将被灼伤，每秒失去0.5%的生命值，持续5秒。</description>
+			<growth>
+				<skill><cd>60</cd></skill>
+				<skill><cd>55</cd></skill>
+				<skill><cd>50</cd></skill>
+				<skill><cd>45</cd></skill>
+				<skill><cd>40</cd></skill>
+				<skill><cd>35</cd></skill>
+				<skill><cd>30</cd></skill>
+				<skill><cd>27</cd></skill>
+				<skill><cd>25</cd></skill>
+			</growth>
+		</skill>
+		<skill index="0" cnName="狼图腾">
+			<name>treater_PetFightWolf</name>
+			<cnName>狼图腾</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			<changeText>间隔时间：[intervalT]秒</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<mul>0.05</mul>
+			<intervalT>30</intervalT>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>clearEnemyState_PetFightWolf</effectType>
+			 
+			<description>每隔[intervalT]秒清除1次自身负面状态，同时将回复[mul]的生命值（P1角色回复[mul/2]的生命值），负面状态的个数越多，回复生命值就越多，最大不超过30%。</description>
+			<growth>
+				<skill><intervalT>30</intervalT></skill>
+				<skill><intervalT>26</intervalT></skill>
+				<skill><intervalT>22</intervalT></skill>
+				<skill><intervalT>18</intervalT></skill>
+				<skill><intervalT>12</intervalT></skill>
+				<skill><intervalT>7</intervalT></skill>
+				<skill><intervalT>3</intervalT></skill>
+				<skill><intervalT>3</intervalT><mul>0.06</mul><changeText>回复[mul]的生命值</changeText></skill>
+				<skill><intervalT>3</intervalT><mul>0.07</mul><changeText>回复[mul]的生命值</changeText></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="狂战狼-大地之怒">
+			<name>anger_PetFightWolf</name>
+			<cnName>大地之怒</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			<cd>60</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>0.5</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>noUnderHurtB</effectType>
+			<value>1</value>
+			<mul>1</mul>
+			<duration>2</duration>
+			
+			<meActionLabel>stoneAttack</meActionLabel>
+			<description>狂战狼聚集全身的力量向大地猛捶6下，每一下都将对敌人造成伤害，同时自身进入无敌状态，敌人受到伤害后命中率降低30%，持续8秒。</description>
+			<growth>
+				<skill><cd>60</cd></skill>
+				<skill><cd>55</cd></skill>
+				<skill><cd>50</cd></skill>
+				<skill><cd>45</cd></skill>
+				<skill><cd>40</cd></skill>
+				<skill><cd>35</cd></skill>
+				<skill><cd>30</cd></skill>
+				<skill><cd>27</cd></skill>
+				<skill><cd>25</cd></skill>
+			</growth>
+		</skill>
+	</father>
+	</data>

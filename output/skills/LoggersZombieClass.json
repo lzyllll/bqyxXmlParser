@@ -1,0 +1,74 @@
+{
+  "father": {
+    "name": "enemy",
+    "body": {
+      "name": "LoggersZombie",
+      "cnName": "伐木僵尸",
+      "headIconUrl": "IconGather/LoggersZombie",
+      "raceType": "zombies",
+      "swfUrl": "swf/enemy/LoggersZombie.swf",
+      "lifeRatio": 1.3,
+      "rosRatio": 0.2,
+      "showLevel": 9999,
+      "imgArr": "stand,move,run\n\t\t\t\t,normalAttack,shootAttack\n\t\t\t\t,dartsAttack,magicAttack,shakeAttack\n\t\t\t\t,hurt1,hurt2,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+      "bossImgArr": "dartsAttack,magicAttack,shakeAttack",
+      "hitRect": "-14,-76,28,76",
+      "maxJumpNum": 1,
+      "maxVx": 6,
+      "nextAttackTime": 0,
+      "extraAIClassLabel": null,
+      "avtiveSkillCdOverT": 0,
+      "skillArr": "noBounce_enemy",
+      "bossSkillArr": null,
+      "bossSkillArrCn": null,
+      "hurtArr": {
+        "hurt": [
+          {
+            "imgLabel": "normalAttack",
+            "cn": "斧击",
+            "hurtRatio": 2,
+            "shakeValue": 4,
+            "attackType": "direct",
+            "skillArr": null,
+            "hitImgUrl": {
+              "name": "oreWormHit"
+            }
+          },
+          {
+            "imgLabel": "shootAttack",
+            "cn": "飞斧",
+            "bulletLabel": "LoggersZombie_1",
+            "grapRect": "-450,-111,350,105",
+            "hurtRatio": 1.5,
+            "attackType": "holy"
+          }
+        ]
+      }
+    },
+    "bullet": {
+      "name": "LoggersZombie_1",
+      "cnName": "飞斧",
+      "shakeAngle": 5,
+      "bulletLife": 3,
+      "bulletWidth": 40,
+      "hitType": "rect",
+      "attackGap": 0.7,
+      "attackDelay": 0.6,
+      "bulletAngle": -179,
+      "bulletAngleRange": 70,
+      "shootPoint": "-67,-86",
+      "bulletSpeed": 25,
+      "gravity": 0.5,
+      "skillArr": null,
+      "flipX": 1,
+      "bulletImgUrl": "LoggersZombie/bullet",
+      "smokeImgUrl": {
+        "value": "LoggersZombie/bulletSmoke",
+        "con": "filter"
+      },
+      "hitImgUrl": {
+        "name": "oreWormHit"
+      }
+    }
+  }
+}

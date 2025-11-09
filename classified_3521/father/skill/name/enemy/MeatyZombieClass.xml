@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">	
+		
+		<skill index="0" cnName="击中眩晕">
+			<name>MeatyThumpHit</name>
+			<cnName>击中眩晕</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>dizziness</effectType>
+			<duration>0.6</duration>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+			<description />
+		</skill>
+		<skill cnName="全域驱赶">
+			<name>MeatyAway</name>
+			<cnName>全域驱赶</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>6</cd>
+			<delay>0.3</delay>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>0.3</conditionRange>
+			<target>me,range,enemy</target>
+			
+			<addType>instant</addType>
+			<effectType>hurtMul</effectType>
+			<mul>0.15</mul>
+			<duration>6</duration>
+			<range>99999</range>
+			 
+			<targetEffectImg partType="body">boomEffect/posion3</targetEffectImg>
+			<meActionLabel>magicAttack</meActionLabel>
+			<description>生命低于30%时，每隔[cd]秒减少所有敌人[mul]的生命值。</description>
+		</skill>
+		<skill cnName="荒芜光环">
+			<name>MeatyDesertedHalo</name><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<cnName>荒芜光环</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>deserted</effectType>
+			<value>0</value>
+			<mul>0.8</mul>
+			<duration>2</duration>
+			<range>999999</range>
+			
+			<stateEffectImg partType="2hand">skillEffect/disabled_enemy</stateEffectImg>
+			<description>降低所有敌人20%的射击速度，同时使敌人的“击中回复”技能无效。</description>
+		</skill>
+		<skill cnName="技能反弹">
+			<name>MeatySkillBack</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>技能反弹</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType><noCopyB>1</noCopyB>
+			<condition>underEnemySkill</condition>
+			<target>target</target>
+			<iconUrl>SkillIcon/MeatySkillBack</iconUrl>
+			
+			<addType>instant</addType>
+			<effectType>skillBack</effectType>
+			<effectProArr>0.8</effectProArr>
+			<description>有80%几率反弹敌人的技能，让敌人获得同样的技能效果。</description>
+		</skill>
+		
+		<skill cnName="反击护盾">
+			<name>MeatyShield</name>
+			<cnName>反击护盾</cnName><noBeClearB>1</noBeClearB>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>12</cd>
+			<delay>1.6</delay>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>0.6</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>underHurtMul</effectType>
+			<mul>0.0000001</mul>
+			<duration>6</duration>
+			 
+			<stateEffectImg partType="body" con="add">generalEffect/invincibleShield</stateEffectImg>
+			<meActionLabel>shieldAttack</meActionLabel>
+			<description>释放持续的反击护盾，此时受到攻击会释放反击粒子追踪敌人。反击粒子若碰到在空中的敌人（不包含空中单位），则会被转化成攻击多肉的粒子。</description>
+		</skill>
+		<skill cnName="受到攻击产生反击粒子">
+			<name>MeatyShieldUnder</name>
+			<cnName>受到攻击产生反击粒子</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<otherConditionArr>meHaveStateOr</otherConditionArr>
+			<conditionString>MeatyShield</conditionString>
+			<minTriggerT>0.3</minTriggerT>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet_MeatyShield</effectType>
+			
+			<obj>"name":"MeatyShieldBullet","site":"hitPosition","flipB":false</obj>
+		</skill>
+					<skill cnName="反击粒子击中伤害">
+						<name>MeatyShieldBulletHit</name>
+						<cnName>反击粒子伤害</cnName><changeHurtB>1</changeHurtB>
+						
+						<conditionType>passive</conditionType>
+						<condition>hit</condition>
+						<target>target</target>
+						
+						<addType>instant</addType>
+						<effectType>MeatyShieldBulletHit</effectType>
+						<description>如果目标在空中，则对释放者造成伤害，如果目标在地面则对目标造成伤害。</description>
+					</skill>
+					<skill cnName="反击粒子击中反弹">
+						<name>MeatyShieldBulletBack</name>
+						<cnName>反击粒子伤害</cnName>
+						
+						<conditionType>passive</conditionType>
+						<condition>hit</condition>
+						<otherConditionArr>isAirB,isLandBody</otherConditionArr>
+						<target>target</target>
+						
+						<addType>instant</addType>
+						<effectType>bullet</effectType>
+						
+						<obj>"name":"MeatyBackBullet","site":"hitPosition","flipB":false</obj>
+					</skill>
+					<skill cnName="反弹粒子对boss的伤害">
+						<name>MeatyBackBulletHit</name>
+						<cnName>反弹粒子对boss的伤害</cnName><changeHurtB>1</changeHurtB>
+						
+						<conditionType>passive</conditionType>
+						<condition>hit</condition>
+						<target>target</target>
+						
+						<addType>instant</addType>
+						<effectType>onlyHurtMulMust</effectType>
+						<mul>0.005</mul>
+						<description />
+					</skill>
+					
+					
+					<bullet cnName="反击粒子">
+						<name>MeatyShieldBullet</name>
+						<cnName>反击粒子</cnName>
+						
+						<hurtRatio>0</hurtRatio>
+						<hurlMul>0</hurlMul>
+						<attackType>holy</attackType>
+						
+						<bulletLife>13</bulletLife>
+						<bulletWidth>25</bulletWidth>
+						<hitType>rect</hitType>
+						
+						<bulletAngle>180</bulletAngle>
+							
+						<followD value="1" />
+						<penetrationGap>1000</penetrationGap>
+						<skillArr>MeatyShieldBulletHit,MeatyShieldBulletBack</skillArr>
+							
+						<shootPoint>0,0</shootPoint>
+						<bulletSpeed>13</bulletSpeed>
+						<speedD random="0.5" />
+						
+						<flipX>1</flipX>
+						<bulletImgUrl con="add">MeatyZombie/shieldBullet</bulletImgUrl>
+						<hitImgUrl soundUrl="sound/magicHit2">bulletHitEffect/fitHit</hitImgUrl>
+					</bullet>
+					<bullet cnName="反弹粒子">
+						<name>MeatyBackBullet</name>
+						<cnName>反弹粒子</cnName>
+						
+						<hurtRatio>0</hurtRatio>
+						<hurlMul>0</hurlMul>
+						<attackType>holy</attackType>
+						
+						<bulletLife>13</bulletLife>
+						<bulletWidth>25</bulletWidth>
+						<hitType>rect</hitType>
+						
+						<bulletAngle>180</bulletAngle>
+							
+						<followD value="1" />
+						<penetrationGap>1000</penetrationGap>
+						<skillArr>MeatyBackBulletHit</skillArr>
+							
+						<shootPoint>0,0</shootPoint>
+						<bulletSpeed>15</bulletSpeed>
+						<speedD random="0.2" />
+						
+						<flipX>1</flipX>
+						<bulletImgUrl con="add">MeatyZombie/backBullet</bulletImgUrl>
+						<hitImgUrl soundUrl="sound/water_hit">bulletHitEffect/fitHit</hitImgUrl>
+					</bullet>
+					
+					
+					
+		
+	</father>	
+</data>

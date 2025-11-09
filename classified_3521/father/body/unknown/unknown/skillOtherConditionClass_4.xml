@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father>
+		<body cnName="" name="weLifePerLess" tip="范围内队友血量少于" range="范围" conditionRange="血量" />
+		<body cnName="" name="invisibility_hero" tip="范围内队友血量少于(小樱专用)" range="范围" conditionRange="血量" />
+		<body cnName="" name="lifePerLess" tip="自身血量少于" conditionRange="血量" />
+		
+		<body cnName="" name="hiding_hero" tip="距离目标(隐身专用)" conditionRange="距离" />
+		<body cnName="" name="producerNoNowBuff" tip="释放者没有当前技能buff" />
+		<body cnName="" name="charm_hero" tip="索敌血量大于50%且距离800码" />
+		<body cnName="" name="canFoggyDef" tip="自身可以释放抵御时" />
+		
+	</father>
+</data>

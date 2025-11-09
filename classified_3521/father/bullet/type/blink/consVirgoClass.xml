@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="blink">
+		<bullet color="purgold" kind="particle" evoMaxLv="2" evoMustFirstLv="13" composeLv="99" chipNum="300">
+			<name>consVirgo</name><extraMul>1.2</extraMul>
+			<cnName>处女座</cnName><iconUrl>newGun/consVirgoIcon</iconUrl>
+			<aiShootRange>1700</aiShootRange>
+			<attackType>holy</attackType>
+			<dpsMul>8</dpsMul>
+			<uiDpsMul>2.27</uiDpsMul>
+			
+			<capacity>15</capacity>
+			<attackGap>0.5</attackGap>
+			<reloadGap>1</reloadGap>
+			<bulletWidth>180</bulletWidth>
+			<bulletNum>1</bulletNum>				
+			
+			<armsArmMul>0.8</armsArmMul>
+			<upValue>0</upValue>
+			<shootShakeAngle>45</shootShakeAngle>
+			<shootRecoil>5</shootRecoil>
+			<screenShakeValue>9</screenShakeValue>
+			
+			<bulletLife>0.001</bulletLife>
+			<hitType>rect</hitType>
+				
+			<bulletSpeed>0.1</bulletSpeed>
+			
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<bounceD floor="0" body="0" />	
+			<critD mul="2" pro="0.3" />
+			<skillArr>Hit_AddLifeMul_ArmsSkill,Kill_Spurting_ArmsSkill</skillArr>
+			<godSkillArr>Hit_atry_godArmsSkill,consVirgoSkill</godSkillArr>
+			
+			<shootSoundUrl>newGun/consVirgoS4</shootSoundUrl>
+			<imgClearDelay>0.3</imgClearDelay>
+			<bulletVra>-0.00091</bulletVra>
+			<bulletImgUrl name="consVirgoBullet" />
+			<hitImgUrl name="consVirgoHit" />
+			<fireImgUrl name="purpleGunFire" />
+			
+			<bodyImgRange>newGun/consVirgo</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>消灭首领狂战神(99级)</description>
+		</bullet>
+	</father>
+	</data>

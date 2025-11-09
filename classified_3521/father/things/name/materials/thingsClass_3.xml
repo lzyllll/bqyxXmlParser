@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="materials" cnName="金币道具">	
+		<things cnName="武器守护卡">
+			<name>armsEchelonCard</name>
+			<cnName>武器守护卡</cnName><addDropDefineB>1</addDropDefineB>
+			<iconUrl>ThingsIcon/armsEchelonCard</iconUrl>
+			<description>
+				强化武器的保级道具，最高保级14级。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]活跃度礼包
+				[n]优胜券兑换
+				[n]功勋牌兑换
+				[n]纪念币兑换
+				[n]商店购买
+			</description>
+			<smeltD addType="armsChip" price="1" />
+		</things>
+		<things cnName="装备守护卡">
+			<name>equipEchelonCard</name>
+			<cnName>装备守护卡</cnName><addDropDefineB>1</addDropDefineB>
+			<iconUrl>ThingsIcon/equipEchelonCard</iconUrl>
+			<description>
+				强化装备的保级道具，最高保级14级。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店购买
+			</description>
+			<smeltD addType="equipChip" price="1" />
+		</things>
+		<things cnName="高级装备守护卡">
+			<name>highEquipEchelonCard</name>
+			<cnName>高级装备守护卡</cnName><addDropDefineB>1</addDropDefineB>
+			<iconUrl>ThingsIcon/highEquipEchelonCard</iconUrl>
+			<description>
+				强化装备的保级道具，最高保级20级。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]装备守护卡合成
+				[n]商店购买
+			</description>
+			<smeltD addType="equipChip" price="10" maxNum="2" />
+		</things>
+		<things cnName="高级武器守护卡">
+			<name>highArmsEchelonCard</name>
+			<cnName>高级武器守护卡</cnName><addDropDefineB>1</addDropDefineB>
+			<iconUrl>ThingsIcon/highArmsEchelonCard</iconUrl>
+			<description>
+				强化武器的保级道具，最高保级20级。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]武器守护卡合成
+				[n]商店购买
+			</description>
+			<smeltD addType="armsChip" price="10" maxNum="2" />
+		</things>
+	</father>	
+	</data>

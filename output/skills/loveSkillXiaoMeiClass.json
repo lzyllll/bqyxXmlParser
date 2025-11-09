@@ -1,0 +1,138 @@
+{
+  "father": {
+    "name": "loveSkill",
+    "cnName": "忠诚度技能",
+    "skills": {
+      "cdMulMei": {
+        "name": "cdMulMei",
+        "cnName": "技能回复速度提升20%",
+        "everNoClearB": 1,
+        "ignoreImmunityB": 1,
+        "ignoreNoSkillB": 1,
+        "conditionType": "passive",
+        "condition": "add",
+        "target": "me",
+        "addType": "state",
+        "duration": 99999,
+        "mul": 1.2,
+        "effectType": "cdSpeed",
+        "description": "技能回复速度提升[mul-1]。"
+      },
+      "cdHoleMei": {
+        "name": "cdHoleMei",
+        "cnName": "技能回复光环",
+        "conditionType": "passive",
+        "condition": "interval",
+        "target": {
+          "value": "me,range,we",
+          "noMeB": true
+        },
+        "addType": "state",
+        "effectType": "cdSpeed",
+        "mul": 1.3,
+        "duration": 0.2,
+        "range": 200,
+        "stateEffectImg": {
+          "name": "cdHole"
+        },
+        "description": "提升周围[range]码内队友[mul-1]的技能回复速度。"
+      },
+      "enemyCdMei": {
+        "name": "enemyCdMei",
+        "cnName": "降低敌人技能回复",
+        "ignoreImmunityB": 1,
+        "ignoreNoSkillB": 1,
+        "conditionType": "passive",
+        "condition": "interval",
+        "target": "attackTarget",
+        "addType": "state",
+        "effectType": "cdSpeed",
+        "mul": 0.8,
+        "duration": 0.2,
+        "stateEffectImg": {
+          "name": "cdDown"
+        },
+        "description": "减少目标敌人[1-mul]的技能回复速度。"
+      },
+      "angerHoleMei": {
+        "name": "angerHoleMei",
+        "cnName": "怒气回复光环",
+        "noBeClearB": 1,
+        "conditionType": "passive",
+        "condition": "interval",
+        "target": {
+          "value": "me,range,we",
+          "noMeB": true
+        },
+        "addType": "state",
+        "effectType": "angerAddMul",
+        "mul": 1.4,
+        "duration": 0.2,
+        "range": 130,
+        "stateEffectImg": {
+          "name": "angerHole"
+        },
+        "description": "提升周围[range]码内队友[mul-1]的怒气回复速度。"
+      },
+      "dieOffMei": {
+        "cnName": "死后封锁凶手",
+        "name": "dieOffMei",
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "noBeClearB": 1,
+        "conditionType": "passive",
+        "condition": "die",
+        "otherConditionArr": "targetArmsNoMeltFlamerPurgold",
+        "target": "target",
+        "addType": "instantAndState",
+        "effectType": "noAllSkill",
+        "duration": 10,
+        "stateEffectImg": {
+          "value": "skillEffect/silenceMore",
+          "partType": "mouth",
+          "con": "add"
+        },
+        "description": "死后将封锁凶手[duration]秒。"
+      },
+      "dieNiuBiMei": {
+        "cnName": "死后队友无敌",
+        "name": "dieNiuBiMei",
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "noBeClearB": 1,
+        "conditionType": "passive",
+        "condition": "die",
+        "target": {
+          "value": "me,range,we",
+          "noMeB": true
+        },
+        "addType": "state",
+        "effectType": "invincible",
+        "duration": 5,
+        "range": 99999,
+        "stateEffectImg": {
+          "name": "FoggyDefence_state"
+        },
+        "description": "死后所有队友将无敌[duration]秒。"
+      },
+      "degradationMei": {
+        "name": "degradationMei",
+        "cnName": "退化光环",
+        "ignoreImmunityB": 1,
+        "ignoreNoSkillB": 1,
+        "conditionType": "passive",
+        "condition": "interval",
+        "target": "me,range,enemy",
+        "addType": "state",
+        "effectType": "underHurtMul",
+        "mul": 1.13,
+        "duration": 1,
+        "range": 999999,
+        "stateEffectImg": {
+          "name": "outfit_blood_state"
+        },
+        "description": "降低所有敌人的[mul-1]的防御力。"
+      }
+    }
+  }
+}

@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="parts">
+		
+		<things cnName="零件">
+			<name>loaderParts</name>
+			<cnName>零件</cnName>
+			<objType>loader</objType>
+			<description />
+		</things>
+		<things cnName="猎人技能器">
+			<name>huntParts</name>
+			<cnName>猎人技能器</cnName>
+			<objType>skill</objType>
+			<skillArr>huntParts</skillArr>
+			<maxLevel>4</maxLevel>
+			<iconUrl>ThingsIcon/huntParts</iconUrl>
+			<description />
+		</things>
+		<things cnName="腐蚀芯片">
+			<name>acidicParts</name>
+			<cnName>腐蚀芯片</cnName>
+			<objType>special</objType>
+			<skillArr>acidicParts</skillArr>
+			<maxLevel>4</maxLevel>
+			<iconUrl>ThingsIcon/acidicParts</iconUrl>
+			<description />
+		</things>
+		
+		
+		
+		<things cnName="宽震器" o="{'bulletWidth':0.20}">
+			<name>shockParts_1</name><baseLabel>shockParts</baseLabel>
+			<cnName>宽震器</cnName>
+			<objType>rare</objType>
+			<maxLevel>2</maxLevel>
+			<iconUrl>PartsIcon/shockParts1</iconUrl>
+		</things>
+				<things o="{'bulletWidth':0.35}"><maxLevel>2</maxLevel><itemsLevel>2</itemsLevel><name>shockParts_2</name><iconUrl>PartsIcon/shockParts2</iconUrl><cnName>宽震器</cnName><baseLabel>shockParts</baseLabel><objType>rare</objType></things>
+				
+				
+		<things cnName="硬化器" o="{'bulletLife':0.10}">
+			<name>hardeningParts_1</name><baseLabel>hardeningParts</baseLabel>
+			<cnName>硬化器</cnName>
+			<objType>rare</objType>
+			<maxLevel>2</maxLevel>
+			<iconUrl>PartsIcon/hardeningParts1</iconUrl>
+			<description />
+		</things>
+				<things o="{'bulletLife':0.20}"><maxLevel>2</maxLevel><itemsLevel>2</itemsLevel><name>hardeningParts_2</name><iconUrl>PartsIcon/hardeningParts2</iconUrl><cnName>硬化器</cnName><baseLabel>hardeningParts</baseLabel><objType>rare</objType></things>
+				
+		<things cnName="加速器" o="{'bulletSpeed':0.20}">
+			<name>speedParts_1</name><baseLabel>speedParts</baseLabel>
+			<cnName>加速器</cnName>
+			<objType>rare</objType>
+			<maxLevel>2</maxLevel>
+			<iconUrl>PartsIcon/speedParts1</iconUrl>
+			<description />
+		</things>
+				<things o="{'bulletSpeed':0.35}"><maxLevel>2</maxLevel><itemsLevel>2</itemsLevel><name>speedParts_2</name><iconUrl>PartsIcon/speedParts2</iconUrl><cnName>加速器</cnName><baseLabel>speedParts</baseLabel><objType>rare</objType></things>
+				
+				
+		<things cnName="减速器" o="{'bulletSpeed':-0.12}">
+			<name>downSpeedParts_1</name><baseLabel>downSpeedParts</baseLabel>
+			<cnName>减速器</cnName>
+			<objType>rare</objType>
+			<maxLevel>2</maxLevel>
+			<iconUrl>PartsIcon/downSpeedParts1</iconUrl>
+			<description />
+		</things>
+				<things o="{'bulletSpeed':-0.20}"><maxLevel>2</maxLevel><itemsLevel>2</itemsLevel><name>downSpeedParts_2</name><iconUrl>PartsIcon/downSpeedParts2</iconUrl><cnName>减速器</cnName><baseLabel>downSpeedParts</baseLabel><objType>rare</objType></things>
+				
+		
+		<things cnName="连发器" o="{'twoShootPro':0.05}">
+			<name>twoShootParts_1</name><baseLabel>twoShootParts</baseLabel>
+			<cnName>连发器</cnName>
+			<objType>rare</objType>
+			<maxLevel>2</maxLevel>
+			<iconUrl>PartsIcon/twoShootParts1</iconUrl>
+			<description />
+		</things>
+				<things o="{'twoShootPro':0.09}"><maxLevel>2</maxLevel><itemsLevel>2</itemsLevel><name>twoShootParts_2</name><iconUrl>PartsIcon/twoShootParts2</iconUrl><cnName>连发器</cnName><baseLabel>twoShootParts</baseLabel><objType>rare</objType></things>
+				
+			
+				
+		<things cnName="元素泡" o="{'eleHurtMul':0.07}">
+			<name>eleParts_1</name><baseLabel>eleParts</baseLabel>
+			<cnName>元素泡</cnName>
+			<objType>rare</objType>
+			<maxLevel>2</maxLevel>
+			<iconUrl>PartsIcon/eleParts1</iconUrl>
+			<description />
+		</things>		
+				<things o="{'eleHurtMul':0.12}"><name>eleParts_2</name><maxLevel>2</maxLevel><itemsLevel>2</itemsLevel><iconUrl>PartsIcon/eleParts2</iconUrl><cnName>元素泡</cnName><baseLabel>eleParts</baseLabel><objType>rare</objType></things>	
+		
+		<things cnName="穿人器" o="{'penetrationNum':1}">
+			<name>penbodyParts_1</name><baseLabel>penbodyParts</baseLabel>
+			<cnName>穿人器</cnName>
+			<objType>rare</objType>
+			<maxLevel>2</maxLevel>
+			<iconUrl>PartsIcon/penbodyParts1</iconUrl>
+			<description />
+		</things>
+				<things o="{'penetrationNum':2}"><maxLevel>2</maxLevel><itemsLevel>2</itemsLevel><name>penbodyParts_2</name><iconUrl>PartsIcon/penbodyParts2</iconUrl><baseLabel>penbodyParts</baseLabel><cnName>穿人器</cnName><objType>rare</objType></things>
+		
+		<things cnName="红武增强器" o="{'redHurtMul':0.30}">
+			<name>redArmsParts_1</name><baseLabel>redArmsParts</baseLabel>
+			<cnName>红武增强器</cnName>
+			<objType>rare</objType>
+			<maxLevel>2</maxLevel>
+			<iconUrl>PartsIcon/redArmsParts1</iconUrl>
+			<description />
+		</things>
+				<things o="{'redHurtMul':0.60}"><maxLevel>2</maxLevel><itemsLevel>2</itemsLevel><name>redArmsParts_2</name><iconUrl>PartsIcon/redArmsParts2</iconUrl><baseLabel>redArmsParts</baseLabel><cnName>红武增强器</cnName><objType>rare</objType></things>
+		
+		
+		<things cnName="调表器" o="{'uidpsMul':0.05}">
+			<name>uidpsParts_1</name><baseLabel>uidpsParts</baseLabel>
+			<cnName>调表器</cnName>
+			<objType>rare</objType>
+			<maxLevel>1</maxLevel>
+			<iconUrl>PartsIcon/uidpsParts1</iconUrl>
+			<description />
+		</things>
+		
+		
+		<things cnName="爆裂弹"><skillArr>burstParts_1</skillArr>
+			<name>burstParts_1</name><baseLabel>burstParts</baseLabel>
+			<cnName>爆裂弹</cnName>
+			<objType>rare</objType>
+			<maxLevel>2</maxLevel>
+			<iconUrl>PartsIcon/burstParts1</iconUrl>
+			<description />
+		</things>
+				<things cnName="爆裂弹"><skillArr>burstParts_2</skillArr><itemsLevel>2</itemsLevel><maxLevel>2</maxLevel><name>burstParts_2</name><iconUrl>PartsIcon/burstParts2</iconUrl><baseLabel>burstParts</baseLabel><cnName>爆裂弹</cnName><objType>rare</objType><description /></things>
+		
+				
+		<things cnName="电磁球" o="{'electricEleB':true}">
+			<name>electricParts_1</name><baseLabel>electricParts</baseLabel>
+			<cnName>电磁球</cnName>
+			<objType>rare</objType>
+			<maxLevel>2</maxLevel>
+			<iconUrl>PartsIcon/electricParts1</iconUrl>
+			<description>让武器获得电磁元素伤害，伤害与当前武器元素伤害相同。一把武器只能生效1种元素球。</description>
+		</things>
+				<things cnName="电磁球" o="{'electricEleB':true}">
+					<name>electricParts_2</name><baseLabel>electricParts</baseLabel>
+					<cnName>电磁球</cnName>
+					<objType>rare</objType>
+					<maxLevel>2</maxLevel>
+					<itemsLevel>2</itemsLevel>
+					<iconUrl>PartsIcon/electricParts2</iconUrl>
+					<description>让武器获得电磁元素伤害，伤害与当前武器元素伤害相同。可与其他一级（放置在前）、二级元素球搭配使用，同时生效多种元素伤害。</description>
+				</things>
+		<things cnName="火焰球" o="{'fireEleB':true}">
+			<name>fireParts_1</name><baseLabel>fireParts</baseLabel>
+			<cnName>火焰球</cnName>
+			<objType>rare</objType>
+			<maxLevel>2</maxLevel>
+			<iconUrl>PartsIcon/fireParts1</iconUrl>
+			<description>让武器获得火焰元素伤害，伤害与当前武器元素伤害相同。一把武器只能生效1种元素球。</description>
+		</things>
+				<things cnName="火焰球" o="{'fireEleB':true}">
+					<name>fireParts_2</name><baseLabel>fireParts</baseLabel>
+					<cnName>火焰球</cnName>
+					<objType>rare</objType>
+					<maxLevel>2</maxLevel>
+					<itemsLevel>2</itemsLevel>
+					<iconUrl>PartsIcon/fireParts2</iconUrl>
+					<description>让武器获得火焰元素伤害，伤害与当前武器元素伤害相同。可与其他一级（放置在前）、二级元素球搭配使用，同时生效多种元素伤害。</description>
+				</things>
+		
+		<things cnName="冷冻球" o="{'frozenEleB':true}">
+			<name>frozenParts_1</name><baseLabel>frozenParts</baseLabel>
+			<cnName>冷冻球</cnName>
+			<objType>rare</objType>
+			<maxLevel>2</maxLevel>
+			<iconUrl>PartsIcon/frozenParts1</iconUrl>
+			<description>让武器获得冷冻元素伤害，伤害与当前武器元素伤害相同。一把武器只能生效1种元素球。</description>
+		</things>
+				<things cnName="冷冻球" o="{'frozenEleB':true}">
+					<name>frozenParts_2</name><baseLabel>frozenParts</baseLabel>
+					<cnName>冷冻球</cnName>
+					<objType>rare</objType>
+					<maxLevel>2</maxLevel>
+					<itemsLevel>2</itemsLevel>
+					<iconUrl>PartsIcon/frozenParts2</iconUrl>
+					<description>让武器获得冷冻元素伤害，伤害与当前武器元素伤害相同。可与其他一级（放置在前）、二级元素球搭配使用，同时生效多种元素伤害。</description>
+				</things>
+				
+		<things cnName="生化球" o="{'poisonEleB':true}">
+			<name>poisonParts_1</name><baseLabel>poisonParts</baseLabel>
+			<cnName>生化球</cnName>
+			<objType>rare</objType>
+			<maxLevel>2</maxLevel>
+			<iconUrl>PartsIcon/poisonParts1</iconUrl>
+			<description>让武器获得生化元素伤害，伤害与当前武器元素伤害相同。一把武器只能生效1种元素球。</description>
+		</things>
+				<things cnName="生化球" o="{'poisonEleB':true}">
+					<name>poisonParts_2</name><baseLabel>poisonParts</baseLabel>
+					<cnName>生化球</cnName>
+					<objType>rare</objType>
+					<maxLevel>2</maxLevel>
+					<itemsLevel>2</itemsLevel>
+					<iconUrl>PartsIcon/poisonParts2</iconUrl>
+					<description>让武器获得生化元素伤害，伤害与当前武器元素伤害相同。可与其他一级（放置在前）、二级元素球搭配使用，同时生效多种元素伤害。</description>
+				</things>
+		
+		
+		
+		
+		
+		
+		<things cnName="月饼子弹">
+			<name>mooncakeParts_1</name><baseLabel>mooncakeParts</baseLabel>
+			<cnName>月饼子弹</cnName><skillArr>mooncakeParts_1</skillArr>
+			<objType>rare</objType>
+			<maxLevel>1</maxLevel>
+			<iconUrl>PartsIcon/mooncakeParts1</iconUrl>
+			<description>让武器子弹变成月饼。</description>
+		</things>
+		<things cnName="气球子弹" o="{'gravity':-2}">
+			<name>balloonParts_1</name><baseLabel>balloonParts</baseLabel>
+			<cnName>气球子弹</cnName>
+			<objType>rare</objType>
+			<maxLevel>1</maxLevel>
+			<iconUrl>PartsIcon/balloonParts1</iconUrl>
+			<description>让武器子弹变成气球，并减慢武器的子弹速度（极源除外）。</description>
+		</things>
+		<things cnName="手枪克隆器">
+			<name>pistolCopyParts_1</name><baseLabel>pistolCopyParts</baseLabel>
+			<cnName>手枪克隆器</cnName>
+			<objType>rare</objType>
+			<maxLevel>1</maxLevel>
+			<iconUrl>PartsIcon/pistolCopyParts1</iconUrl>
+			<description>让手枪变成双持武器（仅改变外观，不会增加武器伤害输出）。</description>
+		</things>
+		<things cnName="散弹克隆器">
+			<name>shotgunCopyParts_1</name><baseLabel>shotgunCopyParts</baseLabel>
+			<cnName>散弹克隆器</cnName>
+			<objType>rare</objType>
+			<maxLevel>1</maxLevel>
+			<iconUrl>PartsIcon/shotgunCopyParts1</iconUrl>
+			<description>让散弹枪变成双持武器（仅改变外观，不会增加武器伤害输出）。</description>
+		</things>
+		
+		<things cnName="C型枪管" o="{'rareHurtMul':0.12}">
+			<name>lshapedParts_1</name><baseLabel>lshapedParts</baseLabel>
+			<cnName>C型枪管</cnName>
+			<objType>rare</objType>
+			<maxLevel>2</maxLevel>
+			<iconUrl>PartsIcon/lshapedParts1</iconUrl>
+			<description>子弹通过C型枪管，以180度向后方射出，伤害提升。</description>
+		</things>
+				<things o="{'rareHurtMul':0.20}"><maxLevel>2</maxLevel><itemsLevel>2</itemsLevel><name>lshapedParts_2</name><iconUrl>PartsIcon/lshapedParts2</iconUrl><baseLabel>lshapedParts</baseLabel><cnName>C型枪管</cnName><objType>rare</objType><description>子弹通过C型枪管，以180度向后方射出，伤害提升。</description></things>
+		
+		
+		<things cnName="挖墙弹" o="{'rareHurtMul':-0.3,'penetrationGap':1000}">
+			<name>digWallParts_1</name><baseLabel>digWallParts</baseLabel>
+			<cnName>挖墙弹</cnName>
+			<objType>rare</objType>
+			<maxLevel>1</maxLevel>
+			<iconUrl>PartsIcon/digWallParts1</iconUrl>
+			<description>使子弹无限穿墙，但伤害会降低。</description>
+		</things>
+		<things cnName="散射角控制器" o="{'shootAngleCtrlB':true}">
+			<name>angleCtrlParts_1</name><baseLabel>angleCtrlParts</baseLabel>
+			<cnName>散射角控制器</cnName>
+			<objType>rare</objType>
+			<maxLevel>1</maxLevel>
+			<iconUrl>PartsIcon/angleCtrlParts1</iconUrl>
+			<description>准星越靠近武器时，武器散射角度越小。只对有多子弹的武器生效。</description>
+		</things>
+		<things cnName="消磁器" o="{'noMagneticB':true}">
+			<name>degaussingParts_1</name><baseLabel>degaussingParts</baseLabel>
+			<cnName>消磁器</cnName>
+			<objType>rare</objType>
+			<maxLevel>1</maxLevel>
+			<iconUrl>PartsIcon/degaussingParts1</iconUrl>
+			<description>不受磁力场影响。</description>
+		</things>
+		
+		<things cnName="枪口塞" o="{'rareHurtMul':-0.99}">
+			<name>noHurtParts_1</name><baseLabel>noHurtParts</baseLabel>
+			<cnName>枪口塞</cnName>
+			<objType>rare</objType>
+			<maxLevel>1</maxLevel>
+			<iconUrl>PartsIcon/noHurtParts1</iconUrl>
+			<description>大幅降低武器伤害，仅供特殊场景使用。</description>
+		</things>
+		
+		<things cnName="AI增强镜" o="{'aiShootRange':300}">
+			<name>addAiRangeParts_1</name><baseLabel>noHurtParts</baseLabel>
+			<cnName>AI增强镜</cnName>
+			<objType>rare</objType>
+			<maxLevel>1</maxLevel>
+			<iconUrl>PartsIcon/addAiRangeParts1</iconUrl>
+			<description>对AI射程超过1500的枪械无效。</description>
+		</things>
+		<things cnName="AI遮目镜" o="{'aiShootRange':-250}">
+			<name>downAiRangeParts_1</name><baseLabel>noHurtParts</baseLabel>
+			<cnName>AI遮目镜</cnName>
+			<objType>rare</objType>
+			<maxLevel>1</maxLevel>
+			<iconUrl>PartsIcon/downAiRangeParts1</iconUrl>
+			<description>对AI射程超过1500的枪械无效。</description>
+		</things>
+		
+		
+		
+		<things cnName="修罗弹夹" o="">
+			<name>demCapacityParts_1</name><baseLabel>demCapacityParts</baseLabel>
+			<cnName>修罗弹夹</cnName><skillArr>demCapacityParts_1</skillArr>
+			<objType>rare</objType>
+			<maxLevel>2</maxLevel>
+			<iconUrl>PartsIcon/demCapacityParts1</iconUrl>
+			<description />
+		</things>
+					<things cnName="修罗弹夹" o=""><name>demCapacityParts_2</name><itemsLevel>2</itemsLevel><baseLabel>demCapacityParts</baseLabel><cnName>修罗弹夹</cnName><skillArr>demCapacityParts_2</skillArr><objType>rare</objType><maxLevel>2</maxLevel><iconUrl>PartsIcon/demCapacityParts2</iconUrl><description /></things>
+	
+		
+		<things o="">
+			<name>spurtingCube_1</name><baseLabel>spurtingCube</baseLabel>
+			<cnName>溅射体</cnName><skillArr>Hit_Spurting_ArmsSkill</skillArr>
+			<objType>rare</objType>
+			<maxLevel>1</maxLevel>
+			<iconUrl>PartsIcon/spurtingCube1</iconUrl>
+			<description>对拥有“击中溅射”技能的武器无效。</description>
+		</things>
+		
+		
+				
+		<things cnName="暗金之芯">
+			<name>darkgoldCpu_1</name><baseLabel>darkgoldCpu</baseLabel>
+			<cnName>暗金之芯</cnName>
+			<objType>rare</objType>
+			<maxLevel>1</maxLevel>
+			<iconUrl>PartsIcon/darkgoldCpu1</iconUrl>
+			<description>
+				将以下武器跃升为暗金品质同时提升伤害：红色随机属性武器(+400%)、黑色随机属性武器(+400%)。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]等级礼包（需要进阶出1把暗金武器）
+			</description>
+		</things>
+		<things cnName="紫金之芯">
+			<name>purgoldCpu_1</name><baseLabel>purgoldCpu</baseLabel>
+			<cnName>紫金之芯</cnName>
+			<objType>rare</objType>
+			<maxLevel>1</maxLevel>
+			<iconUrl>PartsIcon/purgoldCpu1</iconUrl>
+			<description>
+				将以下武器跃升为紫金（无双）品质同时提升伤害：红色随机属性武器(+600%)、黑色随机属性武器(+1000%)、戌狗、烟花弩、炮仗、圣诞火铳。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]等级礼包（需要进阶出2把无双武器）
+				[n]物品合成（需要进阶出2把无双武器）
+			</description>
+		</things>			
+					
+					
+	</father>
+</data>

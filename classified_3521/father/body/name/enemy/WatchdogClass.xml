@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<body index="0" name="看门狗" shell="metal">
+			
+			<name>Watchdog</name>
+			<cnName>看门狗</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/Watchdog.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<headHurtMul>3</headHurtMul>
+			<rosRatio>99</rosRatio>
+			<showLevel>999</showLevel>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move
+				,shootAttack,lightningAttack,laserAttack
+				,hurt1,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+			</imgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			<lifeBarExtraHeight>-40</lifeBarExtraHeight>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>7</maxVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>Watchdog_AIExtra</extraAIClassLabel>
+			<bossSkillArr>noSpeedReduce,silence_enemy,underWatchdog,underDieWatchdog,lightningWatchdog,laserWatchdog,fightReduct,defenceBounce_enemy</bossSkillArr>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><cn>射击</cn>
+					<hurtRatio>0.2</hurtRatio>
+					<bulletLabel>shoot_Watchdog</bulletLabel>
+					<grapRect>-450,-88,351,77</grapRect>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>lightningAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<grapRect>-400,-111,100,105</grapRect>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>laserAttack</imgLabel><noAiChooseB>1</noAiChooseB><ingfollowB>1</ingfollowB>
+					<hurtRatio>0</hurtRatio>
+					<hurtMul>0.08</hurtMul>
+					<attackType>holy</attackType>
+					<grapRect>-400,-111,100,105</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>	
+		
+		
+		
+		
+		<skill cnName="大地闪电">
+			<name>lightningWatchdog</name>
+			<cnName>大地闪电</cnName><noBeClearB>1</noBeClearB>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB><skillIcon>SkillIcon/laser_PetFightWolf_36</skillIcon>
+			<cd>7</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>bullet_lightningWatchdog</effectType>
+			<value>16</value>
+			<mul>0.15</mul>
+			<secMul>60</secMul>
+			<duration>4</duration>
+			<obj>"name":"lightningWatchdog"</obj>
+			 
+			<meActionLabel>lightningAttack</meActionLabel>
+			<description>看门狗向周围释放扩散闪电，对目标造成巨大伤害，并大幅降低其枪支的射速。</description>
+		</skill>
+					<skill cnName="大地闪电-过载">
+						<name>lightningWatchdogHit</name>
+						<cnName>大地闪电-过载</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+						
+						<conditionType>passive</conditionType>
+						<condition>hit</condition>
+						<target>target</target>
+						
+						<addType>state</addType>
+						<effectType>attackGapMul</effectType>
+						<mul>0.1</mul>
+						<duration>8</duration>
+						<stateEffectImg partType="shootPoint" raNum="25" followPartRaB="1">bulletHitEffect/smoke_black</stateEffectImg>
+						<description>击中目标后腐蚀对方手上的枪支，降低枪支[1-mul]的射击速度，持续[duration]秒。</description>
+					</skill>
+		
+		<skill cnName="激光扫荡">
+			<name>laserWatchdog</name>
+			<cnName>激光扫荡</cnName><noBeClearB>1</noBeClearB>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>9999999</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>laserWatchdog</effectType>
+			<passiveSkillArr>laserWatchdogUnder,laserWatchdogUnder2</passiveSkillArr>
+			<duration>0.5</duration>
+			 
+			<meActionLabel>laserAttack</meActionLabel>
+			<description>生命值低于50%时，看门狗开启激光扫荡，扫荡期间只有发射激光部位可被攻击，接着生命值每次被损伤10%关闭或者开启激光扫荡，如此重复直至倒下。</description>
+		</skill>
+		
+						<skill cnName="激光扫荡-受到攻击">
+							<name>laserWatchdogUnder</name>
+							<cnName>激光扫荡-受到攻击</cnName>
+							
+							<conditionType>passive</conditionType>
+							<condition>underHit</condition>
+							<target>me</target>
+							
+							<addType>instant</addType>
+							<effectType>laserWatchdogUnder</effectType>
+							<pointEffectImg con="add" partType="head">Watchdog/hurtEffect</pointEffectImg>
+						</skill>
+						<skill cnName="激光扫荡-受到攻击">
+							<name>laserWatchdogUnder2</name>
+							<cnName>激光扫荡-受到攻击</cnName>
+							
+							<conditionType>passive</conditionType>
+							<condition>underSkillHit</condition>
+							<target>me</target>
+							
+							<addType>instant</addType>
+							<effectType>laserWatchdogUnder</effectType>
+							<pointEffectImg con="add" partType="head">Watchdog/hurtEffect</pointEffectImg>
+						</skill>
+						
+						
+						
+		<skill cnName="受到伤害">
+			<name>underWatchdog</name>
+			<cnName>受到伤害</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHurt</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>underWatchdog</effectType>
+			<description />
+		</skill>
+				<skill cnName="受到伤害">
+					<name>underDieWatchdog</name>
+					<cnName>受到伤害</cnName>
+					
+					<conditionType>passive</conditionType>
+					<condition>beforeDie</condition>
+					<target>me</target>
+					
+					<addType>instant</addType>
+					<effectType>underWatchdog</effectType>
+					<description />
+				</skill>
+	</father>		
+		
+		
+		
+		
+	</data>

@@ -1,0 +1,445 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="bwallTask">
+		<level name="bwallWoTu">
+			<sayList name="s1">
+				<say target="本我"><content>我的装备呢？还有我的枪呢？</content></say>
+				<say target="沃龙"><content>不用找了，服务器存档被黑客清空了，现在所有玩家都变成了1级。</content></say>
+				<say target="本我"><content>你是谁？</content></say>
+				<say target="沃龙"><content>说了你也不知道。</content></say>
+				<say target="本我"><content>你刚才那话是什么意思？</content></say>
+				<say target="沃龙"><content>简单的说，就是世界被重启了，除了你的记忆，这里所有事物都回到你刚来沃土镇的样子。</content></say>
+				<say target="本我"><content>时光倒流？</content></say>
+				<say target="沃龙"><content>要这么说，也不是不可以。</content></say>
+				<say target="本我"><content>胡说八道，我现在已经不信这一套了。</content></say>
+				<say target="沃龙"><content>呵呵。</content></say>
+			</sayList>
+			<sayList name="sOther">
+				<say target="本我"><content>你怎么不打僵尸啊？</content></say>
+				<say target="沃龙"><content>我的攻击力被封锁了。</content></say>
+				<say target="本我"><content>说什么玩意？听不懂。</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="本我"><content>好痛啊，1级的沃土镇怎么会出现僵尸王？我这种装备根本打不过它！</content></say>
+				<say target="沃龙"><content>我有方法可制得了它，想知道吗？</content></say>
+				<say target="本我"><content>说来听听。</content></say>
+				<say target="沃龙"><content>用枪打一下僵尸王的背面，再打一下它的正面，如此反复3次，就可将其击毙。</content></say>
+				<say target="本我"><content>这也太奇葩了吧？</content></say>
+				<say target="沃龙"><content>我可是研究了好几天，信不信由你。</content></say>
+				<say target="本我"><content>好，我试试。</content></say>
+			</sayList>
+			<sayList name="s3">
+				<say target="本我"><content>嘿嘿，还真可以！</content></say>
+				<say target="沃龙"><content>接下来的杨梅岭，还有一只更厉害的首领等着你呢。</content></say>
+				<say target="本我"><content>这肯定是谁的恶作剧！</content></say>
+			</sayList>
+		</level>
+		
+		<level name="bwallYangMei">
+			<sayList name="s2">
+				<say target="本我"><content>这根本打不过嘛！</content></say>
+				<say target="沃龙"><content>用狙击枪打狂战尸1下，再用手枪打1下，如此反复6次后，就可将其击毙。</content></say>
+				<say target="本我"><content>好吧。</content></say>
+			</sayList>
+			<sayList name="s3">
+				<say target="本我"><content>为什么这里的怪物会变成这样？是不是你搞的把戏？</content></say>
+				<say target="沃龙"><content>当然不是，这些方法都是我研究了好几天的成果。</content></say>
+				<say target="本我"><content>那到底怎么回事？</content></say>
+				<say target="沃龙"><content>事实可能会颠覆你的世界观。</content></say>
+				<say target="本我"><content>说吧，多奇怪的事我都见过。</content></say>
+				<say target="沃龙"><content>还记得你在家玩的那款游戏吗？</content></say>
+				<say target="本我"><content>爆枪世界？</content></say>
+				<say target="沃龙"><content>对，现在你就把我们这个世界比喻成那个游戏。</content></say>
+				<say target="沃龙"><content>前段时间，游戏服务器遭到了黑客的入侵。</content></say>
+				<say target="沃龙"><content>黑客不仅清空了所有玩家的存档，还修改了游戏代码。</content></say>
+				<say target="沃龙"><content>现在所有关卡的难度都提升了几十倍，必须用特殊方法才能通关。</content></say>
+				<say target="沃龙"><content>之前没有任何玩家能通过第一关。</content></say>
+				<say target="沃龙"><content>玩家不断流失，长此以往，游戏就会被迫关服。</content></say>
+				<say target="沃龙"><content>到时候这个世界也会随之毁灭！</content></say>
+				<say target="本我"><content>我们这个世界又不是游戏。</content></say>
+				<say target="沃龙"><content>呵呵，你现在无法理解很正常。</content></say>
+				<say target="沃龙"><content>后面你就会慢慢知道的。</content></say>
+			</sayList>
+		</level>
+		
+		<level name="bwallXiaSha">
+			<sayList name="s1">
+				<say target="本我"><content>这一关怎么打？</content></say>
+				<say target="沃龙"><content>你自己先试试看。</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="本我"><content>这么多僵尸，怎么打啊？</content></say>
+				<say target="沃龙"><content>让我来给你改个参数。</content></say>
+			</sayList>
+			<sayList name="s3">
+				<say target="本我"><content>哇呜，我怎么变大了！</content></say>
+				<say target="沃龙"><content>去吓一吓那些僵尸吧。</content></say>
+			</sayList>
+			<sayList name="s4">
+				<say target="本我"><content>你是怎么办到的？</content></say>
+				<say target="沃龙"><content>我只要改一个参数就可以了。</content></say>
+				<say target="本我"><content>这么简单？你到底是谁啊？</content></say>
+				<say target="沃龙"><content>我就是这个世界的创造者。</content></say>
+				<say target="本我"><content>神？</content></say>
+				<say target="沃龙"><content>什么神不神的，我就一写代码的。</content></say>
+				<say target="本我"><content>难道我们这个世界，真是只是一款游戏而已吗？</content></say>
+				<say target="沃龙"><content>是的。</content></say>
+				<say target="本我"><content>我可以暂时接受一下这个设定。</content></say>
+				<say target="本我"><content>那你知道，怎么样才能让这个游戏恢复正常吗？</content></say>
+				<say target="沃龙"><content>只要有人能通过黑客设计的所有关卡，就可以让世界恢复如初了。</content></say>
+				<say target="本我"><content>真变态啊！</content></say>
+				<say target="沃龙"><content>但是黑客可能不知道，我在这个游戏里留了很多作弊接口，嘿嘿！</content></say>
+				<say target="本我"><content>你既然是游戏的创造者，为什么会出现在游戏里呢？</content></say>
+				<say target="沃龙"><content>这个说来就话长了。</content></say>
+			</sayList>
+		</level>
+		<level name="bwallFengWei">
+			<sayList name="s1">
+				<say target="沃龙"><content>按下副手键，可以调节你的身体大小了，不仅可以放大，还能缩小哦。</content></say>
+			</sayList>
+			<sayList name="s4">
+				<say target="本我"><content>真好玩！</content></say>
+				<say target="沃龙"><content>之前我只来过这里，对后面的关卡一无所知。接下来我们得小心一点了！</content></say>
+			</sayList>
+		</level>
+		<level name="bwallXiChi">
+			<sayList name="s1">
+				<say target="本我"><content>缩放身体的功能好像不能用了。</content></say>
+				<say target="沃龙"><content>你再试试看？</content></say>
+				<say target="本我"><content>不行啊！</content></say>
+				<say target="沃龙"><content>完了，被黑客给封锁了！</content></say>
+				<say target="沃龙"><content>以后接口用一个就会少一个，要省着点用了。</content></say>
+				<say target="本我"><content>那这一关怎么过？</content></say>
+				<say target="沃龙"><content>我也不知道，得靠你自己了。</content></say>
+			</sayList>
+			<sayList name="s4">
+				<say target="本我"><content>累死了我！</content></say>
+			</sayList>
+		</level>
+		
+		<level name="bwallBaiLu">
+			<sayList name="s1">
+				<say target="本我"><content>话说我的表哥去哪了？他早就应该来找我才对啊？</content></say>
+				<say target="沃龙"><content>我也不知道他被改到哪去了。</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="本我"><content>我无法射击，还跑不过它们，怎么办？</content></say>
+				<say target="沃龙"><content>唉，再给你开一个接口吧。对话结束后，按下副手键试试看。</content></say>
+			</sayList>
+			<sayList name="s4">
+				<say target="本我"><content>表哥你终于来了！</content></say>
+				<say target="文杰表哥"><content>臭表弟，竟敢在我的地盘抢我的猎物？</content></say>
+				<say target="文杰表哥"><content>还不滚回你的绿岛去。</content></say>
+				<say target="本我"><content>你是不是皮痒啊？</content></say>
+				<say target="沃龙"><content>很明显，剧情都被改了。</content></say>
+				<say target="本我"><content>藏师呢？</content></say>
+				<say target="文杰表哥"><content>藏师那个胆小鬼早就被我干掉了。</content></say>
+				<say target="文杰表哥"><content>我现在才是霞光市的屠尸将军。</content></say>
+				<say target="沃龙"><content>不要跟表哥废话了，我们还有任务呢。</content></say>
+				<say target="文杰表哥" pointer="沃龙"><content>这位墨镜男在嘀嘀咕咕什么呢？</content></say>
+				<say target="文杰表哥" pointer="沃龙"><content>信不信把你变成第二个藏师？</content></say>
+				<say target="本我"><content>那你试试看？</content></say>
+				<say target="沃龙" pointer="文杰表哥"><content>打扰了文杰大表哥，我们马上就离开这！</content></say>
+				<say target="文杰表哥"><content>那还不赶紧的，我不想再看到你们了。</content></say>
+			</sayList>
+			<sayList name="s5">
+				<say target="本我"><content>太嚣张了，我受不了了！</content></say>
+				<say target="本我"><content>反正以后游戏要恢复正常，为什么不趁机揍他一顿？</content></say>
+				<say target="沃龙"><content>谁知道他的代码被改成什么样了？你不一定打得过他。</content></say>
+				<say target="沃龙"><content>算了算了，以后有的是机会。</content></say>
+			</sayList>
+		</level>
+		
+		<level name="bwallShuiSheng">
+			<sayList name="s1">
+				<say target="沃龙"><content>这一关的重力好像有点问题，你跳一下看看？</content></say>
+				<say target="本我"><content>重力好像变小了！</content></say>
+				<say target="沃龙"><content>为以防万一，给你开放一个修改重力系数的接口吧。等会儿按下副手键试试看。</content></say>
+			</sayList>
+			<sayList name="s4">
+				<say target="黑客"><content>别想在我这刷小聪明了，过几天我就把所有接口给封了！</content></say>
+				<say target="本我"><content>黑客？！</content></say>
+				<say target="沃龙"><content>终于把你给逼出来了。</content></say>
+				<say target="黑客"><content>原来动用这么多手段，就是为了让我出现。</content></say>
+				<say target="沃龙"><content>什么时候放我回去？</content></say>
+				<say target="黑客"><content>以前我给你B站发了多少私信，你都不回我。</content></say>
+				<say target="黑客"><content>现在就让你体会一下那种被忽视的感觉！拜拜！</content></say>
+			</sayList>
+			<sayList name="s5">
+				<say target="沃龙"><content>别走啊！</content></say>
+				<say target="本我"><content>你一游戏作者，竟然也会被关在自己的游戏里？</content></say>
+				<say target="沃龙"><content>前几天我一觉醒来就在这了，我也不知道黑客是怎么办到的。</content></say>
+				<say target="本我"><content>也许完成所有任务，你就可以回去了。</content></say>
+				<say target="沃龙"><content>希望如此吧！</content></say>
+			</sayList>
+		</level>
+		
+		<level name="bwallBaiZhang">
+			<sayList name="s1">
+				<say target="本我"><content>我又不能射击了！</content></say>
+				<say target="沃龙"><content>那你只能用徒手攻击了。</content></say>
+			</sayList>
+			<sayList name="s4">
+				
+				<say target="本我"><content>太凶险了！</content></say>
+				<say target="沃龙"><content>对了，你能帮我弄一台可以上网的电脑吗？</content></say>
+				<say target="本我"><content>要电脑干嘛？</content></say>
+				<say target="沃龙"><content>看看能不能把连上现实世界的网络，把游戏代码恢复正常。</content></say>
+				<say target="本我"><content>你干得过那个黑客吗？</content></say>
+				<say target="沃龙"><content>不试试怎么知道。</content></say>
+				<say target="本我"><content>我绿岛的家里有一台电脑。</content></say>
+				<say target="沃龙"><content>那带我去吧。</content></say>
+				<say target="本我"><content>可是我不想回去，我不知道怎么面对我妈妈。</content></say>
+				<say target="沃龙"><content>不用怕，我来帮你圆场。</content></say>
+				<say target="本我"><content>怎么圆？</content></say>
+				<say target="沃龙"><content>放心吧，你妈的性格就是我设定的，我对她知根知底。</content></say>
+				<say target="本我"><content>好吧……但是去绿岛需要一条船啊。</content></say>
+				<say target="沃龙"><content>趁着现在还能修改重力，我们直接跳过去就行了！</content></say>
+				<say target="本我"><content>还能这样吗？</content></say>
+			</sayList>
+		</level>
+		
+		<level name="bwallGreenLand1">
+			<sayList name="s1">
+				<say target="玉晴"><content>@Striker，这几天干什么去了？</content></say>
+				<say target="本我"><content>我……</content></say>
+				<say target="本我" pointer="玉晴"><content>我……回来拿一下电脑……</content></say>
+				<say target="玉晴"><content>还有脸拿电脑？跟我回家！</content></say>
+				<say target="本我" pointer="玉晴"><content>我拿完电脑就走……</content></say>
+				<say target="玉晴"><content>哎呦，你还敢拿枪指着我，赶紧给我放下！</content></say>
+				<say target="沃龙" pointer="玉晴"><content>阿姨啊……不对，玉晴大姐！</content></say>
+				<say target="玉晴" pointer="沃龙"><content>你是谁啊？怎么也拿枪指着我？！</content></say>
+				<say target="沃龙"><content>我们的游戏就是这么一个特点，必须有一把枪黏在手上，放不下去的。</content></say>
+				<say target="玉晴"><content>别废话，你到底是谁？</content></say>
+				<say target="沃龙"><content>我是一家游戏公司的董事长，你儿子这几天一直在我公司实习来着。</content></say>
+				<say target="玉晴"><content>游戏公司的董事长？</content></say>
+				<say target="玉晴"><content>我儿子哪里会做什么游戏？</content></say>
+				<say target="沃龙"><content>但是他会玩游戏啊，非常适合做我们公司的游戏测试专员。</content></say>
+				<say target="玉晴"><content>我信你个鬼！</content></say>
+				<say target="玉晴"><content>你这人模狗样的，哪里像什么董事长……就一黑社会！</content></say>
+				<say target="本我"><content>他确实是……开游戏公司的。</content></say>
+				<say target="玉晴" pointer="本我"><content>儿子，别信他，这种骗子我见多了！</content></say>
+				<say target="玉晴"><content>这位戴墨镜的，你给我听好了，整个岛上都是我的人！</content></say>
+				<say target="玉晴"><content>你赶紧给我离开这，不然我让你吃不了兜着走！</content></say>
+				<say target="沃龙"><content>好好……我走……</content></say>
+				<say target="本我"><content>等一下啊……说好的帮我圆场呢。</content></say>
+				<say target="玉晴"><content>圆什么啊，跟我回家！</content></say>
+				<say target="沃龙"><content>先跟你妈回去，有事后面再议。</content></say>
+				<say target="本我"><content>你个……废物……</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="玉晴"><content>等会儿到家，我拿一部你表哥用过的手机给你。</content></say>
+				<say target="玉晴"><content>不然有事我老是联系不上你。</content></say>
+				<say target="本我"><content>知道了，妈。</content></say>
+				<say target="玉晴"><content>好奇怪啊，我怎么感觉自己身体轻飘飘的。</content></say>
+			</sayList>
+		</level>
+		<level name="bwallZhuTou">
+			<sayList name="s1">
+				<say target="本我"><content>说好的帮我圆场呢？</content></say>
+				<say target="本我"><content>还好我刚才跑得快，不然就被我妈给逮住了！</content></say>
+				<say target="沃龙"><content>谁知道你们家，一个表哥，一个你妈，都那么嚣张跋扈！</content></say>
+				<say target="沃龙"><content>不过在她追你的时候，我趁机去你家用了会儿电脑。</content></say>
+				<say target="本我"><content>不错嘛！代码改的怎么样？</content></say>
+				<say target="沃龙"><content>这个黑客太厉害了，服务器被锁死了，我根本恢复不了。</content></say>
+				<say target="本我"><content>你个……废物……</content></say>
+				<say target="沃龙"><content>不过我又开了几个后门，嘿嘿。</content></say>
+				<say target="本我"><content>赶紧给我用一个！</content></say>
+				<say target="沃龙"><content>按下副手键可以修改地面摩擦系数。</content></say>
+				<say target="本我"><content>我试试看！</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="本我"><content>修改摩擦系数……有个屁用！</content></say>
+				<say target="本我"><content>赶紧给我换一个！</content></say>
+				<say target="沃龙"><content>好吧。</content></say>
+				<say target="沃龙"><content>马上你的枪就可以穿透这些木板了。</content></say>
+			</sayList>
+			<sayList name="s4">
+				<say target="文杰表哥/手机" iconUrl="IconGather/WenJie"><content>你俩竟然还在这里游荡，看来是活腻了！</content></say>
+				<say target="本我"><content>我亲爱的表哥，你真的狠心对我下手？</content></say>
+				<say target="文杰表哥/手机" iconUrl="IconGather/WenJie"><content>啊呸，别说这些话来恶心我！</content></say>
+				<say target="文杰表哥/手机" iconUrl="IconGather/WenJie"><content>无论谁，只要影响到了我的屠尸大业，我都会将其手刃！</content></say>
+				<say target="本我"><content>那我就不客气了！</content></say>
+				<say target="沃龙"><content>唉，这些台词都是哪个弱智写的啊？</content></say>
+			</sayList>
+		</level>
+		<level name="bwallShuangTa">
+			<sayList name="s1" oneB="1">
+				<say target="本我"><content>这个世界怎么突然颠倒了？</content></say>
+				<say target="沃龙"><content>肯定是黑客搞的，你自求多福吧。</content></say>
+			</sayList>
+			<sayList name="s4">
+				<say target="本我"><content>表哥……表哥就这样挂了？</content></say>
+				<say target="沃龙"><content>他应该跪地求饶，然后再加入我们才对啊。</content></say>
+				<say target="本我"><content>目前来看，后面没他的戏份了。</content></say>
+				<say target="沃龙"><content>黑客不希望给你提供帮手。</content></say>
+				<say target="本我"><content>好歹给我留一个啊。</content></say>
+				<say target="本我"><content>你又这么废，拿着辰龙都帮不上忙，还不如把枪给我呢！</content></say>
+				<say target="沃龙"><content>这把枪就是个摆设，而且黏在我手上摘不下来。</content></say>
+				<say target="本我"><content>我好想念我原来的武器和装备啊，有还有队友、载具和尸宠。</content></say>
+				<say target="沃龙"><content>我看出黑客已经黔驴技穷，应该快了，你再坚持一下。</content></say>
+			</sayList>
+		</level>
+		<level name="bwallDaoTa">
+			<sayList name="s1" oneB="1">
+				<say target="本我"><content>双塔村又倒了，但是我没有倒，嘿嘿。</content></say>
+				<say target="沃龙"><content>这关明显是让你捡银币。</content></say>
+				<say target="沃龙"><content>但是掉下去可能会真的上天哦，还是小心点吧。</content></say>
+				<say target="本我"><content>太危险了吧！</content></say>
+				<say target="沃龙"><content>我给你调了一下参数，可以弹跳两下。</content></say>
+				<say target="本我"><content>不能无限弹跳吗？</content></say>
+				<say target="沃龙"><content>不行，上限被封死了，我也没办法。</content></say>
+			</sayList>
+		</level>
+		<level name="bwallDaoTa2">
+			<sayList name="s1" oneB="1">
+				<say target="本我"><content>哎呦我去，这黑客怎么和双塔村杠上了！</content></say>
+				<say target="本我"><content>我真的快吐了，不如换你来吧？</content></say>
+				<say target="沃龙"><content>别啊，黑客看似在偷懒，实则还是很辛苦的。</content></say>
+				<say target="沃龙"><content>我以前做类似的任务都要测试几十遍的。</content></say>
+				<say target="沃龙"><content>你们做任务5分钟，我都要测试几个小时。</content></say>
+				<say target="本我"><content>你怎么体谅起黑客来了？</content></say>
+				<say target="沃龙"><content>只是感同身受，没其他意思。</content></say>
+			</sayList>
+		</level>
+		<level name="bwallBeiDou">
+			<sayList name="s1" oneB="1">
+				<say target="沃龙"><content>这关难度很高，所以我给你增加了一个新技能。</content></say>
+				<say target="本我"><content>什么技能？</content></say>
+				<say target="沃龙"><content>击毙僵尸的时候记得打它后脑勺，会有惊喜哦！</content></say>
+				<say target="本我"><content>我试试看。</content></say>
+			</sayList>
+			<sayList name="s4">
+				<say target="本我"><content>你现在给我的，怎么都是这么费劲的技能？</content></say>
+				<say target="本我"><content>你说黑客黔驴技穷了，我怎么觉得你才是啊！</content></say>
+				<say target="沃龙"><content>我……我再找找看……</content></say>
+				<say target="本我"><content>给我赶紧的！</content></say>
+			</sayList>
+		</level>
+		
+		<level name="bwallDongShan">
+			<sayList name="s1" oneB="1">
+				<say target="沃龙"><content>这把武器怎么样？</content></say>
+				<say target="本我"><content>我的天！</content></say>
+				<say target="本我"><content>这才像一个游戏作者该有的能力嘛！</content></say>
+			</sayList>
+		</level>
+		<level name="bwallQingSha">
+			<sayList name="s1" oneB="1">
+				<say target="本我"><content>地上都是火，怎么捡银币？</content></say>
+				<say target="沃龙"><content>那就把你变成蝙蝠吧。</content></say>
+				<say target="本我"><content>你可真行啊！</content></say>
+			</sayList>
+		</level>
+		<level name="bwallQingMing">
+			<sayList name="s1" oneB="1">
+				<say target="沃龙"><content>地图变黑了？！真佩服这黑客的脑洞。</content></say>
+				<say target="本我"><content>接下来发生任何情况，我都不会觉得奇怪了。</content></say>
+			</sayList>
+			<sayList name="s2">
+				<say target="本我"><content>总算是恢复正常了。</content></say>
+				<say target="沃龙"><content>黑客就是想着各种法子来折磨我们，我看他接下来还有什么招。</content></say>
+				<say target="黑客"><content>你个沃龙好意思说我？</content></say>
+				<say target="黑客"><content>你看你后面做的那些主线任务，都是什么玩意？</content></say>
+				<say target="黑客"><content>任务阴间，剧情无聊，没活可以不要整，别老想着折磨我们这些玩家。</content></say>
+				<say target="沃龙"><content>说的对，后面的剧情确实被玩坏了。</content></say>
+				<say target="沃龙"><content>那你什么时候放我回去改进一下游戏？</content></say>
+				<say target="黑客"><content>等着吧你。</content></say>
+			</sayList>
+		</level>
+		
+		<level name="bwallQingMing2">
+			<sayList name="s1" oneB="1">
+				<say target="本我"><content>现在我啥都看不见了，真想骂句脏话！</content></say>
+				<say target="沃龙"><content>我有事先走了。</content></say>
+				<say target="本我"><content>你快点！帮我想个办法！</content></say>
+				<say target="沃龙"><content>这样吧，你每次击毙一个敌人，我都留下一个标记，让你知道大概的地形边界在哪。</content></say>
+				<say target="本我"><content>就这？</content></say>
+				<say target="沃龙"><content>好用的接口还是留给关键时刻吧。</content></say>
+				<say target="本我"><content>我都瞎了，还不是关键时刻？</content></say>
+				<say target="本我"><content>你真的是……太让我失望了！</content></say>
+				<say target="沃龙"><content>好吧好吧，再给你一个无限子弹。</content></say>
+				<say target="本我"><content>行吧，有总比没有好。</content></say>
+			</sayList>
+		</level>
+		<level name="bwallNanTang">
+			<sayList name="s1" oneB="1">
+				<say target="沃龙"><content>来，这次的接口不会让你失望的。</content></say>
+				<say target="本我"><content>有什么作用？</content></say>
+				<say target="沃龙"><content>按下副手键，可以调节你的伤害系数。</content></say>
+				<say target="本我"><content>哇，那不是无敌了？</content></say>
+				<say target="沃龙"><content>但是敌人的伤害也会同时提升。</content></say>
+				<say target="本我"><content>这不是问题，它们根本来不及出手的。</content></say>
+			</sayList>
+		</level>
+		<level name="bwallStoneSea">
+			<sayList name="s1" oneB="1">
+				<say target="本我"><content>这是哪？</content></say>
+				<say target="黑客"><content>这是氩星。</content></say>
+				<say target="沃龙"><content>你怎么把我没公布的地图给拿出来了！</content></say>
+				<say target="黑客"><content>做好的地图干嘛藏着掖着？</content></say>
+				<say target="黑客"><content>你都在动态里发过截图了，还有脸说我？</content></say>
+				<say target="沃龙"><content>算了，不跟你一般见识。</content></say>
+				<say target="本我"><content>你俩别废话了。</content></say>
+				<say target="本我"><content>黑客，什么时候放我们走？</content></say>
+				<say target="黑客"><content>这是最后一关了。</content></say>
+				<say target="本我"><content>真的吗？我竟然还有点小激动。</content></say>
+				<say target="黑客"><content>这一关，你的任务的就是击毙你身边这个人——沃龙！</content></say>
+				<say target="沃龙"><content>什么？！</content></say>
+				<say target="本我"><content>你在开玩笑吗？</content></say>
+				
+				<say target="黑客"><content>当然不是！</content></say>
+				<say target="黑客"><content>你不是想让霞光大陆恢复和平吗？</content></say>
+				<say target="黑客"><content>只要干掉沃龙就可以了！</content></say>
+				<say target="本我"><content>干掉他？</content></say>
+				<say target="黑客"><content>为什么你总有对付不完的敌人？先是亚瑟，接着是鬼爵，最后是狂人。</content></say>
+				<say target="本我"><content>为什么？</content></say>
+				<say target="黑客"><content>因为这些坏人都是沃龙创造的！</content></say>
+				<say target="黑客"><content>即便你最后消灭了狂人，又怎样？沃龙还会创造更强的敌人出来。</content></say>
+				<say target="本我"><content>是这样的吗？沃龙。</content></say>
+				<say target="沃龙"><content>黑客说的没错。</content></say>
+				<say target="本我"><content>为什么要这样做？</content></say>
+				<say target="沃龙"><content>我们这个游戏就是为了战争而生的。没有战争，这个游戏就不存在了。</content></say>
+				<say target="本我"><content>别说那些我听不懂的。</content></say>
+				<say target="沃龙"><content>即便是真实世界，战争和死亡也无处不在。</content></say>
+				<say target="沃龙"><content>你会去计较你这辈子踩死了多少只蚂蚁吗？</content></say>
+				<say target="本我"><content>在你眼里，我们只是蚂蚁而已吗？</content></say>
+				<say target="沃龙"><content>我不是这个意思。</content></say>
+				<say target="黑客"><content>干掉他，现实世界的沃龙也将不复存在。到时候，这里就不会产生新的坏人！霞光大陆将迎来真正的和平！</content></say>
+				<say target="沃龙"><content>@Striker，别被黑客给迷惑了！</content></say>
+				<say target="本我"><content>他说的没错。</content></say>
+				<say target="本我"><content>我记得鬼爵曾经说过，只要沃龙在，他就不会黔驴技穷！</content></say>
+				<say target="本我"><content>所以，你就是罪魁祸首！</content></say>
+				<say target="沃龙"><content>哼！不要忘了，你也是我创造的！</content></say>
+				<say target="本我"><content>那又怎样？我@Striker，从来没怕过谁，即便是造物主！</content></say>
+				<say target="沃龙"><content>那我也不客气了！</content></say>
+			</sayList>
+			<sayList name="s4">
+				<say target="黑客"><content>再来一枪，沃龙就归西了。</content></say>
+				<say target="本我"><content>等等，我总觉得哪里不对劲。</content></say>
+				<say target="黑客"><content>有什么问题？</content></say>
+				<say target="本我"><content>如果沃龙挂了，那真正掌握游戏控制权的人，不就是你了吗？</content></say>
+				<say target="黑客"><content>我可没想那么多。</content></say>
+				<say target="本我"><content>这就是你设置的圈套。</content></say>
+				<say target="黑客"><content>你这小子……怎么变得这么快？</content></say>
+				<say target="本我"><content>而且你根本就干不掉沃龙，不然就不用我动手了。</content></say>
+				<say target="黑客"><content>你……</content></say>
+				<say target="黑客"><content>你别想回去了！再见！</content></say>
+			</sayList>
+			
+			<sayList name="s5">
+				<say target="本我"><content>没想到你这么弱鸡。</content></say>
+				<say target="沃龙"><content>那是因为你有主角光环。</content></say>
+				<say target="本我"><content>别扯了，说点正事。</content></say>
+				<say target="沃龙"><content>什么事？</content></say>
+				<say target="本我"><content>我在绿岛看见了飞船的残骸。</content></say>
+				<say target="沃龙"><content>你眼力真好。</content></say>
+				<say target="本我"><content>加上现在这张未公开的地图，我想问，你以后是不是要让我们上太空啊？</content></say>
+				<say target="沃龙"><content>这个……是不能说的秘密。</content></say>
+				<say target="本我"><content>别再让我们玩阴间任务了，可以吗？</content></say>
+				<say target="沃龙"><content>放心，这次一定让你们爽个够。</content></say>
+				<say target="沃龙"><content>还是等我出去了再说吧。</content></say>
+				<say target="本我"><content>行吧。</content></say>
+			</sayList>
+		</level>
+	</father>
+</data>

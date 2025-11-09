@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">	
+		<bullet>
+			<name>PoliceZombieBullet</name>
+			
+			<hurtRatio>1</hurtRatio>
+			<attackType>holy</attackType>
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.4</attackDelay>
+			
+			<bulletAngle>185</bulletAngle>
+			<bulletAngleRange>60</bulletAngleRange>
+			<bulletWidth>20</bulletWidth>
+			<bulletLife>10</bulletLife>
+			<hitType>rect</hitType>
+				
+			<shootPoint>-90,-153</shootPoint>
+			<bulletSpeed>15</bulletSpeed>
+			<speedD random="0.3" selfVra="-1" />
+			
+			<gravity>0.4</gravity>
+			<boomD bodyB="1" selfB="1" radius="200" noExcludeBodyB="1" />
+			<bounceD glueFloorB="1" />	
+			<skillArr>PoliceZombieShakeHit</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">PoliceZombie/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom2">boomEffect/boom3</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+			<hitFloorImgUrl>no</hitFloorImgUrl>
+		</bullet>
+		<bullet>
+			<name>PoliceZombieShake</name>
+			
+			<hurtRatio>0</hurtRatio>
+			<hurtMul>0.3</hurtMul>
+			<attackType>holy</attackType>
+			<shootNum>2</shootNum>
+			<bulletNum>2</bulletNum>
+			<shootAngle>90</shootAngle>
+			<attackGap>1.7</attackGap>
+			<attackDelay>0.59</attackDelay>
+			<shootGap>0.9</shootGap>
+			
+			<bulletAngle>90</bulletAngle>
+			<bulletWidth>40</bulletWidth>
+			<bulletLife>10</bulletLife>
+			<hitType>rect</hitType>
+				
+			<shootPoint>-83,-5</shootPoint>
+			<bulletSpeed>14</bulletSpeed>
+			
+			<skillArr>PoliceZombieShakeHit</skillArr>
+			<penetrationGap>1000</penetrationGap>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1" con="add">PoliceZombie/electricLine</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/paralysis_enemy_hit">bulletHitEffect/fitHit</hitImgUrl>
+			<hitFloorImgUrl>no</hitFloorImgUrl>
+		</bullet>
+		
+		
+		<skill>
+			<name>PoliceZombieShoot</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>粘性手雷</cnName>
+			<cd>99999999</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<duration>0.1</duration>
+			<description>向目标投掷手雷，碰撞目标或者经过几秒会爆炸，对周围敌人产生巨大伤害，并封锁目标所有主动技能和被动技能。</description>
+		</skill>
+		<skill>
+			<name>PoliceZombieCharge</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>充能</cnName><noBeClearB>1</noBeClearB>
+			<cd>12</cd><delay>0.5</delay>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>0.5</conditionRange>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>PoliceZombieCharge</effectType>
+			<value>1.6</value>
+			<mul>0.6</mul>
+			<duration>6</duration>
+			<stateEffectImg partType="2eye" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg>
+			<meActionLabel>chargeAttack</meActionLabel>
+			<description>生命值小于50%时，电棍僵尸对自己进行充能，增加移动速度，减少技能冷却时间。</description>
+		</skill>
+		
+		<skill>
+			<name>PoliceZombieElectric</name>
+			<cnName>电击</cnName>
+			<cd>6</cd>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>teleportToAttackBody</effectType>
+			<value>0.3</value>
+			<mul>0</mul>
+			<valueString>130,0</valueString>
+			
+			<meActionLabel>electricAttack</meActionLabel>
+			<description>闪烁至敌人面前发动电击，有几率麻痹目标，并造成巨大伤害，无视闪避。</description>
+		</skill>
+				<skill>
+					<name>PoliceZombieElectricHit</name>
+					<cnName>电击麻痹</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><noBeClearB>1</noBeClearB>
+					
+					<conditionType>passive</conditionType>
+					<condition>hit</condition>
+					<target>target</target>
+					
+					<addType>state</addType>
+					<effectType>moveSpeed</effectType>
+					<effectProArr>0.5</effectProArr>
+					<mul>0</mul>
+					<duration>5</duration>
+					 
+					
+					<stateEffectImg con="add" soundUrl="sound/paralysis_enemy_hit">skillEffect/paralysis_enemy</stateEffectImg>
+					<description>有[effectProArr.0]的几率使其麻痹，持续5秒。</description>
+				</skill>
+				
+				
+		<skill>
+			<name>PoliceZombieShake</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>爬行电流</cnName>
+			<cd>7</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>800</conditionRange>
+			
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>1.6</duration>
+			<meActionLabel>shakeAttack</meActionLabel>
+			<description>将电棍插入地面，产生爬行电流，被击中敌人将被清除有益效果，并封锁所有主动技能和被动技能。</description>
+		</skill>		
+				<skill>
+					<name>PoliceZombieShakeHit</name>
+					<cnName>封锁被动技能</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><noBeClearB>1</noBeClearB>
+					
+					<conditionType>passive</conditionType>
+					<condition>hit</condition>
+					<otherConditionArr>targetArmsNoMeltFlamerPurgold</otherConditionArr>
+					<target>target</target>
+					
+					<addType>instantAndState</addType>
+					<effectType>noAllSkill</effectType>
+					<duration>6</duration>
+					 
+					<stateEffectImg partType="mouth" con="add">skillEffect/silenceMore</stateEffectImg>
+					<description>。</description>
+				</skill>
+	</father>
+	
+</data>

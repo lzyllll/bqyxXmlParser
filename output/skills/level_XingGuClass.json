@@ -1,0 +1,266 @@
+{
+  "father": {
+    "name": "normal",
+    "gather": {
+      "name": "实验室",
+      "level": [
+        {
+          "name": "XingGu_1",
+          "info": {
+            "diff": 2,
+            "enemyLv": 99,
+            "noTreasureB": true,
+            "hb": 1,
+            "tm": 480
+          },
+          "sceneLabel": "XingGu",
+          "unitG": {
+            "allDefault": {
+              "aiOrder": "patrolGlobal"
+            },
+            "unitOrder": {
+              "id": "enemy4",
+              "numberType": "number",
+              "unit": {
+                "cnName": "战神",
+                "unitType": "boss",
+                "lifeMul": 1,
+                "skillArr": "likeMissleNo2"
+              }
+            }
+          },
+          "eventG": {
+            "group": {
+              "event": [
+                {
+                  "id": "e2_1",
+                  "condition": {
+                    "delay": 1
+                  }
+                },
+                {
+                  "id": "e2_1",
+                  "order": "createUnit:enemy4; r1"
+                },
+                {
+                  "id": "e2_11",
+                  "condition": "enemyNumber:less_1",
+                  "order": [
+                    "level;taskTimingB:false",
+                    "level; showPointer:r_over"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "XingPeak_plot",
+          "info": {
+            "diff": 2,
+            "enemyLv": 99,
+            "noTreasureB": true,
+            "hb": 1
+          },
+          "sceneLabel": "XingPeak",
+          "unitG": {
+            "allDefault": {
+              "aiOrder": "patrolGlobal"
+            },
+            "unitOrder": {
+              "id": "enemy4",
+              "numberType": "number",
+              "unit": {
+                "cnName": "狂战神",
+                "unitType": "boss",
+                "lifeMul": 3,
+                "skillArr": ""
+              }
+            }
+          },
+          "eventG": {
+            "group": {
+              "event": [
+                {
+                  "order": "createUnit:enemy4; r1"
+                },
+                {
+                  "condition": "enemyNumber:less_1",
+                  "order": "say; startList:s1"
+                },
+                {
+                  "condition": {
+                    "value": "say:listOver",
+                    "delay": 1
+                  }
+                },
+                {
+                  "condition": null,
+                  "order": "say; startList:s2"
+                },
+                {
+                  "condition": {
+                    "value": "say:listOver",
+                    "delay": 0.1
+                  },
+                  "order": [
+                    "task:now; complete",
+                    "worldMap:levelName; XingPeak:XingPeak_1",
+                    "level; showPointer:r_over"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "XingPeak_1",
+          "info": {
+            "diff": 2,
+            "enemyLv": 99,
+            "noTreasureB": true,
+            "hb": 1
+          },
+          "sceneLabel": "XingPeak",
+          "unitG": {
+            "allDefault": {
+              "aiOrder": "patrolGlobal"
+            },
+            "unitOrder": {
+              "id": "enemy4",
+              "numberType": "number",
+              "unit": {
+                "cnName": "狂战神",
+                "unitType": "boss",
+                "lifeMul": 3,
+                "skillArr": ""
+              }
+            }
+          },
+          "eventG": {
+            "group": {
+              "event": [
+                {
+                  "order": "createUnit:enemy4; r1"
+                },
+                {
+                  "condition": "enemyNumber:less_1",
+                  "order": "level; showPointer:r_over"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "weekMadboss",
+          "info": {
+            "diff": 2,
+            "enemyLv": 99,
+            "noTreasureB": true,
+            "hb": 1
+          },
+          "sceneLabel": "XingGu",
+          "unitG": {
+            "allDefault": {
+              "aiOrder": "patrolGlobal"
+            },
+            "unitOrder": [
+              {
+                "id": "enemy4",
+                "numberType": "number",
+                "unit": {
+                  "cnName": "战神",
+                  "unitType": "boss",
+                  "lifeMul": 1,
+                  "skillArr": "likeMissleNo2,godShield"
+                }
+              },
+              {
+                "id": "enemySkill",
+                "numberType": "number",
+                "unit": [
+                  {
+                    "cnName": "毒蛛",
+                    "skillArr": "killXinLing"
+                  },
+                  {
+                    "cnName": "毒蛛",
+                    "skillArr": "deadlyArrow"
+                  },
+                  {
+                    "cnName": "毒蛛",
+                    "skillArr": "rebirth_enemy"
+                  },
+                  {
+                    "cnName": "毒蛛",
+                    "skillArr": "lockLife"
+                  },
+                  {
+                    "cnName": "毒蛛",
+                    "skillArr": "moreBullet"
+                  },
+                  {
+                    "cnName": "毒蛛",
+                    "skillArr": "crazy_enemy,silence_enemy"
+                  },
+                  {
+                    "cnName": "毒蛛",
+                    "skillArr": "posion7_hugePosion"
+                  },
+                  {
+                    "cnName": "毒蛛",
+                    "skillArr": "globalSpurting_enemy"
+                  },
+                  {
+                    "cnName": "毒蛛",
+                    "skillArr": "extendCd,State_AddMove"
+                  },
+                  {
+                    "cnName": "毒蛛",
+                    "skillArr": "enemyToZombie"
+                  },
+                  {
+                    "cnName": "毒蛛",
+                    "skillArr": "invisibilityEver,teleport_enemy"
+                  },
+                  {
+                    "cnName": "毒蛛",
+                    "skillArr": "MeatyAway"
+                  }
+                ]
+              }
+            ]
+          },
+          "eventG": {
+            "group": {
+              "event": [
+                {
+                  "id": "e2_1",
+                  "condition": {
+                    "delay": 1
+                  }
+                },
+                {
+                  "id": "e2_1",
+                  "order": [
+                    "createUnit:enemy4; r1",
+                    "weekMadboss"
+                  ]
+                },
+                {
+                  "id": "e2_11",
+                  "condition": "enemyNumber:less_1",
+                  "order": [
+                    "level;taskTimingB:false",
+                    "task:weekMadboss; complete",
+                    "level; showPointer:r_over"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

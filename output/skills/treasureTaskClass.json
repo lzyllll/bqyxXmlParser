@@ -1,0 +1,981 @@
+{
+  "father": {
+    "name": "treasure",
+    "cnName": "寻宝",
+    "dayNum": 1,
+    "buyNum": 1,
+    "tipText": "每天第一次上线将清除前一天的任务进度。",
+    "autoUnlockByLevelB": true,
+    "maxLvLimitB": true,
+    "task": [
+      {
+        "name": "skillStoneThings",
+        "cnName": "超能石宝藏",
+        "unlockLv": 11,
+        "uiShowTime": 999999,
+        "levelIsTaskLvB": true,
+        "completeLimitNum": -1,
+        "moreKillEnemyNumIsMe": 1,
+        "superAddNumB": true,
+        "shortText": "前往[map]消灭僵尸。",
+        "conditionText": "僵尸 [nowNum]/[num]",
+        "uiConditionText": "累计消灭怪物 [nowNum]/[num] 只",
+        "description": "在指定地点消灭指定数量的怪物，你将获得超丰厚的奖励！",
+        "worldMapType": "random",
+        "growth": {
+          "task": [
+            {
+              "diff": 0.8,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;2;;;;LevelEnemyExp",
+                "base;coin;4;;;;LevelEnemyCoin",
+                "things;skillStone;33"
+              ]
+            },
+            {
+              "diff": 1.7,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;4;;;;LevelEnemyExp",
+                "base;coin;7;;;;LevelEnemyCoin",
+                "things;skillStone;36"
+              ]
+            },
+            {
+              "diff": 4,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;5;;;;LevelEnemyExp",
+                "base;coin;10;;;;LevelEnemyCoin",
+                "things;skillStone;39"
+              ]
+            },
+            {
+              "diff": 10,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;7;;;;LevelEnemyExp",
+                "base;coin;14;;;;LevelEnemyCoin",
+                "things;skillStone;41"
+              ]
+            },
+            {
+              "diff": 25,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;9;;;;LevelEnemyExp",
+                "base;coin;17;;;;LevelEnemyCoin",
+                "things;skillStone;44"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "coinBase",
+        "cnName": "银币宝藏",
+        "unlockLv": 13,
+        "uiShowTime": 999999,
+        "levelIsTaskLvB": true,
+        "completeLimitNum": -1,
+        "moreKillEnemyNumIsMe": 1,
+        "superAddNumB": true,
+        "shortText": "前往[map]消灭僵尸。",
+        "conditionText": "僵尸 [nowNum]/[num]",
+        "uiConditionText": "累计消灭怪物 [nowNum]/[num] 只",
+        "description": "在指定地点消灭指定数量的怪物，你将获得超丰厚的银币宝藏奖励！",
+        "worldMapType": "random",
+        "growth": {
+          "task": [
+            {
+              "diff": 0.8,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;2;;;;LevelEnemyExp",
+                "base;coin;40;;;;LevelEnemyCoin"
+              ]
+            },
+            {
+              "diff": 1.7,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;4;;;;LevelEnemyExp",
+                "base;coin;70;;;;LevelEnemyCoin"
+              ]
+            },
+            {
+              "diff": 4,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;5;;;;LevelEnemyExp",
+                "base;coin;100;;;;LevelEnemyCoin"
+              ]
+            },
+            {
+              "diff": 10,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;7;;;;LevelEnemyExp",
+                "base;coin;134;;;;LevelEnemyCoin"
+              ]
+            },
+            {
+              "diff": 25,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;9;;;;LevelEnemyExp",
+                "base;coin;167;;;;LevelEnemyCoin"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "expBase",
+        "cnName": "经验宝藏",
+        "unlockLv": 15,
+        "uiShowTime": 999999,
+        "levelIsTaskLvB": true,
+        "completeLimitNum": -1,
+        "moreKillEnemyNumIsMe": 1,
+        "superAddNumB": true,
+        "shortText": "前往[map]消灭僵尸。",
+        "conditionText": "僵尸 [nowNum]/[num]",
+        "uiConditionText": "累计消灭怪物 [nowNum]/[num] 只",
+        "description": "在指定地点消灭指定数量的怪物，你将获得超丰厚的经验宝藏奖励！",
+        "worldMapType": "random",
+        "growth": {
+          "task": [
+            {
+              "diff": 0.8,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;5;;;;LevelEnemyExp",
+                "base;coin;4;;;;LevelEnemyCoin"
+              ]
+            },
+            {
+              "diff": 1.7,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;10;;;;LevelEnemyExp",
+                "base;coin;7;;;;LevelEnemyCoin"
+              ]
+            },
+            {
+              "diff": 4,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;15;;;;LevelEnemyExp",
+                "base;coin;10;;;;LevelEnemyCoin"
+              ]
+            },
+            {
+              "diff": 10,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;20;;;;LevelEnemyExp",
+                "base;coin;14;;;;LevelEnemyCoin"
+              ]
+            },
+            {
+              "diff": 25,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;24;;;;LevelEnemyExp",
+                "base;coin;17;;;;LevelEnemyCoin"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "taxStampThings",
+        "cnName": "商券宝藏",
+        "unlockLv": 35,
+        "uiShowTime": 999999,
+        "levelIsTaskLvB": true,
+        "completeLimitNum": -1,
+        "moreKillEnemyNumIsMe": 1,
+        "superAddNumB": true,
+        "shortText": "前往[map]消灭僵尸。",
+        "conditionText": "僵尸 [nowNum]/[num]",
+        "uiConditionText": "累计消灭怪物 [nowNum]/[num] 只",
+        "description": "在指定地点消灭指定数量的怪物，你将获得一定的商券奖励。",
+        "worldMapType": "random",
+        "growth": {
+          "task": [
+            {
+              "diff": 0.8,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;2;;;;LevelEnemyExp",
+                "base;coin;4;;;;LevelEnemyCoin",
+                "things;taxStamp;9"
+              ]
+            },
+            {
+              "diff": 1.7,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;4;;;;LevelEnemyExp",
+                "base;coin;7;;;;LevelEnemyCoin",
+                "things;taxStamp;12"
+              ]
+            },
+            {
+              "diff": 4,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;5;;;;LevelEnemyExp",
+                "base;coin;10;;;;LevelEnemyCoin",
+                "things;taxStamp;20"
+              ]
+            },
+            {
+              "diff": 10,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;7;;;;LevelEnemyExp",
+                "base;coin;14;;;;LevelEnemyCoin",
+                "things;taxStamp;25"
+              ]
+            },
+            {
+              "diff": 25,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;9;;;;LevelEnemyExp",
+                "base;coin;17;;;;LevelEnemyCoin",
+                "things;taxStamp;30"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "catalystThings",
+        "cnName": "催化剂宝藏",
+        "unlockLv": 75,
+        "uiShowTime": 999999,
+        "levelIsTaskLvB": true,
+        "completeLimitNum": -1,
+        "moreKillEnemyNumIsMe": 1,
+        "superAddNumB": true,
+        "shortText": "前往[map]消灭僵尸。",
+        "conditionText": "僵尸 [nowNum]/[num]",
+        "uiConditionText": "累计消灭怪物 [nowNum]/[num] 只",
+        "description": "在指定地点消灭指定数量的怪物，你将获得一定的催化剂奖励。",
+        "worldMapType": "random",
+        "growth": {
+          "task": [
+            {
+              "diff": 1.7,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": "things;lifeCatalyst;7"
+            },
+            {
+              "diff": 2.3,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": "things;variationCatalyst;7"
+            },
+            {
+              "diff": 3,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": "things;energyCatalyst;7"
+            },
+            {
+              "diff": 5,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "things;lifeCatalyst;3",
+                "things;variationCatalyst;3",
+                "things;energyCatalyst;4"
+              ]
+            },
+            {
+              "diff": 10,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "things;lifeCatalyst;5",
+                "things;variationCatalyst;5",
+                "things;energyCatalyst;5"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "strengthenStoneThings",
+        "cnName": "强化石宝藏",
+        "unlockLv": 40,
+        "uiShowTime": 999999,
+        "levelIsTaskLvB": true,
+        "completeLimitNum": -1,
+        "moreKillEnemyNumIsMe": 1,
+        "superAddNumB": true,
+        "shortText": "前往[map]消灭僵尸。",
+        "conditionText": "僵尸 [nowNum]/[num]",
+        "uiConditionText": "累计消灭怪物 [nowNum]/[num] 只",
+        "description": "在指定地点消灭指定数量的怪物，你将获得一定的强化石奖励。",
+        "worldMapType": "random",
+        "growth": {
+          "task": [
+            {
+              "diff": 1,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": "things;strengthenStone;9"
+            },
+            {
+              "diff": 2,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": "things;strengthenStone;11"
+            },
+            {
+              "diff": 3,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": "things;strengthenStone;13"
+            },
+            {
+              "diff": 8,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": "things;strengthenStone;15"
+            },
+            {
+              "diff": 20,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": "things;strengthenStone;17"
+            },
+            {
+              "diff": 20,
+              "enemyLifeMul": 3,
+              "enemyDpsMul": 1.2,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": "things;strengthenStone;19"
+            }
+          ]
+        }
+      },
+      {
+        "name": "bloodStoneThings",
+        "cnName": "血石宝藏",
+        "unlockLv": 40,
+        "uiShowTime": 999999,
+        "levelIsTaskLvB": true,
+        "completeLimitNum": -1,
+        "moreKillEnemyNumIsMe": 1,
+        "superAddNumB": true,
+        "shortText": "前往[map]消灭僵尸。",
+        "conditionText": "僵尸 [nowNum]/[num]",
+        "uiConditionText": "累计消灭怪物 [nowNum]/[num] 只",
+        "description": "在指定地点消灭指定数量的怪物，你将获得一定的血石奖励。",
+        "worldMapType": "random",
+        "growth": {
+          "task": [
+            {
+              "diff": 1.7,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": "things;bloodStone;9"
+            },
+            {
+              "diff": 2.3,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": "things;bloodStone;11"
+            },
+            {
+              "diff": 3,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": "things;bloodStone;13"
+            },
+            {
+              "diff": 8,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": "things;bloodStone;15"
+            },
+            {
+              "diff": 20,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": "things;bloodStone;17"
+            },
+            {
+              "diff": 20,
+              "enemyLifeMul": 3,
+              "enemyDpsMul": 1.2,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": "things;bloodStone;19"
+            }
+          ]
+        }
+      },
+      {
+        "name": "arenaStampThings",
+        "cnName": "优胜券宝藏",
+        "unlockLv": 45,
+        "uiShowTime": 999999,
+        "levelIsTaskLvB": true,
+        "completeLimitNum": -1,
+        "moreKillEnemyNumIsMe": 1,
+        "superAddNumB": true,
+        "shortText": "前往[map]消灭僵尸。",
+        "conditionText": "僵尸 [nowNum]/[num]",
+        "uiConditionText": "累计消灭怪物 [nowNum]/[num] 只",
+        "description": "在指定地点消灭指定数量的怪物，你将获得一定的优胜券奖励。",
+        "worldMapType": "random",
+        "growth": {
+          "task": [
+            {
+              "diff": 1,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;2;;;;LevelEnemyExp",
+                "base;coin;4;;;;LevelEnemyCoin",
+                "things;arenaStamp;67"
+              ]
+            },
+            {
+              "diff": 2.5,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;4;;;;LevelEnemyExp",
+                "base;coin;7;;;;LevelEnemyCoin",
+                "things;arenaStamp;84"
+              ]
+            },
+            {
+              "diff": 4,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;5;;;;LevelEnemyExp",
+                "base;coin;10;;;;LevelEnemyCoin",
+                "things;arenaStamp;100"
+              ]
+            },
+            {
+              "diff": 10,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;7;;;;LevelEnemyExp",
+                "base;coin;14;;;;LevelEnemyCoin",
+                "things;arenaStamp;117"
+              ]
+            },
+            {
+              "diff": 25,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;9;;;;LevelEnemyExp",
+                "base;coin;17;;;;LevelEnemyCoin",
+                "things;arenaStamp;134"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "rifleArms",
+        "cnName": "步枪宝藏",
+        "unlockLv": 9,
+        "uiShowTime": 999999,
+        "levelIsTaskLvB": true,
+        "completeLimitNum": -1,
+        "moreKillEnemyNumIsMe": 1,
+        "superAddNumB": true,
+        "shortText": "前往[map]消灭僵尸。",
+        "conditionText": "僵尸 [nowNum]/[num]",
+        "uiConditionText": "累计消灭怪物 [nowNum]/[num] 只",
+        "description": "在指定地点消灭指定数量的怪物，你将获得超丰厚的奖励！",
+        "worldMapType": "random",
+        "growth": {
+          "task": [
+            {
+              "diff": 0.8,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;2;;;;LevelEnemyExp",
+                "base;coin;4;;;;LevelEnemyCoin",
+                "things;rifleBox;4"
+              ]
+            },
+            {
+              "diff": 1.7,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;4;;;;LevelEnemyExp",
+                "base;coin;7;;;;LevelEnemyCoin",
+                "things;rifleBox;7"
+              ]
+            },
+            {
+              "diff": 4,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;5;;;;LevelEnemyExp",
+                "base;coin;10;;;;LevelEnemyCoin",
+                "things;rifleBox;10"
+              ]
+            },
+            {
+              "diff": 10,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;7;;;;LevelEnemyExp",
+                "base;coin;14;;;;LevelEnemyCoin",
+                "things;rifleBox;12"
+              ]
+            },
+            {
+              "diff": 25,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;9;;;;LevelEnemyExp",
+                "base;coin;17;;;;LevelEnemyCoin",
+                "things;rifleBox;14"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "sniperArms",
+        "cnName": "狙击枪宝藏",
+        "unlockLv": 9,
+        "uiShowTime": 999999,
+        "levelIsTaskLvB": true,
+        "completeLimitNum": -1,
+        "moreKillEnemyNumIsMe": 1,
+        "superAddNumB": true,
+        "shortText": "前往[map]消灭僵尸。",
+        "conditionText": "僵尸 [nowNum]/[num]",
+        "uiConditionText": "累计消灭怪物 [nowNum]/[num] 只",
+        "description": "在指定地点消灭指定数量的怪物，你将获得超丰厚的奖励！",
+        "worldMapType": "random",
+        "growth": {
+          "task": [
+            {
+              "diff": 0.8,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;2;;;;LevelEnemyExp",
+                "base;coin;4;;;;LevelEnemyCoin",
+                "things;sniperBox;4"
+              ]
+            },
+            {
+              "diff": 1.7,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;4;;;;LevelEnemyExp",
+                "base;coin;7;;;;LevelEnemyCoin",
+                "things;sniperBox;7"
+              ]
+            },
+            {
+              "diff": 4,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;5;;;;LevelEnemyExp",
+                "base;coin;10;;;;LevelEnemyCoin",
+                "things;sniperBox;10"
+              ]
+            },
+            {
+              "diff": 10,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;7;;;;LevelEnemyExp",
+                "base;coin;14;;;;LevelEnemyCoin",
+                "things;sniperBox;12"
+              ]
+            },
+            {
+              "diff": 25,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;9;;;;LevelEnemyExp",
+                "base;coin;17;;;;LevelEnemyCoin",
+                "things;sniperBox;14"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "shotgunArms",
+        "cnName": "散弹枪宝藏",
+        "unlockLv": 9,
+        "uiShowTime": 999999,
+        "levelIsTaskLvB": true,
+        "completeLimitNum": -1,
+        "moreKillEnemyNumIsMe": 1,
+        "superAddNumB": true,
+        "shortText": "前往[map]消灭僵尸。",
+        "conditionText": "僵尸 [nowNum]/[num]",
+        "uiConditionText": "累计消灭怪物 [nowNum]/[num] 只",
+        "description": "在指定地点消灭指定数量的怪物，你将获得超丰厚的奖励！",
+        "worldMapType": "random",
+        "growth": {
+          "task": [
+            {
+              "diff": 0.8,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;2;;;;LevelEnemyExp",
+                "base;coin;4;;;;LevelEnemyCoin",
+                "things;shotgunBox;4"
+              ]
+            },
+            {
+              "diff": 1.7,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;4;;;;LevelEnemyExp",
+                "base;coin;7;;;;LevelEnemyCoin",
+                "things;shotgunBox;7"
+              ]
+            },
+            {
+              "diff": 4,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;5;;;;LevelEnemyExp",
+                "base;coin;10;;;;LevelEnemyCoin",
+                "things;shotgunBox;10"
+              ]
+            },
+            {
+              "diff": 10,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;7;;;;LevelEnemyExp",
+                "base;coin;14;;;;LevelEnemyCoin",
+                "things;shotgunBox;12"
+              ]
+            },
+            {
+              "diff": 25,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;9;;;;LevelEnemyExp",
+                "base;coin;17;;;;LevelEnemyCoin",
+                "things;shotgunBox;14"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "pistolArms",
+        "cnName": "手枪宝藏",
+        "unlockLv": 9,
+        "uiShowTime": 999999,
+        "levelIsTaskLvB": true,
+        "completeLimitNum": -1,
+        "moreKillEnemyNumIsMe": 1,
+        "superAddNumB": true,
+        "shortText": "前往[map]消灭僵尸。",
+        "conditionText": "僵尸 [nowNum]/[num]",
+        "uiConditionText": "累计消灭怪物 [nowNum]/[num] 只",
+        "description": "在指定地点消灭指定数量的怪物，你将获得超丰厚的奖励！",
+        "worldMapType": "random",
+        "growth": {
+          "task": [
+            {
+              "diff": 0.8,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;2;;;;LevelEnemyExp",
+                "base;coin;4;;;;LevelEnemyCoin",
+                "things;pistolBox;4"
+              ]
+            },
+            {
+              "diff": 1.7,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;4;;;;LevelEnemyExp",
+                "base;coin;7;;;;LevelEnemyCoin",
+                "things;pistolBox;7"
+              ]
+            },
+            {
+              "diff": 4,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;5;;;;LevelEnemyExp",
+                "base;coin;10;;;;LevelEnemyCoin",
+                "things;pistolBox;10"
+              ]
+            },
+            {
+              "diff": 10,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;7;;;;LevelEnemyExp",
+                "base;coin;14;;;;LevelEnemyCoin",
+                "things;pistolBox;12"
+              ]
+            },
+            {
+              "diff": 25,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60
+              },
+              "gift": [
+                "base;exp;9;;;;LevelEnemyExp",
+                "base;coin;17;;;;LevelEnemyCoin",
+                "things;pistolBox;14"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

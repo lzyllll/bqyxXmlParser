@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="house">
+		<body cnName="冶炼屋" name="smelting" coverP="234,26" link="smelt" />
+		<body cnName="美食屋" name="food" coverP="234,26" link="food" />
+		<body cnName="虚拟战场" name="bossedit" coverP="234,26" link="bossedit" />
+	</father>
+</data>

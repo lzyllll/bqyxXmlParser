@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="dropEffect" cnName="掉落的效果物品">
+		<skill index="0" name="增加血量">
+			<name>DropEffect_AddLifeMul</name>
+			<cnName>增加血量</cnName>
+			<ignoreImmunityB>1</ignoreImmunityB>
+			
+			<addType>instant</addType>
+			<effectType>dropAddLife</effectType>
+			<mul>0.3</mul>
+		</skill>
+		<skill index="0" name="增加弹药">
+			<name>DropEffect_AddChargerMul</name>
+			<cnName>增加弹药</cnName>
+			<ignoreImmunityB>1</ignoreImmunityB>
+			
+			<addType>instant</addType>
+			<effectType>charger</effectType>
+			<mul>0.5</mul>
+			
+			<obj>"target":"all","addType":"add"</obj>
+		</skill>
+		<skill name="无敌药水">
+			<name>invincibleDrugDrop</name>
+			<cnName>无敌药水</cnName>
+			
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>5</duration>
+			<stateEffectImg partType="body">generalEffect/invincibleShield</stateEffectImg>
+		</skill>
+		<skill>
+			<name>invinCannedDrop</name>
+			<cnName>无敌罐头</cnName>
+			
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>10</duration>
+			<meEffectImg soundUrl="sound/energyShield" />
+			<stateEffectImg partType="body">generalEffect/invincibleShield</stateEffectImg>
+		</skill>
+		<skill>
+			<name>hurtDrugDrop</name>
+			<cnName>增伤药剂</cnName>
+			
+			<addType>state</addType>
+			<effectType>allHurtMul</effectType>
+			<mul>2</mul>
+			<duration>7</duration>
+			<meEffectImg soundUrl="sound/murderous_hero" />
+			<stateEffectImg name="murderous_enemy_state" />
+		</skill>
+		
+		
+		
+		
+		
+		
+		<skill index="0" name="增加移动速度">
+			<name>DropEffect_AddMoveSpeedMul</name>
+			<cnName>增加移动速度</cnName>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<value>0</value>
+			<mul>1.3</mul>
+			<duration>5</duration>
+			<range>0</range>
+		</skill>
+		<skill index="0" cnName="召唤摩卡">
+			<name>addMocha</name>
+			<cnName>召唤摩卡</cnName>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>summonedUnitsMocha</effectType>
+			<summonedUnitsB>1</summonedUnitsB>
+			
+			<obj>"cnName":"摩卡","num":1,"lifeMul":1.7,"dpsMul":0.3,"mulByFatherB":1,"skillArr":["escapeInvincible"]</obj>
+			
+			<description>蝙蝠。</description>
+		</skill>
+	</father>	
+	</data>

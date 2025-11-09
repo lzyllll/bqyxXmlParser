@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicle" cnName="战车body">
+		<body index="0" name="狩猎者" shell="metal">
+			
+			<name>AircraftGun</name><cnName>狩猎者</cnName><raceType>robot</raceType>
+			<swfUrl>swf/vehicle/AircraftGun.swf</swfUrl>
+			
+			<lifeBarExtraHeight>-20</lifeBarExtraHeight>
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg><dieJumpMul>0</dieJumpMul>
+			<imgClass>CarImage</imgClass><imgType>normal</imgType><rotateBySlopeB>1</rotateBySlopeB>
+			<imgArr>
+				stand,die1
+			</imgArr>
+			
+			<hitRect>-30,-88,60,88</hitRect>
+			
+			<motionD F_G="0.8" F_I="0.8" F_F="0.9" moveWhenVB="0" />
+			<maxVx>0</maxVx><maxJumpNum>0</maxJumpNum>
+			
+			<attackAIClass>CarAttack_AI</attackAIClass>
+			<keyClass>CarBodyKey</keyClass>
+			<bulletLauncherClass>CarBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>stand</imgLabel>
+					<hurtRatio>0.4</hurtRatio><attackType>through</attackType><shakeValue>10</shakeValue><meBack>0</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>
+	</father>
+</data>

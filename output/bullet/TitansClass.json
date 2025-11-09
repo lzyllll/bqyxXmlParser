@@ -1,0 +1,547 @@
+{
+  "father": [
+    {
+      "name": "car",
+      "cnName": "战车定义",
+      "bullet": {
+        "Titans": {
+          "name": "Titans",
+          "cnName": "泰坦",
+          "evolutionLabel": "BlackTitans",
+          "canComposeB": 1,
+          "shopB": 1,
+          "main": {
+            "dpsMul": 1.7,
+            "len": 130,
+            "minRa": 164,
+            "maxRa": 17
+          },
+          "sub": {
+            "dpsMul": 1.7,
+            "len": 55
+          },
+          "lifeMul": 1.9,
+          "attackMul": 1.7,
+          "duration": 90,
+          "cd": 120,
+          "mustCash": 300,
+          "addObjJson": {
+            "dpsAll": 0.14,
+            "lifeAll": 0.14
+          },
+          "armsType": null
+        },
+        "BlackTitans": {
+          "name": "BlackTitans",
+          "cnName": "黑暗泰坦",
+          "evolutionLabel": "Gaia",
+          "evolutionLv": 2,
+          "evolutionThingsLabel": "TitansCash",
+          "main": {
+            "label": "Titans_main",
+            "dpsMul": 2,
+            "len": 130,
+            "minRa": 150,
+            "maxRa": 30
+          },
+          "sub": {
+            "label": "Titans_sub",
+            "dpsMul": 2,
+            "len": 55
+          },
+          "lifeMul": 1.9,
+          "attackMul": 2,
+          "duration": 90,
+          "cd": 120,
+          "mustCash": 300,
+          "addObjJson": {
+            "dpsAll": 0.18,
+            "lifeAll": 0.18
+          },
+          "skillArr": "vehicleFit_Gaia,vehicleFit_fly,vehicleFit_Civilian",
+          "armsType": null
+        },
+        "Gaia": {
+          "name": "Gaia",
+          "cnName": "盖亚",
+          "evolutionLabel": "RedGaia",
+          "evolutionLv": 3,
+          "main": {
+            "label": "Gaia_main",
+            "dpsMul": 2.3,
+            "len": 144,
+            "minRa": 164,
+            "maxRa": 17
+          },
+          "sub": {
+            "label": "Titans_sub",
+            "dpsMul": 2.3,
+            "len": 55
+          },
+          "lifeMul": 2.4,
+          "attackMul": 2.3,
+          "duration": 90,
+          "cd": 120,
+          "mustCash": 450,
+          "addObjJson": {
+            "dpsAll": 0.22,
+            "lifeAll": 0.22
+          },
+          "skillArr": "vehicleFit_Gaia,vehicleFit_fly,vehicleFit_Civilian",
+          "armsType": null
+        },
+        "RedGaia": {
+          "name": "RedGaia",
+          "cnName": "狂怒盖亚",
+          "evolutionLabel": "GoldGaia",
+          "evolutionLv": 4,
+          "main": {
+            "label": "Gaia_main",
+            "dpsMul": 2.7,
+            "len": 144,
+            "minRa": 164,
+            "maxRa": 17
+          },
+          "sub": {
+            "label": "Titans_sub",
+            "dpsMul": 2.7,
+            "len": 55
+          },
+          "mainFrontB": 1,
+          "lifeMul": 3,
+          "attackMul": 2.7,
+          "duration": 90,
+          "cd": 120,
+          "mustCash": 450,
+          "addObjJson": {
+            "dpsAll": 0.25,
+            "lifeAll": 0.25
+          },
+          "skillArr": "vehicleFit_Gaia,vehicleFit_fly,vehicleFit_Civilian",
+          "armsType": null
+        },
+        "GoldGaia": {
+          "name": "GoldGaia",
+          "cnName": "神圣盖亚",
+          "evolutionLv": 5,
+          "main": {
+            "label": "goldGaia_main",
+            "dpsMul": 3.3,
+            "len": 174
+          },
+          "sub": {
+            "label": "Titans_sub",
+            "dpsMul": 3.3,
+            "len": 76
+          },
+          "mainFrontB": 1,
+          "lifeMul": 3.4,
+          "attackMul": 3.3,
+          "duration": 90,
+          "cd": 120,
+          "mustCash": 450,
+          "addObjJson": {
+            "dpsAll": 0.3,
+            "lifeAll": 0.3
+          },
+          "skillArr": "goldGaiaSkill,vehicleFit_Gaia,vehicleFit_fly,vehicleFit_Civilian",
+          "armsType": null
+        },
+        "Titans_main": {
+          "cnName": "泰坦-主炮",
+          "name": "Titans_main",
+          "hurtRatio": 0.83,
+          "shakeAngle": 1,
+          "bulletLife": 2,
+          "bulletWidth": 30,
+          "hitType": "rect",
+          "attackGap": 0.5,
+          "shootRecoil": 15,
+          "screenShakeValue": 16,
+          "bulletSpeed": 45,
+          "boomD": {
+            "bodyB": true,
+            "floorB": true,
+            "radius": 120
+          },
+          "flipX": 1,
+          "bulletImgUrl": "rocket/rocketBullet",
+          "fireImgUrl": "gunFire/rocket",
+          "hitImgUrl": "boomEffect/boom3",
+          "smokeImgUrl": "bulletHitEffect/smoke_small",
+          "armsType": null
+        },
+        "Titans_sub": {
+          "cnName": "泰坦-副炮",
+          "name": "Titans_sub",
+          "hurtRatio": 0.66,
+          "bulletLife": 0.001,
+          "hitType": "longLine",
+          "bulletWidth": 800,
+          "bulletShakeWidth": 100,
+          "attackGap": 0.1,
+          "attackDelay": 0,
+          "shootRecoil": 4,
+          "screenShakeValue": 9,
+          "shakeAngle": 3,
+          "bulletSpeed": 0,
+          "flipX": 1,
+          "lineD": {
+            "lightColor": 65535,
+            "size": 2,
+            "lightSize": 6
+          },
+          "bulletImgUrl": "longLine",
+          "fireImgUrl": "gunFire/f1",
+          "hitImgUrl": "bulletHitEffect/yellow_motion",
+          "armsType": null
+        },
+        "Gaia_main": {
+          "cnName": "盖亚-主炮",
+          "name": "Gaia_main",
+          "hurtRatio": 0.83,
+          "shakeAngle": 1,
+          "bulletLife": 2,
+          "bulletWidth": 30,
+          "hitType": "rect",
+          "attackGap": 0.5,
+          "shootRecoil": 15,
+          "screenShakeValue": 16,
+          "bulletSpeed": 45,
+          "boomD": {
+            "bodyB": true,
+            "floorB": true,
+            "radius": 120
+          },
+          "flipX": 1,
+          "bulletImgUrl": "bullet/gaiaBullet",
+          "fireImgUrl": "gunFire/rocket",
+          "hitImgUrl": "boomEffect/boom3",
+          "smokeImgUrl": "bulletHitEffect/smoke_small",
+          "armsType": null
+        },
+        "goldGaia_main": {
+          "cnName": "神圣盖亚-主炮",
+          "name": "goldGaia_main",
+          "hurtRatio": 0.83,
+          "shakeAngle": 1,
+          "bulletLife": 2,
+          "bulletWidth": 30,
+          "hitType": "rect",
+          "attackGap": 0.5,
+          "shootRecoil": 15,
+          "screenShakeValue": 16,
+          "bulletSpeed": 45,
+          "boomD": {
+            "bodyB": true,
+            "floorB": true,
+            "radius": 120
+          },
+          "flipX": 1,
+          "bulletImgUrl": null,
+          "fireImgUrl": "gunFire/rocket",
+          "hitImgUrl": "boomEffect/boom3",
+          "smokeImgUrl": null,
+          "armsType": null
+        },
+        "goldGaiaSkillBullet": {
+          "cnName": "装甲压制",
+          "name": "goldGaiaSkillBullet",
+          "hurtRatio": 1,
+          "bulletWidth": 90,
+          "bulletAngle": 90,
+          "bulletLife": 0.5,
+          "hitType": "rect",
+          "shootPoint": "0,-300",
+          "gravity": 3,
+          "boomD": {
+            "bodyB": true,
+            "radius": 300,
+            "noExcludeBodyB": true
+          },
+          "penetrationGap": 1000,
+          "bulletSpeed": 15,
+          "speedD": {
+            "max": 40
+          },
+          "skillArr": "goldGaiaSkillBullet",
+          "flipX": 1,
+          "bulletImgUrl": null,
+          "selfBoomImgUrl": "boomEffect/boom3",
+          "armsType": null
+        }
+      }
+    },
+    {
+      "name": "vehicleSkill",
+      "cnName": "技能",
+      "skill": [
+        {
+          "name": "goldGaiaSkill",
+          "noBeClearB": 1,
+          "cnName": "装甲压制",
+          "iconUrl": "SkillIcon/goldGaiaSkill",
+          "effectInfoArr": "增加伤害输出",
+          "cd": 90,
+          "conditionType": "active",
+          "condition": "beforeAttack",
+          "target": "me",
+          "changeText": "造成碾压伤害的[mul]",
+          "addType": "state",
+          "effectType": "bullet_goldGaia",
+          "effectFather": "vehicle",
+          "extraValueType": "meDpsFactor",
+          "mul": 9,
+          "duration": 1.5,
+          "obj": "\"name\":\"goldGaiaSkillBullet\",\"site\":\"mouse\",\"flipB\":true",
+          "description": "在鼠标处连续召唤4台狂怒盖亚，砸向敌人，每台造成碾压伤害[mul]的伤害（对冷冻敏感敌人再增加50%的伤害）。",
+          "growth": {
+            "skill": [
+              {
+                "mul": 6
+              },
+              {
+                "mul": 9
+              },
+              {
+                "mul": 12
+              },
+              {
+                "mul": 15
+              },
+              {
+                "mul": 18
+              },
+              {
+                "mul": 21
+              },
+              {
+                "mul": 27
+              },
+              {
+                "mul": 33
+              },
+              {
+                "mul": 40
+              },
+              {
+                "mul": 50
+              }
+            ]
+          }
+        },
+        {
+          "name": "goldGaiaSkillBullet",
+          "cnName": "对冷冻敏感提升",
+          "ignoreImmunityB": 1,
+          "noSkillDodgeB": 1,
+          "conditionType": "passive",
+          "changeHurtB": 1,
+          "condition": "hit",
+          "otherConditionArr": "targetShell",
+          "conditionString": "variation",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "changeHurtNoCondition",
+          "mul": 1.5,
+          "pointEffectImg": {
+            "name": "orangeWaveBoom"
+          },
+          "targetPointEffectB": 1
+        }
+      ]
+    },
+    {
+      "name": "vehicle",
+      "cnName": "战车body",
+      "body": [
+        {
+          "index": 0,
+          "name": "Titans",
+          "shell": "compound",
+          "cnName": "泰坦",
+          "raceType": "robot",
+          "swfUrl": "swf/vehicle/Titans38.swf",
+          "lifeRatio": 1,
+          "rosRatio": 1,
+          "headHurtMul": 0.5,
+          "dieImg": {
+            "value": "boomEffect/boom3",
+            "soundUrl": "sound/pointBoom_hero",
+            "shake": "3,0.4,30"
+          },
+          "dieJumpMul": 0,
+          "imgClass": "CarImage",
+          "imgType": "normal",
+          "rotateBySlopeB": 1,
+          "imgArr": "stand,move,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpDown,jumpDown__",
+          "hitRect": "-30,-88,60,88",
+          "motionD": {
+            "F_G": 0.6,
+            "jumpDelayT": 0.2,
+            "F_I": 1,
+            "F_F": 0.9,
+            "moveWhenVB": true
+          },
+          "maxVx": 18,
+          "maxJumpNum": 1,
+          "attackAIClass": "CarAttack_AI",
+          "keyClass": "CarBodyKey",
+          "bulletLauncherClass": "CarBulletLauncher",
+          "skillArr": null,
+          "bossSkillArr": "crazy_vehicle_5,noSpeedReduce",
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "move",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "jumpDown",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "jumpUp",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "jumpDown__",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "BlackTitans",
+          "shell": "compound",
+          "cnName": "黑暗泰坦",
+          "raceType": "robot",
+          "swfUrl": "swf/vehicle/BlackTitans.swf",
+          "lifeRatio": 1,
+          "rosRatio": 1,
+          "headHurtMul": 0.5,
+          "dieImg": {
+            "value": "boomEffect/boom3",
+            "soundUrl": "sound/pointBoom_hero",
+            "shake": "3,0.4,30"
+          },
+          "dieJumpMul": 0,
+          "imgClass": "CarImage",
+          "imgType": "normal",
+          "rotateBySlopeB": 1,
+          "imgArr": "stand,move,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpDown,jumpDown__",
+          "hitRect": "-30,-88,60,88",
+          "motionD": {
+            "F_G": 0.6,
+            "jumpDelayT": 0.2,
+            "F_I": 1,
+            "F_F": 0.9,
+            "moveWhenVB": true
+          },
+          "maxVx": 18,
+          "maxJumpNum": 1,
+          "bossSkillArr": "imploding_enemy,pointBoom_enemy,sweep_enemy,moreMissile_enemy,through_hero_7,noSpeedReduce",
+          "bossSkillArrCn": null,
+          "extraDropArmsB": 1,
+          "attackAIClass": "CarAttack_AI",
+          "keyClass": "CarBodyKey",
+          "bulletLauncherClass": "CarBulletLauncher",
+          "skillArr": null,
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "move",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 7,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "jumpDown",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 7,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "jumpUp",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 7,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "jumpDown__",
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 7,
+                "hitMaxNum": 1,
+                "hitImgUrl": "bulletHitEffect/energy"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Gaia",
+          "fixed": "BlackTitans",
+          "shell": "compound",
+          "cnName": "盖亚",
+          "swfUrl": "swf/vehicle/Gaia.swf",
+          "bmpUrl": "BodyImg/Gaia"
+        },
+        {
+          "name": "RedGaia",
+          "fixed": "BlackTitans",
+          "shell": "compound",
+          "cnName": "狂怒盖亚",
+          "swfUrl": "swf/vehicle/RedGaia.swf",
+          "bmpUrl": "BodyImg/RedGaia"
+        },
+        {
+          "name": "GoldGaia",
+          "fixed": "BlackTitans",
+          "shell": "compound",
+          "cnName": "神圣盖亚",
+          "swfUrl": "swf/vehicle/GoldGaia.swf",
+          "bmpUrl": "BodyImg/GoldGaia",
+          "lifeBarExtraHeight": -50,
+          "motionD": {
+            "F_G": 0.6,
+            "jumpDelayT": 0.2,
+            "F_I": 1,
+            "F_F": 0.9,
+            "moveWhenVB": true
+          }
+        }
+      ]
+    }
+  ]
+}

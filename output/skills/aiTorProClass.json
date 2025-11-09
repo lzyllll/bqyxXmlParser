@@ -1,0 +1,165 @@
+{
+  "gather": {
+    "name": "heroAI",
+    "father": [
+      {
+        "ca": "main",
+        "name": "heroAI_props",
+        "cnName": "道具与功能",
+        "body": [
+          {
+            "cnName": "使用血瓶的血量",
+            "name": "lifeBottle",
+            "min": 0,
+            "max": 1,
+            "fixed": 2,
+            "tip": "自身生命值低于多少时使用生命药瓶。"
+          },
+          {
+            "cnName": "使用队友血瓶的血量",
+            "name": "pBottle",
+            "min": 0,
+            "max": 1,
+            "fixed": 2,
+            "tip": "队友生命值低于多少时使用队友生命药瓶。"
+          },
+          {
+            "cnName": "弹药箱道具",
+            "name": "caissonB",
+            "tip": "开启后，弹药和携弹量都为0时会使用弹药箱道具。"
+          },
+          {
+            "cnName": "寻找弹药箱",
+            "name": "findCaissonB",
+            "tip": "开启后，弹药和携弹量都为0时会寻找掉落的弹药箱。"
+          },
+          {
+            "cnName": "通关后自动存档",
+            "name": "autoSaveB",
+            "tip": "在普通关卡和无尽模式中，AI战斗开启时通关，且拾取完所有掉落物，且未存档时间超过5分钟，则会自动存档。"
+          },
+          {
+            "cnName": "通关后自动重玩",
+            "name": "restartB",
+            "tip": "关卡通关拾取完所有掉落物后1秒自动重玩关卡（如果可以重玩的话）。该功能只有在总统职务开启“掉落物跟踪”后才能使用。"
+          }
+        ]
+      },
+      {
+        "name": "heroAI_attack",
+        "cnName": "攻击属性",
+        "body": [
+          {
+            "cnName": "主动切枪",
+            "name": "changeArmsB",
+            "tip": "没有弹药时，会主动切枪。若没有勾选该选项，则任何情况都不会主动换枪。"
+          },
+          {
+            "cnName": "使用副手",
+            "name": "weaponB",
+            "tip": "是否使用副手；敌人拥有副手防御、利刃盾、利刃罩时不使用。"
+          },
+          {
+            "cnName": "保留技能给首领",
+            "name": "keepSkillB",
+            "tip": "狂暴、金刚钻遇到首领时才释放。"
+          },
+          {
+            "cnName": "不打无敌怪",
+            "name": "awayInvincibleBuffB",
+            "tip": "不攻击无敌的敌人。"
+          },
+          {
+            "cnName": "不打抵御怪",
+            "name": "noFoggyB",
+            "tip": "不攻击带“抵御”技能的怪物。"
+          },
+          {
+            "cnName": "爆头概率",
+            "name": "shootHeadPro",
+            "min": 0,
+            "max": 1,
+            "fixed": 2,
+            "tip": "射击头部的概率"
+          }
+        ]
+      },
+      {
+        "name": "heroAI_normal",
+        "cnName": "基本属性",
+        "body": [
+          {
+            "cnName": "寻敌范围",
+            "name": "warningRange",
+            "type": "number",
+            "min": 10,
+            "max": 3000,
+            "fixed": 0,
+            "tip": "寻找敌人的范围距离。"
+          },
+          {
+            "cnName": "警戒范围",
+            "name": "keepGap",
+            "min": 10,
+            "max": 10000,
+            "fixed": 0,
+            "tip": "与敌人保持的距离。"
+          },
+          {
+            "cnName": "警戒数量",
+            "name": "keepNum",
+            "min": 0,
+            "max": 1000,
+            "fixed": 0,
+            "tip": "允许警戒范围内敌人的个数。"
+          },
+          {
+            "cnName": "躲避攻击Buff",
+            "name": "awayAttackBuffB",
+            "tip": "敌人开启攻击Buff时远离他们。"
+          },
+          {
+            "cnName": "乱跳频率",
+            "name": "jumpPro",
+            "min": 0,
+            "max": 1,
+            "fixed": 2,
+            "tip": "不定时的弹跳。"
+          },
+          {
+            "cnName": "变身载具的血量",
+            "name": "vehicleLife",
+            "min": 0,
+            "max": 1,
+            "fixed": 2,
+            "tip": "血量为百分之多少时变身载具。"
+          }
+        ]
+      },
+      {
+        "name": "heroAI_eacape",
+        "cnName": "逃跑属性",
+        "body": [
+          {
+            "cnName": "是否逃跑",
+            "name": "eacapeEnabled",
+            "tip": "开启这个功能后，才能设置下方的逃跑血量、逃跑隐身。"
+          },
+          {
+            "cnName": "逃跑血量",
+            "name": "eacapeLifeMul",
+            "min": 0,
+            "max": 1,
+            "fixed": 2,
+            "tip": "生命值低于多少时开始逃跑。"
+          },
+          {
+            "cnName": "逃跑隐身",
+            "name": "eacapeAndHidingB",
+            "tip": "逃跑时是否开启隐身技能（如果有的话）。"
+          }
+        ]
+      }
+    ]
+  }
+}

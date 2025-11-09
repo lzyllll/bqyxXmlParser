@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="尸狼-技能">
+		<skill index="0" cnName="群体狂暴">
+			<name>groupCrazy_enemy</name><iconUrl36>SkillIcon/crazy_hero_36</iconUrl36>
+			<cnName>群体狂暴</cnName><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<cd>20</cd>
+			<firstCd>17</firstCd>
+			
+			<conditionType>active</conditionType>
+			<condition>beforeAttack</condition>
+			<target>me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>crazyAndHurt</effectType>
+			<value>1.4</value>
+			<mul>1.5</mul>
+			<duration>7</duration>
+			<range>800</range>
+			
+			<meEffectImg soundUrl="sound/crazy_hero" />
+			<stateEffectImg partType="2eye" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg>
+			<stateEffectImg2 partType="2eye" con="add">skillEffect/crazy_hero_eye</stateEffectImg2>
+			<description>让周围队友进入狂暴状态，提升攻击力和移动速度。</description>
+		</skill>
+		<skill index="0" cnName="生命连结">
+			<name>lifeLink_wolf</name>
+			<cnName>生命连结</cnName><noCopyB>1</noCopyB><iconUrl36>SkillIcon/lightLake_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<cd>10</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>1</conditionRange>
+			<target>otherZombieWolf</target>
+			
+			<addType>instant</addType>
+			<effectType>lifeLink_wolf</effectType>
+			
+			<meEffectImg soundUrl="sound/groupLight_hero" />
+			<targetEffectImg con="add">skillEffect/groupLight_hero</targetEffectImg>
+			<description>对比另外一只尸狼，设置当前单位生命值百分比为两者之间高的那个数值。</description>
+		</skill>
+		<skill index="0" cnName="反哺">
+			<name>feeding_wolf</name>
+			<cnName>反哺</cnName><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType><noCopyB>1</noCopyB>
+			<condition>dieEvent</condition>
+			<otherConditionArr>producerNoState</otherConditionArr>
+			<conditionString>lightConePurgold</conditionString>
+			<target>otherZombieWolf</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>feeding_wolf</effectType>
+			<mul>1.6</mul>
+			<duration>999999</duration>
+			
+			<stateEffectImg partType="2hand,2foot" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg>
+			<meEffectImg soundUrl="sound/groupLight_hero" con="add">skillEffect/groupLight_hero</meEffectImg>
+			<description>单位殒命后重生，回复另外一只尸狼100%的生命值，同时增加另外一只尸狼[mul]的攻击力和防御力。</description>
+		</skill>
+		<skill index="0" cnName="反转术">
+			<name>groupReverseHurt_enemy</name>
+			<cnName>反转术</cnName>
+			<mustLv>20</mustLv><wantDescripB>1</wantDescripB>
+			
+			<cd>30</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>underHit</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>reverseHurt</effectType>
+			<value>1</value>
+			<duration>5</duration>
+			 
+			
+			<meEffectImg soundUrl="sound/reverseHurt_enemy" />
+			<stateEffectImg partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" imgDieType="last">skillEffect/reverseHurt_enemy</stateEffectImg>
+			<description>释放技能后，单位将进入反转状态，这个时候自身所受到的100%的伤害都会转化为自己的生命值。持续5秒。</description>
+		</skill>
+		<skill index="0" name="七步毒">
+			<name>posion7_wolf</name>
+			<cnName>七步毒</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>poison7</effectType>
+			<extraValueType>producterDpsFactor</extraValueType>
+			<mul>0.8</mul>
+			<doGap>0.15</doGap>
+			<duration>5</duration>
+			 
+			<stateEffectImg partType="2foot" con="filter" raNum="30">skillEffect/poisonClaw_enemy</stateEffectImg>
+			<description>被七步毒感染的目标，如果移动将持续受到伤害。同样，如果静止不动，将不会受到伤害。</description>
+		</skill>
+	</father>	
+	</data>

@@ -1,0 +1,1323 @@
+{
+  "father": [
+    {
+      "name": "pet",
+      "cnName": "尸宠",
+      "body": [
+        {
+          "index": 0,
+          "name": "PetZombieBattle",
+          "cnName": "战斗僵尸",
+          "raceType": "zombies",
+          "swfUrl": "swf/pet/PetZombieBattle.swf",
+          "lifeRatio": 0.8,
+          "headIconUrl": "IconGather/PetZombieBattle",
+          "imgArr": "stand,move,run\n\t\t\t\t,normalAttack1,normalAttack2,hurt1,hurt2,die1,die2\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1\n\t\t\t\t,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2",
+          "hitRect": "-14,-76,28,76",
+          "maxJumpNum": 1,
+          "nextAttackTime": 0,
+          "skillArr": null,
+          "bossSkillArr": null,
+          "bossSkillArrCn": "瞬移，闪电麻痹，自燃",
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "normalAttack1",
+                "hurtRatio": 1,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "PetZombieBattle/hit1"
+                }
+              },
+              {
+                "imgLabel": "normalAttack2",
+                "hurtRatio": 1,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "PetZombieBattle/hit2"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "PetFightKing",
+          "cnName": "狂战尸",
+          "raceType": "zombies",
+          "swfUrl": "swf/pet/PetFightKing.swf",
+          "lifeRatio": 1.8,
+          "rateRatio": 0.05,
+          "headIconUrl": "IconGather/PetFightKing",
+          "imgType": "normal",
+          "imgArr": "stand,move\n\t\t\t\t,comboAttack,choppedAttack,windAttack,shootAttack,shakeAttack\n\t\t\t\t,hurt1,hurt2,die1,die2\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1\n\t\t\t\t,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2",
+          "lifeBarExtraHeight": -20,
+          "handAddRa": 90,
+          "hitRect": "-18,-96,36,96",
+          "maxJumpNum": 1,
+          "maxVx": 7,
+          "runStartVx": 12,
+          "avtiveSkillCdOverT": 0.2,
+          "nextAttackTime": 0,
+          "extraAIClassLabel": "FightKing_AIExtra",
+          "skillArr": null,
+          "bossSkillArr": null,
+          "bossSkillArrCn": null,
+          "extraDropArmsB": 1,
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "comboAttack",
+                "mustGrapRectB": 1,
+                "hurtRatio": 0.4,
+                "attackType": "direct",
+                "shakeValue": 7,
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "PetFightKing/hit2"
+                }
+              },
+              {
+                "imgLabel": "choppedAttack",
+                "mustGrapRectB": 1,
+                "hurtRatio": 1,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "PetFightKing/hit3",
+                  "shake": "3,0.2,25"
+                }
+              },
+              {
+                "info": "狂刃追踪-不加入ai选择",
+                "imgLabel": "shootAttack",
+                "hurtRatio": 2,
+                "noAiChooseB": 1,
+                "bulletLabel": "PetFightKing_shoot",
+                "grapRect": "-400,-111,100,105",
+                "attackType": "direct"
+              },
+              {
+                "info": "旋风刀-不加入ai选择",
+                "imgLabel": "windAttack",
+                "noAiChooseB": 1,
+                "hurtRatio": 0.8,
+                "attackType": "direct",
+                "shakeValue": 6,
+                "grapRect": "-350,-111,300,105",
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "PetFightKing/hit1"
+                }
+              },
+              {
+                "info": "怒刃-不加入ai选择",
+                "imgLabel": "shakeAttack",
+                "noAiChooseB": 1,
+                "hurtRatio": 2.5,
+                "attackType": "direct",
+                "shakeValue": 10,
+                "skillArr": "slowMove_GasBomb",
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "PetFightKing/hit1",
+                  "shake": "5,0.4,35"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "PetZombieCleaver",
+          "cnName": "屠刀僵尸",
+          "raceType": "zombies",
+          "swfUrl": "swf/pet/PetZombieCleaver.swf",
+          "lifeRatio": 1.3,
+          "headIconUrl": "IconGather/PetZombieCleaver",
+          "imgArr": "stand,move\n\t\t\t\t,normalAttack1,normalAttack2,hurt1,hurt2,die1,die2\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1\n\t\t\t\t,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2",
+          "hitRect": "-18,-86,36,86",
+          "maxJumpNum": 1,
+          "skillArr": null,
+          "hurtArr": {
+            "hurt": {
+              "imgLabel": "normalAttack2",
+              "bulletLabel": "PetZombieCleaver_1",
+              "grapRect": "-400,-111,350,105",
+              "hurtRatio": 1,
+              "attackType": "direct"
+            }
+          }
+        },
+        {
+          "index": 0,
+          "name": "PetZombieKing",
+          "cnName": "僵尸王",
+          "raceType": "zombies",
+          "swfUrl": "swf/pet/PetZombieKing.swf",
+          "lifeRatio": 1.8,
+          "rateRatio": 0.05,
+          "headIconUrl": "IconGather/PetZombieKing",
+          "imgType": "normal",
+          "imgArr": "stand,move,run\n\t\t\t\t,floorAttack,gunAttack,normalAttack1,normalAttack2,hurt1,hurt2,die1,die2\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1\n\t\t\t\t,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2",
+          "lifeBarExtraHeight": -20,
+          "handAddRa": 90,
+          "hitRect": "-18,-96,36,96",
+          "maxJumpNum": 1,
+          "maxVx": 8,
+          "runStartVx": 10,
+          "nextAttackTime": 0,
+          "skillArr": null,
+          "bossSkillArr": null,
+          "extraDropArmsB": 1,
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "floorAttack",
+                "bulletLabel": "PetZombieKing_floor",
+                "grapRect": "-350,-111,200,105",
+                "hurtRatio": 1,
+                "attackType": "direct"
+              },
+              {
+                "info": "极速炮轰-不加入ai选择",
+                "imgLabel": "gunAttack",
+                "noAiChooseB": 1,
+                "bulletLabel": "PetZombieKing_gun",
+                "grapRect": "-400,-111,100,105",
+                "hurtRatio": 0.95,
+                "attackType": "direct"
+              },
+              {
+                "imgLabel": "normalAttack1",
+                "hurtRatio": 2,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "PetZombieKing/hit1"
+                }
+              },
+              {
+                "imgLabel": "normalAttack2",
+                "hurtRatio": 1,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "PetZombieKing/hit1"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "PetZombieFootball",
+          "cnName": "橄榄僵尸",
+          "raceType": "zombies",
+          "swfUrl": "swf/pet/PetZombieFootball.swf",
+          "lifeRatio": 0.6,
+          "expRatio": 0.8,
+          "headHurtMul": 0.3,
+          "headIconUrl": "IconGather/PetZombieFootball",
+          "imgArr": "stand,move\n\t\t\t\t,normalAttack1,normalAttack2,shootAttack2,hurt1,hurt2,die1,die2\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1\n\t\t\t\t,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2",
+          "hitRect": "-14,-76,28,76",
+          "maxJumpNum": 1,
+          "nextAttackTime": 1,
+          "skillArr": null,
+          "bossSkillArr": null,
+          "bossSkillArrCn": null,
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "normalAttack1",
+                "bulletLabel": "PetZombieFootball_1",
+                "grapRect": "-350,-111,300,105",
+                "hurtRatio": 1,
+                "attackType": "direct"
+              },
+              {
+                "imgLabel": "normalAttack2",
+                "hurtRatio": 1,
+                "shakeValue": 2,
+                "attackType": "direct",
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "PetZombieFootball/hit1",
+                  "raNum": 30
+                }
+              },
+              {
+                "info": "不加入ai选择",
+                "imgLabel": "shootAttack2",
+                "noAiChooseB": 1,
+                "bulletLabel": "PetZombieFootball_2",
+                "grapRect": "-350,-111,300,105",
+                "hurtRatio": 0.5,
+                "attackType": "direct"
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "PetTyphoonWitch",
+          "cnName": "飓风巫尸",
+          "raceType": "zombies",
+          "swfUrl": "swf/pet/PetTyphoonWitch.swf",
+          "lifeRatio": 1.5,
+          "rateRatio": 0.05,
+          "showLevel": 65,
+          "headIconUrl": "IconGather/PetTyphoonWitch",
+          "flipCtrlBy": "target",
+          "imgType": "normal",
+          "imgArr": "stand,move,__stru,stru,hurt1,hurt2,die1\n\t\t\t\t,normalAttack1,shootAttack,shootAttack2,batAttack,windAttack,roarAttack\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+          "lifeBarExtraHeight": -40,
+          "handAddRa": 90,
+          "hitRect": "-18,-96,36,96",
+          "maxJumpNum": 1,
+          "maxVx": 7,
+          "motionState": "fly",
+          "flyUseSpiderB": 1,
+          "flyType": "tween",
+          "nextAttackTime": 0,
+          "skillArr": null,
+          "bossSkillArr": null,
+          "bossSkillArrCn": null,
+          "extraDropArmsB": 1,
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "normalAttack1",
+                "hurtRatio": 1,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "PetTyphoonWitch/hit2"
+                }
+              },
+              {
+                "imgLabel": "shootAttack",
+                "mustGrapRectB": 1,
+                "bulletLabel": "PetTyphoonWitch_shoot1",
+                "grapRect": "-400,-111,100,105",
+                "hurtRatio": 0.5,
+                "attackType": "direct"
+              },
+              {
+                "info": "不加入ai选择",
+                "imgLabel": "shootAttack2",
+                "noAiChooseB": 1,
+                "bulletLabel": "PetTyphoonWitch_shoot2",
+                "grapRect": "-400,-111,100,105",
+                "hurtRatio": 10,
+                "attackType": "direct"
+              },
+              {
+                "info": "不加入ai选择",
+                "imgLabel": "windAttack",
+                "noAiChooseB": 1,
+                "bulletLabel": "PetTyphoonWitch_wind",
+                "grapRect": "-400,-111,100,105",
+                "hurtRatio": 1,
+                "attackType": "direct"
+              },
+              {
+                "info": "不加入ai选择",
+                "imgLabel": "roarAttack",
+                "noAiChooseB": 1,
+                "bulletLabel": "PetTyphoonWitch_anger",
+                "grapRect": "-500,-111,100,105",
+                "hurtRatio": 0.5,
+                "attackType": "direct"
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "PetIronChief",
+          "shell": "metal",
+          "cnName": "铁魁",
+          "raceType": "robot",
+          "swfUrl": "swf/pet/PetIronChief.swf",
+          "headIconUrl": "IconGather/PetIronChief",
+          "lifeRatio": 1.3,
+          "imgArr": "stand,move\n\t\t\t\t,normalAttack1,shootAttack1,shootAttack2\n\t\t\t\t,hurt1,die1\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+          "hitRect": "-18,-86,36,86",
+          "maxVx": 7,
+          "maxJumpNum": 1,
+          "motionState": "fly",
+          "flyUseSpiderB": 1,
+          "nextAttackTime": 0,
+          "skillArr": null,
+          "bossSkillArr": null,
+          "bossSkillArrCn": null,
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "normalAttack1",
+                "hurtRatio": 2,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "sound/metal_hit1"
+                }
+              },
+              {
+                "imgLabel": "shootAttack1",
+                "mustGrapRectB": 1,
+                "bulletLabel": "PetIronChief_shoot1",
+                "grapRect": "-250,-111,100,105",
+                "hurtRatio": 1,
+                "attackType": "direct"
+              },
+              {
+                "imgLabel": "shootAttack2",
+                "bulletLabel": "PetIronChief_shoot2",
+                "grapRect": "-350,-111,100,105",
+                "hurtRatio": 1,
+                "attackType": "direct"
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "PetBoomSkull",
+          "shell": "compound",
+          "cnName": "爆骷",
+          "raceType": "robot",
+          "swfUrl": "swf/pet/PetBoomSkull.swf",
+          "headIconUrl": "IconGather/PetBoomSkull",
+          "lifeRatio": 1,
+          "rosRatio": 1,
+          "headHurtMul": 0.5,
+          "dieImg": {
+            "value": "boomEffect/boom3",
+            "soundUrl": "sound/pointBoom_hero",
+            "shake": "3,0.4,30"
+          },
+          "dieJumpMul": 0,
+          "imgType": "normal",
+          "rotateBySlopeB": 1,
+          "imgArr": "stand,move,die1\n\t\t\t\t,shootAttack1,fireAttack1\n\t\t\t\t,__jumpUp,jumpUp,jumpDown,jumpDown__",
+          "hitRect": "-30,-88,60,88",
+          "motionD": {
+            "F_G": 0.6,
+            "jumpDelayT": 0.1,
+            "F_I": 0.2,
+            "F_F": 0.9,
+            "moveWhenVB": true
+          },
+          "maxVx": 10,
+          "maxJumpNum": 1,
+          "skillArr": null,
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "fireAttack1",
+                "mustGrapRectB": 1,
+                "grapMinLen": 120,
+                "hurtRatio": 0.25,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/spark_motion2",
+                  "con": "add",
+                  "soundUrl": "sound/fireHit1"
+                }
+              },
+              {
+                "imgLabel": "shootAttack1",
+                "bulletLabel": "PetBoomSkull_shoot1",
+                "grapRect": "-350,-111,100,105",
+                "hurtRatio": 1.6,
+                "attackType": "direct"
+              },
+              {
+                "info": "不加入ai选择",
+                "imgLabel": "move",
+                "noAiChooseB": 1,
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/energy",
+                  "con": "add",
+                  "soundUrl": "sound/vehicle_hit4"
+                }
+              },
+              {
+                "info": "不加入ai选择",
+                "imgLabel": "jumpDown",
+                "noAiChooseB": 1,
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/energy",
+                  "con": "add",
+                  "soundUrl": "sound/vehicle_hit3"
+                }
+              },
+              {
+                "info": "不加入ai选择",
+                "imgLabel": "jumpDown__",
+                "noAiChooseB": 1,
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/energy",
+                  "con": "add",
+                  "soundUrl": "sound/vehicle_hit3"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "PetZombieWolf",
+          "cnName": "嗜血尸狼",
+          "raceType": "zombies",
+          "swfUrl": "swf/pet/PetZombieWolf.swf",
+          "headIconUrl": "IconGather/PetZombieWolf",
+          "lifeRatio": 1,
+          "rosRatio": 1,
+          "imgType": "normal",
+          "imgArr": "stand,move,run\n\t\t\t\t,normalAttack1,normalAttack2,laserAttack,summonAttack,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+          "hitRect": "-14,-30,28,30",
+          "lifeBarExtraHeight": -20,
+          "maxJumpNum": 1,
+          "maxVx": 9,
+          "runStartVx": 11,
+          "nextAttackTime": 0,
+          "extraAIClassLabel": "ZombieWolf_AIExtra",
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "normalAttack1",
+                "hurtRatio": 3,
+                "shakeValue": 4,
+                "attackType": "direct",
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "sound/body_hit",
+                  "raNum": 30
+                }
+              },
+              {
+                "imgLabel": "normalAttack2",
+                "mustGrapRectB": 1,
+                "hurtRatio": 3,
+                "shakeValue": 4,
+                "attackType": "direct",
+                "grapRect": "-171,-100,128,120",
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "sound/body_hit",
+                  "raNum": 30
+                }
+              },
+              {
+                "info": "不加入ai选择",
+                "imgLabel": "laserAttack",
+                "noAiChooseB": 1,
+                "skillArr": "laser_PetFightWolf_extra,dizziness_anger_PetFightWolf",
+                "grapRect": "-400,-111,100,105",
+                "hurtRatio": 0.3,
+                "attackType": "direct",
+                "shakeValue": 7,
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add"
+                }
+              },
+              {
+                "info": "不加入ai选择",
+                "imgLabel": "summonAttack",
+                "noAiChooseB": 1,
+                "bulletLabel": "summonWolf_FightWolf_slow",
+                "grapRect": "-400,-111,100,105",
+                "hurtRatio": 0.01,
+                "attackType": "direct",
+                "shakeValue": 7
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "PetLake",
+          "shell": "compound",
+          "cnName": "雷克",
+          "raceType": "robot",
+          "swfUrl": "swf/pet/PetLake.swf",
+          "lifeRatio": 1,
+          "headIconUrl": "IconGather/PetLake",
+          "imgArr": "stand,move\n\t\t\t\t,normalAttack,shootAttack,chargedAttack,ballAttack,staticAttack\n\t\t\t\t,hurt1,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+          "hitRect": "-14,-76,28,76",
+          "maxJumpNum": 1,
+          "nextAttackTime": 0,
+          "extraAIClassLabel": "PetLake_AIExtra",
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "normalAttack",
+                "hurtRatio": 2,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/energy",
+                  "con": "add",
+                  "soundUrl": "sound/hand_hit"
+                }
+              },
+              {
+                "imgLabel": "shootAttack",
+                "hurtRatio": 2,
+                "bulletLabel": "shoot_PetLake",
+                "grapRect": "-450,-88,351,77"
+              },
+              {
+                "info": "不加入ai选择-充能",
+                "imgLabel": "chargedAttack",
+                "noAiChooseB": 1,
+                "grapRect": "-400,-111,100,105"
+              },
+              {
+                "info": "不加入ai选择-辐射光球",
+                "imgLabel": "ballAttack",
+                "noAiChooseB": 1,
+                "bulletLabel": "lightBall_PetLake",
+                "grapRect": "-400,-111,100,105",
+                "hurtRatio": 12
+              },
+              {
+                "info": "不加入ai选择-充能",
+                "imgLabel": "staticAttack",
+                "noAiChooseB": 1,
+                "grapRect": "-400,-111,100,105"
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "PetLaer",
+          "shell": "compound",
+          "cnName": "雷尔",
+          "raceType": "robot",
+          "swfUrl": "swf/pet/PetLaer.swf",
+          "lifeRatio": 1,
+          "headIconUrl": "IconGather/PetLaer",
+          "imgArr": "stand,move\n\t\t\t\t,normalAttack,shootAttack,chargedAttack,ballAttack,staticAttack\n\t\t\t\t,hurt1,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+          "hitRect": "-14,-76,28,76",
+          "maxJumpNum": 1,
+          "nextAttackTime": 0,
+          "extraAIClassLabel": "PetLake_AIExtra",
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "normalAttack",
+                "hurtRatio": 2,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/energy",
+                  "con": "add",
+                  "soundUrl": "sound/hand_hit"
+                }
+              },
+              {
+                "imgLabel": "shootAttack",
+                "hurtRatio": 2,
+                "bulletLabel": "shoot_PetLaer",
+                "grapRect": "-450,-88,351,77"
+              },
+              {
+                "info": "不加入ai选择-充能",
+                "imgLabel": "chargedAttack",
+                "noAiChooseB": 1,
+                "grapRect": "-400,-111,100,105"
+              },
+              {
+                "info": "不加入ai选择-辐射光球",
+                "imgLabel": "ballAttack",
+                "noAiChooseB": 1,
+                "bulletLabel": "lightBall_PetLaer",
+                "grapRect": "-400,-111,100,105",
+                "hurtRatio": 12
+              },
+              {
+                "info": "不加入ai选择-充能",
+                "imgLabel": "staticAttack",
+                "noAiChooseB": 1,
+                "grapRect": "-400,-111,100,105"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "pet",
+      "cnName": "升级后尸宠",
+      "body": [
+        {
+          "index": 0,
+          "name": "PetChaosKing",
+          "cnName": "混沌狂战尸",
+          "raceType": "zombies",
+          "swfUrl": "swf/pet/PetChaosKing.swf",
+          "lifeRatio": 1.8,
+          "rateRatio": 0.05,
+          "headIconUrl": "IconGather/PetChaosKing",
+          "imgType": "normal",
+          "imgArr": "stand,move\n\t\t\t\t,comboAttack,choppedAttack,windAttack,shootAttack,shakeAttack\n\t\t\t\t,hurt1,hurt2,die1,die2\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1\n\t\t\t\t,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2",
+          "lifeBarExtraHeight": -20,
+          "handAddRa": 90,
+          "hitRect": "-18,-96,36,96",
+          "maxJumpNum": 1,
+          "maxVx": 7,
+          "runStartVx": 12,
+          "avtiveSkillCdOverT": 0.2,
+          "nextAttackTime": 0,
+          "extraAIClassLabel": "FightKing_AIExtra",
+          "skillArr": null,
+          "bossSkillArr": null,
+          "bossSkillArrCn": null,
+          "extraDropArmsB": 1,
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "comboAttack",
+                "mustGrapRectB": 1,
+                "hurtRatio": 0.4,
+                "attackType": "direct",
+                "shakeValue": 7,
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "PetChaosKing/hit2"
+                }
+              },
+              {
+                "imgLabel": "choppedAttack",
+                "mustGrapRectB": 1,
+                "hurtRatio": 1,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "PetChaosKing/hit3",
+                  "shake": "3,0.2,25"
+                }
+              },
+              {
+                "info": "狂刃追踪-不加入ai选择",
+                "imgLabel": "shootAttack",
+                "hurtRatio": 2,
+                "noAiChooseB": 1,
+                "bulletLabel": "PetChaosKing_shoot",
+                "grapRect": "-400,-111,100,105",
+                "attackType": "direct"
+              },
+              {
+                "info": "旋风刀-不加入ai选择",
+                "imgLabel": "windAttack",
+                "noAiChooseB": 1,
+                "hurtRatio": 0.8,
+                "attackType": "direct",
+                "shakeValue": 6,
+                "grapRect": "-350,-111,300,105",
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "PetChaosKing/hit1"
+                }
+              },
+              {
+                "info": "怒刃-不加入ai选择",
+                "imgLabel": "shakeAttack",
+                "noAiChooseB": 1,
+                "hurtRatio": 2.5,
+                "attackType": "direct",
+                "shakeValue": 10,
+                "skillArr": "slowMove_GasBomb",
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "PetChaosKing/hit1",
+                  "shake": "5,0.4,35"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "PetIronZombieKing",
+          "shell": "metal",
+          "cnName": "僵尸王",
+          "raceType": "zombies",
+          "swfUrl": "swf/pet/PetIronZombieKing.swf",
+          "lifeRatio": 1.8,
+          "rateRatio": 0.05,
+          "headIconUrl": "IconGather/PetIronZombieKing",
+          "imgType": "normal",
+          "imgArr": "stand,move,run\n\t\t\t\t,floorAttack,gunAttack,normalAttack1,normalAttack2,hurt1,hurt2,die1,die2\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1\n\t\t\t\t,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2",
+          "lifeBarExtraHeight": -20,
+          "handAddRa": 90,
+          "hitRect": "-18,-96,36,96",
+          "maxJumpNum": 1,
+          "maxVx": 8,
+          "runStartVx": 10,
+          "nextAttackTime": 0,
+          "skillArr": null,
+          "bossSkillArr": null,
+          "extraDropArmsB": 1,
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "floorAttack",
+                "bulletLabel": "PetIronZombieKing_floor",
+                "grapRect": "-350,-111,200,105",
+                "hurtRatio": 1,
+                "attackType": "direct"
+              },
+              {
+                "info": "极速炮轰-不加入ai选择",
+                "imgLabel": "gunAttack",
+                "noAiChooseB": 1,
+                "bulletLabel": "PetIronZombieKing_gun",
+                "grapRect": "-400,-111,100,105",
+                "hurtRatio": 0.95,
+                "attackType": "direct"
+              },
+              {
+                "imgLabel": "normalAttack1",
+                "hurtRatio": 2,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "PetIronZombieKing/hit1"
+                }
+              },
+              {
+                "imgLabel": "normalAttack2",
+                "hurtRatio": 1,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "PetIronZombieKing/hit1"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "PetZombieHelmet",
+          "cnName": "金盔僵尸",
+          "raceType": "zombies",
+          "swfUrl": "swf/pet/PetZombieHelmet.swf",
+          "lifeRatio": 0.6,
+          "expRatio": 0.8,
+          "headHurtMul": 0.3,
+          "headIconUrl": "IconGather/PetZombieHelmet",
+          "imgArr": "stand,move\n\t\t\t\t,normalAttack1,normalAttack2,shootAttack2,hurt1,hurt2,die1,die2\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1\n\t\t\t\t,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2",
+          "hitRect": "-14,-76,28,76",
+          "maxJumpNum": 1,
+          "nextAttackTime": 1,
+          "skillArr": null,
+          "bossSkillArr": null,
+          "bossSkillArrCn": null,
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "normalAttack1",
+                "bulletLabel": "PetZombieHelmet_1",
+                "grapRect": "-350,-111,300,105",
+                "hurtRatio": 1,
+                "attackType": "direct"
+              },
+              {
+                "imgLabel": "normalAttack2",
+                "hurtRatio": 1,
+                "shakeValue": 2,
+                "attackType": "direct",
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "PetZombieHelmet/hit1",
+                  "raNum": 30
+                }
+              },
+              {
+                "info": "不加入ai选择",
+                "imgLabel": "shootAttack2",
+                "noAiChooseB": 1,
+                "bulletLabel": "PetZombieHelmet_2",
+                "grapRect": "-350,-111,300,105",
+                "hurtRatio": 0.5,
+                "attackType": "direct"
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "PetIronChiefSecond",
+          "shell": "metal",
+          "cnName": "铁魁",
+          "raceType": "robot",
+          "swfUrl": "swf/pet/PetIronChiefSecond.swf",
+          "headIconUrl": "IconGather/PetIronChiefSecond",
+          "lifeRatio": 1.3,
+          "imgArr": "stand,move\n\t\t\t\t,normalAttack1,shootAttack1,shootAttack2\n\t\t\t\t,hurt1,die1\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+          "hitRect": "-18,-86,36,86",
+          "maxVx": 7,
+          "maxJumpNum": 1,
+          "motionState": "fly",
+          "flyUseSpiderB": 1,
+          "nextAttackTime": 0,
+          "skillArr": null,
+          "bossSkillArr": null,
+          "bossSkillArrCn": null,
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "normalAttack1",
+                "hurtRatio": 2,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "sound/metal_hit1"
+                }
+              },
+              {
+                "imgLabel": "shootAttack1",
+                "mustGrapRectB": 1,
+                "bulletLabel": "PetIronChief_shoot1",
+                "grapRect": "-250,-111,100,105",
+                "hurtRatio": 1,
+                "attackType": "direct"
+              },
+              {
+                "imgLabel": "shootAttack2",
+                "bulletLabel": "PetIronChief_shoot2",
+                "grapRect": "-350,-111,100,105",
+                "hurtRatio": 1,
+                "attackType": "direct"
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "PetIronChiefThird",
+          "shell": "metal",
+          "cnName": "哈迪斯",
+          "raceType": "robot",
+          "swfUrl": "swf/pet/PetIronChiefThird210.swf",
+          "headIconUrl": "IconGather/PetIronChiefThird",
+          "lifeRatio": 1.3,
+          "imgArr": "stand,move\n\t\t\t\t,normalAttack1,normalAttack2,shootAttack,sprintAttack\n\t\t\t\t,hurt1,die1\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+          "hitRect": "-18,-86,36,86",
+          "maxVx": 7,
+          "maxJumpNum": 1,
+          "motionState": "fly",
+          "flyUseSpiderB": 1,
+          "flyType": "tween",
+          "nextAttackTime": 0,
+          "skillArr": null,
+          "bossSkillArr": null,
+          "bossSkillArrCn": null,
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "normalAttack1",
+                "hurtRatio": 2,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "sound/metal_hit1"
+                }
+              },
+              {
+                "imgLabel": "normalAttack2",
+                "hurtRatio": 5,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "sound/metal_hit1"
+                }
+              },
+              {
+                "imgLabel": "shootAttack",
+                "mustGrapRectB": 1,
+                "bulletLabel": "PetIronChiefThird_shoot1",
+                "grapRect": "-250,-111,100,105",
+                "hurtRatio": 0.3,
+                "attackType": "direct"
+              },
+              {
+                "info": "不参加ai选择",
+                "imgLabel": "sprintAttack",
+                "noAiChooseB": 1,
+                "bulletLabel": "PetIronChief_shoot2",
+                "grapRect": "-350,-111,100,105",
+                "hurtRatio": 1,
+                "attackType": "direct"
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "PetBoomSkullSecond",
+          "shell": "compound",
+          "cnName": "爆骷X2",
+          "raceType": "robot",
+          "swfUrl": "swf/pet/PetBoomSkullSecond.swf",
+          "headIconUrl": "IconGather/PetBoomSkullSecond",
+          "lifeRatio": 1,
+          "rosRatio": 1,
+          "headHurtMul": 0.5,
+          "dieImg": {
+            "value": "boomEffect/boom3",
+            "soundUrl": "sound/pointBoom_hero",
+            "shake": "3,0.4,30"
+          },
+          "dieJumpMul": 0,
+          "imgType": "normal",
+          "rotateBySlopeB": 1,
+          "imgArr": "stand,move,die1\n\t\t\t\t,shootAttack1,fireAttack1\n\t\t\t\t,__jumpUp,jumpUp,jumpDown,jumpDown__",
+          "hitRect": "-30,-88,60,88",
+          "motionD": {
+            "F_G": 0.6,
+            "jumpDelayT": 0.1,
+            "F_I": 0.2,
+            "F_F": 0.9,
+            "moveWhenVB": true
+          },
+          "maxVx": 10,
+          "maxJumpNum": 1,
+          "skillArr": null,
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "fireAttack1",
+                "mustGrapRectB": 1,
+                "grapMinLen": 120,
+                "hurtRatio": 0.25,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/spark_motion2",
+                  "con": "add",
+                  "soundUrl": "sound/fireHit1"
+                }
+              },
+              {
+                "imgLabel": "shootAttack1",
+                "bulletLabel": "PetBoomSkullSecond_shoot1",
+                "grapRect": "-350,-111,100,105",
+                "hurtRatio": 1.6,
+                "attackType": "direct"
+              },
+              {
+                "info": "不加入ai选择",
+                "imgLabel": "move",
+                "noAiChooseB": 1,
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/energy",
+                  "con": "add",
+                  "soundUrl": "sound/vehicle_hit4"
+                }
+              },
+              {
+                "info": "不加入ai选择",
+                "imgLabel": "jumpDown",
+                "noAiChooseB": 1,
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/energy",
+                  "con": "add",
+                  "soundUrl": "sound/vehicle_hit3"
+                }
+              },
+              {
+                "info": "不加入ai选择",
+                "imgLabel": "jumpDown__",
+                "noAiChooseB": 1,
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/energy",
+                  "con": "add",
+                  "soundUrl": "sound/vehicle_hit3"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "PetBoomSkullThird",
+          "shell": "compound",
+          "cnName": "爆骷X3",
+          "raceType": "robot",
+          "swfUrl": "swf/pet/PetBoomSkullThird.swf",
+          "headIconUrl": "IconGather/PetBoomSkullThird",
+          "lifeRatio": 1,
+          "rosRatio": 1,
+          "headHurtMul": 0.5,
+          "dieImg": {
+            "value": "boomEffect/boom3",
+            "soundUrl": "sound/pointBoom_hero",
+            "shake": "3,0.4,30"
+          },
+          "dieJumpMul": 0,
+          "imgType": "normal",
+          "rotateBySlopeB": 1,
+          "imgArr": "stand,move,die1\n\t\t\t\t,shootAttack1,shootAttack2,shootAttack3\n\t\t\t\t,__jumpUp,jumpUp,jumpDown,jumpDown__",
+          "hitRect": "-30,-88,60,88",
+          "motionD": {
+            "F_G": 0.6,
+            "jumpDelayT": 0.1,
+            "F_I": 0.2,
+            "F_F": 0.9,
+            "moveWhenVB": true
+          },
+          "maxVx": 10,
+          "maxJumpNum": 1,
+          "skillArr": null,
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "shootAttack1",
+                "bulletLabel": "PetBoomSkullThird_shoot1",
+                "grapRect": "-300,-111,100,105",
+                "hurtRatio": 3.2,
+                "attackType": "direct"
+              },
+              {
+                "imgLabel": "shootAttack2",
+                "bulletLabel": "PetBoomSkullThird_machine",
+                "grapRect": "-500,-175,300,247",
+                "hurtRatio": 0.2,
+                "attackType": "direct"
+              },
+              {
+                "imgLabel": "shootAttack3",
+                "bulletLabel": "PetBoomSkullThird_shoot3",
+                "grapRect": "-400,-111,100,105",
+                "hurtRatio": 1.8,
+                "attackType": "direct"
+              },
+              {
+                "info": "不加入ai选择",
+                "imgLabel": "move",
+                "noAiChooseB": 1,
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/energy",
+                  "con": "add",
+                  "soundUrl": "sound/vehicle_hit4"
+                }
+              },
+              {
+                "info": "不加入ai选择",
+                "imgLabel": "jumpDown",
+                "noAiChooseB": 1,
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/energy",
+                  "con": "add",
+                  "soundUrl": "sound/vehicle_hit3"
+                }
+              },
+              {
+                "info": "不加入ai选择",
+                "imgLabel": "jumpDown__",
+                "noAiChooseB": 1,
+                "hurtRatio": 0.69,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/energy",
+                  "con": "add",
+                  "soundUrl": "sound/vehicle_hit3"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "PetFightWolf",
+          "shell": "normal",
+          "cnName": "狂战狼",
+          "raceType": "zombies",
+          "swfUrl": "swf/pet/PetFightWolf.swf",
+          "headIconUrl": "IconGather/PetFightWolf",
+          "lifeRatio": 1.8,
+          "rosRatio": 1,
+          "imgType": "normal",
+          "imgArr": "stand,move\n\t\t\t\t,fistAttack,hammerAttack,legAttack,stoneAttack,laserAttack,summonAttack\n\t\t\t\t,hurt1,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+          "lifeBarExtraHeight": -20,
+          "handAddRa": 90,
+          "hitRect": "-18,-96,36,96",
+          "maxJumpNum": 1,
+          "maxVx": 8,
+          "runStartVx": 12,
+          "nextAttackTime": 0,
+          "extraAIClassLabel": "FightWolf_AIExtra",
+          "preBulletArr": "anger_FightWolf",
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "fistAttack",
+                "mustGrapRectB": 1,
+                "hurtRatio": 1.5,
+                "attackType": "direct",
+                "shakeValue": 7,
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "sound/vehicle_hit3"
+                }
+              },
+              {
+                "imgLabel": "hammerAttack",
+                "mustGrapRectB": 1,
+                "hurtRatio": 3,
+                "attackType": "direct",
+                "shakeValue": 7,
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "sound/vehicle_hit3"
+                }
+              },
+              {
+                "imgLabel": "legAttack",
+                "mustGrapRectB": 1,
+                "hurtRatio": 1.5,
+                "attackType": "direct",
+                "shakeValue": 7,
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "sound/vehicle_hit3"
+                }
+              },
+              {
+                "info": "不加入ai选择",
+                "imgLabel": "laserAttack",
+                "noAiChooseB": 1,
+                "skillArr": "laser_PetFightWolf_extra",
+                "grapRect": "-400,-111,100,105",
+                "hurtRatio": 0.3,
+                "attackType": "direct",
+                "shakeValue": 7,
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add"
+                }
+              },
+              {
+                "info": "不加入ai选择",
+                "imgLabel": "summonAttack",
+                "noAiChooseB": 1,
+                "bulletLabel": "summonWolf_FightWolf_slow",
+                "grapRect": "-400,-111,100,105",
+                "hurtRatio": 0.01,
+                "attackType": "direct",
+                "shakeValue": 7
+              },
+              {
+                "info": "不加入ai选择",
+                "imgLabel": "stoneAttack",
+                "noAiChooseB": 1,
+                "grapRect": "-400,-111,100,105",
+                "hurtRatio": 0.2,
+                "attackType": "direct",
+                "shakeValue": 7,
+                "hitImgUrl": {
+                  "value": "bladeHitEffect/blood",
+                  "con": "add",
+                  "soundUrl": "sound/body_hit"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

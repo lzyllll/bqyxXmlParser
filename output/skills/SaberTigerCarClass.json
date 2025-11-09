@@ -1,0 +1,160 @@
+{
+  "father": [
+    {
+      "name": "car",
+      "cnName": "战车定义",
+      "equip": {
+        "name": "SaberTigerCar",
+        "cnName": "异齿虎",
+        "rideLabel": "RedMotoRide",
+        "evolutionLv": 2,
+        "main": {
+          "label": "SaberTigerCar_main",
+          "dpsMul": 2.6,
+          "len": 105
+        },
+        "sub": {
+          "label": "Diggers_sub",
+          "hideB": true,
+          "dpsMul": 0
+        },
+        "lifeMul": 2.6,
+        "attackMul": 1.6,
+        "duration": 80,
+        "cd": 110,
+        "addObjJson": {
+          "dpsAll": 0.21,
+          "hurtMul_sniper": 0.1,
+          "lottery": 15
+        },
+        "skillArr": "vehicleFit_Gaia",
+        "specialInfoArr": "对机械体造成额外碾压伤害",
+        "canComposeB": 1,
+        "mustCash": 100
+      },
+      "bullet": {
+        "cnName": "异齿虎主炮",
+        "name": "SaberTigerCar_main",
+        "hurtRatio": 0.66,
+        "bulletLife": 0.001,
+        "hitType": "longLine",
+        "bulletWidth": 800,
+        "bulletShakeWidth": 100,
+        "attackGap": 0.1,
+        "attackDelay": 0,
+        "shootRecoil": 4,
+        "screenShakeValue": 9,
+        "shakeAngle": 3,
+        "bulletSpeed": 0,
+        "gatlinRange": 15,
+        "gatlinNum": 9,
+        "penetrationNum": 3,
+        "flipX": 1,
+        "lineD": {
+          "lightColor": 9502975,
+          "size": 3,
+          "lightSize": 8,
+          "blendMode": "add",
+          "type": "one"
+        },
+        "bulletImgUrl": "longLine",
+        "fireImgUrl": {
+          "value": "gunFire/f",
+          "raNum": 30,
+          "soundUrl": "ak/barrel5_sound"
+        },
+        "hitImgUrl": "bulletHitEffect/yellow_motion"
+      }
+    },
+    {
+      "name": "vehicle",
+      "cnName": "战车body",
+      "skills": {
+        "SaberTigerCar": {
+          "shell": "compound",
+          "name": "SaberTigerCar",
+          "cnName": "异齿虎坐骑",
+          "raceType": "robot",
+          "swfUrl": "swf/vehicle/SaberTigerCar.swf",
+          "lifeRatio": 1,
+          "rosRatio": 1,
+          "headHurtMul": 0.5,
+          "dieImg": {
+            "value": "boomEffect/boom3",
+            "soundUrl": "sound/pointBoom_hero",
+            "shake": "3,0.4,30"
+          },
+          "dieJumpMul": 0,
+          "imgClass": "CarImage",
+          "imgType": "normal",
+          "rotateBySlopeB": 1,
+          "imgArr": "stand,move,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpDown,jumpDown__,jumpUp__jumpDown\n\t\t\t\t,shakeAttack",
+          "hitRect": "-30,-88,60,88",
+          "maxVx": 20,
+          "maxJumpNum": 1,
+          "attackAIClass": "CarAttack_AI",
+          "keyClass": "CarBodyKey",
+          "bulletLauncherClass": "CarBulletLauncher",
+          "skillArr": null,
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "move",
+                "hurtRatio": 0.52,
+                "attackType": "through",
+                "skillArr": "SaberTigerHit",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/fitHit",
+                  "con": "add",
+                  "soundUrl": "sound/vehicle_hit2"
+                }
+              },
+              {
+                "imgLabel": "jumpDown",
+                "hurtRatio": 0.52,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/fitHit",
+                  "con": "add",
+                  "soundUrl": "sound/body_hit"
+                }
+              },
+              {
+                "imgLabel": "jumpDown__",
+                "hurtRatio": 0.52,
+                "attackType": "through",
+                "shakeValue": 10,
+                "meBack": 10,
+                "hitMaxNum": 1,
+                "hitImgUrl": {
+                  "value": "bulletHitEffect/fitHit",
+                  "con": "add",
+                  "soundUrl": "sound/body_hit"
+                }
+              }
+            ]
+          }
+        },
+        "SaberTigerHit": {
+          "name": "SaberTigerHit",
+          "cnName": "酸性腐蚀",
+          "conditionType": "passive",
+          "condition": "hit",
+          "otherConditionArr": "raceType",
+          "conditionString": "robot",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "changeHurtNoCondition",
+          "mul": 1.6,
+          "description": "对机械体造成额外伤害。"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="normal">
+		<gather name="实验室">
+			
+			<level name="Hospital2_plot">
+				
+				<info enemyLv="97" />
+				<fixed target="Hospital2_1" info="no" drop="all" unitG="all" rectG="all" eventG="no" />
+				
+				<sceneLabel>Hospital2</sceneLabel>
+				
+				<eventG>
+					<group>
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order><order>createUnit:enemy1; r3</order></event> 
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy2; r1</order><order>createUnit:enemy2; r2</order><order>createUnit:enemy2; r3</order></event> 
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy3; r1</order><order>createUnit:enemy3; r2</order><order>createUnit:enemy3; r3</order></event> 
+						<event id="e2_1"><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy4; r1</order><order>createUnit:enemy4; r2</order><order>createUnit:enemy4; r3</order></event> 
+						<event id="e2_11">
+							<condition delay="1">enemyNumber:less_1</condition>
+							<order>level; rebirthAllMore</order>
+							<order>task:now; complete</order>
+							<order>worldMap:levelName; Hospital2:Hospital2_1</order>
+							<order>level; showPointer:r_over</order>
+						</event>	
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="Hospital2_1">
+				
+				<info enemyLv="97" diff="2" />
+				<sceneLabel>Hospital2</sceneLabel>
+				
+				<unitG><allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="防毒僵尸" num="4" />
+						<unit cnName="科研僵尸" num="6" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>number</numberType>
+						<unit cnName="防毒僵尸" num="9" />
+						<unit cnName="科研僵尸" num="3" />
+						
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>number</numberType>
+						<unit cnName="防毒僵尸" num="8" />
+						<unit cnName="科研僵尸" num="6" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="防毒僵尸" unitType="boss" lifeMul="2" dpsMul="1.5" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e2_1"><condition delay="1" /></event>
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order><order>createUnit:enemy1; r3</order></event> 
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy2; r1</order><order>createUnit:enemy2; r2</order><order>createUnit:enemy2; r3</order></event> 
+						<event id="e2_1"><condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy3; r1</order><order>createUnit:enemy3; r2</order><order>createUnit:enemy3; r3</order></event> 
+						<event id="e2_1"><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy4; r1</order><order>createUnit:enemy4; r2</order><order>createUnit:enemy4; r3</order></event> 
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+	</father>
+</data>

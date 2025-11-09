@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="关东尸">
+		<bullet cnName="关东尸-飞刀">
+			<name>SnowFattyShoot</name>
+			<cnName>关东尸-飞刀</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.1</attackGap>
+			<attackDelay>0.46</attackDelay>
+			<bulletAngle>185</bulletAngle>
+			<bulletAngleRange>50</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+								
+			<shootAngle>0</shootAngle>					
+				
+			<shootPoint>-81,-95</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<gravity>0.7</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1">SnowFatty/bullet</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="sound/vehicle_hit1">bladeHitEffect/blood</hitImgUrl>
+			<hitFloorImgUrl con="add" soundUrl="sound/vehicle_hit1" soundVolume="0.4">bladeHitEffect/blood</hitFloorImgUrl>
+		</bullet>
+		
+		<bullet cnName="关东尸-冲撞前飞刀">
+			<name>SnowFattySprint</name>
+			<cnName>关东尸千斤顶</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>50</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.1</attackGap>
+			<attackDelay>0.46</attackDelay>
+			<bulletAngle>185</bulletAngle>
+			<bulletAngleRange>90</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+								
+			<shootAngle>0</shootAngle>					
+				
+			<shootPoint>0,-75</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<penetrationGap>1000</penetrationGap>
+			<skillArr>SnowFattySprintHit,hitBloodGreen</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1">SnowFatty/bullet</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="sound/vehicle_hit1">bladeHitEffect/blood</hitImgUrl>
+			<hitFloorImgUrl con="add" soundUrl="sound/vehicle_hit1" soundVolume="0.4">bladeHitEffect/blood</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="1">SnowFatty/bullet</smokeImgUrl>
+		</bullet>
+	</father>
+	
+	</data>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill index="7" cnName="散射">
+			<name>cate_ArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>散射</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>killTarget</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>no</effectType>
+			<description>一次射击发出10个跟踪炮弹。</description>
+		</skill>
+		
+		<skill>
+			<name>catePurgold</name><noRandomListB>1</noRandomListB>
+			<cnName>尸变免疫</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>killTarget</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>no</effectType>
+			<description>携带当前武器时，不会被变蛛变尸，并且无视所有敌人的防弹外壳、防弹钢甲。</description>
+		</skill>
+	</father>
+</data>

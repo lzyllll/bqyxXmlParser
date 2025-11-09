@@ -1,0 +1,599 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="rocket" cnName="火炮">
+		<bullet index="0" name="火炮">
+			<name>rocket1</name>
+			<cnName>火箭筒</cnName><extraMul>1.3</extraMul>
+			
+			<randomPro>1</randomPro>
+			
+			<capacity>6,8</capacity>
+			<attackGap>0.8,1.3</attackGap>
+			<reloadGap>2,2.5</reloadGap>
+			<shakeAngle>0,1</shakeAngle>
+			<bulletWidth>25</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			
+			<armsArmMul>0.5</armsArmMul>
+			<upValue>5</upValue>
+			<shootShakeAngle>30</shootShakeAngle>
+			<shootRecoil>12</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>2.5</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>0.7</dpsMul>
+			<uiDpsMul>1.06</uiDpsMul>
+				
+			<bulletSpeed>40</bulletSpeed>
+			
+			<boomD bodyB="1" floorB="1" radius="130" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">rocket/rocketBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom1" soundVolume="0.3" shake="3,0.4,13">boomEffect/boom2</hitImgUrl>
+			<hitFloorImgUrl soundUrl="boomSound/smallBoom" shake="3,0.4,9" soundVolume="0.5">boomEffect/boom1</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+			<fireImgType />
+			
+			<bodyImgRange>rocket/body,rocket/body2</bodyImgRange>
+			<barrelImgRange>rocket/barrel,rocket/barrel2</barrelImgRange>
+			<stockImgRange>rocket/stock,rocket/stock2</stockImgRange>
+			<gripImgRange>sniper1/grip,pistol2/grip,pistol3/grip,sniper1/grip,sniper2/grip,sniper3/grip</gripImgRange>
+			<bulletImgRange>rocket/bullet</bulletImgRange>
+			<glassImgRange>0,0,0,0,0,0,0,sniper1/glass,sniper1/glass2,sniper2/glass,sniper3/glass</glassImgRange>
+		</bullet>
+		<bullet index="0" name="僵尸炮兵总管-火炮">
+			<name>ZombieShell_rocket</name>
+			<cnName>僵尸炮筒</cnName>
+			
+			<capacity>6,8</capacity>
+			<attackGap>1,1.3</attackGap>
+			<reloadGap>2</reloadGap>
+			<shakeAngle>0,1</shakeAngle>
+			<bulletWidth>20,25</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1,4</bulletNum>				
+			<shootAngle>3,10</shootAngle>				
+			
+			<armsArmMul>0.5</armsArmMul>
+			<upValue>5</upValue>
+			<shootShakeAngle>30</shootShakeAngle>
+			<shootRecoil>12</shootRecoil>
+			<screenShakeValue>35</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>2.2</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>1</dpsMul>
+				
+			<bulletSpeed>35</bulletSpeed>
+			
+			<boomD bodyB="1" floorB="1" radius="80" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">rocket/rocketBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom1" soundVolume="0.3" shake="3,0.3,15">boomEffect/boom2</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+			<fireImgType />
+			
+			<bodyImgRange>rocket/body,rocket/body2</bodyImgRange>
+			<barrelImgRange>rocket/barrel,rocket/barrel2</barrelImgRange>
+			<stockImgRange>rocket/stock,rocket/stock2</stockImgRange>
+			<gripImgRange>sniper1/grip,pistol2/grip,pistol3/grip,sniper1/grip,sniper2/grip,sniper3/grip</gripImgRange>
+			<bulletImgRange>rocket/bullet</bulletImgRange>
+			<glassImgRange>0,0,0,0,0,0,0,sniper1/glass,sniper1/glass2,sniper2/glass,sniper3/glass</glassImgRange>
+		</bullet>
+		<bullet index="0" name="防暴僵尸-双火炮">
+			<name>ZombieRiotl_rocket</name>
+			<cnName>防暴双炮</cnName>
+			
+			<capacity>6,8</capacity>
+			<attackGap>0.5,0.6</attackGap>
+			<reloadGap>2</reloadGap>
+			<shakeAngle>0,1</shakeAngle>
+			<bulletWidth>20,25</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1,4</bulletNum>				
+			<shootAngle>3,10</shootAngle>				
+			
+			<gunNum>2</gunNum>
+			<armsArmMul>0.5</armsArmMul>
+			<upValue>5</upValue>
+			<shootShakeAngle>30</shootShakeAngle>
+			<shootRecoil>12</shootRecoil>
+			<screenShakeValue>35</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>2.2</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>1</dpsMul>
+				
+			<bulletSpeed>35</bulletSpeed>
+			
+			<boomD bodyB="1" floorB="1" radius="80" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">rocket/rocketBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom1" soundVolume="0.3" shake="3,0.3,15">boomEffect/boom2</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+			<fireImgType />
+			
+			<bodyImgRange>rocket/body,rocket/body2</bodyImgRange>
+			<barrelImgRange>rocket/barrel,rocket/barrel2</barrelImgRange>
+			<stockImgRange>rocket/stock,rocket/stock2</stockImgRange>
+			<gripImgRange>sniper1/grip,pistol2/grip,pistol3/grip,sniper1/grip,sniper2/grip,sniper3/grip</gripImgRange>
+			<bulletImgRange>rocket/bullet</bulletImgRange>
+			<glassImgRange>0,0,0,0,0,0,0,sniper1/glass,sniper1/glass2,sniper2/glass,sniper3/glass</glassImgRange>
+		</bullet>
+		<bullet index="0" name="火炮僵尸王-火炮">
+			<name>ZombieBoomKing_rocket</name>
+			<cnName>僵尸王炮</cnName>
+			
+			<capacity>6,8</capacity>
+			<attackGap>1,1.3</attackGap>
+			<reloadGap>2</reloadGap>
+			<shakeAngle>0,1</shakeAngle>
+			<bulletWidth>20,25</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<shootAngle>3,10</shootAngle>				
+			<shootNum>3</shootNum>
+			<shootGap>0.1</shootGap>
+			
+			<armsArmMul>0.5</armsArmMul>
+			<upValue>5</upValue>
+			<shootShakeAngle>30</shootShakeAngle>
+			<shootRecoil>12</shootRecoil>
+			<screenShakeValue>35</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>2.2</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>1</dpsMul>
+				
+			<bulletSpeed>35</bulletSpeed>
+			
+			<boomD bodyB="1" floorB="1" radius="80" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">rocket/rocketBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom1" soundVolume="0.3" shake="3,0.3,15">boomEffect/boom2</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+			<fireImgType />
+			
+			<bodyImgRange>rocket/body,rocket/body2</bodyImgRange>
+			<barrelImgRange>rocket/barrel,rocket/barrel2</barrelImgRange>
+			<stockImgRange>rocket/stock,rocket/stock2</stockImgRange>
+			<gripImgRange>sniper1/grip,pistol2/grip,pistol3/grip,sniper1/grip,sniper2/grip,sniper3/grip</gripImgRange>
+			<bulletImgRange>rocket/bullet</bulletImgRange>
+			<glassImgRange>0,0,0,0,0,0,0,sniper1/glass,sniper1/glass2,sniper2/glass,sniper3/glass</glassImgRange>
+		</bullet>
+		<bullet index="0" name="超范围火炮">
+			<name>ArthurRocket180</name>
+			<cnName>超散火炮</cnName>
+			
+			<capacity>50</capacity>
+			<attackGap>0.5</attackGap>
+			<reloadGap>2</reloadGap>
+			<shakeAngle>0,1</shakeAngle>
+			<bulletWidth>25</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>30</bulletNum>				
+			<shootAngle>90</shootAngle>				
+			
+			<armsArmMul>0.5</armsArmMul>
+			<upValue>5</upValue>
+			<shootShakeAngle>30</shootShakeAngle>
+			<shootRecoil>12</shootRecoil>
+			<screenShakeValue>35</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>2.2</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>3</dpsMul>
+				
+			<bulletSpeed>35</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">rocket/rocketBullet</bulletImgUrl>
+			<hitImgUrl shake="3,0.3,15">boomEffect/boom1</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+			<fireImgType />
+			
+			<bodyImgRange>rocket/body</bodyImgRange>
+			<barrelImgRange>rocket/barrel</barrelImgRange>
+			<stockImgRange>rocket/stock</stockImgRange>
+			<gripImgRange>sniper1/grip</gripImgRange>
+			<bulletImgRange>rocket/bullet</bulletImgRange>
+			<glassImgRange>sniper3/glass</glassImgRange>
+			<textureImgRange>texture/t17</textureImgRange>
+		</bullet>
+		<bullet index="0" name="古老的火炮">
+			<name>old_rocket</name>
+			<cnName>古老火炮</cnName>
+			
+			<capacity>100,100</capacity>
+			<attackGap>1,1</attackGap>
+			<reloadGap>2,2.5</reloadGap>
+			<shakeAngle>0,0</shakeAngle>
+			<bulletWidth>15,15</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			
+			<armsArmMul>0.5</armsArmMul>
+			<upValue>5</upValue>
+			<shootShakeAngle>30</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>2.5</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>0.3</dpsMul>
+				
+			<bulletSpeed>25</bulletSpeed>
+			
+			<gravity>1.5</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">rocket/rocketBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom1" shake="3,0.4,15">boomEffect/boom2</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+			<fireImgType />
+			
+			<bodyImgRange>rocket/body</bodyImgRange>
+			<barrelImgRange>rocket/barrel</barrelImgRange>
+			<stockImgRange>rocket/stock</stockImgRange>
+			<gripImgRange>sniper3/grip</gripImgRange>
+			<bulletImgRange>rocket/bullet</bulletImgRange>
+			<glassImgRange>0</glassImgRange>
+		</bullet>
+		<bullet index="0" name="古老的火炮2">
+			<name>old_rocket22</name>
+			<cnName>古怪火炮</cnName>
+			
+			<capacity>500,500</capacity>
+			<attackGap>0.5,0.5</attackGap>
+			<reloadGap>2,2.5</reloadGap>
+			<shakeAngle>0,0</shakeAngle>
+			<bulletWidth>15,15</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			
+			<armsArmMul>0.5</armsArmMul>
+			<upValue>5</upValue>
+			<shootShakeAngle>30</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>2.5</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>0.3</dpsMul>
+				
+			<bulletSpeed>35</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">rocket/rocketBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom1" shake="3,0.4,15">boomEffect/boom2</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+			<fireImgType />
+			
+			<bodyImgRange>rocket/body</bodyImgRange>
+			<barrelImgRange>rocket/barrel</barrelImgRange>
+			<stockImgRange>rocket/stock</stockImgRange>
+			<gripImgRange>sniper3/grip</gripImgRange>
+			<bulletImgRange>rocket/bullet</bulletImgRange>
+			<glassImgRange>0</glassImgRange>
+		</bullet>
+		<bullet index="0" name="狂战射手-武器">
+			<name>rocket_fight</name>
+			<cnName>狂战戟</cnName>
+			<aiShootRange>600</aiShootRange>
+			
+			<capacity>16,18</capacity>
+			<attackGap>1.2</attackGap>
+			<reloadGap>2,2.5</reloadGap>
+			<shakeAngle>0,1</shakeAngle>
+			<bulletWidth>35</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>3,3</bulletNum>				
+			<shootAngle>3</shootAngle>
+			
+			<armsArmMul>0.5</armsArmMul>
+			<upValue>20</upValue>
+			<shootShakeAngle>20</shootShakeAngle>
+			<shootRecoil>20</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>2.5</bulletLife>
+			<hitType>rect</hitType>
+				
+			<bulletSpeed>15</bulletSpeed>
+			
+			
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="add" raNum="30">FightShooter/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="FightShooter/armsHit" shake="3,0.4,5">bulletHitEffect/energy</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">FightShooter/bullet</smokeImgUrl>
+			<fireImgType />
+			
+			<bodyImgRange>specialGun/fightShooterGun</bodyImgRange>
+		</bullet>
+		
+		
+		
+		<bullet index="0" name="XiaoMei_pistol">
+			<name>XiaoMei_pistol</name>
+			<cnName>小美手枪</cnName>
+			<dpsMul>3</dpsMul>
+			
+			<capacity>16,18</capacity>
+			<attackGap>0.35</attackGap>
+			<reloadGap>1.5,2.5</reloadGap>
+			<shakeAngle>0,1</shakeAngle>
+			<bulletWidth>35</bulletWidth>
+			<bulletShakeWidth>0,50</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<shootAngle>0</shootAngle>				
+			
+			<targetShakeValue>10</targetShakeValue>
+			
+			<hurtRatio>5</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>1.05</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>0</upValue>
+			<shootShakeAngle>45</shootShakeAngle>
+			<shootRecoil>4</shootRecoil>
+			<screenShakeValue>8</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>2.5</bulletLife>
+			<hitType>rect</hitType>
+			
+			<attackDelay>0</attackDelay>
+			<shootNum>1</shootNum>					
+							
+				
+			<bulletSpeed>35</bulletSpeed>
+			
+			<bounceD floor="2" body="1" num="0" />	
+			
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">bullet/missile_bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/microBoom2">boomEffect/boom1</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+			
+			<allImgPartArr>body,barrel,grip</allImgPartArr>
+			<allImgRange>pistol2</allImgRange>
+			<bulletImgRange>pistol2/bullet</bulletImgRange>
+			<gripImgRange>pistol3/grip,m4/grip,ak/grip,sniper1/grip,sniper2/grip,sniper3/grip</gripImgRange>
+		</bullet>
+		<bullet index="0" name="小美-火炮">
+			<name>XiaoMei_rocket</name>
+			<cnName>小美火炮</cnName>
+			<dpsMul>2.5</dpsMul>
+			
+			<aiShootRange>600</aiShootRange>
+			<capacity>6,8</capacity>
+			<attackGap>1.5</attackGap>
+			<reloadGap>2</reloadGap>
+			<shakeAngle>0,1</shakeAngle>
+			<bulletWidth>20,25</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<shootAngle>3,10</shootAngle>				
+			<shootNum>3</shootNum>
+			<shootGap>0.1</shootGap>
+			
+			<armsArmMul>0.5</armsArmMul>
+			<upValue>5</upValue>
+			<shootShakeAngle>30</shootShakeAngle>
+			<shootRecoil>12</shootRecoil>
+			<screenShakeValue>35</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>7</bulletLife>
+			<hitType>rect</hitType>
+				
+			<penetrationGap>1000</penetrationGap>
+			<bulletSpeed>2</bulletSpeed>
+			<speedD random="0.8" max="4" min="2" a="2" />
+			
+			<followD value="0.3" />	
+			<boomD bodyB="1" floorB="1" radius="80" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">rocket/rocketBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom1" soundVolume="0.3" shake="3,0.3,15">boomEffect/boom2</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+			<fireImgType />
+			
+			<bodyImgRange>rocket/body,rocket/body2</bodyImgRange>
+			<barrelImgRange>rocket/barrel,rocket/barrel2</barrelImgRange>
+			<stockImgRange>rocket/stock,rocket/stock2</stockImgRange>
+			<gripImgRange>sniper1/grip,pistol2/grip,pistol3/grip,sniper1/grip,sniper2/grip,sniper3/grip</gripImgRange>
+			<bulletImgRange>rocket/bullet</bulletImgRange>
+			<glassImgRange>0,0,0,0,0,0,0,sniper1/glass,sniper1/glass2,sniper2/glass,sniper3/glass</glassImgRange>
+		</bullet>
+		
+		
+		<bullet index="21" cnName="轰锤" name="rocketHummer">
+			<name>rocketHummer</name>
+			<cnName>轰锤</cnName>
+			
+			
+			<capacity>6,8</capacity>
+			<attackGap>0.7</attackGap>
+			<reloadGap>2.5</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>25</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<gunNum>2</gunNum>
+			
+			<armsArmMul>0.65</armsArmMul>
+			<upValue>5</upValue>
+			<shootShakeAngle>30</shootShakeAngle>
+			<shootRecoil>12</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>2.5</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>0.7</dpsMul>
+				
+			<bulletSpeed>40</bulletSpeed>
+			
+			<boomD bodyB="1" floorB="1" radius="130" />
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>2</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="0" body="3" />	
+			<critD mul="2" pro="0.2" />
+			
+			
+			<skillArr>Hit_blindness_ArmsSkill,Hit_disabled_ArmsSkill</skillArr>
+			<godSkillArr>Hit_imploding_godArmsSkill,Hit_Hammer_godArmsSkill</godSkillArr>
+			
+			<iconUrl>specialGun/rocketHummerIcon</iconUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">rocket/rocketBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom1" soundVolume="0.3" shake="3,0.4,13">boomEffect/boom2</hitImgUrl>
+			<hitFloorImgUrl soundUrl="boomSound/smallBoom" shake="3,0.4,9" soundVolume="0.5">boomEffect/boom1</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+			<fireImgType />
+			<shootSoundUrl>specialGun/rocketHummer_sound</shootSoundUrl>
+			
+			<bodyImgRange>specialGun/rocketHummer</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+		</bullet>
+		<bullet index="20" cnName="苍弩" name="rocketSky" color="red" rareDropLevel="60">
+			<name>rocketSky</name>
+			<cnName>苍弩</cnName>
+			
+			
+			<capacity>5,7</capacity>
+			<attackGap>0.7,1.1</attackGap>
+			<reloadGap>2.5,4</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>25</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<gunNum>1</gunNum>
+			
+			<armsArmMul>0.65</armsArmMul>
+			<upValue>5</upValue>
+			<shootShakeAngle>30</shootShakeAngle>
+			<shootRecoil>12</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>2.5</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>1.1</dpsMul>
+				
+			<bulletSpeed>40</bulletSpeed>
+			
+			<boomD bodyB="1" floorB="1" radius="130" />
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>2</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="0" body="3" />	
+			<critD mul="2" pro="0.2" />
+			
+			
+			<skillArr>Hit_blindness_ArmsSkill,Hit_disabled_ArmsSkill</skillArr>
+			<godSkillArr>Hit_imploding_godArmsSkill,Hit_Hammer_godArmsSkill</godSkillArr>
+			
+			<iconUrl />
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">rocket/rocketBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom1" soundVolume="0.3" shake="3,0.4,13">boomEffect/boom2</hitImgUrl>
+			<hitFloorImgUrl soundUrl="boomSound/smallBoom" shake="3,0.4,9" soundVolume="0.5">boomEffect/boom1</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+			<fireImgType />
+			<shootSoundUrl>specialGun/rocketHummer_sound</shootSoundUrl>
+			
+			<bodyImgRange>specialGun/rocketSky</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>60级以上关卡和每周任务(武器-处决)</description>
+		</bullet>
+		
+		<bullet index="32" cnName="熔炉" name="rocketMammoth" color="black" composeLv="86" chipB="1" chipNum="40" composeMax="2" dropLevelArr="999">
+			<name>rocketMammoth</name>
+			<cnName>熔炉</cnName>
+			
+			
+			<capacity>5,7</capacity>
+			<attackGap>0.7,1.1</attackGap>
+			<reloadGap>2.5,4</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>25</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth><aiShootRange>700</aiShootRange>
+			<bulletNum>1</bulletNum>				
+			<gunNum>1</gunNum>
+			
+			<bulletSkillArr>rocketMammothDieEvent</bulletSkillArr>
+			
+			<armsArmMul>0.65</armsArmMul>
+			<upValue>5</upValue>
+			<shootShakeAngle>30</shootShakeAngle>
+			<shootRecoil>12</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.4</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>1.3</dpsMul>
+				
+			<bulletSpeed>30</bulletSpeed>
+			
+			<boomD bodyB="1" floorB="1" selfB="1" radius="130" />
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>2</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="0" body="3" />	
+			<critD mul="2" pro="0.2" />
+			
+			
+			<skillArr>Hit_blindness_ArmsSkill,Hit_disabled_ArmsSkill</skillArr>
+			<godSkillArr>Hit_imploding_godArmsSkill,lash_ArmsSkill</godSkillArr>
+			
+			<iconUrl />
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">bullet/gaiaBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom1" soundVolume="0.3" shake="3,0.4,13">boomEffect/boom2</hitImgUrl>
+			<hitFloorImgUrl soundUrl="boomSound/smallBoom" shake="3,0.4,9" soundVolume="0.5">boomEffect/boom1</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+			<fireImgType />
+			<shootSoundUrl>specialGun/rocketHummer_sound</shootSoundUrl>
+			
+			<bodyImgRange>specialGun/rocketMammoth</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>由秘境枯荣镇所有掉落物品合成</description>
+		</bullet>
+		
+		
+		
+		
+		
+		
+	</father>
+	</data>

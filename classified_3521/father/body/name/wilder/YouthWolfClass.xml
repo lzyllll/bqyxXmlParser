@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="wilder">
+		
+		
+		<body name="阿巴达斯" shell="normal">
+			
+			<name>YouthWolf</name>
+			<cnName>阿巴达斯</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/YouthWolf.swf</swfUrl>
+			
+			<rosRatio>1</rosRatio>
+			<lifeRatio>1.8</lifeRatio>
+			<showLevel>999</showLevel>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move,run
+				,shootAttack,shakeAttack,comboAttack,obliqueAttack
+				,hurt1,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			<lifeBarExtraHeight>-40</lifeBarExtraHeight>
+			<handAddRa>90</handAddRa>
+			
+			<hitRect>-18,-96,36,96</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>12</maxVx>
+			<runStartVx>8</runStartVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>YouthWolf_AIExtra</extraAIClassLabel>
+			
+			<skillArr />
+			<bossSkillArr>YouthWolf_crazy,YouthWolf_combo,YouthWolf_oblique,YouthWolf_shake,KingRabbitTreater,cmldef_enemy,fightReduct2,defenceBounce_enemy</bossSkillArr>
+			<bossSkillArrCn />
+			
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel>
+					<bulletLabel>YouthWolfShoot</bulletLabel>
+					<grapRect>-800,-95,750,108</grapRect>
+					<hurtMul>0.2</hurtMul>
+					<shakeValue>4</shakeValue>
+					<attackType>holy</attackType>
+				</hurt>
+				<hurt info="斜拳">
+					<imgLabel>obliqueAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<grapRect>-400,-111,100,150</grapRect>
+					<hurtMul>0.3</hurtMul>
+					<shakeValue>4</shakeValue>
+					<attackType>holy</attackType>
+					<hitImgUrl soundUrl="sound/hand_hit">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt info="抱拳">
+					<imgLabel>shakeAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<grapRect>-400,-111,100,150</grapRect>
+					<skillArr>slowMove_GasBomb</skillArr>
+					<hurtMul>0.6</hurtMul>
+					<shakeValue>4</shakeValue>
+					<attackType>holy</attackType>
+					<hitImgUrl soundUrl="sound/vehicle_hit4">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt info="连拳">
+					<imgLabel>comboAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<grapRect>-400,-111,100,150</grapRect>
+					<hurtMul>0.3</hurtMul>
+					<shakeValue>4</shakeValue>
+					<attackType>holy</attackType>
+					<hitImgUrl soundUrl="sound/hand_hit">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>	
+	</father>
+	</data>

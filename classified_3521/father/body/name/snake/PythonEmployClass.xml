@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="snake" cnName="血蟒">
+		<body index="0" name="血蟒雇佣兵" shell="normal">
+			
+			<name>PythonEmploy</name><movieLink>XiaoHu</movieLink>
+			<cnName>血蟒雇佣兵</cnName>
+			<raceType>human</raceType>
+			<swfUrl>swf/hero/PythonEmploy.swf</swfUrl>
+			
+			<showLevel>9999</showLevel>
+			<headIconUrl>IconGather/PythonEmploy</headIconUrl>
+			<lifeBarExtraHeight>-20</lifeBarExtraHeight>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-15,-38,30,38</hurtRectArr> 
+			<hurtRectArr>-12, -100, 24, 95</hurtRectArr> 
+			<hurtRectArr>-12, -50, 24, 50</hurtRectArr> 
+			
+			<maxVx>10</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			<maxJumpNum>1</maxJumpNum>
+			<flyType>space</flyType><motionD F_AIR="6" />
+			
+			<armsNumber>1</armsNumber>
+			<randomArmsRange>pistol2</randomArmsRange>
+			
+			<skillArr />
+			<bossSkillArr>imploding_enemy,moreMissile_enemy</bossSkillArr>
+		</body>
+	</father>
+</data>

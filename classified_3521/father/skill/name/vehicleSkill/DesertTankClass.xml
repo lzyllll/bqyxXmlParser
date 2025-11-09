@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicleSkill" cnName="技能">
+		<skill>
+			<name>floorTankSkill</name><noBeClearB>1</noBeClearB>
+			<cnName>威猛火药</cnName><iconUrl>SkillIcon/floorTankSkill</iconUrl>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			
+			<cd>70</cd>
+			<changeText>主炮射速提升[mul-1]</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>beforeAttack</condition>
+			<target>me</target>
+			<passiveSkillArr>floorTankSkill_link</passiveSkillArr>
+			
+			<addType>state</addType>
+			<effectType>floorTankSkill</effectType><effectFather>vehicle</effectFather>
+			<mul>1.3</mul>
+			<secMul>3</secMul>
+			<duration>5</duration>
+			
+			
+			<meEffectImg name="through_hero_me" />
+			<stateEffectImg name="burstParts" />
+			<description>开启技能后，主炮射速提升[mul-1]，主炮对生化敏感的敌人提升[secMul]的伤害，持续[duration]秒。</description>
+			
+			<growth>
+				<skill><mul>1.3</mul></skill>
+				<skill><mul>1.6</mul></skill>
+				<skill><mul>2</mul></skill>
+				<skill><mul>2.4</mul></skill>
+				<skill><mul>2.8</mul></skill>
+				<skill><mul>3.2</mul></skill>
+				<skill><mul>3.6</mul></skill>
+				<skill><mul>4</mul></skill>
+				<skill><mul>4.5</mul></skill>
+				<skill><mul>6</mul></skill>
+			</growth>
+		</skill>
+				<skill>
+					<name>floorTankSkill_link</name>
+					<cnName>对生化敏感提升</cnName><noRandomListB>1</noRandomListB><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+					
+					<conditionType>passive</conditionType><changeHurtB>1</changeHurtB>
+					<condition>hit</condition>
+					<conditionString>normal</conditionString>
+					<target>target</target>
+					
+					<addType>instant</addType>
+					<effectType>vehicleSkillEle</effectType><effectFather>vehicle</effectFather>
+					<valueString>DesertTank_main</valueString>
+					<mul>2.3</mul>
+					<pointEffectImg name="orangeWaveBoom" />
+				</skill>
+	</father>
+	
+	
+	
+	
+	
+	</data>

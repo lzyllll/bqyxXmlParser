@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="task">
+		
+		<bullet>
+			<cnName>极源宝石</cnName>
+			<name>extremeGemDrop</name>
+			
+			<hurtRatio>0</hurtRatio>
+			
+			<bulletLife>3</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			<bulletAngle>180</bulletAngle>
+			<bulletSpeed>20</bulletSpeed>
+			<skillArr />
+			<bulletImgUrl con="add">ThingsIcon/extremeGem</bulletImgUrl>
+			<smokeImgUrl />
+			<hitImgUrl soundUrl="uiSound/getDrop" soundRan="6" con="add">bulletHitEffect/yellow</hitImgUrl>
+		</bullet>
+		
+		<bullet>
+			<cnName>磁铁</cnName>
+			<name>magnetBullet</name>
+			
+			<hurtRatio>0</hurtRatio>
+			
+			<bulletLife>3</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			<bulletAngle>180</bulletAngle>
+			<bulletSpeed>20</bulletSpeed>
+			<skillArr>magnetBulletSkill</skillArr>
+			<bulletImgUrl>ThingsIcon/electromagnet</bulletImgUrl>
+			<smokeImgUrl con="add">lightEffect/whiteDrop</smokeImgUrl>
+			<hitImgUrl soundUrl="uiSound/gradeUp" con="add">bulletHitEffect/bluntBig</hitImgUrl>
+		</bullet>
+				<skill name="磁铁磁力">
+					<name>magnetBulletSkill</name>
+					<cnName>磁铁磁力</cnName>
+					
+					<conditionType>passive</conditionType>
+					<condition>hit</condition>
+					<target>target</target>
+					
+					<addType>state</addType>
+					<effectType>magnetBulletSkill</effectType>
+					<range>160</range>
+					<duration>6</duration>
+					 
+					<stateEffectImg partType="body" con="add">generalEffect/frozenBallBig</stateEffectImg>
+					<pointEffectImg soundUrl="electric" />
+				</skill>
+				
+		<bullet>
+			<cnName>黑洞</cnName>
+			<name>blackHoleMad</name>
+			
+			<hurtRatio>0</hurtRatio>
+			
+			<bulletLife>3</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			<bulletAngle>180</bulletAngle>
+			<bulletSpeed>20</bulletSpeed>
+			<bulletImgUrl>ThingsIcon/blackHoleDevicer</bulletImgUrl>
+			<smokeImgUrl con="add">lightEffect/orange</smokeImgUrl>
+			<hitImgUrl soundUrl="uiSound/lotteryProps" con="add">bulletHitEffect/bluntBig</hitImgUrl>
+		</bullet>
+		
+		<bullet>
+			<cnName>尖锥</cnName>
+			<name>hurtBulletMad</name>
+			
+			<hurtMul>0.07</hurtMul><hurtRatio>0</hurtRatio><attackType>holy</attackType>
+			
+			<hitType>rect</hitType><bulletLife>3</bulletLife><bulletWidth>20</bulletWidth><bulletAngle>180</bulletAngle>
+			<bulletSpeed>20</bulletSpeed>
+			<bulletImgUrl>bullet/hurtBulletMad</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/vehicle_hit" soundRan="3" con="add">bulletHitEffect/fitHit</hitImgUrl>
+		</bullet>
+		
+		
+		
+		
+		<skill cnName="群体圣光">
+			<name>groupLightMadFly</name>
+			<cnName>群体圣光</cnName><iconUrl36>SkillIcon/groupLight_hero_36</iconUrl36>
+			
+			<cd>25</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>0.7</conditionRange>
+			<target>me,range,we</target>
+			
+			<addType>instant</addType>
+			<effectType>life</effectType>
+			<value>0</value>
+			<mul>0.33</mul>
+			<range>300</range>
+			<meEffectImg soundUrl="sound/groupLight_hero" />
+			<targetEffectImg con="add">skillEffect/groupLight_hero</targetEffectImg>
+			<description>技能释放后，回复周围[range]码以内的所有我方单位[mul]的生命值。</description>
+		</skill>
+		
+		
+		
+		<skill cnName="变身战神">
+			<name>changeToMadboss</name>
+			<cnName>变身战神</cnName><iconUrl36>IconGather/Madboss</iconUrl36>
+			<cd>60</cd>
+			<firstCd>55</firstCd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>0.1</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<summonedUnitsB>1</summonedUnitsB>
+			<effectType>summonedAndParasitic</effectType>
+			<duration>30</duration>
+			
+			<obj>"cnName":"战神","num":1,"lifeMul":1,"dpsMul":0.5,"mulByFatherB":1,"maxNum":1,"skillArr":["State_SpellImmunity","alloyShell_8","sumBossAtten2","crazy_pet_9","offBossAtten","madArmsAttack","desertedHalo_enemy","madCloseLightning","findHide","summonShortLife","rigidBody_enemy","MadbossUnder"]</obj>
+			
+			<meEffectImg noFollowB="1" soundUrl="sound/vehicleFit" con="add">generalEffect/vehicleFit</meEffectImg>
+			<description>变身战神</description>
+		</skill>
+	</father>
+</data>

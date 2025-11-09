@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="钢铁僵尸王">	
+		<bullet cnName="钢铁僵尸王-地滚弹">
+			<name>IronZombieKing_floor</name>
+			<cnName>僵尸王地滚弹</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.35</attackDelay>
+			<bulletAngle>200</bulletAngle>
+			<bulletAngleRange>60</bulletAngleRange>
+			<bulletNum>3</bulletNum>				
+			<shootNum>1</shootNum>							
+			<shootAngle>30</shootAngle>					
+				
+			<bounceD floor="1000" />	
+				
+			<shootPoint>-57,-50</shootPoint>
+			<bulletSpeed>20</bulletSpeed>
+			<gravity>1</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">IronZombieKing/bullet_floor</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/smallBoom">boomEffect/boom1</hitImgUrl>
+			<hitFloorImgUrl soundUrl="IronZombieKing/hitFloor2" raNum="30">bulletHitEffect/smoke_small</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="45">bulletHitEffect/spark_motion</smokeImgUrl>
+		</bullet>
+		<bullet cnName="钢铁僵尸王-背部火炮">
+			<name>IronZombieKing_gun</name>
+			<cnName>钢铁僵尸王-背部火炮</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.35</attackDelay>
+			<bulletAngle>200</bulletAngle>
+			<bulletAngleRange>20</bulletAngleRange>
+			<bulletNum>3</bulletNum>				
+			<shootNum>3</shootNum>					
+			<shootGap>0.2</shootGap>					
+			<shootAngle>30</shootAngle>					
+				
+			<bounceD floor="999" />	
+				
+			<shootPoint>-45,-106</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<gravity>1</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">IronZombieKing/bullet_floor</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/smallBoom">boomEffect/boom1</hitImgUrl>
+			<hitFloorImgUrl soundUrl="IronZombieKing/hitFloor2" raNum="30">bulletHitEffect/smoke_small</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="45">bulletHitEffect/spark_motion</smokeImgUrl>
+		</bullet>
+		<bullet cnName="钢铁僵尸王-磁力反击">
+			<name>IronZombieKing_bitBack</name>
+			<cnName>钢铁僵尸王-磁力反击</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.8</attackGap>
+			<attackDelay>1.4</attackDelay>
+			<bulletAngle>270</bulletAngle>
+			<bulletAngleRange>30</bulletAngleRange>
+			<extendGap>30</extendGap>
+			<bulletNum>30</bulletNum>				
+			<shootNum>1</shootNum>							
+			<shootAngle>150</shootAngle>					
+				
+			<bounceD floor="999" />	
+			<penetrationGap>1000</penetrationGap>
+				
+			<speedD random="0.2" />
+			<shootPoint>0,-73</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<followD value="0.2" />	
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">IronZombieKing/bullet_floor</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/smallBoom">boomEffect/boom1</hitImgUrl>
+			<hitFloorImgUrl soundUrl="IronZombieKing/hitFloor2" raNum="30">bulletHitEffect/smoke_small</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="45">bulletHitEffect/spark_motion</smokeImgUrl>
+		</bullet>
+	</father>
+	
+	</data>

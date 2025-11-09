@@ -1,0 +1,316 @@
+{
+  "father": [
+    {
+      "name": "wilder",
+      "body": {
+        "index": 0,
+        "name": "BoomSkullS",
+        "shell": "compound",
+        "cnName": "爆骷S",
+        "raceType": "robot",
+        "swfUrl": "swf/enemy/BoomSkullS.swf",
+        "headIconUrl": "IconGather/PetBoomSkullS",
+        "lifeRatio": 1,
+        "rosRatio": 1,
+        "headHurtMul": 0.5,
+        "showLevel": 999,
+        "dieImg": {
+          "value": "boomEffect/boom3",
+          "soundUrl": "sound/pointBoom_hero",
+          "shake": "3,0.4,30"
+        },
+        "dieJumpMul": 0,
+        "imgType": "normal",
+        "imgArr": "stand,move,die1\n\t\t\t\t,followAttack,paraAttack,generalAttack,boxAttack,boomAttack",
+        "lifeBarExtraHeight": -50,
+        "hitRect": "-30,-88,60,88",
+        "maxVx": 7,
+        "motionState": "fly",
+        "flyUseSpiderB": 1,
+        "flyType": "tween",
+        "bossSkillArr": "State_InvincibleThrough,teleport_BoomSkullS,desertedHalo_BoomSkullS",
+        "wilderSkillArr": "moreBullet",
+        "hurtArr": {
+          "hurt": [
+            {
+              "cd": 2,
+              "imgLabel": "generalAttack",
+              "bulletLabel": "BoomSkullS_general",
+              "grapRect": "-9999,-9999,19999,19999",
+              "hurtRatio": 1e-09,
+              "hurtMul": 0.2,
+              "attackType": "holy"
+            },
+            {
+              "cd": 3,
+              "imgLabel": "boomAttack",
+              "bulletLabel": "BoomSkullS_boom",
+              "grapRect": "-9999,-9999,19999,19999",
+              "hurtRatio": 1e-09,
+              "hurtMul": 0.35,
+              "attackType": "holy"
+            },
+            {
+              "imgLabel": "followAttack",
+              "bulletLabel": "BoomSkullS_follow",
+              "grapRect": "-9999,-9999,19999,19999",
+              "hurtRatio": 1e-09,
+              "hurtMul": 0.2,
+              "attackType": "holy"
+            },
+            {
+              "imgLabel": "paraAttack",
+              "bulletLabel": "BoomSkullS_para",
+              "grapRect": "-9999,-9999,19999,19999",
+              "hurtRatio": 1e-09,
+              "hurtMul": 0.35,
+              "attackType": "holy"
+            },
+            {
+              "cd": 8,
+              "imgLabel": "boxAttack",
+              "bulletLabel": "BoomSkullS_box",
+              "grapRect": "-9999,-9999,19999,19999",
+              "hurtRatio": 1e-09,
+              "hurtMul": 0.1,
+              "attackType": "holy"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "enemy",
+      "bullet": {
+        "BoomSkullS_general": {
+          "name": "BoomSkullS_general",
+          "cnName": "爆骷S-普通导弹",
+          "noMagneticB": 1,
+          "shootRecoil": 0.015,
+          "shakeAngle": 4,
+          "bulletLife": 15,
+          "bulletWidth": 40,
+          "hitType": "rect",
+          "attackGap": 0.8,
+          "attackDelay": 0.5,
+          "bulletAngle": 180,
+          "penetrationGap": 1000,
+          "shootPoint": "-173,-65",
+          "bulletSpeed": 12,
+          "speedD": {
+            "random": 0.2
+          },
+          "boomD": {
+            "selfB": true,
+            "hurtMul": 0,
+            "noExcludeBodyB": true,
+            "haveBodyHitEffectB": true
+          },
+          "bindingD": {
+            "cnName": "空单位",
+            "lifeMul": 0.003,
+            "skillArr": "BoomSkullSBulletDie"
+          },
+          "flipX": 1,
+          "bulletImgUrl": "BoomSkullS/generalBullet",
+          "hitImgUrl": "boomEffect/boom2",
+          "armsType": null
+        },
+        "BoomSkullS_boom": {
+          "name": "BoomSkullS_boom",
+          "cnName": "爆骷S-轰炸导弹",
+          "noMagneticB": 1,
+          "shootRecoil": 0.005,
+          "shakeAngle": 4,
+          "bulletLife": 15,
+          "bulletWidth": 40,
+          "hitType": "rect",
+          "attackGap": 0.8,
+          "attackDelay": 0.5,
+          "bulletAngle": 180,
+          "penetrationGap": 1000,
+          "shootPoint": "-173,-65",
+          "bulletSpeed": 12,
+          "speedD": {
+            "random": 0.3
+          },
+          "boomD": {
+            "selfB": true,
+            "floorB": true,
+            "bodyB": true,
+            "radius": 120,
+            "noExcludeBodyB": true,
+            "haveBodyHitEffectB": true
+          },
+          "bindingD": {
+            "cnName": "空单位",
+            "lifeMul": 0.01,
+            "skillArr": "BoomSkullSBulletDie"
+          },
+          "flipX": 1,
+          "bulletImgUrl": "BoomSkullS/boomBullet",
+          "hitImgUrl": "boomEffect/bigCircle",
+          "armsType": null
+        },
+        "BoomSkullS_box": {
+          "name": "BoomSkullS_box",
+          "cnName": "爆骷S-箱子导弹",
+          "noMagneticB": 1,
+          "shakeAngle": 5,
+          "bulletLife": 15,
+          "bulletWidth": 40,
+          "hitType": "rect",
+          "attackGap": 0.8,
+          "attackDelay": 0.6,
+          "bulletAngle": -167,
+          "penetrationGap": 1000,
+          "penetrationNum": -1,
+          "shootPoint": "-176,-123",
+          "bulletSpeed": 7,
+          "boomD": {
+            "selfB": true,
+            "hurtMul": 0,
+            "noExcludeBodyB": true,
+            "haveBodyHitEffectB": true
+          },
+          "bindingD": {
+            "cnName": "空单位",
+            "lifeMul": 0.02,
+            "skillArr": "BoomSkullSBulletDie"
+          },
+          "flipX": 1,
+          "bulletImgUrl": "BoomSkullS/boxBullet",
+          "hitImgUrl": "boomEffect/midWood",
+          "armsType": null
+        },
+        "BoomSkullS_follow": {
+          "name": "BoomSkullS_follow",
+          "cnName": "爆骷S-跟踪导弹",
+          "noMagneticB": 1,
+          "shootRecoil": 0.03,
+          "shakeAngle": 5,
+          "bulletLife": 25,
+          "bulletWidth": 40,
+          "hitType": "rect",
+          "attackGap": 0.8,
+          "attackDelay": 0.63,
+          "bulletAngle": -141,
+          "followD": {
+            "value": 0.4,
+            "delay": 0.7
+          },
+          "penetrationGap": 1000,
+          "shootPoint": "-133,-175",
+          "bulletSpeed": 20,
+          "speedD": {
+            "min": 10,
+            "max": 20,
+            "a": -5
+          },
+          "boomD": {
+            "selfB": true,
+            "hurtMul": 0,
+            "noExcludeBodyB": true,
+            "haveBodyHitEffectB": true
+          },
+          "bindingD": {
+            "cnName": "空单位",
+            "lifeMul": 0.004,
+            "skillArr": "BoomSkullSBulletDie"
+          },
+          "flipX": 1,
+          "bulletImgUrl": "BoomSkullS/bullet1",
+          "hitImgUrl": "boomEffect/boom2",
+          "smokeImgUrl": "bullet/fireballSmoke",
+          "armsType": null
+        },
+        "BoomSkullS_para": {
+          "name": "BoomSkullS_para",
+          "cnName": "爆骷S-抛物线导弹",
+          "noMagneticB": 1,
+          "shootRecoil": 0.06,
+          "shakeAngle": 5,
+          "bulletLife": 15,
+          "bulletWidth": 40,
+          "hitType": "rect",
+          "attackGap": 0.8,
+          "attackDelay": 0.63,
+          "bulletAngle": -143,
+          "shootPoint": "-146,-150",
+          "bulletSpeed": 13,
+          "speedD": {
+            "random": 0.1
+          },
+          "boomD": {
+            "selfB": true,
+            "floorB": true,
+            "bodyB": true,
+            "radius": 200,
+            "noExcludeBodyB": true,
+            "haveBodyHitEffectB": true
+          },
+          "bindingD": {
+            "cnName": "空单位",
+            "lifeMul": 0.008,
+            "skillArr": "BoomSkullSBulletDie"
+          },
+          "gravity": 0.3,
+          "flipX": 1,
+          "bulletImgUrl": "BoomSkullS/paraBullet",
+          "hitImgUrl": "boomEffect/bigCircle",
+          "smokeImgUrl": "bullet/fireballSmoke",
+          "armsType": null
+        }
+      }
+    },
+    {
+      "name": "enemy",
+      "skill": [
+        {
+          "name": "BoomSkullSBulletDie",
+          "cnName": "导弹受到伤害",
+          "noSkillDodgeB": 1,
+          "ignoreImmunityB": 1,
+          "ignoreNoSkillB": 1,
+          "conditionType": "passive",
+          "condition": "die",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "BoomSkullSBulletDie"
+        },
+        {
+          "name": "teleport_BoomSkullS",
+          "cnName": "瞬移",
+          "cd": 2,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "nearAttackTarget",
+          "conditionRange": 200,
+          "target": "me",
+          "addType": "instant",
+          "effectType": "teleport_BoomSkullS",
+          "meEffectImg": {
+            "value": "lightEffect/basinShow",
+            "soundUrl": "sound/teleport_enemy",
+            "con": "add"
+          }
+        },
+        {
+          "name": "desertedHalo_BoomSkullS",
+          "wantDescripB": 1,
+          "showInLifeBarB": 1,
+          "cnName": "导弹系统",
+          "noCopyB": 1,
+          "conditionType": "passive",
+          "condition": "interval",
+          "target": "me,range,enemy",
+          "addType": "state",
+          "effectType": "desertedHalo_BoomSkullS",
+          "duration": 2,
+          "range": 99999,
+          "description": "爆骷S处于虚无状态，不受任何攻击，并向敌人发射多种导弹。敌人击爆导弹才能使爆骷S受到伤害。同时敌人无法回血。"
+        }
+      ]
+    }
+  ]
+}

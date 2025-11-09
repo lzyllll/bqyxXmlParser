@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<charger>
+		<name>rifle</name>
+		<cnName>步枪</cnName>
+		<baseCharger>140</baseCharger>
+		
+		<capacityMul>2</capacityMul>
+		<chargerMul>2</chargerMul>
+		<hurtMul>1</hurtMul>
+		
+		<joinProperty>1</joinProperty>
+		
+		<decomposeArr>1,2,3</decomposeArr>
+		<mustPartArr>1,2</mustPartArr>
+	</charger>
+	<charger>
+		<name>sniper</name>
+		<cnName>狙击枪</cnName>
+		<baseCharger>25</baseCharger>
+		
+		<capacityMul>1</capacityMul>
+		<chargerMul>1</chargerMul>
+		<hurtMul>2</hurtMul>
+		
+		<joinProperty>1</joinProperty>
+		
+		<decomposeArr>1,2,3</decomposeArr>
+		<mustPartArr>1,2</mustPartArr>
+	</charger>
+	<charger>
+		<name>shotgun</name>
+		<cnName>散弹枪</cnName>
+		<baseCharger>30</baseCharger>
+		
+		<capacityMul>1</capacityMul>
+		<chargerMul>1</chargerMul>
+		<hurtMul>2</hurtMul>
+		
+		<joinProperty>1</joinProperty>
+		
+		<strengthenMustAdd>1</strengthenMustAdd>
+		
+		<decomposeArr>1,2,3</decomposeArr>
+		<mustPartArr>1,2</mustPartArr>
+	</charger>
+	<charger>
+		<name>pistol</name>
+		<cnName>手枪</cnName>
+		<baseCharger>100</baseCharger>
+		
+		<capacityMul>1.5</capacityMul>
+		<chargerMul>1.5</chargerMul>
+		<hurtMul>1.5</hurtMul>
+		
+		<joinProperty>1</joinProperty>
+		
+		<strengthenMustAdd>1</strengthenMustAdd>
+		
+		<decomposeArr>1,2,3</decomposeArr>
+		<mustPartArr>1,2</mustPartArr>
+	</charger>
+	<charger>
+		<name>rocket</name>
+		<cnName>火炮</cnName>
+		<baseCharger>25</baseCharger>
+		
+		<capacityMul>1</capacityMul>
+		<chargerMul>1</chargerMul>
+		<hurtMul>2</hurtMul>
+		
+		<strengthenMustAdd>1</strengthenMustAdd>
+		
+		<decomposeArr>1,2,3,4,5,6</decomposeArr>
+		<mustPartArr>1,2</mustPartArr>
+	</charger>
+	
+	<charger>
+		<name>crossbow</name>
+		<cnName>弩</cnName>
+		<baseCharger>25</baseCharger>
+		
+		<capacityMul>1</capacityMul>
+		<chargerMul>1</chargerMul>
+		<hurtMul>2</hurtMul>
+		
+		<decomposeArr>1,2,3</decomposeArr>
+		<mustPartArr>1,2</mustPartArr>
+	</charger>
+	<charger>
+		<name>flamer</name>
+		<cnName>喷火器</cnName>
+		<baseCharger>320</baseCharger>
+		
+		<capacityMul>0.8</capacityMul>
+		<chargerMul>0.8</chargerMul>
+		<hurtMul>1</hurtMul>
+		
+		
+		<decomposeArr>1,2,3</decomposeArr>
+		<mustPartArr>1,2</mustPartArr>
+	</charger>
+	
+	<charger>
+		<name>howitzer</name>
+		<cnName>榴弹炮</cnName>
+		<baseCharger>30</baseCharger>
+		
+		<capacityMul>1</capacityMul>
+		<chargerMul>1</chargerMul>
+		<hurtMul>2</hurtMul>
+		
+		<strengthenMustAdd>1</strengthenMustAdd>
+		
+		<decomposeArr>1,2,3,4,5,6</decomposeArr>
+		<mustPartArr>1,2</mustPartArr>
+	</charger>
+	<charger>
+		<name>wavegun</name>
+		<cnName>波动枪</cnName>
+		<baseCharger>150</baseCharger>
+		
+		<capacityMul>1</capacityMul>
+		<chargerMul>1</chargerMul>
+		<hurtMul>2</hurtMul>
+		
+		<strengthenMustAdd>1</strengthenMustAdd>
+		
+		<decomposeArr>1,2,3,4,5,6</decomposeArr>
+		<mustPartArr>1,2</mustPartArr>
+	</charger>
+	<charger>
+		<name>laser</name>
+		<cnName>激光枪</cnName>
+		<baseCharger>30</baseCharger>
+		
+		<capacityMul>1</capacityMul>
+		<chargerMul>1</chargerMul>
+		<hurtMul>2</hurtMul>
+		
+		<strengthenMustAdd>1</strengthenMustAdd>
+		
+		<decomposeArr>1,2,3,4,5,6</decomposeArr>
+		<mustPartArr>1,2</mustPartArr>
+	</charger>
+	<charger>
+		<name>lightning</name>
+		<cnName>闪电枪</cnName>
+		<baseCharger>90</baseCharger>
+		
+		<capacityMul>1</capacityMul>
+		<chargerMul>1</chargerMul>
+		<hurtMul>2</hurtMul>
+		
+		<joinProperty>1</joinProperty>
+		
+		<strengthenMustAdd>1</strengthenMustAdd>
+		<decomposeArr>1,2,3,4,5,6</decomposeArr>
+		<mustPartArr>1,2</mustPartArr>
+	</charger>
+	<charger>
+		<name>weather</name>
+		<cnName>气象枪</cnName>
+		<baseCharger>25</baseCharger>
+		
+		<capacityMul>1</capacityMul>
+		<chargerMul>1</chargerMul>
+		<hurtMul>2</hurtMul>
+		<decomposeArr>1,2,3,4,5,6</decomposeArr>
+		<mustPartArr>1,2</mustPartArr>
+	</charger>
+	<charger>
+		<name>cutter</name>
+		<cnName>切割枪</cnName>
+		<baseCharger>100</baseCharger>
+		
+		<capacityMul>1</capacityMul>
+		<chargerMul>1</chargerMul>
+		<hurtMul>2</hurtMul>
+		
+		<strengthenMustAdd>1</strengthenMustAdd>
+		
+		<decomposeArr>1,2,3,4,5,6</decomposeArr>
+		<mustPartArr>1,2</mustPartArr>
+	</charger>
+	
+	<charger>
+		<name>energy</name>
+		<cnName>能量枪</cnName>
+		<baseCharger>160</baseCharger>
+		
+		<capacityMul>1</capacityMul>
+		<chargerMul>1</chargerMul>
+		<hurtMul>1</hurtMul>
+		
+		<strengthenMustAdd>1</strengthenMustAdd>
+		
+		<decomposeArr>1,2,3,4,5,6</decomposeArr>
+		<mustPartArr>1,2</mustPartArr>
+	</charger>
+	
+	<charger>
+		<name>blink</name>
+		<cnName>星速枪</cnName>
+		<baseCharger>80</baseCharger>
+		
+		<capacityMul>1</capacityMul>
+		<chargerMul>1</chargerMul>
+		<hurtMul>1</hurtMul>
+		
+		<strengthenMustAdd>1</strengthenMustAdd>
+		
+		<decomposeArr>1,2,3,4,5,6</decomposeArr>
+		<mustPartArr>1,2</mustPartArr>
+	</charger>
+	
+	<charger>
+		<name>props</name>
+		<cnName>工具</cnName>
+		<baseCharger>1</baseCharger>
+		
+		<capacityMul>1</capacityMul>
+		<chargerMul>1</chargerMul>
+		<hurtMul>1</hurtMul>
+		
+		<strengthenMustAdd>1</strengthenMustAdd>
+		
+		<decomposeArr>1,2,3,4,5,6</decomposeArr>
+		<mustPartArr>1,2</mustPartArr>
+	</charger>
+</data>

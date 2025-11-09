@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="sniper" cnName="狙击枪">
+		<bullet index="0" name="狙击枪">
+			<name>sniperRifle</name>
+			<cnName>狙击枪</cnName><extraMul>1.4</extraMul>
+			
+			<randomPro>1</randomPro>
+			<uiDpsMul>1.27</uiDpsMul>
+			
+			<capacity>6,8</capacity>
+			<attackGap>1.4,1.8</attackGap>
+			<reloadGap>2,2.5</reloadGap>
+			<shakeAngle>0,1</shakeAngle>
+			<bulletWidth>800,1200</bulletWidth>
+			<bulletShakeWidth>0,50</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<shootAngle>0</shootAngle>				
+			
+			<penetrationNum>0</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<selfBoom>0</selfBoom>
+			<floorBounce>0</floorBounce>
+			<beatBack>10</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<armsImgLabel />
+			
+			
+			<hurtRatio>15</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.5</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>3</upValue>
+			<shootShakeAngle>15</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			<dpsMul>1.4</dpsMul>
+				
+			
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			
+			<fireImgType />
+			<shootSoundUrl />
+			
+			<lineD size="2" lightSize="6" />
+			<allImgRange>sniper1,sniper2,sniper3</allImgRange>
+			<bodyImgRange>shotgun1/body,shotgun2/body,shotgun3/body,ak/body,m4/body</bodyImgRange>
+			<barrelImgRange>sniper1/barrel2,sniper1/barrel3</barrelImgRange>
+			<stockImgRange>shotgun1/stock,shotgun2/stock,shotgun2/stock,ak/stock,m4/stock</stockImgRange>
+			<glassImgRange>sniper1/glass,sniper1/glass2,sniper2/glass,sniper3/glass</glassImgRange>
+		</bullet>
+		<bullet index="0" name="狙击枪-固定属性">
+			<name>sniperLock</name>
+			<cnName>狙击枪</cnName><extraMul>1.4</extraMul>
+			
+			<uiDpsMul>1.27</uiDpsMul>
+			
+			<capacity>8</capacity>
+			<attackGap>1.2</attackGap>
+			<reloadGap>1.5</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>1200</bulletWidth>
+			<bulletNum>1</bulletNum>				
+			<shootAngle>0</shootAngle>				
+			
+			<penetrationNum>0</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<selfBoom>0</selfBoom>
+			<floorBounce>0</floorBounce>
+			<beatBack>10</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<armsImgLabel />
+			
+			
+			<hurtRatio>15</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.5</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>3</upValue>
+			<shootShakeAngle>15</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			<dpsMul>1.4</dpsMul>
+				
+			
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			
+			<fireImgType />
+			<shootSoundUrl />
+			
+			<lineD lightColor="0xFFCC00" size="2" lightSize="6" blendMode="add" type="one" />
+			<allImgRange>sniper1,sniper2,sniper3</allImgRange>
+			<bodyImgRange>shotgun1/body,shotgun2/body,shotgun3/body,ak/body,m4/body</bodyImgRange>
+			<barrelImgRange>sniper1/barrel2,sniper1/barrel3</barrelImgRange>
+			<stockImgRange>shotgun1/stock,shotgun2/stock,shotgun2/stock,ak/stock,m4/stock</stockImgRange>
+			<glassImgRange>sniper1/glass,sniper1/glass2,sniper2/glass,sniper3/glass</glassImgRange>
+		</bullet>
+		
+		<bullet index="19" name="猎鹰">
+			<name>sniperBlue</name>
+			<cnName>猎鹰</cnName>
+			
+			<capacity>6</capacity>
+			<attackGap>1.8</attackGap>
+			<reloadGap>2.5</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>1000</bulletWidth>
+			<bulletShakeWidth>50</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<shootAngle>0</shootAngle>				
+			<beatBack>10</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>2</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="0" body="3" />	
+			<critD mul="2" pro="0.2" />
+			
+			<skillArr>Hit_Spurting_ArmsSkill,Hit_Poison_ArmsSkill</skillArr>
+			<godSkillArr>Hit_posion7_godArmsSkill,Hit_crazy_godArmsSkill</godSkillArr>
+			
+			<hurtRatio>15</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.5</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>3</upValue>
+			<shootShakeAngle>15</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			<dpsMul>2</dpsMul>
+			
+			<iconUrl>specialGun/sniperBlueIcon</iconUrl>
+			<shootSoundUrl>specialGun/sniperBlue_sound</shootSoundUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			
+			<lineD lightColor="0x9100FF" size="3" lightSize="8" blendMode="add" type="one" />
+			<bodyImgRange>specialGun/sniperBlue</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+		</bullet>
+		<bullet index="18" name="猎隼" color="red" rareDropLevel="60">
+			<name>sniperGreen</name>
+			<cnName>猎隼</cnName>
+			
+			<capacity>6</capacity>
+			<attackGap>1.2,1.8</attackGap>
+			<reloadGap>2.5,4</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>600,1000</bulletWidth>
+			<bulletShakeWidth>50</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<shootAngle>0</shootAngle>				
+			<beatBack>10</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>2</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="0" body="3" />	
+			<critD mul="2" pro="0.2" />
+			
+			<skillArr>Hit_Spurting_ArmsSkill,Hit_Poison_ArmsSkill</skillArr>
+			<godSkillArr>Hit_posion7_godArmsSkill,Hit_crazy_godArmsSkill</godSkillArr>
+			
+			<hurtRatio>15</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.5</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>3</upValue>
+			<shootShakeAngle>15</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			<dpsMul>2.4</dpsMul>
+			
+			<shootSoundUrl>specialGun/sniperBlue_sound</shootSoundUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			
+			<lineD lightColor="0x9100FF" size="3" lightSize="8" blendMode="add" type="one" />
+			<bodyImgRange>specialGun/sniperGreen</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>60级以上关卡和每周任务(武器-处决)</description>
+		</bullet>
+		
+		<bullet index="35" name="剑齿" color="black" dropLevelArr="84" chipNum="400">
+			<name>sniperSmilodon</name>
+			<cnName>剑齿</cnName>
+			
+			<capacity>6</capacity>
+			<attackGap>1.2,1.8</attackGap>
+			<reloadGap>2.5,4</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>600,1000</bulletWidth>
+			<bulletShakeWidth>50</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<shootAngle>0</shootAngle>				
+			<beatBack>10</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>2</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="0" body="3" />	
+			<critD mul="2" pro="0.2" />
+			
+			<skillArr>Hit_AddLifeMul_ArmsSkill,Hit_Poison_ArmsSkill</skillArr>
+			<godSkillArr>Hit_posion7_godArmsSkill,laserKill_godArmsSkill</godSkillArr>
+			
+			<hurtRatio>15</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.5</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>3</upValue>
+			<shootShakeAngle>15</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			<dpsMul>2.4</dpsMul>
+			
+			<shootSoundUrl>specialGun/sniperBlue_sound</shootSoundUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			
+			<lineD lightColor="0x9100FF" size="3" lightSize="8" blendMode="add" type="one" />
+			<bodyImgRange>specialGun/sniperSmilodon</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+		</bullet>
+		
+		
+		<bullet index="35" name="金蝉" color="black" dropLevelArr="90" evoMaxLv="16" composeLv="86" chipNum="50">
+			<name>sniperCicada</name>
+			<cnName>金蝉</cnName><extraMul>2.5</extraMul>
+			
+			<capacity>6</capacity>
+			<attackGap>1.2,1.8</attackGap>
+			<reloadGap>2.5,4</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>600,1000</bulletWidth>
+			<bulletShakeWidth>50</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<shootAngle>0</shootAngle>				
+			<beatBack>10</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>2</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="0" body="3" />	
+			<critD mul="2" pro="0.2" />
+			
+			<skillArr>Hit_SlowMove_ArmsSkill,Kill_AddLifeMul_ArmsSkill</skillArr>
+			<godSkillArr>Hit_posion7_godArmsSkill,fear_godArmsSkill</godSkillArr>
+			
+			<hurtRatio>15</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.5</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>3</upValue>
+			<shootShakeAngle>15</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			<dpsMul>2.4</dpsMul>
+			
+			<shootSoundUrl>specialGun/sniperBlue_sound</shootSoundUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			
+			<lineD lightColor="0xFF9900" size="3" lightSize="8" blendMode="add" type="one" />
+			<bodyImgRange>specialGun/sniperCicada</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+		</bullet>
+		
+		
+		<bullet name="氩星金蝉" color="yagold">
+			<name>sniperCicadaYa</name>
+			<cnName>氩星金蝉</cnName>
+			
+			<capacity>6</capacity>
+			<attackGap>0.7</attackGap>
+			<reloadGap>0.6</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>1000</bulletWidth>
+			<bulletShakeWidth>50</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<shootAngle>0</shootAngle>				
+			<beatBack>10</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			
+			<dpsMul>1</dpsMul>
+			<hurtRatio>15</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.5</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>3</upValue>
+			<shootShakeAngle>15</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			<penetrationNum>7</penetrationNum>
+			
+			<shootSoundUrl>specialGun/sniperBlue_sound</shootSoundUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			
+			<lineD lightColor="0xFF9900" size="3" lightSize="8" blendMode="add" type="one" />
+			<bodyImgRange>specialGun/sniperCicada6</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+		</bullet>
+	</father>
+	
+</data>

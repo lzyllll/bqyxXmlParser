@@ -1,0 +1,130 @@
+{
+  "father": [
+    {
+      "name": "wilder",
+      "body": {
+        "index": 0,
+        "name": "BaseballZombie",
+        "cnName": "棍棒僵尸",
+        "raceType": "zombies",
+        "swfUrl": "swf/enemy/BaseballZombie345.swf",
+        "lifeRatio": 0.8,
+        "showLevel": 9999,
+        "imgArr": "stand,move,run\n\t\t\t\t,normalAttack1,normalAttack2,hurt1,hurt2,die1\n\t\t\t\t,magicAttack,shakeAttack,impactAttack\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+        "bossImgArr": "magicAttack,shakeAttack,impactAttack",
+        "hitRect": "-14,-76,28,76",
+        "maxJumpNum": 1,
+        "nextAttackTime": 0,
+        "extraAIClassLabel": null,
+        "avtiveSkillCdOverT": 0,
+        "skillArr": "UnderRos_AddMove_Battle,noSpeedReduce",
+        "bossSkillArr": "FoggyZombieShake,FoggyZombieImpact,noUnderMulHurt,defenceInvi,noDegradation,gridBlock,cardNoAttackSkill",
+        "bossSkillArrCn": null,
+        "hurtArr": {
+          "hurt": [
+            {
+              "imgLabel": "normalAttack1",
+              "cn": "棒连击",
+              "hurtRatio": 1.5,
+              "shakeValue": 4,
+              "attackType": "direct",
+              "hitImgUrl": {
+                "name": "fistHit"
+              }
+            },
+            {
+              "imgLabel": "normalAttack2",
+              "cn": "棒锤击",
+              "hurtRatio": 2,
+              "shakeValue": 4,
+              "attackType": "direct",
+              "skillArr": "hammer_hit",
+              "hitImgUrl": {
+                "name": "fistHit"
+              }
+            },
+            {
+              "info": "斩击",
+              "imgLabel": "shakeAttack",
+              "noAiChooseB": 1,
+              "hurtMul": 0.5,
+              "skillArr": "FoggyShakeHit",
+              "attackType": "holy",
+              "shakeValue": 4,
+              "noUseOtherSkillB": 1,
+              "hitImgUrl": {
+                "name": "fistHit"
+              }
+            },
+            {
+              "info": "钝击",
+              "imgLabel": "impactAttack",
+              "noAiChooseB": 1,
+              "hurtMul": 0.3,
+              "skillArr": "FoggyImpactHit",
+              "attackType": "holy",
+              "shakeValue": 4,
+              "noUseOtherSkillB": 1,
+              "hitImgUrl": {
+                "name": "fistHit"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "enemy",
+      "skills": {
+        "defenceInvi": {
+          "name": "defenceInvi",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cnName": "遇强则刚",
+          "ignoreNoSkillB": 1,
+          "noSkillDodgeB": 1,
+          "ignoreImmunityB": 1,
+          "conditionType": "passive",
+          "condition": "underAllHit",
+          "otherConditionArr": "hurtPuInviB",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "changeHurtAndMul",
+          "mul": 0.4,
+          "description": "受到无敌攻击者的伤害降低[1-mul]。"
+        },
+        "sumFoggyX": {
+          "name": "sumFoggyX",
+          "cnName": "古惑大军",
+          "showInLifeBarB": 1,
+          "cd": 2,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "nearAttackTarget",
+          "conditionRange": 1000,
+          "target": "me",
+          "addType": "instant",
+          "effectType": "summonedUnits",
+          "obj": {
+            "cnName": "古惑僵尸",
+            "num": 2,
+            "lifeMul": 0.05,
+            "dpsMul": 3,
+            "maxNum": 20,
+            "mulByFatherB": 1,
+            "pointEf": 1,
+            "skillArr": [
+              "State_AddMove100",
+              "State_SpellImmunity",
+              "feeding_spider"
+            ]
+          },
+          "pointEffectImg": {
+            "name": "oreBombShowFlower"
+          },
+          "description": "召唤[obj.num]只伤害超高的[obj.cnName]参加战斗，最多同时存在[obj.maxNum]只[obj.cnName]。[obj.cnName]死后会补充主人的生命值。"
+        }
+      }
+    }
+  ]
+}

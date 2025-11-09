@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="materials" cnName="金币道具">
+		    
+		<things cnName="重生石">
+			<name>rebirthStone</name>
+			<cnName>重生石</cnName>
+			<zuobiNum>1000</zuobiNum>
+			<iconUrl>ThingsIcon/rebirthStone</iconUrl>
+			<description>来自外星的另外一种奇特石头，可用于复活你的生命。</description>
+			<effectD type="rebirth" value="1" useInLevelB="1" levelUseLimitNum="4" arenaLevelUseLimitNum="1" effectLabel="skillEffect/groupLight_hero" effectSound="sound/groupLight_hero" />
+			<smeltD addType="stone" price="9" />
+		</things>
+	</father>
+	
+	</data>

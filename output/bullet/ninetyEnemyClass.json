@@ -1,0 +1,426 @@
+{
+  "father": [
+    {
+      "name": "enemy",
+      "body": [
+        {
+          "index": 0,
+          "name": "SnowThin",
+          "cnName": "童灵尸",
+          "raceType": "zombies",
+          "swfUrl": "swf/enemy/SnowThin.swf",
+          "lifeRatio": 1,
+          "headHurtMul": 1.3,
+          "defenceRatio": 0.2,
+          "showLevel": 90,
+          "imgArr": "stand,move,dragMove\n\t\t\t\t,normalAttack,shootAttack,rotateAttack,hurt1,hurt2,die1,die2\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1\n\t\t\t\t,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2",
+          "bossImgArr": "rotateAttack,dragMove",
+          "hitRect": "-14,-76,28,76",
+          "maxJumpNum": 1,
+          "maxVx": 7,
+          "nextAttackTime": 1,
+          "extraAIClassLabel": "SnowThin_AIExtra",
+          "skillArr": "rigidBody_enemy",
+          "bossSkillArr": "fightReduct2,groupSpeedUp_enemy,silence_enemy,SnowThinRuin",
+          "bossSkillArrCn": "70%近战防御、刚体、群体加速、沉默",
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "normalAttack",
+                "hurtRatio": 1,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": "bladeHitEffect/blood"
+              },
+              {
+                "imgLabel": "shootAttack",
+                "bulletLabel": "SnowThinShoot",
+                "grapRect": "-300,-111,250,105",
+                "hurtRatio": 1.5,
+                "attackType": "direct"
+              },
+              {
+                "info": "不加入ai选择",
+                "noAiChooseB": 1,
+                "imgLabel": "rotateAttack",
+                "bulletLabel": "SnowThinRotate",
+                "hurtRatio": 2.5,
+                "grapRect": "-300,-111,250,105"
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "SnowFatty",
+          "cnName": "关东尸",
+          "raceType": "zombies",
+          "swfUrl": "swf/enemy/SnowFatty.swf",
+          "lifeRatio": 1,
+          "showLevel": 90,
+          "headHurtMul": 0.5,
+          "imgArr": "stand,move,dragMove\n\t\t\t\t,normalAttack,shootAttack,sprintShootAttack,sprintAttack,hurt1,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+          "bossImgArr": "sprintShootAttack,sprintAttack,dragMove",
+          "lifeBarExtraHeight": -30,
+          "hitRect": "-18,-86,36,86",
+          "maxJumpNum": 1,
+          "maxVx": 6,
+          "nextAttackTime": 1,
+          "skillArr": null,
+          "bossSkillArr": "fightReduct2,SnowFattySprint",
+          "bossSkillArrCn": "70%近战防御、95%防毒",
+          "extraAIClassLabel": "SnowFatty_AIExtra",
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "normalAttack",
+                "hurtRatio": 4.5,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": "bladeHitEffect/blood"
+              },
+              {
+                "imgLabel": "shootAttack",
+                "mustGrapRectB": 1,
+                "bulletLabel": "SnowFattyShoot",
+                "grapRect": "-400,-111,350,105",
+                "hurtRatio": 1,
+                "attackType": "direct"
+              },
+              {
+                "info": "不加入ai选择",
+                "noAiChooseB": 1,
+                "imgLabel": "sprintShootAttack",
+                "bulletLabel": "SnowFattySprint",
+                "grapRect": "-400,-111,350,105",
+                "hurtRatio": 2.7,
+                "attackType": "holy"
+              },
+              {
+                "info": "不加入ai选择",
+                "noAiChooseB": 1,
+                "imgLabel": "sprintAttack",
+                "skillArr": "hitBloodWhite",
+                "hurtRatio": 2.7,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": "bladeHitEffect/blood"
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "SnowSoldiers",
+          "cnName": "卫队尸",
+          "raceType": "zombies",
+          "swfUrl": "swf/enemy/SnowSoldiers.swf",
+          "lifeRatio": 1,
+          "headHurtMul": 1.4,
+          "showLevel": 90,
+          "imgArr": "stand,move,dragMove\n\t\t\t\t,normalAttack,hookAttack,rotateAttack,hurt1,hurt2,die1,die2\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1\n\t\t\t\t,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2",
+          "bossImgArr": "rotateAttack,dragMove",
+          "hitRect": "-14,-76,28,76",
+          "maxJumpNum": 1,
+          "maxVx": 8,
+          "nextAttackTime": 0,
+          "skillArr": "rigidBody_enemy,silence_SnowSoldiers",
+          "bossSkillArr": "fightReduct2,treater_knights,defenceBounce_enemy,desertedHalo_enemy,clonedSnowSoldiers,teleport_SnowSoldiers,underCrossbow_SnowSoldiers",
+          "bossSkillArrCn": "70%近战防御、净化器、荒芜光环、胶性表皮、分身",
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "normalAttack",
+                "hurtRatio": 1.7,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "hookAttack",
+                "mustGrapRectB": 1,
+                "hurtRatio": 4,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "info": "不加入ai选择",
+                "noAiChooseB": 1,
+                "imgLabel": "rotateAttack",
+                "hurtRatio": 0.8,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": "bulletHitEffect/energy"
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "SnowGirl",
+          "shell": "normal",
+          "cnName": "女爵尸",
+          "raceType": "zombies",
+          "swfUrl": "swf/enemy/SnowGirl.swf",
+          "lifeRatio": 0.7,
+          "showLevel": 90,
+          "imgArr": "stand,move\n\t\t\t\t,normalAttack,shootAttack,hookAttack,pullAttack,pullAfterAttack,hurt1,hurt2,die1,die2\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1\n\t\t\t\t,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2",
+          "bossImgArr": "pullAttack,pullAfterAttack",
+          "hitRect": "-14,-76,28,76",
+          "maxJumpNum": 1,
+          "maxVx": 10,
+          "nextAttackTime": 0,
+          "skillArr": "rigidBody_enemy",
+          "bossSkillArr": "fightReduct2,desertedHalo_enemy,defenceBounce_enemy,addMove_Crawler,SnowGirlHookHit,SnowGirlPull,IceManCorrosion",
+          "bossSkillArrCn": "70%近战防御、荒芜光环、胶性表皮、狂躁、腐蚀",
+          "extraAIClassLabel": "SnowGirl_AIExtra",
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "normalAttack",
+                "hurtRatio": 1.6,
+                "skillArr": "silence_SnowSoldiers",
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": "bladeHitEffect/blood"
+              },
+              {
+                "imgLabel": "shootAttack",
+                "mustGrapRectB": 1,
+                "hurtRatio": 2,
+                "attackType": "direct",
+                "shakeValue": 4,
+                "hitImgUrl": "bladeHitEffect/blood"
+              },
+              {
+                "imgLabel": "hookAttack",
+                "mustGrapRectB": 1,
+                "hurtRatio": 1,
+                "attackType": "holy",
+                "skillArr": "SnowGirlHook",
+                "shakeValue": 4,
+                "hitImgUrl": "bladeHitEffect/blood"
+              },
+              {
+                "info": "不加入ai选择",
+                "noAiChooseB": 1,
+                "imgLabel": "pullAttack",
+                "hurtRatio": 0.001,
+                "skillArr": "SnowGirlPullHit",
+                "attackType": "holy",
+                "shakeValue": 4,
+                "hitImgUrl": "bladeHitEffect/blood"
+              },
+              {
+                "info": "不加入ai选择",
+                "noAiChooseB": 1,
+                "noUseOtherSkillB": 1,
+                "imgLabel": "pullAfterAttack",
+                "hurtRatio": 0.5,
+                "skillArr": "SnowGirlAfterPullHit",
+                "attackType": "holy",
+                "shakeValue": 4,
+                "hitImgUrl": "bladeHitEffect/blood"
+              }
+            ]
+          }
+        },
+        {
+          "index": 0,
+          "name": "IceMan",
+          "shell": "normal",
+          "cnName": "野帝",
+          "headIconUrl": "IconGather/IceMan",
+          "raceType": "zombies",
+          "swfUrl": "swf/enemy/IceMan.swf",
+          "lifeRatio": 1.8,
+          "rateRatio": 0.05,
+          "showLevel": 999,
+          "headHurtMul": 0.5,
+          "imgType": "normal",
+          "imgArr": "stand,move\n\t\t\t\t,normalAttack1,normalAttack2,shootAttack1,shootAttack2\n\t\t\t\t,shakeAttack,kickAttack,rotateAttack,smashAttack,strikeAttack,shakeAttack\n\t\t\t\t,hurt1,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+          "lifeBarExtraHeight": -50,
+          "handAddRa": 90,
+          "hitRect": "-18,-96,36,96",
+          "maxJumpNum": 1,
+          "maxVx": 12,
+          "runStartVx": 12,
+          "nextAttackTime": 0,
+          "extraAIClassLabel": "IceMan_AIExtra",
+          "skillArr": null,
+          "bossSkillArr": "fightReduct2,defenceBounce_enemy,IceManRotate,IceManRotateLink,IceManStrike,IceManKick,IceManShake,IceManSnowman",
+          "bossSkillArrCn": "70%近战防御、胶性表皮",
+          "extraDropArmsB": 1,
+          "extraG": {
+            "label": "ExtraTaskAI",
+            "bossSkillArr": "cmldef_enemy,fightReduct2,defenceBounce_enemy,IceManRotate,IceManRotateLink,IceManStrike,IceManKick,IceManShake,IceManSnowman",
+            "extra": [
+              {
+                "lifeMin": 0.7,
+                "skillArr": ""
+              },
+              {
+                "lifeMin": 0.4,
+                "skillArr": ""
+              },
+              {
+                "lifeMin": 0,
+                "skillArr": ""
+              }
+            ]
+          },
+          "hurtArr": {
+            "hurt": [
+              {
+                "imgLabel": "normalAttack1",
+                "cn": "抱拳",
+                "hurtRatio": 1.5,
+                "attackType": "direct",
+                "skillArr": "IceManCorrosion",
+                "shakeValue": 4,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "normalAttack2",
+                "cn": "直拳",
+                "hurtRatio": 1.5,
+                "attackType": "direct",
+                "skillArr": "IceManCorrosion",
+                "shakeValue": 4,
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "imgLabel": "shootAttack1",
+                "cn": "射击",
+                "bulletLabel": "IceManShoot1",
+                "grapRect": "-518,-147,150,127",
+                "hurtRatio": 1.5,
+                "attackType": "direct"
+              },
+              {
+                "imgLabel": "shootAttack2",
+                "cn": "连射",
+                "bulletLabel": "IceManShoot2",
+                "grapRect": "-518,-147,150,127",
+                "hurtRatio": 1.5,
+                "attackType": "direct"
+              },
+              {
+                "info": "爆怒一击",
+                "noAiChooseB": 1,
+                "imgLabel": "shakeAttack",
+                "grapRect": "-518,-147,150,127",
+                "hurtMul": 0.5,
+                "attackType": "holy",
+                "noUseOtherSkillB": 1
+              },
+              {
+                "info": "踢爆",
+                "noAiChooseB": 1,
+                "imgLabel": "kickAttack",
+                "bulletLabel": "IceManKick",
+                "hurtRatio": 0.5,
+                "attackType": "direct",
+                "skillArr": "IceManKickHit",
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "info": "冲锋",
+                "noAiChooseB": 1,
+                "imgLabel": "strikeAttack",
+                "hurtRatio": 0.4,
+                "attackType": "accurate",
+                "skillArr": "IceManStrikeHit",
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "info": "飞雪连舞-砸",
+                "noAiChooseB": 1,
+                "imgLabel": "smashAttack",
+                "hurtRatio": 2.3,
+                "attackType": "direct",
+                "hitImgUrl": "bulletHitEffect/energy"
+              },
+              {
+                "info": "飞雪连舞",
+                "noAiChooseB": 1,
+                "imgLabel": "rotateAttack",
+                "hurtRatio": 0.5,
+                "attackType": "direct",
+                "hitImgUrl": "bulletHitEffect/energy"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "other",
+      "cnName": "其他",
+      "body": [
+        {
+          "index": 0,
+          "name": "Snowman",
+          "shell": "normal",
+          "headIconUrl": "IconGather/Snowman",
+          "cnName": "雪人",
+          "raceType": "snow",
+          "swfUrl": "swf/enemy/Snowman.swf",
+          "lifeRatio": 0.7,
+          "dieJumpMul": 0,
+          "imgType": "normal",
+          "imgArr": "stand,birthAttack,die1",
+          "dieImg": {
+            "soundUrl": "sound/snowHit"
+          },
+          "hitRect": "-14,-30,28,30",
+          "maxJumpNum": 0,
+          "maxVx": 0,
+          "defaultAiOrder": "no",
+          "nextAttackTime": 0,
+          "skillArr": "State_SpellImmunity",
+          "avtiveSkillCdOverT": 0,
+          "hurtArr": {
+            "hurt": {
+              "imgLabel": "stand",
+              "hurtRatio": 0,
+              "shakeValue": 4,
+              "attackType": "direct",
+              "grapRect": "-50,-111,100,105"
+            }
+          }
+        },
+        {
+          "index": 0,
+          "name": "RifleHornetShooter",
+          "shell": "metal",
+          "headIconUrl": "IconGather/RifleHornetShooter",
+          "cnName": "赤鼬导弹发射器",
+          "raceType": "robot",
+          "swfUrl": "swf/enemy/RifleHornetShooter.swf",
+          "lifeRatio": 0.7,
+          "dieJumpMul": 0,
+          "imgArr": "stand,birthAttack,shootAttack,die1",
+          "hitRect": "-14,-30,28,30",
+          "maxJumpNum": 0,
+          "maxVx": 10,
+          "motionState": "fly",
+          "flipCtrlBy": "target",
+          "nextAttackTime": 0,
+          "skillArr": "State_SpellImmunity",
+          "avtiveSkillCdOverT": 0,
+          "hurtArr": {
+            "hurt": {
+              "imgLabel": "shootAttack",
+              "hurtRatio": 1,
+              "bulletLabel": "RifleHornetShooter",
+              "attackType": "direct",
+              "grapRect": "-9999,-9999,19999,19999"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

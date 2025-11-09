@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="armsSkill" cnName="武器技能">
+		<skill name="击中减速">
+			<name>Hit_SlowMove_ArmsSkill</name>
+			<cnName>击中减速</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<value>0</value>
+			<mul>0.6</mul>
+			<duration>2</duration>
+			<range>0</range>
+			
+			<meEffectImg />
+			<stateEffectImg partType="2foot">skillEffect/disabled_enemy</stateEffectImg>
+			<description>击中目标后减少其[1-mul]的移动速度，持续2秒。</description>
+		</skill>
+		
+		<skill name="击毙补充弹药">
+			<name>Kill_AddCharger_ArmsSkill</name>
+			<cnName>击毙补充弹药</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>killTarget</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>charger</effectType>
+			<value>0</value>
+			<mul>0.05</mul>
+			
+			<obj>"target":"now","addType":"add"</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>击毙单位后，补充当前武器5%的携弹量。</description>
+		</skill>
+		
+		<skill name="击毙回复">
+			<name>Kill_AddLifeMul_ArmsSkill</name>
+			<cnName>击毙回复</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>killTarget</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>life</effectType>
+			<value>0</value>
+			<mul>0.04</mul>
+			
+			<obj>"target":"now","addType":"add"</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>击毙单位后，补充自身4%的生命值。</description>
+		</skill>
+		
+		<skill name="剧毒">
+			<name>Hit_Poison_ArmsSkill</name>
+			<cnName>剧毒</cnName>
+			
+			<conditionType>passive</conditionType><noSkillDodgeB>1</noSkillDodgeB>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>poison</effectType>
+			<extraValueType>hurtValue</extraValueType>
+			<value>0</value>
+			<mul>0.2</mul>
+			<doGap>1</doGap>
+			<duration>5</duration>
+			
+			<meEffectImg />
+			<stateEffectImg partType="mouth" con="add">skillEffect/poisonousFog_hero</stateEffectImg>
+			<description>击中目标后，使其每秒减少一定的生命值，减少量为武器当前造成伤害的20%，持续5秒。</description>
+		</skill>
+		
+		<skill name="击毙溅射">
+			<name>Kill_Spurting_ArmsSkill</name>
+			<cnName>击毙溅射</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>killTarget</condition>
+			<target>target,range,enemy</target>
+			
+			<addType>instant</addType>
+			<effectType>spurting</effectType>
+			<extraValueType>nowArmsDps</extraValueType>
+			<value>0</value>
+			<mul>0.3</mul>
+			<range>200</range>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>击毙目标后，对其200范围内的敌方单位造成伤害，伤害值为武器实际战斗力的30%。</description>
+		</skill>
+		<skill name="振奋">
+			<name>Kill_Crazy_ArmsSkill</name>
+			<cnName>振奋</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>killTarget</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>hurtMul</effectType>
+			<mul>1.2</mul>
+			<duration>2</duration>
+			
+			<meEffectImg />
+			<stateEffectImg partType="2hand" con="add" raNum="30" followPartRaB="1">skillEffect/trueshot_enemy</stateEffectImg>
+			<description>击毙敌人后，自身攻击力提升20%，持续2秒。</description>
+		</skill>
+		
+		<skill name="击中溅射">
+			<name>Hit_Spurting_ArmsSkill</name>
+			<cnName>击中溅射</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target,range,enemy,,,6</target>
+			
+			<addType>instant</addType>
+			<effectType>spurting</effectType>
+			<extraValueType>hurtValue</extraValueType>
+			<value>0</value>
+			<mul>0.1</mul>
+			<range>200</range>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>击中目标后，对其200范围内的敌方单位造成伤害，伤害值为武器所造成伤害的10%。</description>
+		</skill>
+		
+		<skill name="致残">
+			<name>Hit_disabled_ArmsSkill</name>
+			<cnName>致残</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>hurtMul</effectType>
+			<mul>0.75</mul>
+			<duration>2</duration>
+			<stateEffectImg partType="2hand">skillEffect/disabled_enemy</stateEffectImg>
+			<description>击中目标后减少其25%的攻击力，持续2秒。</description>
+		</skill>
+		
+		
+		<skill name="击中麻痹">
+			<name>Hit_Paralysis_ArmsSkill</name>
+			<cnName>击中麻痹</cnName>
+			<createByArmsTypePro>effectProArr</createByArmsTypePro>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<effectProArr>0.03</effectProArr>
+			<mul>0</mul>
+			<duration>2</duration>
+			 
+			<targetEffectImg soundUrl="sound/paralysis_enemy_hit" />
+			<stateEffectImg con="add">skillEffect/paralysis_enemy</stateEffectImg>
+			<description>击中目标后，有[effectProArr.0]的几率使其麻痹，持续[duration]秒。</description>
+		</skill>
+		
+		<skill name="致盲">
+			<name>Hit_blindness_ArmsSkill</name>
+			<cnName>致盲</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>lostPro</effectType>
+			<mul>0.25</mul>
+			<duration>3</duration>
+			<stateEffectImg partType="2eye">skillEffect/disabled_enemy</stateEffectImg>
+			<description>击中目标后使其失去准心，使其攻击成功率降低[mul]，持续3秒。</description>
+		</skill>
+		
+		
+		<skill name="击中回复">
+			<name>Hit_AddLifeMul_ArmsSkill</name>
+			<cnName>击中回复</cnName>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>Hit_AddLifeMul</effectType>
+			<extraValueType>hurtValue</extraValueType>
+			<value>0.008</value>
+			<mul>0</mul>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>击中目标后，补充自身生命值，补充值为武器所造成伤害的1%。</description>
+		</skill>
+		<skill name="击中沉默">
+			<name>Hit_silence_ArmsSkill</name>
+			<cnName>击中沉默</cnName>
+			<createByArmsTypePro>effectProArr</createByArmsTypePro>
+			<haveEffectBuletHitNum>1</haveEffectBuletHitNum>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>silenceBAndClearState</effectType>
+			<effectProArr>0.015</effectProArr>
+			<value>1</value>
+			<duration>2</duration>
+			 
+			<targetEffectImg soundUrl="sound/silence_enemy" />
+			<stateEffectImg partType="mouth" con="add">skillEffect/silence_enemy</stateEffectImg>
+			<description>击中目标后，有[effectProArr.0]的几率使其无法释放技能，持续[duration]秒，同时清除目标身上一些状态。</description>
+		</skill>
+		<skill name="击中派生">
+			<name>Hit_hitMissile_godArmsSkill</name>
+			<cnName>击中派生</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>0.06</effectProArr>
+			<extraValueType>nowArmsDps</extraValueType>
+			
+			<obj>"name":"hitMissile_hero","site":"shootPoint","flipB":false</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>每次射击都有[effectProArr.0]的概率派生跟踪导弹。导弹伤害为当前武器实际战斗力值。</description>
+		</skill>
+	</father>
+	</data>

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="weather" cnName="气象枪">
+		<bullet cnName="降雨炮" name="iceCone" kind="water" color="black" composeLv="99" chipB="1" chipNum="100" dropLevelArr="999">
+			<name>rainGun</name>
+			<cnName>降雨炮</cnName>
+			<noHitB>1</noHitB>
+			<noMagneticB>1</noMagneticB>
+			<noBeClearB>1</noBeClearB>
+			
+			
+			<capacity>9</capacity>
+			<attackGap>2</attackGap>
+			<reloadGap>2</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>35</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<gunNum>1</gunNum>
+			
+			
+			<upValue>5</upValue>
+			<shootShakeAngle>30</shootShakeAngle>
+			<shootRecoil>15</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			
+			<bulletLife>1.5</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>1</dpsMul>
+			<uiDpsMul>5</uiDpsMul>
+			
+				
+			<bulletSpeed>20</bulletSpeed>
+			<skillArr />
+			<godSkillArr>rainGunSkill</godSkillArr>
+			<bulletSkillArr>rainGunDieEvent</bulletSkillArr>
+			<boomD selfB="1" hurtMul="0" />
+			
+			<iconUrl>newGun/rainGunChip</iconUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl name="rainGunBullet" />
+			<hitImgUrl name="iceConeHit" />
+			<fireImgUrl name="enegryGunFire" />
+			<selfBoomImgUrl name="waterHit" />
+			<shootSoundUrl>sound/snowHit</shootSoundUrl>
+			
+			<bodyImgRange>newGun/rainGun</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>2025年暑期签到</description>
+		</bullet>
+		
+	</father>
+	</data>

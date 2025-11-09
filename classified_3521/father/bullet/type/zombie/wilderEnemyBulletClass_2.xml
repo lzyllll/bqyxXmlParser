@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="异祖龙">
+		<bullet cnName="异祖龙-火球">
+			<name>FlyDragon_fireball</name>
+			<cnName>异角龙-火球</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>175</bulletAngle>
+			<bulletAngleRange>20</bulletAngleRange>
+			<bulletLife>4</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.6</attackGap>
+			<attackDelay>0.3</attackDelay>
+			<bulletNum>1</bulletNum>					
+			<shootPoint>-97,-6</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<bulletSpeed>10</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">FlyDragon/fireball</bulletImgUrl>
+			<hitImgUrl name="redFire_hitFloor" />
+			
+		</bullet>
+		<bullet cnName="异祖龙-巨焰围剿">
+			<name>FlyDragon_fireSurround</name>
+			<cnName>异祖龙巨焰围剿</cnName>
+			
+			<hurtRatio>0</hurtRatio>
+			<hurtMul>0.3</hurtMul>
+			<attackType>holy</attackType>
+			
+			<bulletAngle>90</bulletAngle>
+			<shakeAngle>2</shakeAngle>
+			<bulletLife>0.62</bulletLife>
+			<shootNum>150</shootNum>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+				
+			<speedD random="0.1" max="30" />
+			<bulletSpeed>30</bulletSpeed>
+			
+			
+			<penetrationGap>1000</penetrationGap>
+			<twoHitGap>1</twoHitGap>
+			<twoHitSameNameB>1</twoHitSameNameB>
+			
+			<shootSoundUrl />
+			<bulletImgUrl name="fireFlamer_bullet" />
+			<hitImgUrl raNum="30">bulletHitEffect/smoke_motion</hitImgUrl>
+			<hitFloorImgUrl raNum="30">bulletHitEffect/smoke_motion</hitFloorImgUrl>
+			<fireImgType>no</fireImgType>
+		</bullet>
+		
+		<bullet cnName="异祖龙-巨焰围剿-喷烟">
+			<name>FlyDragon_fireSurroundSmoke</name>
+			<cnName>异祖龙巨焰喷烟</cnName>
+			<noHitB>1</noHitB>
+			<hurtRatio>0</hurtRatio>
+			
+			<shakeAngle>2</shakeAngle>
+			<bulletLife>0.62</bulletLife>
+			<shootNum>15</shootNum>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+				
+			<speedD random="0.1" max="30" />
+			<bulletSpeed>30</bulletSpeed>
+				
+			<penetrationGap>1000</penetrationGap>
+			
+			<bulletImgUrl raNum="2" con="filter">fireEffect/smoke1</bulletImgUrl>
+			<fireImgType>no</fireImgType>
+		</bullet>
+		
+		<bullet cnName="异祖龙-金球">
+			<name>FlyDragonBall</name>
+			<cnName>异角龙-金球</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			<attackType>holy</attackType>
+			
+			<bulletAngle>-90</bulletAngle>
+			<bulletAngleRange>180</bulletAngleRange>
+			<bulletLife>10</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<bulletNum>1</bulletNum>					
+			<shootPoint>0,0</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+			<skillArr>FlyDragon_petrifaction</skillArr>
+				
+			<bulletSpeed>20</bulletSpeed>
+			<followD value="1" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>FlyDragon/drop</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/fireHit1">boomEffect/boom1</hitImgUrl>
+		</bullet>
+	</father>
+	</data>

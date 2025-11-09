@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="无疆骑士">	
+		<bullet cnName="无疆骑士-流星拳">
+			<name>Knights_shoot1</name>
+			<cnName>无疆骑士-流星拳</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.35</attackGap>
+			<attackDelay>0.27</attackDelay>
+			<bulletAngle>157</bulletAngle>
+			<bulletAngleRange>20</bulletAngleRange>
+			<bulletNum>3</bulletNum>				
+			<shootNum>2</shootNum>					
+			<shootAngle>20</shootAngle>
+			<shootGap>0.39</shootGap>					
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<shootPoint>-106,-199</shootPoint>
+			<bulletSpeed>35</bulletSpeed>
+			<followD value="0.5" />	
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">Knights/bullet1</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom2" shake="3,0.4,13">boomEffect/boom2</hitImgUrl>
+			<hitFloorImgUrl soundUrl="boomSound/smallBoom" shake="3,0.4,9" soundVolume="0.5">boomEffect/boom1</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+		</bullet>
+	</father>	
+	
+	</data>

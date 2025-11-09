@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="props" cnName="新道具">
+		<things cnName="扫荡卡">
+			<name>sweepingCard</name>
+			<cnName>扫荡卡</cnName>
+			<zuobiNum>30000</zuobiNum>
+			<iconUrl>ThingsIcon/sweepingCard</iconUrl>
+			<description>使用后添加1次扫荡机会，今天如果没用完，第二天次数将消失。</description>
+			<effectD type="addGift" dayUseLimit="7" />
+			<gift>base;daySweeping;1</gift>
+			<loveD num="0" />
+		</things>
+		<things cnName="电磁铁">
+			<name>electromagnet</name><addDropDefineB>1</addDropDefineB>
+			<cnName>电磁铁</cnName>
+			<iconUrl>ThingsIcon/electromagnet</iconUrl>
+			<stateD skill="electromagnet" time="120" gamingB="1" demNoneB="1" />
+			<description>使用后将在战斗中不断释放磁力场（主线任务、修罗模式无效），扰乱敌人子弹轨迹，持续120秒。</description> 
+			<loveD num="0" />
+			<smeltD type="festival" />
+		</things>
+		<things cnName="骷髅卡">
+			<name>skeletonCard</name><addDropDefineB>1</addDropDefineB>
+			<cnName>骷髅卡</cnName>
+			<iconUrl>ThingsIcon/skeletonCard</iconUrl>
+			<stateD skill="skeletonCard" time="30" gamingB="1" demNoneB="1" />
+			<description>使用后在关卡中（任务、修罗模式无效）让敌人每秒损失2%的生命值（首领每秒损失1%，生命低于15%时不再损失），持续30秒。</description> 
+			<loveD num="0" />
+			<smeltD type="festival" />
+		</things>
+		<things cnName="超级散射卡">
+			<name>superSpreadCard</name><addDropDefineB>1</addDropDefineB>
+			<cnName>超级散射卡</cnName>
+			<iconUrl>ThingsIcon/superSpreadCard</iconUrl>
+			<stateD skill="superSpreadCard" time="40" gamingB="1" demNoneB="1" />
+			<description>使用后，让自己在战斗中进入超级散射状态，持续40秒。99级任务、争霸、修罗模式无效。</description> 
+			<loveD num="0" />
+			<smeltD type="festival" />
+		</things>
+		<things cnName="修罗散射卡">
+			<name>demonSpreadCard</name><addDropDefineB>1</addDropDefineB>
+			<cnName>修罗散射卡</cnName>
+			<iconUrl>ThingsIcon/demonSpreadCard</iconUrl>
+			<stateD skill="superSpreadCard" time="40" gamingB="1" demO="1" />
+			<description>在修罗模式、星谷地图中使用该道具，会让自己在战斗中进入超级散射状态，持续40秒。</description> 
+			<loveD num="0" />
+			<smeltD type="festival" />
+		</things>
+		<things cnName="首领召唤卡">
+			<name>bossSumCard</name><btnList>use</btnList>
+			<cnName>首领召唤卡</cnName>
+			<iconUrl>ThingsIcon/bossSumCard</iconUrl>
+			<description>
+				该物品可让你在关卡中召唤自己的主力首领（不能召唤战神、宠物、载具以及我方单位），每周该道具有使用上限。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]魂卡送卡中获得
+			</description>
+			<loveD num="0" />
+			<effectD type="bossSumCard" value="1" useInLevelB="1" levelUseLimitNum="1" effectLabel="boomEffect/showLight" effectSound="uiSound/swapHero" />
+		</things>
+		<things cnName="放大药剂">
+			<name>bigDrug</name>
+			<cnName>放大药剂</cnName>
+			<iconUrl>ThingsIcon/bigDrug</iconUrl>
+			<effectD type="skill" skillArr="bigDrug" useInLevelB="1" levelUseLimitNum="1" sTaskNoB="1" />
+			<description>自己的身体放大3倍，惊吓周围的敌人。部分任务无法使用。</description> 
+			<loveD num="0" />
+			<smeltD type="festival" />
+		</things>
+		<things cnName="缩小药剂">
+			<name>smallDrug</name>
+			<cnName>缩小药剂</cnName>
+			<iconUrl>ThingsIcon/smallDrug</iconUrl>
+			<effectD type="skill" skillArr="smallDrug" useInLevelB="1" levelUseLimitNum="1" sTaskNoB="1" />
+			<description>自己的身体缩小2倍，让敌人无法发现自己。部分任务无法使用。</description> 
+			<loveD num="0" />
+			<smeltD type="festival" />
+		</things>
+		<things cnName="加速药剂">
+			<name>speedDrug</name>
+			<cnName>加速药剂</cnName>
+			<iconUrl>ThingsIcon/speedDrug</iconUrl>
+			<effectD type="skill" skillArr="speedDrug" useInLevelB="1" levelUseLimitNum="1" sTaskNoB="1" />
+			<description>把自身的速度提升至无限大。部分任务无法使用。</description> 
+			<loveD num="0" />
+			<smeltD type="festival" />
+		</things>
+		<things cnName="失重卡片">
+			<name>zeroGravityCard</name>
+			<cnName>失重卡片</cnName>
+			<iconUrl>ThingsIcon/zeroGravityCard</iconUrl>
+			<effectD type="skill" skillArr="zeroGravityCard" useInLevelB="1" levelUseLimitNum="1" sTaskNoB="1" />
+			<description>使游戏里的重力降低至10%。部分任务无法使用。</description> 
+			<loveD num="0" />
+			<smeltD type="festival" />
+		</things>
+		<things cnName="巨伤卡">
+			<name>bigHurtCard</name>
+			<cnName>巨伤卡</cnName>
+			<iconUrl>ThingsIcon/bigHurtCard</iconUrl>
+			<effectD type="skill" skillArr="bigHurtCard" useInLevelB="1" levelUseLimitNum="1" sTaskNoB="1" />
+			<description>使自身伤害提高30倍，受到伤害也提高30倍。部分任务无法使用。</description> 
+			<loveD num="0" />
+			<smeltD type="festival" />
+		</things>
+		<things cnName="圣诞铁箱">
+			<name>iconGiftCase</name>
+			<cnName>圣诞铁箱</cnName><addDropDefineB>1</addDropDefineB>
+			<iconUrl>ThingsIcon/iconGiftBox</iconUrl>
+			<effectD type="skill" skillArr="iconGiftBox" useInLevelB="1" sTaskNoB="1" />
+			<description>释放存在120秒的圣诞铁盒，铁盒将强制吸引所有僵尸的攻击，直到铁盒消失。</description> 
+			<loveD num="0" />
+			<smeltD type="festival" />
+		</things>
+		
+		<things cnName="辣椒糯米饭">
+			<name>glutinous</name>
+			<cnName>辣椒糯米饭</cnName><addDropDefineB>1</addDropDefineB>
+			<iconUrl>ThingsIcon/glutinous</iconUrl>
+			<effectD type="skill" skillArr="glutinous" useInLevelB="1" levelUseLimitNum="1" sTaskNoB="1" />
+			<description>在关卡中食用该物品，爆辣的风味将使角色嘴巴冒烟，获得无限怒气，并且近战伤害增加50%。</description> 
+			<loveD num="0" />
+			<smeltD type="festival" />
+		</things>
+		
+		<things cnName="僵尸血瓶">
+			<name>zombieBottle</name>
+			<cnName>僵尸血瓶</cnName>
+			<iconUrl>ThingsIcon/zombieBottle</iconUrl>
+			<effectD type="skill" skillArr="zombieBottle" useInLevelB="1" levelUseLimitNum="1" sTaskNoB="1" />
+			<description>给在场所有我方单位抹上僵尸血液，使其不会成为敌人的攻击目标。部分任务无法使用。</description> 
+			<loveD num="0" />
+			<smeltD type="festival" />
+		</things>
+		
+		<things cnName="队友功勋牌">
+			<name>exploitCard</name>
+			<cnName>队友功勋牌</cnName><btnList>use</btnList>
+			<iconUrl>ThingsIcon/exploitCard</iconUrl>
+			<description>使用后添加10000当前角色的功勋值。</description>
+			<effectD type="addGift" />
+			<gift>base;exploit;10000</gift>
+		</things>
+		
+		
+		
+		
+		
+		
+		
+		<things cnName="募兵券">
+			<name>soldiersStamp</name><addDropDefineB>1</addDropDefineB>
+			<cnName>募兵券</cnName>
+			<iconUrl>ThingsIcon/soldiersStamp</iconUrl>
+			<description>
+				开启支线任务“队友齐上阵”的必需品。把它赠送给表哥或者藏师还将获得180点左右的忠诚度。直接使用将给小樱添加170点好感度。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]周年庆签到礼包
+			</description> 
+			<loveD num="1" />
+			<effectD type="addLove" value="170" />
+		</things>
+		
+		<things cnName="红包">
+			<name>redBag</name><addDropDefineB>1</addDropDefineB>
+			<cnName>红包</cnName>
+			<iconUrl>ThingsIcon/redBag</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]周年庆活动期间，消灭首领有几率掉落。
+				[n][n]使用后将随机获得以下物品中的1种：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<useSave>chest</useSave>
+			<loveD num="2" />
+			<smeltD grade="-1" />
+			<giftRandomB>1</giftRandomB>
+			<gift pro="150">base;anniCoin;6</gift>
+			<gift pro="100">things;yearMonkey;3</gift>
+			<gift pro="100">things;yearCattle;3</gift>
+			<gift pro="100">things;yearPig;3</gift>
+			<gift pro="100">things;yearHourse;3</gift>
+			<gift pro="100">things;yearMouse;3</gift>
+			<gift pro="100">things;yearRabbit;3</gift>
+			<gift pro="100">things;yearSnake;3</gift>
+			<gift pro="100">things;yearDog;3</gift>
+			<gift pro="50">parts;huntParts_1;5</gift>
+			<gift pro="50">parts;acidicParts_1;5</gift>
+			<gift pro="15">equip;cyanArmy;1</gift>
+		</things>
+	</father>
+	</data>

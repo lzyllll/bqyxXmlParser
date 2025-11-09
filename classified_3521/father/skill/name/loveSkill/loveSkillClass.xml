@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="loveSkill" cnName="好感度技能">
+		<skill name="敏捷馈赠">
+			<name>dodge_loveSkill</name>
+			<cnName>敏捷馈赠</cnName><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>hurtAddByLove</effectType>
+			<mul>0.4</mul>
+			<description>P1角色在战斗中获得相当于闪避概率[mul]的攻击力。</description>
+			<valueString>Striker</valueString>
+		</skill>
+		
+		
+		<skill name="防御力提升">
+			<name>girlDefence_loveSkill</name><cnName>防御力提升</cnName><everNoClearB>1</everNoClearB>
+			<conditionType>passive</conditionType><condition>add</condition><target>me</target><addType>state</addType><duration>99999</duration>
+			<mul>0.5</mul><effectType>underHurtMul</effectType>
+			<description>战斗中永久提升[1-mul]的防御力。</description>
+		</skill>
+		<skill name="攻击力提升">
+			<name>girlHurt_loveSkill</name><cnName>攻击力提升</cnName><everNoClearB>1</everNoClearB>
+			<conditionType>passive</conditionType><condition>add</condition><target>me</target><addType>state</addType><duration>99999</duration>
+			<mul>1.3</mul><effectType>hurtMul</effectType>
+			<description>战斗中永久提升小樱[mul-1]的攻击力。</description>
+		</skill>
+		<skill name="真情之力"><everNoClearB>1</everNoClearB>
+			<name>lovePower_loveSkill</name><cnName>真情之力</cnName><wantDescripB>1</wantDescripB>
+			<conditionType>passive</conditionType><condition>add</condition><target>me</target><addType>state</addType><duration>99999</duration>
+			<mul>1.3</mul><effectType>hurtDefence</effectType>
+			<description>战斗中永久提升P1角色[mul-1]的攻击力和防御力。</description>
+			<valueString>Striker</valueString>
+		</skill>
+		<skill cnName="重生">
+			<name>rebirth_loveSkill</name>
+			<cnName>重生</cnName><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>allDie</condition>
+			<otherConditionArr>rebirthNumLess,producerNoState</otherConditionArr>
+			<conditionRange>1</conditionRange>
+			<conditionString>lightConePurgold</conditionString>
+			<target>me</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>rebirthAndHiding</effectType>
+			<value>1</value>
+			<mul>0.9</mul>
+			<duration>5</duration>
+			
+			<addSkillEffectImg partType="mouth" con="add">skillEffect/rune_green_r</addSkillEffectImg>
+			<meEffectImg soundUrl="sound/groupLight_hero" con="add">skillEffect/groupLight_hero</meEffectImg>
+			<description>单位倒下重生，回复[mul]的生命值，一次战斗只能重生1次。</description>
+		</skill>
+		<skill name="回复">
+			<name>addLifeMul_loveSkill</name>
+			<cnName>回复</cnName><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<intervalT>1</intervalT>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>life</effectType>
+			<value>0</value>
+			<mul>0.03</mul>
+			
+			<description>每秒回复最大生命值[mul]的生命值。</description>
+		</skill>
+		<skill name="真情治愈">
+			<name>lifeBottle_loveSkill</name>
+			<cnName>真情治愈</cnName><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<intervalT>15</intervalT>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>lifeBottle_loveSkill</effectType>
+			
+			<description>战斗中每隔[intervalT]秒，小樱产出1瓶血瓶，拾取可以回复30%生命值，只有P1角色可以拾取。</description>
+		</skill>
+		
+		<skill cnName="分子虹吸">
+			<name>element_loveSkill</name>
+			<cnName>分子虹吸</cnName><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<intervalT>1</intervalT>
+			<target>me,range,enemy</target>
+			
+			<linkArr>elementLifeBack_loveSkill</linkArr>
+			<addType>instant</addType>
+			<effectType>element_loveSkill</effectType>
+			<extraValueType>targetMaxLife</extraValueType>
+			<value>0</value>
+			<mul>0.003</mul>
+			<range>800</range>
+			
+			<description>使[range]范围内的敌人每秒损失0.5%的血量（血量低于70%后无效），当范围内有敌方单位存在，自身每秒回复2%的生命。修罗模式下效果降低。</description>
+		</skill>
+		<skill cnName="分子虹吸-自身回血">
+			<name>elementLifeBack_loveSkill</name>
+			<cnName>分子虹吸-自身回血</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>elementLifeBack_loveSkill</effectType>
+			<mul>0.02</mul>
+			<range>800</range>
+		</skill>
+	</father>		
+</data>

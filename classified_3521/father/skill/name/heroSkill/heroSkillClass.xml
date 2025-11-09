@@ -1,0 +1,1682 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="heroSkill" cnName="英雄技能">
+		<skill index="0" name="群体圣光">
+			<name>groupLight_hero</name>
+			<cnName>群体圣光</cnName>
+			<effectInfoArr>回复生命值</effectInfoArr>
+			
+			<addD pro="mul" range="0.03,0.12" info="回复生命值[v]" />
+			
+			<cd>120</cd>
+			<changeText>技能冷却时间：[cd]秒{n}回满生命值的概率：[obj.pro]</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>weLifePerLess</otherConditionArr>
+			<conditionRange>0.7</conditionRange>
+			<target>me,range,we</target>
+			
+			<addType>instant</addType>
+			<effectType>life</effectType>
+			<mul>0.3</mul>
+			<range>300</range>
+			 
+			<meEffectImg soundUrl="sound/groupLight_hero" />
+			<targetEffectImg con="add">skillEffect/groupLight_hero</targetEffectImg>
+			<description>单位技能释放后，回复单位周围[range]码以内的所有友方单位[mul]的生命值，每个单位都有[obj.pro]的概率直接回满生命值。</description>
+			<obj>"pro":0.1</obj>
+			
+			<growth>
+				<skill><cd>120</cd><obj>"pro":0.1</obj></skill>
+				<skill><cd>110</cd><obj>"pro":0.15</obj></skill>
+				<skill><cd>100</cd><obj>"pro":0.2</obj></skill>
+				<skill><cd>90</cd><obj>"pro":0.25</obj></skill>
+				<skill><cd>80</cd><obj>"pro":0.3</obj></skill>
+				<skill><cd>70</cd><obj>"pro":0.35</obj></skill>
+				<skill><cd>60</cd><obj>"pro":0.4</obj></skill>
+				<skill><cd>60</cd><obj>"pro":0.45</obj></skill>
+				<skill><cd>60</cd><obj>"pro":0.5</obj></skill>
+				<skill><cd>55</cd><obj>"pro":0.6</obj></skill>
+				
+				<skill><cd>55</cd><obj>"pro":0.6</obj><range>450</range><mul>0.4</mul><changeText>回复生命：[mul]{n}作用范围：[range]码</changeText></skill>
+				<skill><cd>55</cd><obj>"pro":0.6</obj><range>600</range><mul>0.5</mul><changeText>回复生命：[mul]{n}作用范围：[range]码</changeText></skill>
+				<skill><cd>55</cd><obj>"pro":0.6</obj><range>750</range><mul>0.6</mul><changeText>回复生命：[mul]{n}作用范围：[range]码</changeText></skill>
+				<skill><cd>55</cd><obj>"pro":0.8</obj><range>99999</range><mul>0.6</mul><changeText>回满概率：80%{n}作用范围：无限{n}可在太空中使用</changeText></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="狂暴">
+			<name>crazy_hero</name>
+			<cnName>狂暴</cnName>
+			<effectInfoArr>减少弹药消耗,增加伤害输出</effectInfoArr><noBeClearB>1</noBeClearB><ignoreNoSkillB>1</ignoreNoSkillB>
+			
+			<addD pro="duration" range="0.2,0.8" info="持续时间[v]秒" />
+			
+			<cd>100</cd>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>beforeAttack</condition>
+			<otherConditionArr>keepSkillBoss,producerNoNowBuff</otherConditionArr>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>crazyHeroSkill</effectType>
+			<mul>2</mul>
+			<duration>5</duration>
+			
+			
+			<meEffectImg soundUrl="sound/crazy_hero" />
+			<stateEffectImg partType="2eye" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg>
+			<stateEffectImg2 partType="2eye" con="add">skillEffect/crazy_hero_eye</stateEffectImg2>
+			<description>释放技能后，单位增加[mul-1]的射击速度（面板射速大于10发每秒的，不加射速，增加同等伤害），同时不消耗弹药，持续[duration]秒。无视封锁。</description>
+			
+			<growth>
+				<skill><cd>100</cd></skill>
+				<skill><cd>90</cd></skill>
+				<skill><cd>80</cd></skill>
+				<skill><cd>70</cd></skill>
+				<skill><cd>60</cd></skill>
+				<skill><cd>50</cd></skill>
+				<skill><cd>40</cd></skill>
+				<skill><cd>36</cd></skill>
+				<skill><cd>33</cd></skill>
+				<skill><cd>33</cd><mul>2.1</mul><changeText>射击速度提升[mul-1]</changeText></skill>
+				
+				<skill><duration>6</duration><cd>33</cd><mul>2.1</mul><changeText>持续时间[duration]秒{n}技能冷却时间：[cd]秒</changeText></skill>
+				<skill><duration>7.5</duration><cd>32</cd><mul>2.1</mul><changeText>持续时间[duration]秒{n}技能冷却时间：[cd]秒</changeText></skill>
+				<skill><duration>9</duration><cd>31</cd><mul>2.1</mul><changeText>持续时间[duration]秒{n}技能冷却时间：[cd]秒</changeText></skill>
+				<skill><duration>11</duration><cd>30</cd><mul>2.1</mul><changeText>持续时间[duration]秒{n}技能冷却时间：[cd]秒{n}太空中可使用第5级</changeText></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="反击">
+			<name>tenacious_hero</name>
+			<cnName>反击</cnName>
+			
+			<addD pro="mul" range="0.05,0.20" info="吸血倍数[v]" />
+			
+			<cd>100</cd>
+			<changeText>技能冷却时间：[cd]秒{n}持续时间：[duration]秒</changeText>
+			<effectInfoArr>回复生命值,增加防御力</effectInfoArr>
+			
+			<conditionType>active</conditionType>
+			<condition>beforeAttack</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>0.6</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>suckBlood</effectType>
+			
+			<mul>0.3</mul>
+			<duration>8</duration>
+			
+			<meEffectImg soundUrl="sound/tenacious_hero" />
+			<stateEffectImg partType="2hand" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg>
+			<description>释放技能后，单位开启[mul]的吸血状态，持续[duration]秒。</description>
+			
+			<growth>
+				<skill><cd>100</cd></skill>
+				<skill><cd>90</cd></skill>
+				<skill><cd>80</cd></skill>
+				<skill><cd>70</cd></skill>
+				<skill><cd>60</cd></skill>
+				<skill><cd>50</cd></skill>
+				<skill><cd>40</cd></skill>
+				<skill><cd>40</cd><duration>10</duration></skill>
+				<skill><cd>40</cd><duration>12</duration></skill>
+				<skill><cd>40</cd><duration>12</duration><secMul>0.5</secMul><changeText>状态期间防御力提高[1-secMul]</changeText><description>释放技能后，单位开启[mul]的吸血状态，持续[duration]秒。期间防御力提高[1-secMul]。</description></skill>
+				
+				<skill><cd>40</cd><duration>12</duration><secMul>0.42</secMul><changeText>状态期间防御力提高[1-secMul]</changeText><description>释放技能后，单位开启[mul]的吸血状态，持续[duration]秒。期间防御力提高[1-secMul]。</description></skill>
+				<skill><cd>40</cd><duration>12</duration><secMul>0.35</secMul><changeText>状态期间防御力提高[1-secMul]</changeText><description>释放技能后，单位开启[mul]的吸血状态，持续[duration]秒。期间防御力提高[1-secMul]。</description></skill>
+				<skill><cd>40</cd><duration>12</duration><secMul>0.3</secMul><changeText>状态期间防御力提高[1-secMul]</changeText><description>释放技能后，单位开启[mul]的吸血状态，持续[duration]秒。期间防御力提高[1-secMul]。</description></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="派生导弹">
+			<name>hitMissile_hero</name>
+			<cnName>派生导弹</cnName>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			
+			<addD pro="mul" range="0.04,0.15" info="导弹伤害[v]" />
+			
+			<changeText>派生概率：[effectProArr.0]</changeText>
+			
+			
+			<conditionType>passive</conditionType>
+			<condition>heroShoot</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet_hitMissile</effectType>
+			<effectProArr>0.1</effectProArr>
+			<extraValueType>nowArmsHurt</extraValueType>
+			<mul>1</mul>
+			
+			<obj>"name":"hitMissile_hero","site":"shootPoint","flipB":false</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>每次射击都有[effectProArr.0]的概率派生跟踪导弹，修罗模式下概率大幅降低。导弹伤害为当前武器伤害值的[mul]。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description>
+			
+			<growth>
+				<skill><effectProArr>0.1</effectProArr></skill>
+				<skill><effectProArr>0.15</effectProArr></skill>
+				<skill><effectProArr>0.2</effectProArr></skill>
+				<skill><effectProArr>0.25</effectProArr></skill>
+				<skill><effectProArr>0.3</effectProArr></skill>
+				<skill><effectProArr>0.35</effectProArr></skill>
+				<skill><effectProArr>0.4</effectProArr></skill>
+				<skill><effectProArr>0.43</effectProArr></skill>
+				<skill><effectProArr>0.46</effectProArr></skill>
+				<skill><effectProArr>0.50</effectProArr></skill>
+				
+				<skill><mul>1.05</mul><effectProArr>0.50</effectProArr><changeText>导弹伤害：[mul]</changeText></skill>
+				<skill><mul>1.10</mul><effectProArr>0.50</effectProArr><changeText>导弹伤害：[mul]</changeText></skill>
+				<skill><mul>1.15</mul><effectProArr>0.50</effectProArr><changeText>导弹伤害：[mul]</changeText></skill>
+				<skill><noNeedEquipB>1</noNeedEquipB><mul>1.15</mul><effectProArr>0.50</effectProArr><changeText>无需装备技能也会有技能效果</changeText></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="吞噬">
+			<name>devour_hero</name>
+			<cnName>吞噬</cnName>
+			
+			<addD pro="cd" range="-3,-10" info="冷却时间[v]秒" />
+			
+			<cd>120</cd>
+			<changeText>技能冷却时间：[cd]秒{n}每秒回复[mul]的生命值</changeText>
+			<effectInfoArr>回复生命值</effectInfoArr>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>300</conditionRange>
+			<target>me,near,enemy,normal</target>
+			
+			<addType>instant</addType>
+			<effectType>devour</effectType>
+			<range>300</range>
+			<mul>0.13</mul>
+			<secMul>0</secMul>
+			 
+			<linkArr>devour_hero_link_1</linkArr>
+			 
+			<meEffectImg soundUrl="sound/devour_hero" />
+			<description>吞噬单位附近[range]码以内的一个敌方普通单位，接下来每秒回复[mul]的生命值，持续20秒。找不到目标不消耗技能次数。</description>
+			
+			<growth>
+				<skill><cd>120</cd><mul>0.13</mul><linkArr>devour_hero_link_1</linkArr></skill>
+				<skill><cd>105</cd><mul>0.13</mul><linkArr>devour_hero_link_2</linkArr></skill>
+				<skill><cd>90</cd><mul>0.13</mul><linkArr>devour_hero_link_3</linkArr></skill>
+				<skill><cd>75</cd><mul>0.13</mul><linkArr>devour_hero_link_4</linkArr></skill>
+				<skill><cd>60</cd><mul>0.13</mul><linkArr>devour_hero_link_5</linkArr></skill>
+				<skill><cd>50</cd><mul>0.13</mul><linkArr>devour_hero_link_6</linkArr></skill>
+				<skill><cd>40</cd><mul>0.13</mul><linkArr>devour_hero_link_7</linkArr></skill>
+				<skill><cd>40</cd><mul>0.16</mul><linkArr>devour_hero_link_8</linkArr></skill>
+				<skill><cd>40</cd><mul>0.20</mul><linkArr>devour_hero_link_9</linkArr></skill>
+				<skill><cd>40</cd><mul>0.25</mul><linkArr>devour_hero_link_10</linkArr></skill>
+				
+				<skill><secMul>0.15</secMul><range>400</range><cd>40</cd><mul>0.25</mul><linkArr>devour_hero_link_10</linkArr><changeText>瞬间回复[secMul]的生命值{n}操作范围[range]码</changeText><description>吞噬单位附近[range]码以内的一个敌方普通单位，瞬间回复自身[secMul]的生命值，接下来每秒回复[mul]的生命值，持续20秒。找不到目标不消耗技能次数。</description></skill>
+				<skill><secMul>0.30</secMul><range>500</range><cd>40</cd><mul>0.25</mul><linkArr>devour_hero_link_10</linkArr><changeText>瞬间回复[secMul]的生命值{n}操作范围[range]码</changeText><description>吞噬单位附近[range]码以内的一个敌方普通单位，瞬间回复自身[secMul]的生命值，接下来每秒回复[mul]的生命值，持续20秒。找不到目标不消耗技能次数。</description></skill>
+				<skill><secMul>0.45</secMul><range>600</range><cd>40</cd><mul>0.25</mul><linkArr>devour_hero_link_10</linkArr><changeText>瞬间回复[secMul]的生命值{n}操作范围[range]码</changeText><description>吞噬单位附近[range]码以内的一个敌方普通单位，瞬间回复自身[secMul]的生命值，接下来每秒回复[mul]的生命值，持续20秒。找不到目标不消耗技能次数。</description></skill>
+				
+			</growth>
+		</skill>
+		<skill index="0" name="定点轰炸">
+			<name>pointBoom_hero</name>
+			<cnName>定点轰炸</cnName>
+			<effectInfoArr>增加伤害输出,有概率瞬间释放多次</effectInfoArr>
+			
+			<addD pro="cd" range="-1,-4" info="冷却时间[v]秒" />
+			
+			<cd>20</cd>
+			<changeText>释放2次的概率：[effectProArr.1]</changeText>
+			
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>700</conditionRange>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>0.98,0.02</effectProArr>
+			<extraValueType>nowArmsDps</extraValueType>
+			
+			<obj>"name":"pointBoom_hero","site":"mouse","flipB":false</obj>
+			
+			<description>轰炸鼠标位置100码范围内的敌人，伤害为当前武器实际战斗力的1.5倍。有[effectProArr.1]的几率释放2次。</description>
+			
+			<growth>
+				<skill><effectProArr>0.98,0.02</effectProArr></skill>
+				<skill><effectProArr>0.9,0.1</effectProArr></skill>
+				<skill><effectProArr>0.8,0.2</effectProArr></skill>
+				<skill><effectProArr>0.7,0.3</effectProArr></skill>
+				<skill><effectProArr>0.6,0.4</effectProArr></skill>
+				<skill><effectProArr>0.5,0.5</effectProArr></skill>
+				<skill><effectProArr>0.4,0.6</effectProArr></skill>
+				<skill><effectProArr>0.25,0.75</effectProArr></skill>
+				<skill><effectProArr>0.1,0.9</effectProArr></skill>
+				<skill><effectProArr>0.01,0.99</effectProArr></skill>
+				
+				<skill><effectProArr>0,0.9,0.1</effectProArr><changeText>释放3次的概率：[effectProArr.2]</changeText><description>轰炸鼠标位置100码范围内的敌人，伤害为当前武器实际战斗力的1.5倍。有[effectProArr.1]的几率释放2次，有[effectProArr.2]的几率释放3次</description></skill>
+				<skill><effectProArr>0,0.8,0.2</effectProArr><changeText>释放3次的概率：[effectProArr.2]</changeText><description>轰炸鼠标位置100码范围内的敌人，伤害为当前武器实际战斗力的1.5倍。有[effectProArr.1]的几率释放2次，有[effectProArr.2]的几率释放3次</description></skill>
+				<skill><effectProArr>0,0.7,0.3</effectProArr><changeText>释放3次的概率：[effectProArr.2]</changeText><description>轰炸鼠标位置100码范围内的敌人，伤害为当前武器实际战斗力的1.5倍。有[effectProArr.1]的几率释放2次，有[effectProArr.2]的几率释放3次</description></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="远视">
+			<name>hyperopia_hero</name>
+			<cnName>远视</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			
+			<changeText>每隔100码增加：[mul]{n}最大增加[value]倍的伤害</changeText>
+			
+			<addD pro="range" range="-30,-80" info="初始范围[v]码" />
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>0.05</mul>
+			<secMul>0</secMul>
+			<range>200</range>
+			<value>1.5</value>
+			
+			<obj>"type":"hyperopia","exceptSkillB":true</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>距离目标越远伤害越大，大于[range]码开始加成，每隔100码增加[mul]的伤害，最大增加[value]倍。</description>
+			
+			<growth>
+				<skill><mul>0.05</mul></skill>
+				<skill><mul>0.07</mul></skill>
+				<skill><mul>0.10</mul></skill>
+				<skill><mul>0.12</mul></skill>
+				<skill><mul>0.15</mul></skill>
+				<skill><mul>0.18</mul></skill>
+				<skill><mul>0.21</mul></skill>
+				<skill><mul>0.21</mul><value>1.60</value></skill>
+				<skill><mul>0.21</mul><value>1.70</value></skill>
+				<skill><mul>0.22</mul><value>1.80</value></skill>
+				
+				<skill><secMul>0.05</secMul><mul>0.22</mul><value>1.80</value><changeText>自己静止时伤害+[secMul]</changeText><description>距离目标越远伤害越大，大于[range]码开始加成，每隔100码增加[mul]的伤害，最大增加[value]倍，自己静止时伤害额外增加[secMul]。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description></skill>
+				<skill><secMul>0.10</secMul><mul>0.22</mul><value>1.80</value><changeText>自己静止时伤害+[secMul]</changeText><description>距离目标越远伤害越大，大于[range]码开始加成，每隔100码增加[mul]的伤害，最大增加[value]倍，自己静止时伤害额外增加[secMul]。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description></skill>
+				<skill><secMul>0.15</secMul><mul>0.22</mul><value>1.80</value><changeText>自己静止时伤害+[secMul]</changeText><description>距离目标越远伤害越大，大于[range]码开始加成，每隔100码增加[mul]的伤害，最大增加[value]倍，自己静止时伤害额外增加[secMul]。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description></skill>
+				<skill><noNeedEquipB>1</noNeedEquipB><secMul>0.15</secMul><mul>0.22</mul><value>1.80</value><changeText>无需装备技能也会有技能效果</changeText><description>距离目标越远伤害越大，大于[range]码开始加成，每隔100码增加[mul]的伤害，最大增加[value]倍，自己静止时伤害额外增加[secMul]。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description></skill>
+				
+			</growth>
+		</skill>
+		<skill index="0" name="群体隐身">
+			<name>hiding_hero</name>
+			<cnName>群体隐身</cnName>
+			<effectInfoArr>隐身,增加伤害输出</effectInfoArr>
+			
+			<addD pro="mul" range="0.3,2.0" info="暴击[v]" />
+			
+			<noCdMulB>1</noCdMulB>
+			<changeText>技能冷却时间：[cd]秒{n}持续时间：[duration]秒</changeText>
+			<studyMustMul>1</studyMustMul>
+			<upgradeMustMul>1</upgradeMustMul>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>hiding_hero</otherConditionArr>
+			<conditionRange>1000</conditionRange>
+			<target>me,range,we,,hero</target>
+			
+			<addType>state</addType>
+			<effectType>hidingB</effectType>
+			<value>1</value>
+			<mul>4</mul>
+			<secMul>0</secMul>
+			<duration>12</duration>
+			<range>99999</range>
+			
+			<meEffectImg soundUrl="sound/hiding_hero" con="add">skillEffect/hiding_hero</meEffectImg>
+			<description>释放技能后，所有我方单位进入隐身状态，持续[duration]秒。你对敌人发起攻击会打破隐身状态，同时造成2~4倍的暴击。</description>
+			
+			<growth>
+				<skill><cd>40</cd></skill>
+				<skill><cd>35</cd></skill>
+				<skill><cd>30</cd></skill>
+				<skill><cd>25</cd></skill>
+				<skill><cd>20</cd></skill>
+				<skill><cd>20</cd><mul>7</mul><changeText>技能冷却时间：[cd]秒{n}可造成3~7倍的暴击{n}持续时间：[duration]秒</changeText><description>释放技能后，所有我方单位进入隐身状态，持续[duration]秒。你对敌人发起攻击会打破隐身状态，同时造成3~7倍的暴击。</description></skill>
+				<skill><cd>20</cd><mul>10</mul><changeText>技能冷却时间：[cd]秒{n}可造成5~10倍的暴击{n}持续时间：[duration]秒</changeText><description>释放技能后，所有我方单位进入隐身状态，持续[duration]秒。你对敌人发起攻击会打破隐身状态，同时造成5~10倍的暴击。</description></skill>
+				<skill><duration>13</duration><cd>20</cd><mul>10</mul><changeText>技能冷却时间：[cd]秒{n}可造成5~10倍的暴击{n}持续时间：[duration]秒</changeText><description>释放技能后，所有我方单位进入隐身状态，持续[duration]秒。你对敌人发起攻击会打破隐身状态，同时造成5~10倍的暴击。</description></skill>
+				<skill><duration>14</duration><cd>20</cd><mul>10</mul><changeText>技能冷却时间：[cd]秒{n}可造成5~10倍的暴击{n}持续时间：[duration]秒</changeText><description>释放技能后，所有我方单位进入隐身状态，持续[duration]秒。你对敌人发起攻击会打破隐身状态，同时造成5~10倍的暴击。</description></skill>
+				<skill><duration>14</duration><cd>20</cd><mul>12</mul><changeText>可造成6~12倍的暴击</changeText><description>释放技能后，所有我方单位进入隐身状态，持续[duration]秒。你对敌人发起攻击会打破隐身状态，同时造成6~12倍的暴击。</description></skill>
+				
+				<skill><secMul>0.15</secMul><duration>14</duration><cd>20</cd><mul>12</mul><changeText>背后攻击造成额外[secMul]伤害</changeText><description>释放技能后，所有我方单位进入隐身状态，持续[duration]秒。你对敌人发起攻击会打破隐身状态，同时造成6~12倍的暴击，从背后攻击可造成额外[secMul]的伤害。</description></skill>
+				<skill><secMul>0.30</secMul><duration>14</duration><cd>20</cd><mul>12</mul><changeText>背后攻击造成额外[secMul]伤害</changeText><description>释放技能后，所有我方单位进入隐身状态，持续[duration]秒。你对敌人发起攻击会打破隐身状态，同时造成6~12倍的暴击，从背后攻击可造成额外[secMul]的伤害。</description></skill>
+				<skill><secMul>0.45</secMul><duration>14</duration><cd>20</cd><mul>12</mul><changeText>背后攻击造成额外[secMul]伤害</changeText><description>释放技能后，所有我方单位进入隐身状态，持续[duration]秒。你对敌人发起攻击会打破隐身状态，同时造成6~12倍的暴击，从背后攻击可造成额外[secMul]的伤害。</description></skill>
+				<skill><secMul>0.45</secMul><duration>14</duration><cd>20</cd><mul>14</mul><changeText>可造成7~14倍的暴击{n}太空中可使用第5级</changeText><description>释放技能后，所有我方单位进入隐身状态，持续[duration]秒。你对敌人发起攻击会打破隐身状态，同时造成7~14倍的暴击，从背后攻击可造成额外[secMul]的伤害。</description></skill>
+			</growth>
+			
+		</skill>
+		<skill index="0" name="万弹归宗">
+			<name>moreMissile_hero</name>
+			<cnName>万弹归宗</cnName>
+			<effectInfoArr>增加伤害输出,有概率瞬间释放多次</effectInfoArr>
+			
+			<addD pro="mul" range="0.10,0.50" info="导弹伤害[v]" />
+			
+			<cd>140</cd>
+			<changeText>技能冷却时间：[cd]秒{n}释放多次的概率：[effectProArr.1]</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>700</conditionRange>
+			<target>me,range,we,,,5</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>0.9,0.1</effectProArr>
+			<extraValueType>nowArmsDpsOrNormal</extraValueType>
+			<mul>1</mul>
+			<range>500</range>
+			
+			<obj>"name":"moreMissile_hero","site":"me","flipB":true,"launcherB":true</obj>
+			
+			<meEffectImg soundUrl="sound/moreMissile_hero" />
+			<description>召集[range]范围内的队友，每人释放出10颗导弹，每颗导弹的伤害等于当前武器实际战斗力值的75%，并且有[effectProArr.1]的几率释放2次。</description>
+			
+			<growth>
+				<skill>
+					<cd>140</cd>
+					<effectProArr>0.9,0.1</effectProArr>
+				</skill>
+				<skill>
+					<cd>125</cd>
+					<effectProArr>0.85,0.15</effectProArr>
+				</skill>
+				<skill>
+					<cd>110</cd>
+					<effectProArr>0.8,0.2</effectProArr>
+				</skill>
+				<skill>
+					<cd>95</cd>
+					<effectProArr>0.75,0.25</effectProArr>
+				</skill>
+				<skill>
+					<cd>80</cd>
+					<effectProArr>0.7,0.3</effectProArr>
+				</skill>
+				<skill>
+					<cd>70</cd>
+					<effectProArr>0.65,0.35</effectProArr>
+				</skill>
+				<skill>
+					<cd>60</cd>
+					<effectProArr>0.6,0.4</effectProArr>
+				</skill>
+				<skill>
+					<cd>60</cd>
+					<effectProArr>0.5,0.5</effectProArr>
+				</skill>
+				<skill>
+					<cd>60</cd>
+					<effectProArr>0.4,0.6</effectProArr>
+				</skill>
+				<skill>
+					<cd>60</cd>
+					<effectProArr>0.3,0.7</effectProArr>
+				</skill>
+				<skill><range>700</range><cd>60</cd><effectProArr>0.3,0.7</effectProArr><changeText>召集范围：[range]码{n}释放多次的概率：[effectProArr.1]</changeText></skill>
+				<skill><range>1000</range><cd>50</cd><effectProArr>0.2,0.8</effectProArr><changeText>技能冷却时间：[cd]秒{n}召集范围：[range]码{n}释放多次的概率：[effectProArr.1]</changeText></skill>
+				<skill><obj>"name":"moreMissile_hero_dizziness","site":"me","flipB":true,"launcherB":true</obj><range>1000</range><cd>50</cd><effectProArr>0.05,0.95</effectProArr><changeText>眩晕目标2秒{n}释放多次的概率：[effectProArr.1]</changeText><description>召集[range]范围内的队友，每人释放出10颗导弹，每颗导弹的伤害等于当前武器实际战斗力值的75%，并且有[effectProArr.1]的几率释放2次。导弹可对目标造成眩晕！</description></skill>
+				<skill><obj>"name":"moreMissile_hero_dizziness2","site":"me","flipB":true,"launcherB":true</obj><range>1000</range><cd>50</cd><effectProArr>0.05,0.95</effectProArr><changeText>眩晕目标3秒{n}可在太空中使用</changeText><description>召集[range]范围内的队友，每人释放出10颗导弹，每颗导弹的伤害等于当前武器实际战斗力值的75%，并且有[effectProArr.1]的几率释放2次。导弹可对目标造成眩晕3秒，无视技能免疫！</description></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="金刚钻">
+			<name>through_hero</name>
+			<cnName>金刚钻</cnName><ignoreNoSkillB>1</ignoreNoSkillB><noBeClearB>1</noBeClearB>
+			<effectInfoArr>减少弹药消耗,增加伤害输出</effectInfoArr>
+			
+			<addD pro="duration" range="0.3,1.3" info="持续时间[v]秒" />
+			
+			<cd>80</cd>
+			<changeText>技能冷却时间：[cd]秒{n}提升[mul-1]的攻击力{n}持续时间：[duration]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>beforeAttack</condition>
+			<otherConditionArr>keepSkillBoss,producerNoNowBuff</otherConditionArr>
+			<target>me,range,we,,hero</target>
+			
+			<addType>state</addType>
+			<effectType>penetrationGapAnNoBullet</effectType>
+			<value>10000</value>
+			<duration>8</duration>
+			<range>300</range>
+			<mul>1.1</mul>
+			
+			<meEffectImg soundUrl="sound/through_hero" />
+			<stateEffectImg partType="shootPoint" con="add" raNum="30" followPartRaB="1">skillEffect/through_hero</stateEffectImg>
+			<description>释放技能后，提升[range]码内友方单位[mul-1]的攻击力，同时他们射出的子弹都将无视地形，不消耗弹药（非修罗模式），持续[duration]秒。</description>
+			
+			<growth>
+				<skill><cd>80</cd><mul>1.10</mul></skill>
+				<skill><cd>70</cd><mul>1.15</mul></skill>
+				<skill><cd>60</cd><mul>1.20</mul></skill>
+				<skill><cd>50</cd><mul>1.25</mul></skill>
+				<skill><cd>40</cd><mul>1.30</mul></skill>
+				<skill><cd>35</cd><mul>1.35</mul></skill>
+				<skill><cd>30</cd><mul>1.40</mul></skill>
+				<skill><cd>30</cd><mul>1.40</mul><duration>9</duration></skill>
+				<skill><cd>30</cd><mul>1.40</mul><duration>10</duration></skill>
+				<skill><cd>30</cd><mul>1.40</mul><duration>11</duration></skill>
+				
+				<skill><range>500</range><cd>30</cd><mul>1.40</mul><duration>11</duration><changeText>作用范围：[range]码</changeText></skill>
+				<skill><range>800</range><cd>30</cd><mul>1.40</mul><duration>11</duration><changeText>作用范围：[range]码</changeText></skill>
+				<skill><range>2000</range><cd>30</cd><mul>1.40</mul><duration>11</duration><changeText>作用范围：[range]码</changeText></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="毒雾">
+			<name>poisonousFog_hero</name>
+			<cnName>毒雾</cnName>
+			<effectInfoArr>减速,中毒,增加伤害输出</effectInfoArr>
+			
+			<addD pro="duration" range="0.4,2" info="持续时间[v]秒" />
+			
+			<cd>120</cd>
+			<changeText>技能冷却时间：[cd]秒{n}作用范围：[range]码{n}持续时间：[duration]秒</changeText>
+			
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>600</conditionRange>
+			<target>mouse,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>poisonousFog_hero</effectType>
+			<mul>0.3</mul>
+			<secMul>0</secMul>
+			<duration>10</duration>
+			<range>200</range>
+			 
+			<linkArr>poisonousFog_hero_link</linkArr>
+			 
+			<meEffectImg soundUrl="sound/poisonousFog_hero" />
+			<stateEffectImg partType="mouth" con="add">skillEffect/poisonousFog_hero</stateEffectImg>
+			
+			<description>在单位周围释放毒雾，感染[range]码以内的所有敌人（包括首领），使他们降低90%移动速度并且每秒减少1%生命值，持续[duration]秒。</description>
+			
+			<growth>
+				<skill><cd>100</cd><range>200</range><linkArr>poisonousFog_hero_link_1</linkArr></skill>
+				<skill><cd>90</cd><range>250</range><linkArr>poisonousFog_hero_link_2</linkArr></skill>
+				<skill><cd>80</cd><range>300</range><linkArr>poisonousFog_hero_link_3</linkArr></skill>
+				<skill><cd>70</cd><range>400</range><linkArr>poisonousFog_hero_link_4</linkArr></skill>
+				<skill><cd>60</cd><range>450</range><linkArr>poisonousFog_hero_link_5</linkArr></skill>
+				<skill><cd>50</cd><range>450</range><linkArr>poisonousFog_hero_link_6</linkArr></skill>
+				<skill><cd>40</cd><range>450</range><linkArr>poisonousFog_hero_link_7</linkArr></skill>
+				<skill><cd>40</cd><range>450</range><linkArr>poisonousFog_hero_link_8</linkArr><duration>11</duration></skill>
+				<skill><cd>40</cd><range>450</range><linkArr>poisonousFog_hero_link_9</linkArr><duration>12</duration></skill>
+				<skill><cd>35</cd><range>500</range><linkArr>poisonousFog_hero_link_10</linkArr><duration>12</duration><changeText>每秒减少敌人1.5%生命值{n}技能冷却时间：[cd]秒{n}作用范围：[range]码</changeText><description>在单位周围释放毒雾，感染[range]码以内的所有敌人（包括首领），使他们降低90%移动速度并且每秒减少1.5%生命值，持续[duration]秒。</description></skill>
+				
+				<skill><secMul>0.05</secMul><cd>35</cd><range>500</range><linkArr>poisonousFog_hero_link_10</linkArr><duration>12</duration><changeText>降低目标[secMul]的防御力</changeText><description>在单位周围释放毒雾，感染[range]码以内的所有敌人（包括首领），使他们降低90%移动速度、降低[secMul]的防御力，并且每秒减少1.5%生命值，持续[duration]秒。</description></skill>
+				<skill><secMul>0.10</secMul><cd>35</cd><range>500</range><linkArr>poisonousFog_hero_link_10</linkArr><duration>12</duration><changeText>降低目标[secMul]的防御力</changeText><description>在单位周围释放毒雾，感染[range]码以内的所有敌人（包括首领），使他们降低90%移动速度、降低[secMul]的防御力，并且每秒减少1.5%生命值，持续[duration]秒。</description></skill>
+				<skill><secMul>0.15</secMul><cd>35</cd><range>500</range><linkArr>poisonousFog_hero_link_10</linkArr><duration>12</duration><changeText>降低目标[secMul]的防御力</changeText><description>在单位周围释放毒雾，感染[range]码以内的所有敌人（包括首领），使他们降低90%移动速度、降低[secMul]的防御力，并且每秒减少1.5%生命值，持续[duration]秒。</description></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="嗜爪">
+			<name>murderous_hero</name>
+			<cnName>嗜爪</cnName>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			
+			<addD pro="range" range="30,200" info="作用范围[v]码" />
+			
+			<cd>100</cd>
+			<changeText>攻击力提升至：[mul]{n}作用范围：[range]码</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>beforeAttack</condition>
+			<otherConditionArr>mainAIHurtBuff,producerNoNowBuff</otherConditionArr>
+			<target>me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>murderous_addHurtMul2</effectType>
+			<mul>1.5</mul>
+			<secMul>0</secMul>
+			<duration>8</duration>
+			<range>300</range>
+			
+			
+			<meEffectImg soundUrl="sound/murderous_hero" />
+			<stateEffectImg partType="2hand" con="add" raNum="30" followPartRaB="1">skillEffect/murderous_enemy</stateEffectImg>
+			<description>释放技能后，提升周围[range]码内所有我方单的攻击力至原先的[mul]，持续[duration]秒。</description>
+			
+			<growth>
+				<skill><mul>1.20</mul></skill>
+				<skill><mul>1.35</mul></skill>
+				<skill><mul>1.50</mul></skill>
+				<skill><mul>1.70</mul></skill>
+				<skill><mul>1.90</mul></skill>
+				<skill><mul>2.10</mul></skill>
+				<skill><mul>2.30</mul></skill>
+				<skill><mul>2.30</mul><range>400</range></skill>
+				<skill><mul>2.30</mul><range>500</range></skill>
+				<skill><mul>2.40</mul><range>500</range><cd>95</cd><changeText>攻击力提升至：[mul]{n}技能冷却时间：[cd]秒</changeText></skill>
+				
+				<skill><secMul>0.4</secMul><mul>2.40</mul><range>500</range><cd>95</cd><changeText>生命低于70%时伤害+[secMul]</changeText><description>释放技能后，提升周围[range]码内所有我方单的攻击力至原先的[mul]，生命低于70%时伤害额外增加[secMul]，持续[duration]秒。</description></skill>
+				<skill><secMul>0.8</secMul><mul>2.40</mul><range>500</range><cd>95</cd><changeText>生命低于70%时伤害+[secMul]</changeText><description>释放技能后，提升周围[range]码内所有我方单的攻击力至原先的[mul]，生命低于70%时伤害额外增加[secMul]，持续[duration]秒。</description></skill>
+				<skill><secMul>1.2</secMul><mul>2.40</mul><range>500</range><cd>95</cd><changeText>生命低于70%时伤害+[secMul]</changeText><description>释放技能后，提升周围[range]码内所有我方单的攻击力至原先的[mul]，生命低于70%时伤害额外增加[secMul]，持续[duration]秒。</description></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="欺凌">
+			<name>bullying_hero</name>
+			<cnName>欺凌</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			
+			<addD pro="mul" range="0.2,0.7" info="伤害倍数[v]" />
+			
+			<changeText>伤害比例：[mul]</changeText>
+			
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>bullying_hero</effectType>
+			<mul>1.5</mul>
+			<secMul>0</secMul>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>攻击生命低于20%的敌人，会对它造成[mul]的伤害。</description>
+			
+			<growth>
+				<skill><mul>1.5</mul></skill>
+				<skill><mul>1.7</mul></skill>
+				<skill><mul>1.9</mul></skill>
+				<skill><mul>2.1</mul></skill>
+				<skill><mul>2.3</mul></skill>
+				<skill><mul>2.5</mul></skill>
+				<skill><mul>2.7</mul></skill>
+				<skill><mul>2.8</mul></skill>
+				<skill><mul>2.9</mul></skill>
+				<skill><mul>3.0</mul></skill>
+				
+				<skill><secMul>0.5</secMul><mul>3.0</mul><changeText>对携带指定技能的敌人造成额外伤害：[secMul]</changeText><description>攻击生命低于20%的敌人，会对它造成[mul]的伤害。对有胶性表皮、群体圣光、复原、重生、顽强技能的敌人还会造成额外[secMul]的伤害。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description></skill>
+				<skill><secMul>1.0</secMul><mul>3.0</mul><changeText>造成额外伤害：[secMul]</changeText><description>攻击生命低于20%的敌人，会对它造成[mul]的伤害。对有胶性表皮、群体圣光、复原、重生、顽强技能的敌人还会造成额外[secMul]的伤害。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description></skill>
+				<skill><secMul>1.5</secMul><mul>3.0</mul><changeText>造成额外伤害：[secMul]</changeText><description>攻击生命低于20%的敌人，会对它造成[mul]的伤害。对有胶性表皮、群体圣光、复原、重生、顽强技能的敌人还会造成额外[secMul]的伤害。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description></skill>
+				<skill><noNeedEquipB>1</noNeedEquipB><secMul>1.5</secMul><mul>3.0</mul><changeText>无需装备技能也会有技能效果</changeText><description>攻击生命低于20%的敌人，会对它造成[mul]的伤害。对有胶性表皮、群体圣光、复原、重生、顽强技能的敌人还会造成额外[secMul]的伤害。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="魅惑">
+			<name>charm_hero</name>
+			<cnName>魅惑</cnName>
+			<effectInfoArr>有概率瞬间释放多次</effectInfoArr>
+			
+			<addD pro="cd" range="-1,-7" info="冷却时间[v]秒" />
+			
+			<cd>130</cd>
+			<changeText>技能冷却时间：[cd]秒{n}魅惑2个单位的概率：[effectProArr.1]</changeText>
+			
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>charm_hero</otherConditionArr>
+			<target noVehicleB="1">mouse,near,enemy,normal_superNoDemon,normal</target>
+			
+			<addType>instant</addType>
+			<effectType>charm</effectType>
+			<effectProArr>0.9,0.1</effectProArr>
+			<range>300</range>
+			<duration>120</duration>
+			 
+			<meEffectImg soundUrl="sound/charm_hero" />
+			<targetEffectImg>skillEffect/charm_hero</targetEffectImg>
+			<description>魅惑鼠标附近的敌人（非携枪的小怪或者非修罗模式下的精英怪），使其加入我方阵营，有[effectProArr.1]的概率同时魅惑2个敌人。</description>
+			
+			<growth>
+				<skill><cd>130</cd><effectProArr>0.95,0.05</effectProArr></skill>
+				<skill><cd>120</cd><effectProArr>0.85,0.15</effectProArr></skill>
+				<skill><cd>110</cd><effectProArr>0.7,0.3</effectProArr></skill>
+				<skill><cd>100</cd><effectProArr>0.6,0.4</effectProArr></skill>
+				<skill><cd>90</cd><effectProArr>0.5,0.5</effectProArr></skill>
+				<skill><cd>80</cd><effectProArr>0.4,0.6</effectProArr></skill>
+				<skill><cd>70</cd><effectProArr>0.3,0.7</effectProArr></skill>
+				<skill><cd>66</cd><effectProArr>0.3,0.7</effectProArr></skill>
+				<skill><cd>62</cd><effectProArr>0.3,0.7</effectProArr></skill>
+				<skill><cd>60</cd><effectProArr>0.2,0.8</effectProArr></skill>
+				
+				<skill><mul>1.3</mul><duration>150</duration><cd>60</cd><effectProArr>0.2,0.8</effectProArr><changeText>生命值增强：[mul-1]{n}持续时间：[duration]秒</changeText><description>魅惑鼠标附近的敌人，使其加入我方阵营，有[effectProArr.1]的概率同时魅惑2个敌人。增加81级以后魅惑单位的[mul-1]生命值，延长持续时间至[duration]秒。</description></skill>
+				<skill><mul>1.5</mul><duration>180</duration><cd>60</cd><effectProArr>0.2,0.8</effectProArr><changeText>生命值增强：[mul-1]{n}持续时间：[duration]秒</changeText><description>魅惑鼠标附近的敌人，使其加入我方阵营，有[effectProArr.1]的概率同时魅惑2个敌人。增加81级以后魅惑单位的[mul-1]生命值，延长持续时间至[duration]秒。</description></skill>
+				<skill><mul>1.7</mul><duration>210</duration><cd>60</cd><effectProArr>0.2,0.8</effectProArr><changeText>生命值增强：[mul-1]{n}持续时间：[duration]秒</changeText><description>魅惑鼠标附近的敌人，使其加入我方阵营，有[effectProArr.1]的概率同时魅惑2个敌人。增加81级以后魅惑单位的[mul-1]生命值，延长持续时间至[duration]秒。</description></skill>
+			</growth>
+			
+		</skill>
+		<skill index="0" name="电离折射">
+			<name>feedback_hero</name>
+			<cnName>电离折射</cnName>
+			<isInvincibleB>1</isInvincibleB><isDefenceB>1</isDefenceB>
+			<effectInfoArr>增加防御力</effectInfoArr>
+			
+			<addD pro="duration" range="0.2,0.8" info="持续时间[v]秒" />
+			
+			<cd>90</cd>
+			<changeText>技能冷却时间：[cd]秒{n}反弹[mul]的伤害</changeText>
+			
+			
+			<conditionType>active</conditionType>
+			<condition>underHit</condition>
+			<otherConditionArr>producerNoNowBuff,attackTargetNoSameInvi</otherConditionArr>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>noUnderHurtB</effectType>
+			<mul>2</mul>
+			<secMul>0</secMul>
+			<duration>5</duration>
+			 
+			<passiveSkillArr>backHurt_hero_link_1</passiveSkillArr>
+			
+			<meEffectImg soundUrl="sound/feedback_hero" />
+			<stateEffectImg partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" imgDieType="last">skillEffect/feedback_hero_part</stateEffectImg>
+			<description>释放技能后，单位将[mul]的伤害反弹给敌人，自身不受到伤害，持续5秒。反弹伤害不超过目标最大生命值的1/5；目标生命值少于20%时不受反弹伤害。</description>
+			
+			<growth>
+				<skill><cd>90</cd><mul>2</mul><passiveSkillArr>backHurt_hero_link_1</passiveSkillArr></skill>
+				<skill><cd>80</cd><mul>2</mul><passiveSkillArr>backHurt_hero_link_2</passiveSkillArr></skill>
+				<skill><cd>70</cd><mul>2</mul><passiveSkillArr>backHurt_hero_link_3</passiveSkillArr></skill>
+				<skill><cd>60</cd><mul>2</mul><passiveSkillArr>backHurt_hero_link_4</passiveSkillArr></skill>
+				<skill><cd>50</cd><mul>2</mul><passiveSkillArr>backHurt_hero_link_5</passiveSkillArr></skill>
+				<skill><cd>42</cd><mul>2</mul><passiveSkillArr>backHurt_hero_link_6</passiveSkillArr></skill>
+				<skill><cd>35</cd><mul>2</mul><passiveSkillArr>backHurt_hero_link_7</passiveSkillArr></skill>
+				<skill><cd>34.5</cd><mul>2.5</mul><passiveSkillArr>backHurt_hero_link_8</passiveSkillArr></skill>
+				<skill><cd>34</cd><mul>3</mul><passiveSkillArr>backHurt_hero_link_9</passiveSkillArr></skill>
+				<skill><cd>34</cd><mul>5</mul><passiveSkillArr>backHurt_hero_link_10</passiveSkillArr></skill>
+				
+				<skill><secMul>0.6</secMul><cd>34</cd><mul>5</mul><passiveSkillArr>backHurt_hero_link_10</passiveSkillArr><changeText>减少电离折射伤害：[secMul]</changeText><description>永久减少来自敌人电离折射[secMul]的伤害。释放技能后，单位将[mul]的伤害反弹给敌人，自身不受到伤害，持续5秒。目标生命值少于20%时不受反弹伤害。</description></skill>
+				<skill><secMul>0.9</secMul><cd>34</cd><mul>5</mul><passiveSkillArr>backHurt_hero_link_10</passiveSkillArr><changeText>减少电离折射伤害：[secMul]</changeText><description>永久减少来自敌人电离折射[secMul]的伤害。释放技能后，单位将[mul]的伤害反弹给敌人，自身不受到伤害，持续5秒。目标生命值少于20%时不受反弹伤害。</description></skill>
+				<skill><secMul>1</secMul><cd>34</cd><mul>5</mul><passiveSkillArr>backHurt_hero_link_10</passiveSkillArr><changeText>永久不受电离折射伤害</changeText><description>永久不受敌人电离折射的伤害。释放技能后，单位将[mul]的伤害反弹给敌人，自身不受到伤害，持续5秒。目标生命值少于20%时不受反弹伤害。</description></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="馈赠">
+			<name>skillGift_hero</name>
+			<cnName>馈赠</cnName>
+			
+			<changeText>概率：[effectProArr.0]</changeText>
+			
+			
+			<conditionType>passive</conditionType>
+			<condition>useSkill</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>heroSkillFullCd</effectType>
+			<effectProArr>0.10</effectProArr>
+			<value>2</value>
+			
+			<meEffectImg soundUrl="sound/skillFlesh" />
+			<targetEffectImg />
+			<description>每次单位释放完主动技能，就有[effectProArr.0]的几率大幅度回复该主动技能的冷却时间。</description>
+			
+			<growth>
+				<skill><effectProArr>0.06</effectProArr></skill>
+				<skill><effectProArr>0.10</effectProArr></skill>
+				<skill><effectProArr>0.14</effectProArr></skill>
+				<skill><effectProArr>0.18</effectProArr></skill>
+				<skill><effectProArr>0.22</effectProArr></skill>
+				<skill><effectProArr>0.24</effectProArr></skill>
+				<skill><effectProArr>0.29</effectProArr></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="沉默">
+			<name>silence_hero</name>
+			<cnName>沉默</cnName>
+			<effectInfoArr />
+			
+			<addD pro="duration" range="0.8,2.5" info="持续时间[v]秒" />
+			
+			<cd>60</cd>
+			<changeText>技能冷却时间：[cd]秒{n}作用范围：[range]码{n}持续时间：[duration]秒</changeText>
+			
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>500</conditionRange>
+			<target>me,range,enemy</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>silenceBAndClearState</effectType>
+			<value>1</value>
+			<range>400</range>
+			<duration>5</duration>
+			 
+			<meEffectImg soundUrl="sound/silence_enemy" />
+			<stateEffectImg partType="mouth" con="add">skillEffect/silence_enemy</stateEffectImg>
+			<description>使[range]码以内的所有敌方单位无法释放技能，持续[duration]秒，同时清除目标身上的隐身、狂暴、嗜爪、电离折射、电离反转的状态。</description>
+			
+			<growth>
+				<skill><cd>60</cd><range>350</range><duration>5</duration></skill>
+				<skill><cd>60</cd><range>550</range><duration>5</duration></skill>
+				<skill><cd>50</cd><range>550</range><duration>6</duration></skill>
+				<skill><cd>50</cd><range>750</range><duration>6</duration></skill>
+				<skill><cd>40</cd><range>750</range><duration>7</duration></skill>
+				<skill><cd>40</cd><range>1000</range><duration>7</duration></skill>
+				<skill><cd>30</cd><range>1500</range><duration>8</duration></skill>
+				<skill><cd>30</cd><range>1500</range><duration>9</duration></skill>
+				<skill><cd>30</cd><range>1500</range><duration>10</duration></skill>
+				<skill><cd>30</cd><range>1500</range><duration>10</duration><linkArr>silence_hero_link_1</linkArr><changeText>相同范围内的我方单位技能免疫3秒</changeText><description>使[range]码以内的所有敌方单位无法释放技能，持续[duration]秒，清除目标身上的隐身、狂暴、嗜爪、电离折射、电离反转的状态，相同范围内的我方单位技能免疫3秒。</description></skill>
+				
+				<skill><cd>30</cd><range>1500</range><duration>10</duration><linkArr>silence_hero_link_2</linkArr><changeText>相同范围内的我方单位技能免疫4.5秒</changeText><description>使[range]码以内的所有敌方单位无法释放技能，持续[duration]秒，清除目标身上的隐身、狂暴、嗜爪、电离折射、电离反转的状态，相同范围内的我方单位技能免疫4.5秒。</description></skill>
+				<skill><cd>30</cd><range>1500</range><duration>10</duration><linkArr>silence_hero_link_3</linkArr><changeText>相同范围内的我方单位技能免疫6秒</changeText><description>使[range]码以内的所有敌方单位无法释放技能，持续[duration]秒，清除目标身上的隐身、狂暴、嗜爪、电离折射、电离反转的状态，相同范围内的我方单位技能免疫6秒。</description></skill>
+				<skill><cd>30</cd><range>1500</range><duration>10</duration><linkArr>silence_hero_link_4</linkArr><changeText>相同范围内的我方单位技能免疫7.5秒</changeText><description>使[range]码以内的所有敌方单位无法释放技能，持续[duration]秒，清除目标身上的隐身、狂暴、嗜爪、电离折射、电离反转的状态，相同范围内的我方单位技能免疫7.5秒。</description></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="近视">
+			<name>myopia_hero</name>
+			<cnName>近视</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			
+			<addD pro="range" range="20,70" info="加成范围[v]码" />
+			
+			<changeText>每隔60码增加：[mul]{n}最大增加[value]倍的伤害</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<value>1.1</value>
+			<mul>0.05</mul>
+			<secMul>0</secMul>
+			<range>400</range>
+			
+			<obj>"type":"myopia","exceptSkillB":true</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>距离目标越近伤害越大，小于[range]码开始加成，每隔60码增加[mul]的伤害，最大增加[value]倍。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description>
+			
+			<growth>
+				<skill><mul>0.05</mul></skill>
+				<skill><mul>0.07</mul></skill>
+				<skill><mul>0.10</mul></skill>
+				<skill><mul>0.12</mul></skill>
+				<skill><mul>0.14</mul></skill>
+				<skill><mul>0.16</mul></skill>
+				<skill><mul>0.18</mul></skill>
+				<skill><mul>0.18</mul><value>1.15</value></skill>
+				<skill><mul>0.18</mul><value>1.20</value></skill>
+				<skill><mul>0.19</mul><value>1.30</value></skill>
+				
+				<skill><secMul>0.05</secMul><mul>0.19</mul><value>1.30</value><changeText>蹲下时伤害额外增加[secMul]</changeText><description>距离目标越近伤害越大，小于[range]码开始加成，每隔60码增加[mul]的伤害，最大增加[value]倍。自己蹲下时伤害额外增加[secMul]。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description></skill>
+				<skill><secMul>0.10</secMul><mul>0.19</mul><value>1.30</value><changeText>蹲下时伤害额外增加[secMul]</changeText><description>距离目标越近伤害越大，小于[range]码开始加成，每隔60码增加[mul]的伤害，最大增加[value]倍。自己蹲下时伤害额外增加[secMul]。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description></skill>
+				<skill><secMul>0.15</secMul><mul>0.19</mul><value>1.30</value><changeText>蹲下时伤害额外增加[secMul]</changeText><description>距离目标越近伤害越大，小于[range]码开始加成，每隔60码增加[mul]的伤害，最大增加[value]倍。自己蹲下时伤害额外增加[secMul]。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description></skill>
+				<skill><noNeedEquipB>1</noNeedEquipB><secMul>0.15</secMul><mul>0.19</mul><value>1.30</value><changeText>无需装备技能也会有技能效果</changeText><description>距离目标越近伤害越大，小于[range]码开始加成，每隔60码增加[mul]的伤害，最大增加[value]倍。自己蹲下时伤害额外增加[secMul]。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="先锋盾">
+			<name>pioneer_hero</name>
+			<cnName>先锋盾</cnName>
+			<effectInfoArr>增加防御力</effectInfoArr><ignoreNoSkillB>1</ignoreNoSkillB>
+			
+			<addD pro="mul" range="-0.01,-0.05" info="受到的伤害[v]" />
+			
+			<changeText>生命值大于[obj.per]受到伤害减少[1-mul]</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>pioneer_hero</effectType>
+			<mul>0.7</mul>
+			<secMul>1</secMul>
+			
+			<obj>"type":"lifePerMore","per":0.8</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>单位生命值大于[obj.per]时，受到的伤害减少[1-mul]。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description>
+			
+			<growth>
+				<skill><mul>0.70</mul></skill>
+				<skill><mul>0.60</mul></skill>
+				<skill><mul>0.52</mul></skill>
+				<skill><mul>0.45</mul></skill>
+				<skill><mul>0.40</mul></skill>
+				<skill><mul>0.36</mul></skill>
+				<skill><mul>0.32</mul></skill>
+				<skill><mul>0.29</mul></skill>
+				<skill><mul>0.26</mul></skill>
+				<skill><mul>0.26</mul><secMul>0.9</secMul><changeText>生命值大于[obj.per]受到伤害减少[1-mul]、生命值小于[obj.per]受到伤害减少[1-secMul]</changeText><description>单位生命值大于[obj.per]时，受到的伤害减少[1-mul]，小于[obj.per]时受到伤害减少[1-secMul]。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description></skill>
+				
+				<skill><mul>0.26</mul><secMul>0.85</secMul><changeText>生命值小于[obj.per]受到伤害减少[1-secMul]</changeText><description>单位生命值大于[obj.per]时，受到的伤害减少[1-mul]，小于[obj.per]时受到伤害减少[1-secMul]。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description></skill>
+				<skill><mul>0.26</mul><secMul>0.81</secMul><changeText>生命值小于[obj.per]受到伤害减少[1-secMul]</changeText><description>单位生命值大于[obj.per]时，受到的伤害减少[1-mul]，小于[obj.per]时受到伤害减少[1-secMul]。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description></skill>
+				<skill><mul>0.26</mul><secMul>0.77</secMul><changeText>生命值小于[obj.per]受到伤害减少[1-secMul]</changeText><description>单位生命值大于[obj.per]时，受到的伤害减少[1-mul]，小于[obj.per]时受到伤害减少[1-secMul]。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description></skill>
+				<skill><noNeedEquipB>1</noNeedEquipB><mul>0.26</mul><secMul>0.77</secMul><changeText>无需装备技能也会有技能效果</changeText><description>单位生命值大于[obj.per]时，受到的伤害减少[1-mul]，小于[obj.per]时受到伤害减少[1-secMul]。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="全局溅射">
+			<name>globalSpurting_hero</name>
+			<cnName>全局溅射</cnName>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			<changeText>技能冷却时间：[cd]秒{n}溅射伤害百分比：[mul]</changeText>
+			
+			<addD pro="mul" range="0.01,0.05" info="溅射伤害[v]" />
+			
+			<cd>100</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>beforeAttack</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>globalSpurting_hero</effectType>
+			<mul>0.5</mul>
+			<range>600</range>
+			<duration>6</duration>
+			
+			<meEffectImg soundUrl="sound/globalSpurting_enemy" />
+			<stateEffectImg partType="2hand" con="add">skillEffect/globalSpurting_enemy</stateEffectImg>
+			<stateEffectImg2 partType="shootPoint" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg2>
+			<description>释放技能后，单位进入全局溅射状态，子弹无论碰到敌人还是地面都将对子弹周围[range]码的敌人造成[mul]的溅射伤害，最多对10个敌人造成伤害。状态持续[duration]秒。</description>
+			
+			<growth>
+				<skill><cd>100</cd><mul>0.5</mul></skill>
+				<skill><cd>90</cd><mul>0.6</mul></skill>
+				<skill><cd>80</cd><mul>0.7</mul></skill>
+				<skill><cd>70</cd><mul>0.8</mul></skill>
+				<skill><cd>60</cd><mul>0.9</mul></skill>
+				<skill><cd>50</cd><mul>1</mul></skill>
+				<skill><cd>50</cd><mul>1.1</mul></skill>
+				<skill><cd>48</cd><mul>1.1</mul></skill>
+				<skill><cd>45</cd><mul>1.1</mul></skill>
+				<skill><cd>45</cd><mul>1.2</mul></skill>
+				
+				<skill><cd>45</cd><mul>1.3</mul><changeText>溅射伤害百分比：[mul]</changeText></skill>
+				<skill><cd>45</cd><mul>1.4</mul><changeText>溅射伤害百分比：[mul]</changeText></skill>
+				<skill><cd>45</cd><mul>1.5</mul><changeText>溅射伤害百分比：[mul]</changeText></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="群体自燃">
+			<name>selfBurn_hero</name>
+			<cnName>群体自燃</cnName>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			
+			<addD pro="duration" range="0.5,2.5" info="持续时间[v]秒" />
+			
+			<cd>90</cd>
+			<changeText>伤害值为当前武器实际战斗力的[mul]</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget,mainAIHurtBuff,producerNoNowBuff</otherConditionArr>
+			<conditionRange>300</conditionRange>
+			<target>me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<mul>0.10</mul>
+			<duration>6</duration>
+			<range>700</range>
+			 
+			<passiveSkillArr>selfBurn_hero_link_1</passiveSkillArr>
+			
+			<meEffectImg soundUrl="sound/imploding_enemy" />
+			<stateEffectImg name="selfBurnNew" />
+			<description>使周围[range]码内的友方单位全身燃起熊熊烈火，每0.1秒随机对附近300码范围内的一个敌人造成伤害，伤害值为当前武器面板战斗力的0.5x[mul]。状态持续[duration]秒。</description>
+			
+			<growth>
+				<skill><mul>0.10</mul><passiveSkillArr>selfBurn_hero_link_1</passiveSkillArr></skill>
+				<skill><mul>0.18</mul><passiveSkillArr>selfBurn_hero_link_2</passiveSkillArr></skill>
+				<skill><mul>0.26</mul><passiveSkillArr>selfBurn_hero_link_3</passiveSkillArr></skill>
+				<skill><mul>0.34</mul><passiveSkillArr>selfBurn_hero_link_4</passiveSkillArr></skill>
+				<skill><mul>0.42</mul><passiveSkillArr>selfBurn_hero_link_5</passiveSkillArr></skill>
+				<skill><mul>0.48</mul><passiveSkillArr>selfBurn_hero_link_6</passiveSkillArr></skill>
+				<skill><mul>0.54</mul><passiveSkillArr>selfBurn_hero_link_7</passiveSkillArr></skill>
+				<skill><mul>0.58</mul><passiveSkillArr>selfBurn_hero_link_8</passiveSkillArr></skill>
+				<skill><mul>0.62</mul><passiveSkillArr>selfBurn_hero_link_9</passiveSkillArr></skill>
+				<skill><mul>0.70</mul><passiveSkillArr>selfBurn_hero_link_10</passiveSkillArr></skill>
+				
+				<skill><mul>0.80</mul><passiveSkillArr>selfBurn_hero_link_11</passiveSkillArr></skill>
+				<skill><mul>0.90</mul><passiveSkillArr>selfBurn_hero_link_12</passiveSkillArr></skill>
+				<skill><mul>1.00</mul><passiveSkillArr>selfBurn_hero_link_13</passiveSkillArr></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="精准">
+			<name>accurate_hero</name>
+			<cnName>精准</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			
+			<addD pro="mul" range="0.02,0.10" info="伤害倍数[v]" />
+			
+			<changeText>提升爆头[mul]的伤害值</changeText>
+			
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>0.16</mul>
+			<secMul>0</secMul>
+			
+			<obj>"type":"accurate","exceptSkillB":true</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>提升爆头[mul]的伤害值。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description>
+			
+			<growth>
+				<skill><mul>0.16</mul></skill>
+				<skill><mul>0.24</mul></skill>
+				<skill><mul>0.31</mul></skill>
+				<skill><mul>0.39</mul></skill>
+				<skill><mul>0.46</mul></skill>
+				<skill><mul>0.54</mul></skill>
+				<skill><mul>0.60</mul></skill>
+				<skill><mul>0.62</mul></skill>
+				<skill><mul>0.64</mul></skill>
+				<skill><mul>0.67</mul></skill>
+				
+				<skill><secMul>0.1</secMul><mul>0.67</mul><changeText>提升打身体[secMul]的伤害</changeText><description>提升爆头[mul]的伤害值，提升打身体[secMul]的伤害。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description></skill>
+				<skill><secMul>0.2</secMul><mul>0.67</mul><changeText>提升打身体[secMul]的伤害</changeText><description>提升爆头[mul]的伤害值，提升打身体[secMul]的伤害。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description></skill>
+				<skill><secMul>0.3</secMul><mul>0.67</mul><changeText>提升打身体[secMul]的伤害</changeText><description>提升爆头[mul]的伤害值，提升打身体[secMul]的伤害。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description></skill>
+				<skill><noNeedEquipB>1</noNeedEquipB><secMul>0.3</secMul><mul>0.67</mul><changeText>无需装备技能也会有技能效果</changeText><description>提升爆头[mul]的伤害值，提升打身体[secMul]的伤害。{font color='#00FF00'}14级无需装备技能也会有技能效果。{/font}</description></skill>
+			</growth>
+		</skill>
+		
+		
+		<skill>
+			<name>FoggyHero</name><noRebuildB>1</noRebuildB><studyMustGiftStr>things;FoggyHeroChip;60</studyMustGiftStr>
+			<cnName>抵御</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<addD pro="duration" range="0.03,0.10" info="持续时间[v]秒" />
+			
+			<changeText>持续时间[duration]秒</changeText>
+			<effectInfoArr>增加防御力</effectInfoArr>
+			
+			<conditionType>passive</conditionType>
+			<condition>underAllHurt</condition>
+			<otherConditionArr>canFoggyDef</otherConditionArr>
+			<target>me</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>FoggyDefence</effectType>
+			<effectProArr>0.3</effectProArr>
+			<duration>0.1</duration>
+			 
+			<stateEffectImg partType="body">generalEffect/invincibleShield</stateEffectImg>
+			<description>每次受伤都有[effectProArr.0]的概率无敌[duration]秒。</description>
+			
+			<growth>
+				<skill><duration>0.1</duration></skill>
+				<skill><duration>0.2</duration></skill>
+				<skill><duration>0.3</duration></skill>
+			</growth>
+		</skill>
+		
+		
+		<skill index="0" name="藐视">
+			<name>lookDown_hero</name>
+			<cnName>藐视</cnName>
+			
+			<addD pro="mul" range="0.01,0.05" info="降低[v]攻击力" />
+			
+			<cd>10</cd>
+			<changeText>攻击力降低[mul]{n}防御力降低[secMul]</changeText>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>mouse,near,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>lookDown</effectType>
+			<mul>0.05</mul>
+			<secMul>0.05</secMul>
+			<duration>10</duration>
+			<range>9000</range>
+			 
+			<stateEffectImg partType="mouth" con="add">skillEffect/lookDown</stateEffectImg>
+			<description>藐视鼠标位置附近的1个敌人，使其攻击力降低[mul]，防御力降低[secMul]，持续[duration]秒。</description>
+			
+			<growth>
+				<skill><mul>0.05</mul><secMul>0.05</secMul></skill>
+				<skill><mul>0.08</mul><secMul>0.08</secMul></skill>
+				<skill><mul>0.11</mul><secMul>0.11</secMul></skill>
+				<skill><mul>0.14</mul><secMul>0.14</secMul></skill>
+				<skill><mul>0.17</mul><secMul>0.17</secMul></skill>
+				<skill><mul>0.20</mul><secMul>0.20</secMul></skill>
+				<skill><mul>0.23</mul><secMul>0.23</secMul></skill>
+				<skill><mul>0.26</mul><secMul>0.26</secMul></skill>
+				<skill><mul>0.29</mul><secMul>0.29</secMul></skill>
+				<skill><mul>0.32</mul><secMul>0.32</secMul></skill>
+				<skill><mul>0.35</mul><secMul>0.35</secMul></skill>
+				<skill><mul>0.38</mul><secMul>0.38</secMul></skill>
+				<skill><mul>0.41</mul><secMul>0.41</secMul></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="元素叠加">
+			<name>eleOverlap_hero</name>
+			<cnName>元素叠加</cnName>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			
+			<addD pro="mul" range="0.01,0.05" info="叠加比例[v]" />
+			
+			<changeText>叠加比例：[mul]</changeText>
+			
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target systemType="hero" noMeB="1">me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>eleOverlap</effectType>
+			<mul>0.09</mul>
+			<secMul>0</secMul>
+			<duration>0.5</duration>
+			<range>9999999</range>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/eleOverlap</stateEffectImg>
+			<description>把藏师当前武器[mul]的元素伤害，叠加到队友具有同类元素伤害的武器上。</description>
+			
+			<growth>
+				<skill><mul>0.10</mul></skill>
+				<skill><mul>0.15</mul></skill>
+				<skill><mul>0.20</mul></skill>
+				<skill><mul>0.25</mul></skill>
+				<skill><mul>0.30</mul></skill>
+				<skill><mul>0.35</mul></skill>
+				<skill><mul>0.40</mul></skill>
+				<skill><mul>0.45</mul></skill>
+				<skill><mul>0.50</mul></skill>
+				<skill><mul>0.55</mul></skill>
+				
+				<skill><mul>0.60</mul><secMul>0.05</secMul><changeText>叠加比例：[mul]{n}不同元素伤害的叠加比例[secMul]</changeText><description>把藏师当前武器[mul]的元素伤害，叠加到队友具有同类元素伤害的武器上，队友不同元素伤害的武器也将获得[secMul]的伤害叠加。</description></skill>
+				<skill><mul>0.65</mul><secMul>0.10</secMul><changeText>叠加比例：[mul]{n}不同元素伤害的叠加比例[secMul]</changeText><description>把藏师当前武器[mul]的元素伤害，叠加到队友具有同类元素伤害的武器上，队友不同元素伤害的武器也将获得[secMul]的伤害叠加。</description></skill>
+				<skill><mul>0.70</mul><secMul>0.15</secMul><changeText>叠加比例：[mul]{n}不同元素伤害的叠加比例[secMul]</changeText><description>把藏师当前武器[mul]的元素伤害，叠加到队友具有同类元素伤害的武器上，队友不同元素伤害的武器也将获得[secMul]的伤害叠加。</description></skill>
+				<skill><noNeedEquipB>1</noNeedEquipB><mul>0.70</mul><secMul>0.15</secMul><changeText>无需装备技能也会有技能效果</changeText><description>把藏师当前武器[mul]的元素伤害，叠加到队友具有同类元素伤害的武器上，队友不同元素伤害的武器也将获得[secMul]的伤害叠加。无需装备技能也会有技能效果</description></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="血盾">
+			<name>bloodShield_hero</name>
+			<cnName>血盾</cnName>
+			
+			<addD pro="mul" range="0.005,0.03" info="防御力提升[v]" />
+			
+			<changeText>防御力提升：[mul]</changeText>
+			<effectInfoArr>增加防御力,回复生命值</effectInfoArr>
+			
+			<conditionType>passive</conditionType>
+			<condition>killTarget</condition>
+			<target>me</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>bloodShield</effectType>
+			<mul>0.05</mul>
+			<secMul>0</secMul>
+			<duration>99999</duration>
+			<description>在战斗中每消灭1个怪物将使自己的防御力提升[mul]，最大提升200%。</description>
+			
+			<growth>
+				<skill><mul>0.05</mul></skill>
+				<skill><mul>0.07</mul></skill>
+				<skill><mul>0.09</mul></skill>
+				<skill><mul>0.11</mul></skill>
+				<skill><mul>0.13</mul></skill>
+				<skill><mul>0.15</mul></skill>
+				<skill><mul>0.17</mul></skill>
+				<skill><mul>0.19</mul></skill>
+				<skill><mul>0.21</mul></skill>
+				<skill><mul>0.23</mul></skill>
+				
+				<skill><mul>0.23</mul><secMul>0.1</secMul><changeText>防御力提升：[mul]{n}补充[secMul]的生命</changeText><description>在战斗中每消灭1个怪物将使自己的防御力提升[mul]，最大提升200%，同时补充自身[secMul]的生命。</description></skill>
+				<skill><mul>0.23</mul><secMul>0.2</secMul><changeText>防御力提升：[mul]{n}补充[secMul]的生命</changeText><description>在战斗中每消灭1个怪物将使自己的防御力提升[mul]，最大提升200%，同时补充自身[secMul]的生命。</description></skill>
+				<skill><mul>0.23</mul><secMul>0.3</secMul><changeText>防御力提升：[mul]{n}补充[secMul]的生命</changeText><description>在战斗中每消灭1个怪物将使自己的防御力提升[mul]，最大提升200%，同时补充自身[secMul]的生命。</description></skill>
+				<skill><noNeedEquipB>1</noNeedEquipB><mul>0.23</mul><secMul>0.3</secMul><changeText>无需装备技能也会有技能效果</changeText><description>在战斗中每消灭1个怪物将使自己的防御力提升[mul]，最大提升200%，同时补充自身[secMul]的生命。无需装备技能也会有技能效果</description></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="滑翔-不可被重造">
+			<name>gliding_hero</name><noRebuildB>1</noRebuildB><studyMustGiftStr>things;gliding_heroChip;380</studyMustGiftStr>
+			<cnName>滑翔</cnName><ignoreNoSkillB>1</ignoreNoSkillB>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			<iconUrl>SkillIcon/gliding_hero</iconUrl>
+			
+			<addD pro="mul" range="0.01,0.05" info="射击速度[v]" />
+			
+			<changeText>提升[mul]的射击速度{n}降低[1-secMul]下落速度</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>airDownKey</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>gliding</effectType>
+			<groundDieB>1</groundDieB>
+			<mul>0.04</mul>
+			<secMul>0.50</secMul>
+			<value />
+			<duration>99999</duration>
+			
+			
+			<meEffectImg />
+			<stateEffectImg partType="2foot" con="add" raNum="30">bulletHitEffect/smoke_small</stateEffectImg>
+			<stateEffectImg2 name="greatSageCloud" />
+			<description>在空中按下“蹲下”键后，人物将开启滑翔模式，降低[1-secMul]下落速度，并提高[mul]的射击速度，落地后技能效果消失。{font color='#00FF00'}升级至第9级后，无需装备技能也会有技能效果。{/font}</description>
+			
+			<growth>
+				<skill><mul>0.04</mul><secMul>0.50</secMul></skill>
+				<skill><mul>0.06</mul><secMul>0.45</secMul></skill>
+				<skill><mul>0.08</mul><secMul>0.40</secMul></skill>
+				<skill><mul>0.10</mul><secMul>0.35</secMul></skill>
+				<skill><mul>0.12</mul><secMul>0.30</secMul></skill>
+				<skill><mul>0.14</mul><secMul>0.25</secMul></skill>
+				<skill><mul>0.16</mul><secMul>0.20</secMul></skill>
+				<skill><mul>0.18</mul><secMul>0.15</secMul></skill>
+				<skill><mul>0.20</mul><secMul>0.10</secMul><noNeedEquipB>1</noNeedEquipB><changeText>提升[mul]的射击速度{n}降低[1-secMul]下落速度{n}技能效果无需装备</changeText></skill>
+				<skill><mul>0.23</mul><secMul>0.10</secMul><noNeedEquipB>1</noNeedEquipB><changeText>提升[mul]的射击速度{n}降低[1-secMul]下落速度{n}技能效果无需装备</changeText></skill>
+			</growth>
+		</skill>
+		
+		
+		<skill cnName="翻滚">
+			<name>rolling_hero</name><noRebuildB>1</noRebuildB><studyMustGiftStr>things;rolling_heroChip;55</studyMustGiftStr>
+			<cnName>翻滚</cnName>
+			<effectInfoArr>增加防御力</effectInfoArr>
+			<iconUrl>SkillIcon/rolling_hero</iconUrl>
+			
+			<addD pro="minTriggerT" range="-0.05,-0.3" info="最短触发间隔[v]" />
+			<changeText>翻滚[value]码的距离{n}最短触发间隔[minTriggerT]秒</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>moveCombo</condition>
+			<otherConditionArr>landMoveCombo</otherConditionArr>
+			<conditionString>left,left|right,right</conditionString>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>heroRolling</effectType>
+			<minTriggerT>2</minTriggerT>
+			<mul>0</mul>
+			<value>350</value>
+			<valueString />
+			<duration>0.5</duration>
+			<passiveSkillArr>rolling_hero_link</passiveSkillArr>
+			
+			<stateEffectImg xGap="30" con="filter" raNum="1">skillEffect/rollingShadow</stateEffectImg>
+			
+			<description>人物蹲下时，双击移动按键可向前翻滚[value]码，期间不受攻击、子弹碰撞，降低途经敌人30%的攻击力，最短触发间隔[minTriggerT]秒。{font color='#00FF00'}升级至第9级后，无需装备技能也会有技能效果。{/font}</description>
+			
+			<growth>
+				<skill><value>200</value><minTriggerT>5</minTriggerT></skill>
+				<skill><value>240</value><minTriggerT>5</minTriggerT></skill>
+				<skill><value>260</value><minTriggerT>4.5</minTriggerT></skill>
+				<skill><value>280</value><minTriggerT>4</minTriggerT></skill>
+				<skill><value>300</value><minTriggerT>3.5</minTriggerT></skill>
+				<skill><value>320</value><minTriggerT>3</minTriggerT></skill>
+				<skill><value>350</value><minTriggerT>2.5</minTriggerT></skill>
+				<skill><value>400</value><minTriggerT>1.8</minTriggerT></skill>
+				<skill><value>500</value><minTriggerT>1.5</minTriggerT><noNeedEquipB>1</noNeedEquipB></skill>
+				<skill><value>550</value><minTriggerT>1.3</minTriggerT><noNeedEquipB>1</noNeedEquipB></skill>
+			</growth>	
+		</skill>
+		
+		<skill index="0" name="王者之翼">
+			<name>kingWing_hero</name><noRebuildB>1</noRebuildB><studyMustGiftStr>things;kingWing_heroChip;200</studyMustGiftStr>
+			<cnName>王者之翼</cnName>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			<noNeedEquipB>1</noNeedEquipB>
+			
+			<addD pro="mul" range="0.01,0.03" info="伤害倍数[v]" />
+			
+			<changeText>伤害比例：[mul]</changeText>
+			
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt_air</effectType>
+			<changeHurtB>1</changeHurtB>
+			<mul>1.3</mul>
+			
+			<description>玩家在空中的伤害增加[mul-1]。{font color='#00FF00'}无需装备技能也会有技能效果。{/font}</description>
+			
+			<growth>
+				<skill><mul>1.3</mul></skill>
+			</growth>
+		</skill>
+		
+		<skill name="附身">
+			<name>possession_hero</name>
+			<cnName>附身</cnName><noRebuildB>1</noRebuildB><studyMustGiftStr>things;possession_heroChip;30</studyMustGiftStr>
+			<effectInfoArr /><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<addD pro="cd" range="-1,-5" info="冷却时间[v]秒" />
+			
+			<cd>120</cd>
+			<firstCd>115</firstCd>
+			<changeText>附身队友时间：[duration]秒</changeText>
+			
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>0</conditionRange>
+			<target alert="possession_hero">alertTarget</target>
+			
+			<addType>instant</addType>
+			<effectType>possession</effectType>
+			<duration>6</duration>
+			<range>100</range>
+			<value>0</value>
+			<mul>1.5</mul>
+			<secMul>0</secMul>
+			 
+			<meEffectImg soundUrl="skillEffect/possession_s" />
+			<targetEffectImg con="add" partType="head">skillEffect/possession</targetEffectImg>
+			<description>附身鼠标处的我方队友，控制其攻击、技能，持续[duration]秒。6级之后在非主线任务中可附身敌方首领。双击载具键可退出。</description>
+			
+			<growth>
+				<skill><duration>30</duration></skill>
+				<skill><duration>45</duration></skill>
+				<skill><duration>60</duration></skill>
+				<skill><duration>75</duration></skill>
+				<skill><duration>90</duration></skill>
+				<skill><duration>95</duration><value>10</value><changeText>可附身部分敌方首领</changeText><description>非主线任务中可附身部分敌方首领（首领等级不能高于角色等级）[value]秒。还可附身我方队友[duration]秒。双击载具键可退出。</description></skill>
+				<skill><duration>110</duration><value>20</value><changeText>附身首领时间：[value]秒{n}附身队友时间：[duration]秒</changeText><description>非主线任务中可附身部分敌方首领（首领等级不能高于角色等级）[value]秒。还可附身我方队友[duration]秒。双击载具键可退出。</description></skill>
+				<skill><duration>118</duration><value>30</value><changeText>附身首领时间：[value]秒{n}附身队友时间：[duration]秒</changeText><description>非主线任务中可附身部分敌方首领（首领等级不能高于角色等级）[value]秒。还可附身我方队友[duration]秒。双击载具键可退出。</description></skill>
+				<skill><duration>118</duration><value>30</value><secMul>1</secMul><changeText>期间首领将同时承受自身所释放的伤害</changeText><description>非主线任务中可附身部分敌方首领（首领等级不能高于角色等级）[value]秒，期间首领将同时承受自身所释放的伤害。还可附身我方队友[duration]秒。双击载具键可退出。</description></skill>
+				<skill><duration>118</duration><mul>2</mul><value>30</value><secMul>1</secMul><ignoreImmunityB>1</ignoreImmunityB><changeText>无视技能免疫</changeText><description>非主线任务中可附身部分敌方首领（首领等级不能高于角色等级）[value]秒，无视技能免疫，期间首领将同时承受自身所释放的伤害。还可附身我方队友[duration]秒。双击载具键可退出。</description></skill>
+				<skill><duration>99999</duration><mul>2</mul><value>30</value><secMul>1</secMul><ignoreImmunityB>1</ignoreImmunityB><changeText>永久附身我方单位</changeText><description>非主线任务中可附身部分敌方首领（首领等级不能高于角色等级）[value]秒，无视技能免疫，期间首领将同时承受自身所释放的伤害。还可永久附身我方队友。双击载具键可退出。</description></skill>
+
+			</growth>
+			
+		</skill>
+		
+		
+		<skill>
+			<name>silverScreen_hero</name>
+			<cnName>全域光波</cnName><noRebuildB>1</noRebuildB><studyMustGiftStr>things;silverScreen_heroChip;60</studyMustGiftStr>
+			<changeText>冷却时间：[cd]秒</changeText>
+			<cd>70</cd><delay>0.33</delay><ie>meFirst</ie><iconUrl>SkillIcon/silverScreen</iconUrl>
+			
+			<addD pro="cd" range="-1,-5" info="冷却时间[v]秒" />
+			
+			<conditionType>active</conditionType>
+			<condition>beforeAttack</condition>
+			<target>me</target>
+			
+			
+			<addType>instant</addType>
+			<effectType>bullet_silverScreen</effectType><effectFather>weShip</effectFather>
+			<extraValueType>nowArmsDpsOrNormal</extraValueType>
+			<mul>3</mul>
+			
+			<obj>"name":"silverScreenBulletHero","site":"meMid","flipB":false</obj>
+			
+			<meEffectImg name="silverScreen" />
+			<description>释放两道全域光波，瞬秒被击中的小怪，减少精英怪15%的生命值，减少首领5%的生命值（当前生命值不低于10%），无视技能免疫，无视敏感技能。</description>
+			
+			<growth>
+				<skill><cd>70</cd><firstCd>70</firstCd></skill>
+				<skill><cd>60</cd><firstCd>60</firstCd></skill>
+				
+			</growth>
+		</skill>
+		
+		
+		
+		
+		
+		<skill index="0" name="隐匿之雾">
+			<name>invisibility_hero</name>
+			<cnName>隐匿之雾</cnName>
+			<effectInfoArr>隐身,增加防御力</effectInfoArr>
+			<cd>40</cd>
+			
+			<changeText>增加防御：[mul]{n}持续时间：[duration]秒</changeText>
+			<studyMustMul>1</studyMustMul>
+			<upgradeMustMul>1</upgradeMustMul>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess80</otherConditionArr>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>invisibility_hero</effectType>
+			<value>1</value>
+			<mul>0.5</mul>
+			<duration>7</duration>
+			
+			<meEffectImg soundUrl="sound/invisibility_hero" con="add">skillEffect/hiding_hero</meEffectImg>
+			<stateEffectImg partType="arm_right_1,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="filter" raNum="30">bulletHitEffect/smoke_small</stateEffectImg>
+			<description>使自己进入隐身状态，并获得[mul]的防御力，持续[duration]秒。隐身单位攻击敌人或者受到敌人攻击都不会打破隐身状态。</description>
+			
+			<growth>
+				<skill><duration>4</duration><mul>0.3</mul></skill>
+				<skill><duration>5</duration><mul>0.4</mul></skill>
+				<skill><duration>6</duration><mul>0.5</mul></skill>
+				<skill><duration>7</duration><mul>0.6</mul></skill>
+				<skill><duration>8</duration><mul>0.7</mul></skill>
+				<skill><duration>8.5</duration><mul>0.8</mul></skill>
+				<skill><duration>9</duration><mul>0.9</mul></skill>
+				<skill><duration>10</duration><mul>1.0</mul></skill>
+				<skill><duration>11</duration><mul>1.1</mul></skill>
+				<skill><duration>12</duration><mul>1.2</mul></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="尖叫">
+			<name>screaming_hero</name>
+			<cnName>尖叫</cnName>
+			<effectInfoArr />
+			
+			<cd>80</cd>
+			<changeText>技能冷却时间：[cd]秒{n}作用范围：[range]码{n}持续时间：[duration]秒</changeText>
+			
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget,mainAIHurtBuff</otherConditionArr>
+			<conditionRange>600</conditionRange>
+			<target>me,range,enemy</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>screaming_hero</effectType>
+			<value>1</value>
+			<mul>1.6</mul>
+			<range>400</range>
+			<duration>5</duration>
+			 
+			<meEffectImg soundUrl="sound/screaming_hero" partType="mouth" con="add">skillEffect/screaming_hero</meEffectImg>
+			<stateEffectImg partType="mouth" con="add">skillEffect/screaming_hero_target</stateEffectImg>
+			<description>对周围[range]码范围内的敌人造成惊吓，使受到惊吓的单位将完全失去攻击能力。持续[duration]秒。</description>
+			
+			<growth>
+				<skill><cd>80</cd><range>350</range><duration>5</duration></skill>
+				<skill><cd>80</cd><range>550</range><duration>5</duration></skill>
+				<skill><cd>70</cd><range>550</range><duration>6</duration></skill>
+				<skill><cd>70</cd><range>750</range><duration>7</duration></skill>
+				<skill><cd>60</cd><range>750</range><duration>8</duration></skill>
+				<skill><cd>60</cd><range>1000</range><duration>9</duration></skill>
+				<skill><cd>55</cd><range>1500</range><duration>10</duration></skill>
+				<skill><cd>53</cd><range>1500</range><duration>10</duration></skill>
+				<skill><cd>50</cd><range>1500</range><duration>10</duration></skill>
+				<skill><cd>50</cd><range>2000</range><duration>11</duration></skill>
+				
+			</growth>
+		</skill>
+		<skill index="0" name="反转术">
+			<name>groupReverseHurt_hero</name>
+			<cnName>反转术</cnName>
+			<effectInfoArr>回复生命值,增加防御力</effectInfoArr>
+			<isInvincibleB>1</isInvincibleB><isDefenceB>1</isDefenceB>
+			
+			<cd>90</cd>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>weLifePerLess,attackTargetNoSameInvi</otherConditionArr>
+			<conditionRange>0.6</conditionRange>
+			<target>me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>reverseHurt</effectType>
+			<value>1</value>
+			<duration>6</duration>
+			<range>700</range>
+			
+			<meEffectImg soundUrl="sound/reverseHurt_enemy" />
+			<stateEffectImg partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" imgDieType="last">skillEffect/reverseHurt_enemy</stateEffectImg>
+			<description>使[range]码范围内的友方单位进入电离反转状态，拥有该状态的单位所受到伤害都会转化为自己的生命值。持续6秒。</description>
+			
+			<growth>
+				<skill><cd>90</cd><range>400</range></skill>
+				<skill><cd>85</cd><range>480</range></skill>
+				<skill><cd>80</cd><range>560</range></skill>
+				<skill><cd>75</cd><range>640</range></skill>
+				<skill><cd>70</cd><range>720</range></skill>
+				<skill><cd>65</cd><range>800</range></skill>
+				<skill><cd>50</cd><range>880</range></skill>
+				<skill><cd>48</cd><range>920</range></skill>
+				<skill><cd>46</cd><range>950</range></skill>
+				<skill><cd>44</cd><range>1000</range></skill>
+				
+				<skill><cd>42</cd><range>1000</range></skill>
+				<skill><cd>41</cd><range>1300</range></skill>
+				<skill><cd>40</cd><range>1600</range></skill>
+				<skill><cd>38</cd><range>2000</range><changeText>技能冷却时间：[cd]秒{n}可在太空使用第5级</changeText></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="全域圣光">
+			<name>globalLight_hero</name>
+			<cnName>全域圣光</cnName>
+			<effectInfoArr>回复生命值</effectInfoArr>
+			
+			<cd>115</cd>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>weLifePerLess</otherConditionArr>
+			<conditionRange>0.7</conditionRange>
+			<target>me,range,we</target>
+			
+			<addType>instant</addType>
+			<effectType>life</effectType>
+			<mul>0.7</mul>
+			<range>9999</range>
+			 
+			<meEffectImg soundUrl="sound/globalLight_hero" />
+			<targetEffectImg con="add">skillEffect/groupLight_hero</targetEffectImg>
+			<description>单位技能释放后，回复所有友方单位70%的生命值。</description>
+			
+			<growth>
+				<skill><cd>63</cd></skill>
+				<skill><cd>58</cd></skill>
+				<skill><cd>54</cd></skill>
+				<skill><cd>49</cd></skill>
+				<skill><cd>45</cd></skill>
+				<skill><cd>42</cd></skill>
+				<skill><cd>38</cd></skill>
+				<skill><cd>35</cd></skill>
+				<skill><cd>32</cd></skill>
+				<skill><cd>29</cd></skill>
+				
+				<skill><cd>26</cd></skill>
+				<skill><cd>23</cd></skill>
+				<skill><cd>20</cd></skill>
+				<skill><cd>19</cd><changeText>技能冷却时间：[cd]秒{n}可在太空使用第5级</changeText></skill>
+				
+			</growth>
+		</skill>
+		<skill index="0" name="妖魅">
+			<name>coquettish_hero</name>
+			<cnName>妖魅</cnName>
+			
+			<cd>100</cd>
+			<changeText>技能冷却时间：[cd]秒{n}获得2个技能的概率：[mul]</changeText>
+			
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>charm_hero</otherConditionArr>
+			<target noVehicleB="1">mouse,near,enemy,normal_superNoDemon,normal</target>
+			
+			<addType>instant</addType>
+			<effectType>coquettish_hero</effectType>
+			<mul>0</mul>
+			<range>300</range>
+			 
+			<meEffectImg soundUrl="sound/coquettish_hero" />
+			<targetEffectImg>skillEffect/charm_hero</targetEffectImg>
+			<description>使距离鼠标点最近的敌方单位（非携枪的普通怪或者非修罗模式下的精英怪）加入我方阵营，被魅惑的单位回满生命值并随机获得1~2个全队身上的技能，获得2个技能的概率为[mul]。</description>
+			
+			<growth>
+				<skill>
+					<cd>100</cd><mul>0.2</mul>
+				</skill>
+				<skill>
+					<cd>92</cd><mul>0.35</mul>
+				</skill>
+				<skill>
+					<cd>84</cd><mul>0.5</mul>
+				</skill>
+				<skill>
+					<cd>76</cd><mul>0.65</mul>
+				</skill>
+				<skill>
+					<cd>68</cd><mul>0.8</mul>
+				</skill>
+				<skill>
+					<cd>62</cd><mul>0.9</mul>
+				</skill>
+				<skill>
+					<cd>56</cd><mul>1</mul>
+				</skill>
+				<skill>
+					<cd>54</cd><mul>1</mul>
+				</skill>
+				<skill>
+					<cd>52</cd><mul>1</mul>
+				</skill>
+				<skill>
+					<cd>50</cd><mul>1</mul>
+				</skill>
+				
+				<skill><cd>47</cd><mul>1</mul></skill>
+				<skill><cd>44</cd><mul>1</mul></skill>
+				<skill><cd>41</cd><mul>1</mul></skill>
+				<skill><cd>38</cd><mul>1</mul><changeText>技能冷却时间：[cd]秒{n}获得2个技能的概率：[mul]{n}可在太空使用第5级</changeText></skill>
+					
+				
+			</growth>
+		</skill>
+		<skill index="0" name="wisdomAnger_hero" cnName="智慧怒火">
+			<name>wisdomAnger_hero</name>
+			<cnName>智慧怒火</cnName>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			
+			<changeText>伤害比例[mul]{n}持续时间：[duration]秒</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>useSkill</condition>
+			<target>me,range,we</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>wisdomAnger_hero</effectType>
+			<mul>0.05</mul>
+			<duration>8</duration>
+			<range>700</range>
+			 
+			<passiveSkillArr>selfBurn_hero_link_1</passiveSkillArr>
+			
+			<meEffectImg soundUrl="sound/imploding_enemy" />
+			<stateEffectImg name="wisdomAnger_hero_state" />
+			<description>单位释放任何主动技能，都可以使周围[range]码内的友方单位燃起紫火，每0.1秒随机对附近300码内的1个敌人造成伤害，伤害值为当前武器面板战斗力的[mul]，持续[duration]秒。{font color='#00FF00'}升级至第14级后，无需装备技能也会有技能效果。{/font}</description>
+			
+			<growth>
+				<skill><mul>0.03</mul><passiveSkillArr>wisdomAnger_hero_link_1</passiveSkillArr></skill>
+				<skill><mul>0.05</mul><passiveSkillArr>wisdomAnger_hero_link_2</passiveSkillArr></skill>
+				<skill><mul>0.07</mul><passiveSkillArr>wisdomAnger_hero_link_3</passiveSkillArr></skill>
+				<skill><mul>0.09</mul><passiveSkillArr>wisdomAnger_hero_link_4</passiveSkillArr></skill>
+				<skill><mul>0.15</mul><passiveSkillArr>wisdomAnger_hero_link_5</passiveSkillArr></skill>
+				<skill><mul>0.2</mul><passiveSkillArr>wisdomAnger_hero_link_6</passiveSkillArr></skill>
+				<skill><mul>0.25</mul><passiveSkillArr>wisdomAnger_hero_link_7</passiveSkillArr></skill>
+				<skill><mul>0.3</mul><passiveSkillArr>wisdomAnger_hero_link_8</passiveSkillArr><duration>9</duration></skill>
+				<skill><mul>0.35</mul><passiveSkillArr>wisdomAnger_hero_link_9</passiveSkillArr><duration>10</duration></skill>
+				<skill><mul>0.4</mul><passiveSkillArr>wisdomAnger_hero_link_10</passiveSkillArr><duration>10</duration></skill>
+				
+				<skill><mul>0.5</mul><passiveSkillArr>wisdomAnger_hero_link_11</passiveSkillArr><duration>10</duration><range>900</range><changeText>伤害比例[mul]{n}周围[range]码的队友{n}效果不会被清除</changeText><noBeClearB>1</noBeClearB></skill>
+				<skill><mul>0.6</mul><passiveSkillArr>wisdomAnger_hero_link_12</passiveSkillArr><duration>10</duration><range>1200</range><changeText>伤害比例[mul]{n}周围[range]码的队友{n}无视技能免疫</changeText><noBeClearB>1</noBeClearB></skill>
+				<skill><mul>0.7</mul><passiveSkillArr>wisdomAnger_hero_link_13</passiveSkillArr><duration>10</duration><range>1500</range><changeText>伤害比例[mul]{n}周围[range]码的队友{n}无视封锁</changeText><ignoreNoSkillB>1</ignoreNoSkillB><noBeClearB>1</noBeClearB></skill>
+				<skill><mul>0.8</mul><passiveSkillArr>wisdomAnger_hero_link_14</passiveSkillArr><duration>10</duration><range>2000</range><changeText>伤害比例[mul]{n}周围[range]码的队友{n}技能效果无需装备</changeText><noNeedEquipB>1</noNeedEquipB><ignoreNoSkillB>1</ignoreNoSkillB><noBeClearB>1</noBeClearB></skill>
+			</growth>
+		</skill>
+		
+		<skill index="0" name="技能复制">
+			<name>skillCopy_hero</name>
+			<cnName>技能复制</cnName>
+			<effectInfoArr /><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<cd>50</cd>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>900</conditionRange>
+			<target>mouse,near,enemy</target>
+			
+			<addType>instant</addType>
+			<effectType>skillCopy_hero</effectType>
+			<range>300</range>
+			
+			<pointEffectImg name="skillCopyLine" />
+			<description>复制鼠标附近敌人（第10级开始可复制队友）的一个技能，无视技能免疫。不能复制分身、夺命箭、夺命魂、旋转电球等技能，不能复制带有指定动画的技能。</description>
+			
+			<growth>
+				<skill><cd>50</cd></skill>
+				<skill><cd>45</cd></skill>
+				<skill><cd>40</cd></skill>
+				<skill><cd>35</cd></skill>
+				<skill><cd>30</cd></skill>
+				<skill><cd>28</cd></skill>
+				<skill><cd>26</cd></skill>
+				<skill><cd>25</cd></skill>
+				<skill><cd>24</cd></skill>
+				<skill><cd>24</cd><target>mouse,near,all</target><changeText>可复制队友技能</changeText></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="尸化">
+			<name>changeToZombie_hero</name>
+			<cnName>尸化</cnName>
+			<effectInfoArr>增加伤害输出,增加防御力</effectInfoArr><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB>
+			<changeText>攻击速度提升[mul-1]{n}技能回复速度提升[secMul-1]</changeText>
+			
+			<cd>20</cd>
+			<firstCd>100</firstCd>
+			<delay>0.20</delay>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<doCondition>changeToZombie_hero</doCondition>
+			<conditionRange>0.2</conditionRange>
+			<target>me</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>changeToZombie_hero</effectType>
+			<value>2</value>
+			<mul>1.2</mul>
+			<secMul>1.1</secMul>
+			<range>20</range>
+			<duration>999999</duration>
+			 
+			<meActionLabel>changeAttack</meActionLabel>
+			<meEffectImg name="changeToZombie" />
+			<pointEffectImg name="madmanHead_target" />
+			<description>当生命值低于20%时，小美尸化成僵尸，攻击速度提升[mul-1]，防御力提升原来的[value]倍，技能回复速度提升[secMul-1]。生命值高于20%，且变身时间超过[range]秒时将恢复人类外观。</description>
+			
+			<growth>
+				<skill><mul>1.2</mul><secMul>1.1</secMul></skill>
+				<skill><mul>1.3</mul><secMul>1.1</secMul></skill>
+				<skill><mul>1.4</mul><secMul>1.1</secMul></skill>
+				<skill><mul>1.5</mul><secMul>1.1</secMul></skill>
+				<skill><mul>1.5</mul><secMul>1.2</secMul></skill>
+			</growth>
+		</skill>
+	</father>
+	
+		
+		
+		
+		
+	</data>

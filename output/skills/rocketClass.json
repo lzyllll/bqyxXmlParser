@@ -1,0 +1,807 @@
+{
+  "father": [
+    {
+      "type": "rocket",
+      "cnName": "火炮",
+      "bullet": [
+        {
+          "index": 0,
+          "name": "rocket1",
+          "cnName": "火箭筒",
+          "extraMul": 1.3,
+          "randomPro": 1,
+          "capacity": "6,8",
+          "attackGap": "0.8,1.3",
+          "reloadGap": "2,2.5",
+          "shakeAngle": "0,1",
+          "bulletWidth": 25,
+          "bulletShakeWidth": "0,0",
+          "bulletNum": 1,
+          "armsArmMul": 0.5,
+          "upValue": 5,
+          "shootShakeAngle": 30,
+          "shootRecoil": 12,
+          "screenShakeValue": 16,
+          "noShakeTime": 0.5,
+          "bulletLife": 2.5,
+          "hitType": "rect",
+          "dpsMul": 0.7,
+          "uiDpsMul": 1.06,
+          "bulletSpeed": 40,
+          "boomD": {
+            "bodyB": true,
+            "floorB": true,
+            "radius": 130
+          },
+          "flipX": 1,
+          "bulletImgUrl": {
+            "value": "rocket/rocketBullet",
+            "raNum": 30
+          },
+          "hitImgUrl": {
+            "value": "boomEffect/boom2",
+            "soundUrl": "boomSound/midBoom1",
+            "soundVolume": 0.3,
+            "shake": "3,0.4,13"
+          },
+          "hitFloorImgUrl": {
+            "value": "boomEffect/boom1",
+            "soundUrl": "boomSound/smallBoom",
+            "shake": "3,0.4,9",
+            "soundVolume": 0.5
+          },
+          "smokeImgUrl": {
+            "value": "bulletHitEffect/smoke_small",
+            "con": "filter",
+            "raNum": 30
+          },
+          "fireImgType": null,
+          "bodyImgRange": "rocket/body,rocket/body2",
+          "barrelImgRange": "rocket/barrel,rocket/barrel2",
+          "stockImgRange": "rocket/stock,rocket/stock2",
+          "gripImgRange": "sniper1/grip,pistol2/grip,pistol3/grip,sniper1/grip,sniper2/grip,sniper3/grip",
+          "bulletImgRange": "rocket/bullet",
+          "glassImgRange": "0,0,0,0,0,0,0,sniper1/glass,sniper1/glass2,sniper2/glass,sniper3/glass"
+        },
+        {
+          "index": 0,
+          "name": "ZombieShell_rocket",
+          "cnName": "僵尸炮筒",
+          "capacity": "6,8",
+          "attackGap": "1,1.3",
+          "reloadGap": 2,
+          "shakeAngle": "0,1",
+          "bulletWidth": "20,25",
+          "bulletShakeWidth": "0,0",
+          "bulletNum": "1,4",
+          "shootAngle": "3,10",
+          "armsArmMul": 0.5,
+          "upValue": 5,
+          "shootShakeAngle": 30,
+          "shootRecoil": 12,
+          "screenShakeValue": 35,
+          "noShakeTime": 0.5,
+          "bulletLife": 2.2,
+          "hitType": "rect",
+          "dpsMul": 1,
+          "bulletSpeed": 35,
+          "boomD": {
+            "bodyB": true,
+            "floorB": true,
+            "radius": 80
+          },
+          "flipX": 1,
+          "bulletImgUrl": {
+            "value": "rocket/rocketBullet",
+            "raNum": 30
+          },
+          "hitImgUrl": {
+            "value": "boomEffect/boom2",
+            "soundUrl": "boomSound/midBoom1",
+            "soundVolume": 0.3,
+            "shake": "3,0.3,15"
+          },
+          "smokeImgUrl": {
+            "value": "bulletHitEffect/smoke_small",
+            "con": "filter",
+            "raNum": 30
+          },
+          "fireImgType": null,
+          "bodyImgRange": "rocket/body,rocket/body2",
+          "barrelImgRange": "rocket/barrel,rocket/barrel2",
+          "stockImgRange": "rocket/stock,rocket/stock2",
+          "gripImgRange": "sniper1/grip,pistol2/grip,pistol3/grip,sniper1/grip,sniper2/grip,sniper3/grip",
+          "bulletImgRange": "rocket/bullet",
+          "glassImgRange": "0,0,0,0,0,0,0,sniper1/glass,sniper1/glass2,sniper2/glass,sniper3/glass"
+        },
+        {
+          "index": 0,
+          "name": "ZombieRiotl_rocket",
+          "cnName": "防暴双炮",
+          "capacity": "6,8",
+          "attackGap": "0.5,0.6",
+          "reloadGap": 2,
+          "shakeAngle": "0,1",
+          "bulletWidth": "20,25",
+          "bulletShakeWidth": "0,0",
+          "bulletNum": "1,4",
+          "shootAngle": "3,10",
+          "gunNum": 2,
+          "armsArmMul": 0.5,
+          "upValue": 5,
+          "shootShakeAngle": 30,
+          "shootRecoil": 12,
+          "screenShakeValue": 35,
+          "noShakeTime": 0.5,
+          "bulletLife": 2.2,
+          "hitType": "rect",
+          "dpsMul": 1,
+          "bulletSpeed": 35,
+          "boomD": {
+            "bodyB": true,
+            "floorB": true,
+            "radius": 80
+          },
+          "flipX": 1,
+          "bulletImgUrl": {
+            "value": "rocket/rocketBullet",
+            "raNum": 30
+          },
+          "hitImgUrl": {
+            "value": "boomEffect/boom2",
+            "soundUrl": "boomSound/midBoom1",
+            "soundVolume": 0.3,
+            "shake": "3,0.3,15"
+          },
+          "smokeImgUrl": {
+            "value": "bulletHitEffect/smoke_small",
+            "con": "filter",
+            "raNum": 30
+          },
+          "fireImgType": null,
+          "bodyImgRange": "rocket/body,rocket/body2",
+          "barrelImgRange": "rocket/barrel,rocket/barrel2",
+          "stockImgRange": "rocket/stock,rocket/stock2",
+          "gripImgRange": "sniper1/grip,pistol2/grip,pistol3/grip,sniper1/grip,sniper2/grip,sniper3/grip",
+          "bulletImgRange": "rocket/bullet",
+          "glassImgRange": "0,0,0,0,0,0,0,sniper1/glass,sniper1/glass2,sniper2/glass,sniper3/glass"
+        },
+        {
+          "index": 0,
+          "name": "ZombieBoomKing_rocket",
+          "cnName": "僵尸王炮",
+          "capacity": "6,8",
+          "attackGap": "1,1.3",
+          "reloadGap": 2,
+          "shakeAngle": "0,1",
+          "bulletWidth": "20,25",
+          "bulletShakeWidth": "0,0",
+          "bulletNum": 1,
+          "shootAngle": "3,10",
+          "shootNum": 3,
+          "shootGap": 0.1,
+          "armsArmMul": 0.5,
+          "upValue": 5,
+          "shootShakeAngle": 30,
+          "shootRecoil": 12,
+          "screenShakeValue": 35,
+          "noShakeTime": 0.5,
+          "bulletLife": 2.2,
+          "hitType": "rect",
+          "dpsMul": 1,
+          "bulletSpeed": 35,
+          "boomD": {
+            "bodyB": true,
+            "floorB": true,
+            "radius": 80
+          },
+          "flipX": 1,
+          "bulletImgUrl": {
+            "value": "rocket/rocketBullet",
+            "raNum": 30
+          },
+          "hitImgUrl": {
+            "value": "boomEffect/boom2",
+            "soundUrl": "boomSound/midBoom1",
+            "soundVolume": 0.3,
+            "shake": "3,0.3,15"
+          },
+          "smokeImgUrl": {
+            "value": "bulletHitEffect/smoke_small",
+            "con": "filter",
+            "raNum": 30
+          },
+          "fireImgType": null,
+          "bodyImgRange": "rocket/body,rocket/body2",
+          "barrelImgRange": "rocket/barrel,rocket/barrel2",
+          "stockImgRange": "rocket/stock,rocket/stock2",
+          "gripImgRange": "sniper1/grip,pistol2/grip,pistol3/grip,sniper1/grip,sniper2/grip,sniper3/grip",
+          "bulletImgRange": "rocket/bullet",
+          "glassImgRange": "0,0,0,0,0,0,0,sniper1/glass,sniper1/glass2,sniper2/glass,sniper3/glass"
+        },
+        {
+          "index": 0,
+          "name": "ArthurRocket180",
+          "cnName": "超散火炮",
+          "capacity": 50,
+          "attackGap": 0.5,
+          "reloadGap": 2,
+          "shakeAngle": "0,1",
+          "bulletWidth": 25,
+          "bulletShakeWidth": "0,0",
+          "bulletNum": 30,
+          "shootAngle": 90,
+          "armsArmMul": 0.5,
+          "upValue": 5,
+          "shootShakeAngle": 30,
+          "shootRecoil": 12,
+          "screenShakeValue": 35,
+          "noShakeTime": 0.5,
+          "bulletLife": 2.2,
+          "hitType": "rect",
+          "dpsMul": 3,
+          "bulletSpeed": 35,
+          "flipX": 1,
+          "bulletImgUrl": {
+            "value": "rocket/rocketBullet",
+            "raNum": 30
+          },
+          "hitImgUrl": {
+            "value": "boomEffect/boom1",
+            "shake": "3,0.3,15"
+          },
+          "smokeImgUrl": {
+            "value": "bulletHitEffect/smoke_small",
+            "con": "filter",
+            "raNum": 30
+          },
+          "fireImgType": null,
+          "bodyImgRange": "rocket/body",
+          "barrelImgRange": "rocket/barrel",
+          "stockImgRange": "rocket/stock",
+          "gripImgRange": "sniper1/grip",
+          "bulletImgRange": "rocket/bullet",
+          "glassImgRange": "sniper3/glass",
+          "textureImgRange": "texture/t17"
+        },
+        {
+          "index": 0,
+          "name": "old_rocket",
+          "cnName": "古老火炮",
+          "capacity": "100,100",
+          "attackGap": "1,1",
+          "reloadGap": "2,2.5",
+          "shakeAngle": "0,0",
+          "bulletWidth": "15,15",
+          "bulletShakeWidth": "0,0",
+          "bulletNum": 1,
+          "armsArmMul": 0.5,
+          "upValue": 5,
+          "shootShakeAngle": 30,
+          "shootRecoil": 10,
+          "screenShakeValue": 15,
+          "noShakeTime": 0.5,
+          "bulletLife": 2.5,
+          "hitType": "rect",
+          "dpsMul": 0.3,
+          "bulletSpeed": 25,
+          "gravity": 1.5,
+          "flipX": 1,
+          "bulletImgUrl": {
+            "value": "rocket/rocketBullet",
+            "raNum": 30
+          },
+          "hitImgUrl": {
+            "value": "boomEffect/boom2",
+            "soundUrl": "boomSound/midBoom1",
+            "shake": "3,0.4,15"
+          },
+          "smokeImgUrl": {
+            "value": "bulletHitEffect/smoke_small",
+            "con": "filter",
+            "raNum": 30
+          },
+          "fireImgType": null,
+          "bodyImgRange": "rocket/body",
+          "barrelImgRange": "rocket/barrel",
+          "stockImgRange": "rocket/stock",
+          "gripImgRange": "sniper3/grip",
+          "bulletImgRange": "rocket/bullet",
+          "glassImgRange": 0
+        },
+        {
+          "index": 0,
+          "name": "old_rocket22",
+          "cnName": "古怪火炮",
+          "capacity": "500,500",
+          "attackGap": "0.5,0.5",
+          "reloadGap": "2,2.5",
+          "shakeAngle": "0,0",
+          "bulletWidth": "15,15",
+          "bulletShakeWidth": "0,0",
+          "bulletNum": 1,
+          "armsArmMul": 0.5,
+          "upValue": 5,
+          "shootShakeAngle": 30,
+          "shootRecoil": 10,
+          "screenShakeValue": 15,
+          "noShakeTime": 0.5,
+          "bulletLife": 2.5,
+          "hitType": "rect",
+          "dpsMul": 0.3,
+          "bulletSpeed": 35,
+          "flipX": 1,
+          "bulletImgUrl": {
+            "value": "rocket/rocketBullet",
+            "raNum": 30
+          },
+          "hitImgUrl": {
+            "value": "boomEffect/boom2",
+            "soundUrl": "boomSound/midBoom1",
+            "shake": "3,0.4,15"
+          },
+          "smokeImgUrl": {
+            "value": "bulletHitEffect/smoke_small",
+            "con": "filter",
+            "raNum": 30
+          },
+          "fireImgType": null,
+          "bodyImgRange": "rocket/body",
+          "barrelImgRange": "rocket/barrel",
+          "stockImgRange": "rocket/stock",
+          "gripImgRange": "sniper3/grip",
+          "bulletImgRange": "rocket/bullet",
+          "glassImgRange": 0
+        },
+        {
+          "index": 0,
+          "name": "rocket_fight",
+          "cnName": "狂战戟",
+          "aiShootRange": 600,
+          "capacity": "16,18",
+          "attackGap": 1.2,
+          "reloadGap": "2,2.5",
+          "shakeAngle": "0,1",
+          "bulletWidth": 35,
+          "bulletShakeWidth": "0,0",
+          "bulletNum": "3,3",
+          "shootAngle": 3,
+          "armsArmMul": 0.5,
+          "upValue": 20,
+          "shootShakeAngle": 20,
+          "shootRecoil": 20,
+          "screenShakeValue": 16,
+          "noShakeTime": 0.5,
+          "bulletLife": 2.5,
+          "hitType": "rect",
+          "bulletSpeed": 15,
+          "flipX": 1,
+          "bulletImgUrl": {
+            "value": "FightShooter/bullet",
+            "con": "add",
+            "raNum": 30
+          },
+          "hitImgUrl": {
+            "value": "bulletHitEffect/energy",
+            "soundUrl": "FightShooter/armsHit",
+            "shake": "3,0.4,5"
+          },
+          "smokeImgUrl": {
+            "value": "FightShooter/bullet",
+            "con": "filter",
+            "raNum": 30
+          },
+          "fireImgType": null,
+          "bodyImgRange": "specialGun/fightShooterGun"
+        },
+        {
+          "index": 0,
+          "name": "XiaoMei_pistol",
+          "cnName": "小美手枪",
+          "dpsMul": 3,
+          "capacity": "16,18",
+          "attackGap": 0.35,
+          "reloadGap": "1.5,2.5",
+          "shakeAngle": "0,1",
+          "bulletWidth": 35,
+          "bulletShakeWidth": "0,50",
+          "bulletNum": 1,
+          "shootAngle": 0,
+          "targetShakeValue": 10,
+          "hurtRatio": 5,
+          "gunNum": 1,
+          "armsArmMul": 1.05,
+          "armsWeight": 5,
+          "upValue": 0,
+          "shootShakeAngle": 45,
+          "shootRecoil": 4,
+          "screenShakeValue": 8,
+          "noShakeTime": 0.5,
+          "bulletLife": 2.5,
+          "hitType": "rect",
+          "attackDelay": 0,
+          "shootNum": 1,
+          "bulletSpeed": 35,
+          "bounceD": {
+            "floor": 2,
+            "body": 1,
+            "num": 0
+          },
+          "flipX": 1,
+          "bulletImgUrl": {
+            "value": "bullet/missile_bullet",
+            "raNum": 30
+          },
+          "hitImgUrl": {
+            "value": "boomEffect/boom1",
+            "soundUrl": "boomSound/microBoom2"
+          },
+          "smokeImgUrl": {
+            "value": "bulletHitEffect/smoke_small",
+            "con": "filter",
+            "raNum": 30
+          },
+          "allImgPartArr": "body,barrel,grip",
+          "allImgRange": "pistol2",
+          "bulletImgRange": "pistol2/bullet",
+          "gripImgRange": "pistol3/grip,m4/grip,ak/grip,sniper1/grip,sniper2/grip,sniper3/grip"
+        },
+        {
+          "index": 0,
+          "name": "XiaoMei_rocket",
+          "cnName": "小美火炮",
+          "dpsMul": 2.5,
+          "aiShootRange": 600,
+          "capacity": "6,8",
+          "attackGap": 1.5,
+          "reloadGap": 2,
+          "shakeAngle": "0,1",
+          "bulletWidth": "20,25",
+          "bulletShakeWidth": "0,0",
+          "bulletNum": 1,
+          "shootAngle": "3,10",
+          "shootNum": 3,
+          "shootGap": 0.1,
+          "armsArmMul": 0.5,
+          "upValue": 5,
+          "shootShakeAngle": 30,
+          "shootRecoil": 12,
+          "screenShakeValue": 35,
+          "noShakeTime": 0.5,
+          "bulletLife": 7,
+          "hitType": "rect",
+          "penetrationGap": 1000,
+          "bulletSpeed": 2,
+          "speedD": {
+            "random": 0.8,
+            "max": 4,
+            "min": 2,
+            "a": 2
+          },
+          "followD": {
+            "value": 0.3
+          },
+          "boomD": {
+            "bodyB": true,
+            "floorB": true,
+            "radius": 80
+          },
+          "flipX": 1,
+          "bulletImgUrl": {
+            "value": "rocket/rocketBullet",
+            "raNum": 30
+          },
+          "hitImgUrl": {
+            "value": "boomEffect/boom2",
+            "soundUrl": "boomSound/midBoom1",
+            "soundVolume": 0.3,
+            "shake": "3,0.3,15"
+          },
+          "smokeImgUrl": {
+            "value": "bulletHitEffect/smoke_small",
+            "con": "filter",
+            "raNum": 30
+          },
+          "fireImgType": null,
+          "bodyImgRange": "rocket/body,rocket/body2",
+          "barrelImgRange": "rocket/barrel,rocket/barrel2",
+          "stockImgRange": "rocket/stock,rocket/stock2",
+          "gripImgRange": "sniper1/grip,pistol2/grip,pistol3/grip,sniper1/grip,sniper2/grip,sniper3/grip",
+          "bulletImgRange": "rocket/bullet",
+          "glassImgRange": "0,0,0,0,0,0,0,sniper1/glass,sniper1/glass2,sniper2/glass,sniper3/glass"
+        },
+        {
+          "index": 21,
+          "cnName": "轰锤",
+          "name": "rocketHummer",
+          "capacity": "6,8",
+          "attackGap": 0.7,
+          "reloadGap": 2.5,
+          "shakeAngle": 0,
+          "bulletWidth": 25,
+          "bulletShakeWidth": "0,0",
+          "bulletNum": 1,
+          "gunNum": 2,
+          "armsArmMul": 0.65,
+          "upValue": 5,
+          "shootShakeAngle": 30,
+          "shootRecoil": 12,
+          "screenShakeValue": 16,
+          "noShakeTime": 0.5,
+          "bulletLife": 2.5,
+          "hitType": "rect",
+          "dpsMul": 0.7,
+          "bulletSpeed": 40,
+          "boomD": {
+            "bodyB": true,
+            "floorB": true,
+            "radius": 130
+          },
+          "twoShootPro": 0.3,
+          "penetrationNum": 2,
+          "penetrationGap": 0,
+          "bounceD": {
+            "floor": 0,
+            "body": 3
+          },
+          "critD": {
+            "mul": 2,
+            "pro": 0.2
+          },
+          "skillArr": "Hit_blindness_ArmsSkill,Hit_disabled_ArmsSkill",
+          "godSkillArr": "Hit_imploding_godArmsSkill,Hit_Hammer_godArmsSkill",
+          "iconUrl": "specialGun/rocketHummerIcon",
+          "flipX": 1,
+          "bulletImgUrl": {
+            "value": "rocket/rocketBullet",
+            "raNum": 30
+          },
+          "hitImgUrl": {
+            "value": "boomEffect/boom2",
+            "soundUrl": "boomSound/midBoom1",
+            "soundVolume": 0.3,
+            "shake": "3,0.4,13"
+          },
+          "hitFloorImgUrl": {
+            "value": "boomEffect/boom1",
+            "soundUrl": "boomSound/smallBoom",
+            "shake": "3,0.4,9",
+            "soundVolume": 0.5
+          },
+          "smokeImgUrl": {
+            "value": "bulletHitEffect/smoke_small",
+            "con": "filter",
+            "raNum": 30
+          },
+          "fireImgType": null,
+          "shootSoundUrl": "specialGun/rocketHummer_sound",
+          "bodyImgRange": "specialGun/rocketHummer",
+          "bulletImgRange": "specialGun/bullet"
+        },
+        {
+          "index": 20,
+          "cnName": "苍弩",
+          "name": "rocketSky",
+          "color": "red",
+          "rareDropLevel": 60,
+          "capacity": "5,7",
+          "attackGap": "0.7,1.1",
+          "reloadGap": "2.5,4",
+          "shakeAngle": 0,
+          "bulletWidth": 25,
+          "bulletShakeWidth": "0,0",
+          "bulletNum": 1,
+          "gunNum": 1,
+          "armsArmMul": 0.65,
+          "upValue": 5,
+          "shootShakeAngle": 30,
+          "shootRecoil": 12,
+          "screenShakeValue": 16,
+          "noShakeTime": 0.5,
+          "bulletLife": 2.5,
+          "hitType": "rect",
+          "dpsMul": 1.1,
+          "bulletSpeed": 40,
+          "boomD": {
+            "bodyB": true,
+            "floorB": true,
+            "radius": 130
+          },
+          "twoShootPro": 0.3,
+          "penetrationNum": 2,
+          "penetrationGap": 0,
+          "bounceD": {
+            "floor": 0,
+            "body": 3
+          },
+          "critD": {
+            "mul": 2,
+            "pro": 0.2
+          },
+          "skillArr": "Hit_blindness_ArmsSkill,Hit_disabled_ArmsSkill",
+          "godSkillArr": "Hit_imploding_godArmsSkill,Hit_Hammer_godArmsSkill",
+          "iconUrl": null,
+          "flipX": 1,
+          "bulletImgUrl": {
+            "value": "rocket/rocketBullet",
+            "raNum": 30
+          },
+          "hitImgUrl": {
+            "value": "boomEffect/boom2",
+            "soundUrl": "boomSound/midBoom1",
+            "soundVolume": 0.3,
+            "shake": "3,0.4,13"
+          },
+          "hitFloorImgUrl": {
+            "value": "boomEffect/boom1",
+            "soundUrl": "boomSound/smallBoom",
+            "shake": "3,0.4,9",
+            "soundVolume": 0.5
+          },
+          "smokeImgUrl": {
+            "value": "bulletHitEffect/smoke_small",
+            "con": "filter",
+            "raNum": 30
+          },
+          "fireImgType": null,
+          "shootSoundUrl": "specialGun/rocketHummer_sound",
+          "bodyImgRange": "specialGun/rocketSky",
+          "bulletImgRange": "specialGun/bullet",
+          "description": "60级以上关卡和每周任务(武器-处决)"
+        },
+        {
+          "index": 32,
+          "cnName": "熔炉",
+          "name": "rocketMammoth",
+          "color": "black",
+          "composeLv": 86,
+          "chipB": true,
+          "chipNum": 40,
+          "composeMax": 2,
+          "dropLevelArr": 999,
+          "capacity": "5,7",
+          "attackGap": "0.7,1.1",
+          "reloadGap": "2.5,4",
+          "shakeAngle": 0,
+          "bulletWidth": 25,
+          "bulletShakeWidth": "0,0",
+          "aiShootRange": 700,
+          "bulletNum": 1,
+          "gunNum": 1,
+          "bulletSkillArr": "rocketMammothDieEvent",
+          "armsArmMul": 0.65,
+          "upValue": 5,
+          "shootShakeAngle": 30,
+          "shootRecoil": 12,
+          "screenShakeValue": 16,
+          "noShakeTime": 0.5,
+          "bulletLife": 0.4,
+          "hitType": "rect",
+          "dpsMul": 1.3,
+          "bulletSpeed": 30,
+          "boomD": {
+            "bodyB": true,
+            "floorB": true,
+            "selfB": true,
+            "radius": 130
+          },
+          "twoShootPro": 0.3,
+          "penetrationNum": 2,
+          "penetrationGap": 0,
+          "bounceD": {
+            "floor": 0,
+            "body": 3
+          },
+          "critD": {
+            "mul": 2,
+            "pro": 0.2
+          },
+          "skillArr": "Hit_blindness_ArmsSkill,Hit_disabled_ArmsSkill",
+          "godSkillArr": "Hit_imploding_godArmsSkill,lash_ArmsSkill",
+          "iconUrl": null,
+          "flipX": 1,
+          "bulletImgUrl": {
+            "value": "bullet/gaiaBullet",
+            "raNum": 30
+          },
+          "hitImgUrl": {
+            "value": "boomEffect/boom2",
+            "soundUrl": "boomSound/midBoom1",
+            "soundVolume": 0.3,
+            "shake": "3,0.4,13"
+          },
+          "hitFloorImgUrl": {
+            "value": "boomEffect/boom1",
+            "soundUrl": "boomSound/smallBoom",
+            "shake": "3,0.4,9",
+            "soundVolume": 0.5
+          },
+          "smokeImgUrl": {
+            "value": "bulletHitEffect/smoke_small",
+            "con": "filter",
+            "raNum": 30
+          },
+          "fireImgType": null,
+          "shootSoundUrl": "specialGun/rocketHummer_sound",
+          "bodyImgRange": "specialGun/rocketMammoth",
+          "bulletImgRange": "specialGun/bullet",
+          "description": "由秘境枯荣镇所有掉落物品合成"
+        }
+      ]
+    },
+    {
+      "type": "rocket",
+      "cnName": "火炮-特殊",
+      "bullet": {
+        "index": 34,
+        "cnName": "圣诞礼炮",
+        "color": "red",
+        "rareDropLevel": 999,
+        "chipB": true,
+        "chipNum": 130,
+        "evoMaxLv": 2,
+        "name": "christmasGun",
+        "capacity": 12,
+        "attackGap": 1,
+        "reloadGap": 1,
+        "shakeAngle": 3,
+        "aiShootRange": 600,
+        "bulletWidth": 50,
+        "bulletShakeWidth": "0,0",
+        "bulletNum": 5,
+        "shootAngle": 15,
+        "gunNum": 1,
+        "armsArmMul": 0.65,
+        "upValue": 5,
+        "shootShakeAngle": 30,
+        "shootRecoil": 12,
+        "screenShakeValue": 16,
+        "noShakeTime": 0.5,
+        "bulletLife": 30,
+        "hitType": "rect",
+        "dpsMul": 0.8,
+        "bulletSpeed": 20,
+        "speedD": {
+          "random": 0.3,
+          "selfVra": 0.2
+        },
+        "gravity": 0.4,
+        "boomD": {
+          "bodyB": true,
+          "selfB": true,
+          "radius": 130
+        },
+        "twoShootPro": 0.3,
+        "bounceD": {
+          "glueFloorB": true
+        },
+        "critD": {
+          "mul": 2,
+          "pro": 0.2
+        },
+        "skillArr": "Hit_SlowMove_ArmsSkill,Hit_disabled_ArmsSkill",
+        "godSkillArr": "Hit_crazy_godArmsSkill,viscous_ArmsSkill",
+        "iconUrl": "specialGun/christmasGunIcon",
+        "flipX": 1,
+        "bulletImgUrl": {
+          "value": "specialGun/christmasGunBullet",
+          "raNum": 30,
+          "urlRandomValue": 3
+        },
+        "hitImgUrl": {
+          "value": "specialGun/christmasGunBoom",
+          "soundUrl": "specialGun/christmasGunHit"
+        },
+        "hitFloorImgUrl": "no",
+        "fireImgUrl": {
+          "value": "specialGun/christmasGunFire",
+          "raNum": 15
+        },
+        "shootSoundUrl": "specialGun/christmasGunShoot",
+        "bodyImgRange": "specialGun/christmasGun",
+        "bulletImgRange": "specialGun/bullet",
+        "description": "远古宝箱"
+      }
+    }
+  ]
+}

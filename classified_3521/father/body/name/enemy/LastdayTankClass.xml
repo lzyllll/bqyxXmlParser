@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<body name="末日坦克" shell="metal">
+			<name>LastdayTank</name><showLevel>999</showLevel>
+			<cnName>末日坦克</cnName><editD raIfNoMapB="1" />
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/LastdayTank.swf</swfUrl>
+			<otherUnitCnNameArr>末日坦克部件</otherUnitCnNameArr>
+			
+			<lifeRatio>1</lifeRatio>
+			<rosRatio>1</rosRatio>
+			<headHurtMul>0.5</headHurtMul>
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move,die1
+				,big3Attack,bigAttack,missleAttack,vikingAttack
+			</imgArr>
+			<lifeBarExtraHeight>-40</lifeBarExtraHeight>
+			
+			<hitRect>-30,-88,60,88</hitRect>
+			
+			<motionD F_G="0.6" jumpDelayT="0.2" F_I="0.2" F_F="0.9" moveWhenVB="1" />
+			<maxVx>10</maxVx>
+			<maxJumpNum>0</maxJumpNum>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>LastdayTank_AIExtra</extraAIClassLabel>
+			
+			<bossSkillArr>LastdayAttackDefend,LastdayHit,LastdayAir,LastdaySpellImmunity,BallLightningHurt,ruleRangeIron,rigidBody_enemy,noSpeedReduce</bossSkillArr>
+			<preBulletArr>LastdayBigChild</preBulletArr>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>stand</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<attackType>holy</attackType>
+					<shakeValue>10</shakeValue><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit1">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<attackType>holy</attackType>
+					<shakeValue>10</shakeValue><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit1">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt cd="1.35" info="不加入ai选择">
+					<imgLabel>bigAttack</imgLabel>
+					<bulletLabel>LastdayBig</bulletLabel>
+					<grapRect>-776,-500,766,500</grapRect>
+					<hurtRatio>3</hurtRatio>
+					<attackType>holy</attackType>
+				</hurt>
+				<hurt cd="1.7" info="不加入ai选择">
+					<imgLabel>missleAttack</imgLabel>
+					<bulletLabel>LastdayMissle</bulletLabel>
+					<grapRect>-776,-500,766,500</grapRect>
+					<hurtRatio>3</hurtRatio>
+					<attackType>holy</attackType>
+				</hurt>
+				<hurt cd="1" info="不加入ai选择">
+					<imgLabel>vikingAttack</imgLabel>
+					<bulletLabel>LastdayViking</bulletLabel>
+					<grapRect>-776,-500,766,500</grapRect>
+					<hurtRatio>0.6</hurtRatio>
+					<attackType>holy</attackType>
+				</hurt>
+				<hurt cd="1.5" info="不加入ai选择">
+					<imgLabel>big3Attack</imgLabel>
+					<bulletLabel>LastdayBig3</bulletLabel>
+					<grapRect>-776,-500,766,500</grapRect>
+					<hurtMul>0.5</hurtMul>
+					<attackType>holy</attackType>
+				</hurt>
+			</hurtArr>
+		</body>
+					
+	</father>
+	</data>

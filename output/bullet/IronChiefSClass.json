@@ -1,0 +1,233 @@
+{
+  "father": {
+    "name": "enemy",
+    "bullet": {
+      "IronChiefS": {
+        "index": 0,
+        "name": "IronChiefS",
+        "shell": "compound",
+        "cnName": "冥王",
+        "raceType": "robot",
+        "swfUrl": "swf/enemy/IronChiefS.swf",
+        "headIconUrl": "IconGather/PetIronChiefS",
+        "showLevel": 999,
+        "dieImg": {
+          "value": "boomEffect/boom3",
+          "soundUrl": "sound/pointBoom_hero",
+          "shake": "3,0.4,30"
+        },
+        "dieJumpMul": 0,
+        "imgType": "normal",
+        "imgArr": "stand,move,hurt1,die1\n\t\t\t\t,normalAttack,clearAttack,sprintAttack,rainAttack",
+        "hitRect": "-18,-86,36,86",
+        "maxVx": 9,
+        "maxJumpNum": 1,
+        "motionState": "fly",
+        "flyType": "tween",
+        "nextAttackTime": 0,
+        "skillArr": null,
+        "bossSkillArr": "ruleRangeIron,vertigoArmorIron,clearAttackIron,rainAttackIron",
+        "bossSkillArrCn": null,
+        "extraAIClassLabel": "IronChiefS_AIExtra",
+        "hurtArr": {
+          "hurt": [
+            {
+              "imgLabel": "normalAttack",
+              "hurtRatio": 2,
+              "attackType": "holy",
+              "skillArr": "hammerIron",
+              "shakeValue": 4,
+              "hitImgUrl": "bulletHitEffect/fitHit"
+            },
+            {
+              "info": "冲刺",
+              "cd": 6,
+              "imgLabel": "sprintAttack",
+              "grapRect": "-660,-82,600,132",
+              "hurtRatio": 1e-09,
+              "oneHurtB": 1,
+              "hurtMul": 0.4,
+              "shakeValue": 4,
+              "hitImgUrl": "bulletHitEffect/fitHit"
+            },
+            {
+              "info": "卸甲",
+              "imgLabel": "clearAttack",
+              "noAiChooseB": 1,
+              "hurtRatio": 10,
+              "attackType": "holy",
+              "noShootB": 1,
+              "grapRect": "-400,-111,100,150"
+            },
+            {
+              "info": "暴雨审判",
+              "imgLabel": "rainAttack",
+              "noAiChooseB": 1,
+              "noShootB": 1,
+              "grapRect": "-400,-111,100,150"
+            }
+          ]
+        },
+        "armsType": null
+      },
+      "rainBulletIron": {
+        "name": "rainBulletIron",
+        "cnName": "冥王暴雨",
+        "bulletSkillArr": "rainBulletIron",
+        "attackType": "holy",
+        "hurtRatio": 0,
+        "hurtMul": 0.1,
+        "bulletAngle": 90,
+        "bulletLife": 10,
+        "bulletWidth": 200,
+        "hitType": "longLine",
+        "shootPoint": "0,-10000",
+        "shootNum": 20,
+        "shootGap": 0.5,
+        "penetrationGap": 0,
+        "noMagneticB": 1,
+        "noBeClearB": 1,
+        "skillArr": "rainBulletHitIron",
+        "bulletSpeed": 10,
+        "flipX": 1,
+        "bulletImgUrl": "IronChiefS/bullet",
+        "hitImgUrl": "boomEffect/boom2",
+        "armsType": null
+      },
+      "clearAttackIron": {
+        "cnName": "缴械",
+        "name": "clearAttackIron",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "cd": 5,
+        "delay": 0.52,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "nearAttackTarget",
+        "conditionRange": 1400,
+        "target": {
+          "value": "me,range,enemy",
+          "systemType": "hero"
+        },
+        "addType": "instant",
+        "effectType": "clearAttackIron",
+        "valueString": "shotgun",
+        "range": 1500,
+        "meActionLabel": "clearAttack",
+        "pointEffectImg": {
+          "value": "generalEffect/lineLightning",
+          "raNum": 30,
+          "con": "filter",
+          "len": 50,
+          "time": 0.1,
+          "waveAn": 45,
+          "everFleshB": true,
+          "imgDieType": "ranStop",
+          "soundUrl": "IronChiefS/clear1"
+        },
+        "description": "清空敌人身上散弹的弹药，清空的弹药越多，敌人受到伤害就越高！",
+        "armsType": null
+      },
+      "hammerIron": {
+        "name": "hammerIron",
+        "cnName": "击晕",
+        "showInLifeBarB": 1,
+        "noBeClearB": null,
+        "ignoreNoSkillB": 1,
+        "noSkillDodgeB": 1,
+        "conditionType": "passive",
+        "condition": "hit",
+        "target": "target",
+        "addType": "instantAndState",
+        "effectType": "dizziness",
+        "effectProArr": 0.33,
+        "duration": 2,
+        "stateEffectImg": {
+          "value": "skillEffect/dizziness",
+          "partType": "mouth",
+          "con": "add"
+        },
+        "description": "有[effectProArr.0]的几率击晕目标，持续[duration]秒。",
+        "armsType": null
+      },
+      "ruleRangeIron": {
+        "name": "ruleRangeIron",
+        "cnName": "统治圈",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "conditionType": "passive",
+        "condition": "interval",
+        "intervalT": 0.1,
+        "target": "me",
+        "addType": "instant",
+        "effectType": "clearEnemyFollowBullet",
+        "range": 300,
+        "description": "快速清除[range]码内敌人发射的卡特子弹。",
+        "armsType": null
+      },
+      "vertigoArmorIron": {
+        "name": "vertigoArmorIron",
+        "cnName": "眩晕护甲",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "ignoreNoSkillB": 1,
+        "noSkillDodgeB": 1,
+        "noBeClearB": 1,
+        "conditionType": "passive",
+        "condition": "add",
+        "target": "me",
+        "addType": "state",
+        "effectType": "vertigoArmorIron",
+        "mul": 0.1,
+        "duration": 9999999,
+        "stateEffectImg": {
+          "value": "skillEffect/rune_blue_shield",
+          "partType": "body",
+          "con": "add"
+        },
+        "description": "被眩晕时受到伤害降低[1-mul]。",
+        "armsType": null
+      },
+      "rainAttackIron": {
+        "name": "rainAttackIron",
+        "cnName": "暴雨审判",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "cd": 17,
+        "delay": 1,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "target": "me",
+        "addType": "instant",
+        "effectType": "bullet",
+        "obj": "\"name\":\"rainBulletIron\",\"site\":\"mouse\",\"flipB\":true,\"launcherB\":true",
+        "meActionLabel": "rainAttack",
+        "description": "冥王使天空下起锥仗雨，击中敌人后使其武器射速下降80%，持续9秒，不可净化。",
+        "armsType": null
+      },
+      "rainBulletHitIron": {
+        "name": "rainBulletHitIron",
+        "cnName": "腐蚀",
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "ignoreNoSkillB": 1,
+        "noBeClearB": 1,
+        "conditionType": "passive",
+        "condition": "hit",
+        "target": "target",
+        "addType": "state",
+        "effectType": "attackGapMul",
+        "mul": 0.2,
+        "duration": 9,
+        "stateEffectImg": {
+          "value": "bulletHitEffect/smoke_black",
+          "partType": "shootPoint,hand_left,hand_right",
+          "raNum": 25,
+          "followPartRaB": true
+        },
+        "description": "击中目标后腐蚀对方手上的枪支，降低枪支[1-mul]的射击速度，持续[duration]秒。",
+        "armsType": null
+      }
+    }
+  }
+}

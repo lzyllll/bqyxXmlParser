@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<body index="0" name="会计尸">
+			
+			<name>OfficeZombie</name>
+			<cnName>会计尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/OfficeZombie.swf</swfUrl>
+			
+			<lifeRatio>0.7</lifeRatio>
+			<showLevel>91</showLevel>
+			
+			<imgArr>
+				stand,move
+				,normalAttack,shootAttack,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			
+			<nextAttackTime>1</nextAttackTime>
+			
+			<skillArr />
+			<bossSkillArr />
+			<bossSkillArrCn />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" soundUrl="sound/body_hit" raNum="4">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel>
+					<bulletLabel>OfficeZombie_1</bulletLabel>
+					<grapRect>-450,-111,350,105</grapRect>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				
+			</hurtArr>
+		</body>
+		
+		<bullet cnName="会计尸">
+			<name>OfficeZombie_1</name>
+			<cnName>办公僵尸</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>10</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.4</attackDelay>
+			<bulletAngle>179</bulletAngle>
+			<bulletAngleRange>40</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+								
+			<shootAngle>0</shootAngle>					
+				
+			<shootPoint>-56,-46</shootPoint>
+			<bulletSpeed>9</bulletSpeed>
+			<boomD bodyB="1" selfB="1" radius="80" noExcludeBodyB="1" />
+			<speedD random="0.2" />
+			<skillArr>blindness_skeleton</skillArr>
+			
+			<penetrationGap>1000</penetrationGap>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>OfficeZombie/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/hummer_hit" raNum="4">OfficeZombie/hitEffect</hitImgUrl>
+		</bullet>
+	</father>	
+	
+	
+</data>

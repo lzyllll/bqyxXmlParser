@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="peak">
+		<body cnName="战斗力" name="dpsAll" add="0.010" max="15" />
+		<body cnName="生命值" name="lifeAll" add="0.015" max="15" />
+		
+		<body cnName="3倍暴击概率" name="critPro3" add="0.005" max="10" />
+		<body cnName="闪避概率" name="dodge" add="0.010" max="15" />
+		
+		<body cnName="技能回复" name="cdMul" add="0.005" max="10" />
+		<body cnName="近战伤害减免" name="fightDedut" add="0.015" max="15" />
+		
+		<body cnName="移动速度" name="moveMul" add="0.015" max="10" />
+		<body cnName="防弹值" name="bulletDedut" add="0.015" max="15" />
+		<body cnName="载具攻击力" name="vehicleDpsMul" add="0.04" max="20" />
+		
+		<body cnName="核爆" name="nuclear_peak" skill="nuclear_peak" max="8" />
+		<body cnName="注视" name="gaze_peak" skill="gaze_peak" max="8" />
+		<body cnName="搏命" name="sacrifice_peak" skill="sacrifice_peak" max="8" />
+	</father>
+</data>

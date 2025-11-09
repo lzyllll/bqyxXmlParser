@@ -1,0 +1,125 @@
+{
+  "father": [
+    {
+      "type": "lightning",
+      "cnName": "闪电枪",
+      "bullet": {
+        "name": "yearDragon",
+        "color": "darkgold",
+        "composeLv": 99,
+        "dropLevelArr": 999,
+        "evoMaxLv": 2,
+        "cnName": "辰龙",
+        "whippB": 0,
+        "dpsMul": 1.9,
+        "uiDpsMul": 2.1,
+        "capacity": 8,
+        "attackGap": 1.2,
+        "reloadGap": 2,
+        "shakeAngle": 1,
+        "bulletWidth": 500,
+        "bulletShakeWidth": 100,
+        "bulletNum": 10,
+        "shootAngle": 15,
+        "beatBack": 2,
+        "targetShakeValue": 10,
+        "twoShootPro": 0.3,
+        "penetrationNum": 0,
+        "penetrationGap": 0,
+        "bounceD": {
+          "floor": 0,
+          "body": 0
+        },
+        "critD": {
+          "mul": 2,
+          "pro": 0.25
+        },
+        "skillArr": "Hit_Spurting_ArmsSkill,Hit_AddLifeMul_ArmsSkill",
+        "godSkillArr": "yearDragonSkill",
+        "hurtRatio": 4,
+        "gunNum": 1,
+        "armsArmMul": 0.6,
+        "armsWeight": 5,
+        "upValue": 8,
+        "shootShakeAngle": 70,
+        "shootRecoil": 10,
+        "screenShakeValue": 15,
+        "noShakeTime": 0.5,
+        "bulletLife": 0.001,
+        "hitType": "longLine",
+        "iconUrl": "specialGun/yearDragonIcon",
+        "shootSoundUrl": "sound/lightningShoot",
+        "flipX": 1,
+        "bulletImgUrl": {
+          "value": "generalEffect/lineLightning",
+          "raNum": 30,
+          "con": "filter",
+          "len": 50,
+          "time": 0.03,
+          "waveAn": 45,
+          "everFleshB": true,
+          "imgDieType": "ranStop"
+        },
+        "hitImgUrl": {
+          "value": "bulletHitEffect/fitHit",
+          "con": "add"
+        },
+        "fireImgType": null,
+        "bodyImgRange": "specialGun/yearDragon",
+        "bulletImgRange": "specialGun/bullet",
+        "description": null
+      }
+    },
+    {
+      "name": "godArmsSkill",
+      "cnName": "神级武器技能",
+      "skills": {
+        "yearDragonSkill": {
+          "name": "yearDragonSkill",
+          "noRandomListB": 1,
+          "cnName": "电爆",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "me",
+          "addType": "state",
+          "noReStateB": 1,
+          "effectType": "yearDragonSkill",
+          "mul": 6,
+          "value": 7,
+          "valueString": "yearDragon",
+          "duration": 23,
+          "stateEffectImg": {
+            "value": "bulletHitEffect/blueLaser",
+            "partType": "shootPoint",
+            "con": "add",
+            "raNum": 1
+          },
+          "description": "攻击敌人时会让枪支攻速瞬间提高6倍，不消耗子弹，持续7秒，之后12秒内不再触发此效果。"
+        },
+        "yearDragonPurgold": {
+          "name": "yearDragonPurgold",
+          "noRandomListB": 1,
+          "cnName": "散射电爆",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "me",
+          "addType": "state",
+          "noReStateB": 1,
+          "effectType": "yearDragonSkill",
+          "mul": 6,
+          "value": 7,
+          "secMul": 1.7,
+          "valueString": "yearDragon",
+          "duration": 23,
+          "stateEffectImg": {
+            "value": "bulletHitEffect/blueLaser",
+            "partType": "shootPoint",
+            "con": "add",
+            "raNum": 1
+          },
+          "description": "攻击敌人时会让枪支攻速瞬间提高6倍，闪电数量提高至[secMul]，不消耗子弹，持续7秒，之后12秒内不再触发此效果。"
+        }
+      }
+    }
+  ]
+}

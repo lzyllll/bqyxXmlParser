@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="cutter">
+		<bullet color="yagold">
+			<name>sawEmitter</name>
+			<cnName>矿锯发射器</cnName><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			<aiShootRange>900</aiShootRange>
+			<attackType>holy</attackType>
+			<dpsMul>1</dpsMul>
+			
+			<capacity>5</capacity>
+			<attackGap>1</attackGap>
+			<reloadGap>1</reloadGap>
+			<bulletWidth>45</bulletWidth>
+			<bulletNum>2</bulletNum>
+			<shootAngle>5</shootAngle>
+			<shakeAngle>3</shakeAngle>
+			
+			<armsArmMul>0.7</armsArmMul>
+			<upValue>10</upValue>
+			<shootShakeAngle>20</shootShakeAngle>
+			<shootRecoil>20</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			
+			<bulletLife>5</bulletLife>
+			<hitType>rect</hitType>
+				
+			<bulletSpeed>20</bulletSpeed>
+			<speedD random="0.2" min="8" max="20" a="-20" />
+			<followD value="2" delay="1" maxTime="2" />
+			<bindingD cnName="太空空单位" lifeMul="0.01" />
+			<penetrationGap>1000</penetrationGap>
+			
+			<skillArr>enemyEmp,killPet</skillArr>
+			
+			<fireImgUrl con="add">boomEffect/boom2</fireImgUrl>
+			<shootSoundUrl>specialGun/yearCattleSound</shootSoundUrl>
+			<bulletImgUrl name="oreSawBullet" />
+			<smokeImgUrl name="oreBombState" />
+			<hitImgUrl name="oreWormHit" />
+			
+			
+			<bodyImgRange>specialGun/sawEmitter</bodyImgRange>
+		</bullet>
+	</father>
+	
+</data>

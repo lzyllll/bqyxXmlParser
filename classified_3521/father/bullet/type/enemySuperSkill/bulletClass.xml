@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="enemySuperSkill" cnName="精英怪技能所需">
+		<bullet cnName="电球爆发">
+			<name>electricBoom_enemy</name>
+			<cnName>电球爆发</cnName>
+			
+			<hurtRatio>0.8</hurtRatio>
+			
+			<shakeAngle>20</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>15</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>230</bulletAngle>
+			<bulletAngleRange>60</bulletAngleRange>
+			<bulletNum>5</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootAngle>60</shootAngle>					
+			<extendGap>50</extendGap>
+				
+			<shootPoint>0,-60</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<speedD random="0.3" />
+			<gravity>0.8</gravity>
+				
+			<bounceD floor="1" num="0.8" />	
+			
+			<flipX>1</flipX>
+			<skillArr>paralysis_enemy_link</skillArr>
+			
+			<bulletImgUrl con="add">skillEffect/paralysis_enemy_bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/paralysis_enemy_hit" />
+			<smokeImgUrl con="filter" raNum="30">skillEffect/paralysis_enemy_bullet</smokeImgUrl>
+		</bullet>
+		<bullet cnName="爆石">
+			<name>imploding_enemy</name>
+			<cnName>爆石</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<shakeAngle>20</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>15</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>230</bulletAngle>
+			<bulletAngleRange>60</bulletAngleRange>
+			<bulletNum>5</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootAngle>60</shootAngle>					
+			<extendGap>50</extendGap>
+				
+			<shootPoint>0,-60</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<speedD random="0.3" />
+			<gravity>0.8</gravity>
+				
+			<bounceD floor="1" num="0.8" />	
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>skillEffect/imploding_enemy_bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/smallBoom">boomEffect/boom1</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+		</bullet>
+		<bullet cnName="爆石-幅度小">
+			<name>implodingEffect</name>
+			<cnName>爆石</cnName>
+			
+			<hurtRatio>0</hurtRatio><noHitB>1</noHitB>
+			
+			<shakeAngle>20</shakeAngle>
+			<bulletLife>0.6</bulletLife>
+			<bulletWidth>15</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<bulletAngle>230</bulletAngle>
+			<bulletNum>5</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootAngle>60</shootAngle>					
+			<extendGap>20</extendGap>
+				
+			<shootPoint>-65,-1</shootPoint>
+			<bulletSpeed>10</bulletSpeed>
+			<speedD random="0.3" />
+			<gravity>0.8</gravity>
+			<penetrationGap>1000</penetrationGap>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>skillEffect/imploding_enemy_bullet</bulletImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+		</bullet>
+		<bullet cnName="爆石-幅度大">
+			<name>implodingEffect2</name>
+			<cnName>爆石</cnName>
+			
+			<hurtRatio>0</hurtRatio><noHitB>1</noHitB>
+			
+			<shakeAngle>20</shakeAngle>
+			<bulletLife>0.6</bulletLife>
+			<bulletWidth>15</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>230</bulletAngle>
+			<bulletAngleRange>60</bulletAngleRange>
+			<bulletNum>5</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootAngle>60</shootAngle>					
+			<extendGap>50</extendGap>
+				
+			<shootPoint>0</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<speedD random="0.3" />
+			<gravity>0.8</gravity>
+				
+			<penetrationGap>1000</penetrationGap>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>skillEffect/imploding_enemy_bullet</bulletImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+		</bullet>
+		
+		<bullet cnName="爆石-尸宠-伤害较大">
+			<name>imploding_pet</name>
+			<cnName>爆石</cnName>
+			
+			<hurtRatio>2</hurtRatio>
+			
+			<shakeAngle>20</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>15</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>230</bulletAngle>
+			<bulletAngleRange>60</bulletAngleRange>
+			<bulletNum>5</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootAngle>60</shootAngle>					
+			<extendGap>50</extendGap>
+				
+			<shootPoint>0,-60</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<speedD random="0.3" />
+			<gravity>0.8</gravity>
+				
+			<bounceD floor="1" num="0.8" />	
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>skillEffect/imploding_enemy_bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/smallBoom">boomEffect/boom1</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+		</bullet>
+		<bullet cnName="爆石-武器技能">
+			<name>imploding_godArmsSkill</name>
+			<cnName>爆石</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<shakeAngle>20</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>15</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>230</bulletAngle>
+			<bulletAngleRange>60</bulletAngleRange>
+			<bulletNum>5</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootAngle>60</shootAngle>					
+			<extendGap>50</extendGap>
+				
+			<shootPoint>0,-60</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<speedD random="0.3" />
+			<gravity>0.8</gravity>
+				
+			<bounceD floor="1" num="0.8" />	
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>skillEffect/imploding_enemy_bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/microBoom">boomEffect/boom1</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+		</bullet>
+		<bullet cnName="爆岩-武器技能">
+			<name>implodingGod</name>
+			<cnName>爆岩</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<shakeAngle>20</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>25</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>230</bulletAngle>
+			<bulletAngleRange>60</bulletAngleRange>
+			<bulletNum>5</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootAngle>60</shootAngle>					
+			<extendGap>50</extendGap>
+				
+			<shootPoint>0,-60</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<bulletVra>36</bulletVra>
+			<speedD random="0.3" />
+			<gravity>0.8</gravity>
+				
+			<bounceD floor="1" num="0.8" />	
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="10">bullet/bigStone</bulletImgUrl>
+			<smokeImgUrl raNum="30" con="filter">bullet/fireball</smokeImgUrl>
+			<hitImgUrl soundUrl="boomSound/microBoom">boomEffect/boom1</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+		</bullet>
+		
+		
+		<bullet cnName="闪电麻痹">
+			<name>paralysis_enemy</name>
+			<cnName>闪电麻痹</cnName>
+			
+			<hurtRatio>0.1</hurtRatio>
+			
+			<bulletLife>3</bulletLife>
+			<bulletWidth>15</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>180</bulletAngle>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>				
+			
+				
+			<shootPoint>0,-80</shootPoint>
+			<bulletSpeed>15</bulletSpeed>
+				
+			<followD value="1" maxTime="2" />	
+			<skillArr>paralysis_enemy_link</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="add">skillEffect/paralysis_enemy_bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/paralysis_enemy_hit" />
+		</bullet>
+		<bullet cnName="闪电麻痹-尸宠">
+			<name>paralysis_pet</name>
+			<cnName>闪电麻痹-尸宠</cnName>
+			
+			<hurtRatio>2</hurtRatio>
+			
+			<bulletLife>3</bulletLife>
+			<bulletWidth>15</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>180</bulletAngle>
+			<bulletNum>3</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootAngle>60</shootAngle>					
+				
+			<shootPoint>0,-80</shootPoint>
+			<bulletSpeed>15</bulletSpeed>
+				
+			<followD value="1" maxTime="2" />	
+			<skillArr>paralysis_enemy_link</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="add">skillEffect/paralysis_enemy_bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/paralysis_enemy_hit" />
+		</bullet>
+		
+		<bullet cnName="生命置换">
+			<name>lifeReplace_enemy</name>
+			<cnName>生命置换</cnName>
+			
+			<hurtRatio>0</hurtRatio>
+			
+			<bulletLife>10</bulletLife>
+			<bulletWidth>15</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>180</bulletAngle>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+				
+			<shootPoint>0,-80</shootPoint>
+			<bulletSpeed>15</bulletSpeed>
+				
+			<penetrationGap>1000</penetrationGap>
+			<followD value="1" />	
+			<skillArr>lifeReplace_enemy_link</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="filter">skillEffect/lifeReplace_enemy_bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/lifeReplace_enemy_hit" />
+			<smokeImgUrl con="filter" raNum="30">skillEffect/poisonClaw_enemy</smokeImgUrl>
+		</bullet>
+		<bullet cnName="眩晕之锤">
+			<name>hammer_enemy</name>
+			<cnName>眩晕之锤</cnName><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			
+			<hurtMul>0.1</hurtMul>
+			<attackType>holy</attackType>
+			
+			<bulletLife>4.5</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>230</bulletAngle>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+				
+			<shootPoint>0,-70</shootPoint>
+			<bulletSpeed>12</bulletSpeed>
+				
+			<penetrationGap>1000</penetrationGap>
+			<followD value="0.6" />	
+			<skillArr>hammer_enemy_link</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>skillEffect/hammer_bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/hummer_hit">bulletHitEffect/energy</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+		</bullet>
+		<bullet cnName="技能复制">
+			<name>skillCopy_enemy</name>
+			<cnName>技能复制</cnName><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			
+			<hurtRatio>0</hurtRatio>
+			<attackType>holy</attackType>
+			
+			<bulletLife>10</bulletLife>
+			<bulletWidth>15</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>180</bulletAngle>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+				
+			<shootPoint>0,-80</shootPoint>
+			<bulletSpeed>15</bulletSpeed>
+				
+			<penetrationGap>1000</penetrationGap>
+			<followD value="1" maxTime="5" />	
+			<skillArr>skillCopy_enemy_link</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="filter">skillEffect/skillCopy_enemy_bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/lifeReplace_enemy_hit" />
+			<smokeImgUrl con="filter" raNum="30">skillEffect/poisonClaw_enemy</smokeImgUrl>
+		</bullet>
+		
+		<bullet cnName="毒蛛-反扑">
+			<name>pounce_spider</name>
+			<cnName>毒蛛-反扑</cnName>
+			
+			<hurtRatio>3</hurtRatio>
+			
+			<bulletLife>3</bulletLife>
+			<bulletWidth>15</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>-90</bulletAngle>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+				
+			<shootPoint>0,0</shootPoint>
+			<bulletSpeed>2</bulletSpeed>
+				
+			<penetrationGap>1000</penetrationGap>
+			<followD value="1" maxTime="2" />	
+			<speedD random="0.3" max="20" min="3" a="10" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="add">skillEffect/feedback_enemy_bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/magicHit1">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+	</father>	
+	
+	</data>

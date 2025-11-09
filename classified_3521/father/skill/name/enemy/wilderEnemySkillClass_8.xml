@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="虚炎狼">
+		<skill cnName="墟洞岩火">
+			<name>FireWolf_rockFire</name>
+			<cnName>墟洞岩火</cnName><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<cd>1</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>noState</otherConditionArr>
+			<conditionString>FireWolf_noRockFire,elementsYellow,elementsPurple</conditionString>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>bullet_FireWolf_rockFire</effectType>
+			<meActionLabel>rockFireAttack</meActionLabel>
+			<range>999999</range>
+			<duration>1.5</duration>
+			<obj>"name":"FireWolf_rockFire","nameArr":["FireWolf_rockFireLink"]</obj>
+			<description>首领持续嘶吼，巨大的嘶吼声震裂墟洞，并不断从地下喷涌出岩火。</description>
+		</skill>
+		<skill cnName="无名火">
+			<name>FireWolf_noFire</name>
+			<cnName>无名火</cnName><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<cd>5</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>bullet_FireWolf_noFire</effectType>
+			<duration>1</duration>
+			<range>999999</range>
+			<obj>"name":"FireWolf_noName"</obj>
+			<pointEffectImg con="add">FireWolf/fireShow</pointEffectImg>
+			<description>每过5秒出现一团无名火对玩家造成伤害。</description>
+		</skill>
+		<skill cnName="稀有元素">
+			<name>FireWolf_elements</name><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<cnName>稀有元素</cnName><noBeClearB>1</noBeClearB><ignoreSilenceB>1</ignoreSilenceB>
+			
+			<cd>5</cd>
+			
+			<conditionType>active</conditionType><noCopyB>1</noCopyB>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet_FireWolf_elements</effectType>
+			<obj>"name":"elementsYellow","nameArr":["elementsGreen","elementsRed","elementsBlue","elementsPurple"]</obj>
+			<description>拾取散落的稀有元素，能立刻打断首领的嘶吼，但也有一定概率对自身造成负面效果。</description>
+		</skill>
+		
+		<skill name="孪生之力">
+			<name>FireWolf_cloned</name>
+			<cnName>孪生之力</cnName><noCopyB>1</noCopyB>
+			<cd>1</cd>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>noState</otherConditionArr>
+			<conditionString>FireWolf_noRockFire,elementsYellow,elementsPurple</conditionString>
+			<target>me</target>
+			 
+			<addType>instant</addType>
+			<effectType>FireWolf_cloned</effectType>
+			<duration>30</duration>
+			<obj>"cnName":"虚炎狼","num":1,"lifeMul":0.1,"dpsMul":1,"lifeTime":9999999,"mulByFatherB":1,"maxNum":1,"skillArr":["fightReduct","FireWolf_noRockFire","State_SpellImmunity"]</obj>
+			
+			<meEffectImg soundUrl="sound/cloned_enemy" con="add">skillEffect/hiding_hero</meEffectImg>
+			<description>首领嘶吼期间，分裂出孪生体协助攻击，消灭孪生体能打断首领嘶吼。</description>
+		</skill>
+		<skill cnName="无法释放墟洞岩火buff">
+			<name>FireWolf_noRockFire</name>
+			<cnName>无法释放墟洞岩火buff</cnName><showInLifeBarB>1</showInLifeBarB>
+			<noBeClearB>1</noBeClearB>
+			<ignoreSilenceB>1</ignoreSilenceB>
+			
+			<conditionType>passive</conditionType>
+			<condition>allDie</condition>
+			<target>meSummonedFather</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>dizziness</effectType>
+			<duration>5</duration>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+		</skill>
+		
+		
+		<skill cnName="打断墟洞岩火">
+			<name>elementsYellow</name>
+			<cnName>打断墟洞岩火</cnName><noBeClearB>1</noBeClearB><ignoreSilenceB>1</ignoreSilenceB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>elementsYellow</effectType>
+			<duration>5</duration>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+		</skill>
+		<skill cnName="对玩家造成伤害">
+			<name>elementsRed</name>
+			<cnName>对玩家造成伤害</cnName><noBeClearB>1</noBeClearB><ignoreSilenceB>1</ignoreSilenceB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>normal_hurt</effectType>
+			<extraValueType>targetMaxLife</extraValueType>
+			<mul>0.2</mul>
+		</skill>
+		<skill cnName="对分身造成伤害">
+			<name>elementsGreen</name>
+			<cnName>对分身造成伤害</cnName><noBeClearB>1</noBeClearB><ignoreSilenceB>1</ignoreSilenceB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>noTrueBody</otherConditionArr>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>normal_hurt</effectType>
+			<extraValueType>targetMaxLife</extraValueType>
+			<mul>0.1</mul>
+		</skill>
+		
+		<skill cnName="使自身恐惧">
+			<name>elementsBlue</name>
+			<cnName>使自身恐惧</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>screaming_hero</effectType>
+			<duration>5</duration>
+			 
+			<stateEffectImg partType="mouth" con="filter">skillEffect/screaming_hero_target</stateEffectImg>
+		</skill>
+		<skill cnName="使首领恐惧">
+			<name>elementsPurple</name>
+			<cnName>使首领恐惧</cnName><noBeClearB>1</noBeClearB><ignoreSilenceB>1</ignoreSilenceB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>screaming_hero</effectType>
+			<duration>10</duration>
+			 
+			<stateEffectImg partType="mouth" con="filter">skillEffect/screaming_hero_target</stateEffectImg>
+		</skill>
+	</father>	 
+		
+	
+	</data>

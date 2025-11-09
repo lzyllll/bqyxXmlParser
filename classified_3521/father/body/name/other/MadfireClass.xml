@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="other">
+		<body name="火种" shell="other">
+			<name>Madfire</name>
+			<cnName>火种</cnName>
+			<raceType>human</raceType>
+			<swfUrl>swf/enemy/Madfire.swf</swfUrl>
+			<dieJumpMul>0</dieJumpMul>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move,die1
+			</imgArr>
+			
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			
+			<maxVx>9</maxVx>
+			<motionState>fly</motionState>
+			<flyUseSpiderB>1</flyUseSpiderB>
+			<flyType>tween</flyType>
+			
+			<skillArr>State_SpellImmunity,noAiFindAndHit</skillArr>
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<hurtArr>
+				
+			</hurtArr>
+		</body>
+		
+		<skill>
+			<name>noAiFindAndHit</name>
+			<cnName>不受ai发现和伤害</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>noAiFindAndHit</effectType>
+			
+			<otherEffectImg soundUrl="sound/earthquake" />
+			<pointEffectImg soundUrl="boomSound/bigBoom" />
+		</skill>
+		<skill name="附身">
+			<name>firePossession</name>
+			<cnName>附身</cnName>
+			<noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<iconUrl>SkillIcon/possession_hero</iconUrl>
+			<iconUrl36>SkillIcon/possession_hero_36</iconUrl36>
+			
+			<cd>10</cd>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>0</conditionRange>
+			<target alert="wePossession">alertTarget</target>
+			
+			<addType>instant</addType>
+			<effectType>firePossession</effectType>
+			<duration>99999</duration>
+			<range>200</range>
+			<value>0</value>
+			<mul>2</mul>
+			<secMul>0</secMul>
+			 
+			<meEffectImg soundUrl="skillEffect/possession_s" />
+			<targetEffectImg con="add" partType="head">skillEffect/possession</targetEffectImg>
+			<pointEffectImg partType="head">generalEffect/headTip</pointEffectImg>
+			<otherEffectImg partType="head,body" soundUrl="sound/vehicleFit">generalEffect/blackHoleHide</otherEffectImg>
+			<description>附身鼠标处的我方宠物，控制其攻击、技能，持续[duration]秒。6级之后可附身敌方首领。</description>
+		</skill>
+		
+		<skill name="僵尸隐身">
+			<name>madfireHiding</name>
+			<cnName>隐身</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>15</cd><iconUrl36>SkillIcon/hiding_hero_36</iconUrl36>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>1000</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>hidingB_hugePosion</effectType>
+			<value>1</value>
+			<mul>1.6</mul>
+			<duration>7</duration>
+			<meEffectImg soundUrl="sound/hiding_hero" con="add">skillEffect/hiding_hero</meEffectImg>
+		</skill>
+		<skill name="被敌人麻痹">
+			<name>madfireParalysis</name>
+			<cnName>被敌人麻痹</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>no</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>madfireParalysis</effectType>
+			<duration>99999</duration>
+			 
+			<stateEffectImg con="add">skillEffect/paralysis_enemy</stateEffectImg>
+		</skill>
+	</father>
+	
+	
+	</data>

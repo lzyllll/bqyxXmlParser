@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<type name="barrel">
+		
+		ak/barrel2:咆哮,风暴;
+		ak/barrel3:火神,怒吼;
+		ak/barrel4:猎豹,邪神;
+		ak/barrel5:暴徒,烈焰;
+		ak/barrel6:入侵者;
+		ak/barrel7:弑神;
+		ak/barrel:战龙;
+		m4/barrel:血爪; 
+		xm8/barrel:缠绕;
+		
+		pistol1/barrel1:曼巴蛇;
+		pistol1/barrel2:眼镜蛇;
+		pistol1/barrel3:断魂;
+		pistol1/barrel4:之伤;
+		pistol1/barrel5:复仇者;
+		pistol3/barrel:突袭者;
+		pistol2/barrel:猎手;
+		
+		sniper1/barrel2:偷袭者;
+		sniper1/barrel3:荆柯,收割者;
+		sniper1/barrel:碎颅者,终结者;
+		sniper2/barrel:刺客,隐刀,刺夜;
+		sniper3/barrel:亡神,之刃,猎户座,绝灭者;
+		
+		shotgun1/barrel2:驯龙;
+		shotgun1/barrel3:野牛,开膛手;
+		shotgun1/barrel:制裁者;
+		shotgun2/barrel:仲裁者,骸骨;
+		shotgun3/barrel:魔王,猎王;
+		
+		rocket/barrel:轰炸者,灰烬;
+		rocket/barrel2:之火,浩劫;
+		
+		laser/barrel:之光;
+		laser/barrel2:之耀;
+		laser/barrel3:之芒;
+	</type>
+	<type name="texture">
+		m1:暗黑;
+		m2:冷峻;
+		m3:金刚;
+		m4:卑微;
+		m5:刺骨;
+		m6:荆棘;
+		m7:蜂巢;
+		m8:坚韧;
+		m9:闪电;
+		m10:诙谐;
+		m11:冰雪;
+		m12:沉睡;
+		m13:凄然;
+		m14:永恒;
+		m15:和谐;
+		m16:沙漠;
+		m17:炼狱;
+		m18:蓝纹;
+		m19:怒气;
+		m20:圣光;
+		m21:神圣;
+		m22:赤纹;
+		m23:射日;
+		m24:狂热;
+		m25:地狱;
+		m26:凝泪;
+		m27:青玉;
+		m28:混沌;
+		m29:噩梦;
+		m30:邪恶;
+		m31:玲珑;
+		m32:致命;
+		
+		t1:暗影;
+		t2:恐惧;
+		t3:无敌;
+		t4:方天;
+		t5:寒光;
+		t6:雷电;
+		t7:破空;
+		t8:时空;
+		t9:无限;
+		t10:猎隐;
+		t11:远古;
+		t12:斩魂;
+		t13:光辉;
+		t14:永世;
+		t15:狂热;
+		t16:末日;
+		t17:灭亡;
+		
+		elasticRecoveryGod:弹性;
+		fullCrushGod:嗜血;
+		overweightGod:暴殄;
+		jumpAutoGod:欢跃;
+		posion:万毒;
+		punctureGod:裂躯;
+		airHurtGod:裂空;
+		hideHurtGod:破隐;
+		implodingGod:崩山;
+		backstabGod:暗袭;
+		throwExplodeGod:震世;
+		
+		
+		
+		x1:,,,,狂怒,,, ,,,,无暇,,
+	</type>
+	
+</data>

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="wavegun">
+		<bullet name="未羊" color="darkgold" composeLv="99" dropLevelArr="999" evoMaxLv="2">
+			<name>yearSheep</name>
+			<cnName>未羊</cnName><iconUrl>specialGun/yearSheepIcon</iconUrl>
+			<dpsMul>1.9</dpsMul>
+			<uiDpsMul>2.5</uiDpsMul>
+			<extraMul>1.1</extraMul>
+			
+			<capacity>6</capacity> 
+			<attackGap>1</attackGap>
+			<reloadGap>3</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>900</bulletWidth>
+			<bulletShakeWidth>50</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<shootAngle>0</shootAngle>				
+			<beatBack>10</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<twoShootPro>0.2</twoShootPro>
+			<penetrationNum>12</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="0" body="0" />	
+			<critD mul="2" pro="0.2" />
+			
+			<skillArr>Hit_Spurting_ArmsSkill</skillArr>
+			<godSkillArr>yearSheepSkill</godSkillArr>
+			
+			<hurtRatio>15</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.5</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>3</upValue>
+			<shootShakeAngle>15</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			
+			<shootSoundUrl>sound/waveShoot</shootSoundUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30" con="filter" len="30" time="0.03" imgDieType="die">specialGun/yearSheepBullet</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/fitHit</hitImgUrl>
+			
+			<bodyImgRange>specialGun/yearSheep</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+		</bullet>
+	</father>
+	</data>

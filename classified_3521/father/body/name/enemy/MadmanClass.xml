@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="敌方">
+		<body index="0" name="战争狂人" shell="normal">
+			
+			<name>Madman</name>
+			<cnName>战争狂人</cnName>
+			<raceType>human</raceType>
+			<movieLink>Striker</movieLink>
+			<swfUrl>swf/hero/Madman266.swf</swfUrl>
+			
+			<showLevel>999</showLevel>
+			
+			
+			<headIconUrl>IconGather/Madman</headIconUrl>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-12,-35,24,35</hurtRectArr> 
+			<hurtRectArr>-12, -70, 24, 70</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>11</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>2</armsNumber>
+			<randomArmsRange>meltFlamer</randomArmsRange>	
+			
+			<skillArr />
+			<bossSkillArr>pointBoom_enemy,selfBurn_enemy,imploding_enemy,sweep_shell,UnderRos_AddMove_Battle,crazy_enemy</bossSkillArr>
+			<bossSkillArrCn />
+			<extraDropArmsB>1</extraDropArmsB>
+			
+		</body>
+	</father>
+		
+</data>

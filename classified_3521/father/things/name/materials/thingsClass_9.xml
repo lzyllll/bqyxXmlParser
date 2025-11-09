@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="materials" cnName="其他碎片" smeltType="armsEquip">
+		<things cnName="周年碎片">
+			<name>anniversaryCash</name><addDropDefineB>1</addDropDefineB>
+			<cnName>周年碎片</cnName>
+			<iconUrl>ThingsIcon/anniversaryCash</iconUrl>
+			<description>
+				可在“锻造&gt;合成”界面中合成黑色武器碎片。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]无尽模式(产量很高)
+				[n]VIP每日礼包
+			</description>
+			<loveD num="20" />
+			<smeltD grade="1" addType="" price="1" />
+		</things>
+		<things cnName="神武碎片">
+			<name>allBlackCash</name><addDropDefineB>1</addDropDefineB>
+			<cnName>神武碎片</cnName>
+			<iconUrl>ThingsIcon/allBlackCash</iconUrl>
+			<description>
+				可在“锻造&gt;合成”界面中合成指定黑色武器碎片。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]每日任务大逃亡、直上云霄。
+				[n]问答。
+				[n]秘境“GM三人组”。
+				[n]VIP每日礼包。
+			</description>
+			<loveD num="20" />
+			<smeltD grade="2" addType="box" price="10" maxNum="1" />
+		</things>
+		<things cnName="神护碎片">
+			<name>allBlackEquipCash</name><addDropDefineB>1</addDropDefineB>
+			<cnName>神护碎片</cnName>
+			<iconUrl>ThingsIcon/allBlackEquipCash</iconUrl>
+			<description>
+				可在“锻造&gt;合成”界面中合成指定黑色装备碎片。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]每日任务狙击之王、枪林弹雨。
+				[n]问答。
+				[n]秘境“GM三人组”。
+				[n]VIP每日礼包。
+			</description>
+			<loveD num="20" />
+			<smeltD grade="2" addType="box" price="10" maxNum="1" />
+		</things>
+		
+	</father>		
+	</data>

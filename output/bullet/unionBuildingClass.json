@@ -1,0 +1,293 @@
+{
+  "building": {
+    "bu": [
+      {
+        "name": "watchmen",
+        "cnName": "守望者",
+        "lvName": "饲养等级",
+        "maxLv": 18,
+        "fleshAddDataB": true
+      },
+      {
+        "name": "cooking",
+        "cnName": "炊事馆",
+        "lvName": "用膳等级",
+        "maxLv": 14,
+        "fleshAddDataB": true
+      },
+      {
+        "name": "federal",
+        "cnName": "联邦大厦",
+        "lvName": "权利等级",
+        "maxLv": 14
+      },
+      {
+        "name": "geology",
+        "cnName": "地质研究所",
+        "lvName": "勘探等级",
+        "maxLv": 23
+      }
+    ]
+  },
+  "watchmen": {
+    "wa": [
+      {
+        "name": "twoJump",
+        "cnName": "月步",
+        "effectType": "pro",
+        "value": {
+          "maxJumpNumAdd": 1
+        },
+        "info": "追寻月光的足迹，可在空中进行二段跳。"
+      },
+      {
+        "name": "ghostStep",
+        "cnName": "鬼步",
+        "effectType": "skill",
+        "value": "heroSprint"
+      },
+      {
+        "name": "bulletDefence",
+        "cnName": "防弹专家",
+        "effectType": "pro",
+        "value": {
+          "bulletDedut": 0.15
+        },
+        "info": "防弹值+15%。"
+      },
+      {
+        "name": "playerLife",
+        "cnName": "超体",
+        "effectType": "pro",
+        "value": {
+          "lifeAll": 0.15
+        },
+        "info": "增加人物15%生命值。"
+      },
+      {
+        "name": "hurtNormal",
+        "cnName": "怪物猎人",
+        "effectType": "skill",
+        "value": "watchmanHurtNormal"
+      },
+      {
+        "name": "hurtSuper",
+        "cnName": "精英克星",
+        "effectType": "skill",
+        "value": "watchmanHurtSuper"
+      },
+      {
+        "name": "godEyes",
+        "cnName": "上帝之眼",
+        "effectType": "skill",
+        "value": "godEyes"
+      },
+      {
+        "name": "hurtBoss",
+        "cnName": "恶魔猎手",
+        "effectType": "skill",
+        "value": "watchmanHurtBoss"
+      },
+      {
+        "name": "godMace",
+        "cnName": "上帝之杖",
+        "effectType": "skill",
+        "value": "godMace"
+      },
+      {
+        "name": "playerDps",
+        "cnName": "神力",
+        "effectType": "pro",
+        "value": {
+          "dpsAll": 0.15
+        },
+        "info": "增加人物15%战斗力。"
+      },
+      {
+        "name": "superPlayerLife",
+        "cnName": "神体",
+        "effectType": "pro",
+        "value": {
+          "lifeAll": 0.15
+        },
+        "info": "额外增加人物15%生命值。"
+      },
+      {
+        "name": "superHurtBoss",
+        "cnName": "恶魔屠刀",
+        "effectType": "skill",
+        "value": "superWatchmanHurtBoss",
+        "type": "hurtBoss"
+      },
+      {
+        "name": "vehicleDefMul",
+        "cnName": "战车护甲",
+        "effectType": "pro",
+        "value": {
+          "vehicleDefMul": 0.3
+        },
+        "info": "提高载具20%的防御力。"
+      },
+      {
+        "name": "hurtHuman",
+        "cnName": "人类克星",
+        "effectType": "skill",
+        "value": "watchmanHurtHuman"
+      },
+      {
+        "name": "petHurtHole",
+        "cnName": "暴力尸宠",
+        "effectType": "skill",
+        "value": "petHurtHole"
+      },
+      {
+        "name": "weaponDropPro",
+        "cnName": "副手探测",
+        "effectType": "pro",
+        "value": {
+          "weaponDropPro": 0.15
+        },
+        "info": "增加15%的副手掉率（包括秘境副手）。"
+      },
+      {
+        "name": "towerHurter",
+        "cnName": "虚幻猎手",
+        "effectType": "skill",
+        "value": "towerHurter"
+      },
+      {
+        "name": "lottery9",
+        "cnName": "幸运之神",
+        "effectType": "pro",
+        "value": {
+          "lottery": 9
+        },
+        "info": "幸运值+9。"
+      }
+    ]
+  },
+  "cooking": {
+    "co": [
+      {
+        "name": "slicedBread",
+        "cnName": "切片面包",
+        "addArr": "dpsAll,rareArmsDropPro"
+      },
+      {
+        "name": "sandwich",
+        "cnName": "三明治",
+        "addArr": "dpsAll,rareEquipDropPro"
+      },
+      {
+        "name": "hamburger",
+        "cnName": "汉堡",
+        "addArr": "dpsAll,coinMul,ranBlackArmsDropPro"
+      }
+    ]
+  },
+  "geology": {
+    "things": [
+      {
+        "cnName": "超能石",
+        "max": 50,
+        "treaPro": 0.16,
+        "orePro": 0.025
+      },
+      {
+        "cnName": "神能石",
+        "max": 30,
+        "treaPro": 0.096,
+        "orePro": 0.016
+      },
+      {
+        "cnName": "转化石",
+        "max": 30,
+        "treaPro": 0.096,
+        "orePro": 0.016
+      },
+      {
+        "cnName": "血石",
+        "max": 30,
+        "treaPro": 0.12,
+        "orePro": 0.02
+      },
+      {
+        "cnName": "强化石",
+        "max": 40,
+        "treaPro": 0.0975,
+        "orePro": 0.026
+      },
+      {
+        "cnName": "光能石",
+        "max": 5,
+        "treaPro": 0.04,
+        "orePro": 0.004
+      },
+      {
+        "cnName": "addLifeMul",
+        "max": 0,
+        "treaPro": 0.0001,
+        "orePro": 0,
+        "type": "effect"
+      },
+      {
+        "cnName": "addCoin",
+        "max": 0,
+        "treaPro": 0.05,
+        "orePro": 0,
+        "type": "effect"
+      },
+      {
+        "cnName": "稀有宝箱",
+        "max": 3,
+        "treaPro": 0.04,
+        "orePro": 0
+      },
+      {
+        "cnName": "传奇宝箱",
+        "max": 2,
+        "treaPro": 0.024,
+        "orePro": 0
+      },
+      {
+        "cnName": "精石",
+        "max": 0,
+        "treaPro": 0.18,
+        "orePro": 0
+      },
+      {
+        "cnName": "魂卡券",
+        "max": 0,
+        "treaPro": 0.1,
+        "orePro": 0
+      },
+      {
+        "cnName": "enemy",
+        "max": 0,
+        "treaPro": 0,
+        "orePro": 0,
+        "type": "unit"
+      }
+    ]
+  },
+  "sendTask": {
+    "task": [
+      {
+        "name": "impossibleMission",
+        "cnName": "谍中谍"
+      },
+      {
+        "name": "prisonOnFire",
+        "cnName": "监狱风云"
+      },
+      {
+        "name": "farm",
+        "cnName": "牧场物语"
+      },
+      {
+        "name": "grave",
+        "cnName": "盗墓传奇"
+      }
+    ]
+  }
+}

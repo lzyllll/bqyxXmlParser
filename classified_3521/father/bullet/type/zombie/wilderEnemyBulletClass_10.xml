@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="炸裂者">
+		<bullet cnName="投弹">
+			<name>DryFrog_shoot</name>
+			<cnName>投弹</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>-170</bulletAngle>
+			<bulletAngleRange>30</bulletAngleRange>
+			<bulletLife>3</bulletLife>
+			<bulletWidth>25</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.8</attackGap>
+			<attackDelay>0.46</attackDelay>
+			<bulletNum>1</bulletNum>					
+			<shootPoint>-100,-136</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<bulletSpeed>20</bulletSpeed>
+			<gravity>0.5</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1">DryFrog/bullet</bulletImgUrl>
+			<smokeImgUrl con="filter" raNum="15">DryFrog/bulletSmoke</smokeImgUrl>
+			<hitImgUrl soundUrl="boomSound/microBoom">DryFrog/boom</hitImgUrl>
+		</bullet>
+		<bullet cnName="旋转炸弹">
+			<name>DryFrogRotate</name>
+			<cnName>旋转炸弹</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>10</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.1</attackGap>
+			<attackDelay>0.4</attackDelay>
+			<bulletAngle>110</bulletAngle>		
+			<shootNum>4</shootNum>					
+			<shootGap>0.1</shootGap>						
+				
+			<shootPoint>-45,-74</shootPoint>
+			<bulletSpeed>20</bulletSpeed>
+			
+			<boomD selfB="1" bodyB="1" radius="130" />
+			<bounceD glueFloorB="1" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1">DryFrog/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/microBoom">DryFrog/boom</hitImgUrl>
+			<hitFloorImgUrl>bulletHitEffect/yellow_motion</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="30">skillEffect/smallFire</smokeImgUrl>
+		</bullet>
+		
+		<bullet cnName="倒炸弹">
+			<name>DryFrogPour</name>
+			<cnName>倒炸弹</cnName>
+			<hurtMul>0.12</hurtMul>
+			<attackType>holy</attackType>
+			<bulletSkillArr>DryFrogPourDieEvent</bulletSkillArr>
+			
+			<shakeAngle>10</shakeAngle>
+			<bulletLife>3</bulletLife>
+			<bulletWidth>1</bulletWidth>
+			<hitType>rect</hitType>
+			
+			
+			<attackGap>1.7</attackGap>
+			<attackDelay>0.6</attackDelay>
+			<bulletAngle>95</bulletAngle>		
+			<shootNum>3</shootNum>					
+			<shootGap>0.15</shootGap>						
+				
+			<shootPoint>-113,-120</shootPoint>
+			<bulletSpeed>6</bulletSpeed>
+			<speedD a="1" max="20" />
+			<skillArr>FightKing_hitParalysis</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1">DryFrog/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom2">boomEffect/boom2</hitImgUrl>
+			<hitFloorImgUrl soundUrl="DryFrog/skill7" con="filter">bulletHitEffect/yellow_motion</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="30">skillEffect/smallFire</smokeImgUrl>
+		</bullet>
+		<bullet cnName="倒炸弹-空弹">
+			<name>DryFrogPour_zero</name>
+			<cnName>倒炸弹-空弹</cnName>
+			<hurtMul>0.12</hurtMul>
+			<attackType>holy</attackType>
+			<bulletSkillArr>DryFrogPour_zero</bulletSkillArr>
+			
+			<bulletLife>30</bulletLife>
+			<bulletWidth>70</bulletWidth>
+			<hitType>rect</hitType>	
+				
+			<bulletSpeed>0</bulletSpeed>
+			<penetrationGap>1000</penetrationGap>
+			<skillArr>FightKing_hitParalysis</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>DryFrog/noBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom2">boomEffect/boom2</hitImgUrl>
+			<hitFloorImgUrl>generalEffect/headSmoke</hitFloorImgUrl>
+		</bullet>
+	</father>
+	
+	</data>

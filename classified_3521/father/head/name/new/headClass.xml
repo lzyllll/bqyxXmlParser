@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="new" cnName="新的">
+		<head name="maxBug" cnName="史上最大bug" diff="20" noEquip="1">
+			<condition info="商店领取补偿礼包" />
+			<addObjJson>{'ranBlackArmsDropPro':0.26}</addObjJson>
+		</head>
+		
+		<head name="anniver11" cnName="十一周年快乐" diff="50">
+			<condition info="十一周年签到奖励。" />
+			<addObjJson>{'dpsAll':0.21,'gemDropPro':0.17}</addObjJson>
+		</head>
+		<head name="upBody" cnName="UP达人" diff="100" life="30" noEquip="1">
+			<condition info="参加UP达人活动。" />
+			<addObjJson>{'gemDropPro':0.25,'specialPartsDropPro':0.25}</addObjJson>
+		</head>
+		<head name="anniver10" cnName="十年相伴" diff="50">
+			<condition info="十周年签到奖励。" />
+			<addObjJson>{'dpsAll':0.20,'gemDropPro':0.16}</addObjJson>
+		</head>
+		<head name="armsSkinCreator" cnName="武器制造大师" diff="100">
+			<condition fun="armsSkinCreator" info="参加武器皮肤大赛获得" />
+			<addObjJson>{'moreDpsMul':0.05,'moreLifeMul':0.10}</addObjJson>
+		</head>
+		
+		<head name="bbs23" cnName="群组达人" diff="50" life="15">
+			<condition info="参加群组活动获得" />
+			<addObjJson>{'blackEquipDropPro':0.60}</addObjJson>
+		</head>
+		<head name="anniver9" cnName="九周年快乐" diff="50">
+			<condition info="九周年签到奖励。" />
+			<addObjJson>{'dpsAll':0.15,'gemDropPro':0.16}</addObjJson>
+		</head>
+		<head name="achieveKing" cnName="成就之皇" diff="160">
+			<condition fun="num" must="209" pro="getAchieveNum" info="获得[must]个成就。" progressInfo="已获得[compare]个" />
+			<addObjJson>{'lottery':15}</addObjJson>
+		</head>
+		<head name="achieveGod" cnName="成就之神" diff="180">
+			<condition fun="num" must="255" pro="getAchieveNum" info="获得[must]个成就。" progressInfo="已获得[compare]个" />
+			<addObjJson>{'lottery':19}</addObjJson>
+		</head>
+		<head name="anniver8" cnName="八周年快乐" diff="50">
+			<condition info="八周年签到奖励。" />
+			<addObjJson>{'dpsAll':0.12,'gemDropPro':0.15}</addObjJson>
+		</head>
+		<head name="zodiac12" cnName="十二生肖" diff="150">
+			<condition fun="num" must="12" pro="getZodiacNum" info="获得[must]种生肖武器。" progressInfo="已获得[compare]种" />
+			<addObjJson>{'zodiacArmsHurtAdd':0.25}</addObjJson>
+		</head>
+		
+		
+		<head name="battle4" cnName="霞光领主" diff="160" life="7" iconUrl48="IconGather/battle4_48">
+			<condition info="军队争霸总积分超过900可获得。" />
+			<addObjJson>{'lottery':10,'specialPartsDropPro':0.30}</addObjJson>
+		</head>
+		<head name="battle3" cnName="霞光天军" diff="100" life="7" iconUrl48="IconGather/battle3_48">
+			<condition info="军队争霸总积分超过850可获得。" />
+			<addObjJson>{'lottery':5,'specialPartsDropPro':0.20}</addObjJson>
+		</head>
+		<head name="battle2" cnName="霞光雄狮" diff="80" life="7" iconUrl48="IconGather/battle2_48">
+			<condition info="军队争霸总积分超过800可获得。" />
+			<addObjJson>{'lottery':4,'specialPartsDropPro':0.16}</addObjJson>
+		</head>
+		<head name="battle1" cnName="霞光劲旅" diff="60" life="7" iconUrl48="IconGather/battle1_48">
+			<condition info="军队争霸总积分超过750可获得。" />
+			<addObjJson>{'lottery':3,'specialPartsDropPro':0.12}</addObjJson>
+		</head>
+		
+		
+		<head name="joyousFool" cnName="愚人欢乐" diff="50" life="365">
+			<condition info="在{purple 2025年4月20号}之前累计6天活跃度达到60。" />
+			<addObjJson>{'lifeAll':20.25,'dpsAll':-20.25}</addObjJson>
+		</head>
+		
+		<head name="anniver7" cnName="爆枪七周年" diff="50">
+			<condition info="七周年签到奖励。" />
+			<addObjJson>{'dpsAll':0.12,'gemDropPro':0.13}</addObjJson>
+		</head>
+		
+		<head name="singleAF" cnName="单身狗" diff="40" life="7">
+			<condition info="在{purple 2024年11月15号}之前累计6天活跃度达到90。" />
+			<addObjJson>{'vehicleDpsMul':3.5,'vehicleDefMul':3.5}</addObjJson>
+		</head>
+		
+		<head name="happyFool" cnName="愚人快乐" diff="40">
+			<condition fun="num" must="6" pro="getActive20_3" info="在{purple 2020年4月13号}之前累计[must]天活跃度达到50。" progressInfo="已累计[compare]天" />
+			<addObjJson>{'lifeAll':0.70,'dpsAll':-0.40}</addObjJson>
+		</head>
+		
+		
+		
+		<head name="anniver6" cnName="爆枪六周年" diff="50">
+			<condition info="六周年签到奖励。" />
+			<addObjJson>{'dpsAll':0.1,'gemDropPro':0.11}</addObjJson>
+		</head>
+		
+		<head name="childrenDay" cnName="六一快乐" diff="30" iconUrl48="IconGather/childrenDay_48">
+			<condition info="在{purple 2023年6月15号之前}累计6天活跃度达到90。" />
+			<addObjJson>{'maxJumpNumAdd':2}</addObjJson>
+		</head>
+		<head name="childrenFly" cnName="六一起飞" diff="30" life="365">
+			<condition info="在{purple 2025年6月20号之前}累计8天活跃度达到90。" />
+			<addObjJson>{'fgNE':0.5}</addObjJson>
+		</head>
+		
+		<head name="anniver5" cnName="爆枪五周年" diff="50">
+			<condition info="五周年签到奖励。" />
+			<addObjJson>{'lifeAll':0.2,'gemDropPro':0.1}</addObjJson>
+		</head>
+		<head name="anniver4" cnName="爆枪四周年" diff="50">
+			<condition info="四周年签到奖励。" />
+			<addObjJson>{'lottery':10}</addObjJson>
+		</head>
+		
+		<head name="anniver3" cnName="爆枪三周年" diff="50">
+			<condition info="三周年签到奖励。" />
+			<addObjJson>{'blackEquipDropPro':0.40}</addObjJson>
+		</head>
+		
+		
+		<head name="qixi" cnName="七夕眷侣" diff="50" life="30">
+			<condition fun="num" must="5" pro="getActive90Day" info="在{purple 2016年8月21号}之前累计[must]天活跃度达到90。" progressInfo="已累计[compare]天" />
+			<addObjJson>{'dpsAll':0.06,'loveAdd':50}</addObjJson>
+		</head>
+		
+		<head name="zongzi" cnName="粽叶飘香" diff="40">
+			<condition fun="zongzi" info="通关猪头洋、百丈道、水升村、白鹭镇、西池的超难难度各1次，清理这些地方的僵尸，为举办龙舟赛做准备。" progressInfo="[compare]" />
+			<addObjJson>{'lottery':2,'dpsAll':0.02}</addObjJson>
+		</head>
+		<head name="happySpring" cnName="春节快乐" diff="20">
+			<condition info="春节点灯活动礼包。" />
+			<addObjJson>{'lottery':2}</addObjJson>
+		</head>
+		
+		
+		
+		<head name="widerAll" cnName="秘境征服者" diff="80">
+			<condition fun="num" must="5" pro="getWilderDiff4Num" info="累计通关[must]个神难秘境副本。" progressInfo="[compare]个" />
+			<addObjJson>{'dpsAll':0.06,'lottery':5}</addObjJson>
+		</head>
+		
+		
+		<head name="superHero" cnName="超能英雄" diff="120" life="15" iconUrl48="IconGather/superHero_48">
+			<condition info="使用“竞技宝箱”合成。" />
+			<addObjJson>{'dpsMul':1.0,'rareArmsDropPro':0.70}</addObjJson>
+		</head>
+		<head name="specialSoldiers" cnName="特种奇兵" diff="120" life="15" iconUrl48="IconGather/specialSoldiers_48">
+			<condition info="使用“竞技宝箱”合成。" />
+			<addObjJson>{'lifeMul':1.0,'rareEquipDropPro':0.70}</addObjJson>
+		</head>
+		
+		<head name="headshot_20" cnName="爆头王" diff="20">
+			<condition fun="num" must="20" pro="headShotLevelNum" info="连续通关[must]个关卡（不包括竞技场、任务），并且爆头率都在80%以上。" progressInfo="连续[compare]个}" />
+			<addObjJson>{'dpsMul_sniper':0.02}</addObjJson>
+		</head>
+		<head name="goddiff_30" cnName="踏平霞光" diff="30">
+			<condition fun="num" must="30" pro="getGoddiffNum" info="解锁神难地图超过[must]个。" progressInfo="[compare]个" />
+			<addObjJson>{'arenaStampDropNum':3}</addObjJson>
+		</head>
+		<head name="death" cnName="死神" diff="15">
+			<condition fun="death" info="获得“宇宙最脆”和“无药可救”2个成就勋章。" progressInfo="[compare]" />
+			<addObjJson>{'lifeRateMul':0.05}</addObjJson>
+		</head>
+		<head name="rareArms_5" cnName="武器收藏家" diff="20">
+			<condition fun="rareArms_5" info="获得4种稀有武器，并装上它们。" progressInfo="[compare]" />
+			<addObjJson>{'rareArmsDropPro':0.06}</addObjJson>
+		</head>
+		<head name="fakeFinale" cnName="假的大结局" diff="150">
+			<condition fun="num" must="96" pro="getMainTaskCompleteNum" info="完成[must]个主线任务。这不是大结局！这不是大结局！这不是大结局！" progressInfo="已完成[compare]个" />
+			<addObjJson>{'lottery':5}</addObjJson>
+		</head>
+	</father>
+	
+	
+	</data>

@@ -1,0 +1,151 @@
+{
+  "father": {
+    "name": "loveSkill",
+    "cnName": "忠诚度技能",
+    "skills": {
+      "defenceLing": {
+        "name": "defenceLing",
+        "cnName": "防御力提升",
+        "everNoClearB": 1,
+        "conditionType": "passive",
+        "condition": "add",
+        "target": "me",
+        "addType": "state",
+        "duration": 99999,
+        "mul": 0.6,
+        "effectType": "underHurtMul",
+        "description": "战斗中提升[1-mul]的防御力。"
+      },
+      "noHurt10Lings": {
+        "name": "noHurt10Lings",
+        "cnName": "抵挡低于自身生命值的伤害。",
+        "conditionType": "passive",
+        "condition": "underHurt",
+        "otherConditionArr": "hurtLessLifePer",
+        "conditionRange": 0.15,
+        "target": "me",
+        "addType": "instant",
+        "effectType": "addLifeByHurt",
+        "meEffectImg": {
+          "value": "generalEffect/hurtDefence1",
+          "partType": "body",
+          "con": "filter"
+        },
+        "description": "抵挡低于自身生命值15%的伤害。"
+      },
+      "resistPerLing4": {
+        "name": "resistPerLing4",
+        "cnName": "抵挡4次百分比伤害",
+        "ignoreImmunityB": 1,
+        "ignoreNoSkillB": 1,
+        "conditionType": "passive",
+        "condition": "underHit",
+        "otherConditionArr": "isMulHurt,specialNumLess,canUnderHurt",
+        "conditionRange": 4,
+        "target": "me",
+        "addType": "instant",
+        "effectType": "noMulHurt",
+        "description": "关卡中抵挡4次百分比伤害。",
+        "targetEffectImg": {
+          "value": "generalEffect/hurtDefence",
+          "partType": "body"
+        }
+      },
+      "hurtStrikerLing": {
+        "name": "hurtStrikerLing",
+        "cnName": "P1增伤-心零",
+        "typeD": {
+          "type": "hurt",
+          "child": "hurtDec",
+          "pro": "hurtStrikerLing"
+        },
+        "everNoClearB": 1,
+        "conditionType": "passive",
+        "condition": "add",
+        "target": "me",
+        "addType": "state",
+        "duration": 99999,
+        "mul": 2e-05,
+        "value": 0.4,
+        "effectType": "hurtMulByLingLove",
+        "valueString": "Striker",
+        "description": "P1角色获得相当于好感度x0.00002的攻击力加成，最多加成40%。"
+      },
+      "hurtLing40": {
+        "name": "hurtLing40",
+        "cnName": "攻击力提升40%",
+        "everNoClearB": 1,
+        "conditionType": "passive",
+        "condition": "add",
+        "target": "me",
+        "addType": "state",
+        "duration": 99999,
+        "mul": 1.4,
+        "effectType": "hurtMul",
+        "description": "战斗中的攻击力提升[mul-1]。"
+      },
+      "vehicleLing40": {
+        "name": "vehicleLing40",
+        "cnName": "载具防御力",
+        "everNoClearB": 1,
+        "ignoreImmunityB": 1,
+        "ignoreNoSkillB": 1,
+        "conditionType": "passive",
+        "condition": "add",
+        "target": "me",
+        "addType": "state",
+        "duration": 99999,
+        "mul": 1.5,
+        "secMul": 1,
+        "effectType": "defenceAndAttack",
+        "valueString": "vehicle",
+        "description": "战斗中提升载具[mul-1]的防御力。"
+      },
+      "ironBodyLing": {
+        "name": "ironBodyLing",
+        "cnName": "钢铁之躯",
+        "conditionType": "passive",
+        "condition": "underRos",
+        "target": "me",
+        "addType": "stateAndInstant",
+        "effectType": "ironBodyLing",
+        "mul": 0.07,
+        "duration": 4,
+        "stateEffectImg": {
+          "value": "bulletHitEffect/smoke_small",
+          "partType": "2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1",
+          "con": "add",
+          "raNum": 30
+        },
+        "description": "累计生命减少20%时，就会无敌[duration]秒，并回复[mul]的生命值。"
+      },
+      "eleStrikerLing": {
+        "name": "eleStrikerLing",
+        "cnName": "指定元素加成",
+        "conditionType": "passive",
+        "condition": "hit",
+        "target": "target",
+        "addType": "instant",
+        "effectType": "hurtStrikerLing",
+        "mul": 1.7,
+        "valueString": "Striker",
+        "description": "战斗中，P1角色对指定元素敏感的敌人造成额外[mul-1]的伤害。周一指定生化敏感，周二、周五指定火焰敏感，周三、周六指定冷冻敏感，周四、周日指定电磁敏感。"
+      },
+      "dropStrikerLing": {
+        "name": "dropStrikerLing",
+        "cnName": "掉率提升",
+        "noBeClearB": 1,
+        "everNoClearB": 1,
+        "conditionType": "passive",
+        "condition": "add",
+        "target": "me",
+        "addType": "state",
+        "duration": 99999,
+        "mul": 0.13,
+        "effectType": "dropStrikerLing",
+        "valueString": "Striker",
+        "description": "P1角色消灭敌人后，武器装备碎片掉率、宝石掉率提升[mul]。"
+      }
+    }
+  }
+}

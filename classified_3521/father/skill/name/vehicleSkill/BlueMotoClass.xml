@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicleSkill" cnName="技能">
+		
+		<skill>
+			<name>blade_blueMoto</name>
+			<cnName>冻血刀锋</cnName>
+			
+			<cd>20</cd>
+			<changeText>持续时间：[duration]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>blade_blueMoto</effectType>
+			<duration>6</duration>
+			<passiveSkillArr>blade_blueMoto_link</passiveSkillArr>
+			
+			
+			<meEffectImg soundUrl="sound/murderous_hero" />
+			<stateEffectImg partType="foot_left,foot_right" con="filter">BlueMoto/blade</stateEffectImg>
+			<description>车轮装配冻刀，令碰撞的敌人胆寒，降低其40%攻击力，持续[duration]秒。</description>
+			
+			<growth>
+				<skill><duration>6</duration></skill>
+				<skill><duration>6.5</duration></skill>
+				<skill><duration>7</duration></skill>
+				<skill><duration>7.5</duration></skill>
+				<skill><duration>8</duration></skill>
+				<skill><duration>8.5</duration></skill>
+				<skill><duration>9</duration></skill>
+				<skill><duration>9.5</duration></skill>
+				<skill><duration>10</duration></skill>
+			</growth>
+		</skill>
+		
+		<skill>
+			<name>rideShootMoto</name><noCopyB>1</noCopyB><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><ignoreNoSkillB>1</ignoreNoSkillB><ignoreSilenceB>1</ignoreSilenceB>
+			<cnName>骑射</cnName><iconUrl>SkillIcon/rideShootMoto</iconUrl>
+			
+			<conditionType>passive</conditionType>
+			<condition>no</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>rideShootMoto</effectType>
+			<mul>0.5</mul>
+			<duration>999999</duration>
+			<description>角色召唤载具将进入骑射状态（下蹲时则不召唤），期间角色将不会受到伤害，玩家可以操作角色的武器、技能、装置等，不能使用副手；玩家可同时操作载具的移动和射击，不过载具的技能将由AI控制，同时载具的防御将加倍。</description>
+			<growth>
+				<skill><duration>999999</duration></skill>
+			</growth>
+		</skill>
+	</father>
+		
+	
+	
+	
+	</data>

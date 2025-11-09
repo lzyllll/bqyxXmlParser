@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="weaponSkill" cnName="副手技能">
+		<skill>
+			<cnName>斩魂</cnName><wantDescripB>1</wantDescripB>
+			<name>cutLife</name><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>hurtIsNowWeapon,cutLifeLess</otherConditionArr>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>cutLife</effectType>
+			<secMul>0.26</secMul>
+			
+			<pointEffectImg name="yellowHitSilence" />
+			<description>每刀降低敌人一定的总生命值上限（每个副手不同），最多降低[secMul]。</description>
+		</skill>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<skill>
+			<cnName>电离驱散</cnName><wantDescripB>1</wantDescripB>
+			<name>weaponEmp</name><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>hurtIsAttack</otherConditionArr>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>weaponEmp</effectType>
+			<valueString>feedback_</valueString>
+			
+			<pointEffectImg con="add">bulletHitEffect/fitHit</pointEffectImg>
+			<description>清除目标电离折射效果。</description>
+		</skill>
+				<skill>
+					<cnName>电离驱散-任何</cnName>
+					<name>weaponEmpAll</name>
+					
+					<conditionType>passive</conditionType>
+					<condition>hit</condition>
+					<target>target</target>
+					
+					<addType>instant</addType>
+					<effectType>clearStateByNameContainPointEffect</effectType>
+					<valueString>feedback_</valueString>
+					
+					<pointEffectImg con="add">bulletHitEffect/fitHit</pointEffectImg>
+					<description>清除目标电离折射效果。</description>
+				</skill>
+		
+		<skill>
+			<cnName>崩溃</cnName><wantDescripB>1</wantDescripB>
+			<name>goldSpadeSkill</name><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>goldSpadeNumLess,noMainTask,targetUnitType</otherConditionArr>
+			<conditionRange>2</conditionRange>
+			<conditionString>boss</conditionString>
+			<target unitType="boss">target</target>
+			<applyArr>spadeAttack</applyArr>
+			
+			<addType>state</addType>
+			<effectType>goldSpadeSkill</effectType>
+			<mul>0.80</mul>
+			<duration>999999</duration>
+			
+			<stateEffectImg con="add" partType="body">generalEffect/nothing</stateEffectImg>
+			<pointEffectImg soundUrl="sound/hummer_hit">generalEffect/lightning</pointEffectImg>
+			<description>用铁锹敲打首领（主线任务、虚天塔除外），使其防御力每秒下降[1-mul]，无视技能免疫，每天只能释放2次该技能。</description>
+		</skill>
+		
+		
+		<skill index="0" name="凯撒特效附带">
+			<name>sprintSwordHit</name>
+			<cnName>凯撒特效附带</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			<applyArr>swordAttack</applyArr>
+			
+			<addType>state</addType>
+			<effectType>sprintSword</effectType>
+			<duration>1</duration>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+			<otherEffectImg con="add">Striker/swordAttackLeft</otherEffectImg>
+			<pointEffectImg con="add">Striker/swordAttackRight</pointEffectImg>
+		</skill>
+		
+		
+		
+		<skill index="0" name="凯撒特效附带">
+		
+		
+		
+			<name>sprintSwordHit_extra</name>
+			<cnName>凯撒特效附带</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>no</condition>
+			
+			<addType>instant</addType>
+			<effectType>no</effectType>
+			
+			<otherEffectImg con="add">Striker/swordAfterAttackLeft</otherEffectImg>
+			<pointEffectImg con="add">Striker/swordAfterAttackRight</pointEffectImg>
+		</skill>
+	</father>
+</data>

@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="野帝">
+		<bullet cnName="野帝-雪球">
+			<name>IceManShoot1</name>
+			<cnName>野帝-雪球</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>15</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.3</attackGap>
+			<attackDelay>0.72</attackDelay>
+			<bulletAngle>165</bulletAngle>
+			<bulletAngleRange>30</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+								
+				
+			<shootPoint>-232,-128</shootPoint>
+			<bulletSpeed>15</bulletSpeed>
+			<penetrationGap>1000</penetrationGap>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1">IceMan/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/snowHit" raNum="8">bulletHitEffect/snowHit</hitImgUrl>
+			<hitFloorImgUrl raNum="8">bulletHitEffect/snowHit</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="30">IceMan/smoke</smokeImgUrl>
+		</bullet>
+		<bullet cnName="野帝-雪球2">
+			<name>IceManShoot2</name>
+			<cnName>野帝-雪球2</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>15</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.7</attackGap>
+			<attackDelay>0.72</attackDelay>
+			<bulletAngle>165</bulletAngle>
+			<bulletAngleRange>30</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>3</shootNum>					
+			<shootGap>0.19</shootGap>					
+				
+			<shootPoint>-214,-138</shootPoint>
+			<bulletSpeed>15</bulletSpeed>
+			<penetrationGap>1000</penetrationGap>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1">IceMan/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/snowHit" raNum="8">bulletHitEffect/snowHit</hitImgUrl>
+			<hitFloorImgUrl raNum="8">bulletHitEffect/snowHit</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="30">IceMan/smoke</smokeImgUrl>
+		</bullet>
+		
+		<bullet cnName="野帝-踢爆">
+			<name>IceManKick</name>
+			<cnName>野帝-踢爆</cnName>
+			
+			<shakeAngle>9</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>70</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>2</attackGap>
+			<attackDelay>0.8</attackDelay>
+			<bulletAngle>-170</bulletAngle>
+			<bulletNum>1</bulletNum>				
+			<shootNum>4</shootNum>					
+			<shootGap>0.1</shootGap>					
+				
+			<shootPoint>-156,-33</shootPoint>
+			<bulletSpeed>25</bulletSpeed>
+			<penetrationGap>1000</penetrationGap>
+			<skillArr>IceManKickHit</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">IceMan/kickBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/snowHit" raNum="8">bulletHitEffect/snowHit</hitImgUrl>
+		</bullet>
+		
+		<bullet cnName="野帝-暴怒一击">
+			<name>IceManShake</name>
+			<cnName>野帝-暴怒一击</cnName>
+			
+			<hurtRatio>3</hurtRatio>
+			<attackType>holy</attackType>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>0.01</bulletLife>
+			<bulletWidth>100</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>270</bulletAngle>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+								
+			<shootAngle>0</shootAngle>					
+				
+			<penetrationGap>1000</penetrationGap>
+			<twoHitGap>0.2</twoHitGap>
+			<twoHitSameNameB>1</twoHitSameNameB>
+				
+			<shootPoint>0,0</shootPoint>
+			<bulletSpeed>0</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<imgClearDelay>0.24</imgClearDelay>
+			<bulletImgUrl>IceMan/boom</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="sound/snowHit">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+	</father>	
+	</data>

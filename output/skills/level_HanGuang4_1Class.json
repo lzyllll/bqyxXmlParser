@@ -1,0 +1,267 @@
+{
+  "father": {
+    "name": "normal",
+    "gather": {
+      "name": "寒光市",
+      "level": [
+        {
+          "name": "HanGuang4_city",
+          "info": {
+            "enemyLv": 94
+          },
+          "fixed": {
+            "target": "HanGuang4_1",
+            "info": "no",
+            "drop": "all",
+            "unitG": "all",
+            "rectG": "all",
+            "eventG": "no"
+          },
+          "sceneLabel": "HanGuang4",
+          "eventG": {
+            "group": {
+              "event": [
+                {
+                  "id": "e1_1",
+                  "condition": {
+                    "delay": 2
+                  },
+                  "order": "say; startList:s1"
+                },
+                {
+                  "id": "e2_0",
+                  "condition": "say:listOver; s1"
+                },
+                {
+                  "id": "e2_1",
+                  "condition": {
+                    "delay": 1
+                  }
+                },
+                {
+                  "id": "e2_1",
+                  "condition": {
+                    "value": "enemyNumber:less_3",
+                    "doNumber": 3,
+                    "orderChooseType": "randomOne"
+                  },
+                  "order": [
+                    "createUnit:enemy1; r1",
+                    "createUnit:enemy1; r2",
+                    "createUnit:enemy1; r3"
+                  ]
+                },
+                {
+                  "id": "e2_1",
+                  "condition": {
+                    "value": "enemyNumber:less_3",
+                    "doNumber": 3,
+                    "orderChooseType": "randomOne"
+                  },
+                  "order": [
+                    "createUnit:enemy2; r1",
+                    "createUnit:enemy2; r2",
+                    "createUnit:enemy2; r3"
+                  ]
+                },
+                {
+                  "id": "e2_1",
+                  "condition": {
+                    "value": "enemyNumber:less_3",
+                    "doNumber": 3,
+                    "orderChooseType": "randomOne"
+                  },
+                  "order": [
+                    "createUnit:enemy3; r1",
+                    "createUnit:enemy3; r2",
+                    "createUnit:enemy3; r3"
+                  ]
+                },
+                {
+                  "id": "e2_1",
+                  "condition": {
+                    "value": "enemyNumber:less_3",
+                    "doNumber": 1,
+                    "orderChooseType": "randomOne"
+                  },
+                  "order": [
+                    "createUnit:enemy4; r1",
+                    "createUnit:enemy4; r2",
+                    "createUnit:enemy4; r3"
+                  ]
+                },
+                {
+                  "id": "e2_11",
+                  "condition": {
+                    "value": "enemyNumber:less_1",
+                    "delay": 1
+                  },
+                  "order": "level; rebirthAllMore"
+                },
+                {
+                  "id": "e2_11",
+                  "condition": {
+                    "delay": 1
+                  },
+                  "order": "say; startList:s2"
+                },
+                {
+                  "id": "e2_11",
+                  "condition": {
+                    "value": "say:listOver; s2",
+                    "delay": 0.1
+                  },
+                  "order": [
+                    "task:now; complete",
+                    "worldMap:levelName; HanGuang4:HanGuang4_1",
+                    "level; showPointer:r_over"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "HanGuang4_1",
+          "info": {
+            "enemyLv": 94,
+            "diff": 2
+          },
+          "sceneLabel": "HanGuang4",
+          "unitG": {
+            "allDefault": {
+              "aiOrder": "patrolGlobal"
+            },
+            "unitOrder": [
+              {
+                "id": "enemy1",
+                "numberType": "number",
+                "unit": [
+                  {
+                    "cnName": "会计尸",
+                    "num": 5
+                  },
+                  {
+                    "cnName": "制图尸",
+                    "num": 5
+                  }
+                ]
+              },
+              {
+                "id": "enemy2",
+                "numberType": "number",
+                "unit": [
+                  {
+                    "cnName": "水管僵尸",
+                    "num": 6
+                  },
+                  {
+                    "cnName": "制图尸",
+                    "num": 5
+                  }
+                ]
+              },
+              {
+                "id": "enemy3",
+                "numberType": "number",
+                "unit": [
+                  {
+                    "cnName": "水管僵尸",
+                    "num": 8
+                  },
+                  {
+                    "cnName": "会计尸",
+                    "num": 3
+                  },
+                  {
+                    "cnName": "制图尸",
+                    "num": 5
+                  }
+                ]
+              },
+              {
+                "id": "enemy4",
+                "numberType": "number",
+                "unit": {
+                  "cnName": "异火龙",
+                  "unitType": "boss",
+                  "lifeMul": 2,
+                  "dpsMul": 2
+                }
+              }
+            ]
+          },
+          "eventG": {
+            "group": {
+              "event": [
+                {
+                  "id": "e2_1",
+                  "condition": {
+                    "delay": 1
+                  }
+                },
+                {
+                  "id": "e2_1",
+                  "condition": {
+                    "value": "enemyNumber:less_3",
+                    "doNumber": 3,
+                    "orderChooseType": "randomOne"
+                  },
+                  "order": [
+                    "createUnit:enemy1; r1",
+                    "createUnit:enemy1; r2",
+                    "createUnit:enemy1; r3"
+                  ]
+                },
+                {
+                  "id": "e2_1",
+                  "condition": {
+                    "value": "enemyNumber:less_3",
+                    "doNumber": 3,
+                    "orderChooseType": "randomOne"
+                  },
+                  "order": [
+                    "createUnit:enemy2; r1",
+                    "createUnit:enemy2; r2",
+                    "createUnit:enemy2; r3"
+                  ]
+                },
+                {
+                  "id": "e2_1",
+                  "condition": {
+                    "value": "enemyNumber:less_3",
+                    "doNumber": 3,
+                    "orderChooseType": "randomOne"
+                  },
+                  "order": [
+                    "createUnit:enemy3; r1",
+                    "createUnit:enemy3; r2",
+                    "createUnit:enemy3; r3"
+                  ]
+                },
+                {
+                  "id": "e2_1",
+                  "condition": {
+                    "value": "enemyNumber:less_3",
+                    "doNumber": 1,
+                    "orderChooseType": "randomOne"
+                  },
+                  "order": [
+                    "createUnit:enemy4; r1",
+                    "createUnit:enemy4; r2",
+                    "createUnit:enemy4; r3"
+                  ]
+                },
+                {
+                  "id": "e2_11",
+                  "condition": "enemyNumber:less_1",
+                  "order": "level; showPointer:r_over"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="big" cnName="大地图">
+		<place lv="999" cnName="感染区">
+			<name>infected_area</name>
+			<cnName>感染区</cnName>
+			<description />
+			<swfUrl>MainUI/infected_area</swfUrl>
+		</place>
+	</father>
+	</data>

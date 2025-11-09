@@ -1,0 +1,1462 @@
+{
+  "father": {
+    "name": "day",
+    "cnName": "每日",
+    "dayNum": 1,
+    "buyNum": 1,
+    "clearCompleteAfterBuyNumB": true,
+    "tipText": "每周（周一为时间点）将清除上次的任务进度。",
+    "autoUnlockByLevelB": true,
+    "maxLvLimitB": true,
+    "task": [
+      {
+        "name": "worldWar",
+        "cnName": "僵尸世界大战",
+        "uiShowTime": 999999,
+        "unlockLv": 7,
+        "moreKillEnemyNumIsMe": 1,
+        "shortText": "万尸围城！前往[map]消灭它们！",
+        "conditionText": "僵尸 [nowNum]/[num]",
+        "uiConditionText": "累计消灭 [nowNum]/[num] 个僵尸",
+        "description": "模拟电影《僵尸世界大战》中群尸围城的壮观场景，利用手中的武器一同消灭它们！",
+        "worldMapType": "random",
+        "fixedLevelUrl": "dayTask/worldWar",
+        "noEnemyWhenCompleteB": 1,
+        "uiFleshCondition": {
+          "one": "bodyEvent:die; anyone"
+        },
+        "growth": {
+          "task": [
+            {
+              "diff": 0.3,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 500
+              },
+              "gift": [
+                "base;exp;1;;;;LevelEnemyExp",
+                "base;coin;2;;;;LevelEnemyCoin",
+                "things;equipBox;3",
+                "things;equipHighBox;1",
+                {
+                  "value": "things;bloodStone;3",
+                  "showLv": 30
+                },
+                {
+                  "value": "things;partsChest72;4",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "diff": 1,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 1000
+              },
+              "gift": [
+                "base;exp;2;;;;LevelEnemyExp",
+                "base;coin;4;;;;LevelEnemyCoin",
+                "things;equipBox;6",
+                "things;equipHighBox;2",
+                {
+                  "value": "things;bloodStone;4",
+                  "showLv": 30
+                },
+                {
+                  "value": "things;partsChest72;5",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "diff": 2.5,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 1500
+              },
+              "gift": [
+                "base;exp;3;;;;LevelEnemyExp",
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;equipBox;9",
+                "things;equipHighBox;3",
+                {
+                  "value": "things;bloodStone;5",
+                  "showLv": 30
+                },
+                {
+                  "value": "things;partsChest72;3",
+                  "showLv": 70
+                },
+                {
+                  "value": "things;partsChest75;1",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "unlockLv": 90,
+              "diff": 7,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 1700
+              },
+              "gift": [
+                "base;exp;4;;;;LevelEnemyExp",
+                "base;coin;8;;;;LevelEnemyCoin",
+                "things;equipHighBox;4",
+                {
+                  "value": "things;bloodStone;6",
+                  "showLv": 30
+                },
+                {
+                  "value": "things;partsChest75;2",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "unlockLv": 95,
+              "diff": 20,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 2000
+              },
+              "gift": [
+                "base;exp;5;;;;LevelEnemyExp",
+                "base;coin;10;;;;LevelEnemyCoin",
+                "things;equipHighBox;5",
+                {
+                  "value": "things;bloodStone;6",
+                  "showLv": 30
+                },
+                {
+                  "value": "things;partsChest75;3",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "unlockLv": 99,
+              "diff": 20,
+              "enemyLifeMul": 2,
+              "enemyDpsMul": 1.2,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 2500
+              },
+              "gift": [
+                "base;exp;6;;;;LevelEnemyExp",
+                "base;coin;12;;;;LevelEnemyCoin",
+                "things;equipHighBox;6",
+                {
+                  "value": "things;bloodStone;6",
+                  "showLv": 30
+                },
+                {
+                  "value": "things;partsChest75;4",
+                  "showLv": 70
+                },
+                {
+                  "value": "base;anniCoin;3",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "unlockLv": 99,
+              "diff": 20,
+              "enemyLifeMul": 4,
+              "enemyDpsMul": 1.4,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 3000
+              },
+              "gift": [
+                "base;exp;7;;;;LevelEnemyExp",
+                "base;coin;14;;;;LevelEnemyCoin",
+                "things;equipHighBox;7",
+                {
+                  "value": "things;bloodStone;7",
+                  "showLv": 30
+                },
+                {
+                  "value": "things;partsChest75;5",
+                  "showLv": 70
+                },
+                {
+                  "value": "base;anniCoin;6",
+                  "showLv": 70
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "bet",
+        "cnName": "特种兵的赌约",
+        "uiShowTime": 999999,
+        "unlockLv": 8,
+        "moreKillEnemyNumIsMe": 1,
+        "shortText": "前往[map]和特种兵比拼消灭敌人的数量！",
+        "conditionText": "macth_kills_Jungle",
+        "uiConditionText": "在消灭所有僵尸之后，你灭敌数必须超过特种兵",
+        "description": "与特种兵阿天比拼灭敌数，胜利后可以获得他收藏的武器箱。",
+        "worldMapType": "random",
+        "fixedLevelUrl": "dayTask/bet",
+        "uiFleshCondition": {
+          "one": "bodyEvent:die; anyone"
+        },
+        "growth": {
+          "task": [
+            {
+              "diff": 0.5,
+              "gift": [
+                "base;exp;1;;;;LevelEnemyExp",
+                "base;coin;2;;;;LevelEnemyCoin",
+                "things;armsBox;2",
+                "things;armsHighBox;1",
+                {
+                  "value": "things;partsChest72;2",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "diff": 1.2,
+              "gift": [
+                "base;exp;2;;;;LevelEnemyExp",
+                "base;coin;4;;;;LevelEnemyCoin",
+                "things;armsBox;4",
+                "things;armsHighBox;2",
+                {
+                  "value": "things;weaponChest;1",
+                  "showLv": 30
+                },
+                {
+                  "value": "things;partsChest72;5",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "diff": 4,
+              "gift": [
+                "base;exp;3;;;;LevelEnemyExp",
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsBox;6",
+                "things;armsHighBox;3",
+                {
+                  "value": "things;weaponChest;2",
+                  "showLv": 30
+                },
+                {
+                  "value": "things;partsChest72;3",
+                  "showLv": 70
+                },
+                {
+                  "value": "things;partsChest75;1",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "unlockLv": 90,
+              "diff": 10,
+              "gift": [
+                "base;exp;4;;;;LevelEnemyExp",
+                "base;coin;8;;;;LevelEnemyCoin",
+                "things;armsHighBox;4",
+                {
+                  "value": "things;weaponChest;3",
+                  "showLv": 30
+                },
+                {
+                  "value": "things;partsChest75;2",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "unlockLv": 95,
+              "diff": 25,
+              "gift": [
+                "base;exp;5;;;;LevelEnemyExp",
+                "base;coin;10;;;;LevelEnemyCoin",
+                "things;armsHighBox;5",
+                {
+                  "value": "things;weaponChest;3",
+                  "showLv": 30
+                },
+                {
+                  "value": "things;partsChest75;3",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "unlockLv": 99,
+              "diff": 25,
+              "enemyLifeMul": 2,
+              "enemyDpsMul": 1.2,
+              "gift": [
+                "base;exp;6;;;;LevelEnemyExp",
+                "base;coin;12;;;;LevelEnemyCoin",
+                "things;armsHighBox;6",
+                {
+                  "value": "things;weaponChest;4",
+                  "showLv": 30
+                },
+                {
+                  "value": "things;partsChest75;4",
+                  "showLv": 70
+                },
+                {
+                  "value": "base;anniCoin;3",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "unlockLv": 99,
+              "diff": 25,
+              "enemyLifeMul": 4,
+              "enemyDpsMul": 1.4,
+              "gift": [
+                "base;exp;7;;;;LevelEnemyExp",
+                "base;coin;14;;;;LevelEnemyCoin",
+                "things;armsHighBox;7",
+                {
+                  "value": "things;weaponChest;5",
+                  "showLv": 30
+                },
+                {
+                  "value": "things;partsChest75;5",
+                  "showLv": 70
+                },
+                {
+                  "value": "base;anniCoin;6",
+                  "showLv": 70
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "oldRocket",
+        "cnName": "古老的火炮",
+        "uiShowTime": 999999,
+        "unlockLv": 9,
+        "limit": {
+          "vehicleB": false
+        },
+        "shortText": "前往[map]用古老火炮对僵尸进行爆头！",
+        "conditionText": "僵尸 [nowNum]/[num]",
+        "uiConditionText": "在关卡中爆头[num]只僵尸，炮弹限制100枚",
+        "description": "在来到沃土镇之前，你手里只有一把祖传的古老火炮，这把火炮发射推力很弱，对僵尸的身体几乎造成不了什么伤害，但对僵尸的头部伤害极大。",
+        "worldMapType": "random",
+        "fixedLevelUrl": "dayTask/oldRocket",
+        "noEnemyWhenCompleteB": 1,
+        "growth": {
+          "task": [
+            {
+              "diff": 0.5,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 15,
+                "cumulativeType": "no"
+              },
+              "gift": [
+                "base;exp;1;;;;LevelEnemyExp",
+                "base;coin;2;;;;LevelEnemyCoin",
+                "things;armsBox;2",
+                "things;armsHighBox;1",
+                "things;equipBox;2",
+                "things;equipHighBox;1",
+                {
+                  "value": "things;deviceChest;1",
+                  "showLv": 30
+                },
+                {
+                  "value": "things;partsChest72;2",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "diff": 1.5,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 30,
+                "cumulativeType": "no"
+              },
+              "gift": [
+                "base;exp;2;;;;LevelEnemyExp",
+                "base;coin;4;;;;LevelEnemyCoin",
+                "things;armsBox;4",
+                "things;armsHighBox;2",
+                "things;equipBox;4",
+                "things;equipHighBox;2",
+                {
+                  "value": "things;deviceChest;2",
+                  "showLv": 30
+                },
+                {
+                  "value": "things;partsChest72;5",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "diff": 4,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 45,
+                "cumulativeType": "no"
+              },
+              "gift": [
+                "base;exp;3;;;;LevelEnemyExp",
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsBox;6",
+                "things;armsHighBox;3",
+                "things;equipBox;6",
+                "things;equipHighBox;3",
+                {
+                  "value": "things;deviceChest;3",
+                  "showLv": 30
+                },
+                {
+                  "value": "things;partsChest72;3",
+                  "showLv": 70
+                },
+                {
+                  "value": "things;partsChest75;1",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "unlockLv": 90,
+              "diff": 10,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 60,
+                "cumulativeType": "no"
+              },
+              "gift": [
+                "base;exp;4;;;;LevelEnemyExp",
+                "base;coin;8;;;;LevelEnemyCoin",
+                "things;armsHighBox;4",
+                "things;equipHighBox;4",
+                {
+                  "value": "things;deviceChest;4",
+                  "showLv": 30
+                },
+                {
+                  "value": "things;partsChest75;2",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "unlockLv": 95,
+              "diff": 25,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 75,
+                "cumulativeType": "no"
+              },
+              "gift": [
+                "base;exp;5;;;;LevelEnemyExp",
+                "base;coin;10;;;;LevelEnemyCoin",
+                "things;armsHighBox;5",
+                "things;equipHighBox;5",
+                {
+                  "value": "things;deviceChest;4",
+                  "showLv": 30
+                },
+                {
+                  "value": "things;partsChest75;3",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "unlockLv": 99,
+              "diff": 25,
+              "enemyLifeMul": 2,
+              "enemyDpsMul": 1.2,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 90,
+                "cumulativeType": "no"
+              },
+              "gift": [
+                "base;exp;6;;;;LevelEnemyExp",
+                "base;coin;12;;;;LevelEnemyCoin",
+                "things;armsHighBox;5",
+                "things;equipHighBox;5",
+                {
+                  "value": "things;deviceChest;5",
+                  "showLv": 30
+                },
+                {
+                  "value": "things;partsChest75;4",
+                  "showLv": 70
+                },
+                {
+                  "value": "base;anniCoin;3",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "unlockLv": 99,
+              "diff": 25,
+              "enemyLifeMul": 4,
+              "enemyDpsMul": 1.4,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 100,
+                "cumulativeType": "no"
+              },
+              "gift": [
+                "base;exp;7;;;;LevelEnemyExp",
+                "base;coin;14;;;;LevelEnemyCoin",
+                "things;armsHighBox;5",
+                "things;equipHighBox;5",
+                {
+                  "value": "things;deviceChest;6",
+                  "showLv": 30
+                },
+                {
+                  "value": "things;partsChest75;5",
+                  "showLv": 70
+                },
+                {
+                  "value": "base;anniCoin;6",
+                  "showLv": 70
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "runAway",
+        "cnName": "逃出生天",
+        "uiShowTime": 999999,
+        "unlockLv": 10,
+        "limit": {
+          "vehicleB": false
+        },
+        "shortText": "在[map]躲过熔岩群袭击，你要存活下来！",
+        "conditionText": "坚持 [time]",
+        "uiConditionText": "坚持 [time]",
+        "description": "在僵尸病毒入侵之前，霞光市的西峰火山发生了一次大爆发，产生的熔岩石群像导弹一般席卷整个大陆，你要逃过这次熔岩灾难，存活下来！",
+        "worldMapType": "random",
+        "fixedLevelUrl": "dayTask/runAway",
+        "noEnemyWhenCompleteB": 1,
+        "growth": {
+          "task": [
+            {
+              "condition": {
+                "time": 50,
+                "timeType": "win"
+              },
+              "gift": [
+                "base;exp;1;;;;LevelEnemyExp",
+                "base;coin;2;;;;LevelEnemyCoin",
+                "things;armsBox;2",
+                "things;armsHighBox;1",
+                "things;equipBox;2",
+                "things;equipHighBox;1",
+                {
+                  "value": "things;keyChest;1",
+                  "showLv": 60
+                },
+                {
+                  "value": "things;partsChest72;2",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "condition": {
+                "time": 55,
+                "timeType": "win"
+              },
+              "gift": [
+                "base;exp;2;;;;LevelEnemyExp",
+                "base;coin;4;;;;LevelEnemyCoin",
+                "things;armsBox;4",
+                "things;armsHighBox;2",
+                "things;equipBox;4",
+                "things;equipHighBox;2",
+                {
+                  "value": "things;keyChest;2",
+                  "showLv": 60
+                },
+                {
+                  "value": "things;partsChest72;5",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "condition": {
+                "time": 60,
+                "timeType": "win"
+              },
+              "gift": [
+                "base;exp;3;;;;LevelEnemyExp",
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsBox;6",
+                "things;armsHighBox;3",
+                "things;equipBox;6",
+                "things;equipHighBox;3",
+                {
+                  "value": "things;keyChest;3",
+                  "showLv": 60
+                },
+                {
+                  "value": "things;partsChest72;3",
+                  "showLv": 70
+                },
+                {
+                  "value": "things;partsChest75;1",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "unlockLv": 90,
+              "condition": {
+                "time": 65,
+                "timeType": "win"
+              },
+              "gift": [
+                "base;exp;4;;;;LevelEnemyExp",
+                "base;coin;8;;;;LevelEnemyCoin",
+                "things;armsHighBox;4",
+                "things;equipHighBox;4",
+                {
+                  "value": "things;keyChest;4",
+                  "showLv": 60
+                },
+                {
+                  "value": "things;partsChest75;2",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "unlockLv": 95,
+              "condition": {
+                "time": 70,
+                "timeType": "win"
+              },
+              "gift": [
+                "base;exp;5;;;;LevelEnemyExp",
+                "base;coin;10;;;;LevelEnemyCoin",
+                "things;armsHighBox;5",
+                "things;equipHighBox;5",
+                {
+                  "value": "things;keyChest;4",
+                  "showLv": 60
+                },
+                {
+                  "value": "things;partsChest75;3",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "unlockLv": 99,
+              "condition": {
+                "time": 75,
+                "timeType": "win"
+              },
+              "gift": [
+                "base;exp;6;;;;LevelEnemyExp",
+                "base;coin;12;;;;LevelEnemyCoin",
+                "things;armsHighBox;6",
+                "things;equipHighBox;6",
+                {
+                  "value": "things;keyChest;5",
+                  "showLv": 60
+                },
+                {
+                  "value": "things;partsChest75;4",
+                  "showLv": 70
+                },
+                {
+                  "value": "base;anniCoin;3",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "unlockLv": 99,
+              "condition": {
+                "time": 80,
+                "timeType": "win"
+              },
+              "gift": [
+                "base;exp;6;;;;LevelEnemyExp",
+                "base;coin;12;;;;LevelEnemyCoin",
+                "things;armsHighBox;7",
+                "things;equipHighBox;7",
+                {
+                  "value": "things;keyChest;6",
+                  "showLv": 60
+                },
+                {
+                  "value": "things;partsChest75;5",
+                  "showLv": 70
+                },
+                {
+                  "value": "base;anniCoin;6",
+                  "showLv": 70
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "coinChase",
+        "cnName": "银币追逐者",
+        "uiShowTime": 999999,
+        "unlockLv": 11,
+        "shortText": "前往[map]收集大银币。",
+        "conditionText": "剩余时间 [time][n]大银币 [nowNum]/[num]",
+        "uiConditionText": "在时间 [time] 之内收集大银币 [num] 个",
+        "description": "这是一项考验操作的任务。玩家需在规定时间内收集地图内指定数量的银币。",
+        "worldMapType": "random",
+        "fixedLevelUrl": "dayTask/coinChase",
+        "noEnemyWhenCompleteB": 1,
+        "growth": {
+          "task": [
+            {
+              "condition": {
+                "type": "collect",
+                "target": "hitDrop",
+                "targetId": "addCoin_task",
+                "value": 30,
+                "cumulativeType": "no",
+                "time": 135,
+                "timeType": "fail"
+              },
+              "gift": [
+                "base;exp;1;;;;LevelEnemyExp",
+                "base;coin;2;;;;LevelEnemyCoin",
+                "things;armsBox;2",
+                "things;armsHighBox;1",
+                "things;equipBox;2",
+                "things;equipHighBox;1",
+                {
+                  "value": "things;strengthenStone;1",
+                  "showLv": 65
+                },
+                {
+                  "value": "things;partsChest72;1",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "condition": {
+                "type": "collect",
+                "target": "hitDrop",
+                "targetId": "addCoin_task",
+                "value": 35,
+                "cumulativeType": "no",
+                "time": 135,
+                "timeType": "fail"
+              },
+              "gift": [
+                "base;exp;2;;;;LevelEnemyExp",
+                "base;coin;4;;;;LevelEnemyCoin",
+                "things;armsBox;4",
+                "things;armsHighBox;2",
+                "things;equipBox;4",
+                "things;equipHighBox;2",
+                {
+                  "value": "things;strengthenStone;2",
+                  "showLv": 65
+                },
+                {
+                  "value": "things;partsChest72;3",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "condition": {
+                "type": "collect",
+                "target": "hitDrop",
+                "targetId": "addCoin_task",
+                "value": 40,
+                "cumulativeType": "no",
+                "time": 135,
+                "timeType": "fail"
+              },
+              "gift": [
+                "base;exp;3;;;;LevelEnemyExp",
+                "base;coin;6;;;;LevelEnemyCoin",
+                "things;armsBox;6",
+                "things;armsHighBox;3",
+                "things;equipBox;6",
+                "things;equipHighBox;3",
+                {
+                  "value": "things;strengthenStone;3",
+                  "showLv": 65
+                },
+                {
+                  "value": "things;partsChest72;5",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "unlockLv": 90,
+              "condition": {
+                "type": "collect",
+                "target": "hitDrop",
+                "targetId": "addCoin_task",
+                "value": 45,
+                "cumulativeType": "no",
+                "time": 135,
+                "timeType": "fail"
+              },
+              "gift": [
+                "base;exp;4;;;;LevelEnemyExp",
+                "base;coin;8;;;;LevelEnemyCoin",
+                "things;armsHighBox;4",
+                "things;equipHighBox;4",
+                {
+                  "value": "things;strengthenStone;4",
+                  "showLv": 65
+                },
+                {
+                  "value": "things;partsChest75;2",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "unlockLv": 95,
+              "condition": {
+                "type": "collect",
+                "target": "hitDrop",
+                "targetId": "addCoin_task",
+                "value": 50,
+                "cumulativeType": "no",
+                "time": 135,
+                "timeType": "fail"
+              },
+              "gift": [
+                "base;exp;5;;;;LevelEnemyExp",
+                "base;coin;10;;;;LevelEnemyCoin",
+                "things;armsHighBox;5",
+                "things;equipHighBox;5",
+                {
+                  "value": "things;strengthenStone;4",
+                  "showLv": 65
+                },
+                {
+                  "value": "things;partsChest75;3",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "unlockLv": 99,
+              "condition": {
+                "type": "collect",
+                "target": "hitDrop",
+                "targetId": "addCoin_task",
+                "value": 55,
+                "cumulativeType": "no",
+                "time": 135,
+                "timeType": "fail"
+              },
+              "gift": [
+                "base;exp;6;;;;LevelEnemyExp",
+                "base;coin;12;;;;LevelEnemyCoin",
+                "things;armsHighBox;5",
+                "things;equipHighBox;5",
+                {
+                  "value": "things;strengthenStone;5",
+                  "showLv": 65
+                },
+                {
+                  "value": "things;partsChest75;4",
+                  "showLv": 70
+                },
+                {
+                  "value": "base;anniCoin;3",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "unlockLv": 99,
+              "condition": {
+                "type": "collect",
+                "target": "hitDrop",
+                "targetId": "addCoin_task",
+                "value": 60,
+                "cumulativeType": "no",
+                "time": 135,
+                "timeType": "fail"
+              },
+              "gift": [
+                "base;exp;7;;;;LevelEnemyExp",
+                "base;coin;14;;;;LevelEnemyCoin",
+                "things;armsHighBox;5",
+                "things;equipHighBox;5",
+                {
+                  "value": "things;strengthenStone;6",
+                  "showLv": 65
+                },
+                {
+                  "value": "things;partsChest75;5",
+                  "showLv": 70
+                },
+                {
+                  "value": "base;anniCoin;6",
+                  "showLv": 70
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "sniperKing",
+        "cnName": "狙击之王",
+        "uiShowTime": 999999,
+        "unlockLv": 30,
+        "limit": {
+          "vehicleB": false,
+          "propsB": false,
+          "skillB": false
+        },
+        "shortText": "前往[map]用狙击消灭怪物",
+        "conditionText": "怪物 [nowNum]/[num]",
+        "uiConditionText": "累计消灭 [nowNum]/[num] 个怪物",
+        "description": "任务中你将无法动弹，并且不能使用载具、装置、副手，只能用指定狙击枪。任务中将出现3种敌人，击中每种敌人的脆弱部位将直接瞬秒它，敌人脆弱部位如下：科研僵尸（头部）、水管僵尸（身体）、吸血蝙蝠（全身）。",
+        "worldMapType": "range",
+        "worldMapId": "FengWei,XiChi,BaiLu,ShuiSheng,ZhuTou,ShuangTa,BeiDou,DongShan,QingSha,QingMing,NanTang,YouLing,XiFeng,BaoLun,LuYu,BaWang,PingChuan,BaiSha,ZhongXin,HouJin,ShaJiang,PrisonDoor",
+        "fixedLevelUrl": "dayTask/sniperKing",
+        "noEnemyWhenCompleteB": 1,
+        "growth": {
+          "task": [
+            {
+              "diff": 0.5,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 20
+              },
+              "gift": [
+                "things;allBlackEquipCash;4",
+                {
+                  "value": "things;electricGem;2",
+                  "showLv": 80
+                }
+              ]
+            },
+            {
+              "diff": 0.7,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 25
+              },
+              "gift": [
+                "things;allBlackEquipCash;5",
+                {
+                  "value": "things;electricGem;3",
+                  "showLv": 80
+                }
+              ]
+            },
+            {
+              "diff": 1,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 30
+              },
+              "gift": [
+                "things;allBlackEquipCash;6",
+                {
+                  "value": "things;electricGem;4",
+                  "showLv": 80
+                }
+              ]
+            },
+            {
+              "diff": 1,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 35
+              },
+              "gift": [
+                "things;allBlackEquipCash;8",
+                {
+                  "value": "things;electricGem;5",
+                  "showLv": 80
+                }
+              ]
+            },
+            {
+              "diff": 1,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 49
+              },
+              "gift": [
+                "things;allBlackEquipCash;10",
+                {
+                  "value": "things;electricGem;6",
+                  "showLv": 80
+                }
+              ]
+            },
+            {
+              "diff": 1,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 45
+              },
+              "gift": [
+                "things;allBlackEquipCash;12",
+                {
+                  "value": "things;electricGem;7",
+                  "showLv": 80
+                }
+              ]
+            },
+            {
+              "diff": 1,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 50
+              },
+              "gift": [
+                "things;allBlackEquipCash;14",
+                {
+                  "value": "things;electricGem;8",
+                  "showLv": 80
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "invincibleZombie",
+        "cnName": "大逃亡",
+        "uiShowTime": 999999,
+        "unlockLv": 30,
+        "limit": {
+          "vehicleB": false,
+          "propsB": false,
+          "skillB": false
+        },
+        "shortText": "在[map]躲避无敌僵尸的攻击，你要尽量活下来！",
+        "conditionText": "坚持 [time]",
+        "uiConditionText": "坚持 [time]",
+        "description": "一群无敌自爆僵尸在追击你，你要躲避它们的攻击，尽量活下来！注意，游戏中将随机出现无敌药水。",
+        "worldMapType": "random",
+        "fixedLevelUrl": "dayTask/invincibleZombie",
+        "noEnemyWhenCompleteB": 1,
+        "growth": {
+          "task": [
+            {
+              "diff": 0.5,
+              "condition": {
+                "time": 30,
+                "timeType": "win"
+              },
+              "gift": [
+                "things;allBlackCash;4",
+                {
+                  "value": "things;frozenGem;2",
+                  "showLv": 80
+                }
+              ]
+            },
+            {
+              "diff": 0.7,
+              "condition": {
+                "time": 40,
+                "timeType": "win"
+              },
+              "gift": [
+                "things;allBlackCash;5",
+                {
+                  "value": "things;frozenGem;3",
+                  "showLv": 80
+                }
+              ]
+            },
+            {
+              "diff": 1,
+              "condition": {
+                "time": 45,
+                "timeType": "win"
+              },
+              "gift": [
+                "things;allBlackCash;6",
+                {
+                  "value": "things;frozenGem;4",
+                  "showLv": 80
+                }
+              ]
+            },
+            {
+              "diff": 1,
+              "condition": {
+                "time": 50,
+                "timeType": "win"
+              },
+              "gift": [
+                "things;allBlackCash;8",
+                {
+                  "value": "things;frozenGem;5",
+                  "showLv": 80
+                }
+              ]
+            },
+            {
+              "diff": 1,
+              "condition": {
+                "time": 55,
+                "timeType": "win"
+              },
+              "gift": [
+                "things;allBlackCash;10",
+                {
+                  "value": "things;frozenGem;6",
+                  "showLv": 80
+                }
+              ]
+            },
+            {
+              "diff": 1,
+              "condition": {
+                "time": 60,
+                "timeType": "win"
+              },
+              "gift": [
+                "things;allBlackCash;12",
+                {
+                  "value": "things;frozenGem;7",
+                  "showLv": 80
+                }
+              ]
+            },
+            {
+              "diff": 1,
+              "condition": {
+                "time": 65,
+                "timeType": "win"
+              },
+              "gift": [
+                "things;allBlackCash;14",
+                {
+                  "value": "things;frozenGem;8",
+                  "showLv": 80
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "bulletRain",
+        "cnName": "枪林弹雨",
+        "uiShowTime": 999999,
+        "unlockLv": 30,
+        "limit": {
+          "vehicleB": false,
+          "propsB": false,
+          "skillB": false
+        },
+        "shortText": "在[map]的疯狂导弹攻击中活下来！",
+        "conditionText": "坚持 [time]",
+        "uiConditionText": "坚持 [time]",
+        "description": "你被困在实验室里，正面遭受大量的导弹攻击，你要利用弹跳躲避它们！碰到闪电球将清空当前所有导弹。同时，游戏中将随机出现无敌药水。",
+        "worldMapId": "PrisonDoor",
+        "levelId": "dayTask/bulletRain",
+        "growth": {
+          "task": [
+            {
+              "diff": 0.5,
+              "condition": {
+                "time": 30,
+                "timeType": "win"
+              },
+              "gift": [
+                "things;allBlackEquipCash;4",
+                {
+                  "value": "things;artifactChest;1",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "diff": 0.7,
+              "condition": {
+                "time": 35,
+                "timeType": "win"
+              },
+              "gift": [
+                "things;allBlackEquipCash;5",
+                {
+                  "value": "things;artifactChest;1.5",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "diff": 1,
+              "condition": {
+                "time": 40,
+                "timeType": "win"
+              },
+              "gift": [
+                "things;allBlackEquipCash;6",
+                {
+                  "value": "things;artifactChest;2",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "diff": 1,
+              "condition": {
+                "time": 45,
+                "timeType": "win"
+              },
+              "gift": [
+                "things;allBlackEquipCash;8",
+                {
+                  "value": "things;artifactChest;3",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "diff": 1,
+              "condition": {
+                "time": 50,
+                "timeType": "win"
+              },
+              "gift": [
+                "things;allBlackEquipCash;10",
+                {
+                  "value": "things;artifactChest;3",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "diff": 1,
+              "condition": {
+                "time": 55,
+                "timeType": "win"
+              },
+              "gift": [
+                "things;allBlackEquipCash;12",
+                {
+                  "value": "things;artifactChest;3.5",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "diff": 1,
+              "condition": {
+                "time": 60,
+                "timeType": "win"
+              },
+              "gift": [
+                "things;allBlackEquipCash;14",
+                {
+                  "value": "things;artifactChest;4",
+                  "showLv": 70
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "flySky",
+        "cnName": "直上云霄",
+        "uiShowTime": 999999,
+        "unlockLv": 30,
+        "limit": {
+          "vehicleB": false,
+          "propsB": false,
+          "skillB": false
+        },
+        "shortText": "踩踏指定数量的蝙蝠",
+        "conditionText": "踩踏[nowNum]/[num]只蝙蝠",
+        "uiConditionText": "踩踏[num]只蝙蝠",
+        "description": "踩踏一只蝙蝠你将自动弹跳1次，利用弹跳踩到更多的蝙蝠。踩踏发着紫光的蝙蝠将使地面抬升至你脚下，并且消灭脚下所有的蝙蝠。",
+        "worldMapId": "FlySkyScene",
+        "levelId": "dayTask/flySky",
+        "growth": {
+          "task": [
+            {
+              "diff": 0.5,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 30,
+                "cumulativeType": "no",
+                "targetId": "flySky"
+              },
+              "gift": [
+                "things;allBlackCash;4",
+                {
+                  "value": "things;artifactChest;1",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "diff": 0.7,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 40,
+                "cumulativeType": "no",
+                "targetId": "flySky"
+              },
+              "gift": [
+                "things;allBlackCash;5",
+                {
+                  "value": "things;artifactChest;1.5",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "diff": 1,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 55,
+                "cumulativeType": "no",
+                "targetId": "flySky"
+              },
+              "gift": [
+                "things;allBlackCash;6",
+                {
+                  "value": "things;artifactChest;2",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "diff": 1,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 70,
+                "cumulativeType": "no",
+                "targetId": "flySky"
+              },
+              "gift": [
+                "things;allBlackCash;8",
+                {
+                  "value": "things;artifactChest;3",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "diff": 1,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 90,
+                "cumulativeType": "no",
+                "targetId": "flySky"
+              },
+              "gift": [
+                "things;allBlackCash;10",
+                {
+                  "value": "things;artifactChest;3.5",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "diff": 1,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 120,
+                "cumulativeType": "no",
+                "targetId": "flySky"
+              },
+              "gift": [
+                "things;allBlackCash;12",
+                {
+                  "value": "things;artifactChest;4",
+                  "showLv": 70
+                }
+              ]
+            },
+            {
+              "diff": 1,
+              "condition": {
+                "type": "collect",
+                "target": "killEnemyNum",
+                "value": 160,
+                "cumulativeType": "no",
+                "targetId": "flySky"
+              },
+              "gift": [
+                "things;allBlackCash;14",
+                {
+                  "value": "things;artifactChest;4.5",
+                  "showLv": 70
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

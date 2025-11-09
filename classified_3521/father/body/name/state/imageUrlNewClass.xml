@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="state" cnName="状态">
+		<body cnName="加速扳机" partType="2hand" con="add" name="armsSpeed_jie">skillEffect/armsSpeed_jie</body>
+		
+		<body cnName="火烟" name="boomMoveSmokeState" sm="boomMoveSmoke" partType="body">boomEffect/zero</body>
+		<body cnName="火烟-小" name="boomMoveSmokeSmallState" sm="boomMoveSmokeSmall" partType="body">boomEffect/zero</body>
+		<body cnName="陨石烟" name="stoneSmoke" sm="midGreySmoke" partType="body" xGap="50" con="add">boomEffect/zero</body>
+		<body cnName="黄金隼烈火" name="falconSawState" con="add" partType="head,body,leg_right_1,leg_left_1,arm_right_1,arm_left_1,mouth">generalEffect/blackHoleHide</body>
+		<body cnName="水脚" name="waterFoot" con="add" partType="2foot">generalEffect/waterFace</body>
+		<body cnName="石脚" name="stoneFoot" con="add" partType="2foot">skillEffect/imploding_enemy_bullet</body>
+		
+		<body cnName="武器冒烟" name="gunSmokeSmall" sm="midGreySmoke" partType="shootPoint">boomEffect/zero</body>
+		<body cnName="四肢冒烟" name="minersShake" partType="2foot,2hand" sm="midGreySmoke">boomEffect/zero</body>
+		
+		<body cnName="治疗兵护盾" name="healerShield" con="add" partType="body">HealerZombie/shieldMc</body>
+		<body cnName="自闭-符文" name="noAttackOrder" con="add" partType="mouth">skillEffect/noAttackOrder</body>
+		<body cnName="圣诞铁盒-buff" name="iconGiftBoxBuff" con="add">IconGiftBody/buff</body>
+		
+		<body cnName="嘴巴冒烟" name="mouthSmoke" partType="mouth" sm="midGreySmoke">boomEffect/zero</body>
+		<body cnName="驱魂特效" name="lightConePurgold" partType="head" con="add">generalEffect/lightConePurgold</body>
+		<body cnName="技能回复" name="cdHole" partType="mouth" con="add">skillEffect/rune_purple_s</body>
+		<body cnName="技能回复降低" name="cdDown" partType="mouth">skillEffect/rune_black_s</body>
+		<body cnName="怒气回复" name="angerHole" partType="mouth" con="add">skillEffect/rune_anger</body>
+		<body cnName="脑袋金光" name="headOrangeLight" partType="head" con="add">lightEffect/orange</body>
+		
+		<body cnName="身上绿烟" name="bodyGreenSmoke" partType="mouth,head" con="add" imgDieType="ranPlay" urlRandomValue="2">smokeEffect/midGreen</body>
+		
+		<body cnName="吞噬者-眼睛冒烟" name="eyeSmokeWSnake" partType="2eye" sm="boomMoveSmoke">boomEffect/zero</body>
+		<body cnName="吞噬者-无敌" name="weaknessWSnake" partType="body" con="add">WorldSnake/weaknessEffect</body>
+		
+		<body cnName="爆裂弹" name="burstParts" partType="shootPoint" con="add">PartsIcon/burstEffect</body>
+		<body cnName="头电" name="headElectric" partType="head" con="add">generalEffect/electricLineState</body>
+		<body cnName="腿部电流" name="upElectric" partType="2foot,leg_left_1,leg_left_0,leg_right_1,leg_right_0" con="add">generalEffect/electricLineState</body>
+		<body cnName="风驰血锯" name="FourDiggersSkill" partType="head" con="add">FourDiggers/effect5</body>
+		<body cnName="火种特效" name="madFireBody" partType="body" con="add">generalEffect/madFire</body>
+		
+		<body cnName="筋斗云-滑翔专用" name="greatSageCloud" partType="" con="filter" noShowB="1">greatSage/cloud</body>
+		<body cnName="筋斗云" name="greatSageCloud2" partType="" con="filter">greatSage/cloud</body>
+		
+		<body cnName="挖掘者轮刺" name="wheelStabsDiggers" partType="leg_right_0" con="add">FourDiggers/rotateEffect2</body>
+		<body cnName="黑魂发光状态" name="blackGhostState" partType="arm_right_0,arm_left_0,body,leg_right_1,leg_left_1" con="add" imgDieType="ranPlay">generalEffect/ghostLight</body>
+		<body cnName="枷锁" name="offPassSkill" partType="mouth" con="add">skillEffect/silencePass</body>
+		<body cnName="悬停沙漏状态" name="timeCapsuleState" partType="body" con="add" imgDieType="timeDie">skillEffect/timeCapsuleState</body>
+		<body cnName="自燃" name="selfBurnNew" partType="body,arm_right_1,arm_left_1,leg_right_1,leg_left_1" con="add" raNum="30">skillEffect/smallFire</body>
+		
+		<body cnName="黑暗骑士-载具敏感" name="BlackKnightsVehicleEffect" partType="mouth">BlackKnights/vehicleEffect</body>
+	</father>
+	</data>

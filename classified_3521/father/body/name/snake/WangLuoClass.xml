@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="snake" cnName="血蟒">
+		<body index="0" name="旺达" shell="normal">
+			
+			<name>WangLuo</name><movieLink>XiaoHu</movieLink>
+			<cnName>旺达</cnName>
+			<raceType>human</raceType>
+			<swfUrl>swf/hero/WangLuo.swf</swfUrl>
+			
+			<showLevel>9999</showLevel>
+			<headIconUrl>IconGather/WangLuo</headIconUrl>
+			<lifeBarExtraHeight>-20</lifeBarExtraHeight>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-15,-38,30,38</hurtRectArr> 
+			<hurtRectArr>-12, -100, 24, 95</hurtRectArr> 
+			<hurtRectArr>-12, -50, 24, 50</hurtRectArr> 
+			
+			<maxVx>11</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			<maxJumpNum>2</maxJumpNum>
+			<flyType>space</flyType><motionD F_AIR="6" />
+			
+			<armsNumber>1</armsNumber>
+			<randomArmsRange>yearDragon</randomArmsRange>
+			
+			<skillArr>hyperopia_incapable</skillArr>
+			<bossSkillArr>sumLandDog,slowMove_enemy</bossSkillArr>
+		</body>
+	</father>
+	</data>

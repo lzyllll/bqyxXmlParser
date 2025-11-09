@@ -1,0 +1,143 @@
+{
+  "father": [
+    {
+      "name": "food",
+      "body": [
+        {
+          "cnName": "洋葱",
+          "name": "onion",
+          "dropPro": 100
+        },
+        {
+          "cnName": "青椒",
+          "name": "pepper",
+          "dropPro": 100
+        },
+        {
+          "cnName": "土豆",
+          "name": "potato",
+          "dropPro": 100
+        },
+        {
+          "cnName": "番茄",
+          "name": "tomato",
+          "dropPro": 100
+        },
+        {
+          "cnName": "胡萝卜",
+          "name": "carrot",
+          "dropPro": 100
+        },
+        {
+          "cnName": "鸡蛋",
+          "name": "egg",
+          "dropPro": 60
+        },
+        {
+          "cnName": "鸡肉",
+          "name": "chicken",
+          "dropPro": 20
+        },
+        {
+          "cnName": "猪肉",
+          "name": "pig",
+          "dropPro": 20
+        },
+        {
+          "cnName": "牛肉",
+          "name": "cattle",
+          "dropPro": 15
+        }
+      ],
+      "skill": [
+        {
+          "name": "onionFoodSkill",
+          "conditionType": "passive",
+          "target": "me",
+          "addType": "state",
+          "effectType": "angerAddMul",
+          "mul": 3,
+          "duration": 1,
+          "description": "怒气值速度增加3倍。"
+        },
+        {
+          "name": "pepperFoodSkill",
+          "conditionType": "passive",
+          "target": "me",
+          "addType": "state",
+          "effectType": "noSpeedReduce",
+          "mul": 1,
+          "duration": 1,
+          "description": "不受减速技能影响。"
+        },
+        {
+          "name": "potatoFoodSkill",
+          "conditionType": "passive",
+          "target": "me",
+          "addType": "state",
+          "effectType": "speedNoReduceB",
+          "duration": 1,
+          "description": "射击速度不会受到负面技能效果影响。"
+        },
+        {
+          "name": "tomatoFoodSkill",
+          "conditionType": "passive",
+          "target": "me",
+          "addType": "state",
+          "effectType": "noLostAndNoDodgeB",
+          "duration": 1,
+          "description": "攻击不丢失，攻击无视闪避。"
+        },
+        {
+          "name": "carrotFoodSkill",
+          "conditionType": "passive",
+          "target": "me",
+          "addType": "state",
+          "effectType": "noUnderCritAndBack",
+          "duration": 1,
+          "description": "不受暴击、反弹伤害。"
+        },
+        {
+          "name": "eggFoodSkill",
+          "conditionType": "passive",
+          "target": "me",
+          "addType": "state",
+          "effectType": "noDizzinessB",
+          "duration": 1,
+          "description": "不受眩晕技能影响。"
+        },
+        {
+          "name": "chickenFoodSkill",
+          "conditionType": "passive",
+          "target": "me",
+          "addType": "state",
+          "effectType": "airHurtMul",
+          "mul": 1.25,
+          "duration": 1,
+          "description": "增加对空中敌人25%的伤害。"
+        },
+        {
+          "name": "pigFoodSkill",
+          "conditionType": "passive",
+          "target": "me",
+          "addType": "state",
+          "effectType": "landHurtMul",
+          "mul": 1.25,
+          "duration": 1,
+          "description": "增加对地面敌人25%的伤害。"
+        },
+        {
+          "name": "cattleFoodSkill",
+          "conditionType": "passive",
+          "target": "me",
+          "addType": "state",
+          "effectType": "bossHurtMul",
+          "mul": 1.27,
+          "duration": 1,
+          "description": "增加对首领27%的伤害。"
+        }
+      ]
+    },
+    null
+  ]
+}

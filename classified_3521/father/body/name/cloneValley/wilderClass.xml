@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="cloneValley" cnName="克隆谷">
+		<body id="1" name="FightWolf" cnName="狂战狼" scene="JungleOutside" lifeMul="0.5" openTime="2019-11-25" day="14">
+			<drop cnName="神谕头盔碎片" pro="1" d7="15" d6="14" d5="13" d4="12" d3="11" d2="10" d1="9" d0="8">
+				<gift>things;oracleSuit_head;1</gift>
+			</drop>
+		</body>
+		<body id="2" name="FightPig" cnName="狂野收割者" scene="JungleOutside" lifeMul="0.5" openTime="2019-10-28" day="14">
+			<drop cnName="蚀骨碎片" pro="1" d7="15" d6="14" d5="13" d4="12" d3="11" d2="10" d1="9" d0="8"> 
+				<gift>things;erosionFlamer;1</gift>
+			</drop>
+		</body>
+		<body id="3" name="TyphoonWitch" cnName="飓风巫尸" scene="JungleOutside" lifeMul="0.5" openTime="2020-2-12" day="21">
+			<drop cnName="神谕腰带碎片" pro="1" d7="15" d6="14" d5="13" d4="12" d3="11" d2="10" d1="9" d0="8">
+				<gift>things;oracleSuit_belt;1</gift>
+			</drop>
+		</body>
+		<body id="4" name="IronZombieKing" cnName="钢铁僵尸王" scene="JungleOutside" lifeMul="0.5" openTime="2019-10-28" day="14">
+			<drop cnName="狩猎者碎片" pro="1" d7="24" d6="23" d5="22" d4="21" d3="20" d2="19" d1="18" d0="17">
+				<gift>things;AircraftGunCash;1</gift>
+			</drop>
+		</body> 
+	</father>
+	</data>

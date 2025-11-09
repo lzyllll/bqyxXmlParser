@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="space" cnName="太空">
+		<place lv="999" unlockTask="EarthSky_1">
+			<name>EarthSky</name>
+			<cnName>地球上空</cnName>
+			<geogType>solar</geogType>
+			<levelArr><level><name>EarthSky_1</name></level></levelArr>
+		</place>
+		<place lv="999" unlockTask="SolarInsideBoss">
+			<name>SolarInside</name>
+			<cnName>内太阳系</cnName>
+			<geogType>solar</geogType>
+			<levelArr><level><name>SolarInside_1</name></level></levelArr>
+		</place>
+		<place lv="999" unlockTask="CeresSouthBoss">
+			<name>CeresSouth</name>
+			<cnName>谷神星</cnName>
+			<geogType>solar</geogType>
+			<levelArr><level><name>CeresSouth_1</name></level></levelArr>
+		</place>
+		<place lv="999" unlockTask="GanymedeBoss">
+			<name>Ganymede</name>
+			<cnName>木卫三</cnName>
+			<geogType>solar</geogType>
+			<levelArr><level><name>Ganymede_1</name></level></levelArr>
+		</place>
+		<place lv="999" unlockTask="GanymedeCaveBoss">
+			<name>GanymedeCave</name>
+			<cnName>木卫三洞穴</cnName>
+			<geogType>solar</geogType>
+			<levelArr><level><name>GanymedeCave_1</name></level></levelArr>
+		</place>
+		
+		
+	</father>
+	</data>

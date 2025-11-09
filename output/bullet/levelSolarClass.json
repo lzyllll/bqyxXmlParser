@@ -1,0 +1,3254 @@
+{
+  "father": {
+    "name": "normal",
+    "gather": [
+      {
+        "name": "太阳系-任务",
+        "level": [
+          {
+            "name": "MadmanPlot",
+            "info": {
+              "enemyLv": 99,
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "noDeviceB": true,
+              "mustSingleB": true,
+              "firstLostB": true
+            },
+            "drop": {
+              "noB": true
+            },
+            "sceneLabel": "BaiZhang",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "we1",
+                  "camp": "we",
+                  "unit": [
+                    {
+                      "cnName": "本我",
+                      "dpsMul": 200,
+                      "lifeMul": 0.05,
+                      "armsRange": "yearSheep"
+                    },
+                    {
+                      "cnName": "摩卡",
+                      "dpsMul": 200,
+                      "lifeMul": 0.05,
+                      "armsRange": "sniperCicada$2,shotgunSkunkTwo$2",
+                      "skillArr": "feedback_hero_5,jumpNumAdd1,State_AddMove50",
+                      "dieGotoState": "stru",
+                      "aiOrder": "followBodyAttack:p1"
+                    }
+                  ]
+                },
+                {
+                  "id": "weShip",
+                  "camp": "we",
+                  "unit": {
+                    "id": "氩星舰",
+                    "cnName": "氩星舰"
+                  }
+                },
+                {
+                  "id": "we3",
+                  "camp": "we",
+                  "unit": {
+                    "cnName": "文杰表哥",
+                    "dpsMul": 500,
+                    "lifeMul": 0.01,
+                    "armsRange": "christmasGun$2",
+                    "skillArr": "groupLight_hero_7,hiding_hero_3,jumpNumAdd1,State_AddMove50",
+                    "aiOrder": "followBodyAttack:p1"
+                  }
+                }
+              ]
+            },
+            "rectG": {
+              "rect": [
+                {
+                  "value": "747,171,198,71",
+                  "id": "r_birth"
+                },
+                {
+                  "value": "2948,308,70,109",
+                  "id": "r_over"
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": null,
+                    "order": [
+                      "weAllHeroNoShoot",
+                      "weAllHeroNoEquip",
+                      "createUnit:we1; r_birth",
+                      "heroEverParasitic:本我",
+                      "toPlotMode",
+                      "openInput"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    },
+                    "order": [
+                      "createUnit:weShip; 1500,-700",
+                      "body:氩星舰;blendMode:add",
+                      "body:氩星舰;followPoint:1482,0",
+                      "playSound:ArgonShip/goIn"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "say; startList:s2"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    },
+                    "order": [
+                      "body:氩星舰;followPoint:400,-1500",
+                      "playSound:ArgonShip/goIn"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "say; startList:s3"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    },
+                    "order": "createUnit:we3; 3042,370"
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "say; startList:s4"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 1
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "YaSomewhere_1",
+            "info": {
+              "enemyLv": 10,
+              "noMoreB": true,
+              "noVehicleB": true,
+              "noTreasureB": true,
+              "noPropsB": true,
+              "noDeviceB": true,
+              "mustSingleB": true,
+              "firstLostB": true
+            },
+            "drop": {
+              "noB": true
+            },
+            "sceneLabel": "YaSomewhere",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": {
+                "id": "we3",
+                "camp": "we",
+                "unit": [
+                  {
+                    "cnName": "吸血蝙蝠"
+                  },
+                  {
+                    "cnName": "空单位"
+                  }
+                ]
+              }
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": null,
+                    "order": [
+                      "createUnit:we3; r_birth",
+                      "weAllHeroNoShoot",
+                      "weAllHeroNoEquip",
+                      "body:p1;noExist",
+                      "body:吸血蝙蝠;noExist",
+                      "body:吸血蝙蝠;setXY:491,412",
+                      "body:空单位;noExist",
+                      "body:空单位;setXY:363,412",
+                      "toPlotMode"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": [
+                      "say; startList:s1",
+                      "openInput"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 1
+                    },
+                    "order": [
+                      "task:now; complete",
+                      "level; win"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "EarthSkyTask",
+            "info": {
+              "enemyLv": 10,
+              "modeDiy": "spaceCraft"
+            },
+            "drop": {
+              "noB": true,
+              "exp": 0
+            },
+            "sceneLabel": "EarthSky",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "unit": {
+                    "cnName": "小陨石",
+                    "num": 10
+                  }
+                },
+                {
+                  "id": "eMid",
+                  "unit": {
+                    "cnName": "中陨石",
+                    "num": 5
+                  }
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "小陨石",
+                      "num": 10
+                    },
+                    {
+                      "cnName": "中陨石",
+                      "num": 3
+                    }
+                  ]
+                },
+                {
+                  "id": "eBig",
+                  "unit": [
+                    {
+                      "cnName": "小陨石",
+                      "num": 5
+                    },
+                    {
+                      "cnName": "陨石矿",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "eF",
+                  "unit": {
+                    "cnName": "飞速陨石",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "e1",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "小陨石",
+                      "num": 10
+                    },
+                    {
+                      "cnName": "飞速陨石",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "中陨石",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "陨石矿",
+                      "num": 0.5
+                    }
+                  ]
+                },
+                {
+                  "id": "eOil",
+                  "unit": {
+                    "cnName": "炸药桶",
+                    "num": 1
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": null,
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:enemy1; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_5",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:enemy1; rHitMainSpace"
+                  },
+                  {
+                    "condition": "frontEnemyNumber:less_1",
+                    "order": "createUnit:eMid; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": null,
+                    "order": "createUnit:eOil; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_5",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:enemy3; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 2
+                    },
+                    "order": "createUnit:eBig; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 10,
+                      "delay": 0.2
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 5
+                    },
+                    "order": "createUnit:e1; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 15,
+                      "delay": 0.2
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": null,
+                    "order": "createUnit:eOil; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_5",
+                      "doNumber": 5
+                    },
+                    "order": "createUnit:e1; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 20,
+                      "delay": 0.2
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": null,
+                    "order": "createUnit:eOil; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 5
+                    },
+                    "order": "createUnit:e1; r1"
+                  },
+                  {
+                    "condition": null,
+                    "order": "createUnit:eOil; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_10",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:e1; r1"
+                  },
+                  {
+                    "condition": "enemyNumber:less_1",
+                    "order": "say; startList:s2"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "order": [
+                      "task:EarthSky_1; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "SolarInsideEnemy",
+            "info": {
+              "enemyLv": 10,
+              "modeDiy": "spaceCraft"
+            },
+            "drop": {
+              "noB": true,
+              "exp": 0
+            },
+            "sceneLabel": "SolarInside",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "e1",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "小陨石",
+                      "num": 10
+                    },
+                    {
+                      "cnName": "飞速陨石",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "中陨石",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "炸药桶",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "eOil",
+                  "unit": {
+                    "cnName": "炸药桶",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "eShip",
+                  "unit": {
+                    "cnName": "拉矿船",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "eTaper",
+                  "unit": {
+                    "cnName": "矿锥",
+                    "num": 5
+                  }
+                },
+                {
+                  "id": "eSaw",
+                  "unit": {
+                    "cnName": "矿棘",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "e2",
+                  "unit": [
+                    {
+                      "cnName": "拉矿船",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "矿锥",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "e3",
+                  "unit": [
+                    {
+                      "cnName": "小陨石",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "中陨石",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "拉矿船",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "矿锥",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "矿棘",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "eF",
+                  "unit": {
+                    "cnName": "飞速陨石",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "eBird",
+                  "unit": {
+                    "cnName": "鸟头机",
+                    "num": 2
+                  }
+                },
+                {
+                  "id": "eLaser",
+                  "unit": {
+                    "cnName": "采矿激光炮",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "eFlower",
+                  "unit": {
+                    "cnName": "采矿花",
+                    "num": 1,
+                    "skillArr": "spaceMoveLeftNoAI"
+                  }
+                },
+                {
+                  "id": "e41",
+                  "unit": [
+                    {
+                      "cnName": "拉矿船",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "矿棘",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "e42",
+                  "unit": [
+                    {
+                      "cnName": "采矿激光炮",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "鸟头机",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "e51",
+                  "unit": [
+                    {
+                      "cnName": "矿锥",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "矿棘",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "e52",
+                  "unit": {
+                    "cnName": "采矿花",
+                    "num": 3,
+                    "skillArr": "spaceMoveLeftNoAI"
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:eFlower; r1"
+                  },
+                  {
+                    "condition": "liveEnemyNumber:less_1",
+                    "order": "createUnit:eOil; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 2,
+                      "delay": 1
+                    },
+                    "order": "createUnit:e1; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 2
+                    },
+                    "order": [
+                      "createUnit:eShip; r4",
+                      "createUnit:eShip; r2",
+                      "createUnit:eShip; r3"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": [
+                      "createUnit:eShip; r4",
+                      "createUnit:eShip; r2",
+                      "createUnit:eShip; r3"
+                    ]
+                  },
+                  {
+                    "condition": null,
+                    "order": "createUnit:eOil; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:eTaper; r1"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:eSaw; r1"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 5,
+                      "delay": 2
+                    },
+                    "order": "createUnit:eSaw; r1"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 2
+                    },
+                    "order": "createUnit:e2; r1"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e3; r1"
+                  },
+                  {
+                    "condition": null,
+                    "order": "createUnit:eOil; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 2
+                    },
+                    "order": "createUnit:e3; r1"
+                  },
+                  {
+                    "condition": "rightEnemyNumber:less_1",
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.5,
+                      "doNumber": 10
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:eLaser; r1"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:eBird; r1"
+                  },
+                  {
+                    "condition": {
+                      "value": "rightEnemyNumber:less_1",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:eFlower; r1"
+                  },
+                  {
+                    "condition": {
+                      "value": "rightEnemyNumber:less_1",
+                      "doNumber": 2
+                    },
+                    "order": [
+                      "createUnit:e41; r1",
+                      "createUnit:e42; rRight"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "value": "rightEnemyNumber:less_1",
+                      "doNumber": 2
+                    },
+                    "order": [
+                      "createUnit:e51; r1",
+                      "createUnit:e52; rRight"
+                    ]
+                  },
+                  {
+                    "condition": "enemyNumber:less_1",
+                    "order": "say; startList:s2"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "order": [
+                      "task:SolarInsideEnemy; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "SolarInsideBoss",
+            "info": {
+              "enemyLv": 10,
+              "modeDiy": "spaceCraft"
+            },
+            "drop": {
+              "noB": true,
+              "exp": 0
+            },
+            "sceneLabel": "SolarInside",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": {
+                "id": "eBoss",
+                "unit": {
+                  "cnName": "采矿舰",
+                  "num": 1,
+                  "lifeMul": 4.5,
+                  "unitType": "boss"
+                }
+              }
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": null,
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "condition": null,
+                    "order": "createUnit:eBoss; r1"
+                  },
+                  {
+                    "condition": "enemyNumber:less_1",
+                    "order": "say; startList:s2"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "order": [
+                      "task:SolarInsideBoss; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "CeresSouthEnemy",
+            "info": {
+              "enemyLv": 10,
+              "modeDiy": "spaceCraft"
+            },
+            "drop": {
+              "noB": true,
+              "exp": 0
+            },
+            "sceneLabel": "CeresSouth",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "e1",
+                  "unit": {
+                    "cnName": "采矿球",
+                    "num": 15
+                  }
+                },
+                {
+                  "id": "e2",
+                  "unit": {
+                    "cnName": "浮游矿锥",
+                    "num": 5
+                  }
+                },
+                {
+                  "id": "e3",
+                  "unit": {
+                    "cnName": "浮游激光炮",
+                    "num": 6
+                  }
+                },
+                {
+                  "id": "e4",
+                  "unit": [
+                    {
+                      "cnName": "采矿球",
+                      "num": 7
+                    },
+                    {
+                      "cnName": "矿场战机",
+                      "num": 3
+                    }
+                  ]
+                },
+                {
+                  "id": "e5",
+                  "unit": {
+                    "cnName": "采矿花",
+                    "num": 3
+                  }
+                },
+                {
+                  "id": "eSaw",
+                  "unit": {
+                    "cnName": "矿棘",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "eF",
+                  "unit": {
+                    "cnName": "飞速陨石",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "e10",
+                  "unit": [
+                    {
+                      "cnName": "浮游矿锥",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "浮游激光炮",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "采矿球",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "矿场战机",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "e20",
+                  "unit": [
+                    {
+                      "cnName": "浮游矿锥",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "浮游激光炮",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "采矿花",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "采矿球",
+                      "num": 12
+                    }
+                  ]
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 7
+                    },
+                    "order": "createUnit:e1; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": "createUnit:eSaw; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 4,
+                      "delay": 2
+                    },
+                    "order": "createUnit:eSaw; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:e2; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:e3; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 30,
+                      "delay": 0.3
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:e4; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 30,
+                      "delay": 0.3
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:e10; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": "createUnit:eSaw; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 4,
+                      "delay": 2
+                    },
+                    "order": "createUnit:eSaw; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 2
+                    },
+                    "order": "createUnit:e20; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 2
+                    },
+                    "order": "createUnit:e5; rEnemySpace"
+                  },
+                  {
+                    "condition": "enemyNumber:less_1",
+                    "order": [
+                      "task:CeresSouthEnemy; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "CeresSouthBoss",
+            "info": {
+              "enemyLv": 10,
+              "modeDiy": "spaceCraft"
+            },
+            "drop": {
+              "noB": true,
+              "exp": 0
+            },
+            "sceneLabel": "CeresSouth",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": {
+                "id": "eBoss",
+                "unit": {
+                  "cnName": "葵型采矿机",
+                  "num": 1,
+                  "lifeMul": 7,
+                  "unitType": "boss"
+                }
+              }
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": null,
+                    "order": "createUnit:eBoss; r1"
+                  },
+                  {
+                    "condition": "enemyNumber:less_1",
+                    "order": "say; startList:s2"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "order": [
+                      "task:CeresSouthBoss; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "GanymedeEnemy",
+            "info": {
+              "enemyLv": 10,
+              "modeDiy": "spaceCraft"
+            },
+            "drop": {
+              "noB": true,
+              "exp": 0
+            },
+            "sceneLabel": "Ganymede",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "e1",
+                  "unit": [
+                    {
+                      "cnName": "采矿球",
+                      "num": 8
+                    },
+                    {
+                      "cnName": "浮游矿锥",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "浮游激光炮",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "e2",
+                  "unit": {
+                    "cnName": "矿场战机",
+                    "num": 4
+                  }
+                },
+                {
+                  "id": "e3",
+                  "unit": {
+                    "cnName": "采矿花",
+                    "num": 2
+                  }
+                },
+                {
+                  "id": "e4",
+                  "unit": {
+                    "cnName": "采矿虫",
+                    "num": 2
+                  }
+                },
+                {
+                  "id": "e5",
+                  "unit": [
+                    {
+                      "cnName": "采矿虫",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "采矿球",
+                      "num": 10
+                    }
+                  ]
+                },
+                {
+                  "id": "e6",
+                  "unit": [
+                    {
+                      "cnName": "采矿虫",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "采矿花",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "e7",
+                  "unit": [
+                    {
+                      "cnName": "采矿虫",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "浮游矿锥",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "浮游激光炮",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "eBoom",
+                  "unit": {
+                    "cnName": "炸药桶",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "e10",
+                  "unit": [
+                    {
+                      "cnName": "采矿球",
+                      "num": 10
+                    },
+                    {
+                      "cnName": "矿场战机",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "采矿虫",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "e20",
+                  "unit": [
+                    {
+                      "cnName": "采矿球",
+                      "num": 10
+                    },
+                    {
+                      "cnName": "采矿花",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "采矿虫",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "e30",
+                  "unit": {
+                    "cnName": "采矿虫",
+                    "num": 4
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:e1; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e2; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e3; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:e4; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:e5; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:e6; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "createUnit:eBoom; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:e7; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "createUnit:eBoom; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 2
+                    },
+                    "order": "createUnit:e10; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 2
+                    },
+                    "order": "createUnit:e20; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 2
+                    },
+                    "order": "createUnit:e30; rEnemySpace"
+                  },
+                  {
+                    "condition": "enemyNumber:less_1",
+                    "order": [
+                      "task:GanymedeEnemy; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "GanymedeBoss",
+            "info": {
+              "enemyLv": 10,
+              "modeDiy": "spaceCraft"
+            },
+            "drop": {
+              "noB": true,
+              "exp": 0
+            },
+            "sceneLabel": "Ganymede",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": {
+                "id": "eBoss",
+                "unit": {
+                  "cnName": "蛇型采矿机",
+                  "num": 1,
+                  "lifeMul": 4,
+                  "unitType": "boss"
+                }
+              }
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": null,
+                    "order": "createUnit:eBoss; r1"
+                  },
+                  {
+                    "condition": "enemyNumber:less_1",
+                    "order": "say; startList:s2"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "order": [
+                      "task:GanymedeBoss; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "GanymedeCaveEnemy",
+            "info": {
+              "enemyLv": 10,
+              "modeDiy": "spaceSuit"
+            },
+            "drop": {
+              "noB": true,
+              "exp": 0
+            },
+            "sceneLabel": "GanymedeCave",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "e1",
+                  "unit": [
+                    {
+                      "cnName": "采矿球",
+                      "num": 8
+                    },
+                    {
+                      "cnName": "浮游矿锥",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "浮游激光炮",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "e2",
+                  "unit": {
+                    "cnName": "矿场战机",
+                    "num": 4
+                  }
+                },
+                {
+                  "id": "e3",
+                  "unit": {
+                    "cnName": "采矿花",
+                    "num": 2
+                  }
+                },
+                {
+                  "id": "e4",
+                  "unit": {
+                    "cnName": "采矿虫",
+                    "num": 2
+                  }
+                },
+                {
+                  "id": "e5",
+                  "unit": [
+                    {
+                      "cnName": "采矿虫",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "采矿球",
+                      "num": 10
+                    }
+                  ]
+                },
+                {
+                  "id": "e6",
+                  "unit": [
+                    {
+                      "cnName": "采矿虫",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "采矿花",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "e7",
+                  "unit": [
+                    {
+                      "cnName": "采矿虫",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "浮游矿锥",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "矿场战机",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "eBoom",
+                  "unit": {
+                    "cnName": "炸药桶",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "e10",
+                  "unit": [
+                    {
+                      "cnName": "采矿球",
+                      "num": 10
+                    },
+                    {
+                      "cnName": "矿场战机",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "采矿花",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "e30",
+                  "unit": {
+                    "cnName": "采矿虫",
+                    "num": 4
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": null,
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_3",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e4; rEnemySpace2"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_3",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e3; rEnemySpace2"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_3",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e2; rEnemySpace2"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_3",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e1; rEnemySpace2"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_3",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e6; rEnemySpace2"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_3",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e5; rEnemySpace2"
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "createUnit:eBoom; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_3",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e7; rEnemySpace2"
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "createUnit:eBoom; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_3",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e10; rEnemySpace2"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_3",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e30; rEnemySpace2"
+                  },
+                  {
+                    "condition": "enemyNumber:less_1",
+                    "order": "say; startList:s2"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "condition": null,
+                    "order": [
+                      "task:GanymedeCaveEnemy; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "GanymedeCaveBoss",
+            "info": {
+              "enemyLv": 10,
+              "modeDiy": "spaceSuit"
+            },
+            "drop": {
+              "noB": true,
+              "exp": 0
+            },
+            "sceneLabel": "GanymedeCave",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": {
+                "id": "eBoss",
+                "unit": {
+                  "cnName": "黄金隼",
+                  "num": 1,
+                  "lifeMul": 4,
+                  "dpsMul": 0.3,
+                  "unitType": "boss"
+                }
+              }
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": null,
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "condition": null,
+                    "order": "createUnit:eBoss; r1"
+                  },
+                  {
+                    "condition": "enemyNumber:less_1",
+                    "order": "say; startList:s2"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "order": [
+                      "task:GanymedeCaveBoss; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "GanymedeCavernTask",
+            "info": {
+              "enemyLv": 10,
+              "modeDiy": "spaceSuit",
+              "preSkillArr": "blackHoleDevicer_1"
+            },
+            "drop": {
+              "noB": true
+            },
+            "sceneLabel": "GanymedeCavern",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "e7",
+                  "unit": [
+                    {
+                      "cnName": "采矿虫",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "浮游矿锥",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "矿场战机",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "采矿花",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "采矿球",
+                      "num": 5
+                    },
+                    {
+                      "cnName": "矿棘",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "eF",
+                  "unit": {
+                    "cnName": "飞速陨石",
+                    "num": 1
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": null,
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 2
+                    },
+                    "order": "createUnit:e7; rEnemySpace2"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 30,
+                      "delay": 0.3
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:e7; rEnemySpace2"
+                  },
+                  {
+                    "condition": "enemyNumber:less_1",
+                    "order": "say; startList:s2"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "condition": "enemyNumber:less_1"
+                  },
+                  {
+                    "condition": "hitMapRect:rhole; p1",
+                    "order": "inWormhole"
+                  },
+                  {
+                    "condition": {
+                      "delay": 2
+                    },
+                    "order": "task:GanymedeCavernTask; complete"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.5
+                    },
+                    "order": "level; win"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "GanymedeCavernDog",
+            "info": {
+              "enemyLv": 10,
+              "modeDiy": "spaceCraft"
+            },
+            "drop": {
+              "noB": true
+            },
+            "sceneLabel": "Ganymede",
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": null,
+                    "order": "say; startList:s1"
+                  },
+                  {
+                    "condition": {
+                      "value": "say:listOver",
+                      "delay": 1
+                    }
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    },
+                    "order": [
+                      "task:GanymedeCavernDog; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "太阳系-关卡",
+        "level": [
+          {
+            "name": "EarthSky_1",
+            "info": {
+              "enemyLv": 10,
+              "modeDiy": "spaceCraft",
+              "overBackB": true
+            },
+            "drop": {
+              "noB": true
+            },
+            "sceneLabel": "EarthSky",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "enemy1",
+                  "unit": {
+                    "cnName": "小陨石",
+                    "num": 10
+                  }
+                },
+                {
+                  "id": "eMid",
+                  "unit": {
+                    "cnName": "中陨石",
+                    "num": 5
+                  }
+                },
+                {
+                  "id": "enemy3",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "小陨石",
+                      "num": 10
+                    },
+                    {
+                      "cnName": "中陨石",
+                      "num": 3
+                    }
+                  ]
+                },
+                {
+                  "id": "eBig",
+                  "unit": [
+                    {
+                      "cnName": "小陨石",
+                      "num": 5
+                    },
+                    {
+                      "cnName": "陨石矿",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "eF",
+                  "unit": {
+                    "cnName": "飞速陨石",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "e1",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "小陨石",
+                      "num": 10
+                    },
+                    {
+                      "cnName": "中陨石",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "陨石矿",
+                      "num": 0.5
+                    },
+                    {
+                      "cnName": "拉矿船",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "eOil",
+                  "unit": {
+                    "cnName": "炸药桶",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "eBoss",
+                  "unit": {
+                    "cnName": "采矿花",
+                    "lifeMul": 3,
+                    "unitType": "boss"
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:enemy1; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_5",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:enemy1; rHitMainSpace"
+                  },
+                  {
+                    "condition": "frontEnemyNumber:less_1",
+                    "order": "createUnit:eMid; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": null,
+                    "order": "createUnit:eOil; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_5",
+                      "doNumber": 2
+                    },
+                    "order": "createUnit:enemy3; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 2
+                    },
+                    "order": "createUnit:eBig; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 10,
+                      "delay": 0.2
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 2
+                    },
+                    "order": "createUnit:e1; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 15,
+                      "delay": 0.2
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": null,
+                    "order": "createUnit:eOil; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_5",
+                      "doNumber": 2
+                    },
+                    "order": "createUnit:e1; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 20,
+                      "delay": 0.2
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": null,
+                    "order": "createUnit:eOil; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:e1; r1"
+                  },
+                  {
+                    "condition": null,
+                    "order": "createUnit:eOil; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_10",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:e1; r1"
+                  },
+                  {
+                    "condition": "liveEnemyNumber:less_1",
+                    "order": "createUnit:eBoss; r1"
+                  },
+                  {
+                    "condition": "enemyNumber:less_1",
+                    "order": [
+                      "task:EarthSky_1; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "SolarInside_1",
+            "info": {
+              "enemyLv": 10,
+              "modeDiy": "spaceCraft",
+              "overBackB": true
+            },
+            "drop": {
+              "noB": true
+            },
+            "sceneLabel": "SolarInside",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "e1",
+                  "numberType": "pro",
+                  "unit": [
+                    {
+                      "cnName": "小陨石",
+                      "num": 10
+                    },
+                    {
+                      "cnName": "飞速陨石",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "中陨石",
+                      "num": 3
+                    }
+                  ]
+                },
+                {
+                  "id": "eOil",
+                  "unit": {
+                    "cnName": "炸药桶",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "eShip",
+                  "unit": {
+                    "cnName": "拉矿船",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "eTaper",
+                  "unit": {
+                    "cnName": "矿锥",
+                    "num": 5
+                  }
+                },
+                {
+                  "id": "eSaw",
+                  "unit": {
+                    "cnName": "矿棘",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "e2",
+                  "unit": [
+                    {
+                      "cnName": "拉矿船",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "矿锥",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "e3",
+                  "unit": [
+                    {
+                      "cnName": "小陨石",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "中陨石",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "拉矿船",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "矿锥",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "矿棘",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "eF",
+                  "unit": {
+                    "cnName": "飞速陨石",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "eBird",
+                  "unit": {
+                    "cnName": "鸟头机",
+                    "num": 2
+                  }
+                },
+                {
+                  "id": "eLaser",
+                  "unit": {
+                    "cnName": "采矿激光炮",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "eFlower",
+                  "unit": {
+                    "cnName": "采矿花",
+                    "num": 1,
+                    "skillArr": "spaceMoveLeftNoAI"
+                  }
+                },
+                {
+                  "id": "e41",
+                  "unit": [
+                    {
+                      "cnName": "拉矿船",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "矿棘",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "e42",
+                  "unit": [
+                    {
+                      "cnName": "采矿激光炮",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "鸟头机",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "e51",
+                  "unit": [
+                    {
+                      "cnName": "矿锥",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "矿棘",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "eBoss",
+                  "unit": {
+                    "cnName": "采矿舰",
+                    "num": 1,
+                    "lifeMul": 3,
+                    "unitType": "boss"
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": {
+                      "doNumber": 1,
+                      "delay": 1
+                    },
+                    "order": "createUnit:e1; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": [
+                      "createUnit:eShip; r4",
+                      "createUnit:eShip; r2",
+                      "createUnit:eShip; r3"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": [
+                      "createUnit:eShip; r4",
+                      "createUnit:eShip; r2",
+                      "createUnit:eShip; r3"
+                    ]
+                  },
+                  {
+                    "condition": null,
+                    "order": "createUnit:eOil; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:eTaper; r1"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:eSaw; r1"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 5,
+                      "delay": 2
+                    },
+                    "order": "createUnit:eSaw; r1"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e2; r1"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e3; r1"
+                  },
+                  {
+                    "condition": null,
+                    "order": "createUnit:eOil; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e3; r1"
+                  },
+                  {
+                    "condition": "rightEnemyNumber:less_1",
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "delay": 0.5,
+                      "doNumber": 10
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:eLaser; r1"
+                  },
+                  {
+                    "condition": {
+                      "value": "frontEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:eBird; r1"
+                  },
+                  {
+                    "condition": {
+                      "value": "rightEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:eFlower; r1"
+                  },
+                  {
+                    "condition": {
+                      "value": "rightEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": [
+                      "createUnit:e41; r1",
+                      "createUnit:e42; rRight"
+                    ]
+                  },
+                  {
+                    "condition": {
+                      "value": "rightEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e51; r1"
+                  },
+                  {
+                    "condition": "liveEnemyNumber:less_1",
+                    "order": "createUnit:eBoss; r1"
+                  },
+                  {
+                    "condition": "enemyNumber:less_1",
+                    "order": [
+                      "task:SolarInsideEnemy; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "CeresSouth_1",
+            "info": {
+              "enemyLv": 10,
+              "modeDiy": "spaceCraft",
+              "overBackB": true
+            },
+            "drop": {
+              "noB": true
+            },
+            "sceneLabel": "CeresSouth",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "ett",
+                  "unit": {
+                    "cnName": "采矿球",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "e1",
+                  "unit": {
+                    "cnName": "采矿球",
+                    "num": 25
+                  }
+                },
+                {
+                  "id": "e2",
+                  "unit": [
+                    {
+                      "cnName": "采矿球",
+                      "num": 10
+                    },
+                    {
+                      "cnName": "浮游矿锥",
+                      "num": 6
+                    }
+                  ]
+                },
+                {
+                  "id": "e3",
+                  "unit": [
+                    {
+                      "cnName": "采矿球",
+                      "num": 10
+                    },
+                    {
+                      "cnName": "浮游矿锥",
+                      "num": 3
+                    },
+                    {
+                      "cnName": "浮游激光炮",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "e4",
+                  "unit": [
+                    {
+                      "cnName": "采矿球",
+                      "num": 7
+                    },
+                    {
+                      "cnName": "矿场战机",
+                      "num": 3
+                    }
+                  ]
+                },
+                {
+                  "id": "e5",
+                  "unit": {
+                    "cnName": "采矿花",
+                    "num": 3
+                  }
+                },
+                {
+                  "id": "eSaw",
+                  "unit": {
+                    "cnName": "矿棘",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "eShip",
+                  "unit": {
+                    "cnName": "拉矿船",
+                    "num": 3
+                  }
+                },
+                {
+                  "id": "eF",
+                  "unit": {
+                    "cnName": "飞速陨石",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "e10",
+                  "unit": [
+                    {
+                      "cnName": "浮游矿锥",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "浮游激光炮",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "采矿球",
+                      "num": 17
+                    },
+                    {
+                      "cnName": "矿场战机",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "e20",
+                  "unit": [
+                    {
+                      "cnName": "浮游矿锥",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "浮游激光炮",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "采矿花",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "采矿球",
+                      "num": 6
+                    }
+                  ]
+                },
+                {
+                  "id": "eBoss",
+                  "unit": {
+                    "cnName": "葵型采矿机",
+                    "num": 1,
+                    "lifeMul": 3.5,
+                    "unitType": "boss"
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e1; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": "createUnit:eSaw; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 6,
+                      "delay": 0.6
+                    },
+                    "order": "createUnit:eSaw; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e2; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e3; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 30,
+                      "delay": 0.3
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e4; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 30,
+                      "delay": 0.2
+                    },
+                    "order": "createUnit:eF; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e10; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": "createUnit:eSaw; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 8,
+                      "delay": 0.5
+                    },
+                    "order": "createUnit:eSaw; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e20; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "delay": 0
+                    },
+                    "order": "createUnit:eShip; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 5,
+                      "delay": 2
+                    },
+                    "order": "createUnit:eShip; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e5; rEnemySpace"
+                  },
+                  {
+                    "condition": "liveEnemyNumber:less_1",
+                    "order": "createUnit:eBoss; rHitMainSpace"
+                  },
+                  {
+                    "condition": "enemyNumber:less_1",
+                    "order": [
+                      "task:CeresSouthEnemy; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "Ganymede_1",
+            "info": {
+              "enemyLv": 10,
+              "modeDiy": "spaceCraft",
+              "overBackB": true
+            },
+            "drop": {
+              "noB": true
+            },
+            "sceneLabel": "Ganymede",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "e1",
+                  "unit": [
+                    {
+                      "cnName": "采矿球",
+                      "num": 12
+                    },
+                    {
+                      "cnName": "浮游矿锥",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "浮游激光炮",
+                      "num": 2
+                    }
+                  ]
+                },
+                {
+                  "id": "e2",
+                  "unit": {
+                    "cnName": "矿场战机",
+                    "num": 5
+                  }
+                },
+                {
+                  "id": "e3",
+                  "unit": {
+                    "cnName": "采矿花",
+                    "num": 2
+                  }
+                },
+                {
+                  "id": "e4",
+                  "unit": {
+                    "cnName": "采矿虫",
+                    "num": 2
+                  }
+                },
+                {
+                  "id": "e5",
+                  "unit": [
+                    {
+                      "cnName": "采矿虫",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "采矿球",
+                      "num": 12
+                    }
+                  ]
+                },
+                {
+                  "id": "e6",
+                  "unit": [
+                    {
+                      "cnName": "采矿虫",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "采矿花",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "e7",
+                  "unit": [
+                    {
+                      "cnName": "采矿虫",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "浮游矿锥",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "浮游激光炮",
+                      "num": 3
+                    }
+                  ]
+                },
+                {
+                  "id": "eSaw",
+                  "unit": {
+                    "cnName": "矿棘",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "eShip",
+                  "unit": {
+                    "cnName": "拉矿船",
+                    "num": 3
+                  }
+                },
+                {
+                  "id": "eBoom",
+                  "unit": {
+                    "cnName": "炸药桶",
+                    "num": 1
+                  }
+                },
+                {
+                  "id": "e10",
+                  "unit": [
+                    {
+                      "cnName": "采矿球",
+                      "num": 12
+                    },
+                    {
+                      "cnName": "矿场战机",
+                      "num": 4
+                    },
+                    {
+                      "cnName": "采矿虫",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "e20",
+                  "unit": [
+                    {
+                      "cnName": "采矿球",
+                      "num": 15
+                    },
+                    {
+                      "cnName": "采矿花",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "采矿虫",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "e30",
+                  "unit": {
+                    "cnName": "采矿虫",
+                    "num": 3
+                  }
+                },
+                {
+                  "id": "eBoss",
+                  "unit": {
+                    "cnName": "蛇型采矿机",
+                    "num": 1,
+                    "lifeMul": 3,
+                    "unitType": "boss"
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e1; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e3; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e4; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "delay": 0
+                    },
+                    "order": "createUnit:eShip; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 4,
+                      "delay": 2
+                    },
+                    "order": "createUnit:eShip; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e6; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "createUnit:eBoom; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e7; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "delay": 1
+                    },
+                    "order": "createUnit:eBoom; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e10; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "delay": 1
+                    },
+                    "order": "createUnit:eSaw; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 8,
+                      "delay": 0.5
+                    },
+                    "order": "createUnit:eSaw; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e20; rEnemySpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "delay": 0
+                    },
+                    "order": "createUnit:eShip; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "doNumber": 5,
+                      "delay": 2
+                    },
+                    "order": "createUnit:eShip; rHitMainSpace"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 1
+                    },
+                    "order": "createUnit:e30; rEnemySpace"
+                  },
+                  {
+                    "condition": "liveEnemyNumber:less_1",
+                    "order": "createUnit:eBoss; rHitMainSpace"
+                  },
+                  {
+                    "condition": "enemyNumber:less_1",
+                    "order": [
+                      "task:GanymedeEnemy; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "GanymedeCave_1",
+            "info": {
+              "enemyLv": 10,
+              "modeDiy": "spaceSuit",
+              "overBackB": true
+            },
+            "drop": {
+              "noB": true
+            },
+            "sceneLabel": "GanymedeCave",
+            "unitG": {
+              "allDefault": {
+                "aiOrder": "patrolGlobal",
+                "noSuperB": true
+              },
+              "unitOrder": [
+                {
+                  "id": "e1",
+                  "unit": [
+                    {
+                      "cnName": "采矿球",
+                      "num": 6
+                    },
+                    {
+                      "cnName": "浮游矿锥",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "采矿花",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "e7",
+                  "unit": [
+                    {
+                      "cnName": "采矿虫",
+                      "num": 1
+                    },
+                    {
+                      "cnName": "浮游矿锥",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "矿场战机",
+                      "num": 2
+                    },
+                    {
+                      "cnName": "采矿花",
+                      "num": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "eBoss",
+                  "unit": {
+                    "cnName": "黄金隼",
+                    "num": 1,
+                    "lifeMul": 4,
+                    "dpsMul": 0.3,
+                    "unitType": "boss"
+                  }
+                }
+              ]
+            },
+            "eventG": {
+              "group": {
+                "event": [
+                  {
+                    "condition": {
+                      "delay": 0.1
+                    }
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:e1; rEnemySpace2"
+                  },
+                  {
+                    "condition": {
+                      "value": "liveEnemyNumber:less_1",
+                      "doNumber": 3
+                    },
+                    "order": "createUnit:e7; rEnemySpace2"
+                  },
+                  {
+                    "condition": "liveEnemyNumber:less_1",
+                    "order": "createUnit:eBoss; r123"
+                  },
+                  {
+                    "condition": "enemyNumber:less_1",
+                    "order": [
+                      "task:GanymedeEnemy; complete",
+                      "level; showPointer:r_over"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

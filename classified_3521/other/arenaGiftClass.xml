@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<arenaSeason>
+		<one name="arena_10" mustLevel="10">
+			<gift cn="神武碎片">things;allBlackCash;				50</gift>
+			<gift cn="转化石">things;converStone;				70</gift>
+			<gift cn="神能石">things;godStone;					70</gift>
+			<gift cn="强化剂">things;strengthenDrug;			70</gift>
+			<gift cn="血石">things;bloodStone;					30</gift>
+			<gift cn="强化石">things;strengthenStone;			30</gift>
+			
+			<gift cn="优胜券">things;arenaStamp;				1140</gift>
+			<gift cn="队友重生卡">things;teamRebirthCard;	3</gift>
+			<gift cn="零件箱">things;partsChest78;	36</gift>
+		</one>
+		<one name="arena_50" mustLevel="50">
+			<gift cn="神武碎片">things;allBlackCash;				40</gift>
+			<gift cn="转化石">things;converStone;				60</gift>
+			<gift cn="神能石">things;godStone;					60</gift>
+			<gift cn="强化剂">things;strengthenDrug;			60</gift>
+			<gift cn="血石">things;bloodStone;					25</gift>
+			<gift cn="强化石">things;strengthenStone;			25</gift>
+			<gift cn="优胜券">things;arenaStamp;				1000</gift>
+			<gift cn="队友重生卡">things;teamRebirthCard;	2</gift>
+			<gift cn="零件箱">things;partsChest78;	24</gift>
+		</one>
+		<one name="arena_100" mustLevel="100">
+			<gift cn="神武碎片">things;allBlackCash;				30</gift>
+			<gift cn="转化石">things;converStone;				50</gift>
+			<gift cn="神能石">things;godStone;					50</gift>
+			<gift cn="强化剂">things;strengthenDrug;			50</gift>
+			<gift cn="血石">things;bloodStone;					20</gift>
+			<gift cn="强化石">things;strengthenStone;			20</gift>
+			
+			<gift cn="优胜券">things;arenaStamp;				860</gift>
+			<gift cn="队友重生卡">things;teamRebirthCard;	1</gift>
+			<gift cn="零件箱">things;partsChest78;	12</gift>
+		</one>
+		<one name="arena_500" mustLevel="500">
+			<gift cn="神武碎片">things;allBlackCash;				20</gift>
+			<gift cn="转化石">things;converStone;				40</gift>
+			<gift cn="神能石">things;godStone;					40</gift>
+			<gift cn="强化剂">things;strengthenDrug;			40</gift>
+			<gift cn="血石">things;bloodStone;					15</gift>
+			<gift cn="强化石">things;strengthenStone;			15</gift>
+			<gift cn="优胜券">things;arenaStamp;				720</gift>
+			<gift cn="零件箱">things;partsChest78;	8</gift>
+		</one>
+		<one name="arena_1000" mustLevel="1000">
+			<gift cn="神武碎片">things;allBlackCash;				15</gift>
+			<gift cn="转化石">things;converStone;				30</gift>
+			<gift cn="神能石">things;godStone;					30</gift>
+			<gift cn="强化剂">things;strengthenDrug;			30</gift>
+			<gift cn="血石">things;bloodStone;					10</gift>
+			<gift cn="强化石">things;strengthenStone;			10</gift>
+			<gift cn="优胜券">things;arenaStamp;				580</gift>
+			<gift cn="零件箱">things;partsChest78;	4</gift>
+		</one>
+		<one name="arena_5000" mustLevel="5000">
+			<gift cn="神武碎片">things;allBlackCash;				12</gift>
+			<gift cn="转化石">things;converStone;				20</gift>
+			<gift cn="神能石">things;godStone;					20</gift>
+			<gift cn="强化剂">things;strengthenDrug;			20</gift>
+			<gift cn="血石">things;bloodStone;					5</gift>
+			
+			<gift cn="强化石">things;strengthenStone;			5</gift>
+			<gift cn="优胜券">things;arenaStamp;				440</gift>
+			<gift cn="零件箱">things;partsChest78;	2</gift>
+		</one>
+		<one name="arena_10000" mustLevel="10000">
+			<gift cn="神武碎片">things;allBlackCash;				9</gift>
+			<gift cn="转化石">things;converStone;				10</gift>
+			<gift cn="神能石">things;godStone;					10</gift>
+			<gift cn="强化剂">things;strengthenDrug;			10</gift>
+			<gift cn="优胜券">things;arenaStamp;				370</gift>
+			<gift cn="零件箱">things;partsChest78;	1</gift>
+		</one>
+		<one name="arena_99999" mustLevel="99999">
+			<codeUrl>300</codeUrl>
+			<gift cn="神武碎片">things;allBlackCash;				6</gift>
+			<gift cn="优胜券">things;arenaStamp;				350</gift>
+			<gift cn="零件箱">things;partsChest75;	2</gift>
+		</one>
+		
+	</arenaSeason>
+</data>

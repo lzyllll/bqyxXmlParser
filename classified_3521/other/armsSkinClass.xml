@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<gather name="arms">
+		<father cnName="散弹枪-随机属性" name="shotgun1">
+			<body name="shotgun2506" cnName="超体" color="black" url ="newGun/shotgun2506" author="【弑杀】最终幻想" au="original" info="我已等待了许久，在代码中静静扩散。" />
+		</father>
+		<father cnName="步枪-随机属性" name="ak47">
+			<body name="rifle2506" cnName="泯灭" color="black" url ="newGun/rifle2506" author="【弑杀】最终幻想" au="original" info="我不再惧怕失去人性，我已经没有了。" />
+		</father>
+		<father cnName="手枪-随机属性" name="pistol1">
+			<body name="pistol2506" cnName="自由" color="black" url ="newGun/pistol2506" author="【弑杀】最终幻想" au="original" info="不要放弃，直到做对为止。" />
+		</father>
+		<father cnName="狙击枪-随机属性" name="sniperRifle">
+			<body name="sniper2508" cnName="升华" color="black" url ="newGun/sniper2508" author="【弑杀】最终幻想" au="original" info="我从未伤害任何人，只是演出让人窒息。" />
+		</father>
+		
+		<father cnName="狮子座" name="consLeo">
+			<body name="consLeo" url ="newGun/consLeo" />
+			<body name="consLeo2507" cnName="百鬼夜行" author="花落燕歸巢" url ="newGun/consLeo2507"  au="original" info="" />
+			<body name="consLeo2508" cnName="殇" author="清冷几千春" url ="newGun/consLeo2508"  au="original" info="待到阴阳逆乱时，我以魔血染青天。" />
+		</father>
+		
+		<father cnName="处女座" name="consVirgo">
+			<body name="consVirgo" url ="newGun/consVirgo" />
+			<body name="consVirgo2507" cnName="空间契约" author="心愿-雪流星" url ="newGun/consVirgo2507"  au="original" info="笛亚在练习空间契约时意外来到了霞光大陆。大致了解情况后，她决心帮助这里的人类，对抗僵尸。离开时，她将自己的一点力量送给了小白。“它能替我继续帮助霞光的人们”。———这就是“空间契约”的由来。" />
+		</father>
+		<father cnName="巨蟹座" name="consCancer">
+			<body name="consCancer" url ="newGun/consCancer" />
+		</father>
+		
+		<father cnName="迅龙" name="rifleDragon">
+			<body name="rifleDragon" />
+			<body name="rifleDragon3789272881" cnName="沙尘暴" author="暮雨·喵薄荷" au="original" bulletColor="0xFFF680" lightColor="0xBB7100" />
+		</father>
+		
+		<father cnName="洪荒" name="waterFlamer">
+			<body name="waterFlamer" />
+			<body name="waterFlamer1587464098" cnName="水神共工" author="【神龙觉醒】钢狼" au="original"/>
+		</father>
+		<father cnName="荒芒" name="barrenAwn">
+			<body name="barrenAwn" />
+			<body name="barrenAwn1423556554" cnName="迷墙Ⅱ" author="茅厕の卡密" au="original" info="墙上的一块砖，渺小又重要。" />
+		</father>
+		
+		
+		
+		<father cnName="天弓" name="skyArch">
+			<body name="skyArch" />
+			<body name="skyArch2" evoLv="2"/>
+			<body name="skyArch2714641779" cnName="核动力" author="沁园春丨雪玻璃"/>
+			<body name="skyArch1433974107" cnName="朱雀" author="行虚客"/>
+		</father>
+		
+		
+		<father cnName="青蜂" name="rifleHornet">
+			<body name="rifleHornet" />
+			<body name="rifleHornet2" evoLv="4" />
+			<body name="rifleHornet3" evoLv="8" />
+			<body name="rifleHornet4" evoLv="10" />
+			<body name="rifleHornet5" evoLv="14" />
+			<body name="rifleHornetGold" cnName="黄金" evoLv="14" vip="8" bulletColor="0xFFFF00" lightColor="0xBB4A00"/>
+			<body name="rifleHornetGold2" cnName="蓝绿" evoLv="14" vip="8" bulletColor="0x00FFE9" lightColor="0x216200"/>
+			<body name="rifleHornet6" evoLv="16" />
+			<body name="rifleHornetM" cnName="真青蜂" evoLv="10" stren="25" bulletColor="0x71FEFE" lightColor="0x0077A3"/>
+			<body name="rifleHornet498942159" cnName="源·无双" evoLv="10" author="驰掣万里" au="original" bulletColor="0xFFFF00" lightColor="0x0033FF"/>
+			<body name="rifleHornet4989421592" cnName="绝戮" evoLv="10" author="驰掣万里" au="original" bulletColor="0xFFFF00" lightColor="0x0033FF"/>
+			<body name="rifleHornet511159787" cnName="虹蜂" evoLv="10" author="雪霜华" au="original" bulletColor="0xFFFF00" lightColor="0xAA0000"/>
+			<body name="rifleHornet247904824" cnName="龙雀" evoLv="10" author="清冷几千春" au="original" bulletColor="0xFFFF00" lightColor="0xAA0000" info="锋尖七曜隐芙蓉，匣里双环吐龙雀，衔天地之生息。" />
+			<body name="rifleHornet5111597872" cnName="次世代" evoLv="10" author="【弑杀】最终幻想" au="original" bulletColor="0xFFAA8A" lightColor="0xFF0000" info="M.A.G.M.A工业的尖端科技打造，枪身由特殊合金组成，使用压缩能量进行装填，冷却时间短，轻便实用。" />
+			<body name="rifleHornet1853181226" cnName="影龙之魂" evoLv="10" author="【跑男团】椎名真昼" au="original" bulletColor="0xFF66FF" lightColor="0x7400FF" info="龙魂为心,龙身为体,屠龙少年,堕入暗影。" />
+			
+			
+			<body name="rifleHornet644937708" cnName="绿" evoLv="10" author="红颜夕下" bulletColor="0x216200" lightColor="0x00FF25"/>
+			<body name="rifleHornet6Sec" cnName="氩星重绘版" evoLv="12" author="李明轩！" au="original"/>
+			<body name="rifleHornet2506" cnName="流金之主"  url ="newGun/rifleHornet2506" evoLv="12" author="驰掣万里" au="original"/>
+			<body name="rifleHornet2507" cnName="满目星河"  url ="newGun/rifleHornet2507" evoLv="12" author="雾里藏花海" au="original" info="蝉鸣不止的盛夏终会结束，但少年对少女的爱恋，永不落幕。" />
+			
+		</father>
+		
+		<father cnName="金蝉" name="sniperCicada">
+			<body name="sniperCicada" />
+			<body name="sniperCicada2" evoLv="4" />
+			<body name="sniperCicada3" evoLv="8" />
+			<body name="sniperCicada4" evoLv="10" />
+			<body name="sniperCicada5" evoLv="14" />
+			<body name="sniperCicada6" evoLv="16" />
+			<body name="sniperCicadaM" cnName="真金蝉" evoLv="10" stren="25" bulletColor="0x00FFE9" lightColor="0x00207E" />
+			<body name="sniperCicadaGold" cnName="黄金" evoLv="14" vip="6" bulletColor="0xFFFF00" lightColor="0xBB4A00" />
+			<body name="sniperCicadaGold2" cnName="绿" evoLv="14" vip="6" bulletColor="0x00FFE9" lightColor="0x216200" />
+			<body name="sniperCicadaK" cnName="幻绿" p="2" bulletColor="0x91FF00" lightColor="0x216200" />
+			
+			<body name="sniperCicadaO" cnName="写实" evoLv="10" goods="sniperCicadaO" />
+			<body name="sniperCicada2579763438" cnName="破坏" evoLv="14" author="『傲世』一骑绝尘" au="original" bulletColor="0xFFAA8A" lightColor="0xFF0000" info="创造之前，是破坏。" />
+			<body name="sniperCicada189752643" cnName="云容" evoLv="14" author="【挽歌】全村人的希望" au="original" bulletColor="0xFFFFD0" lightColor="0xFFCC00"/>
+			<body name="sniperCicada2734366043" cnName="觉醒" evoLv="14" author="【觉醒】屑狐狸" au="original" bulletColor="0x00FFE9" lightColor="0x216200" />
+			<body name="sniperCicada3594229545" cnName="蔚蓝" evoLv="14" author="【宝宝】眼眸" au="original" bulletColor="0x0000FF" lightColor="0x00DBFF" />
+			<body name="sniperCicada1853181226" cnName="起舞之影" evoLv="14" author="【跑男团】椎名真昼" au="original" bulletColor="0xFF66FF" lightColor="0x7400FF" info="起于黑暗,舞于阴影。" />
+			<body name="sniperCicada2411" cnName="十里霜" evoLv="14" author="清冷几千春" au="original" bulletColor="0x00CCFF" lightColor="0x0000FF" info="我的小鱼你醒了，冰霜似星屑洒落人间，装点的是你的梦还是我的梦。" />
+			<body name="sniperCicada2412a" cnName="彼岸" evoLv="14" author="浪浪山乖鼠鼠" au="original" bulletColor="0xFF9FBE" lightColor="0xFF0000" info="残梦尽染，魂归彼岸。" />
+			<body name="sniperCicada2502a" url ="newGun/sniperCicada2502a" cnName="极光之刺" evoLv="16" author="霍霍_╮(╯3╰)╭" au="original" bulletColor="0x64FFFF" lightColor="0x0066FF" info="来自氩星工业的武器核心，威力可以贯穿天地。" />
+		</father>
+		
+		<father cnName="赤鼬" name="shotgunSkunk">
+			<body name="shotgunSkunk" />
+			<body name="shotgunSkunk2" evoLv="4" />
+			<body name="shotgunSkunk3" evoLv="8" />
+			<body name="shotgunSkunk4" evoLv="10" />
+			<body name="shotgunSkunk5" evoLv="14" />
+			<body name="shotgunSkunk6" evoLv="16" />
+			
+			<body name="shotgunSkunkM" cnName="真赤鼬" evoLv="10" stren="25"/>
+			<body name="shotgunSkunkGold" cnName="黄金" evoLv="14" vip="10"  bulletColor="0xFFFF00" lightColor="0xBB4A00" />
+			<body name="shotgunSkunkGold2" cnName="赛博绿" evoLv="14" vip="10" bulletColor="0x00FFE9" lightColor="0x216200"/>
+			<body name="shotgunSkunkSPurple" cnName="赛博紫" evoLv="14" goods="shotgunSkunkSPurple" bulletColor="0xFF99FF" lightColor="0x55007E"/>
+			<body name="shotgunSkunk2579763438" cnName="傲世" evoLv="14" author="『傲世』一骑绝尘"  au="original"  bulletColor="0xFFFFFF" lightColor="0x0099FF" info="天上天下，唯我独尊！" />
+			<body name="shotgunSkunk654612145" cnName="紫幽" evoLv="14" author="情龍"  au="original"  bulletColor="0xD154FF" lightColor="0x0099FF" info="想回到那段无忧无虑的岁月。" />
+			<body name="shotgunSkunk511159787" cnName="擎苍翠鸣" evoLv="14" author="【弑杀】最终幻想"  au="original"  bulletColor="0x00FF25" lightColor="0x216200" info="千丈松萝交翠幕,一丘山水当鸣琴。" />
+			<body name="shotgunSkunk2504" url ="newGun/shotgunSkunk2504" cnName="落日玫瑰" evoLv="14" au="original" author="难遇知白" bulletColor="0xFFFFFF" lightColor="0xFF00FF" info="晚霞和玫瑰共绘浪漫   你是我藏在心底的爱意泛滥。" />
+			<body name="shotgunSkunk2506" cnName="拘光" url ="newGun/shotgunSkunk2506" evoLv="14" au="original" author="驰掣万里" bulletColor="0xFFFFFF" lightColor="0xE7CB00"/>
+			
+			<body name="shotgunSkunk896732812" cnName="霓虹光" evoLv="14" author="冷心·『孤独』泠の珂"  bulletColor="0xDE99FF" lightColor="0x13009C"/>
+			<body name="shotgunSkunk8967328122" cnName="鎏金" evoLv="14" author="冷心·『孤独』泠の珂"  bulletColor="0xFF99FF" lightColor="0x55007E"/>
+			<body name="shotgunSkunk2714641779" cnName="糖果" evoLv="14" author="沁园春丨雪玻璃"  bulletColor="0x3AEDFF" lightColor="0x8F00AA"/>
+			<body name="shotgunSkunk2296141867" cnName="橙子" evoLv="14" author="橙子"  bulletColor="0xFFCC00" lightColor="0xFF3300"/>
+			<body name="shotgunSkunk1423556554" cnName="歼灭" evoLv="14" author="茅厕の卡密" />
+			<body name="shotgunSkunk3996715415" cnName="狂暴" evoLv="14" author="千代书柔星河" />
+			<body name="shotgunSkunk3588120315" cnName="星河" evoLv="14" author="夜语星空"  bulletColor="0xFF66FF" lightColor="0x0023B1"/>
+			<body name="shotgunSkunk3246188122" cnName="镭" evoLv="14" author="消失の星期三"  bulletColor="0xFFFFB1" lightColor="0xB84600"/>
+			<body name="shotgunSkunk644937708" cnName="红心" evoLv="14" author="红颜夕下"/>
+			<body name="shotgunSkunk1433974107" cnName="繁星" evoLv="14" author="行虚客" bulletColor="0xFFFFFF" lightColor="0x0099FF"/>
+			
+		</father>
+		<father cnName="银狐" name="pistolFox">
+			<body name="pistolFox" />
+			<body name="pistolFox2" evoLv="4" />
+			<body name="pistolFox4" evoLv="6" />
+			<body name="pistolFox5" evoLv="10" />
+			<body name="pistolFox6" evoLv="12" />
+			<body name="pistolFoxM" cnName="真银狐" evoLv="6" stren="25"/>
+			<body name="pistolFox2734366043" cnName="Miko" evoLv="6" author="【觉醒】屑狐狸" au="original" bulletColor="0xD94767" lightColor="0xFF007E" info="很多人的一生写于纸上也不过几行，大多都是些无聊的故事…" />
+			<body name="pistolFox247904824" cnName="邪月" evoLv="6" author="清冷几千春" au="original" bulletColor="0xFFAA8A" lightColor="0xFF0000" info="破魑魅，惊邪祟，领衔玉盘摄万鬼。" />
+			
+			<body name="pistolFox2502a"  url ="newGun/pistolFox2502a" cnName="蓝色杀手" evoLv="12" author="一个游戏懵新罢了" au="original" bulletColor="0x64FFFF" lightColor="0x0066FF" info="传说埋藏于氩星石海之下的神器。" />
+			<body name="pistolFox2503"  url ="newGun/pistolFox2503" cnName="甘露嘉禾" evoLv="12" author="骁光天晴" au="original" bulletColor="0x64FFFF" lightColor="0x0066FF" info="饮必甘露，食必嘉禾。循循如仪，不罹罗网。人世繁华不及你一点回眸。" />
+			<body name="pistolFox2506" cnName="流影" url ="newGun/pistolFox2506" evoLv="6" author="驰掣万里" au="original" bulletColor="0xFFFFFF" lightColor="0xE7CB00" info="" />
+			
+		</father>
+		
+		<father cnName="猩焰" name="redFire">
+			<body name="redFire" />
+			<body name="redFire2" evoLv="4" />
+			<body name="redFire4" evoLv="6" />
+			<body name="redFire5" evoLv="10" />
+			<body name="redFire6" evoLv="12" author="『傲世』一骑绝尘" au="original"/>
+			<body name="redFireGold" cnName="蓝" evoLv="10" vip="7" />
+			<body name="redFireHPurpe" cnName="幻紫" evoLv="10" vip="7" />
+			
+			<body name="redFire2572411060" cnName="醉笙" evoLv="10" author="闻人之梦昊穹" au="original"/>
+			<body name="redFire1192018625" cnName="纵横" evoLv="6" author="*梦星茶*" au="original" info="浩荡深谋喷江海，纵横逸气走风雷。" />
+			<body name="redFire3246188122" cnName="血魂" evoLv="10" author="消失の星期三" au="original"/>
+			<body name="redFire2504" url ="newGun/redFire2504" cnName="炽炎白龙" evoLv="10" author="【弑杀】最终幻想" au="original"/>
+			<body name="redFire2505" url ="newGun/redFire2505" cnName="灰烬" evoLv="10" author="【萌王】鹿枫" au="original"/>
+		</father>
+		
+		<father cnName="卡特巨炮" name="rocketCate">
+			<body name="rocketCate" />
+			<body name="rocketCate2" evoLv="4" />
+			<body name="rocketCate5" evoLv="10" />
+			<body name="rocketCateSPurple" evoLv="4" cnName="赛博紫" p="3" />
+			
+			<body name="rocketCateO" cnName="写实" evoLv="4" goods="rocketCateO" />
+			<body name="rocketCate189752643" cnName="方长" evoLv="4" author="【挽歌】全村人的希望" au="original"/>
+			<body name="rocketCate2734366043" cnName="自由翼" evoLv="4" author="【觉醒】屑狐狸" au="original" info="羽翼被烧灼的无数飞鸟，挥散灰烬，安然微笑，但愿有人能将我曾存在于此的证明散播。白骨终将化作沙土，却生生不息…" />
+			<body name="rocketCate1433974107" cnName="黑曜" author="行虚客" evoLv="4" />
+			<body name="rocketCate1423556554" cnName="鲲鲲" author="茅厕の卡密" evoLv="4" />
+			<body name="rocketCate2503" url ="newGun/rocketCate2503"  cnName="霓虹光" au="original" author="【弑杀】最终幻想" evoLv="4" />
+			
+		</father>
+		
+		<father cnName="铄金" name="meltFlamer">
+			<body name="meltFlamer" />
+			<body name="meltFlamer2" evoLv="4" />
+			<body name="meltFlamer4" evoLv="6" />
+			<body name="meltFlamer5" evoLv="10" />
+			<body name="meltFlamer6" evoLv="12" />
+			<body name="meltFlamerAi" evoLv="10" cnName="朋克"/>
+			<body name="meltFlamer2506" url ="newGun/meltFlamer2506"  cnName="烬灭龙息" au="original" author="不要放葱花" evoLv="10" info="灭世龙炎焚尽诸天，所过之处寸草不生。" />
+			
+			<body name="meltFlamer2714641779" evoLv="10" cnName="糖果" author="沁园春丨雪玻璃"/>
+			<body name="meltFlamer1433974107" evoLv="10" cnName="紫电" author="行虚客"/>
+			<body name="meltFlamer3246188122" evoLv="10" cnName="红莲" author="消失の星期三"/>
+			
+		</father>
+		<father cnName="光锥" name="lightCone">
+			<body name="lightCone" />
+			<body name="lightCone2" evoLv="4" />
+			<body name="lightCone4" evoLv="6" />
+			<body name="lightCone5" evoLv="10" />
+			<body name="lightConeGreen" evoLv="6" p="4" cnName="绿" />
+			<body name="lightConeK" cnName="写实" evoLv="4" goods="lightConeK" />
+			
+			<body name="lightCone1676180080" evoLv="4"  cnName="鸣神" author="【觉醒】屑狐狸" au="original" />
+			<body name="lightCone498942159" evoLv="4"  cnName="黑魇" author="驰掣万里" au="original" />
+			<body name="lightCone2734366043" evoLv="4"  cnName="幻樱" author="【觉醒】屑狐狸" au="original" info="梦开始的地方，你将前往何处？" />
+			<body name="lightCone1587464098" evoLv="4"  cnName="源极" author="【神龙觉醒】钢狼" au="original" info="蛰龙已惊眠，一啸动千山。" />
+			<body name="lightCone27343660432" evoLv="4"  cnName="流樱" author="【觉醒】屑狐狸" au="original" />
+			<body name="lightCone2503" url ="newGun/lightCone2503" evoLv="4"  cnName="东皇" author="清冷几千春" au="original" info="伴微风起舞，越虚无之处，随风暴而来，帝行之混沌，剑量国之疆土，视为东皇。" />
+			<body name="lightCone2504" url ="newGun/lightCone2504" evoLv="4"  cnName="Neon" author="【永恒】森" au="original" info="她说霓虹灯也很棒。" />
+			
+			
+		</father>
+		<father cnName="隼武" name="falconGun">
+			<body name="falconGun" />
+			<body name="falconGun5" evoLv="5"/>
+			<body name="falconGun498942159" cnName="流光驹" author="驰掣万里" au="original" />
+			<body name="falconGun2734366043" cnName="游隼" author="【觉醒】屑狐狸" au="original" evoLv="5"/>
+			<body name="falconGun2506" url ="newGun/falconGun2506"  cnName="碧绿精粹" author="驰掣万里" au="original" evoLv="5" info="" />
+			
+		</father>
+		<father cnName="极源" name="extremeGun">
+			<body name="extremeGun" />
+			<body name="extremeGun5" evoLv="5"/>
+			<body name="extremeGun2296141867" cnName="龙舞" author="橙子" au="original" />
+			<body name="extremeGun2607333339" cnName="尘鸿" author="地煞：诡道子" au="original" />
+			<body name="extremeGun2411" evoLv="5" cnName="宇宙之辉" author="【跑男团】椎名真昼" au="original" info="他的使用者,为了抵御太空来敌,用星系的力量打造了它,前往宇宙之际,他看向了她的花环,或许没有她,他不会成为万里挑一的王者,但是现在,即使是九死一生的险境,他也必须要去." />
+			<body name="extremeGun2506" evoLv="5" url ="newGun/extremeGun2506"  cnName="灾葬魔躯" author="驰掣万里" au="original" info="" />
+		</father>
+		
+		<father cnName="辰龙" name="yearDragon">
+			<body name="yearDragon" />
+			<body name="yearDragon2" evoLv="2" cnName="无双"/>
+			<body name="yearDragonGold" evoLv="2" cnName="无双" vip="9"/>
+			
+			<body name="yearDragonM" cnName="真辰龙" goods="yearDragonM"/>
+			
+			<body name="yearDragon881607617" cnName="神龙" author="『觉醒』究极混子" au="original" info="蛰龙已惊眠，一啸动千山。" />
+			<body name="yearDragon1433974107" cnName="青龙" author="行虚客"/>
+			<body name="yearDragon1460760168" cnName="启蛰" author="龙舞*天*星期三"/>
+			<body name="yearDragon3246188122" cnName="青龙志" author="消失の星期三"/>
+		</father>
+		
+		<father cnName="寅虎" name="yearTiger">
+			<body name="yearTiger" />
+			<body name="yearTiger2" evoLv="2" cnName="无双"/>
+			<body name="yearTigerGold" evoLv="2" cnName="无双" vip="10"/>
+			<body name="yearTigerM" cnName="真寅虎" goods="yearTigerM"/>
+			<body name="yearTiger1433974107" cnName="白虎" author="行虚客"/>
+		</father>
+		
+		<father cnName="未羊" name="yearSheep">
+			<body name="yearSheep" />
+			<body name="yearSheep2" evoLv="2" cnName="无双" />
+			<body name="yearSheepM" cnName="真未羊" vip="5"/>
+			<body name="yearSheep1587464098" cnName="湮灭" author="【神龙觉醒】钢狼" au="original"/>
+			<body name="yearSheep2734366043" cnName="幻境" author="【觉醒】屑狐狸" au="original"/>
+			<body name="yearSheep107396537" cnName="刀截剑" author="长胜²不败" au="original"/>
+			
+		</father>
+		
+		<father cnName="鬼斧" name="ghostAxe">
+			<body name="ghostAxe" />
+			<body name="ghostAxe2501" url ="newGun/ghostAxe2501" cnName="20k" author="李明轩！"  bulletColor="0xFFAA8A" lightColor="0xFF0000" info="黑暗科技时代的巅峰造物！" />
+		</father>
+	</gather>
+		
+</data>

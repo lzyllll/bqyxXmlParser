@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<body name="狂人机器" shell="compound">
+			
+			<name>Warrior</name>
+			<cnName>狂人机器</cnName><headIconUrl>IconGather/Warrior</headIconUrl>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/Warrior.swf</swfUrl>
+			
+			<showLevel>999</showLevel>
+			<lifeRatio>1.8</lifeRatio>
+			<rateRatio>0.05</rateRatio>
+			
+			<imgType>normal</imgType>
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<imgArr>
+				stand,move,run
+				,normalAttack,shootAttack,shakeAttack
+				,hurt1,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			<lifeBarExtraHeight>-50</lifeBarExtraHeight>
+			<handAddRa>90</handAddRa>
+			
+			<hitRect>-18,-96,36,96</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>15</maxVx>
+			<runStartVx>8</runStartVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			
+			<skillArr />
+			<bossSkillArr>WarriorShield,WarriorShoot,WarriorSprint,cmldef_enemy,fightReduct2,defenceBounce_enemy</bossSkillArr>
+			<bossSkillArrCn>60%近战防御、80%防毒、胶性表皮</bossSkillArrCn>
+			<extraDropArmsB>1</extraDropArmsB>
+			<extraAIClassLabel>Warrior_AIExtra</extraAIClassLabel>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>move</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.4</hurtRatio>
+					<attackType>direct</attackType>
+					<skillArr />
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit1">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel><cn>竖劈</cn>
+					<hurtRatio>3</hurtRatio>
+					<attackType>direct</attackType>
+					<skillArr />
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit1">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>3</hurtRatio>
+					<attackType>holy</attackType>
+					<bulletLabel>WarriorBullet</bulletLabel>
+					<grapRect>-650,-200,380,200</grapRect>
+					<skillArr>silenceWarrior,noMoveWarrior</skillArr>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit1">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shakeAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtMul>0.9</hurtMul>
+					<attackType>holy</attackType>
+					<skillArr />
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit1">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>	
+		
+		<bullet cnName="剑气">
+			<name>WarriorBullet</name>
+			<cnName>狂人机器剑气</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>7</bulletLife>
+			<bulletWidth>70</bulletWidth>
+			<hitType>rect</hitType>
+			<skillArr>silenceWarrior</skillArr>
+			
+			<twoHitGap>0.5</twoHitGap>
+			<attackGap>1</attackGap>
+			<attackDelay>0.9</attackDelay>
+			<bulletAngle>179.9</bulletAngle>
+			<bulletAngleRange>5</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootPoint>-300,-74</shootPoint>
+			<bulletSpeed>35</bulletSpeed>
+			<penetrationNum>999</penetrationNum>
+			<penetrationGap>1000</penetrationGap>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2" con="filter">Warrior/bullet</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="sound/vehicle_hit1">bulletHitEffect/fitHit</hitImgUrl>
+		</bullet>
+		
+	</father>
+	
+	</data>

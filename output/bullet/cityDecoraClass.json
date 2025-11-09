@@ -1,0 +1,72 @@
+{
+  "father": {
+    "type": "decora",
+    "body": [
+      {
+        "cnName": "绿花罐",
+        "name": "canGreen"
+      },
+      {
+        "cnName": "黄花罐",
+        "name": "canYellow"
+      },
+      {
+        "cnName": "橙花盆",
+        "name": "plateOrange",
+        "iconUrl": "CityDecora/plateOrange"
+      },
+      {
+        "cnName": "黄花盆",
+        "name": "plateYellow",
+        "iconUrl": "CityDecora/plateYellow"
+      },
+      {
+        "cnName": "木箱",
+        "name": "boxOne"
+      },
+      {
+        "cnName": "三木箱",
+        "name": "boxThree",
+        "space": 2
+      },
+      {
+        "cnName": "长椅",
+        "name": "longChair",
+        "shadow": "unit",
+        "space": 2
+      },
+      {
+        "cnName": "花坛",
+        "name": "flowerBeds",
+        "space": 8
+      },
+      {
+        "cnName": "邮箱",
+        "name": "mailBox",
+        "space": 3
+      },
+      {
+        "cnName": "路灯",
+        "name": "streetLamp",
+        "space": 2
+      },
+      {
+        "cnName": "空售货机",
+        "name": "vendingMachine",
+        "space": 4
+      },
+      {
+        "cnName": "拖车",
+        "name": "trailer",
+        "shadow": "unit",
+        "space": 4
+      },
+      {
+        "cnName": "运货卡车",
+        "name": "truck",
+        "shadow": "vehicle",
+        "space": 7
+      }
+    ]
+  }
+}

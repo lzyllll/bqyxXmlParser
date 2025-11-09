@@ -1,0 +1,139 @@
+{
+  "pro": [
+    {
+      "name": "bulletLife",
+      "cnName": "子弹寿命",
+      "first": "+",
+      "unit": "%",
+      "typeArr": "rect"
+    },
+    {
+      "name": "bulletWidth",
+      "cnName": "子弹碰撞体积",
+      "first": "+",
+      "unit": "%",
+      "typeArr": "rect"
+    },
+    {
+      "name": "bulletSpeed",
+      "cnName": "子弹速度",
+      "first": "+",
+      "unit": "%",
+      "typeArr": "rect"
+    },
+    {
+      "name": "followValue",
+      "cnName": "跟踪度",
+      "first": "+",
+      "unit": "%",
+      "typeArr": "rect"
+    },
+    {
+      "name": "shootDistanceAddMul",
+      "cnName": "射程",
+      "first": "+",
+      "unit": "%"
+    },
+    {
+      "name": "aiShootRange",
+      "cnName": "AI射程",
+      "first": "+",
+      "unit": "码"
+    },
+    {
+      "name": "gravity",
+      "cnName": "子弹重力",
+      "typeArr": "rect"
+    },
+    {
+      "name": "penetrationNum",
+      "cnName": "穿人个数",
+      "first": "+"
+    },
+    {
+      "name": "penetrationGap",
+      "cnName": "穿墙深度",
+      "first": "+"
+    },
+    {
+      "name": "twoShootPro",
+      "cnName": "瞬间连发概率",
+      "first": "+",
+      "unit": "%"
+    },
+    {
+      "name": "eleHurtMul",
+      "cnName": "元素伤害",
+      "first": "+",
+      "unit": "%"
+    },
+    {
+      "name": "fireEleB",
+      "cnName": "火焰元素",
+      "gatherColor": "redness"
+    },
+    {
+      "name": "frozenEleB",
+      "cnName": "冷冻元素",
+      "gatherColor": "blove"
+    },
+    {
+      "name": "poisonEleB",
+      "cnName": "生化元素",
+      "gatherColor": "greeness"
+    },
+    {
+      "name": "electricEleB",
+      "cnName": "电磁元素",
+      "gatherColor": "purpleness"
+    },
+    {
+      "name": "noMagneticB",
+      "cnName": "磁力场免疫"
+    },
+    {
+      "name": "shootAngleCtrlB",
+      "cnName": "散射角控制"
+    },
+    {
+      "name": "redHurtMul",
+      "cnName": "红橙武器伤害",
+      "first": "+",
+      "unit": "%"
+    },
+    {
+      "name": "uidpsMul",
+      "cnName": "显示战斗力",
+      "first": "+",
+      "unit": "%"
+    },
+    {
+      "name": "rareHurtMul",
+      "cnName": "伤害(稀有)",
+      "first": "+",
+      "unit": "%"
+    },
+    {
+      "name": "demCapacityMul",
+      "cnName": "修罗弹容",
+      "first": "+",
+      "unit": "%"
+    },
+    {
+      "name": "color",
+      "cnName": "品质",
+      "child": "itemsColor"
+    },
+    {
+      "name": "colorHurtMul",
+      "cnName": "品质伤害",
+      "first": "+",
+      "unit": "%"
+    },
+    {
+      "name": "rareSkillArr",
+      "cnName": "技能",
+      "child": "skill"
+    }
+  ]
+}

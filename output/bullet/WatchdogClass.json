@@ -1,0 +1,211 @@
+{
+  "father": [
+    {
+      "name": "enemy",
+      "body": {
+        "index": 0,
+        "name": "Watchdog",
+        "shell": "metal",
+        "cnName": "看门狗",
+        "raceType": "robot",
+        "swfUrl": "swf/enemy/Watchdog.swf",
+        "lifeRatio": 1,
+        "headHurtMul": 3,
+        "rosRatio": 99,
+        "showLevel": 999,
+        "imgType": "normal",
+        "imgArr": "stand,move\n\t\t\t\t,shootAttack,lightningAttack,laserAttack\n\t\t\t\t,hurt1,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__",
+        "hitRect": "-14,-76,28,76",
+        "lifeBarExtraHeight": -40,
+        "maxJumpNum": 1,
+        "maxVx": 7,
+        "nextAttackTime": 0,
+        "extraAIClassLabel": "Watchdog_AIExtra",
+        "bossSkillArr": "noSpeedReduce,silence_enemy,underWatchdog,underDieWatchdog,lightningWatchdog,laserWatchdog,fightReduct,defenceBounce_enemy",
+        "hurtArr": {
+          "hurt": [
+            {
+              "imgLabel": "shootAttack",
+              "cn": "射击",
+              "hurtRatio": 0.2,
+              "bulletLabel": "shoot_Watchdog",
+              "grapRect": "-450,-88,351,77"
+            },
+            {
+              "info": "不加入ai选择",
+              "imgLabel": "lightningAttack",
+              "noAiChooseB": 1,
+              "grapRect": "-400,-111,100,105"
+            },
+            {
+              "info": "不加入ai选择",
+              "imgLabel": "laserAttack",
+              "noAiChooseB": 1,
+              "ingfollowB": 1,
+              "hurtRatio": 0,
+              "hurtMul": 0.08,
+              "attackType": "holy",
+              "grapRect": "-400,-111,100,105"
+            }
+          ]
+        }
+      },
+      "skill": [
+        {
+          "cnName": "大地闪电",
+          "name": "lightningWatchdog",
+          "noBeClearB": 1,
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "skillIcon": "SkillIcon/laser_PetFightWolf_36",
+          "cd": 7,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "target": "me",
+          "addType": "state",
+          "effectType": "bullet_lightningWatchdog",
+          "value": 16,
+          "mul": 0.15,
+          "secMul": 60,
+          "duration": 4,
+          "obj": "\"name\":\"lightningWatchdog\"",
+          "meActionLabel": "lightningAttack",
+          "description": "看门狗向周围释放扩散闪电，对目标造成巨大伤害，并大幅降低其枪支的射速。"
+        },
+        {
+          "cnName": "大地闪电-过载",
+          "name": "lightningWatchdogHit",
+          "noBeClearB": 1,
+          "noSkillDodgeB": 1,
+          "ignoreImmunityB": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "effectType": "attackGapMul",
+          "mul": 0.1,
+          "duration": 8,
+          "stateEffectImg": {
+            "value": "bulletHitEffect/smoke_black",
+            "partType": "shootPoint",
+            "raNum": 25,
+            "followPartRaB": true
+          },
+          "description": "击中目标后腐蚀对方手上的枪支，降低枪支[1-mul]的射击速度，持续[duration]秒。"
+        },
+        {
+          "cnName": "激光扫荡",
+          "name": "laserWatchdog",
+          "noBeClearB": 1,
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cd": 9999999,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "target": "me",
+          "addType": "state",
+          "effectType": "laserWatchdog",
+          "passiveSkillArr": "laserWatchdogUnder,laserWatchdogUnder2",
+          "duration": 0.5,
+          "meActionLabel": "laserAttack",
+          "description": "生命值低于50%时，看门狗开启激光扫荡，扫荡期间只有发射激光部位可被攻击，接着生命值每次被损伤10%关闭或者开启激光扫荡，如此重复直至倒下。"
+        },
+        {
+          "cnName": "激光扫荡-受到攻击",
+          "name": "laserWatchdogUnder",
+          "conditionType": "passive",
+          "condition": "underHit",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "laserWatchdogUnder",
+          "pointEffectImg": {
+            "value": "Watchdog/hurtEffect",
+            "con": "add",
+            "partType": "head"
+          }
+        },
+        {
+          "cnName": "激光扫荡-受到攻击",
+          "name": "laserWatchdogUnder2",
+          "conditionType": "passive",
+          "condition": "underSkillHit",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "laserWatchdogUnder",
+          "pointEffectImg": {
+            "value": "Watchdog/hurtEffect",
+            "con": "add",
+            "partType": "head"
+          }
+        },
+        {
+          "cnName": "受到伤害",
+          "name": "underWatchdog",
+          "conditionType": "passive",
+          "condition": "underHurt",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "underWatchdog",
+          "description": null
+        },
+        {
+          "cnName": "受到伤害",
+          "name": "underDieWatchdog",
+          "conditionType": "passive",
+          "condition": "beforeDie",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "underWatchdog",
+          "description": null
+        }
+      ]
+    },
+    {
+      "type": "zombie",
+      "cnName": "看门狗",
+      "bullet": {
+        "shoot_Watchdog": {
+          "cnName": "看门狗-射击",
+          "name": "shoot_Watchdog",
+          "shakeAngle": 1,
+          "bulletLife": 2,
+          "bulletWidth": 20,
+          "hitType": "rect",
+          "attackGap": 0.9,
+          "attackDelay": 0.3,
+          "bulletAngle": 180,
+          "bulletAngleRange": 10,
+          "shootNum": 9,
+          "shootGap": 0.05,
+          "penetrationGap": 1000,
+          "shootPoint": "-60,-95",
+          "bulletSpeed": 25,
+          "flipX": 1,
+          "bulletImgUrl": "bullet/laser",
+          "hitImgUrl": "bulletHitEffect/energy",
+          "armsType": "zombie"
+        },
+        "lightningWatchdog": {
+          "cnName": "大地闪电",
+          "name": "lightningWatchdog",
+          "hurtMul": 0.65,
+          "attackType": "holy",
+          "bulletLife": 0.0001,
+          "bulletWidth": 220,
+          "hitType": "longLine",
+          "bulletAngle": 270,
+          "penetrationGap": 1000,
+          "penetrationNum": 999,
+          "skillArr": "lightningWatchdogHit",
+          "shootPoint": "0,0",
+          "bulletSpeed": 0,
+          "flipX": 1,
+          "imgClearDelay": 0.23,
+          "bulletImgUrl": "bullet/lightning1",
+          "hitImgUrl": "bulletHitEffect/energy",
+          "armsType": "zombie"
+        }
+      }
+    }
+  ]
+}

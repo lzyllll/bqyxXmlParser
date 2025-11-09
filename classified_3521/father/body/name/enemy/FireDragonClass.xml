@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<body index="0" name="异火龙">
+			
+			<name>FireDragon</name>
+			<cnName>异火龙</cnName><headIconUrl>IconGather/FireDragon</headIconUrl>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/FireDragon293.swf</swfUrl>
+			<rosRatio>2</rosRatio>
+			
+			<imgType>normal</imgType>
+			<flipCtrlBy>target</flipCtrlBy>
+			<showLevel>999</showLevel>
+			<preBulletArr>FireDragon_combo,FireDragon_comboFire</preBulletArr>
+			<imgArr>
+				stand,move,hurt1,die1
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,shootAttack
+				,thornAttack
+				,sprintAttack
+				,fireAttack
+				,comboAttack
+			</imgArr>
+			
+			<hitRect>-27,-23,50,54</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>10</maxVx>
+			<motionState>fly</motionState><flyUseSpiderB>1</flyUseSpiderB>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>FireDragon_AIExtra</extraAIClassLabel>
+			
+			<skillArr />
+			<bossSkillArr>paralysis_enemy,FireDragonFire,FireDragonSprint,FireDragonCombo,cmldef2_enemy,fightReduct,defenceBounce_enemy</bossSkillArr>
+			<bossSkillArrCn />
+			<uiSkillArr />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>thornAttack</imgLabel><cn>尾刺</cn>
+					<mustGrapRectB>1</mustGrapRectB>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<skillArr />
+					<shakeValue>4</shakeValue>
+					<hitImgUrl soundUrl="sound/body_hit">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><cn>喷火球</cn>
+					<bulletLabel>FireDragon_fireball</bulletLabel>
+					<grapRect>-400,-50,300,200</grapRect>
+					<hurtRatio>1.2</hurtRatio>
+					
+				</hurt>
+				
+				<hurt info="不加入ai选择">
+					<imgLabel>sprintAttack</imgLabel><mustGrapRectB>1</mustGrapRectB><noAiChooseB>1</noAiChooseB>
+					<hurtMul>0.1</hurtMul>
+					<grapRect>-350,-17,270,97</grapRect>
+					<hurtRatio>0.5</hurtRatio>
+					<attackType>holy</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl soundUrl="sound/body_hit">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				
+				<hurt info="不加入ai选择">
+					<imgLabel>fireAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtMul>0.05</hurtMul>
+					<bulletLabel>FireDragon_fireSurround</bulletLabel>
+					<grapRect>-400,-50,300,200</grapRect>
+					<attackType>holy</attackType>
+				</hurt>
+				
+				<hurt info="不加入ai选择">
+					<imgLabel>comboAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0</hurtRatio>
+					<hurtMul>0.5</hurtMul>
+					<noShootB>1</noShootB>
+					<grapRect>-400,-50,300,200</grapRect>
+					<attackType>holy</attackType>
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		
+		<bullet cnName="异祖龙-火球">
+			<name>FireDragon_fireball</name>
+			<cnName>异角龙-火球</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>175</bulletAngle>
+			<bulletAngleRange>20</bulletAngleRange>
+			<bulletLife>4</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.6</attackGap>
+			<attackDelay>0.3</attackDelay>
+			<bulletNum>3</bulletNum>
+			<shootAngle>25</shootAngle>
+			<shootPoint>-97,-6</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<bulletSpeed>10</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30" con="filter">FireDragon/fireball</bulletImgUrl>
+			<hitImgUrl name="redFire_hitFloor" />
+		</bullet>
+		
+		
+		
+		<bullet cnName="异祖龙-龙焰">
+			<name>FireDragon_fireSurround</name>
+			<cnName>异祖龙-龙焰</cnName>
+			
+			<hurtRatio>0</hurtRatio>
+			<hurtMul>0.3</hurtMul>
+			<attackType>holy</attackType>
+			
+			<bulletAngle>180</bulletAngle>
+			<shakeAngle>2</shakeAngle>
+			<bulletLife>0.62</bulletLife>
+			<shootNum>20</shootNum>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			<shootPoint>-85,-10</shootPoint>
+			
+			<attackGap>1.4</attackGap>
+			<attackDelay>0.8</attackDelay>
+				
+			<speedD random="0.1" max="30" />
+			<bulletSpeed>30</bulletSpeed>
+			
+			<penetrationGap>1000</penetrationGap>
+			
+			<shootSoundUrl />
+			<bulletImgUrl name="fireFlamer_bullet" />
+			<hitImgUrl raNum="30">bulletHitEffect/smoke_motion</hitImgUrl>
+			<hitFloorImgUrl raNum="30">bulletHitEffect/smoke_motion</hitFloorImgUrl>
+			<fireImgType>no</fireImgType>
+		</bullet>
+		
+		<bullet cnName="异祖龙-连续火球">
+			<name>FireDragon_combo</name>
+			<cnName>异祖龙-连续火球</cnName>
+			
+			<hurtRatio>0</hurtRatio>
+			<hurtMul>0.5</hurtMul><transBackMul>0.4</transBackMul>
+			<bulletSkillArr />
+			
+			<bulletAngle>-120</bulletAngle>
+			<shakeAngle>30</shakeAngle>
+			
+			<bulletLife>6</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<bulletNum>1</bulletNum>
+			<shootAngle>15</shootAngle>
+			<shootPoint>-62,-71</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<bulletSpeed>10</bulletSpeed>
+			<followD value="1" maxTime="1" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30" con="add">FireDragon/fireball</bulletImgUrl>
+			<hitImgUrl name="redFire_hitFloor" />
+		</bullet>
+		<bullet cnName="异祖龙-连续火球-爆开火焰">
+			<name>FireDragon_comboFire</name>
+			<cnName>异祖龙-连续火球-爆开火焰</cnName>
+			
+			<hurtRatio>0</hurtRatio>
+			<hurtMul>0.1</hurtMul>
+			<attackType>holy</attackType>
+			
+			<bulletAngle>0</bulletAngle>
+			<bulletLife>0.62</bulletLife>
+			<shootNum>1</shootNum>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+				
+			<speedD random="0.1" max="30" />
+			<bulletSpeed>30</bulletSpeed>
+			
+			<penetrationGap>1000</penetrationGap>
+			
+			<shootSoundUrl />
+			<bulletImgUrl name="fireFlamer_bullet" />
+			<selfBoomImgUrl raNum="30">bulletHitEffect/smoke_motion</selfBoomImgUrl>
+			<fireImgType>no</fireImgType>
+		</bullet>
+	</father>	
+	
+	
+	</data>

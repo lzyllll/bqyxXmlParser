@@ -1,0 +1,417 @@
+{
+  "father": [
+    {
+      "name": "enemy",
+      "body": {
+        "name": "LastdayTank",
+        "shell": "metal",
+        "showLevel": 999,
+        "cnName": "末日坦克",
+        "editD": {
+          "raIfNoMapB": true
+        },
+        "raceType": "robot",
+        "swfUrl": "swf/enemy/LastdayTank.swf",
+        "otherUnitCnNameArr": "末日坦克部件",
+        "lifeRatio": 1,
+        "rosRatio": 1,
+        "headHurtMul": 0.5,
+        "dieImg": {
+          "value": "boomEffect/boom3",
+          "soundUrl": "sound/pointBoom_hero",
+          "shake": "3,0.4,30"
+        },
+        "dieJumpMul": 0,
+        "imgType": "normal",
+        "imgArr": "stand,move,die1\n\t\t\t\t,big3Attack,bigAttack,missleAttack,vikingAttack",
+        "lifeBarExtraHeight": -40,
+        "hitRect": "-30,-88,60,88",
+        "motionD": {
+          "F_G": 0.6,
+          "jumpDelayT": 0.2,
+          "F_I": 0.2,
+          "F_F": 0.9,
+          "moveWhenVB": true
+        },
+        "maxVx": 10,
+        "maxJumpNum": 0,
+        "nextAttackTime": 0,
+        "extraAIClassLabel": "LastdayTank_AIExtra",
+        "bossSkillArr": "LastdayAttackDefend,LastdayHit,LastdayAir,LastdaySpellImmunity,BallLightningHurt,ruleRangeIron,rigidBody_enemy,noSpeedReduce",
+        "preBulletArr": "LastdayBigChild",
+        "hurtArr": {
+          "hurt": [
+            {
+              "imgLabel": "stand",
+              "hurtRatio": 2,
+              "attackType": "holy",
+              "shakeValue": 10,
+              "hitMaxNum": 1,
+              "hitImgUrl": "bulletHitEffect/fitHit"
+            },
+            {
+              "imgLabel": "move",
+              "hurtRatio": 2,
+              "attackType": "holy",
+              "shakeValue": 10,
+              "hitMaxNum": 1,
+              "hitImgUrl": "bulletHitEffect/fitHit"
+            },
+            {
+              "cd": 1.35,
+              "info": "不加入ai选择",
+              "imgLabel": "bigAttack",
+              "bulletLabel": "LastdayBig",
+              "grapRect": "-776,-500,766,500",
+              "hurtRatio": 3,
+              "attackType": "holy"
+            },
+            {
+              "cd": 1.7,
+              "info": "不加入ai选择",
+              "imgLabel": "missleAttack",
+              "bulletLabel": "LastdayMissle",
+              "grapRect": "-776,-500,766,500",
+              "hurtRatio": 3,
+              "attackType": "holy"
+            },
+            {
+              "cd": 1,
+              "info": "不加入ai选择",
+              "imgLabel": "vikingAttack",
+              "bulletLabel": "LastdayViking",
+              "grapRect": "-776,-500,766,500",
+              "hurtRatio": 0.6,
+              "attackType": "holy"
+            },
+            {
+              "cd": 1.5,
+              "info": "不加入ai选择",
+              "imgLabel": "big3Attack",
+              "bulletLabel": "LastdayBig3",
+              "grapRect": "-776,-500,766,500",
+              "hurtMul": 0.5,
+              "attackType": "holy"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "other",
+      "cnName": "其他",
+      "body": {
+        "shell": "other",
+        "name": "LastdayTankUnder",
+        "cnName": "末日坦克部件",
+        "raceType": "robot",
+        "swfUrl": "swf/enemy/LastdayTankUnder.swf",
+        "lifeRatio": 1,
+        "dieJumpMul": 0,
+        "dieImg": {
+          "value": "boomEffect/boom3",
+          "soundUrl": "sound/pointBoom_hero",
+          "shake": "3,0.4,30"
+        },
+        "imgType": "normal",
+        "imgArr": "stand,die1",
+        "hitRect": "-1,-1,2,2",
+        "motionState": "fly",
+        "maxJumpNum": 0,
+        "maxVx": 0,
+        "defaultAiOrder": "no",
+        "nextAttackTime": 0,
+        "skillArr": "State_SpellImmunity,rigidBody_enemy,LastdayPartUnder,LastdayPartDie",
+        "avtiveSkillCdOverT": 0,
+        "hurtArr": {
+          "hurt": {
+            "imgLabel": "move",
+            "hurtRatio": 0,
+            "shakeValue": 4,
+            "attackType": "direct",
+            "grapRect": "-50,-111,100,105"
+          }
+        }
+      }
+    },
+    {
+      "type": "zombie",
+      "cnName": "子弹",
+      "bullet": {
+        "LastdayBig": {
+          "cnName": "烟花炮-母弹",
+          "name": "LastdayBig",
+          "noMagneticB": 1,
+          "noBeClearB": 1,
+          "hurtRatio": 1,
+          "bulletSkillArr": "LastdayBigDieEvent",
+          "bulletLife": 1.5,
+          "bulletWidth": 30,
+          "bulletAngle": 180,
+          "hitType": "rect",
+          "attackGap": 0.4,
+          "attackDelay": 0.18,
+          "bulletNum": 1,
+          "shootPoint": "-222,-163",
+          "penetrationGap": 1000,
+          "boomD": {
+            "selfB": true,
+            "bodyB": true,
+            "radius": 40
+          },
+          "bulletSpeed": 12,
+          "speedD": {
+            "a": -0.3,
+            "min": 4
+          },
+          "bulletImgUrl": "bullet/fireball",
+          "flipX": 1,
+          "smokeImgUrl": "bullet/fireballSmoke",
+          "hitImgUrl": "boomEffect/boom2",
+          "armsType": "zombie"
+        },
+        "LastdayBigChild": {
+          "cnName": "烟花炮-子弹",
+          "name": "LastdayBigChild",
+          "noMagneticB": 1,
+          "hurtRatio": 1,
+          "bulletLife": 2,
+          "lifeRandom": 0.2,
+          "bulletAngle": 0,
+          "bulletWidth": 35,
+          "hitType": "rect",
+          "bulletNum": 20,
+          "shootAngle": 110,
+          "penetrationGap": 1000,
+          "bulletSpeed": 15,
+          "speedD": {
+            "a": -1,
+            "min": 5,
+            "random": 0.2
+          },
+          "bulletImgUrl": "bullet/gaiaBullet",
+          "flipX": 1,
+          "smokeImgUrl": "bulletHitEffect/smoke_small",
+          "hitImgUrl": "boomEffect/boom1",
+          "armsType": "zombie"
+        },
+        "LastdayMissle": {
+          "cnName": "跟踪导弹",
+          "name": "LastdayMissle",
+          "noMagneticB": 1,
+          "hurtRatio": 1,
+          "bulletAngle": -161,
+          "bulletLife": 6,
+          "bulletWidth": 30,
+          "hitType": "rect",
+          "attackGap": 0.3,
+          "attackDelay": 0.12,
+          "bulletNum": 2,
+          "shootAngle": 4,
+          "shootPoint": "35,-228",
+          "penetrationGap": 1000,
+          "followD": {
+            "value": 0.6,
+            "delay": 1
+          },
+          "bulletSpeed": 3,
+          "speedD": {
+            "max": 10,
+            "min": 3,
+            "a": 5,
+            "random": 0.2
+          },
+          "flipX": 1,
+          "bulletImgUrl": "LastdayTank/bullet1",
+          "hitImgUrl": "boomEffect/boom2",
+          "smokeImgUrl": "LastdayTank/smoke1",
+          "armsType": "zombie"
+        },
+        "LastdayViking": {
+          "cnName": "机关枪",
+          "name": "LastdayViking",
+          "noMagneticB": 1,
+          "hurtRatio": 1,
+          "bulletLife": 1.5,
+          "bulletWidth": 20,
+          "bulletAngle": -175,
+          "hitType": "rect",
+          "attackGap": 0.9,
+          "attackDelay": 0.27,
+          "bulletNum": 5,
+          "shootAngle": 40,
+          "shakeAngle": 1,
+          "shootNum": 5,
+          "shootGap": 0.13,
+          "shootPoint": "-209,-91",
+          "penetrationGap": 1000,
+          "bulletSpeed": 13,
+          "speedD": {
+            "a": -0.3,
+            "min": 4
+          },
+          "bulletImgUrl": "bullet/blueLaser",
+          "flipX": 1,
+          "hitImgUrl": "bulletHitEffect/fitHit",
+          "armsType": "zombie"
+        },
+        "LastdayBig3": {
+          "cnName": "三连炮",
+          "name": "LastdayBig3",
+          "noMagneticB": 1,
+          "noBeClearB": 1,
+          "hurtRatio": 1,
+          "bulletLife": 4,
+          "bulletWidth": 40,
+          "hitType": "rect",
+          "attackGap": 1.7,
+          "attackDelay": 0.5,
+          "bulletNum": 1,
+          "shootNum": 3,
+          "shootGap": 0.43,
+          "positionD": {
+            "point": [
+              {
+                "shootPoint": "-225,-115",
+                "bulletAngle": 163
+              },
+              {
+                "shootPoint": "-224,-139",
+                "bulletAngle": 170
+              },
+              {
+                "shootPoint": "-225,-164",
+                "bulletAngle": 180
+              }
+            ]
+          },
+          "penetrationGap": 1000,
+          "bulletSpeed": 13,
+          "speedD": {
+            "a": -0.3,
+            "min": 4
+          },
+          "bulletImgUrl": "bullet/purpleFire",
+          "hitImgUrl": "boomEffect/boom3",
+          "armsType": "zombie"
+        }
+      }
+    },
+    {
+      "cn": "技能",
+      "name": "enemy",
+      "skill": [
+        {
+          "name": "LastdayAttackDefend",
+          "noCopyB": 1,
+          "cnName": "元素部件",
+          "wantDescripB": 1,
+          "conditionType": "passive",
+          "condition": "add",
+          "target": "me",
+          "addType": "state",
+          "effectType": "no",
+          "duration": 0.1,
+          "description": "坦克的部件，包括大炮(生化敏感)、机关枪(冷冻敏感)、导弹发射器(电磁敏感)、后轮胎(火焰敏感)。这些部件被打破之后，坦克将防御力大幅下降到只剩下10%。"
+        },
+        {
+          "name": "LastdayAir",
+          "cnName": "空中压制",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "ignoreSilenceB": 1,
+          "ignoreImmunityB": 1,
+          "conditionType": "passive",
+          "condition": "interval",
+          "otherConditionArr": "lifePerLess30",
+          "target": "me,range,enemy",
+          "addType": "state",
+          "effectType": "airMoveSpeed",
+          "value": 0,
+          "mul": 0.4,
+          "duration": 0.5,
+          "range": 99999,
+          "stateEffectImg": {
+            "value": "skillEffect/disabled_enemy",
+            "partType": "2foot"
+          },
+          "description": "生命值低于30%时，降低敌人在空中的移动速度。"
+        },
+        {
+          "name": "LastdaySpellImmunity",
+          "cnName": "免疫护罩",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cd": 15,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "target": "me",
+          "addType": "state",
+          "effectType": "spellImmunityB",
+          "duration": 10,
+          "stateEffectImg": {
+            "value": "LastdayTank/spellImmunityShield",
+            "partType": "body",
+            "con": "add",
+            "soundUrl": "LastdayTank/shield1"
+          },
+          "description": "释放免疫护罩，使自己对敌人的技能效果免疫，持续[duration]秒。"
+        },
+        {
+          "name": "LastdayHit",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cnName": "破壳",
+          "noSkillDodgeB": 1,
+          "ignoreNoSkillB": 1,
+          "noBeClearB": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "effectType": "attackGapMul",
+          "effectProArr": 0.2,
+          "mul": 0.1,
+          "duration": 5,
+          "stateEffectImg": {
+            "value": "bulletHitEffect/smoke_black",
+            "partType": "shootPoint,hand_left,hand_right",
+            "raNum": 25,
+            "followPartRaB": true
+          },
+          "description": "击中敌人有几率使其枪支失效，持续[duration]秒。"
+        },
+        {
+          "name": "LastdayPartUnder",
+          "cnName": "部件受伤",
+          "noBeClearB": 1,
+          "ignoreNoSkillB": 1,
+          "noSkillDodgeB": 1,
+          "ignoreImmunityB": 1,
+          "conditionType": "passive",
+          "condition": "underHit",
+          "target": "me",
+          "addType": "instantAndState",
+          "noReStateB": 1,
+          "effectType": "LastdayPartUnder",
+          "mul": 4,
+          "duration": 0.1,
+          "description": "各个部件对元素敏感不同；受到伤害使部件变红"
+        },
+        {
+          "name": "LastdayPartDie",
+          "cnName": "部件死亡",
+          "noBeClearB": 1,
+          "ignoreNoSkillB": 1,
+          "noSkillDodgeB": 1,
+          "ignoreImmunityB": 1,
+          "conditionType": "passive",
+          "condition": "die",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "LastdayPartDie"
+        }
+      ]
+    }
+  ]
+}

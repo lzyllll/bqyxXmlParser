@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill>
+			<name>consVirgoSkill</name>
+			<cnName>星速子弹</cnName><noRandomListB>1</noRandomListB><ignoreNoSkillB>1</ignoreNoSkillB>
+			
+			<conditionType>passive</conditionType>
+			<condition>beforeAttack</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>consVirgoSkill</effectType>
+			<otherEffectImg name="consVirgoLine" />
+			<description>发射时，把子弹瞬移到鼠标点位置，中间不受任何障碍物的阻挡，且无视刚体。</description>
+		</skill>
+	</father>
+</data>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="props" cnName="银币消费类" smeltType="coin">
+		
+		<things cnName="生命药瓶">
+			<name>lifeBottle</name>
+			<cnName>生命药瓶</cnName>
+			<zuobiNum>20000000</zuobiNum>
+			<btnList>use</btnList>
+			<iconUrl>dropEffect/addLifeMul</iconUrl>
+			<description>在正常关卡中，使用后补充主角100%的生命值。在竞技场中，使用后补充单位50%的生命值。</description>
+			<effectD type="addLifeMul" value="1" useInLevelB="1" levelUseLimitNum="2" effectLabel="skillEffect/groupLight_hero" effectSound="sound/groupLight_hero" />
+			<loveD num="30" />
+			<smeltD grade="0" addType="" price="1" />
+		</things>
+		<things cnName="队友生命药瓶">
+			<name>teamLifeBottle</name>
+			<cnName>队友生命药瓶</cnName>
+			<zuobiNum>20000000</zuobiNum>
+			<btnList>use</btnList>
+			<iconUrl>ThingsIcon/teamLifeBottle</iconUrl>
+			<description>在正常关卡中，使用后补充所有队友以及尸宠100%的生命值。在竞技场中，使用后补充所有队友以及尸宠50%的生命值。</description>
+			<effectD type="addTeamLifeMul" value="1" useInLevelB="1" levelUseLimitNum="2" moreLimitB="1" effectLabel="skillEffect/groupLight_hero" effectSound="sound/groupLight_hero" />
+			<loveD num="30" />
+			<smeltD grade="0" addType="" price="1" />
+		</things>
+		<things cnName="弹药箱">
+			<name>caisson</name>
+			<cnName>弹药箱</cnName>
+			<zuobiNum>20000000</zuobiNum>
+			<btnList>use</btnList>
+			<iconUrl>dropEffect/addCharger</iconUrl>
+			<description>使用后补充所有友方单位所有枪支类型的携弹量。</description>
+			<effectD type="addAllChargerMul" value="1" useInLevelB="1" levelUseLimitNum="4" effectLabel="skillEffect/greenLight" effectSound="sound/groupLight_hero" />
+			<loveD num="30" />
+			<smeltD grade="0" addType="" price="1" />
+		</things>
+	</father>
+	</data>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="arms" cnName="武器">
+		<bullet cnName="熔炉-子弹">
+			<name>rocketMammothSun</name>
+			<cnName>熔炉-子弹</cnName><armsType>rocket</armsType>
+			<noMagneticB>1</noMagneticB>
+			
+			<hurtRatio>0.9</hurtRatio>
+			
+			<bulletAngle>0</bulletAngle>
+			<bulletLife>1</bulletLife>
+			<lifeRandom>0.2</lifeRandom>
+			<bulletWidth>25</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<bulletNum>7</bulletNum>
+			<shootAngle>20</shootAngle>
+				
+			<bulletSpeed>20</bulletSpeed>
+			<speedD a="-2" min="2" random="0.2" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">bullet/gaiaSmallBullet</bulletImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom2" soundVolume="0.3">boomEffect/boom1</hitImgUrl>
+		</bullet>
+		
+		
+		<bullet cnName="烟花-子弹">
+			<name>fireworksSun</name>
+			<cnName>烟花-子弹</cnName><armsType>crossbow</armsType>
+			<noMagneticB>1</noMagneticB>
+			<noHitTime>0.4</noHitTime>
+			
+			<hurtRatio>0.3</hurtRatio>
+			
+			<bulletNum>1</bulletNum>
+			<bulletAngle>0</bulletAngle>
+			<bulletLife>2.5</bulletLife>
+			<lifeRandom>0.1</lifeRandom>
+			<bulletWidth>25</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<extendGap>10</extendGap>
+			<shootAngle>-90</shootAngle>
+			<shootShakeAngle>360</shootShakeAngle>
+				
+			<bulletSpeed>10</bulletSpeed>
+			<speedD random="0.2" />
+			<gravity>1</gravity>
+			<penetrationGap>1000</penetrationGap>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="filter" raNum="30">specialGun/electricLine</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom2" soundVolume="0.3">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		
+	</father>
+	</data>

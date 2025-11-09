@@ -1,0 +1,9 @@
+{
+  "father": {
+    "name": "taxStamp",
+    "cnName": "神秘商店",
+    "priceType": "taxStamp",
+    "labelArr": "all",
+    "type": null
+  }
+}

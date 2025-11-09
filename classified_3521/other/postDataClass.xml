@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<pro name="postExp" cnName="职务等级经验">
+		100 
+200 
+300 
+400 
+500 
+600 
+700 
+800 
+900 
+1000 
+	</pro>
+	<pro name="lifeAll" cnName="属性附加-生命值">
+		4%
+8%
+12%
+16%
+20%
+24%
+28%
+32%
+36%
+40%
+	</pro>	
+	<pro name="dpsAll" cnName="属性附加-战斗力">
+		4%
+8%
+12%
+16%
+20%
+24%
+28%
+32%
+36%
+40%
+	</pro>	
+	<pro name="hurtAll" cnName="属性附加-伤害">
+		4%
+8%
+12%
+16%
+20%
+24%
+28%
+32%
+36%
+40%
+	</pro>	
+	<pro name="lottery" cnName="属性附加-幸运值">
+		3 
+6 
+9 
+12 
+15 
+18 
+21 
+24 
+27 
+30 
+	</pro>	
+</data>

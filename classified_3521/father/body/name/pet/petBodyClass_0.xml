@@ -1,0 +1,673 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="pet" cnName="尸宠">
+		<body index="0" name="战斗僵尸">
+			
+			<name>PetZombieBattle</name>
+			<cnName>战斗僵尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/pet/PetZombieBattle.swf</swfUrl>
+			
+			<lifeRatio>0.8</lifeRatio>
+			
+			<headIconUrl>IconGather/PetZombieBattle</headIconUrl>
+			<imgArr>
+				stand,move,run
+				,normalAttack1,normalAttack2,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr />
+			<bossSkillArr />
+			<bossSkillArrCn>瞬移，闪电麻痹，自燃</bossSkillArrCn>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="PetZombieBattle/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="PetZombieBattle/hit2">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="狂战尸">
+			
+			<name>PetFightKing</name>
+			<cnName>狂战尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/pet/PetFightKing.swf</swfUrl>
+			
+			<lifeRatio>1.8</lifeRatio>
+			<rateRatio>0.05</rateRatio>
+			
+			<headIconUrl>IconGather/PetFightKing</headIconUrl>
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move
+				,comboAttack,choppedAttack,windAttack,shootAttack,shakeAttack
+				,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			<lifeBarExtraHeight>-20</lifeBarExtraHeight>
+			<handAddRa>90</handAddRa>
+			
+			<hitRect>-18,-96,36,96</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>7</maxVx>
+			<runStartVx>12</runStartVx>
+			
+			<avtiveSkillCdOverT>0.2</avtiveSkillCdOverT>
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>FightKing_AIExtra</extraAIClassLabel>
+			
+			<skillArr />
+			<bossSkillArr />
+			<bossSkillArrCn />
+			<extraDropArmsB>1</extraDropArmsB>
+			
+			<hurtArr>
+				
+				<hurt>
+					<imgLabel>comboAttack</imgLabel><mustGrapRectB>1</mustGrapRectB>
+					<hurtRatio>0.4</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>7</shakeValue>
+					<hitImgUrl con="add" soundUrl="PetFightKing/hit2">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>choppedAttack</imgLabel><mustGrapRectB>1</mustGrapRectB>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="PetFightKing/hit3" shake="3,0.2,25">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt info="狂刃追踪-不加入ai选择">
+					<imgLabel>shootAttack</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<noAiChooseB>1</noAiChooseB>
+					<bulletLabel>PetFightKing_shoot</bulletLabel>
+					<grapRect>-400,-111,100,105</grapRect>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt info="旋风刀-不加入ai选择">
+					<imgLabel>windAttack</imgLabel>
+					<noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.8</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>6</shakeValue>
+					<grapRect>-350,-111,300,105</grapRect>
+					<hitImgUrl con="add" soundUrl="PetFightKing/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt info="怒刃-不加入ai选择">
+					<imgLabel>shakeAttack</imgLabel>
+					<noAiChooseB>1</noAiChooseB>
+					<hurtRatio>2.5</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>10</shakeValue>
+					<skillArr>slowMove_GasBomb</skillArr>
+					<hitImgUrl con="add" soundUrl="PetFightKing/hit1" shake="5,0.4,35">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="屠刀僵尸">
+			
+			<name>PetZombieCleaver</name>
+			<cnName>屠刀僵尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/pet/PetZombieCleaver.swf</swfUrl>
+			
+			<lifeRatio>1.3</lifeRatio>
+			
+			
+			<headIconUrl>IconGather/PetZombieCleaver</headIconUrl>
+			<imgArr>
+				stand,move
+				,normalAttack1,normalAttack2,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			
+			<hitRect>-18,-86,36,86</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			
+			
+			<skillArr />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel>
+					<bulletLabel>PetZombieCleaver_1</bulletLabel>
+					<grapRect>-400,-111,350,105</grapRect>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="僵尸王">
+			
+			<name>PetZombieKing</name>
+			<cnName>僵尸王</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/pet/PetZombieKing.swf</swfUrl>
+			
+			<lifeRatio>1.8</lifeRatio>
+			<rateRatio>0.05</rateRatio>
+			
+			<headIconUrl>IconGather/PetZombieKing</headIconUrl>
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move,run
+				,floorAttack,gunAttack,normalAttack1,normalAttack2,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			<lifeBarExtraHeight>-20</lifeBarExtraHeight>
+			<handAddRa>90</handAddRa>
+			
+			<hitRect>-18,-96,36,96</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>8</maxVx>
+			<runStartVx>10</runStartVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr />
+			<bossSkillArr />
+			<extraDropArmsB>1</extraDropArmsB>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>floorAttack</imgLabel>
+					<bulletLabel>PetZombieKing_floor</bulletLabel>
+					<grapRect>-350,-111,200,105</grapRect>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt info="极速炮轰-不加入ai选择">
+					<imgLabel>gunAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<bulletLabel>PetZombieKing_gun</bulletLabel>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hurtRatio>0.95</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="PetZombieKing/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="PetZombieKing/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>
+		<body index="0" name="橄榄僵尸">
+			
+			<name>PetZombieFootball</name>
+			<cnName>橄榄僵尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/pet/PetZombieFootball.swf</swfUrl>
+			
+			<lifeRatio>0.6</lifeRatio>
+			<expRatio>0.8</expRatio>
+			<headHurtMul>0.3</headHurtMul>
+			
+			<headIconUrl>IconGather/PetZombieFootball</headIconUrl>
+			<imgArr>
+				stand,move
+				,normalAttack1,normalAttack2,shootAttack2,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			
+			<nextAttackTime>1</nextAttackTime>
+			
+			<skillArr />
+			<bossSkillArr />
+			<bossSkillArrCn />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<bulletLabel>PetZombieFootball_1</bulletLabel>
+					<grapRect>-350,-111,300,105</grapRect>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel>
+					<hurtRatio>1</hurtRatio>
+					<shakeValue>2</shakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" soundUrl="PetZombieFootball/hit1" raNum="30">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>shootAttack2</imgLabel><noAiChooseB>1</noAiChooseB>
+					<bulletLabel>PetZombieFootball_2</bulletLabel>
+					<grapRect>-350,-111,300,105</grapRect>
+					<hurtRatio>0.5</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+			</hurtArr>
+		</body>	
+		
+		<body index="0" name="飓风巫尸">
+			
+			<name>PetTyphoonWitch</name>
+			<cnName>飓风巫尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/pet/PetTyphoonWitch.swf</swfUrl>
+			
+			<lifeRatio>1.5</lifeRatio>
+			<rateRatio>0.05</rateRatio>
+			<showLevel>65</showLevel>
+			
+			<headIconUrl>IconGather/PetTyphoonWitch</headIconUrl>
+			<flipCtrlBy>target</flipCtrlBy>
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move,__stru,stru,hurt1,hurt2,die1
+				,normalAttack1,shootAttack,shootAttack2,batAttack,windAttack,roarAttack
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			<lifeBarExtraHeight>-40</lifeBarExtraHeight>
+			<handAddRa>90</handAddRa>
+			
+			<hitRect>-18,-96,36,96</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>7</maxVx>
+			<motionState>fly</motionState>
+			<flyUseSpiderB>1</flyUseSpiderB>
+			<flyType>tween</flyType>
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr />
+			<bossSkillArr />
+			<bossSkillArrCn />
+			<extraDropArmsB>1</extraDropArmsB>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="PetTyphoonWitch/hit2">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><mustGrapRectB>1</mustGrapRectB>
+					<bulletLabel>PetTyphoonWitch_shoot1</bulletLabel>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hurtRatio>0.5</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				
+				<hurt info="不加入ai选择">
+					<imgLabel>shootAttack2</imgLabel><noAiChooseB>1</noAiChooseB>
+					<bulletLabel>PetTyphoonWitch_shoot2</bulletLabel>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hurtRatio>10</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				
+				<hurt info="不加入ai选择">
+					<imgLabel>windAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<bulletLabel>PetTyphoonWitch_wind</bulletLabel>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>roarAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<bulletLabel>PetTyphoonWitch_anger</bulletLabel>
+					<grapRect>-500,-111,100,105</grapRect>
+					<hurtRatio>0.5</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		<body index="0" name="铁魁" shell="metal">
+			
+			<name>PetIronChief</name>
+			<cnName>铁魁</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/pet/PetIronChief.swf</swfUrl>
+			<headIconUrl>IconGather/PetIronChief</headIconUrl>
+			
+			<lifeRatio>1.3</lifeRatio>
+			
+			<imgArr>
+				stand,move
+				,normalAttack1,shootAttack1,shootAttack2
+				,hurt1,die1
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			
+			<hitRect>-18,-86,36,86</hitRect>
+			
+			<maxVx>7</maxVx>
+			<maxJumpNum>1</maxJumpNum>
+			<motionState>fly</motionState>
+			<flyUseSpiderB>1</flyUseSpiderB>
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr />
+			<bossSkillArr />
+			<bossSkillArrCn />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/metal_hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack1</imgLabel><mustGrapRectB>1</mustGrapRectB>
+					<bulletLabel>PetIronChief_shoot1</bulletLabel>
+					<grapRect>-250,-111,100,105</grapRect>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack2</imgLabel>
+					<bulletLabel>PetIronChief_shoot2</bulletLabel>
+					<grapRect>-350,-111,100,105</grapRect>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+			</hurtArr>
+		</body>	
+		
+		<body index="0" name="爆骷" shell="compound">
+		
+			<name>PetBoomSkull</name>
+			<cnName>爆骷</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/pet/PetBoomSkull.swf</swfUrl>
+			<headIconUrl>IconGather/PetBoomSkull</headIconUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<rosRatio>1</rosRatio>
+			<headHurtMul>0.5</headHurtMul>
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<imgType>normal</imgType>
+			<rotateBySlopeB>1</rotateBySlopeB>
+			<imgArr>
+				stand,move,die1
+				,shootAttack1,fireAttack1
+				,__jumpUp,jumpUp,jumpDown,jumpDown__
+			</imgArr>
+			
+			<hitRect>-30,-88,60,88</hitRect>
+			
+			<motionD F_G="0.6" jumpDelayT="0.10" F_I="0.2" F_F="0.9" moveWhenVB="1" />
+			<maxVx>10</maxVx>
+			<maxJumpNum>1</maxJumpNum>
+			
+			<skillArr />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>fireAttack1</imgLabel><mustGrapRectB>1</mustGrapRectB>
+					<grapMinLen>120</grapMinLen>
+					<hurtRatio>0.25</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/fireHit1">bulletHitEffect/spark_motion2</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack1</imgLabel>
+					<bulletLabel>PetBoomSkull_shoot1</bulletLabel>
+					<grapRect>-350,-111,100,105</grapRect>
+					<hurtRatio>1.6</hurtRatio>
+					<attackType>direct</attackType>
+				</hurt>
+				
+				<hurt info="不加入ai选择">
+					<imgLabel>move</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>jumpDown</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>jumpDown__</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		<body index="0" name="嗜血尸狼">
+			
+			<name>PetZombieWolf</name>
+			<cnName>嗜血尸狼</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/pet/PetZombieWolf.swf</swfUrl>
+			<headIconUrl>IconGather/PetZombieWolf</headIconUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<rosRatio>1</rosRatio>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move,run
+				,normalAttack1,normalAttack2,laserAttack,summonAttack,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			<lifeBarExtraHeight>-20</lifeBarExtraHeight>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>9</maxVx>
+			<runStartVx>11</runStartVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>ZombieWolf_AIExtra</extraAIClassLabel>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<hurtRatio>3</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" soundUrl="sound/body_hit" raNum="30">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>normalAttack2</imgLabel><mustGrapRectB>1</mustGrapRectB>
+					<hurtRatio>3</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<grapRect>-171,-100,128,120</grapRect>
+					<hitImgUrl con="add" soundUrl="sound/body_hit" raNum="30">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				
+				<hurt info="不加入ai选择">
+					<imgLabel>laserAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<skillArr>laser_PetFightWolf_extra,dizziness_anger_PetFightWolf</skillArr>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hurtRatio>0.3</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>7</shakeValue>
+					<hitImgUrl con="add">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>summonAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<bulletLabel>summonWolf_FightWolf_slow</bulletLabel>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hurtRatio>0.01</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>7</shakeValue>
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		<body index="0" name="雷克" shell="compound">
+			
+			<name>PetLake</name>
+			<cnName>雷克</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/pet/PetLake.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			
+			<headIconUrl>IconGather/PetLake</headIconUrl>
+			<imgArr>
+				stand,move
+				,normalAttack,shootAttack,chargedAttack,ballAttack,staticAttack
+				,hurt1,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>PetLake_AIExtra</extraAIClassLabel>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/hand_hit">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<bulletLabel>shoot_PetLake</bulletLabel>
+					<grapRect>-450,-88,351,77</grapRect>
+				</hurt>
+				
+				<hurt info="不加入ai选择-充能">
+					<imgLabel>chargedAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<grapRect>-400,-111,100,105</grapRect>
+				</hurt>
+				<hurt info="不加入ai选择-辐射光球">
+					<imgLabel>ballAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<bulletLabel>lightBall_PetLake</bulletLabel>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hurtRatio>12</hurtRatio>
+				</hurt>
+				<hurt info="不加入ai选择-充能">
+					<imgLabel>staticAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<grapRect>-400,-111,100,105</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="雷尔" shell="compound">
+			
+			<name>PetLaer</name>
+			<cnName>雷尔</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/pet/PetLaer.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			
+			<headIconUrl>IconGather/PetLaer</headIconUrl>
+			<imgArr>
+				stand,move
+				,normalAttack,shootAttack,chargedAttack,ballAttack,staticAttack
+				,hurt1,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>PetLake_AIExtra</extraAIClassLabel>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/hand_hit">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<bulletLabel>shoot_PetLaer</bulletLabel>
+					<grapRect>-450,-88,351,77</grapRect>
+				</hurt>
+				
+				<hurt info="不加入ai选择-充能">
+					<imgLabel>chargedAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<grapRect>-400,-111,100,105</grapRect>
+				</hurt>
+				<hurt info="不加入ai选择-辐射光球">
+					<imgLabel>ballAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<bulletLabel>lightBall_PetLaer</bulletLabel>
+					<grapRect>-400,-111,100,105</grapRect>
+					<hurtRatio>12</hurtRatio>
+				</hurt>
+				<hurt info="不加入ai选择-充能">
+					<imgLabel>staticAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<grapRect>-400,-111,100,105</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>	
+	</father>	
+		
+		
+	
+	
+	</data>

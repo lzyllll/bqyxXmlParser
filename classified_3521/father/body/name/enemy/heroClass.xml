@@ -1,0 +1,734 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="敌方">
+		<body index="0" name="僵尸突击兵">
+			
+			<name>ZombieSoldier</name>
+			<cnName>僵尸突击兵</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ZombieSoldier.swf</swfUrl>
+			
+			
+			<lifeRatio>0.8</lifeRatio>
+			
+			<imgArr>
+				standStop,standForward,standBack,die1,die2
+				,jumpDown__,jumpDown,jumpUp__jumpDown,jumpUp,__jumpUp
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			<lowerImgArr>
+				thigh
+				,leg_left_1
+				,leg_left_0
+				,foot_left
+				,belt
+				,leg_right_1
+				,leg_right_0
+				,foot_right
+			</lowerImgArr>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-15,-38,30,38</hurtRectArr> 
+			<hurtRectArr>-12, -75, 24, 75</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>6</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			
+			<armsNumber>3</armsNumber>
+			<randomArmsRange>ak47,pistol1</randomArmsRange>	
+			<shootLenMul>0.7</shootLenMul>
+			
+			<skillArr>crazy_enemy</skillArr>
+			<bossSkillArr>skillGift_enemy,moreMissile_enemy,selfBurn_enemy</bossSkillArr>
+			<bossSkillArrCn>自燃，万弹归宗，馈赠</bossSkillArrCn>
+			<demBossSkillArr>selfBurn_enemy</demBossSkillArr>
+		</body>
+		<body index="0" name="僵尸空降兵" shell="compound">
+			
+			<name>ZombieAirborne</name>
+			<cnName>僵尸空降兵</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ZombieAirborne.swf</swfUrl>
+			
+			
+			<lifeRatio>0.8</lifeRatio>
+			
+			<aircraft>normal</aircraft>
+			<imgArr>
+				standStop,standForward,standBack,die1,die2
+				,jumpDown__,jumpDown,jumpUp__jumpDown,jumpUp,__jumpUp
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			<lowerImgArr>
+				thigh
+				,leg_left_1
+				,leg_left_0
+				,foot_left
+				,belt
+				,leg_right_1
+				,leg_right_0
+				,foot_right
+			</lowerImgArr>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-15,-38,30,38</hurtRectArr> 
+			<hurtRectArr>-12, -75, 24, 75</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>9</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			<motionState>fly</motionState>
+			<flyUseSpiderB>1</flyUseSpiderB>
+			
+			<armsNumber>3</armsNumber>
+			<randomArmsRange>ak47,pistol1</randomArmsRange>	
+			<shootLenMul>0.7</shootLenMul>
+			
+			<skillArr>crazy_enemy</skillArr>
+			<bossSkillArr>poisonClaw_enemy,bullying_enemy</bossSkillArr>
+			<bossSkillArrCn>欺凌，毒爪</bossSkillArrCn>
+		</body>
+		
+		<body index="0" name="僵尸狙击兵" shell="metal">
+			
+			<name>ZombieShoot</name>
+			<cnName>僵尸狙击兵</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ZombieShoot.swf</swfUrl>
+			
+			
+			<lifeRatio>0.7</lifeRatio>
+			
+			<imgArr>
+				standStop,standForward,standBack,die1,die2
+				,jumpDown__,jumpDown,jumpUp__jumpDown,jumpUp,__jumpUp
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			<lowerImgArr>
+				thigh
+				,leg_left_1
+				,leg_left_0
+				,foot_left
+				,belt
+				,leg_right_1
+				,leg_right_0
+				,foot_right
+			</lowerImgArr>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-15,-38,30,38</hurtRectArr> 
+			<hurtRectArr>-12, -75, 24, 75</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>6</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>3</armsNumber>
+			<randomArmsRange>sniperRifle,pistol1</randomArmsRange>	
+			<shootLenMul>0.6</shootLenMul>
+			
+			<skillArr>hyperopia_incapable</skillArr>
+			<bossSkillArr>pointBoom_enemy,murderous_enemy,slowMove_enemy</bossSkillArr>
+			<bossSkillArrCn>定点轰炸，嗜爪，减速</bossSkillArrCn>
+			<demBossSkillArr>murderous_enemy</demBossSkillArr>
+		</body>
+		
+		<body index="0" name="僵尸暴枪兵">
+			
+			<name>ZombieViolence</name>
+			<cnName>僵尸暴枪兵</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ZombieViolence.swf</swfUrl>
+			
+			
+			<lifeRatio>1.2</lifeRatio>
+			
+			<imgArr>
+				standStop,standForward,standBack,die1,die2
+				,jumpDown__,jumpDown,jumpUp__jumpDown,jumpUp,__jumpUp
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			<lowerImgArr>
+				thigh
+				,leg_left_1
+				,leg_left_0
+				,foot_left
+				,belt
+				,leg_right_1
+				,leg_right_0
+				,foot_right
+			</lowerImgArr>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-15,-38,30,38</hurtRectArr> 
+			<hurtRectArr>-12, -85, 24, 85</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>6</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>2</armsNumber>
+			<randomArmsRange>shotgun1,pistol2</randomArmsRange>	
+			<shootLenMul>0.8</shootLenMul>
+			
+			<skillArr>bullying_enemy</skillArr>
+			<bossSkillArr>recovery_enemy,tenacious_enemy,feedback_enemy</bossSkillArr>
+			<bossSkillArrCn>复原，反击，电离折射</bossSkillArrCn>
+		</body>
+		<body index="0" name="僵尸空军总管" shell="compound">
+			
+			<name>ZombieAirForce</name>
+			<cnName>僵尸空军总管</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ZombieAirForce.swf</swfUrl>
+			
+			
+			<lifeRatio>1</lifeRatio>
+			
+			<aircraft>normal</aircraft>
+			<imgArr>
+				standStop,standForward,standBack,die1,die2
+				,jumpDown__,jumpDown,jumpUp__jumpDown,jumpUp,__jumpUp
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+				,skillAttack1
+			</imgArr>
+			<lowerImgArr>
+				thigh
+				,leg_left_1
+				,leg_left_0
+				,foot_left
+				,belt
+				,leg_right_1
+				,leg_right_0
+				,foot_right
+			</lowerImgArr>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-15,-38,30,38</hurtRectArr> 
+			<hurtRectArr>-12, -85, 24, 85</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>7</maxVx>
+			<squatMaxVx>4</squatMaxVx>
+			<motionState>fly</motionState>
+			<flyUseSpiderB>1</flyUseSpiderB>
+			
+			<armsNumber>3</armsNumber>
+			<randomArmsRange>ZombieShell_rocket</randomArmsRange>	
+			<shootLenMul>0.7</shootLenMul>
+			
+			<skillArr>through_enemy</skillArr>
+			<bossSkillArr>crazy_enemy,slowMove_enemy,sweep_enemy,pointBoom_enemy</bossSkillArr>
+			<bossSkillArrCn>狂暴，导弹召唤，减速，万弹归宗，定点轰炸</bossSkillArrCn>
+			<demBossSkillArr>crazy_enemy,slowMove_enemy</demBossSkillArr>
+		</body>
+		<body index="0" name="僵尸炮兵总管" shell="metal">
+			
+			<name>ZombieShell</name>
+			<cnName>僵尸炮兵总管</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ZombieShell.swf</swfUrl>
+			
+			<lifeRatio>1.2</lifeRatio>
+			<showLevel>6</showLevel>
+			
+			<imgArr>
+				standStop,standForward,standBack,die1,die2
+				,jumpDown__,jumpDown,jumpUp__jumpDown,jumpUp,__jumpUp
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+				,skillAttack1
+			</imgArr>
+			<lowerImgArr>
+				thigh
+				,leg_left_1
+				,leg_left_0
+				,foot_left
+				,belt
+				,leg_right_1
+				,leg_right_0
+				,foot_right
+			</lowerImgArr>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-15,-38,30,38</hurtRectArr> 
+			<hurtRectArr>-12, -85, 24, 85</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>6</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>3</armsNumber>
+			<randomArmsRange>ZombieShell_rocket</randomArmsRange>	
+			<shootLenMul>0.7</shootLenMul>
+			
+			<skillArr>groupLight_enemy</skillArr>
+			<bossSkillArr>sweep_enemy,moreMissile_enemy,pointBoom_enemy</bossSkillArr>
+			<bossSkillArrCn>群体圣光，导弹召唤，万弹归宗，定点轰炸</bossSkillArrCn>
+		</body>
+		<body index="0" name="防暴僵尸" shell="metal">
+			
+			<name>ZombieRiotl</name>
+			<cnName>防暴僵尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ZombieRiotl.swf</swfUrl>
+			
+			
+			<lifeRatio>1</lifeRatio>
+			<headHurtMul>0.5</headHurtMul>
+			
+			<imgArr>
+				standStop,standForward,standBack,die1,die2
+				,jumpDown__,jumpDown,jumpUp__jumpDown,jumpUp,__jumpUp
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			<lowerImgArr>
+				thigh
+				,leg_left_1
+				,leg_left_0
+				,foot_left
+				,belt
+				,leg_right_1
+				,leg_right_0
+				,foot_right
+			</lowerImgArr>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-15,-38,30,38</hurtRectArr> 
+			<hurtRectArr>-12, -85, 24, 85</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>9</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>1</armsNumber>
+			<randomArmsRange>ZombieRiotl_rocket</randomArmsRange>	
+			<shootLenMul>0.7</shootLenMul>
+			
+			<skillArr>skillGift_enemy</skillArr>
+			<bossSkillArr>sweep_enemy,pointBoom_enemy,skillGift_enemy,strong_enemy</bossSkillArr>
+			<bossSkillArrCn>导弹召唤，万弹归宗，定点轰炸，馈赠，顽强</bossSkillArrCn>
+			<demBossSkillArr>strong_enemy,through_hero_10</demBossSkillArr>
+		</body>
+		<body index="0" name="火炮僵尸王">
+			
+			<name>ZombieBoomKing</name>
+			<cnName>火炮僵尸王</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ZombieBoomKing.swf</swfUrl>
+			<headIconUrl>IconGather/PetZombieKing</headIconUrl>
+			
+			
+			<lifeRatio>2.5</lifeRatio>
+			<showLevel>20</showLevel>
+			
+			<imgArr>
+				standStop,standForward,standBack,die1,die2
+				,jumpDown__,jumpDown,jumpUp__jumpDown,jumpUp,__jumpUp
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			<lowerImgArr>
+				thigh
+				,leg_left_1
+				,leg_left_0
+				,foot_left
+				,belt
+				,leg_right_1
+				,leg_right_0
+				,foot_right
+			</lowerImgArr>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-15,-38,30,38</hurtRectArr> 
+			<hurtRectArr>-12, -110, 24, 110</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>10</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>2</armsNumber>
+			<randomArmsRange>ZombieBoomKing_rocket,shotgun_two</randomArmsRange>	
+			<shootLenMul>0.8</shootLenMul>
+			
+			<skillArr />
+			<bossSkillArr>paralysis_enemy,selfBurn_enemy,imploding_enemy,sweep_shell,UnderRos_AddMove_Battle,crazy_enemy</bossSkillArr>
+			<demBossSkillArr>paralysis_enemy</demBossSkillArr>
+			<extraDropArmsB>1</extraDropArmsB>
+		</body>
+		<body index="0" name="天鹰特种兵" shell="metal">
+			
+			<name>TUNCommando</name>
+			<cnName>天鹰特种兵</cnName>
+			<raceType>human</raceType>
+			<movieLink>Striker</movieLink>
+			<swfUrl>swf/hero/TUNCommando.swf</swfUrl>
+			
+			
+			
+			<headIconUrl>IconGather/TUNCommando</headIconUrl>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-12,-35,24,35</hurtRectArr> 
+			<hurtRectArr>-12, -70, 24, 70</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>9</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>5</armsNumber>
+			<randomArmsRange>ZombieBoomKing_rocket,sniperRifle,pistol_two,ak47,shotgun_two</randomArmsRange>	
+			
+			<skillArr />
+			<bossSkillArr>rebirth_enemy,feedback_enemy,recovery_enemy</bossSkillArr>
+			<bossSkillArrCn>重生，电离折射，复原</bossSkillArrCn>
+			
+		</body>	
+		<body index="0" name="天鹰空降兵" shell="compound">
+			
+			<name>TUNAirborne</name>
+			<cnName>天鹰空降兵</cnName>
+			<raceType>human</raceType>
+			<movieLink>Striker</movieLink>
+			<swfUrl>swf/hero/TUNAirborne.swf</swfUrl>
+			
+			
+			
+			<aircraft>normal</aircraft>
+			<headIconUrl>IconGather/TUNCommando</headIconUrl>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-12,-35,24,35</hurtRectArr> 
+			<hurtRectArr>-12, -70, 24, 70</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>9</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			<motionState>fly</motionState>
+			<flyUseSpiderB>1</flyUseSpiderB>
+			
+			<armsNumber>3</armsNumber>
+			<randomArmsRange>ZombieBoomKing_rocket,pistol_two,shotgun_two</randomArmsRange>	
+			
+			<skillArr>through_enemy</skillArr>
+			<bossSkillArr>imploding_enemy,sweep_enemy,moreMissile_enemy,pointBoom_enemy</bossSkillArr>
+			<bossSkillArrCn>爆石，导弹召唤，万弹归宗，定点轰炸</bossSkillArrCn>
+			<demBossSkillArr>imploding_enemy,moreMissile_enemy</demBossSkillArr>
+			
+		</body>	
+		
+		<body index="0" name="鬼目射手">
+			
+			<name>LingShooter</name>
+			<cnName>鬼目射手</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/LingShooter.swf</swfUrl>
+			<headIconUrl>IconGather/ZombieLing</headIconUrl>
+			
+			
+			<lifeRatio>0.8</lifeRatio>
+			
+			<imgArr>
+				standStop,standForward,standBack,die1,die2
+				,jumpDown__,jumpDown,jumpUp__jumpDown,jumpUp,__jumpUp
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			<lowerImgArr>
+				
+			</lowerImgArr>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-15,-38,30,38</hurtRectArr> 
+			<hurtRectArr>-12, -75, 24, 40</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>9</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			<motionState>fly</motionState>
+			<flyUseSpiderB>1</flyUseSpiderB>
+			
+			<armsNumber>3</armsNumber>
+			<randomArmsRange>lingGun</randomArmsRange>	
+			<shootLenMul>1</shootLenMul>
+			
+			<skillArr>silence_enemy,globalSpurting_enemy</skillArr>
+			<bossSkillArr>disabledHalo_enemy,hidingAll_enemy,paralysis_enemy</bossSkillArr>
+			<bossSkillArrCn>沉默、致残光环、群体隐身、闪电麻痹</bossSkillArrCn>
+			<demBossSkillArr>silence_enemy</demBossSkillArr>
+		</body>
+		<body index="0" name="亚瑟" shell="metal">
+			
+			<name>Arthur</name>
+			<cnName>亚瑟</cnName>
+			<raceType>human</raceType>
+			<movieLink>Striker</movieLink>
+			<swfUrl>swf/hero/Arthur.swf</swfUrl>
+			
+			<showLevel>30</showLevel>
+			
+			
+			<headIconUrl>IconGather/Arthur</headIconUrl>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-12,-35,24,35</hurtRectArr> 
+			<hurtRectArr>-12, -70, 24, 70</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>11</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>3</armsNumber>
+			<randomArmsRange>pistol_two,shotgun_two,ZombieBoomKing_rocket</randomArmsRange>	
+			
+			<skillArr />
+			<bossSkillArr>feedback_enemy,recovery_enemy,pointBoom_enemy,selfBurn_enemy,imploding_enemy,sweep_shell,UnderRos_AddMove_Battle,crazy_enemy</bossSkillArr>
+			<bossSkillArrCn />
+			<demBossSkillArr>feedback_enemy,crazy_enemy</demBossSkillArr>
+			<extraDropArmsB>1</extraDropArmsB>
+			
+		</body>
+		<body index="0" name="狂战射手">
+			
+			<name>FightShooter</name>
+			<cnName>狂战射手</cnName><headIconUrl>IconGather/FightKing</headIconUrl>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/FightShooter.swf</swfUrl>
+			
+			
+			<lifeRatio>2.5</lifeRatio>
+			<showLevel>44</showLevel>
+			
+			<imgArr>
+				standStop,standForward,standBack,die1,die2
+				,choppedAttack,windAttack
+				,jumpDown__,jumpDown,jumpUp__jumpDown,jumpUp,__jumpUp
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			<lowerImgArr>
+				thigh
+				,leg_left_1
+				,leg_left_0
+				,foot_left
+				,leg_right_1
+				,leg_right_0
+				,foot_right
+			</lowerImgArr>
+			<lifeBarExtraHeight>-20</lifeBarExtraHeight>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-15,-38,30,38</hurtRectArr> 
+			<hurtRectArr>-20, -110, 40, 110</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>12</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<armsNumber>1</armsNumber>
+			<randomArmsRange>rocket_fight</randomArmsRange>	
+			<shootLenMul>2.5</shootLenMul>
+			<extraAIClassLabel>FightKing_AIExtra</extraAIClassLabel>
+			<oneAiLabel>FightShooter</oneAiLabel>
+			
+			<skillArr />
+			<bossSkillArr>choppedAttack_FightShooter,windAttack_FightShooter,FightKing_crazy,groupLight_enemy,globalSpurting_enemy,tenacious_enemy</bossSkillArr>
+			<demBossSkillArr>choppedAttack_FightShooter,windAttack_FightShooter,FightKing_crazy</demBossSkillArr>
+			<extraDropArmsB>1</extraDropArmsB>
+			
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>choppedAttack</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>7</shakeValue>
+					<hitImgUrl con="add" soundUrl="FightShooter/hit2">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>windAttack</imgLabel>
+					<hurtRatio>0.3</hurtRatio>
+					<skillArr>FightKing_slowMove</skillArr>
+					<attackType>direct</attackType>
+					<shakeValue>6</shakeValue>
+					<grapRect>-350,-111,300,105</grapRect>
+					<hitImgUrl con="add" soundUrl="FightShooter/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>
+		<body index="0" name="小美" shell="normal">
+			
+			<name>XiaoMei</name>
+			<cnName>天鹰小美</cnName>
+			<sex>female</sex>
+			<raceType>human</raceType>
+			<swfUrl>swf/hero/XiaoMei.swf</swfUrl>
+			<description>小樱的孪生姐妹，从小在天鹰军团长大，未来将成为爆枪小队成员。</description>
+			
+			<rosRatio>0.02</rosRatio>
+			<showLevel>55</showLevel>
+			<movieLink>Girl</movieLink>
+			
+			<headIconUrl>IconGather/XiaoMei</headIconUrl>
+			<headPlayB>1</headPlayB>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-12,-35,24,35</hurtRectArr> 
+			<hurtRectArr>-12, -70, 24, 70</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>11</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			<maxJumpNum>1</maxJumpNum>
+			<flyType>space</flyType><motionD F_AIR="6" />
+			
+			<armsNumber>2</armsNumber>
+			<randomArmsRange>XiaoMei_pistol,XiaoMei_rocket</randomArmsRange>	
+			<oneAiLabel>XiaoMei</oneAiLabel>
+			<extraDropArmsB>1</extraDropArmsB>
+			<extraAIClassLabel>Hero_AIExtra</extraAIClassLabel>
+			<studyCnNameArr>智慧怒火,隐匿之雾,尖叫,技能复制,尸化,先锋盾,反击</studyCnNameArr>
+			<addMoreText>完成支线任务“回家”后入队</addMoreText>
+			<moreD dpsMul="0.9" underHurtMul="0.65" studySkillLvAdd="41" firstLv="95" />
+			
+			<bossSkillArr>wisdomAnger_hero_1,screaming_hero_7,invisibility_enemy,skillCopy_enemy,changeToZombie_enemy</bossSkillArr>
+			<extraG label="ExtraTaskAI" bossSkillArr="wisdomAnger_hero_1,screaming_hero_7,invisibility_enemy,skillCopy_enemy,changeToZombie_enemy,murderous_enemy">
+				<extra lifeMin="0.7" skillArr="" />
+				<extra lifeMin="0.4" skillArr="" />
+				<extra lifeMin="0" skillArr="" />
+			</extraG>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel>
+					<hurtRatio>0.15</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" raNum="30" soundUrl="Striker/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>
+		<body index="0" name="奇皇博士" shell="normal">
+			
+			<name>QiHuang</name>
+			<cnName>奇皇博士</cnName>
+			<raceType>human</raceType>
+			<movieLink>Striker</movieLink>
+			<swfUrl>swf/hero/QiHuang.swf</swfUrl>
+			
+			<showLevel>28</showLevel>
+			
+			
+			<headIconUrl>IconGather/QiHuang</headIconUrl>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-12,-35,24,35</hurtRectArr> 
+			<hurtRectArr>-12, -70, 24, 70</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>11</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			<flyUseSpiderB>1</flyUseSpiderB>
+			
+			<armsNumber>2</armsNumber>
+			<randomArmsRange>ak47,shotgun1</randomArmsRange>	
+			
+			<skillArr />
+			<bossSkillArr>rebirth_enemy,recovery_enemy,groupLight_enemy,tenacious_enemy</bossSkillArr>
+			<demBossSkillArr>bullying_enemy</demBossSkillArr>
+			<bossSkillArrCn>重生，复原，群体圣光，反击</bossSkillArrCn>
+			<extraDropArmsB>1</extraDropArmsB>
+			
+		</body>
+		
+		<body index="0" name="鬼影战士" shell="normal">
+			
+			<name>GhostSoldier</name>
+			<cnName>鬼影战士</cnName>
+			<raceType>human</raceType>
+			<movieLink>Striker</movieLink>
+			<swfUrl>swf/hero/GhostSoldier.swf</swfUrl>
+			
+			
+			
+			<headIconUrl>IconGather/GhostSoldier</headIconUrl>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-12,-35,24,35</hurtRectArr> 
+			<hurtRectArr>-12, -70, 24, 70</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>9</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<dropD rareSuit="normal" />
+			<armsNumber>5</armsNumber>
+			<randomArmsRange>ZombieBoomKing_rocket,sniperRifle,pistol_two,ak47,shotgun_two</randomArmsRange>	
+			
+			<skillArr />
+			<bossSkillArr>through_enemy,rebirth_enemy,feedback_enemy,recovery_enemy,groupLight_enemy,tenacious_enemy</bossSkillArr>
+			<bossSkillArrCn>永久金刚钻，重生，电离折射，复原，群体圣光，反击</bossSkillArrCn>
+			
+		</body>	
+		<body index="0" name="鬼爵" shell="normal">
+			
+			<name>GhostDuke</name>
+			<cnName>鬼爵</cnName>
+			<raceType>human</raceType>
+			<movieLink>Striker</movieLink>
+			<swfUrl>swf/hero/GhostDuke.swf</swfUrl>
+			
+			<showLevel>999</showLevel>
+			
+			
+			<headIconUrl>IconGather/GhostDuke</headIconUrl>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			<squatHitRect>-12,-50,24,50</squatHitRect>
+			<hurtRectArr>-12,-35,24,35</hurtRectArr> 
+			<hurtRectArr>-12, -70, 24, 70</hurtRectArr> 
+			<hurtRectArr>-12, -40, 24, 40</hurtRectArr> 
+			
+			<maxVx>12</maxVx>
+			<squatMaxVx>5</squatMaxVx>
+			
+			<dropD rareSuit="normal" extraRareArmsArr="shotgunFire,pistolGod" />
+			<armsNumber>2</armsNumber>
+			<randomArmsRange>rifleWhite,shotgunFire,pistolGod,sniperGreen,rocketSky</randomArmsRange>	
+			
+			<skillArr />
+			<bossSkillArr>rebirth_enemy,poisonClaw_enemy,Doctor2_cloned,corrosion_hugePosion,corrosion_enemy,disabledHalo_enemy</bossSkillArr>
+			<bossSkillArrCn>重生、毒爪、分身、蚀毒、腐蚀、致残光环</bossSkillArrCn>
+			<extraDropArmsB>1</extraDropArmsB>
+			<extraG label="ExtraTaskAI" bossSkillArr="rebirth_enemy,poisonClaw_enemy,Doctor2_cloned,corrosion_hugePosion,corrosion_enemy,disabledHalo_enemy">
+				<extra lifeMin="0.7" skillArr="" />
+				<extra lifeMin="0.4" skillArr="" />
+				<extra lifeMin="0" skillArr="" />
+			</extraG>
+			
+		</body>
+	</father>	
+</data>

@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<body index="0" name="黑暗骑士" shell="compound">
+			
+			<name>BlackKnights</name>
+			<cnName>黑暗骑士</cnName><headIconUrl>IconGather/BlackKnights</headIconUrl>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/BlackKnights.swf</swfUrl>
+			
+			<rosRatio>99</rosRatio>
+			<lifeRatio>1.8</lifeRatio>
+			<rateRatio>0.05</rateRatio>
+			<headHurtMul>0.3</headHurtMul>
+			<showLevel>9999</showLevel>
+			
+			<dieJumpMul>0</dieJumpMul>
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move
+				,normalAttack,shootAttack
+				,twoAttack,laserAttack,walkAttack
+				,__jumpUp,jumpUp,jumpDown,jumpDown__
+				,die1
+			</imgArr>
+			<lifeBarExtraHeight>-280</lifeBarExtraHeight>
+			<handAddRa>90</handAddRa>
+			
+			<hitRect>-18,-96,36,96</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>7</maxVx>
+			<motionD jumpDelayT="0.19" />
+			
+			<nextAttackTime>0</nextAttackTime>
+			<preBulletArr>BlackKnights_2</preBulletArr>
+			
+			<bulletLauncherClass>VehicleBulletLauncher</bulletLauncherClass>
+			<skillArr>pierceBK,penDefence,noMetalCorrosion</skillArr>
+			<bossSkillArr>twoAttackBK,laserAttackBK,walkAttackBK,noUnderMulHurt,meltFlamerPurgold,cardNoAttackSkill,underHitBK,underBlackKnights,laserAttackBKSlow,BlackKnightsBuff,strong_enemy,noSpeedReduce,underToLand</bossSkillArr>
+			
+			<extraAIClassLabel>BlackKnights_AIExtra</extraAIClassLabel>
+			
+			<extraDropArmsB>1</extraDropArmsB>
+			
+			<hurtArr>
+				
+				<hurt>
+					<imgLabel>normalAttack</imgLabel><cn>重锤</cn>
+					<mustGrapRectB>1</mustGrapRectB>
+					<hurtRatio>4</hurtRatio>
+					<skillArr>hammer_knights</skillArr>
+					<attackType>holy</attackType>
+					<shakeValue>10</shakeValue>
+					<hitImgUrl name="yellowHit" />
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><cn>拳炮</cn>
+					<bulletLabel>BlackKnights_1</bulletLabel>
+					<grapRect>-500,-100,250,150</grapRect>
+					<hurtRatio>2</hurtRatio>
+					<attackType>holy</attackType>
+				</hurt>
+				
+				<hurt>
+					<imgLabel>twoAttack</imgLabel><cn>无双拳</cn><noAiChooseB>1</noAiChooseB>
+					<grapRect>-500,-100,250,150</grapRect>
+					<hurtRatio>8</hurtRatio>
+					<attackType>holy</attackType>
+				</hurt>
+				<hurt>
+					<imgLabel>laserAttack</imgLabel><cn>无疆激光</cn><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>3</hurtRatio>
+					<attackType>holy</attackType>
+					<shakeValue>10</shakeValue>
+					<hitImgUrl name="silverScreenBulletHit" />
+				</hurt>
+				<hurt>
+					<imgLabel>walkAttack</imgLabel><cn>践踏</cn><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>4</hurtRatio><ingfollowB>1</ingfollowB>
+					<attackType>holy</attackType>
+					<shakeValue>10</shakeValue>
+					<hitImgUrl name="yellowHit" />
+				</hurt>
+			</hurtArr>
+		</body>	
+		
+		
+		
+		<bullet>
+			<name>BlackKnights_1</name>
+			<cnName>黑暗骑士-拳炮</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.35</attackGap>
+			<attackDelay>0.27</attackDelay>
+			<bulletAngle>157</bulletAngle>
+			<bulletAngleRange>20</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>2</shootNum>					
+			<shootAngle>20</shootAngle>
+			<shootGap>0.39</shootGap>					
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<shootPoint>-106,-199</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<followD value="0.5" />	
+			
+			<flipX>1</flipX>
+			<bulletImgUrl name="BlackKnightsBullet" />
+			<hitImgUrl soundUrl="boomSound/midBoom2" shake="3,0.4,13">boomEffect/boom2</hitImgUrl>
+			<hitFloorImgUrl soundUrl="boomSound/smallBoom" shake="3,0.4,9" soundVolume="0.5">boomEffect/boom1</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+		</bullet>
+		
+		<bullet>
+			<name>BlackKnights_2</name>
+			<cnName>黑暗骑士-双拳炮</cnName><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>20</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			<bulletAngle>-140</bulletAngle>	
+			
+			<bulletNum>3</bulletNum>								
+			<shootAngle>30</shootAngle>	
+				
+			<penetrationGap>1000</penetrationGap>
+			<boomD selfB="1" hurtMul="0" noExcludeBodyB="1" haveBodyHitEffectB="1" />
+			<bindingD cnName="空单位" lifeMul="0.005" skillArr="rigidBody_enemy,underBKBullet,penDefence,BoneBreakerHit" />
+				
+			<shootPoint>-153,-394</shootPoint>
+			<bulletSpeed>15</bulletSpeed>
+			<speedD a="-5" min="7" max="15" random="0.4" />
+			<followD value="1" delay="0.3" maxTime="6" />	
+			<skillArr>summonShortLifeMax</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl name="BlackKnightsBulletTwo" />
+			<hitImgUrl soundUrl="boomSound/midBoom2" shake="3,0.4,13">boomEffect/boom2</hitImgUrl>
+			<hitFloorImgUrl soundUrl="boomSound/smallBoom" shake="3,0.4,9" soundVolume="0.5">boomEffect/boom1</hitFloorImgUrl>
+			<smokeImgUrl name="oreBombState" />
+		</bullet>
+		
+	</father>
+	</data>

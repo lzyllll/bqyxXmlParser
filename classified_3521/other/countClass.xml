@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<count name="realName" 					cnName="实名状态" 						pro="a" valueIsIndexB="1">
+	</count>
+	
+	<count name="craftLv" 					cnName="太空飞船等级" 					pro="m" valueIsIndexB="1"></count>
+	<count name="spaceMissionIndex" 					cnName="太空任务完成进度" 					pro="n" valueIsIndexB="1"></count>
+	<count name="spaceMapWin_EarthSky" 					cnName="太空地图1通关次数" 					pro="o" valueIsIndexB="1"></count>
+	<count name="spaceMapWin_SolarInside" 					cnName="太空地图2通关次数" 					pro="p" valueIsIndexB="1"></count>
+	<count name="spaceMapWin_CeresSouth" 					cnName="太空地图3通关次数" 					pro="q" valueIsIndexB="1"></count>
+	<count name="spaceMapWin_Ganymede" 					cnName="太空地图4通关次数" 					pro="r" valueIsIndexB="1"></count>
+	
+	
+	
+</data>

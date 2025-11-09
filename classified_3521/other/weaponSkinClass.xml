@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<gather name="weapon">
+		<father cnName="屠夫" name="butcherBlade">
+			<body name="butcherBlade_1" evoLv="1" />
+			<body name="butcherBlade_2" evoLv="5" />
+			<body name="butcherBlade_3" evoLv="8" />
+			<body name="butcherBlade_4" evoLv="9" />
+			
+			<body cnName="图腾" name="totem" url="weapon/totem" icon="weapon/totem_icon" evoLv="8" />
+			<body name="phageNew" url="phageNew/weaponSp" icon="weapon/phage_icon" items="phageNew" />
+			<body name="phage" url="phage/weaponSp" icon="weapon/phage_icon" items="phage" />
+			<body name="nightmare" url="nightmare/weaponSp" icon="weapon/nightmare_icon" items="nightmare" />
+			<body name="officerYing" url="officerYing/weaponSp" icon="officerYing/weaponSp_icon" items="officerYing" />
+			
+			<body cnName="角剑" name="butcherBlade_551598532" evoLv="8" author="爱星游"  au="original" info="愿誓言被继续遵守下去。" />
+			<body cnName="炼狱刀" name="butcherBlade_2579763438" evoLv="8"  author="『傲世』一骑绝尘" au="original"/>
+			<body cnName="影寂鸣神" name="butcherBlade_1676180080" evoLv="8" author="【觉醒】屑狐狸"  au="original" info="常道恢宏，鸣神永恒。" />
+			<body cnName="过关斩将" name="butcherBlade_2734366043" evoLv="8" author="【觉醒】屑狐狸"  au="original"/>
+			<body cnName="不夜之城" name="butcherBlade_2734366043_2" evoLv="8" author="【觉醒】屑狐狸"  au="original" info="无名小卒，还是扬名立万？" />
+			
+			<body cnName="剔骨" name="butcherBladeTiGu" evoLv="8" author="驰掣万里"  au="original"/>
+			<body cnName="血晶" name="butcherBladeXueJing" evoLv="8" author="驰掣万里"  au="original"/>
+			<body cnName="血煞" name="butcherBlade893460098" evoLv="8" author="屠夫-血煞"  au="original"/>
+			<body cnName="惊雷" name="butcherBlade_c1" evoLv="8" author="驰掣万里"  au="original"/>
+			<body cnName="映镜" name="butcherBlade_c2" evoLv="8" author="驰掣万里"  au="original"/>
+			<body cnName="绝寒" name="butcherBlade_c3" evoLv="8" author="驰掣万里"  au="original"/>
+			<body cnName="亵鸣" name="butcherBlade_d1" evoLv="8" author="驰掣万里"  au="original"/>
+			<body cnName="炎魔" name="butcherBlade_d2" evoLv="8" author="沁园春丨雪玻璃"  au="original"/>
+			<body cnName="重峰剑" name="butcherBlade_d3" evoLv="8" author="驰掣万里"  au="original"/>
+			<body cnName="大地之刃" name="butcherBlade_e1" evoLv="8" author="李明轩！"  au="original" info="泰拉之锋。" />
+			<body cnName="斩魂" name="butcherBlade_e2" evoLv="8" author="【跑男团】椎名真昼"  au="original"/>
+			
+		</father>
+		<father cnName="月刺" name="moonDagger">
+			<body name="moonDagger_1" evoLv="1" />
+			<body name="moonDagger_2" evoLv="5" />
+			<body name="moonDagger_3" evoLv="8" />
+			<body name="moonDagger_4" evoLv="9" />
+			
+			<body cnName="萝卜刀"  name="radisKnife" url="weapon/radisKnife" icon="weapon/radisKnife_icon" evoLv="8" />
+			<body name="snowShadow" url="snowShadow/weaponSp" icon="weapon/snowShadow_icon" items="snowShadow" />
+			<body name="neZha" url="neZha/weaponSp" icon="weapon/neZha_icon" items="neZha" />
+			<body cnName="地下丝绒" name="moonDagger1423556554" evoLv="8" author="茅厕の卡密"  au="original" info="没一时？弗一世！（没：埋没）" />
+			<body cnName="琉影" name="moonDagger2607333339" evoLv="8" author="地煞：诡道子"  au="original"/>
+			<body cnName="灼魂匕" name="moonDagger_c1" evoLv="8" author="驰掣万里"  au="original"/>
+			<body cnName="雷元刺" name="moonDagger_d1" evoLv="8" author="驰掣万里"  au="original"/>
+			<body cnName="斩樱" name="moonDagger_e1" evoLv="8" author="【跑男团】椎名真昼"  au="original"/>
+			
+		</father>
+		
+		<father cnName="沃龙牌棍棒" name="wolongStick">
+			<body name="wolongStick_1" evoLv="1" />
+			<body name="wolongStick_2" evoLv="5" />
+			<body name="wolongStick_3" evoLv="8" />
+			<body name="wolongStick_4" evoLv="9" />
+			<body cnName="冰鱼" name="iceFish" url="weapon/iceFish" icon="weapon/iceFish_icon" evoLv="8" />
+			
+			
+			<body name="wuKong" url="wuKong/weaponSp" icon="weapon/wuKong_icon" items="wuKong" />
+			<body name="greatSage" url="greatSage/weaponSp" icon="greatSage/weapon_icon" items="greatSage" />
+			<body cnName="泷" name="wolongStick_c1" evoLv="8" author="地煞：诡道子"  au="original"/>
+			
+		</father>
+		<father cnName="剑齿镖" name="saberDarts">
+			<body name="saberDarts_1" evoLv="1" />
+			<body name="saberDarts_2" evoLv="3" />
+			<body name="saberDarts_3" evoLv="4" />
+			<body cnName="绯斩" name="saberDarts_3336554617" evoLv="4" author="挽梦亦清歌（天酱）"  au="original"/>
+			<body cnName="樱落" name="saberDarts_2607333339" evoLv="4" author="地煞：诡道子"  au="original"/>
+			<body cnName="裂风扇" name="saberDartsLieFeng" evoLv="4" author="驰掣万里"  au="original"/>
+			<body name="foxLing"  items="foxLing" url="foxLing/weaponSp" icon="foxLing/weaponIcon" />
+		</father>
+		<father cnName="凯撒" name="sprintSword">
+			<body name="sprintSword_1" evoLv="1" />
+			<body name="sprintSword_2" evoLv="3" />
+			<body name="sprintSword_3" evoLv="4" />
+			<body name="sprintSword_4" evoLv="5" />
+			<body cnName="中式长刀" name="chineseBlade" url="weapon/chineseBlade" icon="weapon/chineseBlade_icon" evoLv="4" />
+			<body name="hundredGhosts" url="hundredGhosts/weaponSp" icon="weapon/hundredGhosts_icon" items="hundredGhosts" />
+			
+			<body cnName="钢狼" name="sprintSword_1587464098" evoLv="4" author="【神龙觉醒】钢狼"  au="original"/>
+			<body cnName="破劫妖刀" name="sprintSword_2734366043" evoLv="4" author="【觉醒】屑狐狸"  au="original"/>
+			<body cnName="武道无穷" name="sprintSword_27343660432" evoLv="4" author="【觉醒】屑狐狸" au="original" info="我身无拘，武道无穷。" />
+			<body cnName="黑洞" name="sprintSword_511159787" evoLv="4" author="【弑杀】最终幻想" au="original" info="你只是一个被我创造的虚假英雄罢了。" />
+			<body cnName="凌净" name="sprintSwordLingJing" evoLv="4" author="驰掣万里" au="original" />
+			<body cnName="凛" name="moonDaggerBin" evoLv="4" author="驰掣万里"  au="original"/>
+			<body cnName="翠" name="moonDaggerCui" evoLv="4" author="驰掣万里"  au="original"/>
+			<body cnName="拘光" name="moonDaggerJuGuang" evoLv="4" author="驰掣万里"  au="original"/>
+			<body cnName="木灵刺" name="moonDaggerMuLing" evoLv="4" author="驰掣万里"  au="original"/>
+			
+			<body cnName="傲雪" name="moonDagger3047636821" evoLv="4" author="淡忘无题雪"  au="original"/>
+			<body cnName="棘炎" name="sprintSword_c1" evoLv="4" author="驰掣万里"  au="original"/>
+			<body cnName="清鸣" name="sprintSword_c2" evoLv="4" author="驰掣万里"  au="original"/>
+			<body cnName="重精琢" name="sprintSword_c3" evoLv="4" author="驰掣万里"  au="original"/>
+			<body cnName="乌啸" name="sprintSword_d1" evoLv="4" author="驰掣万里"  au="original"/>
+			<body cnName="跃龙" name="sprintSword_d2" evoLv="4" author="驰掣万里"  au="original"/>
+			<body cnName="赤金" name="sprintSword_d3" evoLv="4" author="驰掣万里"  au="original"/>
+			<body cnName="斩影" name="sprintSword_e1" evoLv="4" author="【跑男团】椎名真昼"  au="original"/>
+			<body cnName="旅途终点" name="sprintSword_e2" evoLv="4" author="李明轩！"  au="original" info="无限＋1之剑。" />
+			<body cnName="妖刀千刃" name="sprintSword2501" evoLv="4" author="云上一唯我独尊"  au="original" info="世人皆知妖刀只攻不防，可为了你我愿打破世俗。" />
+			<body cnName="绯刃" name="sprintSword2502" evoLv="4" author="清冷几千春"  au="original" info="绯红如血的光芒，似是被远古的诅咒所萦绕。" />
+			
+		</father>
+		<father cnName="死神" name="sickleScythe">
+			<body name="sickleScythe_1" evoLv="1" />
+			<body name="sickleScythe_2" evoLv="3" />
+			<body name="sickleScythe_3" evoLv="4" />
+			<body name="yanluo" url="yanluo/weaponSp" icon="yanluo/weaponSp_icon" items="yanluo" />
+			
+			<body cnName="逆水游龙" name="sickleScythe2501" evoLv="4"  author="『逆龙』燕归"  au="original"/>
+			<body cnName="暗血征收" name="sickleScythe2506" evoLv="4"  author="我要困告了_(〃ω〃)"  au="original"/>
+		</father>
+		
+	</gather>
+</data>

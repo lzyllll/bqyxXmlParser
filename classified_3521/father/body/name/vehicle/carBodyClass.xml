@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicle" cnName="载具-战车">
+		<body index="0" name="轰天雷" shell="compound">
+			
+			<name>GaiaFit</name><cnName>轰天雷</cnName><raceType>robot</raceType>
+			<swfUrl>swf/vehicle/GaiaFit.swf</swfUrl>
+			<headIconUrl>IconGather/GaiaFit</headIconUrl>
+			
+			<lifeBarExtraHeight>-40</lifeBarExtraHeight>
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg><dieJumpMul>0</dieJumpMul>
+			<imgClass>CarImage</imgClass><imgType>normal</imgType><rotateBySlopeB>1</rotateBySlopeB>
+			<imgArr>
+				stand,move,die1
+				,__jumpUp,jumpUp,jumpDown,jumpDown__
+			</imgArr>
+			
+			<hitRect>-30,-88,60,88</hitRect>
+			
+			<motionD F_G="0.8" jumpDelayT="0.15" F_I="0.8" F_F="0.9" moveWhenVB="1" />
+			<maxVx>17</maxVx><maxJumpNum>1</maxJumpNum>
+			
+			<attackAIClass>CarAttack_AI</attackAIClass>
+			<keyClass>CarBodyKey</keyClass>
+			<bulletLauncherClass>CarBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>0.4</hurtRatio><attackType>through</attackType><shakeValue>10</shakeValue><meBack>1</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>subAttack</imgLabel>
+					<hurtRatio>0.4</hurtRatio><attackType>through</attackType><shakeValue>10</shakeValue><meBack>1</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown</imgLabel>
+					<hurtRatio>0.4</hurtRatio><attackType>through</attackType><shakeValue>10</shakeValue><meBack>1</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpUp</imgLabel>
+					<hurtRatio>0.4</hurtRatio><attackType>through</attackType><shakeValue>10</shakeValue><meBack>1</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown__</imgLabel>
+					<hurtRatio>0.4</hurtRatio><attackType>through</attackType><shakeValue>10</shakeValue><meBack>1</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		
+		
+		<body index="0" name="镇山虎" shell="compound">
+			
+			<name>CivilianFit</name><cnName>镇山虎</cnName><raceType>robot</raceType>
+			<swfUrl>swf/vehicle/CivilianFit316.swf</swfUrl>
+			<headIconUrl>IconGather/CivilianFit</headIconUrl>
+			
+			<lifeBarExtraHeight>-20</lifeBarExtraHeight>
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg><dieJumpMul>0</dieJumpMul>
+			<imgClass>CarImage</imgClass><imgType>normal</imgType><rotateBySlopeB>1</rotateBySlopeB>
+			<imgArr>
+				stand,move,die1
+				,__jumpUp,jumpUp,jumpDown,jumpDown__
+			</imgArr>
+			
+			<hitRect>-30,-88,60,88</hitRect>
+			
+			<motionD F_G="0.8" jumpDelayT="0.15" F_I="0.8" F_F="0.9" moveWhenVB="1" />
+			<maxVx>17</maxVx><maxJumpNum>1</maxJumpNum>
+			
+			<attackAIClass>CarAttack_AI</attackAIClass>
+			<keyClass>CarBodyKey</keyClass>
+			<bulletLauncherClass>CarBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>0.4</hurtRatio><attackType>through</attackType><shakeValue>10</shakeValue><meBack>1</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>subAttack</imgLabel>
+					<hurtRatio>0.4</hurtRatio><attackType>through</attackType><shakeValue>10</shakeValue><meBack>1</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown</imgLabel>
+					<hurtRatio>0.4</hurtRatio><attackType>through</attackType><shakeValue>10</shakeValue><meBack>1</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpUp</imgLabel>
+					<hurtRatio>0.4</hurtRatio><attackType>through</attackType><shakeValue>10</shakeValue><meBack>1</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown__</imgLabel>
+					<hurtRatio>0.4</hurtRatio><attackType>through</attackType><shakeValue>10</shakeValue><meBack>1</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		
+		
+		<body index="0" name="霸空雕" shell="compound">
+			
+			<name>FlyFit</name>
+			<cnName>霸空雕</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/vehicle/FlyFit.swf</swfUrl>
+			<headIconUrl>IconGather/FlyFit</headIconUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<rosRatio>1</rosRatio>
+			<headHurtMul>0.5</headHurtMul>
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<rotateBySlopeB>1</rotateBySlopeB>
+			<imgClass>CarImage</imgClass>
+			<imgType>normal</imgType>
+			<flipCtrlBy>mouse</flipCtrlBy>
+			<imgArr>
+				stand,move,die1
+			</imgArr>
+			
+			<hitRect>-30,-88,60,88</hitRect>
+			
+			<motionClass>AircraftGroundMotion</motionClass>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<motionD jumpDelayT="0.15" F_AIR="3" moveWhenVB="1" />
+			<maxVx>14</maxVx>
+			<maxJumpNum>1</maxJumpNum>
+			
+			<attackAIClass>CarAttack_AI</attackAIClass>
+			<keyClass>CarBodyKey</keyClass>
+			<bulletLauncherClass>CarBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			<bossSkillArr>noSpeedReduce</bossSkillArr>
+			
+			<hurtArr>
+			</hurtArr>
+		</body>
+	</father>
+</data>

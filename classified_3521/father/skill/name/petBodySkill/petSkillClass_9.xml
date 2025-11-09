@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="petBodySkill" cnName="技能链接">
+		<skill index="9" name="狂战狼-大地之怒-致盲">
+			<name>blindness_anger_PetFightWolf</name>
+			<cnName>致盲</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>lostPro</effectType>
+			<mul>0.4</mul>
+			<duration>8</duration>
+			<stateEffectImg partType="2eye">skillEffect/disabled_enemy</stateEffectImg>
+			<description>击中目标后使其失去准心，使其攻击成功率降低[mul]，持续[duration]秒。</description>
+		</skill>
+		<skill index="0" cnName="减速">
+			<name>lightBall_PetLake_slow</name>
+			<cnName>减速</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<value>0</value>
+			<mul>0.1</mul>
+			<duration>2</duration>
+			
+			<stateEffectImg partType="2foot">skillEffect/disabled_enemy</stateEffectImg>
+			<description>击中目标后降低其[1-mul]的移动速度，持续[duration]秒。</description>
+		</skill>
+		<skill index="9" name="灼热视线-眩晕">
+			<name>dizziness_anger_PetFightWolf</name>
+			<cnName>眩晕</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>dizziness</effectType>
+			<duration>0.3</duration>
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+			<description />
+		</skill>
+		<skill index="0" cnName="灼热视线-失血">
+			<name>laser_PetFightWolf_extra</name>
+			<cnName>灼热射线-附带技能</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>poison</effectType>
+			<extraValueType>targetMaxLife</extraValueType>
+			<mul>0.005</mul>
+			<doGap>1</doGap>
+			<duration>5</duration>
+			 
+			<stateEffectImg partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" raNum="1">skillEffect/laserHeat</stateEffectImg>
+		</skill>
+		<skill index="0" name="闪烁-目标点爆炸">
+			<name>flash_pet_link</name>
+			<cnName>闪烁-目标点爆炸</cnName>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<extraValueType>producterDpsFactor</extraValueType>
+			
+			<obj>"name":"pointBoom_hero","site":"me","flipB":false</obj>
+			<growth>
+				<skill><mul>1</mul></skill>
+				<skill><mul>1.25</mul></skill>
+				<skill><mul>1.5</mul></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="selfBurn_pet" cnName="自燃">
+			<name>selfBurn_pet</name>
+			<cnName>自燃</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,enemy</target>
+			
+			<addType>instant</addType>
+			<effectType>normal_hurt</effectType>
+			<extraValueType>producterDpsFactor</extraValueType>
+			<mul>0.2</mul>
+			<duration>1</duration>
+			<range>150</range>
+			
+			<addSkillEffectImg partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" raNum="30">skillEffect/smallFire</addSkillEffectImg>
+			<description>释放技能后，单位全身燃起熊熊烈火，对附近[range]范围内的敌人造成伤害。</description>
+			
+			<growth>
+				<skill><mul>0.2</mul></skill>
+				<skill><mul>0.3</mul></skill>
+				<skill><mul>0.4</mul></skill>
+				<skill><mul>0.5</mul></skill>
+				<skill><mul>0.6</mul></skill>
+				<skill><mul>0.7</mul></skill>
+				<skill><mul>0.8</mul></skill>
+				<skill><mul>1.1</mul></skill>
+				<skill><mul>1.5</mul></skill>
+			</growth>	
+		</skill>
+	</father>
+	</data>

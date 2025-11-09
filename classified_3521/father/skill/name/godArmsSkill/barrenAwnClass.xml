@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill>
+			<name>barrenAwnSkill</name><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<cnName>战场之王</cnName><noRandomListB>1</noRandomListB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>puWe,barrenAwn,targetUnitType,isTrueBody</otherConditionArr>
+			<conditionString>boss</conditionString>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>barrenAwnSkill</effectType>
+			
+			<meEffectImg />
+			<targetEffectImg name="bigSpaceShake" />
+			<description>每周可以瞬秒1次战场首领。当周战场首领个数超过7个时，可以瞬秒2次首领。注意，瞬秒效果不会影响首领的重生技能。</description>
+		</skill>
+	</father>
+</data>

@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="props" cnName="一般箱子" smeltType="box">
+		<things cnName="69级零件箱">
+			<name>partsChest69</name>
+			<cnName>69级零件箱</cnName>
+			<iconUrl>ThingsIcon/partsChest69</iconUrl>
+			<description>
+				使用后将获得6个69级的普通零件。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]无尽模式(产量很高)
+				[n]锻造合成
+				[n]商店、竞技场兑换、军队商店
+			</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="4" />
+			<smeltD grade="0" addType="" price="10" />
+			<gift>parts;loaderParts_69;6</gift>
+		</things>
+		
+		<things cnName="72级零件箱">
+			<name>partsChest72</name>
+			<cnName>72级零件箱</cnName>
+			<iconUrl>ThingsIcon/partsChest72</iconUrl>
+			<description>
+				使用后将获得6个72级的普通零件。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]vip每日礼包领取
+				[n]每日任务
+			</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="4" />
+			<smeltD grade="0" addType="" price="25" />
+			<gift>parts;loaderParts_72;6</gift>
+		</things>
+		
+		<things cnName="75级零件箱">
+			<name>partsChest75</name>
+			<cnName>75级零件箱</cnName>
+			<iconUrl>ThingsIcon/partsChest75</iconUrl>
+			<description>
+				使用后将获得6个75级的普通零件。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]锻造合成
+				[n]商店、军队商店
+			</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="4" />
+			<smeltD grade="1" addType="" price="50" />
+			<gift>parts;loaderParts_75;6</gift>
+		</things>
+		<things cnName="78级零件箱">
+			<name>partsChest78</name><addDropDefineB>1</addDropDefineB>
+			<cnName>78级零件箱</cnName>
+			<iconUrl>ThingsIcon/partsChest78</iconUrl>
+			<description>
+				使用后将获得6个78级的普通零件。{font color='#FFFFFF'}也是冶炼屋的重要增产物品，请谨慎使用。{/font}
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店
+				[n]每周任务
+			</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="4" />
+			<smeltD grade="-1" addType="" price="150" />
+			<gift>parts;loaderParts_78;6</gift>
+		</things>
+		<things cnName="81级零件箱">
+			<name>partsChest81</name>
+			<cnName>81级零件箱</cnName>
+			<iconUrl>ThingsIcon/partsChest81</iconUrl>
+			<description>
+				使用后将获得6个81级的普通零件。{font color='#FFFFFF'}可分解为冶炼屋的重要增产物品：78级零件箱，请谨慎使用。{/font}
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店
+			</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="4" />
+			<smeltD grade="-1" addType="" />
+			<gift>parts;loaderParts_81;6</gift>
+		</things>
+		<things cnName="84级零件箱">
+			<name>partsChest84</name>
+			<cnName>84级零件箱</cnName>
+			<iconUrl>ThingsIcon/partsChest84</iconUrl>
+			<description>
+				使用后将获得6个84级的普通零件。{font color='#FFFFFF'}可逐步分解为冶炼屋的重要增产物品：78级零件箱，请谨慎使用。{/font}
+			</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="4" />
+			<gift>parts;loaderParts_84;6</gift>
+		</things>
+		<things cnName="87级零件箱">
+			<name>partsChest87</name>
+			<cnName>87级零件箱</cnName>
+			<iconUrl>ThingsIcon/partsChest87</iconUrl>
+			<description>
+				使用后将获得6个87级的普通零件。{font color='#FFFFFF'}可逐步分解为冶炼屋的重要增产物品：78级零件箱，请谨慎使用。{/font}
+			</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="4" />
+			<gift>parts;loaderParts_87;6</gift>
+		</things>
+		<things cnName="90级零件箱">
+			<name>partsChest90</name>
+			<cnName>90级零件箱</cnName>
+			<iconUrl>ThingsIcon/partsChest90</iconUrl>
+			<description>
+				使用后将获得6个90级的普通零件。
+			</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="4" />
+			<gift>parts;loaderParts_90;6</gift>
+		</things>
+		
+		
+		<things cnName="凯撒箱">
+			<name>sprintSword20</name>
+			<cnName>凯撒箱</cnName>
+			<iconUrl>ThingsIcon/sprintSword20</iconUrl>
+			<description>
+				使用后获得20把凯撒。[n]
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店购买
+			</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="1" />
+			<smeltD grade="-1" />
+			<gift>equip;sprintSword_1;20</gift>
+		</things>
+		<things cnName="镭射箱">
+			<name>shuttleSword</name>
+			<cnName>镭射箱</cnName>
+			<iconUrl>ThingsIcon/shuttleSword</iconUrl>
+			<description>
+				使用后获得30个镭射穿梭器装置。[n]
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店购买(小樱好感度需到达15000)
+			</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="1" />
+			<smeltD grade="-1" />
+			<gift>equip;shuttleDevicer_1;30</gift>
+		</things>
+		<things cnName="黑洞箱">
+			<name>blackHoleSword</name>
+			<cnName>黑洞箱</cnName>
+			<iconUrl>ThingsIcon/blackHoleSword</iconUrl>
+			<description>
+				使用后获得30个黑洞发生器装置。[n]
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店购买(藏师忠诚度需到达24000)
+			</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="1" />
+			<smeltD grade="-1" />
+			<gift>equip;blackHoleDevicer_1;30</gift>
+		</things>
+		
+		
+		
+		
+		
+		
+		<things cnName="副手箱">
+			<name>weaponChest</name>
+			<cnName>副手箱</cnName>
+			<iconUrl>ThingsIcon/weaponChest</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]1、每日任务“特种兵的赌约”（2星难度以上）。
+				[n]2、活跃值礼包。
+				[n]3、通关后抽奖。
+				[n]4、每日问答答题全对奖励。
+				[n]6、商店购买。
+				[n][n]使用后将随机获得以下物品中的1种：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="4" />
+			<smeltD grade="1" addType="" price="15" />
+			<giftRandomB>1</giftRandomB>
+			<gift pro="1">equip;butcherBlade_1;1</gift>
+			<gift pro="1">equip;moonDagger_1;1</gift>
+			<gift pro="1">equip;wolongStick_1;1</gift>
+			
+		</things>
+		<things cnName="装置箱">
+			<name>deviceChest</name>
+			<cnName>装置箱</cnName>
+			<iconUrl>ThingsIcon/deviceChest</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]1、每日任务“古老的火炮”。
+				[n]2、活跃值礼包。
+				[n]3、通关后抽奖。
+				[n]4、每日问答答题全对奖励。
+				[n]6、商店购买。
+				[n][n]使用后将随机获得以下物品中的1种：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="4" />
+			<smeltD grade="1" addType="" price="10" />
+			<giftRandomB>1</giftRandomB>
+			<gift pro="1">equip;earthquakeGenerator_1</gift>
+			<gift pro="1">equip;endlessRocket_1</gift>
+			<gift pro="1">equip;lightningTower_1</gift>
+			<gift pro="1">equip;energyShield_1</gift>
+			<gift pro="1">equip;electricDevicer_1</gift>
+		</things>
+		<things cnName="钥匙箱">
+			<name>keyChest</name>
+			<cnName>钥匙箱</cnName>
+			<iconUrl>ThingsIcon/keyChest</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]1、每日任务“逃出升天”。
+				[n]2、通关后抽奖。
+				[n][n]使用后将随机获得以下物品中的1种：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="3" />
+			<smeltD grade="0" addType="" price="2" />
+			<giftRandomB>1</giftRandomB>
+			<gift pro="1">things;dreamKey;1</gift>
+			<gift pro="1">things;courageKey;1</gift>
+			<gift pro="1">things;energyKey;1</gift>
+			<gift pro="1">things;victoryKey;1</gift>
+		</things>
+		
+		<things cnName="武器宝石箱">
+			<name>armsGemChest</name>
+			<cnName>武器宝石箱</cnName><addDropDefineB>1</addDropDefineB>
+			<iconUrl>ThingsIcon/armsGemChest</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]1、副本任务“古飙”。
+				[n]2、商店购买。
+				[n][n]使用后将随机获得以下物品中的1种：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="3" />
+			<smeltD grade="-1" addType="" price="3" />
+			<giftRandomB>1</giftRandomB>
+			<gift pro="28">things;fireGem;1</gift>
+			<gift pro="28">things;electricGem;1</gift>
+			<gift pro="28">things;frozenGem;1</gift>
+			<gift pro="16">things;poisonGem;1</gift>
+		</things>
+		<things cnName="装备宝石箱">
+			<name>equipGemChest</name>
+			<cnName>装备宝石箱</cnName>
+			<iconUrl>ThingsIcon/equipGemChest</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店购买。
+				[n][n]使用后将随机获得以下物品中的1种：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="3" />
+			<smeltD grade="-1" addType="" price="3" />
+			<giftRandomB>1</giftRandomB>
+			<gift pro="40">things;wisdomGem;1</gift>
+			<gift pro="33">things;agileGem;1</gift>
+			<gift pro="27">things;defenceGem;1</gift>
+			<gift pro="33">things;alertGem;1</gift>
+		</things>
+		
+	</father>	
+	</data>

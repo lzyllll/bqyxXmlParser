@@ -1,0 +1,1097 @@
+{
+  "father": {
+    "name": "customTask",
+    "level": [
+      {
+        "name": "cusWoTu",
+        "sayList": [
+          {
+            "name": "s1",
+            "oneB": true,
+            "say": [
+              {
+                "target": "weBoss",
+                "content": "为什么我每天都得待在沃土镇？"
+              },
+              {
+                "target": "weBoss",
+                "content": "这里真是无聊透顶了！"
+              },
+              {
+                "target": "weBoss",
+                "content": "前面好像有个残暴的人类。"
+              },
+              {
+                "target": "weBoss",
+                "content": "杀我族类！我不会放过他的！"
+              }
+            ]
+          },
+          {
+            "name": "s2",
+            "say": {
+              "target": "weBoss",
+              "content": "终于消停了吧？"
+            }
+          }
+        ]
+      },
+      {
+        "name": "cusYangMei",
+        "sayList": [
+          {
+            "name": "s1",
+            "oneB": true,
+            "say": [
+              {
+                "target": "weBoss",
+                "content": "听说从沃土镇来了一位枪法了得的人类。"
+              },
+              {
+                "target": "weBoss",
+                "content": "看我如何用狙击枪玩死他！"
+              }
+            ]
+          },
+          {
+            "name": "s2",
+            "say": [
+              {
+                "target": "本我",
+                "content": "表哥快来帮我！"
+              },
+              {
+                "target": "weBoss",
+                "content": "嘿，还知道摇人。"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "cusXiaSha",
+        "sayList": [
+          {
+            "name": "s1",
+            "oneB": true,
+            "say": [
+              {
+                "target": "weBoss",
+                "content": "我最喜欢别人来揍我了。"
+              },
+              {
+                "target": "weBoss",
+                "content": "我能一枪不发让人类跪地求饶。"
+              }
+            ]
+          },
+          {
+            "name": "s2",
+            "say": [
+              {
+                "target": "weBoss",
+                "content": "今天开了几枪，偶尔破个例不碍事。"
+              },
+              {
+                "target": "本我",
+                "content": "表哥，你怎么不替我挡挡枪啊？"
+              },
+              {
+                "target": "文杰表哥",
+                "content": "你当我是石头做的吗？"
+              },
+              {
+                "target": "文杰表哥",
+                "content": "果然你一叫我，准没好事！"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "cusFengWei",
+        "sayList": [
+          {
+            "name": "s1",
+            "oneB": true,
+            "say": [
+              {
+                "target": "亚瑟",
+                "content": "最近霞光来了一个白毛小子，帮我验验他的实力。"
+              },
+              {
+                "target": "weBoss",
+                "content": "要留活口吗？"
+              },
+              {
+                "target": "亚瑟",
+                "content": "要留的，不然后面的事情就无法继续下去了。"
+              },
+              {
+                "target": "weBoss",
+                "content": "那我下手轻点。"
+              }
+            ]
+          },
+          {
+            "name": "s2",
+            "say": [
+              {
+                "target": "weBoss",
+                "content": "实力一般，也就比藏师那滑头强点。"
+              },
+              {
+                "target": "文杰表哥",
+                "content": "不行啊，打不过啊！"
+              },
+              {
+                "target": "本我",
+                "content": "我们得去搞点超能石来。"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "cusXiChi",
+        "sayList": {
+          "name": "s1",
+          "oneB": true,
+          "say": {
+            "target": "weBoss",
+            "content": "敢闯入我炮兵总管的领地，是不要命了吗？"
+          }
+        }
+      },
+      {
+        "name": "cusBaiLu",
+        "sayList": {
+          "name": "s2",
+          "say": [
+            {
+              "target": "weBoss",
+              "content": "没有红外眼的人是打不过我的。"
+            },
+            {
+              "target": "文杰表哥",
+              "content": "这僵尸会隐身，你没看出来吗？"
+            },
+            {
+              "target": "本我",
+              "content": "好意思说我，你不也是傻傻的站在那？"
+            },
+            {
+              "target": "文杰表哥",
+              "content": "你不知道我耳朵不好使吗？"
+            },
+            {
+              "target": "本我",
+              "content": "行了行了，咱们再回去好好修炼一下。"
+            }
+          ]
+        }
+      },
+      {
+        "name": "cusShuiSheng",
+        "sayList": [
+          {
+            "name": "s1",
+            "oneB": true,
+            "say": [
+              {
+                "target": "亚瑟",
+                "content": "前面有个很嚣张的白毛小子，把他给我拦住。"
+              },
+              {
+                "target": "weBoss",
+                "content": "遵命！"
+              }
+            ]
+          },
+          {
+            "name": "s2",
+            "say": {
+              "target": "weBoss",
+              "content": "这两位不简单啊，刚才我差点就嗝屁了。"
+            }
+          }
+        ]
+      },
+      {
+        "name": "cusZhuTou",
+        "sayList": {
+          "name": "s2",
+          "say": {
+            "target": "weBoss",
+            "content": "哪来的两个不会飞的废物。"
+          }
+        }
+      },
+      {
+        "name": "cusShuangTa",
+        "sayList": [
+          {
+            "name": "s1",
+            "say": [
+              {
+                "target": "weBoss",
+                "content": "这该死的记忆又在攻击我了！"
+              },
+              {
+                "target": "weBoss",
+                "content": "我原本应该是个卖猪肉的。"
+              },
+              {
+                "target": "weBoss",
+                "content": "也不知道发生了什么，现在的我就变成了这副模样。"
+              },
+              {
+                "target": "weBoss",
+                "content": "也不知道为什么，一看见人类，我就全身躁动起来。"
+              },
+              {
+                "target": "weBoss",
+                "content": "说来就来……"
+              }
+            ]
+          },
+          {
+            "name": "s2",
+            "say": [
+              {
+                "target": "亚瑟",
+                "content": "可惜了，这小子虽然之前击败了藏师，但还差点意思。"
+              },
+              {
+                "target": "亚瑟",
+                "content": "否则可以招入我麾下，为我所用。"
+              },
+              {
+                "target": "weBoss",
+                "content": "他会愿意加入我们吗？"
+              },
+              {
+                "target": "亚瑟",
+                "content": "他只有两个选择，要么愿意，要么去死。"
+              },
+              {
+                "target": "亚瑟",
+                "content": "不过现在的他还不足为惧，继续观察吧。"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "cusBeiDou",
+        "sayList": [
+          {
+            "name": "s1",
+            "say": {
+              "target": "weBoss",
+              "content": "敢进入我射程的人，我都不会让他有出手的机会！"
+            }
+          },
+          {
+            "name": "s2",
+            "say": [
+              {
+                "target": "亚瑟",
+                "content": "很明显，这小子多了一个超能力，看来他越来越会用超能石了。"
+              },
+              {
+                "target": "weBoss",
+                "content": "但是他们还是打不过我。"
+              },
+              {
+                "target": "亚瑟",
+                "content": "呵呵……要不是我给你加了个闪电麻痹技能，你早就嗝屁了。"
+              },
+              {
+                "target": "weBoss",
+                "content": "原来这是您的操作，我还以为是我自己顿悟的呢。"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "cusDongShan",
+        "sayList": {
+          "name": "s1",
+          "say": [
+            {
+              "target": "亚瑟",
+              "content": "我已经给他下了药，即便他再有志气，日后也会来求我的。"
+            },
+            {
+              "target": "weBoss",
+              "content": "主人英明！"
+            },
+            {
+              "target": "亚瑟",
+              "content": "他们马上就来了，你不必手软。"
+            },
+            {
+              "target": "weBoss",
+              "content": "知道了！"
+            }
+          ]
+        }
+      },
+      {
+        "name": "cusQingSha",
+        "sayList": [
+          {
+            "name": "s1",
+            "say": [
+              {
+                "target": "亚瑟",
+                "content": "你想往哪里逃？"
+              },
+              {
+                "target": "weBoss",
+                "content": "没想到僵尸病毒是你投放的，亏我以前那么仰慕你！"
+              },
+              {
+                "target": "亚瑟",
+                "content": "你不懂，我是在做好事。"
+              },
+              {
+                "target": "weBoss",
+                "content": "我会把你的阴谋公诸于众的。"
+              },
+              {
+                "target": "亚瑟",
+                "content": "呵呵，无所谓，我已经习惯了不被理解。"
+              },
+              {
+                "target": "weBoss",
+                "content": "你不怕全霞光的市民都来反抗天鹰吗？"
+              },
+              {
+                "target": "亚瑟",
+                "content": "不跟你废话了，等会儿我的人就会取你项上人头。"
+              },
+              {
+                "target": "weBoss",
+                "content": "就凭你天鹰那些废物？"
+              },
+              {
+                "target": "亚瑟",
+                "content": "一位我刚收入麾下的白毛小子，他可不是一般人，你自求多福吧。"
+              }
+            ]
+          },
+          {
+            "name": "s2",
+            "say": {
+              "target": "weBoss",
+              "content": "哼，不过如此！"
+            }
+          }
+        ]
+      },
+      {
+        "name": "cusQingMing",
+        "sayList": [
+          {
+            "name": "s1",
+            "say": [
+              {
+                "target": "亚瑟",
+                "content": "给你一把无限子弹的火炮，你要用好它。"
+              },
+              {
+                "target": "weBoss",
+                "content": "我会的，主人。"
+              }
+            ]
+          },
+          {
+            "name": "s2",
+            "say": {
+              "target": "weBoss",
+              "content": "这两个人怎么比僵尸还傻？"
+            }
+          }
+        ]
+      },
+      {
+        "name": "cusNanTang",
+        "sayList": [
+          {
+            "name": "s1",
+            "say": [
+              {
+                "target": "亚瑟",
+                "content": "僵尸王，我废了好大的劲才把你复活，你一定要在南唐城阻止他们，听见了没有？！"
+              },
+              {
+                "target": "weBoss",
+                "content": "我一定会办到的！"
+              }
+            ]
+          },
+          {
+            "name": "s2",
+            "say": [
+              {
+                "target": "文杰表哥",
+                "content": "我们就应该听藏师的，不要来这里。"
+              },
+              {
+                "target": "本我",
+                "content": "不来南唐城，怎么弄清真相？"
+              },
+              {
+                "target": "文杰表哥",
+                "content": "关键是，有回血技能的僵尸太可怕了，我们根本打不过啊。"
+              },
+              {
+                "target": "本我",
+                "content": "它们可以，为什么我们不能？"
+              },
+              {
+                "target": "本我",
+                "content": "我们回去后用超能石试试看。"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "cusWoTu_doctor",
+        "sayList": {
+          "name": "s1",
+          "say": [
+            {
+              "target": "weBoss",
+              "content": "没想到爆枪小队越来越强大了，我现在真的打不过他。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "他已经中毒了，你怕什么？"
+            },
+            {
+              "target": "weBoss",
+              "content": "而且藏师也加入了他们……"
+            },
+            {
+              "target": "亚瑟",
+              "content": "罢了罢了，再给你一次立功机会吧。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "有位制毒师马上就要来沃土镇，他有能力给@playerName解毒，你去帮我做掉他。"
+            },
+            {
+              "target": "weBoss",
+              "content": "只要不碰上@playerName就行。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "估计他们俩现在已经汇合了……"
+            },
+            {
+              "target": "weBoss",
+              "content": "啊？"
+            }
+          ]
+        }
+      },
+      {
+        "name": "cusBeiDou_mercenary",
+        "sayList": {
+          "name": "s1",
+          "say": [
+            {
+              "target": "亚瑟",
+              "content": "他奶奶的，双塔村都被他们攻下了！"
+            },
+            {
+              "target": "亚瑟",
+              "content": "现在他们还想来北斗城招募雇佣兵。"
+            },
+            {
+              "target": "weBoss",
+              "content": "我该怎么做？"
+            },
+            {
+              "target": "亚瑟",
+              "content": "我多派了些僵尸给你，你给我把雇佣兵和爆枪小队一并消灭了！"
+            },
+            {
+              "target": "weBoss",
+              "content": "遵命！"
+            }
+          ]
+        }
+      },
+      {
+        "name": "cusShuangTa_defend",
+        "sayList": {
+          "name": "s1",
+          "say": [
+            {
+              "target": "亚瑟",
+              "content": "嘿嘿，@playerName果然中了我的调虎离山之计！"
+            },
+            {
+              "target": "亚瑟",
+              "content": "他们现在还在南唐城找奇皇，你们现在趁机夺回双塔村！"
+            },
+            {
+              "target": "weBoss",
+              "content": "好的，主人！"
+            }
+          ]
+        }
+      },
+      {
+        "name": "cusDongShan_QiHuang",
+        "sayList": {
+          "name": "s1",
+          "say": [
+            {
+              "target": "weBoss",
+              "content": "我们的水下工厂恐怕已经暴露了，我得离开这里。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "你就在这里守着！"
+            },
+            {
+              "target": "weBoss",
+              "content": "留得青山在不怕没柴烧，你不怕我死在这里吗？"
+            },
+            {
+              "target": "亚瑟",
+              "content": "没关系……你只是奇皇的克隆体而已。"
+            },
+            {
+              "target": "weBoss",
+              "content": "啊？我是克隆体？"
+            },
+            {
+              "target": "weBoss",
+              "content": "您什么时候偷偷克隆了我？"
+            },
+            {
+              "target": "亚瑟",
+              "content": "天鹰的重要人物我都留了备份，包括我自己。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "你现在不要有顾虑了，就放手去干吧。"
+            },
+            {
+              "target": "weBoss",
+              "content": "好吧。"
+            }
+          ]
+        }
+      },
+      {
+        "name": "cusQingMing_Arthur",
+        "sayList": [
+          {
+            "name": "s1",
+            "say": [
+              {
+                "target": "weBoss",
+                "content": "真是奇怪啊……"
+              },
+              {
+                "target": "weBoss",
+                "content": "难道他也会克隆术？"
+              },
+              {
+                "target": "weBoss",
+                "content": "等会儿我一定要问个清楚。"
+              }
+            ]
+          },
+          {
+            "name": "s2",
+            "say": [
+              {
+                "target": "weBoss",
+                "content": "我们之前已经杀掉你们无数次了，为什么你们还活着？"
+              },
+              {
+                "target": "本我",
+                "content": "你什么意思？我们从来就没死过。"
+              },
+              {
+                "target": "weBoss",
+                "content": "快说！"
+              },
+              {
+                "target": "weBoss",
+                "content": "否则，我就把你的表哥带去实验室好好折磨一番。"
+              },
+              {
+                "target": "文杰表哥",
+                "content": "我们真的不知道你在说什么？"
+              },
+              {
+                "target": "奇皇博士",
+                "content": "司令，有个重大消息！"
+              },
+              {
+                "target": "奇皇博士",
+                "content": "我在沃土镇一个隐蔽的地方，发现了大量爆枪小队成员的尸体……"
+              },
+              {
+                "target": "weBoss",
+                "content": "不出所料，你们也学会了克隆技术。"
+              },
+              {
+                "target": "weBoss",
+                "content": "肯定是从我的实验室里偷的！"
+              },
+              {
+                "target": "鬼爵",
+                "content": "看来你已经发现了这个世界的异样。"
+              },
+              {
+                "target": "weBoss",
+                "content": "你又是谁？"
+              },
+              {
+                "target": "鬼爵",
+                "content": "今天太忙，忘了处理那些尸体，被你们给发现了。"
+              },
+              {
+                "target": "weBoss",
+                "content": "你才是幕后主使？"
+              },
+              {
+                "target": "鬼爵",
+                "content": "算是吧……"
+              },
+              {
+                "target": "鬼爵",
+                "content": "等你收集足够的尸体，我再告诉你真相。"
+              },
+              {
+                "target": "weBoss",
+                "content": "谁的尸体？"
+              },
+              {
+                "target": "鬼爵",
+                "content": "@playerName的尸体。"
+              },
+              {
+                "target": "鬼爵",
+                "content": "就这样，我们日后再见……"
+              },
+              {
+                "target": "奇皇博士",
+                "content": "他应该是我们天鹰实验室的旧人。"
+              },
+              {
+                "target": "weBoss",
+                "content": "到底是谁呢？"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "cusPingChuan",
+        "sayList": {
+          "name": "s2",
+          "say": [
+            {
+              "target": "鬼爵",
+              "content": "差不多了。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "你到底是谁？"
+            },
+            {
+              "target": "鬼爵",
+              "content": "在你收集尸体的这段时间，你的病毒机器人已经被我控制了！"
+            },
+            {
+              "target": "鬼爵",
+              "content": "开始暴动吧！僵尸们！"
+            },
+            {
+              "target": "weBoss",
+              "content": "遵命，鬼爵大人！"
+            },
+            {
+              "target": "亚瑟",
+              "content": "你……你……是鬼爵？"
+            },
+            {
+              "target": "鬼爵",
+              "content": "孩子，你也差不多该回来了。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "我……我是不会屈服于你的！"
+            },
+            {
+              "target": "鬼爵",
+              "content": "那你试试看？哈哈哈哈……"
+            }
+          ]
+        }
+      },
+      {
+        "name": "cusFangZhouFirst",
+        "sayList": {
+          "name": "s2",
+          "say": [
+            {
+              "target": "亚瑟",
+              "content": "真是阴魂不散呐！"
+            },
+            {
+              "target": "亚瑟",
+              "content": "过一会儿，被复活的爆枪小队又会以更强的状态来到这，直到这里被攻克。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "无疆骑士是我最后的底牌，如果被他们打败，那我就要溜了。"
+            }
+          ]
+        }
+      },
+      {
+        "name": "cusFangZhouTop",
+        "sayList": {
+          "name": "s2",
+          "say": [
+            {
+              "target": "亚瑟",
+              "content": "不出所料，目前无疆骑士的实力远在他们之上。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "不过后面就不好说了，再继续观察一下吧。"
+            },
+            {
+              "target": "奇皇博士",
+              "content": "司令，快来东山澳看看！"
+            },
+            {
+              "target": "亚瑟",
+              "content": "那里不是我们原来废弃的水下工厂吗？"
+            }
+          ]
+        }
+      },
+      {
+        "name": "cusDongShan_shiti",
+        "sayList": {
+          "name": "s1",
+          "say": [
+            {
+              "target": "亚瑟",
+              "content": "这水下都是啥啊？"
+            },
+            {
+              "target": "奇皇博士",
+              "content": "都是爆枪小队的克隆体。"
+            },
+            {
+              "target": "奇皇博士",
+              "content": "整个东山澳里都是，估计有几十万具吧？"
+            },
+            {
+              "target": "亚瑟",
+              "content": "这还怎么打的过啊？多少台无疆骑士都没用啊！"
+            },
+            {
+              "target": "亚瑟",
+              "content": "为什么他们会以这样奇怪而且整齐的姿势飘着？"
+            },
+            {
+              "target": "奇皇博士",
+              "content": "我也不知道，我猜这是一种超自然的力量所为。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "就像矩阵一样，看着真是令人毛骨悚然！"
+            },
+            {
+              "target": "亚瑟",
+              "content": "之前怎么没有发现？"
+            },
+            {
+              "target": "奇皇博士",
+              "content": "可能是因为方舟的启动，叠加天文大潮，使这些克隆体飘上来了。"
+            },
+            {
+              "target": "奇皇博士",
+              "content": "估计过一天就看不见了。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "原来如此。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "鬼爵之前说我“发现了这个世界的异样”，他肯定知道这里的秘密。"
+            },
+            {
+              "target": "鬼爵",
+              "content": "答对了，孩子。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "不要叫我孩子，真恶心。"
+            },
+            {
+              "target": "鬼爵",
+              "content": "你还想管我的嘴？"
+            },
+            {
+              "target": "亚瑟",
+              "content": "有屁快放，说说你还知道什么！"
+            },
+            {
+              "target": "鬼爵",
+              "content": "我早就发现了爆枪小队无限生命的秘密。"
+            },
+            {
+              "target": "鬼爵",
+              "content": "他们的死亡，只会让其越来越强。"
+            },
+            {
+              "target": "鬼爵",
+              "content": "想靠自己的力量消灭爆枪小队，是不可能的。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "你说的这些都是屁话。"
+            },
+            {
+              "target": "鬼爵",
+              "content": "但是最近，我得到了一位神秘人的帮助。"
+            },
+            {
+              "target": "鬼爵",
+              "content": "让僵尸暴乱也是他的主意。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "又是什么神秘人，他有什么厉害的？"
+            },
+            {
+              "target": "鬼爵",
+              "content": "他已经帮我制造了好多小宠物，正等出笼去对付爆枪小队呢。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "哼，又是一堆破铜烂铁而已。"
+            },
+            {
+              "target": "鬼爵",
+              "content": "嘿嘿，比你那无疆骑士不知强上几百倍。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "你就继续吹牛吧！"
+            },
+            {
+              "target": "亚瑟",
+              "content": "你到底知不知道这些克隆体是从哪里来的？"
+            },
+            {
+              "target": "鬼爵",
+              "content": "那位神秘人说，因为爆枪小队就是“天选之人”。"
+            },
+            {
+              "target": "鬼爵",
+              "content": "说白了，他们就是这个世界的主角，我们这些芸芸众生只是配角而已。主角是不可能死的。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "别扯这些玄乎的鬼东西了，你就说怎么让他们消失吧！"
+            },
+            {
+              "target": "鬼爵",
+              "content": "想要击败他们，只能找出这个世界的漏洞。"
+            },
+            {
+              "target": "鬼爵",
+              "content": "找到漏洞的人，就等于获得了上帝的力量，就可以完全掌控这个世界。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "漏洞在哪呢？"
+            },
+            {
+              "target": "鬼爵",
+              "content": "还没找到，只有继续与这些“主角”不断地交战，才能找到漏洞。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "哈哈哈哈，我要笑死了，说了半天，果然都是废话。"
+            },
+            {
+              "target": "鬼爵",
+              "content": "神秘人还说，我接下来找一位叫“狂人”的未来人。"
+            },
+            {
+              "target": "鬼爵",
+              "content": "他能帮助我更快地找出漏洞。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "都是啥玩意儿，跟你聊天真是浪费时间。"
+            },
+            {
+              "target": "亚瑟",
+              "content": "再见！"
+            }
+          ]
+        }
+      },
+      {
+        "name": "cusPrisonDoor",
+        "sayList": {
+          "name": "s2",
+          "say": [
+            {
+              "target": "鬼爵",
+              "content": "连我的鬼影战士都打不过，亚瑟之前是怎么被欺负那样的？"
+            },
+            {
+              "target": "鬼爵",
+              "content": "还是得靠我圈养一番，方能提升他的能力。"
+            },
+            {
+              "target": "沃龙",
+              "content": "你可别大意，新一波的爆枪小队马上就要来了。"
+            },
+            {
+              "target": "鬼爵",
+              "content": "正好，可以让他们跟我的小狼好好玩玩。"
+            }
+          ]
+        }
+      },
+      {
+        "name": "cusPrisonExport",
+        "sayList": [
+          {
+            "name": "s1",
+            "say": {
+              "target": "鬼爵/手机",
+              "content": "只需要拥有我10%战力的克隆体，就可以探一探这所谓的“天选之人”到底几斤几两！"
+            }
+          },
+          {
+            "name": "s2",
+            "say": [
+              {
+                "target": "鬼爵/手机",
+                "content": "哈哈哈，果然是一群废物！"
+              },
+              {
+                "target": "沃龙",
+                "content": "早着呢。"
+              },
+              {
+                "target": "沃龙",
+                "content": "为了保险，我还给你准备了一只变异狼和几台机器人，废了我老大的劲才画完的。"
+              },
+              {
+                "target": "鬼爵/手机",
+                "content": "他们是画出来的？"
+              },
+              {
+                "target": "沃龙",
+                "content": "咳咳，反正就那这个意思。"
+              },
+              {
+                "target": "鬼爵/手机",
+                "content": "真的需要他们吗？只要我出场，不来个十年半载，这爆枪小队也是过不去的。"
+              },
+              {
+                "target": "沃龙",
+                "content": "我做的东西，你必须得用！不然的话，你应该懂得会有什么后果。"
+              },
+              {
+                "target": "鬼爵/手机",
+                "content": "行行行，暂时先给我当宠物吧。"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "cusCavesDeep",
+        "sayList": {
+          "name": "s2",
+          "say": [
+            {
+              "target": "鬼爵",
+              "content": "经过这几次的交战，我好像发现了漏洞。"
+            },
+            {
+              "target": "沃龙",
+              "content": "什么漏洞？"
+            },
+            {
+              "target": "鬼爵",
+              "content": "我能很明显感觉出来，每过一天，他们的能力就会提升一大截。"
+            },
+            {
+              "target": "沃龙",
+              "content": "你还是很聪明的嘛。"
+            },
+            {
+              "target": "鬼爵",
+              "content": "这是什么原理呢？"
+            },
+            {
+              "target": "沃龙",
+              "content": "这个世界每隔一天就会产生大量的资源，天选之人可以利用这些资源锻造武器、强化装备等等。"
+            },
+            {
+              "target": "鬼爵",
+              "content": "大量资源？我怎么没找到呢？"
+            },
+            {
+              "target": "沃龙",
+              "content": "这就对了！因为你不是天选之人。"
+            },
+            {
+              "target": "鬼爵",
+              "content": "这不公平！"
+            },
+            {
+              "target": "沃龙",
+              "content": "有啥不公平的？"
+            },
+            {
+              "target": "沃龙",
+              "content": "你刚出世时的能力，就可以碾压99%的人。而天选之人一开始只是普通人而已。"
+            },
+            {
+              "target": "沃龙",
+              "content": "他们要经历不断的历练，不断的死亡，才能慢慢达到你现在的水平。"
+            },
+            {
+              "target": "鬼爵",
+              "content": "说的好像有点道理。"
+            },
+            {
+              "target": "鬼爵",
+              "content": "算了，我们还是想想怎么利用这个漏洞吧。"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

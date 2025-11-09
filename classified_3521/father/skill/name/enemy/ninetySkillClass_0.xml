@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="童灵尸">
+		<skill index="0" name="雪藏">
+			<name>SnowThinRuin</name><showInLifeBarB>1</showInLifeBarB>
+			<cnName>雪藏</cnName><iconUrl36>SkillIcon/redMoto3Skill_36</iconUrl36>
+			<cd>10</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>500</conditionRange><target>me</target>
+			
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>1.4</duration>
+			<meActionLabel>rotateAttack</meActionLabel>
+			<description>童灵尸抓起一把雪球向地面撒去，对经过的敌人造成伤害。动作过程中童灵尸处于无敌状态。</description>
+		</skill>
+		<skill cnName="近战防御">
+			<name>fightReduct2</name>
+			<cnName>近战防御</cnName>
+			<noBeClearB>1</noBeClearB>
+			<ignoreSilenceB>1</ignoreSilenceB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>fightDedut</effectType>
+			<mul>0</mul>
+			<duration>9999999</duration>
+			
+			<description>受到近战伤害减少[mul]。</description>
+		</skill>
+		
+	</father>	
+	</data>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill index="1" name="湿身">
+			<name>waterFlamer_ArmsSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>湿身</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>underHurtMul</effectType>
+			<passiveSkillArr>waterFlamer_sniper</passiveSkillArr>
+			<mul>1.1</mul>
+			<duration>2</duration>
+			<stateEffectImg partType="head" con="add">generalEffect/waterFace</stateEffectImg>
+			
+			<description>使目标防御力降低[mul-1]，同时受到狙击枪的伤害提升50%。</description>
+		</skill>
+				
+	</father>
+	</data>

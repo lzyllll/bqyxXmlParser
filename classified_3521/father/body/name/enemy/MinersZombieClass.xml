@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<body>
+			<name>MinersZombie</name>
+			<cnName>矿工僵尸</cnName><headIconUrl>IconGather/MinersZombie</headIconUrl>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/MinersZombie340.swf</swfUrl>
+			
+			<lifeRatio>1.2</lifeRatio>
+			<rosRatio>0.2</rosRatio>
+			<showLevel>999</showLevel>
+			
+			<imgArr>
+				stand,move,run
+				,normalAttack,shootAttack
+				,sprintAttack,magicAttack
+				,hurt1,hurt2,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			<bossImgArr>sprintAttack,magicAttack</bossImgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>6</maxVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel />
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<skillArr>reflectiveShell,noBounce_enemy,MinersZombieBuff</skillArr>
+			<bossSkillArr>minersSprint,minersShake,meteoriteRain,weaponDefence,moreBullet,State_SpellImmunity,toLand</bossSkillArr>
+			<bossSkillArrCn />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel><cn>镐击</cn>
+					<hurtRatio>2</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<skillArr />
+					<hitImgUrl name="oreWormHit" />
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><cn>飞镐</cn>
+					<bulletLabel>MinersZombie_1</bulletLabel>
+					<grapRect>-450,-111,350,105</grapRect>
+					<hurtRatio>1.5</hurtRatio>
+					<attackType>holy</attackType>
+				</hurt>
+				
+				<hurt info="不加入ai选择">
+					<imgLabel>sprintAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<grapRect>-450,-111,350,105</grapRect>
+					<hurtRatio>0.000000001</hurtRatio>
+					<hurtMul>0.04</hurtMul>
+					<attackType>holy</attackType>
+					<hitImgUrl name="oreWormHit" />
+					<skillArr>minersSprintHit,offPassSkill</skillArr>
+				</hurt>
+				<hurt info="不加入ai选择">
+					<imgLabel>magicAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<grapRect>-450,-111,350,105</grapRect>
+					<hurtRatio>0.000000001</hurtRatio>
+					<hurtMul>0.45</hurtMul>
+					<attackType>holy</attackType>
+					<skillArr />
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		
+		
+		<bullet>
+			<name>MinersZombie_1</name>
+			<cnName>飞镐</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>3</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.5</attackDelay>
+			<bulletAngle>-179</bulletAngle>
+			<bulletAngleRange>70</bulletAngleRange>
+			<shootPoint>-71,-84</shootPoint>
+			<bulletSpeed>12</bulletSpeed>
+				
+			<penetrationGap>1000</penetrationGap>
+			<skillArr />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>MinersZombie/bullet</bulletImgUrl>
+			<smokeImgUrl con="filter">MinersZombie/bulletSmoke</smokeImgUrl>
+			<hitImgUrl name="oreWormHit" />
+		</bullet>
+		
+		
+		
+		<skill>
+			<name>MinersZombieBuff</name>
+			<cnName>矿工僵尸buff</cnName>
+			<ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<conditionType>passive</conditionType>
+			<condition>bodyAdd</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>MinersZombieBuff</effectType>
+			<duration>9999999</duration>
+		</skill>
+		<skill cnName="致命冲刺">
+			<name>minersSprint</name>
+			<cnName>致命冲刺</cnName><iconUrl36>SkillIcon/GasDefenseShake_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB>
+			<cd>9</cd>
+			<delay>0.1</delay>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me,range,enemy</target>
+			
+			<addType>instant</addType>
+			<effectType>no</effectType>
+			<duration>2</duration>
+			<range>999999</range>
+			 
+			<meEffectImg soundUrl="sound/silence_enemy" />
+			<stateEffectImg partType="mouth" con="add">skillEffect/silenceMore</stateEffectImg>
+			<meActionLabel>sprintAttack</meActionLabel>
+			<description>矿工僵尸瞬移到敌人面前，并给目标一致命冲刺，击中敌人时封锁其被动技能。</description>
+		</skill>
+		
+				<skill>
+					<name>minersSprintHit</name>
+					<cnName>冲刺碰撞</cnName>
+					<ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+					<noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+					<conditionType>passive</conditionType>
+					<condition>hit</condition>
+					<otherConditionArr>hurtIsAttack</otherConditionArr>
+					<target>target</target>
+					
+					<addType>state</addType>
+					<effectType>minersSprintHit</effectType>
+					<duration>0.1</duration>
+				</skill>
+				
+		<skill cnName="地震">
+			<name>minersShake</name>
+			<cnName>地震</cnName><iconUrl36 /><ignoreNoSkillB>1</ignoreNoSkillB>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB>
+			<cd>14</cd>
+			<delay>0.3</delay>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>bullet_minersShake</effectType>
+			<duration>6</duration>
+			<obj>"name":"minersShakeBullet"</obj>
+			<mul>0.3</mul>
+			<range>400</range>
+			<intervalT>0.5</intervalT>
+			 
+			<stateEffectImg name="minersShake" />
+			<pointEffectImg name="minersShakeBody" />
+			<meActionLabel>magicAttack</meActionLabel>
+			<description>矿工僵尸开启自身的地震发生器，每过[intervalT]秒震一次地面，对附近的敌人造成重大伤害，持续[duration]秒。</description>
+		</skill>
+					<bullet cnName="矿工僵尸-地震">
+						<name>minersShakeBullet</name>
+						<cnName>矿工僵尸-地震</cnName>
+						
+						<hurtRatio>0</hurtRatio>
+						<hurtMul>0.05</hurtMul>
+						<attackType>holy</attackType>
+						<noMagneticB>1</noMagneticB>
+						
+						<shakeAngle>5</shakeAngle>
+						<bulletLife>0.01</bulletLife>
+						<bulletWidth>50</bulletWidth>
+						<hitType>rect</hitType>
+						
+						<attackGap>0</attackGap>
+						<attackDelay>0</attackDelay>
+						<bulletAngle>270</bulletAngle>
+						<bulletNum>1</bulletNum>				
+							
+						<penetrationGap>1000</penetrationGap>
+						<penetrationNum>999</penetrationNum>
+							
+						<shootPoint>0,0</shootPoint>
+						<bulletSpeed>0</bulletSpeed>
+						
+						<imgClearDelay>0.30</imgClearDelay>
+						<bulletImgUrl>boomEffect/blackBoom</bulletImgUrl>
+						<hitImgUrl con="add" soundUrl="sound/body_hit">bladeHitEffect/blood</hitImgUrl>
+					</bullet>
+					
+		
+		<skill>
+			<name>reflectiveShell</name>
+			<cnName>反光服</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<otherConditionArr>hurtArmsType</otherConditionArr>
+			<conditionString>laser</conditionString>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>lostPro</effectType>
+			<mul>0.1</mul>
+			<duration>1</duration>
+			<stateEffectImg name="blindnessPhantomHit_state" />
+			<description>受到激光枪攻击时，反光服将激光发射到攻击者的眼中，使其致盲，攻击成功率降低[mul]，持续[duration]秒。</description>
+		</skill>
+	</father>
+</data>

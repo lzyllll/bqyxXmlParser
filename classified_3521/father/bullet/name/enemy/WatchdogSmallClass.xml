@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<bullet cnName="小看门狗-射击">
+			<name>WatchdogSmallShoot</name>
+			<cnName>小看门狗-射击</cnName>
+			<hurtRatio>0.2</hurtRatio>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.9</attackGap>
+			<attackDelay>0.3</attackDelay>
+			<bulletAngle>180</bulletAngle>
+			<bulletAngleRange>20</bulletAngleRange>
+			<shootNum>6</shootNum>
+			<shootGap>0.077</shootGap>
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<shootPoint>-37,-48</shootPoint>
+			<bulletSpeed>20</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl name="shoot_Watchdog_bullet" />
+			<hitImgUrl name="gun_hit" />
+		</bullet>
+	</father>	
+	
+	
+</data>

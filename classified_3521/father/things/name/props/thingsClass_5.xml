@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="props" cnName="黑色武器箱" smeltType="box">	
+		<things>
+			<name>blackArmsBox</name>
+			<cnName>黑色武器箱</cnName>
+			<zuobiNum>30000</zuobiNum>
+			<iconUrl>ThingsIcon/blackArmsBox</iconUrl>
+			<description>使用后将随机获得一把99级的黑色随机属性武器。</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<gift>arms;ranBlack;1;;;</gift>
+			<loveD num="1" />
+			<smeltD grade="-1" />
+		</things>
+		<things>
+			<name>blackRifleBox</name>
+			<cnName>黑色步枪箱</cnName>
+			<zuobiNum>30000</zuobiNum>
+			<iconUrl>ThingsIcon/blackRifleBox</iconUrl>
+			<description>使用后将随机获得一把99级的黑色随机属性步枪。</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<gift>arms;ranBlack;1;;;rifle</gift>
+			<loveD num="1" />
+			<smeltD grade="-1" />
+		</things>
+		<things>
+			<name>blackSniperBox</name>
+			<cnName>黑色狙击箱</cnName>
+			<zuobiNum>30000</zuobiNum>
+			<iconUrl>ThingsIcon/blackSniperBox</iconUrl>
+			<description>使用后将随机获得一把99级的黑色随机属性狙击枪。</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<gift>arms;ranBlack;1;;;sniper</gift>
+			<loveD num="1" />
+			<smeltD grade="-1" />
+		</things>
+		<things>
+			<name>blackShotgunBox</name>
+			<cnName>黑色散弹箱</cnName>
+			<zuobiNum>30000</zuobiNum>
+			<iconUrl>ThingsIcon/blackShotgunBox</iconUrl>
+			<description>使用后将随机获得一把99级的黑色随机属性散弹枪。</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<gift>arms;ranBlack;1;;;shotgun</gift>
+			<loveD num="1" />
+			<smeltD grade="-1" />
+		</things>
+		<things>
+			<name>blackPistolBox</name>
+			<cnName>黑色手枪箱</cnName>
+			<zuobiNum>30000</zuobiNum>
+			<iconUrl>ThingsIcon/blackPistolBox</iconUrl>
+			<description>使用后将随机获得一把99级的黑色随机属性手枪。</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<gift>arms;ranBlack;1;;;pistol</gift>
+			<loveD num="1" />
+			<smeltD grade="-1" />
+		</things>
+		<things>
+			<name>blackRocketBox</name>
+			<cnName>黑色火炮箱</cnName>
+			<zuobiNum>30000</zuobiNum>
+			<iconUrl>ThingsIcon/blackRocketBox</iconUrl>
+			<description>使用后将随机获得一把99级的黑色随机属性火炮。</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<gift>arms;ranBlack;1;;;rocket</gift>
+			<loveD num="1" />
+			<smeltD grade="-1" />
+		</things>
+		<things>
+			<name>blackLaserBox</name>
+			<cnName>黑色激光箱</cnName>
+			<zuobiNum>30000</zuobiNum>
+			<iconUrl>ThingsIcon/blackLaserBox</iconUrl>
+			<description>使用后将随机获得一把99级的黑色随机属性激光枪。</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<gift>arms;ranBlack;1;;;laser</gift>
+			<loveD num="1" />
+			<smeltD grade="-1" />
+		</things>
+		
+	</father>
+	</data>

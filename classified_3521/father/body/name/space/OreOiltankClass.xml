@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="space">
+		<body>
+			<name>OreOiltank</name>
+			<cnName>炸药桶</cnName>
+			<raceType>ship</raceType><lifeRatio>0.5</lifeRatio>
+			<swfUrl>swf/ship/OreOiltank.swf</swfUrl>
+			
+			<dieImg name="bigSpaceShake" /><imgType>normal</imgType>
+			<dieJumpMul>0</dieJumpMul>
+			<lockLeftB>1</lockLeftB>
+			<imgArr>
+				stand,die1
+			</imgArr>
+			
+			<hitRect>-42,-30,84,60</hitRect>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<maxVx>6</maxVx><motionD vRan="0" />
+			<skillArr>hitCheckDie10,spaceMoveLeftNoAI,OreOiltankDie</skillArr>
+		</body>
+				<skill>
+					<name>OreOiltankDie</name><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+					<cnName>炸药桶死亡</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+					<conditionType>passive</conditionType>
+					<condition>die</condition>
+					<target noMeB="1">me,range,we</target>
+					
+					<addType>instant</addType>
+					<effectType>normal_hurt</effectType>
+					<extraValueType>producterMaxLife</extraValueType>
+					<mul>10</mul>
+					<range>400</range>
+				</skill>
+	</father>
+</data>

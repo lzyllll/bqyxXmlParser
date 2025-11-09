@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="aircraft" cnName="战车定义">
+		<equip name="FlyDragonAir" cnName="异祖龙" rideLabel="RedMotoRide" defineType="normal" evolutionLabel="FrozenDragonAir">
+			<evolutionLv>2</evolutionLv>
+			<lifeMul>2.5</lifeMul>
+			<attackMul>5.5</attackMul><attackActionLabel>sprintAttack</attackActionLabel>
+			<duration>80</duration>
+			<cd>120</cd>
+			<addObjJson>{'dpsAll':0.22,'lifeAll':0.20}</addObjJson>
+			<skillArr>murderous_vehicle,WatchEagleAirDefence,vehicleFit_Gaia</skillArr>
+		</equip>
+		<equip name="FrozenDragonAir" cnName="冰霜祖龙" rideLabel="RedMotoRide" defineType="normal">
+			<evolutionLv>4</evolutionLv><mustCash>50</mustCash>
+			<lifeMul>3</lifeMul>
+			<attackMul>6.5</attackMul><attackActionLabel>sprintAttack</attackActionLabel>
+			<duration>80</duration>
+			<cd>120</cd>
+			<addObjJson>{'dpsAll':0.24,'lifeAll':0.20}</addObjJson>
+			<skillArr>murderous_vehicle,WatchEagleAirDefence,vehicleFit_Gaia</skillArr>
+		</equip>
+	</father>
+	
+	
+	
+	
+	
+	
+	</data>

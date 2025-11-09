@@ -1,0 +1,50 @@
+{
+  "father": {
+    "name": "enemy",
+    "cnName": "敌方",
+    "body": {
+      "index": 0,
+      "name": "Wanda",
+      "shell": "normal",
+      "cnName": "沃龙",
+      "raceType": "human",
+      "swfUrl": "swf/hero/Wanda342.swf",
+      "showLevel": 999,
+      "headIconUrl": "IconGather/Wanda",
+      "lifeBarExtraHeight": -20,
+      "imgArr": "standStop,standForward,standBack,standStop__squatStop\n\t\t\t\t,squatForward,squatStop,squatBack,squatStop__standStop\n\t\t\t\t,jumpDown__,jumpDown,jumpUp__jumpDown,jumpUp,__jumpUp\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1\n\t\t\t\t,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2\n\t\t\t\t,die1,die2,__stru,stru",
+      "hitRect": "-12, -90, 24, 90",
+      "squatHitRect": "-12,-50,24,50",
+      "hurtRectArr": [
+        "-15,-38,30,38",
+        "-12, -75, 24, 75",
+        "-12, -40, 24, 40"
+      ],
+      "maxVx": 10.5,
+      "squatMaxVx": 5,
+      "maxJumpNum": 1,
+      "flyType": "tween",
+      "armsNumber": 1,
+      "randomArmsRange": "yearDragon",
+      "skillArr": "crazy_enemy",
+      "bossSkillArr": "moreMissile_enemy"
+    },
+    "skill": {
+      "name": "scaleWolong",
+      "cnName": "缩放",
+      "conditionType": "passive",
+      "condition": "add",
+      "target": "me",
+      "addType": "state",
+      "effectType": "scaleWolong",
+      "range": 400,
+      "duration": 999999,
+      "description": "缩放",
+      "pointEffectImg": {
+        "value": "skillEffect/screaming_hero_target",
+        "partType": "mouth",
+        "con": "add"
+      }
+    }
+  }
+}

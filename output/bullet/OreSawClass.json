@@ -1,0 +1,63 @@
+{
+  "father": {
+    "name": "space",
+    "body": {
+      "name": "OreSaw",
+      "cnName": "矿棘",
+      "lifeRatio": 1,
+      "raceType": "ship",
+      "swfUrl": "swf/ship/OreSaw.swf",
+      "dieImg": {
+        "name": "stoneBoom"
+      },
+      "dieJumpMul": 0,
+      "lockLeftB": 1,
+      "imgArr": "stand,die1",
+      "hitRect": "-33,-22,66,44",
+      "motionState": "fly",
+      "flyType": "space",
+      "motionD": {
+        "vRan": 0,
+        "F_AIR": 4
+      },
+      "maxVx": 8,
+      "skillArr": "OreSawBuff,hitCheckDie,sumMeSaw"
+    },
+    "skill": [
+      {
+        "name": "OreSawBuff",
+        "ignoreSilenceB": 1,
+        "ignoreNoSkillB": 1,
+        "cnName": "矿棘buff",
+        "everNoClearB": 1,
+        "noBeClearB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "conditionType": "passive",
+        "condition": "add",
+        "target": "me",
+        "addType": "state",
+        "effectType": "OreSawBuff",
+        "duration": 9999999
+      },
+      {
+        "name": "sumMeSaw",
+        "ignoreSilenceB": 1,
+        "ignoreNoSkillB": 1,
+        "cnName": "召唤矿棘",
+        "everNoClearB": 1,
+        "noBeClearB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "conditionType": "passive",
+        "condition": "add",
+        "target": "me",
+        "addType": "state",
+        "effectType": "sumMeSaw",
+        "mul": 0.2,
+        "obj": "\"cnName\":\"矿棘\",\"num\":1,\"lifeMul\":0.5,\"dpsMul\":1,\"mulByFatherB\":1,\"maxNum\":10,\"lifeTime\":-1",
+        "duration": 1.2
+      }
+    ]
+  }
+}

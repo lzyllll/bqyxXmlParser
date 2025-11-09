@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="energy">
+		
+		<bullet color="darkgold" evoMaxLv="5" evoMustFirstLv="9" composeLv="99" chipNum="150">
+			<name>falconGun</name><extraMul>1</extraMul>
+			<cnName>隼武</cnName><noMagneticB>1</noMagneticB>
+			<aiShootRange>800</aiShootRange><iconUrl>specialGun/falconGunIcon2</iconUrl>
+			<attackType>holy</attackType>
+			<dpsMul>3.5</dpsMul>
+			<uiDpsMul>2</uiDpsMul>
+			
+			<capacity>15</capacity>
+			<attackGap>0.7</attackGap>
+			<reloadGap>1</reloadGap>
+			<bulletWidth>25</bulletWidth>
+			<bulletNum>3</bulletNum>				
+			<shootAngle>1</shootAngle>
+			
+			<armsArmMul>0.5</armsArmMul>
+			<upValue>10</upValue>
+			<shootShakeAngle>30</shootShakeAngle>
+			<shootRecoil>5</shootRecoil>
+			<screenShakeValue>9</screenShakeValue>
+			
+			<bulletLife>4</bulletLife>
+			<hitType>rect</hitType>
+				
+			<bulletSpeed>35</bulletSpeed>
+			<bulletSkillArr>falconGun</bulletSkillArr>
+			
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationGap>1000</penetrationGap>
+			<bounceD floor="0" body="0" />	
+			<critD mul="0" pro="0" />
+			<skillArr>Kill_AddCharger_ArmsSkill,Hit_AddLifeMul_ArmsSkill</skillArr>
+			<godSkillArr>enemyEmp,falconGunSkill</godSkillArr>
+			
+			<shootSoundUrl>specialGun/greedySnakeSound</shootSoundUrl>
+			<bulletImgUrl name="falconArmsBullet" />
+			<hitImgUrl name="greenEnergyHit" />
+			
+			
+			<bodyImgRange>specialGun/falconGun</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>消灭首领僵尸治疗兵(99级)</description>
+		</bullet>
+	</father>
+	</data>

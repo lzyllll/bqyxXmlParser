@@ -1,0 +1,147 @@
+{
+  "father": [
+    {
+      "name": "we",
+      "skills": {
+        "GreatSageShadow": {
+          "name": "GreatSageShadow",
+          "shell": "normal",
+          "cnName": "大圣分身",
+          "raceType": "human",
+          "showLevel": [
+            9999,
+            999
+          ],
+          "swfUrl": "swf/enemy/GreatSageShadow329.swf",
+          "headIconUrl": "greatSage/head_icon",
+          "motionD": {
+            "vRan": 0.2
+          },
+          "dieJumpMul": 0,
+          "dieImg": {
+            "name": "shadowDie"
+          },
+          "imgType": "bmp",
+          "imgArr": "stand,move\n\t\t\t\t,normalAttack1,normalAttack2,die1\n\t\t\t\t,greatAttack\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__",
+          "hitRect": "-12, -90, 24, 90",
+          "maxVx": 13,
+          "avtiveSkillCdOverT": 0.1,
+          "skillArr": "State_SpellImmunity,greatSageFly",
+          "hurtArr": {
+            "hurt": [
+              {
+                "cd": 3,
+                "imgLabel": "normalAttack1",
+                "cn": "戳棍",
+                "hurtRatio": 1,
+                "attackType": "holy",
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "name": "fistHit"
+                }
+              },
+              {
+                "imgLabel": "normalAttack2",
+                "cn": "挥棍",
+                "hurtRatio": 0.5,
+                "attackType": "holy",
+                "shakeValue": 4,
+                "hitImgUrl": {
+                  "name": "fistHit"
+                }
+              },
+              {
+                "info": "不加入ai选择",
+                "imgLabel": "greatAttack",
+                "noAiChooseB": 1,
+                "hurtRatio": 4,
+                "attackType": "holy",
+                "hitImgUrl": {
+                  "name": "yellowStickHit"
+                }
+              }
+            ]
+          }
+        },
+        "greatSageFly": {
+          "name": "greatSageFly",
+          "cnName": "筋斗云",
+          "ignoreNoSkillB": 1,
+          "ignoreImmunityB": 1,
+          "noSkillDodgeB": 1,
+          "noBeClearB": 1,
+          "everNoClearB": 1,
+          "conditionType": "passive",
+          "condition": "add",
+          "target": "me",
+          "addType": "state",
+          "effectType": "greatSageFly",
+          "duration": 9999999,
+          "stateEffectImg": {
+            "name": "greatSageCloud2"
+          },
+          "stateEffectImg2": {
+            "name": "groupSpeedUp_enemy_state"
+          },
+          "description": "在天空顶进入筋斗云飞行状态。"
+        }
+      }
+    },
+    {
+      "name": "fashionSkill",
+      "skills": {
+        "greatSageSkill": {
+          "name": "greatSageSkill",
+          "cnName": "分身",
+          "ignoreNoSkillB": 1,
+          "ignoreImmunityB": 1,
+          "noSkillDodgeB": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "otherConditionArr": "isWeaponHurt,summonedNumLess",
+          "conditionRange": 5,
+          "applyArr": "great_stickAttack,snow_daggerAttack,ghost_swordAttack,sec_bladeAttack",
+          "target": "me",
+          "minTriggerT": 0.1,
+          "addType": "instant",
+          "summonedUnitsB": 1,
+          "effectType": "greatSageSkill",
+          "extraValueType": "heroWeaponHurt",
+          "duration": 40,
+          "targetEffectImg": {
+            "name": "cloned_BlackLaer_me"
+          },
+          "obj": {
+            "cnName": "大圣分身",
+            "num": 1,
+            "lifeMul": 1,
+            "dpsMul": 0.1,
+            "position": "hurtPoint",
+            "mulByFatherB": true,
+            "skillArr": [
+              "State_noAiFind",
+              "State_InvincibleThrough",
+              "greatSageSkillHit"
+            ]
+          },
+          "description": "初始拥有56%的怒气。使用沃龙牌棍棒时将有专属动作，并有较大攻击范围；专属动作砍击敌人时，都会召唤一个持续[duration]秒的分身，同时还能触发在场的所有分身的砍击动作，如果双击副手键还可以将分身拉自身边。分身不受伤害，分身伤害与副手伤害相关；分身每次攻击敌人还能给大圣添加1点的怒气。当前最多能同时存在[conditionRange]个分身。使用其他时装外观时，也将拥有以上分身效果。"
+        },
+        "greatSageSkillHit": {
+          "name": "greatSageSkillHit",
+          "cnName": "分身吸取怒气",
+          "ignoreNoSkillB": 1,
+          "ignoreImmunityB": 1,
+          "noSkillDodgeB": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "meSummonedFather",
+          "addType": "instant",
+          "effectType": "addAnger",
+          "minTriggerT": 0.1,
+          "value": 1,
+          "description": "每次攻击敌人都会给主人添加[value]点的怒气。"
+        }
+      }
+    }
+  ]
+}

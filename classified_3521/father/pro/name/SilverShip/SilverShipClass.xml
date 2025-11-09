@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="SilverShip">
+		<pro cnName="强力子弹" name="silverBulletHurt" skill="silverBulletHurt" max="11" />
+		<pro cnName="全域光波" name="silverScreen" skill="silverScreen" max="11" />
+		<pro cnName="跟踪导弹" name="silverMissile" skill="silverMissile" max="11" />
+		<pro cnName="无敌护盾" name="silverShield" skill="silverShield" max="11" />
+		
+	</father>
+	</data>

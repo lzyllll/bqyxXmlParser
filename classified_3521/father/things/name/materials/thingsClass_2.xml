@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="materials" cnName="道具" smeltType="coin">
+		<things cnName="时空令牌">
+			<name>spaceToken</name>
+			<cnName>时空令牌</cnName>
+			<iconUrl>ThingsIcon/spaceToken</iconUrl>
+			<description>
+				该物品可让你在关卡中随机召唤出一位未出战的队友，每次使用消耗1个时空令牌。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店购买
+			</description>
+			<loveD num="15" />
+			<effectD levelUseLimitNum="1" />
+			<smeltD grade="0" addType="" price="5" />
+		</things>
+		<things cnName="灵魂芯片">
+			<name>soulChip</name>
+			<cnName>灵魂芯片</cnName>
+			<iconUrl>ThingsIcon/soulChip</iconUrl>
+			<description>
+				功能暂未开放。
+			</description>
+			<loveD num="15" />
+		</things>
+		
+		<things index="-1" cnName="摩卡令牌">
+			<name>mochaToken</name><addDropDefineB>1</addDropDefineB>
+			<cnName>摩卡令牌</cnName>
+			<iconUrl>ThingsIcon/mochaToken</iconUrl>
+			
+			<description>
+				点击自动使用，则玩家在进入普通关卡（不包含修罗模式）时，会自动消耗1张摩卡令牌，同时召唤摩卡参加战斗。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]秘境“异角龙”
+			</description>
+			<effectD type="skill" skillArr="addMocha" autoUseCondition="startLevel" endlessAutoUseOneB="1" />
+			<loveD num="15" />
+			<smeltD grade="1" addType="" price="10" />
+		</things>
+	</father>	
+	</data>

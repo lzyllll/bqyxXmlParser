@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="aircraft" cnName="战车定义">
+		<equip name="Punisher" cnName="制裁者" evolutionLabel="Adjudicator">
+			<canComposeB>1</canComposeB>
+			<shopB>1</shopB>
+			<main dpsMul="1.6" len="20" minRa="-180" maxRa="-179.9" actionLabel="mainAttack" swapLabel="mainChangeAttack" swapSoundUrl="Punisher/s_mainSwap" />
+			<sub dpsMul="1.6" len="0" minRa="90" maxRa="-160" actionLabel="subAttack" swapLabel="subChangeAttack" swapSoundUrl="Punisher/s_subSwap" />
+			<lifeMul>1.5</lifeMul>
+			<attackMul>0</attackMul>
+			<duration>80</duration>
+			<cd>120</cd>
+			<mustCash>250</mustCash>
+			<addObjJson>{'dpsAll':0.12,'lifeAll':0.12}</addObjJson>
+		</equip>
+		<equip name="Adjudicator" cnName="判决者" evolutionLabel="Chastener">
+			<evolutionLv>2</evolutionLv>
+			<mustCash>250</mustCash>
+			<main label="Punisher_main" dpsMul="2.3" len="20" minRa="-180" maxRa="-179.9" actionLabel="mainAttack" swapLabel="mainChangeAttack" swapSoundUrl="Adjudicator/s_mainSwap" />
+			<sub label="Punisher_sub" dpsMul="2.3" len="0" minRa="90" maxRa="-160" actionLabel="subAttack" swapLabel="subChangeAttack" swapSoundUrl="Adjudicator/s_subSwap" />
+			<lifeMul>2</lifeMul>
+			<attackMul>0</attackMul>
+			<duration>80</duration>
+			<cd>120</cd>
+			<addObjJson>{'dpsAll':0.16,'lifeAll':0.16}</addObjJson>
+			<skillArr>vehicleFit_fly,vehicleFit_Gaia</skillArr>
+		</equip>
+		<equip name="Chastener" cnName="惩戒者" evolutionLabel="Executioner">
+			<evolutionLv>4</evolutionLv>
+			<mustCash>300</mustCash>
+			<main label="Punisher_main" dpsMul="2.7" len="20" minRa="-180" maxRa="-179.9" actionLabel="mainAttack" swapLabel="mainChangeAttack" swapSoundUrl="Chastener/s_mainSwap" />
+			<sub label="Punisher_sub" dpsMul="2.7" len="0" minRa="90" maxRa="-160" actionLabel="subAttack" swapLabel="subChangeAttack" swapSoundUrl="Chastener/s_subSwap" />
+			<lifeMul>2.7</lifeMul>
+			<attackMul>0</attackMul>
+			<duration>80</duration>
+			<cd>120</cd>
+			<addObjJson>{'dpsAll':0.20,'lifeAll':0.20}</addObjJson>
+			<skillArr>vehicleFit_fly,vehicleFit_Gaia</skillArr>
+		</equip>
+		<equip name="Executioner" cnName="处决者">
+			<evolutionLv>5</evolutionLv>
+			<mustCash>300</mustCash>
+			<main label="Punisher_main" dpsMul="3.3" len="20" minRa="-180" maxRa="-179.9" actionLabel="mainAttack" swapLabel="mainChangeAttack" swapSoundUrl="Executioner/s_mainSwap" />
+			<sub label="Punisher_sub" dpsMul="3.3" len="0" minRa="90" maxRa="-160" actionLabel="subAttack" swapLabel="subChangeAttack" swapSoundUrl="Executioner/s_subSwap" />
+			<lifeMul>3.2</lifeMul>
+			<attackMul>0</attackMul>
+			<duration>80</duration>
+			<cd>120</cd>
+			<addObjJson>{'dpsAll':0.26,'lifeAll':0.26}</addObjJson>
+			<skillArr>executionerSkill,vehicleFit_fly,vehicleFit_Gaia</skillArr>
+		</equip>
+		
+		
+		<bullet cnName="制裁者-主炮">
+			<name>Punisher_main</name>
+			<cnName>制裁者-主炮</cnName>
+			
+			<hurtRatio>0.28</hurtRatio>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>2</bulletLife>
+			
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.5</attackGap>
+			<attackDelay>0.15</attackDelay>
+			<bulletNum>3</bulletNum>
+			<shootAngle>5</shootAngle>
+				
+			<shootRecoil>15</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			<bulletSpeed>45</bulletSpeed>
+			<boomD bodyB="1" floorB="1" radius="120" maxHurtNum="99" />
+			
+			<flipX>1</flipX>
+			<fireImgUrl soundUrl="sound/bigShoot" />
+			<bulletImgUrl raNum="30" con="filter">bullet/purpleFire</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom1" shake="2,0.2,10">boomEffect/boom3</hitImgUrl>
+		</bullet>
+		<bullet cnName="制裁者-副炮">
+			<name>Punisher_sub</name>
+			<cnName>制裁者-副炮</cnName>
+			
+			<hurtRatio>0.22</hurtRatio>
+			
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			<bulletWidth>800</bulletWidth>
+			<bulletShakeWidth>100</bulletShakeWidth>
+			
+			<attackGap>0.13</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletNum>3</bulletNum>
+			<shootAngle>3</shootAngle>
+				
+			<shootRecoil>4</shootRecoil>
+			<screenShakeValue>9</screenShakeValue>
+			<shakeAngle>3</shakeAngle>
+			<bulletSpeed>0</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<lineD lightColor="0xFF00FF" size="3" lightSize="8" blendMode="add" type="one" />
+			<fireImgUrl soundUrl="sound/laserShoot" />
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+		</bullet>
+	</father>
+	</data>

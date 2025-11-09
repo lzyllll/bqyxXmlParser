@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="bulletLine">
+	<body cnName="普通射线" name="longLine">longLine</body>
+	<body cnName="静止闪电" name="staticLightning" raNum="30" con="filter" len="50" time="0.03" waveAn="45" everFleshB="1" imgDieType="ranStop">generalEffect/lineLightning</body>
+	<body cnName="线条闪电" name="lineLightning" raNum="30" con="add" len="50" time="0.2" waveAn="45" imgDieType="ranPlay">generalEffect/lineLightning</body>
+	<body cnName="移动闪电" name="moveLightning" raNum="30" con="add" len="50" time="0.2" waveAn="45" everFleshB="1" imgDieType="ranPlay">generalEffect/lineLightning</body>
+	<body cnName="银狐射线" name="foxLightning" raNum="30" con="add" len="26" time="0.2" waveAn="35" everFleshB="1" imgDieType="stop">bullet/laserFox</body>
+	
+	 <body cnName="孔雀射线" name="peacockLine" raNum="30" con="add" len="34" everFleshB="1" imgDieType="die" time="-1" bottomLayerB="1">bullet/blueFire</body>
+</father>
+
+</data>

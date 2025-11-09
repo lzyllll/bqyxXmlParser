@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="rocket" cnName="火炮-特殊">
+		<bullet cnName="猩焰" name="redFire" kind="fire" color="black" dropLevelArr="93" dropBodyArr="HookWitch" evoMaxLv="12" evoMustFirstLv="4" composeLv="93" chipNum="150">
+			<name>redFire</name>
+			<cnName>猩焰</cnName>
+			<extraMul>1.5</extraMul>
+			<capacity>7</capacity>
+			<attackGap>1.3</attackGap>
+			<reloadGap>3</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>30</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<gunNum>1</gunNum>
+			
+			
+			<armsArmMul>0.65</armsArmMul>
+			<upValue>5</upValue>
+			<shootShakeAngle>40</shootShakeAngle>
+			<shootRecoil>12</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>2</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>1.8</dpsMul>
+			<uiDpsMul>2</uiDpsMul>
+			
+				
+			<bulletSpeed>35</bulletSpeed>
+			
+			<boomD bodyB="1" floorB="1" selfB="1" radius="150" />
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>2</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="0" body="3" />	
+			<critD mul="2" pro="0.2" />
+			
+			
+			<skillArr>Hit_blindness_ArmsSkill,Hit_disabled_ArmsSkill</skillArr>
+			<godSkillArr>Hit_imploding_godArmsSkill,redFireSkill</godSkillArr>
+			
+			<iconUrl />
+			<flipX>1</flipX>
+			<bulletImgUrl con="add" raNum="30">bullet/fireball</bulletImgUrl>
+			<hitImgUrl name="redFire_hit">boomEffect/boom2</hitImgUrl>
+			<hitFloorImgUrl name="redFire_hitFloor" />
+			<smokeImgUrl con="filter" raNum="30">bullet/fireballSmoke</smokeImgUrl>
+			<fireImgType />
+			<shootSoundUrl>specialGun/redFire_sound</shootSoundUrl>
+			
+			<bodyImgRange>specialGun/redFire</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>消灭首领斩之使者(93级)</description>
+		</bullet>
+		
+		
+		<bullet name="redFireYa" color="yagold">
+			<name>redFireYa</name>
+			<cnName>氩星猩焰</cnName>
+			
+			
+			<capacity>35</capacity>
+			<attackGap>0.6</attackGap>
+			<reloadGap>0.5</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>30</bulletWidth>
+			<bulletNum>1</bulletNum>				
+			<gunNum>1</gunNum>
+			
+			
+			<armsArmMul>0.65</armsArmMul>
+			<upValue>5</upValue>
+			<shootShakeAngle>40</shootShakeAngle>
+			<shootRecoil>12</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>2</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>1</dpsMul>
+				
+			<bulletSpeed>35</bulletSpeed>
+			
+			<boomD bodyB="1" floorB="1" selfB="1" radius="170" noExcludeBodyB="1" maxHurtNum="999" />
+			
+			<iconUrl />
+			<flipX>1</flipX>
+			<bulletImgUrl con="add" raNum="30">bullet/fireball</bulletImgUrl>
+			<hitImgUrl name="yearDog_boom" />
+			<smokeImgUrl con="filter" raNum="30">bullet/fireballSmoke</smokeImgUrl>
+			<fireImgType />
+			<shootSoundUrl>specialGun/redFire_sound</shootSoundUrl>
+			
+			<bodyImgRange>specialGun/redFire6</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+		</bullet>
+	</father>
+	</data>

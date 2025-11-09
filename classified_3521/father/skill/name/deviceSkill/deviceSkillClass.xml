@@ -1,0 +1,654 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="deviceSkill" cnName="装置技能">
+		
+		<skill name="悬停沙漏">
+			<name>timeCapsule</name>
+			<cnName>悬停沙漏</cnName><noBeClearB>1</noBeClearB>
+			
+			<cd>90</cd>
+			<changeText>持续时间：[duration]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>no</condition>
+			<target>me</target>
+			
+			<addType>state</addType><stateType>time</stateType>
+			<effectType>timeCapsule</effectType>
+			<mul>1.5</mul>
+			<duration>3</duration>
+			
+			<meEffectImg name="timeCapsule" />
+			<stateEffectImg name="timeCapsuleState" />
+			<description>让周围的时间停止下来，并增加子弹[mul-1]的伤害，期间无法使用副手，持续[duration]秒。期间再次按下装置键，或者使用载具、附身、变身类技能，则会结束时间停止。</description>
+			
+			<growth>
+				<skill><duration>3</duration></skill>
+				<skill><duration>5</duration></skill>
+				<skill><duration>7</duration></skill>
+			</growth>
+		</skill>
+		<skill name="悬停沙漏-任务专属">
+			<name>timeCapsuleT</name>
+			<cnName>悬停沙漏T</cnName>
+			
+			<cd>2</cd>
+			<changeText>持续时间：[duration]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>no</condition>
+			<target>me</target>
+			
+			<addType>state</addType><stateType>time</stateType>
+			<effectType>timeCapsule</effectType>
+			<mul>1.5</mul>
+			<duration>30</duration>
+			
+			<meEffectImg name="timeCapsule" />
+			<stateEffectImg name="timeCapsuleState" />
+			<description>让周围的时间停止下来，并增加枪支[mul-1]的伤害，持续[duration]秒。期间再次按下装置键，可结束时间停止。</description>
+			
+			<growth>
+				<skill><duration>5</duration></skill>
+				<skill><duration>10</duration></skill>
+				<skill><duration>15</duration></skill>
+				<skill><duration>20</duration></skill>
+				<skill><duration>30</duration></skill>
+				<skill><duration>40</duration></skill>
+			</growth>
+		</skill>
+		
+		
+		
+		
+		
+		<skill index="0" name="地震">
+			<name>earthquake</name>
+			<cnName>地震</cnName>
+			
+			<cd>60</cd>
+			<changeText>持续时间：[duration]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>300</conditionRange>
+			<target>me,range,enemy</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>dizziness</effectType>
+			<duration>1</duration>
+			<range>1000</range>
+			
+			<meEffectImg shake="10,1,40" soundUrl="sound/earthquake" />
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+			<description>释放一次强烈地震，使周围[range]码内的所有敌人进入眩晕状态，持续[duration]秒。</description>
+			
+			<growth>
+				<skill><duration>1</duration></skill>
+				<skill><duration>1.6</duration></skill>
+				<skill><duration>2.2</duration></skill>
+				<skill><duration>2.8</duration></skill>
+				<skill><duration>3.1</duration></skill>
+				<skill><duration>3.3</duration></skill>
+				<skill><duration>3.6</duration></skill>
+				<skill><duration>3.6</duration><linkArr>earthquake_link</linkArr><changeText>同时降低目标10%的防御力</changeText><description>释放一次强烈地震，使周围[range]码内的所有敌人进入眩晕状态，同时降低目标10%的防御力，持续[duration]秒。</description></skill>
+				<skill><duration>3.6</duration><ignoreImmunityB>1</ignoreImmunityB><linkArr>earthquake_link</linkArr><changeText>眩晕无视技能免疫</changeText><description>释放一次强烈地震，使周围[range]码内的所有敌人进入眩晕状态（无视技能免疫），同时降低目标10%的防御力，持续[duration]秒。</description></skill>
+			</growth>
+		</skill>
+						<skill cnName="地震-使目标防御力降低">
+							<name>earthquake_link</name>
+							<cnName>地震-使目标防御力降低</cnName>
+							
+							<conditionType>passive</conditionType>
+							<target>me,range,enemy</target>
+							
+							<addType>state</addType>
+							<effectType>underHurtMul</effectType>
+							<mul>1.1</mul>
+							<duration>3.6</duration>
+							<range>1000</range>
+						</skill>
+		<skill index="0" name="无尽轰炸">
+			<name>endlessRocket</name>
+			<cnName>无尽轰炮</cnName>
+			<cd>90</cd>
+			<changeText>导弹伤害倍数：[mul]</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>400</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<extraValueType>nowArmsDpsUIAndMul</extraValueType>
+			<duration>5</duration>
+			<mul>0.2</mul>
+			
+			<obj>"name":"endlessRocket","site":"me","flipB":true,"launcherB":true,"followB":true</obj>
+			
+			<description>释放技能后，释放者在5秒之内释放出50颗跟踪弹，每颗跟踪弹的伤害为释放者当前武器面板战斗力的[mul]。</description>
+			<growth>
+				<skill><mul>0.20</mul></skill>
+				<skill><mul>0.33</mul></skill>
+				<skill><mul>0.46</mul></skill>
+				<skill><mul>0.59</mul></skill>
+				<skill><mul>0.72</mul></skill>
+				<skill><mul>1.00</mul></skill>
+				<skill><mul>2.00</mul></skill>
+				<skill><mul>2.30</mul></skill>
+				<skill><mul>2.60</mul></skill>
+			</growth>
+		</skill>
+		
+		<skill index="0" cnName="召唤闪电塔">
+			<name>lightningTower</name>
+			<cnName>召唤闪电塔</cnName>
+			
+			<cd>90</cd>
+			<changeText>闪电伤害倍数：[obj.dpsMul]倍</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>200</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>summonedUnits</effectType>
+			<extraValueType>nowArmsDpsUIAndMul</extraValueType>
+			
+			<obj>"cnName":"闪电塔","num":1,"lifeMul":1,"dpsMul":1,"maxNum":1,"cx":0,"cy":-30,"mulByFatherB":true,"existB":false</obj>
+			<duration>15</duration>
+			
+			<meEffectImg soundUrl="sound/changeToZombie_enemy" con="add">boomEffect/showLight</meEffectImg>
+			<description>召唤出一座闪电塔，每隔1秒自动攻击周围的敌人。伤害值为召唤人当前武器面板战斗力的[obj.dpsMul]倍，闪电塔[duration]秒后消失。</description>
+			
+			<growth>
+				<skill><obj>"cnName":"闪电塔","num":1,"lifeMul":1,"dpsMul":1,"maxNum":1,"cx":0,"cy":-30,"mulByFatherB":true,"existB":false</obj></skill>
+				<skill><obj>"cnName":"闪电塔","num":1,"lifeMul":1,"dpsMul":2,"maxNum":1,"cx":0,"cy":-30,"mulByFatherB":true,"existB":false</obj></skill>
+				<skill><obj>"cnName":"闪电塔","num":1,"lifeMul":1,"dpsMul":3.5,"maxNum":1,"cx":0,"cy":-30,"mulByFatherB":true,"existB":false</obj></skill>
+				<skill><obj>"cnName":"闪电塔","num":1,"lifeMul":1,"dpsMul":5,"maxNum":1,"cx":0,"cy":-30,"mulByFatherB":true,"existB":false</obj></skill>
+				<skill><obj>"cnName":"闪电塔","num":1,"lifeMul":1,"dpsMul":6,"maxNum":1,"cx":0,"cy":-30,"mulByFatherB":true,"existB":false</obj></skill>
+				<skill><obj>"cnName":"闪电塔","num":1,"lifeMul":1,"dpsMul":9,"maxNum":1,"cx":0,"cy":-30,"mulByFatherB":true,"existB":false</obj></skill>
+				<skill><obj>"cnName":"闪电塔","num":1,"lifeMul":1,"dpsMul":18,"maxNum":1,"cx":0,"cy":-30,"mulByFatherB":true,"existB":false</obj></skill>
+				<skill><obj>"cnName":"闪电塔","num":1,"lifeMul":1,"dpsMul":27,"maxNum":1,"cx":0,"cy":-30,"mulByFatherB":true,"existB":false</obj></skill>
+				<skill><obj>"cnName":"闪电塔","num":1,"lifeMul":1,"dpsMul":36,"maxNum":1,"cx":0,"cy":-30,"mulByFatherB":true,"existB":false</obj></skill>
+			</growth>
+		</skill>
+		<skill index="0" name="能量外壳">
+			<name>energyShield</name>
+			<cnName>能量外壳</cnName>
+			
+			<cd>50</cd>
+			<changeText>持续时间：[duration]秒{n}作用范围：[range]码</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>weLifePerLess,attackTargetNoSameInvi</otherConditionArr>
+			<conditionRange>0.3</conditionRange>
+			<target>me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>energyShield</effectType>
+			<duration>1</duration>
+			<range>500</range>
+			
+			<meEffectImg soundUrl="sound/energyShield" />
+			<stateEffectImg con="add">skillEffect/energyShield</stateEffectImg>
+			<description>使周围[range]码内的友方单位获得能量外壳，能量外壳能抵挡任何伤害。持续[duration]秒。</description>
+			
+			<growth>
+				<skill><duration>1</duration><range>500</range></skill>
+				<skill><duration>2</duration><range>600</range></skill>
+				<skill><duration>2.5</duration><range>700</range></skill>
+				<skill><duration>3</duration><range>850</range></skill>
+				<skill><duration>3.5</duration><range>1000</range></skill>
+				<skill><duration>4</duration><range>1500</range></skill>
+				<skill><duration>4.4</duration><range>2000</range></skill>
+				<skill><duration>4.8</duration><range>2000</range></skill>
+				<skill><duration>5.2</duration><range>99999</range></skill>
+			</growth>
+		</skill>
+		
+		
+		<skill index="0" name="全域电击">
+			<name>electricDevicer</name>
+			<cnName>全域电击</cnName>
+			<noBeClearB>1</noBeClearB>
+			
+			<cd>65</cd>
+			<changeText>持续时间：[duration]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me,range,all</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeedNoReduce</effectType>
+			<duration>2</duration>
+			<value>0</value>
+			<mul>0</mul>
+			<range>99999</range>
+			<linkArr>electricDevicerClearKing</linkArr>
+			
+			<meEffectImg soundUrl="sound/paralysis_enemy_shoot" />
+			<targetEffectImg con="add">skillEffect/electricDevicer</targetEffectImg>
+			<stateEffectImg con="add" soundUrl="sound/paralysis_enemy_hit">skillEffect/paralysis_enemy</stateEffectImg>
+			
+			<description>向大地释放强大的电流，使地图上的所有单位（包括友方单位）无法移动，持续[duration]秒。此效果不会被净化技能净化。</description>
+			
+			<growth>
+				<skill><duration>2</duration></skill>
+				<skill><duration>3</duration></skill>
+				<skill><duration>4</duration></skill>
+				<skill><duration>5</duration></skill>
+				<skill><duration>6</duration></skill>
+				<skill><duration>7</duration></skill>
+				<skill><duration>6</duration><target>me,range,enemy</target><changeText>持续时间：[duration]秒{n}只对敌人有效</changeText><description>向大地释放强大的电流，使地图上的所有敌人无法移动，持续[duration]秒。此效果不会被净化技能净化。</description></skill>
+				<skill><duration>7</duration><target>me,range,enemy</target><changeText>持续时间：[duration]秒</changeText><description>向大地释放强大的电流，使地图上的所有敌人无法移动，持续[duration]秒。此效果不会被净化技能净化。</description></skill>
+				<skill><duration>8</duration><target>me,range,enemy</target><changeText>持续时间：[duration]秒</changeText><description>向大地释放强大的电流，使地图上的所有敌人无法移动，持续[duration]秒。此效果不会被净化技能净化。</description></skill>
+			</growth>
+		</skill>
+		
+		
+					<skill name="全域电击-清除王者之剑buff">
+						<name>electricDevicerClearKing</name>
+						<cnName>全域电击-清除王者之剑buff</cnName>
+						
+						<cd>1</cd>
+						
+						<conditionType>active</conditionType>
+						<target>me,range,all</target>
+						
+						<range>99999</range>
+						<addType>instant</addType>
+						<effectType>clearStateByBaseLabelArr</effectType>
+						<valueString>KingRabbitKingHit</valueString>
+					</skill>
+		
+					
+					<skill index="0" cnName="逐渐死亡">
+						<name>lightningTower_die</name>
+						<cnName>逐渐死亡</cnName>
+						
+						<conditionType>passive</conditionType>
+						<condition>add</condition>
+						<target>me</target>
+						
+						<addType>state</addType>
+						<effectType>lifeRate</effectType>
+						<mul>-0.05</mul>
+						<duration>999999</duration>
+						 
+						<description>每秒损失[mul]的生命值。</description>
+					</skill>
+					
+					<skill index="0" cnName="闪电">
+						<name>lightningTower_lightning</name>
+						<cnName>闪电</cnName>
+						
+						<conditionType>passive</conditionType>
+						<condition>interval</condition>
+						<target>me,near,enemy</target>
+						
+						<addType>instant</addType>
+						<effectType>lightningTower_lightning</effectType>
+						<extraValueType>producterDpsFactor</extraValueType>
+						<value>0</value>
+						<mul>1</mul>
+						<duration>0.5</duration>
+						<range>400</range>
+						
+						<targetEffectImg con="add" randomRange="10" soundUrl="sound/electric">bulletHitEffect/spark_motion2</targetEffectImg>
+						<stateEffectImg partType="2foot">skillEffect/disabled_enemy</stateEffectImg>
+						<description>闪电塔每隔[duration]秒攻击[range]范围内的敌人。</description>
+					</skill>
+		
+		
+		<skill index="0" cnName="穿梭">
+			<name>shuttleDevicer</name>
+			<cnName>穿梭</cnName>
+			
+			<cd>60</cd>
+			<changeText>持续时间：[duration]秒{n}技能冷却时间：[cd]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget,attackTargetNoSameInvi</otherConditionArr>
+			<conditionRange>2500</conditionRange>
+			<target>me</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>shuttleDevicer</effectType>
+			<valueString />
+			<mul>3</mul>
+			<duration>0.5</duration>
+			
+			<meEffectImg soundUrl="sound/teleport_enemy" con="add">lightEffect/basinShow</meEffectImg>
+			<stateEffectImg con="add">skillEffect/energyShield</stateEffectImg>
+			<stateEffectImg2 partType="shootPoint" con="add" raNum="30" followPartRaB="1">skillEffect/through_hero</stateEffectImg2>
+			<description>通过镭射器，穿梭到鼠标所在的位置并且无敌，镭元素使得武器能够无视地形攻击，并且提高[mul-1]的攻击力，持续[duration]秒（修罗模式不超过3秒）。</description>
+			
+			<growth>
+				<skill><cd>55</cd><duration>0.5</duration></skill>
+				<skill><cd>50</cd><duration>1.5</duration></skill>
+				<skill><cd>45</cd><duration>2.5</duration></skill>
+				<skill><cd>40</cd><duration>3.5</duration></skill>
+				<skill><cd>35</cd><duration>4.5</duration></skill>
+				<skill><cd>30</cd><duration>5.5</duration></skill>
+				<skill><cd>27</cd><duration>6.5</duration></skill>
+				<skill><cd>25</cd><duration>7</duration></skill>
+			</growth>
+		</skill>
+		
+		<skill cnName="黑洞">
+			<name>blackHoleDevicer</name>
+			<cnName>黑洞</cnName>
+			
+			<cd>50</cd>
+			<changeText>技能冷却时间：[cd]秒{n}作用范围：[range]码{n}最多伤害次数：[value]</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<doCondition>haveEnemyClearBulletRange</doCondition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>blackHoleDevicer</effectType>
+			<extraValueType>nowArmsTrueDps</extraValueType>
+			<value>1</value>
+			<range>300</range>
+			
+			<meEffectImg soundUrl="sound/invisibility_hero" partType="body">generalEffect/blackHoleHide</meEffectImg>
+			<description>清空[range]码内所有敌人子弹，每清除1个子弹就对释放子弹的敌人造成伤害，伤害等于角色当前武器面板单伤*射速，释放1次技能最多伤害[value]次。</description>
+			
+			<growth>
+				<skill><cd>20</cd><value>2</value><range>600</range></skill>
+				<skill><cd>18</cd><value>4</value><range>700</range></skill>
+				<skill><cd>16</cd><value>5</value><range>800</range></skill>
+				<skill><cd>14</cd><value>6</value><range>900</range></skill>
+				<skill><cd>12</cd><value>7</value><range>1000</range></skill>
+				<skill><cd>10</cd><value>10</value><range>1500</range></skill>
+				<skill><cd>9</cd><value>12</value><range>1500</range></skill>
+				<skill><cd>8</cd><value>15</value><range>1500</range></skill>
+			</growth>
+		</skill>
+		
+		
+		
+		
+		
+		<skill index="0" cnName="异龙蛋">
+			<name>dinosaurEgg</name>
+			<cnName>异龙蛋</cnName>
+			<summonedUnits>1</summonedUnits>
+			
+			<cd>25</cd>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>2000</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>summonedUnits</effectType>
+			<mul>3</mul>
+			<obj>"cnName":"无敌异龙蛋","num":1,"lifeMul":1000,"cx":-50,"cy":-50,"maxNum":10,"noUnderHurtB":1,"noAiFindB":1,"skillArr":["magneticField_egg","trueshot_eeg"]</obj>
+			<duration>10</duration>
+			
+			<meEffectImg soundUrl="sound/teleport_enemy" con="add" />
+			<description>产生一个无敌的异龙蛋，在异龙蛋300码范围内，获得10%攻击力加成，异龙蛋具有磁力场效果，并且敌人子弹无法穿透异龙蛋。异龙蛋持续存在[duration]秒。</description>
+			
+			<growth>
+				<skill><cd>25</cd></skill>
+				<skill><cd>20</cd></skill>
+				<skill><cd>16</cd></skill>
+			</growth>
+		</skill>
+		
+		<skill index="0" cnName="爆竹">
+			<name>squibDevice</name>
+			<cnName>爆竹</cnName>
+			
+			<cd>15</cd>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>400</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<extraValueType>nowArmsDpsOrNormal</extraValueType>
+			<obj>"name":"squibDevice","site":"me"</obj>
+			
+			<meEffectImg soundUrl="sound/teleport_enemy" />
+			<description>在单位脚下释放1个爆竹，爆竹碰到年兽后爆炸并对其造成惊吓，使它逃跑并且防御力降低70%。惊吓效果只对年兽有效。</description>
+			
+			<growth>
+				<skill><cd>15</cd></skill>
+			</growth>
+		</skill>
+		
+		<skill index="0" cnName="恐怖盒子">
+			<name>terroristBox</name>
+			<cnName>恐怖盒子</cnName>
+			
+			<cd>15</cd><continueNum>2</continueNum>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>400</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<extraValueType>nowArmsDpsOrNormal</extraValueType>
+			<obj>"name":"terroristBox","site":"mouse","minYB":true</obj>
+			
+			<meEffectImg soundUrl="sound/teleport_enemy" />
+			<description>能吓哭僵尸的神奇盒子，释放后一定范围内的敌方单位恐惧8秒，并能同时释放2次。</description>
+			
+			<growth>
+				<skill><cd>15</cd></skill>
+			</growth>
+		</skill>
+		
+		<skill index="0" cnName="无疆之章">
+			<name>knightsMedal</name>
+			<cnName>无疆骑士</cnName>
+			
+			<cd>60</cd>
+			<changeText>生命值倍数：[obj.lifeMul]</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>2000</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<summonedUnitsB>1</summonedUnitsB>
+			<effectType>summonedKnights</effectType>
+			<mul>1</mul>
+			<duration>30</duration>
+			
+			<obj>"cnName":"无疆骑士","num":1,"lifeMul":15,"dpsMul":1,"mulByFatherB":true,"maxNum":1,"lifeTime":30,"skillArr":["crazy_knights","boundless_enemy"]</obj>
+			
+			<meEffectImg soundUrl="sound/teleport_enemy" />
+			<description>召唤出无疆骑士为你战斗，持续[duration]秒！无疆骑士生命倍数:[obj.lifeMul]、战斗力倍数:[obj.dpsMul]。修罗模式下，持续时间减半。</description>
+			
+			<growth>
+				<skill />
+				<skill><obj>"cnName":"无疆骑士","num":1,"lifeMul":35,"dpsMul":1,"mulByFatherB":true,"maxNum":1,"lifeTime":30,"skillArr":["crazy_knights","boundless_enemy"]</obj></skill>
+				<skill>
+					<obj>"cnName":"无疆骑士","num":1,"lifeMul":50,"dpsMul":2,"mulByFatherB":true,"maxNum":1,"lifeTime":30,"skillArr":["crazy_knights","boundless_enemy"]</obj>
+					<changeText>生命值倍数：[obj.lifeMul]{n}战斗力倍数：[obj.dpsMul]</changeText>
+				</skill>
+				<skill>
+					<obj>"cnName":"无疆骑士","num":1,"lifeMul":70,"dpsMul":3,"mulByFatherB":true,"maxNum":1,"lifeTime":30,"skillArr":["crazy_knights","boundless_enemy"]</obj>
+					<changeText>生命值倍数：[obj.lifeMul]{n}战斗力倍数：[obj.dpsMul]</changeText>
+				</skill>
+			</growth>
+		</skill>
+		
+		<skill index="0" cnName="暴君之骷">
+			<name>skeletonMedal</name>
+			<cnName>召唤暴君</cnName>
+			
+			<cd>90</cd>
+			<changeText>持续时间：[duration]</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>2000</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<summonedUnitsB>1</summonedUnitsB>
+			<effectType>summonedKnights</effectType>
+			<mul>1</mul>
+			<duration>20</duration>
+			
+			<obj>"cnName":"暴君","num":1,"lifeMul":50,"dpsMul":3,"mulByFatherB":true,"maxNum":1,"skillArr":["State_Invincible","knife_skeleton2","crazy_skeleton","teleport_skeleton","atry_skeleton"]</obj>
+			
+			<meEffectImg soundUrl="sound/teleport_enemy" />
+			<description>召唤出无敌暴君为你战斗，持续[duration]秒！</description>
+			
+			<growth>
+				<skill><duration>15</duration></skill>
+				<skill><duration>20</duration></skill>
+				<skill><duration>25</duration></skill>
+				<skill><duration>30</duration></skill>
+			</growth>
+		</skill>
+		
+		<skill name="skeletonWand">
+			<name>skeletonWand</name>
+			<cnName>骷髅权杖</cnName>
+			
+			<cd>35</cd>
+			<changeText>技能冷却时间：[cd]</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>600</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			
+			<obj>"name":"skeletonWandBullet","site":"me","flipB":true</obj>
+			
+			<meEffectImg soundUrl="sound/lifeReplace_enemy" />
+			<description>发出亡命之光，对目标造成其当前生命值10%的伤害，无视技能免疫。99级主线任务效果消失。</description>
+			<growth>
+				<skill><cd>35</cd></skill>
+				<skill><cd>27</cd></skill>
+			</growth>
+		</skill>
+					<skill name="skeletonWandHit">
+						<name>skeletonWandHit</name>
+						<cnName>骷髅权杖-击中</cnName>
+						<noSkillDodgeB>1</noSkillDodgeB>
+						<ignoreImmunityB>1</ignoreImmunityB>
+						
+						<conditionType>passive</conditionType>
+						<condition>hit</condition>
+						<otherConditionArr>noHardB,noUnendLevelB,noSkillNoTargetMaxLifeB</otherConditionArr>
+						<target>target</target>
+						
+						<changeHurtB>1</changeHurtB>
+						
+						<addType>instant</addType>
+						<effectType>skeletonWandHit</effectType>
+						<mul>0.1</mul>
+					</skill>
+		
+		
+		<skill>
+			<name>hookDevice</name>
+			<cnName>变身</cnName>
+			<cd>160</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess50</otherConditionArr>
+			<target>me</target>
+			<changeText>持续时间：[duration]秒</changeText>
+			
+			<addType>instant</addType>
+			<summonedUnitsB>1</summonedUnitsB>
+			<effectType>hookDevice</effectType>
+			<extraValueType>heroMaxArmsDps</extraValueType>
+			
+			<valueString>yanluoSkill</valueString>
+			<linkArr>hookDeviceYanluo</linkArr>
+			<duration>10</duration>
+			<meEffectImg name="changeToGaia_me" />
+			
+			<obj>"cnName":"斩之使者","num":1,"lifeMul":100,"dpsMul":30,"mulByFatherB":1,"maxNum":1,"skillArr":["State_SpellImmunity","alloyShell_10","HookWitchHook","HookWitchRoll","HookWitchShake","mulHurtToValue","State_AddMove50"]</obj>
+			<description>变身斩之使者，斩之使者的基础伤害为角色最高武器实际战斗力的[obj.dpsMul]倍，持续[duration]秒。双击载具键可退出。</description>
+			<growth>
+				<skill><duration>10</duration></skill>
+				<skill><duration>15</duration></skill>
+				<skill><duration>20</duration></skill>
+			</growth>
+		</skill>			
+					<skill>
+						<name>hookDeviceYanluo</name>
+						<cnName>斩之加成</cnName><iconUrl36>SkillIcon/murderous_hero_36</iconUrl36>
+						
+						<conditionType>passive</conditionType>
+						<condition>noLink</condition>
+						<target>me</target>
+						
+						<addType>state</addType>
+						<effectType>hookDeviceYanluo</effectType>
+						<mul>3</mul>
+						<duration>5</duration>
+						
+						<stateEffectImg name="hookDeviceYanluo" />
+						<description>。</description>
+					</skill>
+		
+					
+					
+		
+		<skill>
+			<name>phantomDevice</name>
+			<cnName>集体照</cnName><noInClonedB>1</noInClonedB>
+			<cd>120</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target noMeB="1">me,range,we</target>
+			
+			<addType>instant</addType>
+			<effectType>phantomDevice</effectType>
+			<value>1</value>
+			<mul>1</mul>
+			<secMul>1</secMul>
+			<duration>30</duration>
+			<range>9999</range>
+			
+			<description>为[range]码范围内的我方单位（不包括角色、尸宠、载具、魂卡、分身）产生[value]个分身，持续[duration]秒。</description>
+			<growth>
+				<skill><duration>30</duration></skill>
+			</growth>
+		</skill>			
+		
+	</father>
+	
+	
+	</data>

@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="petBodySkill" cnName="雷克">
+		<skill index="0" cnName="充能">
+			<name>charged_PetLake</name>
+			<cnName>充能</cnName>
+			
+			<cd>90</cd>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			<delay>0.66</delay>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>masterAndMelifePerLess</otherConditionArr>
+			<conditionRange>0.5</conditionRange>
+			<target>me,range,we</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>charged_PetLake</effectType>
+			<value>1.5</value>
+			<mul>0.1</mul>
+			<range>400</range>
+			<duration>5</duration>
+			 
+			
+			<stateEffectImg partType="body" con="add" raNum="1">generalEffect/lakeBuff</stateEffectImg>
+			<description>当P1角色或者自身血量少于50%时候，瞬移到P1角色身边，使周围[range]码的我方单位受到伤害降低[1-mul]、移动速度增加[value]倍，持续[duration]秒。</description>
+			
+			<meActionLabel>chargedAttack</meActionLabel>
+			<growth>
+				<skill><cd>90</cd></skill>
+				<skill><cd>80</cd></skill>
+				<skill><cd>70</cd></skill>
+				<skill><cd>60</cd></skill>
+				<skill><cd>50</cd></skill>
+				<skill><cd>40</cd></skill>
+				<skill><cd>30</cd></skill>
+				<skill><cd>25</cd></skill>
+				<skill><cd>20</cd></skill>
+			</growth>
+		</skill>
+		<skill index="0" cnName="辐射光球">
+			<name>lightBall_PetLake</name>
+			<cnName>辐射光球</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			<cd>90</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>400</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			 
+			<meActionLabel>ballAttack</meActionLabel>
+			<description>向前方发射缓慢移动的光球，对敌人造成持续伤害，受到伤害的敌人移动速度降低90%，同时使其无法释放技能。</description>
+			<growth>
+				<skill><cd>90</cd></skill>
+				<skill><cd>80</cd></skill>
+				<skill><cd>70</cd></skill>
+				<skill><cd>60</cd></skill>
+				<skill><cd>50</cd></skill>
+				<skill><cd>40</cd></skill>
+				<skill><cd>30</cd></skill>
+				<skill><cd>26</cd></skill>
+				<skill><cd>23</cd></skill>
+			</growth>
+		</skill>
+		<skill index="0" cnName="静电过载">
+			<name>static_PetLake</name>
+			<cnName>静电过载</cnName>
+			
+			<cd>45</cd>
+			<changeText>技能冷却时间：[cd]秒{n}回复[mul]的血量</changeText>
+			<delay>0.4</delay>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>200</conditionRange>
+			<target>me,range,enemy</target>
+			
+			<addType>stateAndInstant</addType>
+			<effectType>static_PetLake</effectType>
+			<mul>0.01</mul>
+			<range>300</range>
+			<duration>2</duration>
+			 
+			<targetEffectImg soundUrl="sound/paralysis_enemy_hit" con="add">generalEffect/lakeBoom</targetEffectImg>
+			<stateEffectImg con="add">skillEffect/paralysis_enemy</stateEffectImg>
+			<description>当周围有敌方单位时候，向P1角色方向瞬移，并使原来周围[range]码内的敌人麻痹[duration]秒， 并回复自身和P1角色[mul]的血量。</description>
+			
+			<meActionLabel>staticAttack</meActionLabel>
+			<growth>
+				<skill><cd>45</cd><mul>0.01</mul></skill>
+				<skill><cd>40</cd><mul>0.03</mul></skill>
+				<skill><cd>35</cd><mul>0.05</mul></skill>
+				<skill><cd>30</cd><mul>0.07</mul></skill>
+				<skill><cd>25</cd><mul>0.09</mul></skill>
+				<skill><cd>20</cd><mul>0.11</mul></skill>
+				<skill><cd>15</cd><mul>0.15</mul></skill>
+				<skill><cd>15</cd><mul>0.17</mul></skill>
+				<skill><cd>15</cd><mul>0.19</mul></skill>
+			</growth>
+		</skill>
+		<skill index="0" cnName="敏捷光环">
+			<name>agile_PetLake</name>
+			<cnName>敏捷光环</cnName>
+			<changeText>增加[mul-1]的射击速度</changeText>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>attackGapMul</effectType>
+			<mul>1.07</mul>
+			<duration>2</duration>
+			<range>500</range>
+			
+			<stateEffectImg partType="2hand" con="add" raNum="30">skillEffect/smallFire</stateEffectImg>
+			<description>提升周围[range]码以内的我方射击单位[mul-1]的射击速度。</description>
+			<growth>
+				<skill><mul>1.02</mul></skill>
+				<skill><mul>1.04</mul></skill>
+				<skill><mul>1.06</mul></skill>
+				<skill><mul>1.08</mul></skill>
+				<skill><mul>1.10</mul></skill>
+				<skill><mul>1.11</mul></skill>
+				<skill><mul>1.12</mul></skill>
+				<skill><mul>1.13</mul></skill>
+				<skill><mul>1.14</mul></skill>
+			</growth>
+		</skill>
+	</father>
+	</data>

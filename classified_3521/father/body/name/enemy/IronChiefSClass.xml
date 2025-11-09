@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<body index="0" name="冥王" shell="compound">
+			
+			<name>IronChiefS</name>
+			<cnName>冥王</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/IronChiefS.swf</swfUrl>
+			<headIconUrl>IconGather/PetIronChiefS</headIconUrl>
+			<showLevel>999</showLevel>
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move,hurt1,die1
+				,normalAttack,clearAttack,sprintAttack,rainAttack
+			</imgArr>
+			
+			<hitRect>-18,-86,36,86</hitRect>
+			
+			<maxVx>9</maxVx>
+			<maxJumpNum>1</maxJumpNum>
+			<motionState>fly</motionState>
+			<flyType>tween</flyType>
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr />
+			<bossSkillArr>ruleRangeIron,vertigoArmorIron,clearAttackIron,rainAttackIron</bossSkillArr>
+			<bossSkillArrCn />
+			<extraAIClassLabel>IronChiefS_AIExtra</extraAIClassLabel>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<attackType>holy</attackType>
+					<skillArr>hammerIron</skillArr>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/metal_hit1">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				
+				<hurt info="冲刺" cd="6">
+					<imgLabel>sprintAttack</imgLabel>
+					<grapRect>-660,-82,600,132</grapRect>
+					<hurtRatio>0.000000001</hurtRatio>
+					<oneHurtB>1</oneHurtB>
+					<hurtMul>0.4</hurtMul>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit1">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+				<hurt info="卸甲">
+					<imgLabel>clearAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>10</hurtRatio>
+					<attackType>holy</attackType>
+					<noShootB>1</noShootB>
+					<grapRect>-400,-111,100,150</grapRect>
+				</hurt>
+				<hurt info="暴雨审判">
+					<imgLabel>rainAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<noShootB>1</noShootB>
+					<grapRect>-400,-111,100,150</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<bullet>
+			<name>rainBulletIron</name>
+			<cnName>冥王暴雨</cnName><bulletSkillArr>rainBulletIron</bulletSkillArr>
+			<attackType>holy</attackType><hurtRatio>0</hurtRatio><hurtMul>0.1</hurtMul>
+			<bulletAngle>90</bulletAngle><bulletLife>10</bulletLife><bulletWidth>200</bulletWidth><hitType>longLine</hitType>
+			<shootPoint>0,-10000</shootPoint>
+			<shootNum>20</shootNum><shootGap>0.5</shootGap>
+			<penetrationGap>0</penetrationGap><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			<skillArr>rainBulletHitIron</skillArr>
+			<bulletSpeed>10</bulletSpeed>
+			<flipX>1</flipX><bulletImgUrl raNum="1">IronChiefS/bullet</bulletImgUrl>
+			<hitImgUrl soundVolume="0.4" soundUrl="boomSound/midBoom2">boomEffect/boom2</hitImgUrl>
+		</bullet>
+		
+		
+		
+		<skill cnName="缴械">
+			<name>clearAttackIron</name>
+			<cnName>缴械</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>5</cd>
+			<delay>0.52</delay>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>1400</conditionRange>
+			<target systemType="hero">me,range,enemy</target>
+			<addType>instant</addType><effectType>clearAttackIron</effectType>
+			<valueString>shotgun</valueString>
+			<range>1500</range>
+			<meActionLabel>clearAttack</meActionLabel>
+			<pointEffectImg raNum="30" con="filter" len="50" time="0.1" waveAn="45" everFleshB="1" imgDieType="ranStop" soundUrl="IronChiefS/clear1">generalEffect/lineLightning</pointEffectImg>
+			<description>清空敌人身上散弹的弹药，清空的弹药越多，敌人受到伤害就越高！</description>
+		</skill>
+		<skill>
+			<name>hammerIron</name>
+			<cnName>击晕</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			<noBeClearB /><ignoreNoSkillB>1</ignoreNoSkillB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>dizziness</effectType>
+			<effectProArr>0.33</effectProArr>
+			<duration>2</duration>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+			<description>有[effectProArr.0]的几率击晕目标，持续[duration]秒。</description>
+		</skill>
+		<skill>
+			<name>ruleRangeIron</name>
+			<cnName>统治圈</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<intervalT>0.1</intervalT>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>clearEnemyFollowBullet</effectType>
+			<range>300</range>
+			 
+			<description>快速清除[range]码内敌人发射的卡特子弹。</description>
+		</skill>
+		
+		<skill>
+			<name>vertigoArmorIron</name>
+			<cnName>眩晕护甲</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<ignoreNoSkillB>1</ignoreNoSkillB><noSkillDodgeB>1</noSkillDodgeB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>vertigoArmorIron</effectType>
+			<mul>0.1</mul>
+			<duration>9999999</duration>
+			 
+			<stateEffectImg partType="body" con="add">skillEffect/rune_blue_shield</stateEffectImg>
+			<description>被眩晕时受到伤害降低[1-mul]。</description>
+		</skill>
+		
+		<skill>
+			<name>rainAttackIron</name>
+			<cnName>暴雨审判</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>17</cd>
+			<delay>1</delay>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			
+			<obj>"name":"rainBulletIron","site":"mouse","flipB":true,"launcherB":true</obj>
+			
+			<meActionLabel>rainAttack</meActionLabel>
+			<description>冥王使天空下起锥仗雨，击中敌人后使其武器射速下降80%，持续9秒，不可净化。</description>
+		</skill>
+					<skill>
+						<name>rainBulletHitIron</name>
+						<cnName>腐蚀</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+						<ignoreNoSkillB>1</ignoreNoSkillB><noBeClearB>1</noBeClearB>
+						
+						<conditionType>passive</conditionType>
+						<condition>hit</condition>
+						<target>target</target>
+						
+						<addType>state</addType>
+						<effectType>attackGapMul</effectType>
+						<mul>0.2</mul>
+						<duration>9</duration>
+						<stateEffectImg partType="shootPoint,hand_left,hand_right" raNum="25" followPartRaB="1">bulletHitEffect/smoke_black</stateEffectImg>
+						<description>击中目标后腐蚀对方手上的枪支，降低枪支[1-mul]的射击速度，持续[duration]秒。</description>
+					</skill>
+	</father>
+</data>

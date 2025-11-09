@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<body index="0" name="水管僵尸">
+			
+			<name>PipeZombie</name>
+			<cnName>水管僵尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/PipeZombie.swf</swfUrl>
+			
+			<lifeRatio>1.2</lifeRatio>
+			<showLevel>91</showLevel>
+			
+			<imgArr>
+				stand,move
+				,normalAttack,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			
+			<hitRect>-14,-76,28,76</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>6</maxVx>
+			
+			<nextAttackTime>1</nextAttackTime>
+			<extraAIClassLabel>PipeZombie_AIExtra</extraAIClassLabel>
+			
+			<skillArr />
+			<bossSkillArr />
+			<bossSkillArrCn />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<hitImgUrl con="add" soundUrl="sound/body_hit" raNum="4">bulletHitEffect/fitHit</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>
+	</father>	
+	
+	
+</data>

@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="狂战狼">
+		<bullet cnName="狂战狼-召唤群狼">
+			<name>summonWolf_FightWolf</name>
+			<cnName>狂战狼-召唤群狼</cnName>
+			
+			<hurtRatio>0</hurtRatio>
+			<hurtMul>0.05</hurtMul>
+			
+			<bulletAngle>179.9</bulletAngle>
+			<shakeAngle>0</shakeAngle>
+			<bulletLife>4</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.8</attackGap>
+			<attackDelay>0.3</attackDelay>
+			<bulletNum>1</bulletNum>				
+			<shootNum>20</shootNum>					
+			<shootGap>0.05</shootGap>					
+			<shootAngle>0</shootAngle>					
+			<positionD specialType="summonWolf_FightWolf" />
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<twoHitGap>0.5</twoHitGap>
+				
+			<shootPoint>0,0</shootPoint>
+			<bulletSpeed>23</bulletSpeed>
+			<speedD random="0.2" />
+			<gravity>0</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1" con="add">generalEffect/wolfSummonBullet</bulletImgUrl>
+			<bulletLeftImgUrl raNum="1" con="add">generalEffect/wolfSummonBullet2</bulletLeftImgUrl>
+			<hitImgUrl soundUrl="sound/vehicle_hit1" soundVolume="1">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		<bullet cnName="狂战狼-召唤群狼-带有减速技能">
+			<name>summonWolf_FightWolf_slow</name>
+			<cnName>狂战狼-召唤群狼</cnName>
+			
+			<hurtRatio>0</hurtRatio>
+			<hurtMul>0.05</hurtMul>
+			
+			<bulletAngle>179.9</bulletAngle>
+			<shakeAngle>0</shakeAngle>
+			<bulletLife>4</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.8</attackGap>
+			<attackDelay>0.3</attackDelay>
+			<bulletNum>1</bulletNum>				
+			<shootNum>20</shootNum>					
+			<shootGap>0.05</shootGap>					
+			<shootAngle>0</shootAngle>					
+			<positionD specialType="summonWolf_FightWolf" />
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<twoHitGap>0.5</twoHitGap>
+				
+			<shootPoint>0,0</shootPoint>
+			<bulletSpeed>23</bulletSpeed>
+			<speedD random="0.2" />
+			<gravity>0</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1" con="add">generalEffect/wolfSummonBullet</bulletImgUrl>
+			<bulletLeftImgUrl raNum="1" con="add">generalEffect/wolfSummonBullet2</bulletLeftImgUrl>
+			<hitImgUrl soundUrl="sound/vehicle_hit1" soundVolume="1">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		<bullet cnName="狂战狼-大地之怒">
+			<name>anger_FightWolf</name>
+			<cnName>狂战狼-大地之怒</cnName>
+			
+			<hurtRatio>0</hurtRatio>
+			<hurtMul>0.05</hurtMul>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>0.04</bulletLife>
+			<bulletWidth>100</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>270</bulletAngle>
+			<bulletNum>1</bulletNum>				
+			<shootNum>24</shootNum>					
+			<shootGap>0.03</shootGap>					
+			<shootAngle>0</shootAngle>					
+			<positionD specialType="anger_FightWolf" />
+				
+			<penetrationGap>1000</penetrationGap>
+			<skillArr>blindness_anger_PetFightWolf</skillArr>
+				
+			<shootPoint>0,0</shootPoint>
+			<bulletSpeed>0</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<imgClearDelay>0.30</imgClearDelay>
+			<bulletImgUrl>boomEffect/blackBoom</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="sound/body_hit">bladeHitEffect/blood</hitImgUrl>
+		</bullet>
+	</father>	
+	
+	</data>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill>
+			<name>falconGunSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>隼啸</cnName>
+			<changeHurtB>1</changeHurtB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>falconGunSkill</effectType>
+			<mul>5</mul>
+			<secMul>2.8</secMul>
+			<pointEffectImg name="waveBoom" />
+			<description>每次3颗子弹交汇处击中敌人，都会造成额外[mul-1]的伤害，其他区域伤害+[secMul-1]。</description>
+		</skill>
+		
+		<skill>
+			<name>falconGunSkill2</name><noRandomListB>1</noRandomListB>
+			<cnName>穿透</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>killTarget</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>no</effectType>
+			<description>无视致盲效果，同时射程不会被负面技能影响（比如狭隘领域等）。</description>
+		</skill>
+	</father>
+</data>

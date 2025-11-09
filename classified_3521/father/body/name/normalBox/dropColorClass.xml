@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="normalBox">
+		<body>
+				
+				<name>			coin,			life,			charger,		skillStone,		equip,		arms,		taxStamp</name>
+				<normalPro>	0.1,			0.04,		0.02,			0.014,				0.018,		0.018,		0.01</normalPro>
+				<superPro>		1,				0.5,			1,					0.14,				0.5,			0.5,			0.1</superPro>
+				<bossPro>		1,				2,				1,					0.73,				0.5,			0.5,			0.6</bossPro>
+		</body>
+		<equip>
+				
+				<name>			white,		green,		blue,		purple,		orange,		red</name>
+				<normalNum>	1,				2,				2,				2,				2,					2</normalNum>
+				<specialNum>	0,				0,				1,				2,				3,					3</specialNum>
+				<redNum>		0,				0,				0,				0,				0,					1</redNum>
+				<lvRange>		-5~0,		-5~0,		-4~0,		-3~0,		-1~0,			0~1</lvRange>
+				
+				<normalPro>0.25,  0.6,  0.12,  0.026,  0.0034,  0.0006</normalPro>
+				<superPro>0,  0.42,  0.5,  0.07,  0.01,  0.0025</superPro>
+				<bossPro>0,  0,  0.83,  0.13,  0.03,  0.01</bossPro>
+
+				
+				<itemsLvRange>	-7~-3,		-6~-2,		-4~-1,		-2~0,	-1~0,			0~0</itemsLvRange>
+		</equip>
+		<arms>
+				<name>			white,		green,		blue,		purple,		orange,		red</name>
+				<specialNum>	0,				0,				0,				1,				2,					3</specialNum>
+				<skillNum>		0,				0,				0.85,		1,				1,					2</skillNum>
+				<godSkillNum>0,				0,				0,				0,				0,					1</godSkillNum>
+				<proPro>			0.9,			0.8,			0.6,			0.6,			0.4,				0.5</proPro>
+				<dpsRange>	-5~0,		-5~0,		-4~0,		-1~0,		-0.5~0,		0~1</dpsRange>
+			
+				<normalPro>0.25,  0.6,  0.12,  0.026,  0.0034,  0.0006</normalPro>
+				<superPro>0,  0.42,  0.5,  0.07,  0.01,  0.0025</superPro>
+				<bossPro>0,  0,  0.83,  0.13,  0.03,  0.01</bossPro>
+				
+				<itemsLvRange>	-7~-3,		-6~-2,		-4~-2,		-2~0,	-1~0,			0~0</itemsLvRange>
+		</arms>
+	</father>
+	</data>

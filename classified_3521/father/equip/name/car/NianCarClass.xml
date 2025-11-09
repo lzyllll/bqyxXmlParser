@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="car" cnName="战车定义">
+		<equip name="NianCar" cnName="年兽" rideLabel="RedMotoRide">
+			<main label="Diggers_sub" hideB="1" dpsMul="0" />
+			<sub label="Diggers_sub" hideB="1" dpsMul="0" />
+			<lifeMul>6</lifeMul>
+			<attackMul>1</attackMul>
+			<duration>60</duration>
+			<cd>110</cd>
+			<addObjJson>{'dpsAll':0.07,'lifeAll':0.07}</addObjJson>
+			<specialInfoArr>受到必亡伤害时无敌</specialInfoArr>
+			<canComposeB>1</canComposeB>
+			<onceB>1</onceB>
+			<mustCash>210</mustCash>
+		</equip>
+	</father>
+	</data>

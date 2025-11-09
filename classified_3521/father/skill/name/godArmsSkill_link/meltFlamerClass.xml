@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill_link" cnName="链接">
+		<skill name="大炎爆-爆">
+			<name>addFlamer_ArmsSkill_link</name>
+			<cnName>大炎爆-爆</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<extraValueType>nowArmsTrueDps</extraValueType>
+			<effectType>crit</effectType>
+			<value>1</value>
+			<mul>27</mul>
+			<targetEffectImg partType="body" soundUrl="boomSound/midBoom">boomEffect/bigCircle</targetEffectImg>
+			<description>火焰爆炸伤害。</description>
+		</skill>
+	</father>
+</data>

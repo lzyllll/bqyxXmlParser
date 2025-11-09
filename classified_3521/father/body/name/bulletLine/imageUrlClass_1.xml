@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="bulletLine" cnName="线性子弹" num="7">
+  <body raNum="60" con="add" len="20" everFleshB="1" imgDieType="die" time="-1" bottomLayerB="1" name="lightCone_bullet" cnName="光锥激光">bullet/blueLaser</body>
+  <body raNum="60" con="add" len="28" everFleshB="1" imgDieType="die" time="-1" bottomLayerB="1" name="extremeLaser_bullet" cnName="极源激光">bullet/purLaserBig</body>
+  <body raNum="30" con="add" len="50" time="0.034" waveAn="30" imgDieType="ranPlay" name="BallLightning_frozenLine_bullet" cnName="冰冻连线">generalEffect/lineLightning</body>
+  <body raNum="30" con="filter" len="50" time="0.03" waveAn="45" everFleshB="1" imgDieType="ranStop" name="yearDragon_bullet" cnName="辰龙闪电">generalEffect/lineLightning</body>
+  <body raNum="30" con="filter" len="50" time="0.1" waveAn="45" everFleshB="1" imgDieType="ranStop" soundUrl="IronChiefS/clear1" name="clearAttackIron_point" cnName="缴械射线">generalEffect/lineLightning</body>
+  <body raNum="30" con="filter" len="30" time="0.03" waveAn="15" imgDieType="die" name="yearChicken_bullet" cnName="酉鸡射线">specialGun/yearChickenBullet</body>
+  <body raNum="30" con="filter" len="30" time="0.03" imgDieType="die" name="yearSheep_bullet" cnName="未羊射线">specialGun/yearSheepBullet</body>
+  
+  <body cnName="治疗射线" name="laserBlackLine" raNum="30" con="add" len="26" time="0.2" waveAn="35" everFleshB="1" imgDieType="stop">bullet/laserBlack</body>
+</father>
+
+
+</data>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill index="0" name="封眼">
+			<name>penGunSkill</name><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<cnName>封眼</cnName><noRandomListB>1</noRandomListB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectProArr>0.04</effectProArr>
+			<effectType>lostPro</effectType>
+			<mul>99</mul>
+			<duration>5</duration>
+			
+			<stateEffectImg partType="2eye" con="add">specialGun/penGunBuff</stateEffectImg>
+			<description>有[effectProArr.0]的几率封住敌人的眼睛，让它攻击成功率降低99%，持续[duration]秒，无视技能免疫。</description>
+		</skill>
+	</father>
+	
+</data>

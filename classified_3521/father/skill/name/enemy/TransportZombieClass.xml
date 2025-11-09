@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">	
+		<skill>
+			<name>TransportZombieShake</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>重砸</cnName>
+			<cd>8</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<meActionLabel>shakeAttack</meActionLabel>
+			<description>用毒罐猛捶敌人造成重大伤害，并让目标射击速度降低。</description>
+		</skill>
+				<skill cnName="重砸降低攻速">
+					<name>TransportZombieShakeHit</name>
+					<cnName>重砸降低攻速</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+					
+					<conditionType>passive</conditionType>
+					<condition>hit</condition>
+					<target>target</target>
+					
+					<addType>state</addType>
+					<effectType>attackGapMul</effectType>
+					<mul>0.2</mul>
+					<duration>5</duration>
+					<stateEffectImg partType="shootPoint" raNum="25" followPartRaB="1">bulletHitEffect/smoke_black</stateEffectImg>
+				</skill>
+				
+		<skill>
+			<name>TransportZombieThrow</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>踢爆</cnName>
+			<cd>7</cd>
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>200</conditionRange><target>me</target>
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>1.5</duration>
+			<meActionLabel>throwAttack</meActionLabel>
+			<description>扔出毒罐将目标击退，目标将向后滑行一段距离，滑行距离越远，伤害越大。</description>
+		</skill>
+				<skill cnName="击退">
+					<name>TransportZombieThrowHit</name>
+					<cnName>击退</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+					
+					<conditionType>passive</conditionType>
+					<condition>hit</condition>
+					<target>target</target>
+					
+					<addType>state</addType>
+					<effectType>TransportZombieThrowHit</effectType>
+					<mul>0.5</mul>
+					<duration>1.5</duration>
+					<range>900</range>
+					<stateEffectImg partType="2foot" con="filter" raNum="30">skillEffect/poisonClaw_enemy</stateEffectImg>
+					<pointEffectImg raNum="1" soundUrl="TransportZombie/throwBoom">boomEffect/posion3</pointEffectImg>
+				</skill>
+				
+		<skill>
+			<name>skillCopyTransport</name>
+			<cnName>技能复制</cnName><iconUrl36>SkillIcon/skillCopy_enemy_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>10</cd>
+			<firstCd>10</firstCd>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget,skillCopyNumLess</otherConditionArr>
+			<conditionRange>800</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<value>15</value>
+			
+			<obj>"name":"skillCopy_enemy","site":"me","flipB":true</obj>
+			
+			<meEffectImg soundUrl="sound/skillCopy_enemy" />
+			<description>从单位背后发出一颗红色球，击中目标后将复制目标身上的一个技能。</description>
+		</skill>
+	</father>
+	</data>

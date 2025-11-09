@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<honor min="85" 		addObjJson="{'expMul':0.15}"/>
+	<honor min="350" 		addObjJson="{'expMul':0.15,'lifeAll':0.03}"/>
+	<honor min="750" 		addObjJson="{'expMul':0.15,'lifeAll':0.05,'dpsMul':0.02}"/>
+	<honor min="1100" 	addObjJson="{'expMul':0.15,'lifeAll':0.07,'dpsMul':0.04,'rareArmsDropPro':0.15}"/>
+	<honor min="1700" 	addObjJson="{'expMul':0.15,'lifeAll':0.09,'dpsMul':0.06,'rareArmsDropPro':0.15,'rareEquipDropPro':0.15}"/>
+	<honor min="2000" 	addObjJson="{'expMul':0.20,'lifeAll':0.11,'dpsMul':0.10,'rareArmsDropPro':0.20,'rareEquipDropPro':0.20,'blackArmsDropPro':0.05,'blackEquipDropPro':0.05}"/>
+	<honor min="2300" 	addObjJson="{'expMul':0.25,'lifeAll':0.14,'dpsMul':0.14,'rareArmsDropPro':0.25,'rareEquipDropPro':0.25,'blackArmsDropPro':0.10,'blackEquipDropPro':0.10}"/>
+	
+</data>

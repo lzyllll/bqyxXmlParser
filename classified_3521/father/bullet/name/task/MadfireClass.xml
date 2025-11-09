@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="task">
+		<bullet cnName="超能-麻痹闪电球">
+			<name>zomSkillBullet</name><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			<cnName>闪电球</cnName>
+			<hurtRatio>1</hurtRatio>
+			<attackType>holy</attackType>
+			
+			<bulletLife>20</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<bulletAngle>180</bulletAngle>
+			<bulletSpeed>7</bulletSpeed>
+			<speedD random="0.3" />
+			<penetrationGap>1000</penetrationGap>
+			<skillArr>zomSkillBulletHit</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="add">skillEffect/paralysis_enemy_bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/paralysis_enemy_hit" />
+		</bullet>
+		<skill name="闪电球减速">
+			<name>zomSkillBulletHit</name>
+			<cnName>闪电球减速</cnName>
+			<conditionType>passive</conditionType><condition>hit</condition>
+			<target>target</target>
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<value>0</value>
+			<mul>0.3</mul>
+			<duration>3</duration>
+			
+			<stateEffectImg con="add">skillEffect/paralysis_enemy</stateEffectImg>
+			<description>击中目标后降低其70%的移动速度，持续3秒。</description>
+		</skill>
+		<skill>
+			<name>madfireTeleport</name>
+			<cnName>瞬移</cnName><iconUrl36>SkillIcon/flash_pet_36</iconUrl36>
+			
+			<cd>8</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>1000</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>teleport</effectType>
+			<valueString>attackTarget</valueString>
+			 
+			<pointEffectImg noFollowB="1" soundUrl="sound/skillCopy_enemy" con="add">generalEffect/vehicleFit</pointEffectImg>
+			<meEffectImg soundUrl="sound/teleport_enemy" con="add">lightEffect/basinShow</meEffectImg>
+			<description>瞬间移动到单位攻击目标的位置，不适用与远战单位。</description>
+		</skill>
+	</father>
+</data>

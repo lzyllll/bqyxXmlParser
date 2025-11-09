@@ -1,0 +1,131 @@
+{
+  "father": [
+    {
+      "name": "device",
+      "cnName": "装置",
+      "equip": {
+        "rareB": true,
+        "canNum": 1,
+        "name": "hammerMine",
+        "cnName": "眩晕地雷T",
+        "skill": "hammerMine",
+        "iconLabel": "dropEffect/hammerMine"
+      }
+    },
+    {
+      "name": "deviceSkill",
+      "cnName": "装置技能",
+      "skills": {
+        "hammerMine": {
+          "cnName": "眩晕地雷",
+          "name": "hammerMine",
+          "cd": 20,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "doCondition": "nearNoMine",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "bullet",
+          "extraValueType": "nowArmsDpsOrNormal",
+          "obj": {
+            "name": "hammerMineBullet",
+            "site": "meMid",
+            "minYB": true
+          },
+          "meEffectImg": {
+            "name": "putMineEffect"
+          },
+          "description": "埋下可眩晕敌人5秒的眩晕地雷。",
+          "growth": {
+            "skill": [
+              {
+                "cd": 20
+              },
+              {
+                "cd": 15
+              },
+              {
+                "cd": 10
+              },
+              {
+                "cd": 8
+              },
+              {
+                "cd": 6
+              },
+              {
+                "cd": 1
+              }
+            ]
+          }
+        },
+        "hammerMineHit": {
+          "name": "hammerMineHit",
+          "noSkillDodgeB": 1,
+          "ignoreImmunityB": 1,
+          "ignoreNoSkillB": 1,
+          "noBeClearB": 1,
+          "cnName": "击中眩晕",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "instantAndState",
+          "effectType": "dizziness",
+          "duration": 5,
+          "stateEffectImg": {
+            "value": "skillEffect/dizziness",
+            "partType": "mouth",
+            "con": "add"
+          }
+        },
+        "hammerMineBullet": {
+          "name": "hammerMineBullet",
+          "cnName": "眩晕地雷-子弹",
+          "hurtRatio": 0,
+          "bulletAngle": 90,
+          "bulletLife": 9999999,
+          "bulletWidth": 40,
+          "hitType": "rect",
+          "noHitTime": 1,
+          "hideTime": 5,
+          "boomD": {
+            "selfB": true,
+            "radius": 270,
+            "bodyB": true,
+            "maxHurtNum": 999
+          },
+          "bounceD": {
+            "glueFloorB": true
+          },
+          "skillArr": "hammerMineHit",
+          "bulletSkillArr": null,
+          "bulletSpeed": 0,
+          "flipX": 1,
+          "bulletImgUrl": {
+            "name": "hammerMineBulletEnemy"
+          },
+          "bulletLeftImgUrl": {
+            "name": "hammerMineBullet"
+          },
+          "selfBoomImgUrl": {
+            "name": "bigSoilShort"
+          }
+        }
+      }
+    },
+    {
+      "name": "dropEffect",
+      "cnName": "掉落的效果物品",
+      "skills": {
+        "hammerMineDrop": {
+          "name": "hammerMineDrop",
+          "cnName": "获得眩晕地雷",
+          "addType": "instant",
+          "effectType": "addTempDevice",
+          "value": 2,
+          "valueString": "hammerMine_6"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "father": [
+    {
+      "name": "enemy",
+      "body": {
+        "index": 0,
+        "name": "PhantomX",
+        "shell": "metal",
+        "cnName": "幻影X",
+        "headIconUrl": "IconGather/PhantomX",
+        "raceType": "robot",
+        "swfUrl": "swf/enemy/PhantomX.swf",
+        "lifeRatio": 1,
+        "showLevel": 92,
+        "imgType": "normal",
+        "imgArr": "stand,move\n\t\t\t\t,normalAttack,shootAttack,lightAttack,rotateAttack,comboAttack\n\t\t\t\t,hurt1,die1\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+        "lifeBarExtraHeight": -70,
+        "hitRect": "-25,-50,50,50",
+        "maxJumpNum": 1,
+        "maxVx": 9,
+        "motionState": "fly",
+        "flyUseSpiderB": 1,
+        "flyType": "space",
+        "motionD": {
+          "F_AIR": 8
+        },
+        "nextAttackTime": 0,
+        "extraAIClassLabel": "PhantomX_AIExtra",
+        "bossSkillArr": "blindnessPhantom,comboPhantom,rotatePhantom,noSpeedReduce,treater_knights",
+        "hurtArr": {
+          "hurt": [
+            {
+              "imgLabel": "normalAttack",
+              "cn": "盾击",
+              "hurtRatio": 2,
+              "attackType": "direct",
+              "shakeValue": 4,
+              "hitImgUrl": {
+                "value": "bulletHitEffect/energy",
+                "con": "add",
+                "soundUrl": "sound/body_hit"
+              }
+            },
+            {
+              "imgLabel": "shootAttack",
+              "cn": "激光",
+              "hurtRatio": 2,
+              "bulletLabel": "shoot_PhantomX",
+              "grapRect": "-450,-88,351,77"
+            },
+            {
+              "info": "不加入ai选择-致盲之光",
+              "imgLabel": "lightAttack",
+              "noAiChooseB": 1,
+              "hurtRatio": 0,
+              "hurtMul": 0.2,
+              "attackType": "holy",
+              "shakeValue": 4,
+              "skillArr": "blindnessPhantomHit",
+              "hitImgUrl": {
+                "value": "bulletHitEffect/energy",
+                "con": "add",
+                "soundUrl": "sound/body_hit"
+              }
+            },
+            {
+              "info": "不加入ai选择-猛击",
+              "imgLabel": "comboAttack",
+              "noAiChooseB": 1,
+              "hurtRatio": 1,
+              "attackType": "holy",
+              "shakeValue": 4,
+              "skillArr": "comboPhantomHit",
+              "hitImgUrl": {
+                "value": "bulletHitEffect/energy",
+                "con": "add",
+                "soundUrl": "sound/body_hit"
+              }
+            },
+            {
+              "info": "不加入ai选择-旋击",
+              "imgLabel": "rotateAttack",
+              "noAiChooseB": 1,
+              "hurtRatio": 0,
+              "hurtMul": 0.1,
+              "attackType": "holy",
+              "shakeValue": 4,
+              "hitImgUrl": {
+                "value": "bulletHitEffect/energy",
+                "con": "add",
+                "soundUrl": "sound/body_hit"
+              }
+            }
+          ]
+        }
+      },
+      "bullet": {
+        "name": "shoot_PhantomX",
+        "cnName": "幻影X型-激光炮",
+        "hurtRatio": 1,
+        "bulletLife": 0.001,
+        "hitType": "longLine",
+        "bulletWidth": 700,
+        "shootPoint": "-60,-60",
+        "bulletAngle": 179.9,
+        "attackGap": 0.7,
+        "attackDelay": 0.33,
+        "bulletNum": 1,
+        "bulletSpeed": 0,
+        "flipX": 1,
+        "lineD": {
+          "size": 0
+        },
+        "bulletImgUrl": "longLine",
+        "hitImgUrl": "bulletHitEffect/energy"
+      }
+    },
+    {
+      "name": "enemy",
+      "skills": {
+        "blindnessPhantom": {
+          "cnName": "致盲之光",
+          "name": "blindnessPhantom",
+          "iconUrl36": "SkillIcon/blindnessPhantom_36",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cd": 9,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "target": "me",
+          "addType": "state",
+          "noSkillDodgeB": 1,
+          "ignoreImmunityB": 1,
+          "effectType": "noUnderHurtB",
+          "duration": 1.8,
+          "description": "向目标释放强烈光照，使其完全无法发动攻击，攻击成功率降至0%。",
+          "meActionLabel": "lightAttack"
+        },
+        "blindnessPhantomHit": {
+          "cnName": "腐蚀",
+          "name": "blindnessPhantomHit",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "noSkillDodgeB": 1,
+          "ignoreImmunityB": 1,
+          "effectType": "lostPro",
+          "mul": 999,
+          "duration": 5,
+          "stateEffectImg": {
+            "value": "bulletHitEffect/smoke_black",
+            "partType": "2eye",
+            "raNum": 25,
+            "followPartRaB": true
+          },
+          "description": null
+        },
+        "comboPhantom": {
+          "index": 0,
+          "cnName": "猛击",
+          "name": "comboPhantom",
+          "iconUrl36": "SkillIcon/comboPhantom_36",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cd": 7,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "target": "me",
+          "addType": "state",
+          "noSkillDodgeB": 1,
+          "ignoreImmunityB": 1,
+          "effectType": "noUnderHurtB",
+          "duration": 1.4,
+          "description": "向目标猛力发起3连击，逐渐降低目标的移动速度。",
+          "meActionLabel": "comboAttack"
+        },
+        "comboPhantomHit": {
+          "cnName": "减速",
+          "name": "comboPhantomHit",
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "state",
+          "noSkillDodgeB": 1,
+          "ignoreImmunityB": 1,
+          "noBeClearB": 1,
+          "overlyingB": 1,
+          "effectType": "moveSpeedOver",
+          "value": 3,
+          "mul": 1,
+          "duration": 5,
+          "stateEffectImg": {
+            "value": "skillEffect/disabled_enemy",
+            "partType": "2foot"
+          },
+          "description": "。"
+        },
+        "rotatePhantom": {
+          "index": 0,
+          "cnName": "旋击",
+          "name": "rotatePhantom",
+          "iconUrl36": "SkillIcon/rotatePhantom_36",
+          "showInLifeBarB": 1,
+          "wantDescripB": 1,
+          "cd": 12,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "otherConditionArr": "nearAttackTarget",
+          "conditionRange": 600,
+          "target": "me",
+          "addType": "state",
+          "effectType": "noUnderHurtB",
+          "duration": 0.01,
+          "description": "向目标发起旋转攻击，造成巨大伤害。",
+          "meActionLabel": "rotateAttack"
+        }
+      }
+    }
+  ]
+}

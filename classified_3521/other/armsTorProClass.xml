@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<gather name="arms">
+		<father name="arms_hide" cnName="隐藏" changeB="0">
+			<body cnName="单发伤害" name="hurtRatio" fixed="0"/>
+			<body cnName="射击速度" name="shootSpeed" fixed="3" unit="发/秒" />
+			<body cnName="射程" name="shootWidth" fixed="0"/>
+			<body cnName="精准度" name="precision" fixed="2"/>
+		</father>	
+		<father name="arms_base" cnName="基础" changeB="0">
+			<body gra="n"  cnName="中文名" name="cnName" method="armsCn" changeB="1" />
+			<body cnName="基础武器" name="baseLabel"/>
+			<body cnName="武器类型" name="armsType" method="armsType" />
+			<body cnName="子弹类型" name="hitType" method="bulletHitType" />
+			<body cnName="战斗力系数" name="dpsMul" />
+			<body cnName="成色品质" name="color" method="itemsColor" />
+		</father>
+		
+		<father name="arms_shoot" cnName="射击">
+			<body cnName="弹容" name="capacity" 							min="1" 	max="1000" fixed="0"  gra="n" />
+			<body cnName="装弹时间"	unit="秒" name="reloadGap" 				min="0.1" max="10" 	fixed="3"  gra="n" />
+			<body cnName="射击间隔"	unit="秒" name="attackGap" 				min="0.1" max="10" 	fixed="2"  gra="n" />
+			<body cnName="射击延迟"	unit="秒" name="attackDelay"				min="0" 	max="10" 	fixed="2" />
+			<body cnName="散射子弹数" name="bulletNum"				min="1" 	max="30" 	fixed="0"  gra="n" />
+			<body cnName="散射角度x2" name="shootAngle"				min="0" 	max="180" 	fixed="1"  gra="n" />
+			<body ca="longLine" proPos="speedD" cnName="激光散射回正速度" name="raBackV" 	min="-10" max="10" fixed="3" tip="每帧回正多少比例"/>
+			<body cnName="抖动角度" name="shakeAngle"				min="0" 	max="360" 	fixed="1" />
+			
+			
+			<body cnName="瞬间连发概率" name="twoShootPro"			min="0" max="1" 	fixed="2"  gra="n" />
+			
+			<body cnName="加特林偏移" name="gatlinRange"		min="0" 	max="100" fixed="0" />
+			<body cnName="加特林分布" name="gatlinNum"		min="0" 	max="100" fixed="0" />
+		</father>
+		<father name="arms_img" cnName="图像与声音">
+			
+			
+			<body cnName="射击声音" name="shootSoundUrl" gra="n" method="sound" />
+			<body cnName="子弹图像" name="bulletImg" gra="n" />
+			<body ca="rect" cnName="子弹图像（向左）" name="bulletLeftImg"/>
+			<body cnName="子弹图像自转" name="bulletVra"/>
+			<body cnName="枪口火光" name="fireImg"/>
+			<body cnName="击中特效" name="hitImg" gra="n" />
+			<body cnName="击中地面特效" name="hitFloorImg"/>
+			<body ca="rect" cnName="尾烟特效" name="smokeImg" gra="n" />
+			<body ca="rect" cnName="自爆特效" name="selfBoomImg" gra="n" />
+			
+			
+			<body cnName="枪支个数" name="gunNum"	 min="1" max="2" />
+			<body cnName="持枪臂长比例" name="armsArmMul"	 min="0" max="1" fixed="2" />
+			<body cnName="持枪下垂距离" name="upValue"	  min="0" max="50"/>
+			<body cnName="躯干转角范围" name="focusAngleRange"   min="0" max="180" tip="0：不受转角范围限制" />
+			
+			<body ca="rect" cnName="是否可编辑轨迹" name="editB" proPos="lineD" />
+			
+		</father>
+		
+		<father name="arms_life" cnName="寿命与射程">
+			<body cnName="寿命" unit="秒" name="bulletLife"				min="0" 	max="10" 	fixed="3"  gra="n" />
+			<body ca="rect" cnName="寿命随机增加"	unit="秒" name="lifeRandom"	min="0" 	max="10" 	fixed="2" />
+			<body cnName="碰撞宽度" name="bulletWidth"			min="0" 	max="2000" 	fixed="0"  gra="n" tip="0：将无法碰撞物体" />
+			<body ca="longLine" cnName="射程随机数" name="bulletShakeWidth" 		min="0" 	max="300" />
+			<body cnName="AI射程" name="aiShootRange" 					min="0" 	max="2000"/>
+		</father>
+		
+		<father ca="rect" name="arms_speed" cnName="速度" proPos="speedD" >
+			<body cnName="飞行速度"	unit="码/帧" name="bulletSpeed" proPos="no" 		min="0" 	max="200" gra="n" />
+			<body cnName="速度最小值" name="min"		min="0" 	max="200"/>
+			<body cnName="速度最大值" name="max"		min="0" 	max="200"/>
+			<body cnName="加速度" name="a" 				min="0" 	max="100"/>
+			<body cnName="速度随机数" name="random" min="0" max="1" fixed="2"/>
+			<body cnName="自转速度" name="selfVra" 	min="-2" max="2" fixed="2"/>
+			
+			<body cnName="重力系数" name="gravity" proPos="no"	min="-10" max="10" fixed="1" gra="n" />
+		</father>
+		
+		<father ca="rect" name="arms_follow" cnName="跟踪" proPos="followD">
+			<body cnName="跟踪系数" name="value" 	min="0" max="4" fixed="1" gra="n" tip="0：不跟踪\n0.3：弱跟踪\n1：正常跟踪\n3：灵敏跟踪" />
+			<body cnName="跟踪延迟" unit="秒" name="delay"	min="0" max="100" fixed="2" tip="几秒后开始跟踪" />
+			<body cnName="跟踪最大时间" unit="秒" name="maxTime" 	min="0" max="100" fixed="2" tip="超过这个实际后不跟踪"/>
+			<body cnName="跟踪碰到的目标" name="hitIsTargetB"/>
+		</father>
+		
+		<father name="arms_hit" cnName="碰撞">
+			<body cnName="不碰撞" name="noHitB"/>
+			<body cnName="穿人个数" name="penetrationNum"	min="0" max="999"  gra="n" tip="999：无限穿透单位" />
+			<body cnName="穿墙深度" name="penetrationGap"  min="0" max="1000" gra="n" tip="1000：无限穿透墙壁" />
+			<body cnName="初始碰撞延迟" unit="秒" name="noHitTime"	min="0" max="100" fixed="2"/>
+			<body cnName="碰撞间隔" unit="秒" name="hitGap"	min="0" max="100" fixed="2"/>
+			<body ca="rect" cnName="连碰间隔" unit="秒" name="twoHitGap"	min="0" max="100" fixed="2"/>
+			<body ca="rect" cnName="同个单位只碰1次" name="oneHitBodyB" tip="连续碰撞同个单位的最短时间间隔，前提是具有穿人属性的。" />
+			
+			<body cnName="鞭尸开关" name="whippB"/>
+		</father>
+		
+		<father name="arms_bounce" cnName="反弹"  proPos="bounceD">
+			<body cnName="地面反弹次数" name="floor"	min="0" max="15" gra="n" />
+			<body cnName="击中反弹次数" name="body"	min="0" max="10" gra="n" />
+			<body cnName="反弹速度系数" name="vMul"	min="0" max="10" fixed="2" />
+			<body cnName="反弹后寿命恢复" name="liveInitB"/>
+			<body cnName="是否黏在地面" name="glueFloorB"/>
+			<body cnName="反弹伤害比例" name="hurtNumAdd"	min="0" max="1" fixed="2"  gra="n" tip="0：使用默认值" />
+			<body cnName="反弹后不碰撞时间" unit="秒" name="noHitTime"	min="0" max="100"/>
+			<body cnName="碰到后子弹不消失" name="noDieB"/>
+		</father>
+		
+		<father ca="rect" name="arms_boom" cnName="自爆" proPos="boomD">
+			<body cnName="碰到地面时自爆" name="floorB" gra="n" />
+			<body cnName="碰到单位时自爆" name="bodyB" gra="n" />
+			<body cnName="死亡时是否自爆" name="selfB" gra="n" />
+			<body cnName="自爆伤害半径" name="radius"	min="0" max="500" gra="n" />
+			<body cnName="自爆伤害倍数" name="hurtMul"  min="0" max="2" fixed="2"  gra="n" />
+			<body cnName="最大伤害人数" name="maxHurtNum"		min="0" max="40"/>
+			<body cnName="伤害不排除本身" name="noExcludeBodyB" tip="如果不排除，将对击中目标造成2次伤害" />
+			<body cnName="触发碰撞特效" name="haveBodyHitEffectB"/>
+		</father>
+		
+		<father ca="longLine" name="arms_line" cnName="射线参数(子弹图像为“普通射线”)"  proPos="lineD">
+			<body cnName="射线颜色" name="color" 		method="color" />
+			<body cnName="射线发光颜色" name="lightColor" 		method="color" />
+			<body cnName="射线尺寸" name="size"	min="0" max="20"/>
+			<body cnName="射线发光尺寸" name="lightSize"	min="0" max="60" tip="这个值要比射线尺寸大才有效果" />
+			<body cnName="图层模式" name="blendMode" 	method="blendMode" />
+			<body cnName="射线样式" name="type" 		method="bulletLineType" />
+			
+		</father>
+		<father name="arms_shake" cnName="震动">
+			<body cnName="射击时枪支震动角" name="shootShakeAngle"   min="0" max="90"/>
+			<body cnName="射击几秒后不抖动" unit="秒" name="noShakeTime"	 min="0" max="3" fixed="2" />
+			<body cnName="射击后坐力" name="shootRecoil"  				min="0" max="30"/>
+			<body cnName="射击时屏幕震动" name="screenShakeValue"	min="0" max="50"/>
+			<body cnName="射击目标振动值" name="targetShakeValue"	min="0" max="50"/>
+		</father>
+		
+		<father name="arms_other" cnName="其他">
+			<body cnName="我方子弹" name="sameCampB"/>
+			<body cnName="不受磁力场干扰" name="noMagneticB"/>
+			<body ca="rect" cnName="不会被技能清除" name="noBeClearB"/>
+			<body cnName="是否蓄力" name="focoB" 					changeB="0"  proPos="crossbowD"/>
+			<body cnName="蓄力最短延迟" unit="秒" name="minDelayMul" changeB="0" proPos="crossbowD"	 min="0" max="3" fixed="2" />
+		</father>
+		<father name="arms_skill" cnName="技能">
+			<body cnName="技能" name="skillArr" gra="n" method="skill" min="0" max="5" />
+			<body cnName="神级技能" name="godSkillArr" gra="n" method="skill" min="0" max="5"/>
+		</father>
+		
+	</gather>
+	
+</data>
+

@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="dayTask">
+		<gather name="僵尸世界大战">
+			<level name="worldWar">
+				
+				<fixed info="noMoreB" drop="all" unitG="all" eventG="all" />
+				
+				<info noMoreB="1" />
+				<drop coin="0.01" exp="0.005" arms="0.01" equip="0" skillStone="0.005" taxStamp="0.005" />
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					
+					<unitOrder id="enemy1">
+						<numberType>pro</numberType>
+						<unit cnName="战斗僵尸" num="2" skillArr="State_AddMove" lifeMul="0.1" dpsMul="0.05" />
+						<unit cnName="无头自爆僵尸" num="1" skillArr="State_AddMove" lifeMul="0.1" dpsMul="0.05" />
+						<unit cnName="鬼目游尸" num="1" skillArr="State_AddMove" lifeMul="0.1" dpsMul="0.05" />
+						<unit cnName="吸血蝙蝠" num="1" skillArr="State_AddMove" lifeMul="0.1" dpsMul="0.05" />
+					</unitOrder>
+					
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e2_1"><condition delay="1" /></event>
+						<event id="e2_1">
+							<condition doNumber="8" orderChooseType="randomOne">enemyNumber:less_40</condition>
+							<order>createUnit:enemy1; r_topLong</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="20" orderChooseType="randomOne">enemyNumber:less_50</condition>
+							<order>createUnit:enemy1; r_topLong</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="40" orderChooseType="randomOne">enemyNumber:less_60</condition>
+							<order>createUnit:enemy1; r_topLong</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="1000" orderChooseType="randomOne">enemyNumber:less_70</condition>
+							<order>createUnit:enemy1; r_topLong</order>
+						</event>
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		<gather name="特种兵的赌约">
+			<level name="bet">
+				
+				<fixed info="all" drop="no" unitG="onlyWe" eventG="affter" />
+				
+				<info enemyLv="0" diff="1" />
+				
+				<unitG>
+					<unitOrder id="we_task" camp="we">
+						<unit cnName="丛林特种兵" num="1" dpsMul="1" dpsSpecielLabel="heroLvDps" aiOrder="followBodyAttack:p1" levelSetting="hero+0" lifeMul="999999" noUnderHurtB="1" skillArr="betHit" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					
+					<group>
+						<event id="e2_1">
+							<condition doNumber="1" />
+							<order>createUnit:we_task; r_birth</order>
+						</event>
+					</group>
+					
+					<group>
+						<event id="e2_1">
+							<condition>level:win</condition>
+						</event>
+						<event id="e2_1">
+							<condition>killEnemyNum:more; p1:丛林特种兵</condition>
+							<order>task:bet; complete</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		<gather name="古老的火炮">
+			<level name="oldRocket">
+				
+				<fixed info="all" drop="all" unitG="all" eventG="all" />
+				
+				<info enemyLv="0" noAIB="1" diff="1" noMoreB="1" diy="oldRocket" />
+				<drop coin="0" exp="0" arms="0" equip="0" skillStone="0" taxStamp="0" />
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					
+					<unitOrder id="enemy1">
+						<unit cnName="携弹僵尸" num="1" lifeMul="9" headHurtMul="99999999" dpsMul="10" skillArr="selfBurn_task,State_SpellImmunity" />
+					</unitOrder>
+					
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e2_1"><condition delay="1" /></event>
+						<event id="e2_1">
+							<condition doNumber="100" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r_heroRange600</order>
+						</event>
+						
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+					<group>
+						<event id="e1_3">
+							<condition delay="1">bodyEvent:die;wePlayerCtrl</condition>
+							<order>level; fail</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="逃出升天">
+			<level name="runAway">
+				
+				<fixed info="all" drop="all" unitG="all" eventG="all" rectG="affter" />
+				
+				<info enemyLv="0" noAIB="1" diff="1" noMoreB="1" diy="runAway" />
+				<drop coin="0" exp="0" arms="0" equip="0" skillStone="0" taxStamp="0" />
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					
+					<unitOrder id="enemy1">
+						<unit cnName="僵尸空降兵" lifeMul="99999" num="1" aiOrder="followPoint:r_high" skillArr="sweep_runAway,State_SpellImmunity" />
+					</unitOrder>
+				</unitG>
+				 
+				<rectG>
+					<rect id="r_high">20,300,50,100</rect>
+				</rectG>
+				
+				<eventG>
+					<group>
+						<event id="e1_1">
+							<condition>enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r_high</order>
+						</event>
+					</group>
+					<group>
+						<event id="e1_1">
+							<condition delay="0.01">task:state; runAway:complete</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+					<group>
+						<event id="e1_3">
+							<condition delay="1">bodyEvent:die;wePlayerCtrl</condition>
+							<order>level; fail</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="银币追逐者">
+			<level name="coinChase">
+				
+				<fixed info="all" drop="all" unitG="all" eventG="all" />
+				
+				<info enemyLv="0" noAIB="1" diff="1" noMoreB="1" diy="coinChase" dropSmallMapB="1" />
+				<drop coin="0" exp="0" arms="0" equip="0" skillStone="0" taxStamp="0" />
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					
+					
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e1_1">
+							<condition delay="0.01">task:state; coinChase:complete</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		<gather name="狙击之王">
+			<level name="sniperKing">
+				
+				<fixed info="all" drop="all" unitG="all" eventG="all" />
+				
+				<info diff="1" noMoreB="1" diy="sniperKing" />
+				<drop coin="0" exp="0" arms="0" equip="0" skillStone="0" taxStamp="0" />
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					
+					<unitOrder id="enemy1">
+						<numberType>pro</numberType>
+						<unit cnName="科研僵尸" num="1" />
+						<unit cnName="水管僵尸" num="1" />
+						<unit cnName="吸血蝙蝠" num="1.5" />
+					</unitOrder>
+					
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e2_1"><condition delay="1" /></event>
+						<event id="e2_1">
+							<condition doNumber="5" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r_heroRangeSniperKing</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="5" orderChooseType="randomOne">enemyNumber:less_2</condition>
+							<order>createUnit:enemy1; r_heroRangeSniperKing</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="30" orderChooseType="randomOne">enemyNumber:less_3</condition>
+							<order>createUnit:enemy1; r_heroRangeSniperKing</order>
+						</event>
+					</group>
+					<group>
+						<event id="e1_4">
+							<condition delay="0.01">task:state; sniperKing:complete</condition>
+							<order>level; killAllEnemy</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		<gather name="大逃亡">
+			<level name="invincibleZombie">
+				
+				<fixed info="all" drop="all" unitG="all" eventG="all" />
+				
+				<info noMoreB="1" noAIB="1" diy="invincibleZombie" preSkillArr="invincibleDrugDrop" dropSmallMapB="1" />
+				<drop coin="0" exp="0" arms="0" equip="0" skillStone="0" taxStamp="0" />
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					
+					<unitOrder id="enemy1">
+						<unit cnName="无头自爆僵尸" num="1" skillArr="attackNoDodge,State_Invincible" dpsMul="9999" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<order>createUnit:enemy1; r_topLong</order>
+						</event>
+						<event id="e2_1">
+							<condition delay="5" doNumber="9999" />
+							<order>createUnit:enemy1; r_topLong</order>
+						</event>
+					</group>
+					<group>
+						<event id="e1_4">
+							<condition delay="0.01">task:state; invincibleZombie:complete</condition>
+							<order>level; killAllEnemy</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		<gather name="枪林弹雨">
+			<level name="bulletRain">
+				
+				<sceneLabel>PrisonDoor</sceneLabel>
+				
+				<info enemyLv="0" diff="1" noAIB="1" noMoreB="1" diy="bulletRain" preBulletArr="bulletRainBullet,bulletRainBall" preSkillArr="invincibleDrugDrop" dropSmallMapB="1" />
+				<drop coin="0" exp="0" arms="0" equip="0" skillStone="0" taxStamp="0" />
+				
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+				</unitG>
+				
+				<rectG>
+					<rect id="r_birth">2600,1300,285,72</rect>
+					<rect id="r_over">3448,1264,60,132</rect>
+					<rect id="r1">52,800,286,72</rect>
+					<rect id="r2">1600,800,286,72</rect>
+					<rect id="r3">2825,800,286,72</rect>
+					
+					<rect label="addCharger">207,1256,68,68</rect>
+					<rect label="addCharger">3174,1256,68,68</rect>
+				</rectG>
+				
+				<eventG>
+					<group>
+						<event id="e1_1">
+							<condition delay="0.01">task:state; bulletRain:complete</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		<gather name="直上云霄">
+			<level name="flySky">
+				
+				<sceneLabel>FlySkyScene</sceneLabel>
+				
+				<info enemyLv="0" noAIB="1" diff="1" noMoreB="1" diy="flySky" preSkillArr="flySkyBatBuff" />
+				<drop coin="0" exp="0" arms="0" equip="0" skillStone="0" taxStamp="0" />
+				
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="enemy1">
+						<unit cnName="吸血蝙蝠" num="1" skillArr="State_Invincible" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e1_1">
+							<condition delay="0.01">task:state; flySky:complete</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+	</father>
+	
+	
+	</data>

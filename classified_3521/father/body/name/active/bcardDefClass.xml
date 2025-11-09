@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="active">
+		<body id="anniverSign9" n="Snowman" s="6" li="2000" dp="35" sr="32_1,13_9,13_10,31_1,31_3,31_6,31_9,32_2" o="{'specialPartsDropPro':0.10}" />
+		<body id="vipExcOreWorm" n="OreWorm" s="7" li="2533" dp="38" sr="21_1,34_10,23_10,12_2,22_10,21_4,12_11,34_2,32_3" o="{'lottery':10}" />
+		<body id="anniverSign10" n="DryFrog" s="7" li="2480" dp="39" sr="State_noAiFind,21_2,32_3,14_2,12_10,31_1,35_2,12_13,31_11" o="{'loveAdd':20}" />
+		<body id="su25" n="OreTaper" s="7" li="2620" dp="39" sr="13_9,13_8,32_8,13_6,13_7,13_1,13_3,13_4,21_3" o="{'lottery':8,'ranBlackArmsDropPro':0.2}" />
+	</father>
+	
+	</data>

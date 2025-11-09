@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="巨毒尸">		
+		<bullet cnName="巨毒尸-喷毒">
+			<name>HugePoison_shoot</name>
+			<cnName>巨毒尸-喷毒</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>128</bulletAngle>
+			<shakeAngle>15</shakeAngle>
+			<bulletAngleRange>30</bulletAngleRange>
+			<bulletLife>3</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.2</attackGap>
+			<attackDelay>0.33</attackDelay>
+			<bulletNum>1</bulletNum>				
+			<shootNum>18</shootNum>					
+			<shootGap>0</shootGap>					
+			<shootAngle>3</shootAngle>					
+			<positionD>
+				<point shootPoint="-43,-144" bulletAngle="-180" />
+				<point shootPoint="-42,-145" bulletAngle="-176" />
+				<point shootPoint="-40,-147" bulletAngle="-172" />
+				<point shootPoint="-38,-149" bulletAngle="-168" />
+				<point shootPoint="-37,-152" bulletAngle="-164" />
+				<point shootPoint="-35,-153" bulletAngle="-160" />
+				<point shootPoint="-33,-155" bulletAngle="-156" />
+				
+				<point shootPoint="-35,-153" bulletAngle="-160" />
+				<point shootPoint="-37,-152" bulletAngle="-164" />
+				<point shootPoint="-38,-149" bulletAngle="-168" />
+				<point shootPoint="-40,-147" bulletAngle="-172" />
+				<point shootPoint="-42,-145" bulletAngle="-176" />
+				<point shootPoint="-43,-144" bulletAngle="180" />
+				
+				<point shootPoint="-42,-145" bulletAngle="-176" />
+				<point shootPoint="-40,-147" bulletAngle="-172" />
+				<point shootPoint="-38,-149" bulletAngle="-168" />
+				<point shootPoint="-37,-152" bulletAngle="-164" />
+				<point shootPoint="-35,-153" bulletAngle="-160" />
+				<point shootPoint="-33,-155" bulletAngle="-156" />
+				
+			</positionD>
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<shootPoint>0,0</shootPoint>
+			<bulletSpeed>15</bulletSpeed>
+			<extendGap>15</extendGap>
+			<speedD random="0.4" max="15" min="5" a="-15" />
+			<gravity>0.5</gravity>
+			<followD value="0.5" maxTime="0.3" />	
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">skillEffect/poisonClaw_enemy</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="HugePoison/shoot_hit">boomEffect/posion1</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">skillEffect/poisonClaw_enemy</smokeImgUrl>
+		</bullet>
+		<bullet cnName="巨毒尸-毒震">
+			<name>HugePoison_shake</name>
+			<cnName>巨毒尸-毒震</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>270</bulletAngle>
+			<bulletAngleRange>30</bulletAngleRange>
+			<bulletLife>0.001</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.35</attackDelay>
+			<bulletNum>1</bulletNum>				
+			<shootNum>10</shootNum>					
+			<shootGap>0</shootGap>					
+			<positionD specialType="HugePoison_shake" />
+			<skillArr>posion7_hugePosion</skillArr>
+				
+			<shootPoint>0,0</shootPoint>
+			<bulletSpeed>0</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>boomEffect/posion1</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="HugePoison/shoot_hit" soundVolume="0.3">boomEffect/posion1</hitImgUrl>
+		</bullet>
+		<bullet cnName="巨毒尸-反溅">
+			<name>splash_HugePoison</name>
+			<cnName>巨毒尸-反溅</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>270</bulletAngle>
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>1</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletNum>15</bulletNum>				
+			<shootAngle>100</shootAngle>					
+			<shootPoint>0,-40</shootPoint>
+				
+			<bulletSpeed>20</bulletSpeed>
+			<extendGap>15</extendGap>
+			<speedD random="0.5" max="20" min="5" a="-15" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">skillEffect/poisonClaw_enemy</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="HugePoison/shoot_hit">boomEffect/posion1</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">skillEffect/poisonClaw_enemy</smokeImgUrl>
+		</bullet>
+		<bullet cnName="毒气弹-爆毒">
+			<name>selfBoom_GasBomb</name>
+			<cnName>毒气弹-爆毒</cnName>
+			
+			<hurtMul>0.4</hurtMul>
+			<attackType>holy</attackType>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>0.001</bulletLife>
+			<bulletWidth>0</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>270</bulletAngle>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+								
+			<shootAngle>0</shootAngle>					
+				
+			<boomD selfB="1" radius="160" />
+			<skillArr>slowMove_GasBomb</skillArr>
+				
+			<shootPoint>0,0</shootPoint>
+			<bulletSpeed>0</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">bullet/missile_bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/posion3</hitImgUrl>
+		</bullet>
+	</father>
+	</data>

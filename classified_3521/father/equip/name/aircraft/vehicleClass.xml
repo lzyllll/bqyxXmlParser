@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="aircraft" cnName="合体飞行器">	
+		<equip name="FlyFit" cnName="霸空雕"><isFitB>1</isFitB>
+			<main label="FlyFit_main" dpsMul="0.6" len="63" yGap="-21" minRa="113" maxRa="-163" />
+			<sub label="Diggers_sub" hideB="1" />
+			<lifeMul>1</lifeMul>
+			<attackMul>1</attackMul>
+		</equip>
+	</father>
+</data>

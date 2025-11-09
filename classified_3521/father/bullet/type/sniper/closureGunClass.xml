@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="sniper" cnName="狙击枪">
+		<bullet name="围墙" color="black" composeLv="99">
+			<name>closureGun</name>
+			<cnName>围墙</cnName>
+			
+			<capacity>1</capacity>
+			<attackGap>1</attackGap>
+			<reloadGap>5</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>400</bulletWidth>
+			<bulletNum>1</bulletNum>				
+			<shootAngle>0</shootAngle>				
+			<beatBack>10</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			
+			<dpsMul>1</dpsMul>
+			<hurtRatio>15</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.5</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>3</upValue>
+			<shootShakeAngle>15</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<godSkillArr>closureGunSkill</godSkillArr>
+			
+			<bulletLife>5</bulletLife>
+			<hitType>longLine</hitType>
+			
+			<bounceD floor="0" body="0" noDieB="1" />
+			<penetrationNum>999</penetrationNum>
+			<penetrationGap>10000</penetrationGap>
+			
+			<shootSoundUrl>hitSound/bigLaser1</shootSoundUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl name="peacockLine" />
+			
+			<bodyImgRange>specialGun/closureGun</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+		</bullet>
+		
+		
+		
+	</father>
+	</data>

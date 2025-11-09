@@ -1,0 +1,523 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="otherSkill" cnName="其他技能所需">	
+		<bullet cnName="电光螺旋丸">
+			<name>xiaoBoShoot</name>
+			<cnName>小波飞雷神</cnName>
+			<hurtMul>0.12</hurtMul>
+			
+			<bulletLife>2</bulletLife>
+			<bulletWidth>90</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<bulletAngle>180</bulletAngle>
+			<bulletNum>1</bulletNum>				
+				
+			<penetrationGap>1000</penetrationGap>
+			<shootPoint>-50,0</shootPoint>
+			<bulletSpeed>50</bulletSpeed>
+			<beatBack>15</beatBack>
+			<targetShakeValue>20</targetShakeValue>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1" con="add">skillEffect/stickShadowLeft</bulletImgUrl>
+			<bulletLeftImgUrl raNum="1" con="add">skillEffect/stickShadowRight</bulletLeftImgUrl>
+			<hitImgUrl soundUrl="sound/body_hit">bulletHitEffect/energy</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="1">skillEffect/stickShadowSmoke</smokeImgUrl>
+		</bullet>
+		
+		<bullet cnName="鸣人-疾风斩">
+			<name>knife_xiaoMing</name>
+			<cnName>鸣人疾风斩</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>0.01</bulletLife>
+			<bulletWidth>35</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<twoHitGap>0.5</twoHitGap>
+			<twoHitSameNameB>1</twoHitSameNameB>
+			<attackGap>0</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>270</bulletAngle>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+								
+			<shootAngle>0</shootAngle>					
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<skillArr>seckillNormalEnemy</skillArr>
+			
+				
+			<shootPoint>0,0</shootPoint>
+			<bulletSpeed>0</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<imgClearDelay>0.18</imgClearDelay>
+			<bulletImgUrl con="add">skillEffect/piercingLeft</bulletImgUrl>
+			<secondBulletImgUrl con="add">skillEffect/piercingRight</secondBulletImgUrl>
+			<hitImgUrl>bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		<bullet cnName="大Boss群狼">
+			<name>summonWolf_bigBoss</name>
+			<cnName>大Boss群狼</cnName>
+			
+			<hurtRatio>0.5</hurtRatio>
+			
+			<bulletAngle>179.9</bulletAngle>
+			<shakeAngle>0</shakeAngle>
+			<bulletLife>4</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.8</attackGap>
+			<attackDelay>0.3</attackDelay>
+			<bulletNum>1</bulletNum>				
+			<shootNum>13</shootNum>					
+			<shootGap>0.05</shootGap>					
+			<shootAngle>0</shootAngle>					
+			<positionD specialType="summonWolf_FightWolf" />
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>5</penetrationNum>
+			<twoHitGap>0.5</twoHitGap>
+				
+			<shootPoint>0,0</shootPoint>
+			<bulletSpeed>35</bulletSpeed>
+			<speedD random="0.2" />
+			<gravity>0</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1" con="add">generalEffect/wolfSummonBullet</bulletImgUrl>
+			<bulletLeftImgUrl raNum="1" con="add">generalEffect/wolfSummonBullet2</bulletLeftImgUrl>
+			<hitImgUrl soundUrl="sound/vehicle_hit1" soundVolume="1">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		<bullet cnName="武器技能-连弩">
+			<name>combo_crossbow</name>
+			<cnName>武器技能-连弩</cnName>
+			<hurtRatio>1</hurtRatio><armsType>crossbow</armsType>
+			
+			<shakeAngle>2</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>10</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackDelay>0</attackDelay>
+			<bulletAngle>179</bulletAngle>
+			<bulletNum>1</bulletNum>				
+				
+			<bulletSpeed>40</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30" con="add" soundUrl="specialGun/arrowAttack" volume="0.5">specialGun/beadBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="specialGun/arrowImpact">bulletHitEffect/yellow_motion</hitImgUrl>
+			<hitFloorImgUrl>bulletHitEffect/yellow_motion</hitFloorImgUrl>
+		</bullet>
+		<bullet cnName="影灭">
+			<name>laserKill_godArmsSkill</name>
+			<cnName>影灭</cnName><armsType>sniper</armsType>
+			
+			<hurtRatio>0.25</hurtRatio>
+			<twoHitGap>0.5</twoHitGap>
+			<twoHitSameNameB>1</twoHitSameNameB>
+			
+			<bulletWidth>15</bulletWidth>
+			<hitType>rect</hitType>
+			<bulletNum>2</bulletNum>
+			<shootAngle>10</shootAngle>
+				
+			<bulletSpeed>39</bulletSpeed>
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<followD value="1" delay="0.1" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="filter" raNum="30">bullet/laser2</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/magicHit2">bulletHitEffect/energyPurple</hitImgUrl>
+		</bullet>
+		<bullet cnName="沙金-武器技能">
+			<name>imploding_blackArmsSkill</name>
+			<cnName>沙金</cnName><armsType>shotgun</armsType>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<shakeAngle>8</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>15</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>190</bulletAngle>
+			<bulletNum>4</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootAngle>20</shootAngle>					
+			<extendGap>50</extendGap>
+				
+			<shootPoint>0,-60</shootPoint>
+			<bulletSpeed>20</bulletSpeed>
+			<speedD random="0.3" />
+			<gravity>0.4</gravity>
+				
+			<bounceD floor="2" num="0.8" />	
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="filter" raNum="60">bullet/laserOrange</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/magicHit2">bulletHitEffect/energyYellow</hitImgUrl>
+		</bullet>
+		<bullet cnName="青蜂-飞镰">
+			<name>sickle_godArmsSkill</name>
+			<cnName>青蜂-飞镰</cnName><armsType>rifle</armsType>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<shakeAngle>8</shakeAngle>
+			<bulletLife>4</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<extendGap>50</extendGap>
+				
+			<bulletAngle>0</bulletAngle>
+			<bulletSpeed>25</bulletSpeed>
+			<speedD random="0.2" />
+			<twoHitGap>0.2</twoHitGap>
+				
+			<penetrationGap>1000</penetrationGap>
+			<bounceD body="5" hurtNumAdd="0.8" />	
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30" con="add">specialGun/rifleHornetBullet</bulletImgUrl>
+			<smokeImgUrl raNum="30" con="filter">specialGun/rifleHornetBulletSmoke</smokeImgUrl>
+			<hitImgUrl>bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		<bullet cnName="青蜂-跟踪飞镰">
+			<name>sickle_godArmsSkill2</name>
+			<cnName>青蜂-跟踪飞镰</cnName><armsType>rifle</armsType>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<shakeAngle>8</shakeAngle>
+			<bulletLife>4</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<extendGap>50</extendGap>
+				
+			<bulletAngle>0</bulletAngle>
+			<bulletSpeed>25</bulletSpeed>
+			<speedD random="0.2" />
+			<twoHitGap>0.2</twoHitGap>
+				
+			<penetrationGap>1000</penetrationGap>
+			<bounceD body="5" hurtNumAdd="0.8" />	
+			<followD value="1" noLM="1" />
+			<skillArr>sickle_godArmsSkill2_link</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30" con="add">specialGun/rifleHornetBullet</bulletImgUrl>
+			<smokeImgUrl raNum="30" con="filter">specialGun/rifleHornetBulletSmoke</smokeImgUrl>
+			<hitImgUrl>bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		
+		<bullet cnName="赤鼬导弹发射器">
+			<name>RifleHornetShooter</name>
+			<cnName>赤鼬导弹发射器</cnName><armsType>shotgun</armsType>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletAngle>180</bulletAngle>
+			<bulletLife>3</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.5</attackGap>
+			<attackDelay>0.033</attackDelay>
+			<bulletNum>1</bulletNum>				
+			<shootNum>3</shootNum>
+			<shootGap>0.066</shootGap>
+			<shootPoint>-43,-4</shootPoint>
+			
+				
+			<penetrationGap>1000</penetrationGap>
+			<followD value="1" delay="0.3" />
+			<boomD bodyB="1" radius="250" noExcludeBodyB="1" maxHurtNum="5" hurtMul="3.7" />
+			<skillArr>RifleHornetShooterHurt</skillArr>
+				
+			<bulletSpeed>15</bulletSpeed>
+			<speedD max="30" min="1" a="4" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">RifleHornetShooter/bullet1</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/smallBoom" soundVolume="0.3" shake="3,0.4,13">boomEffect/boom1</hitImgUrl>
+			<smokeImgUrl con="add">RifleHornetShooter/smoke1</smokeImgUrl>
+		</bullet>
+		
+		
+		
+		<bullet cnName="火首-武器技能">
+			<name>flyDragonHead</name>
+			<cnName>火首</cnName><armsType>flamer</armsType>
+			
+			<hurtRatio>0.40</hurtRatio>
+			<twoHitGap>0.5</twoHitGap>
+			<twoHitSameNameB>1</twoHitSameNameB>
+			.
+			<bulletLife>3</bulletLife>
+			<bulletWidth>15</bulletWidth>
+			<hitType>rect</hitType>
+			<bulletNum>1</bulletNum>
+				
+			<bulletSpeed>30</bulletSpeed>
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<followD value="1" delay="0.1" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">specialGun/FlyDragonGunBullet</bulletImgUrl>
+			<bulletLeftImgUrl raNum="30">specialGun/FlyDragonGunBullet2</bulletLeftImgUrl>
+			<smokeImgUrl con="filter" raNum="30">specialGun/FlyDragonGunSmoke</smokeImgUrl>
+			<hitImgUrl soundUrl="sound/magicHit2">bulletHitEffect/energyPurple</hitImgUrl>
+		</bullet>
+		
+		<bullet cnName="炮仗-武器技能">
+			<name>bangerGunSkill</name>
+			
+			<cnName>炮仗</cnName><armsType>rifle</armsType>
+			<hurtRatio>4</hurtRatio>
+			.
+			<bulletLife>15</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			<bulletNum>1</bulletNum>
+			<hitGap>0.2</hitGap>
+				
+			<bulletSpeed>3</bulletSpeed>
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30" con="add">bullet/fireball</bulletImgUrl>
+			<hitImgUrl name="bulletHitRed" />
+		</bullet>
+		
+		<bullet cnName="上帝之眼">
+			<name>godEyes</name>
+			<cnName>上帝之眼</cnName>
+			
+			<hurtRatio>0.3</hurtRatio>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>3</bulletLife>
+			<bulletWidth>25</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>0</bulletAngle>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+								
+			<shootAngle>0</shootAngle>					
+				
+			<penetrationNum>1000</penetrationNum>
+			<bounceD floor="10" body="0" num="0" />
+			<skillArr>godEyesDefence</skillArr>
+				
+			<shootPoint>0,0</shootPoint>
+			<bulletSpeed>20</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">bullet/laser</bulletImgUrl>
+			<hitImgUrl name="pistol1_hit" />
+			<smokeImgUrl con="filter" raNum="30">bullet/laser</smokeImgUrl>
+		</bullet>
+		
+		<bullet cnName="上帝之杖">
+			<name>godMace</name>
+			<cnName>上帝之杖</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletLife>0.21</bulletLife>
+			<bulletWidth>50</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<bulletAngle>90</bulletAngle>
+			<bulletNum>1</bulletNum>				
+				
+			<shootPoint>0,0</shootPoint>
+			<bulletSpeed>60</bulletSpeed>
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>1000</penetrationNum>
+			<skillArr>godMaceDefence</skillArr>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl />
+			<hitImgUrl soundUrl="sound/magicHit2">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		
+		<bullet cnName="剑齿镖-副手">
+			<name>saberDartsBullet</name>
+			<cnName>剑齿镖-副手</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>-179</bulletAngle>
+			<bulletLife>30</bulletLife>
+			<bulletWidth>50</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.33</attackDelay>
+			<shootPoint>-68,-70</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<bulletSkillArr>saberDartsBullet</bulletSkillArr>
+			<followD value="6" delay="999999" noLM="1" />
+				
+			<bulletSpeed>25</bulletSpeed>
+			<speedD max="25" min="2" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="add">weapon/saberDartsEffect</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/body_hit">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		
+		<bullet>
+			<name>saberDartsFox</name>
+			<cnName>剑齿镖-狐狸心零</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>-179</bulletAngle>
+			<bulletLife>6</bulletLife>
+			<bulletWidth>50</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.5</attackGap>
+			<attackDelay>0.28</attackDelay>
+			<shootPoint>-54,-63</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<followD value="3" delay="0.3" noLM="1" />
+				
+			<bulletSpeed>25</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl name="saberDartsFox" />
+			<hitImgUrl name="purpleHit" />
+		</bullet>
+		
+		<bullet cnName="爆竹">
+			<name>squibDevice</name>
+			<cnName>爆竹</cnName>
+			
+			<hurtRatio>0.1</hurtRatio>
+			
+			<bulletAngle>90</bulletAngle>
+			<bulletLife>15</bulletLife>
+			<bulletWidth>100</bulletWidth>
+			<hitType>rect</hitType>
+				
+			<gravity>1</gravity>
+			<boomD selfB="1" radius="160" />
+			<bounceD glueFloorB="1" />
+			<skillArr>squibDevice_screaming</skillArr>
+				
+			<bulletSpeed>1</bulletSpeed>
+			<speedD max="25" min="0" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>bullet/squib</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom1">boomEffect/boom2</hitImgUrl>
+			<hitFloorImgUrl soundUrl="sound/hitFloor">bulletHitEffect/yellow_motion</hitFloorImgUrl>
+			<smokeImgUrl con="add" raNum="1">bullet/squibSpark</smokeImgUrl>
+		</bullet>
+		<bullet cnName="恐怖盒子">
+			<name>terroristBox</name>
+			<cnName>恐怖盒子</cnName>
+			
+			<hurtRatio>0</hurtRatio>
+			
+			<bulletAngle>90</bulletAngle>
+			<bulletLife>15</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+				
+			<gravity>1</gravity>
+			<boomD selfB="1" radius="30" bodyB="1" />
+			<bounceD glueFloorB="1" />
+			<skillArr>terroristBox_screaming</skillArr>
+				
+			<bulletSpeed>1</bulletSpeed>
+			<speedD max="25" min="0" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>terroristBoxEffect/box</bulletImgUrl>
+			<selfBoomImgUrl soundUrl="terroristBoxEffect/hit1">terroristBoxEffect/effect</selfBoomImgUrl>
+			<hitFloorImgUrl soundUrl="sound/hitFloor">bulletHitEffect/yellow_motion</hitFloorImgUrl>
+		</bullet>
+		
+		<bullet cnName="装甲压制-飞镖">
+			<name>zoomOutBullet</name>
+			<cnName>放大-飞镖</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			<noHitB>1</noHitB>
+			
+			<bulletAngle>-110</bulletAngle>
+			<bulletLife>1</bulletLife>
+			<hitType>rect</hitType>
+			<shootNum>3</shootNum>
+			<shootGap>0.3</shootGap>
+				
+			<boomD selfB="1" radius="0" />
+			<bulletSkillArr>zoomOutBullet</bulletSkillArr>
+			<followD value="1" />
+				
+			<bulletSpeed>20</bulletSpeed>
+			<shootPoint>0,-80</shootPoint>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>bullet/smallGaia</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/changeToZombie_enemy" con="add">boomEffect/showLight</hitImgUrl>
+			<smokeImgUrl con="filter">bulletHitEffect/spark_motion</smokeImgUrl>
+		</bullet>
+		<bullet cnName="装甲压制-盖亚">
+			<name>zoomOutGaia</name>
+			<cnName>装甲压制-盖亚</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			<noHitB>1</noHitB>
+			
+			<bulletAngle>90</bulletAngle>
+			<bulletLife>10</bulletLife>
+			<hitType>rect</hitType>
+				
+			<gravity>3</gravity>
+			<boomD selfB="1" radius="150" />
+			<bulletSkillArr>zoomOutGaia</bulletSkillArr>
+				
+			<bulletSpeed>10</bulletSpeed>
+			<speedD max="40" min="10" a="10" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>bullet/bigGaia</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</hitImgUrl>
+			
+		</bullet>
+		
+		
+		
+		
+		
+	</father>
+	
+	</data>

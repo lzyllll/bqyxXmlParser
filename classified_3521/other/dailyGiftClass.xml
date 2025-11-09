@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<daily>
+		<bar mustNum="0">
+			<gift>base;coin;400000</gift>
+			<gift>things;skillStone;295</gift>
+			<gift>things;godStone;70</gift>
+			<gift>things;converStone;70</gift>
+			<gift>things;armsBox;9</gift>
+			<gift>things;equipBox;9</gift>
+			<gift>things;yearDog;2</gift>
+			<gift>things;taxStamp;166</gift>
+			<gift>things;anniversaryCash;67</gift>
+			<gift>things;partsChest69;67</gift>
+			
+			<vipGift>things;skillStone;30</vipGift>
+			<vipGift>things;godStone;3</vipGift>
+			<vipGift>things;converStone;3</vipGift>
+			<vipGift>things;armsBox;6</vipGift>
+			<vipGift>things;equipBox;6</vipGift>
+			<vipGift>things;yearDog;1</vipGift>
+			<vipGift>things;bloodStone;5</vipGift>
+			<vipGift>things;weaponChest;5</vipGift>
+			<vipGift>base;anniCoin;4</vipGift>
+			
+		</bar>
+		<bar mustNum="2">
+			<gift>base;coin;8000</gift>
+			<gift>things;skillStone;20</gift>
+			<gift>things;godStone;8</gift>
+			<gift>things;taxStamp;10</gift>
+			<gift>things;armsBox;9</gift>
+			<gift>things;equipBox;9</gift>
+			<gift>things;armsRadium;20</gift>
+			<gift>things;allBlackEquipCash;20</gift>
+			
+			<vipGift>things;arenaStamp;100</vipGift>
+			<vipGift>things;coinHeap_1;3</vipGift>
+			<vipGift>things;skillStone;40</vipGift>
+			<vipGift>things;godStone;5</vipGift>
+			<vipGift>things;armsBox;15</vipGift>
+			<vipGift>things;equipBox;15</vipGift>
+			<vipGift>things;armsTitanium;20</vipGift>
+			<vipGift>things;allBlackCash;20</vipGift>
+		</bar>
+		<bar mustNum="5">
+			<gift>base;coin;90000</gift>
+			<gift>things;skillStone;60</gift>
+			<gift>things;godStone;24</gift>
+			<gift>things;taxStamp;30</gift>
+			<gift>things;armsHighBox;6</gift>
+			<gift>things;equipHighBox;6</gift>
+			<gift>things;armsRadium;30</gift>
+			<gift>things;allBlackCash;30</gift>
+			
+			<vipGift>things;arenaStamp;200</vipGift>
+			<vipGift>things;rebirthStone;1</vipGift>
+			<vipGift>things;teamRebirthCard;1</vipGift>
+			<vipGift>things;skillFleshCard;1</vipGift>
+			<vipGift>things;skillStone;70</vipGift>
+			<vipGift>things;godStone;15</vipGift>
+			<vipGift>things;armsHighBox;8</vipGift>
+			<vipGift>things;equipHighBox;8</vipGift>
+			<vipGift>things;armsTitanium;30</vipGift>
+			<vipGift>things;allBlackEquipCash;30</vipGift>
+			
+		</bar>
+		<bar mustNum="10">
+			<gift>base;coin;180000</gift>
+			<gift>things;skillStone;100</gift>
+			<gift>things;godStone;48</gift>
+			<gift>things;taxStamp;60</gift>
+			<gift>things;armsHighBox;8</gift>
+			<gift>things;equipHighBox;8</gift>
+			<gift>things;armsRadium;40</gift>
+			<gift>things;allBlackEquipCash;40</gift>
+			
+			<vipGift>things;arenaStamp;350</vipGift>
+			<vipGift>things;rebirthStone;2</vipGift>
+			<vipGift>things;teamRebirthCard;2</vipGift>
+			<vipGift>things;skillFleshCard;2</vipGift>
+			<vipGift>things;skillStone;120</vipGift>
+			<vipGift>things;godStone;30</vipGift>
+			<vipGift>things;armsHighBox;15</vipGift>
+			<vipGift>things;equipHighBox;15</vipGift>
+			<vipGift>things;armsTitanium;40</vipGift>
+			<vipGift>things;allBlackCash;40</vipGift>
+		</bar>
+		<bar mustNum="17">
+			<gift>base;coin;300000</gift>
+			<gift>base;anniCoin;100</gift>
+			<gift>things;skillStone;240</gift>
+			<gift>things;godStone;100</gift>
+			<gift>things;taxStamp;120</gift>
+			<gift>things;armsHighBox;18</gift>
+			<gift>things;equipHighBox;18</gift>
+			<gift>things;armsRadium;50</gift>
+			<gift>things;allBlackCash;50</gift>
+			
+			<vipGift>base;tenCoin;100</vipGift>
+			<vipGift>things;rebirthStone;4</vipGift>
+			<vipGift>things;teamRebirthCard;4</vipGift>
+			<vipGift>things;skillFleshCard;4</vipGift>
+			<vipGift>things;skillStone;300</vipGift>
+			<vipGift>things;godStone;70</vipGift>
+			<vipGift>things;armsHighBox;20</vipGift>
+			<vipGift>things;equipHighBox;20</vipGift>
+			<vipGift>things;armsTitanium;50</vipGift>
+			<vipGift>things;allBlackEquipCash;50</vipGift>
+			
+		</bar>
+		<bar mustNum="24">
+			<gift>base;coin;720000</gift>
+			<gift>base;partsCoin;25</gift>
+			<gift>things;skillStone;400</gift>
+			<gift>things;godStone;180</gift>
+			<gift>things;taxStamp;200</gift>
+			<gift>things;armsHighBox;30</gift>
+			<gift>things;equipHighBox;30</gift>
+			
+			<vipGift>base;partsCoin;25</vipGift>
+			<vipGift>things;arenaStamp;800</vipGift>
+			<vipGift>things;rebirthStone;5</vipGift>
+			<vipGift>things;teamRebirthCard;5</vipGift>
+			<vipGift>things;skillFleshCard;5</vipGift>
+			<vipGift>things;skillStone;450</vipGift>
+			<vipGift>things;godStone;150</vipGift>
+			<vipGift>things;armsHighBox;35</vipGift>
+			<vipGift>things;equipHighBox;35</vipGift>
+		</bar>
+		<bar mustNum="30" cnName="满勤">
+			<gift>things;normalChest;20</gift>
+			<gift>things;armsRadium;200</gift>
+			<gift>things;allBlackEquipCash;150</gift>
+			<gift>things;demonChest;2</gift>
+			<gift>things;sweepingCard;1</gift>
+			
+			<vipGift>things;armsTitanium;200</vipGift>
+			<vipGift>things;allBlackCash;200</vipGift>
+			<vipGift>things;anniversaryCash;300</vipGift>
+			<vipGift>things;profiStamp;1</vipGift>
+			<vipGift>things;demonChest;2</vipGift>
+			<vipGift>things;partsChest87;1</vipGift>
+			<vipGift>things;bossCardStamp;5</vipGift>
+			<vipGift>things;sweepingCard;1</vipGift>
+			
+		</bar>
+		
+		
+	</daily>
+</data>

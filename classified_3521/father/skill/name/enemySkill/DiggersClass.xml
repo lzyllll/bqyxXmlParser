@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemySkill" cnName="首领技能">
+		<skill>
+			<name>wheelStabsDiggers</name><noBeClearB>1</noBeClearB><ignoreNoSkillB>1</ignoreNoSkillB><ignoreSilenceB>1</ignoreSilenceB>
+			<cnName>轮刺</cnName><iconUrl36>SkillIcon/redWiperSkill_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<cd>25</cd>
+			<firstCd>24</firstCd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>bullet_wheelStabsDiggers</effectType><effectFather>vehicle</effectFather>
+			<obj>"name":"wheelStabsDiggersBullet"</obj>
+			<duration>10</duration>
+			
+			<meEffectImg name="through_hero_me" />
+			<stateEffectImg name="wheelStabsDiggers" />
+			<description>释放技能后，挖掘者的后轮会持续在地面上释放持续12秒的尖刺。敌人被尖刺触碰后将受到伤害，同时被封锁。</description>
+		</skill>
+		<skill>
+			<name>FourDiggersSprint</name>
+			<cnName>聚力血锯</cnName><noBeClearB>1</noBeClearB><ignoreNoSkillB>1</ignoreNoSkillB><ignoreSilenceB>1</ignoreSilenceB>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>8</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>FourDiggersSprint</effectType><effectFather>vehicle</effectFather>
+			<mul>0.1</mul>
+			<duration>1.5</duration>
+			<meActionLabel>sprintAttack</meActionLabel>
+			<description>挖掘者疯狂转动血锯聚集能量，随后向前发出猛烈一击，最敌人造成重大伤害。</description>
+		</skill>
+	</father>
+	</data>

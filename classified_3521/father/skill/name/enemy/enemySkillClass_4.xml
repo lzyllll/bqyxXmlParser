@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="飓风巫尸-技能">
+		<skill index="0" name="飓风巫尸-飓风-沉默">
+			<name>silence_wind</name>
+			<cnName>沉默</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>silenceB</effectType>
+			<value>1</value>
+			<duration>2</duration>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/silence_enemy</stateEffectImg>
+			<description>击中目标后使其无法释放技能，持续[duration]秒。</description>
+		</skill>
+		<skill index="0" name="飓风巫尸-清空目标子弹">
+			<name>emp_wind</name>
+			<cnName>清空目标子弹</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>emp</effectType>
+			<value>0.2</value>
+			<mul>0.2</mul>
+			
+			<description>击中目标后清空其所有枪支20%的子弹和携弹量。</description>
+		</skill>
+		<skill index="0" name="slowMove_wind" cnName="减速">
+			<name>slowMove_wind</name>
+			<cnName>减速</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<value>0</value>
+			<mul>0.3</mul>
+			<duration>2</duration>
+			
+			<stateEffectImg partType="2foot">skillEffect/disabled_enemy</stateEffectImg>
+			<description>击中目标后降低其80%的移动速度，持续2秒。</description>
+		</skill>
+		<skill index="0" name="飓风巫尸-蝙蝠阵">
+			<name>bar_wind</name>
+			<cnName>蝙蝠阵</cnName><iconUrl36>SkillIcon/wizardAnger_PetTyphoonWitch_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>10</cd>
+			
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>500</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<value>1</value>
+			<mul>1</mul>
+			<duration>1</duration>
+			
+			<meActionLabel>batAttack</meActionLabel>
+			<stateEffectImg partType="hand_left" con="filter">skillEffect/smallFire</stateEffectImg>
+			<description>召唤出成群的蝙蝠攻击敌人。</description>
+		</skill>
+		<skill index="0" cnName="巫尸之怒">
+			<name>wizardAnger_wind</name>
+			<cnName>巫尸之怒</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<minTriggerT>20</minTriggerT>
+			
+			<conditionType>passive</conditionType>
+			<condition>beforeDie</condition>
+			<target>me</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>wizardAnger_wind</effectType>
+			<value>1</value>
+			<duration>5</duration>
+			
+			<meActionLabel>roarAttack</meActionLabel>
+			<meEffectImg soundUrl="sound/invisibility_hero" con="add" />
+			<stateEffectImg partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="filter" raNum="1">skillEffect/witchSmoke</stateEffectImg>
+			
+			<description>在受到必亡的伤害时，巫尸启动巫术的护佑，进入无敌状态，同时召唤无数的蝙蝠攻击敌人，蝙蝠每次攻击将回复巫尸一定的生命值。技能触发间隔不小于[minTriggerT]秒。</description>
+		</skill>
+		<skill index="0" cnName="巫尸之怒-吸血">
+			<name>wizardAnger_wind_blood</name>
+			<cnName>巫尸之怒-吸血</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>life</effectType>
+			<value>0</value>
+			<mul>0.005</mul>
+			
+			<description>敌方单位被蝙蝠击中将回复巫尸[mul]的生命值</description>
+		</skill>
+		<skill index="0" name="poisonClaw_wind" cnName="毒爪">
+			<name>poisonClaw_wind</name>
+			<cnName>毒爪</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>poison</effectType>
+			<extraValueType>hurtValue</extraValueType>
+			<mul>0.5</mul>
+			<doGap>1</doGap>
+			<duration>5</duration>
+			 
+			<stateEffectImg partType="mouth" con="add">skillEffect/poisonousFog_hero</stateEffectImg>
+			<description>释放技能后，单位的双手将涂满毒液，对攻击目标造成中毒效果。</description>
+		</skill>
+		<skill cnName="灵步">
+			<name>noSR</name>
+			<cnName>灵步</cnName><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>noSpeedReduce</effectType>
+			<mul>1</mul>
+			<duration>999999</duration>
+			 
+			<description>保持自身的移动速度不会过低。</description>
+		</skill>
+		
+		<skill index="0" name="xxx_wind" cnName="瞬秒">
+			<name>xxx_wind</name>
+			<cnName>瞬秒</cnName>
+			
+			<conditionType>active</conditionType>
+			<target>me,range,enemy</target>
+			
+			<addType>instant</addType>
+			<effectType>normal_hurt</effectType>
+			<extraValueType>producterDpsFactor</extraValueType>
+			<mul>9999999</mul>
+			<range>10000000</range>
+		</skill>
+		
+		<skill index="0" name="winding_mummy" cnName="战斗干尸-缠绕">
+			<name>winding_mummy</name>
+			<cnName>缠绕</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<value>0</value>
+			<mul>0.3</mul>
+			<duration>2</duration>
+			
+			<stateEffectImg partType="2foot">skillEffect/disabled_enemy</stateEffectImg>
+			<description>击中目标后降低其80%的移动速度，持续2秒。</description>
+		</skill>
+		
+	</father>
+	
+	
+	</data>

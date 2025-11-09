@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		
+		<skill>
+			<name>yearTigerSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>虎刃</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>attackGapMul</effectType>
+			<mul>1.4</mul>
+			<duration>5</duration>
+			<description>发射出的利刃将不断切割敌人，最多切割4下，无视刚体。击中敌人后将提高[mul-1]的武器射速。</description>
+		</skill>
+		<skill>
+			<name>yearTigerPurgold</name><noRandomListB>1</noRandomListB>
+			<cnName>穿甲虎刃</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>attackGapMul</effectType>
+			<mul>1.4</mul>
+			<duration>5</duration>
+			<description>发射出的利刃将不断切割敌人，最多切割12下，无视刚体、防弹外壳、防弹钢甲。击中敌人后将提高[mul-1]的武器射速。</description>
+		</skill>
+		
+		
+		
+		
+		
+		<skill index="0" name="精英之殇">
+			<name>yearTigerHurtSuper</name><noRandomListB>1</noRandomListB>
+			<cnName>精英之殇</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			<changeHurtB>1</changeHurtB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>yearTigerHurtSuper</effectType>
+			<mul>3</mul>
+			<secMul>1.6</secMul>
+			
+			<description>对精英怪物造成的伤害提高[mul-1]，对首领的伤害提高[secMul-1]。</description>
+		</skill>
+	</father>
+	
+</data>

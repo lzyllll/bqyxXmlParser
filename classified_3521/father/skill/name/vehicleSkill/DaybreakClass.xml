@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicleSkill" cnName="技能">
+		<skill>
+			<name>daylightSkill</name><noBeClearB>1</noBeClearB>
+			<cnName>裂火钻</cnName><iconUrl>SkillIcon/through_hero</iconUrl>
+			<effectInfoArr>增加伤害输出</effectInfoArr>
+			
+			<cd>70</cd>
+			<changeText>持续[duration]秒</changeText>
+			
+			<conditionType>active</conditionType>
+			<condition>beforeAttack</condition>
+			<target>me</target>
+			<passiveSkillArr>daylightSkill_link</passiveSkillArr>
+			
+			<addType>state</addType>
+			<effectType>daylightSkill</effectType><effectFather>vehicle</effectFather>
+			<value>2.5</value>
+			<secMul>3</secMul>
+			<duration>1.5</duration>
+			
+			
+			<meEffectImg name="through_hero_me" />
+			<stateEffectImg name="burstParts" />
+			<description>机枪开启无限穿人穿墙模式，伤害增至[value]倍（对火焰敏感的敌人再提升[secMul]的伤害），持续[duration]秒。</description>
+			
+			<growth>
+				<skill><duration>1.5</duration></skill>
+				<skill><duration>1.8</duration></skill>
+				<skill><duration>2.1</duration></skill>
+				<skill><duration>2.4</duration></skill>
+				<skill><duration>2.7</duration></skill>
+				<skill><duration>3</duration></skill>
+				<skill><duration>3.3</duration></skill>
+				<skill><duration>3.6</duration></skill>
+				<skill><duration>4</duration></skill>
+				<skill><duration>5</duration></skill>
+			</growth>
+		</skill>
+				<skill>
+					<name>daylightSkill_link</name>
+					<cnName>对火焰敏感提升</cnName><noRandomListB>1</noRandomListB><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+					
+					<conditionType>passive</conditionType><changeHurtB>1</changeHurtB>
+					<condition>hit</condition>
+					<conditionString>compound</conditionString>
+					<target>target</target>
+					
+					<addType>instant</addType>
+					<effectType>vehicleSkillEle</effectType><effectFather>vehicle</effectFather>
+					<valueString>Daybreak_sub</valueString>
+					<mul>3</mul>
+					<pointEffectImg name="orangeWaveBoom" />
+				</skill>
+	</father>
+	
+	
+	
+	</data>

@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="noEnemySuper" cnName="剔除出怪物精英技能">
+		
+		<skill index="0" name="rebirth_enemy" cnName="重生">
+			<name>rebirth_enemy</name>
+			<cnName>重生</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>allDie</condition>
+			<otherConditionArr>rebirthNumLess,producerNoState</otherConditionArr>
+			<conditionRange>1</conditionRange>
+			<conditionString>lightConePurgold</conditionString>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>rebirth</effectType>
+			<mul>0.5</mul>
+			
+			<addSkillEffectImg partType="mouth" con="add">skillEffect/rune_green_r</addSkillEffectImg>
+			<meEffectImg soundUrl="sound/groupLight_hero" con="add">skillEffect/groupLight_hero</meEffectImg>
+			<description>单位殒命后重生，回复[mul]的生命值。</description>
+		</skill>
+		
+		<skill index="0" name="recovery_enemy" cnName="复原">
+			<name>recovery_enemy</name>
+			<cnName>复原</cnName><iconUrl36>SkillIcon/recoveryHalo_pet_36</iconUrl36>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>lifeRate</effectType>
+			<mul>0.005</mul>
+			<duration>999999</duration>
+			 
+			<addSkillEffectImg partType="mouth" con="add">skillEffect/rune_red_e</addSkillEffectImg>
+			<description>每秒回复[mul]的生命值。</description>
+		</skill>
+		<skill index="0" name="recoveryHalo_enemy" cnName="复原光环">
+			<name>recoveryHalo_enemy</name>
+			<cnName>复原光环</cnName><iconUrl36>SkillIcon/recoveryHalo_pet_36</iconUrl36>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>lifeRate</effectType>
+			<mul>0.003</mul>
+			<duration>2</duration>
+			<range>300</range>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/rune_red_e</stateEffectImg>
+			<description>为周围[range]码以内的我方单位增加生命回复效果。</description>
+		</skill>
+		
+		<skill index="0" name="tenacious_enemy" cnName="反击">
+			<name>tenacious_enemy</name>
+			<cnName>反击</cnName><iconUrl36>SkillIcon/tenacious_hero_36</iconUrl36>
+			
+			<cd>25</cd>
+			<changeText>技能冷却时间：[cd]秒</changeText>
+			
+			
+			<conditionType>active</conditionType>
+			<condition>beforeAttack</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>0.6</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>suckBlood</effectType>
+			<mul>4</mul>
+			<duration>10</duration>
+			
+			<meEffectImg soundUrl="sound/tenacious_hero" />
+			<stateEffectImg partType="2hand" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg>
+			<description>释放技能后，单位开启[mul]的吸血状态，持续[duration]秒。</description>
+		</skill>
+		<skill index="0" name="reverseHurt_enemy" cnName="电离反转">
+			<name>reverseHurt_enemy</name>
+			<cnName>电离反转</cnName><iconUrl36>SkillIcon/groupReverseHurt_hero_36</iconUrl36>
+			<mustLv>20</mustLv>
+			
+			<cd>20</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>underHit</condition>
+			<otherConditionArr>attackTargetNoSameInvi</otherConditionArr>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>reverseHurt</effectType>
+			<value>1</value>
+			<duration>5</duration>
+			 
+			
+			<meEffectImg soundUrl="sound/reverseHurt_enemy" />
+			<stateEffectImg partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" imgDieType="last">skillEffect/reverseHurt_enemy</stateEffectImg>
+			<description>释放技能后，单位将进入反转状态，这个时候自身所受到的100%的伤害都会转化为自己的生命值。持续5秒。</description>
+		</skill>
+		
+		<skill>
+			<name>teleport_enemy15</name>
+			<cnName>瞬移</cnName><iconUrl36>SkillIcon/flash_pet_36</iconUrl36>
+			
+			<cd>10</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>1000</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>teleport</effectType>
+			<valueString>attackTarget</valueString>
+			 
+			<meActionLabel>skillAttack1</meActionLabel>
+			<meEffectImg soundUrl="sound/teleport_enemy" con="add">lightEffect/basinShow</meEffectImg>
+			<description>瞬间移动到单位攻击目标的位置，不适用与远战单位。</description>
+		</skill>
+		<skill>
+			<name>teleport_enemy20</name>
+			<cnName>瞬移</cnName><iconUrl36>SkillIcon/flash_pet_36</iconUrl36>
+			
+			<cd>20</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>1000</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>teleport</effectType>
+			<valueString>attackTarget</valueString>
+			 
+			<meActionLabel>skillAttack1</meActionLabel>
+			<meEffectImg soundUrl="sound/teleport_enemy" con="add">lightEffect/basinShow</meEffectImg>
+			<description>瞬间移动到单位攻击目标的位置，不适用与远战单位。</description>
+		</skill>
+	</father>
+	
+	</data>

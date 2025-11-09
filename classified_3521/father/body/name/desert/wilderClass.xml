@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="desert" cnName="荒芜之地">
+		<body id="9" name="Triceratops" cnName="异角龙" scene="QiuYe" lifeMul="1.5" openTime="2020-4-27" day="14">
+			<drop cnName="异龙蛋碎片" pro="1" d7="10" d6="9" d5="8" d4="7" d3="6" d2="4" d1="3" d0="2">
+				<gift>things;dinosaurEgg_1;1</gift>
+			</drop>
+		</body>
+		<body id="10" name="FlyDragon" cnName="异祖龙" scene="HuangMo2" lifeMul="1.5" levelDiy="FlyDragon" openTime="2020-2-12" day="21">
+			<drop cnName="祖龙稀有碎片" pro="1" d7="12" d6="11" d5="10" d4="8" d3="6" d2="5" d1="4" d0="3">
+				<gift>things;FlyDragonGun;1</gift>
+			</drop>
+		</body>
+		<body id="11" name="SaberTiger" cnName="异齿虎" scene="HuangMo3" lifeMul="1.3" openTime="2019-11-25" day="14">
+			<drop cnName="剑齿镖副手" num="1" d7="0.20" d6="0.18" d5="0.16" d4="0.15" d3="0.14" d2="0.13" d1="0.12" d0="0.11" noDropMax="1">
+				<gift>equip;saberDarts_1;1</gift>
+			</drop>
+			<drop cnName="副手箱" pro="1" d7="5" d6="5" d5="4" d4="4" d3="4" d2="3" d1="3" d0="3">
+				<gift>things;weaponChest;1</gift>
+			</drop>
+		</body>
+		<body id="12" name="Mammoth" cnName="异猛象" scene="HuangMo3" lifeMul="1.1" openTime="2020-2-24" day="21">
+			<drop cnName="部落骨环碎片" pro="1" d7="15" d6="14" d5="13" d4="12" d3="11" d2="10" d1="9" d0="8">
+				<gift>things;boneRing_1;1</gift>
+			</drop>
+		</body>
+	</father>
+	</data>

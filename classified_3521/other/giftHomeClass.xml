@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<level lv="1" cnName="一" allMustNum="50000" meMustNum="1" >
+		<vip0 cn="超能石">things;skillStone;				200</vip0>
+		<vip0 cn="神能石">things;godStone;				100</vip0>
+		<vip0 cn="强化剂">things;strengthenDrug;		400</vip0>
+		<vip0 cn="高级武器箱">things;armsHighBox;	20</vip0>
+		<vip0 cn="高级装备箱">things;equipHighBox;	20</vip0>
+		
+		<vip1 cn="超能石">things;skillStone;				300</vip1>
+		<vip1 cn="神能石">things;godStone;				150</vip1>
+		<vip1 cn="强化剂">things;strengthenDrug;		600</vip1>
+		<vip1 cn="高级武器箱">things;armsHighBox;	30</vip1>
+		<vip1 cn="高级装备箱">things;equipHighBox;	30</vip1>
+		
+		<vip2 cn="超能石">things;skillStone;				320</vip2>
+		<vip2 cn="神能石">things;godStone;				160</vip2>
+		<vip2 cn="强化剂">things;strengthenDrug;		640</vip2>
+		<vip2 cn="高级武器箱">things;armsHighBox;	32</vip2>
+		<vip2 cn="高级装备箱">things;equipHighBox;	32</vip2>
+		
+		<vip3 cn="超能石">things;skillStone;				340</vip3>
+		<vip3 cn="神能石">things;godStone;				170</vip3>
+		<vip3 cn="强化剂">things;strengthenDrug;		680</vip3>
+		<vip3 cn="高级武器箱">things;armsHighBox;	34</vip3>
+		<vip3 cn="高级装备箱">things;equipHighBox;	34</vip3>
+		
+		<vip4 cn="超能石">things;skillStone;				360</vip4>
+		<vip4 cn="神能石">things;godStone;				180</vip4>
+		<vip4 cn="强化剂">things;strengthenDrug;		720</vip4>
+		<vip4 cn="高级武器箱">things;armsHighBox;	36</vip4>
+		<vip4 cn="高级装备箱">things;equipHighBox;	36</vip4>
+		
+		<vip5 cn="超能石">things;skillStone;				380</vip5>
+		<vip5 cn="神能石">things;godStone;				190</vip5>
+		<vip5 cn="强化剂">things;strengthenDrug;		760</vip5>
+		<vip5 cn="高级武器箱">things;armsHighBox;	38</vip5>
+		<vip5 cn="高级装备箱">things;equipHighBox;	38</vip5>
+		
+		<specialGift>head;specialSoldiers;1</specialGift>
+	</level>
+	<level lv="2" cnName="二" allMustNum="500000" meMustNum="10" >
+		<vip0 cn="副手箱">things;weaponChest;	10</vip0>
+		<vip0 cn="装置箱">things;deviceChest;		20</vip0>
+		<vip0 cn="转化石">things;converStone;		200</vip0>
+		<vip0 cn="钥匙箱">things;keyChest;			20</vip0>
+		
+		<vip1 cn="副手箱">things;weaponChest;	15</vip1>
+		<vip1 cn="装置箱">things;deviceChest;		30</vip1>
+		<vip1 cn="转化石">things;converStone;		300</vip1>
+		<vip1 cn="钥匙箱">things;keyChest;			30</vip1>
+		
+		<vip2 cn="副手箱">things;weaponChest;	16</vip2>
+		<vip2 cn="装置箱">things;deviceChest;		32</vip2>
+		<vip2 cn="转化石">things;converStone;		320</vip2>
+		<vip2 cn="钥匙箱">things;keyChest;			32</vip2>
+		
+		<vip3 cn="副手箱">things;weaponChest;	17</vip3>
+		<vip3 cn="装置箱">things;deviceChest;		34</vip3>
+		<vip3 cn="转化石">things;converStone;		340</vip3>
+		<vip3 cn="钥匙箱">things;keyChest;			34</vip3>
+		
+		<vip4 cn="副手箱">things;weaponChest;	18</vip4>
+		<vip4 cn="装置箱">things;deviceChest;		36</vip4>
+		<vip4 cn="转化石">things;converStone;		360</vip4>
+		<vip4 cn="钥匙箱">things;keyChest;			36</vip4>
+		
+		<vip5 cn="副手箱">things;weaponChest;	25</vip5>
+		<vip5 cn="装置箱">things;deviceChest;		50</vip5>
+		<vip5 cn="转化石">things;converStone;		500</vip5>
+		<vip5 cn="钥匙箱">things;keyChest;			50</vip5>
+		
+		
+		<specialGift>head;superHero;1</specialGift>
+	</level>
+	<level lv="3" cnName="三" allMustNum="1000000" meMustNum="20" >
+		<vip0 cn="血石">things;bloodStone;				40</vip0>
+		<vip0 cn="强化石">things;strengthenStone;	30</vip0>
+		<vip0 cn="优胜券">things;arenaStamp;			400</vip0>
+		<vip0 cn="稀有宝箱">things;normalChest;		5</vip0>
+		
+		<vip1 cn="血石">things;bloodStone;				60</vip1>
+		<vip1 cn="强化石">things;strengthenStone;	45</vip1>
+		<vip1 cn="优胜券">things;arenaStamp;			600</vip1>
+		<vip1 cn="稀有宝箱">things;normalChest;		7</vip1>
+		
+		<vip2 cn="血石">things;bloodStone;				76</vip2>
+		<vip2 cn="强化石">things;strengthenStone;	57</vip2>
+		<vip2 cn="优胜券">things;arenaStamp;			760</vip2>
+		<vip2 cn="稀有宝箱">things;normalChest;		10</vip2>
+		
+		<vip3 cn="血石">things;bloodStone;				92</vip3>
+		<vip3 cn="强化石">things;strengthenStone;	69</vip3>
+		<vip3 cn="优胜券">things;arenaStamp;			920</vip3>
+		<vip3 cn="稀有宝箱">things;normalChest;		14</vip3>
+		
+		<vip4 cn="血石">things;bloodStone;				108</vip4>
+		<vip4 cn="强化石">things;strengthenStone;	81</vip4>
+		<vip4 cn="优胜券">things;arenaStamp;			1080</vip4>
+		<vip4 cn="稀有宝箱">things;normalChest;		19</vip4>
+		
+		<vip5 cn="血石">things;bloodStone;				124</vip5>
+		<vip5 cn="强化石">things;strengthenStone;	93</vip5>
+		<vip5 cn="优胜券">things;arenaStamp;			1240</vip5>
+		<vip5 cn="稀有宝箱">things;normalChest;		25</vip5>
+		
+		<specialGift>equip;xiaoAi</specialGift>
+	</level>
+	<level lv="4" cnName="四" allMustNum="1750000" meMustNum="35" >
+		<vip0 cn="技能刷新卡">things;skillFleshCard;		5</vip0>
+		<vip0 cn="队友重生卡">things;teamRebirthCard;	5</vip0>
+		<vip0 cn="重生石">things;rebirthStone;				5</vip0>
+		<vip0 cn="传奇宝箱">things;magicChest;				5</vip0>
+		
+		<vip1 cn="技能刷新卡">things;skillFleshCard;		8</vip1>
+		<vip1 cn="队友重生卡">things;teamRebirthCard;	8</vip1>
+		<vip1 cn="重生石">things;rebirthStone;				8</vip1>
+		<vip1 cn="传奇宝箱">things;magicChest;				7</vip1>
+		
+		<vip2 cn="技能刷新卡">things;skillFleshCard;		11</vip2>
+		<vip2 cn="队友重生卡">things;teamRebirthCard;	11</vip2>
+		<vip2 cn="重生石">things;rebirthStone;				11</vip2>
+		<vip2 cn="传奇宝箱">things;magicChest;				10</vip2>
+		
+		<vip3 cn="技能刷新卡">things;skillFleshCard;		14</vip3>
+		<vip3 cn="队友重生卡">things;teamRebirthCard;	14</vip3>
+		<vip3 cn="重生石">things;rebirthStone;				14</vip3>
+		<vip3 cn="传奇宝箱">things;magicChest;				14</vip3>
+		
+		<vip4 cn="技能刷新卡">things;skillFleshCard;		17</vip4>
+		<vip4 cn="队友重生卡">things;teamRebirthCard;	17</vip4>
+		<vip4 cn="重生石">things;rebirthStone;				17</vip4>
+		<vip4 cn="传奇宝箱">things;magicChest;				19</vip4>
+		
+		<vip5 cn="技能刷新卡">things;skillFleshCard;		20</vip5>
+		<vip5 cn="队友重生卡">things;teamRebirthCard;	20</vip5>
+		<vip5 cn="重生石">things;rebirthStone;				20</vip5>
+		<vip5 cn="传奇宝箱">things;magicChest;				25</vip5>
+		<specialGift>equip;xiaoBo</specialGift>
+	</level>
+</data>

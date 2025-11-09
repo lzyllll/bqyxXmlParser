@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="props" cnName="经验卡">
+		<things cnName="初级经验卡">
+			<name>expCard1</name>
+			<cnName>初级经验卡</cnName>
+			<iconUrl>ThingsIcon/expCard1</iconUrl>
+			<description>使用后添加100万所有角色的经验，人物40级以后可以使用。</description>
+			<effectD type="addGift" minLv="40" />
+			<gift>base;exp;3000000</gift>
+		</things>
+		<things cnName="中级经验卡">
+			<name>expCard2</name>
+			<cnName>中级经验卡</cnName>
+			<iconUrl>ThingsIcon/expCard2</iconUrl>
+			<description>使用后添加1000万所有角色的经验，人物60级以后可以使用。</description>
+			<effectD type="addGift" minLv="60" />
+			<gift>base;exp;10000000</gift>
+		</things>
+		<things cnName="高级经验卡">
+			<name>expCard3</name>
+			<cnName>高级经验卡</cnName>
+			<iconUrl>ThingsIcon/expCard3</iconUrl>
+			<description>使用后添加3000万所有角色的经验，人物80级以后可以使用。</description>
+			<effectD type="addGift" minLv="80" />
+			<gift>base;exp;30000000</gift>
+		</things>
+		<things cnName="神宠卡片">
+			<name>highPetCard</name>
+			<cnName>神宠卡片</cnName>
+			<zuobiNum>1000</zuobiNum>
+			<iconUrl>ThingsIcon/highPetCard</iconUrl>
+			<stateD skill="highPetCard" time="300" gamingB="1" demNoneB="1" />
+			<smeltD price="30" />
+			<description>使用后在战斗中增加宠物400%的伤害，持续5分钟。</description> 
+			<loveD num="1" />
+		</things>
+		<things cnName="神车卡片">
+			<name>highVehicleCard</name>
+			<cnName>神车卡片</cnName>
+			<zuobiNum>1000</zuobiNum>
+			<iconUrl>ThingsIcon/highVehicleCard</iconUrl>
+			<stateD skill="highVehicleCard" time="300" gamingB="1" demNoneB="1" />
+			<smeltD price="30" />
+			<description>使用后在战斗中增加载具400%的伤害，持续5分钟。</description> 
+			<loveD num="1" />
+		</things>
+		<things cnName="神队卡片">
+			<name>highPartnerCard</name>
+			<cnName>神队卡片</cnName>
+			<zuobiNum>10000</zuobiNum>
+			<iconUrl>ThingsIcon/highPartnerCard</iconUrl>
+			<stateD skill="highPartnerCard" time="60" gamingB="1" demNoneB="1" />
+			<smeltD price="50" />
+			<description>使用后在战斗中增加队友100%的伤害，持续1分钟。</description> 
+			<loveD num="1" />
+		</things>
+	</father>
+	
+	</data>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="狂野收割者">
+		<bullet cnName="狂野收割者-飞刀">
+			<name>FightPig_shoot</name>
+			<cnName>狂野收割者飞刀</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>8</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.1</attackGap>
+			<attackDelay>0.4</attackDelay>
+			<bulletAngle>185</bulletAngle>
+			<bulletAngleRange>40</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+								
+			<shootAngle>0</shootAngle>					
+				
+			<shootPoint>-97,-58</shootPoint>
+			<bulletSpeed>25</bulletSpeed>
+			<gravity>0.6</gravity>
+			<bounceD floor="999" />	
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>FightPig/bullet1</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="sound/vehicle_hit2">bladeHitEffect/blood</hitImgUrl>
+			<hitFloorImgUrl con="add" soundUrl="sound/vehicle_hit2" soundVolume="0.4">bladeHitEffect/blood</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="1">FightPig/smoke1</smokeImgUrl>
+		</bullet>
+		<bullet cnName="狂野收割者-雷霆斧击">
+			<name>FightPig_thunder</name>
+			<cnName>雷霆斧击</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletLife>0.0001</bulletLife>
+			<bulletWidth>320</bulletWidth>
+			<hitType>longLine</hitType>
+			
+			<twoHitGap>0.5</twoHitGap>
+			<twoHitSameNameB>1</twoHitSameNameB>
+			<bulletAngle>270</bulletAngle>
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+				
+			<shootPoint>0,0</shootPoint>
+			<bulletSpeed>0</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<imgClearDelay>0.36</imgClearDelay>
+			<bulletImgUrl con="add" soundUrl="FightPig/skill2">FightPig/thunderBullet1</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		
+	</father>		
+</data>

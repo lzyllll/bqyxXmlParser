@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="wilder">
+		
+		
+		<body name="骷髅巫师">
+			
+			<name>SkeletalMage</name>
+			<cnName>骷髅巫师</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/SkeletalMage2.swf</swfUrl>
+			
+			<lifeRatio>1.8</lifeRatio>
+			<showLevel>999</showLevel>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move,run
+				,normalAttack,shootAttack,followAttack,shadowAttack
+				,hurt1,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			<lifeBarExtraHeight>-40</lifeBarExtraHeight>
+			<handAddRa>90</handAddRa>
+			
+			<hitRect>-18,-96,36,96</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>12</maxVx>
+			<runStartVx>8</runStartVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>SkeletalMage_AIExtra</extraAIClassLabel>
+			
+			<skillArr />
+			<bossSkillArr>fightReduct2,defenceBounce_enemy,SkeletalMageFollow,SkeletalMageCloned</bossSkillArr>
+			<bossSkillArrCn />
+			
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<skillArr>slowMove_enemy</skillArr>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit1">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel>
+					<bulletLabel>SkeletalMageShoot</bulletLabel>
+					<grapRect>-400,-111,100,150</grapRect>
+					<hurtRatio>2</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+				</hurt>
+				
+				<hurt info="追魂术">
+					<imgLabel>followAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<bulletLabel>SkeletalMageFollowBullet</bulletLabel>
+					<grapRect>-400,-111,100,150</grapRect>
+					<hurtMul>0.3</hurtMul>
+					<shakeValue>4</shakeValue>
+					<attackType>holy</attackType>
+				</hurt>
+				
+				<hurt info="制魂术">
+					<imgLabel>shadowAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<noShootB>1</noShootB>
+					<grapRect>-400,-111,100,150</grapRect>
+					<skillArr />
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/fireHit2">bulletHitEffect/headshot</hitImgUrl>
+				</hurt>
+				
+			</hurtArr>
+		</body>	
+	</father>
+	</data>

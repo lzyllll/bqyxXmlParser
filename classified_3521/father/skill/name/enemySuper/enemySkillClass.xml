@@ -1,0 +1,570 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemySuper" cnName="怪物精英技能">
+		<skill index="0" cnName="狂暴">
+			<name>crazy_enemy</name>
+			<cnName>狂暴</cnName><iconUrl36>SkillIcon/crazy_hero_36</iconUrl36>
+			
+			<cd>20</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>beforeAttack</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>crazy</effectType>
+			<mul>1.6</mul>
+			<duration>8</duration>
+			
+			<meEffectImg soundUrl="sound/crazy_hero" />
+			<stateEffectImg partType="2eye" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg>
+			<stateEffectImg2 partType="2eye" con="add">skillEffect/crazy_hero_eye</stateEffectImg2>
+			<description>释放技能后，单位增加100%的射击速度，同时不消耗弹药，持续[duration]秒。注意，当你弹药为0时同样无法射击。</description>
+		</skill>
+		<skill index="0" name="groupLight_enemy" cnName="群体圣光">
+			<name>groupLight_enemy</name>
+			<cnName>群体圣光</cnName><iconUrl36>SkillIcon/groupLight_hero_36</iconUrl36>
+			
+			<cd>10</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>0.7</conditionRange>
+			<target>me,range,we</target>
+			
+			<addType>instant</addType>
+			<effectType>groupLight_enemy</effectType>
+			<value>0.05</value>
+			<mul>0</mul>
+			<range>300</range>
+			 
+			<meActionLabel>skillAttack1</meActionLabel>
+			<meEffectImg soundUrl="sound/groupLight_hero" />
+			<targetEffectImg con="add">skillEffect/groupLight_hero</targetEffectImg>
+			<description>技能释放后，回复周围[range]码以内的所有我方单位30%的生命值。</description>
+		</skill>
+		<skill index="0" name="groupSpeedUp_enemy" cnName="群体加速">
+			<name>groupSpeedUp_enemy</name>
+			<cnName>群体加速</cnName><iconUrl36>SkillIcon/groupSpeedUp_enemy_36</iconUrl36>
+			
+			<cd>20</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<value>5</value>
+			<range>300</range>
+			<duration>8</duration>
+			 
+			<meEffectImg soundUrl="sound/groupSpeedUp_enemy" />
+			<stateEffectImg partType="2foot" con="add" raNum="30">bulletHitEffect/smoke_small</stateEffectImg>
+			<description>技能释放后，提升周围[range]码以内的所有我方单位60%的移动速度。</description>
+		</skill>
+		
+		<skill index="0" name="teleport_enemy" cnName="瞬移">
+			<name>teleport_enemy</name>
+			<cnName>瞬移</cnName><iconUrl36>SkillIcon/flash_pet_36</iconUrl36>
+			
+			<cd>5</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>1000</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>teleport</effectType>
+			<valueString>attackTarget</valueString>
+			 
+			<meActionLabel>skillAttack1</meActionLabel>
+			<meEffectImg soundUrl="sound/teleport_enemy" con="add">lightEffect/basinShow</meEffectImg>
+			<description>瞬间移动到单位攻击目标的位置，不适用与远战单位。</description>
+		</skill>
+		
+		<skill index="0" name="hiding_enemy" cnName="隐身">
+			<name>hiding_enemy</name>
+			<cnName>隐身</cnName><iconUrl36>SkillIcon/hiding_hero_36</iconUrl36>
+			<cd>5</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>1000</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>hidingB</effectType>
+			<value>1</value>
+			<duration>10</duration>
+			
+			<meEffectImg soundUrl="sound/hiding_hero" con="add">skillEffect/hiding_hero</meEffectImg>
+			<description>释放技能后，单位进入隐身状态，持续10秒。自己发动攻击会打破隐身状态。</description>
+		</skill>
+		
+		
+		
+		<skill index="0" name="hidingAll_enemy" cnName="群体隐身">
+			<name>hidingAll_enemy</name>
+			<cnName>群体隐身</cnName><iconUrl36>SkillIcon/hiding_hero_36</iconUrl36>
+			<cd>10</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>1500</conditionRange>
+			<target>me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>hidingB</effectType>
+			<value>1</value>
+			<duration>10</duration>
+			<range>400</range>
+			
+			<meEffectImg soundUrl="sound/hiding_hero" con="add">skillEffect/hiding_hero</meEffectImg>
+			<description>释放技能后，400以内所有我方单位进入隐身状态，持续[duration]秒。如果你对敌人发起攻击会打破隐身状态。</description>
+		</skill>
+		<skill index="0" name="feedback_enemy" cnName="电离折射">
+			<name>feedback_enemy</name>
+			<cnName>电离折射</cnName><iconUrl36>SkillIcon/feedback_hero_36</iconUrl36>
+			
+			<cd>18</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>underHit</condition>
+			<otherConditionArr>attackTargetNoSameInvi</otherConditionArr>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>noUnderHurtB</effectType>
+			<value>1</value>
+			<duration>5</duration>
+			 
+			<passiveSkillArr>backHurt_enemy_link</passiveSkillArr>
+			
+			<meEffectImg soundUrl="sound/feedback_hero" />
+			<stateEffectImg partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" imgDieType="last">skillEffect/feedback_hero_part</stateEffectImg>
+			<description>释放技能后，单位将10%的伤害反弹给敌人，自身不受到伤害。持续5秒。</description>
+		</skill>
+		
+		<skill index="0" name="imploding_enemy" cnName="爆石">
+			<name>imploding_enemy</name>
+			<cnName>爆石</cnName><iconUrl36>SkillIcon/imploding_pet_36</iconUrl36>
+			
+			<cd>15</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>500</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>0.5,0.3,0.2,0.05</effectProArr>
+			<extraValueType>meDpsFactor</extraValueType>
+			
+			<obj>"name":"imploding_enemy","site":"me","flipB":true</obj>
+			
+			<meEffectImg soundUrl="sound/imploding_enemy" />
+			<description>从单位背后爆发出多颗石头，并且有几率释放多次。</description>
+		</skill>
+		<skill index="0" name="paralysis_enemy" cnName="闪电麻痹">
+			<name>paralysis_enemy</name>
+			<cnName>闪电麻痹</cnName><iconUrl36>SkillIcon/paralysis_pet_36</iconUrl36>
+			
+			<cd>15</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>500</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			
+			<obj>"name":"paralysis_enemy","site":"me","flipB":true</obj>
+			
+			<meEffectImg soundUrl="sound/paralysis_enemy_shoot" />
+			<description>从单位背后发出一颗闪电球，击中并且麻痹目标，使目标无法移动。</description>
+		</skill>
+		<skill index="0" name="pointBoom_enemy" cnName="定点轰炸">
+			<name>pointBoom_enemy</name>
+			<cnName>定点轰炸</cnName><iconUrl36>SkillIcon/pointBoom_hero_36</iconUrl36>
+			
+			<cd>20</cd>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>800</conditionRange>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>1.12,0.1,0.03,0.01</effectProArr>
+			<extraValueType>meDpsFactor</extraValueType>
+			
+			<obj>"name":"pointBoom_hero","site":"mouse","flipB":false</obj>
+			
+			<description>在鼠标位置引爆一颗炸弹，对周围100码内的所有敌人造成伤害，伤害值为当前dps的2倍。并且有[effectProArr.1]的几率释放2~4次。</description>
+			
+		</skill>
+		<skill index="0" name="sweep_enemy" cnName="导弹召唤">
+			<name>sweep_enemy</name>
+			<cnName>导弹召唤</cnName><iconUrl36>SkillIcon/endlessBombing_skull_36</iconUrl36>
+			<cd>15</cd>
+			
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>700</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>10.1,0.03,0.01</effectProArr>
+			<extraValueType>nowArmsDps</extraValueType>
+			
+			<obj>"name":"sweep_shell","site":"mouse","flipB":true,"launcherB":true</obj>
+			
+			<meEffectImg soundUrl="sound/moreMissile_hero" />
+			<description>以鼠标点为中心，向中心横扫导弹。</description>
+		</skill>
+		<skill index="0" name="moreMissile_enemy" cnName="万弹归宗">
+			<name>moreMissile_enemy</name>
+			<cnName>万弹归宗</cnName><iconUrl36>SkillIcon/moreMissile_hero_36</iconUrl36>
+			
+			<cd>30</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>700</conditionRange>
+			<target>me,range,we,,,6</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>0.8,0.2</effectProArr>
+			<extraValueType>meDpsFactor</extraValueType>
+			<range>300</range>
+			
+			<obj>"name":"moreMissile_enemy","site":"me","flipB":true,"launcherB":true</obj>
+			
+			<meEffectImg soundUrl="sound/moreMissile_hero" />
+			<description>召集300范围内的队友，每人释放出2颗导弹，每颗导弹的伤害等于当前武器实际战斗力值，并且有[effectProArr.1]的几率释放2次。</description>
+		</skill>
+		
+		<skill index="0" name="liveReplace_enemy" cnName="生命置换">
+			<name>liveReplace_enemy</name>
+			<cnName>生命置换</cnName><iconUrl36>SkillIcon/liveReplace_enemy_36</iconUrl36>
+			
+			<mustLv>20</mustLv>
+			<cd>35</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifeRpelace</otherConditionArr>
+			<conditionRange>0.5</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			
+			<obj>"name":"lifeReplace_enemy","site":"me","flipB":true</obj>
+			
+			<meEffectImg soundUrl="sound/lifeReplace_enemy" />
+			<description>从单位背后发出一颗紫色球，击中目标后将与目标置换生命比例值。</description>
+		</skill>
+		<skill index="0" name="silence_enemy" cnName="沉默">
+			<name>silence_enemy</name>
+			<cnName>沉默</cnName><iconUrl36>SkillIcon/silence_hero_36</iconUrl36>
+			
+			<mustLv>20</mustLv>
+			<cd>15</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>500</conditionRange>
+			<target>me,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>silenceB</effectType>
+			<value>1</value>
+			<duration>5</duration>
+			<range>500</range>
+			
+			<meEffectImg soundUrl="sound/silence_enemy" />
+			<stateEffectImg partType="mouth" con="add">skillEffect/silence_enemy</stateEffectImg>
+			<description>使[range]码以内的敌方单位无法释放技能，持续[duration]秒。</description>
+		</skill>
+		<skill index="0" name="globalSpurting_enemy" cnName="全局溅射">
+			<name>globalSpurting_enemy</name>
+			<cnName>全局溅射</cnName><iconUrl36>SkillIcon/globalSpurting_hero_36</iconUrl36>
+			
+			<mustLv>20</mustLv>
+			<cd>20</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>beforeAttack</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>hurtMul</effectType>
+			<mul>0.8</mul>
+			<duration>5</duration>
+			 
+			<passiveSkillArr>globalSpurting_enemy_link</passiveSkillArr>
+			
+			<meEffectImg soundUrl="sound/globalSpurting_enemy" />
+			<stateEffectImg partType="2hand" con="add">skillEffect/globalSpurting_enemy</stateEffectImg>
+			<description>释放技能后，接下里单位的每一次攻击都将获得溅射效果（对角色小白不造成伤害），作用范围500码，持续[duration]秒。</description>
+		</skill>
+		
+		
+		
+		<skill index="0" name="murderous_enemy" cnName="嗜爪">
+			<name>murderous_enemy</name>
+			<cnName>嗜爪</cnName><iconUrl36>SkillIcon/murderous_hero_36</iconUrl36>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>0.3</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>murderous_addHurtMul</effectType>
+			<mul>2.5</mul>
+			<duration>10</duration>
+			
+			<obj>"type":"lifePerLess","per":0.2</obj>
+			
+			<stateEffectImg partType="2hand" con="add" raNum="15" followPartRaB="1">skillEffect/murderous_enemy</stateEffectImg>
+			<description>当单位生命低于20%的时候被敌人攻击，单位的攻击力就会提升至原来的[mul]，持续[duration]秒。</description>
+		</skill>
+		<skill index="0" name="poisonClaw_enemy" cnName="毒爪">
+			<name>poisonClaw_enemy</name>
+			<cnName>毒爪</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>poison</effectType>
+			<extraValueType>hurtValue</extraValueType>
+			<mul>0.3</mul>
+			<doGap>1</doGap>
+			<duration>5</duration>
+			 
+			<addSkillEffectImg partType="2hand" con="filter" raNum="20">skillEffect/poisonClaw_enemy</addSkillEffectImg>
+			<stateEffectImg partType="mouth" con="add">skillEffect/poisonousFog_hero</stateEffectImg>
+			<description>释放技能后，单位的双手将涂满毒液，对攻击目标造成中毒效果。</description>
+		</skill>
+		
+		<skill index="0" name="selfBurn_enemy" cnName="自燃">
+			<name>selfBurn_enemy</name>
+			<cnName>自燃</cnName><iconUrl36>SkillIcon/selfBurn_hero_36</iconUrl36>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,enemy</target>
+			
+			<addType>instant</addType>
+			<effectType>normal_hurt</effectType>
+			<extraValueType>producterDpsFactor</extraValueType>
+			<mul>0.5</mul>
+			<duration>1</duration>
+			<range>100</range>
+			
+			<addSkillEffectImg partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" raNum="30">skillEffect/smallFire</addSkillEffectImg>
+			<targetEffectImg con="add" randomRange="40">bulletHitEffect/spark_motion2</targetEffectImg>
+			<description>释放技能后，单位全身燃起熊熊烈火，对附近[range]范围内的敌人造成伤害。</description>
+		</skill>
+		<skill index="0" name="bullying_enemy" cnName="欺凌">
+			<name>bullying_enemy</name>
+			<cnName>欺凌</cnName><iconUrl36>SkillIcon/bullying_hero_36</iconUrl36>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>3</mul>
+			
+			<obj>"type":"lifePerLess","per":0.2</obj>
+			
+			<description>攻击生命低于[obj.per]的敌人，会对它造成[mul]的伤害。</description>
+		</skill>
+		<skill index="0" name="skillGift_enemy" cnName="馈赠">
+			<name>skillGift_enemy</name>
+			<cnName>馈赠</cnName><iconUrl36>SkillIcon/skillGift_hero_36</iconUrl36>
+			
+			<conditionType>passive</conditionType>
+			<condition>useSkill</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>skillFullCd</effectType>
+			<effectProArr>0.15</effectProArr>
+			<value>2</value>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>每次单位释放完主动技能，就有[effectProArr.0]的几率大幅度回复该主动技能的冷却时间，2秒之后即可释放该技能。</description>
+		</skill>
+		<skill index="0" name="disabled_enemy" cnName="致残">
+			<name>disabled_enemy</name>
+			<cnName>致残</cnName><iconUrl36>SkillIcon/disabledHalo_pet_36</iconUrl36>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>hurtMul</effectType>
+			<mul>0.6</mul>
+			<duration>3</duration>
+			<stateEffectImg partType="2hand">skillEffect/disabled_enemy</stateEffectImg>
+			<description>击中目标后减少其40%的攻击力，持续3秒。</description>
+		</skill>
+		<skill index="0" name="slowMove_enemy" cnName="减速">
+			<name>slowMove_enemy</name>
+			<cnName>减速</cnName><iconUrl36>SkillIcon/slowMoveHalo_pet_36</iconUrl36>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<value>0</value>
+			<mul>0.6</mul>
+			<duration>2</duration>
+			
+			<stateEffectImg partType="2foot">skillEffect/disabled_enemy</stateEffectImg>
+			<description>击中目标后降低其40%的移动速度，持续2秒。</description>
+		</skill>
+		<skill index="0" name="strong_enemy" cnName="顽强">
+			<name>strong_enemy</name>
+			<cnName>顽强</cnName><iconUrl36>SkillIcon/strong_pet_36</iconUrl36>
+			<mustLv>20</mustLv>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>0.30</mul>
+			
+			<obj>"type":"lifePerLess","per":0.06</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>单位生命值小于[obj.per]时，受到的伤害将降低至原来的[mul]。</description>
+		</skill>
+		
+		<skill index="0" name="slowMoveHalo_enemy" cnName="减速光环">
+			<name>slowMoveHalo_enemy</name>
+			<cnName>减速光环</cnName><iconUrl36>SkillIcon/slowMoveHalo_pet_36</iconUrl36>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<value>0</value>
+			<mul>0.7</mul>
+			<duration>2</duration>
+			<range>300</range>
+			
+			<stateEffectImg partType="2foot">skillEffect/disabled_enemy</stateEffectImg>
+			<description>降低周围[range]码以内的敌方单位20%的移动速度。</description>
+		</skill>
+		<skill index="0" name="disabledHalo_enemy" cnName="致残光环">
+			<name>disabledHalo_enemy</name>
+			<cnName>致残光环</cnName><iconUrl36>SkillIcon/disabledHalo_pet_36</iconUrl36>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>hurtMul</effectType>
+			<value>0</value>
+			<mul>0.8</mul>
+			<duration>2</duration>
+			<range>300</range>
+			
+			<stateEffectImg partType="2hand">skillEffect/disabled_enemy</stateEffectImg>
+			<description>降低周围[range]码以内的敌方单位20%的攻击力。</description>
+		</skill>
+		
+		<skill index="0" name="trueshot_enemy" cnName="强击光环">
+			<name>trueshot_enemy</name>
+			<cnName>强击光环</cnName><iconUrl36>SkillIcon/trueshot_pet_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>hurtMul</effectType>
+			<mul>1.3</mul>
+			<duration>2</duration>
+			<range>200</range>
+			
+			<stateEffectImg partType="2hand" con="add" raNum="30" followPartRaB="1">skillEffect/trueshot_enemy</stateEffectImg>
+			<description>周围200码以内的我方单位被动提升30%的攻击力。</description>
+		</skill>
+		<skill index="0" name="corrosion_enemy" cnName="腐蚀">
+			<name>corrosion_enemy</name>
+			<cnName>腐蚀</cnName>
+			<mustLv>35</mustLv>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>attackGapMul</effectType>
+			<mul>0.5</mul>
+			<duration>5</duration>
+			<stateEffectImg partType="shootPoint" raNum="25" followPartRaB="1">bulletHitEffect/smoke_black</stateEffectImg>
+			<description>击中目标后腐蚀对方手上的枪支，降低枪支[1-mul]的射击速度，持续[duration]秒。</description>
+		</skill>
+		<skill index="0" name="desertedHalo_enemy" cnName="荒芜光环">
+			<name>desertedHalo_enemy</name><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<cnName>荒芜光环</cnName>
+			<mustLv>80</mustLv>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>deserted</effectType>
+			<value>0</value>
+			<mul>0.8</mul>
+			<duration>2</duration>
+			<range>600</range>
+			
+			<stateEffectImg partType="2hand">skillEffect/disabled_enemy</stateEffectImg>
+			<description>降低周围[range]码以内的敌方单位20%的射击速度，同时使敌方单位的部分回复技能无效。</description>
+		</skill>
+		
+		
+		
+	</father>
+	</data>

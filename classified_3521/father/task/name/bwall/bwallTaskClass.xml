@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="bwall" cnName="破壁" tipText="完成任务后自动解锁下一个任务。" autoUnlockByLevelB="1">
+		<task name="bwallWoTu" cnName="僵土镇" lv="30" unlockLv="30">
+			<shortText>击败守关首领。</shortText>
+			<uiConditionText>击败守关首领。</uiConditionText>
+			<description>主角来到沃土镇，所有装备都消失了，还碰见了一位陌生人。到底发生了什么呢？</description>
+			
+			<worldMapId>WoTu</worldMapId>
+			<levelId>bwallWoTu</levelId>
+			<gift>base;anniCoin;15</gift>
+		</task>
+		<task name="bwallYangMei" cnName="狂梅岭" lv="30" unlockLv="30">
+			<shortText>击败守关首领。</shortText>
+			<uiConditionText>击败守关首领。</uiConditionText>
+			<description>请按照指定方法击毙首领。</description>
+			
+			<worldMapId>YangMei</worldMapId>
+			<levelId>bwallYangMei</levelId>
+			<gift>base;anniCoin;15</gift>
+		</task>
+		<task name="bwallXiaSha" cnName="巨沙" lv="30" unlockLv="30">
+			<shortText>清理所有僵尸。</shortText>
+			<uiConditionText>清理所有僵尸。</uiConditionText>
+			<description>利用特殊接口，清理所有僵尸。</description>
+			
+			<worldMapId>XiaSha</worldMapId>
+			<levelId>bwallXiaSha</levelId>
+			<gift>base;anniCoin;10</gift>
+			<gift>things;bigDrug;2</gift>
+		</task>
+		<task name="bwallFengWei" cnName="小尾洋" lv="30" unlockLv="30">
+			<shortText>清理所有僵尸。</shortText>
+			<uiConditionText>清理所有僵尸。</uiConditionText>
+			<description>利用特殊接口，清理所有僵尸。</description>
+			
+			<worldMapId>FengWei</worldMapId>
+			<levelId>bwallFengWei</levelId>
+			<gift>base;anniCoin;10</gift>
+			<gift>things;smallDrug;2</gift>
+		</task>
+		<task name="bwallXiChi" cnName="乱池" lv="30" unlockLv="30">
+			<shortText>清理所有僵尸。</shortText>
+			<uiConditionText>清理所有僵尸。</uiConditionText>
+			<description>这里僵尸的血量都异常的厚实，该怎么击毙它们呢？</description>
+			
+			<worldMapId>XiChi</worldMapId>
+			<levelId>bwallXiChi</levelId>
+			<gift>things;demStone;7</gift>
+		</task>
+		<task name="bwallBaiLu" cnName="白速镇" lv="30" unlockLv="30">
+			<shortText>在指定时间内活下来。</shortText>
+			<conditionText>坚持 [time]</conditionText>
+			<uiConditionText>坚持 [time]</uiConditionText>
+			<description>在指定时间内，逃过僵尸的攻击。</description>
+			
+			<worldMapId>BaiLu</worldMapId>
+			<levelId>bwallBaiLu</levelId>
+			<condition time="140" timeType="win" timeFirst="剩余 " />
+			<gift>base;anniCoin;10</gift>
+			<gift>things;speedDrug;2</gift>
+		</task>
+		<task name="bwallShuiSheng" cnName="飞升村" lv="30" unlockLv="30">
+			<shortText>清理所有僵尸。</shortText>
+			<uiConditionText>清理所有僵尸。</uiConditionText>
+			<description>利用特殊接口，清理所有僵尸。</description>
+			
+			<worldMapId>ShuiSheng</worldMapId>
+			<levelId>bwallShuiSheng</levelId>
+			<gift>base;anniCoin;10</gift>
+			<gift>things;zeroGravityCard;2</gift>
+		</task>
+		<task name="bwallBaiZhang" cnName="手仗道" lv="30" unlockLv="30">
+			<shortText>清理所有僵尸。</shortText>
+			<uiConditionText>清理所有僵尸。</uiConditionText>
+			<description>这个关卡只能用徒手攻击，并且敌人的伤害也非常高，要小心一点！</description>
+			
+			<worldMapId>BaiZhang</worldMapId>
+			<levelId>bwallBaiZhang</levelId>
+			<gift>base;anniCoin;10</gift>
+			<gift>things;doubleArmsCard;2</gift>
+		</task>
+		<task name="bwallGreenLand1" cnName="回到绿岛" lv="30" unlockLv="30">
+			<shortText>完成剧情对话。</shortText>
+			<uiConditionText>完成剧情对话。</uiConditionText>
+			<description>主角将回到绿岛，他能成功拿到电脑吗？</description>
+			
+			<worldMapId>GreenLand1</worldMapId>
+			<levelId>bwallGreenLand1</levelId>
+			<gift>things;mobilePhone;1</gift>
+		</task>
+		<task name="bwallZhuTou" cnName="猪怪洋" lv="30" unlockLv="30">
+			<shortText>清理所有僵尸。</shortText>
+			<uiConditionText>清理所有僵尸。</uiConditionText>
+			<description>利用特殊接口，清理所有僵尸。</description>
+			
+			<worldMapId>ZhuTou</worldMapId>
+			<levelId>bwallZhuTou</levelId>
+			<gift>base;anniCoin;10</gift>
+			<gift>things;doubleEquipCard;2</gift>
+		</task>
+		<task name="bwallShuangTa" cnName="反塔村" lv="30" unlockLv="30">
+			<shortText>击败文杰表哥。</shortText>
+			<uiConditionText>击败文杰表哥。</uiConditionText>
+			<description>世界突然完全颠倒，看你如何战胜表哥。</description>
+			
+			<worldMapId>ShuangTa</worldMapId>
+			<levelId>bwallShuangTa</levelId>
+			<gift>things;zodiacCash;10</gift>
+		</task>
+		
+		<task name="bwallDaoTa" cnName="倒塔村" lv="30" unlockLv="30">
+			<conditionText>大银币 [nowNum]/[num]</conditionText>
+			<uiConditionText>收集大银币 [num]个 </uiConditionText>
+			<description>收集指定数量的大银币。</description>
+			
+			<worldMapId>DaoTa</worldMapId>
+			<levelId>bwallDaoTa</levelId>
+			<condition type="collect" target="hitDrop" targetId="addCoin_task" value="163" cumulativeType="no" />
+			<gift>base;anniCoin;30</gift>
+		</task>
+		<task name="bwallDaoTa2" cnName="反倒塔村" lv="30" unlockLv="30">
+			<conditionText>大银币 [nowNum]/[num]</conditionText>
+			<uiConditionText>收集大银币 [num]个 </uiConditionText>
+			<description>收集指定数量的大银币。</description>
+			
+			<worldMapId>DaoTa</worldMapId>
+			<levelId>bwallDaoTa2</levelId>
+			<condition type="collect" target="hitDrop" targetId="addCoin_task" value="74" cumulativeType="no" />
+			<gift>base;anniCoin;20</gift>
+			<gift>things;armsGemChest;15</gift>
+		</task>
+		<task name="bwallBeiDou" cnName="鼬斗城" lv="30" unlockLv="30">
+			<shortText>清理所有僵尸。</shortText>
+			<uiConditionText>清理所有僵尸。</uiConditionText>
+			<description>利用特殊技能，清理所有僵尸。</description>
+			
+			<worldMapId>BeiDou</worldMapId>
+			<levelId>bwallBeiDou</levelId>
+			<gift>base;anniCoin;20</gift>
+			<gift>things;equipGemChest;15</gift>
+		</task>
+		<task name="bwallDongShan" cnName="极山澳" lv="30" unlockLv="30">
+			<shortText>清理所有僵尸。</shortText>
+			<uiConditionText>清理所有僵尸。</uiConditionText>
+			<description>利用特殊武器，清理所有僵尸。</description>
+			
+			<worldMapId>DongShan</worldMapId>
+			<levelId>bwallDongShan</levelId>
+			<gift>base;anniCoin;20</gift>
+			<gift>things;arenaChest;5</gift>
+		</task>
+		<task name="bwallQingSha" cnName="火明岭" lv="30" unlockLv="30">
+			<conditionText>大银币 [nowNum]/[num]</conditionText>
+			<uiConditionText>收集大银币 [num]个 </uiConditionText>
+			<description>收集指定数量的大银币。</description>
+			
+			<worldMapId>QingMing</worldMapId>
+			<levelId>bwallQingSha</levelId>
+			<condition type="collect" target="hitDrop" targetId="addCoin_task" value="210" cumulativeType="no" />
+			<gift>base;anniCoin;20</gift>
+			<gift>things;demonSpreadCard;2</gift>
+		</task>
+		<task name="bwallQingMing" cnName="无明岭" lv="30" unlockLv="30">
+			<shortText>清理所有僵尸。</shortText>
+			<uiConditionText>清理所有僵尸。</uiConditionText>
+			<description>在地图变黑的情况下，清理所有僵尸。</description>
+			
+			<worldMapId>QingMing</worldMapId>
+			<levelId>bwallQingMing</levelId>
+			<gift>base;anniCoin;20</gift>
+			<gift>things;sweepingCard;2</gift>
+		</task>
+		<task name="bwallQingMing2" cnName="失明岭" lv="30" unlockLv="30">
+			<shortText>清理所有僵尸。</shortText>
+			<uiConditionText>清理所有僵尸。</uiConditionText>
+			<description>在失明的情况下，清理所有僵尸。</description>
+			
+			<worldMapId>QingMing</worldMapId>
+			<levelId>bwallQingMing2</levelId>
+			<gift>base;anniCoin;20</gift>
+			<gift>things;zodiacCash;8</gift>
+		</task>
+		<task name="bwallNanTang" cnName="巨伤城" lv="30" unlockLv="30">
+			<shortText>清理所有僵尸。</shortText>
+			<uiConditionText>清理所有僵尸。</uiConditionText>
+			<description>利用特殊接口，清理所有僵尸。</description>
+			
+			<worldMapId>NanTang</worldMapId>
+			<levelId>bwallNanTang</levelId>
+			<gift>base;anniCoin;20</gift>
+			<gift>things;bigHurtCard;2</gift>
+		</task>
+		<task name="bwallStoneSea" cnName="终极元凶" lv="30" unlockLv="30">
+			<shortText>击败最终大Boss</shortText>
+			<uiConditionText>击败最终大Boss</uiConditionText>
+			<description>导致霞光大陆永无宁日的元凶竟然是他？</description>
+			
+			<worldMapId>StoneSea1</worldMapId>
+			<levelId>bwallStoneSea</levelId>
+			<gift>things;madheart;10</gift>
+		</task>
+	</father>
+</data>

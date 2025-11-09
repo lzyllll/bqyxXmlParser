@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="howitzer">
+		<bullet color="purgold">
+			<name>extremeLightning</name>
+			<cnName>闪电极源</cnName><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			<aiShootRange>800</aiShootRange>
+			<attackType>holy</attackType>
+			<dpsMul>1</dpsMul>
+			
+			<capacity>30</capacity>
+			<attackGap>1.4</attackGap>
+			<reloadGap>0.5</reloadGap>
+			<shakeAngle>1</shakeAngle>
+			<bulletWidth>80</bulletWidth>	
+			<beatBack>2</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<armsArmMul>0.6</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>8</upValue>
+			<shootShakeAngle>70</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<bulletLife>6</bulletLife>
+			<hitType>rect</hitType>
+			
+			<followD value="0.5" delay="1" />
+			<bulletSpeed>20</bulletSpeed>
+			<speedD max="20" min="8" a="-20" />
+			<penetrationGap>1000</penetrationGap>
+			<boomD selfB="1" hurtMul="0" />
+			<skillArr>enemyEmp,offAllSkill</skillArr>
+			
+			<iconUrl>specialGun/dragonUltra</iconUrl>
+			<shootSoundUrl>sound/lightningShoot</shootSoundUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl con="add">generalEffect/frozenBallBig</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/paralysis_enemy_hit" shake="2,0.2,10" con="filter">generalEffect/frozenBallHide</hitImgUrl>
+			<selfBoomImgUrl con="add">generalEffect/frozenBallHide</selfBoomImgUrl>
+			<fireImgUrl con="add">boomEffect/boom2</fireImgUrl>
+			
+			<bodyImgRange>specialGun/extremeLightning</bodyImgRange>
+			<description />
+		</bullet>
+	</father>
+	
+	
+	</data>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="other">
+		<body shell="normal">
+			
+			<name>DiggingBox</name>
+			<cnName>掘地铁箱</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/DiggingBox.swf</swfUrl>
+			
+			<lifeRatio>0.7</lifeRatio>
+			<dieJumpMul>0</dieJumpMul>
+			<showLevel>999</showLevel>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,birthAttack,die1
+			</imgArr>
+			<hitRect>-14,-30,28,30</hitRect>
+			<maxJumpNum>0</maxJumpNum>
+			<maxVx>0</maxVx>
+			<defaultAiOrder>no</defaultAiOrder>
+			<nextAttackTime>0</nextAttackTime>
+			<skillArr>State_SpellImmunity</skillArr>
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>stand</imgLabel>
+					<hurtRatio>0</hurtRatio>
+					<attackType>direct</attackType>
+					<grapRect>-50,-111,100,105</grapRect>
+				</hurt>
+				
+			</hurtArr>
+		</body>	
+	</father>
+</data>

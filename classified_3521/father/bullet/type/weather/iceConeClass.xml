@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="weather" cnName="气象枪">
+		<bullet cnName="冰锥" name="iceCone" kind="water" color="black" composeLv="99" chipB="1" chipNum="100" dropLevelArr="999">
+			<name>iceCone</name>
+			<cnName>冰锥</cnName>
+			
+			
+			<capacity>9</capacity>
+			<attackGap>0.7</attackGap>
+			<reloadGap>1</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>35</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<gunNum>1</gunNum>
+			
+			
+			<armsArmMul>0.9</armsArmMul>
+			<upValue>5</upValue>
+			<shootShakeAngle>30</shootShakeAngle>
+			<shootRecoil>12</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			
+			<bulletLife>2</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>1.8</dpsMul>
+			<uiDpsMul>2</uiDpsMul>
+			
+				
+			<bulletSpeed>35</bulletSpeed>
+			
+			<twoShootPro>0.4</twoShootPro>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="0" body="0" />	
+			<critD mul="2" pro="0.3" />
+			
+			<skillArr>Hit_Paralysis_ArmsSkill</skillArr>
+			<godSkillArr>Hit_Hammer_godArmsSkill,iceConeSkill</godSkillArr>
+			
+			
+			<iconUrl>specialGun/iceConeIcon</iconUrl>
+			<flipX>1</flipX>
+			<bulletImgUrl name="iceConeBullet" />
+			<hitImgUrl name="iceConeHit" />
+			<fireImgUrl name="iceConeFire" />
+			<shootSoundUrl>sound/snowHit</shootSoundUrl>
+			
+			<bodyImgRange>specialGun/iceCone</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>纪念币兑换</description>
+		</bullet>
+		
+	</father>
+	</data>

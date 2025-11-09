@@ -1,0 +1,91 @@
+{
+  "father": {
+    "name": "tenCoin",
+    "cnName": "十年币",
+    "priceType": "tenCoin",
+    "labelArr": "all",
+    "type": {
+      "goods": [
+        {
+          "defineLabel": "longGlasses_1",
+          "price": 10,
+          "buyLimitNum": 40,
+          "dayBuyLimitNum": 2,
+          "fixedLimitB": true
+        },
+        {
+          "defineLabel": "consLibra",
+          "price": 4,
+          "dayBuyLimitNum": 4,
+          "buyLimitNum": 120
+        },
+        {
+          "defineLabel": "highPartnerCard",
+          "price": 4,
+          "dayBuyLimitNum": 1,
+          "buyLimitNum": 60
+        },
+        {
+          "defineLabel": "roamRocket",
+          "price": 4,
+          "buyLimitNum": 100
+        },
+        {
+          "defineLabel": "starTrails",
+          "price": 5,
+          "buyLimitNum": 210
+        },
+        {
+          "defineLabel": "teddyBear",
+          "price": 15,
+          "buyLimitNum": 30
+        },
+        {
+          "defineLabel": "barrenAwn",
+          "price": 5,
+          "buyLimitNum": 100
+        },
+        {
+          "defineLabel": "skyArch",
+          "price": 4,
+          "dayBuyLimitNum": 4
+        },
+        {
+          "defineLabel": "intensDrug",
+          "price": 5,
+          "buyLimitNum": 300
+        },
+        {
+          "defineLabel": "falconGun",
+          "price": 5,
+          "buyLimitNum": 150
+        },
+        {
+          "defineLabel": "extremeGun",
+          "price": 5,
+          "buyLimitNum": 120
+        },
+        {
+          "defineLabel": "yaStone",
+          "price": 7,
+          "buyLimitNum": 250
+        },
+        {
+          "defineLabel": "yaRock",
+          "price": 9,
+          "buyLimitNum": 150
+        },
+        {
+          "defineLabel": "demStone",
+          "price": 5,
+          "buyLimitNum": 700
+        },
+        {
+          "defineLabel": "madheart",
+          "price": 6,
+          "buyLimitNum": 500
+        }
+      ]
+    }
+  }
+}

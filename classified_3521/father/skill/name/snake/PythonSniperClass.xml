@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="snake" cnName="血蟒">
+		<skill>
+			<name>sumAirDog</name><iconUrl36>SkillIcon/summonedSpider_spiderKing_36</iconUrl36>
+			<cnName>召唤飞天狗</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<cd>4</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>1500</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>summonedUnits</effectType>
+			
+			<obj>"cnName":"飞天狗","num":1,"lifeMul":0.015,"maxNum":20,"mulByFatherB":1,"pointEf":1,"cx":0,"cy":-104,"skillArr":["State_AddMove50"]</obj>
+			
+			<pointEffectImg name="oreBombShowFlower" />
+			<description>召唤[obj.num]只[obj.cnName]参加战斗，最多同时存在[obj.maxNum]只[obj.cnName]。</description>
+		</skill>
+		<skill>
+			<name>sumLandDog</name><iconUrl36>SkillIcon/summonedSpider_spiderKing_36</iconUrl36>
+			<cnName>召唤巡逻狗</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<cd>5</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>1500</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>summonedUnits</effectType>
+			
+			<obj>"cnName":"巡逻狗","num":1,"lifeMul":0.015,"maxNum":20,"mulByFatherB":1,"pointEf":1,"cx":0,"cy":-50,"skillArr":["State_AddMove50"]</obj>
+			
+			<pointEffectImg name="oreBombShowFlower" />
+			<description>召唤[obj.num]只[obj.cnName]参加战斗，最多同时存在[obj.maxNum]只[obj.cnName]。</description>
+		</skill>
+	</father>
+</data>

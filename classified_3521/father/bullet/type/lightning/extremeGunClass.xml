@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="lightning">
+		
+		<bullet color="darkgold" evoMaxLv="5" evoMustFirstLv="9" composeLv="99" chipNum="200">
+			<name>extremeGun</name>
+			<cnName>极源</cnName><extraMul>1.3</extraMul>
+			<aiShootRange>900</aiShootRange>
+			<attackType>holy</attackType>
+			<dpsMul>0.5</dpsMul>
+			<uiDpsMul>1.49</uiDpsMul>
+			<iconUrl>specialGun/extremeGunIcon</iconUrl>
+			
+			<capacity>13</capacity>
+			<attackGap>0.8</attackGap>
+			<reloadGap>2</reloadGap>
+			<bulletWidth>25</bulletWidth>
+			<bulletNum>1</bulletNum>				
+			<shootAngle>1</shootAngle>
+			
+			<armsArmMul>0.5</armsArmMul>
+			<upValue>10</upValue>
+			<shootShakeAngle>30</shootShakeAngle>
+			<shootRecoil>5</shootRecoil>
+			<screenShakeValue>9</screenShakeValue>
+			
+			<noHitB>1</noHitB>
+			<bulletLife>1</bulletLife>
+			<hitType>rect</hitType>
+				
+			<bulletSpeed>50</bulletSpeed>
+			<bulletSkillArr>extremeGun</bulletSkillArr>
+			
+			<penetrationNum>999</penetrationNum>
+			<twoShootPro>0.3</twoShootPro>
+			<bounceD floor="0" body="0" />	
+			<boomD selfB="1" />
+			<critD mul="0" pro="0" />
+			<skillArr>Hit_Paralysis_ArmsSkill,Hit_silence_ArmsSkill</skillArr>
+			<godSkillArr>extremeGunSkill</godSkillArr>
+			
+			<shootSoundUrl>sound/lightningShoot</shootSoundUrl>
+			<bulletImgUrl name="extremeGunBullet" />
+			
+			<selfBoomImgUrl con="add">generalEffect/frozenBallHide</selfBoomImgUrl>
+			<hitFloorImgUrl con="add">generalEffect/frozenBallHide</hitFloorImgUrl>
+			
+			<bodyImgRange>specialGun/extremeGun</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>消灭首领利爪僵尸(99级)</description>
+		</bullet>
+	</father>
+	</data>

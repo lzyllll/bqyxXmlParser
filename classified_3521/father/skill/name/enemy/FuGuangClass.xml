@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="技能">
+		<skill>
+			<name>addWangShu</name>
+			<cnName>祈月</cnName><noCopyB>1</noCopyB><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><ignoreNoSkillB>1</ignoreNoSkillB><ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>passive</conditionType><condition>addAndCon</condition><wantDescripB>1</wantDescripB>
+			<target>me</target>
+			<addType>instant</addType>
+			<summonedUnitsB>1</summonedUnitsB>
+			<effectType>summonedUnits</effectType>
+			<duration>99999999</duration>
+			
+			<obj>"cnName":"望舒","num":1,"lifeMul":1,"dpsMul":1,"mulByFatherB":1,"maxNum":1,"lifeBarB":1,"unitType":"super"</obj>
+			<description>召唤望舒和自己并肩作战；望舒带有无敌光环、技能免疫、化锁、眩晕护甲等技能。</description>
+		</skill>
+		
+		<skill>
+			<name>FuGuangBuff</name>
+			<cnName>扶光buff</cnName><noCopyB>1</noCopyB><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><ignoreNoSkillB>1</ignoreNoSkillB><ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>passive</conditionType><condition>add</condition><target>me</target>
+			<addType>state</addType>
+			<effectType>FuGuangBuff</effectType><effectFather>extraBody</effectFather>
+			<duration>99999999</duration>
+		</skill>
+		
+		<skill>
+			<name>FuGuangCombo</name>
+			<cnName>斗转</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>6</cd>
+			
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition><target>me</target>
+			<addType>instant</addType><effectType>no</effectType>
+			<meActionLabel>comboAttack</meActionLabel>
+			<description>瞬移到敌人面前，发动2连击。</description>
+		</skill>
+		<skill>
+			<name>FuGuangShake</name>
+			<cnName>羲落</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>8</cd>
+			
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition><target>me</target>
+			<addType>instant</addType><effectType>no</effectType>
+			<meActionLabel>shakeAttack</meActionLabel>
+			<description>跳跃至敌人上方，发动跳斩。</description>
+		</skill>
+		<skill>
+			<name>FuGuangMop</name>
+			<cnName>星移</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>12</cd>
+			
+			<conditionType>active</conditionType><condition>avtiveSkillCdOver</condition><target>me</target>
+			<addType>instant</addType><effectType>no</effectType>
+			<meActionLabel>mopAttack</meActionLabel>
+			<description>以极快的速度左右横扫敌人。</description>
+		</skill>
+		
+	</father>	
+</data>

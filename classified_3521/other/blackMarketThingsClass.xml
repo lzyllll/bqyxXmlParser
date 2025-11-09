@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<blackMarketThings>
+		<one name="blackMarketThings_normal" cnName="普通">
+			<gift>things;shotgunCrocodile;50</gift>
+			<gift>things;sniperSmilodon;50</gift>
+			<gift>things;rifleDragon;50</gift>
+			<gift>things;ashesSuit_head;50</gift>
+			<gift>things;ashesSuit_coat;50</gift>
+			<gift>things;ashesSuit_pants;50</gift>
+			<gift>things;ashesSuit_belt;50</gift>
+			<gift>things;goshawkSuit_head;50</gift>
+			<gift>things;goshawkSuit_coat;50</gift>
+			<gift>things;goshawkSuit_pants;50</gift>
+			<gift>things;goshawkSuit_belt;50</gift>
+			<gift>things;armsEchelonCard;20</gift>
+			<gift>things;equipEchelonCard;20</gift>
+			<gift>things;highArmsEchelonCard;4</gift>
+			<gift>things;highEquipEchelonCard;4</gift>
+		</one>
+		<one name="blackMarketThings_good" cnName="好的">
+			<gift>things;rifleHornet;20</gift>
+			<gift>things;shotgunSkunk;20</gift>
+			<gift>things;sniperCicada;20</gift>
+			<gift>things;pistolFox;15</gift>
+			<gift>things;redFire;10</gift>
+			<gift>things;rocketCate;10</gift>
+			<gift>things;meltFlamer;10</gift>
+			
+			<gift>things;thunderSuit_head;20</gift>
+			<gift>things;thunderSuit_coat;20</gift>
+			<gift>things;thunderSuit_pants;20</gift>
+			<gift>things;thunderSuit_belt;20</gift>
+			<gift>things;aintSuit_head;20</gift>
+			<gift>things;aintSuit_coat;20</gift>
+			<gift>things;aintSuit_pants;20</gift>
+			<gift>things;aintSuit_belt;20</gift>
+		</one>
+		<one name="blackMarketThings_rare" cnName="稀有">
+			<gift>things;PetIronChiefBook;10</gift>
+			<gift>things;fireGem;10</gift>
+			<gift>things;electricGem;10</gift>
+			<gift>things;frozenGem;10</gift>
+			<gift>things;poisonGem;10</gift>
+			<gift>things;lightCone;5</gift>
+		</one>
+	</blackMarketThings>
+	
+</data>

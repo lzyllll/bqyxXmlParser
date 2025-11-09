@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="rocket" cnName="火炮-特殊">
+		<bullet cnName="荒芒" name="barrenAwn" color="black" composeLv="90" chipB="1" chipNum="160" dropLevelArr="999">
+			<name>barrenAwn</name>
+			<cnName>荒芒</cnName>
+			
+			
+			<capacity>20</capacity>
+			<attackGap>1</attackGap>
+			<reloadGap>2</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>35</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>17</bulletNum>
+			<shootAngle>90</shootAngle>	
+			
+			<armsArmMul>0.65</armsArmMul>
+			<upValue>20</upValue>
+			<shootShakeAngle>40</shootShakeAngle>
+			<shootRecoil>12</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>2</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>2</dpsMul>
+			<uiDpsMul>2</uiDpsMul>
+				
+			<bulletSpeed>30</bulletSpeed>
+			
+			<boomD bodyB="1" floorB="1" selfB="1" radius="130" />
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationGap>1000</penetrationGap>
+			<bounceD floor="0" body="0" />	
+			<critD mul="2" pro="0.2" />
+			
+			<iconUrl>specialGun/barrenAwnIcon</iconUrl>
+			<skillArr>Hit_Spurting_ArmsSkill,Kill_Spurting_ArmsSkill</skillArr>
+			<godSkillArr>Hit_seckill_godArmsSkill,barrenAwnSkill</godSkillArr>
+			
+			<flipX>1</flipX>
+			<fireImgUrl name="gunFireRocket" />
+			<bulletImgUrl con="filter" raNum="30">bullet/blueFire</bulletImgUrl>
+			<hitImgUrl name="smallSpace" />
+			<shootSoundUrl>sound/bigShoot</shootSoundUrl>
+			
+			<bodyImgRange>specialGun/barrenAwn</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>纪念币兑换</description>
+		</bullet>
+		
+	</father>
+	</data>

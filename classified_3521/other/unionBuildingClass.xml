@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<building>
+		<bu name="watchmen" cnName="守望者" lvName="饲养等级" 	maxLv="18" fleshAddDataB="1" />
+		<bu name="cooking" cnName="炊事馆" lvName="用膳等级" 		maxLv="14" fleshAddDataB="1" />
+		<bu name="federal" cnName="联邦大厦" lvName="权利等级" 		maxLv="14" />
+		<bu name="geology" cnName="地质研究所" lvName="勘探等级" 	maxLv="23" />
+	</building>
+	
+	<watchmen>
+		<wa name="twoJump" cnName="月步" 				effectType="pro" value="{'maxJumpNumAdd':1}" 		info="追寻月光的足迹，可在空中进行二段跳。"/>
+		<wa name="ghostStep" cnName="鬼步" 				effectType="skill" value="heroSprint"/>
+		<wa name="bulletDefence" cnName="防弹专家" 		effectType="pro" value="{'bulletDedut':0.15}" 			info="防弹值+15%。"/>
+		<wa name="playerLife" cnName="超体" 					effectType="pro" value="{'lifeAll':0.15}" 					info="增加人物15%生命值。"/>
+		<wa name="hurtNormal" cnName="怪物猎人" 			effectType="skill" value="watchmanHurtNormal"/>
+		<wa name="hurtSuper" cnName="精英克星" 			effectType="skill" value="watchmanHurtSuper"/>
+		<wa name="godEyes" cnName="上帝之眼" 				effectType="skill" value="godEyes"/>
+		<wa name="hurtBoss" cnName="恶魔猎手" 			effectType="skill" value="watchmanHurtBoss"/>
+		<wa name="godMace" cnName="上帝之杖" 			effectType="skill" value="godMace"/>
+		<wa name="playerDps" cnName="神力" 				effectType="pro" value="{'dpsAll':0.15}" 					info="增加人物15%战斗力。"/>
+		
+		<wa name="superPlayerLife" cnName="神体" 		effectType="pro" value="{'lifeAll':0.15}" 					info="额外增加人物15%生命值。"/>
+		<wa name="superHurtBoss" cnName="恶魔屠刀" 	effectType="skill" value="superWatchmanHurtBoss" type="hurtBoss" />
+		<wa name="vehicleDefMul" cnName="战车护甲" 	effectType="pro" value="{'vehicleDefMul':0.30}" info="提高载具20%的防御力。" />
+		<wa name="hurtHuman" cnName="人类克星" 			effectType="skill" value="watchmanHurtHuman"/>
+		<wa name="petHurtHole" cnName="暴力尸宠" 			effectType="skill" value="petHurtHole"/>
+		<wa name="weaponDropPro" cnName="副手探测" 	effectType="pro" value="{'weaponDropPro':0.15}" info="增加15%的副手掉率（包括秘境副手）。" />
+		<wa name="towerHurter" cnName="虚幻猎手" 			effectType="skill" value="towerHurter"/>
+		<wa name="lottery9" cnName="幸运之神" 			effectType="pro" value="{'lottery':9}" info="幸运值+9。" />
+	</watchmen>
+	<cooking>
+		<co name="slicedBread" cnName="切片面包" addArr="dpsAll,rareArmsDropPro"/>
+		<co name="sandwich" cnName="三明治" addArr="dpsAll,rareEquipDropPro"/>
+		<co name="hamburger" cnName="汉堡" addArr="dpsAll,coinMul,ranBlackArmsDropPro"/>
+	</cooking>
+	<geology>
+		<things cnName="超能石" max="50"		treaPro="0.1600" 			orePro="0.025" />
+		<things cnName="神能石" max="30"		treaPro="0.0960" 			orePro="0.016" />
+		<things cnName="转化石" max="30"		treaPro="0.0960" 			orePro="0.016" />
+		<things cnName="血石" max="30"			treaPro="0.1200" 		orePro="0.020" />
+		<things cnName="强化石" max="40"		treaPro="0.0975" 			orePro="0.026" />
+		<things cnName="光能石" max="5"			treaPro="0.0400" 		orePro="0.004" />
+		
+		
+		<things cnName="addLifeMul" max="0"	treaPro="0.0001" 		orePro="0" 		type="effect" />
+		<things cnName="addCoin" max="0" 	treaPro="0.0500" 			orePro="0"  		type="effect"/>
+		<things cnName="稀有宝箱" max="3" 		treaPro="0.0400" 		orePro="0" />
+		<things cnName="传奇宝箱" max="2"	 	treaPro="0.0240" 		orePro="0" />
+		<things cnName="精石" max="0"			treaPro="0.1800" 		orePro="0" />
+		<things cnName="魂卡券" max="0"	 	treaPro="0.1000" 		orePro="0" />
+		
+		<things cnName="enemy" max="0" 		treaPro="0" 		orePro="0" 		type="unit" />
+		
+	</geology>
+	
+	<sendTask>
+		<task name="impossibleMission" cnName="谍中谍"/>
+		<task name="prisonOnFire" cnName="监狱风云"/>
+		<task name="farm" cnName="牧场物语"/>
+		<task name="grave" cnName="盗墓传奇"/>
+	</sendTask>
+</data>

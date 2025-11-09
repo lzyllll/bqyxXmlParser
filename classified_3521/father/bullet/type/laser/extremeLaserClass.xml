@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="laser">
+		<bullet color="purgold">
+			<name>extremeLaser</name>
+			<cnName>激光极源</cnName><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			<aiShootRange>800</aiShootRange>
+			<attackType>holy</attackType>
+			<dpsMul>0.1</dpsMul>
+			
+			<capacity>30</capacity> 
+			<attackGap>0.7</attackGap>
+			<reloadGap>0.5</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>900</bulletWidth>
+			<bulletNum>1</bulletNum>				
+			<beatBack>2</beatBack>
+			<targetShakeValue>10</targetShakeValue>
+			
+			<penetrationNum>999</penetrationNum>
+			<bounceD floor="0" body="0" noDieB="1" />	
+			<skillArr>invincibleEmp</skillArr>
+			<godSkillArr>extremeLaserFire</godSkillArr>
+			
+			<hurtRatio>15</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>0.5</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>3</upValue>
+			<shootRecoil>2</shootRecoil>
+			
+			<bulletLife>0.7</bulletLife>
+			<hitType>longLine</hitType>
+			
+			<shootSoundUrl>specialGun/lightConeSound</shootSoundUrl>
+			<flipX>1</flipX>
+			<fireImgUrl cacheB="1" imgDieType="die" con="add">bulletHitEffect/purLaser</fireImgUrl>
+			<bulletImgUrl raNum="60" con="add" len="28" everFleshB="1" imgDieType="die" time="-1" bottomLayerB="1">bullet/purLaserBig</bulletImgUrl>
+			<hitImgUrl cacheB="1" imgDieType="die" con="add">bulletHitEffect/purLaser</hitImgUrl>
+			
+			<bodyImgRange>specialGun/extremeLaser</bodyImgRange>
+		</bullet>
+	</father>
+	
+</data>

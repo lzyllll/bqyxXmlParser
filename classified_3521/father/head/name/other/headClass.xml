@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="other" cnName="其他">
+		<head name="wantUpgrade" cnName="我要升级" diff="20">
+			<condition fun="num" must="4" pro="continuousLoginDay" info="连续[must]天在线1个小时以上。" progressInfo="[compare]天[n]{purple （如果没有连续登陆，进度将被清空。）}" />
+			<addObjJson>{'expMul':0.25}</addObjJson>
+		</head>
+		<head name="petEvo_4" cnName="闲着蛋疼" diff="50">
+			<condition fun="num" must="3" pro="getEvoPetNum" info="累计进化[must]只尸宠。" progressInfo="[compare]只" />
+			<addObjJson>{'godStoneDropPro':0.15}</addObjJson>
+		</head>
+		<head name="vehicleEvo_4" cnName="载具新时代" diff="70">
+			<condition fun="num" must="4" pro="getEvoVehicleNum" info="累计进化[must]个载具。" progressInfo="[compare]个" />
+			<addObjJson>{'converStoneDropPro':0.15}</addObjJson>
+		</head>
+		<head name="ask_5" cnName="学霸" diff="70" life="60">
+			<condition fun="num" must="5" pro="askAllRightNum" info="连续[must]天答题全对。" progressInfo="[compare]天" />
+			<addObjJson>{'weaponDropPro':0.20}</addObjJson>
+		</head>
+		<head name="heroSkill_21" cnName="全能人" diff="25">
+			<condition fun="num" must="21" pro="getHeroSkillNum" info="P1角色学习超过[must]个技能。" progressInfo="[compare]个" />
+			<addObjJson>{'cdMul':0.03}</addObjJson>
+		</head>
+		
+		<head name="armsRemake100" cnName="武器锻造家" diff="50" unlockLv="70">
+			<condition fun="num" must="100" pro="armsRemakeNum" info="累计重造[must]把武器。" progressInfo="[compare]把" />
+			<addObjJson>{'rareArmsDropPro':0.13}</addObjJson>
+		</head>
+		<head name="equipRemake100" cnName="装备锻造家" diff="50" unlockLv="70">
+			<condition fun="num" must="100" pro="equipRemakeNum" info="累计重造[must]个装备。" progressInfo="[compare]个" />
+			<addObjJson>{'rareEquipDropPro':0.13}</addObjJson>
+		</head>
+		
+		
+		<head name="baoqiang" cnName="爆枪突击" diff="50">
+			<condition info="爆枪突击直播专属称号" />
+			<addObjJson>{'blackArmsDropPro':0.20}</addObjJson>
+		</head>
+		<head name="gameKing" cnName="佣兵之王" diff="100">
+			<condition info="佣兵之王活动奖励。" />
+			<addObjJson>{'dpsAll':0.08,'lifeAll':0.08}</addObjJson>
+		</head>
+		<head name="gameSuper" cnName="佣兵精英" diff="60">
+			<condition info="佣兵之王活动奖励。" />
+			<addObjJson>{'dpsAll':0.06,'lifeAll':0.06}</addObjJson>
+		</head>
+	</father>
+</data>

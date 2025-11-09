@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="materials" cnName="">
+		<things cnName="终级装备守护卡">
+			<name>ultiEquipEchelonCard</name>
+			<cnName>终级装备守护卡</cnName>
+			<iconUrl>ThingsIcon/ultiEquipEchelonCard</iconUrl>
+			<description>
+				强化装备的保级道具，最高保级26级。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]高级装备守护卡合成
+				[n]商店购买
+				[n]优胜券兑换
+				[n]功勋牌兑换
+			</description>
+			<smeltD addType="equipChip" price="20" maxNum="1" />
+		</things>
+		<things cnName="终级武器守护卡">
+			<name>ultiArmsEchelonCard</name>
+			<cnName>终级武器守护卡</cnName>
+			<iconUrl>ThingsIcon/ultiArmsEchelonCard</iconUrl>
+			<description>
+				强化武器的保级道具，最高保级26级。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]高级武器守护卡合成
+				[n]商店购买
+				[n]优胜券兑换
+				[n]功勋牌兑换
+			</description>
+			<smeltD addType="armsChip" price="20" maxNum="1" />
+		</things>
+		
+		<things cnName="终级武器守护卡">
+			<name>ultiArmsEchelonCard</name>
+			<cnName>终级武器守护卡</cnName>
+			<iconUrl>ThingsIcon/ultiArmsEchelonCard</iconUrl>
+			<description>
+				强化武器的保级道具，最高保级26级。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]高级武器守护卡合成
+				[n]商店购买
+				[n]优胜券兑换
+				[n]功勋牌兑换
+			</description>
+			<smeltD addType="armsChip" price="20" maxNum="1" />
+		</things>
+		
+		<things cnName="装扮券">
+			<name>dressStamp</name>
+			<cnName>装扮券</cnName>
+			<iconUrl>ThingsIcon/dressStamp</iconUrl>
+			<description>
+				增加主城装扮位所需。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]活跃礼包
+				[n]商店购买
+			</description>
+		</things>
+		<things cnName="高级装扮券">
+			<name>dressStampHigh</name><addDropDefineB>1</addDropDefineB>
+			<cnName>高级装扮券</cnName>
+			<iconUrl>ThingsIcon/dressStampHigh</iconUrl>
+			<description>
+				增加主城装扮位所需。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]财宝僵尸掉落
+				[n]商店购买
+			</description>
+		</things>
+		<things cnName="黄金装扮券">
+			<name>dressStampGold</name>
+			<cnName>黄金装扮券</cnName>
+			<iconUrl>ThingsIcon/dressStampGold</iconUrl>
+			<description>
+				增加主城装扮位所需。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]装扮券合成
+				[n]商店购买
+			</description>
+		</things>
+		<things cnName="魂卡券">
+			<name>bossCardStamp</name>
+			<cnName>魂卡券</cnName><addDropDefineB>1</addDropDefineB>
+			<iconUrl>ThingsIcon/bossCardNum</iconUrl>
+			<loveD num="0" />
+			<description>
+				购买魂卡券后，可直接增加1次抽魂卡次数，无需使用。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店购买
+			</description>
+		</things>
+		
+		
+		<things cnName="万能载具碎片">
+			<name>vehicleCash</name>
+			<cnName>万能载具碎片</cnName>
+			<iconUrl>ThingsIcon/vehicleCash</iconUrl>
+			<description>
+				可在“锻造&gt;合成”界面中合成指定载具碎片。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]四周年庆感恩礼包。
+			</description>
+			<loveD num="20" />
+			<smeltD type="vehicle" grade="2" addType="box" price="20" maxNum="1" />
+		</things>
+		<things cnName="万能生肖碎片">
+			<name>zodiacCash</name>
+			<cnName>万能生肖碎片</cnName><addDropDefineB>1</addDropDefineB>
+			<iconUrl>ThingsIcon/zodiacCash</iconUrl>
+			<description>
+				可在“锻造&gt;合成”界面中合成指定生肖武器碎片。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]活跃度礼包。
+				[n]功勋牌兑换。
+			</description>
+			<loveD num="0" />
+		</things>
+		
+		<things cnName="爆骷S图鉴">
+			<name>PetBoomSkullBook</name>
+			<cnName>爆骷S图鉴</cnName><addDropDefineB>1</addDropDefineB>
+			<iconUrl>ThingsIcon/PetBoomSkullBook</iconUrl>
+			<description>
+				进化和培养爆骷所需的材料。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]秘境“爆骷S”
+			</description>
+			<loveD num="1" />
+			<smeltD type="pet" />
+		</things>
+		<things cnName="冥王图鉴">
+			<name>PetIronChiefBook</name>
+			<cnName>冥王图鉴</cnName><addDropDefineB>1</addDropDefineB>
+			<iconUrl>ThingsIcon/PetIronChiefBook</iconUrl>
+			<description>
+				进化和培养铁魁进化体所需的材料。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]消灭98级关卡“冥王”
+			</description>
+			<loveD num="1" />
+			<smeltD type="pet" />
+		</things>
+		<things cnName="雷斯图鉴">
+			<name>PetLakeBook</name>
+			<cnName>雷斯图鉴</cnName><addDropDefineB>1</addDropDefineB>
+			<iconUrl>ThingsIcon/PetLakeBook</iconUrl>
+			<description>
+				进化和培养雷克进化体所需的材料。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n][n]秘境“黑暗雷尔”
+			</description>
+			<loveD num="1" />
+			<smeltD type="pet" />
+		</things>
+		<things cnName="技能熟练卡">
+			<name>profiStamp</name>
+			<cnName>技能熟练卡</cnName>
+			<iconUrl>ThingsIcon/profiStamp</iconUrl>
+			<description>
+				增加技能3000点熟练度所需的材料，在技能升级界面中操作。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店购买
+			</description>
+			<loveD num="0" />
+		</things>
+		<things>
+			<name>renameCard</name>
+			<cnName>改名卡</cnName>
+			<iconUrl>ThingsIcon/renameCard</iconUrl>
+			<loveD num="0" />
+			<description>
+				修改角色昵称、宠物昵称需要消耗的物品。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店购买
+			</description>
+		</things>
+		<things>
+			<name>partsGridCard</name>
+			<cnName>零件位卡</cnName>
+			<iconUrl>ThingsIcon/partsGridCard</iconUrl>
+			<loveD num="0" />
+			<description>
+				解锁武器其中1个零件位所需物品。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]零件券兑换
+				[n]黄金商店
+			</description>
+		</things>
+		<things>
+			<name>bagGridCard</name>
+			<cnName>背包位卡</cnName>
+			<iconUrl>ThingsIcon/bagGridCard</iconUrl>
+			<loveD num="0" />
+			<description>
+				解锁背包位所需物品。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]等级礼包
+				[n]黄金商店
+			</description>
+		</things>
+		<things>
+			<name>houseGridCard</name>
+			<cnName>仓库位卡</cnName>
+			<iconUrl>ThingsIcon/houseGridCard</iconUrl>
+			<loveD num="0" />
+			<description>
+				解锁仓库位所需物品。
+				[n][n]{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]等级礼包
+				[n]黄金商店
+			</description>
+		</things>
+	</father>
+	
+	</data>

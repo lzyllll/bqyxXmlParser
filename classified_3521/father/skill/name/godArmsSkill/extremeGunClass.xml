@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill>
+			<name>extremeGunSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>电磁黏连</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>no</effectType>
+			<description>经过敌人时将产生电磁黏连，使电球移动速度变慢2.5倍（对僵尸精英怪或僵尸首领将变慢4倍），从而有更多的时间攻击敌人。</description>
+		</skill>
+		<skill>
+			<name>extremeGunSkill2</name><noRandomListB>1</noRandomListB>
+			<cnName>紊乱电流</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>noReplyB</effectType>
+			<stateEffectImg name="headElectric" />
+			<duration>3</duration>
+			<description>击中敌人后紊乱其回复机制，使其无法回复生命值，持续[duration]秒。无视技能免疫。</description>
+		</skill>
+	</father>
+</data>

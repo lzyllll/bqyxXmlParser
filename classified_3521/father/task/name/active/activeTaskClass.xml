@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="active" cnName="活动" dayNum="1" buyNum="0" autoUnlockByLevelB="1">
+		
+		<task name="bossTask25_10" cnName="氩星贪吃蛇" uiShowTime="999999" lv="99" unlockLv="40" moreKillEnemyNumIsMe="1" levelIsTaskLvB="1">
+			<openD tk="PrisonFirst_wolf" start="2025-9-28" end="2025-10-8 23:59:59" />
+			<shortText>消灭守关首领</shortText>
+			<uiConditionText>消灭守关首领</uiConditionText>
+			<description>操作氩星吞噬者，入侵地球，消灭沿途上的所有敌人。</description>
+			
+			<worldMapType>bossTask22</worldMapType>
+			<fixedLevelUrl>activeTask/bossTask25_10</fixedLevelUrl>
+			<diff>1</diff>
+			<enemyLifeMul>1.5</enemyLifeMul><enemyDpsMul>1</enemyDpsMul>
+			<gift>base;anniCoin;12</gift>
+			
+			<gift>base;wilderKey;1</gift>
+			<gift>base;partsCoin;4</gift>
+			<gift>things;yaStone;3</gift>
+			<gift>things;yaRock;3</gift>
+			<gift>things;ghostStone;2</gift>
+			<gift>things;hookDevice_1;4</gift>
+		</task>
+		
+	</father>
+	
+</data>

@@ -1,0 +1,191 @@
+{
+  "guoQingEgg": {
+    "one": {
+      "name": "guoQingEgg",
+      "cnName": "砸金蛋",
+      "randomB": true,
+      "gift": [
+        {
+          "value": "base;anniCoin;10",
+          "pro": 300
+        },
+        {
+          "value": "base;tenCoin;10",
+          "pro": 100
+        },
+        {
+          "value": "things;zodiacBag;1",
+          "pro": 300
+        },
+        {
+          "value": "things;yearSnake;3",
+          "pro": 100
+        },
+        {
+          "value": "things;yearDog;3",
+          "pro": 100
+        },
+        {
+          "value": "things;blackRifleBox;1",
+          "pro": 30
+        },
+        {
+          "value": "things;blackSniperBox;1",
+          "pro": 30
+        },
+        {
+          "value": "things;blackShotgunBox;1",
+          "pro": 30
+        },
+        {
+          "value": "things;blackPistolBox;1",
+          "pro": 30
+        },
+        {
+          "value": "things;blackRocketBox;1",
+          "pro": 30
+        },
+        {
+          "value": "things;blackLaserBox;1",
+          "pro": 30
+        },
+        {
+          "value": "things;bigHurtCard;2",
+          "pro": 50
+        },
+        {
+          "value": "things;zombieBottle;2",
+          "pro": 50
+        },
+        {
+          "value": "things;demonSpreadCard;2",
+          "pro": 50
+        },
+        {
+          "value": "things;doubleArmsCard;2",
+          "pro": 50
+        },
+        {
+          "value": "things;doubleEquipCard;2",
+          "pro": 50
+        },
+        {
+          "value": "things;doubleMaterialsCard;2",
+          "pro": 50
+        },
+        {
+          "value": "things;rebirthStone;5",
+          "pro": 30
+        },
+        {
+          "value": "things;intensDrug;5",
+          "pro": 100
+        },
+        {
+          "value": "base;partsCoin;20",
+          "pro": 20
+        },
+        {
+          "value": "things;bossCardStamp;10",
+          "pro": 10
+        },
+        {
+          "value": "base;wilderKey;5",
+          "pro": 5
+        },
+        {
+          "value": "things;partsChest87;4",
+          "pro": 4
+        }
+      ]
+    }
+  },
+  "guoQingSign": {
+    "one": [
+      {
+        "name": "guoQingSign1",
+        "mustLevel": 1,
+        "gift": [
+          "base;coin;1000000",
+          "base;anniCoin;20",
+          "things;blackArmsBox;1",
+          "things;zodiacCash;5"
+        ]
+      },
+      {
+        "name": "guoQingSign2",
+        "mustLevel": 2,
+        "gift": [
+          "base;coin;1000000",
+          "base;anniCoin;22",
+          "things;blackArmsBox;1",
+          "things;zodiacCash;5"
+        ]
+      },
+      {
+        "name": "guoQingSign3",
+        "mustLevel": 3,
+        "gift": [
+          "base;coin;1000000",
+          "base;anniCoin;24",
+          "things;blackArmsBox;1",
+          "things;zodiacCash;5",
+          "things;allBlackCash;200"
+        ]
+      },
+      {
+        "name": "guoQingSign4",
+        "mustLevel": 4,
+        "gift": [
+          "base;coin;1000000",
+          "base;anniCoin;26",
+          "things;blackArmsBox;1",
+          "things;zodiacCash;5",
+          "things;allBlackEquipCash;200"
+        ]
+      },
+      {
+        "name": "guoQingSign5",
+        "mustLevel": 5,
+        "gift": [
+          "base;coin;1000000",
+          "base;anniCoin;28",
+          "things;blackArmsBox;1",
+          "things;zodiacCash;5",
+          "things;armsGemChest;100"
+        ]
+      },
+      {
+        "name": "guoQingSign6",
+        "mustLevel": 6,
+        "gift": [
+          "base;coin;1000000",
+          "base;anniCoin;30",
+          "things;zodiacCash;5",
+          "things;demStone;30"
+        ]
+      },
+      {
+        "name": "guoQingSign7",
+        "mustLevel": 7,
+        "gift": [
+          "base;coin;1000000",
+          "base;anniCoin;32",
+          "things;zodiacCash;5",
+          "things;madheart;30"
+        ]
+      },
+      {
+        "name": "guoQingSign8",
+        "mustLevel": 8,
+        "gift": [
+          "base;coin;1000000",
+          "base;anniCoin;34",
+          "things;zodiacCash;16",
+          "things;partsChest87;3",
+          "parts;spurtingCube_1;1"
+        ]
+      }
+    ]
+  }
+}

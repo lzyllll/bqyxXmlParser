@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="pistol" cnName="手枪">
+		<bullet name="yearHourse" color="black" dropLevelArr="999" evoB="0" composeLv="97" chipB="1" chipNum="100">
+			<name>yearHourse</name>
+			<cnName>午马</cnName>
+			
+			<capacity>15</capacity>
+			<attackGap>1.4</attackGap>
+			<reloadGap>2.5</reloadGap>
+			<shakeAngle>1</shakeAngle>
+			<bulletWidth>700</bulletWidth>
+			<bulletShakeWidth>0,50</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>2</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="0" body="3" />	
+			<critD mul="2" pro="0.3" />
+			
+			<skillArr>Hit_Paralysis_ArmsSkill,Hit_Poison_ArmsSkill</skillArr>
+			<godSkillArr>yearHourseSkill,Hit_posion7_godArmsSkill</godSkillArr>
+			
+			<dpsMul>2</dpsMul>
+			<uiDpsMul>2</uiDpsMul>
+			<hurtRatio>5</hurtRatio>
+			<gunNum>1</gunNum>
+			<armsArmMul>1.05</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>0</upValue>
+			<shootShakeAngle>15</shootShakeAngle>
+			<shootRecoil>10</shootRecoil>
+			<screenShakeValue>15</screenShakeValue>
+			
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			.
+			<shootSoundUrl>sniper1/barrel3_sound</shootSoundUrl>
+			<flipX>1</flipX>
+			<lineD lightColor="0xD600FF" size="2" lightSize="6" blendMode="add" type="one" />
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			
+			<bodyImgRange>specialGun/yearHourse</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>每周任务、生肖碎片包(活跃值礼包)、物品合成、纪念币商店、黄金商店、竞技宝箱</description>
+		</bullet>
+	</father>
+	</data>

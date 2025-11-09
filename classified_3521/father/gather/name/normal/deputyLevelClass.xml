@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="normal">
+		<gather name="派生训练日">
+			<level name="missileTrain">
+				
+				<info enemyLv="86" noMoreB="1" diy="missileTrain" />
+				<fixed target="YangMei_4" info="no" drop="all" unitG="all" rectG="all" eventG="all" />
+				
+				<sceneLabel>YangMei</sceneLabel>
+			</level>
+		</gather>
+		<gather name="宠物训练场">
+			<level name="petTrain">
+				
+				<info enemyLv="89" diy="petTrain" />
+				<fixed target="GongMu_1" info="no" drop="all" unitG="all" rectG="all" eventG="all" />
+				
+				<sceneLabel>GongMu</sceneLabel>
+			</level>
+		</gather>
+		
+		<gather name="银狐挑战">
+			<level name="pistolFoxTrain">
+				
+				<info enemyLv="90" diy="pistolFoxTrain" />
+				<fixed target="JungleOutside_1" info="no" drop="all" unitG="all" rectG="all" eventG="all" />
+				
+				<sceneLabel>JungleOutside</sceneLabel>
+			</level>
+		</gather>
+		<gather name="载具训练">
+			<level name="vehicleTrain">
+				
+				<info enemyLv="92" noMoreB="1" diy="vehicleTrain" />
+				<fixed target="BaWang_1" info="no" drop="all" unitG="all" rectG="all" eventG="all" />
+				
+				<sceneLabel>BaWang</sceneLabel>
+			</level>
+		</gather>
+		<gather name="限弹挑战">
+			<level name="bulletLimitTrain">
+				
+				<info enemyLv="92" noMoreB="1" diy="bulletLimitTrain" preBulletArr="christmasGun,shotgunBlade,beadCrossbow,rifleDragon" />
+				<fixed target="LvSen_2" info="no" drop="all" unitG="all" rectG="all" eventG="all" />
+				
+				<sceneLabel>LvSen</sceneLabel>
+			</level>
+		</gather>
+		<gather name="青蜂训练">
+			<level name="rifleHornetTrain">
+				
+				<info enemyLv="93" diy="rifleHornetTrain" preSkillArr="magneticField_enemy" />
+				<fixed target="ShangSha_1" info="no" drop="all" unitG="all" rectG="all" eventG="all" />
+				
+				<sceneLabel>ShangSha</sceneLabel>
+			</level>
+		</gather>
+		<gather name="战斧训练">
+			<level name="shotgunBladeTrain">
+				
+				<info enemyLv="99" noMoreB="1" noVehicleB="1" noPropsB="1" noDeviceB="1" mustSingleB="1" overBackB="1" diy="shotgunBladeTrain" preSkillArr="magneticField_enemy" />
+				<sceneLabel>BaWang</sceneLabel>
+				
+				<unitG>
+					
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="we1" camp="we">
+						<unit cnName="雇佣兵" num="1" skillArr="State_InvincibleThrough,State_noAiFind,noAttackOrder" aiOrder="followBody:p1" />
+					</unitOrder>
+					
+					
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="毒蛛" num="1" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>number</numberType>
+						<unit cnName="携弹僵尸" num="1" />
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>number</numberType>
+						<unit cnName="战斗僵尸" num="1" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="僵尸空降兵" num="1" unitType="boss" lifeMul="0.3" />
+					</unitOrder>
+				</unitG>
+				
+				
+				<rectG>
+					<rect id="r_birth">1578,962,226,82</rect>
+					<rect id="r_over">2928,1200,84,157</rect>
+					<rect id="r1">16,616,254,112</rect>
+					<rect id="r2">2726,694,254,112</rect>
+					<rect id="r3">1548,418,254,112</rect>
+					
+					<rect label="addCharger">2540,731,84,84</rect>
+					<rect label="addCharger">690,723,84,84</rect>
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						<event><order>createUnit:we1; r_birth</order></event>
+						<event>
+							<condition delay="0.1" />
+							<order>say; startList:s1</order>
+						</event>
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+						</event>
+						<event>
+							<condition doNumber="4">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r123</order>
+						</event>
+						<event>
+							<condition doNumber="4">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r123</order>
+						</event>
+						<event>
+							<condition doNumber="4">enemyNumber:less_1</condition>
+							<order>createUnit:enemy3; r123</order>
+						</event>
+						<event>
+							<condition doNumber="1">enemyNumber:less_1</condition>
+							<order>createUnit:enemy4; r123</order>
+						</event>
+						<event>
+							<condition delay="0.5">enemyNumber:less_1</condition>
+						</event>
+						<event>
+							<condition delay="0.1">task:state; now:complete</condition>
+							<order>say; startList:s2</order>
+						</event>
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="闪电塔训练">
+			<level name="lightningTowerTrain">
+				
+				<info enemyLv="93" diy="lightningTowerTrain" />
+				<fixed target="DongFeng_1" info="no" drop="all" unitG="all" rectG="all" eventG="all" />
+				
+				<sceneLabel>DongFeng</sceneLabel>
+			</level>
+		</gather>
+	</father>
+	
+	</data>

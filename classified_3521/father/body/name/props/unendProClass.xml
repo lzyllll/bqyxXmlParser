@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="props">
+		<body cnName="弹药箱" name="caisson" add="1" max="6" point="4" unit="" />
+		<body cnName="重生石" name="rebirthStone" add="1" max="2" point="5" unit="" />
+		<body cnName="队友重生卡" name="teamRebirthCard" add="1" max="2" point="5" unit="" />
+		
+		
+	</father>
+	</data>

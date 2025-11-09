@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="决斗者">
+		<bullet cnName="决斗者-射击">
+			<name>Duelist_shoot</name>
+			<cnName>射击</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			<twoHitGap>0.2</twoHitGap>
+			<bulletSkillArr>followProducer</bulletSkillArr>
+			
+			<bulletAngle>179.9</bulletAngle>
+			<bulletAngleRange>50</bulletAngleRange>
+			<bulletLife>6</bulletLife>
+			<bulletWidth>40</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.9</attackGap>
+			<attackDelay>0.51</attackDelay>
+			<shootPoint>-113,-54</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>999</penetrationNum>
+			<skillArr>silence_wind</skillArr>
+				
+			<bulletSpeed>15</bulletSpeed>
+			<followD value="2" delay="3" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="add">Duelist/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/body_hit">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+	</father>
+</data>

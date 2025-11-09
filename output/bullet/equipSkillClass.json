@@ -1,0 +1,350 @@
+{
+  "father": [
+    {
+      "name": "headSkill",
+      "cnName": "头盔、腰带--装备技能-不能使用condition=add的参数、不能使用addSkillEffectImg参数，否则会出错",
+      "skill": [
+        {
+          "index": 0,
+          "cnName": "上帝的护佑",
+          "name": "godHand_equip",
+          "conditionType": "passive",
+          "condition": "beforeDie",
+          "minTriggerT": 55,
+          "target": "me",
+          "addType": "instantAndState",
+          "effectType": "godHand",
+          "value": 1,
+          "duration": 3,
+          "meEffectImg": {
+            "soundUrl": "sound/invisibility_hero",
+            "con": "add"
+          },
+          "description": "在受到必亡的伤害时，你将接受上帝的护佑，进入隐身无敌模式，持续[duration]秒，同时剩余1点生命值。技能触发间隔不小于50秒。"
+        },
+        {
+          "index": 0,
+          "cnName": "免疫",
+          "name": "immune_equip",
+          "showInLifeBarB": 1,
+          "conditionType": "passive",
+          "condition": "underEnemySkill",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "immune",
+          "effectProArr": 0.4,
+          "mul": 1,
+          "targetEffectImg": {
+            "value": "skillEffect/immune_equip",
+            "con": "add",
+            "partType": "body"
+          },
+          "description": "当敌人对你释放技能时，有[effectProArr.0]几率使该技能对你无效。"
+        },
+        {
+          "index": 0,
+          "cnName": "磁力场",
+          "name": "magneticField_equip",
+          "conditionType": "passive",
+          "condition": "interval",
+          "intervalT": 25,
+          "target": "me",
+          "addType": "state",
+          "effectType": "magneticB",
+          "value": 1,
+          "mul": 0.2,
+          "duration": 7,
+          "range": 200,
+          "passiveSkillArr": "magneticField_enemy_link",
+          "meEffectImg": {
+            "soundUrl": "sound/magneticField"
+          },
+          "stateEffectImg": {
+            "value": "skillEffect/magneticField",
+            "partType": "mouth",
+            "con": "add"
+          },
+          "description": "每过[intervalT]秒向外释放磁力场，使700码的范围内的所有敌方子弹偏离轨道，持续[duration]秒。"
+        },
+        {
+          "index": 0,
+          "cnName": "顽强光环",
+          "name": "strongHalo_equip",
+          "conditionType": "passive",
+          "condition": "interval",
+          "target": "me,range,we",
+          "addType": "state",
+          "effectType": "underHurtMul",
+          "mul": 0.85,
+          "duration": 2,
+          "range": 800,
+          "stateEffectImg": {
+            "value": "skillEffect/rune_red_shield",
+            "partType": "mouth",
+            "con": "add"
+          },
+          "description": "为周围[range]码以内的我方单位增加[1-mul]的防御力。"
+        },
+        {
+          "index": 0,
+          "cnName": "嗜爪之怒",
+          "name": "murderous_equip",
+          "conditionType": "passive",
+          "condition": "underHit",
+          "minTriggerT": 10,
+          "target": "me",
+          "addType": "state",
+          "effectType": "murderous_addHurtMul",
+          "effectProArr": 0.1,
+          "mul": 2.5,
+          "duration": 6,
+          "meEffectImg": {
+            "soundUrl": "sound/murderous_hero"
+          },
+          "stateEffectImg": {
+            "value": "skillEffect/murderous_enemy",
+            "partType": "2hand",
+            "con": "add",
+            "raNum": 15,
+            "followPartRaB": true
+          },
+          "description": "每次受到攻击都有[effectProArr.0]的几率进入嗜爪状态，增加[mul-1]的攻击力，持续[duration]秒。技能触发间隔不小于[minTriggerT]秒。"
+        },
+        {
+          "index": 0,
+          "cnName": "瘴气",
+          "name": "poisonRange_equip",
+          "conditionType": "passive",
+          "condition": "useSkill",
+          "target": "me,range,enemy",
+          "addType": "state",
+          "effectType": "poison",
+          "extraValueType": "nowArmsDpsOrNormal",
+          "value": 0,
+          "mul": 0.5,
+          "doGap": 1,
+          "duration": 5,
+          "range": 450,
+          "meEffectImg": {
+            "soundUrl": "sound/poisonousFog_hero"
+          },
+          "stateEffectImg": {
+            "value": "skillEffect/poisonousFog_hero",
+            "partType": "mouth",
+            "con": "add"
+          },
+          "description": "每次释放任何主动技能，都会使周围[range]码内的敌人中毒，每秒受到伤害，伤害值为施法者当前武器实际战斗力的[mul]，持续[duration]秒。"
+        },
+        {
+          "index": 0,
+          "cnName": "耐久光环",
+          "name": "attackSpeedHalo_equip",
+          "conditionType": "passive",
+          "condition": "interval",
+          "target": "me,range,we",
+          "addType": "state",
+          "effectType": "attackGapMul",
+          "mul": 1.13,
+          "duration": 2,
+          "range": 700,
+          "description": "为周围[range]码以内的我方射击单位增加[mul-1]的攻击速度。"
+        }
+      ]
+    },
+    {
+      "name": "coatSkill",
+      "cnName": "战衣、战裤---装备技能-不能使用condition=add的参数、不能使用addSkillEffectImg参数，否则会出错",
+      "skill": [
+        {
+          "index": 0,
+          "cnName": "牺牲",
+          "name": "sacrifice_equip",
+          "conditionType": "passive",
+          "condition": "underHurt",
+          "target": "me,range,we",
+          "addType": "instant",
+          "effectType": "sacrifice",
+          "mul": 0.15,
+          "range": 450,
+          "description": "每次受到伤害都能增加[range]范围内我方单位的生命值，增加值为伤害值的[mul]。"
+        },
+        {
+          "index": 0,
+          "cnName": "钢背",
+          "name": "backStrong_equip",
+          "conditionType": "passive",
+          "condition": "underHit",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "changeHurt",
+          "mul": 0.65,
+          "obj": "\"type\":\"backWeak\"",
+          "meEffectImg": null,
+          "targetEffectImg": null,
+          "description": "减少来自背面[1-mul]的伤害。"
+        },
+        {
+          "index": 0,
+          "cnName": "负离子外壳",
+          "name": "anionSkin_equip",
+          "conditionType": "passive",
+          "condition": "underHit",
+          "minTriggerT": 5,
+          "target": "target",
+          "addType": "instantAndState",
+          "effectType": "anionSkin",
+          "effectProArr": 0.2,
+          "mul": 0.5,
+          "duration": 3,
+          "targetEffectImg": {
+            "soundUrl": "sound/paralysis_enemy_hit"
+          },
+          "stateEffectImg": {
+            "value": "skillEffect/paralysis_enemy",
+            "con": "add"
+          },
+          "description": "自身被攻击时，攻击者有[effectProArr.0]的几率被麻痹，无法移动，攻击速度降低[1-mul]，持续[duration]秒。"
+        },
+        {
+          "index": 0,
+          "cnName": "净化器",
+          "name": "treater_equip",
+          "conditionType": "passive",
+          "condition": "interval",
+          "intervalT": 6,
+          "target": "me",
+          "addType": "instant",
+          "effectType": "clearEnemyState",
+          "targetEffectImg": {
+            "value": "skillEffect/treater_equip",
+            "con": "add"
+          },
+          "description": "每隔[intervalT]秒清除1次自身负面状态。"
+        },
+        {
+          "index": 0,
+          "cnName": "芒刺",
+          "name": "backWeak_equip",
+          "ignoreImmunityB": 1,
+          "noSkillDodgeB": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "changeHurt",
+          "mul": 1.35,
+          "obj": "\"type\":\"backWeak\"",
+          "meEffectImg": null,
+          "targetEffectImg": null,
+          "description": "攻击敌人背部或者后脑勺都会造成额外[mul-1]的伤害。"
+        },
+        {
+          "index": 0,
+          "cnName": "荆棘外表",
+          "name": "thornSkin_equip",
+          "conditionType": "passive",
+          "condition": "underHit",
+          "minTriggerT": 5,
+          "target": "target",
+          "addType": "instantAndState",
+          "effectType": "dizziness",
+          "effectProArr": 0.2,
+          "duration": 2,
+          "stateEffectImg": {
+            "value": "skillEffect/dizziness",
+            "partType": "mouth",
+            "con": "add"
+          },
+          "description": "自身被攻击时，攻击者有[effectProArr.0]的几率进入眩晕状态，持续[duration]秒。"
+        },
+        {
+          "index": 0,
+          "cnName": "折射",
+          "name": "refraction_equip",
+          "noEffectLevelModel": "arena",
+          "conditionType": "passive",
+          "condition": "underHit",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "refraction",
+          "effectProArr": 0.15,
+          "range": 350,
+          "description": "自身被攻击时，有[effectProArr.0]的几率不受伤害，同时使周围[range]内的敌人受到同等伤害。"
+        }
+      ]
+    },
+    {
+      "name": "fashionSkill",
+      "skill": [
+        {
+          "cnName": "召唤群狼",
+          "name": "summonWolf_bigBoss",
+          "conditionType": "passive",
+          "condition": "usebutcherBlade",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "bullet",
+          "extraValueType": "nowArmsTrueDps",
+          "mul": 1,
+          "obj": "\"name\":\"summonWolf_bigBoss\",\"site\":\"me\",\"flipB\":true,\"launcherB\":true",
+          "description": "每次挥舞屠夫都将召唤成群的尸狼灵魂向前狂奔，对被冲撞的敌人造成伤害。"
+        },
+        {
+          "cnName": "装甲压制",
+          "name": "zoomOut",
+          "conditionType": "passive",
+          "condition": "interval",
+          "intervalT": 5,
+          "target": {
+            "value": "me",
+            "noExistB": true
+          },
+          "addType": "instant",
+          "effectType": "bullet_zoomOut",
+          "extraValueType": "nowArmsTrueDps",
+          "mul": 3,
+          "range": 99999,
+          "obj": "\"name\":\"zoomOutBullet\",\"nameArr\":[\"zoomOutGaia\"],\"site\":\"me\",\"flipB\":true,\"launcherB\":1",
+          "description": "在骑乘赤焰、幽鬼等街跑载具时，每隔[intervalT]秒，向敌方丢出3辆变大的玩具坦克，产生3*武器面板伤害*射速的爆炸伤害。"
+        }
+      ]
+    },
+    {
+      "name": "equipSkill_link",
+      "cnName": "装备技能-链接",
+      "skill": [
+        {
+          "index": 0,
+          "name": "magneticField_enemy_link",
+          "cnName": "磁力场-曲扭光环",
+          "conditionType": "active",
+          "condition": "interval",
+          "target": "me,range,enemy",
+          "addType": "state",
+          "effectType": "magneticField",
+          "range": 800,
+          "duration": 0.5,
+          "stateEffectImg": {
+            "value": "skillEffect/magneticField_paralysis",
+            "partType": "shootPoint",
+            "con": "add",
+            "raNum": 30,
+            "followPartRaB": true
+          },
+          "description": "使目标射出的子弹偏离轨道，持续[duration]秒。"
+        },
+        {
+          "index": 0,
+          "cnName": "折射",
+          "name": "refraction_equip_link",
+          "conditionType": "passive",
+          "condition": "underHit",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "noUnderHurtB"
+        }
+      ]
+    },
+    null
+  ]
+}

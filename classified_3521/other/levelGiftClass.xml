@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<levelGift cnName="等级礼包">
+		<one name="levelGift_8" mustLevel="8">
+			<gift>things;renameCard;				1</gift>
+		</one>
+		<one name="levelGift_10" mustLevel="10">
+			<gift>base;wilderKey;			2</gift>
+			<gift>things;coinHeap_1;			10</gift>
+			<gift>things;skillStone;				50</gift>
+		</one>
+		<one name="levelGift_15" mustLevel="15">
+			<gift>things;doubleCard;			10</gift>
+		</one>
+		<one name="levelGift_20" mustLevel="20">
+			<gift>things;skillStone;				100</gift>
+			<gift>things;godStone;				50</gift>
+		</one>
+		<one name="levelGift_25" mustLevel="25">
+			<gift>base;exp;				1000000</gift>
+			<gift>things;skillStone;				200</gift>
+			<gift>things;godStone;				100</gift>
+			<gift>things;geneBox;				2</gift>
+			<gift>things;doubleMaterialsCard;				10</gift>
+		</one>
+		<one name="levelGift_30" mustLevel="30">
+			<gift>base;exp;				3128950</gift>
+			<gift>things;rebirthStone;				2</gift>
+			<gift>things;skillFleshCard;				3</gift>
+			<gift>things;teamRebirthCard;		3</gift>
+			<gift>things;doubleCard;				3</gift>
+			<gift>arms;levelGift;1;orange;30;rocket</gift>
+		</one>
+		<one name="levelGift_35" mustLevel="35">
+			<gift>base;exp;				4500000</gift>
+			<gift>parts;loaderParts_36;7</gift>
+			<gift>things;DesertTankCash;30</gift>
+			<gift>things;DaybreakCash;30</gift>
+			<gift>things;RedReaperCash;30</gift>
+			<gift>things;doubleArmsCard;				5</gift>
+			<gift>things;doubleEquipCard;				5</gift>
+		</one>
+		<one name="levelGift_40" mustLevel="40">
+			<gift>base;exp;				4290870</gift>
+			<gift>parts;loaderParts_39;12</gift>
+			<gift>arms;levelGift;1;orange;40;pistol</gift>
+		</one>
+		<one name="levelGift_45" mustLevel="45">
+			<gift>base;exp;				4500000</gift>
+			<gift>parts;loaderParts_45;12</gift>
+			<gift>things;doubleMaterialsCard;			10</gift>
+			<gift>things;doubleArmsCard;				5</gift>
+			<gift>things;doubleEquipCard;				5</gift>
+		</one>
+		<one name="lg48" mustLevel="48">
+			<gift>things;expCard1;3</gift>
+		</one>
+		
+		<one name="levelGift_50" mustLevel="50">
+			<gift>base;exp;				4782383</gift>
+			<gift>parts;loaderParts_48;12</gift>
+			<gift>arms;levelGift;1;orange;50;rifle</gift>
+		</one>
+		<one name="levelGift_55" mustLevel="55">
+			<gift>base;exp;				5000000</gift>
+			<gift>parts;loaderParts_54;12</gift>
+			<gift>things;weaponChest;7</gift>
+			<gift>things;deviceChest;10</gift>
+		</one>
+		<one name="levelGift_60" mustLevel="60">
+			<gift>base;exp;				5816613</gift>
+			<gift>parts;loaderParts_60;6</gift>
+			<gift>arms;levelGift;1;red;60;sniper</gift>
+		</one>
+		<one name="lg65" mustLevel="65">
+			<gift>things;expCard2;2</gift>
+		</one>
+		
+		<one name="levelGift_70" mustLevel="70">
+			<gift>base;exp;				6263618</gift>
+			<gift>things;partsChest69;1</gift>
+			<gift>arms;levelGift;1;red;70;shotgun</gift>
+		</one>
+		<one name="lg75" mustLevel="75">
+			<gift>things;expCard2;2</gift>
+		</one>
+		<one name="lg78" mustLevel="78">
+			<gift>things;expCard3;1</gift>
+		</one>
+		
+		<one name="levelGift_80" mustLevel="80">
+			<gift>base;exp;				7263618</gift>
+			<gift>things;partsChest72;1</gift>
+			<gift>arms;levelGift;1;red;80;rifle</gift>
+		</one>
+		<one name="levelGift_812" mustLevel="81">
+			<info>81级开始，你可以开始制作黑色武器和装备，它们的碎片可在81~85级关卡中掉落，也可在“锻造>合成”由周年碎片合成而来。</info>
+			<gift>things;anniversaryCash;40</gift>
+			<gift>things;rifleDragon;20</gift>
+			<gift>things;sniperSmilodon;20</gift>
+			<gift>things;shotgunCrocodile;20</gift>
+			<gift>things;ashesSuit_coat;20</gift>
+			<gift>things;goshawkSuit_coat;20</gift>
+		</one>
+		<one name="levelGift_82" mustLevel="82">
+			<gift>base;exp;				8000000</gift>
+			<gift>things;partsChest72;3</gift>
+			<gift>things;strengthenStone;40</gift>
+			<gift>things;lightStone;10</gift>
+			<gift>things;bloodStone;50</gift>
+			<gift>things;strengthenDrug;100</gift>
+			<gift>things;anniversaryCash;40</gift>
+		</one>
+		<one name="lg83" mustLevel="83">
+			<gift>things;tangyuan;1</gift>
+		</one>
+		<one name="lg84" mustLevel="84">
+			<gift>things;jiaozi;1</gift>
+		</one>
+		
+		<one name="levelGift_85" mustLevel="85">
+			<gift>base;exp;				10000000</gift>
+			<gift>things;strengthenStone;40</gift>
+			<gift>things;highEquipEchelonCard;30</gift>
+			<gift>things;highArmsEchelonCard;30</gift>
+			<gift>things;partsChest75;6</gift>
+			<gift>arms;levelGift;1;red;85;pistol</gift>
+		</one>
+		<one name="levelGift_862" mustLevel="86">
+			<info>更强的、可进阶的黑色武器装备将承接你余下的战斗生涯，它们的碎片在86级以上关卡中掉落，也可在“锻造>合成”由神武碎片、神护碎片合成。</info>
+			<gift>things;allBlackCash;10</gift>
+			<gift>things;allBlackEquipCash;10</gift>
+			<gift>things;shotgunSkunk;10</gift>
+			<gift>things;rifleHornet;10</gift>
+			
+		</one>
+		<one name="levelGift_86" mustLevel="86" cnName="BingKu_plot">
+			<gift>parts;huntParts_1;3</gift>
+			<gift>things;armsRadium;10</gift>
+			<gift>things;armsTitanium;10</gift>
+			<gift>things;allBlackCash;15</gift>
+			<gift>things;allBlackEquipCash;15</gift>
+		</one>
+		<one name="levelGift_87" mustLevel="87" cnName="BingKuDeep_plot">
+			<gift>parts;huntParts_1;6</gift>
+			<gift>things;armsRadium;10</gift>
+			<gift>things;armsTitanium;10</gift>
+			<gift>things;allBlackCash;15</gift>
+			<gift>things;allBlackEquipCash;15</gift>
+		</one>
+		
+		<one name="levelGift_88" mustLevel="88" cnName="WuXue_plot">
+			<gift>parts;huntParts_1;9</gift>
+			<gift>things;armsRadium;10</gift>
+			<gift>things;armsTitanium;10</gift>
+			<gift>things;allBlackCash;15</gift>
+			<gift>things;allBlackEquipCash;15</gift> 
+		</one>
+		<one name="levelGift_89" mustLevel="89" cnName="DongWu_plot">
+			<gift>parts;huntParts_1;12</gift>
+			<gift>things;armsRadium;10</gift>
+			<gift>things;armsTitanium;10</gift>
+			<gift>things;allBlackCash;15</gift>
+			<gift>things;allBlackEquipCash;15</gift>
+		</one>
+		
+		
+		<one name="levelGift_90" mustLevel="90">
+			<gift>base;exp;				15000000</gift>
+			<gift>things;partsChest78;6</gift>
+			<gift>things;armsTitanium;30</gift>
+			<gift>things;armsRadium;30</gift>
+			<gift>things;allBlackCash;50</gift>
+			<gift>things;allBlackEquipCash;50</gift>
+		</one>
+		<one name="levelGift_912" mustLevel="91">
+			<info>91级、92级地图会掉落特殊零件。武器装上特殊零件，能获得极大的战斗力提升。</info>
+			<gift>parts;huntParts_1;1</gift>
+			<gift>parts;acidicParts_1;6</gift>
+		</one>
+		<one name="levelGift_91" mustLevel="91" cnName="BuDong_plot">
+			<gift>parts;huntParts_1;20</gift>
+		</one>
+		<one name="lg92" mustLevel="92">
+			<gift>parts;loaderParts_81;16</gift>
+			<gift>things;allBlackCash;40</gift>
+			<gift>things;allBlackEquipCash;40</gift>
+			<gift>things;bagGridCard;12</gift>
+			<gift>things;houseGridCard;12</gift>
+			<gift>things;sweepingCard;6</gift>
+		</one>
+		
+		<one name="levelGift_93" mustLevel="93">
+			<gift>things;partsChest81;3</gift>
+			<gift>things;meltFlamer;10</gift>
+			<gift>things;redFire;10</gift>
+			<gift>things;artifactChest;5</gift>
+		</one>
+		<one name="lg94" mustLevel="94">
+			<gift>things;moonCake;1</gift>
+		</one>
+		
+		
+		<one name="levelGift_95" mustLevel="95">
+			<gift>things;partsChest84;1</gift>
+			<gift>things;fireGem;10</gift>
+			<gift>things;electricGem;10</gift>
+			<gift>things;frozenGem;10</gift>
+			<gift>things;poisonGem;10</gift>
+			<gift>base;anniCoin;10</gift>
+		</one>
+		<one name="levelGift_96" mustLevel="96">
+			<info>96级及以上关卡会掉落宝石。武器宝石能给武器添加元素伤害，还是武器进阶的必需材料。装备宝石是合成暗金装备（锻造>合成）、进阶暗金装备的必需材料。</info>
+			<gift>things;fireGem;5</gift>
+			<gift>things;electricGem;5</gift>
+			<gift>things;frozenGem;5</gift>
+			<gift>things;poisonGem;5</gift>
+			<gift>things;equipGemChest;20</gift>
+		</one>
+		<one name="lg97" mustLevel="97">
+			<gift>things;superSpreadCard;1</gift>
+		</one>
+		<one name="lg98" mustLevel="98">
+			<gift>things;arenaChest;10</gift>
+			<gift>things;zodiacBag;10</gift>
+			<gift>base;anniCoin;20</gift>
+			<gift>base;tenCoin;10</gift>
+		</one>
+		<one name="lg99" mustLevel="99">
+			<gift>things;armsGemChest;80</gift>
+			<gift>things;equipGemChest;80</gift>
+			<gift>things;sweepingCard;4</gift>
+			<gift>base;anniCoin;20</gift>
+			<gift>base;tenCoin;10</gift>
+		</one>
+		
+		<one name="dgcpu1" mustLevel="1" cnName="darkgoldArms">
+			<gift>parts;darkgoldCpu_1;1</gift>
+		</one>
+		<one name="pucpu1" mustLevel="2" cnName="purgoldArms">
+			<gift>parts;purgoldCpu_1;1</gift>
+		</one>
+		
+		
+		<one name="lsp1" mustLevel="99" cnName="zomNewborn">
+			<gift>things;allBlackCash;100</gift>
+			<gift>things;erosionFlamer;30</gift>
+			<gift>things;AircraftGunCash;40</gift>
+			<gift>things;rocketCate;30</gift>
+		</one>
+		<one name="lm1" mustLevel="99" cnName="Hospital5_plot">
+			<gift>things;variationCatalyst;140</gift>
+			<gift>things;rifleHornet;15</gift>
+			<gift>things;shotgunSkunk;15</gift>
+			<gift>things;sniperCicada;15</gift>
+			<gift>things;pistolFox;15</gift>
+			<gift>things;redFire;15</gift>
+		</one>
+		<one name="lm2" mustLevel="99" cnName="captureUpland">
+			<gift>things;rifleHornet;20</gift>
+			<gift>things;shotgunSkunk;20</gift>
+			<gift>things;sniperCicada;20</gift>
+			<gift>things;pistolFox;20</gift>
+			<gift>things;redFire;20</gift>
+		</one>
+		<one name="lsp2" mustLevel="99" cnName="madWarriorSec">
+			<gift>things;allBlackEquipCash;200</gift>
+			<gift>things;oracleSuit_head;50</gift>
+			<gift>things;oracleSuit_belt;50</gift>
+			<gift>things;oracleSuit_coat;50</gift>
+			<gift>things;beadCrossbow;70</gift>
+		</one>
+		
+		<one name="ln1" mustLevel="99" cnName="beatMadboss">
+			<gift>things;arenaChest;10</gift>
+			<gift>things;zodiacBag;10</gift>
+			<gift>base;anniCoin;20</gift>
+			<gift>base;tenCoin;10</gift>
+		</one>
+		
+		<one name="lbl1" mustLevel="99" cnName="bwallDaoTa">
+			<gift>things;allBlackCash;100</gift>
+			<gift>things;erosionFlamer;30</gift>
+			<gift>things;AircraftGunCash;40</gift>
+			<gift>things;rocketCate;30</gift>
+		</one>
+		<one name="lbl2" mustLevel="99" cnName="bwallStoneSea">
+			<gift>things;allBlackEquipCash;200</gift>
+			<gift>things;oracleSuit_head;50</gift>
+			<gift>things;oracleSuit_belt;50</gift>
+			<gift>things;oracleSuit_coat;50</gift>
+			<gift>things;beadCrossbow;70</gift>
+		</one>
+		
+		
+		<one name="lcu1" mustLevel="99" cnName="cusZhuTou">
+			<gift>base;anniCoin;90</gift>
+			<gift>base;tenCoin;30</gift>
+		</one>
+		<one name="lcu2" mustLevel="99" cnName="cusShuangTa_defend">
+			<gift>base;anniCoin;90</gift>
+			<gift>base;tenCoin;30</gift>
+		</one>
+		
+		<one name="ln2" mustLevel="99" cnName="mochaIronDog">
+			<gift>things;armsGemChest;80</gift>
+			<gift>things;sweepingCard;4</gift>
+			<gift>things;zodiacBag;10</gift>
+			<gift>base;anniCoin;20</gift>
+			<gift>base;tenCoin;10</gift>
+		</one>
+		<one name="ln3" mustLevel="99" cnName="wenjieAway">
+			<gift>things;armsGemChest;80</gift>
+			<gift>things;equipGemChest;80</gift>
+			<gift>things;zodiacBag;10</gift>
+			<gift>base;anniCoin;20</gift>
+			<gift>base;tenCoin;10</gift>
+		</one>
+		
+		<one name="lcu3" mustLevel="99" cnName="cusBaWang">
+			<gift>base;anniCoin;90</gift>
+			<gift>base;tenCoin;30</gift>
+		</one>
+		<one name="lcu4" mustLevel="99" cnName="cusFangZhouTop">
+			<gift>base;anniCoin;90</gift>
+			<gift>base;tenCoin;30</gift>
+		</one>
+		<one name="lcu5" mustLevel="99" cnName="cusCavesDeep">
+			<gift>base;anniCoin;90</gift>
+			<gift>base;tenCoin;30</gift>
+		</one>
+	</levelGift>
+</data>

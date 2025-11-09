@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="laboratory" cnName="研究所">
+		<body id="21" name="SkeletalMage" cnName="骷髅巫师" scene="ZhongXin" lifeMul="1.5" openTime="2020-4-13" day="14">
+			<drop cnName="骷髅权杖碎片" pro="1" d7="12" d6="11" d5="10" d4="9" d3="7" d2="5" d1="4" d0="3">
+				<gift>things;skeletonWand_1;1</gift>
+			</drop>
+		</body>
+		<body id="22" name="KingRabbit" cnName="王者兔" scene="DongFeng" lifeMul="1.5" openTime="2020-3-16" day="14">
+			<drop cnName="王者之翼碎片" pro="1" d7="15" d6="14" d5="13" d4="12" d3="11" d2="10" d1="9" d0="8">
+				<gift>things;kingWing_heroChip;1</gift>
+			</drop>
+		</body>
+		<body id="23" name="YouthWolf" cnName="阿巴达斯" scene="LangXue" lifeMul="1.5" openTime="2020-4-13" day="14" noMoreB="1">
+			<drop cnName="狼首时装碎片" pro="1" d7="12" d6="11" d5="10" d4="9" d3="7" d2="5" d1="4" d0="3">
+				<gift>things;wolfFashion;1</gift>
+			</drop>
+		</body>
+		<body id="24" name="PhantomZ" cnName="幻影Z" scene="DongFeng" lifeMul="3" openTime="2019-11-11" day="14">
+			<drop cnName="电磁铁" pro="1" d7="12" d6="11" d5="10" d4="9" d3="7" d2="5" d1="4" d0="3">
+				<gift>things;electromagnet;1</gift>
+			</drop>
+		</body>
+	</father>
+	
+	
+	</data>

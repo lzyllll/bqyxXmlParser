@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="crossbow" cnName="弩">
+		<bullet name="巳蛇" color="black" dropLevelArr="999" evoB="0" composeLv="97" chipB="1" chipNum="150">
+			<name>yearSnake</name><cnName>巳蛇</cnName>
+			<dpsMul>1.1</dpsMul>
+			<uiDpsMul>1.1</uiDpsMul>
+			
+			<capacity>6,8</capacity>
+			<attackGap>1</attackGap>
+			<reloadGap>2,2.5</reloadGap>
+			<shakeAngle>0,0</shakeAngle>
+			<bulletWidth>30</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<shootAngle>3,5</shootAngle>
+			
+			<armsArmMul>0.5</armsArmMul><upValue>10</upValue><shootShakeAngle>30</shootShakeAngle><shootRecoil>7</shootRecoil><screenShakeValue>10</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime><bulletLife>2.5</bulletLife>
+			<hitType>rect</hitType>
+				
+			<bulletSpeed>42</bulletSpeed>
+				
+			<attackDelay>1.5</attackDelay>
+			<crossbowD focoB="1" minDelayMul="0.05" />
+			<godSkillArr>Hit_posion7_godArmsSkill,yearSnakeSkill</godSkillArr>
+			
+			<shootSoundUrl>specialGun/arrowAttack</shootSoundUrl>
+			<bulletImgUrl raNum="30" con="filter">specialGun/yearSnakeBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="specialGun/arrowImpact">bulletHitEffect/fitHit</hitImgUrl>
+			<hitFloorImgUrl>bulletHitEffect/yellow_motion</hitFloorImgUrl>
+			<fireImgType>no</fireImgType>
+			
+			<bodyImgRange>specialGun/yearSnake</bodyImgRange><bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>文杰忠诚度（7级）、物品合成、纪念币商店、黄金商店、竞技宝箱</description>
+		</bullet>
+	</father>
+	</data>

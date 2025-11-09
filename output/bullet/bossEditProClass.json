@@ -1,0 +1,161 @@
+{
+  "gather": {
+    "name": "boss",
+    "father": [
+      {
+        "name": "base",
+        "changeB": false,
+        "body": [
+          {
+            "name": "cn",
+            "cnName": "首领中文名前缀"
+          },
+          {
+            "name": "g",
+            "cnName": "奖励"
+          }
+        ]
+      },
+      {
+        "name": "other",
+        "changeB": false,
+        "body": [
+          {
+            "name": "ud",
+            "cnName": ""
+          },
+          {
+            "name": "pn",
+            "cnName": ""
+          }
+        ]
+      },
+      {
+        "name": "level",
+        "body": {
+          "name": "mp",
+          "cnName": "地图",
+          "defPro": "sceneLabel"
+        }
+      },
+      {
+        "name": "levelInfo",
+        "body": [
+          {
+            "name": "lv",
+            "type": "number",
+            "cnName": "等级",
+            "defPro": "enemyLv",
+            "init": 99,
+            "min": 40,
+            "max": 99
+          },
+          {
+            "name": "hb",
+            "type": "boolean",
+            "cnName": "困难设定",
+            "defPro": "hb",
+            "scoreMul": 2,
+            "tip": "饺子等道具无法使用，某些技能、武器、装备也将受到限制（类似于99级主线任务的限制）。",
+            "init": 1
+          },
+          {
+            "name": "tm",
+            "type": "number",
+            "cnName": "倒计时",
+            "defPro": "tm",
+            "scoreMul": 1,
+            "unit": "秒",
+            "init": 180,
+            "max": 300,
+            "min": 0,
+            "tip": "设置为0，可取消倒计时。"
+          },
+          {
+            "name": "pa",
+            "type": "boolean",
+            "cnName": "禁止队友",
+            "defPro": "noPartnerB",
+            "scoreMul": 2
+          },
+          {
+            "name": "pe",
+            "type": "boolean",
+            "cnName": "禁止尸宠",
+            "defPro": "noPetB",
+            "scoreMul": 1.3
+          },
+          {
+            "name": "ve",
+            "type": "boolean",
+            "cnName": "禁止载具",
+            "defPro": "noVehicleB",
+            "scoreMul": 1.2
+          },
+          {
+            "name": "pr",
+            "type": "boolean",
+            "cnName": "禁止道具",
+            "defPro": "noPropsB",
+            "scoreMul": 2.5
+          },
+          {
+            "name": "si",
+            "type": "boolean",
+            "cnName": "强制单人",
+            "defPro": "mustSingleB",
+            "scoreMul": 1.1
+          }
+        ]
+      },
+      {
+        "name": "levelBossUnit",
+        "body": [
+          {
+            "name": "n",
+            "cnName": "首领",
+            "defPro": "name",
+            "changeB": false
+          },
+          {
+            "name": "sk",
+            "type": "array",
+            "cnName": "技能",
+            "defPro": "skillArr",
+            "defValueFun": "getSkillNameArr"
+          },
+          {
+            "name": "dp",
+            "type": "number",
+            "cnName": "伤害系数",
+            "defPro": "dpsMul",
+            "init": 1,
+            "min": 1,
+            "max": 30
+          },
+          {
+            "name": "li",
+            "type": "number",
+            "cnName": "生命系数",
+            "defPro": "lifeMul",
+            "init": 10,
+            "min": 1,
+            "max": 100000
+          },
+          {
+            "name": "sc",
+            "type": "boolean",
+            "cnName": "关闭自身技能",
+            "defPro": "skillCloseB"
+          },
+          {
+            "name": "ar",
+            "type": "array",
+            "cnName": "武器",
+            "defPro": "armsRange"
+          }
+        ]
+      }
+    ]
+  }
+}

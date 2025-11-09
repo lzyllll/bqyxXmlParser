@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="levelInfo">
+		<body cnName="倒计时/秒" name="tm" add="1" max="80" unit="" />
+	</father>
+	</data>

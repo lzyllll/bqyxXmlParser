@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="掘金尸">
+		<skill cnName="疾风斩">
+			<name>NuggetsShoot</name><iconUrl36>SkillIcon/shoot_FightKing_36</iconUrl36>
+			<cnName>疾风斩</cnName><wantDescripB>1</wantDescripB>
+			<cd>7</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>400</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>bullet_Nuggets</effectType>
+			<value>60</value>
+			<duration>1.5</duration>
+			
+			<obj>"name":"knife_Nuggets"</obj>
+			
+			<meActionLabel>lightningAttack</meActionLabel>
+			<description>砍击前方所有敌人，对普通单位造成瞬秒伤害，对首领造成最大生命值10%的伤害。</description>
+		</skill>
+		<skill index="0" cnName="遁地风暴">
+			<name>wind_Nuggets</name>
+			<cnName>遁地风暴</cnName><iconUrl36>SkillIcon/whirlwind_FightKing_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>15</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>600</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>2.3</duration>
+			
+			<meActionLabel>rotatingAttack</meActionLabel>
+			
+			<description>高速旋转进入土地，并迅速从目标脚底钻出，对范围内的目标造成大量伤害。</description>
+		</skill>
+	</father>
+	</data>

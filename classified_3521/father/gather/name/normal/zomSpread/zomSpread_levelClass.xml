@@ -1,0 +1,599 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="normal">
+		<gather name="火种">
+			<level name="zomFire">
+				
+				<info enemyLv="1" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" mustSingleB="1" noDeviceB="1" />
+				<drop noB="1" />
+				
+				<sceneLabel>XiaSha</sceneLabel>
+				
+				<unitG>
+					
+					<unitOrder id="enemy1">
+						<unit cnName="本我" lifeMul="9999999" dpsMul="2" noSuperB="1" />
+						<unit cnName="文杰表哥" lifeMul="9999999" dpsMul="1.5" aiOrder="followBodyAttack:本我" noSuperB="1" />
+					</unitOrder>
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					
+					<unitOrder id="we1" camp="we">
+						<unit cnName="火种" num="1" lifeMul="9999999" skillArr="firePossession" />
+					</unitOrder>
+					<unitOrder id="we2" camp="we">
+						<numberType>num</numberType>
+						<unit cnName="橄榄僵尸" num="5" lifeMul="0.8" aiOrder="patrolRandom" skillArr="recovery_enemy,madfireParalysis" />
+						<unit cnName="肥胖僵尸" num="5" lifeMul="0.6" aiOrder="patrolRandom" skillArr="reverseHurt_enemy,madfireParalysis" />
+						<unit cnName="携弹僵尸" num="5" lifeMul="1" aiOrder="patrolRandom" skillArr="madfireHiding,madfireParalysis" />
+					</unitOrder>
+				</unitG>
+				<rectG>
+					<rect id="r_birth">192,60,232,120</rect>
+					<rect id="r_over">2956,1073,53,113</rect>
+					<rect id="r1">2944,1067,56,127</rect>
+					<rect id="r2">1034,-16,300,134</rect>
+					
+					<rect label="addCharger">45,111,80,46</rect>
+					<rect label="addCharger">2400,838,80,46</rect>
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						
+						<event id="e1_1">
+							<condition />
+							<order>weAllHeroNoShoot</order>
+							<order>weAllHeroNoEquip</order>
+							<order>createUnit:we2; r1</order>
+							<order>randomSpider:we</order>
+							<order>createUnit:we1; r_birth</order>
+							<order>heroEverParasitic:火种</order>
+							<order>body:火种; silence</order>
+							<order>level;taskTimingB:false</order>
+						</event>
+						<event><condition delay="0.5" /><order>say; startList:s1</order></event>
+						<event><condition delay="0.1">say:listOver</condition><order>body:火种; noSilence</order></event>
+						
+						<event>
+							<condition delay="2">diyString:firePossession</condition>
+							<order>setDiyString:excape</order>
+							<order>body:fireZombie; addSkill:State_AddMove</order>
+							<order>say; startList:s2</order>
+						</event>
+						<event><condition delay="0.1">say:listOver</condition></event>
+						
+						<event>
+							<condition delay="0.1" />
+							<order>createUnit:enemy1; r2</order>
+							<order>level;taskTimingB:true</order>
+						</event>
+						<event>
+							<condition delay="0.01">task:state; zomFire:complete</condition>
+							<order>level;taskTimingB:false</order>
+							<order>setDiyString:taskComplete</order>
+							
+							<order>body:fireZombie; doSkillImmediately:madfireParalysis</order>
+							<order>say; startList:s3</order>
+						</event>
+						<event><condition delay="0.1">bodyEvent:die; fireZombie</condition><order>say; startList:s4</order></event>
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>body:本我; patrolRandom</order>
+						</event>
+						<event>
+							<condition delay="1" />
+							<order>say; startList:s5</order>
+						</event>
+						<event>
+							<condition delay="0.5">say:listOver</condition>
+							<order>level; win</order>
+						</event>
+					</group>
+					<group>
+						
+						<event id="e_fail">
+							<condition delay="0.01">bodyEvent:die; fireZombie</condition>
+						</event>
+						<event id="e_fail">
+							<condition delay="0.01">diyString:excape</condition>
+							<order>alert:yes; 宿主被击毙，任务失败！</order>
+						</event>
+						<event id="e_fail">
+							<condition delay="0.05" />
+							<order>level; fail</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="天敌">
+			<level name="zomEnemy">
+				
+				<info enemyLv="1" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" mustSingleB="1" noDeviceB="1" />
+				<drop noB="1" />
+				
+				<sceneLabel>BeiDou</sceneLabel>
+				
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					
+					<unitOrder id="we1" camp="we">
+						<unit id="ZOM" cnName="战斗僵尸" num="1" lifeMul="9999" skillArr="State_AddMove" />
+					</unitOrder>
+					<unitOrder id="we2" camp="we">
+						<unit cnName="肥胖僵尸" num="1" lifeMul="9999" aiOrder="patrolRandom" />
+						<unit cnName="屠刀僵尸" num="1" lifeMul="9999" aiOrder="patrolRandom" />
+						<unit cnName="携弹僵尸" num="1" lifeMul="9999" aiOrder="patrolRandom" />
+					</unitOrder>
+				</unitG>
+				<rectG>
+					<rect id="r_birth">1555,744,174,55</rect>
+					<rect id="r_over">2942,700,73,115</rect>
+					<rect id="r1">933,-114,408,106</rect>
+					<rect id="r2">120,-166,368,106</rect>
+					<rect id="r3">2718,-88,263,106</rect>
+					
+					<rect label="addCharger">2126,170,71,60</rect>
+					<rect label="addCharger">1113,374,71,60</rect>
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>weAllHeroNoShoot</order><order>weAllHeroNoEquip</order>
+							<order>createUnit:we2; r1</order><order>randomSpider:we</order>
+							<order>createUnit:we1; r_birth</order><order>heroEverParasitic:ZOM</order>
+							<order>dropZomEnemy:bloodDrop</order>
+							<order>body:ZOM;moveSpeedMul:0</order>
+							<order>level;taskTimingB:false</order>
+						</event>
+						<event><condition delay="0.5" /><order>say; startList:s1</order></event>
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>body:ZOM;moveSpeedMul:1</order>
+							<order>level;taskTimingB:true</order>
+						</event>
+						<event>
+							<condition delay="0.01">task:state; zomEnemy:complete</condition>
+							<order>level;taskTimingB:false</order>
+							<order>body:肥胖僵尸; followBody:ZOM</order>
+							<order>say; startList:s2</order>
+						</event>
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="恶源">
+			<level name="zomControl">
+				
+				<info enemyLv="1" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" mustSingleB="1" noDeviceB="1" />
+				<drop noB="1" />
+				
+				<sceneLabel>XiFeng</sceneLabel>
+				
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					
+					<unitOrder id="we1" camp="we">
+						<unit id="ZOM" cnName="战斗僵尸" num="1" lifeMul="9999" skillArr="State_AddMove" />
+					</unitOrder>
+					<unitOrder id="we2" camp="we">
+						<unit cnName="肥胖僵尸" num="1" lifeMul="9999" aiOrder="patrolRandom" />
+					</unitOrder>
+				</unitG>
+				<rectG>
+					<rect id="r_birth">1292,1900,224,84</rect>
+					<rect id="r_over">2924,1576,92,184</rect>
+					<rect id="r1">50,1440,152,220</rect>
+					<rect id="r2">1012,484,96,128</rect>
+					<rect id="r3">2524,984,396,140</rect>
+					
+					<rect label="addCharger">536,1848,74,74</rect>
+					<rect label="addCharger">2752,1656,74,74</rect>
+					<rect label="addCharger">760,484,74,74</rect>
+					
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>weAllHeroNoShoot</order><order>weAllHeroNoEquip</order>
+							<order>createUnit:we2; r1</order><order>randomSpider:we</order>
+							<order>createUnit:we1; r_birth</order><order>heroEverParasitic:ZOM</order>
+							<order>dropZomControl:bloodDrop</order>
+							<order>body:ZOM;moveSpeedMul:0</order>
+							<order>level;taskTimingB:false</order>
+						</event>
+						<event><condition delay="0.5" /><order>say; startList:s1</order></event>
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>body:ZOM;moveSpeedMul:1</order>
+							<order>level;taskTimingB:true</order>
+						</event>
+						<event>
+							<condition delay="0.01">task:state; zomControl:complete</condition>
+							<order>level;taskTimingB:false</order>
+							<order>body:肥胖僵尸; followBody:ZOM</order>
+							<order>say; startList:s2</order>
+						</event>
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="超能">
+			<level name="zomSkill">
+				
+				<info diy="zomSkill" preBulletArr="zomSkillBullet" preSkillArr="madfireTeleport" enemyLv="13" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" mustSingleB="1" noDeviceB="1" />
+				<drop noB="1" />
+				
+				<sceneLabel>NanTang</sceneLabel>
+				
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					
+					<unitOrder id="we1" camp="we">
+						<unit id="ZOM" cnName="战斗僵尸" num="1" lifeMul="9999" skillArr="State_AddMove" />
+					</unitOrder>
+					<unitOrder id="we2" camp="we">
+						<unit cnName="肥胖僵尸" num="1" lifeMul="9999" aiOrder="followBody:ZOM" />
+					</unitOrder>
+				</unitG>
+				<rectG>
+					<rect id="r_birth">1555,744,174,55</rect>
+					<rect id="r_over">3742,700,73,115</rect>
+					<rect id="r1">933,-114,408,106</rect>
+					<rect id="r2">120,-166,368,106</rect>
+					<rect id="r3">2718,-88,263,106</rect>
+					<rect id="r4">-290,-166,368,106</rect>
+					<rect label="addCharger">2126,120,71,60</rect>
+					<rect label="addCharger">1113,324,71,60</rect>
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>weAllHeroNoShoot</order><order>weAllHeroNoEquip</order>
+							<order>createUnit:we2; r_birth</order>
+							<order>createUnit:we1; r_birth</order><order>heroEverParasitic:ZOM</order>
+							<order>dropZomSkill:skillStoneTask</order>
+							<order>body:ZOM;moveSpeedMul:0</order>
+							<order>level;taskTimingB:false</order>
+						</event>
+						<event><condition delay="0.5" /><order>say; startList:s1</order></event>
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>body:ZOM;moveSpeedMul:1</order>
+							<order>level;taskTimingB:true</order>
+						</event>
+						<event>
+							<condition delay="0.01">task:state; zomSkill:complete</condition>
+							<order>level;taskTimingB:false</order>
+							<order>say; startList:s3</order>
+						</event>
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="逃亡">
+			<level name="zomExcape">
+				
+				<info enemyLv="13" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" mustSingleB="1" noDeviceB="1" />
+				<drop noB="1" />
+				
+				<sceneLabel>NanTang</sceneLabel>
+				
+				<unitG>
+					
+					<unitOrder id="enemy1">
+						<unit cnName="亚瑟" lifeMul="9999999" dpsMul="0.8" skillArr="State_AddMove50,madfireTeleport,crazy_hero_9,feedback_hero_5,hiding_hero_8,rolling_hero_10,gliding_hero_8" noSuperB="1" />
+						<unit cnName="天鹰特种兵" dpsMul="0.8" lifeMul="1.9" num="3" skillArr="madfireTeleport" aiOrder="followBodyAttack:亚瑟" noSuperB="1" />
+					</unitOrder>
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					
+					<unitOrder id="we1" camp="we">
+						<unit id="ZOM" cnName="战斗僵尸" lifeMul="3" dpsMul="3" skillCloseB="1" skillArr="madfireTeleport,groupLight_hero_4,State_AddMove,madfireParalysis" />
+						<unit cnName="肥胖僵尸" lifeMul="1" skillArr="State_AddMove" eacapeB="1" />
+					</unitOrder>
+					<unitOrder id="we2" camp="we">
+						<numberType>num</numberType>
+						<unit cnName="橄榄僵尸" num="4" skillArr="State_AddMove" lifeMul="0.2" dpsMul="0.1" aiOrder="followBodyAttack:ZOM" noSuperB="1" />
+						<unit cnName="冥刃游尸" num="4" skillArr="State_AddMove" lifeMul="0.2" dpsMul="0.1" aiOrder="followBodyAttack:ZOM" noSuperB="1" />
+						<unit cnName="鬼目游尸" num="4" skillArr="State_AddMove" lifeMul="0.2" dpsMul="0.1" aiOrder="followBodyAttack:ZOM" noSuperB="1" />
+					</unitOrder>
+				</unitG>
+				<rectG>
+					<rect id="r_birth">1555,744,174,55</rect>
+					<rect id="r_over">3742,700,73,115</rect>
+					<rect id="r1">933,-114,408,106</rect>
+					<rect id="r2">120,-166,368,106</rect>
+					<rect id="r3">2718,-88,263,106</rect>
+					<rect id="r4">-290,-166,368,106</rect>
+					<rect label="addCharger">2126,120,71,60</rect>
+					<rect label="addCharger">1113,324,71,60</rect>
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						
+						<event id="e1_1">
+							<condition />
+							<order>weAllHeroNoShoot</order>
+							<order>weAllHeroNoEquip</order>
+							<order>createUnit:we2; r_birth</order>
+							<order>createUnit:we1; r_birth</order>
+							<order>heroEverParasitic:ZOM</order>
+						</event>
+						<event>
+							<condition delay="0.5" />
+							<order>createUnit:enemy1; r_over</order>
+							<order>setDiyString:excape</order>
+						</event>
+						<event>
+							<condition delay="0.01">task:state; zomExcape:complete</condition>
+							<order>level;taskTimingB:false</order>
+							<order>setDiyString:taskComplete</order>
+							
+							<order>body:ZOM; doSkillImmediately:madfireParalysis</order>
+							<order>body:ZOM; silence</order>
+							<order>lastZomExcape</order>
+							<order>say; startList:s1</order>
+						</event>
+						<event>
+							<condition delay="0.5">say:listOver</condition>
+							<order>level; win</order>
+						</event>
+					</group>
+					<group>
+						
+						<event id="e_fail">
+							<condition delay="0.01">bodyEvent:die; ZOM</condition>
+						</event>
+						<event id="e_fail">
+							<condition delay="0.01">diyString:excape</condition>
+							<order>alert:yes; 宿主被击毙，任务失败！</order>
+						</event>
+						<event id="e_fail">
+							<condition delay="0.05" />
+							<order>level; fail</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="新生">
+			<level name="zomNewborn">
+				
+				<info diy="zomNewborn" enemyLv="13" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" mustSingleB="1" noDeviceB="1" />
+				<drop noB="1" />
+				
+				<sceneLabel>YanJiuA</sceneLabel>
+				
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					
+					<unitOrder id="we_qi" camp="we">
+						<unit cnName="奇皇博士" lifeMul="9999999" />
+					</unitOrder>
+					<unitOrder id="we_tianying" camp="we">
+						<unit cnName="天鹰特种兵" lifeMul="9999999" aiOrder="followBody:奇皇博士" />
+					</unitOrder>
+					
+					<unitOrder id="we1" camp="we">
+						<unit cnName="火种" num="1" lifeMul="9999999" skillArr="firePossession" />
+					</unitOrder>
+					<unitOrder id="we2" camp="we">
+						<unit cnName="本我" num="1" lifeMul="9999999" skillArr="madfireTeleport" armsRange="rifleDragon" />
+					</unitOrder>
+				</unitG>
+				
+				
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>weAllHeroNoShoot</order>
+							<order>weAllHeroNoEquip</order>
+							<order>createUnit:we_qi; r_birth</order>
+							<order>body:奇皇博士; setShootXY:p1</order>
+						</event>
+						<event>
+							<condition delay="0.5" />
+							<order>say; startList:s1</order>
+							<order>playMusic; music_face:suspense</order>
+						</event>
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>body:奇皇博士; setShootXY:p1</order>
+						</event>
+						<event>
+							<condition delay="1" />
+							<order>say; startList:s2</order>
+						</event>
+						
+						<event>
+							<condition delay="1">say:listOver</condition>
+							<order>level; diyEvent:shake</order>
+						</event>
+						<event>
+							<condition delay="2" />
+							<order>createUnit:we_tianying; out</order>
+							<order>body:奇皇博士; setShootXY:天鹰特种兵</order>
+							<order>say; startList:s3</order>
+						</event>
+						
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>body:奇皇博士; rangeLimit:close</order>
+							<order>body:奇皇博士; followPoint:out</order>
+							<order>body:天鹰特种兵; rangeLimit:close</order>
+							<order>body:天鹰特种兵; followPoint:out</order>
+						</event>
+						<event>
+							<condition delay="4" />
+							<order>say; startList:s4</order>
+						</event>
+						
+						<event>
+							<condition delay="0.1">say:listOver</condition>
+							<order>level; diyEvent:startBoom</order>
+							<order>playMusic; music_lab:s0</order>
+						</event>
+						<event>
+							<condition delay="1.3" />
+							<order>level; diyEvent:jarBoom</order>
+						</event>
+						<event>
+							<condition delay="0.2" />
+							<order>createUnit:we1; r_birth</order>
+							<order>createUnit:we2; r1</order>
+							<order>heroEverParasitic:火种</order>
+						</event>
+						<event>
+							<condition delay="1" />
+							<order>say; startList:sBoom</order>
+						</event>
+						
+						<event>
+							<condition>bodyGap:less_100; 本我:火种</condition>
+							<order>say; startList:sPos</order>
+						</event>
+						
+						<event>
+							<condition delay="0.5">say:listOver</condition>
+							<order>level; diyEvent:posMe</order>
+							<order>setDiyString:toCloth</order>
+							<order>say; startList:sCloth</order>
+						</event>
+						
+						<event>
+							<condition delay="0.3">diyString:closeToCloth</condition>
+							<order>level; diyEvent:toCloth</order>
+							<order>playMusic; music_face:Madboss</order>
+						</event>
+						
+						<event>
+							<condition delay="1" />
+							<order>say; startList:s8</order>
+						</event>
+						
+						
+						<event>
+							<condition delay="0.5">say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="计划">
+			<level name="madSame">
+				
+				<info diy="wotuBack" enemyLv="13" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" mustSingleB="1" noDeviceB="1" />
+				<drop noB="1" />
+				
+				<sceneLabel>ShangSha</sceneLabel>
+				
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					
+					<unitOrder id="we1" camp="we">
+						<unit cnName="战争狂人" num="1" lifeMul="7" armsRange="rifleDragon,sniperSmilodon,shotgunCrocodile" skillArr="FightKing_cloned,crazy_enemy,pointBoom_enemy" noSuperB="1" />
+					</unitOrder>
+					<unitOrder id="we2" camp="we">
+						<unit cnName="肥胖僵尸" num="5" lifeMul="0.15" dpsMul="0.1" aiOrder="patrolRandom" noSuperB="1" />
+						<unit cnName="橄榄僵尸" num="5" lifeMul="0.15" dpsMul="0.1" aiOrder="patrolRandom" noSuperB="1" />
+						<unit cnName="冥刃游尸" num="5" lifeMul="0.15" dpsMul="0.1" aiOrder="patrolRandom" noSuperB="1" />
+					</unitOrder>
+					
+					<unitOrder id="enemy1">
+						<numberType>num</numberType>
+						<unit cnName="天鹰特种兵" num="3" lifeMul="3" />
+						<unit cnName="天鹰空降兵" num="1" lifeMul="3" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>num</numberType>
+						<unit cnName="天鹰特种兵" num="1" unitType="boss" lifeMul="0.3" dpsMul="2.5" />
+					</unitOrder>
+				</unitG>
+				<rectG>
+					<rect id="r_birth">308,852,167,104</rect>
+					<rect id="r_over">3204,1120,108,175</rect>
+					<rect id="r1">1380,1152,156,132</rect>
+					<rect id="r2">3080,816,188,92</rect>
+					<rect id="r3">1656,-356,492,140</rect>
+					
+					<rect label="addCharger">83,972,112,104</rect>
+					<rect label="addCharger">2280,1024,112,104</rect>
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						<event>
+							<condition />
+							<order>weAllHeroNoShoot</order><order>weAllHeroNoEquip</order>
+							<order>createUnit:we2; r1</order><order>randomSpider:we</order>
+							<order>createUnit:we1; r_over</order><order>heroEverParasitic:战争狂人</order>
+							<order>allWeSwapAdd:3</order>
+						</event>
+						<event><condition delay="0.1" /><order>say; startList:s1</order></event>
+						<event><condition delay="0.1">say:listOver</condition></event>
+						<event id="e2_1">
+							<condition doNumber="5" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy4; r1</order>
+							<order>createUnit:enemy4; r2</order>
+							<order>createUnit:enemy4; r3</order>
+						</event>
+						<event>
+							<condition delay="0.5">enemyNumber:less_1</condition>
+							<order>task:now; complete</order>
+							<order>say; startList:s2</order>
+						</event>
+						<event>
+							<condition delay="0.5">say:listOver</condition>
+							<order>level; win</order>
+						</event>
+					</group>
+					
+					<group>
+						
+						<event id="e_fail">
+							<condition delay="1">bodyEvent:die; 战争狂人</condition>
+							<order>alert:yes; 任务失败！</order>
+						</event>
+						<event id="e_fail">
+							<condition delay="0.03" />
+							<order>level; fail</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+	</father>
+</data>

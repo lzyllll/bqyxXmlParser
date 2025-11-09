@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="游尸王">		
+		<bullet cnName="游尸王-地滚弹">
+			<name>SwimKing_floor</name>
+			<cnName>游尸王地滚弹</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.35</attackDelay>
+			<bulletAngle>200</bulletAngle>
+			<bulletAngleRange>80</bulletAngleRange>
+			<bulletNum>6</bulletNum>				
+			<shootNum>1</shootNum>								
+			<shootAngle>30</shootAngle>					
+				
+			<bounceD floor="1000" />	
+				
+			<shootPoint>-57,-50</shootPoint>
+			<bulletSpeed>25</bulletSpeed>
+			<gravity>1</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">SwimKing/bullet_floor</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/smallBoom">boomEffect/boom1</hitImgUrl>
+			<hitFloorImgUrl soundUrl="SwimKing/hitFloor2" raNum="30">bulletHitEffect/smoke_small</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="45">bulletHitEffect/spark_motion</smokeImgUrl>
+		</bullet>
+		<bullet cnName="游尸王-背部火炮">
+			<name>SwimKing_gun</name>
+			<cnName>僵尸王-背部火炮</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.35</attackDelay>
+			<bulletAngle>200</bulletAngle>
+			<bulletAngleRange>20</bulletAngleRange>
+			<bulletNum>6</bulletNum>				
+			<shootNum>3</shootNum>					
+			<shootGap>0.2</shootGap>					
+			<shootAngle>40</shootAngle>					
+				
+			<bounceD floor="999" />	
+			<followD value="0.5" maxTime="0.8" />	 
+				
+			<shootPoint>-45,-106</shootPoint>
+			<bulletSpeed>20</bulletSpeed>
+			<gravity>1</gravity>
+			<positionD>
+				<point shootPoint="-76,-97" bulletAngle="-144" />
+				<point shootPoint="10,-133" bulletAngle="-109" />
+				<point shootPoint="38,-73" bulletAngle="-21" />
+			</positionD>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">SwimKing/bullet_floor</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/smallBoom">boomEffect/boom1</hitImgUrl>
+			<hitFloorImgUrl soundUrl="SwimKing/hitFloor2" soundVolume="0.2" raNum="30">bulletHitEffect/smoke_small</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="45">bulletHitEffect/spark_motion</smokeImgUrl>
+		</bullet>
+		
+	</father>
+	</data>

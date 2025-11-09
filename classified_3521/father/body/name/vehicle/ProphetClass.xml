@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="vehicle" cnName="战车body">
+		<body index="0" name="先知" shell="compound">
+			
+			<name>Prophet</name>
+			<cnName>先知</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/vehicle/Prophet38.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<rosRatio>1</rosRatio>
+			<headHurtMul>0.5</headHurtMul>
+			
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,30">boomEffect/boom3</dieImg>
+			<dieJumpMul>0</dieJumpMul>
+			<imgClass>CarImage</imgClass>
+			<imgType>normal</imgType>
+			<rotateBySlopeB>1</rotateBySlopeB>
+			<imgArr>
+				stand,move,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+			</imgArr>
+			
+			<hitRect>-30,-88,60,88</hitRect>
+			
+			<motionD F_G="0.8" jumpDelayT="0.15" F_I="0.3" F_F="0.9" />
+			<maxVx>18</maxVx>
+			<maxJumpNum>1</maxJumpNum>
+			
+			<attackAIClass>CarAttack_AI</attackAIClass>
+			<keyClass>CarBodyKey</keyClass>
+			<bulletLauncherClass>CarBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit4">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpUp__jumpDown</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpUp</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>jumpDown__</imgLabel>
+					<hurtRatio>0.69</hurtRatio>
+					<attackType>through</attackType>
+					<shakeValue>10</shakeValue><meBack>10</meBack><hitMaxNum>1</hitMaxNum>
+					<hitImgUrl con="add" soundUrl="sound/vehicle_hit3">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		<body name="天目" fixed="Prophet" shell="compound">
+			<name>Temmoku</name>
+			<cnName>天目</cnName>
+			<swfUrl>swf/vehicle/Temmoku.swf</swfUrl>
+			<bmpUrl>BodyImg/Temmoku</bmpUrl>
+		</body>	
+		<body name="源代码" fixed="Prophet" shell="compound">
+			<name>SourceCode</name>
+			<cnName>源代码</cnName>
+			<swfUrl>swf/vehicle/SourceCode.swf</swfUrl>
+			<bmpUrl>BodyImg/SourceCode</bmpUrl>
+		</body>	
+		<body name="时光机" fixed="Prophet" shell="compound">
+			<name>TimeMachine</name>
+			<cnName>时光机</cnName>
+			<swfUrl>swf/vehicle/TimeMachine.swf</swfUrl>
+			<bmpUrl>BodyImg/TimeMachine</bmpUrl>
+			<maxJumpNum>2</maxJumpNum>
+			<motionD F_G="0.8" jumpDelayT="0.15" F_I="0.3" F_F="0.9" />
+		</body>	
+	</father>
+</data>

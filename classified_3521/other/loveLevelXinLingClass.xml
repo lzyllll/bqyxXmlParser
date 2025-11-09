@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data name="XinLing">
+	<level lv="1" must="0" cn="冷漠">
+		
+	</level>
+	<level lv="2" must="500" cn="低">
+		
+	</level>
+	<level lv="3" must="2000" cn="低">
+		<skillNameArr>defenceLing</skillNameArr>
+	</level>
+	<level lv="4" must="3500" cn="中">
+		<skillNameArr>noHurt10Lings</skillNameArr>
+	</level>	
+	<level lv="5" must="5500" cn="高">
+		<skillNameArr>resistPerLing4,hurtStrikerLing</skillNameArr>
+	</level>
+	
+	
+	
+	
+	<level lv="6" must="9000" cn="高">
+		<skillNameArr>hurtLing40,vehicleLing40</skillNameArr>
+	</level>
+	<level lv="7" must="15000" cn="亲密">
+		<skillNameArr>ironBodyLing</skillNameArr>
+		<gift>things;poisonGem;2</gift>
+	</level>
+	<level lv="8" must="24000" cn="挚爱">
+		<skillNameArr>eleStrikerLing,dropStrikerLing</skillNameArr>
+	</level>
+</data>

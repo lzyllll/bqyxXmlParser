@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="气泡">
+		<skill index="0" name="hammer_enemy" cnName="碰到气泡眩晕">
+			<name>bubbles_hammer</name>
+			<cnName>眩晕</cnName>
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>active</conditionType>
+			<condition>no</condition>
+			<target>me</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>dizziness</effectType>
+			<duration>3</duration>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+		</skill>
+		<skill index="0" cnName="转变颜色">
+			<name>bubblesGotoCamp</name>
+			<cnName>转变颜色</cnName>
+			<noBeClearB>1</noBeClearB><ignoreSilenceB>1</ignoreSilenceB>
+			
+			<conditionType>active</conditionType>
+			<condition>no</condition>
+			<doCondition />
+			<target bodyName="Bubbles" targetMustLiveB="1">me,range,all</target>
+			
+			<addType>state</addType>
+			<effectType>bubblesGotoCamp</effectType>
+			<duration>0.4</duration>
+			<range>999999</range>
+			 
+			<targetEffectImg partType="body" soundUrl="specialGun/christmasGunShoot">Bubbles/change</targetEffectImg>
+		</skill>
+		
+		<skill index="0" cnName="死亡">
+			<name>bubblesDie</name>
+			<cnName>死亡</cnName>
+			<noBeClearB>1</noBeClearB><ignoreSilenceB>1</ignoreSilenceB>
+			
+			<conditionType>passive</conditionType>
+			<condition>allDie</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bubblesDie</effectType>
+		</skill>
+		<skill index="0" cnName="蓝">
+			<name>Bubbles_blue</name>
+			<cnName>蓝</cnName>
+			<noBeClearB>1</noBeClearB><ignoreSilenceB>1</ignoreSilenceB>
+			
+			<conditionType>passive</conditionType>
+			<condition>no</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<duration>999999</duration>
+			 
+			<stateEffectImg partType="body" con="add">Bubbles/blue</stateEffectImg>
+		</skill>
+		<skill index="0" cnName="绿">
+			<name>Bubbles_green</name>
+			<cnName>绿</cnName>
+			<noBeClearB>1</noBeClearB><ignoreSilenceB>1</ignoreSilenceB>
+			
+			<conditionType>passive</conditionType>
+			<condition>no</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<duration>999999</duration>
+			 
+			<stateEffectImg partType="body" con="add">Bubbles/green</stateEffectImg>
+		</skill>
+		<skill index="0" cnName="弹跳">
+			<name>BubblesJump</name>
+			<cnName>弹跳</cnName>
+			<noBeClearB>1</noBeClearB><ignoreSilenceB>1</ignoreSilenceB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>jump</effectType>
+			<duration>999999</duration>
+		</skill>
+	</father>	
+	
+	</data>

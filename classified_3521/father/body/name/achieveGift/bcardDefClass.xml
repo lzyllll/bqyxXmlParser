@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="achieveGift" cn="送魂卡">
+		
+		<body id="achieveGift100" n="BallLightning" s="3" li="394" dp="6" sr="22_5,31_10,13_5,21_4,21_8,21_9" />
+		<body id="achieveGift300" n="IronDog" s="4" li="800" dp="16" sr="32_8,35_2,22_4,12_8,13_11,23_8,21_3" />
+		<body id="achieveGift600" n="FightWolf" s="6" li="2083" dp="33" sr="13_9,31_4,31_11,14_1,34_14,22_6,42_5,23_9" o="{'dpsAllBlack':0.05}" />
+		<body id="achieveGift900" n="VirtualScorpion" s="6" li="2293" dp="31" sr="14_5,21_2,42_1,21_3,31_2,11_1,35_4,21_9" o="{'dpsAllBlack':0.07}" />
+		<body id="achieveGift1200" n="GasDefenseZombie" s="6" li="2049" dp="35" sr="13_9,32_8,41_1,21_8,13_2,31_13,31_9,11_1" o="{'dpsAllBlack':0.09}" />
+		<body id="achieveGift1600" n="BallLightning" s="7" li="2708" dp="37" sr="23_1,31_12,13_8,13_11,14_1,12_1,41_4,32_5,22_5" o="{'dpsAllBlack':0.06,'hurtAll':0.06}" />
+		<body id="achieveGift2000" n="ZombieBattle" s="7" li="2739" dp="37" sr="12_3,32_8,32_3,13_5,12_2,21_10,22_7,41_5,32_5" o="{'dpsAllBlack':0.10,'hurtAll':0.10}" />
+		<body id="achieveGift2400" n="Salamander" s="7" li="2790" dp="39" sr="13_8,21_2,12_11,35_6,22_7,22_9,42_1,31_11,12_8" o="{'dpsAllBlack':0.10,'hurtAll':0.10}" />
+		<body id="achieveGift2800" n="BoomSkullS" s="7" li="2795" dp="40" sr="12_3,21_2,12_11,12_7,22_2,34_11,32_6,35_4,11_1" o="{'moreDpsMul':0.05,'moreLifeMul':0.20}" />
+		<body id="achieveGift3400" n="RifleHornetShooter" s="7" li="2800" dp="40" sr="32_1,strollCard,21_14,12_3,21_8,11_1,31_13" o="{'dpsAllBlack':0.11,'hurtAll':0.11}" />
+		<body id="achieveGift4000" n="TriceratopsEgg" s="7" li="2800" dp="40" sr="23_13,noBulletHurt,32_8,32_1,13_11,13_1,13_10" o="{'dpsMul_wavegun':0.05}" />
+		<body id="achieveGift4400" n="RifleHornetShooter" s="7" li="2800" dp="40" sr="32_1,strollCard,21_14,12_3,21_8,11_1,31_13" o="{'dpsAllBlack':0.11,'hurtAll':0.11}" />
+		<body id="achieveGift4800" n="TriceratopsEgg" s="7" li="2800" dp="40" sr="23_13,noBulletHurt,32_8,32_1,13_11,13_1,13_10" o="{'dpsMul_wavegun':0.05}" />
+		
+	</father>
+	
+	</data>

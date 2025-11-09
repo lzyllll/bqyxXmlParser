@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="狂战尸">		
+		<bullet cnName="狂刃爆发">
+			<name>knifeBoom_FightKing</name>
+			<cnName>狂刃爆发</cnName>
+			
+			<hurtMul>0.1</hurtMul>
+			<attackType>holy</attackType>
+			
+			<shakeAngle>10</shakeAngle>
+			<bulletLife>3.5</bulletLife>
+			<bulletWidth>45</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.1</attackGap>
+			<attackDelay>0</attackDelay>
+			<bulletAngle>270</bulletAngle>
+			<bulletNum>8</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootAngle>100</shootAngle>					
+			<extendGap>50</extendGap>
+				
+			<shootPoint>0,-60</shootPoint>
+			<bulletSpeed>15</bulletSpeed>
+			<speedD random="0.3" />
+			<gravity>0.3</gravity>
+			<penetrationGap>1000</penetrationGap>
+			
+			<flipX>1</flipX>
+			
+			<bulletImgUrl con="add">FightKing/shoot_bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="FightKing/hit2" con="add">bladeHitEffect/blood</hitImgUrl>
+			<smokeImgUrl con="filter">FightKing/shoot_bullet</smokeImgUrl>
+		</bullet>
+		<bullet cnName="狂战尸-旋风宗">
+			<name>FightKing_shoot</name>
+			<cnName>狂战尸-旋风宗</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<shakeAngle>60</shakeAngle>
+			<bulletLife>3.5</bulletLife>
+			<bulletWidth>45</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.3</attackGap>
+			<attackDelay>0.4</attackDelay>
+			<bulletAngle>270</bulletAngle>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootGap>0.05</shootGap>				
+			<extendGap>0</extendGap>
+				
+			<shootPoint>-49,-176</shootPoint>
+			<bulletSpeed>15</bulletSpeed>
+			<speedD random="0.2" />
+			<penetrationNum>999</penetrationNum>
+			<penetrationGap>1000</penetrationGap>
+				
+			<followD value="0.8" maxTime="3" />	
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="add" raNum="1">FightKing/shoot_bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="FightKing/hit2" con="add">bladeHitEffect/blood</hitImgUrl>
+		</bullet>
+		
+		
+		<bullet cnName="狂战尸尸宠-狂刃追踪">
+			<name>PetFightKing_shoot</name>
+			<cnName>狂战尸-狂刃追踪</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<shakeAngle>60</shakeAngle>
+			<bulletLife>4.5</bulletLife>
+			<bulletWidth>50</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.3</attackGap>
+			<attackDelay>0.4</attackDelay>
+			<bulletAngle>270</bulletAngle>
+			<bulletNum>3</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootGap>0.05</shootGap>				
+			<extendGap>0</extendGap>
+				
+			<shootPoint>-49,-176</shootPoint>
+			<bulletSpeed>11</bulletSpeed>
+			<speedD random="0.2" />
+			<penetrationNum>999</penetrationNum>
+			<penetrationGap>1000</penetrationGap>
+				
+			<followD value="1.5" />	
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="add" raNum="1">PetFightKing/shoot_bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="PetFightKing/hit2" con="add">bladeHitEffect/blood</hitImgUrl>
+		</bullet>
+		<bullet cnName="混沌狂战尸尸宠-狂刃追踪">
+			<name>PetChaosKing_shoot</name>
+			<cnName>狂战尸-狂刃追踪</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<shakeAngle>60</shakeAngle>
+			<bulletLife>4.5</bulletLife>
+			<bulletWidth>50</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.3</attackGap>
+			<attackDelay>0.4</attackDelay>
+			<bulletAngle>270</bulletAngle>
+			<bulletNum>3</bulletNum>				
+			<shootNum>1</shootNum>					
+			<shootGap>0.05</shootGap>				
+			<extendGap>0</extendGap>
+				
+			<shootPoint>-49,-176</shootPoint>
+			<bulletSpeed>11</bulletSpeed>
+			<speedD random="0.2" />
+			<penetrationNum>999</penetrationNum>
+			<penetrationGap>1000</penetrationGap>
+				
+			<followD value="1.5" />	
+			
+			<flipX>1</flipX>
+			<bulletImgUrl con="add" raNum="1">PetChaosKing/shoot_bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="PetChaosKing/hit2" con="add">bladeHitEffect/blood</hitImgUrl>
+		</bullet>
+	</father>
+	</data>

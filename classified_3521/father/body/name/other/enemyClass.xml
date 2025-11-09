@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="other" cnName="其他">
+		
+		
+		<body index="0" name="毒气弹" shell="metal">
+			
+			<name>GasBomb</name>
+			<cnName>毒气弹</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/GasBomb.swf</swfUrl>
+			
+			<lifeRatio>0.7</lifeRatio>
+			
+			<imgArr>
+				stand,move,die1
+			</imgArr>
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			
+			<maxJumpNum>2</maxJumpNum>
+			<maxVx>5</maxVx>
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr>selfBoom_GasBomb,suicide_GasBomb</skillArr>
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>0</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<grapRect>-50,-111,100,105</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="闪电塔" shell="metal">
+			
+			<name>LightningTower</name>
+			<cnName>闪电塔</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/LightningTower.swf</swfUrl>
+			
+			<lifeRatio>0.7</lifeRatio>
+			
+			<imgArr>
+				stand,normalAttack,die1
+			</imgArr>
+			<dieJumpMul>0</dieJumpMul>
+			<dieImg soundUrl="sound/pointBoom_hero" shake="3,0.4,10">boomEffect/boom2</dieImg>
+			
+			<hitRect>-15,-125,30,125</hitRect>
+			
+			<maxJumpNum>0</maxJumpNum>
+			<maxVx>0</maxVx>
+			<flipCtrlBy>no</flipCtrlBy>
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr>lightningTower_lightning</skillArr>
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel>
+					<bulletLabel />
+					<hurtRatio>1</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<grapRect>0,0,0,0</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>
+		<body index="0" name="财宝僵尸">
+			
+			<name>ZombieTreasure</name>
+			<cnName>财宝僵尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ZombieTreasure.swf</swfUrl>
+			<lifeRatio>16</lifeRatio>
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move,run
+				,normalAttack1,normalAttack2,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			<hitRect>-14,-76,28,76</hitRect>
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>15</maxVx>
+			<runStartVx>12</runStartVx>
+			<nextAttackTime>1</nextAttackTime>
+			<skillArr>spellImmunityMax,strong_enemy</skillArr>
+			<hurtArr>
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>0</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<grapRect>-50,-111,100,105</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="圣诞僵尸">
+			
+			<name>ChristmasZombie</name>
+			<cnName>圣诞僵尸</cnName>
+			<raceType>zombies</raceType>
+			<swfUrl>swf/enemy/ChristmasZombie.swf</swfUrl>
+			<lifeRatio>16</lifeRatio>
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move,run
+				,normalAttack1,normalAttack2,hurt1,hurt2,die1,die2
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+				,__fill2_Up,fill2_Up,fill2_Up__fill2_Down,fill2_Down,fill2_Down__die2
+			</imgArr>
+			<hitRect>-14,-76,28,76</hitRect>
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>15</maxVx>
+			<runStartVx>12</runStartVx>
+			<nextAttackTime>1</nextAttackTime>
+			<skillArr>State_SpellImmunity,strong_enemy</skillArr>
+			<hurtArr>
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>0</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<grapRect>-50,-111,100,105</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>
+		<body shell="normal">
+			<name>IconGiftBody</name>
+			<cnName>圣诞铁箱</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/IconGiftBody.swf</swfUrl>
+			
+			<lifeRatio>0.7</lifeRatio>
+			<dieJumpMul>0</dieJumpMul>
+			<showLevel>999</showLevel>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,die1
+			</imgArr>
+			<hitRect>-14,-30,28,30</hitRect>
+			<maxJumpNum>0</maxJumpNum>
+			<maxVx>0</maxVx>
+			<defaultAiOrder>no</defaultAiOrder>
+			<nextAttackTime>0</nextAttackTime>
+			<skillArr>iconGiftBoxBuff,spellImmunityMax,State_Invincible,meltFlamerPurgold</skillArr>
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>stand</imgLabel>
+					<hurtRatio>0</hurtRatio>
+					<attackType>direct</attackType>
+					<grapRect>-50,-111,100,105</grapRect>
+				</hurt>
+				
+			</hurtArr>
+		</body>	
+		
+		<body shell="normal">
+			<name>PumpkinBoss</name>
+			<cnName>南瓜怪</cnName>
+			<raceType>zombie</raceType>
+			<swfUrl>swf/enemy/PumpkinBoss.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<headHurtMul>0.5</headHurtMul>
+			
+			
+			<showLevel>999</showLevel>
+			
+			<dieJumpMul>0</dieJumpMul>
+			<dieImg name="stoneBoom" />
+			<imgType>normal</imgType>
+			<lifeBarExtraHeight>-120</lifeBarExtraHeight>
+			<imgArr>
+				stand,die1
+			</imgArr>
+			<hitRect>-14,-30,28,30</hitRect>
+			
+			<maxJumpNum>0</maxJumpNum>
+			<maxVx>0</maxVx>
+			<defaultAiOrder>no</defaultAiOrder>
+			<nextAttackTime>0</nextAttackTime>
+			<bossSkillArr>defenceBounce_enemy,meltFlamerPurgold,noUnderMulHurt</bossSkillArr>
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>stand</imgLabel>
+					<hurtRatio>0</hurtRatio>
+					<attackType>direct</attackType>
+					<grapRect>-50,-111,100,105</grapRect>
+				</hurt>
+				
+			</hurtArr>
+		</body>	
+		
+		<body index="0" name="空单位" shell="other">
+		
+			<name>Zero</name>
+			<cnName>空单位</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/Zero.swf</swfUrl>
+			
+			<lifeRatio>0.7</lifeRatio>
+			<dieJumpMul>0</dieJumpMul>
+			
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,die1
+			</imgArr>
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			
+			<motionState>fly</motionState>
+			<maxJumpNum>0</maxJumpNum>
+			<maxVx>0</maxVx>
+			
+			<defaultAiOrder>no</defaultAiOrder>
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr>State_SpellImmunity</skillArr>
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>move</imgLabel>
+					<hurtRatio>0</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<grapRect>-50,-111,100,105</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>	
+		
+		<body index="0" cn="蓝矿石-强化石" shell="other">
+			<name>strengthenStoneOrc</name><swfUrl>swf/enemy/blueOrc.swf</swfUrl>
+			<cnName>蓝矿石</cnName><raceType>robot</raceType><rosRatio>0.0001</rosRatio>
+			<lifeRatio>0.7</lifeRatio><dieJumpMul>0</dieJumpMul><lifeBarExtraHeight>-30</lifeBarExtraHeight><rotateBySlopeB>1</rotateBySlopeB>
+			<imgArr>stand,die1</imgArr><imgType>normal</imgType><hitRect>-14,-30,28,30</hitRect><maxVx>0</maxVx><motionD F_G="0.2" jumpMul="0.1" />
+			<skillArr>noSkillHurt,orcCreateThings,State_SpellImmunity,onlyUnderMiningSpade,lifeBarShowCd</skillArr><avtiveSkillCdOverT>0</avtiveSkillCdOverT><defaultAiOrder>no</defaultAiOrder><nextAttackTime>0</nextAttackTime>
+			<hurtArr><hurt><imgLabel>move</imgLabel><hurtRatio>0</hurtRatio><attackType>direct</attackType><grapRect>-50,-111,100,105</grapRect></hurt></hurtArr>
+		</body>
+		<body index="0" cn="绿矿石-转化石" shell="other">
+			<name>converStoneOrc</name><swfUrl>swf/enemy/greenOrc.swf</swfUrl>
+			<cnName>绿矿石</cnName><raceType>robot</raceType><rosRatio>0.0001</rosRatio>
+			<lifeRatio>0.7</lifeRatio><dieJumpMul>0</dieJumpMul><lifeBarExtraHeight>-30</lifeBarExtraHeight><rotateBySlopeB>1</rotateBySlopeB>
+			<imgArr>stand,die1</imgArr><imgType>normal</imgType><hitRect>-14,-30,28,30</hitRect><maxVx>0</maxVx><motionD F_G="0.2" jumpMul="0.1" />
+			<skillArr>noSkillHurt,orcCreateThings,State_SpellImmunity,onlyUnderMiningSpade,lifeBarShowCd</skillArr><avtiveSkillCdOverT>0</avtiveSkillCdOverT><defaultAiOrder>no</defaultAiOrder><nextAttackTime>0</nextAttackTime>
+			<hurtArr><hurt><imgLabel>move</imgLabel><hurtRatio>0</hurtRatio><attackType>direct</attackType><grapRect>-50,-111,100,105</grapRect></hurt></hurtArr>
+		</body>	
+		<body index="0" cn="紫矿石-超能石" shell="other">
+			<name>skillStoneOrc</name><swfUrl>swf/enemy/purpleOrc.swf</swfUrl>
+			<cnName>紫矿石</cnName><raceType>robot</raceType><rosRatio>0.0001</rosRatio>
+			<lifeRatio>0.7</lifeRatio><dieJumpMul>0</dieJumpMul><lifeBarExtraHeight>-30</lifeBarExtraHeight><rotateBySlopeB>1</rotateBySlopeB>
+			<imgArr>stand,die1</imgArr><imgType>normal</imgType><hitRect>-14,-30,28,30</hitRect><maxVx>0</maxVx><motionD F_G="0.2" jumpMul="0.1" />
+			<skillArr>noSkillHurt,orcCreateThings,State_SpellImmunity,onlyUnderMiningSpade,lifeBarShowCd</skillArr><avtiveSkillCdOverT>0</avtiveSkillCdOverT><defaultAiOrder>no</defaultAiOrder><nextAttackTime>0</nextAttackTime>
+			<hurtArr><hurt><imgLabel>move</imgLabel><hurtRatio>0</hurtRatio><attackType>direct</attackType><grapRect>-50,-111,100,105</grapRect></hurt></hurtArr>
+		</body>	
+		<body index="0" cn="橙矿石-神能石" shell="other">
+			<name>godStoneOrc</name><swfUrl>swf/enemy/orangeOrc.swf</swfUrl>
+			<cnName>橙矿石</cnName><raceType>robot</raceType><rosRatio>0.0001</rosRatio>
+			<lifeRatio>0.7</lifeRatio><dieJumpMul>0</dieJumpMul><lifeBarExtraHeight>-30</lifeBarExtraHeight><rotateBySlopeB>1</rotateBySlopeB>
+			<imgArr>stand,die1</imgArr><imgType>normal</imgType><hitRect>-14,-30,28,30</hitRect><maxVx>0</maxVx><motionD F_G="0.2" jumpMul="0.1" />
+			<skillArr>noSkillHurt,orcCreateThings,State_SpellImmunity,onlyUnderMiningSpade,lifeBarShowCd</skillArr><avtiveSkillCdOverT>0</avtiveSkillCdOverT><defaultAiOrder>no</defaultAiOrder><nextAttackTime>0</nextAttackTime>
+			<hurtArr><hurt><imgLabel>move</imgLabel><hurtRatio>0</hurtRatio><attackType>direct</attackType><grapRect>-50,-111,100,105</grapRect></hurt></hurtArr>
+		</body>	
+		<body index="0" cn="红矿石-血石" shell="other">
+			<name>bloodStoneOrc</name><swfUrl>swf/enemy/redOrc.swf</swfUrl>
+			<cnName>红矿石</cnName><raceType>robot</raceType><rosRatio>0.0001</rosRatio>
+			<lifeRatio>0.7</lifeRatio><dieJumpMul>0</dieJumpMul><lifeBarExtraHeight>-30</lifeBarExtraHeight><rotateBySlopeB>1</rotateBySlopeB>
+			<imgArr>stand,die1</imgArr><imgType>normal</imgType><hitRect>-14,-30,28,30</hitRect><maxVx>0</maxVx><motionD F_G="0.2" jumpMul="0.1" />
+			<skillArr>noSkillHurt,orcCreateThings,State_SpellImmunity,onlyUnderMiningSpade,lifeBarShowCd</skillArr><avtiveSkillCdOverT>0</avtiveSkillCdOverT><defaultAiOrder>no</defaultAiOrder><nextAttackTime>0</nextAttackTime>
+			<hurtArr><hurt><imgLabel>move</imgLabel><hurtRatio>0</hurtRatio><attackType>direct</attackType><grapRect>-50,-111,100,105</grapRect></hurt></hurtArr>
+		</body>	
+		<body index="0" cn="黄矿石-光能石" shell="other">
+			<name>lightStoneOrc</name><swfUrl>swf/enemy/yellowOrc.swf</swfUrl>
+			<cnName>黄矿石</cnName><raceType>robot</raceType><rosRatio>0.0001</rosRatio>
+			<lifeRatio>0.7</lifeRatio><dieJumpMul>0</dieJumpMul><lifeBarExtraHeight>-30</lifeBarExtraHeight><rotateBySlopeB>1</rotateBySlopeB>
+			<imgArr>stand,die1</imgArr><imgType>normal</imgType><hitRect>-14,-30,28,30</hitRect><maxVx>0</maxVx><motionD F_G="0.2" jumpMul="0.1" />
+			<skillArr>noSkillHurt,orcCreateThings,State_SpellImmunity,onlyUnderMiningSpade,lifeBarShowCd</skillArr><avtiveSkillCdOverT>0</avtiveSkillCdOverT><defaultAiOrder>no</defaultAiOrder><nextAttackTime>0</nextAttackTime>
+			<hurtArr><hurt><imgLabel>move</imgLabel><hurtRatio>0</hurtRatio><attackType>direct</attackType><grapRect>-50,-111,100,105</grapRect></hurt></hurtArr>
+		</body>	
+		
+		<body name="七夕云彩" shell="other">
+			<name>QixiCloud</name>
+			<cnName>七夕云彩</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/QixiCloud.swf</swfUrl>
+			<imgArr>stand,move,die1</imgArr>
+			<dieJumpMul>0</dieJumpMul>
+			<hitRect>-25,-15,50,30</hitRect>
+			<motionState>fly</motionState>
+			<hurtArr><hurt><imgLabel>move</imgLabel><hurtRatio>0</hurtRatio><attackType>direct</attackType><grapRect>-50,-111,100,105</grapRect></hurt></hurtArr>
+		</body>
+		
+		<body index="0" cn="竖盾" shell="other">
+			<name>verShield</name>
+			<cnName>竖盾</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/Zero.swf</swfUrl>
+			<swfName>Zero</swfName>
+			
+			<imgArr>stand,die1</imgArr><hurtRectArr>-30,-270,70,400</hurtRectArr>
+			<dieJumpMul>0</dieJumpMul>
+			<hitRect>-25,-15,50,30</hitRect>
+			<motionState>fly</motionState>
+			<skillArr>rigidBody_enemy,State_Invincible,State_SpellImmunity,State_noAiFind</skillArr>
+			<hurtArr><hurt><imgLabel>move</imgLabel><hurtRatio>0</hurtRatio><attackType>direct</attackType><grapRect>-50,-111,100,105</grapRect></hurt></hurtArr>
+			
+		</body>	
+	</father>	
+</data>

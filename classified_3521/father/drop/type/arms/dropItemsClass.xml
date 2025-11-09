@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="arms">
+		<drop cnName="手枪">
+			<name>pistol</name>
+			<cnName>手枪</cnName>
+			<text>获得武器</text>
+			<imgUrl>dropEffect/arms</imgUrl>
+		</drop>
+		<drop cnName="步枪">
+			<name>rifle</name>
+			<cnName>步枪</cnName>
+			<text>获得武器</text>
+			<imgUrl>dropEffect/arms</imgUrl>
+		</drop>
+		<drop cnName="狙击枪">
+			<name>sniper</name>
+			<cnName>狙击枪</cnName>
+			<text>获得武器</text>
+			<imgUrl>dropEffect/arms</imgUrl>
+		</drop>
+		<drop cnName="散弹枪">
+			<name>shotgun</name>
+			<cnName>散弹枪</cnName>
+			<text>获得武器</text>
+			<imgUrl>dropEffect/arms</imgUrl>
+		</drop>
+		<drop cnName="火箭筒">
+			<name>rocket</name>
+			<cnName>火箭筒</cnName>
+			<text>获得武器</text>
+			<imgUrl>dropEffect/arms</imgUrl>
+		</drop>
+		<drop cnName="激光枪">
+			<name>laser</name>
+			<cnName>激光枪</cnName>
+			<text>获得武器</text>
+			<imgUrl>dropEffect/arms</imgUrl>
+		</drop>
+		<drop cnName="弩">
+			<name>crossbow</name>
+			<cnName>弩</cnName>
+			<text>获得武器</text>
+			<imgUrl>dropEffect/arms</imgUrl>
+		</drop>
+		<drop cnName="喷火器">
+			<name>flamer</name>
+			<cnName>喷火器</cnName>
+			<text>获得武器</text>
+			<imgUrl>dropEffect/arms</imgUrl>
+		</drop>
+		<drop cnName="稀有武器">
+			<name>rareArms</name>
+			<cnName>稀有武器</cnName>
+			<text>获得武器</text>
+			<imgUrl>dropEffect/rareArms</imgUrl>
+		</drop>
+	</father>
+	</data>

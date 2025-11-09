@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill index="0" name="火攻">
+			<name>redFireSkill</name><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<cnName>火攻</cnName><noRandomListB>1</noRandomListB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>redFireSkill</otherConditionArr>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>0.25,0.15,0.10</effectProArr>
+			<extraValueType>nowArmsDps</extraValueType>
+			
+			<obj>"name":"redFireBullet","site":"shootPoint","flipB":false,"producerShootB":true</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>击中敌人有25%的概率（击中小怪时概率降低）发起多次火攻。</description>
+		</skill>
+		<skill>
+			<name>redFireSkill2</name><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<cnName>炎攻</cnName><noRandomListB>1</noRandomListB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>redFireSkill</otherConditionArr>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet_redFireSkill</effectType>
+			<effectProArr>0.15,0.20,0.15</effectProArr>
+			<extraValueType>nowArmsDps</extraValueType>
+			
+			<obj>"name":"redFireBullet","site":"shootPoint","flipB":false,"producerShootB":true</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>击中敌人有35%的概率（击中小怪时概率降低）发起多次火攻；对于有防弹技能的敌人，火攻自动取消跟踪。</description>
+		</skill>
+		
+		
+		<skill>
+			<name>redFireDem</name><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<cnName>焚化</cnName><noRandomListB>1</noRandomListB>
+			
+			<conditionType>passive</conditionType>
+			<condition>heroOneShoot</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>redFireDem</effectType>
+			<extraValueType>nowArmsHurt</extraValueType>
+			<mul>4</mul>
+			<range>600</range>
+			<pointEffectImg name="bulletHitRed" />
+			<otherEffectImg name="yearDog_boom" />
+			<description>每次射击，都会焚化周围敌人的反击子弹（包括夺命魂、夺命箭、反击导弹），并对敌人造成伤害，焚化数量越多伤害越高。</description>
+		</skill>
+		
+	</father>
+</data>

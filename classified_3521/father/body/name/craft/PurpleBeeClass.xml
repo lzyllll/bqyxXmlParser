@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="craft">
+		<body shell="compound">
+			
+			<name>PurpleBee</name>
+			<cnName>紫蜂</cnName>
+			<raceType>ship</raceType>
+			<swfUrl>swf/ship/PurpleBee.swf</swfUrl>
+			
+			<dieImg name="stoneBoom" />
+			<dieJumpMul>0</dieJumpMul>
+			<imgClass>CarImage</imgClass>
+			<flipCtrlBy>mouse</flipCtrlBy>
+			<rotateBySlopeB>1</rotateBySlopeB>
+			<imgArr>
+				stand,die1
+			</imgArr>
+			
+			<hitRect>-20,-20,40,40</hitRect>
+			
+			<motionD F_AIR="6" />
+			<motionClass>AircraftGroundMotion</motionClass>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<maxVx>6</maxVx>
+			
+			<attackAIClass>CarAttack_AI</attackAIClass>
+			<keyClass>CraftBodyKey</keyClass>
+			<bulletLauncherClass>CraftBulletLauncher</bulletLauncherClass>
+			<skillArr />
+			<vBullet type="main" label="PurpleBee_main" dpsMul="1" len="10" minRa="-180" maxRa="-179.99" />
+		</body>
+		
+		
+		<bullet>
+			<name>PurpleBee_main</name>
+			<cnName>紫蜂主炮</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			<bulletLife>3</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1</attackGap>
+			<screenShakeValue>4</screenShakeValue>
+			<bulletSpeed>15</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl name="PurpleBeeBullet" />
+			<fireImgUrl name="PurpleBeeFire" />
+			<hitImgUrl name="pistol1_hit" />
+		</bullet>
+	</father>
+</data>

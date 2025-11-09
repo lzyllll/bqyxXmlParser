@@ -1,0 +1,113 @@
+{
+  "father": [
+    {
+      "name": "device",
+      "cnName": "装置",
+      "equip": {
+        "rareB": true,
+        "canNum": 1,
+        "name": "hurtMine",
+        "cnName": "致命地雷T",
+        "skill": "hurtMine",
+        "iconLabel": "dropEffect/hurtMine"
+      }
+    },
+    {
+      "name": "deviceSkill",
+      "cnName": "装置技能",
+      "skills": {
+        "hurtMine": {
+          "cnName": "致命地雷",
+          "name": "hurtMine",
+          "cd": 20,
+          "conditionType": "active",
+          "condition": "avtiveSkillCdOver",
+          "doCondition": "nearNoMine",
+          "target": "me",
+          "addType": "instant",
+          "effectType": "bullet",
+          "extraValueType": "showDps",
+          "mul": 10,
+          "obj": {
+            "name": "hurtMineBullet",
+            "site": "meMid",
+            "minYB": true
+          },
+          "meEffectImg": {
+            "name": "putMineEffect"
+          },
+          "description": "埋下可敌人造成重大伤害的致命地雷。",
+          "growth": {
+            "skill": [
+              {
+                "cd": 20
+              },
+              {
+                "cd": 15
+              },
+              {
+                "cd": 10
+              },
+              {
+                "cd": 8
+              },
+              {
+                "cd": 6
+              },
+              {
+                "cd": 1
+              }
+            ]
+          }
+        },
+        "hurtMineBullet": {
+          "name": "hurtMineBullet",
+          "cnName": "致命地雷-子弹",
+          "hurtRatio": 1,
+          "attackType": "holy",
+          "bulletAngle": 90,
+          "bulletLife": 9999999,
+          "bulletWidth": 40,
+          "hitType": "rect",
+          "noHitTime": 1,
+          "hideTime": 5,
+          "boomD": {
+            "selfB": true,
+            "radius": 240,
+            "bodyB": true,
+            "maxHurtNum": 999
+          },
+          "bounceD": {
+            "glueFloorB": true
+          },
+          "bulletSkillArr": null,
+          "bulletSpeed": 0,
+          "flipX": 1,
+          "bulletImgUrl": {
+            "name": "hurtMineBulletEnemy"
+          },
+          "bulletLeftImgUrl": {
+            "name": "hurtMineBullet"
+          },
+          "selfBoomImgUrl": {
+            "name": "bigBoomSputtering"
+          }
+        }
+      }
+    },
+    {
+      "name": "dropEffect",
+      "cnName": "掉落的效果物品",
+      "skills": {
+        "hurtMineDrop": {
+          "name": "hurtMineDrop",
+          "cnName": "获得致命地雷",
+          "addType": "instant",
+          "effectType": "addTempDevice",
+          "value": 2,
+          "valueString": "hurtMine_6"
+        }
+      }
+    }
+  ]
+}

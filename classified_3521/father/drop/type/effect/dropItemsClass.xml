@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="effect">
+		<drop cnName="增加血量">
+			<name>addLifeMul</name>
+			<cnName>增加血量</cnName>
+			<text>+血量</text>
+			<imgUrl>dropEffect/addLifeMul</imgUrl>
+			<extraSkill>DropEffect_AddLifeMul</extraSkill>
+			<lifetime>60</lifetime>
+			<noFollowHeroB>1</noFollowHeroB>
+		</drop>
+		<drop cnName="增加弹药">
+			<name>addCharger</name>
+			<cnName>增加弹药</cnName>
+			<text>+弹药</text>
+			<imgUrl>dropEffect/addCharger</imgUrl>
+			<extraSkill>DropEffect_AddChargerMul</extraSkill>
+			<lifetime>60</lifetime>
+			<noFollowHeroB>1</noFollowHeroB>
+		</drop>
+		<drop cnName="增加银币">
+			<name>addCoin</name>
+			<cnName>增加银币</cnName>
+			<imgUrl>dropEffect/addCoin</imgUrl>
+			<lifetime>60</lifetime>
+		</drop>
+		<drop cnName="活动掉落">
+			<name>addPumpkin</name>
+			<cnName>小南瓜</cnName>
+			<text>获得物品</text>
+			<imgUrl>ThingsIcon/pumpkin</imgUrl>
+			<noFollowHeroB>1</noFollowHeroB>
+			<smallMapColor>0xFF00FFFF</smallMapColor>
+		</drop>
+		
+		<drop cnName="大银币-用于任务">
+			<name>addCoin_task</name>
+			<cnName>增加银币</cnName>
+			<imgUrl>dropEffect/addCoin_task</imgUrl>
+			<noFollowHeroB>1</noFollowHeroB>
+			<smallMapColor>0xFF00FFFF</smallMapColor>
+		</drop>
+		<drop cnName="血液样本-用于任务">
+			<name>bloodTask</name>
+			<cnName>血液样本</cnName>
+			<imgUrl>ThingsIcon/bloodSample</imgUrl>
+			<noFollowHeroB>1</noFollowHeroB>
+			<smallMapColor>0xFF00FFFF</smallMapColor>
+		</drop>
+		<drop cnName="血滴-用于任务">
+			<name>bloodDrop</name>
+			<cnName>血滴</cnName>
+			<imgUrl>ThingsIcon/bloodDrop</imgUrl>
+			<noFollowHeroB>1</noFollowHeroB>
+		</drop>
+		<drop cnName="超能石-用于任务">
+			<name>skillStoneTask</name>
+			<cnName>超能石</cnName>
+			<imgUrl>ThingsIcon/skillStone</imgUrl>
+			<noFollowHeroB>1</noFollowHeroB>
+		</drop>
+		
+		<drop cnName="纪念币">
+			<name>addAniverCoin</name>
+			<cnName>增加纪念币</cnName>
+			<imgUrl>ThingsIcon/anniCoin</imgUrl>
+			<noFollowHeroB>1</noFollowHeroB>
+		</drop>
+		<drop cnName="十年币">
+			<name>addTenCoin</name>
+			<cnName>增加十年币</cnName>
+			<imgUrl>ThingsIcon/tenCoin</imgUrl>
+			<noFollowHeroB>1</noFollowHeroB>
+		</drop>
+		<drop cnName="零件券">
+			<name>addPartsCoin</name>
+			<cnName>增加零件券</cnName>
+			<imgUrl>ThingsIcon/partsCoin</imgUrl>
+			<noFollowHeroB>1</noFollowHeroB>
+		</drop>
+		
+		
+		<drop cnName="无敌药水">
+			<name>invincibleDrugDrop</name>
+			<cnName>无敌药水</cnName>
+			<imgUrl>dropEffect/invincibleDrug</imgUrl>
+			<extraSkill>invincibleDrugDrop</extraSkill>
+			<noFollowHeroB>1</noFollowHeroB>
+			<lifetime>15</lifetime>
+			<smallMapColor>0xFF00FFFF</smallMapColor>
+		</drop>
+		
+		<drop cnName="异祖龙-金球">
+			<name>FlyDragonBall</name>
+			<cnName>金球</cnName>
+			<lifetime>10</lifetime>
+			<imgUrl>FlyDragon/drop</imgUrl>
+			<noFollowHeroB>1</noFollowHeroB>
+		</drop>
+		
+		<drop cnName="稀有元素-黄">
+			<name>elementsYellow</name>
+			<cnName>稀有元素-黄</cnName>
+			<lifetime>10</lifetime>
+			<imgUrl>FireWolf/elementsYellow</imgUrl>
+			<noFollowHeroB>1</noFollowHeroB>
+		</drop>
+		<drop cnName="稀有元素-红">
+			<name>elementsRed</name>
+			<cnName>稀有元素-红</cnName>
+			<lifetime>10</lifetime>
+			<imgUrl>FireWolf/elementsRed</imgUrl>
+			<noFollowHeroB>1</noFollowHeroB>
+		</drop>
+		<drop cnName="稀有元素-绿">
+			<name>elementsGreen</name>
+			<cnName>稀有元素-绿</cnName>
+			<lifetime>10</lifetime>
+			<imgUrl>FireWolf/elementsGreen</imgUrl>
+			<noFollowHeroB>1</noFollowHeroB>
+		</drop>
+		<drop cnName="稀有元素-蓝">
+			<name>elementsBlue</name>
+			<cnName>稀有元素-绿</cnName>
+			<lifetime>10</lifetime>
+			<imgUrl>FireWolf/elementsPurple</imgUrl>
+			<noFollowHeroB>1</noFollowHeroB>
+		</drop>
+		<drop cnName="稀有元素-紫">
+			<name>elementsPurple</name>
+			<cnName>稀有元素-紫</cnName>
+			<lifetime>10</lifetime>
+			<imgUrl>FireWolf/elementsPurple</imgUrl>
+			<noFollowHeroB>1</noFollowHeroB>
+		</drop>
+		
+		<drop keyB="1" cnName="无敌罐头" name="invinCanned" lifeTime="90" noFollowHeroB="1" text="无敌10秒" imgUrl="dropEffect/invinCanned" extraSkill="invinCannedDrop" />
+		<drop keyB="1" cnName="增伤药剂" name="hurtDrug" lifeTime="90" noFollowHeroB="1" text="伤害加倍7秒" imgUrl="dropEffect/hurtDrug" extraSkill="hurtDrugDrop" />
+		<drop keyB="1" cnName="眩晕地雷x2" name="hammerMineEffect" lifeTime="90" noFollowHeroB="1" text="获得眩晕地雷x2" imgUrl="dropEffect/hammerMine" extraSkill="hammerMineDrop" />
+		<drop keyB="1" cnName="致命地雷x2" name="hurtMineEffect" lifeTime="90" noFollowHeroB="1" text="获得致命地雷x2" imgUrl="dropEffect/hurtMine" extraSkill="hurtMineDrop" />
+		
+		
+	</father>
+	</data>

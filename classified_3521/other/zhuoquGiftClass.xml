@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<zhuoqu>
+	
+		<one codeExchangeId="34447" name="zhuoQu2019_11_1" cnName="11月1天签到礼包" startTime="2019-11-1 00:00:00" endTime="2019-12-30 00:00:00" hideOutTimeB="1">
+			<codeUrl>https://huodong2.4399.com/2019/zqqdslb/ </codeUrl>
+			<gift>things;skeletonWand_1;5</gift>
+
+		</one>
+		<one codeExchangeId="34448" name="zhuoQu2019_11_7" cnName="11月5天签到礼包" startTime="2019-11-1 00:00:00" endTime="2019-12-30 00:00:00" hideOutTimeB="1">
+			<codeUrl>https://huodong2.4399.com/2019/zqqdslb/ </codeUrl>
+			<gift>things;kingWing_heroChip;12</gift>
+		</one>
+		<one codeExchangeId="34449" name="zhuoQu2019_11_15" cnName="11月10天签到礼包" startTime="2019-11-1 00:00:00" endTime="2019-12-30 00:00:00" hideOutTimeB="1">
+			<codeUrl>https://huodong2.4399.com/2019/zqqdslb/ </codeUrl>
+			<gift>things;wolfFashion;20</gift>
+
+		</one>
+		<one codeExchangeId="34450" name="zhuoQu2019_11_30" cnName="11月20天签到礼包" startTime="2019-11-1 00:00:00" endTime="2019-12-30 00:00:00" hideOutTimeB="1">
+			<codeUrl>https://huodong2.4399.com/2019/zqqdslb/ </codeUrl>
+			<gift>things;electromagnet;30</gift>
+		</one>
+	</zhuoqu>
+</data>

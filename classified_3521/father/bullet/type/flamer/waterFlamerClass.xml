@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="flamer" cnName="喷火器">
+		<bullet name="洪荒" kind="water" color="black" composeLv="95" chipNum="123">
+			<name>waterFlamer</name><cnName>洪荒</cnName>
+			<dpsMul>2.4</dpsMul>
+			<uiDpsMul>2.5</uiDpsMul>
+			
+			<capacity>100,120</capacity>
+			<attackGap>0.15</attackGap>
+			<reloadGap>2.5,3</reloadGap>
+			<shakeAngle>3,5</shakeAngle>
+			<bulletWidth>25</bulletWidth>
+			<bulletNum>1</bulletNum>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<beatBack>3</beatBack>
+			<targetShakeValue>5</targetShakeValue>
+			
+			<armsArmMul>0.5</armsArmMul><shootShakeAngle>5</shootShakeAngle><shootRecoil>3</shootRecoil><screenShakeValue>4</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime><bulletLife>1</bulletLife>
+			<hitType>rect</hitType>
+				
+			<speedD random="0.2" max="40" min="10" a="-30" />
+			<bulletSpeed>40</bulletSpeed>
+			<gravity>1</gravity>
+				
+			<oneHitBodyB>1</oneHitBodyB>
+			<godSkillArr>Hit_imploding_godArmsSkill,waterFlamer_ArmsSkill</godSkillArr>
+			
+			<shootSoundUrl>specialGun/waterShoot</shootSoundUrl>
+			<bulletImgUrl raNum="30">bullet/waterBullet</bulletImgUrl>
+			<smokeImgUrl raNum="30" con="filter">bullet/waterSmoke</smokeImgUrl>
+			<hitImgUrl raNum="30">bulletHitEffect/smoke_motion</hitImgUrl>
+			<hitFloorImgUrl raNum="30">bulletHitEffect/smoke_motion</hitFloorImgUrl>
+			<fireImgType>no</fireImgType>
+			
+			<bodyImgRange>specialGun/waterFlamer</bodyImgRange><bulletImgRange>specialGun/bullet</bulletImgRange>
+		</bullet>
+	</father>
+	
+	</data>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="car" cnName="战车定义">
+		<equip name="BoneBreaker" cnName="切割者" rideLabel="WatchEagleRide">
+			<evolutionLv>2</evolutionLv>
+			<main label="Diggers_sub" hideB="1" dpsMul="0" />
+			<sub label="Diggers_sub" hideB="1" dpsMul="0" />
+			<lifeMul>2.5</lifeMul>
+			<attackMul>2</attackMul><attackActionLabel>sprintAttack</attackActionLabel>
+			<duration>15</duration>
+			<cd>30</cd>
+			<addObjJson>{'dpsAll':0.15,'hurtMul_pistol':0.15,'specialPartsDropPro':0.20}</addObjJson>
+			<specialInfoArr>瞬秒分身和召唤单位</specialInfoArr>
+			<skillArr>vehicleFit_Civilian</skillArr>
+		</equip>
+	</father>
+	</data>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="base">
+		<body name="normalMonthCard" cnName="联邦部长">
+			<postExpMul>1</postExpMul>
+			<bodyExpMul>1</bodyExpMul>
+			<sweepingNum>2</sweepingNum>
+			<loveAdd>20</loveAdd>
+			<lotteryNum>1</lotteryNum>
+			<noDeductLoveB>1</noDeductLoveB>
+			<proName>lifeAll,hurtAll</proName>
+		</body>
+		
+		<body name="goldMonthCard" cnName="联邦国务卿">
+			<postExpMul>2</postExpMul>
+			<bodyExpMul>1.5</bodyExpMul>
+			<sweepingNum>4</sweepingNum>
+			<loveAdd>40</loveAdd>
+			<lotteryNum>2</lotteryNum>
+			<noDeductLoveB>1</noDeductLoveB>
+			<autoDesB>1</autoDesB>
+			<proName>lifeAll,hurtAll,lottery</proName>
+		</body>
+		
+		<body name="platinumMonthCard" cnName="联邦总统">
+			<havePresidentB>1</havePresidentB>
+			
+			<postExpMul>3</postExpMul>
+			<bodyExpMul>2</bodyExpMul>
+			<sweepingNum>6</sweepingNum>
+			<loveAdd>60</loveAdd>
+			<lotteryNum>3</lotteryNum>
+			<noDeductLoveB>1</noDeductLoveB>
+			<autoDesB>1</autoDesB>
+			<dropFollowB>1</dropFollowB>
+			<proName>lifeAll,hurtAll,dpsAll,lottery</proName>
+		</body>
+	</father>
+</data>

@@ -1,0 +1,363 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="僵尸">
+		<bullet cnName="无头自爆僵尸-死后释放炸弹">
+			<name>boom_headless</name>
+			<cnName>自爆僵尸炸弹</cnName>
+			
+			<hurtRatio>2.5</hurtRatio>
+			<attackType>holy</attackType><noMagneticB>1</noMagneticB>
+			
+			<shakeAngle>20</shakeAngle>
+			<bulletLife>0.8</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.6</attackDelay>
+			<bulletAngle>180</bulletAngle>
+			<bulletAngleRange>160</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+								
+			<shootAngle>0</shootAngle>					
+				
+			<shootPoint>-18,-52</shootPoint>
+			<bulletSpeed>10</bulletSpeed>
+			<gravity>1</gravity>
+			
+			<boomD selfB="1" bodyB="1" radius="80" />
+			<bounceD floor="10" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl>ZombieHeadless/bullet</bulletImgUrl>
+			<hitImgUrl shake="2,0.2,15" soundUrl="boomSound/midBoom2">boomEffect/boom2</hitImgUrl>
+			<hitFloorImgUrl soundUrl="boomSound/microBoom1">bulletHitEffect/smoke_small</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/spark_motion</smokeImgUrl>
+		</bullet>
+		<bullet cnName="携弹僵尸">
+			<name>ZombieBomb_1</name>
+			<cnName>携弹僵尸</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>10</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.6</attackDelay>
+			<bulletAngle>185</bulletAngle>
+			<bulletAngleRange>40</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+								
+			<shootAngle>0</shootAngle>					
+				
+			<shootPoint>-64,-82</shootPoint>
+			<bulletSpeed>25</bulletSpeed>
+			<gravity>1</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">ZombieIncapable/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="boomSound/smallBoom">boomEffect/boom1</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/spark_motion</smokeImgUrl>
+		</bullet>
+		<bullet cnName="橄榄僵尸">
+			<name>ZombieFootball_1</name>
+			<cnName>橄榄僵尸</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>10</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.6</attackDelay>
+			<bulletAngle>210</bulletAngle>
+			<bulletAngleRange>40</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+								
+			<shootAngle>0</shootAngle>					
+				
+			<bounceD floor="2" num="0.8" />	
+				
+			<shootPoint>-64,-82</shootPoint>
+			<bulletSpeed>20</bulletSpeed>
+			<gravity>1.4</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">ZombieFootball/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="ZombieFootball/hit2">bulletHitEffect/yellow_motion</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+		</bullet>
+		<bullet cnName="橄榄僵尸-尸宠">
+			<name>PetZombieFootball_1</name>
+			<cnName>橄榄僵尸</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>10</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.6</attackDelay>
+			<bulletAngle>210</bulletAngle>
+			<bulletAngleRange>40</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+								
+			<shootAngle>0</shootAngle>					
+				
+			<bounceD floor="2" num="0.8" />	
+				
+			<shootPoint>-64,-82</shootPoint>
+			<bulletSpeed>20</bulletSpeed>
+			<gravity>1.4</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">PetZombieFootball/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="PetZombieFootball/hit2">bulletHitEffect/yellow_motion</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+		</bullet>
+		<bullet cnName="橄榄僵尸-尸宠">
+			<name>PetZombieFootball_2</name>
+			<cnName>橄榄僵尸-弹性世界</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>10</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.6</attackDelay>
+			<bulletAngle>210</bulletAngle>
+			<bulletAngleRange>40</bulletAngleRange>
+			<bulletNum>8</bulletNum>				
+			<shootNum>1</shootNum>					
+							
+			<shootAngle>20</shootAngle>					
+				
+			<bounceD floor="999" />	
+			<penetrationNum>999</penetrationNum>
+			<twoHitGap>0.2</twoHitGap>
+			<skillArr>slowMove_enemy</skillArr>
+				
+			<shootPoint>-64,-82</shootPoint>
+			<bulletSpeed>20</bulletSpeed>
+			<gravity>1.3</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">PetZombieFootball/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="PetZombieFootball/hit2">bulletHitEffect/yellow_motion</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+		</bullet>
+		<bullet cnName="橄榄僵尸-尸宠">
+			<name>PetZombieHelmet_1</name>
+			<cnName>橄榄僵尸</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>10</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.6</attackDelay>
+			<bulletAngle>210</bulletAngle>
+			<bulletAngleRange>40</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+								
+			<shootAngle>0</shootAngle>					
+				
+			<bounceD floor="2" num="0.8" />	
+				
+			<shootPoint>-64,-82</shootPoint>
+			<bulletSpeed>20</bulletSpeed>
+			<gravity>1.4</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">PetZombieHelmet/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="PetZombieHelmet/hit2">bulletHitEffect/yellow_motion</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+		</bullet>
+		<bullet cnName="橄榄僵尸-尸宠">
+			<name>PetZombieHelmet_2</name>
+			<cnName>橄榄僵尸-弹性世界</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>10</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.6</attackDelay>
+			<bulletAngle>210</bulletAngle>
+			<bulletAngleRange>40</bulletAngleRange>
+			<bulletNum>8</bulletNum>				
+			<shootNum>1</shootNum>					
+							
+			<shootAngle>20</shootAngle>					
+				
+			<bounceD floor="999" />	
+			<penetrationNum>999</penetrationNum>
+			<twoHitGap>0.2</twoHitGap>
+			<skillArr>slowMove_enemy</skillArr>
+				
+			<shootPoint>-64,-82</shootPoint>
+			<bulletSpeed>20</bulletSpeed>
+			<gravity>1.3</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">PetZombieHelmet/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="PetZombieHelmet/hit2">bulletHitEffect/yellow_motion</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+		</bullet>
+		
+		
+		<bullet cnName="屠刀僵尸-飞刀">
+			<name>ZombieCleaver_1</name>
+			<cnName>屠刀僵尸-飞刀</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>15</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.1</attackGap>
+			<attackDelay>0.4</attackDelay>
+			<bulletAngle>185</bulletAngle>
+			<bulletAngleRange>40</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+								
+			<shootAngle>0</shootAngle>					
+				
+			<shootPoint>-60,-90</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<gravity>0.7</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1">ZombieCleaver/bullet</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="ZombieCleaver/hit1">bladeHitEffect/blood</hitImgUrl>
+			<hitFloorImgUrl con="add" soundUrl="ZombieCleaver/hit1" soundVolume="0.4">bladeHitEffect/blood</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="1">ZombieCleaver/smoke</smokeImgUrl>
+			
+		</bullet>
+		<bullet cnName="屠刀僵尸-飞刀">
+			<name>PetZombieCleaver_1</name>
+			<cnName>屠刀僵尸-飞刀</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>15</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.1</attackGap>
+			<attackDelay>0.4</attackDelay>
+			<bulletAngle>185</bulletAngle>
+			<bulletAngleRange>40</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+								
+			<shootAngle>0</shootAngle>					
+				
+			<shootPoint>-60,-90</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<gravity>0.7</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1">PetZombieCleaver/bullet</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="PetZombieCleaver/hit1">bladeHitEffect/blood</hitImgUrl>
+			<hitFloorImgUrl con="add" soundUrl="PetZombieCleaver/hit1" soundVolume="0.4">bladeHitEffect/blood</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="1">PetZombieCleaver/smoke</smokeImgUrl>
+			
+		</bullet>
+		<bullet cnName="银锤-飞刀">
+			<name>ZombieSilver_1</name>
+			<cnName>银锤-飞刀</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>15</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.8</attackGap>
+			<attackDelay>0.3</attackDelay>
+			<bulletAngle>185</bulletAngle>
+			<bulletAngleRange>40</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+								
+			<shootAngle>0</shootAngle>					
+				
+			<shootPoint>-52,-75</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<gravity>0.7</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1">ZombieSilver/bullet</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="ZombieSilver/hit1">bulletHitEffect/energy</hitImgUrl>
+			<hitFloorImgUrl con="add" soundUrl="ZombieSilver/hit1" soundVolume="0.4">bulletHitEffect/energy</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="1">ZombieSilver/smoke</smokeImgUrl>
+			
+		</bullet>
+		
+		<bullet cnName="监狱僵尸-飞刀">
+			<name>ZombiePrison_1</name>
+			<cnName>监狱僵尸-飞刀</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>10</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.6</attackDelay>
+			<bulletAngle>185</bulletAngle>
+			<bulletAngleRange>40</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+								
+			<shootAngle>0</shootAngle>					
+				
+			<shootPoint>-64,-82</shootPoint>
+			<bulletSpeed>25</bulletSpeed>
+			<gravity>0.6</gravity>
+			<bounceD floor="999" />	
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="2">ZombiePrison/bullet</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="sound/vehicle_hit2">bladeHitEffect/blood</hitImgUrl>
+			<hitFloorImgUrl con="add" soundUrl="sound/vehicle_hit2" soundVolume="0.4">bladeHitEffect/blood</hitFloorImgUrl>
+			<smokeImgUrl con="filter" raNum="1">ZombiePrison/smoke</smokeImgUrl>
+		</bullet>
+		<bullet cnName="屠刀僵尸-飞刀">
+			<name>HammerMummy_1</name>
+			<cnName>星锤干尸-飞锤</cnName>
+			
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>25</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.1</attackGap>
+			<attackDelay>0.4</attackDelay>
+			<bulletAngle>185</bulletAngle>
+			<bulletAngleRange>40</bulletAngleRange>
+			<bulletNum>1</bulletNum>				
+			<shootNum>1</shootNum>					
+								
+			<shootAngle>0</shootAngle>					
+				
+			<shootPoint>-60,-90</shootPoint>
+			<bulletSpeed>30</bulletSpeed>
+			<gravity>0.7</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="1">HammerMummy/bullet</bulletImgUrl>
+			<hitImgUrl con="add" soundUrl="sound/vehicle_hit1">bladeHitEffect/blood</hitImgUrl>
+			<hitFloorImgUrl con="add" soundUrl="sound/vehicle_hit1" soundVolume="0.4">bladeHitEffect/blood</hitFloorImgUrl>
+			
+		</bullet>
+	</father>
+	</data>

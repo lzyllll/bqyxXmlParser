@@ -1,0 +1,140 @@
+{
+  "father": {
+    "name": "enemy",
+    "bullet": {
+      "HealerZombie": {
+        "name": "HealerZombie",
+        "cnName": "僵尸治疗兵",
+        "headIconUrl": "IconGather/HealerZombie",
+        "raceType": "zombies",
+        "swfUrl": "swf/enemy/HealerZombie310.swf",
+        "lifeRatio": 1.4,
+        "showLevel": 999,
+        "imgArr": "stand,move,run\n\t\t\t\t,normalAttack,magicAttack\n\t\t\t\t,thumpAttack,shieldAttack\n\t\t\t\t,hurt1,hurt2,die1\n\t\t\t\t,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1",
+        "bossImgArr": "thumpAttack,shieldAttack,magicAttack",
+        "hitRect": "-14,-76,28,76",
+        "maxJumpNum": 1,
+        "maxVx": 6,
+        "nextAttackTime": 0,
+        "extraAIClassLabel": null,
+        "avtiveSkillCdOverT": 0,
+        "skillArr": "weaponDefence,noBounce_enemy",
+        "bossSkillArr": "healerBoundless,healerShield,reverseHurt_enemy,feedback_enemy,State_SpellImmunity,godShield,skillGift_enemy,reflectiveShell",
+        "bossSkillArrCn": null,
+        "hurtArr": {
+          "hurt": {
+            "imgLabel": "normalAttack",
+            "cn": "拳击",
+            "hurtRatio": 2,
+            "shakeValue": 4,
+            "attackType": "direct",
+            "skillArr": null,
+            "hitImgUrl": null
+          }
+        },
+        "armsType": null
+      },
+      "HealerZombie_1": {
+        "name": "HealerZombie_1",
+        "cnName": "飞镐",
+        "shakeAngle": 5,
+        "bulletLife": 3,
+        "bulletWidth": 40,
+        "hitType": "rect",
+        "attackGap": 0.7,
+        "attackDelay": 0.5,
+        "bulletAngle": -179,
+        "bulletAngleRange": 70,
+        "shootPoint": "-71,-84",
+        "bulletSpeed": 12,
+        "penetrationGap": 1000,
+        "skillArr": null,
+        "flipX": 1,
+        "bulletImgUrl": "HealerZombie/bullet",
+        "hitImgUrl": null,
+        "armsType": null
+      },
+      "healerShield": {
+        "name": "healerShield",
+        "cnName": "异族护盾",
+        "iconUrl36": null,
+        "ignoreNoSkillB": 1,
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "noBeClearB": 1,
+        "noSkillDodgeB": 1,
+        "cd": 20,
+        "firstCd": 19,
+        "delay": 0.7,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "target": "me",
+        "addType": "state",
+        "effectType": "no",
+        "passiveSkillArr": "healerShieldSensitive",
+        "duration": 10,
+        "stateEffectImg": {
+          "name": "healerShield"
+        },
+        "meActionLabel": "shieldAttack",
+        "description": "开启异族护盾，受尸宠的伤害增加20倍，其他伤害降低至10%，持续[duration]秒。",
+        "armsType": null
+      },
+      "healerShieldSensitive": {
+        "cnName": "尸宠敏感",
+        "name": "healerShieldSensitive",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "ignoreNoSkillB": 1,
+        "ignoreSilenceB": 1,
+        "conditionType": "passive",
+        "condition": "underAllHit",
+        "target": "me",
+        "addType": "instant",
+        "effectType": "healerShieldSensitive",
+        "mul": 0.1,
+        "value": 20,
+        "description": "受尸宠的伤害增加20倍，其他伤害降低至10%。",
+        "armsType": null
+      },
+      "healerBoundless": {
+        "name": "healerBoundless",
+        "ignoreNoSkillB": 1,
+        "ignoreImmunityB": 1,
+        "noBeClearB": 1,
+        "noSkillDodgeB": 1,
+        "cnName": "嗜血射线",
+        "iconUrl36": "SkillIcon/static_PetLake_36",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "cd": 15,
+        "firstCd": 10,
+        "delay": 0.3,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "nearAttackTarget",
+        "conditionRange": 600,
+        "target": "me,range,enemy",
+        "addType": "state",
+        "effectType": "healerBoundless",
+        "value": 12,
+        "mul": 0.5,
+        "range": 1100,
+        "duration": 0.5,
+        "stateEffectImg": {
+          "value": "skillEffect/magneticField_paralysis",
+          "partType": "body",
+          "con": "add",
+          "raNum": 30,
+          "followPartRaB": true
+        },
+        "pointEffectImg": {
+          "name": "laserBlackLine"
+        },
+        "meActionLabel": "magicAttack",
+        "description": "向外释放嗜血射线，将周围[range]码的敌人吸附到自身周围，吸收敌人生命值，并回复自身生命值。",
+        "armsType": null
+      }
+    }
+  }
+}

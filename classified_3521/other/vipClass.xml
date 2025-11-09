@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<level lv="1" must="100" smeltNum="2">
+		<base expMul="0.10" dpsMul="0.10" lifeMul="0.20" defenceMul="0.20" bag="6" askPropsNum="0" />
+		<props lifeBottle="1" teamLifeBottle="1" caisson="1" rebirthStone="0" teamRebirthCard="0" skillFleshCard="0"/>
+		<buyLimitNumObj militarySupplies="6" strengthenStone="10" magicChest="1" dragonChest="1" />
+		<gift>things;skillStone;30</gift>
+		<gift>things;rebirthStone;1</gift>
+		<gift>things;coinHeap_1;5</gift>
+		<gift>things;armsHighBox;5</gift>
+		<gift>things;equipHighBox;5</gift>
+		
+		
+		<dayGift>
+			<gift>base;anniCoin;10</gift>
+			<gift>things;strengthenStone;3</gift>
+			<gift>things;strengthenDrug;5</gift>
+			<gift>things;anniversaryCash;5</gift>
+			<gift>things;weaponChest;5</gift>
+			<gift>things;allBlackCash;10</gift>
+			<gift>things;allBlackEquipCash;10</gift>
+		</dayGift>
+	</level>
+	<level lv="2" must="200" smeltNum="3">
+		<base expMul="0.20" dpsMul="0.18" lifeMul="0.30" defenceMul="0.30" bag="9" askPropsNum="0"/>
+		<props lifeBottle="1" teamLifeBottle="1" caisson="2" rebirthStone="1" teamRebirthCard="1" skillFleshCard="1" />
+		<buyLimitNumObj militarySupplies="7" strengthenStone="20" magicChest="2"  dragonChest="2" />
+		<gift>things;skillStone;50</gift>
+		<gift>things;rebirthStone;2</gift>
+		<gift>things;coinHeap_1;9</gift>
+		<gift>things;armsHighBox;8</gift>
+		<gift>things;equipHighBox;8</gift>
+		<dayGift>
+			<gift>base;anniCoin;12</gift>
+			<gift>things;strengthenStone;3</gift>
+			<gift>things;bloodStone;4</gift>
+			<gift>things;strengthenDrug;7</gift>
+			<gift>things;weaponChest;6</gift>
+			<gift>things;anniversaryCash;7</gift>
+			<gift>things;allBlackCash;12</gift>
+			<gift>things;allBlackEquipCash;12</gift>
+		</dayGift>
+	</level>
+	<level lv="3" must="500" smeltNum="4">
+		<base expMul="0.30" dpsMul="0.26" lifeMul="0.40" defenceMul="0.40" bag="12" askPropsNum="1"/>
+		<props lifeBottle="2" teamLifeBottle="1" caisson="3" rebirthStone="2" teamRebirthCard="1" skillFleshCard="1"/>
+		<buyLimitNumObj militarySupplies="8" strengthenStone="40" magicChest="4" dragonChest="4" />
+		<gift>things;skillStone;70</gift>
+		<gift>things;rebirthStone;3</gift>
+		<gift>things;coinHeap_1;15</gift>
+		<gift>things;armsHighBox;10</gift>
+		<gift>things;equipHighBox;10</gift>
+		<dayGift>
+			<gift>base;anniCoin;15</gift>
+			<gift>things;strengthenStone;6</gift>
+			<gift>things;bloodStone;7</gift>
+			<gift>things;strengthenDrug;12</gift>
+			<gift>things;weaponChest;7</gift>
+			<gift>things;partsChest72;2</gift>
+			<gift>things;anniversaryCash;12</gift>
+			<gift>things;allBlackCash;15</gift>
+			<gift>things;allBlackEquipCash;15</gift>
+			<gift>parts;huntParts_1;1</gift>
+			<gift>parts;acidicParts_1;1</gift>
+		</dayGift>
+	</level>
+	<level lv="4" must="1000" smeltNum="5">
+		<base expMul="0.45" dpsMul="0.34" lifeMul="0.50" defenceMul="0.50" bag="15" askPropsNum="1"/>
+		<props lifeBottle="2" teamLifeBottle="2" caisson="4" rebirthStone="2" teamRebirthCard="2" skillFleshCard="1"/>
+		<buyLimitNumObj militarySupplies="9" strengthenStone="70" magicChest="7" dragonChest="7" />
+		<gift>things;doubleCard;3</gift>
+		<gift>things;skillStone;100</gift>
+		<gift>things;rebirthStone;5</gift>
+		<gift>things;coinHeap_1;20</gift>
+		<gift>things;armsHighBox;14</gift>
+		<gift>things;equipHighBox;14</gift>
+		<dayGift>
+			<gift>base;anniCoin;16</gift>
+			<gift>things;strengthenStone;9</gift>
+			<gift>things;bloodStone;10</gift>
+			<gift>things;strengthenDrug;16</gift>
+			<gift>things;keyChest;1</gift>
+			<gift>things;weaponChest;8</gift>
+			<gift>things;partsChest72;2</gift>
+			<gift>things;anniversaryCash;16</gift>
+			<gift>things;allBlackCash;20</gift>
+			<gift>things;allBlackEquipCash;20</gift>
+			<gift>parts;huntParts_1;2</gift>
+			<gift>parts;acidicParts_1;2</gift>
+		</dayGift>
+	</level>
+	<level lv="5" must="2000" smeltNum="6">
+		<base expMul="0.60" dpsMul="0.42" lifeMul="0.60" defenceMul="0.60" bag="18" askPropsNum="2"/>
+		<props lifeBottle="2" teamLifeBottle="2" caisson="5" rebirthStone="2" teamRebirthCard="2" skillFleshCard="2"/>
+		<buyLimitNumObj militarySupplies="10" strengthenStone="120" magicChest="12" dragonChest="12" />
+		<gift>things;doubleCard;5</gift>
+		<gift>things;skillStone;140</gift>
+		<gift>things;rebirthStone;7</gift>
+		<gift>things;coinHeap_1;30</gift>
+		<gift>things;armsHighBox;18</gift>
+		<gift>things;equipHighBox;18</gift>
+		<dayGift>
+			<gift>base;anniCoin;17</gift>
+			<gift>things;strengthenStone;12</gift>
+			<gift>things;bloodStone;13</gift>
+			<gift>things;strengthenDrug;21</gift>
+			<gift>things;keyChest;1</gift>
+			<gift>things;doubleCard;1</gift>
+			<gift>things;weaponChest;9</gift>
+			<gift>things;normalChest;1</gift>
+			<gift>things;partsChest72;4</gift>
+			<gift>things;anniversaryCash;21</gift>
+			<gift>things;allBlackCash;25</gift>
+			<gift>things;allBlackEquipCash;25</gift>
+			<gift>parts;huntParts_1;3</gift>
+			<gift>parts;acidicParts_1;3</gift>
+		</dayGift>
+	</level>
+	<level lv="6" must="5000" smeltNum="7" armsSkinArr="sniperCicada">
+		<base expMul="0.80" dpsMul="0.50" lifeMul="0.70" defenceMul="0.70" bag="21" askPropsNum="2"/>
+		<props lifeBottle="3" teamLifeBottle="2" caisson="6" rebirthStone="3" teamRebirthCard="2" skillFleshCard="2" />
+		<buyLimitNumObj militarySupplies="11" strengthenStone="200" magicChest="20" dragonChest="20" />
+		<gift>things;doubleCard;8</gift>
+		<gift>things;skillStone;180</gift>
+		<gift>things;rebirthStone;9</gift>
+		<gift>things;coinHeap_1;45</gift>
+		<gift>things;armsHighBox;24</gift>
+		<gift>things;equipHighBox;24</gift>
+		<dayGift>
+			<gift>base;anniCoin;18</gift>
+			<gift>things;strengthenStone;15</gift>
+			<gift>things;bloodStone;15</gift>
+			<gift>things;strengthenDrug;26</gift>
+			<gift>things;keyChest;1</gift>
+			<gift>things;doubleCard;1</gift>
+			<gift>things;weaponChest;10</gift>
+			<gift>things;normalChest;1</gift>
+			<gift>things;dragonChest;1</gift>
+			<gift>things;partsChest75;1</gift>
+			<gift>things;anniversaryCash;26</gift>
+			<gift>things;allBlackCash;30</gift>
+			<gift>things;allBlackEquipCash;30</gift>
+			<gift>parts;huntParts_1;4</gift>
+			<gift>parts;acidicParts_1;4</gift>
+		</dayGift>
+	</level>	
+	<level lv="7" must="8000" smeltNum="8" armsSkinArr="sniperCicada,redFire">
+		<base expMul="0.95" dpsMul="0.55" lifeMul="0.80" defenceMul="0.80" bag="24" askPropsNum="3"/>
+		<props lifeBottle="3" teamLifeBottle="3" caisson="7" rebirthStone="3" teamRebirthCard="3" skillFleshCard="2" />
+		<buyLimitNumObj militarySupplies="12" strengthenStone="300" magicChest="23" dragonChest="23" />
+		<gift>things;doubleCard;11</gift>
+		<gift>things;skillStone;230</gift>
+		<gift>things;rebirthStone;11</gift>
+		<gift>things;teamRebirthCard;4</gift>
+		<gift>things;skillFleshCard;4</gift>
+		<gift>things;coinHeap_1;60</gift>
+		<gift>things;armsHighBox;30</gift>
+		<gift>things;equipHighBox;30</gift>
+		<dayGift>
+			<gift>base;anniCoin;19</gift>
+			<gift>things;strengthenStone;17</gift>
+			<gift>things;bloodStone;17</gift>
+			<gift>things;strengthenDrug;30</gift>
+			<gift>things;keyChest;2</gift>
+			<gift>things;doubleCard;2</gift>
+			<gift>things;weaponChest;11</gift>
+			<gift>things;normalChest;1</gift>
+			<gift>things;dragonChest;1</gift>
+			<gift>things;magicChest;1</gift>
+			<gift>things;partsChest75;3</gift>
+			<gift>things;anniversaryCash;30</gift>
+			<gift>things;allBlackCash;35</gift>
+			<gift>things;allBlackEquipCash;35</gift>
+			<gift>parts;huntParts_1;5</gift>
+			<gift>parts;acidicParts_1;5</gift>
+		</dayGift>
+	</level>
+	<level lv="8" must="10000" smeltNum="9"  armsSkinArr="sniperCicada,redFire,rifleHornet">
+		<base expMul="1.10" dpsMul="0.60" lifeMul="0.90" defenceMul="0.90" bag="30" askPropsNum="4"/>
+		<props lifeBottle="3" teamLifeBottle="3" caisson="8" rebirthStone="3" teamRebirthCard="3" skillFleshCard="3" />
+		<buyLimitNumObj militarySupplies="13" strengthenStone="500" magicChest="25" dragonChest="25" />
+		<gift>things;doubleCard;14</gift>
+		<gift>things;skillStone;280</gift>
+		<gift>things;rebirthStone;13</gift>
+		<gift>things;teamRebirthCard;6</gift>
+		<gift>things;skillFleshCard;6</gift>
+		<gift>things;coinHeap_1;75</gift>
+		<gift>things;armsHighBox;36</gift>
+		<gift>things;equipHighBox;36</gift>
+		<dayGift>
+			<gift>base;anniCoin;20</gift>
+			<gift>things;strengthenStone;19</gift>
+			<gift>things;bloodStone;19</gift>
+			<gift>things;strengthenDrug;30</gift>
+			<gift>things;keyChest;2</gift>
+			<gift>things;doubleCard;2</gift>
+			<gift>things;weaponChest;12</gift>
+			<gift>things;normalChest;2</gift>
+			<gift>things;dragonChest;1</gift>
+			<gift>things;magicChest;1</gift>
+			<gift>things;partsChest75;4</gift>
+			<gift>things;anniversaryCash;32</gift>
+			<gift>things;allBlackCash;40</gift>
+			<gift>things;allBlackEquipCash;40</gift>
+			<gift>parts;huntParts_1;6</gift>
+			<gift>parts;acidicParts_1;6</gift>
+		</dayGift>
+	</level>
+	<level lv="9" must="20000" smeltNum="10" armsSkinArr="sniperCicada,redFire,rifleHornet,yearDragon">
+		<base expMul="1.25" dpsMul="0.65" lifeMul="1.00" defenceMul="1.00" bag="30" askPropsNum="5"/>
+		<props lifeBottle="4" teamLifeBottle="3" caisson="9" rebirthStone="4" teamRebirthCard="3" skillFleshCard="3"  />
+		<buyLimitNumObj militarySupplies="15" strengthenStone="1000" magicChest="27" dragonChest="27" />
+		<gift>things;doubleCard;17</gift>
+		<gift>things;skillStone;330</gift>
+		<gift>things;rebirthStone;15</gift>
+		<gift>things;teamRebirthCard;8</gift>
+		<gift>things;skillFleshCard;8</gift>
+		<gift>things;coinHeap_1;80</gift>
+		<gift>things;armsHighBox;44</gift>
+		<gift>things;equipHighBox;44</gift>
+		<dayGift>
+			<gift>base;anniCoin;22</gift>
+			<gift>things;strengthenStone;21</gift>
+			<gift>things;bloodStone;21</gift>
+			<gift>things;strengthenDrug;30</gift>
+			<gift>things;keyChest;2</gift>
+			<gift>things;doubleCard;3</gift>
+			<gift>things;weaponChest;13</gift>
+			<gift>things;normalChest;2</gift>
+			<gift>things;dragonChest;2</gift>
+			<gift>things;magicChest;1</gift>
+			<gift>things;partsChest75;6</gift>
+			<gift>things;anniversaryCash;39</gift>
+			<gift>things;allBlackCash;45</gift>
+			<gift>things;allBlackEquipCash;45</gift>
+			<gift>parts;huntParts_1;7</gift>
+			<gift>parts;acidicParts_1;7</gift>
+		</dayGift>
+	</level>
+	<level lv="10" must="50000" smeltNum="12" armsSkinArr="sniperCicada,redFire,rifleHornet,yearDragon,shotgunSkunk,yearTiger">
+		<base expMul="1.40" dpsMul="0.70" lifeMul="1.10" defenceMul="1.10" bag="30" askPropsNum="6"/>
+		<props lifeBottle="5" teamLifeBottle="4" caisson="10" rebirthStone="5" teamRebirthCard="4" skillFleshCard="4" />
+		<buyLimitNumObj militarySupplies="17" strengthenStone="2000" magicChest="30" dragonChest="30" />
+		<gift>things;doubleCard;20</gift>
+		<gift>things;skillStone;380</gift>
+		<gift>things;rebirthStone;17</gift>
+		<gift>things;teamRebirthCard;10</gift>
+		<gift>things;skillFleshCard;10</gift>
+		<gift>things;coinHeap_1;100</gift>
+		<gift>things;armsHighBox;52</gift>
+		<gift>things;equipHighBox;52</gift>
+		<dayGift>
+			<gift>base;anniCoin;24</gift>
+			<gift>things;strengthenStone;24</gift>
+			<gift>things;bloodStone;24</gift>
+			<gift>things;strengthenDrug;30</gift>
+			<gift>things;keyChest;3</gift>
+			<gift>things;doubleCard;3</gift>
+			<gift>things;weaponChest;15</gift>
+			<gift>things;normalChest;2</gift>
+			<gift>things;dragonChest;2</gift>
+			<gift>things;magicChest;2</gift>
+			<gift>things;partsChest75;8</gift>
+			<gift>things;anniversaryCash;52</gift>
+			<gift>things;allBlackCash;50</gift>
+			<gift>things;allBlackEquipCash;50</gift>
+			<gift>parts;huntParts_1;8</gift>
+			<gift>parts;acidicParts_1;8</gift>
+		</dayGift>
+	</level>
+</data>

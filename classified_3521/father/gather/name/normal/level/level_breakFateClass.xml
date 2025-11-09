@@ -1,0 +1,489 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="normal">
+		<gather name="破局-实验室底层">
+			<level name="breakFate">
+				<sceneLabel>Hospital2</sceneLabel>
+				<info enemyLv="99" diy="thornyRoad" preBulletArr="thornyRoad" preSkillArr="vehicleFit_Gaia" dropSmallMapB="1" sightCover="1" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" mustSingleB="1" />
+				<drop coin="0" exp="0" arms="0" equip="0" skillStone="0" taxStamp="0" />
+				
+				
+				<eventG>
+					<group>
+						<event id="e1_1">
+							<order>say; startList:s1,s2,s3,s4,s5,s6</order>
+						</event>
+					</group>
+					<group>
+						<event id="e1_4">
+							<condition delay="0.01">task:state; breakFate:complete</condition>
+							<order>say; startList:s10</order>
+						</event>
+						<event id="e2_11">
+							<condition>say:listOver</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+				
+			</level>
+		</gather>
+		<gather name="改命-实验室地下">
+			<level name="changeLife">
+				
+				<sceneLabel>HospitalUnder</sceneLabel>
+				
+				<info enemyLv="0" diff="1" diy="changeLife" preBulletArr="bulletRainBullet,bulletRainBall" preSkillArr="invincibleDrugDrop" dropSmallMapB="1" sightCover="1" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" mustSingleB="1" />
+				<drop coin="0" exp="0" arms="0" equip="0" skillStone="0" taxStamp="0" />
+				<unitG><allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="we2" camp="we">
+						<unit cnName="战争狂人" num="1" aiOrder="followBody:p1" skillArr="madmanHead" />
+					</unitOrder>
+				</unitG>
+				<eventG>
+					<group>
+						<event id="e1_1">
+							<order>say; startList:s1,s2,s3,s4,s5,s6,s7</order>
+							<order>level;taskTimingB:false</order>
+						</event>
+						<event id="e2_11">
+							<condition>say:listOver</condition>
+							<order>level;taskTimingB:true</order>
+						</event>
+					</group>
+					<group>
+						<event id="e1_4">
+							<condition delay="0.01">task:state; changeLife:complete</condition>
+							<order>clearAllBullet</order>
+							<order>say; startList:s10</order>
+						</event>
+						<event id="e2_0">
+							<condition delay="0.01">say:listOver</condition>
+							<order>createUnit:we2; r2</order>
+							<order>body:战争狂人; doSkill:madmanHead</order>
+							<order>playMusic; music_face:suspense</order>
+							<order>say; startList:s11</order>
+						</event>
+						<event id="e2_11">
+							<condition>say:listOver</condition>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="离别-霸王坡">
+			<level name="leavePartner">
+				
+				<info enemyLv="99" noMoreB="1" noTreasureB="1" />
+				<drop coin="0" exp="0" arms="0" equip="0" skillStone="0" taxStamp="0" />
+				
+				<sceneLabel>BaWang</sceneLabel>
+				
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="we2" camp="we">
+						<unit cnName="雇佣兵" num="1" lifeMul="0.02" aiOrder="followBodyAttack:p1" />
+						<unit cnName="丛林特种兵" num="2" lifeMul="0.01" aiOrder="followBodyAttack:p1" />
+					</unitOrder>
+					
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="毒蛛" num="8" dpsMul="1" skillArr="likeMissle_Shapers,revengeArrow,rigidBody_enemy,State_SpellImmunity" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>number</numberType>
+						<unit cnName="携弹僵尸" num="6" dpsMul="1" skillArr="moreBullet,likeMissle_Shapers,revengeArrow,rigidBody_enemy,State_SpellImmunity" />
+						<unit cnName="毒蛛" num="3" dpsMul="1" skillArr="likeMissle_Shapers,revengeArrow,rigidBody_enemy,State_SpellImmunity" />
+					</unitOrder>
+					<unitOrder id="enemy5">
+						<numberType>number</numberType>
+						<unit cnName="霸王毒蛛" unitType="boss" lifeMul="2" dpsMul="1" skillArr="ironBody_enemy,immune,MeatySkillBack,likeMissle_Shapers,screwBall,invincibleEmp" />
+					</unitOrder>
+				</unitG>
+				
+				
+				<rectG>
+					<rect id="r_birth">1578,962,226,82</rect>
+					<rect id="r_over">2928,1200,84,157</rect>
+					<rect id="r1">16,616,254,112</rect>
+					<rect id="r2">2726,694,254,112</rect>
+					<rect id="r3">1548,418,254,112</rect>
+					
+					<rect label="addCharger">2540,731,84,84</rect>
+					<rect label="addCharger">690,723,84,84</rect>
+				</rectG>
+				
+				
+				<eventG>
+					
+					<group>
+						<event id="e1_1">
+							<order>createUnit:we2; r_birth</order>
+							<order>P2EverParasitic:雇佣兵</order>
+							<order>say; startList:s1,s2,s3,s4,s5</order>
+						</event>
+						<event id="e2_11">
+							<condition delay="0.1">say:listOver</condition>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="10" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r1</order> 
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy5; r1</order> 
+							<order>createUnit:enemy5; r2</order>
+							<order>createUnit:enemy5; r3</order>
+						</event>
+						<event id="e2_11">
+							<condition delay="1">enemyNumber:less_1</condition>
+							<order>say; startList:s10</order>
+							<order>playMusic; music_face:leave</order>
+						</event>	
+						<event id="e2_11">
+							<condition>say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			
+			<level name="BaWang_otherRole">
+				
+				<info enemyLv="99" noTreasureB="1" />
+				<drop coin="0" exp="0" arms="0" equip="0" skillStone="0" taxStamp="0" />
+				
+				<sceneLabel>BaWang</sceneLabel>
+				
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" />
+					
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="毒蛛" num="8" dpsMul="1" skillArr="likeMissle_Shapers,revengeArrow,rigidBody_enemy,State_SpellImmunity" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>number</numberType>
+						<unit cnName="携弹僵尸" num="6" dpsMul="1" skillArr="moreBullet,likeMissle_Shapers,revengeArrow,rigidBody_enemy,State_SpellImmunity" />
+						<unit cnName="毒蛛" num="3" dpsMul="1" skillArr="likeMissle_Shapers,revengeArrow,rigidBody_enemy,State_SpellImmunity" />
+					</unitOrder>
+					<unitOrder id="enemy5">
+						<numberType>number</numberType>
+						<unit cnName="霸王毒蛛" unitType="boss" lifeMul="2" dpsMul="1" skillArr="ironBody_enemy,immune,MeatySkillBack,likeMissle_Shapers,screwBall,invincibleEmp" />
+					</unitOrder>
+				</unitG>
+				
+				
+				<rectG>
+					<rect id="r_birth">1578,962,226,82</rect>
+					<rect id="r_over">2928,1200,84,157</rect>
+					<rect id="r1">16,616,254,112</rect>
+					<rect id="r2">2726,694,254,112</rect>
+					<rect id="r3">1548,418,254,112</rect>
+					
+					<rect label="addCharger">2540,731,84,84</rect>
+					<rect label="addCharger">690,723,84,84</rect>
+				</rectG>
+				
+				
+				<eventG>
+					
+					<group>
+						<event id="e1_1">
+							<order>say; startList:s1</order>
+						</event>
+						<event id="e2_11">
+							<condition delay="0.1">say:listOver</condition>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="3" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="10" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy2; r1</order> 
+							<order>createUnit:enemy2; r2</order>
+							<order>createUnit:enemy2; r3</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy5; r1</order> 
+							<order>createUnit:enemy5; r2</order>
+							<order>createUnit:enemy5; r3</order>
+						</event>
+						<event id="e2_11">
+							<condition delay="1">enemyNumber:less_1</condition>
+							<order>say; startList:s2</order>
+							<order>playMusic; music_face:funny</order>
+						</event>	
+						<event id="e2_11">
+							<condition>say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="弥天大谎-缥缈森林">
+			<level name="madmanTrick">
+				
+				<info enemyLv="99" diff="1" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" mustSingleB="1" />
+				<drop coin="0.01" exp="0.005" life="0.2" arms="0" equip="0" skillStone="0" taxStamp="0" />
+				<sceneLabel>PiaoMiao</sceneLabel>
+				
+				
+				<unitG><allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="we2" camp="we">
+						<unit cnName="战争狂人" />
+					</unitOrder>
+					<unitOrder id="we3" camp="we">
+						<unit cnName="狂人机器X" dpsMul="1000" lifeMul="0.15" skillCloseB="1" skillArr="groupCrazy_enemy,WarriorShoot,WarriorSprint,State_SpellImmunity,fightReduct2,rigidBody_enemy" />
+					</unitOrder>
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="携弹僵尸" num="9" />
+						<unit cnName="战斗僵尸" num="12" />
+					</unitOrder>
+					<unitOrder id="enemy2">
+						<numberType>pro</numberType>
+						<unit cnName="银锤" num="12" />
+						<unit cnName="携弹僵尸" num="6" />
+						<unit cnName="僵尸狙击兵" lifeMul="2" num="1.5" />
+						
+					</unitOrder>
+					<unitOrder id="enemy3">
+						<numberType>number</numberType>
+						<unit cnName="吸血蝙蝠" num="6" />
+						<unit cnName="银锤" num="9" />
+						<unit cnName="橄榄僵尸" num="5" />
+						<unit cnName="僵尸狙击兵" lifeMul="2" num="1.5" />
+					</unitOrder>
+					<unitOrder id="enemy4">
+						<numberType>number</numberType>
+						<unit cnName="毒魔" unitType="boss" lifeMul="1" dpsMul="2" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e1_1">
+							<order>createUnit:we2; r_birth</order>
+							<order>heroEverParasitic:战争狂人</order>
+							<order>say; startList:s1</order>
+						</event>
+						<event id="e2_11">
+							<condition delay="0.1">say:listOver</condition>
+							<order>body:战争狂人;noExist</order>
+							<order>createUnit:we3; r_birth</order>
+							<order>heroEverParasitic:狂人机器X</order>
+						</event>
+						<event id="e2_1"><condition doNumber="2" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order><order>createUnit:enemy1; r3</order></event> 
+						<event id="e2_1"><condition doNumber="2" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy2; r1</order><order>createUnit:enemy2; r2</order><order>createUnit:enemy2; r3</order></event> 
+						<event id="e2_1"><condition doNumber="2" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy3; r1</order><order>createUnit:enemy3; r2</order><order>createUnit:enemy3; r3</order></event> 
+						<event id="e2_1"><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy4; r1</order><order>createUnit:enemy4; r2</order><order>createUnit:enemy4; r3</order></event> 
+						<event id="e2_11">
+							<condition>enemyNumber:less_1</condition>
+							<order>say; startList:s2</order>
+						</event>
+						<event id="e2_11">
+							<condition>say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+					<group>
+						<event id="e_fail"><condition delay="1">bodyEvent:die; 狂人机器X</condition><order>alert:yes; 任务失败！</order></event>
+						<event id="e_fail"><condition delay="0.03" /><order>level; fail</order></event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="战斧高地">
+			<level name="captureUpland">
+				
+				<info diy="captureUpland" enemyLv="99" diff="1" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" mustSingleB="1" />
+				<drop coin="0.01" exp="0.005" life="0.2" arms="0" equip="0" skillStone="0" taxStamp="0" />
+				<sceneLabel>MainUpland</sceneLabel>
+				
+				
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" noSuperB="1" />
+					<unitOrder id="we2" camp="we">
+						<unit cnName="狂人机器X" dpsMul="4000" lifeMul="1.2" skillCloseB="1" skillArr="groupCrazy_enemy,WarriorShoot,WarriorSprint,State_SpellImmunity,fightReduct2,rigidBody_enemy,summSentry,recoveryHalo_enemy" />
+					</unitOrder>
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="文杰表哥" num="1" lifeMul="130" dieGotoState="stru" armsRange="shotgunSkunk,rocketCate,lightCone" skillArr="changeToSecDiggers,feedback_hero_5,pioneer_hero_5,moreMissile_hero_10" />
+						<unit cnName="藏师将军" num="1" lifeMul="130" dieGotoState="stru" armsRange="sniperCicada,rocketCate,lightCone" skillArr="changeToThunderbolt" />
+						<unit cnName="小樱" num="1" lifeMul="130" dieGotoState="stru" armsRange="pistolFox,rocketCate,lightCone" skillArr="changeToSaberTiger,silence_hero_5,invisibility_hero_3,through_hero_5" />
+						<unit cnName="心零" num="1" lifeMul="130" dieGotoState="stru" armsRange="meltFlamer,rocketCate,lightCone" skillArr="changeToGaia,tauntLing_5,strongLing_5,revengeLing_10,resonanceLing_10" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e1_1">
+							<order>createUnit:we2; r_birth</order>
+							<order>heroEverParasitic:狂人机器X</order>
+							<order>say; startList:s1</order>
+						</event>
+						<event id="e2_11">
+							<condition delay="0.1">say:listOver</condition>
+						</event>
+						<event id="e2_1"><condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_3</condition><order>createUnit:enemy1; r1</order><order>createUnit:enemy1; r2</order><order>createUnit:enemy1; r3</order></event> 
+						<event id="e2_11">
+							<condition delay="1">liveEnemyNumber:less_1</condition>
+							<order>say; startList:s2</order>
+						</event>
+						<event id="e2_11">
+							<condition>say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+					<group>
+						<event id="e_fail"><condition delay="1">bodyEvent:die; 狂人机器X</condition><order>alert:yes; 任务失败！</order></event>
+						<event id="e_fail"><condition delay="0.03" /><order>level; fail</order></event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="白沙村">
+			<level name="beatWarriorSec">
+				
+				<info enemyLv="99" noMoreB="1" noTreasureB="1" />
+				<drop coin="0" exp="0" arms="0" equip="0" skillStone="0" taxStamp="0" />
+				
+				<sceneLabel>BaiSha</sceneLabel>
+				
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="enemy1">
+						<numberType>number</numberType>
+						<unit cnName="狂人机器X" unitType="boss" lifeMul="1.5" dpsMul="1.5" />
+					</unitOrder>
+				</unitG>
+				
+				<rectG>
+					<rect id="r_birth">1494,886,212,92 </rect>
+					<rect id="r_over">3386,1084,48,100</rect>
+					<rect id="r1">30,754,280,120</rect>
+					<rect id="r2">1327,318,280,120</rect>
+					<rect id="r3">3060,713,280,120</rect>
+					
+					<rect label="addCharger">2156,638  ,118,64</rect>
+					<rect label="addCharger">813,820,118,64</rect>
+				</rectG>
+				
+				
+				<eventG>
+					<group>
+						<event id="e1">
+							<condition />
+							<order>recoverAllHeroHead</order>
+						</event>
+						<event id="e2_1">
+							<condition doNumber="1" orderChooseType="randomOne">enemyNumber:less_1</condition>
+							<order>createUnit:enemy1; r1</order>
+							<order>createUnit:enemy1; r2</order>
+							<order>createUnit:enemy1; r3</order>
+						</event>
+						<event id="e2_11">
+							<condition delay="0.5">enemyNumber:less_1</condition>
+							<order>level;taskTimingB:false</order>
+							<order>say; startList:s1</order>
+						</event>	
+						<event id="e2_11">
+							<condition>say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+		<gather name="战神-战斧高地">
+			<level name="beatMadboss">
+				
+				<info enemyLv="99" allMoreB="1" noTreasureB="1" />
+				<drop coin="0" exp="0" arms="0" equip="0" skillStone="0" taxStamp="0" />
+				
+				<sceneLabel>MainUpland</sceneLabel>
+				
+				<unitG>
+					<allDefault aiOrder="patrolGlobal" />
+					
+					<unitOrder id="enemy1">
+						<unit cnName="战神" unitType="boss" lifeMul="1.75" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						
+						<event id="e1">
+							<condition />
+							<order>allPartnerStruNoStrikerWen</order>
+							<order>recoverAllHeroHead</order>
+							<order>level;taskTimingB:false</order>
+						</event>
+						<event id="s1">
+							<condition delay="0.5" />
+							<order>say; startList:s1</order>
+						</event>
+						<event id="s1_1">
+							<condition>say:listOver</condition>
+							<order>allPartnerRebirth</order>
+						</event>
+						<event id="s2">
+							<condition delay="0.5" />
+							<order>say; startList:s2</order>
+						</event>
+						<event id="s2">
+							<condition>say:listOver</condition>
+							<order>level; shake:beatMadboss</order>
+						</event>
+						
+						<event id="e1_1">
+							<condition delay="1" />
+							<order>level;taskTimingB:true</order>
+							<order>createUnit:enemy1; r1</order>
+						</event>
+						<event id="e8">
+							<condition delay="1">enemyNumber:less_1</condition>
+							<order>allPartnerRebirth</order>
+							<order>allHeroNoUnderHit</order>
+							<order>level;taskTimingB:false</order>
+							<order>playMusic; music_face:descent</order>
+							<order>say; startList:s3</order>
+						</event>
+						<event id="s1_1">
+							<condition delay="0.1">say:listOver</condition>
+							<order>playMusic; music_face:funny</order>
+							<order>say; startList:s4</order>
+						</event>
+						<event id="e9">
+							<condition>say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+	</father>
+</data>

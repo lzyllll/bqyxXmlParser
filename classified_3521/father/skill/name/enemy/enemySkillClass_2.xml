@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="暴君技能">
+		<skill index="0" name="骷髅-地狱之刃">
+			<name>knife_skeleton</name>
+			<cnName>地狱之刃</cnName><iconUrl36>SkillIcon/knife_skeleton_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>3</cd>
+			
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>0.45</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<value>1</value>
+			<mul>1</mul>
+			<duration>1</duration>
+			
+			<meActionLabel>plugAttack</meActionLabel>
+			<stateEffectImg partType="hand_left" con="filter">skillEffect/smallFire</stateEffectImg>
+			<description>暴君用力将它的地狱剑插入地面，在地壳之下形成无数的剑刃并转向刺出地面，被刺中的敌人将受到巨大的伤害。</description>
+		</skill>
+		<skill index="0" name="骷髅-地狱之刃-没有生命值限制">
+			<name>knife_skeleton2</name>
+			<cnName>地狱之刃</cnName><iconUrl36>SkillIcon/knife_skeleton_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>6</cd>
+			
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<value>1</value>
+			<mul>1</mul>
+			<duration>1</duration>
+			
+			<meActionLabel>plugAttack</meActionLabel>
+			<stateEffectImg partType="hand_left" con="filter">skillEffect/smallFire</stateEffectImg>
+			<description>暴君用力将它的地狱剑插入地面，在地壳之下形成无数的剑刃并转向刺出地面，被刺中的敌人将受到巨大的伤害。</description>
+		</skill>
+		
+		
+		<skill index="0" name="atry_skeleton" cnName="最后一搏">
+			<name>atry_skeleton</name>
+			<cnName>最后一搏</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>0.6</mul>
+			
+			<obj>"type":"atry","per":0.3</obj>
+			
+			<description>单位生命低于[obj.per]的时，生命值越低攻击力越高。</description>
+		</skill>
+		<skill index="9" name="骷髅-致盲">
+			<name>blindness_skeleton</name>
+			<cnName>致盲</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>lostPro</effectType>
+			<mul>0.6</mul>
+			<duration>3</duration>
+			<stateEffectImg partType="2eye">skillEffect/disabled_enemy</stateEffectImg>
+			<description>击中目标后使其失去准心，使其攻击成功率降低[mul]，持续3秒。</description>
+		</skill>
+		
+		
+		
+		<skill index="0" name="teleport_skeleton" cnName="暴君-瞬移">
+			<name>teleport_skeleton</name>
+			<cnName>瞬移</cnName><iconUrl36>SkillIcon/flash_pet_36</iconUrl36>
+			
+			<cd>3.5</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>underHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>teleport</effectType>
+			<valueString>underAttackProductor</valueString>
+			 
+			<meActionLabel>skillAttack1</meActionLabel>
+			<meEffectImg soundUrl="sound/teleport_enemy" con="add">lightEffect/basinShow</meEffectImg>
+			<description>瞬间移动到单位攻击目标的位置，不适用与远战单位。</description>
+		</skill>
+		<skill index="0" cnName="暴君-狂暴">
+			<name>crazy_skeleton</name><showInLifeBarB>1</showInLifeBarB>
+			<cnName>狂暴</cnName><iconUrl36>SkillIcon/crazy_hero_36</iconUrl36>
+			
+			<cd>8</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>beforeAttack</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>crazy</effectType>
+			<mul>1.6</mul>
+			<duration>8</duration>
+			
+			<meEffectImg soundUrl="sound/crazy_hero" />
+			<stateEffectImg partType="2eye" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg>
+			<stateEffectImg2 partType="2eye" con="add">skillEffect/crazy_hero_eye</stateEffectImg2>
+			<description>释放技能后，单位增加100%的射击速度，同时不消耗弹药，持续5秒。注意，当你弹药为0时同样无法射击。</description>
+		</skill>
+		
+		<skill index="0" name="hammer_enemy" cnName="眩晕之锤">
+			<name>hammer_enemy</name>
+			<cnName>眩晕之锤</cnName><iconUrl36>SkillIcon/hammer_enemy_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB>
+			<ignoreSilenceB>1</ignoreSilenceB>
+			
+			<cd>10</cd>
+			
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>700</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			
+			<obj>"name":"hammer_enemy","site":"me","flipB":true</obj>
+			
+			<meEffectImg soundUrl="sound/hummer_shoot" />
+			<description>单位向前投掷一把眩晕之锤，击中目标后使目标眩晕4秒。</description>
+		</skill>
+		<skill index="0" cnName="眩晕">
+			<name>hammer_enemy_link</name>
+			<cnName>眩晕之锤</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>dizziness</effectType>
+			<duration>5</duration>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+			<description>使目标陷入眩晕状态，持续[duration]秒。</description>
+		</skill>
+		<skill index="0" cnName="眩晕">
+			<name>knife_skeleton_hammer</name>
+			<cnName>地狱之刃-眩晕</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>dizziness</effectType>
+			<duration>1</duration>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+			<description>使目标陷入眩晕状态，持续[duration]秒。</description>
+		</skill>
+	</father>	
+	</data>

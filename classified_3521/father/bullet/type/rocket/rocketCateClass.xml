@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="rocket" cnName="火炮-特殊">
+		<bullet index="40" cnName="卡特巨炮" name="rocketCate" color="black" dropLevelArr="94" dropBodyArr="FireDragon" evoMaxLv="10" evoMustFirstLv="4" composeLv="94" chipNum="150">
+			<name>rocketCate</name>
+			<cnName>卡特巨炮</cnName>
+			
+			
+			<capacity>7</capacity>
+			<attackGap>1.4</attackGap>
+			<reloadGap>3</reloadGap>
+			<shakeAngle>0</shakeAngle>
+			<bulletWidth>30</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>10</bulletNum>
+			<shootAngle>60</shootAngle>
+			<gunNum>1</gunNum>
+			
+			
+			<armsArmMul>0.65</armsArmMul>
+			<upValue>5</upValue>
+			<shootShakeAngle>40</shootShakeAngle>
+			<shootRecoil>12</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.9</bulletLife>
+			<hitType>rect</hitType>
+			
+			<dpsMul>1.8</dpsMul>
+			<uiDpsMul>2</uiDpsMul>
+			
+				
+			<bulletSpeed>35</bulletSpeed>
+			
+			<boomD bodyB="1" floorB="1" selfB="1" radius="130" />
+			<twoShootPro>0.3</twoShootPro>
+			<penetrationNum>2</penetrationNum>
+			<penetrationGap>0</penetrationGap>
+			<bounceD floor="0" body="3" />	
+			<followD value="0.5" />
+			<critD mul="2" pro="0.2" />
+			
+			
+			<skillArr>Hit_blindness_ArmsSkill,Hit_disabled_ArmsSkill</skillArr>
+			<godSkillArr>Hit_imploding_godArmsSkill,cate_ArmsSkill</godSkillArr>
+			
+			<iconUrl />
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">bullet/gaiaBullet</bulletImgUrl>
+			<hitImgUrl name="rocketCate_hit" />
+			<hitFloorImgUrl name="redFire_hitFloor" />
+			<smokeImgUrl con="filter" raNum="30">bullet/fireballSmoke</smokeImgUrl>
+			<fireImgType />
+			<shootSoundUrl>specialGun/rocketHummer_sound</shootSoundUrl>
+			
+			<bodyImgRange>specialGun/rocketCate</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>消灭首领异火龙(94级)、纪念币商店</description>
+		</bullet>
+		
+	</father>
+	</data>

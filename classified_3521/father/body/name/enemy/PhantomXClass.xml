@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<body index="0" name="幻影X" shell="metal">
+			
+			<name>PhantomX</name>
+			<cnName>幻影X</cnName><headIconUrl>IconGather/PhantomX</headIconUrl>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/PhantomX.swf</swfUrl>
+			
+			<lifeRatio>1</lifeRatio>
+			<showLevel>92</showLevel>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move
+				,normalAttack,shootAttack,lightAttack,rotateAttack,comboAttack
+				,hurt1,die1
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			<lifeBarExtraHeight>-70</lifeBarExtraHeight>
+			
+			<hitRect>-25,-50,50,50</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>9</maxVx>
+			<motionState>fly</motionState>
+			<flyUseSpiderB>1</flyUseSpiderB>
+			<flyType>space</flyType>
+			<motionD F_AIR="8" />
+			
+			<nextAttackTime>0</nextAttackTime>
+			<extraAIClassLabel>PhantomX_AIExtra</extraAIClassLabel>
+			<bossSkillArr>blindnessPhantom,comboPhantom,rotatePhantom,noSpeedReduce,treater_knights</bossSkillArr>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack</imgLabel><cn>盾击</cn>
+					<hurtRatio>2</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/body_hit">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel><cn>激光</cn>
+					<hurtRatio>2</hurtRatio>
+					<bulletLabel>shoot_PhantomX</bulletLabel>
+					<grapRect>-450,-88,351,77</grapRect>
+				</hurt>
+				
+				<hurt info="不加入ai选择-致盲之光">
+					<imgLabel>lightAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0</hurtRatio>
+					<hurtMul>0.2</hurtMul>
+					<attackType>holy</attackType>
+					<shakeValue>4</shakeValue>
+					<skillArr>blindnessPhantomHit</skillArr>
+					<hitImgUrl con="add" soundUrl="sound/body_hit">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				<hurt info="不加入ai选择-猛击">
+					<imgLabel>comboAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>1</hurtRatio>
+					<attackType>holy</attackType>
+					<shakeValue>4</shakeValue>
+					<skillArr>comboPhantomHit</skillArr>
+					<hitImgUrl con="add" soundUrl="sound/body_hit">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+				
+				<hurt info="不加入ai选择-旋击">
+					<imgLabel>rotateAttack</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0</hurtRatio>
+					<hurtMul>0.1</hurtMul>
+					<attackType>holy</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" soundUrl="sound/body_hit">bulletHitEffect/energy</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>	
+		
+		
+		<bullet>			
+			<name>shoot_PhantomX</name>
+			<cnName>幻影X型-激光炮</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			<bulletWidth>700</bulletWidth>
+			
+			<shootPoint>-60,-60</shootPoint>
+			<bulletAngle>179.9</bulletAngle>
+			<attackGap>0.7</attackGap>
+			<attackDelay>0.33</attackDelay>
+			<bulletNum>1</bulletNum>				
+				
+			<bulletSpeed>0</bulletSpeed>
+			
+			
+			<flipX>1</flipX>
+			<lineD size="0" />
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/energy</hitImgUrl>
+			
+		</bullet>
+		
+		
+	</father>
+	</data>

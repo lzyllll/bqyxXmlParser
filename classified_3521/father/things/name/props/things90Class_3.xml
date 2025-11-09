@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="props" cnName="特惠礼包-下架后就可以删掉了，因为是每日限购，所以不删掉也可以，作为日后只用">
+		<things>
+			<name>zodiacDis</name>
+			<cnName>生肖特惠包</cnName>
+			<iconUrl>ThingsIcon/postPlatinumChest</iconUrl>
+			<description>
+				{b}{font color='#FFFF00'}获得方式：{/font}{/b}
+				[n]商店黄金购买
+				[n][n]使用后将获得以下所有物品：</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<loveD num="2" />
+			<useSave>shopAuto</useSave>
+			<showGiftB>1</showGiftB>
+			<gift>things;yearMonkey;10</gift>
+			<gift>things;yearPig;5</gift>
+			<gift>things;yearRabbit;5</gift>
+			<gift>things;yearMouse;5</gift>
+			<gift>things;yearSnake;3</gift>
+			<gift>things;yearHourse;3</gift>
+			<gift>things;yearDog;3</gift>
+			<gift>things;yearCattle;3</gift>
+		</things>
+		
+		<things cnName="狂怒盖亚特惠包">
+			<name>gaiaGift</name>
+			<cnName>狂怒盖亚特惠包</cnName>
+			<iconUrl>ThingsIcon/gaiaGift</iconUrl>
+			<description>
+				特惠包内含载具“泰坦”、以及将它进化至“狂怒盖亚”所需的所有材料。使用后获得以下所有物品：
+			</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<showGiftB>1</showGiftB>
+			<loveD num="4" />
+			<gift>equip;Titans;1</gift>
+			<gift>things;TitansCash;1200</gift>
+			<gift>things;NianCarCash;205</gift>
+		</things>
+		
+		<things cnName="碎片特惠包">
+			<name>chipDis</name>
+			<cnName>碎片特惠包</cnName>
+			<iconUrl>ThingsIcon/chipDis</iconUrl>
+			<description>
+				使用后获得以下所有物品：
+			</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<showGiftB>1</showGiftB>
+			<loveD num="4" />
+			<gift>things;allBlackCash;10</gift>
+			<gift>things;allBlackEquipCash;10</gift>
+			<gift>things;anniversaryCash;20</gift>
+		</things>
+		
+		<things cnName="升级特惠包">
+			<name>upgradeDis</name>
+			<cnName>升级特惠包</cnName>
+			<iconUrl>ThingsIcon/upgradeDis</iconUrl>
+			<description>
+				使用后获得以下所有物品：
+			</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<showGiftB>1</showGiftB>
+			<loveD num="4" />
+			<gift>things;doubleHighCard;5</gift>
+			<gift>things;doubleArmsCard;5</gift>
+			<gift>things;doubleEquipCard;5</gift>
+			<gift>things;doubleMaterialsCard;5</gift>
+		</things>
+		
+		<things cnName="零件特惠包">
+			<name>partsDis</name>
+			<cnName>零件特惠包</cnName>
+			<iconUrl>ThingsIcon/partsDis</iconUrl>
+			<description>
+				使用后获得以下所有物品：
+			</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<showGiftB>1</showGiftB>
+			<loveD num="4" />
+			<gift>parts;huntParts_1;5</gift>
+			<gift>parts;acidicParts_1;5</gift>
+		</things>
+	</father>
+	
+	
+	</data>

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="rocket" cnName="火炮-特殊">
+		<bullet color="black" composeLv="99" chipB="1" chipNum="100" dropLevelArr="999">
+			<name>roamRocket</name>
+			<cnName>漫游</cnName>
+			<dpsMul>2.5</dpsMul>
+			<uiDpsMul>2</uiDpsMul>
+			
+			<aiShootRange>600</aiShootRange>
+			<capacity>6,8</capacity>
+			<attackGap>0.7</attackGap>
+			<reloadGap>2</reloadGap>
+			<shakeAngle>5</shakeAngle>
+			<bulletWidth>20,25</bulletWidth>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			<shootAngle>3,10</shootAngle>				
+			
+			<armsArmMul>0.5</armsArmMul>
+			<upValue>5</upValue>
+			<shootShakeAngle>30</shootShakeAngle>
+			<shootRecoil>12</shootRecoil>
+			<screenShakeValue>35</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>10</bulletLife>
+			<hitType>rect</hitType>
+			
+			<godSkillArr>superHitSlow</godSkillArr>
+				
+			<penetrationGap>1000</penetrationGap>
+			<bulletSpeed>10</bulletSpeed>
+			<speedD random="0.1" max="10" min="2" a="-5" />
+			<noHitTime>0.5</noHitTime>
+			
+			<followD value="0.3" delay="0.5" noLM="1" />	
+			<boomD bodyB="1" floorB="1" selfB="1" radius="80" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl name="roamRocketBullet" />
+			<hitImgUrl name="midSpace" />
+			
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+			
+			<fireImgUrl name="gunFireRocket" />
+			<shootSoundUrl>specialGun/roamRocketSound</shootSoundUrl>
+			
+			<bodyImgRange>specialGun/roamRocket</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description />
+		</bullet>
+	</father>
+</data>

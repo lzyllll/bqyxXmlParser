@@ -1,0 +1,85 @@
+{
+  "father": {
+    "name": "demBall",
+    "cnName": "万能球",
+    "priceType": "demBall",
+    "labelArr": "all",
+    "type": {
+      "goods": [
+        {
+          "defineLabel": "lightCone",
+          "price": 5,
+          "buyLimitNum": 300
+        },
+        {
+          "defineLabel": "zodiacCash",
+          "price": 6,
+          "buyLimitNum": 300
+        },
+        {
+          "defineLabel": "yearCattle",
+          "price": 4,
+          "buyLimitNum": 150
+        },
+        {
+          "defineLabel": "yearMonkey",
+          "price": 4,
+          "buyLimitNum": 150
+        },
+        {
+          "defineLabel": "rocketCate",
+          "price": 4,
+          "buyLimitNum": 300
+        },
+        {
+          "defineLabel": "skeletonMedal_1",
+          "price": 2
+        },
+        {
+          "dataType": "parts",
+          "defineLabel": "huntParts_1",
+          "price": 1,
+          "buyLimitNum": 300
+        },
+        {
+          "dataType": "parts",
+          "defineLabel": "acidicParts_1",
+          "price": 1,
+          "buyLimitNum": 300
+        },
+        {
+          "defineLabel": "fireGem",
+          "price": 2
+        },
+        {
+          "defineLabel": "electricGem",
+          "price": 2
+        },
+        {
+          "defineLabel": "frozenGem",
+          "price": 2
+        },
+        {
+          "defineLabel": "poisonGem",
+          "price": 2
+        },
+        {
+          "defineLabel": "alertGem",
+          "price": 2
+        },
+        {
+          "defineLabel": "wisdomGem",
+          "price": 2
+        },
+        {
+          "defineLabel": "agileGem",
+          "price": 2
+        },
+        {
+          "defineLabel": "defenceGem",
+          "price": 2
+        }
+      ]
+    }
+  }
+}

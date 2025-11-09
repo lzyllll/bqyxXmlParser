@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill name="核爆">
+			<name>skyArchSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>核爆</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>focoMulMore</otherConditionArr>
+			<conditionRange>0.3</conditionRange>
+			<target>target,range,enemy</target>
+			
+			<addType>instant</addType>
+			<effectType>skyArchSkill</effectType>
+			<extraValueType>hurtValue</extraValueType>
+			<value>0</value>
+			<mul>3</mul>
+			<range>99999</range>
+			<meEffectImg soundUrl="boomSound/bigBoom" />
+			<targetEffectImg partType="body">boomEffect/boom1</targetEffectImg>
+			<description>天弓蓄力30%以上发射出的箭矢将造成核爆，对地图内的所有敌人造成巨大伤害。</description>
+		</skill>
+		
+	</father>
+</data>

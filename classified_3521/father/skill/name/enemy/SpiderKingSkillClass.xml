@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="怪物技能">
+		<skill index="0" name="summonedSpider_spiderKing" cnName="召唤毒蛛">
+			<name>summonedSpider_spiderKing</name><iconUrl36>SkillIcon/summonedSpider_spiderKing_36</iconUrl36>
+			<cnName>召唤毒蛛</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<cd>18</cd>
+			<delay>0.25</delay>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>700</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>summonedUnits</effectType>
+			
+			<obj>"cnName":"毒蛛","num":5,"lifeMul":3,"maxNum":10,"cx":48,"cy":-15,"skillArr":["feeding_spider","pounce_spider"]</obj>
+			
+			<meActionLabel>birthAttack</meActionLabel>
+			<description>释放技能后，霸王毒蛛从尾部生产出5只毒蛛。</description>
+		</skill>
+		
+		<skill index="0" name="feeding_spider" cnName="反哺">
+			<name>feeding_spider</name>
+			<cnName>反哺</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>dieEvent</condition>
+			<otherConditionArr>noLevelName</otherConditionArr>
+			<conditionString>children2020</conditionString>
+			<target targetMustLiveB="1">meSummonedFather</target>
+			
+			<addType>instant</addType>
+			<effectType>life</effectType>
+			<extraValueType>meMaxLife</extraValueType>
+			<value>1</value>
+			<mul>0</mul>
+			
+			<targetEffectImg con="add" soundUrl="sound/groupLight_hero" soundVolume="0.3">skillEffect/groupLight_hero</targetEffectImg>
+			<description>单位倒下后，回复召唤主一定的生命值，回复量为单位的最大生命值。</description>
+		</skill>
+		
+		<skill index="0" name="pounce_spider" cnName="反扑">
+			<name>pounce_spider</name>
+			<cnName>反扑</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>dieEvent</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<extraValueType>meDpsFactor</extraValueType>
+			
+			<obj>"name":"pounce_spider","site":"me","flipB":true</obj>
+			
+			<description>单位倒下后，释放出一颗紫色球体，击中目标后对目标造成伤害。</description>
+		</skill>
+		<skill index="0" name="electricBoom_enemy" cnName="电球爆发">
+			<name>electricBoom_enemy</name>
+			<cnName>电球爆发</cnName>
+			<showInLifeBarB>1</showInLifeBarB><iconUrl36>SkillIcon/paralysis_pet_36</iconUrl36>
+			
+			<cd>15</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>600</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>0.6,0.3,0.05,0.05</effectProArr>
+			<extraValueType>meDpsFactor</extraValueType>
+			
+			<obj>"name":"electricBoom_enemy","site":"me","flipB":true</obj>
+			
+			<meEffectImg soundUrl="sound/imploding_enemy" />
+			<description>从单位背后爆发出多颗闪电球，击中目标后使目标麻痹。有几率释放多次。</description>
+		</skill>
+		
+		
+		
+		
+		<skill index="0" name="永久隐身">
+			<name>invisibility_SpiderKing</name>
+			<cnName>永久隐身</cnName>
+			
+			<conditionType>passive</conditionType>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>invisibility_hero</effectType>
+			<value>1</value>
+			<mul>1</mul>
+			<duration>99999</duration>
+			
+			<description>单位处于永久隐身状态。隐身单位攻击敌人或者受到敌人攻击都不会打破隐身状态。</description>
+		</skill>
+		<skill index="0" name="酸雨">
+			<name>acidRain_SpiderKing</name>
+			<cnName>酸雨</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<cd>7</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>1400</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>10.1,0.03,0.01</effectProArr>
+			<extraValueType>nowArmsDps</extraValueType>
+			
+			<obj>"name":"acidRain_SpiderKing","site":"mouse","flipB":true,"launcherB":true</obj>
+			
+			<meActionLabel>skillAttack1</meActionLabel>
+			<meEffectImg soundUrl="sound/moreMissile_hero" />
+			<description>向鼠标点位置释放酸雨。</description>
+		</skill>
+		<skill index="0" name="summonedSpider_spiderKing" cnName="召唤毒蛛">
+			<name>summonedSpider_spiderKing_extra</name>
+			<cnName>召唤毒蛛</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<cd>8</cd>
+			<delay>0.25</delay>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>1400</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>summonedUnits</effectType>
+			
+			<obj>"cnName":"毒蛛","num":5,"lifeMul":0.03,"dpsMul":1,"maxNum":10,"cx":48,"cy":-15,"skillArr":["feeding_spider","pounce_spider","State_SpellImmunity","hiding_enemy"]</obj>
+			
+			<meActionLabel>birthAttack</meActionLabel>
+			<description>释放技能后，霸王毒蛛从尾部生产出5只毒蛛。</description>
+		</skill>
+	</father>	
+</data>

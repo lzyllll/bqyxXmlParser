@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="headSkill" cnName="头盔、腰带--装备技能-不能使用condition=add的参数、不能使用addSkillEffectImg参数，否则会出错">
+		
+		<skill index="0" cnName="上帝的护佑">
+			<name>godHand_equip</name>
+			<cnName>上帝的护佑</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>beforeDie</condition>
+			<minTriggerT>55</minTriggerT>
+			<target>me</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>godHand</effectType>
+			<value>1</value>
+			<duration>3</duration>
+			
+			<meEffectImg soundUrl="sound/invisibility_hero" con="add" />
+			<description>在受到必亡的伤害时，你将接受上帝的护佑，进入隐身无敌模式，持续[duration]秒，同时剩余1点生命值。技能触发间隔不小于50秒。</description>
+		</skill>
+		<skill index="0" cnName="免疫">
+			<name>immune_equip</name>
+			<cnName>免疫</cnName><showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underEnemySkill</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>immune</effectType>
+			<effectProArr>0.4</effectProArr>
+			<mul>1</mul>
+			<targetEffectImg con="add" partType="body">skillEffect/immune_equip</targetEffectImg>
+			<description>当敌人对你释放技能时，有[effectProArr.0]几率使该技能对你无效。</description>
+		</skill>
+		<skill index="0" cnName="磁力场">
+			<name>magneticField_equip</name>
+			<cnName>磁力场</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<intervalT>25</intervalT>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>magneticB</effectType>
+			<value>1</value>
+			<mul>0.2</mul>
+			<duration>7</duration>
+			<range>200</range>
+			 
+			<passiveSkillArr>magneticField_enemy_link</passiveSkillArr>
+			 
+			<meEffectImg soundUrl="sound/magneticField" />
+			<stateEffectImg partType="mouth" con="add">skillEffect/magneticField</stateEffectImg>
+			<description>每过[intervalT]秒向外释放磁力场，使700码的范围内的所有敌方子弹偏离轨道，持续[duration]秒。</description>
+		</skill>
+		<skill index="0" cnName="顽强光环">
+			<name>strongHalo_equip</name>
+			<cnName>顽强光环</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>underHurtMul</effectType>
+			<mul>0.85</mul>
+			<duration>2</duration>
+			<range>800</range>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/rune_red_shield</stateEffectImg>
+			<description>为周围[range]码以内的我方单位增加[1-mul]的防御力。</description>
+		</skill>
+		<skill index="0" cnName="嗜爪之怒">
+			<name>murderous_equip</name>
+			<cnName>嗜爪之怒</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<minTriggerT>10</minTriggerT>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>murderous_addHurtMul</effectType>
+			<effectProArr>0.10</effectProArr>
+			<mul>2.5</mul>
+			<duration>6</duration>
+			
+			<meEffectImg soundUrl="sound/murderous_hero" />
+			<stateEffectImg partType="2hand" con="add" raNum="15" followPartRaB="1">skillEffect/murderous_enemy</stateEffectImg>
+			<description>每次受到攻击都有[effectProArr.0]的几率进入嗜爪状态，增加[mul-1]的攻击力，持续[duration]秒。技能触发间隔不小于[minTriggerT]秒。</description>
+		</skill>
+		<skill index="0" cnName="瘴气">
+			<name>poisonRange_equip</name>
+			<cnName>瘴气</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>useSkill</condition>
+			<target>me,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>poison</effectType>
+			<extraValueType>nowArmsDpsOrNormal</extraValueType>
+			<value>0</value>
+			<mul>0.5</mul>
+			<doGap>1</doGap>
+			<duration>5</duration>
+			<range>450</range>
+			
+			<meEffectImg soundUrl="sound/poisonousFog_hero" />
+			<stateEffectImg partType="mouth" con="add">skillEffect/poisonousFog_hero</stateEffectImg>
+			<description>每次释放任何主动技能，都会使周围[range]码内的敌人中毒，每秒受到伤害，伤害值为施法者当前武器实际战斗力的[mul]，持续[duration]秒。</description>
+		</skill>
+		<skill index="0" cnName="耐久光环">
+			<name>attackSpeedHalo_equip</name>
+			<cnName>耐久光环</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,we</target>
+			
+			<addType>state</addType>
+			<effectType>attackGapMul</effectType>
+			<mul>1.13</mul>
+			<duration>2</duration>
+			<range>700</range>
+			
+			<description>为周围[range]码以内的我方射击单位增加[mul-1]的攻击速度。</description>
+		</skill>
+	</father>	
+	</data>

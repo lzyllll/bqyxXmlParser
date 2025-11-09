@@ -1,0 +1,175 @@
+{
+  "daily": {
+    "bar": [
+      {
+        "mustNum": 0,
+        "gift": [
+          "base;coin;400000",
+          "things;skillStone;295",
+          "things;godStone;70",
+          "things;converStone;70",
+          "things;armsBox;9",
+          "things;equipBox;9",
+          "things;yearDog;2",
+          "things;taxStamp;166",
+          "things;anniversaryCash;67",
+          "things;partsChest69;67"
+        ],
+        "vipGift": [
+          "things;skillStone;30",
+          "things;godStone;3",
+          "things;converStone;3",
+          "things;armsBox;6",
+          "things;equipBox;6",
+          "things;yearDog;1",
+          "things;bloodStone;5",
+          "things;weaponChest;5",
+          "base;anniCoin;4"
+        ]
+      },
+      {
+        "mustNum": 2,
+        "gift": [
+          "base;coin;8000",
+          "things;skillStone;20",
+          "things;godStone;8",
+          "things;taxStamp;10",
+          "things;armsBox;9",
+          "things;equipBox;9",
+          "things;armsRadium;20",
+          "things;allBlackEquipCash;20"
+        ],
+        "vipGift": [
+          "things;arenaStamp;100",
+          "things;coinHeap_1;3",
+          "things;skillStone;40",
+          "things;godStone;5",
+          "things;armsBox;15",
+          "things;equipBox;15",
+          "things;armsTitanium;20",
+          "things;allBlackCash;20"
+        ]
+      },
+      {
+        "mustNum": 5,
+        "gift": [
+          "base;coin;90000",
+          "things;skillStone;60",
+          "things;godStone;24",
+          "things;taxStamp;30",
+          "things;armsHighBox;6",
+          "things;equipHighBox;6",
+          "things;armsRadium;30",
+          "things;allBlackCash;30"
+        ],
+        "vipGift": [
+          "things;arenaStamp;200",
+          "things;rebirthStone;1",
+          "things;teamRebirthCard;1",
+          "things;skillFleshCard;1",
+          "things;skillStone;70",
+          "things;godStone;15",
+          "things;armsHighBox;8",
+          "things;equipHighBox;8",
+          "things;armsTitanium;30",
+          "things;allBlackEquipCash;30"
+        ]
+      },
+      {
+        "mustNum": 10,
+        "gift": [
+          "base;coin;180000",
+          "things;skillStone;100",
+          "things;godStone;48",
+          "things;taxStamp;60",
+          "things;armsHighBox;8",
+          "things;equipHighBox;8",
+          "things;armsRadium;40",
+          "things;allBlackEquipCash;40"
+        ],
+        "vipGift": [
+          "things;arenaStamp;350",
+          "things;rebirthStone;2",
+          "things;teamRebirthCard;2",
+          "things;skillFleshCard;2",
+          "things;skillStone;120",
+          "things;godStone;30",
+          "things;armsHighBox;15",
+          "things;equipHighBox;15",
+          "things;armsTitanium;40",
+          "things;allBlackCash;40"
+        ]
+      },
+      {
+        "mustNum": 17,
+        "gift": [
+          "base;coin;300000",
+          "base;anniCoin;100",
+          "things;skillStone;240",
+          "things;godStone;100",
+          "things;taxStamp;120",
+          "things;armsHighBox;18",
+          "things;equipHighBox;18",
+          "things;armsRadium;50",
+          "things;allBlackCash;50"
+        ],
+        "vipGift": [
+          "base;tenCoin;100",
+          "things;rebirthStone;4",
+          "things;teamRebirthCard;4",
+          "things;skillFleshCard;4",
+          "things;skillStone;300",
+          "things;godStone;70",
+          "things;armsHighBox;20",
+          "things;equipHighBox;20",
+          "things;armsTitanium;50",
+          "things;allBlackEquipCash;50"
+        ]
+      },
+      {
+        "mustNum": 24,
+        "gift": [
+          "base;coin;720000",
+          "base;partsCoin;25",
+          "things;skillStone;400",
+          "things;godStone;180",
+          "things;taxStamp;200",
+          "things;armsHighBox;30",
+          "things;equipHighBox;30"
+        ],
+        "vipGift": [
+          "base;partsCoin;25",
+          "things;arenaStamp;800",
+          "things;rebirthStone;5",
+          "things;teamRebirthCard;5",
+          "things;skillFleshCard;5",
+          "things;skillStone;450",
+          "things;godStone;150",
+          "things;armsHighBox;35",
+          "things;equipHighBox;35"
+        ]
+      },
+      {
+        "mustNum": 30,
+        "cnName": "满勤",
+        "gift": [
+          "things;normalChest;20",
+          "things;armsRadium;200",
+          "things;allBlackEquipCash;150",
+          "things;demonChest;2",
+          "things;sweepingCard;1"
+        ],
+        "vipGift": [
+          "things;armsTitanium;200",
+          "things;allBlackCash;200",
+          "things;anniversaryCash;300",
+          "things;profiStamp;1",
+          "things;demonChest;2",
+          "things;partsChest87;1",
+          "things;bossCardStamp;5",
+          "things;sweepingCard;1"
+        ]
+      }
+    ]
+  }
+}

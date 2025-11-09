@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		<skill>
+			<name>defenceInvi</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>遇强则刚</cnName><ignoreNoSkillB>1</ignoreNoSkillB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underAllHit</condition>
+			<otherConditionArr>hurtPuInviB</otherConditionArr>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurtAndMul</effectType>
+			<mul>0.4</mul>
+			
+			<description>受到无敌攻击者的伤害降低[1-mul]。</description>
+		</skill>
+		
+		
+		<skill>
+			<name>sumFoggyX</name>
+			<cnName>古惑大军</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<cd>2</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>1000</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>summonedUnits</effectType>
+			
+			<obj>"cnName":"古惑僵尸","num":2,"lifeMul":0.05,"dpsMul":3,"maxNum":20,"mulByFatherB":1,"pointEf":1,"skillArr":["State_AddMove100","State_SpellImmunity","feeding_spider"]</obj>
+			
+			<pointEffectImg name="oreBombShowFlower" />
+			<description>召唤[obj.num]只伤害超高的[obj.cnName]参加战斗，最多同时存在[obj.maxNum]只[obj.cnName]。[obj.cnName]死后会补充主人的生命值。</description>
+		</skill>
+	</father>	
+	
+	
+</data>

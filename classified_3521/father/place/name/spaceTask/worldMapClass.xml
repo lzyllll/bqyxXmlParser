@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="spaceTask" cnName="太空剧情">
+		<place lv="999">
+			<name>YaSomewhere</name>
+			<cnName>氩星某处</cnName>
+			<geogType>ya</geogType>
+			<levelArr><level><name>YaSomewhere_1</name></level></levelArr>
+		</place>
+		
+		<place lv="999">
+			<name>StoneSea1</name>
+			<cnName>氩星石海</cnName>
+			<geogType>ya</geogType>
+			<levelArr><level><name>bwallStoneSea</name></level></levelArr>
+		</place>
+		
+		<place lv="999">
+			<name>GanymedeCavern</name>
+			<cnName>木卫三洞内</cnName>
+			<geogType>solar</geogType>
+			<levelArr><level><name>GanymedeCavernTask</name></level></levelArr>
+		</place>
+	</father>
+	
+	
+	</data>

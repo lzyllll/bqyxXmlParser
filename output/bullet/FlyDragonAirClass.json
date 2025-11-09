@@ -1,0 +1,98 @@
+{
+  "father": [
+    {
+      "name": "aircraft",
+      "cnName": "战车定义",
+      "equip": [
+        {
+          "name": "FlyDragonAir",
+          "cnName": "异祖龙",
+          "rideLabel": "RedMotoRide",
+          "defineType": "normal",
+          "evolutionLabel": "FrozenDragonAir",
+          "evolutionLv": 2,
+          "lifeMul": 2.5,
+          "attackMul": 5.5,
+          "attackActionLabel": "sprintAttack",
+          "duration": 80,
+          "cd": 120,
+          "addObjJson": {
+            "dpsAll": 0.22,
+            "lifeAll": 0.2
+          },
+          "skillArr": "murderous_vehicle,WatchEagleAirDefence,vehicleFit_Gaia"
+        },
+        {
+          "name": "FrozenDragonAir",
+          "cnName": "冰霜祖龙",
+          "rideLabel": "RedMotoRide",
+          "defineType": "normal",
+          "evolutionLv": 4,
+          "mustCash": 50,
+          "lifeMul": 3,
+          "attackMul": 6.5,
+          "attackActionLabel": "sprintAttack",
+          "duration": 80,
+          "cd": 120,
+          "addObjJson": {
+            "dpsAll": 0.24,
+            "lifeAll": 0.2
+          },
+          "skillArr": "murderous_vehicle,WatchEagleAirDefence,vehicleFit_Gaia"
+        }
+      ]
+    },
+    {
+      "name": "vehicle",
+      "cnName": "战车body",
+      "body": [
+        {
+          "index": 0,
+          "name": "FlyDragonAir",
+          "shell": "normal",
+          "cnName": "异祖龙飞行器",
+          "raceType": "robot",
+          "swfUrl": "swf/vehicle/FlyDragonAir110.swf",
+          "imgType": "normal",
+          "flipCtrlBy": "mouse",
+          "showLevel": 999,
+          "imgArr": "stand,move,hurt1,die1\n\t\t\t\t,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1\n\t\t\t\t,sprintAttack",
+          "hitRect": "-27,-23,50,54",
+          "maxJumpNum": 1,
+          "maxVx": 15,
+          "motionState": "fly",
+          "flyUseSpiderB": 1,
+          "flyType": "space",
+          "motionD": {
+            "F_AIR": 3
+          },
+          "nextAttackTime": 0,
+          "extraAIClassLabel": "FlyDragonAir_AIExtra",
+          "bulletLauncherClass": "VehicleBulletLauncher",
+          "keyClass": "VehicleBodyKey",
+          "bossSkillArrCn": null,
+          "hurtArr": {
+            "hurt": {
+              "imgLabel": "sprintAttack",
+              "mustGrapRectB": 1,
+              "hurtRatio": 0.8,
+              "meBack": 35,
+              "grapRect": "-350,-17,270,97",
+              "attackType": "through",
+              "shakeValue": 4,
+              "hitImgUrl": "bladeHitEffect/blood"
+            }
+          }
+        },
+        {
+          "name": "FrozenDragonAir",
+          "fixed": "FlyDragonAir",
+          "shell": "normal",
+          "cnName": "冰霜祖龙",
+          "swfUrl": "swf/vehicle/FrozenDragonAir.swf",
+          "bmpUrl": "BodyImg/FrozenDragonAir"
+        }
+      ]
+    }
+  ]
+}

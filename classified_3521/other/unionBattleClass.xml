@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	
+	<mapAll>
+		<map name="NanTang" 				cnName="南唐城" 	levelName="NanTang_2"	 dpsMax="0.20" diff="0.3"></map>
+			
+		<map name="DongShan" 			cnName="东山澳" 	levelName="DongShan_2" dpsMax="0.20" diff="0.15"></map>
+		
+		<map name="BeiDou" 				cnName="北斗城" 	levelName="BeiDou_2"			 dpsMax="0.20" diff="0.3"></map>
+		
+		<map name="XiFeng" 				cnName="西峰"	levelName="XiFeng_3"				 dpsMax="0.21" diff="0.4"></map>
+		
+		<map name="LvSen" 				cnName="绿森堡" 	levelName="LvSen_2"			 dpsMax="0.21" diff="0.2"></map>
+		
+		<map name="DuKu" 					cnName="毒窟"	levelName="DuKu_poision" 	 dpsMax="0.22" diff="0.5"></map>
+		
+		<map name="PingChuan" 			cnName="平川" 	levelName="PingChuan_1"	 dpsMax="0.22" diff="0.5"></map>
+		
+		<map name="BaiSha" 				cnName="白沙村" 	levelName="BaiSha_1" 		 dpsMax="0.23" diff="0.5"></map>
+		
+		<map name="ZhongXin" 			cnName="研究中心" 	levelName="ZhongXin_1"		 dpsMax="0.23" diff="0.5"></map>
+		
+		
+		<map name="DiXia" 					cnName="地下城" 	levelName="DiXia_1" 		 dpsMax="0.24"  diff="0.5"></map>
+		
+		<map name="ShaMo" 				cnName="沙漠中心" 	levelName="ShaMo_1" 		 dpsMax="0.24" diff="0.5"></map>
+		
+		<map name="XianQu" 				cnName="先驱号" 	levelName="XianQu_1"			 dpsMax="0.25" diff="0.5"></map>
+		
+		<map name="FangZhouTop" 		cnName="方舟顶层" 	levelName="FangZhouTop_1"  dpsMax="0.25" diff="0.5"></map>
+		
+		<map name="PrisonDeep" 			cnName="监狱深处"  levelName="PrisonDeep_1"  dpsMax="0.26"  diff="0.5"></map>
+		
+		<map name="JungleDeep" 			cnName="丛林深处" 	levelName="JungleDeep_1"  dpsMax="0.26"  diff="0.5"></map>
+		
+		
+		<map name="CavesDeep" 			cnName="洞窟深处" 	levelName="CavesDeep_1"  dpsMax="0.26" diff="0.5"></map>
+		
+		<map name="FuMu" 					cnName="腐木岗" 	levelName="FuMu_1"		 dpsMax="0.27"></map>
+		
+		<map name="GuiWang" 				cnName="鬼王墓" 	levelName="GuiWang_1"	 dpsMax="0.27" diff="0.5"></map>
+		
+		<map name="BuDong" 				cnName="不冻湖" 	levelName="BuDong_1"	 dpsMax="0.28"></map>
+		
+		<map name="HanGuang2" 				cnName="寒光西城" 	levelName="HanGuang2_1" dpsMax="0.28" diff="1"></map>
+		
+		<map name="HanGuang5" 				cnName="寒光末路" 	levelName="HanGuang5_1" dpsMax="0.29" diff="1"></map>
+		
+		<map name="Hospital1" 				cnName="实验室入口" 	levelName="Hospital1_1"	 dpsMax="0.29" diff="3"></map>
+		
+		<map name="Hospital2" 				cnName="实验室底层" 	levelName="Hospital2_1"	 dpsMax="0.30" diff="1"></map>
+		
+		<map name="Hospital3" 				cnName="实验室中层" 	levelName="Hospital3_1"	 dpsMax="0.30" diff="3"></map>
+	</mapAll>
+</data>

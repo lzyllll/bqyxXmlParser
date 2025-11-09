@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="target" cnName="瞬发">
+		<body cnName="全屏光波" name="silverScreen" partType="body" con="add" soundUrl="SilverShip/screen_s">SilverShip/screenEffect</body>
+		<body cnName="召唤矿锯" name="oreBombShowFlower" con="add" soundUrl="hitSound/magicShoot" soundRan="3">generalEffect/blackHoleHide</body>
+		<body cnName="黑洞产生-无声" name="blackHoleShow" con="add">generalEffect/blackHoleHide</body>
+		<body cnName="真空" name="vacuumJie" partType="body" con="add">generalEffect/blackHoleHide</body>
+		<body cnName="真空-音效" name="vacuumJieSound" soundUrl="sound/invisibility_hero" />
+		<body cnName="远视镜-音效" name="longGlassesSound" soundUrl="uiSound/screenScale" />
+		
+		<body cnName="隼武发射" name="falconArmsFire" con="add" raNum="4">bulletHitEffect/bigBlue</body>
+		<body cnName="黄金隼隐身" name="falconHide" con="add" soundUrl="FastGuards/skill1" noFollowB="1">FalconBoss/hideEffect</body>
+		
+		
+		<body cnName="鬼王凯撒-右1" name="ghost_swordAttack_r1" soundUrl="IronDog/combo" soundRan="4" xGap="-1010">hundredGhosts/ghost_swordAttack_e</body>
+		<body cnName="鬼王凯撒-右1" name="ghost_swordAttack_r2" soundUrl="IronDog/combo" soundRan="4" xGap="-1010">hundredGhosts/ghost_swordAttack_el</body>
+		<body cnName="鬼王凯撒-左1" name="ghost_swordAttack_l1" soundUrl="IronDog/combo" soundRan="4">hundredGhosts/ghost_swordAttack_el</body>
+		<body cnName="鬼王凯撒-左2" name="ghost_swordAttack_l2" soundUrl="IronDog/combo" soundRan="4">hundredGhosts/ghost_swordAttack_e</body>
+		
+		
+		<body cnName="大圣大招-右1" name="great_stickAttack_r1" con="add">greatSage/great_stickAttack_r1</body>
+		<body cnName="大圣大招-右2" name="great_stickAttack_r2" con="add">greatSage/great_stickAttack_r2</body>
+		<body cnName="大圣大招-左1" name="great_stickAttack_l1" con="add">greatSage/great_stickAttack_l1</body>
+		<body cnName="大圣大招-左2" name="great_stickAttack_l2" con="add">greatSage/great_stickAttack_l2</body>
+		
+		<body cnName="死神-右" name="sickleAttack_er" con="add">Striker/sickleAttack_er</body>
+		<body cnName="死神-左" name="sickleAttack_el" con="add">Striker/sickleAttack_el</body>
+		
+		<body cnName="阎罗特效" name="yanluoAttack_e" con="add">yanluo/yanluoAttack_e</body>
+		<body cnName="阎罗特效2" name="yanluoAttack_e2">yanluo/yanluoAttack_e2</body>
+		<body cnName="阎罗特效3" name="yanluoAttack_e3" con="add">yanluo/yanluoAttack_e3</body>
+		<body cnName="阎罗-斩史" name="hookDeviceYanluo" partType="body" con="add">yanluo/effect5</body>
+		
+		<body cnName="惊雀-右" name="officer_bladeAttack_r" con="add">Girl/officer_bladeAttack_r</body>
+		<body cnName="惊雀-左" name="officer_bladeAttack_l" con="add">Girl/officer_bladeAttack_l</body>
+		
+		
+		<body cnName="狐狸心零旋转" name="foxLingEffect" con="add">Girl/foxEffect</body>
+		<body cnName="地雷放置特效" name="putMineEffect" con="add" soundUrl="uiSound/star">dropEffect/putEffect</body>
+		
+		<body cnName="矿工僵尸-地震" name="minersShakeBody" soundUrl="boomSound/microBoom" soundRan="4">boomEffect/bigSoil</body>
+		<body cnName="僵尸死后特效" name="zombieDie">smokeEffect/die</body>
+		<body cnName="分身消失特效" name="shadowDie" soundUrl="hitSound/magicShoot" soundRan="3">smokeEffect/hide</body>
+		
+		<body cnName="添加弹药特效" name="addCapacity" partType="hand_right" con="add">generalEffect/addCapacity</body>
+		<body cnName="悬停沙漏" name="timeCapsule" partType="body" con="add" soundUrl="hitSound/magicHit2" imgDieType="time">skillEffect/timeCapsule</body>
+	</father>
+</data>

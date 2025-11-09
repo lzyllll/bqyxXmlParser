@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="zombie" cnName="极速守卫">
+		<bullet cnName="极速守卫-射击">
+			<name>FastGuards_shoot</name>
+			<cnName>射击</cnName>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>179.9</bulletAngle>
+			<bulletAngleRange>20</bulletAngleRange>
+			<bulletLife>3</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.9</attackGap>
+			<attackDelay>0.6</attackDelay>
+			<shootPoint>-53,-130</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<bulletSpeed>20</bulletSpeed>
+			<followD value="0.5" maxTime="0.5" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30" con="filter">FastGuards/bullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/fireHit1">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		
+		<bullet cnName="致命打击">
+			<name>FastGuards_screen</name>
+			<cnName>致命打击</cnName>
+			
+			<hurtMul>0.9</hurtMul>
+			<attackType>holy</attackType>
+			
+			<bulletLife>0.001</bulletLife>
+			<bulletWidth>300</bulletWidth>
+			<hitType>longLine</hitType>
+			
+			<bulletAngle>-90</bulletAngle>
+			<bulletNum>1</bulletNum>				
+				
+			<bulletSpeed>0</bulletSpeed>
+				
+			<penetrationGap>1000</penetrationGap>
+			<penetrationNum>1000</penetrationNum>
+			
+			<flipX>1</flipX>
+			<imgClearDelay>0.36</imgClearDelay>
+			<bulletImgUrl con="add" soundUrl="FastGuards/screenHit" shake="3,0.3,35,90">FastGuards/screenBullet</bulletImgUrl>
+			<hitImgUrl soundUrl="sound/magicHit2">bulletHitEffect/energy</hitImgUrl>
+		</bullet>
+		
+		<bullet cnName="超级弹幕-母弹">
+			<name>FastGuards_missile</name>
+			<cnName>超级弹幕-母弹</cnName>
+			
+			<noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			<hurtRatio>1</hurtRatio>
+			<bulletSkillArr>FastGuards_missileDieEvent</bulletSkillArr>
+			
+			<bulletAngle>-150</bulletAngle>
+			<bulletLife>0.8</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>1.1</attackGap>
+			<attackDelay>0.7</attackDelay>
+			<bulletNum>1</bulletNum>					
+			<shootPoint>-2,-97</shootPoint>
+				
+			<penetrationGap>1000</penetrationGap>
+			<boomD selfB="1" bodyB="1" radius="40" />
+				
+			<bulletSpeed>8</bulletSpeed>
+			<speedD a="-2" min="2" />
+			<gravity>0.1</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">FastGuards/missile</bulletImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom1">boomEffect/boom2</hitImgUrl>
+		</bullet>
+		
+		
+		<bullet cnName="超级弹幕-子弹">
+			<name>FastGuards_missileChild</name>
+			<cnName>超级弹幕-子弹</cnName>
+			<noMagneticB>1</noMagneticB>
+			
+			<hurtRatio>1</hurtRatio>
+			<bulletSkillArr>FastGuards_missileChildDieEvent</bulletSkillArr>
+			
+			<bulletAngle>0</bulletAngle>
+			<bulletLife>0.5</bulletLife>
+			<lifeRandom>0.2</lifeRandom>
+			<bulletWidth>35</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<bulletNum>7</bulletNum>
+			<shootAngle>40</shootAngle>
+				
+			<penetrationGap>1000</penetrationGap>
+			<boomD selfB="1" bodyB="1" radius="40" />
+				
+			<bulletSpeed>14</bulletSpeed>
+			<speedD a="-2" min="2" random="0.2" />
+			<gravity>0.2</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">FastGuards/missile2</bulletImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom2" soundVolume="0.3">boomEffect/boom1</hitImgUrl>
+		</bullet>
+		
+		<bullet cnName="超级弹幕-孙弹">
+			<name>FastGuards_missileSun</name>
+			<cnName>超级弹幕-孙弹</cnName>
+			<noMagneticB>1</noMagneticB>
+			
+			<hurtRatio>1</hurtRatio>
+			
+			<bulletAngle>0</bulletAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<bulletNum>5</bulletNum>
+			<shootAngle>40</shootAngle>
+				
+			<penetrationGap>1000</penetrationGap>
+				
+			<bulletSpeed>20</bulletSpeed>
+			<speedD random="0.2" />
+			<gravity>0.1</gravity>
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">FastGuards/missile3</bulletImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+			<hitImgUrl soundUrl="boomSound/microBoom2" soundVolume="0.1">boomEffect/boom1</hitImgUrl>
+		</bullet>
+	</father>
+	
+	</data>

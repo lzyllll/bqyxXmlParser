@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="materials" cnName="特别物品">
+		<things cnName="凯旋徽章">
+			<name>battleMedel</name>
+			<cnName>凯旋徽章</cnName>
+			<iconUrl>ThingsIcon/battleMedel</iconUrl>
+			<description>每周争霸分数到达960分时，可获得一个。该物品无任何效果，仅为纪念之用。</description> 
+			<loveD num="1" />
+		</things>
+		<things cnName="爆石">
+			<name>implodingSkill</name>
+			<cnName>爆石</cnName>
+			<iconUrl>ThingsIcon/extremeGem</iconUrl>
+			<description>可使武器增加爆石技能。</description> 
+			<loveD num="1" />
+		</things>
+	</father>
+	
+	
+	</data>

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill" cnName="神级武器技能">
+		<skill>
+			<name>yearDragonSkill</name><noRandomListB>1</noRandomListB>
+			<cnName>电爆</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<noReStateB>1</noReStateB>
+			<effectType>yearDragonSkill</effectType>
+			<mul>6</mul>
+			<value>7</value>
+			<valueString>yearDragon</valueString>
+			<duration>23</duration>
+			<stateEffectImg partType="shootPoint" con="add" raNum="1">bulletHitEffect/blueLaser</stateEffectImg>
+			<description>攻击敌人时会让枪支攻速瞬间提高6倍，不消耗子弹，持续7秒，之后12秒内不再触发此效果。</description>
+		</skill>
+		<skill>
+			<name>yearDragonPurgold</name><noRandomListB>1</noRandomListB>
+			<cnName>散射电爆</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<noReStateB>1</noReStateB>
+			<effectType>yearDragonSkill</effectType>
+			<mul>6</mul>
+			<value>7</value>
+			<secMul>1.7</secMul>
+			<valueString>yearDragon</valueString>
+			<duration>23</duration>
+			<stateEffectImg partType="shootPoint" con="add" raNum="1">bulletHitEffect/blueLaser</stateEffectImg>
+			<description>攻击敌人时会让枪支攻速瞬间提高6倍，闪电数量提高至[secMul]，不消耗子弹，持续7秒，之后12秒内不再触发此效果。</description>
+		</skill>
+	</father>
+</data>

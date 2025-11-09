@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="other" cnName="其他">
+		<body index="0" name="雪人" shell="normal">
+		
+			<name>Snowman</name><headIconUrl>IconGather/Snowman</headIconUrl>
+			<cnName>雪人</cnName>
+			<raceType>snow</raceType>
+			<swfUrl>swf/enemy/Snowman.swf</swfUrl>
+			
+			<lifeRatio>0.7</lifeRatio>
+			<dieJumpMul>0</dieJumpMul>
+			
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,birthAttack,die1
+			</imgArr>
+			<dieImg soundUrl="sound/snowHit" />
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			
+			<maxJumpNum>0</maxJumpNum>
+			<maxVx>0</maxVx>
+			
+			<defaultAiOrder>no</defaultAiOrder>
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr>State_SpellImmunity</skillArr>
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>stand</imgLabel>
+					<hurtRatio>0</hurtRatio>
+					<shakeValue>4</shakeValue>
+					<attackType>direct</attackType>
+					<grapRect>-50,-111,100,105</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>	
+		<body index="0" name="赤鼬导弹发射器" shell="metal">
+		
+			<name>RifleHornetShooter</name><headIconUrl>IconGather/RifleHornetShooter</headIconUrl>
+			<cnName>赤鼬导弹发射器</cnName>
+			<raceType>robot</raceType>
+			<swfUrl>swf/enemy/RifleHornetShooter.swf</swfUrl>
+			
+			<lifeRatio>0.7</lifeRatio>
+			<dieJumpMul>0</dieJumpMul>
+			
+			<imgArr>
+				stand,birthAttack,shootAttack,die1
+			</imgArr>
+			
+			<hitRect>-14,-30,28,30</hitRect>
+			
+			<maxJumpNum>0</maxJumpNum>
+			<maxVx>10</maxVx>
+			<motionState>fly</motionState>
+			<flipCtrlBy>target</flipCtrlBy>
+			
+			<nextAttackTime>0</nextAttackTime>
+			
+			<skillArr>State_SpellImmunity</skillArr>
+			<avtiveSkillCdOverT>0</avtiveSkillCdOverT>
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>shootAttack</imgLabel>
+					<hurtRatio>1</hurtRatio>
+					<bulletLabel>RifleHornetShooter</bulletLabel>
+					<attackType>direct</attackType>
+					<grapRect>-9999,-9999,19999,19999</grapRect>
+				</hurt>
+			</hurtArr>
+		</body>	
+	</father>
+		
+</data>

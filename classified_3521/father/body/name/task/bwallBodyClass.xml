@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="task">
+		<body name="黑客" shell="normal">
+			<name>Hacker</name>
+			<cnName>黑客</cnName>
+			<raceType>human</raceType>
+			<headIconUrl>IconGather/Hacker</headIconUrl>
+		</body>
+		<bullet>
+			<name>bwallTaskFire</name>
+			<cnName>地火</cnName><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			<hurtRatio>0</hurtRatio>
+			<hurtMul>0.05</hurtMul>
+			<attackType>holy</attackType>
+			<shakeAngle>5</shakeAngle>
+			<bulletLife>7</bulletLife>
+			<bulletWidth>20</bulletWidth>
+			<hitType>rect</hitType>
+			<bulletAngle>-90</bulletAngle>
+			<bulletSpeed>0</bulletSpeed>
+				
+			<hitGap>0.1</hitGap>
+			<penetrationNum>999</penetrationNum>
+			<penetrationGap>1000</penetrationGap>
+			<bulletSkillArr>yWaveMove20</bulletSkillArr>
+			<bulletImgUrl name="floorFireBullet" />
+			<hitImgUrl name="extremeLaserFire_hit" />
+		</bullet>
+		<bullet>
+			<name>bwallDiePoint</name>
+			<cnName>地面标记</cnName><noMagneticB>1</noMagneticB><noBeClearB>1</noBeClearB>
+			<hurtRatio>0</hurtRatio>
+			<hurtMul>0</hurtMul>
+			<bulletLife>999999</bulletLife>
+			<bulletWidth>1</bulletWidth>
+			<hitType>rect</hitType>
+			<bulletAngle>0</bulletAngle>
+			<bulletSpeed>0</bulletSpeed>
+				
+			<noHitB>1</noHitB>
+			<penetrationNum>999</penetrationNum>
+			<penetrationGap>1000</penetrationGap>
+			<bulletImgUrl name="Sentry1_bullet" />
+		</bullet>
+		
+		
+		
+		<skill>
+			<name>bwallKingUnder</name>
+			<cnName>左右受击</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>bwallKingUnder</effectType>
+			<value>6</value>
+			<description>用枪打一下僵尸王的背面，再打一下它的正面，如此反复3次，就可将其击毙。</description>
+		</skill>
+		<skill>
+			<name>bwallFightUnder</name>
+			<cnName>武器受击</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>bwallFightUnder</effectType>
+			<value>12</value>
+			<description>轮着换枪，每把枪打狂战尸1下，循环6次后，就可将其击毙。</description>
+		</skill>
+		<skill>
+			<name>bwallScale</name>
+			<cnName>缩放</cnName><everNoClearB>1</everNoClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>bwallScale</effectType>
+			<duration>999999</duration>
+			<description>缩放</description>
+			<pointEffectImg partType="mouth" con="add">skillEffect/screaming_hero_target</pointEffectImg>
+		</skill>
+				<skill cnName="惊吓">
+					<name>bwallScaleShock</name>
+					<cnName>惊吓</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB><noBeClearB>1</noBeClearB>
+					
+					<conditionType>passive</conditionType>
+					<condition>no</condition>
+					<target>target</target>
+					
+					<addType>instantAndState</addType>
+					<effectType>screaming_hero</effectType>
+					<value>1</value>
+					<mul>1.2</mul>
+					<duration>2</duration>
+					
+					<stateEffectImg partType="mouth" con="add">skillEffect/screaming_hero_target</stateEffectImg>
+				</skill>
+				<skill>
+					<name>bigDrug</name>
+					<cnName>放大药剂</cnName><everNoClearB>1</everNoClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+					<conditionType>passive</conditionType><noBeClearB>1</noBeClearB>
+					<condition>add</condition>
+					<target>me</target>
+					
+					<addType>state</addType>
+					<effectType>bwallScale</effectType>
+					<duration>999999</duration>
+					<mul>3</mul>
+					<description>放大3倍，惊吓周围的敌人。</description>
+					<pointEffectImg partType="mouth" con="add">skillEffect/screaming_hero_target</pointEffectImg>
+				</skill>
+				<skill>
+					<name>smallDrug</name>
+					<cnName>缩小药剂</cnName><everNoClearB>1</everNoClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+					<conditionType>passive</conditionType><noBeClearB>1</noBeClearB>
+					<condition>add</condition>
+					<target>me</target>
+					
+					<addType>state</addType>
+					<effectType>bwallScale</effectType>
+					<duration>999999</duration>
+					<mul>0.4</mul>
+					<description>缩小至40%，让敌人无法发现自己。</description>
+				</skill>
+				<skill>
+					<name>bigScale</name>
+					<cnName>放大</cnName><everNoClearB>1</everNoClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+					<conditionType>passive</conditionType><noBeClearB>1</noBeClearB>
+					<condition>add</condition>
+					<target>me</target>
+					
+					<addType>state</addType>
+					<effectType>bodyScale</effectType>
+					<duration>999999</duration>
+					<mul>3</mul>
+					<description>身体放大3倍。</description>
+					<pointEffectImg partType="mouth" con="add">skillEffect/screaming_hero_target</pointEffectImg>
+				</skill>
+				<skill>
+					<name>smallScale</name>
+					<cnName>缩小</cnName><everNoClearB>1</everNoClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+					<conditionType>passive</conditionType><noBeClearB>1</noBeClearB>
+					<condition>add</condition>
+					<target>me</target>
+					
+					<addType>state</addType>
+					<effectType>bodyScale</effectType>
+					<duration>999999</duration>
+					<mul>0.4</mul>
+					<description>身体缩小至40%。</description>
+				</skill>
+				<skill>
+					<name>smallScale50</name>
+					<cnName>缩小</cnName><everNoClearB>1</everNoClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+					<conditionType>passive</conditionType><noBeClearB>1</noBeClearB>
+					<condition>add</condition>
+					<target>me</target>
+					
+					<addType>state</addType>
+					<effectType>bodyScale</effectType>
+					<duration>999999</duration>
+					<mul>0.5</mul>
+					<description>身体缩小至[mul]。</description>
+				</skill>
+				
+				
+				<skill>
+					<name>speedDrug</name>
+					<cnName>加速药剂</cnName><everNoClearB>1</everNoClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+					<conditionType>passive</conditionType><noBeClearB>1</noBeClearB>
+					<condition>add</condition>
+					<target>me</target>
+					
+					<addType>state</addType>
+					<effectType>moveSpeed</effectType>
+					<duration>999999</duration>
+					<mul>99</mul>
+					<description>把自身的速度提升至无限大。</description>
+				</skill>
+				<skill>
+					<name>zeroGravityCard</name>
+					<cnName>失重</cnName><everNoClearB>1</everNoClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+					<conditionType>passive</conditionType><noBeClearB>1</noBeClearB>
+					<condition>add</condition>
+					<target>me</target>
+					
+					<addType>instant</addType>
+					<effectType>zeroGravityCard</effectType>
+					<mul>0.1</mul>
+					<description>使游戏里的重力降低至10%。</description>
+				</skill>
+				<skill>
+					<name>bigHurtCard</name><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+					<cnName>巨伤卡</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+					
+					<conditionType>passive</conditionType>
+					<condition>add</condition>
+					<target>me</target>
+					
+					<addType>state</addType>
+					<effectType>bwallAllHurt</effectType>
+					<mul>30</mul>
+					<duration>999999</duration>
+					<stateEffectImg name="moonCake_state" />
+					<description>使自身伤害提高30倍，受到伤害也提高30倍。</description>
+				</skill>
+		
+		<skill>
+			<name>boobyBwall</name>
+			<cnName>后鼬</cnName>
+			<conditionType>passive</conditionType>
+			<condition>killTarget</condition>
+			<otherConditionArr>hitHeadBack</otherConditionArr>
+			<target>me</target>
+			
+			<summonedUnitsB>1</summonedUnitsB>
+			<addType>instant</addType>
+			<effectType>summonedUnits</effectType>
+			<extraValueType>nowArmsTrueDps</extraValueType>
+			<duration>999999</duration>
+			
+			<obj>"cnName":"赤鼬导弹发射器","num":1,"lifeMul":1000,"position":"hurtPoint","maxNum":20,"dpsMul":0.1,"mulByFatherB":true,"noUnderHurtB":1,"noAiFindB":1,"noUnderHitB":1,"skillArr":["State_SpellImmunity","throughClose"]</obj>
+		</skill>
+		
+		<skill>
+			<name>bwallDragonWing</name>
+			<cnName>龙翅</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>instant</addType><summonedUnitsB>1</summonedUnitsB>
+			<effectType>bwallDragonWing</effectType>
+			<obj>"cnName":"异火龙"</obj>
+			<description>进入关卡将长出龙翅，让角色一直处于飞行状态。</description>
+		</skill>
+		<skill>
+			<name>WatchEagleWing</name>
+			<cnName>守望之翼</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>instant</addType><summonedUnitsB>1</summonedUnitsB>
+			<effectType>bwallDragonWing</effectType>
+			<obj>"cnName":"守望者"</obj>
+			<description>进入关卡将长出守望之翼，让角色一直处于飞行状态。</description>
+		</skill>
+		<skill>
+			<name>toFlyState</name>
+			<cnName>飞行状态</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>toFlyState</effectType>
+			<description>进入关卡后进入飞行状态。</description>
+		</skill>
+		
+		<skill cnName="变蝠">
+			<name>bwallToBat</name><showInLifeBarB>1</showInLifeBarB>
+			<cnName>变蝠</cnName>
+			<ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB><ignoreSilenceB>1</ignoreSilenceB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<summonedUnitsB>1</summonedUnitsB>
+			<effectType>bwallToBat</effectType>
+			<duration>9999</duration>
+			
+			<obj>"cnName":"吸血蝙蝠","num":1,"lifeMul":1,"dpsMul":1,"maxNum":1,"skillArr":["State_SpellImmunity","aiExcape","bwallToBatDie"]</obj>
+			
+			<targetEffectImg soundUrl="sound/changeToZombie_enemy" con="add">boomEffect/showLight</targetEffectImg>
+			<pointEffectImg partType="head">generalEffect/headTip</pointEffectImg>
+			<description>把敌人变成吸血蝙蝠，持续[duration]秒。</description>
+		</skill>
+					<skill>
+						<name>bwallToBatDie</name>
+						<cnName>死后杀死宿主</cnName><noBeClearB>1</noBeClearB><ignoreSilenceB>1</ignoreSilenceB>
+						<conditionType>passive</conditionType><condition>allDie</condition>
+						<target>me</target>
+						<addType>instant</addType><effectType>killTransFatherNoCondition</effectType>
+					</skill>
+					
+		<skill>
+			<name>bwallDiePoint</name>
+			<cnName>死后标记</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>allDie</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			
+			<obj>"name":"bwallDiePoint","site":"meMid","minYB":true</obj>
+		</skill>
+		
+		<skill>
+			<name>bwallAllHurt</name><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<cnName>修改伤害</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>bwallAllHurt</effectType>
+			<duration>999999</duration>
+		</skill>
+		
+	</father>
+</data>

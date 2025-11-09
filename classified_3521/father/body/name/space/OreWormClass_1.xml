@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="space">
+		<body>
+			<name>SmallOreWorm</name>
+			<cnName>采矿虫</cnName><lifeRatio>8</lifeRatio>
+			<raceType>ship</raceType>
+			<swfUrl>swf/ship/SmallOreWorm.swf</swfUrl>
+			
+			<dieImg name="midSpace" />
+			<dieJumpMul>0</dieJumpMul>
+			<imgArr>
+				stand,die1
+			</imgArr>
+			
+			<hitRect>-20,-20,40,40</hitRect>
+			<hurtRectArr>-25,-25,50,50</hurtRectArr>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<motionD vRan="0" F_AIR="4" />
+			<maxVx>7</maxVx>
+			<attackAIClass />
+			<skillArr>SmallOreWorm_sum,SmallOreWormAI,noSR</skillArr>
+			<hurtArr>
+				<hurt>
+					<imgLabel>stand</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>10</shakeValue>
+					<meBack>5</meBack>
+					<hitImgUrl name="oreWormHit" />
+				</hurt>
+			</hurtArr>
+		</body>
+		
+		<skill>
+			<name>SmallOreWorm_sum</name><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<cnName>采矿虫buff</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<conditionType>passive</conditionType>
+			<condition>bodyAdd</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>SmallOreWorm_sum</effectType><effectFather>oreSpace</effectFather><summonedUnitsB>1</summonedUnitsB>
+			<value>10</value>
+			<obj>"cnName":"采矿虫尾","num":15,"lifeMul":0.12,"dpsMul":1,"mulByFatherB":1,"lifeTime":-1</obj>
+		</skill>
+		<skill>
+			<name>SmallOreWormAI</name><ignoreSilenceB>1</ignoreSilenceB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<cnName>采矿虫buff</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>SmallOreWormAI</effectType><effectFather>oreSpace</effectFather>
+			<range>15</range>
+			<value>5</value>
+			<duration>9999999</duration>
+		</skill>
+		
+		
+		
+		
+		<body>
+			<name>SmallOreWormTail</name>
+			<cnName>采矿虫尾</cnName>
+			<raceType>ship</raceType>
+			<swfUrl>swf/ship/SmallOreWormTail.swf</swfUrl>
+			
+			<dieImg name="stoneBoom" />
+			<dieJumpMul>0</dieJumpMul>
+			<lockLeftB>1</lockLeftB>
+			<imgArr>
+				stand,die1
+			</imgArr>
+			
+			<hitRect>-20,-20,40,40</hitRect>
+			<hurtRectArr>-25,-25,50,50</hurtRectArr>
+			<motionState>fly</motionState>
+			<flyType>space</flyType>
+			<motionD vRan="0" F_AIR="4" />
+			<maxVx>7</maxVx>
+			<attackAIClass />
+			<skillArr>SmallOreWormAI,noSR</skillArr>
+			<hurtArr>
+				<hurt>
+					<imgLabel>stand</imgLabel><noAiChooseB>1</noAiChooseB>
+					<hurtRatio>0.3</hurtRatio>
+					<shakeValue>10</shakeValue>
+					<meBack>5</meBack>
+					<hitImgUrl name="oreWormHit" />
+				</hurt>
+			</hurtArr>
+		</body>
+	</father>
+</data>

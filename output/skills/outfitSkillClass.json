@@ -1,0 +1,196 @@
+{
+  "father": {
+    "name": "outfitSkill",
+    "cnName": "套件技能",
+    "skills": {
+      "outfit_follow": {
+        "index": 1,
+        "name": "outfit_follow",
+        "cnName": "战争抗体",
+        "conditionType": "passive",
+        "condition": "underHit",
+        "target": "me",
+        "addType": "instant",
+        "effectType": "changeHurt",
+        "mul": 0.2,
+        "obj": {
+          "type": "followBullet",
+          "mulB": true
+        },
+        "meEffectImg": null,
+        "description": "抵挡跟踪型武器[1-mul]的伤害，包括百分比伤害。"
+      },
+      "outfit_blood": {
+        "index": 0,
+        "cnName": "坏血",
+        "name": "outfit_blood",
+        "conditionType": "passive",
+        "condition": "interval",
+        "target": "me,range,enemy",
+        "addType": "state",
+        "effectType": "outfitBlood",
+        "mul": 0.2,
+        "secMul": 0.7,
+        "duration": 1,
+        "range": 700,
+        "minRange": 120,
+        "stateEffectImg": {
+          "value": "skillEffect/rune_black_n",
+          "partType": "head"
+        },
+        "description": "使[minRange]~[range]码以内敌人的生命回复效果降低[1-mul]、头部防御降低[1-secMul]。"
+      },
+      "outfit_shootMissile": {
+        "index": 3,
+        "name": "outfit_shootMissile",
+        "cnName": "猎手原形",
+        "conditionType": "passive",
+        "condition": "heroShoot",
+        "target": "me",
+        "addType": "instant",
+        "effectType": "bullet",
+        "effectProArr": 0.3,
+        "mul": 1,
+        "extraValueType": "nowArmsTrueDps",
+        "obj": {
+          "name": "hitMissile_outfit",
+          "site": "shootPoint",
+          "flipB": false
+        },
+        "meEffectImg": null,
+        "targetEffectImg": null,
+        "description": "每次射击都有[effectProArr.0]的概率派生跟踪子弹。子弹伤害为当前面板单伤*射速*0.2。"
+      },
+      "outfit_jump": {
+        "index": 3,
+        "name": "outfit_jump",
+        "cnName": "悦动先锋",
+        "conditionType": "passive",
+        "condition": "heroJump",
+        "otherConditionArr": "pistol",
+        "target": "me",
+        "addType": "state",
+        "effectType": "hurtMul",
+        "mul": 1.9,
+        "duration": 1.5,
+        "meEffectImg": null,
+        "stateEffectImg2": {
+          "value": "skillEffect/smallFire",
+          "partType": "shootPoint",
+          "con": "filter",
+          "raNum": 30
+        },
+        "description": "玩家握持手枪弹跳一次，会获得提高[mul-1]攻击力的状态，持续[duration]秒。"
+      },
+      "outfit_crit": {
+        "index": 3,
+        "name": "outfit_crit",
+        "cnName": "饥饿行踪",
+        "conditionType": "passive",
+        "condition": "hit",
+        "target": "target",
+        "addType": "instant",
+        "effectType": "critExtraMul",
+        "mul": 0.05,
+        "range": 300,
+        "obj": {
+          "type": "hyperopia"
+        },
+        "meEffectImg": null,
+        "targetEffectImg": null,
+        "description": "距离目标越远，射击时产生的暴击伤害越大，大于[range]码开始加成，每隔100码增加[mul]的暴击伤害，最大增加20%。对人物技能“隐身”的暴击无效。"
+      },
+      "outfit_boom": {
+        "index": 3,
+        "name": "outfit_boom",
+        "cnName": "血脉沸腾",
+        "conditionType": "passive",
+        "condition": "heroShoot",
+        "otherConditionArr": "rocket",
+        "target": "me",
+        "addType": "instantAndState",
+        "effectType": "ctrlSkillCdLessThan",
+        "effectProArr": 0.07,
+        "valueString": "pointBoom_hero",
+        "value": 0.3,
+        "duration": 2.6,
+        "meEffectImg": null,
+        "targetEffectImg": null,
+        "description": "火炮枪每次射击有[effectProArr.0]概率，使得人物技能“定点轰炸”的当前CD变为[value]秒，持续[duration]秒。"
+      },
+      "outfit_wolong": {
+        "index": 3,
+        "name": "outfit_wolong",
+        "cnName": "沃龙隐",
+        "conditionType": "passive",
+        "condition": "underHurt",
+        "otherConditionArr": "awayTarget",
+        "conditionRange": 250,
+        "target": "me",
+        "addType": "state",
+        "effectType": "wolongHiding",
+        "mul": 1.8,
+        "duration": 1,
+        "linkArr": "outfit_wolong_hurt",
+        "meEffectImg": null,
+        "stateEffectImg": {
+          "value": "skillEffect/trueshot_enemy",
+          "partType": "2hand",
+          "con": "add",
+          "raNum": 30,
+          "followPartRaB": true
+        },
+        "description": "当单位受到伤害、同时与攻击者距离大于[conditionRange]码时，单位将进入隐身状态，攻击力提高[mul-1]，攻击时不会打破隐身状态，隐身持续[duration]秒，攻击力加成持续6秒。"
+      },
+      "outfit_wolong_hurt": {
+        "index": 3,
+        "name": "outfit_wolong_hurt",
+        "cnName": "沃龙隐",
+        "conditionType": "passive",
+        "target": "me",
+        "addType": "state",
+        "effectType": "hurtMul",
+        "mul": 1.8,
+        "duration": 8,
+        "meEffectImg": null,
+        "stateEffectImg": {
+          "value": "skillEffect/smallFire",
+          "partType": "2hand",
+          "con": "filter",
+          "raNum": 30
+        },
+        "description": "伤害加成"
+      },
+      "outfit_eagle": {
+        "name": "outfit_eagle",
+        "cnName": "鹰眼",
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "conditionType": "passive",
+        "condition": "hit",
+        "otherConditionArr": "isAirB",
+        "target": "target",
+        "addType": "instant",
+        "effectType": "changeHurt_head",
+        "mul": 1.5,
+        "description": "当敌人在空中时，对其头部造成额外[mul-1]的伤害。"
+      },
+      "outfit_elephant": {
+        "name": "outfit_elephant",
+        "cnName": "遁形",
+        "conditionType": "passive",
+        "condition": "heroSquat",
+        "target": "me",
+        "addType": "state",
+        "effectType": "spellImmunitySquat",
+        "duration": 4,
+        "stateEffectImg": {
+          "value": "generalEffect/spellImmunityShield",
+          "partType": "body",
+          "con": "add"
+        },
+        "description": "蹲下后将技能免疫，持续[duration]秒。"
+      }
+    }
+  }
+}

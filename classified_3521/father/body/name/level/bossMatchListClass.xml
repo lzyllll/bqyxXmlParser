@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="level">
+		<body name="lastLevelName" cnName="最新关卡名称" noEncodeB="1">
+			WoTu:WoTu_4
+YangMei:YangMei_4
+XiaSha:XiaSha_4
+FengWei:FengWei_5
+XiChi:XiChi_win
+BaiLu:BaiLu_5
+ShuiSheng:ShuiSheng_4
+BaiZhang:BaiZhang_4
+ZhuTou:ZhuTou_3
+ShuangTa:ShuangTa_3
+BeiDou:BeiDou_goto
+DongShan:DongShan_4
+QingSha:QingSha_5
+QingMing:QingMing_4
+NanTang:NanTang_3
+YouLing:YouLing_4
+XiFeng:XiFeng_4
+LvSen:LvSen_2
+DuKu:DuKu_poision
+BaoLun:BaoLun_2
+LuYu:LuYu_1
+BaWang:BaWang_1
+PingChuan:PingChuan_1
+BaiSha:BaiSha_2
+		</body>
+	</father>
+	
+	
+</data>

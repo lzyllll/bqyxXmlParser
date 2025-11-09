@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="level" cnName="关卡">
+		<task name="YangMei_1" cnName="消灭携枪僵尸">
+			<shortText>消灭杨梅岭深处一只携枪僵尸，并抢走他的武器。</shortText>
+		</task>
+		<task name="XiChi_1" cnName="寻找超能石">
+			<shortText>消灭最后出现的僵尸，获得超能石。</shortText>
+		</task>
+		<task name="ShuiSheng_1" cnName="消灭僵尸王">
+			<shortText>消灭僵尸王。</shortText>
+		</task>
+		<task name="BaiZhang_1" cnName="比拼灭敌" failB="1" uiShowTime="999999" moreKillEnemyNumIsMe="1">
+			<shortText>在消灭所有僵尸之后，你的灭敌数必须超过藏师。</shortText>
+			<conditionText>macth_kills_ZhangShi</conditionText>
+			
+			<uiFleshCondition>
+				<one>bodyEvent:die; anyone</one>
+			</uiFleshCondition>
+			
+		</task>
+	</father>
+	
+	</data>

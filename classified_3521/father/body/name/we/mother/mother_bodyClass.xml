@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="we">
+		<body>
+			<name>mother</name><headIconUrl>IconGather/mother</headIconUrl>
+			<cnName>玉晴</cnName>
+			<raceType>human</raceType>
+			<swfUrl>swf/hero/mother.swf</swfUrl>
+			<showLevel>9999</showLevel>
+			
+			<headPlayB>1</headPlayB>
+			<imgType>normal</imgType>
+			<imgArr>
+				stand,move
+				,normalAttack1,die1
+				,__jumpUp,jumpUp,jumpUp__jumpDown,jumpDown,jumpDown__
+				,__fill1_Up,fill1_Up,fill1_Up__fill1_Down,fill1_Down,fill1_Down__die1
+			</imgArr>
+			
+			<hitRect>-12, -90, 24, 90</hitRect>
+			
+			<maxJumpNum>1</maxJumpNum>
+			<maxVx>6</maxVx>
+			
+			<skillArr />
+			
+			<hurtArr>
+				<hurt>
+					<imgLabel>normalAttack1</imgLabel><cn>踢</cn>
+					<hurtRatio>1</hurtRatio>
+					<attackType>direct</attackType>
+					<shakeValue>4</shakeValue>
+					<hitImgUrl con="add" raNum="30" soundUrl="Striker/hit1">bladeHitEffect/blood</hitImgUrl>
+				</hurt>
+			</hurtArr>
+		</body>	
+	</father>
+	
+	
+	
+	
+	
+	</data>

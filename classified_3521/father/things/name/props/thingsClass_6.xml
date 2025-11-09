@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="props" cnName="装备箱" smeltType="box">
+		<things cnName="普通装备箱">
+			<name>equipBox</name>
+			<cnName>普通装备箱</cnName>
+			<zuobiNum>30000</zuobiNum>
+			<iconUrl>ThingsIcon/equipBox</iconUrl>
+			<description>使用后将随机获得一件装备，等级为(人物等级)~(人物等级-7)之间。
+				[n][n]{font color='#FFFF00'}品质概率：{/font}
+				[n]白色 25%
+				[n]绿色 60%
+				[n]蓝色 12%
+				[n]紫色 2.6%
+				[n]橙色 0.34%
+				[n]红色 0.006%
+			</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<gift>equip;drop;1;;;;;;normalBox</gift>
+			<loveD num="20" />
+			<smeltD grade="0" addType="" price="0.1" />
+		</things>
+		<things cnName="高级装备箱">
+			<name>equipHighBox</name>
+			<cnName>高级装备箱</cnName>
+			<zuobiNum>30000</zuobiNum>
+			<iconUrl>ThingsIcon/equipHighBox</iconUrl>
+			<description>使用后将随机获得一件装备，等级为(人物等级)~(人物等级-6)之间，出现高品质装备的概率为普通装备箱的10倍。
+				[n][n]{font color='#FFFF00'}品质概率：{/font}
+				[n]蓝色 83%
+				[n]紫色 13%
+				[n]橙色 3%
+				[n]红色 1%
+			</description>
+			<effectD type="addGift" useSurplusBagB="1" />
+			<gift>equip;dropBoss;1;;;;;;normalBox</gift>
+			<loveD num="10" />
+			<smeltD grade="0" addType="" price="0.5" />
+		</things>
+		
+	</father>
+	</data>

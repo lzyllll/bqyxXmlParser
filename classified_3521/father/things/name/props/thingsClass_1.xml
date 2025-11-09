@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="props" cnName="其他">	
+		
+		<things cnName="手机">
+			<name>mobilePhone</name>
+			<cnName>一部手机</cnName>
+			<noOverlayB>1</noOverlayB>
+			<btnList>uncall</btnList>
+			<iconUrl>ThingsIcon/mobilePhone</iconUrl>
+			<description>一部只能接听无法拨打的手机。</description>
+		</things>
+	</father>
+	</data>

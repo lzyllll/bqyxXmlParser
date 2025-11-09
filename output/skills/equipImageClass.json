@@ -1,0 +1,805 @@
+{
+  "gather": [
+    {
+      "range": "1,1,6,10",
+      "father": [
+        {
+          "name": "normalEquip",
+          "imgSwf": "normalEquip",
+          "image": [
+            {
+              "type": "coat",
+              "cnName": "灰色T恤"
+            },
+            {
+              "type": "pants",
+              "cnName": "绿色牛仔裤"
+            },
+            {
+              "type": "belt",
+              "cnName": "褐皮带"
+            }
+          ]
+        },
+        {
+          "name": "superMan",
+          "imgSwf": "superMan",
+          "image": [
+            {
+              "type": "coat",
+              "cnName": "蓝色T恤"
+            },
+            {
+              "type": "pants",
+              "cnName": "红色牛仔裤"
+            },
+            {
+              "type": "belt",
+              "cnName": "蓝皮带"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "range": "1,5,20,25",
+      "father": [
+        {
+          "name": "cityBoy",
+          "imgSwf": "cityBoy",
+          "image": [
+            {
+              "type": "head",
+              "cnName": "红刘海头饰",
+              "img": "head",
+              "iconLabel": "head_icon"
+            },
+            {
+              "type": "coat",
+              "cnName": "赤焰马甲"
+            },
+            {
+              "type": "pants",
+              "cnName": "沉默作训裤"
+            },
+            {
+              "type": "belt",
+              "cnName": "沉默作训皮带"
+            }
+          ]
+        },
+        {
+          "name": "footballPlayer",
+          "imgSwf": "footballPlayer",
+          "image": [
+            {
+              "type": "head",
+              "cnName": "勇气橄榄盔"
+            },
+            {
+              "type": "coat",
+              "cnName": "勇气橄榄护衣"
+            },
+            {
+              "type": "pants",
+              "cnName": "勇气橄榄护裤",
+              "img": "thigh"
+            },
+            {
+              "type": "belt",
+              "cnName": "勇气橄榄护腰"
+            }
+          ]
+        },
+        {
+          "name": "greenFootballPlayer",
+          "imgSwf": "greenFootballPlayer",
+          "image": [
+            {
+              "type": "head",
+              "cnName": "幻想橄榄盔"
+            },
+            {
+              "type": "coat",
+              "cnName": "幻想橄榄护衣"
+            },
+            {
+              "type": "pants",
+              "cnName": "幻想橄榄护裤",
+              "img": "thigh"
+            },
+            {
+              "type": "belt",
+              "cnName": "幻想橄榄护腰"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "range": "1,5,60,69",
+      "father": {
+        "name": "blueWaist",
+        "imgSwf": "blueWaist",
+        "image": [
+          {
+            "type": "head",
+            "cnName": "白刘海头饰"
+          },
+          {
+            "type": "coat",
+            "cnName": "风行马甲"
+          },
+          {
+            "type": "pants",
+            "cnName": "暗魅作训裤"
+          }
+        ]
+      }
+    },
+    {
+      "range": "10,15,60,69",
+      "father": [
+        {
+          "cnName": "特种",
+          "name": "specialForces",
+          "imgSwf": "specialForces",
+          "suitPro": "fightDedut_1,lifeMul_0.85,attackGap_0.7,dodge_0.6",
+          "image": [
+            {
+              "type": "head",
+              "cnName": "特种钢盔"
+            },
+            {
+              "type": "coat",
+              "cnName": "特种作训衣"
+            },
+            {
+              "type": "pants",
+              "cnName": "特种作训裤",
+              "img": "thigh"
+            },
+            {
+              "type": "belt",
+              "cnName": "特种作训腰带",
+              "img": "belt"
+            }
+          ]
+        },
+        {
+          "cnName": "冒险",
+          "name": "whiteSwat",
+          "imgSwf": "whiteSwat",
+          "suitPro": "dodge_0.85,dpsAll_0.55,moveMul_1,attackGap_0.7",
+          "image": [
+            {
+              "type": "head",
+              "cnName": "冒险作战帽"
+            },
+            {
+              "type": "coat",
+              "cnName": "冒险作战衣"
+            },
+            {
+              "type": "pants",
+              "cnName": "冒险作战裤"
+            },
+            {
+              "type": "belt",
+              "cnName": "冒险作战腰带"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "range": "15,20,75,80",
+      "father": [
+        {
+          "cnName": "丛林",
+          "name": "forestSpecialForces",
+          "imgSwf": "forestSpecialForces",
+          "suitPro": "fightDedut_1,lifeMul_0.7,attackGap_0.85,dodge_0.7",
+          "image": [
+            {
+              "type": "head",
+              "cnName": "丛林钢盔"
+            },
+            {
+              "type": "coat",
+              "cnName": "丛林作训衣"
+            },
+            {
+              "type": "pants",
+              "cnName": "丛林作训裤",
+              "img": "thigh"
+            },
+            {
+              "type": "belt",
+              "cnName": "丛林作训腰带",
+              "img": "belt"
+            }
+          ]
+        },
+        {
+          "cnName": "暗影",
+          "name": "swat",
+          "imgSwf": "swat",
+          "suitPro": "dodge_0.7,dpsAll_0.7,moveMul_1,attackGap_0.6",
+          "image": [
+            {
+              "type": "head",
+              "cnName": "暗影作战帽"
+            },
+            {
+              "type": "coat",
+              "cnName": "暗影作战衣"
+            },
+            {
+              "type": "pants",
+              "cnName": "暗影作战裤"
+            },
+            {
+              "type": "belt",
+              "cnName": "暗影作战腰带"
+            }
+          ]
+        },
+        {
+          "cnName": "无暇",
+          "name": "wildGeneral",
+          "imgSwf": "wildGeneral",
+          "suitPro": "lifeRate_1,critPro3_0.7,cdMul_0.85,moveMul_1",
+          "image": [
+            {
+              "type": "head",
+              "cnName": "无暇副官帽"
+            },
+            {
+              "type": "coat",
+              "cnName": "无暇弹甲"
+            },
+            {
+              "type": "pants",
+              "cnName": "无暇作训裤",
+              "img": "thigh"
+            },
+            {
+              "type": "belt",
+              "cnName": "无暇斜带",
+              "img": "belt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "range": "20,25,75,80",
+      "father": [
+        {
+          "cnName": "魅影",
+          "name": "redSwat",
+          "imgSwf": "redSwat",
+          "suitPro": "dodge_0.7,dpsAll_0.7,moveMul_1,attackGap_0.5",
+          "image": [
+            {
+              "type": "head",
+              "cnName": "魅影作战帽"
+            },
+            {
+              "type": "coat",
+              "cnName": "魅影作战衣"
+            },
+            {
+              "type": "pants",
+              "cnName": "魅影作战裤"
+            },
+            {
+              "type": "belt",
+              "cnName": "魅影作战腰带"
+            }
+          ]
+        },
+        {
+          "cnName": "沙漠",
+          "name": "desertSpecialForces",
+          "imgSwf": "desertSpecialForces",
+          "suitPro": "fightDedut_0.85,lifeMul_1,attackGap_0.7,dodge_0.5",
+          "image": [
+            {
+              "type": "head",
+              "cnName": "沙漠钢盔"
+            },
+            {
+              "type": "coat",
+              "cnName": "沙漠作训衣"
+            },
+            {
+              "type": "pants",
+              "cnName": "沙漠作训裤",
+              "img": "thigh"
+            },
+            {
+              "type": "belt",
+              "cnName": "沙漠作训腰带",
+              "img": "belt"
+            }
+          ]
+        },
+        {
+          "cnName": "绝世",
+          "name": "blueGeneral",
+          "imgSwf": "blueGeneral",
+          "suitPro": "lifeRate_1,critPro3_0.85,cdMul_0.7,moveMul_0.85",
+          "image": [
+            {
+              "type": "head",
+              "cnName": "绝世副官帽"
+            },
+            {
+              "type": "coat",
+              "cnName": "绝世弹甲"
+            },
+            {
+              "type": "pants",
+              "cnName": "绝世作训裤",
+              "img": "thigh"
+            },
+            {
+              "type": "belt",
+              "cnName": "绝世斜带",
+              "img": "belt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "range": "25,30,75,80",
+      "father": [
+        {
+          "cnName": "幽灵",
+          "name": "redGeneral",
+          "imgSwf": "redGeneral",
+          "suitPro": "lifeRate_0.7,critPro3_0.85,cdMul_1,moveMul_0.7",
+          "image": [
+            {
+              "type": "head",
+              "cnName": "幽灵副官帽"
+            },
+            {
+              "type": "coat",
+              "cnName": "幽灵弹甲"
+            },
+            {
+              "type": "pants",
+              "cnName": "幽灵作训裤",
+              "img": "thigh"
+            },
+            {
+              "type": "belt",
+              "cnName": "幽灵斜带",
+              "img": "belt"
+            }
+          ]
+        },
+        {
+          "cnName": "银甲",
+          "name": "silverArmour",
+          "imgSwf": "silverArmour",
+          "suitPro": "fightDedut_0.7,lifeMul_1,attackGap_0.85,lifeRate_0.85",
+          "image": [
+            {
+              "type": "head",
+              "cnName": "银甲头盔"
+            },
+            {
+              "type": "coat",
+              "cnName": "银甲衣"
+            },
+            {
+              "type": "pants",
+              "cnName": "银甲裤"
+            },
+            {
+              "type": "belt",
+              "cnName": "银甲腰带"
+            }
+          ]
+        },
+        {
+          "cnName": "电子",
+          "name": "greenPurplePhotons",
+          "imgSwf": "greenPurplePhotons",
+          "suitPro": "dodge_1,dpsAll_0.85,moveMul_0.7,cdMul_0.85",
+          "image": [
+            {
+              "type": "head",
+              "cnName": "电子头盔"
+            },
+            {
+              "type": "coat",
+              "cnName": "电子战衣"
+            },
+            {
+              "type": "pants",
+              "cnName": "电子战裤"
+            },
+            {
+              "type": "belt",
+              "cnName": "电子腰带"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "range": "30,35,75,85",
+      "father": [
+        {
+          "cnName": "原子",
+          "name": "purplePhotons",
+          "imgSwf": "purplePhotons",
+          "suitPro": "dodge_0.7,dpsAll_1,moveMul_0.85,cdMul_0.7",
+          "image": [
+            {
+              "type": "head",
+              "cnName": "原子头盔"
+            },
+            {
+              "type": "coat",
+              "cnName": "原子战衣"
+            },
+            {
+              "type": "pants",
+              "cnName": "原子战裤"
+            },
+            {
+              "type": "belt",
+              "cnName": "原子腰带"
+            }
+          ]
+        },
+        {
+          "cnName": "金甲",
+          "name": "goldArmour",
+          "imgSwf": "goldArmour",
+          "suitPro": "fightDedut_0.85,lifeMul_0.7,attackGap_1,lifeRate_1",
+          "image": [
+            {
+              "type": "head",
+              "cnName": "金甲头盔"
+            },
+            {
+              "type": "coat",
+              "cnName": "金甲衣"
+            },
+            {
+              "type": "pants",
+              "cnName": "金甲裤"
+            },
+            {
+              "type": "belt",
+              "cnName": "金甲腰带"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "range": "35,40,85,99",
+      "father": {
+        "cnName": "光子",
+        "name": "redPurplePhotons",
+        "imgSwf": "redPurplePhotons",
+        "suitPro": "dodge_0.85,dpsAll_1,moveMul_0.7,cdMul_0.7",
+        "image": [
+          {
+            "type": "head",
+            "cnName": "光子头盔"
+          },
+          {
+            "type": "coat",
+            "cnName": "光子战衣"
+          },
+          {
+            "type": "pants",
+            "cnName": "光子战裤"
+          },
+          {
+            "type": "belt",
+            "cnName": "光子腰带"
+          }
+        ]
+      }
+    },
+    {
+      "range": "66,69,999,999",
+      "father": [
+        {
+          "cnName": "疾风",
+          "name": "greenGale",
+          "imgSwf": "greenGale",
+          "suitPro": "fightDedut_0.7,lifeMul_1,attackGap_0.85,cdMul_0.7",
+          "image": [
+            {
+              "type": "head",
+              "cnName": "疾风头盔"
+            },
+            {
+              "type": "coat",
+              "cnName": "疾风战衣"
+            },
+            {
+              "type": "pants",
+              "cnName": "疾风战裤"
+            },
+            {
+              "type": "belt",
+              "cnName": "疾风腰带"
+            }
+          ]
+        },
+        {
+          "cnName": "幽鬼",
+          "name": "greenGhost",
+          "imgSwf": "greenGhost",
+          "suitPro": "lifeRate_0.7,critPro3_0.9,cdMul_1,dodge_0.55",
+          "image": [
+            {
+              "type": "head",
+              "cnName": "幽鬼头盔"
+            },
+            {
+              "type": "coat",
+              "cnName": "幽鬼战衣"
+            },
+            {
+              "type": "pants",
+              "cnName": "幽鬼战裤"
+            },
+            {
+              "type": "belt",
+              "cnName": "幽鬼腰带"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cnName": "稀有套装",
+      "range": "999,999,999,999",
+      "father": [
+        {
+          "cnName": "灵蛇",
+          "color": "red",
+          "name": "purpleSnake",
+          "imgSwf": "purpleSnake",
+          "suitPro": "hurtAll_1,dodge_0.85,moveMul_0.7,cdMul_0.85",
+          "rareDropType": "normal",
+          "rareDropLv": 70,
+          "image": [
+            {
+              "type": "head",
+              "cnName": "灵蛇头盔"
+            },
+            {
+              "type": "coat",
+              "cnName": "灵蛇战衣"
+            },
+            {
+              "type": "pants",
+              "cnName": "灵蛇战裤"
+            },
+            {
+              "type": "belt",
+              "cnName": "灵蛇腰带"
+            }
+          ]
+        },
+        {
+          "cnName": "鬼爵",
+          "color": "red",
+          "name": "ghostDukeSuit",
+          "imgSwf": "ghostDukeSuit",
+          "suitPro": "critPro3_1,lifeRate_0.5,cdMul_1,dodge_0.65",
+          "rareDropType": "normal",
+          "rareDropLv": 73,
+          "image": [
+            {
+              "type": "head",
+              "cnName": "鬼爵头盔"
+            },
+            {
+              "type": "coat",
+              "cnName": "鬼爵战衣"
+            },
+            {
+              "type": "pants",
+              "cnName": "鬼爵战裤"
+            },
+            {
+              "type": "belt",
+              "cnName": "鬼爵腰带"
+            }
+          ]
+        },
+        {
+          "cnName": "极光",
+          "color": "red",
+          "name": "auroraSuit",
+          "imgSwf": "auroraSuit",
+          "suitPro": "hurtAll_1.1,dodge_0.85,moveMul_0.7,cdMul_0.85",
+          "rareDropType": "normal",
+          "rareDropLv": 73,
+          "image": [
+            {
+              "type": "head",
+              "cnName": "极光头盔"
+            },
+            {
+              "type": "coat",
+              "cnName": "极光战衣"
+            },
+            {
+              "type": "pants",
+              "cnName": "极光战裤"
+            },
+            {
+              "type": "belt",
+              "cnName": "极光腰带"
+            }
+          ]
+        },
+        {
+          "cnName": "地球军",
+          "color": "red",
+          "name": "earthForces",
+          "imgSwf": "earthForces",
+          "suitPro": "fightDedut_0.7,lifeMul_1.1,attackGap_0.9,cdMul_0.55",
+          "rareDropType": "normal",
+          "rareDropLv": 73,
+          "image": [
+            {
+              "type": "head",
+              "cnName": "地球军头盔"
+            },
+            {
+              "type": "coat",
+              "cnName": "地球军战衣"
+            },
+            {
+              "type": "pants",
+              "cnName": "地球军战裤"
+            },
+            {
+              "type": "belt",
+              "cnName": "地球军腰带"
+            }
+          ]
+        },
+        {
+          "cnName": "仲裁者",
+          "color": "red",
+          "name": "intercessorSuit",
+          "imgSwf": "intercessorSuit",
+          "suitPro": "critPro3_1,dpsAll_0.35,lifeRate_0.7,cdMul_1",
+          "rareDropType": "rare",
+          "rareDropLv": 73,
+          "image": [
+            {
+              "type": "head",
+              "cnName": "仲裁者帽"
+            },
+            {
+              "type": "coat",
+              "cnName": "仲裁者战衣"
+            },
+            {
+              "type": "pants",
+              "cnName": "仲裁者战裤"
+            },
+            {
+              "type": "belt",
+              "cnName": "仲裁者腰带"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cnName": "竞技场套装",
+      "range": "999,999,999,999",
+      "father": [
+        {
+          "cnName": "流亡者",
+          "color": "red",
+          "name": "exilesSuit",
+          "imgSwf": "exilesSuit58",
+          "suitPro": "lifeMul_0.9,hurtAll_0.95,moveMul_0.7,cdMul_0.85",
+          "noConverB": true,
+          "image": [
+            {
+              "type": "head",
+              "cnName": "流亡者头盔",
+              "addArmsType": "shotgun"
+            },
+            {
+              "type": "coat",
+              "cnName": "流亡者战衣",
+              "addArmsType": "shotgun"
+            },
+            {
+              "type": "pants",
+              "cnName": "流亡者战裤",
+              "addArmsType": "sniper"
+            },
+            {
+              "type": "belt",
+              "cnName": "流亡者腰带",
+              "addArmsType": "rocket"
+            }
+          ]
+        },
+        {
+          "cnName": "拾荒者",
+          "color": "red",
+          "name": "scavengersSuit",
+          "imgSwf": "scavengersSuit",
+          "suitPro": "lifeMul_0.6,critPro3_0.9,dodge_0.6,fightDedut_0.7",
+          "noConverB": true,
+          "image": [
+            {
+              "type": "head",
+              "cnName": "拾荒者头盔"
+            },
+            {
+              "type": "coat",
+              "cnName": "拾荒者战衣",
+              "addArmsType": "pistol"
+            },
+            {
+              "type": "pants",
+              "cnName": "拾荒者战裤",
+              "addArmsType": "rifle"
+            },
+            {
+              "type": "belt",
+              "cnName": "拾荒者腰带",
+              "addArmsType": "rocket"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cnName": "特殊",
+      "range": "999,999,999,999",
+      "father": {
+        "cnName": "猎魔",
+        "name": "blueArmy",
+        "imgSwf": "blueArmy",
+        "suitPro": "lifeRate_1,critPro3_1,cdMul_1,dpsAll_0.32",
+        "noConverB": true,
+        "image": [
+          {
+            "type": "head",
+            "cnName": "猎魔警帽"
+          },
+          {
+            "type": "coat",
+            "cnName": "猎魔战衣"
+          },
+          {
+            "type": "pants",
+            "cnName": "猎魔战裤"
+          },
+          {
+            "type": "belt",
+            "cnName": "猎魔腰带"
+          }
+        ]
+      }
+    }
+  ]
+}

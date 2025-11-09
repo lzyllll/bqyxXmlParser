@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="怪物技能">
+		<skill index="0" cnName="荆棘外壳">
+			<name>thorns_pig</name>
+			<cnName>荆棘外壳</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>thorns_pig</effectType>
+			<mul>0.1</mul>
+			 
+			<description>减少[1-mul]的枪支反弹伤害，同时减少来[1-mul]自背部的伤害。</description>
+		</skill>
+		
+		<skill index="0" cnName="血肉盛宴">
+			<name>fleshFeast_pig</name>
+			<cnName>血肉盛宴</cnName>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>fleshFeast_pig</effectType>
+			
+			<mul>0.1</mul>
+			<range>150</range>
+			<duration>99999</duration>
+			 
+			<description>周围[range]码内，每存在1个敌人，就提升10%的移动速度、0.5%的生命值回复速度。</description>
+		</skill>
+		<skill cnName="雷霆斧击">
+			<name>thunder_pig</name>
+			<cnName>雷霆斧击</cnName><iconUrl36>SkillIcon/thunder_pig_36</iconUrl36>
+			<cd>3</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>400</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>bullet_pig</effectType>
+			<value>100</value>
+			<duration>1.6</duration>
+			
+			<obj>"name":"FightPig_thunder"</obj>
+			
+			<meActionLabel>lightningAttack</meActionLabel>
+			<description>挥舞屠夫砍击前方所有敌人，对普通单位造成瞬秒伤害，对首领造成最大生命值15%的伤害。</description>
+		</skill>
+		<skill cnName="野性冲锋">
+			<name>collision_pig</name>
+			<cnName>野性冲锋</cnName><iconUrl36>SkillIcon/collision_pig_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cd>5</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>500</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>2</duration>
+			
+			<meActionLabel>sprintAttack</meActionLabel>
+			<description>集中全身力量向前冲锋，扣除击中目标50%的生命值。</description>
+		</skill>
+		
+		<skill index="0" name="巨力滚">
+			<name>roll_pig</name><noCopyB>1</noCopyB>
+			<cnName>巨力滚</cnName><iconUrl36>SkillIcon/roll_pig_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<cd>16</cd>
+			
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>roll_pig</effectType>
+			<mul>2</mul>
+			<duration>5</duration>
+			
+			<meEffectImg />
+			
+			<description>单位进入巨力滚动状态，所受到伤害减少70%，移动速度增加200%，同时对经过的敌人造成伤害。</description>
+		</skill>
+	</father>
+</data>

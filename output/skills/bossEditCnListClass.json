@@ -1,0 +1,19 @@
+{
+  "father": {
+    "name": "bossEdit",
+    "body": [
+      {
+        "value": "咆哮\n风暴\n火神\n怒吼\n邪神\n暴徒\n烈焰\n弑神\n战龙\n血爪\n缠绕\n断魂\n复仇\n碎颅\n亡神\n绝灭\n驯龙\n仲裁\n魔王\n猎王\n灰烬\n浩劫\n暗黑\n冷峻\n金刚\n卑微\n刺骨\n荆棘\n蜂巢\n坚韧\n闪电\n诙谐\n沉睡\n凄然\n永恒\n和谐\n沙漠\n蓝纹\n怒气\n圣光\n神圣\n赤纹\n狂热\n地狱\n凝泪\n青玉\n混沌\n噩梦\n邪恶\n玲珑\n致命\n暗影\n恐惧\n无敌\n方天\n寒光\n裂空\n雷电\n时空\n堕落\n无限\n远古\n斩魂\n光辉\n永世\n狂热\n末日\n灭亡\n狂怒\n无暇",
+        "name": "bossEditCn2",
+        "cnName": "可选前缀",
+        "noEncodeB": true
+      },
+      {
+        "value": "风\n水\n土\n火\n金\n神\n超\n怒\n暴\n龙\n魂\n亡\n灭\n绝\n魔\n劫\n电\n圣\n狂\n恶\n邪\n天\n雷\n幻\n极\n灵\n钛\n钢\n空\n冰\n黑\n鬼\n战",
+        "name": "bossEditCn1",
+        "cnName": "可选前缀",
+        "noEncodeB": true
+      }
+    ]
+  }
+}

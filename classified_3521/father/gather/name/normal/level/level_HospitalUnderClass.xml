@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="normal">
+		<gather name="实验室地下">
+			<level name="HospitalUnder_re">
+				
+				<info enemyLv="99" diff="2" noMoreB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" mustSingleB="1" />
+				<sceneLabel>HospitalUnder</sceneLabel>
+				
+				<unitG><allDefault aiOrder="patrolGlobal" />
+					<unitOrder id="we2" camp="we">
+						<unit cnName="战争狂人" num="1" aiOrder="followBody:p1" skillArr="madmanHead" />
+					</unitOrder>
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e2_1">
+							<condition delay="0.01" />
+							<order>recoverAllHeroHead</order>
+							<order>noWearShop</order>
+							<order>createUnit:we2; r2</order>
+							<order>playMusic; music_face:suspense</order>
+						</event>
+						<event id="e1_1">
+							<condition delay="1" />
+							<order>say; startList:s1</order>
+						</event>
+						<event id="e2_0">
+							<condition>say:listOver; s1</condition>
+							
+							<order>body:战争狂人; doSkill:madmanHead</order>
+							<order>playMusic; music_face:piano</order>
+						</event>
+						<event id="e2_1">
+							<condition delay="1.5" />
+							<order>say; startList:s2</order>
+						</event>
+						<event id="e2_11">
+							<condition>say:listOver; s2</condition>
+							<order>task:now; complete</order>
+							
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		<gather name="战斧高地">
+			<level name="MainUpland_re">
+				
+				<info enemyLv="99" diff="2" allMoreB="1" noPetB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" />
+				<sceneLabel>MainUpland</sceneLabel>
+				
+				<unitG><allDefault aiOrder="patrolGlobal" />
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e1_1">
+							<condition delay="0.01" />
+							<order>recoverAllHeroHead</order>
+							<order>noWearShop</order>
+							<order>playMusic; music_face:funny</order>
+						</event>
+						<event id="e2_1">
+							<condition delay="0.1" />
+							<order>body:小樱; followBody:文杰表哥</order>
+							<order>body:藏师将军; followBody:小樱</order>
+							<order>body:心零; followBody:藏师将军</order>
+						</event>
+						<event id="e1_1">
+							<condition delay="1" />
+							<order>say; startList:s1</order>
+						</event>
+						<event id="e2_11">
+							<condition>say:listOver; s1</condition>
+							<order>task:now; complete</order>
+							<order>playMusic; music_face:descent</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			<level name="leavePartner_WenJie">
+				
+				<info enemyLv="99" diff="2" allMoreB="1" noPetB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" />
+				<sceneLabel>MainUpland</sceneLabel>
+				
+				<unitG><allDefault aiOrder="patrolGlobal" />
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e1_1">
+							<condition delay="0.01" />
+							<order>recoverAllHeroHead</order>
+							<order>noWearShop</order>
+						</event>
+						<event id="e2_1">
+							<condition delay="0.1" />
+							<order>body:小樱; followBody:文杰表哥</order>
+							<order>body:藏师将军; followBody:小樱</order>
+							<order>body:心零; followBody:藏师将军</order>
+						</event>
+						<event>
+							<condition delay="1" />
+							<order>say; startList:s1</order>
+						</event>
+						<event>
+							<condition delay="0.1">say:listOver; s1</condition>
+						</event>
+						<event>
+							<condition delay="1" />
+							<order>say; startList:s2</order>
+						</event>
+						<event>
+							<condition>say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+			
+			
+			<level name="madPlot_WenJie">
+				
+				<info enemyLv="99" diff="2" allMoreB="1" noPetB="1" noVehicleB="1" noTreasureB="1" noPropsB="1" />
+				<sceneLabel>MainUpland</sceneLabel>
+				
+				<unitG><allDefault aiOrder="patrolGlobal" />
+				</unitG>
+				
+				<eventG>
+					<group>
+						<event id="e1_1">
+							<condition delay="0.01" />
+							<order>recoverAllHeroHead</order>
+							<order>noWearShop</order>
+						</event>
+						<event id="e2_1">
+							<condition delay="0.1" />
+							<order>body:小樱; followBody:文杰表哥</order>
+							<order>body:藏师将军; followBody:小樱</order>
+							<order>body:心零; followBody:藏师将军</order>
+						</event>
+						<event>
+							<condition delay="1" />
+							<order>say; startList:s1</order>
+						</event>
+						<event>
+							<condition delay="0.1">say:listOver; s1</condition>
+						</event>
+						<event>
+							<condition delay="1" />
+							<order>say; startList:s2</order>
+						</event>
+						<event>
+							<condition>say:listOver</condition>
+							<order>task:now; complete</order>
+							<order>level; showPointer:r_over</order>
+						</event>
+					</group>
+				</eventG>
+			</level>
+		</gather>
+		
+
+	</father>
+</data>

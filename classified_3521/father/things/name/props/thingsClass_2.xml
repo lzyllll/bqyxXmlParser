@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="props" cnName="消耗型卡片">	
+		<things cnName="队友重生卡">
+			<name>teamRebirthCard</name>
+			<cnName>队友重生卡</cnName>
+			<zuobiNum>2000</zuobiNum>
+			<btnList>use</btnList>
+			<iconUrl>ThingsIcon/teamRebirthCard</iconUrl>
+			<description>使用后复活关卡中已倒下的队友。</description>
+			<effectD type="rebirthTeam" value="1" useInLevelB="1" moreLimitB="1" levelUseLimitNum="2" arenaLevelUseLimitNum="1" effectLabel="skillEffect/groupLight_hero" effectSound="sound/groupLight_hero" />
+			<smeltD addType="box" price="5" />
+		</things>
+		<things cnName="技能刷新卡">
+			<name>skillFleshCard</name>
+			<cnName>技能刷新卡</cnName>
+			<zuobiNum>2000</zuobiNum>
+			<btnList>use</btnList>
+			<iconUrl>ThingsIcon/skillFleshCard</iconUrl>
+			<description>使用后刷新当前控制单位所有主动技能的冷却时间、载具的冷却时间。</description>
+			<effectD type="fleshSkillCd" value="1" useInLevelB="1" levelUseLimitNum="2" />
+			<smeltD addType="festival" price="5" />
+		</things>
+		
+		
+	</father>	
+	</data>

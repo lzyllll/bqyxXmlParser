@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy">
+		
+		<skill>
+			<name>pierceBK</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>英雄诅咒</cnName><noCopyB>1</noCopyB><ignoreNoSkillB>1</ignoreNoSkillB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>allHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>pierceBK</effectType><effectFather>blackKnights</effectFather>
+			<description>攻击角色敌人时，使其无敌状态消失0.033秒。对不受伤害碰撞的敌人无效，对使用重生石后的无敌无效。</description>
+		</skill>
+		<skill>
+			<name>penDefence</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>穿刺抵抗</cnName><ignoreNoSkillB>1</ignoreNoSkillB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underAllHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>penDefence</effectType><effectFather>blackKnights</effectFather>
+			<mul>0.35</mul>
+			<description>受到以下枪械的伤害降低[1-mul]：穿人个数或穿墙深度大于10。喷火器不受影响。</description>
+		</skill>
+		
+		
+		<skill cnName="受到伤害">
+			<name>underBlackKnights</name>
+			<cnName>受到伤害</cnName><noCopyB>1</noCopyB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHurtBefore</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>under</effectType><effectFather>blackKnights</effectFather>
+			<description />
+		</skill>
+		<skill cnName="受到攻击">
+			<name>underHitBK</name>
+			<cnName>受到攻击</cnName><noCopyB>1</noCopyB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underAllHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>underAllHit</effectType><effectFather>blackKnights</effectFather>
+			<pointEffectImg name="empNoSound" />
+			<otherEffectImg name="laserWatchdogUnder_point" />
+			<description>载具敏感时使用。</description>
+		</skill>	
+		<skill>
+			<name>BlackKnightsBuff</name>
+			<cnName>黑暗骑士Buff</cnName><noCopyB>1</noCopyB><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><ignoreNoSkillB>1</ignoreNoSkillB><ignoreSilenceB>1</ignoreSilenceB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>buff</effectType><effectFather>blackKnights</effectFather>
+			<stateEffectImg name="BlackKnightsVehicleEffect" />
+			<otherEffectImg name="defendBeiDou_boom" />
+			<pointEffectImg name="babyBoom_skull_hit" />
+			<duration>99999999</duration>
+		</skill>
+		
+		
+		<skill>
+			<name>twoAttackBK</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>无双拳</cnName><ignoreNoSkillB>1</ignoreNoSkillB>
+			<conditionType>passive</conditionType>
+			<condition>no</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>no</effectType>
+			
+			<meActionLabel>twoAttack</meActionLabel>
+			<description>黑暗骑士进入无敌状态，使用双手发射无双拳导弹，敌人击破该导弹才能让黑暗骑士受到伤害。</description>
+		</skill>
+				<skill>
+					<name>underBKBullet</name><ignoreNoSkillB>1</ignoreNoSkillB><ignoreSilenceB>1</ignoreSilenceB>
+					<cnName>导弹-受到伤害</cnName><noCopyB>1</noCopyB>
+					
+					<conditionType>passive</conditionType>
+					<condition>die</condition>
+					<target>me</target>
+					
+					<addType>instant</addType>
+					<effectType>underBKBullet</effectType><effectFather>blackKnights</effectFather>
+					<otherEffectImg name="orangeLightning" />
+					<pointEffectImg name="yellowHitSilence" />
+					<description />
+				</skill>
+		<skill>
+			<name>laserAttackBK</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>全域激光</cnName><ignoreNoSkillB>1</ignoreNoSkillB>
+			<conditionType>passive</conditionType>
+			<condition>no</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>no</effectType>
+			
+			<meActionLabel>laserAttack</meActionLabel>
+			<otherEffectImg name="laserBlackLine" />
+			<description>黑暗骑士进入无敌状态（除了头部），头顶持续发射旋转激光攻击敌人。</description>
+		</skill>
+					<skill>
+						<name>laserAttackBKSlow</name>
+						<cnName>全域激光减速</cnName><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+						
+						<conditionType>passive</conditionType>
+						<condition>no</condition>
+						<target>target</target>
+						
+						<addType>state</addType>
+						<effectType>moveSpeedNoReduce</effectType>
+						<value>0</value>
+						<mul>0.1</mul>
+						<duration>0.2</duration>
+						
+						<stateEffectImg partType="2foot">skillEffect/disabled_enemy</stateEffectImg>
+						<description>击中目标后降低其[1-mul]的移动速度。</description>
+					</skill>
+		<skill>
+			<name>walkAttackBK</name><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			<cnName>践踏</cnName><ignoreNoSkillB>1</ignoreNoSkillB>
+			<conditionType>passive</conditionType>
+			<condition>no</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>no</effectType>
+			
+			<meActionLabel>walkAttack</meActionLabel>
+			<description>黑暗骑士进入践踏状态，此时受到载具伤害提高3倍，其他伤害降低至5%。</description>
+		</skill>
+	</father>
+
+	
+</data>

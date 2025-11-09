@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="car" cnName="战车定义">
+		<equip name="RedReaper" cnName="收割者" evolutionLabel="RedCrusher">
+			<canComposeB>1</canComposeB>
+			<main dpsMul="0.7" len="67" />
+			<sub dpsMul="0.9" len="47" />
+			<mainFrontB>1</mainFrontB>
+			<lifeMul>1.2</lifeMul>
+			<attackMul>1.3</attackMul>
+			<duration>40</duration>
+			<cd>120</cd>
+			<mustCash>120</mustCash>
+			<addObjJson>{'dpsAll':0.05,'lifeAll':0.05}</addObjJson>
+		</equip>
+		<equip name="RedCrusher" cnName="碾压者" evolutionLabel="RedSweeps">
+			<evolutionLv>2</evolutionLv>
+			<main label="RedReaper_main" dpsMul="0.9" len="67" />
+			<sub label="RedReaper_sub" dpsMul="1.2" len="47" />
+			<mainFrontB>1</mainFrontB>
+			<lifeMul>1.2</lifeMul>
+			<attackMul>1.6</attackMul>
+			<duration>40</duration>
+			<cd>120</cd>
+			<mustCash>120</mustCash>
+			<addObjJson>{'dpsAll':0.08,'lifeAll':0.08}</addObjJson>
+			<skillArr>vehicleFit_Civilian</skillArr>
+		</equip>
+		<equip name="RedSweeps" cnName="扫荡者" evolutionLabel="">
+			<evolutionLv>4</evolutionLv>
+			<main label="RedReaper_main" dpsMul="1.1" len="67" />
+			<sub label="RedReaper_sub" dpsMul="1.4" len="47" />
+			<mainFrontB>1</mainFrontB>
+			<lifeMul>1.7</lifeMul>
+			<attackMul>2</attackMul>
+			<duration>40</duration>
+			<cd>120</cd>
+			<mustCash>120</mustCash>
+			<addObjJson>{'dpsAll':0.1,'lifeAll':0.1}</addObjJson>
+			<skillArr>vehicleFit_Civilian</skillArr>
+		</equip>
+		
+		
+		<bullet cnName="收割者-主炮">
+			<name>RedReaper_main</name>
+			<cnName>收割者-主炮</cnName>
+			
+			<hurtRatio>1.07</hurtRatio>
+			
+			<shakeAngle>1</shakeAngle>
+			<bulletLife>2</bulletLife>
+			<bulletWidth>30</bulletWidth>
+			<hitType>rect</hitType>
+			
+			<attackGap>0.8</attackGap>
+				
+			<shootRecoil>15</shootRecoil>
+			<screenShakeValue>16</screenShakeValue>
+			<bulletSpeed>45</bulletSpeed>
+			<boomD bodyB="1" floorB="1" radius="120" />
+			
+			<flipX>1</flipX>
+			<bulletImgUrl raNum="30">rocket/rocketBullet</bulletImgUrl>
+			<fireImgUrl raNum="30" soundUrl="rocket/barrel2_sound" con="add">gunFire/rocket</fireImgUrl>
+			<hitImgUrl soundUrl="boomSound/midBoom1" shake="2,0.2,10">boomEffect/boom3</hitImgUrl>
+			<smokeImgUrl con="filter" raNum="30">bulletHitEffect/smoke_small</smokeImgUrl>
+		</bullet>
+		<bullet cnName="收割者-副炮">
+			<name>RedReaper_sub</name>
+			<cnName>收割者-副炮</cnName>
+			
+			<hurtRatio>0.86</hurtRatio>
+			
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			<bulletWidth>800</bulletWidth>
+			<bulletShakeWidth>100</bulletShakeWidth>
+			
+			<attackGap>0.13</attackGap>
+			<attackDelay>0</attackDelay>
+				
+			<shootRecoil>4</shootRecoil>
+			<screenShakeValue>9</screenShakeValue>
+			<shakeAngle>3</shakeAngle>
+			<bulletSpeed>0</bulletSpeed>
+			
+			<flipX>1</flipX>
+			<lineD lightColor="0xFFFF00" size="2" lightSize="6" />
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<fireImgUrl raNum="30" soundUrl="ak/barrel2_sound">gunFire/f</fireImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+		</bullet>
+	</father>
+	
+	
+	
+	
+	
+	
+	</data>

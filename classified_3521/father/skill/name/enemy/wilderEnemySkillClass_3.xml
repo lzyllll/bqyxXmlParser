@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="异齿虎">
+		<skill cnName="量子光束">
+			<name>SaberTiger_laser</name>
+			<cnName>量子光束</cnName><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<noBeClearB>1</noBeClearB>
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<cd>5</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>500</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>bullet_SaberTiger_laser</effectType>
+			<duration>1.5</duration>
+			<mul>1</mul>
+			
+			<obj>"name":"SaberTiger_laser"</obj>
+			
+			<pointEffectImg con="add">skillEffect/aperture</pointEffectImg>
+			<meActionLabel>laserAttack</meActionLabel>
+			<description>猛击地面，在敌人脚下引爆量子光束，对目标造成最大生命值20%的伤害。</description>
+		</skill>
+		<skill cnName="末日轰炸">
+			<name>SaberTiger_missile</name>
+			<cnName>末日轰炸</cnName><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<noBeClearB>1</noBeClearB>
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<cd>6</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>700</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>no</effectType>
+			
+			<meActionLabel>missileAttack</meActionLabel>
+			<description>释放3个巡航导弹，轰炸前方区域内的所有敌人，每颗导弹造成目标最大生命值20%的伤害</description>
+		</skill>
+		<skill cnName="召唤生化罐">
+			<name>SaberTiger_ChemicalTank</name>
+			<cnName>召唤生化罐</cnName>
+			<ignoreSilenceB>1</ignoreSilenceB><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			
+			<firstCd>9999999</firstCd>
+			<cd>9999999</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>summonedUnits</effectType>
+			<obj>"cnName":"生化罐","num":1,"mulByFatherB":1,"lifeMul":0.18,"maxNum":1,"position":"randomMap","lifeBarB":1</obj>
+			
+			<description>召唤出装有异角龙的生化罐，生化罐被击碎后异角龙逃出开始攻击异齿虎，每次攻击都会对异齿虎造成最大生命值1%的伤害。</description>
+		</skill>
+		<skill index="0" cnName="超导电幕">
+			<name>SaberTiger_shield</name>
+			<cnName>超导电幕</cnName>
+			<wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>SaberTiger_shield</effectType>
+			<linkArr>SaberTiger_shield_first</linkArr>
+			<duration>9999999</duration>
+			
+			<pointEffectImg con="add" noShowB="1">SaberTiger/angerEffect</pointEffectImg>
+			<stateEffectImg con="add" noShowB="1">SaberTiger/shield1</stateEffectImg>
+			<stateEffectImg2 con="add" noShowB="1">SaberTiger/shield2</stateEffectImg2>
+			<description>通电的超导体产生巨大的磁力场，阻挡一切远程攻击。在机械重组之后，超导电幕消失。</description>
+		</skill>
+		<skill index="0" cnName="机械重组">
+			<name>SaberTiger_rebirth</name>
+			<cnName>机械重组</cnName><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>allDie</condition>
+			<otherConditionArr>rebirthNumLess</otherConditionArr>
+			<conditionRange>1</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>SaberTiger_rebirth</effectType>
+			<mul>1</mul>
+			
+			<addSkillEffectImg partType="mouth" con="add">skillEffect/rune_green_r</addSkillEffectImg>
+			<meEffectImg soundUrl="sound/groupLight_hero" con="add">skillEffect/groupLight_hero</meEffectImg>
+			<description>激活体内的记忆零件，使机体重组复生。</description>
+		</skill>
+		<skill index="0" cnName="超导电幕-第一阶段">
+			<name>SaberTiger_shield_first</name>
+			<cnName>超导电幕-第一阶段</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB>
+			<conditionType>passive</conditionType>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<duration>9999999</duration>
+			
+			<stateEffectImg partType="body" con="add">SaberTiger/shield1</stateEffectImg>
+		</skill>
+		<skill index="0" cnName="超导电幕-第二阶段">
+			<name>SaberTiger_shield_second</name>
+			<cnName>超导电幕-第二阶段</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB>
+			<conditionType>passive</conditionType>
+			<target>me</target>
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<duration>9999999</duration>
+			
+			<stateEffectImg partType="body" con="add">SaberTiger/shield2</stateEffectImg>
+		</skill>
+		
+		<skill index="0" cnName="超导电幕-怒气">
+			<name>SaberTiger_shield_anger</name>
+			<cnName>超导电幕-怒气</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,enemy</target>
+			
+			<addType>state</addType>
+			<effectType>angerAddMul</effectType>
+			<mul>20</mul>
+			<duration>1</duration>
+			<range>99999</range>
+			
+			<stateEffectImg partType="mouth" con="add">SaberTiger/angerEffect</stateEffectImg>
+		</skill>
+		<skill index="0" cnName="超导电幕-防御">
+			<name>SaberTiger_shield_defence</name>
+			<cnName>超导电幕-防御</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt_SaberTiger_shield</effectType>
+			<mul>0</mul>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>只接受副手和异角龙的攻击伤害。</description>
+		</skill>
+		
+		<skill index="0" cnName="异角龙百分比伤害">
+			<name>TriceratopsHurt</name>
+			<cnName>异角龙百分比伤害</cnName><noBeClearB>1</noBeClearB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt_TriceratopsHurt</effectType>
+			<mul>0.01</mul>
+			<description>异角龙百分比伤害，只对异齿虎造成伤害。</description>
+		</skill>
+		<skill cnName="召唤异角龙">
+			<name>ChemicalTank_Triceratops</name>
+			<cnName>召唤异角龙</cnName>
+			<ignoreSilenceB>1</ignoreSilenceB>
+			
+			<conditionType>passive</conditionType>
+			<condition>die</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>summonedUnits</effectType>
+			<obj>"cnName":"异角龙","num":1,"lifeMul":1000,"maxNum":1,"lifeBarB":1,"camp":"enemy","noUnderHurtB":1,"skillArr":["TriceratopsHurt"]</obj>
+			
+			<description>。</description>
+		</skill>
+	</father>	 	
+	</data>

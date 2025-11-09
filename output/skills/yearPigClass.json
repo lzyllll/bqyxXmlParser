@@ -1,0 +1,109 @@
+{
+  "father": [
+    {
+      "type": "rocket",
+      "cnName": "火炮-特殊",
+      "bullet": {
+        "index": 40,
+        "cnName": "亥猪",
+        "name": "yearPig",
+        "color": "black",
+        "composeLv": 90,
+        "chipB": true,
+        "chipNum": 160,
+        "dropLevelArr": 999,
+        "capacity": 5,
+        "attackGap": 1.3,
+        "reloadGap": 4,
+        "shakeAngle": 0,
+        "bulletWidth": 30,
+        "bulletShakeWidth": "0,0",
+        "bulletNum": 1,
+        "gunNum": 1,
+        "armsArmMul": 0.65,
+        "upValue": 5,
+        "shootShakeAngle": 40,
+        "shootRecoil": 12,
+        "screenShakeValue": 16,
+        "noShakeTime": 0.5,
+        "bulletLife": 2,
+        "hitType": "rect",
+        "dpsMul": 1.8,
+        "uiDpsMul": 2,
+        "bulletSpeed": 20,
+        "boomD": {
+          "bodyB": true,
+          "floorB": true,
+          "selfB": true,
+          "radius": 130
+        },
+        "twoShootPro": 0.4,
+        "penetrationGap": 0,
+        "bounceD": {
+          "floor": 0,
+          "body": 1
+        },
+        "critD": {
+          "mul": 2,
+          "pro": 0.3
+        },
+        "skillArr": "Hit_blindness_ArmsSkill,Hit_Paralysis_ArmsSkill",
+        "godSkillArr": "Hit_fleshSkill_godArmsSkill,yearPigSkill",
+        "iconUrl": "specialGun/yearPigIcon",
+        "flipX": 1,
+        "bulletImgUrl": {
+          "value": "bullet/blueFire",
+          "con": "filter",
+          "raNum": 30
+        },
+        "hitImgUrl": {
+          "value": "boomEffect/boom2",
+          "soundUrl": "sound/fireHit2",
+          "soundVolume": 0.3,
+          "shake": "3,0.4,13",
+          "con": "add"
+        },
+        "hitFloorImgUrl": {
+          "value": "boomEffect/boom1",
+          "soundUrl": "sound/fireHit1",
+          "shake": "3,0.4,9",
+          "soundVolume": 0.5,
+          "con": "add"
+        },
+        "fireImgType": null,
+        "shootSoundUrl": "sound/bigShoot",
+        "bodyImgRange": "specialGun/yearPig",
+        "bulletImgRange": "specialGun/bullet",
+        "description": "远古宝箱、生肖碎片包(活跃值礼包)、纪念币商店、黄金商店、竞技宝箱"
+      }
+    },
+    {
+      "name": "godArmsSkill",
+      "cnName": "神级武器技能",
+      "skills": {
+        "yearPigSkill": {
+          "index": 0,
+          "name": "yearPigSkill",
+          "noSkillDodgeB": 1,
+          "ignoreImmunityB": 1,
+          "cnName": "周五大吉",
+          "noRandomListB": 1,
+          "conditionType": "passive",
+          "condition": "hit",
+          "otherConditionArr": "puWe,noDemonOnlyBoss,noMainTask,noHardB,dayPan,yearArmsFalse,targetUnitType,noUnionBattle",
+          "conditionRange": 5,
+          "conditionString": "boss",
+          "target": "target",
+          "addType": "instant",
+          "effectType": "yearArmsKill",
+          "meEffectImg": null,
+          "targetEffectImg": {
+            "value": "boomEffect/bigCircle",
+            "soundUrl": "sound/pointBoom_hero"
+          },
+          "description": "每周五可以直接瞬秒一个首领，无视技能免疫。主线任务、困难模式、修罗决斗模式、军队争霸中该技能无效。"
+        }
+      }
+    }
+  ]
+}

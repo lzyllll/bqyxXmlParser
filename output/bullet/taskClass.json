@@ -1,0 +1,3475 @@
+{
+  "father": [
+    {
+      "name": "level",
+      "cnName": "关卡",
+      "task": [
+        {
+          "name": "YangMei_1",
+          "cnName": "消灭携枪僵尸",
+          "shortText": "消灭杨梅岭深处一只携枪僵尸，并抢走他的武器。"
+        },
+        {
+          "name": "XiChi_1",
+          "cnName": "寻找超能石",
+          "shortText": "消灭最后出现的僵尸，获得超能石。"
+        },
+        {
+          "name": "ShuiSheng_1",
+          "cnName": "消灭僵尸王",
+          "shortText": "消灭僵尸王。"
+        },
+        {
+          "name": "BaiZhang_1",
+          "cnName": "比拼灭敌",
+          "failB": true,
+          "uiShowTime": 999999,
+          "moreKillEnemyNumIsMe": 1,
+          "shortText": "在消灭所有僵尸之后，你的灭敌数必须超过藏师。",
+          "conditionText": "macth_kills_ZhangShi",
+          "uiFleshCondition": {
+            "one": "bodyEvent:die; anyone"
+          }
+        }
+      ]
+    },
+    {
+      "name": "main",
+      "cnName": "主线",
+      "tipText": "完成一个主线任务后自动解锁下一级任务。",
+      "autoUnlockByLevelB": true,
+      "task": [
+        {
+          "name": "BaiLu_ZangShi",
+          "cnName": "营救藏师",
+          "lv": 19,
+          "shortText": "前往白鹭镇营救藏师。",
+          "uiConditionText": "消灭所有天鹰部队",
+          "description": "天鹰部队到了藏师的大本营，试图抓走藏师将军，快去营救他！",
+          "worldMapId": "BaiLu",
+          "levelId": "BaiLu_ZangShi"
+        },
+        {
+          "name": "WoTu_doctor",
+          "cnName": "解救制毒师",
+          "lv": 20,
+          "shortText": "消灭沃土镇的所有僵尸，解救被困的制毒师，获得解药。",
+          "uiConditionText": "消灭所有敌人",
+          "description": "初来乍到的制毒师低估了僵尸的能力，被困于沃土镇。他有能力解你身上的毒，去解救他！",
+          "worldMapId": "WoTu",
+          "levelId": "WoTu_doctor"
+        },
+        {
+          "name": "XiChi_blood",
+          "cnName": "收集僵尸样本",
+          "lv": 21,
+          "uiShowTime": 999999,
+          "moreKillEnemyNumIsMe": 1,
+          "shortText": "和制毒师一同在西池收集携枪僵尸样本。",
+          "conditionText": "携枪僵尸 [nowNum]/[num]",
+          "uiConditionText": "累计消灭携枪僵尸 [nowNum]/[num] 个",
+          "description": "为了研究智能僵尸病毒的秘密，制毒师需要足够的高等级携枪僵尸样本，你要和他一同前往西池完成这个任务。",
+          "worldMapId": "XiChi",
+          "levelId": "XiChi_blood",
+          "condition": {
+            "type": "collect",
+            "target": "killEnemyNum",
+            "targetId": "hero",
+            "value": 50
+          }
+        },
+        {
+          "name": "ShuangTa_base",
+          "cnName": "夺取双塔村",
+          "lv": 22,
+          "shortText": "清除双塔村所有僵尸。",
+          "uiConditionText": "清除所有僵尸，夺取双塔村",
+          "description": "距离南唐城最远且具有天然地理优势的双塔村，是作为基地的不二选择。和伙伴们扫清那里的僵尸！",
+          "worldMapId": "ShuangTa",
+          "levelId": "ShuangTa_base"
+        },
+        {
+          "name": "BeiDou_mercenary",
+          "cnName": "佣兵北斗",
+          "lv": 23,
+          "shortText": "招募北斗城的民间军事小队。",
+          "uiConditionText": "招募北斗城的民间军事小队",
+          "description": "北斗城地下藏着一支民间军事小队，清除那里的所有僵尸，解除他们的危险，并邀请他们入住双塔基地。",
+          "worldMapId": "BeiDou",
+          "levelId": "BeiDou_mercenary"
+        },
+        {
+          "name": "BaiZhang_train",
+          "cnName": "百丈训练场",
+          "lv": 24,
+          "shortText": "打败拥有你所有技能的雇佣兵们。",
+          "uiConditionText": "打败拥有你所有技能的雇佣兵们",
+          "description": "在百丈道，赋予每个雇佣兵你当前所拥有的技能，向他们展示如何击败自己。",
+          "worldMapId": "BaiZhang",
+          "levelId": "BaiZhang_train"
+        },
+        {
+          "name": "ZhuTou_war",
+          "cnName": "猪头洋混战",
+          "lv": 25,
+          "shortText": "清除猪头洋所有敌人。",
+          "uiConditionText": "清除猪头洋所有敌人",
+          "description": "大批僵尸部队出现在猪头洋，你要截住它们，避免双塔基地遭到入侵！",
+          "worldMapId": "ZhuTou",
+          "levelId": "ZhuTou_war"
+        },
+        {
+          "name": "NanTang_dive",
+          "cnName": "潜入南唐城",
+          "lv": 26,
+          "shortText": "潜入南唐城，保证藏师活着。",
+          "uiConditionText": "潜入南唐城，保证藏师活着",
+          "description": "负责天鹰克隆人项目的奇皇博士藏在南唐城，潜入南唐城尝试找到他。只有藏师认得他，必须保证藏师的安全。",
+          "worldMapId": "NanTang",
+          "levelId": "NanTang_dive"
+        },
+        {
+          "name": "ShuangTa_defend",
+          "cnName": "双塔保卫战",
+          "lv": 27,
+          "shortText": "抵御住敌人的攻击，保住双塔基地。",
+          "uiConditionText": "消灭来袭的所有敌人",
+          "description": "我们被亚瑟施展了调虎离山之计，他派出大量隐身僵尸逃过了双塔哨兵的眼睛，我们必须抵御住敌人的攻击，保住双塔基地。",
+          "worldMapId": "ShuangTa",
+          "levelId": "ShuangTa_defend"
+        },
+        {
+          "name": "DongShan_QiHuang",
+          "cnName": "消灭奇皇",
+          "lv": 28,
+          "shortText": "消灭最后出现的奇皇博士。",
+          "uiConditionText": "消灭最后出现的奇皇博士",
+          "description": "前往东山澳，找出奇皇博士，并消灭掉他！这样才能避免双塔基地遭到更强的僵尸攻击。",
+          "worldMapId": "DongShan",
+          "levelId": "DongShan_QiHuang"
+        },
+        {
+          "name": "ShuiSheng_king",
+          "cnName": "魅惑僵尸王",
+          "lv": 29,
+          "shortText": "消灭僵尸王。",
+          "uiConditionText": "消灭僵尸王",
+          "description": "为了魅惑僵尸王，我们必须先消灭它，去除它身上的纳米机器人，才能接着使用制毒师的魅惑药剂。",
+          "worldMapId": "ShuiSheng",
+          "levelId": "ShuiSheng_king"
+        },
+        {
+          "name": "QingMing_Arthur",
+          "cnName": "决战亚瑟",
+          "lv": 30,
+          "shortText": "消灭亚瑟！还霞光之和平！",
+          "uiConditionText": "消灭亚瑟！",
+          "description": "你消灭了奇皇博士，亚瑟盛怒，约你来清明岭决战。消灭亚瑟！还霞光之和平！",
+          "worldMapId": "QingMing",
+          "levelId": "QingMing_Arthur"
+        },
+        {
+          "name": "FengWei_TianYing",
+          "cnName": "大战天鹰",
+          "lv": 31,
+          "shortText": "消灭天鹰部队！",
+          "uiConditionText": "消灭天鹰部队！",
+          "description": "亚瑟被消灭之后，霞光大陆的天鹰部队倾巢出动，在凤尾洋截住了我们的去路！消灭他们，夺回霞光市的控制权！",
+          "worldMapId": "FengWei",
+          "levelId": "FengWei_TianYing"
+        },
+        {
+          "name": "XiaSha_Ling",
+          "cnName": "鬼目游尸",
+          "lv": 32,
+          "shortText": "前往[map]找出浮游僵尸。",
+          "uiConditionText": "找出浮游僵尸",
+          "description": "剿灭天鹰余党之后，我们的雇佣兵在下沙发现了一种无下身并且可浮游空中的新型僵尸，和伙伴们前往那里一探究竟。",
+          "worldMapId": "XiaSha",
+          "levelId": "XiaSha_Ling"
+        },
+        {
+          "name": "YouLing_mystery",
+          "cnName": "幽灵谷之谜",
+          "lv": 33,
+          "shortText": "前往[map]调查游尸之谜。",
+          "uiConditionText": "调查游尸之谜",
+          "description": "原来下沙的游尸来自幽灵谷，以前霞光市的老人们也讲述过幽灵谷的鬼怪传说，难道二者之间有什么奇妙的联系？",
+          "worldMapId": "YouLing",
+          "levelId": "YouLing_mystery"
+        },
+        {
+          "name": "QingSha_clone",
+          "cnName": "克隆体爆发",
+          "lv": 34,
+          "shortText": "前往[map]消灭僵尸克隆体军团。",
+          "uiConditionText": "消灭僵尸克隆体军团",
+          "description": "游尸之谜还未解开，青纱镇却出现了僵尸大爆发！奇皇博士早已被击毙，天鹰军团的克隆体项目随之中止，为何还会出现大量的僵尸克隆体呢？",
+          "worldMapId": "QingSha",
+          "levelId": "QingSha_clone"
+        },
+        {
+          "name": "ShuangTa_fall",
+          "cnName": "双塔沦陷",
+          "lv": 35,
+          "shortText": "抵住僵尸克隆军团的攻击。",
+          "uiConditionText": "抵住僵尸克隆军团的攻击",
+          "description": "没想到当初我们所击毙的奇皇博士其实就是一个克隆体，奇皇克隆出了自己并成功投入战场，这意味着大量的僵尸已经被成功克隆而出！僵尸克隆军团围攻双塔，我们的基地岌岌可危！",
+          "worldMapId": "ShuangTa",
+          "levelId": "ShuangTa_fall"
+        },
+        {
+          "name": "YangMei_back",
+          "cnName": "绝地反击",
+          "lv": 36,
+          "shortText": "在[map]消灭僵尸克隆军团。",
+          "uiConditionText": "消灭僵尸克隆军团",
+          "description": "僵尸军团太过庞大，我们以退为进，暂时放弃双塔基地，退守杨梅岭并给它们一记强有力的反击。",
+          "worldMapId": "YangMei",
+          "levelId": "YangMei_back"
+        },
+        {
+          "name": "XiFeng_first",
+          "cnName": "西峰熔炉",
+          "lv": 37,
+          "shortText": "前往[map]寻找僵尸克隆工厂。",
+          "uiConditionText": "寻找僵尸克隆工厂",
+          "description": "从克隆僵尸的踪迹来看，他们都来自西峰火山，难道僵尸克隆工厂就在那里？",
+          "worldMapId": "XiFeng",
+          "levelId": "XiFeng_first"
+        },
+        {
+          "name": "YouLing_king",
+          "cnName": "游尸之王",
+          "lv": 38,
+          "shortText": "前往[map]消灭游尸王。",
+          "uiConditionText": "消灭游尸王",
+          "description": "天鹰把克隆失败的僵尸运到了幽灵谷，利用幽灵谷的天然地理磁场和超能矿石的辐射，把这些僵尸变异成了能够浮游空中的游尸。而由残肢僵尸王演变而来的游尸王最为恐怖，破坏力不可小觑！",
+          "worldMapId": "YouLing",
+          "levelId": "YouLing_king"
+        },
+        {
+          "name": "BaiLu_back",
+          "cnName": "重返白鹭",
+          "lv": 39,
+          "shortText": "消灭[map]正在收集金属矿石的僵尸们。",
+          "uiConditionText": "消灭正在收集金属矿石的僵尸们",
+          "description": "天鹰军团正在培育更强大的冷兵器僵尸，内部代号“狂战尸”。他们远程操控僵尸小喽罗们在白鹭镇收集金属矿石，我们必须阻止他们的计划！",
+          "worldMapId": "BaiLu",
+          "levelId": "BaiLu_back"
+        },
+        {
+          "name": "XiFeng_FightKing",
+          "cnName": "狂战之觉醒",
+          "lv": 40,
+          "shortText": "前往[map]消灭狂战尸！",
+          "uiConditionText": "消灭狂战尸",
+          "description": "狂战尸已经成型！正在西峰接受超能矿石的辐射，我们必须在他成为超级战士之前消灭它！",
+          "worldMapId": "XiFeng",
+          "levelId": "XiFeng_FightKing"
+        },
+        {
+          "name": "XiChi_win",
+          "cnName": "乘胜追击",
+          "lv": 41,
+          "shortText": "前往[map]剿灭最后剩余的天鹰部队！",
+          "uiConditionText": "剿灭天鹰部队",
+          "description": "狂战尸计划破灭后，天鹰突然从霞光市集体撤出，只在西池留下了一支小型部队。听上去是个好消息，但是我们也不能掉以轻心，乘胜追击，剿灭霞光市最后剩余的天鹰部队。",
+          "worldMapId": "XiChi",
+          "levelId": "XiChi_win"
+        },
+        {
+          "name": "WoTu_find",
+          "cnName": "寻找制毒师",
+          "lv": 42,
+          "shortText": "前往[map]寻找制毒师的踪迹",
+          "uiConditionText": "消灭僵尸并寻找制毒师的踪迹",
+          "description": "自从双塔沦陷后，制毒师和雇佣兵们人间蒸发，大家都以为他们已命殒于天鹰之手。然而最近却有市民声称在沃土镇见过制毒师，沃土镇也是制毒师踏入霞光市的第一个地方，我们必须前往那里一探究竟。",
+          "worldMapId": "WoTu",
+          "levelId": "WoTu_find"
+        },
+        {
+          "name": "BeiDou_goto",
+          "cnName": "暮光之途",
+          "lv": 43,
+          "shortText": "前往[map]，扫清那里障碍",
+          "uiConditionText": "扫清北斗城的障碍",
+          "description": "要陆行前往暮光市，北斗城是必经之路。",
+          "worldMapId": "BeiDou",
+          "levelId": "BeiDou_goto"
+        },
+        {
+          "name": "LvSen_shooter",
+          "cnName": "狂战射手",
+          "lv": 44,
+          "shortText": "前往[map]，扫清那里障碍",
+          "uiConditionText": "扫清绿森堡的障碍",
+          "description": "离开北斗城之后，我们的下一站就是绿森堡了！那里是毒蛛的巢穴，可据探子回报，绿森堡藏着一只带枪的狂战尸！莫非狂战尸还未被消灭？",
+          "worldMapId": "LvSen",
+          "levelId": "LvSen_shooter"
+        },
+        {
+          "name": "DuKu_poision",
+          "cnName": "巨毒之窟",
+          "lv": 45,
+          "shortText": "前往[map]，查明毒蜘之源",
+          "uiConditionText": "查明毒蜘之源",
+          "description": "消灭狂战射手之后，我们发现毒蜘群都来自绿森堡末尾的一个山洞，难道地下又藏着一座天鹰的生物克隆工厂？",
+          "worldMapId": "DuKu",
+          "levelId": "DuKu_poision"
+        },
+        {
+          "name": "BaoLun_back",
+          "cnName": "“制毒师”归来",
+          "lv": 46,
+          "shortText": "前往[map]，寻找制毒师",
+          "uiConditionText": "寻找制毒师",
+          "description": "经过多番努力，寻找制毒师还是未果，我们只能继续向东行，任何线索都不能放过。",
+          "worldMapId": "BaoLun",
+          "levelId": "BaoLun_back"
+        },
+        {
+          "name": "LuYu_enemies",
+          "cnName": "反目疑云",
+          "lv": 47,
+          "shortText": "前往[map]，清除那里的敌人",
+          "uiConditionText": "清除所有敌人",
+          "description": "制毒师的回归让伙伴们尤为兴奋，但事情往往不会那么顺利，前方的炉屿隐藏着一个惊天的秘密。",
+          "worldMapId": "LuYu",
+          "levelId": "LuYu_enemies"
+        },
+        {
+          "name": "BaWang_king",
+          "cnName": "毒蛛之源",
+          "lv": 48,
+          "shortText": "前往[map]，寻找霸王毒蛛",
+          "uiConditionText": "寻找霸王毒蛛",
+          "description": "制毒师的意外反目让人百思不得其解，炉屿的制毒师到底是不是真的制毒师？或许找到霸王毒蛛就能查出原因。",
+          "worldMapId": "BaWang",
+          "levelId": "BaWang_king"
+        },
+        {
+          "name": "PingChuan_true",
+          "cnName": "真相大白",
+          "lv": 49,
+          "shortText": "前往[map]，清除那里的敌人",
+          "uiConditionText": "清除所有敌人",
+          "description": "制毒师的去向之谜将在平川解开。",
+          "worldMapId": "PingChuan",
+          "levelId": "PingChuan_true"
+        },
+        {
+          "name": "BaiSha_skeleton",
+          "cnName": "消灭暴君",
+          "lv": 50,
+          "shortText": "前往[map]，消灭骷髅首领",
+          "uiConditionText": "消灭骷髅首领",
+          "description": "前方笼罩着一股令人窒息的气氛！",
+          "worldMapId": "BaiSha",
+          "levelId": "BaiSha_skeleton"
+        },
+        {
+          "name": "QingSha_riots",
+          "cnName": "青纱暴乱",
+          "lv": 51,
+          "shortText": "前往[map]，调查僵尸失控真伪。",
+          "uiConditionText": "调查僵尸失控真伪",
+          "description": "据亚瑟描述，失控的僵尸正在青纱镇发生大规模暴乱，天鹰部队镇压无力，节节败退。我们不轻信亚瑟之言，但为了查明真相还是得乘船前往青纱镇一探究竟。",
+          "worldMapId": "QingSha",
+          "levelId": "QingSha_riots"
+        },
+        {
+          "name": "DongShan_lost",
+          "cnName": "失控地带",
+          "lv": 52,
+          "shortText": "前往[map]，继续镇压暴乱的僵尸群。",
+          "uiConditionText": "镇压暴乱的僵尸群",
+          "description": "作为天鹰最早的僵尸工厂隐秘之地，如今却成为了失控僵尸的聚集地。",
+          "worldMapId": "DongShan",
+          "levelId": "DongShan_lost"
+        },
+        {
+          "name": "LvSen_again",
+          "cnName": "再战绿森",
+          "lv": 53,
+          "shortText": "在[map]再次遭遇狂战射手的拦截，消灭它！",
+          "uiConditionText": "扫清障碍",
+          "description": "绿森堡是前往上沙的必经之路，没想到在那里，我们再次遭遇狂战射手的拦截，消灭它！",
+          "worldMapId": "LvSen",
+          "levelId": "LvSen_again"
+        },
+        {
+          "name": "ShangSha_super",
+          "cnName": "精英之战",
+          "lv": 54,
+          "shortText": "前往[map]，找出研究所入口。",
+          "uiConditionText": "找出研究所入口",
+          "description": "据说研究所隐藏于上沙地表之下，我们必须找出入口。",
+          "worldMapId": "ShangSha",
+          "levelId": "ShangSha_super"
+        },
+        {
+          "name": "DongFeng_lab",
+          "cnName": "东峰研究所",
+          "lv": 55,
+          "shortText": "前往[map]，与制毒师汇合",
+          "uiConditionText": "扫清僵尸，并与制毒师会和",
+          "description": "终于来到了天鹰的僵尸研究所，或许我们能查出控制僵尸的真正幕后黑手。",
+          "worldMapId": "DongFeng",
+          "levelId": "DongFeng_lab"
+        },
+        {
+          "name": "ZhongXin_fat",
+          "cnName": "研究中心",
+          "lv": 56,
+          "shortText": "前往[map]，继续清除这里的僵尸",
+          "uiConditionText": "清除研究中心的僵尸",
+          "description": "研究所的中心就在前方，扫清所有僵尸，找出中心大门。",
+          "worldMapId": "ZhongXin",
+          "levelId": "ZhongXin_fat"
+        },
+        {
+          "name": "BaiZhang_key",
+          "cnName": "寻钥之旅",
+          "lv": 57,
+          "shortText": "前往[map]，寻找研究所大门钥匙",
+          "uiConditionText": "寻找研究所大门钥匙",
+          "description": "据制毒师回忆，研所所中心大门的钥匙藏在百丈道，前往那里，尽可能找到这把钥匙。",
+          "worldMapId": "BaiZhang",
+          "levelId": "BaiZhang_key"
+        },
+        {
+          "name": "ShuiSheng_king2",
+          "cnName": "再战僵尸王",
+          "lv": 58,
+          "shortText": "前往[map]，消灭僵尸王",
+          "uiConditionText": "消灭僵尸王",
+          "description": "要打开研究所中心大门，必须消灭僵尸王，提取它的血液。",
+          "worldMapId": "ShuiSheng",
+          "levelId": "ShuiSheng_king2"
+        },
+        {
+          "name": "XiFeng_fight2",
+          "cnName": "消灭狂战尸",
+          "lv": 59,
+          "shortText": "前往[map]，消灭狂战尸",
+          "uiConditionText": "消灭狂战尸",
+          "description": "要打开研究所中心大门，还必须提取狂战尸的血液。",
+          "worldMapId": "XiFeng",
+          "levelId": "XiFeng_fight2"
+        },
+        {
+          "name": "DiXia_first",
+          "cnName": "地下城市",
+          "lv": 60,
+          "shortText": "探寻大门背后的秘密",
+          "uiConditionText": "探寻大门背后的秘密",
+          "description": "研究中心大门背后似乎隐藏着一个天大的秘密！",
+          "worldMapId": "DiXia",
+          "levelId": "DiXia_first"
+        },
+        {
+          "name": "QingMing_find",
+          "cnName": "寻觅",
+          "lv": 61,
+          "shortText": "寻觅清明岭的地下城",
+          "uiConditionText": "探寻觅清明岭的地下城",
+          "description": "虽然我们发现了地下城，但是那里却空无一人，只有成堆的僵尸。根据小美的叙述，清明岭到幽灵谷一带还有一座地下城，我们现在就乘船去看看。",
+          "worldMapId": "QingMing",
+          "levelId": "QingMing_find"
+        },
+        {
+          "name": "YouLing_back",
+          "cnName": "重回幽灵谷",
+          "lv": 62,
+          "shortText": "前往幽灵谷搜寻地下城",
+          "uiConditionText": "前往幽灵谷搜寻地下城",
+          "description": "在清明岭没有发现地下城，于是我们又启程去幽灵谷，但是之后却发生了一件大事……",
+          "worldMapId": "YouLing",
+          "levelId": "YouLing_back"
+        },
+        {
+          "name": "HouJin_first",
+          "cnName": "巨变",
+          "lv": 63,
+          "shortText": "前往沙漠边缘",
+          "uiConditionText": "前往沙漠边缘",
+          "description": "原本丛林密布的暮光市却出现了大面的沙漠，到底是什么原因呢？",
+          "worldMapId": "HouJin",
+          "levelId": "HouJin_first"
+        },
+        {
+          "name": "ShaJiang_first",
+          "cnName": "海市蜃楼",
+          "lv": 64,
+          "shortText": "搜寻沙漠中心",
+          "uiConditionText": "搜寻沙漠中心",
+          "description": "要前往沙漠中心，沙江是必经之路。",
+          "worldMapId": "ShaJiang",
+          "levelId": "ShaJiang_first"
+        },
+        {
+          "name": "ShaMo_first",
+          "cnName": "沙漠中心",
+          "lv": 65,
+          "shortText": "来到沙漠中心调查沙漠化原因",
+          "uiConditionText": "来到沙漠中心调查沙漠化原因",
+          "description": "终于到了沙漠中心，或许谜底就要解开了！",
+          "worldMapId": "ShaMo",
+          "levelId": "ShaMo_first"
+        },
+        {
+          "name": "BaiSha_gather",
+          "cnName": "白沙集结",
+          "lv": 66,
+          "diff": 2,
+          "shortText": "前往白沙村集结",
+          "uiConditionText": "前往白沙村集结",
+          "description": "在消灭飓风巫尸之后，制毒师让大家在白沙村集结，似乎要告诉我们一个重大的消息！",
+          "worldMapId": "BaiSha",
+          "levelId": "BaiSha_gather"
+        },
+        {
+          "name": "XianQu_first",
+          "cnName": "先驱号",
+          "lv": 67,
+          "diff": 2,
+          "shortText": "调查“诺亚”项目",
+          "uiConditionText": "调查“诺亚”项目",
+          "description": "天鹰似乎隐藏着一个更大更加恐怖的项目，我们要往白沙村的南边前行，寻找其中的蛛丝马迹。",
+          "worldMapId": "XianQu",
+          "levelId": "XianQu_first"
+        },
+        {
+          "name": "FangZhouFirst_first",
+          "cnName": "诺亚方舟",
+          "lv": 68,
+          "diff": 2,
+          "shortText": "前往方舟",
+          "uiConditionText": "前往方舟",
+          "description": "天鹰启动了沙漠中心的一艘巨大飞船，他们到底有何企图呢？我们必须前往一探究竟！",
+          "worldMapId": "FangZhouFirst",
+          "levelId": "FangZhouFirst_first"
+        },
+        {
+          "name": "FangZhouSecond_first",
+          "cnName": "黑暗泰坦",
+          "lv": 69,
+          "diff": 2,
+          "shortText": "向方舟顶部前进",
+          "uiConditionText": "向方舟顶部前进",
+          "description": "我们已经进入了方舟内部，必须前往船体的顶部夺取方舟的控制权。",
+          "worldMapId": "FangZhouSecond",
+          "levelId": "FangZhouSecond_first"
+        },
+        {
+          "name": "FangZhouTop_first",
+          "cnName": "无疆骑士",
+          "lv": 70,
+          "diff": 2,
+          "shortText": "消灭巨大机器人，夺取飞船控制权",
+          "uiConditionText": "消灭巨大机器人，夺取飞船控制权",
+          "description": "我们已经到了方舟的顶部，但是没有找到控制室，也没有找到天鹰人员，只看到前方耸立着一座巨大的机器人……",
+          "worldMapId": "FangZhouTop",
+          "levelId": "FangZhouTop_first"
+        },
+        {
+          "name": "BaoLun_cyclopia",
+          "cnName": "独眼妖怪",
+          "lv": 71,
+          "diff": 2,
+          "shortText": "前往宝伦镇",
+          "uiConditionText": "前往宝伦镇",
+          "description": "夺取方舟之后，我们回到了陆地上，途进宝伦镇时，却发现了一只奇怪的僵尸。",
+          "worldMapId": "BaoLun",
+          "levelId": "BaoLun_cyclopia"
+        },
+        {
+          "name": "XianQu_prison",
+          "cnName": "初露端倪",
+          "lv": 72,
+          "diff": 2,
+          "shortText": "前往先驱号，寻找灰色僵尸",
+          "uiConditionText": "前往先驱号，寻找灰色僵尸",
+          "description": "据说先驱号上还有一只更加奇怪的灰色僵尸，它到底是来自哪里呢？",
+          "worldMapId": "XianQu",
+          "levelId": "XianQu_prison"
+        },
+        {
+          "name": "PrisonDoor_ghost",
+          "cnName": "鬼影战士",
+          "lv": 73,
+          "moreKillEnemyNumIsMe": 1,
+          "diff": 2,
+          "shortText": "前往监狱大门消灭守卫首领。",
+          "conditionText": "消灭首领 [nowNum]/[num]",
+          "uiConditionText": "累计消灭首领 [nowNum]/[num] 个",
+          "description": "那只奇怪的灰色僵尸来自曙光市的风云监狱，我们必须到那里一探究竟！",
+          "condition": {
+            "type": "collect",
+            "target": "killEnemyNum",
+            "targetId": "boss",
+            "value": 1
+          },
+          "worldMapId": "PrisonDoor",
+          "levelId": "PrisonDoor_ghost"
+        },
+        {
+          "name": "PrisonFirst_wolf",
+          "cnName": "嗜血尸狼",
+          "lv": 74,
+          "moreKillEnemyNumIsMe": 1,
+          "diff": 2,
+          "shortText": "前往监狱第1层消灭嗜血尸狼。",
+          "conditionText": "嗜血尸狼 [nowNum]/[num]",
+          "uiConditionText": "累计消灭嗜血尸狼 [nowNum]/[num] 个",
+          "description": "大陆上出现了另外一个神秘组织——“鬼影”，而“鬼爵”似乎就是他们的首领，我们只有前往监狱深处才能了解真相。",
+          "condition": {
+            "type": "collect",
+            "target": "killEnemyNum",
+            "targetId": "嗜血尸狼",
+            "value": 1
+          },
+          "worldMapId": "PrisonFirst",
+          "levelId": "PrisonFirst_wolf"
+        },
+        {
+          "name": "PrisonDeep_wolf",
+          "cnName": "尸狼双煞",
+          "lv": 75,
+          "diff": 2,
+          "shortText": "消灭更强大的敌人",
+          "uiConditionText": "消灭更强大的敌人",
+          "description": "消灭了嗜血尸狼之后，前方的监狱深处有更可怕的敌人在等着我们！",
+          "worldMapId": "PrisonDeep",
+          "levelId": "PrisonDeep_wolf"
+        },
+        {
+          "name": "PrisonExport_duke",
+          "cnName": "鬼爵驾临",
+          "lv": 75,
+          "diff": 2,
+          "shortText": "击败鬼爵克隆体",
+          "uiConditionText": "击败鬼爵克隆体",
+          "description": "将鬼爵克隆体击败，我们才能通过监狱的出口！",
+          "worldMapId": "PrisonExport",
+          "levelId": "PrisonExport_duke"
+        },
+        {
+          "name": "PrisonOutside_light",
+          "cnName": "地牢曙光",
+          "lv": 76,
+          "diff": 2,
+          "shortText": "击败守关首领，寻找出口",
+          "uiConditionText": "击败守关首领，寻找出口",
+          "description": "监狱出口已经被鬼爵封锁，我们必须找到另外一个出口。",
+          "worldMapId": "PrisonOutside",
+          "levelId": "PrisonOutside_light",
+          "gift": "things;dreamKey;1"
+        },
+        {
+          "name": "JungleOutside_war",
+          "cnName": "天鹰的宣战",
+          "lv": 77,
+          "diff": 2,
+          "shortText": "探索新丛林",
+          "uiConditionText": "探索新丛林",
+          "description": "监狱的外围竟然是一片从未见过的丛林…",
+          "worldMapId": "JungleOutside",
+          "levelId": "JungleOutside_war",
+          "gift": "things;courageKey;1"
+        },
+        {
+          "name": "JungleDeep_show",
+          "cnName": "干尸现世",
+          "lv": 78,
+          "diff": 2,
+          "shortText": "消灭末尾干尸",
+          "uiConditionText": "消灭末尾干尸",
+          "description": "天鹰莫名其妙的宣战令人费解，这幕后到底是谁在推波助澜？",
+          "worldMapId": "JungleDeep",
+          "levelId": "JungleDeep_show",
+          "gift": "things;energyKey;1"
+        },
+        {
+          "name": "CavesEntrance_clouds",
+          "cnName": "疑云渐隐",
+          "lv": 79,
+          "diff": 2,
+          "shortText": "清扫干尸，进入洞窟深处",
+          "uiConditionText": "清扫干尸，进入洞窟深处",
+          "description": "新型僵尸意味着新的危险，我们要小心！",
+          "worldMapId": "CavesEntrance",
+          "levelId": "CavesEntrance_clouds",
+          "gift": "things;victoryKey;1"
+        },
+        {
+          "name": "CavesDeep_wolf",
+          "cnName": "鬼爵的新宠",
+          "lv": 80,
+          "diff": 2,
+          "shortText": "进入洞窟深处，消灭鬼爵的新宠",
+          "uiConditionText": "进入洞窟深处，消灭鬼爵的新宠",
+          "description": "大家的猜测不无道理，但是我们也不能掉以轻心！因为前方即将出现了更加强大的敌人！",
+          "worldMapId": "CavesDeep",
+          "levelId": "CavesDeep_wolf"
+        },
+        {
+          "name": "CavesEntrance_chase",
+          "cnName": "追击狂战狼",
+          "lv": 81,
+          "unlockLv": 30,
+          "diff": 2,
+          "shortText": "前往洞窟出口，消灭拦路的哨兵",
+          "uiConditionText": "前往洞窟出口，消灭拦路的哨兵",
+          "description": "狂战狼跑出了那个出口，消灭完这里的所有干尸和哨兵，继续追击狂战狼！",
+          "worldMapId": "CavesEntrance",
+          "levelId": "CavesEntrance_chase",
+          "gift": "things;dreamKey;1"
+        },
+        {
+          "name": "QianYe_sin",
+          "cnName": "最恶时代",
+          "lv": 82,
+          "unlockLv": 30,
+          "diff": 2,
+          "shortText": "前往千叶谷，劫击窃听者",
+          "uiConditionText": "前往千叶谷，劫击窃听者",
+          "description": "众人误被金光迷惑，不料惊现机械窃听者，这种机器人在窃听完情报后，便会闪烁金光，诱捕泄密者！干掉他，获取它的绝密资料！",
+          "worldMapId": "QianYe",
+          "levelId": "QianYe_sin",
+          "gift": "things;courageKey;1"
+        },
+        {
+          "name": "FuMu_creation",
+          "cnName": "创世计划",
+          "lv": 83,
+          "unlockLv": 30,
+          "diff": 2,
+          "shortText": "进入腐木岗，消灭伏地尸",
+          "uiConditionText": "进入腐木岗，消灭伏地尸，印证创世计划",
+          "description": "正当大家对鬼爵的创世计划半信半疑的时候，突然出现的残尸让大家措手不及，干掉伏地尸，证实鬼爵的创世计划！",
+          "worldMapId": "FuMu",
+          "levelId": "FuMu_creation",
+          "gift": "things;energyKey;1"
+        },
+        {
+          "name": "GongMu_guardian",
+          "cnName": "公墓守护者",
+          "lv": 84,
+          "unlockLv": 30,
+          "diff": 2,
+          "shortText": "前往公墓入口，消灭掘金尸",
+          "uiConditionText": "前往公墓入口，消灭贪婪的掘金尸，探索墓底世界",
+          "description": "公墓的土地里突然出现会遁地的掘金尸，众人惊慌失措，快用火力逼出敌人，强行进入墓底！",
+          "worldMapId": "GongMu",
+          "levelId": "GongMu_guardian",
+          "gift": "things;victoryKey;1"
+        },
+        {
+          "name": "GuiWang_breath",
+          "cnName": "深渊的呼吸",
+          "lv": 85,
+          "unlockLv": 30,
+          "diff": 2,
+          "shortText": "进入鬼王墓，消灭狂野收割者",
+          "uiConditionText": "进入鬼王墓，消灭狂野收割者，破坏鬼爵的计划",
+          "description": "沿着盗洞，来到鬼王墓中心，却不慎惊动了墓底基地的鬼爵和他的半兽人新宠。决战时刻！消灭狂野收割者，破坏鬼爵的创世计划！",
+          "worldMapId": "GuiWang",
+          "levelId": "GuiWang_breath"
+        },
+        {
+          "name": "BingKu_plot",
+          "cnName": "拯救团队的温度",
+          "lv": 86,
+          "unlockLv": 30,
+          "diff": 2,
+          "shortText": "消灭童灵尸",
+          "uiConditionText": "探索冰窟，消灭童灵尸",
+          "description": "鬼王墓深处竟然是冰窟，没有退路了，要么活下去，要么成冻尸，探索冰窟寻找新的出路。",
+          "worldMapId": "BingKu",
+          "levelId": "BingKu_plot"
+        },
+        {
+          "name": "BingKuDeep_plot",
+          "cnName": "生存抉择",
+          "lv": 87,
+          "unlockLv": 30,
+          "diff": 2,
+          "shortText": "消灭关东尸",
+          "uiConditionText": "消灭关东尸，寻找新的出口",
+          "description": "沿逆境中，表哥潜能激发拯救了所有人，不料又遭遇冰窟裂缝，先清理附近的敌人，再从长计议。",
+          "worldMapId": "BingKuDeep",
+          "levelId": "BingKuDeep_plot"
+        },
+        {
+          "name": "WuXue_plot",
+          "cnName": "永别了！樱",
+          "lv": 88,
+          "unlockLv": 30,
+          "diff": 2,
+          "shortText": "消灭卫队尸",
+          "uiConditionText": "消灭卫队尸，爬出干谷",
+          "description": "所有人顺着裂缝滑下，发现一片没有雪的冰寒山谷，消灭所有僵尸，想办法爬出谷去。",
+          "worldMapId": "WuXue",
+          "levelId": "WuXue_plot"
+        },
+        {
+          "name": "DongWu_plot",
+          "cnName": "净土",
+          "lv": 89,
+          "unlockLv": 30,
+          "diff": 2,
+          "shortText": "消灭女爵尸",
+          "uiConditionText": "消灭女爵尸，继续前进",
+          "description": "冻湖附近全是绑着红罐头的行尸，究竟是谁在操纵他们，目的又是什么？消灭女爵尸，揭开野心家的阴谋。",
+          "worldMapId": "DongWu",
+          "levelId": "DongWu_plot"
+        },
+        {
+          "name": "BuDong_plot",
+          "cnName": "终极巨头",
+          "lv": 90,
+          "unlockLv": 30,
+          "diff": 2,
+          "shortText": "消灭野帝",
+          "uiConditionText": "消灭野帝，拯救世界",
+          "description": "湖水开始沸腾了，不料鬼爵带领三巨头之一野帝出现，干掉他们，救回这个残败的世界。",
+          "worldMapId": "BuDong",
+          "levelId": "BuDong_plot"
+        },
+        {
+          "name": "PiaoMiao_plot",
+          "cnName": "缥缈森林",
+          "lv": 90,
+          "unlockLv": 30,
+          "diff": 2.5,
+          "shortText": "消灭缥缈森林首领",
+          "uiConditionText": "消灭缥缈森林首领",
+          "description": "离开了不冻湖，前方竟然出现了秘境“缥缈森林”，这到底是怎么回事呢？",
+          "worldMapId": "PiaoMiao",
+          "levelId": "PiaoMiao_plot"
+        },
+        {
+          "name": "HanGuang1_plot",
+          "cnName": "海市蜃楼",
+          "lv": 91,
+          "unlockLv": 30,
+          "diff": 3,
+          "shortText": "通过寒光入口",
+          "uiConditionText": "通过寒光入口",
+          "description": "前方耸立的高楼是否是海市蜃楼呢？",
+          "worldMapId": "HanGuang1",
+          "levelId": "HanGuang1_plot"
+        },
+        {
+          "name": "HanGuang2_city",
+          "cnName": "大都会",
+          "lv": 92,
+          "unlockLv": 30,
+          "diff": 3,
+          "shortText": "消灭守关首领",
+          "uiConditionText": "消灭守关首领",
+          "description": "消灭了古飙之后，终于见到了大都会的真面目。那这里守关首领又是什么呢？",
+          "worldMapId": "HanGuang2",
+          "levelId": "HanGuang2_city"
+        },
+        {
+          "name": "HanGuang3_city",
+          "cnName": "神秘镰刀",
+          "lv": 93,
+          "unlockLv": 30,
+          "diff": 3,
+          "shortText": "消灭守关首领",
+          "uiConditionText": "消灭守关首领",
+          "description": "大家慢慢深入了大都会的内部，危险似乎越来越近了！",
+          "worldMapId": "HanGuang3",
+          "levelId": "HanGuang3_city"
+        },
+        {
+          "name": "HanGuang4_city",
+          "cnName": "龙吼",
+          "lv": 94,
+          "unlockLv": 30,
+          "diff": 3.5,
+          "shortText": "消灭守关首领",
+          "uiConditionText": "消灭守关首领",
+          "description": "终于来到了大都会的最高处，连高楼大厦都看不见了，这里却藏着一只飞天怪物！",
+          "worldMapId": "HanGuang4",
+          "levelId": "HanGuang4_city"
+        },
+        {
+          "name": "HanGuang5_city",
+          "cnName": "战争狂人",
+          "lv": 95,
+          "unlockLv": 30,
+          "diff": 3.5,
+          "shortText": "消灭守关首领",
+          "uiConditionText": "消灭守关首领",
+          "description": "这是大都会的最后一站了，战争狂人会出现吗？",
+          "worldMapId": "HanGuang5",
+          "levelId": "HanGuang5_city"
+        },
+        {
+          "name": "Hospital1_plot",
+          "cnName": "神秘实验室",
+          "lv": 96,
+          "unlockLv": 30,
+          "diff": 3.5,
+          "shortText": "消灭守关首领",
+          "uiConditionText": "消灭守关首领",
+          "description": "离开大都会，翻过森林，竟然发现了一座废弃的实验室，这又是谁建造的呢？",
+          "worldMapId": "Hospital1",
+          "levelId": "Hospital1_plot"
+        },
+        {
+          "name": "Hospital2_plot",
+          "cnName": "防毒僵尸",
+          "lv": 97,
+          "unlockLv": 30,
+          "diff": 4,
+          "shortText": "消灭守关首领",
+          "uiConditionText": "消灭守关首领",
+          "description": "这座实验室，到底隐藏着什么秘密？",
+          "worldMapId": "Hospital2",
+          "levelId": "Hospital2_plot"
+        },
+        {
+          "name": "Hospital3_plot",
+          "cnName": "元素的秘密",
+          "lv": 98,
+          "unlockLv": 30,
+          "diff": 4,
+          "shortText": "消灭守关首领",
+          "uiConditionText": "消灭守关首领",
+          "description": "制毒师发现了最新元素宝石的秘密，到底是什么呢？",
+          "worldMapId": "Hospital3",
+          "levelId": "Hospital3_plot"
+        },
+        {
+          "name": "Hospital4_plot",
+          "cnName": "空中地狱",
+          "lv": 98,
+          "unlockLv": 30,
+          "diff": 4,
+          "shortText": "消灭守关首领",
+          "uiConditionText": "消灭守关首领",
+          "description": "主角首次穿着飞行器来到高空，他是在找什么呢？",
+          "worldMapId": "SkyScene",
+          "levelId": "Hospital4_plot"
+        },
+        {
+          "name": "Hospital5_plot",
+          "cnName": "末日坦克",
+          "lv": 99,
+          "unlockLv": 30,
+          "diff": 1,
+          "shortText": "消灭守关首领",
+          "uiConditionText": "消灭守关首领",
+          "description": "传来了重大消息，鬼爵被战争狂人囚禁起来了！到底发生了什么？",
+          "worldMapId": "Hospital5",
+          "levelId": "Hospital5_plot"
+        },
+        {
+          "role": "Striker",
+          "name": "WoTu_back",
+          "cnName": "重回沃土镇",
+          "lv": 99,
+          "unlockLv": 30,
+          "diff": 1,
+          "shortText": "清除所有僵尸",
+          "uiConditionText": "清除所有僵尸",
+          "description": "主角重回沃土镇，却发生了一系列匪夷所思的事。",
+          "worldMapId": "WoTu",
+          "levelId": "WoTu_back",
+          "gift": "things;lightCone;10"
+        },
+        {
+          "role": "Striker",
+          "name": "BaiLu_re",
+          "cnName": "屠尸将军",
+          "lv": 99,
+          "unlockLv": 30,
+          "diff": 1,
+          "shortText": "消灭守关首领",
+          "uiConditionText": "消灭守关首领",
+          "description": "奇怪的事情还在继续……",
+          "worldMapId": "BaiLu",
+          "levelId": "BaiLu_re",
+          "gift": "things;zodiacCash;10"
+        },
+        {
+          "role": "Striker",
+          "name": "QingMing_re",
+          "cnName": "藏师的忧虑",
+          "lv": 99,
+          "unlockLv": 30,
+          "diff": 1,
+          "shortText": "消灭财宝僵尸",
+          "conditionText": "剩余时间 [time][n]",
+          "uiConditionText": "在时间 [time] 之内消灭财宝僵尸",
+          "description": "被拆穿身份之后，藏师陷入了深深的忧虑之中，他接下来会怎么做呢？",
+          "condition": {
+            "type": "collect",
+            "target": "killEnemyNum",
+            "value": 1,
+            "cumulativeType": "no",
+            "time": 200,
+            "timeType": "fail",
+            "timeFirst": "倒计时 "
+          },
+          "worldMapId": "QingMing",
+          "levelId": "QingMing_re",
+          "gift": "things;equipGemChest;20"
+        },
+        {
+          "role": "Striker",
+          "name": "ShuangTa_re",
+          "cnName": "狂人的任务",
+          "lv": 99,
+          "unlockLv": 30,
+          "diff": 1,
+          "shortText": "消灭守关首领",
+          "uiConditionText": "消灭守关首领",
+          "description": "战争狂人的声音出现了，他和那些奇怪的事有关吗？",
+          "worldMapId": "ShuangTa",
+          "levelId": "ShuangTa_re",
+          "gift": "things;armsGemChest;20"
+        },
+        {
+          "role": "Striker",
+          "name": "BeiDou_re",
+          "cnName": "藏师的回归",
+          "lv": 99,
+          "unlockLv": 30,
+          "diff": 1,
+          "shortText": "消灭守关首领，并保证藏师活着",
+          "uiConditionText": "消灭守关首领，并保证藏师活着",
+          "description": "藏师前来协助，你必须保证他活着。",
+          "worldMapId": "BeiDou",
+          "levelId": "BeiDou_re",
+          "gift": "things;sweepingCard;5"
+        },
+        {
+          "role": "Striker",
+          "name": "BaiZhang_re",
+          "cnName": "亚瑟的初心",
+          "lv": 99,
+          "unlockLv": 30,
+          "uiShowTime": 999999,
+          "moreKillEnemyNumIsMe": 1,
+          "shortText": "在消灭所有僵尸之后，你的灭敌数必须超过亚瑟。",
+          "uiConditionText": "在消灭所有僵尸之后，你的灭敌数必须超过亚瑟。",
+          "description": "赢得灭敌比试，并感化亚瑟。",
+          "conditionText": "macth_kills_Arthur",
+          "uiFleshCondition": {
+            "one": "bodyEvent:die; anyone"
+          },
+          "worldMapId": "BaiZhang",
+          "levelId": "BaiZhang_re",
+          "gift": "things;nuclearStone;5"
+        },
+        {
+          "role": "Striker",
+          "name": "ZhongXin_re",
+          "cnName": "僵尸暴动",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "清理这里的所有僵尸。",
+          "uiConditionText": "清理这里的所有僵尸。",
+          "description": "研究中心的僵尸失控了，你将控制亚瑟和小美一起清理这里的僵尸。",
+          "worldMapId": "ZhongXin",
+          "levelId": "ZhongXin_re",
+          "gift": "things;skyArch;5"
+        },
+        {
+          "role": "Striker",
+          "name": "ShangSha_re",
+          "cnName": "僵尸的逃亡",
+          "lv": 99,
+          "unlockLv": 30,
+          "uiShowTime": 999999,
+          "condition": {
+            "time": 120,
+            "timeType": "win",
+            "timeFirst": "剩余 "
+          },
+          "shortText": "躲避亚瑟的攻击，一定要活下来！",
+          "conditionText": "坚持 [time]",
+          "uiConditionText": "坚持 [time]",
+          "description": "躲避亚瑟的攻击，在指定时间内一定要活着！",
+          "worldMapId": "ShangSha",
+          "levelId": "ShangSha_re",
+          "gift": "things;partsChest87;1"
+        },
+        {
+          "role": "Striker",
+          "name": "XiFeng_re",
+          "cnName": "变身狂战尸",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "努力活下来。",
+          "uiConditionText": "努力活下来。",
+          "description": "你竟然变成了狂战尸，接下来会发生什么呢？",
+          "worldMapId": "XiFeng",
+          "levelId": "XiFeng_re",
+          "gift": "things;arenaChest;5"
+        },
+        {
+          "role": "Striker",
+          "name": "LvSen_re",
+          "cnName": "反转",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "努力活下来。",
+          "uiConditionText": "努力活下来。",
+          "description": "狂战尸逃亡到了绿森堡，但遭到了亚瑟的围剿，到底谁会胜出呢？",
+          "worldMapId": "LvSen",
+          "levelId": "LvSen_re",
+          "gift": "things;skyArch;5"
+        },
+        {
+          "role": "Striker",
+          "name": "HospitalUnder_re",
+          "cnName": "结局",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "完成对话。",
+          "uiConditionText": "完成对话。",
+          "description": "战争狂人的真面目即将揭晓。",
+          "worldMapId": "HospitalUnder",
+          "levelId": "HospitalUnder_re",
+          "gift": "things;arenaChest;5"
+        },
+        {
+          "name": "MainUpland_re",
+          "cnName": "轮回",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "完成对话。",
+          "uiConditionText": "完成对话。",
+          "description": "这到底是不是一个梦呢？",
+          "worldMapId": "MainUpland",
+          "levelId": "MainUpland_re",
+          "gift": "things;skyArch;5"
+        },
+        {
+          "role": "Striker",
+          "name": "breakFate",
+          "cnName": "破局",
+          "lv": 99,
+          "unlockLv": 30,
+          "limit": {
+            "vehicleB": false,
+            "propsB": false,
+            "skillB": false
+          },
+          "conditionText": "血液样本 [nowNum]/[num]",
+          "uiConditionText": "收集血液样本 [num] 个",
+          "description": "主角去实验室暗中收集狂人的血液样本，他有何目的？注意地面上的利刃，它会瞬间夺去你的性命！",
+          "worldMapId": "Hospital2",
+          "levelId": "breakFate",
+          "growth": {
+            "task": [
+              {
+                "condition": {
+                  "type": "collect",
+                  "target": "hitDrop",
+                  "targetId": "bloodTask",
+                  "value": 10,
+                  "cumulativeType": "no"
+                },
+                "gift": "base;anniCoin;10"
+              },
+              {
+                "condition": {
+                  "type": "collect",
+                  "target": "hitDrop",
+                  "targetId": "bloodTask",
+                  "value": 25,
+                  "cumulativeType": "no"
+                },
+                "gift": "base;anniCoin;12"
+              },
+              {
+                "condition": {
+                  "type": "collect",
+                  "target": "hitDrop",
+                  "targetId": "bloodTask",
+                  "value": 40,
+                  "cumulativeType": "no"
+                },
+                "gift": "base;anniCoin;14"
+              },
+              {
+                "condition": {
+                  "type": "collect",
+                  "target": "hitDrop",
+                  "targetId": "bloodTask",
+                  "value": 50,
+                  "cumulativeType": "no"
+                },
+                "gift": "base;anniCoin;16"
+              }
+            ]
+          }
+        },
+        {
+          "role": "Striker",
+          "name": "changeLife",
+          "cnName": "改命",
+          "lv": 99,
+          "unlockLv": 30,
+          "limit": {
+            "vehicleB": false,
+            "propsB": false,
+            "skillB": false
+          },
+          "shortText": "在疯狂导弹攻击中活下来！",
+          "conditionText": "坚持 [time]",
+          "uiConditionText": "坚持 [time]",
+          "condition": {
+            "time": 120,
+            "timeType": "win",
+            "timeFirst": "剩余 "
+          },
+          "description": "主角终于找到了实验室地下室，但在见到狂人之前，主角必须躲过所有导弹的攻击。地下室光线昏暗，主角蹲下时才能看清远处。",
+          "worldMapId": "HospitalUnder",
+          "levelId": "changeLife",
+          "growth": {
+            "task": [
+              {
+                "condition": {
+                  "time": 60,
+                  "timeType": "win",
+                  "timeFirst": "剩余 "
+                },
+                "gift": "base;anniCoin;10"
+              },
+              {
+                "condition": {
+                  "time": 110,
+                  "timeType": "win",
+                  "timeFirst": "剩余 "
+                },
+                "gift": "base;anniCoin;12"
+              },
+              {
+                "condition": {
+                  "time": 170,
+                  "timeType": "win",
+                  "timeFirst": "剩余 "
+                },
+                "gift": "base;anniCoin;14"
+              },
+              {
+                "condition": {
+                  "time": 240,
+                  "timeType": "win",
+                  "timeFirst": "剩余 "
+                },
+                "gift": "base;anniCoin;16"
+              }
+            ]
+          }
+        },
+        {
+          "role": "Striker",
+          "name": "leavePartner",
+          "cnName": "离别",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "通关",
+          "uiConditionText": "通关",
+          "description": "主角带领一支雇佣兵离开了战斧高地，莫非他已经下定了决心？",
+          "worldMapId": "BaWang",
+          "levelId": "leavePartner",
+          "diff": 1,
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 0.2,
+                "enemyDpsMul": 0.1,
+                "gift": "things;demStone;3"
+              },
+              {
+                "enemyLifeMul": 2,
+                "enemyDpsMul": 0.6,
+                "gift": "things;demStone;4"
+              },
+              {
+                "enemyLifeMul": 9,
+                "enemyDpsMul": 1,
+                "gift": "things;demStone;5"
+              },
+              {
+                "enemyLifeMul": 27,
+                "enemyDpsMul": 1.5,
+                "gift": "things;demStone;6"
+              },
+              {
+                "enemyLifeMul": 80,
+                "enemyDpsMul": 2,
+                "gift": "things;demStone;7"
+              }
+            ]
+          }
+        },
+        {
+          "role": "noStriker",
+          "name": "leavePartner_WenJie",
+          "cnName": "离别",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "完成对话。",
+          "uiConditionText": "完成对话。",
+          "description": "主角莫名离开战斧高地，到底是什么原因呢？",
+          "worldMapId": "MainUpland",
+          "levelId": "leavePartner_WenJie",
+          "gift": "things;demStone;7"
+        },
+        {
+          "name": "madmanTrick",
+          "cnName": "弥天大谎",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "清理僵尸",
+          "uiConditionText": "清理僵尸",
+          "description": "测试狂人机器X的战斗力，清理这里所有的僵尸。",
+          "worldMapId": "PiaoMiao",
+          "levelId": "madmanTrick",
+          "diff": 1,
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 1,
+                "gift": "base;wilderKey;7"
+              },
+              {
+                "enemyLifeMul": 1.5,
+                "enemyDpsMul": 1.3,
+                "gift": "base;wilderKey;10"
+              },
+              {
+                "enemyLifeMul": 2,
+                "enemyDpsMul": 1.6,
+                "gift": "base;wilderKey;13"
+              }
+            ]
+          }
+        },
+        {
+          "role": "WenJie",
+          "name": "madPlot_WenJie",
+          "cnName": "狂人的阴谋",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "完成对话。",
+          "uiConditionText": "完成对话。",
+          "description": "主角突然来电，道出了狂人的阴谋。",
+          "worldMapId": "MainUpland",
+          "levelId": "madPlot_WenJie",
+          "gift": "things;nuclearStone;5"
+        },
+        {
+          "name": "captureUpland",
+          "cnName": "攻陷",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "击败爆枪小队",
+          "uiConditionText": "击败爆枪小队",
+          "description": "操控狂人机器X，击败爆枪小队。",
+          "worldMapId": "MainUpland",
+          "levelId": "captureUpland",
+          "diff": 1,
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 1,
+                "gift": "things;demBall;15"
+              },
+              {
+                "enemyLifeMul": 1.3,
+                "enemyDpsMul": 1.25,
+                "gift": "things;demBall;20"
+              },
+              {
+                "enemyLifeMul": 1.6,
+                "enemyDpsMul": 1.5,
+                "gift": "things;demBall;25"
+              }
+            ]
+          }
+        },
+        {
+          "role": "Striker",
+          "name": "beatWarriorSec",
+          "cnName": "败露",
+          "lv": 99,
+          "unlockLv": 30,
+          "uiShowTime": 999999,
+          "shortText": "击败狂人机器X",
+          "conditionText": "剩余时间 [time]",
+          "uiConditionText": "在时间 [time] 之内击败狂人机器X",
+          "description": "在规定时间内击败来犯的狂人机器X！",
+          "worldMapId": "BaiSha",
+          "levelId": "beatWarriorSec",
+          "diff": 1,
+          "growth": {
+            "task": [
+              {
+                "condition": {
+                  "time": 240,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 0.1,
+                "gift": "things;arenaChest;3"
+              },
+              {
+                "condition": {
+                  "time": 240,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 4,
+                "enemyDpsMul": 0.5,
+                "gift": "things;arenaChest;4"
+              },
+              {
+                "condition": {
+                  "time": 240,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 20,
+                "enemyDpsMul": 2,
+                "gift": "things;arenaChest;5"
+              },
+              {
+                "condition": {
+                  "time": 240,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 40,
+                "enemyDpsMul": 2.5,
+                "gift": "things;arenaChest;6"
+              },
+              {
+                "condition": {
+                  "time": 240,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 80,
+                "enemyDpsMul": 3,
+                "gift": "things;arenaChest;7"
+              },
+              {
+                "condition": {
+                  "time": 240,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 160,
+                "enemyDpsMul": 4,
+                "gift": "things;arenaChest;8"
+              }
+            ]
+          }
+        },
+        {
+          "name": "beatMadboss",
+          "cnName": "决战",
+          "lv": 99,
+          "unlockLv": 30,
+          "uiShowTime": 999999,
+          "shortText": "击败战神",
+          "conditionText": "剩余时间 [time]",
+          "uiConditionText": "在时间 [time] 之内击败战神",
+          "description": "战争狂人利用主角、亚瑟、奇皇、狂战狼的变异基因，以及自己全身的血液，还融合了目前最强大武器，铸成了一台生化复合体、不可战胜之神——战神。你不要妄想能击败他！战神某个生命阶段，将对指定类型的武器或副手敏感，请用对应武器对他进行攻击。",
+          "worldMapId": "MainUpland",
+          "levelId": "beatMadboss",
+          "diff": 1,
+          "growth": {
+            "task": [
+              {
+                "condition": {
+                  "time": 1500,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 3,
+                "enemyDpsMul": 0.3,
+                "gift": "things;zodiacCash;6"
+              },
+              {
+                "condition": {
+                  "time": 1500,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 11,
+                "enemyDpsMul": 0.8,
+                "gift": "things;zodiacCash;7"
+              },
+              {
+                "condition": {
+                  "time": 1500,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 20,
+                "enemyDpsMul": 1.4,
+                "gift": "things;zodiacCash;8"
+              },
+              {
+                "condition": {
+                  "time": 1500,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 35,
+                "enemyDpsMul": 2,
+                "gift": "things;zodiacCash;10"
+              },
+              {
+                "condition": {
+                  "time": 1500,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 60,
+                "enemyDpsMul": 2.5,
+                "gift": "things;zodiacCash;12"
+              },
+              {
+                "condition": {
+                  "time": 1500,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 110,
+                "enemyDpsMul": 3,
+                "gift": "things;zodiacCash;14"
+              },
+              {
+                "condition": {
+                  "time": 1500,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 240,
+                "enemyDpsMul": 4,
+                "gift": "things;zodiacCash;17"
+              },
+              {
+                "condition": {
+                  "time": 1500,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 500,
+                "enemyDpsMul": 5,
+                "gift": "things;zodiacCash;20"
+              }
+            ]
+          }
+        },
+        {
+          "role": "WenJie",
+          "name": "BaWang_otherRole",
+          "cnName": "修罗变异",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "通关",
+          "uiConditionText": "通关",
+          "description": "爆枪小队来到霸王坡，调查修罗变异的真相。",
+          "worldMapId": "BaWang",
+          "levelId": "BaWang_otherRole",
+          "diff": 1,
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 0.5,
+                "enemyDpsMul": 0.1,
+                "gift": "things;demStone;3"
+              },
+              {
+                "enemyLifeMul": 4,
+                "enemyDpsMul": 0.6,
+                "gift": "things;demStone;4"
+              },
+              {
+                "enemyLifeMul": 18,
+                "enemyDpsMul": 1,
+                "gift": "things;demStone;5"
+              },
+              {
+                "enemyLifeMul": 50,
+                "enemyDpsMul": 1.5,
+                "gift": "things;demStone;6"
+              },
+              {
+                "enemyLifeMul": 160,
+                "enemyDpsMul": 2,
+                "gift": "things;demStone;7"
+              }
+            ]
+          }
+        },
+        {
+          "role": "Striker",
+          "name": "arcHowMain1",
+          "cnName": "爆枪世界",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "击毙所有敌人",
+          "uiConditionText": "使用抛物线枪击毙所有敌人",
+          "description": "离开战斧高地后，主角和特种兵阿天在下沙练习新的抛物线枪。注意，抛物线枪蓄力越久，发射速度越快，同时当前任务中不能弹跳。",
+          "worldMapId": "XiaSha",
+          "levelId": "arcHowMain1",
+          "gift": "things;superSpreadCard;4"
+        },
+        {
+          "role": "Striker",
+          "name": "arcHowMain2",
+          "cnName": "撒旦",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "击毙所有敌人",
+          "uiConditionText": "使用抛物线枪击毙所有敌人",
+          "description": "任务完成后，主角将聊到一把传奇武器“撒旦”。",
+          "worldMapId": "QingMing",
+          "levelId": "arcHowMain2",
+          "gift": "things;demonSpreadCard;2"
+        },
+        {
+          "role": "Striker",
+          "name": "arcHowMain3",
+          "cnName": "擦肩而过",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "击毙所有敌人",
+          "uiConditionText": "使用抛物线枪击毙所有敌人",
+          "description": "新枪练习继续中……主角为何会和“撒旦”擦肩而过呢？",
+          "worldMapId": "QingSha",
+          "levelId": "arcHowMain3",
+          "gift": "things;demStone;7"
+        },
+        {
+          "role": "Striker",
+          "name": "arcHowMain4",
+          "cnName": "离家的原由",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "击毙所有敌人",
+          "uiConditionText": "使用抛物线枪击毙所有敌人",
+          "description": "这里的毒蛛都有2道竖向的防弹护盾，靠近它们还会被电击，要小心一点。练习结束后，主角将娓娓道来他离家出走的原因。",
+          "worldMapId": "FengWei",
+          "levelId": "arcHowMain4",
+          "gift": "things;madheart;7"
+        },
+        {
+          "name": "madmanTroubles",
+          "cnName": "狂人的烦恼",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "完成剧情流程。",
+          "uiConditionText": "完成剧情流程。",
+          "description": "伪装成主角的狂人，将在高地上遇上新烦恼。（建议完成所有外传任务，以无缝衔接接下来的主线剧情。）",
+          "worldMapId": "MainUpland",
+          "levelId": "madmanTroubles",
+          "gift": "base;wilderKey;4"
+        },
+        {
+          "name": "mochaExcape",
+          "cnName": "叛徒",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "击毙所有僵尸。",
+          "uiConditionText": "击毙所有僵尸。",
+          "description": "操作摩卡，击毙铁犬派遣的僵尸。",
+          "worldMapId": "QingMing",
+          "levelId": "mochaExcape",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 0.5,
+                "enemyDpsMul": 0.5,
+                "gift": "things;bossSumCard;2"
+              },
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 1,
+                "gift": "things;bossSumCard;4"
+              }
+            ]
+          }
+        },
+        {
+          "name": "mochaIronDog",
+          "cnName": "铁犬的追击",
+          "lv": 99,
+          "unlockLv": 30,
+          "uiShowTime": 999999,
+          "condition": {
+            "time": 180,
+            "timeType": "win",
+            "timeFirst": "剩余 "
+          },
+          "shortText": "躲避铁犬的攻击，一定要活下来！",
+          "conditionText": "坚持 [time]",
+          "uiConditionText": "坚持 [time]",
+          "description": "操作摩卡，躲避铁犬的攻击，在指定时间内一定要活着！",
+          "worldMapId": "BaiZhang",
+          "levelId": "mochaIronDog",
+          "gift": "things;partsChest87;1",
+          "growth": {
+            "task": [
+              {
+                "condition": {
+                  "time": 100,
+                  "timeType": "win",
+                  "timeFirst": "剩余 "
+                },
+                "gift": "things;sweepingCard;1"
+              },
+              {
+                "condition": {
+                  "time": 180,
+                  "timeType": "win",
+                  "timeFirst": "剩余 "
+                },
+                "gift": "things;sweepingCard;2"
+              },
+              {
+                "condition": {
+                  "time": 280,
+                  "timeType": "win",
+                  "timeFirst": "剩余 "
+                },
+                "gift": "things;sweepingCard;3"
+              }
+            ]
+          }
+        },
+        {
+          "role": "Striker",
+          "name": "beatIronDog",
+          "cnName": "击退铁犬",
+          "lv": 99,
+          "unlockLv": 30,
+          "uiShowTime": 999999,
+          "shortText": "击退铁犬",
+          "uiConditionText": "击退铁犬",
+          "description": "拿出你最强的战斗力，击退铁犬！",
+          "worldMapId": "BaiZhang",
+          "levelId": "beatIronDog",
+          "diff": 1,
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 0.1,
+                "enemyDpsMul": 0.1,
+                "gift": "things;demStone;2"
+              },
+              {
+                "enemyLifeMul": 5,
+                "enemyDpsMul": 0.8,
+                "gift": "things;demStone;3"
+              },
+              {
+                "enemyLifeMul": 15,
+                "enemyDpsMul": 1.4,
+                "gift": "things;demStone;4"
+              },
+              {
+                "enemyLifeMul": 35,
+                "enemyDpsMul": 2,
+                "gift": "things;demStone;5"
+              },
+              {
+                "enemyLifeMul": 60,
+                "enemyDpsMul": 2.5,
+                "gift": "things;demStone;6"
+              },
+              {
+                "enemyLifeMul": 110,
+                "enemyDpsMul": 3,
+                "gift": "things;demStone;7"
+              }
+            ]
+          }
+        },
+        {
+          "role": "WenJie",
+          "name": "beatIronDog_otherRole",
+          "cnName": "击退铁犬",
+          "lv": 99,
+          "unlockLv": 30,
+          "uiShowTime": 999999,
+          "shortText": "击退铁犬",
+          "uiConditionText": "击退铁犬",
+          "description": "拿出你最强的战斗力，击退铁犬！",
+          "worldMapId": "BaiZhang",
+          "levelId": "beatIronDog_otherRole",
+          "diff": 1,
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 0.3,
+                "gift": "things;demStone;2"
+              },
+              {
+                "enemyLifeMul": 5,
+                "enemyDpsMul": 0.8,
+                "gift": "things;demStone;3"
+              },
+              {
+                "enemyLifeMul": 15,
+                "enemyDpsMul": 1.4,
+                "gift": "things;demStone;4"
+              },
+              {
+                "enemyLifeMul": 35,
+                "enemyDpsMul": 2,
+                "gift": "things;demStone;5"
+              },
+              {
+                "enemyLifeMul": 60,
+                "enemyDpsMul": 2.5,
+                "gift": "things;demStone;6"
+              },
+              {
+                "enemyLifeMul": 110,
+                "enemyDpsMul": 3,
+                "gift": "things;demStone;7"
+              }
+            ]
+          }
+        },
+        {
+          "name": "wenjieAway",
+          "cnName": "表哥的出走（队友上场+1）",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "击毙所有僵尸。",
+          "uiConditionText": "击毙所有僵尸。",
+          "description": "表哥独自一人离开了战斧高地，难道他也要告别爆枪小队？完成任务后，队友的上场数量将增加！",
+          "worldMapId": "BaiSha",
+          "levelId": "wenjieAway",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 0.3,
+                "enemyDpsMul": 1.2,
+                "gift": "things;soldiersStamp;2"
+              },
+              {
+                "enemyLifeMul": 0.5,
+                "enemyDpsMul": 1.6,
+                "gift": "things;soldiersStamp;6"
+              }
+            ]
+          }
+        },
+        {
+          "name": "YaSomewhere_1",
+          "cnName": "父子对话",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "完成剧情对话。",
+          "uiConditionText": "完成剧情对话。",
+          "description": "在氩星某处，氩星大统领和他的儿子正在进行秘密对话。",
+          "worldMapId": "YaSomewhere",
+          "levelId": "YaSomewhere_1",
+          "gift": "things;iceCone;10"
+        },
+        {
+          "name": "MadmanPlot",
+          "cnName": "秘密仓库",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "完成剧情对话。",
+          "uiConditionText": "完成剧情对话。",
+          "description": "狂人伪装成主角的真实目的将揭晓。",
+          "worldMapId": "BaiZhang",
+          "levelId": "MadmanPlot",
+          "gift": "things;iceCone;10"
+        },
+        {
+          "name": "EarthSky_1",
+          "cnName": "地球上空",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "逃过陨石的袭击",
+          "uiConditionText": "逃过陨石的袭击",
+          "description": "主角和表哥已成功上了太空，但此时他们的飞船突然遭遇大量陨石的袭击，他们能安然无恙吗？",
+          "worldMapId": "EarthSky",
+          "levelId": "EarthSkyTask",
+          "enemyLifeMul": 0.6,
+          "gift": "things;demStone;10"
+        },
+        {
+          "name": "SolarInsideEnemy",
+          "cnName": "氩星采矿队",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "通过关卡",
+          "uiConditionText": "通过关卡",
+          "description": "氩星采矿队来袭，做好准备吧！任务完成领取飞船经验，可用于升级飞船，获得飞船技能点数（在太空探索中操作）。",
+          "worldMapId": "SolarInside",
+          "levelId": "SolarInsideEnemy",
+          "enemyLifeMul": 0.6,
+          "gift": [
+            "base;craftExp;120000",
+            "things;demStone;10"
+          ]
+        },
+        {
+          "name": "SolarInsideBoss",
+          "cnName": "采矿舰",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "摧毁采矿舰",
+          "uiConditionText": "摧毁采矿舰",
+          "description": "遭遇巨大的氩星采矿战舰，想办法摧毁它！",
+          "worldMapId": "SolarInside",
+          "levelId": "SolarInsideBoss",
+          "enemyLifeMul": 0.9,
+          "gift": "things;yaStone;10"
+        },
+        {
+          "name": "CeresSouthEnemy",
+          "cnName": "谷神星",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "通过关卡",
+          "uiConditionText": "通过关卡",
+          "description": "狂人来到了位于小行星带的谷神星，主角能追上他吗？",
+          "worldMapId": "CeresSouth",
+          "levelId": "CeresSouthEnemy",
+          "enemyLifeMul": 0.8,
+          "gift": [
+            "base;craftExp;125000",
+            "things;demStone;10"
+          ]
+        },
+        {
+          "name": "CeresSouthBoss",
+          "cnName": "葵型采矿机",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "摧毁葵型采矿机",
+          "uiConditionText": "摧毁葵型采矿机",
+          "description": "摧毁葵型采矿机，赢得追击狂人的时间。",
+          "worldMapId": "CeresSouth",
+          "levelId": "CeresSouthBoss",
+          "enemyLifeMul": 0.9,
+          "gift": "things;yaStone;10"
+        },
+        {
+          "name": "GanymedeEnemy",
+          "cnName": "木卫三",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "通过关卡",
+          "uiConditionText": "通过关卡",
+          "description": "在太阳系最大的卫星上，一场大战即将展开！",
+          "worldMapId": "Ganymede",
+          "levelId": "GanymedeEnemy",
+          "enemyLifeMul": 0.7,
+          "gift": [
+            "base;craftExp;130000",
+            "things;demStone;10"
+          ]
+        },
+        {
+          "name": "GanymedeBoss",
+          "cnName": "蛇型采矿机",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "摧毁蛇型采矿机",
+          "uiConditionText": "摧毁蛇型采矿机",
+          "description": "长到看不见尾巴的蛇型采矿机，每减少0.5%的生命都将长出新的尾巴。它将是此次太空之旅中的最大挑战！",
+          "worldMapId": "Ganymede",
+          "levelId": "GanymedeBoss",
+          "enemyLifeMul": 0.9,
+          "gift": "things;yaStone;20"
+        },
+        {
+          "name": "GanymedeCaveEnemy",
+          "cnName": "木卫三洞穴",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "通过关卡",
+          "uiConditionText": "通过关卡",
+          "description": "摧毁蛇型采矿机之后，主角身穿宇航服，独自下船。他顺着狂人的踪迹，来到了一个陌生的洞穴。",
+          "worldMapId": "GanymedeCave",
+          "levelId": "GanymedeCaveEnemy",
+          "enemyLifeMul": 0.8,
+          "gift": [
+            "base;craftExp;160000",
+            "things;demStone;10"
+          ]
+        },
+        {
+          "name": "GanymedeCaveBoss",
+          "cnName": "黄金隼",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "击败黄金隼",
+          "uiConditionText": "击败黄金隼",
+          "description": "性能远超战神的氩星机甲——黄金隼，即将与装备受限的主角展开一场巅峰对决！",
+          "worldMapId": "GanymedeCave",
+          "levelId": "GanymedeCaveBoss",
+          "enemyLifeMul": 1,
+          "gift": "things;yaStone;20"
+        },
+        {
+          "name": "GanymedeCavernTask",
+          "cnName": "虫洞",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "通过关卡，进入虫洞",
+          "uiConditionText": "通过关卡，进入虫洞",
+          "description": "狂人穿越虫洞逃跑了，主角会追上去吗？",
+          "worldMapId": "GanymedeCavern",
+          "levelId": "GanymedeCavernTask",
+          "gift": "things;iceCone;10"
+        },
+        {
+          "role": "Girl,ZangShi,XinLing,XiaoMei",
+          "name": "beforeXiShan1",
+          "cnName": "援兵",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "完成对话",
+          "uiConditionText": "完成对话",
+          "description": null,
+          "worldMapId": "MainUpland",
+          "levelId": "beforeXiShan1",
+          "gift": "things;intensDrug;10"
+        },
+        {
+          "role": "Striker",
+          "name": "XiShan1_plot",
+          "cnName": "新世界",
+          "lv": 99,
+          "unlockLv": 30,
+          "diff": 1,
+          "shortText": "通过关卡",
+          "uiConditionText": "通过关卡",
+          "description": "主角穿过了虫洞，来到了一个新世界，这里莫非就是氩星？",
+          "worldMapId": "XiShan1",
+          "levelId": "XiShan1_plot",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 0.3,
+                "gift": "things;intensDrug;5"
+              },
+              {
+                "enemyLifeMul": 5,
+                "enemyDpsMul": 0.8,
+                "gift": "things;intensDrug;6"
+              },
+              {
+                "enemyLifeMul": 15,
+                "enemyDpsMul": 1.4,
+                "gift": "things;intensDrug;7"
+              },
+              {
+                "enemyLifeMul": 35,
+                "enemyDpsMul": 2,
+                "gift": "things;intensDrug;8"
+              },
+              {
+                "enemyLifeMul": 60,
+                "enemyDpsMul": 2.5,
+                "gift": "things;intensDrug;9"
+              },
+              {
+                "enemyLifeMul": 110,
+                "enemyDpsMul": 3,
+                "gift": "things;intensDrug;10"
+              },
+              {
+                "enemyLifeMul": 200,
+                "enemyDpsMul": 3.5,
+                "gift": "things;intensDrug;11"
+              }
+            ]
+          }
+        },
+        {
+          "role": "WenJie",
+          "name": "XiShan1_plotOther",
+          "cnName": "新世界",
+          "lv": 99,
+          "unlockLv": 30,
+          "diff": 1,
+          "shortText": "通过关卡",
+          "uiConditionText": "通过关卡",
+          "description": "文杰追随主角穿过了虫洞，来到了一个新世界，这里莫非就是氩星？",
+          "worldMapId": "XiShan1",
+          "levelId": "XiShan1_plotOther",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 0.3,
+                "gift": "things;intensDrug;5"
+              },
+              {
+                "enemyLifeMul": 5,
+                "enemyDpsMul": 0.8,
+                "gift": "things;intensDrug;6"
+              },
+              {
+                "enemyLifeMul": 15,
+                "enemyDpsMul": 1.4,
+                "gift": "things;intensDrug;7"
+              },
+              {
+                "enemyLifeMul": 35,
+                "enemyDpsMul": 2,
+                "gift": "things;intensDrug;8"
+              },
+              {
+                "enemyLifeMul": 60,
+                "enemyDpsMul": 2.5,
+                "gift": "things;intensDrug;9"
+              },
+              {
+                "enemyLifeMul": 110,
+                "enemyDpsMul": 3,
+                "gift": "things;intensDrug;10"
+              },
+              {
+                "enemyLifeMul": 200,
+                "enemyDpsMul": 3.5,
+                "gift": "things;intensDrug;11"
+              }
+            ]
+          }
+        },
+        {
+          "name": "XiShan2_plot",
+          "cnName": "大集合",
+          "lv": 99,
+          "unlockLv": 30,
+          "diff": 4,
+          "shortText": "通过关卡",
+          "uiConditionText": "通过关卡",
+          "description": "爆枪小队所有成员都集结在了这个新世界，他们是怎么来的？这个新世界又是什么地方呢？",
+          "worldMapId": "XiShan2",
+          "levelId": "XiShan2_plot",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 0.3,
+                "gift": "things;falconGun;4"
+              },
+              {
+                "enemyLifeMul": 5,
+                "enemyDpsMul": 0.8,
+                "gift": "things;falconGun;5"
+              },
+              {
+                "enemyLifeMul": 15,
+                "enemyDpsMul": 1.4,
+                "gift": "things;falconGun;6"
+              },
+              {
+                "enemyLifeMul": 35,
+                "enemyDpsMul": 2,
+                "gift": "things;falconGun;7"
+              },
+              {
+                "enemyLifeMul": 60,
+                "enemyDpsMul": 2.5,
+                "gift": "things;falconGun;8"
+              },
+              {
+                "enemyLifeMul": 110,
+                "enemyDpsMul": 3,
+                "gift": "things;falconGun;9"
+              },
+              {
+                "enemyLifeMul": 200,
+                "enemyDpsMul": 3.5,
+                "gift": "things;falconGun;10"
+              },
+              {
+                "enemyLifeMul": 400,
+                "enemyDpsMul": 4,
+                "gift": "things;falconGun;11"
+              }
+            ]
+          }
+        },
+        {
+          "name": "XiShan3_plot",
+          "cnName": "极源碎片",
+          "lv": 99,
+          "unlockLv": 30,
+          "diff": 4,
+          "shortText": "通过关卡",
+          "uiConditionText": "通过关卡",
+          "description": "爆枪小队继续向前，他们将发现战神的武器碎片。",
+          "worldMapId": "XiShan3",
+          "levelId": "XiShan3_plot",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 0.3,
+                "gift": "things;extremeGun;4"
+              },
+              {
+                "enemyLifeMul": 5,
+                "enemyDpsMul": 0.8,
+                "gift": "things;extremeGun;5"
+              },
+              {
+                "enemyLifeMul": 15,
+                "enemyDpsMul": 1.4,
+                "gift": "things;extremeGun;6"
+              },
+              {
+                "enemyLifeMul": 35,
+                "enemyDpsMul": 2,
+                "gift": "things;extremeGun;7"
+              },
+              {
+                "enemyLifeMul": 60,
+                "enemyDpsMul": 2.5,
+                "gift": "things;extremeGun;8"
+              },
+              {
+                "enemyLifeMul": 110,
+                "enemyDpsMul": 3,
+                "gift": "things;extremeGun;9"
+              },
+              {
+                "enemyLifeMul": 200,
+                "enemyDpsMul": 3.5,
+                "gift": "things;extremeGun;10"
+              },
+              {
+                "enemyLifeMul": 400,
+                "enemyDpsMul": 4,
+                "gift": "things;extremeGun;11"
+              }
+            ]
+          }
+        },
+        {
+          "name": "XiShan4_plot",
+          "cnName": "跨时空相遇",
+          "lv": 99,
+          "unlockLv": 30,
+          "diff": 4,
+          "shortText": "通过关卡",
+          "uiConditionText": "通过关卡",
+          "description": "在前方，大家将遇到一位既熟悉而又陌生的人，他是谁呢？",
+          "worldMapId": "XiShan4",
+          "levelId": "XiShan4_plot",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 0.3,
+                "gift": "things;yaStone;4"
+              },
+              {
+                "enemyLifeMul": 5,
+                "enemyDpsMul": 0.8,
+                "gift": "things;yaStone;5"
+              },
+              {
+                "enemyLifeMul": 15,
+                "enemyDpsMul": 1.4,
+                "gift": "things;yaStone;6"
+              },
+              {
+                "enemyLifeMul": 35,
+                "enemyDpsMul": 2,
+                "gift": "things;yaStone;7"
+              },
+              {
+                "enemyLifeMul": 60,
+                "enemyDpsMul": 2.5,
+                "gift": "things;yaStone;8"
+              },
+              {
+                "enemyLifeMul": 110,
+                "enemyDpsMul": 3,
+                "gift": "things;yaStone;9"
+              },
+              {
+                "enemyLifeMul": 200,
+                "enemyDpsMul": 3.5,
+                "gift": "things;yaStone;10"
+              },
+              {
+                "enemyLifeMul": 400,
+                "enemyDpsMul": 4,
+                "gift": "things;yaStone;11"
+              }
+            ]
+          }
+        },
+        {
+          "name": "xiaohuXi1",
+          "cnName": "伏笔",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "通过关卡",
+          "uiConditionText": "通过关卡",
+          "description": "狂人的飞船又炸了，他来到这个2053年的溪山，还会有什么奇遇吗？",
+          "worldMapId": "XiShan1",
+          "levelId": "xiaohuXi1",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 1,
+                "gift": "base;partsCoin;8"
+              },
+              {
+                "enemyLifeMul": 2,
+                "gift": "base;partsCoin;10"
+              },
+              {
+                "enemyLifeMul": 3,
+                "gift": "base;partsCoin;12"
+              }
+            ]
+          }
+        },
+        {
+          "name": "xiaohuXi2",
+          "cnName": "故纵",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "通过关卡",
+          "uiConditionText": "通过关卡",
+          "description": "小虎会相信狂人的话吗？拭目以待吧。",
+          "worldMapId": "XiShan2",
+          "levelId": "xiaohuXi2",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 3,
+                "gift": "things;demStone;6"
+              },
+              {
+                "enemyLifeMul": 5,
+                "gift": "things;demStone;8"
+              },
+              {
+                "enemyLifeMul": 7,
+                "gift": "things;demStone;10"
+              }
+            ]
+          }
+        },
+        {
+          "name": "xiaohuXi3",
+          "cnName": "血亲",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "通过关卡",
+          "uiConditionText": "通过关卡",
+          "description": "狂人为何遮遮掩掩？也许他这是在欲情故纵。",
+          "worldMapId": "XiShan3",
+          "levelId": "xiaohuXi3",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 1,
+                "gift": "base;partsCoin;8"
+              },
+              {
+                "enemyLifeMul": 2,
+                "gift": "base;partsCoin;10"
+              },
+              {
+                "enemyLifeMul": 3,
+                "gift": "base;partsCoin;12"
+              }
+            ]
+          }
+        },
+        {
+          "name": "xiaohuUpland",
+          "cnName": "鉴定",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "完成对话",
+          "uiConditionText": "完成对话",
+          "description": "狂人又爆出一个惊天秘密，是真是假，只有小虎亲自去验证了。",
+          "worldMapId": "MainUpland",
+          "levelId": "xiaohuUpland",
+          "gift": "things;demStone;6"
+        },
+        {
+          "name": "xiaohuXi4",
+          "cnName": "弑子",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "通过关卡",
+          "uiConditionText": "通过关卡",
+          "description": "“弑子”是否可能发生？",
+          "worldMapId": "XiShan3",
+          "levelId": "xiaohuXi4",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 3,
+                "gift": "base;partsCoin;8"
+              },
+              {
+                "enemyLifeMul": 5,
+                "gift": "base;partsCoin;10"
+              },
+              {
+                "enemyLifeMul": 7,
+                "gift": "base;partsCoin;12"
+              }
+            ]
+          }
+        },
+        {
+          "name": "xiaohuXi5",
+          "cnName": "执念",
+          "lv": 99,
+          "unlockLv": 30,
+          "diff": 4,
+          "shortText": "营救小虎",
+          "uiConditionText": "营救小虎",
+          "description": "营救落单的小虎，要保证他活着，否则任务将失败。",
+          "worldMapId": "XiShan4",
+          "levelId": "xiaohuXi5",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 0.3,
+                "gift": "things;demStone;4"
+              },
+              {
+                "enemyLifeMul": 5,
+                "enemyDpsMul": 0.8,
+                "gift": "things;demStone;5"
+              },
+              {
+                "enemyLifeMul": 15,
+                "enemyDpsMul": 1.4,
+                "gift": "things;demStone;6"
+              },
+              {
+                "enemyLifeMul": 35,
+                "enemyDpsMul": 2,
+                "gift": "things;demStone;7"
+              },
+              {
+                "enemyLifeMul": 60,
+                "enemyDpsMul": 2.5,
+                "gift": "things;demStone;8"
+              },
+              {
+                "enemyLifeMul": 110,
+                "enemyDpsMul": 3,
+                "gift": "things;demStone;9"
+              },
+              {
+                "enemyLifeMul": 200,
+                "enemyDpsMul": 3.5,
+                "gift": "things;demStone;10"
+              },
+              {
+                "enemyLifeMul": 400,
+                "enemyDpsMul": 4,
+                "gift": "things;demStone;11"
+              }
+            ]
+          }
+        },
+        {
+          "name": "xiaohuXi6",
+          "cnName": "抉择",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "击败藏师",
+          "uiConditionText": "击败藏师",
+          "description": "独自前往高地的藏师将遭遇什么？",
+          "worldMapId": "XiShan1",
+          "levelId": "xiaohuXi6",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 2,
+                "enemyDpsMul": 1,
+                "gift": "base;partsCoin;8"
+              },
+              {
+                "enemyLifeMul": 3,
+                "enemyDpsMul": 1.4,
+                "gift": "base;partsCoin;10"
+              },
+              {
+                "enemyLifeMul": 5,
+                "enemyDpsMul": 1.8,
+                "gift": "base;partsCoin;12"
+              }
+            ]
+          }
+        },
+        {
+          "name": "xiaohuUpland2",
+          "cnName": "破案",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "完成对话",
+          "uiConditionText": "完成对话",
+          "description": null,
+          "worldMapId": "MainUpland",
+          "levelId": "xiaohuUpland2",
+          "gift": "things;demStone;6"
+        },
+        {
+          "name": "xiaohuXi7",
+          "cnName": "反制",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "完成对话",
+          "uiConditionText": "完成对话",
+          "description": null,
+          "worldMapId": "XiShan1",
+          "levelId": "xiaohuXi7",
+          "gift": "things;demStone;6"
+        },
+        {
+          "name": "XiShan5_plot",
+          "cnName": "氩星吞噬者",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "通过关卡",
+          "uiConditionText": "通过关卡",
+          "description": null,
+          "worldMapId": "XiShan5",
+          "levelId": "XiShan5_plot",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 0.3,
+                "gift": "base;partsCoin;5"
+              },
+              {
+                "enemyLifeMul": 5,
+                "enemyDpsMul": 0.8,
+                "gift": "base;partsCoin;6"
+              },
+              {
+                "enemyLifeMul": 15,
+                "enemyDpsMul": 1.4,
+                "gift": "base;partsCoin;7"
+              },
+              {
+                "enemyLifeMul": 35,
+                "enemyDpsMul": 2,
+                "gift": "base;partsCoin;8"
+              },
+              {
+                "enemyLifeMul": 60,
+                "enemyDpsMul": 2.5,
+                "gift": "base;partsCoin;9"
+              },
+              {
+                "enemyLifeMul": 110,
+                "enemyDpsMul": 3,
+                "gift": "base;partsCoin;10"
+              },
+              {
+                "enemyLifeMul": 200,
+                "enemyDpsMul": 3.5,
+                "gift": "base;partsCoin;11"
+              },
+              {
+                "enemyLifeMul": 400,
+                "enemyDpsMul": 4,
+                "gift": "base;partsCoin;12"
+              }
+            ]
+          }
+        },
+        {
+          "name": "GanymedeCavernDog",
+          "cnName": "挑战书",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "完成对话",
+          "uiConditionText": "完成对话",
+          "description": "擒下狂人，但爆枪小队却把铁犬给忘了，接下来会发生什么呢？",
+          "worldMapId": "Ganymede",
+          "levelId": "GanymedeCavernDog",
+          "gift": "things;ghostStone;10"
+        },
+        {
+          "name": "XingPeak_plot",
+          "cnName": "狂战神",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "通过关卡",
+          "uiConditionText": "通过关卡",
+          "description": "主角接受了铁犬下的挑战书，他口中那个升级版战神到底拥有怎样的实力呢？",
+          "worldMapId": "XingPeak",
+          "levelId": "XingPeak_plot",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 0.3,
+                "gift": "things;ghostStone;5"
+              },
+              {
+                "enemyLifeMul": 5,
+                "enemyDpsMul": 0.8,
+                "gift": "things;ghostStone;6"
+              },
+              {
+                "enemyLifeMul": 15,
+                "enemyDpsMul": 1.4,
+                "gift": "things;ghostStone;7"
+              },
+              {
+                "enemyLifeMul": 35,
+                "enemyDpsMul": 2,
+                "gift": "things;ghostStone;8"
+              },
+              {
+                "enemyLifeMul": 60,
+                "enemyDpsMul": 2.5,
+                "gift": "things;ghostStone;9"
+              },
+              {
+                "enemyLifeMul": 110,
+                "enemyDpsMul": 3,
+                "gift": "things;ghostStone;10"
+              },
+              {
+                "enemyLifeMul": 200,
+                "enemyDpsMul": 3.5,
+                "gift": "things;ghostStone;11"
+              },
+              {
+                "enemyLifeMul": 400,
+                "enemyDpsMul": 4,
+                "gift": "things;ghostStone;12"
+              }
+            ]
+          }
+        },
+        {
+          "name": "YaShipsComing",
+          "cnName": "威慑",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "完成对话",
+          "uiConditionText": "完成对话",
+          "description": "狂人落幕，持续一个月的宁静是否会被打破？",
+          "worldMapId": "MainUpland",
+          "levelId": "YaShipsComing",
+          "gift": "things;yaStone;10"
+        },
+        {
+          "name": "RaysSeaBreak",
+          "cnName": "空中拦截一",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "击败前来拦截的飞行器",
+          "uiConditionText": "击败前来拦截的飞行器",
+          "description": "前往绿岛的路上，小白和表哥将遭到不明飞行器的阻击。",
+          "worldMapId": "RaysSea",
+          "levelId": "RaysSeaBreak",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 0.6,
+                "enemyDpsMul": 0.7,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5"
+                ]
+              },
+              {
+                "enemyLifeMul": 0.8,
+                "enemyDpsMul": 0.9,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5",
+                  "base;partsCoin;4"
+                ]
+              },
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 1,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5",
+                  "base;partsCoin;4",
+                  "things;demonChest;1"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "RaysSeaBoss",
+          "cnName": "空中拦截二",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "击败前来拦截的飞行器",
+          "uiConditionText": "击败前来拦截的飞行器",
+          "description": "血蟒无理由的与爆枪小队开战，到底为何？",
+          "worldMapId": "RaysSea",
+          "levelId": "RaysSeaBoss",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 0.6,
+                "enemyDpsMul": 0.7,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5"
+                ]
+              },
+              {
+                "enemyLifeMul": 0.8,
+                "enemyDpsMul": 0.9,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5",
+                  "base;partsCoin;4"
+                ]
+              },
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 1,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5",
+                  "base;partsCoin;4",
+                  "things;yaStone;4"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "GreenIs1_plot",
+          "cnName": "回头澳",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "击败前来拦截的血蟒部队",
+          "uiConditionText": "击败前来拦截的血蟒部队",
+          "description": "登岛在即，但前方有更棘手的事情等着他们。",
+          "worldMapId": "GreenIs1",
+          "levelId": "GreenIs1_plot",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 0.6,
+                "enemyDpsMul": 0.7,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5"
+                ]
+              },
+              {
+                "enemyLifeMul": 0.8,
+                "enemyDpsMul": 0.9,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5",
+                  "base;partsCoin;4"
+                ]
+              },
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 1,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5",
+                  "base;partsCoin;4",
+                  "things;demonChest;1"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "GreenIs2_plot",
+          "cnName": "致命地雷一",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "击败前来拦截的血蟒部队",
+          "uiConditionText": "击败前来拦截的血蟒部队",
+          "description": "尽量使用获得的致命地雷来对付敌人。注意，地雷爆炸后会引爆与之距离较近的地雷。",
+          "worldMapId": "GreenIs2",
+          "levelId": "GreenIs2_plot",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 0.8,
+                "enemyDpsMul": 0.7,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5"
+                ]
+              },
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 0.9,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5",
+                  "base;partsCoin;4"
+                ]
+              },
+              {
+                "enemyLifeMul": 1.3,
+                "enemyDpsMul": 1,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5",
+                  "base;partsCoin;4",
+                  "things;yaStone;4"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "GreenIs2_plot2",
+          "cnName": "致命地雷二",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "击败前来拦截的血蟒部队",
+          "uiConditionText": "击败前来拦截的血蟒部队",
+          "description": "在敌人没有发现我们之前布置好地雷，将起到事倍功半的作用。该任务结束后，小白和表哥都将解锁一小部分的自身技能。",
+          "worldMapId": "GreenIs2",
+          "levelId": "GreenIs2_plot2",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 0.8,
+                "enemyDpsMul": 0.7,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5"
+                ]
+              },
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 0.9,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5",
+                  "base;partsCoin;4"
+                ]
+              },
+              {
+                "enemyLifeMul": 1.3,
+                "enemyDpsMul": 1,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5",
+                  "base;partsCoin;4",
+                  "things;demonChest;1"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "GreenIs3_plot",
+          "cnName": "郁葱甸",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "击败前来拦截的血蟒部队",
+          "uiConditionText": "击败前来拦截的血蟒部队",
+          "description": "摧毁泰坦之后，小白和表哥解锁了更强的技能，接下来他们也将遭遇更强的敌人。",
+          "worldMapId": "GreenIs3",
+          "levelId": "GreenIs3_plot",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 0.6,
+                "enemyDpsMul": 0.7,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5"
+                ]
+              },
+              {
+                "enemyLifeMul": 0.8,
+                "enemyDpsMul": 0.9,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5",
+                  "base;partsCoin;4"
+                ]
+              },
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 1,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5",
+                  "base;partsCoin;4",
+                  "things;yaStone;4"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "GreenIs3_domi",
+          "cnName": "营救多米诺",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "营救多米诺，确保他活下来",
+          "uiConditionText": "确保多米诺活下来",
+          "description": "发现多米诺博士正在被血蟒追捕，快去营救他。",
+          "worldMapId": "GreenIs3",
+          "levelId": "GreenIs3_domi",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 0.6,
+                "enemyDpsMul": 0.6,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5"
+                ]
+              },
+              {
+                "enemyLifeMul": 0.8,
+                "enemyDpsMul": 0.7,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5",
+                  "base;partsCoin;4"
+                ]
+              },
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 0.8,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5",
+                  "base;partsCoin;4",
+                  "things;demonChest;1"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "GreenIs1_clearMine",
+          "cnName": "拆弹专家",
+          "lv": 99,
+          "unlockLv": 30,
+          "conditionText": "地雷 [nowNum]/[num]",
+          "uiConditionText": "引爆敌人的地雷 [num] 颗",
+          "description": "利用火炮和眩晕地雷，引爆地上的致命地雷，为爆枪小队排除隐患。",
+          "worldMapId": "GreenIs1",
+          "levelId": "GreenIs1_clearMine",
+          "growth": {
+            "task": [
+              {
+                "condition": {
+                  "type": "collect",
+                  "target": "bulletDie",
+                  "targetId": "hurtMineBullet",
+                  "value": 14,
+                  "cumulativeType": "no"
+                },
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5"
+                ]
+              },
+              {
+                "condition": {
+                  "type": "collect",
+                  "target": "bulletDie",
+                  "targetId": "hurtMineBullet",
+                  "value": 15,
+                  "cumulativeType": "no"
+                },
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5",
+                  "base;partsCoin;4"
+                ]
+              },
+              {
+                "condition": {
+                  "type": "collect",
+                  "target": "bulletDie",
+                  "targetId": "hurtMineBullet",
+                  "value": 16,
+                  "cumulativeType": "no"
+                },
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5",
+                  "base;partsCoin;4",
+                  "things;yaStone;4"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "GreenIs4_plot",
+          "cnName": "掠袭大地",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "摧毁大地掠袭者",
+          "uiConditionText": "摧毁大地掠袭者",
+          "description": "即将遭遇超强火力的血蟒坦克，合理使用眩晕地雷，将使对方寸步难行。",
+          "worldMapId": "GreenIs4",
+          "levelId": "GreenIs4_plot",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 0.8,
+                "enemyDpsMul": 0.7,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5"
+                ]
+              },
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 0.9,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5",
+                  "base;partsCoin;4"
+                ]
+              },
+              {
+                "enemyLifeMul": 1.3,
+                "enemyDpsMul": 1,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demStone;5",
+                  "base;partsCoin;4",
+                  "things;demonChest;1"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "GreenSomewhere_1",
+          "cnName": "天塔玄机",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "完成对话",
+          "uiConditionText": "完成对话",
+          "description": "绿岛某处，陆天启和旺达关于虚天塔的对话耐人寻味。",
+          "worldMapId": "GreenSomewhere",
+          "levelId": "GreenSomewhere_1",
+          "gift": "base;tenCoin;20"
+        },
+        {
+          "name": "timeCapsule1",
+          "cnName": "绿岛尸变",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "安全通过郁葱甸",
+          "uiConditionText": "安全通过郁葱甸",
+          "description": "主角将马上遭遇绿岛僵尸，病毒的来源或许即将揭开。",
+          "worldMapId": "GreenIs3",
+          "levelId": "timeCapsule1",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 0.8,
+                "enemyDpsMul": 0.7,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demBall;10"
+                ]
+              },
+              {
+                "enemyLifeMul": 1.3,
+                "enemyDpsMul": 1,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demBall;10",
+                  "base;partsCoin;4"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "timeCapsule11",
+          "cnName": "悬停沙漏一",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "安全通过郁葱坪",
+          "uiConditionText": "安全通过郁葱坪",
+          "description": "前方是密集雷区，合理使用任务中提供的悬停沙漏引爆这些地雷。",
+          "worldMapId": "GreenIs4",
+          "levelId": "timeCapsule11",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 0.7,
+                "enemyDpsMul": 0.6,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demBall;10",
+                  "things;timeCapsule_1;3"
+                ]
+              },
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 1,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demBall;10",
+                  "base;partsCoin;4",
+                  "things;timeCapsule_1;3"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "timeCapsule2",
+          "cnName": "悬停沙漏二",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "快速击毙棍棒僵尸",
+          "uiConditionText": "快速击毙棍棒僵尸",
+          "description": "地雷的爆炸声引来了疯狂的棍棒僵尸，它拥有召唤古惑大军的强力技能。在它们还没形成规模之前，使用任务提供的悬停沙漏，快速将其击毙。",
+          "worldMapId": "GreenIs4",
+          "levelId": "timeCapsule2",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 0.8,
+                "enemyDpsMul": 0.7,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demBall;10",
+                  "things;timeCapsule_1;3"
+                ]
+              },
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 1,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demBall;10",
+                  "base;partsCoin;4",
+                  "things;timeCapsule_1;3"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "timeCapsule3",
+          "cnName": "悬停沙漏三",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "快速击毙感染者",
+          "uiConditionText": "快速击毙感染者",
+          "description": "驻守仙草镇的十几位血蟒士兵被感染了，他们手持长射程的高伤激光枪。若不做防范，那么靠近他们就是自寻死路。",
+          "worldMapId": "GreenTown1",
+          "levelId": "timeCapsule3",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 0.8,
+                "enemyDpsMul": 0.7,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demBall;10",
+                  "things;timeCapsule_1;3"
+                ]
+              },
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 1,
+                "gift": [
+                  "base;anniCoin;15",
+                  "things;demBall;10",
+                  "base;partsCoin;4",
+                  "things;timeCapsule_1;3"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "GreenTown1_plot",
+          "cnName": "交叉骨",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "击败交叉骨",
+          "uiConditionText": "击败交叉骨",
+          "description": "仙草镇的“迷雾”已关闭，武器装备的封印也将解除，请尽全力将交叉骨击败。注意，当前任务只能上场小白、表哥和P1。完成当前任务后，“仙草镇入口”地图将开启。",
+          "worldMapId": "GreenTown1",
+          "levelId": "GreenTown1_plot",
+          "growth": {
+            "task": [
+              {
+                "condition": {
+                  "time": 240,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 10,
+                "enemyDpsMul": 0.5,
+                "gift": "things;demStone;5"
+              },
+              {
+                "condition": {
+                  "time": 240,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 20,
+                "enemyDpsMul": 1,
+                "gift": "things;demStone;6"
+              },
+              {
+                "condition": {
+                  "time": 240,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 30,
+                "enemyDpsMul": 1.5,
+                "gift": "things;demStone;7"
+              },
+              {
+                "condition": {
+                  "time": 240,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 50,
+                "enemyDpsMul": 2,
+                "gift": "things;demStone;8"
+              },
+              {
+                "condition": {
+                  "time": 240,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 90,
+                "enemyDpsMul": 3,
+                "gift": "things;demStone;9"
+              },
+              {
+                "condition": {
+                  "time": 240,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 160,
+                "enemyDpsMul": 4,
+                "gift": "things;demStone;10"
+              },
+              {
+                "condition": {
+                  "time": 240,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 300,
+                "enemyDpsMul": 5,
+                "gift": "things;demStone;11"
+              },
+              {
+                "condition": {
+                  "time": 240,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 500,
+                "enemyDpsMul": 6,
+                "gift": "things;demStone;12"
+              },
+              {
+                "condition": {
+                  "time": 240,
+                  "timeType": "fail",
+                  "timeFirst": "倒计时 "
+                },
+                "enemyLifeMul": 1000,
+                "enemyDpsMul": 7,
+                "gift": "things;demStone;13"
+              }
+            ]
+          }
+        },
+        {
+          "name": "GreenTown1_hostage",
+          "cnName": "变卦",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "保证玉晴的安全",
+          "uiConditionText": "保证玉晴的安全",
+          "description": "旺达带着玉晴如约而至，但随后却发生了意外……",
+          "worldMapId": "GreenTown1",
+          "levelId": "GreenTown1_hostage",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 1,
+                "enemyDpsMul": 1,
+                "gift": "things;yaStone;5"
+              },
+              {
+                "enemyLifeMul": 2,
+                "enemyDpsMul": 3,
+                "gift": "things;yaStone;6"
+              },
+              {
+                "enemyLifeMul": 3,
+                "enemyDpsMul": 4.5,
+                "gift": "things;yaStone;7"
+              },
+              {
+                "enemyLifeMul": 5,
+                "enemyDpsMul": 6,
+                "gift": "things;yaStone;8"
+              },
+              {
+                "enemyLifeMul": 9,
+                "enemyDpsMul": 9,
+                "gift": "things;yaStone;9"
+              },
+              {
+                "enemyLifeMul": 16,
+                "enemyDpsMul": 12,
+                "gift": "things;yaStone;10"
+              },
+              {
+                "enemyLifeMul": 30,
+                "enemyDpsMul": 15,
+                "gift": "things;yaStone;11"
+              },
+              {
+                "enemyLifeMul": 50,
+                "enemyDpsMul": 18,
+                "gift": "things;yaStone;12"
+              },
+              {
+                "enemyLifeMul": 100,
+                "enemyDpsMul": 20,
+                "gift": "things;yaStone;13"
+              }
+            ]
+          }
+        },
+        {
+          "name": "GreenIs1_escort",
+          "cnName": "护送",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "完成对话",
+          "uiConditionText": "完成对话",
+          "description": "主角将妈妈送上飞机，而他和表哥却要继续留在绿岛，这是为何？",
+          "worldMapId": "GreenIs1",
+          "levelId": "GreenIs1_escort",
+          "gift": "base;tenCoin;20"
+        },
+        {
+          "name": "GreenIs4_black",
+          "cnName": "黑暗骑士",
+          "lv": 99,
+          "unlockLv": 30,
+          "shortText": "击败守关首领",
+          "uiConditionText": "击败守关首领",
+          "description": "“迷雾”已被损毁，且看接下去血蟒将如何对付爆枪小队。注意，当前任务只能上场小白、表哥和P1。完成当前任务后，“郁葱坪”地图将开启。",
+          "worldMapId": "GreenIs4",
+          "levelId": "GreenIs4_black",
+          "growth": {
+            "task": [
+              {
+                "enemyLifeMul": 10,
+                "enemyDpsMul": 0.5,
+                "gift": "things;consCancer;5"
+              },
+              {
+                "enemyLifeMul": 20,
+                "enemyDpsMul": 1,
+                "gift": "things;consCancer;6"
+              },
+              {
+                "enemyLifeMul": 30,
+                "enemyDpsMul": 1.5,
+                "gift": "things;consCancer;7"
+              },
+              {
+                "enemyLifeMul": 50,
+                "enemyDpsMul": 2,
+                "gift": "things;consCancer;8"
+              },
+              {
+                "enemyLifeMul": 90,
+                "enemyDpsMul": 3,
+                "gift": "things;consCancer;9"
+              },
+              {
+                "enemyLifeMul": 160,
+                "enemyDpsMul": 4,
+                "gift": "things;consCancer;10"
+              },
+              {
+                "enemyLifeMul": 300,
+                "enemyDpsMul": 5,
+                "gift": "things;consCancer;11"
+              },
+              {
+                "enemyLifeMul": 500,
+                "enemyDpsMul": 6,
+                "gift": "things;consCancer;12"
+              },
+              {
+                "enemyLifeMul": 1000,
+                "enemyDpsMul": 7,
+                "gift": "things;consCancer;13"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

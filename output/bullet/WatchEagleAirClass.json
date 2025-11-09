@@ -1,0 +1,71 @@
+{
+  "father": [
+    {
+      "name": "aircraft",
+      "cnName": "战车定义",
+      "equip": {
+        "name": "WatchEagleAir",
+        "cnName": "守望之翼",
+        "rideLabel": "RedMotoRide",
+        "defineType": "normal",
+        "canComposeB": 1,
+        "mustCash": 80,
+        "lifeMul": 1.6,
+        "attackMul": 2.3,
+        "attackActionLabel": "sprintAttack",
+        "duration": 40,
+        "cd": 120,
+        "addObjJson": {
+          "dpsAll": 0.08,
+          "lifeAll": 0.08
+        },
+        "skillArr": "murderous_vehicle,WatchEagleAirDefence,vehicleFit_fly"
+      }
+    },
+    {
+      "name": "vehicle",
+      "cnName": "战车body",
+      "body": {
+        "index": 0,
+        "name": "WatchEagleAir",
+        "shell": "metal",
+        "cnName": "守望之翼",
+        "raceType": "robot",
+        "swfUrl": "swf/vehicle/WatchEagleAir176.swf",
+        "imgType": "normal",
+        "flipCtrlBy": "mouse",
+        "dieJumpMul": 0,
+        "showLevel": 999,
+        "imgArr": "stand,move,hurt1,die1\n\t\t\t\t,sprintAttack",
+        "hitRect": "-25,-15,50,30",
+        "maxJumpNum": 1,
+        "maxVx": 15,
+        "motionState": "fly",
+        "flyUseSpiderB": 1,
+        "flyType": "space",
+        "motionD": {
+          "F_AIR": 3
+        },
+        "nextAttackTime": 0,
+        "extraAIClassLabel": "WatchEagleAir_AIExtra",
+        "bulletLauncherClass": "VehicleBulletLauncher",
+        "keyClass": "VehicleBodyKey",
+        "bossSkillArrCn": null,
+        "hurtArr": {
+          "hurt": {
+            "info": "不加入ai选择",
+            "imgLabel": "sprintAttack",
+            "meBack": 40,
+            "grapRect": "-87,61,146,262",
+            "mustGrapRectB": 1,
+            "hurtRatio": 2,
+            "attackType": "through",
+            "skillArr": null,
+            "shakeValue": 4,
+            "hitImgUrl": "bladeHitEffect/blood"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="jewelry" cnName="饰品">
+		<equip lv="1" maxLv="5" skillArr="boneRing_jewelry" baseLabel="boneRing" cnName="部落骨环" addObjJson="{'damageMul':0.1}" composeMustNum="140" />
+			<skill>
+				<name>boneRing_jewelry</name>
+				<cnName>穿风</cnName>
+				<changeText>伤害：[mul]</changeText>
+				<conditionType>passive</conditionType>
+				<condition>underHit</condition>
+				<minTriggerT>5</minTriggerT>
+				<target noMeB="1">me,range,we</target>
+				
+				<addType>state</addType>
+				<effectType>hurtMulAdd</effectType>
+				<effectProArr>0.2</effectProArr>
+				<mul>0.1</mul>
+				<duration>10</duration>
+				<range>9999</range>
+				
+				<stateEffectImg partType="2hand" con="add" raNum="30" followPartRaB="1">skillEffect/trueshot_enemy</stateEffectImg>
+				<description>被攻击时有[effectProArr.0]的几率给队友增加[mul]的穿透伤害，持续[duration]秒。</description>
+				<growth>
+					<skill><mul>0.07</mul></skill>
+					<skill><mul>0.10</mul></skill>
+					<skill><mul>0.13</mul></skill>
+					<skill><mul>0.15</mul></skill>
+					<skill><mul>0.18</mul></skill>
+				</growth>
+			</skill>
+		
+		
+		<equip lv="1" maxLv="5" skillArr="duelistClaw_jewelry" baseLabel="duelistClaw" cnName="斗士之角" addObjJson="{'damageMul':0.12}" composeMustNum="90" />
+				<skill>
+					<name>duelistClaw_jewelry</name>
+					<cnName>决斗</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+					<changeText>伤害：[mul-1]</changeText>
+					<conditionType>passive</conditionType>
+					<condition>hit</condition>
+					<target>target</target>
+					
+					<addType>instant</addType>
+					<effectType>changeHurt</effectType>
+					<obj>"type":"stationaryBoss"</obj>
+					<mul>1.2</mul>
+					<description>对静止不动的首领造成额外[mul-1]的伤害。</description>
+					<growth>
+						<skill><mul>1.2</mul></skill>
+						<skill><mul>1.23</mul></skill>
+						<skill><mul>1.26</mul></skill>
+						<skill><mul>1.29</mul></skill>
+						<skill><mul>1.32</mul></skill>
+					</growth>
+				</skill>
+		
+				
+		<equip lv="1" maxLv="5" skillArr="corpseTeeth_jewelry" baseLabel="corpseTeeth" cnName="尸牙" addObjJson="{'damageMul':0.15}" composeMustNum="50" iconLabel="ThingsIcon/corpseTeeth" />
+				<skill>
+					<name>corpseTeeth_jewelry</name>
+					<cnName>牙痕</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+					<changeText>伤害：[mul-1]</changeText>
+					<conditionType>passive</conditionType>
+					<condition>hit</condition>
+					<otherConditionArr>haveSkillOr</otherConditionArr>
+					<conditionString>verShield,verShield30,verShieldMad</conditionString>
+					<target>target</target>
+					
+					<addType>instant</addType>
+					<effectType>changeHurtNoCondition</effectType>
+					<mul>1.8</mul>
+					<description>对拥有竖盾的首领造成额外[mul-1]的伤害。</description>
+					<growth>
+						<skill><mul>1.8</mul></skill>
+						<skill><mul>2.0</mul></skill>
+						<skill><mul>2.2</mul></skill>
+						<skill><mul>2.4</mul></skill>
+						<skill><mul>2.6</mul></skill>
+					</growth>
+				</skill>
+				
+		<equip lv="1" maxLv="1" skillArr="longGlasses_jewelry" baseLabel="longGlasses" cnName="远视镜" addObjJson="{'damageMul':0.12}" composeMustNum="50" iconLabel="ThingsIcon/longGlasses" />
+				<skill>
+					<name>longGlasses_jewelry</name>
+					<cnName>望远</cnName>
+					<conditionType>passive</conditionType><ignoreNoSkillB>1</ignoreNoSkillB>
+					<condition>reloadKey2</condition>
+					<otherConditionArr>weMainPlayer,playerCanScaleScreenB</otherConditionArr>
+					<target noExistB="1">me</target>
+					<minTriggerT>1</minTriggerT>
+					
+					<addType>instant</addType>
+					<effectType>swapScreenScale</effectType>
+					<mul>0.66</mul>
+					<description>玩家P1双击“装载弹药”键，将视野放大1.5倍。最短触发间隔[minTriggerT]秒。刚进入游戏时，也会放大视野。</description>
+					<meEffectImg name="longGlassesSound" />
+					<growth>
+						<skill><mul>0.66</mul></skill>
+					</growth>
+				</skill>
+				
+				
+		<equip lv="1" maxLv="1" skillArr="superGlasses_jewelry" baseLabel="superGlasses" cnName="超远视镜" addObjJson="{'damageMul':0.18}" iconLabel="ThingsIcon/superGlasses" />
+				<skill>
+					<name>superGlasses_jewelry</name>
+					<cnName>超望远</cnName>
+					<conditionType>passive</conditionType><ignoreNoSkillB>1</ignoreNoSkillB>
+					<condition>reloadKey2</condition>
+					<otherConditionArr>weMainPlayer,playerCanScaleScreenB</otherConditionArr>
+					<target noExistB="1">me</target>
+					<minTriggerT>1</minTriggerT>
+					
+					<addType>instant</addType>
+					<effectType>swapScreenScale</effectType>
+					<mul>0.5</mul>
+					<description>玩家P1双击“装载弹药”键，将视野放大2倍。最短触发间隔[minTriggerT]秒。刚进入游戏时，也会放大视野。</description>
+					<meEffectImg name="longGlassesSound" />
+					<growth>
+						<skill><mul>0.5</mul></skill>
+					</growth>
+				</skill>
+	</father>
+</data>

@@ -1,0 +1,153 @@
+{
+  "gameBox": {
+    "one": [
+      {
+        "codeExchangeId": 37701,
+        "name": "sign2025_9_1",
+        "cnName": "9月1天",
+        "startTime": "2025-9-1 00:00:00",
+        "endTime": "2025-10-1 00:00:00",
+        "hideOutTimeB": true,
+        "codeUrl": "http://news.4399.com/gonglue/bqyx/xinwen/471939.html",
+        "gift": [
+          "base;tenCoin;30",
+          "things;weaponChest;3",
+          "things;keyChest;3",
+          "things;deviceChest;3"
+        ]
+      },
+      {
+        "codeExchangeId": 37702,
+        "name": "sign2025_9_5",
+        "cnName": "9月5天",
+        "startTime": "2025-9-1 00:00:00",
+        "endTime": "2025-10-1 00:00:00",
+        "hideOutTimeB": true,
+        "codeUrl": "http://news.4399.com/gonglue/bqyx/xinwen/471939.html",
+        "gift": [
+          "base;tenCoin;50",
+          "things;weaponChest;7",
+          "things;keyChest;7",
+          "things;deviceChest;7"
+        ]
+      },
+      {
+        "codeExchangeId": 37703,
+        "name": "sign2025_9_14",
+        "cnName": "9月14天",
+        "startTime": "2025-9-1 00:00:00",
+        "endTime": "2025-10-1 00:00:00",
+        "hideOutTimeB": true,
+        "codeUrl": "http://news.4399.com/gonglue/bqyx/xinwen/471939.html",
+        "gift": [
+          "base;tenCoin;70",
+          "things;weaponChest;15",
+          "things;keyChest;15",
+          "things;deviceChest;15"
+        ]
+      },
+      {
+        "codeExchangeId": 37704,
+        "name": "sign2025_9_25",
+        "cnName": "9月25天",
+        "startTime": "2025-9-1 00:00:00",
+        "endTime": "2025-10-1 00:00:00",
+        "hideOutTimeB": true,
+        "codeUrl": "http://news.4399.com/gonglue/bqyx/xinwen/471939.html",
+        "gift": [
+          "base;tenCoin;100",
+          "things;weaponChest;25",
+          "things;keyChest;25",
+          "things;deviceChest;25"
+        ]
+      },
+      {
+        "codeExchangeId": 37705,
+        "name": "sign2025_9_30",
+        "cnName": "9月满勤",
+        "startTime": "2025-9-1 00:00:00",
+        "endTime": "2025-10-1 00:00:00",
+        "hideOutTimeB": true,
+        "codeUrl": "http://news.4399.com/gonglue/bqyx/xinwen/471939.html",
+        "gift": [
+          "base;tenCoin;250",
+          "parts;huntParts_1;35",
+          "parts;acidicParts_1;35"
+        ]
+      },
+      {
+        "codeExchangeId": 37728,
+        "name": "sign2025_10_1",
+        "cnName": "10月1天",
+        "startTime": "2025-10-1 00:00:00",
+        "endTime": "2025-11-1 00:00:00",
+        "hideOutTimeB": true,
+        "codeUrl": "http://news.4399.com/gonglue/bqyx/xinwen/471939.html",
+        "gift": [
+          "things;doubleArmsCard;2",
+          "things;doubleEquipCard;2",
+          "things;strengthenStone;20",
+          "things;armsEchelonCard;2"
+        ]
+      },
+      {
+        "codeExchangeId": 37729,
+        "name": "sign2025_10_5",
+        "cnName": "10月5天",
+        "startTime": "2025-10-1 00:00:00",
+        "endTime": "2025-11-1 00:00:00",
+        "hideOutTimeB": true,
+        "codeUrl": "http://news.4399.com/gonglue/bqyx/xinwen/471939.html",
+        "gift": [
+          "things;doubleArmsCard;3",
+          "things;doubleEquipCard;3",
+          "things;strengthenStone;35",
+          "things;armsEchelonCard;3"
+        ]
+      },
+      {
+        "codeExchangeId": 37730,
+        "name": "sign2025_10_14",
+        "cnName": "10月14天",
+        "startTime": "2025-10-1 00:00:00",
+        "endTime": "2025-11-1 00:00:00",
+        "hideOutTimeB": true,
+        "codeUrl": "http://news.4399.com/gonglue/bqyx/xinwen/471939.html",
+        "gift": [
+          "things;doubleArmsCard;4",
+          "things;doubleEquipCard;4",
+          "things;strengthenStone;50",
+          "things;armsEchelonCard;4"
+        ]
+      },
+      {
+        "codeExchangeId": 37731,
+        "name": "sign2025_10_25",
+        "cnName": "10月25天",
+        "startTime": "2025-10-1 00:00:00",
+        "endTime": "2025-11-1 00:00:00",
+        "hideOutTimeB": true,
+        "codeUrl": "http://news.4399.com/gonglue/bqyx/xinwen/471939.html",
+        "gift": [
+          "things;doubleArmsCard;5",
+          "things;doubleEquipCard;5",
+          "things;strengthenStone;60",
+          "things;armsEchelonCard;5"
+        ]
+      },
+      {
+        "codeExchangeId": 37732,
+        "name": "sign2025_10_30",
+        "cnName": "10月满勤",
+        "startTime": "2025-10-1 00:00:00",
+        "endTime": "2025-11-1 00:00:00",
+        "hideOutTimeB": true,
+        "codeUrl": "http://news.4399.com/gonglue/bqyx/xinwen/471939.html",
+        "gift": [
+          "things;ultiArmsEchelonCard;5",
+          "things;strengthenStone;100"
+        ]
+      }
+    ]
+  }
+}

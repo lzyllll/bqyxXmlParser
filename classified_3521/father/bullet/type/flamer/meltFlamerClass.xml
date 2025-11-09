@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="flamer" cnName="喷火器">
+		<bullet index="24" name="铄金" color="black" dropLevelArr="95" dropBodyArr="Warrior" evoMaxLv="12" evoMustFirstLv="4" composeLv="95" chipNum="150">
+			<name>meltFlamer</name><cnName>铄金</cnName><extraMul>1.4</extraMul>
+			<dpsMul>2.4</dpsMul>
+			<uiDpsMul>1.92</uiDpsMul><aiShootRange>600</aiShootRange>
+			
+			<capacity>70,80</capacity>
+			<attackGap>0.07,0.15</attackGap>
+			<reloadGap>2.5,3</reloadGap>
+			<shakeAngle>3,5</shakeAngle>
+			<bulletWidth>25</bulletWidth>
+			<bulletNum>1</bulletNum>
+			<bulletShakeWidth>0,0</bulletShakeWidth>
+			<beatBack>3</beatBack>
+			<targetShakeValue>5</targetShakeValue>
+			
+			<armsArmMul>0.5</armsArmMul><upValue>20</upValue><shootShakeAngle>5</shootShakeAngle><shootRecoil>3</shootRecoil><screenShakeValue>4</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime><bulletLife>0.62</bulletLife>
+			<hitType>rect</hitType>
+				
+			<speedD random="0.1" a="10" max="45" />
+			<bulletSpeed>35</bulletSpeed>
+				
+			<oneHitBodyB>1</oneHitBodyB>
+			<penetrationNum>1000</penetrationNum>
+			<godSkillArr>Hit_imploding_godArmsSkill,addFlamer_ArmsSkill</godSkillArr>
+			
+			<shootSoundUrl />
+			<bulletImgUrl name="fireFlamer_bullet" />
+			<hitImgUrl raNum="30">bulletHitEffect/smoke_motion</hitImgUrl>
+			<hitFloorImgUrl raNum="30">bulletHitEffect/smoke_motion</hitFloorImgUrl>
+			<fireImgType>no</fireImgType>
+			
+			<bodyImgRange>specialGun/meltFlamer</bodyImgRange><bulletImgRange>specialGun/bullet</bulletImgRange>
+			<description>消灭首领狂人机器(95级)</description>
+		</bullet>
+		
+		
+		
+		<bullet name="meltFlamerYa" color="yagold">
+			<name>meltFlamerYa</name><cnName>氩星铄金</cnName>
+			
+			<capacity>100</capacity>
+			<attackGap>0.07</attackGap>
+			<reloadGap>1</reloadGap>
+			<shakeAngle>3</shakeAngle>
+			<bulletWidth>25</bulletWidth>
+			<bulletNum>1</bulletNum>
+			<bulletShakeWidth>0</bulletShakeWidth>
+			<beatBack>3</beatBack>
+			<targetShakeValue>5</targetShakeValue>
+			
+			<armsArmMul>0.5</armsArmMul><upValue>20</upValue><shootShakeAngle>5</shootShakeAngle><shootRecoil>3</shootRecoil><screenShakeValue>4</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime><bulletLife>0.62</bulletLife>
+			<hitType>rect</hitType>
+				
+			<speedD random="0.1" a="10" max="45" />
+			<bulletSpeed>35</bulletSpeed>
+				
+			<oneHitBodyB>1</oneHitBodyB>
+			<penetrationNum>1000</penetrationNum>
+			<skillArr>Hit_AddLifeMul_ArmsSkill</skillArr>
+			
+			<shootSoundUrl />
+			<bulletImgUrl name="fireFlamer_bullet" />
+			<hitImgUrl raNum="30">bulletHitEffect/smoke_motion</hitImgUrl>
+			<hitFloorImgUrl raNum="30">bulletHitEffect/smoke_motion</hitFloorImgUrl>
+			<fireImgType>no</fireImgType>
+			
+			<bodyImgRange>specialGun/meltFlamer6</bodyImgRange><bulletImgRange>specialGun/bullet</bulletImgRange>
+		</bullet>
+	</father>
+	</data>

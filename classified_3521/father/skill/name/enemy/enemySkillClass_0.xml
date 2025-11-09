@@ -1,0 +1,1159 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="enemy" cnName="怪物技能">
+		<skill name="防御力提升100%">
+			<name>defence100</name>
+			<cnName>防御力提升100%</cnName><everNoClearB>1</everNoClearB><noBeClearB>1</noBeClearB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<conditionType>passive</conditionType><condition>add</condition><target>me</target><addType>state</addType><duration>99999</duration>
+			<mul>0.5</mul><effectType>underHurtMul</effectType>
+			<description>战斗中永久提升100%的防御力。</description>
+		</skill>
+		<skill index="0" name="永久隐身">
+			<name>invisibilityEver</name>
+			<cnName>永久隐身</cnName>
+			
+			<condition>add</condition>
+			<conditionType>passive</conditionType>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>invisibilityEver</effectType>
+			<value>1</value>
+			<mul>1</mul>
+			<duration>9999999</duration>
+			
+			<description>单位处于永久隐身状态。对于无法移动的单位来说，没有隐身效果，但是受到百分比伤害会降低80%。</description>
+		</skill>
+		<skill cnName="上限">
+			<name>upperLimitSecond</name>
+			<cnName>上限</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHurtBefore</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>lockLife</effectType>
+			<mul>0.02</mul>
+			<description>每秒开放[mul]的扣血量。</description>
+		</skill>
+		<skill cnName="魔抗">
+			<name>noSkillHurt</name>
+			<cnName>魔抗</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underSkillHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>noHurt</effectType>
+			<description>不受from:skill的伤害</description>
+		</skill>
+		<skill cnName="不受远程伤害">
+			<name>noBulletHurt</name>
+			<cnName>远程抵抗</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underAllHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurtBullet</effectType>
+			<mul>0</mul>
+			<description>不受远程伤害。</description>
+		</skill>
+		<skill cnName="只受副手伤害">
+			<name>onlyWeaponHurt</name>
+			<cnName>只受副手伤害</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>onlyWeapon</effectType>
+			<description>只受副手伤害</description>
+		</skill>
+		<skill cnName="只受副手伤害-顶头特效">
+			<name>onlyWeaponHurtBattle</name>
+			<cnName>只受副手伤害</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>onlyWeapon</effectType>
+			<description>只受副手伤害</description>
+			<addSkillEffectImg partType="head">generalEffect/weaponKill</addSkillEffectImg>
+		</skill>
+		
+		<skill cnName="受到伤害减少50%">
+			<name>underHurt50</name>
+			<cnName>防御</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underAllHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurtAndMul</effectType>
+			<mul>0.5</mul>
+			<description>受到的伤害（包括百分比伤害）减少至原来的[1-mul]。</description>
+		</skill>
+		<skill cnName="只受副手伤害，指定伤害">
+			<name>onlyWeaponHurtSet</name>
+			<cnName>只受副手伤害，指定伤害</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>onlyWeapon</effectType>
+			<mul>0.003</mul>
+			<description>只受副手伤害</description>
+		</skill>
+		<skill cnName="只受弩伤害">
+			<name>onlyUnderCrossbow</name>
+			<cnName>只受弩伤害</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>target</target>
+			<conditionString>fireworksSun</conditionString>
+			
+			<addType>instant</addType>
+			<effectType>onlyHurtGunType</effectType>
+			<valueString>crossbow</valueString>
+		</skill>
+		<skill cnName="只受古老的火炮伤害">
+			<name>onlyUnderOldRocket</name>
+			<cnName>只受古老的火炮伤害</cnName><noSkillDodgeB>1</noSkillDodgeB><ignoreImmunityB>1</ignoreImmunityB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>onlyHurtGunName</effectType>
+			<valueString>old_rocket22</valueString>
+		</skill>
+		
+		
+		<skill index="0" name="技能免疫">
+			<name>State_SpellImmunity</name>
+			<cnName>技能免疫</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>spellImmunityB</effectType>
+			<duration>99999</duration>
+			<description>免疫敌人的技能。</description>
+		</skill>
+		<skill name="技能免除">
+			<name>spellImmunityMax</name>
+			<cnName>技能免除</cnName>
+			<showInLifeBarB>1</showInLifeBarB><ignoreNoSkillB>1</ignoreNoSkillB><ignoreImmunityB>1</ignoreImmunityB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			<iconUrl>SkillIcon/spellImmunityMax</iconUrl>
+			
+			<addType>instantAndState</addType>
+			<effectType>spellImmunityB</effectType>
+			<duration>99999</duration>
+			<description>免疫敌人的技能，无视封锁。</description>
+		</skill>
+		<skill>
+			<name>cdMul2</name><cnName>技能回复速度提升100%</cnName><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB>
+			<conditionType>passive</conditionType><condition>add</condition><target>me</target><addType>state</addType><duration>99999</duration>
+			<mul>2</mul><effectType>cdSpeed</effectType>
+			<description>技能回复速度提升[mul-1]。</description>
+		</skill>
+		<skill index="0" name="永久无敌">
+			<name>State_Invincible</name>
+			<cnName>永久无敌</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>invincible</effectType>
+			<duration>999999</duration>
+			<description>永久无敌。</description>
+		</skill>
+		<skill index="0" name="永久无敌且不受碰撞">
+			<name>State_InvincibleThrough</name>
+			<cnName>永久无敌</cnName><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>invincibleAndThrough</effectType>
+			<duration>999999</duration>
+			<description>永久无敌且不受伤害碰撞。</description>
+		</skill>
+		<skill name="隐藏">
+			<name>State_noAiFind</name>
+			<cnName>隐藏</cnName><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>noAiFind</effectType>
+			<duration>999999</duration>
+			<description>不会成为敌人的攻击目标。</description>
+		</skill>
+		<skill index="0" name="封锁所有技能">
+			<name>State_noAllSkill</name>
+			<cnName>自封</cnName><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>noAllSkillAll</effectType>
+			<duration>99999</duration>
+			<description>封锁自己所有的技能。</description>
+		</skill>
+		<skill name="自闭">
+			<name>noAttackOrder</name>
+			<cnName>自闭</cnName><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>noAttackOrder</effectType>
+			<description>使自己失去攻击能力。</description>
+		</skill>
+		
+		<skill name="禁止">
+			<name>noMoveSpeed</name>
+			<cnName>禁止</cnName><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB><noSkillDodgeB>1</noSkillDodgeB><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<mul>0</mul>
+			<duration>9999999</duration>
+			<description>使自己失去移动能力。</description>
+		</skill>
+		<skill name="无法射击">
+			<name>noArmsShoot</name>
+			<cnName>无法射击</cnName><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>noArmsShoot</effectType>
+			<description>使自己失去射击能力。</description>
+		</skill>
+		
+		<skill name="自刎">
+			<name>killMeTimeOver</name>
+			<cnName>自刎</cnName><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB><showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>killMeTimeOver</effectType>
+			<duration>9999999</duration>
+			<description>倒计时结束前自刎。</description>
+		</skill>
+		
+		<skill name="逃跑">
+			<name>aiExcape</name>
+			<cnName>逃跑</cnName><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+			<conditionType>passive</conditionType>
+			<condition>add</condition><target>me</target>
+			<addType>instant</addType>
+			<effectType>aiPatrolRandomNoAttack</effectType>
+			<description>使自己一直处于逃跑状态。</description>
+		</skill>
+		
+		<skill name="固定出生">
+			<name>birthLock</name>
+			<cnName>固定出生</cnName><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+			<conditionType>passive</conditionType>
+			<condition>add</condition><target>me</target>
+			<addType>instant</addType>
+			<effectType>birthLock</effectType>
+			<description>出生时，瞬移到一个弹药箱产生的位置。</description>
+		</skill>
+		
+		
+		<skill>
+			<name>sumBossAttenCustom</name>
+			<cnName>攻击衰减</cnName><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB><noSkillDodgeB>1</noSkillDodgeB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>allHit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>sumBossAtten</effectType>
+			<value>0.2</value>
+			<mul>0.2</mul>
+			<secMul>0.2</secMul>
+			<description>自己对敌人造成的百分比伤害降低至[value]。</description>
+		</skill>
+		
+		<skill>
+			<name>sumBossAtten</name>
+			<cnName>攻击衰减</cnName><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB><noSkillDodgeB>1</noSkillDodgeB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>allHit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>sumBossAtten</effectType>
+			<value>1</value>
+			<mul>0.02</mul>
+			<secMul>0.1</secMul>
+			<description>自己对敌人造成的百分比伤害降低，首领降至[mul]，精英怪降至[secMul]。</description>
+		</skill>
+		<skill>
+			<name>sumBossAtten2</name>
+			<cnName>百分比攻击衰减</cnName><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB><noSkillDodgeB>1</noSkillDodgeB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>allHit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>sumBossAtten</effectType>
+			<value>2</value>
+			<mul>0.08</mul>
+			<secMul>0.25</secMul>
+			<description>对敌人的伤害百分比降低，首领降至[mul]，精英怪降至[secMul]；但是对小怪提高[value]倍。</description>
+		</skill>
+		<skill>
+			<name>sumBossAtten3</name>
+			<cnName>百分比攻击衰减</cnName><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB><noSkillDodgeB>1</noSkillDodgeB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>allHit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>sumBossAtten</effectType>
+			<value>6</value>
+			<mul>0.08</mul>
+			<secMul>0.25</secMul>
+			<description>对敌人的伤害百分比降低，首领降至[mul]，精英怪降至[secMul]；但是对小怪提高[value]倍。</description>
+		</skill>
+		
+		
+		<skill>
+			<name>sumBossAttenWe</name>
+			<cnName>非boss和魂卡的子弹百分比攻击衰减</cnName><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB><noSkillDodgeB>1</noSkillDodgeB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<otherConditionArr>puNoBossOrCard</otherConditionArr>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>sumBossAtten</effectType><changeHurtB>1</changeHurtB>
+			<value>1</value>
+			<mul>0.1</mul>
+			<secMul>0.25</secMul>
+			<description>对敌人的伤害百分比降低，首领降至[mul]，精英怪降至[secMul]。</description>
+		</skill>
+		
+		<skill>
+			<name>offBossAtten</name>
+			<cnName>取消百分比伤害</cnName><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB><noSkillDodgeB>1</noSkillDodgeB><noBeClearB>1</noBeClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>allHit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>sumBossAtten</effectType>
+			<value>2</value>
+			<mul>0.000001</mul>
+			<secMul>0.1</secMul>
+			<description>对敌人的伤害百分比降低，首领降至[mul]，精英怪降至[secMul]；但是对小怪提高[value]倍。</description>
+		</skill>
+		<skill>
+			<name>mulHurtToValue</name>
+			<cnName>数值化</cnName><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB><noSkillDodgeB>1</noSkillDodgeB><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>mulHurtToValue</effectType>
+			<mul>20</mul>
+			<duration>9999999</duration>
+			<description>将百分比伤害转为数值伤害，伤害=20x自身基础伤害*伤害百分比。</description>
+		</skill>
+		
+		<skill>
+			<name>noUnderMulHurt</name>
+			<cnName>钢骨</cnName><showInLifeBarB>1</showInLifeBarB><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB><noSkillDodgeB>1</noSkillDodgeB><noBeClearB>1</noBeClearB><everNoClearB>1</everNoClearB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underAllHit</condition>
+			<otherConditionArr>hurtNoMustMul</otherConditionArr>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>clearHurtMul</effectType>
+			<description>不受百分比伤害。</description>
+		</skill>
+		
+		
+		<skill index="0" name="metalCorrosion" cnName="酸性腐蚀">
+			<name>metalCorrosion</name>
+			<cnName>酸性腐蚀</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>4</mul>
+			<obj>"type":"vehicle"</obj>
+			<description>对载具造成[mul]倍伤害。</description>
+		</skill>
+		<skill>
+			<name>noMetalCorrosion</name>
+			<cnName>金属反弹</cnName><ignoreImmunityB>1</ignoreImmunityB><ignoreNoSkillB>1</ignoreNoSkillB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>allHit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>0.05</mul>
+			<obj>"type":"vehicle"</obj>
+			<description>只对载具造成[mul]的伤害。</description>
+		</skill>
+		<skill>
+			<name>State_lowMove</name>
+			<cnName>低速</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<value>0</value>
+			<mul>0.5</mul>
+			<duration>99999</duration>
+			<range>0</range>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>移动速度降低[1-mul]</description>
+		</skill>
+		<skill index="0" name="加速">
+			<name>State_AddMoveValue6</name>
+			<cnName>加速</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<value>6</value>
+			<mul>1</mul>
+			<duration>99999</duration>
+			<range>0</range>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>移动速度增加[value]</description>
+		</skill>
+		<skill index="0" name="超速100">
+			<name>State_AddMove</name>
+			<cnName>超速</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<value>0</value>
+			<mul>2</mul>
+			<duration>99999</duration>
+			<range>0</range>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>移动速度增加100%</description>
+		</skill>
+		<skill index="0" name="倍速">
+			<name>State_AddMove50</name>
+			<cnName>倍速</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<value>0</value>
+			<mul>1.5</mul>
+			<duration>99999</duration>
+			<description>移动速度增加50%。</description>
+		</skill>
+		<skill index="0" name="弹跳次数增加">
+			<name>jumpNumAdd1</name>
+			<cnName>弹跳+1</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>maxJumpNumAdd</effectType>
+			<value>1</value>
+			<description>弹跳次数+[value]。</description>
+		</skill>
+		<skill>
+			<name>jumpNumAddZero</name>
+			<cnName>不能弹跳</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>maxJumpNumAdd</effectType>
+			<value>-999</value>
+			<description>不能弹跳。</description>
+		</skill>
+		
+		<skill index="0" name="根据生命值扣除显示stand状态">
+			<name>standImageByLife</name>
+			<cnName>根据生命值扣除显示stand状态</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>standImageByLife</effectType>
+			<value>4</value>
+			<duration>9999999</duration>
+		</skill>
+		<skill index="0" name="战斗僵尸-被硬直加速">
+			<name>UnderRos_AddMove_Battle</name>
+			<cnName>易怒</cnName><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underRos</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<value>0</value>
+			<mul>2</mul>
+			<duration>10</duration>
+			<range>0</range>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>受到一定的伤害后移动速度加快。</description>
+		</skill>
+		<skill index="0" name="无头自爆僵尸-死后释放炸弹">
+			<name>boom_headless</name>
+			<cnName>自爆炸弹</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>dieEvent</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<extraValueType>meDpsFactor</extraValueType>
+			
+			<obj>"name":"boom_headless","site":"me","flipB":true</obj>
+			
+			<addSkillEffectImg partType="hand_right" con="filter" raNum="30">bulletHitEffect/spark_motion</addSkillEffectImg>
+			<description>倒地后释放致命炸弹。</description>
+		</skill>
+		<skill index="0" name="无头自爆僵尸-启动攻击后自爆">
+			<name>suicide_headless</name>
+			<cnName>无头自爆僵尸-启动攻击后自爆</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>beforeAttack</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>toDie</effectType>
+		</skill>
+		<skill index="0" cnName="防化">
+			<name>cmldef_enemy</name><wantDescripB>1</wantDescripB>
+			<cnName>防化</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>underSkillHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>0.20</mul>
+			
+			<obj>"type":"cmldef","exceptSkillB":false</obj>
+			<description>受到毒的伤害降低[1-mul]。</description>
+		</skill>
+		<skill index="0" cnName="防毒">
+			<name>cmldef2_enemy</name><wantDescripB>1</wantDescripB><showInLifeBarB>1</showInLifeBarB>
+			<cnName>防毒</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>underSkillHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>0.10</mul>
+			
+			<obj>"type":"cmldef","exceptSkillB":false</obj>
+			<description>受到毒的伤害降低[1-mul]。</description>
+		</skill>
+		<skill index="0" cnName="抗毒">
+			<name>cmldef3_enemy</name><wantDescripB>1</wantDescripB>
+			<cnName>抗毒</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>underSkillHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>0</mul>
+			
+			<obj>"type":"cmldef","exceptSkillB":false</obj>
+			<description>不受毒的伤害。</description>
+		</skill>
+		
+		<skill index="0" name="肥胖僵尸-暴击">
+			<name>Hit_Crit_Fat</name>
+			<cnName>暴击</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>crit</effectType>
+			<extraValueType>hurtValue</extraValueType>
+			<value>0.2</value>
+			<mul>4</mul>
+			<duration>2</duration>
+		</skill>
+		
+		<skill index="0" name="僵尸炮兵总管-圆周弹">
+			<name>circle_inward_shell</name>
+			<cnName>圆周弹</cnName>
+			<cd>5</cd>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>10.1,0.03,0.01</effectProArr>
+			<extraValueType>nowArmsDps</extraValueType>
+			
+			<obj>"name":"circle_inward_shell","site":"mouse","flipB":true,"launcherB":true</obj>
+			
+			<meActionLabel>skillAttack1</meActionLabel>
+			<meEffectImg soundUrl="sound/moreMissile_hero" />
+			<description>以鼠标点为中心，四周随机向中心发射导弹。</description>
+		</skill>
+		
+		<skill index="0" name="僵尸炮兵总管-横排弹">
+			<name>sweep_shell</name>
+			<cnName>导弹召唤</cnName><iconUrl36>SkillIcon/endlessBombing_skull_36</iconUrl36>
+			<cd>12</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>700</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<effectProArr>10.1,0.03,0.01</effectProArr>
+			<extraValueType>nowArmsDps</extraValueType>
+			
+			<obj>"name":"sweep_shell","site":"mouse","flipB":true,"launcherB":true</obj>
+			
+			<meActionLabel>skillAttack1</meActionLabel>
+			<meEffectImg soundUrl="sound/moreMissile_hero" />
+			<description>以鼠标点为中心，向中心横扫导弹。</description>
+		</skill>
+		
+		
+		<skill index="0" name="制毒师-分身">
+			<name>Doctor2_cloned</name>
+			<cnName>分身</cnName><iconUrl36>SkillIcon/cloned_36</iconUrl36>
+			<cd>30</cd>
+			<showInLifeBarB>1</showInLifeBarB><noInClonedB>1</noInClonedB>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>700</conditionRange>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>cloned</effectType>
+			<value>2</value>
+			<mul>0.3</mul>
+			<secMul>0.75</secMul>
+			<duration>30</duration>
+			
+			<meEffectImg soundUrl="sound/cloned_enemy" con="add">skillEffect/hiding_hero</meEffectImg>
+			<description>产生[value]个分身，攻击力为自身的[secMul]，血量为自身的[mul]，持续[duration]秒。</description>
+		</skill>
+		
+		
+		
+		<skill index="0" name="FightKing_disabled" cnName="狂战尸-致残">
+			<name>FightKing_disabled</name>
+			<cnName>致残</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>hurtMul</effectType>
+			<mul>0.6</mul>
+			<duration>3</duration>
+			<stateEffectImg partType="2hand">skillEffect/disabled_enemy</stateEffectImg>
+			<description>击中目标后减少其40%的攻击力，持续3秒。</description>
+		</skill>
+		
+		<skill index="0" name="僵尸王-狂暴">
+			<name>crazy_king</name>
+			<cnName>僵尸王-狂暴</cnName><iconUrl36>SkillIcon/crazy_hero_36</iconUrl36>
+			
+			<cd>25</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>crazy</effectType>
+			<mul>2</mul>
+			<duration>10</duration>
+			
+			<meEffectImg soundUrl="sound/crazy_hero" />
+			<stateEffectImg partType="2eye" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg>
+			<stateEffectImg2 partType="2eye" con="add">skillEffect/crazy_hero_eye</stateEffectImg2>
+			<description>释放技能后，单位增加100%的射击速度，同时不消耗弹药，持续5秒。注意，当你弹药为0时同样无法射击。</description>
+		</skill>
+		<skill index="0" name="僵尸狙击兵-远视">
+			<name>hyperopia_incapable</name>
+			<cnName>远视</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>0.25</mul>
+			<range>300</range>
+			
+			<obj>"type":"hyperopia","exceptSkillB":true</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>距离目标越远伤害越大，大于[range]码开始加成，每隔100码增加[mul]的伤害，最大增加100%。</description>
+		</skill>
+		<skill index="0" name="永久金刚钻">
+			<name>through_enemy</name>
+			<cnName>永久金刚钻</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>penetrationGap</effectType>
+			<value>10000</value>
+			<duration>999999</duration>
+			
+			<addSkillEffectImg partType="shootPoint" con="add" raNum="30" followPartRaB="1">skillEffect/through_hero</addSkillEffectImg>
+			<description>单位射出的所有子弹都将无视任何地形。</description>
+		</skill>
+		<skill>
+			<name>noBulletReduct</name>
+			<cnName>无限弹药</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>noReduceCapacityB</effectType>
+			<duration>999999</duration>
+		</skill>
+		<skill name="关闭金刚钻">
+			<name>throughClose</name>
+			<cnName>关闭金刚钻</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>penetrationGap</effectType>
+			<value>-9999</value>
+			<duration>999999</duration>
+			<description>关闭子弹的金刚钻技能。</description>
+		</skill>
+		
+		
+		<skill index="0" name="sweep_runAway" cnName="导弹召唤-逃出升天任务">
+			<name>sweep_runAway</name>
+			<cnName>导弹召唤-逃出升天任务</cnName>
+			<cd>0</cd>
+			
+			<conditionType>active</conditionType>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>bullet</effectType>
+			<extraValueType>nowArmsDps</extraValueType>
+			
+			<obj>"name":"sweep_runAway","site":"randomPlayerCtrl","flipB":true,"launcherB":true</obj>
+			
+			<meEffectImg soundUrl="sound/imploding_enemy" />
+			<description>以鼠标点为中心，向中心横扫导弹。</description>
+		</skill>
+		<skill index="0" name="selfBurn_task" cnName="自燃-古老的火炮">
+			<name>selfBurn_task</name>
+			<cnName>自燃</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>me,range,enemy</target>
+			
+			<addType>instant</addType>
+			<effectType>normal_hurt</effectType>
+			<extraValueType>targetMaxLife</extraValueType>
+			<mul>0.1</mul>
+			<duration>0.1</duration>
+			<range>100</range>
+			
+			<addSkillEffectImg partType="2hand,2foot,arm_right_0,arm_right_1,arm_left_0,arm_left_1,leg_right_0,leg_right_1,leg_left_0,leg_left_1" con="add" raNum="30">skillEffect/smallFire</addSkillEffectImg>
+			<description>释放技能后，单位全身燃起熊熊烈火，对附近[range]范围内的敌人造成伤害。</description>
+		</skill>
+		<skill index="0" cnName="击中眩晕">
+			<name>hammer_hit</name>
+			<cnName>击中眩晕</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target noRaceType="robot">target</target>
+			
+			<addType>instantAndState</addType>
+			<effectType>dizziness</effectType>
+			<effectProArr>0.25</effectProArr>
+			<duration>2</duration>
+			
+			<stateEffectImg partType="mouth" con="add">skillEffect/dizziness</stateEffectImg>
+			<description>击中目标有[effectProArr.0]的几率使目标陷入眩晕状态，持续[duration]秒，对机械体无效。</description>
+		</skill>
+		
+		
+		<skill index="0" name="狂战射手-怒斩">
+			<name>choppedAttack_FightShooter</name>
+			<cnName>震地</cnName><iconUrl36>SkillIcon/shake_FightKing_36</iconUrl36>
+			<cd>3</cd>
+			
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>200</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<value>1</value>
+			<mul>1</mul>
+			<duration>1</duration>
+			
+			<meActionLabel>choppedAttack</meActionLabel>
+			<description>释放技能后，单位进入隐身状态，持续[duration]秒。如果你对敌人发起攻击会打破隐身状态。</description>
+		</skill>
+		<skill index="0" name="狂战射手-旋风刀">
+			<name>windAttack_FightShooter</name>
+			<cnName>旋风刀</cnName><iconUrl36>SkillIcon/whirlwind_FightKing_36</iconUrl36>
+			<cd>4</cd>
+			
+			<ignoreSilenceB>1</ignoreSilenceB>
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>nearAttackTarget</otherConditionArr>
+			<conditionRange>200</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>no</effectType>
+			<value>1</value>
+			<mul>1</mul>
+			<duration>0.7</duration>
+			
+			<meActionLabel>windAttack</meActionLabel>
+			<stateEffectImg partType="hand_left" con="add">FightShooter/shoot_bullet</stateEffectImg>
+			<description>释放技能后，单位进入隐身状态，持续[duration]秒。如果你对敌人发起攻击会打破隐身状态。</description>
+		</skill>
+		<skill index="0" name="狂战射手-击中麻痹">
+			<name>FightKing_hitParalysis</name>
+			<cnName>击中麻痹</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<effectProArr>0.15</effectProArr>
+			<mul>0</mul>
+			<duration>2</duration>
+			 
+			<stateEffectImg con="add" soundUrl="sound/paralysis_enemy_hit">skillEffect/paralysis_enemy</stateEffectImg>
+			<description>击中目标后，有[effectProArr.0]的几率使其麻痹，持续3秒。</description>
+		</skill>
+		<skill index="0" name="狂战射手-狂暴">
+			<name>FightKing_crazy</name>
+			<cnName>狂暴</cnName><iconUrl36>SkillIcon/crazy_hero_36</iconUrl36>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<cd>15</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>lifePerLess</otherConditionArr>
+			<conditionRange>0.45</conditionRange>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>crazyAndPenetrationGap</effectType>
+			<value>9999</value>
+			<mul>4</mul>
+			<duration>7</duration>
+			
+			<meEffectImg soundUrl="sound/crazy_hero" />
+			<stateEffectImg partType="2eye" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg>
+			<stateEffectImg2 partType="2eye" con="add">skillEffect/crazy_hero_eye</stateEffectImg2>
+			<description>释放技能后，单位增加400%的射击速度，同时不消耗弹药，持续[duration]秒。注意，当你弹药为0时同样无法射击。</description>
+		</skill>
+		
+		<skill index="0" name="毒蛛-击中麻痹">
+			<name>SmallSpider_hitParalysis</name>
+			<cnName>击中麻痹</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>target</target>
+			
+			<addType>state</addType>
+			<effectType>moveSpeed</effectType>
+			<effectProArr>0.30</effectProArr>
+			<mul>0</mul>
+			<duration>2</duration>
+			 
+			<stateEffectImg con="add" soundUrl="sound/paralysis_enemy_hit">skillEffect/paralysis_enemy</stateEffectImg>
+			<description>击中目标后，有[effectProArr.0]的几率使其麻痹，持续3秒。</description>
+		</skill>
+		
+		<skill index="0" name="tenacious_enemy" cnName="吸血">
+			<name>suckBlood_enemy</name>
+			<cnName>吸血</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>life</effectType>
+			<value>0</value>
+			<mul>0.01</mul>
+			
+			<description>敌方单位被蝙蝠击中将回复巫尸[mul]的生命值</description>
+		</skill>
+		<skill index="0" name="gaze_enemy" cnName="独眼僵尸-凝视">
+			<name>gaze_enemy</name>
+			<cnName>凝视</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>interval</condition>
+			<target>attackTarget</target>
+			
+			<addType>state</addType>
+			<effectType>hurtMul</effectType>
+			<mul>0.75</mul>
+			<duration>2</duration>
+			<stateEffectImg partType="2hand">skillEffect/disabled_enemy</stateEffectImg>
+			<description>减少被凝视目标25%的攻击力。</description>
+		</skill>
+		<skill index="0" name="despise_enemy" cnName="独眼僵尸-藐视">
+			<name>despise_enemy</name>
+			<cnName>藐视</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>target</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>0.70</mul>
+			<obj>"type":"despise"</obj>
+			
+			<duration>2</duration>
+			<stateEffectImg partType="2hand">skillEffect/disabled_enemy</stateEffectImg>
+			<description>如果目标被你盯上了，那么他对你的任何攻击都将减少[1-mul]的伤害。</description>
+		</skill>
+		<skill index="0" name="fastForward_enemy" cnName="快进">
+			<name>fastForward_enemy</name>
+			<cnName>快进</cnName><showInLifeBarB>1</showInLifeBarB><wantDescripB>1</wantDescripB>
+			
+			<cd>3</cd><iconUrl36>SkillIcon/flash_pet_36</iconUrl36>
+			
+			<conditionType>active</conditionType>
+			<condition>avtiveSkillCdOver</condition>
+			<otherConditionArr>followingTarget</otherConditionArr>
+			<target>me</target>
+			
+			<linkArr>hurtDefence_enemy</linkArr>
+			<addType>instant</addType>
+			<effectType>fastForward</effectType>
+			 
+			<meEffectImg soundUrl="sound/hiding_hero" con="add">skillEffect/hiding_hero</meEffectImg>
+			<description>减少移动路程。</description>
+		</skill>
+		<skill index="0" cnName="加攻加防">
+			<name>hurtDefence_enemy</name>
+			<cnName>加攻加防</cnName>
+			
+			<cd>20</cd>
+			
+			<conditionType>active</conditionType>
+			<condition>beforeAttack</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>hurtDefence</effectType>
+			<mul>1.3</mul>
+			<duration>2</duration>
+			
+			<stateEffectImg partType="2hand" con="filter" raNum="30">skillEffect/smallFire</stateEffectImg>
+			<description />
+		</skill>
+		
+		<skill cnName="财宝僵尸-20秒后自爆">
+			<name>suicide_treasure</name>
+			<cnName>20秒后自爆</cnName>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>setAutoDieCd</effectType>
+			<value>20</value>
+		</skill>
+		
+		<skill index="0" name="rigidBody_enemy" cnName="刚体">
+			<name>rigidBody_enemy</name>
+			<cnName>刚体</cnName><showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>rigidBody</effectType>
+			<duration>99999999</duration>
+			<description>打在自己身上的子弹将失去反弹、穿透效果。</description>
+		</skill>
+		<skill index="0" name="defenceBounce_enemy" cnName="胶性表皮">
+			<name>defenceBounce_enemy</name>
+			<cnName>胶性表皮</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>underHit</condition>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>changeHurt</effectType>
+			<mul>0.90</mul>
+			
+			<obj>"type":"defenceImploding"</obj>
+			
+			<meEffectImg />
+			<targetEffectImg />
+			<description>减少受到爆石的伤害[1-mul]。</description>
+		</skill>
+		
+		
+		<skill index="0" name="noBounce_enemy" cnName="空虚">
+			<name>noBounce_enemy</name>
+			<cnName>空虚</cnName>
+			<showInLifeBarB>1</showInLifeBarB>
+			
+			<conditionType>passive</conditionType>
+			<condition>add</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>noUnderBounceHitB</effectType>
+			<duration>999999</duration>
+			
+			<description>不受反弹子弹和爆石的伤害。</description>
+		</skill>
+	</father>
+	</data>

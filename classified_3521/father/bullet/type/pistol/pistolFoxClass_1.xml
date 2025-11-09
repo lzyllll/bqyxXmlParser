@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father type="pistol" cnName="手枪">
+		<bullet name="pistolFoxYa" color="yagold">
+			<name>pistolFoxYa</name>
+			<cnName>氩星银狐</cnName>
+			
+			<capacity>30</capacity>
+			<attackGap>0.16</attackGap>
+			<reloadGap>0.8</reloadGap>
+			<shakeAngle>1</shakeAngle>
+			<bulletWidth>950</bulletWidth>
+			<bulletShakeWidth>0,50</bulletShakeWidth>
+			<bulletNum>1</bulletNum>				
+			
+			
+			<dpsMul>1</dpsMul>
+			<uiDpsMul>1</uiDpsMul>
+			<hurtRatio>5</hurtRatio>
+			
+			<armsArmMul>0.9</armsArmMul>
+			<armsWeight>5</armsWeight>
+			<upValue>0</upValue>
+			<shootShakeAngle>45</shootShakeAngle>
+			<shootRecoil>4</shootRecoil>
+			<screenShakeValue>8</screenShakeValue>
+			
+			<noShakeTime>0.5</noShakeTime>
+			<bulletLife>0.001</bulletLife>
+			<hitType>longLine</hitType>
+			
+			<twoShootPro>0.2</twoShootPro>
+			<skillArr>Hit_Paralysis_ArmsSkill2</skillArr>
+			
+			.
+			<shootSoundUrl>pistol1/barrel5_sound</shootSoundUrl>
+			<flipX>1</flipX>
+			<lineD lightColor="0x00BFEE" size="2" lightSize="6" blendMode="add" type="one" />
+			<bulletImgUrl>longLine</bulletImgUrl>
+			<hitImgUrl>bulletHitEffect/yellow_motion</hitImgUrl>
+			
+			<bodyImgRange>specialGun/pistolFox6</bodyImgRange>
+			<bulletImgRange>specialGun/bullet</bulletImgRange>
+		</bullet>
+	</father>
+</data>

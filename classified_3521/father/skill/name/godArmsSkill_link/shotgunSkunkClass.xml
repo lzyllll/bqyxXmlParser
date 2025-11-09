@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="godArmsSkill_link" cnName="链接">
+		<skill>
+			<name>boobyPurgoldBody</name><noBeClearB>1</noBeClearB>
+			<cnName>导弹发射器-不触发殒命技能</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition><changeHurtB>1</changeHurtB>
+			<target>me</target>
+			
+			<addType>instant</addType>
+			<effectType>puKillNoDieEventB</effectType>
+			<description>击中敌人时不会触发其殒命技能。</description>
+		</skill>
+		
+		<skill>
+			<name>purgoldSkunkLink</name><noBeClearB>1</noBeClearB>
+			<cnName>弹爆状态</cnName><ignoreImmunityB>1</ignoreImmunityB><noSkillDodgeB>1</noSkillDodgeB>
+			
+			<conditionType>passive</conditionType>
+			<condition>hit</condition>
+			<target>me</target>
+			
+			<addType>state</addType>
+			<effectType>purgoldSkunkLink</effectType>
+			<value>3</value>
+			<mul>1</mul>
+			<duration>2</duration>
+			<pointEffectImg partType="shootPoint" con="add" raNum="1">gunFire/purgoldSkunk</pointEffectImg>
+			<description>击中敌人有3%的概率3倍散射。</description>
+		</skill>
+		
+	</father>
+</data>

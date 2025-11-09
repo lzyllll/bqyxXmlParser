@@ -1,0 +1,267 @@
+{
+  "father": {
+    "name": "memory",
+    "cnName": "回忆",
+    "autoUnlockByLevelB": true,
+    "task": [
+      {
+        "name": "WoTu_1M",
+        "cnName": "沃土镇",
+        "lv": 1,
+        "shortText": null,
+        "uiConditionText": "消灭所有僵尸",
+        "description": "消灭所有僵尸。",
+        "worldMapId": "WoTu",
+        "levelId": "WoTu_1",
+        "openD": {
+          "tk": "Hospital5_plot"
+        },
+        "gift": [
+          "base;anniCoin;16",
+          "things;madheart;2"
+        ]
+      },
+      {
+        "name": "YangMei_1M",
+        "cnName": "杨梅岭",
+        "lv": 3,
+        "shortText": null,
+        "uiConditionText": "消灭携枪僵尸首领",
+        "description": "消灭杨梅岭深处一只携枪僵尸，并抢走他的武器。",
+        "worldMapId": "YangMei",
+        "levelId": "YangMei_1",
+        "condition": {
+          "type": "levelWin"
+        },
+        "gift": [
+          "base;anniCoin;16",
+          "things;madheart;2"
+        ]
+      },
+      {
+        "name": "XiaSha_1M",
+        "cnName": "下沙",
+        "lv": 4,
+        "shortText": null,
+        "uiConditionText": "消灭所有僵尸",
+        "description": "消灭所有僵尸。",
+        "worldMapId": "XiaSha",
+        "levelId": "XiaSha_1",
+        "condition": {
+          "type": "levelWin"
+        },
+        "gift": [
+          "base;anniCoin;16",
+          "things;madheart;2"
+        ]
+      },
+      {
+        "name": "FengWei_1M",
+        "cnName": "凤尾洋",
+        "lv": 5,
+        "shortText": null,
+        "uiConditionText": "消灭所有僵尸",
+        "description": "消灭所有僵尸。",
+        "worldMapId": "FengWei",
+        "levelId": "FengWei_1",
+        "condition": {
+          "type": "levelWin"
+        },
+        "gift": [
+          "base;anniCoin;16",
+          "things;madheart;2"
+        ]
+      },
+      {
+        "name": "XiChi_1M",
+        "cnName": "西池",
+        "lv": 6,
+        "shortText": null,
+        "uiConditionText": "消灭所有僵尸",
+        "description": "消灭最后出现的僵尸，获得超能石。",
+        "worldMapId": "XiChi",
+        "levelId": "XiChi_1",
+        "condition": {
+          "type": "levelWin"
+        },
+        "gift": [
+          "base;anniCoin;16",
+          "things;madheart;2"
+        ]
+      },
+      {
+        "name": "BaiLu_1M",
+        "cnName": "白鹭镇",
+        "lv": 7,
+        "shortText": null,
+        "uiConditionText": "消灭所有僵尸",
+        "description": "消灭所有僵尸。",
+        "worldMapId": "BaiLu",
+        "levelId": "BaiLu_1",
+        "condition": {
+          "type": "levelWin"
+        },
+        "gift": [
+          "base;anniCoin;16",
+          "things;madheart;2"
+        ]
+      },
+      {
+        "name": "ShuiSheng_1M",
+        "cnName": "水升村",
+        "lv": 8,
+        "shortText": null,
+        "uiConditionText": "消灭僵尸王",
+        "description": "消灭僵尸王。",
+        "worldMapId": "ShuiSheng",
+        "levelId": "ShuiSheng_1",
+        "condition": {
+          "type": "levelWin"
+        },
+        "gift": [
+          "base;anniCoin;16",
+          "things;madheart;2"
+        ]
+      },
+      {
+        "name": "BaiZhang_1M",
+        "cnName": "比拼灭敌",
+        "lv": 9,
+        "failB": true,
+        "uiShowTime": 999999,
+        "moreKillEnemyNumIsMe": 1,
+        "shortText": "在消灭所有僵尸之后，你的灭敌数必须超过藏师。",
+        "conditionText": "macth_kills_ZhangShi",
+        "description": "在消灭所有僵尸之后，你的灭敌数必须超过藏师。",
+        "uiFleshCondition": {
+          "one": "bodyEvent:die; anyone"
+        },
+        "worldMapId": "BaiZhang",
+        "levelId": "BaiZhang_1",
+        "gift": [
+          "base;anniCoin;16",
+          "things;madheart;2"
+        ]
+      },
+      {
+        "name": "ZhuTou_1M",
+        "cnName": "猪头洋",
+        "lv": 10,
+        "shortText": null,
+        "uiConditionText": "消灭所有僵尸",
+        "description": "消灭所有僵尸。",
+        "worldMapId": "ZhuTou",
+        "levelId": "ZhuTou_1",
+        "condition": {
+          "type": "levelWin"
+        },
+        "gift": [
+          "base;anniCoin;16",
+          "things;madheart;2"
+        ]
+      },
+      {
+        "name": "ShuangTa_1M",
+        "cnName": "双塔村",
+        "lv": 11,
+        "shortText": null,
+        "uiConditionText": "消灭所有敌人",
+        "description": "消灭所有敌人。",
+        "worldMapId": "ShuangTa",
+        "levelId": "ShuangTa_1",
+        "condition": {
+          "type": "levelWin"
+        },
+        "gift": [
+          "base;anniCoin;16",
+          "things;madheart;2"
+        ]
+      },
+      {
+        "name": "BeiDou_1M",
+        "cnName": "北斗城",
+        "lv": 13,
+        "shortText": null,
+        "uiConditionText": "消灭所有敌人",
+        "description": "消灭所有敌人。",
+        "worldMapId": "BeiDou",
+        "levelId": "BeiDou_1",
+        "condition": {
+          "type": "levelWin"
+        },
+        "gift": [
+          "base;anniCoin;16",
+          "things;madheart;2"
+        ]
+      },
+      {
+        "name": "DongShan_1M",
+        "cnName": "东山澳",
+        "lv": 14,
+        "shortText": null,
+        "uiConditionText": "消灭所有敌人",
+        "description": "消灭所有敌人。",
+        "worldMapId": "DongShan",
+        "levelId": "DongShan_1",
+        "condition": {
+          "type": "levelWin"
+        },
+        "gift": [
+          "base;anniCoin;16",
+          "things;madheart;2"
+        ]
+      },
+      {
+        "name": "QingSha_1M",
+        "cnName": "青纱镇",
+        "lv": 15,
+        "shortText": null,
+        "uiConditionText": "消灭所有敌人",
+        "description": "消灭所有敌人。",
+        "worldMapId": "QingSha",
+        "levelId": "QingSha_1",
+        "condition": {
+          "type": "levelWin"
+        },
+        "gift": [
+          "base;anniCoin;16",
+          "things;madheart;2"
+        ]
+      },
+      {
+        "name": "QingMing_1M",
+        "cnName": "清明岭",
+        "lv": 16,
+        "shortText": null,
+        "uiConditionText": "消灭所有敌人",
+        "description": "消灭所有敌人。",
+        "worldMapId": "QingMing",
+        "levelId": "QingMing_1",
+        "condition": {
+          "type": "levelWin"
+        },
+        "gift": [
+          "base;anniCoin;16",
+          "things;madheart;2"
+        ]
+      },
+      {
+        "name": "NanTang_1M",
+        "cnName": "南唐",
+        "lv": 18,
+        "shortText": null,
+        "uiConditionText": "消灭所有敌人",
+        "description": "消灭所有敌人。",
+        "worldMapId": "NanTang",
+        "levelId": "NanTang_1",
+        "condition": {
+          "type": "levelWin"
+        },
+        "gift": [
+          "base;anniCoin;16",
+          "things;madheart;2"
+        ]
+      }
+    ]
+  }
+}

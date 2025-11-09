@@ -1,0 +1,744 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data><father name="other">
+		<ask>
+	<title>以下哪个是联邦职务的名称</title>
+	<correct>联邦国务卿</correct>
+	<error>联邦元帅</error>
+	<error>联邦大元帅</error>
+	<error>联邦中统</error>
+	<error>联邦大将</error>
+	<error>联邦少统</error>
+	<error>联邦少将</error>
+</ask>
+<ask>
+	<title>以下哪个首领拥有“统治圈”技能</title>
+	<correct>末日坦克</correct>
+	<error>看门狗</error>
+	<error>无疆骑士</error>
+	<error>狂野收割者</error>
+	<error>防毒僵尸</error>
+</ask>
+<ask>
+	<title>以下哪个效果是“猎人技能器”可以提供的</title>
+	<correct>提高武器伤害</correct>
+	<error>提高武器射速</error>
+	<error>提高武器弹容</error>
+	<error>提高武器射程</error>
+	<error>提高武器品质</error>
+</ask>
+<ask>
+	<title>以下哪种途径不可以提高武器伤害</title>
+	<correct>提高战衣强化等级</correct>
+	<error>进阶武器</error>
+	<error>提升武器强化等级</error>
+	<error>提高出战尸宠战斗力</error>
+</ask>
+<ask>
+	<title>以下哪种途径不能获得武器</title>
+	<correct>远古宝箱</correct>
+	<error>黑市兑换</error>
+	<error>竞技场兑换</error>
+	<error>稀有宝箱</error>
+</ask>
+<ask>
+	<title>以下哪个效果是镭射穿梭器不能提供的</title>
+	<correct>减少子弹消耗</correct>
+	<error>提高伤害输出</error>
+	<error>暂时无敌效果</error>
+	<error>子弹无视地形</error>
+	<error>瞬移一段距离</error>
+</ask>
+<ask>
+	<title>以下哪个物品不是装备进阶所需要的</title>
+	<correct>神谕战裤碎片</correct>
+	<error>神谕战衣碎片</error>
+	<error>神谕头盔碎片</error>
+	<error>神谕腰带碎片</error>
+</ask>
+<ask>
+	<title>修罗模式下哪个技能会受到削弱</title>
+	<correct>金刚钻</correct>
+	<error>狂暴</error>
+	<error>群体自燃</error>
+	<error>智慧怒火</error>
+	<error>共鸣</error>
+	<error>群体圣光</error>
+	<error>嗜爪</error>
+	<error>万弹归宗</error>
+</ask>
+<ask>
+	<title>以下哪个套装可能含有“三倍暴击”属性</title>
+	<correct>绝世套装</correct>
+	<error>暗影套装</error>
+	<error>魅影套装</error>
+	<error>灵蛇套装</error>
+	<error>极光套装</error>
+	<error>鬼鲛套装</error>
+	<error>雷霆套装</error>
+	<error>狂人套装</error>
+</ask>
+<ask>
+	<title>以下哪个不是主线任务的名称</title>
+	<correct>逃出生天</correct>
+	<error>精英之战</error>
+	<error>深渊的呼吸</error>
+	<error>终极巨头</error>
+	<error>空中地狱</error>
+</ask>
+<ask>
+	<title>以下哪个物品不能通过寻宝任务的奖励获得</title>
+	<correct>高级武器箱子</correct>
+	<error>超能石</error>
+	<error>商券</error>
+	<error>优胜券</error>
+</ask>
+<ask>
+	<title>“巅峰等级”不能提高以下哪项属性</title>
+	<correct>载具防御力</correct>
+	<error>三倍暴击概率</error>
+	<error>闪避</error>
+	<error>战斗力</error>
+	<error>防弹值</error>
+	<error>移动速度</error>
+	<error>技能回复速度</error>
+</ask>
+<ask>
+	<title>军队的“守望者”不能为玩家带来哪项增益</title>
+	<correct>提高角色闪避值</correct>
+	<error>提高角色战斗力</error>
+	<error>提高角色在战斗中的伤害</error>
+	<error>提高角色生命值</error>
+</ask>
+<ask>
+	<title>以下哪一项不能通过黑市兑换获得</title>
+	<correct>终极武器守护卡</correct>
+	<error>光锥碎片</error>
+	<error>冷冻宝石</error>
+	<error>冥王图鉴</error>
+	<error>烁金之源</error>
+</ask>
+<ask>
+	<title>“电爆”是哪个武器的专属神级技能</title>
+	<correct>辰龙</correct>
+	<error>子鼠</error>
+	<error>丑牛</error>
+	<error>寅虎</error>
+	<error>卯兔</error>
+	<error>巳蛇</error>
+	<error>午马</error>
+	<error>未羊</error>
+                <error>申猴</error>
+	<error>酉鸡</error>
+	<error>戌狗</error>
+	<error>亥猪</error>
+</ask>
+<ask>
+	<title>“穿透”的效果是</title>
+	<correct>增加角色伤害输出</correct>
+	<error>减少角色攻击被闪避概率</error>
+	<error>减少敌方对暴击伤害的减免</error>
+	<error>减少角色攻击丢失概率</error>
+	<error>增加角色暴击率</error>
+</ask>
+<ask>
+	<title>在其它条件不变时，武器每强化一级为同一武器提升的伤害值随强化等级提升</title>
+	<correct>分段提升</correct>
+	<error>逐级提升</error>
+	<error>恒定不变</error>
+	<error>逐级下降</error>
+	<error>分段下降</error>
+</ask>
+<ask>
+	<title>在其它条件不变时，腰带每强化一级为腰带提升的防弹值属性随强化等级提升</title>
+	<correct>恒定不变</correct>
+	<error>逐级提升</error>
+	<error>分段提升</error>
+	<error>逐级下降</error>
+	<error>分段下降</error>
+</ask>
+<ask>
+	<title>下列哪个尸宠可以进化3次</title>
+	<correct>铁魁</correct>
+	<error>爆骷S</error>
+	<error>雷克</error>
+	<error>嗜血尸狼</error>
+	<error>飓风巫尸</error>
+</ask>
+<ask>
+	<title>开启聚合技能的必要条件是</title>
+	<correct>聚合相关载具强化达到30级</correct>
+	<error>拥有3个狂怒盖亚</error>
+	<error>角色载具强化等级为50级</error>
+	<error>角色等级达到99</error>
+	<error>出战3名队友</error>
+</ask>
+<ask>
+	<title>目前玩家无法正常获取到的套装是</title>
+	<correct>猎魔套装</correct>
+	<error>拾荒者套装</error>
+	<error>流亡者套装</error>
+	<error>神谕套装</error>
+	<error>狂人套装</error>
+</ask>
+<ask>
+	<title>“军队”推出时，角色的最高等级为</title>
+	<correct>70</correct>
+	<error>75</error>
+	<error>80</error>
+	<error>85</error>
+	<error>65</error>
+</ask>
+<ask>
+	<title>“活跃礼包”推出时，对活跃礼包中的内容叙述不正确的是</title>
+	<correct>1个重生石</correct>
+	<error>1个稀有宝箱</error>
+	<error>1个队友重生卡</error>
+	<error>1个军队功勋牌</error>
+</ask>
+<ask>
+	<title>“鬼爵套装”推出时，完成71-75级的主线任务需要击杀至少多少次首领</title>
+	<correct>26</correct>
+	<error>6</error>
+	<error>11</error>
+	<error>16</error>
+	<error>21</error>
+	<error>31</error>
+</ask>
+<ask>
+	<title>可能拥有“电离折射”技能的非99级首领是</title>
+	<correct>运毒尸</correct>
+	<error>蛊惑僵尸</error>
+	<error>异齿虎</error>
+	<error>年兽</error>
+	<error>虚晶蝎</error>
+</ask>
+<ask>
+	<title>小樱好感度提供的效果不包括</title>
+	<correct>黑洞发生器装置</correct>
+	<error>战斗中伤害提升</error>
+	<error>战斗中回复技能</error>
+	<error>战斗中血瓶产出</error>
+</ask>
+<ask>
+	<title>无尽模式的层级奖励不包括以下哪个物品</title>
+	<correct>72级零件箱</correct>
+	<error>超能石</error>
+	<error>神能石</error>
+	<error>转化石</error>
+	<error>商券</error>
+	<error>周年碎片</error>
+</ask>
+<ask>
+	<title>无尽模式首领不可能掉落的物品是</title>
+	<correct>腐蚀芯片</correct>
+	<error>猎人技能器</error>
+	<error>勇气钥匙</error>
+	<error>远古宝箱</error>
+	<error>沙鳄碎片</error>
+</ask>
+<ask>
+	<title>擒王任务中，首领狂战尸的等级不可能为</title>
+	<correct>119</correct>
+	<error>121</error>
+	<error>136</error>
+	<error>175</error>
+	<error>103</error>
+	<error>220</error>
+</ask>
+<ask>
+	<title>下列哪个途径不能获得电磁宝石</title>
+	<correct>秘境boss</correct>
+	<error>99级普通关卡</error>
+	<error>96级普通关卡</error>
+	<error>黑市兑换</error>
+	<error>武器宝石箱</error>
+	<error>纪念币兑换</error>
+</ask>
+<ask>
+	<title>“镭晶”和“钛晶”不可用于</title>
+	<correct>暗金武器进阶</correct>
+	<error>红色武器进阶</error>
+	<error>黑色武器进阶</error>
+	<error>暗金装备合成</error>
+</ask>
+<ask>
+	<title>VIP的各项加成中不包括</title>
+	<correct>技能回复速度</correct>
+	<error>战斗力</error>
+	<error>生命值</error>
+	<error>头部防御</error>
+	<error>局内道具使用次数</error>
+</ask>
+<ask>
+	<title>遇见贩卖辅助软件的QQ群，做法正确的是</title>
+	<correct>立即举报</correct>
+	<error>加入该群</error>
+	<error>购买软件</error>
+	<error>贩卖账号</error>
+	<error>置之不理</error>
+</ask>
+<ask>
+	<title>在不耗费黄金的情况下，玩家每天最多获得多少军队贡献值</title>
+	<correct>1100</correct>
+	<error>510</error>
+	<error>600</error>
+	<error>750</error>
+	<error>1050</error>
+	<error>1500</error>
+</ask>
+<ask>
+	<title>下列时装中，能增加射击速度的是</title>
+	<correct>小卡时装</correct>
+	<error>小娜时装</error>
+	<error>军长时装</error>
+	<error>五星队长</error>
+	<error>小鸣时装</error>
+</ask>
+<ask>
+	<title>下列哪个不可能是零件的等级</title>
+	<correct>43</correct>
+	<error>4</error>
+	<error>27</error>
+	<error>54</error>
+	<error>63</error>
+</ask>
+<ask>
+	<title>同难度的修罗模式中，以下哪一个玩法的首领血量最多</title>
+	<correct>决斗</correct>
+	<error>独战</error>
+	<error>冷门</error>
+	<error>辅助</error>
+</ask>
+<ask>
+	<title>下列哪个不是构成“霸虎无双”的部件</title>
+	<correct>猎鹰狙击枪</correct>
+	<error>轰锤火炮</error>
+	<error>7级地震发生器装置</error>
+	<error>尘暴步枪</error>
+	<error>散华手枪</error>
+</ask>
+<ask>
+	<title>以下哪个道具不能在纪念币商店获取</title>
+	<correct>酉鸡碎片</correct>
+	<error>申猴碎片</error>
+	<error>子鼠碎片</error>
+	<error>卯兔碎片</error>
+	<error>戌狗碎片</error>
+</ask>
+<ask>
+	<title>以下哪个不属于稀有红色武器</title>
+	<correct>圣诞火铳</correct>
+	<error>祖龙</error>
+	<error>苍弩</error>
+	<error>猎隼</error>
+	<error>战斧</error>
+</ask>
+<ask>
+	<title>爆枪突击的开发者什么时间在b站发布了第一个视频</title>
+	<correct>2021年3月1日</correct>
+	<error>2014年1月15日</error>
+	<error>2020年2月10日</error>
+	<error>2022年3月23日</error>
+	<error>2017年6月8日</error>
+</ask>
+<ask>
+	<title>以下哪个强化等级使用保级强化需要的保级卡数量最多</title>
+	<correct>14</correct>
+	<error>26</error>
+	<error>15</error>
+	<error>20</error>
+	<error>21</error>
+</ask>
+<ask>
+	<title>在相同的资质，培养情况，等级与强化等级下，以下哪个尸宠的战斗力数值最高</title>
+	<correct>哈迪斯</correct>
+	<error>混沌狂战尸</error>
+	<error>狂战狼</error>
+	<error>金盔僵尸</error>
+	<error>僵尸王</error>
+</ask>
+<ask>
+	<title>神难难度的正常模式存在的最低等级是</title>
+	<correct>52</correct>
+	<error>51</error>
+	<error>50</error>
+	<error>53</error>
+	<error>55</error>
+</ask>
+<ask>
+	<title>以下哪个等级的正常模式地图不能掉落灵蛇腰带</title>
+	<correct>95</correct>
+	<error>70</error>
+	<error>97</error>
+	<error>82</error>
+	<error>77</error>
+</ask>
+<ask>
+	<title>被未重造过的光锥命中后，目标不会受到哪个负面效果</title>
+	<correct>移动速度下降</correct>
+	<error>攻击力下降</error>
+	<error>攻击成功率下降</error>
+	<error>受到光锥的伤害增加</error>
+</ask>
+<ask>
+	<title>下列哪个武器在进阶到超凡时技能不会发生变化</title>
+	<correct>光锥</correct>
+	<error>赤鼬</error>
+	<error>金蝉</error>
+	<error>猩焰</error>
+	<error>烁金</error>
+</ask>
+<ask>
+	<title>下列属性中，一定与战斗力无关的是</title>
+	<correct>携弹量</correct>
+	<error>射程</error>
+	<error>三倍暴击概率</error>
+	<error>装弹速度</error>
+	<error>射击速度</error>
+</ask>
+<ask>
+	<title>下列哪个途径一定不能消耗神能石</title>
+	<correct>尸宠资质升级</correct>
+	<error>升级技能</error>
+	<error>重造武器</error>
+	<error>载具升级</error>
+	<error>兑换光能石</error>
+</ask>
+<ask>
+	<title>下列哪个物品不能通过“冶炼屋”获得</title>
+	<correct>智慧宝石</correct>
+	<error>神谕战裤碎片</error>
+	<error>摩卡令牌</error>
+	<error>白色玫瑰</error>
+	<error>万能载具碎片</error>
+</ask>
+<ask>
+	<title>尸宠培养的成功率随着培养点数的增加而</title>
+	<correct>分段降低</correct>
+	<error>一直降低</error>
+	<error>恒定不变</error>
+	<error>分段增加</error>
+	<error>一直增加</error>
+</ask>
+<ask>
+	<title>巅峰技能有“核弹头”的玩家在非修罗地图中开启嗜爪，下列说法正确的是</title>
+	<correct>其鼠标附近普通单位将被瞬秒</correct>
+	<error>嗜爪最多只对一个单位生效</error>
+	<error>该玩家受到至少140%伤害加成</error>
+	<error>嗜爪伤害加成可受装备影响</error>
+	<error>嗜爪伤害加成与玩家血量无关</error>
+</ask>
+
+		<ask id="1">
+			<title>体型最大的首领是？</title>
+			<correct>氩星吞噬者</correct>
+			<error>无疆骑士</error>
+			<error>斩之使者</error>
+			<error>年兽</error>
+			<error>异猛象</error>
+			<error>暴君</error>
+		</ask>
+		<ask id="2">
+			<title>当前版本没有任何作用的物品是？</title>
+			<correct>手机</correct>
+			<correct>灵魂芯片</correct>
+			<error>时空令牌</error>
+			<error>幻想钥匙</error>
+			<error>军队功勋牌</error>
+			<error>军备物资</error>
+			<error>汤圆</error>
+		</ask>
+		<ask id="3">
+			<title>竞技场首次开放的时间是？</title>
+			<correct>2014年3月</correct>
+			<error>2014年4月</error>
+			<error>2014年5月</error>
+			<error>2015年3月</error>
+			<error>2015年4月</error>
+			<error>2015年5月</error>
+		</ask>
+		
+		<ask id="4">
+			<title>霞光大陆的原型是中国的哪个地方？</title>
+			<correct>福建省霞浦县</correct>
+			<error>广西省北海市</error>
+			<error>浙江省舟山市</error>
+			<error>山东省威海市</error>
+			<error>广东省东山县</error>
+		</ask>
+		
+		<ask id="5">
+			<title>哪种类型的武器没有特殊属性？</title>
+			<correct>弩</correct>
+			<error>步枪</error>
+			<error>狙击枪</error>
+			<error>散弹枪</error>
+			<error>火炮</error>
+			<error>喷火器</error>
+		</ask>
+		
+		
+		<ask id="6">
+			<title>哪种类型的武器只有1个特殊属性？</title>
+			<correct>喷火器</correct>
+			<error>步枪</error>
+			<error>狙击枪</error>
+			<error>散弹枪</error>
+			<error>火炮</error>
+			<error>弩</error>
+		</ask>
+		
+		<ask id="9">
+			<title>神武碎片不能合成以下哪个物品？</title>
+			
+			<correct>蚀骨碎片</correct>
+			<correct>烟花弩碎片</correct>
+			<correct>鬼斧碎片</correct>
+			<error>猩之焰</error>
+			<error>青蜂之触</error>
+			<error>赤鼬之心</error>
+			<error>金蝉之翼</error>
+			<error>银狐之眼</error>
+		</ask>
+		<ask id="10">
+			<title>哪个宝箱中不包含转化石？</title>
+			<correct>神器宝箱</correct>
+			<error>传奇宝箱</error>
+			<error>稀有宝箱</error>
+			<error>远古宝箱</error>
+		</ask>
+		
+		<ask id="11">
+			<title>哪个技能升级至第9级后，无需装备也有效果？</title>
+			<correct>滑翔</correct>
+			<correct>翻滚</correct>
+			<error>远视</error>
+			<error>近视</error>
+			<error>精准</error>
+			<error>欺凌</error>
+			<error>派生导弹</error>
+		</ask>
+		<ask id="12">
+			<title>无法升级至第9级的技能是？</title>
+			<correct>馈赠</correct>
+			<error>远视</error>
+			<error>近视</error>
+			<error>精准</error>
+			<error>欺凌</error>
+			<error>派生导弹</error>
+			<error>群体自燃</error>
+			<error>魅惑</error>
+			<error>吞噬</error>
+			<error>毒雾</error>
+		</ask>
+		
+		<ask id="15">
+			<title>文杰表哥在以下哪个主线任务的对话中表现出对小樱的爱慕？</title>
+			<correct>地牢曙光</correct>
+			<error>天鹰的宣战</error>
+			<error>鬼爵驾临</error>
+			<error>疑云渐隐</error>
+			<error>鬼爵的新宠</error>
+			<error>追击狂战狼</error>
+			<error>最恶时代</error>
+			<error>创世计划</error>
+			<error>公墓守护者</error>
+			<error>鬼影战士</error>
+		</ask>
+		<ask id="16">
+			<title>“鬼爵”这个名词第一次出现在以下哪个主线任务中？</title>
+			<correct>鬼影战士</correct>
+			<error>地牢曙光</error>
+			<error>天鹰的宣战</error>
+			<error>鬼爵驾临</error>
+			<error>疑云渐隐</error>
+			<error>鬼爵的新宠</error>
+			<error>追击狂战狼</error>
+			<error>最恶时代</error>
+			<error>创世计划</error>
+			<error>公墓守护者</error>
+		</ask>
+		
+		<ask id="17">
+			<title>小樱更喜欢谁？</title>
+			<correct>主角</correct>
+			<error>表哥</error>
+			<error>藏师</error>
+			<error>摩卡</error>
+		</ask>
+		<ask id="18">
+			<title>商店中最受欢迎的载具是？</title>
+			<correct>泰坦</correct>
+			<error>破晓</error>
+			<error>收割者</error>
+			<error>先知</error>
+			<error>沙漠进袭者</error>
+			<error>幽鬼</error>
+			<error>制裁者</error>
+			<error>潜行者</error>
+			<error>巨鲸</error>
+		</ask>
+		<ask id="20">
+			<title>玩家在线人数最高的一天是周几？</title>
+			<correct>周六</correct>
+			<error>周一</error>
+			<error>周二</error>
+			<error>周三</error>
+			<error>周四</error>
+			<error>周五</error>
+			<error>周日</error>
+		</ask>
+		
+		<ask id="22">
+			<title>军队争霸战第一次上线是什么时候？</title>
+			<correct>2014年10月</correct>
+			<error>2014年9月</error>
+			<error>2014年8月</error>
+			<error>2014年7月</error>
+			<error>2014年11月</error>
+		</ask>
+		
+		<ask id="23">
+			<title>花火的性别是？</title>
+			<correct>男</correct>
+			<error>女</error>
+			<error>可男可女</error>
+			<error>非男非女</error>
+		</ask>
+		<ask>
+			<title>为什么游戏没有联机模式？</title>
+			<correct>因为工作量相当于重新制作一款游戏。</correct>
+			<error>玩家不需要联机模式。</error>
+			<error>联机模式不好玩。</error>
+			<error>因为爆枪是单机游戏。</error>
+			<error>沃龙穷。</error>
+		</ask>
+		<ask>
+			<title>为什么有些游戏Bug始终得不到解决？</title>
+			<correct>为了解决一些Bug，可能导致更严重的Bug。</correct>
+			<error>这些Bug是游戏中的彩蛋。</error>
+			<error>没有Bug的游戏不是一款好游戏。</error>
+			<error>玩家喜欢这些Bug。</error>
+			<error>沃龙穷。</error>
+		</ask>
+		<ask>
+			<title>为什么不能彻底解决作弊问题？</title>
+			<correct>群众的力量是强大的，沃龙一人难敌作弊者千万。</correct>
+			<correct>存档型游戏存在天生的防作弊漏洞。</correct>
+			<error>充值玩家是作弊的主力军，沃龙不敢动。</error>
+			<error>不能作弊，玩家们就不能畅快的玩耍。</error>
+			<error>沃龙其实就是作弊器的制作者。</error>
+			<error>沃龙穷。</error>
+		</ask>
+
+		<ask>
+			<title>以下哪个途径可以获得“生化宝石”？</title>
+			<correct>98级首领“球形闪电”。</correct>
+			<correct>等级礼包。</correct>
+			<correct>纪念币商店。</correct>
+			<correct>支线任务。</correct>
+			<error>96级首领“看门狗”。</error>
+			<error>竞技场商店。</error>
+			<error>黄金商店。</error>
+			<error>秘境首领“多肉”。</error>
+		</ask>
+		
+		<ask>
+			<title>心零喜欢的人是谁？</title>
+			<correct>暂时不知道。</correct>
+			<error>主角。</error>
+			<error>表哥。</error>
+			<error>藏师。</error>
+			<error>小樱。</error>
+			<error>制毒师。</error>
+		</ask>
+		
+		<ask>
+			<title>提升队友忠诚度可以带来的好处是？</title>
+			<correct>获得新技能。</correct>
+			<correct>领取特别奖励。</correct>
+			<correct>队友相处更加融洽。</correct>
+			<error>提高人物战斗力数值。</error>
+			<error>提高队友作战智商。</error>
+			<error>防止队友离开队伍。</error>
+			<error>提高人物生命值。</error>
+		</ask>
+		
+		
+		
+		<ask>
+			<title>人物最高等级是多少？</title>
+			<correct>99级。</correct>
+			<error>100级。</error>
+			<error>110级。</error>
+			<error>120级。</error>
+			<error>130级。</error>
+			<error>150级。</error>
+			<error>200级。</error>
+		</ask>
+		
+		<ask>
+			<title>拥有“火焰敏感”的敌人可以一定程度上抵抗以下哪种元素伤害。</title>
+			<correct>冷冻伤害。</correct>
+			<error>火焰伤害。</error>
+			<error>生化伤害。</error>
+			<error>电磁伤害。</error>
+		</ask>
+		
+		<ask>
+			<title>“冷冻伤害”对以下哪个怪物特别有效？</title>
+			<correct>异火龙</correct>
+			<correct>暴君</correct>
+			<correct>异角龙</correct>
+			<correct>毒魔</correct>
+			<correct>财宝僵尸</correct>
+			<correct>独眼僵尸</correct>
+			<correct>鬼目射手</correct>
+			<correct>狂战射手</correct>
+			<correct>掘金尸</correct>
+			<error>僵尸空降兵</error>
+			<error>无疆骑士</error>
+			<error>僵尸狙击兵</error>
+			<error>银锤</error>
+			<error>钢铁僵尸王</error>
+			<error>霸王毒蛛</error>
+			<error>野帝</error>
+			<error>异祖龙</error>
+		</ask>
+		
+		<ask>
+			<title>“生化伤害”对以下哪个怪物特别有效？</title>
+			<correct>霸王毒蛛</correct>
+			<correct>野帝</correct>
+			<correct>异祖龙</correct>
+			<correct>鬼爵</correct>
+			<correct>鬼目游尸</correct>
+			<correct>吸血蝙蝠</correct>
+			<error>僵尸空降兵</error>
+			<error>无疆骑士</error>
+			<error>僵尸狙击兵</error>
+			<error>银锤</error>
+			<error>钢铁僵尸王</error>
+			<error>异火龙</error>
+			<error>暴君</error>
+			<error>异角龙</error>
+			<error>毒魔</error>
+			<error>财宝僵尸</error>
+			<error>独眼僵尸</error>
+			<error>狂战射手</error>
+		</ask>
+		
+		<ask>
+			<title>以下哪个武器可以进化？</title>
+			<correct>圣诞礼炮。</correct>
+			<correct>光锥。</correct>
+			<correct>卡特巨炮。</correct>
+			<error>战斧。</error>
+			<error>祖龙。</error>
+			<error>炽焰。</error>
+			<error>炮仗。</error>
+		</ask>
+		
+	</father>
+	
+</data>
