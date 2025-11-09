@@ -23,7 +23,7 @@ from functools import partial
 
 if __name__ == "__main__":
     # XML文件路径
-    xml_path = Path(r"C:\Users\lzy\Desktop\dev-bqyx\python\py_bq_xml_to_json\3521_xml\activeTaskClass.xml")
+    xml_path = Path(r"classified_3521\father\ask\name\life\lifeAskClass.xml")
     
     # 解析XML
     root = direct_parse_xml(xml_path)

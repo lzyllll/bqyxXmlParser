@@ -63,7 +63,7 @@ factory.register_parser(EndWithUrlParser(),110)
 
 if __name__ == '__main__':
     # XML文件夹路径
-    xml_dir = Path(r'C:\Users\lzy\Desktop\dev-bqyx\python\py_bq_xml_to_json\3521_xml')
+    xml_dir = Path(r'classified_3521\father\bullet')
         
     # walk
     for root_dir, dirs, files in xml_dir.walk():
