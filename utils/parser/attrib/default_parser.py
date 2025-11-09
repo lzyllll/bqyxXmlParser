@@ -3,7 +3,7 @@ from utils.parser.attrib.abstract import AttribParser
 import xml.etree.ElementTree as ET
 import json
 
-def save_eval(value):
+def safe_eval(value):
     """
     解析字符串值：先尝试eval，失败则尝试json.loads
     """
@@ -39,7 +39,7 @@ def auto_convert(key, value):
             return True
         if value in ['false', '0']: 
             return False
-    return save_eval(value)
+    return safe_eval(value)
 
 class DefaultAttribParser(AttribParser):
     """默认属性解析器 - 默认行为为 result[key] = eval(value)"""

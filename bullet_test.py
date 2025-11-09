@@ -24,7 +24,7 @@ class BulletFatherParser(ElementParser):
             if element.find('bullet') is not None:
                 return True
         return False
-        
+    
     def parse(self, element: ET.Element) -> Dict[str, Any]:
         result = {}
         # 解析属性
@@ -57,13 +57,22 @@ class EndWithUrlParser(ElementParser):
             return element.get('name') or element.text
         return element.text
     
+class EndWithArrParser(ElementParser):
+    def can_parse(self, element: ET.Element):
+        #以arr结尾的tag
+        if element.tag.endswith('Arr') and element.text:
+            return True
+        return False
+    def parse(self, element: ET.Element):
+        #分隔
+        return element.text.split(',')
 
 # attrib_factory = get_default_attrib_registr()
-
 factory = get_default_factory()
+# factory.set_attrib_registr(attrib_registr)
 factory.register_parser(BulletFatherParser(),100)
 factory.register_parser(EndWithUrlParser(),110)
-
+factory.register_parser(EndWithArrParser(),120)
 
 if __name__ == '__main__':
     # XML文件夹路径

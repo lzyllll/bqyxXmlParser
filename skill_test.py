@@ -64,7 +64,7 @@ class GrowthObjParser(ElementParser):
         text_value = element.text
         # 特殊处理"pro":0.35 -> 转为{"pro":0.35 }
         json_text = text_value if text_value.startswith('{') else f"{{{text_value}}}"
-        return self.save_eval(json_text)
+        return self.safe_eval(json_text)
 
 factory = get_default_factory()
 factory.register_parser(SkillFatherParser(),100)
@@ -79,7 +79,6 @@ if __name__ == '__main__':
     if output_dir.exists():
         shutil.rmtree(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
-    
     # walk
     for root_dir, dirs, files in xml_dir.walk():
         for file in files:

@@ -1,15 +1,17 @@
 from typing import Any, List, TYPE_CHECKING
 import xml.etree.ElementTree as ET
 
-from utils.parser.tag.abstract import ElementParser
-from utils.parser.tag.default_parser import EmptyElementParser
 
+from utils.parser.tag.default_parser import EmptyElementParser
+#只是用于类型检查，方便提示
+if TYPE_CHECKING:
+    from utils.parser.tag.abstract import ElementParser
 
 class ElementParserFactory:
     """元素解析器工厂 - 支持优先级注册和递归解析"""
     
     def __init__(self, attrib_registr):
-        self._parsers = []  # 存储 (priority, parser) 
+        self._parsers:List[int,ElementParser] = []  # 存储 (priority, parser) 
         self.attrib_registr = attrib_registr
     
     def set_attrib_registr(self, attrib_registr):

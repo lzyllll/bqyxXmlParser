@@ -34,7 +34,7 @@ class TextElementParser(ElementParser):
             
         # 尝试将文本内容转换为Python对象
 
-        return self.save_eval(text)
+        return self.safe_eval(text)
 class AttributeElementParser(ElementParser):
     """属性元素解析器 - 优先级 1"""
     
@@ -89,7 +89,7 @@ class TagAttribElementParser(ElementParser):
         # 解析文本内容
         if element.text and element.text.strip():
             text = element.text.strip()
-            result['value'] = self.save_eval(text)
+            result['value'] = self.safe_eval(text)
         # 解析属性
         self.attrib_registr.parse(element, result)
         return result

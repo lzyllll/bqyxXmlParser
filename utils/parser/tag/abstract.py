@@ -1,15 +1,19 @@
 from abc import ABC, abstractmethod
-from typing import Any
+from typing import TYPE_CHECKING, Any
 import xml.etree.ElementTree as ET
 
-from utils.parser.attrib.default_parser import save_eval
-
+from utils.parser.attrib.default_parser import safe_eval
+# 只是用于类型检查
+if TYPE_CHECKING:
+    from utils.attrib_factory import AttribParserRegistry
+    from utils.tag_factory import ElementParserFactory
 
 class ElementParser(ABC):
     """元素解析器抽象基类"""
     
-    def __init__(self, factory=None):
-        self.factory = factory
+    def __init__(self, factory=None,attrib_registr=None):
+        self.factory:ElementParserFactory = factory
+        self.attrib_registr:AttribParserRegistry = attrib_registr
     
     def set_factory(self, factory):
         """设置工厂引用，用于递归解析"""
@@ -17,9 +21,9 @@ class ElementParser(ABC):
     
     def set_attrib_registr(self, registr):
         """设置属性解析工厂"""
-        self.attrib_registr = registr
-    def save_eval(self,value):
-        return save_eval(value)
+        self.attrib_registr:AttribParserRegistry = registr
+    def safe_eval(self,value):
+        return safe_eval(value)
 
     def tag_counter(self, element: ET.Element) -> dict:
         '按标签分组处理子元素 分组计数 之后判断是否为单个元素还是多个元素'
