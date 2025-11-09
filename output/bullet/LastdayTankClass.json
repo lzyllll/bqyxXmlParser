@@ -1,0 +1,165 @@
+{
+  "father": {
+    "type": "zombie",
+    "cnName": "子弹",
+    "bullet": {
+      "LastdayBig": {
+        "cnName": "烟花炮-母弹",
+        "name": "LastdayBig",
+        "noMagneticB": 1,
+        "noBeClearB": 1,
+        "hurtRatio": 1,
+        "bulletSkillArr": "LastdayBigDieEvent",
+        "bulletLife": 1.5,
+        "bulletWidth": 30,
+        "bulletAngle": 180,
+        "hitType": "rect",
+        "attackGap": 0.4,
+        "attackDelay": 0.18,
+        "bulletNum": 1,
+        "shootPoint": "-222,-163",
+        "penetrationGap": 1000,
+        "boomD": {
+          "selfB": true,
+          "bodyB": true,
+          "radius": 40
+        },
+        "bulletSpeed": 12,
+        "speedD": {
+          "a": -0.3,
+          "min": 4
+        },
+        "bulletImgUrl": "bullet/fireball",
+        "flipX": 1,
+        "smokeImgUrl": "bullet/fireballSmoke",
+        "hitImgUrl": "boomEffect/boom2",
+        "armsType": "zombie"
+      },
+      "LastdayBigChild": {
+        "cnName": "烟花炮-子弹",
+        "name": "LastdayBigChild",
+        "noMagneticB": 1,
+        "hurtRatio": 1,
+        "bulletLife": 2,
+        "lifeRandom": 0.2,
+        "bulletAngle": 0,
+        "bulletWidth": 35,
+        "hitType": "rect",
+        "bulletNum": 20,
+        "shootAngle": 110,
+        "penetrationGap": 1000,
+        "bulletSpeed": 15,
+        "speedD": {
+          "a": -1,
+          "min": 5,
+          "random": 0.2
+        },
+        "bulletImgUrl": "bullet/gaiaBullet",
+        "flipX": 1,
+        "smokeImgUrl": "bulletHitEffect/smoke_small",
+        "hitImgUrl": "boomEffect/boom1",
+        "armsType": "zombie"
+      },
+      "LastdayMissle": {
+        "cnName": "跟踪导弹",
+        "name": "LastdayMissle",
+        "noMagneticB": 1,
+        "hurtRatio": 1,
+        "bulletAngle": -161,
+        "bulletLife": 6,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "attackGap": 0.3,
+        "attackDelay": 0.12,
+        "bulletNum": 2,
+        "shootAngle": 4,
+        "shootPoint": "35,-228",
+        "penetrationGap": 1000,
+        "followD": {
+          "value": 0.6,
+          "delay": 1
+        },
+        "bulletSpeed": 3,
+        "speedD": {
+          "max": 10,
+          "min": 3,
+          "a": 5,
+          "random": 0.2
+        },
+        "flipX": 1,
+        "bulletImgUrl": "LastdayTank/bullet1",
+        "hitImgUrl": "boomEffect/boom2",
+        "smokeImgUrl": "LastdayTank/smoke1",
+        "armsType": "zombie"
+      },
+      "LastdayViking": {
+        "cnName": "机关枪",
+        "name": "LastdayViking",
+        "noMagneticB": 1,
+        "hurtRatio": 1,
+        "bulletLife": 1.5,
+        "bulletWidth": 20,
+        "bulletAngle": -175,
+        "hitType": "rect",
+        "attackGap": 0.9,
+        "attackDelay": 0.27,
+        "bulletNum": 5,
+        "shootAngle": 40,
+        "shakeAngle": 1,
+        "shootNum": 5,
+        "shootGap": 0.13,
+        "shootPoint": "-209,-91",
+        "penetrationGap": 1000,
+        "bulletSpeed": 13,
+        "speedD": {
+          "a": -0.3,
+          "min": 4
+        },
+        "bulletImgUrl": "bullet/blueLaser",
+        "flipX": 1,
+        "hitImgUrl": "bulletHitEffect/fitHit",
+        "armsType": "zombie"
+      },
+      "LastdayBig3": {
+        "cnName": "三连炮",
+        "name": "LastdayBig3",
+        "noMagneticB": 1,
+        "noBeClearB": 1,
+        "hurtRatio": 1,
+        "bulletLife": 4,
+        "bulletWidth": 40,
+        "hitType": "rect",
+        "attackGap": 1.7,
+        "attackDelay": 0.5,
+        "bulletNum": 1,
+        "shootNum": 3,
+        "shootGap": 0.43,
+        "positionD": {
+          "point": [
+            {
+              "shootPoint": "-225,-115",
+              "bulletAngle": 163
+            },
+            {
+              "shootPoint": "-224,-139",
+              "bulletAngle": 170
+            },
+            {
+              "shootPoint": "-225,-164",
+              "bulletAngle": 180
+            }
+          ]
+        },
+        "penetrationGap": 1000,
+        "bulletSpeed": 13,
+        "speedD": {
+          "a": -0.3,
+          "min": 4
+        },
+        "bulletImgUrl": "bullet/purpleFire",
+        "hitImgUrl": "boomEffect/boom3",
+        "armsType": "zombie"
+      }
+    }
+  }
+}

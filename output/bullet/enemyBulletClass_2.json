@@ -1,0 +1,83 @@
+{
+  "father": {
+    "type": "zombie",
+    "cnName": "游尸王",
+    "bullet": {
+      "SwimKing_floor": {
+        "cnName": "游尸王地滚弹",
+        "name": "SwimKing_floor",
+        "shakeAngle": 5,
+        "bulletLife": 2,
+        "bulletWidth": 20,
+        "hitType": "rect",
+        "attackGap": 0.7,
+        "attackDelay": 0.35,
+        "bulletAngle": 200,
+        "bulletAngleRange": 80,
+        "bulletNum": 6,
+        "shootNum": 1,
+        "shootAngle": 30,
+        "bounceD": {
+          "floor": 1000
+        },
+        "shootPoint": "-57,-50",
+        "bulletSpeed": 25,
+        "gravity": 1,
+        "flipX": 1,
+        "bulletImgUrl": "SwimKing/bullet_floor",
+        "hitImgUrl": "boomEffect/boom1",
+        "hitFloorImgUrl": "bulletHitEffect/smoke_small",
+        "smokeImgUrl": "bulletHitEffect/spark_motion",
+        "armsType": "zombie"
+      },
+      "SwimKing_gun": {
+        "cnName": "僵尸王-背部火炮",
+        "name": "SwimKing_gun",
+        "shakeAngle": 5,
+        "bulletLife": 2,
+        "bulletWidth": 20,
+        "hitType": "rect",
+        "attackGap": 0.7,
+        "attackDelay": 0.35,
+        "bulletAngle": 200,
+        "bulletAngleRange": 20,
+        "bulletNum": 6,
+        "shootNum": 3,
+        "shootGap": 0.2,
+        "shootAngle": 40,
+        "bounceD": {
+          "floor": 999
+        },
+        "followD": {
+          "value": 0.5,
+          "maxTime": 0.8
+        },
+        "shootPoint": "-45,-106",
+        "bulletSpeed": 20,
+        "gravity": 1,
+        "positionD": {
+          "point": [
+            {
+              "shootPoint": "-76,-97",
+              "bulletAngle": -144
+            },
+            {
+              "shootPoint": "10,-133",
+              "bulletAngle": -109
+            },
+            {
+              "shootPoint": "38,-73",
+              "bulletAngle": -21
+            }
+          ]
+        },
+        "flipX": 1,
+        "bulletImgUrl": "SwimKing/bullet_floor",
+        "hitImgUrl": "boomEffect/boom1",
+        "hitFloorImgUrl": "bulletHitEffect/smoke_small",
+        "smokeImgUrl": "bulletHitEffect/spark_motion",
+        "armsType": "zombie"
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "father": {
+    "type": "zombie",
+    "cnName": "童灵尸",
+    "bullet": {
+      "SnowThinShoot": {
+        "cnName": "童灵尸-雪球",
+        "name": "SnowThinShoot",
+        "shakeAngle": 5,
+        "bulletLife": 2,
+        "bulletWidth": 15,
+        "hitType": "rect",
+        "attackGap": 0.8,
+        "attackDelay": 0.62,
+        "bulletAngle": 185,
+        "bulletAngleRange": 40,
+        "bulletNum": 1,
+        "shootNum": 1,
+        "shootAngle": 0,
+        "shootPoint": "-62,-64",
+        "bulletSpeed": 15,
+        "gravity": 0.3,
+        "flipX": 1,
+        "bulletImgUrl": "SnowThin/bullet",
+        "hitImgUrl": "bulletHitEffect/snowHit",
+        "hitFloorImgUrl": "bulletHitEffect/snowHit",
+        "smokeImgUrl": "SnowThin/smoke",
+        "armsType": "zombie"
+      },
+      "SnowThinRotate": {
+        "cnName": "童灵尸-旋转雪球",
+        "name": "SnowThinRotate",
+        "shakeAngle": 5,
+        "bulletLife": 10,
+        "bulletWidth": 40,
+        "hitType": "rect",
+        "attackGap": 1.6,
+        "attackDelay": 0.6,
+        "bulletAngle": 135,
+        "shootNum": 5,
+        "shootGap": 0.15,
+        "shootPoint": "-23,-117",
+        "bulletSpeed": 20,
+        "boomD": {
+          "selfB": true,
+          "radius": 130
+        },
+        "bounceD": {
+          "glueFloorB": true
+        },
+        "flipX": 1,
+        "bulletImgUrl": "SnowThin/bullet2",
+        "hitImgUrl": "bulletHitEffect/snowBigHit",
+        "hitFloorImgUrl": "bulletHitEffect/snowHit",
+        "smokeImgUrl": "SnowThin/smoke",
+        "armsType": "zombie"
+      }
+    }
+  }
+}

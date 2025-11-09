@@ -1,0 +1,103 @@
+{
+  "father": {
+    "type": "zombie",
+    "cnName": "毒蛛",
+    "bullet": {
+      "SpiderKing_shoot": {
+        "cnName": "霸王毒蛛-喷毒",
+        "name": "SpiderKing_shoot",
+        "hurtRatio": 1,
+        "bulletAngle": -170,
+        "shakeAngle": 15,
+        "bulletAngleRange": 20,
+        "bulletLife": 3,
+        "bulletWidth": 20,
+        "hitType": "rect",
+        "attackGap": 0.6,
+        "attackDelay": 0.2,
+        "bulletNum": 5,
+        "shootNum": 1,
+        "shootGap": 0,
+        "shootAngle": 10,
+        "shootPoint": "-54,-54",
+        "penetrationGap": 1000,
+        "bulletSpeed": 30,
+        "speedD": {
+          "random": 0.5,
+          "max": 30,
+          "min": 15,
+          "a": -15
+        },
+        "gravity": 0.2,
+        "flipX": 1,
+        "bulletImgUrl": "skillEffect/poisonClaw_enemy",
+        "hitImgUrl": "boomEffect/posion1",
+        "smokeImgUrl": "skillEffect/poisonClaw_enemy",
+        "armsType": "zombie"
+      },
+      "acidRain_SpiderKing": {
+        "cnName": "酸雨",
+        "name": "acidRain_SpiderKing",
+        "hurtMul": 0.17,
+        "attackType": "holy",
+        "bulletAngle": 90,
+        "shakeAngle": 3,
+        "bulletLife": 6,
+        "bulletWidth": 20,
+        "hitType": "rect",
+        "attackGap": 0.5,
+        "attackDelay": 0,
+        "bulletNum": 1,
+        "shootNum": 10,
+        "shootGap": 0.05,
+        "shootAngle": 0,
+        "positionD": {
+          "point": [
+            {
+              "shootPoint": "-400,-1250"
+            },
+            {
+              "shootPoint": "-300,-1250"
+            },
+            {
+              "shootPoint": "-200,-1250"
+            },
+            {
+              "shootPoint": "-100,-1250"
+            },
+            {
+              "shootPoint": "0,-1250"
+            },
+            {
+              "shootPoint": "100,-1250"
+            },
+            {
+              "shootPoint": "200,-1250"
+            },
+            {
+              "shootPoint": "300,-1250"
+            },
+            {
+              "shootPoint": "400,-1250"
+            },
+            {
+              "shootPoint": "500,-1250"
+            }
+          ]
+        },
+        "penetrationGap": 1000,
+        "shootPoint": "0,0",
+        "bulletSpeed": 10,
+        "speedD": {
+          "random": 0.3
+        },
+        "gravity": 0,
+        "flipX": 1,
+        "bulletImgUrl": "skillEffect/poisonousFog_hero",
+        "hitImgUrl": "boomEffect/posion1",
+        "smokeImgUrl": "skillEffect/poisonousFog_hero",
+        "armsType": "zombie"
+      }
+    }
+  }
+}

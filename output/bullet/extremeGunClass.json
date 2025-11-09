@@ -1,0 +1,61 @@
+{
+  "father": {
+    "type": "lightning",
+    "bullet": {
+      "extremeGun": {
+        "color": "darkgold",
+        "evoMaxLv": 5,
+        "evoMustFirstLv": 9,
+        "composeLv": 99,
+        "chipNum": 200,
+        "name": "extremeGun",
+        "cnName": "极源",
+        "extraMul": 1.3,
+        "aiShootRange": 900,
+        "attackType": "holy",
+        "dpsMul": 0.5,
+        "uiDpsMul": 1.49,
+        "iconUrl": "specialGun/extremeGunIcon",
+        "capacity": 13,
+        "attackGap": 0.8,
+        "reloadGap": 2,
+        "bulletWidth": 25,
+        "bulletNum": 1,
+        "shootAngle": 1,
+        "armsArmMul": 0.5,
+        "upValue": 10,
+        "shootShakeAngle": 30,
+        "shootRecoil": 5,
+        "screenShakeValue": 9,
+        "noHitB": 1,
+        "bulletLife": 1,
+        "hitType": "rect",
+        "bulletSpeed": 50,
+        "bulletSkillArr": "extremeGun",
+        "penetrationNum": 999,
+        "twoShootPro": 0.3,
+        "bounceD": {
+          "floor": 0,
+          "body": 0
+        },
+        "boomD": {
+          "selfB": true
+        },
+        "critD": {
+          "mul": 0,
+          "pro": 0
+        },
+        "skillArr": "Hit_Paralysis_ArmsSkill,Hit_silence_ArmsSkill",
+        "godSkillArr": "extremeGunSkill",
+        "shootSoundUrl": "sound/lightningShoot",
+        "bulletImgUrl": "extremeGunBullet",
+        "selfBoomImgUrl": "generalEffect/frozenBallHide",
+        "hitFloorImgUrl": "generalEffect/frozenBallHide",
+        "bodyImgRange": "specialGun/extremeGun",
+        "bulletImgRange": "specialGun/bullet",
+        "description": "消灭首领利爪僵尸(99级)",
+        "armsType": "lightning"
+      }
+    }
+  }
+}

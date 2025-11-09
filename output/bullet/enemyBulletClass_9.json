@@ -1,0 +1,121 @@
+{
+  "father": {
+    "type": "zombie",
+    "cnName": "暴君",
+    "bullet": {
+      "Skeleton_bullet": {
+        "cnName": "骷髅-跟踪导弹",
+        "name": "Skeleton_bullet",
+        "hurtRatio": 1,
+        "shakeAngle": 5,
+        "bulletLife": 2,
+        "bulletWidth": 20,
+        "hitType": "rect",
+        "attackGap": 0.7,
+        "attackDelay": 0.4,
+        "bulletAngle": 175,
+        "bulletAngleRange": 0,
+        "bulletNum": 3,
+        "shootNum": 1,
+        "shootAngle": 20,
+        "bounceD": {
+          "floor": 6
+        },
+        "followD": {
+          "value": 1,
+          "maxTime": 0.6
+        },
+        "shootPoint": "-97,-84",
+        "bulletSpeed": 35,
+        "flipX": 1,
+        "bulletImgUrl": "rocket/rocketBullet",
+        "hitImgUrl": "boomEffect/boom2",
+        "hitFloorImgUrl": "boomEffect/boom1",
+        "smokeImgUrl": "skillEffect/smallFire",
+        "armsType": "zombie"
+      },
+      "Skeleton_machine": {
+        "index": 0,
+        "name": "Skeleton_machine",
+        "cnName": "骷髅-散弹枪",
+        "hurtRatio": 1,
+        "bulletLife": 0.001,
+        "hitType": "longLine",
+        "bulletWidth": 800,
+        "bulletShakeWidth": 100,
+        "shootPoint": "-97,-84",
+        "bulletAngle": 175,
+        "attackGap": 1,
+        "attackDelay": 0.4,
+        "bulletNum": 6,
+        "shootNum": 4,
+        "shootGap": 0.07,
+        "shootAngle": 20,
+        "shakeAngle": 3,
+        "bulletSpeed": 0,
+        "bounceD": {
+          "floor": 6,
+          "body": 0,
+          "num": 0
+        },
+        "flipX": 1,
+        "lineD": {
+          "lightColor": 65535,
+          "size": 2,
+          "lightSize": 6
+        },
+        "bulletImgUrl": "longLine",
+        "hitImgUrl": "bulletHitEffect/yellow_motion",
+        "armsType": "zombie"
+      },
+      "knife_skeleton": {
+        "cnName": "骷髅-地狱剑",
+        "name": "knife_skeleton",
+        "hurtRatio": 1,
+        "shakeAngle": 5,
+        "bulletLife": 0.04,
+        "bulletWidth": 100,
+        "hitType": "rect",
+        "attackGap": 0,
+        "attackDelay": 0,
+        "bulletAngle": 270,
+        "bulletNum": 1,
+        "shootNum": 1,
+        "shootAngle": 0,
+        "penetrationGap": 1000,
+        "shootPoint": "0,0",
+        "bulletSpeed": 0,
+        "flipX": 1,
+        "imgClearDelay": 0.4,
+        "bulletImgUrl": "Skeleton/knifeEffect",
+        "hitImgUrl": "bladeHitEffect/blood",
+        "armsType": "zombie"
+      },
+      "knife_skeleton_extra": {
+        "cnName": "骷髅-地狱剑-副本",
+        "name": "knife_skeleton_extra",
+        "hurtMul": 0.25,
+        "attackType": "holy",
+        "shakeAngle": 5,
+        "bulletLife": 0.04,
+        "bulletWidth": 100,
+        "hitType": "rect",
+        "attackGap": 0,
+        "attackDelay": 0,
+        "bulletAngle": 270,
+        "bulletNum": 1,
+        "shootNum": 1,
+        "shootAngle": 0,
+        "penetrationGap": 1000,
+        "skillArr": "knife_skeleton_hammer",
+        "shootPoint": "0,0",
+        "bulletSpeed": 0,
+        "flipX": 1,
+        "imgClearDelay": 0.4,
+        "bulletImgUrl": "Skeleton/knifeEffect",
+        "hitImgUrl": "bladeHitEffect/blood",
+        "armsType": "zombie"
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "father": {
+    "type": "blink",
+    "bullet": {
+      "highlighter": {
+        "cnName": "荧光笔",
+        "name": "highlighter",
+        "color": "black",
+        "composeLv": 99,
+        "capacity": 200,
+        "attackGap": 0.1,
+        "reloadGap": 0.5,
+        "bulletWidth": 30,
+        "noHitB": 1,
+        "armsArmMul": 0.65,
+        "upValue": 30,
+        "shootShakeAngle": 10,
+        "shootRecoil": 4,
+        "screenShakeValue": 4,
+        "bulletLife": 10000,
+        "hitType": "rect",
+        "dpsMul": 2,
+        "uiDpsMul": 2,
+        "bulletSpeed": 0,
+        "boomD": {
+          "selfB": true,
+          "radius": 0,
+          "hurtMul": 0
+        },
+        "penetrationGap": 1000,
+        "skillArr": null,
+        "godSkillArr": "eraserArms,selfBoomArmsAll,armsToMousePoint",
+        "bulletSkillArr": "highlighterDieEvent",
+        "iconUrl": null,
+        "flipX": 1,
+        "bulletImgUrl": "highlighterBullet",
+        "hitImgUrl": null,
+        "selfBoomImgUrl": null,
+        "fireImgType": null,
+        "shootSoundUrl": "hitSound/poisonHit1",
+        "bodyImgRange": "specialGun/highlighter",
+        "bulletImgRange": "specialGun/bullet",
+        "description": null,
+        "armsType": "blink"
+      },
+      "highlighterSun": {
+        "name": "highlighterSun",
+        "cnName": "荧光笔烟花",
+        "noMagneticB": 1,
+        "noHitB": 1,
+        "hurtRatio": 0.2,
+        "bulletNum": 1,
+        "bulletAngle": 0,
+        "bulletLife": 2.5,
+        "lifeRandom": 0.1,
+        "bulletWidth": 25,
+        "hitType": "rect",
+        "extendGap": 10,
+        "shootAngle": -90,
+        "shootShakeAngle": 360,
+        "bulletSpeed": 10,
+        "speedD": {
+          "random": 0.2
+        },
+        "gravity": 0.5,
+        "penetrationGap": 1000,
+        "flipX": 1,
+        "bulletImgUrl": "highlighterBulletSun",
+        "armsType": "blink"
+      }
+    }
+  }
+}

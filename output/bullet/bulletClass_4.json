@@ -1,0 +1,131 @@
+{
+  "father": {
+    "type": "task",
+    "cnName": "任务",
+    "bullet": {
+      "tangYuan": {
+        "cnName": "汤圆",
+        "name": "tangYuan",
+        "noMagneticB": 1,
+        "noBeClearB": 1,
+        "hurtRatio": 0,
+        "bulletLife": 20,
+        "bulletWidth": 25,
+        "hitType": "rect",
+        "bulletAngle": 90,
+        "bulletSpeed": 7,
+        "speedD": {
+          "random": 0.2
+        },
+        "boomD": {
+          "selfB": true
+        },
+        "flipX": 1,
+        "bulletImgUrl": "tangYuan",
+        "smokeImgUrl": null,
+        "hitFloorImgUrl": null,
+        "selfBoomImgUrl": null,
+        "armsType": "task"
+      },
+      "bulletRainBullet": {
+        "cnName": "枪林弹雨-导弹",
+        "name": "bulletRainBullet",
+        "noMagneticB": 1,
+        "noBeClearB": 1,
+        "hurtRatio": 0,
+        "hurtMul": 2,
+        "attackType": "holy",
+        "bulletLife": 20,
+        "bulletWidth": 15,
+        "hitType": "rect",
+        "bulletAngle": 180,
+        "bulletSpeed": 8,
+        "speedD": {
+          "random": 0.4
+        },
+        "penetrationGap": 1000,
+        "boomD": {
+          "selfB": true
+        },
+        "flipX": 1,
+        "bulletImgUrl": "bullet/gaiaBulletFire",
+        "hitImgUrl": "boomEffect/boom2",
+        "selfBoomImgUrl": "boomEffect/boom2",
+        "armsType": "task"
+      },
+      "bulletRainBall": {
+        "cnName": "枪林弹雨-闪电球",
+        "name": "bulletRainBall",
+        "noMagneticB": 1,
+        "noBeClearB": 1,
+        "hurtRatio": 1,
+        "attackType": "holy",
+        "bulletLife": 15,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "bulletAngle": 180,
+        "bulletSpeed": 5,
+        "penetrationGap": 1000,
+        "skillArr": "bulletRainBallHit",
+        "flipX": 1,
+        "bulletImgUrl": "skillEffect/paralysis_enemy_bullet",
+        "armsType": "task"
+      },
+      "thornyRoad": {
+        "cnName": "荆棘之路",
+        "name": "thornyRoad",
+        "sameCampB": 0,
+        "noMagneticB": 1,
+        "noBeClearB": 1,
+        "hurtMul": 0.1,
+        "attackType": "holy",
+        "bulletLife": 9999999,
+        "bulletWidth": 20,
+        "hitType": "rect",
+        "bulletAngle": 0,
+        "bulletSpeed": 0,
+        "penetrationGap": 1000,
+        "penetrationNum": 999,
+        "twoHitGap": 1,
+        "skillArr": "killAll,invincibleEmp,enemyEmp",
+        "flipX": 1,
+        "bulletImgUrl": "bullet/thorns",
+        "hitImgUrl": "bulletHitEffect/energy",
+        "armsType": "task"
+      },
+      "defendBeiDou": {
+        "cnName": "保卫北斗",
+        "name": "defendBeiDou",
+        "sameCampB": 0,
+        "noMagneticB": 1,
+        "noBeClearB": 1,
+        "hurtMul": 1,
+        "attackType": "holy",
+        "bulletLife": 9999999,
+        "bulletWidth": 20,
+        "hitType": "rect",
+        "bulletAngle": 90,
+        "bulletSpeed": 7,
+        "speedD": {
+          "random": 0.3
+        },
+        "boomD": {
+          "selfB": true,
+          "hurtMul": 0
+        },
+        "bindingD": {
+          "cnName": "空单位",
+          "lifeMul": 1e-05
+        },
+        "penetrationGap": 1000,
+        "penetrationNum": 999,
+        "skillArr": "killAll",
+        "flipX": 1,
+        "bulletImgUrl": "generalEffect/fire",
+        "selfBoomImgUrl": "boomEffect/boom3",
+        "hitFloorImgUrl": "boomEffect/bigCircle",
+        "armsType": "task"
+      }
+    }
+  }
+}

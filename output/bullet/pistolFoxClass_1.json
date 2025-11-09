@@ -1,0 +1,48 @@
+{
+  "father": {
+    "type": "pistol",
+    "cnName": "手枪",
+    "bullet": {
+      "pistolFoxYa": {
+        "name": "pistolFoxYa",
+        "color": "yagold",
+        "cnName": "氩星银狐",
+        "capacity": 30,
+        "attackGap": 0.16,
+        "reloadGap": 0.8,
+        "shakeAngle": 1,
+        "bulletWidth": 950,
+        "bulletShakeWidth": "0,50",
+        "bulletNum": 1,
+        "dpsMul": 1,
+        "uiDpsMul": 1,
+        "hurtRatio": 5,
+        "armsArmMul": 0.9,
+        "armsWeight": 5,
+        "upValue": 0,
+        "shootShakeAngle": 45,
+        "shootRecoil": 4,
+        "screenShakeValue": 8,
+        "noShakeTime": 0.5,
+        "bulletLife": 0.001,
+        "hitType": "longLine",
+        "twoShootPro": 0.2,
+        "skillArr": "Hit_Paralysis_ArmsSkill2",
+        "shootSoundUrl": "pistol1/barrel5_sound",
+        "flipX": 1,
+        "lineD": {
+          "lightColor": 49134,
+          "size": 2,
+          "lightSize": 6,
+          "blendMode": "add",
+          "type": "one"
+        },
+        "bulletImgUrl": "longLine",
+        "hitImgUrl": "bulletHitEffect/yellow_motion",
+        "bodyImgRange": "specialGun/pistolFox6",
+        "bulletImgRange": "specialGun/bullet",
+        "armsType": "pistol"
+      }
+    }
+  }
+}

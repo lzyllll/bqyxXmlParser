@@ -16,7 +16,6 @@ def save_to_json(data: dict, xml_path: Path, output_dir: str = 'output') -> Path
     """
     # 创建output目录
     output_path = Path(output_dir)
-    output_path.mkdir(exist_ok=True)
     
     # 生成JSON文件名（使用XML文件名，但改为.json扩展名）
     json_filename = xml_path.stem + '.json'

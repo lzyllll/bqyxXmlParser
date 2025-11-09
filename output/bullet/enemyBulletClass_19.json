@@ -1,0 +1,52 @@
+{
+  "father": {
+    "type": "zombie",
+    "cnName": "哨兵",
+    "bullet": {
+      "Sentry1": {
+        "cnName": "哨兵-激光",
+        "name": "Sentry1",
+        "shakeAngle": 0,
+        "bulletLife": 2,
+        "bulletWidth": 15,
+        "hitType": "rect",
+        "attackGap": 0.8,
+        "attackDelay": 0.46,
+        "bulletAngle": 179,
+        "bulletAngleRange": 5,
+        "shootPoint": "-50,-60",
+        "bulletSpeed": 40,
+        "penetrationGap": 1000,
+        "flipX": 1,
+        "bulletImgUrl": "Sentry/bullet1",
+        "hitImgUrl": "bulletHitEffect/energy",
+        "smokeImgUrl": "Sentry/bullet1",
+        "armsType": "zombie"
+      },
+      "Sentry2": {
+        "cnName": "哨兵-慢速导弹",
+        "name": "Sentry2",
+        "shakeAngle": 5,
+        "bulletLife": 10,
+        "bulletWidth": 20,
+        "hitType": "rect",
+        "attackGap": 0.6,
+        "attackDelay": 0.2,
+        "bulletAngle": 210,
+        "bulletAngleRange": 10,
+        "followD": {
+          "value": 0.5,
+          "maxTime": 3
+        },
+        "penetrationGap": 1000,
+        "shootPoint": "-5,-106",
+        "bulletSpeed": 4,
+        "flipX": 1,
+        "bulletImgUrl": "Sentry/bullet2",
+        "hitImgUrl": "boomEffect/boom1",
+        "smokeImgUrl": "bulletHitEffect/spark_motion",
+        "armsType": "zombie"
+      }
+    }
+  }
+}

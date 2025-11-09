@@ -1,0 +1,106 @@
+{
+  "father": {
+    "type": "zombie",
+    "cnName": "炸裂者",
+    "bullet": {
+      "DryFrog_shoot": {
+        "cnName": "投弹",
+        "name": "DryFrog_shoot",
+        "hurtRatio": 1,
+        "bulletAngle": -170,
+        "bulletAngleRange": 30,
+        "bulletLife": 3,
+        "bulletWidth": 25,
+        "hitType": "rect",
+        "attackGap": 0.8,
+        "attackDelay": 0.46,
+        "bulletNum": 1,
+        "shootPoint": "-100,-136",
+        "penetrationGap": 1000,
+        "bulletSpeed": 20,
+        "gravity": 0.5,
+        "flipX": 1,
+        "bulletImgUrl": "DryFrog/bullet",
+        "smokeImgUrl": "DryFrog/bulletSmoke",
+        "hitImgUrl": "DryFrog/boom",
+        "armsType": "zombie"
+      },
+      "DryFrogRotate": {
+        "cnName": "旋转炸弹",
+        "name": "DryFrogRotate",
+        "shakeAngle": 5,
+        "bulletLife": 10,
+        "bulletWidth": 40,
+        "hitType": "rect",
+        "attackGap": 1.1,
+        "attackDelay": 0.4,
+        "bulletAngle": 110,
+        "shootNum": 4,
+        "shootGap": 0.1,
+        "shootPoint": "-45,-74",
+        "bulletSpeed": 20,
+        "boomD": {
+          "selfB": true,
+          "bodyB": true,
+          "radius": 130
+        },
+        "bounceD": {
+          "glueFloorB": true
+        },
+        "flipX": 1,
+        "bulletImgUrl": "DryFrog/bullet",
+        "hitImgUrl": "DryFrog/boom",
+        "hitFloorImgUrl": "bulletHitEffect/yellow_motion",
+        "smokeImgUrl": "skillEffect/smallFire",
+        "armsType": "zombie"
+      },
+      "DryFrogPour": {
+        "cnName": "倒炸弹",
+        "name": "DryFrogPour",
+        "hurtMul": 0.12,
+        "attackType": "holy",
+        "bulletSkillArr": "DryFrogPourDieEvent",
+        "shakeAngle": 10,
+        "bulletLife": 3,
+        "bulletWidth": 1,
+        "hitType": "rect",
+        "attackGap": 1.7,
+        "attackDelay": 0.6,
+        "bulletAngle": 95,
+        "shootNum": 3,
+        "shootGap": 0.15,
+        "shootPoint": "-113,-120",
+        "bulletSpeed": 6,
+        "speedD": {
+          "a": 1,
+          "max": 20
+        },
+        "skillArr": "FightKing_hitParalysis",
+        "flipX": 1,
+        "bulletImgUrl": "DryFrog/bullet",
+        "hitImgUrl": "boomEffect/boom2",
+        "hitFloorImgUrl": "bulletHitEffect/yellow_motion",
+        "smokeImgUrl": "skillEffect/smallFire",
+        "armsType": "zombie"
+      },
+      "DryFrogPour_zero": {
+        "cnName": "倒炸弹-空弹",
+        "name": "DryFrogPour_zero",
+        "hurtMul": 0.12,
+        "attackType": "holy",
+        "bulletSkillArr": "DryFrogPour_zero",
+        "bulletLife": 30,
+        "bulletWidth": 70,
+        "hitType": "rect",
+        "bulletSpeed": 0,
+        "penetrationGap": 1000,
+        "skillArr": "FightKing_hitParalysis",
+        "flipX": 1,
+        "bulletImgUrl": "DryFrog/noBullet",
+        "hitImgUrl": "boomEffect/boom2",
+        "hitFloorImgUrl": "generalEffect/headSmoke",
+        "armsType": "zombie"
+      }
+    }
+  }
+}

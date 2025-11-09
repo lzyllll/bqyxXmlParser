@@ -1,0 +1,61 @@
+{
+  "father": {
+    "type": "laser",
+    "cnName": "激光枪",
+    "bullet": {
+      "starTrails": {
+        "name": "starTrails",
+        "color": "black",
+        "dropLevelArr": 999,
+        "composeLv": 99,
+        "chipNum": 150,
+        "chipB": true,
+        "cnName": "星轨",
+        "iconUrl": "specialGun/starTrailsChip",
+        "capacity": 8,
+        "attackGap": 1,
+        "reloadGap": 2,
+        "shakeAngle": 0,
+        "bulletWidth": 600,
+        "bulletNum": 2,
+        "shootAngle": 2,
+        "beatBack": 2,
+        "targetShakeValue": 10,
+        "speedD": {
+          "raBackV": 8
+        },
+        "bounceD": {
+          "floor": 0,
+          "body": 0,
+          "noDieB": true
+        },
+        "critD": {
+          "mul": 2,
+          "pro": 0.2
+        },
+        "penetrationNum": 4,
+        "skillArr": "Hit_Spurting_ArmsSkill,Kill_Spurting_ArmsSkill",
+        "godSkillArr": "Hit_atry_godArmsSkill,Hit_crazy_godArmsSkill",
+        "hurtRatio": 15,
+        "gunNum": 1,
+        "armsArmMul": 0.5,
+        "armsWeight": 5,
+        "upValue": 3,
+        "shootRecoil": 2,
+        "bulletLife": 1,
+        "hitType": "longLine",
+        "dpsMul": 1.5,
+        "uiDpsMul": 2.65,
+        "flipX": 1,
+        "fireImgUrl": "bulletHitEffect/blueLaser",
+        "bulletImgUrl": "bullet/blueLaser",
+        "hitImgUrl": "bulletHitEffect/blueLaser",
+        "bodyImgRange": "specialGun/starTrails",
+        "bulletImgRange": "specialGun/bullet",
+        "shootSoundUrl": "specialGun/lightConeSound",
+        "description": "十年币兑换",
+        "armsType": "laser"
+      }
+    }
+  }
+}

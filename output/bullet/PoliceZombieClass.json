@@ -1,0 +1,164 @@
+{
+  "father": {
+    "name": "enemy",
+    "bullet": {
+      "PoliceZombieBullet": {
+        "name": "PoliceZombieBullet",
+        "hurtRatio": 1,
+        "attackType": "holy",
+        "attackGap": 0.7,
+        "attackDelay": 0.4,
+        "bulletAngle": 185,
+        "bulletAngleRange": 60,
+        "bulletWidth": 20,
+        "bulletLife": 10,
+        "hitType": "rect",
+        "shootPoint": "-90,-153",
+        "bulletSpeed": 15,
+        "speedD": {
+          "random": 0.3,
+          "selfVra": -1
+        },
+        "gravity": 0.4,
+        "boomD": {
+          "bodyB": true,
+          "selfB": true,
+          "radius": 200,
+          "noExcludeBodyB": true
+        },
+        "bounceD": {
+          "glueFloorB": true
+        },
+        "skillArr": "PoliceZombieShakeHit",
+        "flipX": 1,
+        "bulletImgUrl": "PoliceZombie/bullet",
+        "hitImgUrl": "boomEffect/boom3",
+        "smokeImgUrl": "bulletHitEffect/smoke_small",
+        "hitFloorImgUrl": "no",
+        "armsType": null
+      },
+      "PoliceZombieShake": {
+        "name": "PoliceZombieShake",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "cnName": "爬行电流",
+        "cd": 7,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "nearAttackTarget",
+        "conditionRange": 800,
+        "target": "me",
+        "addType": "state",
+        "effectType": "invincible",
+        "duration": 1.6,
+        "meActionLabel": "shakeAttack",
+        "description": "将电棍插入地面，产生爬行电流，被击中敌人将被清除有益效果，并封锁所有主动技能和被动技能。",
+        "armsType": null
+      },
+      "PoliceZombieShoot": {
+        "name": "PoliceZombieShoot",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "cnName": "粘性手雷",
+        "cd": 99999999,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "target": "me",
+        "addType": "state",
+        "effectType": "no",
+        "duration": 0.1,
+        "description": "向目标投掷手雷，碰撞目标或者经过几秒会爆炸，对周围敌人产生巨大伤害，并封锁目标所有主动技能和被动技能。",
+        "armsType": null
+      },
+      "PoliceZombieCharge": {
+        "name": "PoliceZombieCharge",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "cnName": "充能",
+        "noBeClearB": 1,
+        "cd": 12,
+        "delay": 0.5,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "lifePerLess",
+        "conditionRange": 0.5,
+        "target": "me",
+        "addType": "state",
+        "effectType": "PoliceZombieCharge",
+        "value": 1.6,
+        "mul": 0.6,
+        "duration": 6,
+        "stateEffectImg": {
+          "value": "skillEffect/smallFire",
+          "partType": "2eye",
+          "con": "filter",
+          "raNum": 30
+        },
+        "meActionLabel": "chargeAttack",
+        "description": "生命值小于50%时，电棍僵尸对自己进行充能，增加移动速度，减少技能冷却时间。",
+        "armsType": null
+      },
+      "PoliceZombieElectric": {
+        "name": "PoliceZombieElectric",
+        "cnName": "电击",
+        "cd": 6,
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "target": "me",
+        "addType": "instant",
+        "effectType": "teleportToAttackBody",
+        "value": 0.3,
+        "mul": 0,
+        "valueString": "130,0",
+        "meActionLabel": "electricAttack",
+        "description": "闪烁至敌人面前发动电击，有几率麻痹目标，并造成巨大伤害，无视闪避。",
+        "armsType": null
+      },
+      "PoliceZombieElectricHit": {
+        "name": "PoliceZombieElectricHit",
+        "cnName": "电击麻痹",
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "noBeClearB": 1,
+        "conditionType": "passive",
+        "condition": "hit",
+        "target": "target",
+        "addType": "state",
+        "effectType": "moveSpeed",
+        "effectProArr": 0.5,
+        "mul": 0,
+        "duration": 5,
+        "stateEffectImg": {
+          "value": "skillEffect/paralysis_enemy",
+          "con": "add",
+          "soundUrl": "sound/paralysis_enemy_hit"
+        },
+        "description": "有[effectProArr.0]的几率使其麻痹，持续5秒。",
+        "armsType": null
+      },
+      "PoliceZombieShakeHit": {
+        "name": "PoliceZombieShakeHit",
+        "cnName": "封锁被动技能",
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "noBeClearB": 1,
+        "conditionType": "passive",
+        "condition": "hit",
+        "otherConditionArr": "targetArmsNoMeltFlamerPurgold",
+        "target": "target",
+        "addType": "instantAndState",
+        "effectType": "noAllSkill",
+        "duration": 6,
+        "stateEffectImg": {
+          "value": "skillEffect/silenceMore",
+          "partType": "mouth",
+          "con": "add"
+        },
+        "description": "。",
+        "armsType": null
+      }
+    }
+  }
+}

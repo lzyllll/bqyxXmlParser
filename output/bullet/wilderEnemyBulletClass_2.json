@@ -1,0 +1,98 @@
+{
+  "father": {
+    "type": "zombie",
+    "cnName": "异祖龙",
+    "bullet": {
+      "FlyDragon_fireball": {
+        "cnName": "异角龙-火球",
+        "name": "FlyDragon_fireball",
+        "hurtRatio": 1,
+        "bulletAngle": 175,
+        "bulletAngleRange": 20,
+        "bulletLife": 4,
+        "bulletWidth": 20,
+        "hitType": "rect",
+        "attackGap": 0.6,
+        "attackDelay": 0.3,
+        "bulletNum": 1,
+        "shootPoint": "-97,-6",
+        "penetrationGap": 1000,
+        "bulletSpeed": 10,
+        "flipX": 1,
+        "bulletImgUrl": "FlyDragon/fireball",
+        "hitImgUrl": null,
+        "armsType": "zombie"
+      },
+      "FlyDragon_fireSurround": {
+        "cnName": "异祖龙巨焰围剿",
+        "name": "FlyDragon_fireSurround",
+        "hurtRatio": 0,
+        "hurtMul": 0.3,
+        "attackType": "holy",
+        "bulletAngle": 90,
+        "shakeAngle": 2,
+        "bulletLife": 0.62,
+        "shootNum": 150,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "speedD": {
+          "random": 0.1,
+          "max": 30
+        },
+        "bulletSpeed": 30,
+        "penetrationGap": 1000,
+        "twoHitGap": 1,
+        "twoHitSameNameB": 1,
+        "shootSoundUrl": null,
+        "bulletImgUrl": "fireFlamer_bullet",
+        "hitImgUrl": "bulletHitEffect/smoke_motion",
+        "hitFloorImgUrl": "bulletHitEffect/smoke_motion",
+        "fireImgType": "no",
+        "armsType": "zombie"
+      },
+      "FlyDragon_fireSurroundSmoke": {
+        "cnName": "异祖龙巨焰喷烟",
+        "name": "FlyDragon_fireSurroundSmoke",
+        "noHitB": 1,
+        "hurtRatio": 0,
+        "shakeAngle": 2,
+        "bulletLife": 0.62,
+        "shootNum": 15,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "speedD": {
+          "random": 0.1,
+          "max": 30
+        },
+        "bulletSpeed": 30,
+        "penetrationGap": 1000,
+        "bulletImgUrl": "fireEffect/smoke1",
+        "fireImgType": "no",
+        "armsType": "zombie"
+      },
+      "FlyDragonBall": {
+        "cnName": "异角龙-金球",
+        "name": "FlyDragonBall",
+        "hurtRatio": 1,
+        "attackType": "holy",
+        "bulletAngle": -90,
+        "bulletAngleRange": 180,
+        "bulletLife": 10,
+        "bulletWidth": 20,
+        "hitType": "rect",
+        "bulletNum": 1,
+        "shootPoint": "0,0",
+        "penetrationGap": 1000,
+        "skillArr": "FlyDragon_petrifaction",
+        "bulletSpeed": 20,
+        "followD": {
+          "value": 1
+        },
+        "flipX": 1,
+        "bulletImgUrl": "FlyDragon/drop",
+        "hitImgUrl": "boomEffect/boom1",
+        "armsType": "zombie"
+      }
+    }
+  }
+}

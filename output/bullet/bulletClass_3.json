@@ -1,0 +1,508 @@
+{
+  "father": {
+    "type": "otherSkill",
+    "cnName": "其他技能所需",
+    "bullet": {
+      "xiaoBoShoot": {
+        "cnName": "小波飞雷神",
+        "name": "xiaoBoShoot",
+        "hurtMul": 0.12,
+        "bulletLife": 2,
+        "bulletWidth": 90,
+        "hitType": "rect",
+        "bulletAngle": 180,
+        "bulletNum": 1,
+        "penetrationGap": 1000,
+        "shootPoint": "-50,0",
+        "bulletSpeed": 50,
+        "beatBack": 15,
+        "targetShakeValue": 20,
+        "flipX": 1,
+        "bulletImgUrl": "skillEffect/stickShadowLeft",
+        "bulletLeftImgUrl": "skillEffect/stickShadowRight",
+        "hitImgUrl": "bulletHitEffect/energy",
+        "smokeImgUrl": "skillEffect/stickShadowSmoke",
+        "armsType": "otherSkill"
+      },
+      "knife_xiaoMing": {
+        "cnName": "鸣人疾风斩",
+        "name": "knife_xiaoMing",
+        "hurtRatio": 1,
+        "shakeAngle": 5,
+        "bulletLife": 0.01,
+        "bulletWidth": 35,
+        "hitType": "rect",
+        "twoHitGap": 0.5,
+        "twoHitSameNameB": 1,
+        "attackGap": 0,
+        "attackDelay": 0,
+        "bulletAngle": 270,
+        "bulletNum": 1,
+        "shootNum": 1,
+        "shootAngle": 0,
+        "penetrationGap": 1000,
+        "penetrationNum": 999,
+        "skillArr": "seckillNormalEnemy",
+        "shootPoint": "0,0",
+        "bulletSpeed": 0,
+        "flipX": 1,
+        "imgClearDelay": 0.18,
+        "bulletImgUrl": "skillEffect/piercingLeft",
+        "secondBulletImgUrl": "skillEffect/piercingRight",
+        "hitImgUrl": "bulletHitEffect/energy",
+        "armsType": "otherSkill"
+      },
+      "summonWolf_bigBoss": {
+        "cnName": "大Boss群狼",
+        "name": "summonWolf_bigBoss",
+        "hurtRatio": 0.5,
+        "bulletAngle": 179.9,
+        "shakeAngle": 0,
+        "bulletLife": 4,
+        "bulletWidth": 40,
+        "hitType": "rect",
+        "attackGap": 1.8,
+        "attackDelay": 0.3,
+        "bulletNum": 1,
+        "shootNum": 13,
+        "shootGap": 0.05,
+        "shootAngle": 0,
+        "positionD": {
+          "specialType": "summonWolf_FightWolf"
+        },
+        "penetrationGap": 1000,
+        "penetrationNum": 5,
+        "twoHitGap": 0.5,
+        "shootPoint": "0,0",
+        "bulletSpeed": 35,
+        "speedD": {
+          "random": 0.2
+        },
+        "gravity": 0,
+        "flipX": 1,
+        "bulletImgUrl": "generalEffect/wolfSummonBullet",
+        "bulletLeftImgUrl": "generalEffect/wolfSummonBullet2",
+        "hitImgUrl": "bulletHitEffect/energy",
+        "armsType": "otherSkill"
+      },
+      "combo_crossbow": {
+        "cnName": "武器技能-连弩",
+        "name": "combo_crossbow",
+        "hurtRatio": 1,
+        "armsType": "otherSkill",
+        "shakeAngle": 2,
+        "bulletLife": 2,
+        "bulletWidth": 10,
+        "hitType": "rect",
+        "attackDelay": 0,
+        "bulletAngle": 179,
+        "bulletNum": 1,
+        "bulletSpeed": 40,
+        "flipX": 1,
+        "bulletImgUrl": "specialGun/beadBullet",
+        "hitImgUrl": "bulletHitEffect/yellow_motion",
+        "hitFloorImgUrl": "bulletHitEffect/yellow_motion"
+      },
+      "laserKill_godArmsSkill": {
+        "cnName": "影灭",
+        "name": "laserKill_godArmsSkill",
+        "armsType": "otherSkill",
+        "hurtRatio": 0.25,
+        "twoHitGap": 0.5,
+        "twoHitSameNameB": 1,
+        "bulletWidth": 15,
+        "hitType": "rect",
+        "bulletNum": 2,
+        "shootAngle": 10,
+        "bulletSpeed": 39,
+        "penetrationGap": 1000,
+        "penetrationNum": 999,
+        "followD": {
+          "value": 1,
+          "delay": 0.1
+        },
+        "flipX": 1,
+        "bulletImgUrl": "bullet/laser2",
+        "hitImgUrl": "bulletHitEffect/energyPurple"
+      },
+      "imploding_blackArmsSkill": {
+        "cnName": "沙金",
+        "name": "imploding_blackArmsSkill",
+        "armsType": "otherSkill",
+        "hurtRatio": 1,
+        "shakeAngle": 8,
+        "bulletLife": 2,
+        "bulletWidth": 15,
+        "hitType": "rect",
+        "attackGap": 1,
+        "attackDelay": 0,
+        "bulletAngle": 190,
+        "bulletNum": 4,
+        "shootNum": 1,
+        "shootAngle": 20,
+        "extendGap": 50,
+        "shootPoint": "0,-60",
+        "bulletSpeed": 20,
+        "speedD": {
+          "random": 0.3
+        },
+        "gravity": 0.4,
+        "bounceD": {
+          "floor": 2,
+          "num": 0.8
+        },
+        "flipX": 1,
+        "bulletImgUrl": "bullet/laserOrange",
+        "hitImgUrl": "bulletHitEffect/energyYellow"
+      },
+      "sickle_godArmsSkill": {
+        "cnName": "青蜂-飞镰",
+        "name": "sickle_godArmsSkill",
+        "armsType": "otherSkill",
+        "hurtRatio": 1,
+        "shakeAngle": 8,
+        "bulletLife": 4,
+        "bulletWidth": 20,
+        "hitType": "rect",
+        "extendGap": 50,
+        "bulletAngle": 0,
+        "bulletSpeed": 25,
+        "speedD": {
+          "random": 0.2
+        },
+        "twoHitGap": 0.2,
+        "penetrationGap": 1000,
+        "bounceD": {
+          "body": 5,
+          "hurtNumAdd": 0.8
+        },
+        "flipX": 1,
+        "bulletImgUrl": "specialGun/rifleHornetBullet",
+        "smokeImgUrl": "specialGun/rifleHornetBulletSmoke",
+        "hitImgUrl": "bulletHitEffect/energy"
+      },
+      "sickle_godArmsSkill2": {
+        "cnName": "青蜂-跟踪飞镰",
+        "name": "sickle_godArmsSkill2",
+        "armsType": "otherSkill",
+        "hurtRatio": 1,
+        "shakeAngle": 8,
+        "bulletLife": 4,
+        "bulletWidth": 20,
+        "hitType": "rect",
+        "extendGap": 50,
+        "bulletAngle": 0,
+        "bulletSpeed": 25,
+        "speedD": {
+          "random": 0.2
+        },
+        "twoHitGap": 0.2,
+        "penetrationGap": 1000,
+        "bounceD": {
+          "body": 5,
+          "hurtNumAdd": 0.8
+        },
+        "followD": {
+          "value": 1,
+          "noLM": 1
+        },
+        "skillArr": "sickle_godArmsSkill2_link",
+        "flipX": 1,
+        "bulletImgUrl": "specialGun/rifleHornetBullet",
+        "smokeImgUrl": "specialGun/rifleHornetBulletSmoke",
+        "hitImgUrl": "bulletHitEffect/energy"
+      },
+      "RifleHornetShooter": {
+        "cnName": "赤鼬导弹发射器",
+        "name": "RifleHornetShooter",
+        "armsType": "otherSkill",
+        "hurtRatio": 1,
+        "shakeAngle": 5,
+        "bulletAngle": 180,
+        "bulletLife": 3,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "attackGap": 0.5,
+        "attackDelay": 0.033,
+        "bulletNum": 1,
+        "shootNum": 3,
+        "shootGap": 0.066,
+        "shootPoint": "-43,-4",
+        "penetrationGap": 1000,
+        "followD": {
+          "value": 1,
+          "delay": 0.3
+        },
+        "boomD": {
+          "bodyB": true,
+          "radius": 250,
+          "noExcludeBodyB": true,
+          "maxHurtNum": 5,
+          "hurtMul": 3.7
+        },
+        "skillArr": "RifleHornetShooterHurt",
+        "bulletSpeed": 15,
+        "speedD": {
+          "max": 30,
+          "min": 1,
+          "a": 4
+        },
+        "flipX": 1,
+        "bulletImgUrl": "RifleHornetShooter/bullet1",
+        "hitImgUrl": "boomEffect/boom1",
+        "smokeImgUrl": "RifleHornetShooter/smoke1"
+      },
+      "flyDragonHead": {
+        "cnName": "火首",
+        "name": "flyDragonHead",
+        "armsType": "otherSkill",
+        "hurtRatio": 0.4,
+        "twoHitGap": 0.5,
+        "twoHitSameNameB": 1,
+        "bulletLife": 3,
+        "bulletWidth": 15,
+        "hitType": "rect",
+        "bulletNum": 1,
+        "bulletSpeed": 30,
+        "penetrationGap": 1000,
+        "penetrationNum": 999,
+        "followD": {
+          "value": 1,
+          "delay": 0.1
+        },
+        "flipX": 1,
+        "bulletImgUrl": "specialGun/FlyDragonGunBullet",
+        "bulletLeftImgUrl": "specialGun/FlyDragonGunBullet2",
+        "smokeImgUrl": "specialGun/FlyDragonGunSmoke",
+        "hitImgUrl": "bulletHitEffect/energyPurple"
+      },
+      "bangerGunSkill": {
+        "cnName": "炮仗",
+        "name": "bangerGunSkill",
+        "armsType": "otherSkill",
+        "hurtRatio": 4,
+        "bulletLife": 15,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "bulletNum": 1,
+        "hitGap": 0.2,
+        "bulletSpeed": 3,
+        "penetrationGap": 1000,
+        "penetrationNum": 999,
+        "flipX": 1,
+        "bulletImgUrl": "bullet/fireball",
+        "hitImgUrl": null
+      },
+      "godEyes": {
+        "cnName": "上帝之眼",
+        "name": "godEyes",
+        "hurtRatio": 0.3,
+        "shakeAngle": 5,
+        "bulletLife": 3,
+        "bulletWidth": 25,
+        "hitType": "rect",
+        "attackGap": 0,
+        "attackDelay": 0,
+        "bulletAngle": 0,
+        "bulletNum": 1,
+        "shootNum": 1,
+        "shootAngle": 0,
+        "penetrationNum": 1000,
+        "bounceD": {
+          "floor": 10,
+          "body": 0,
+          "num": 0
+        },
+        "skillArr": "godEyesDefence",
+        "shootPoint": "0,0",
+        "bulletSpeed": 20,
+        "flipX": 1,
+        "bulletImgUrl": "bullet/laser",
+        "hitImgUrl": null,
+        "smokeImgUrl": "bullet/laser",
+        "armsType": "otherSkill"
+      },
+      "godMace": {
+        "cnName": "上帝之杖",
+        "name": "godMace",
+        "hurtRatio": 1,
+        "bulletLife": 0.21,
+        "bulletWidth": 50,
+        "hitType": "rect",
+        "bulletAngle": 90,
+        "bulletNum": 1,
+        "shootPoint": "0,0",
+        "bulletSpeed": 60,
+        "penetrationGap": 1000,
+        "penetrationNum": 1000,
+        "skillArr": "godMaceDefence",
+        "flipX": 1,
+        "bulletImgUrl": null,
+        "hitImgUrl": "bulletHitEffect/energy",
+        "armsType": "otherSkill"
+      },
+      "saberDartsBullet": {
+        "cnName": "剑齿镖-副手",
+        "name": "saberDartsBullet",
+        "hurtRatio": 1,
+        "bulletAngle": -179,
+        "bulletLife": 30,
+        "bulletWidth": 50,
+        "hitType": "rect",
+        "attackGap": 0.7,
+        "attackDelay": 0.33,
+        "shootPoint": "-68,-70",
+        "penetrationGap": 1000,
+        "penetrationNum": 999,
+        "bulletSkillArr": "saberDartsBullet",
+        "followD": {
+          "value": 6,
+          "delay": 999999,
+          "noLM": 1
+        },
+        "bulletSpeed": 25,
+        "speedD": {
+          "max": 25,
+          "min": 2
+        },
+        "flipX": 1,
+        "bulletImgUrl": "weapon/saberDartsEffect",
+        "hitImgUrl": "bulletHitEffect/energy",
+        "armsType": "otherSkill"
+      },
+      "saberDartsFox": {
+        "name": "saberDartsFox",
+        "cnName": "剑齿镖-狐狸心零",
+        "hurtRatio": 1,
+        "bulletAngle": -179,
+        "bulletLife": 6,
+        "bulletWidth": 50,
+        "hitType": "rect",
+        "attackGap": 0.5,
+        "attackDelay": 0.28,
+        "shootPoint": "-54,-63",
+        "penetrationGap": 1000,
+        "penetrationNum": 999,
+        "followD": {
+          "value": 3,
+          "delay": 0.3,
+          "noLM": 1
+        },
+        "bulletSpeed": 25,
+        "flipX": 1,
+        "bulletImgUrl": "saberDartsFox",
+        "hitImgUrl": null,
+        "armsType": "otherSkill"
+      },
+      "squibDevice": {
+        "cnName": "爆竹",
+        "name": "squibDevice",
+        "hurtRatio": 0.1,
+        "bulletAngle": 90,
+        "bulletLife": 15,
+        "bulletWidth": 100,
+        "hitType": "rect",
+        "gravity": 1,
+        "boomD": {
+          "selfB": true,
+          "radius": 160
+        },
+        "bounceD": {
+          "glueFloorB": true
+        },
+        "skillArr": "squibDevice_screaming",
+        "bulletSpeed": 1,
+        "speedD": {
+          "max": 25,
+          "min": 0
+        },
+        "flipX": 1,
+        "bulletImgUrl": "bullet/squib",
+        "hitImgUrl": "boomEffect/boom2",
+        "hitFloorImgUrl": "bulletHitEffect/yellow_motion",
+        "smokeImgUrl": "bullet/squibSpark",
+        "armsType": "otherSkill"
+      },
+      "terroristBox": {
+        "cnName": "恐怖盒子",
+        "name": "terroristBox",
+        "hurtRatio": 0,
+        "bulletAngle": 90,
+        "bulletLife": 15,
+        "bulletWidth": 20,
+        "hitType": "rect",
+        "gravity": 1,
+        "boomD": {
+          "selfB": true,
+          "radius": 30,
+          "bodyB": true
+        },
+        "bounceD": {
+          "glueFloorB": true
+        },
+        "skillArr": "terroristBox_screaming",
+        "bulletSpeed": 1,
+        "speedD": {
+          "max": 25,
+          "min": 0
+        },
+        "flipX": 1,
+        "bulletImgUrl": "terroristBoxEffect/box",
+        "selfBoomImgUrl": "terroristBoxEffect/effect",
+        "hitFloorImgUrl": "bulletHitEffect/yellow_motion",
+        "armsType": "otherSkill"
+      },
+      "zoomOutBullet": {
+        "cnName": "放大-飞镖",
+        "name": "zoomOutBullet",
+        "hurtRatio": 1,
+        "noHitB": 1,
+        "bulletAngle": -110,
+        "bulletLife": 1,
+        "hitType": "rect",
+        "shootNum": 3,
+        "shootGap": 0.3,
+        "boomD": {
+          "selfB": true,
+          "radius": 0
+        },
+        "bulletSkillArr": "zoomOutBullet",
+        "followD": {
+          "value": 1
+        },
+        "bulletSpeed": 20,
+        "shootPoint": "0,-80",
+        "flipX": 1,
+        "bulletImgUrl": "bullet/smallGaia",
+        "hitImgUrl": "boomEffect/showLight",
+        "smokeImgUrl": "bulletHitEffect/spark_motion",
+        "armsType": "otherSkill"
+      },
+      "zoomOutGaia": {
+        "cnName": "装甲压制-盖亚",
+        "name": "zoomOutGaia",
+        "hurtRatio": 1,
+        "noHitB": 1,
+        "bulletAngle": 90,
+        "bulletLife": 10,
+        "hitType": "rect",
+        "gravity": 3,
+        "boomD": {
+          "selfB": true,
+          "radius": 150
+        },
+        "bulletSkillArr": "zoomOutGaia",
+        "bulletSpeed": 10,
+        "speedD": {
+          "max": 40,
+          "min": 10,
+          "a": 10
+        },
+        "flipX": 1,
+        "bulletImgUrl": "bullet/bigGaia",
+        "hitImgUrl": "boomEffect/boom3",
+        "armsType": "otherSkill"
+      }
+    }
+  }
+}

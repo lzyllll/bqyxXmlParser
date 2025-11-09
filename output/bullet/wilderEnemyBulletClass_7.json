@@ -1,0 +1,187 @@
+{
+  "father": {
+    "type": "zombie",
+    "cnName": "虚炎狼",
+    "bullet": {
+      "FireWolf_noName": {
+        "cnName": "虚炎狼-无名火",
+        "name": "FireWolf_noName",
+        "hurtRatio": 0,
+        "hurtMul": 0.15,
+        "bulletAngle": 90,
+        "bulletLife": 2,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "bulletNum": 2,
+        "penetrationGap": 1000,
+        "bulletSpeed": 6,
+        "speedD": {
+          "max": 15,
+          "a": 3
+        },
+        "bulletSkillArr": "spiralMove",
+        "flipX": 1,
+        "bulletImgUrl": "FireWolf/noFire",
+        "hitImgUrl": "boomEffect/boom1",
+        "smokeImgUrl": "FireWolf/noSmoke",
+        "armsType": "zombie"
+      },
+      "FireWolf_shoot": {
+        "cnName": "虚炎狼-喷火",
+        "name": "FireWolf_shoot",
+        "hurtRatio": 0.1,
+        "attackGap": 1.3,
+        "attackDelay": 0.8,
+        "bulletNum": 1,
+        "shootNum": 8,
+        "shootPoint": "-195,-90",
+        "bulletAngle": 180,
+        "bulletAngleRange": 70,
+        "bulletLife": 0.6,
+        "bulletWidth": 25,
+        "hitType": "rect",
+        "penetrationGap": 1000,
+        "bulletSpeed": 13,
+        "flipX": 1,
+        "bulletImgUrl": "fireFlamer_bullet",
+        "hitImgUrl": "boomEffect/boom1",
+        "armsType": "zombie"
+      },
+      "FireWolf_rockFire": {
+        "cnName": "墟洞岩火-地面特效",
+        "name": "FireWolf_rockFire",
+        "hurtRatio": 1e-05,
+        "noHitB": 1,
+        "bulletAngle": 270,
+        "bulletLife": 0.4,
+        "bulletSkillArr": "FireWolf_rockFire",
+        "bulletImgUrl": "FireWolf/rockFire",
+        "armsType": "zombie"
+      },
+      "FireWolf_rockFireLink": {
+        "cnName": "墟洞岩火-火",
+        "name": "FireWolf_rockFireLink",
+        "hurtRatio": 0,
+        "hurtMul": 0.3,
+        "bulletAngle": -90,
+        "bulletLife": 10,
+        "bulletWidth": 25,
+        "hitType": "rect",
+        "penetrationGap": 1000,
+        "twoHitGap": 1,
+        "twoHitSameNameB": 1,
+        "bulletSpeed": 20,
+        "flipX": 1,
+        "bulletImgUrl": "FireWolf/fire1",
+        "hitImgUrl": "boomEffect/boom1",
+        "armsType": "zombie"
+      },
+      "elementsYellow": {
+        "cnName": "稀有元素-黄",
+        "name": "elementsYellow",
+        "hurtRatio": 0,
+        "attackType": "holy",
+        "bulletAngle": -90,
+        "bulletAngleRange": 180,
+        "bulletLife": 10,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "penetrationGap": 1000,
+        "bulletSpeed": 20,
+        "hitImgUrl": "boomEffect/boom1",
+        "penetrationNum": 2,
+        "oneHitBodyB": 1,
+        "skillArr": "elementsYellow",
+        "followD": {
+          "value": 2
+        },
+        "bulletImgUrl": "FireWolf/elementsYellowBullet",
+        "armsType": "zombie"
+      },
+      "elementsRed": {
+        "cnName": "稀有元素-红",
+        "name": "elementsRed",
+        "hurtRatio": 0,
+        "attackType": "holy",
+        "sameCampB": 0,
+        "bulletAngle": -90,
+        "bulletAngleRange": 180,
+        "bulletLife": 9999,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "penetrationGap": 1000,
+        "bulletSpeed": 20,
+        "hitImgUrl": "boomEffect/boom1",
+        "skillArr": "elementsRed",
+        "followD": {
+          "value": 2
+        },
+        "bulletImgUrl": "FireWolf/elementsRedBullet",
+        "armsType": "zombie"
+      },
+      "elementsGreen": {
+        "cnName": "稀有元素-绿",
+        "name": "elementsGreen",
+        "hurtRatio": 0,
+        "attackType": "holy",
+        "bulletAngle": -90,
+        "bulletAngleRange": 180,
+        "bulletLife": 10,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "penetrationGap": 1000,
+        "bulletSpeed": 20,
+        "hitImgUrl": "boomEffect/boom1",
+        "skillArr": "elementsGreen",
+        "followD": {
+          "value": 2
+        },
+        "bulletImgUrl": "FireWolf/elementsGreenBullet",
+        "armsType": "zombie"
+      },
+      "elementsBlue": {
+        "cnName": "稀有元素-蓝",
+        "name": "elementsBlue",
+        "hurtRatio": 0,
+        "attackType": "holy",
+        "sameCampB": 0,
+        "bulletAngle": -90,
+        "bulletAngleRange": 180,
+        "bulletLife": 9999,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "penetrationGap": 1000,
+        "bulletSpeed": 20,
+        "hitImgUrl": "boomEffect/boom1",
+        "skillArr": "elementsBlue",
+        "followD": {
+          "value": 2
+        },
+        "bulletImgUrl": "FireWolf/elementsPurpleBullet",
+        "armsType": "zombie"
+      },
+      "elementsPurple": {
+        "cnName": "稀有元素-蓝",
+        "name": "elementsPurple",
+        "hurtRatio": 0,
+        "attackType": "holy",
+        "bulletAngle": -90,
+        "bulletAngleRange": 180,
+        "bulletLife": 10,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "penetrationGap": 1000,
+        "bulletSpeed": 20,
+        "hitImgUrl": "boomEffect/boom1",
+        "penetrationNum": 2,
+        "oneHitBodyB": 1,
+        "skillArr": "elementsPurple",
+        "followD": {
+          "value": 2
+        },
+        "bulletImgUrl": "FireWolf/elementsPurpleBullet",
+        "armsType": "zombie"
+      }
+    }
+  }
+}

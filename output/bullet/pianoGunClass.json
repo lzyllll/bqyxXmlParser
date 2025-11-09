@@ -1,0 +1,69 @@
+{
+  "father": {
+    "type": "rocket",
+    "cnName": "火炮-特殊",
+    "bullet": {
+      "pianoGun": {
+        "index": 44,
+        "cnName": "弦音",
+        "name": "pianoGun",
+        "kind": "wave",
+        "color": "black",
+        "composeLv": 95,
+        "chipB": true,
+        "chipNum": 150,
+        "dropLevelArr": 999,
+        "recordD": {
+          "piano": 123112313453455654315654875
+        },
+        "capacity": 40,
+        "attackGap": 0.5,
+        "reloadGap": 2,
+        "shakeAngle": 7,
+        "bulletWidth": 30,
+        "bulletShakeWidth": "0,0",
+        "bulletNum": 1,
+        "gunNum": 1,
+        "armsArmMul": 0.6,
+        "upValue": [
+          15,
+          0
+        ],
+        "shootShakeAngle": 45,
+        "shootRecoil": 4,
+        "screenShakeValue": 8,
+        "noShakeTime": 0.5,
+        "bulletLife": 3,
+        "hitType": "rect",
+        "dpsMul": 2,
+        "uiDpsMul": 2,
+        "bulletSpeed": 30,
+        "speedD": {
+          "selfVra": 0.5
+        },
+        "twoShootPro": 0,
+        "penetrationGap": 1000,
+        "bounceD": {
+          "floor": 0,
+          "body": 0
+        },
+        "critD": {
+          "mul": 0,
+          "pro": 0
+        },
+        "skillArr": "Hit_Paralysis_ArmsSkill,Hit_SlowMove_ArmsSkill",
+        "godSkillArr": "Hit_crazy_godArmsSkill,pianoGunSkill",
+        "iconUrl": "specialGun/pianoGunIcon",
+        "flipX": 1,
+        "bulletImgUrl": "specialGun/pianoGunBullet",
+        "hitImgUrl": "specialGun/christmasGunBoom",
+        "hitFloorImgUrl": "no",
+        "fireImgType": null,
+        "bodyImgRange": "specialGun/pianoGun",
+        "bulletImgRange": "specialGun/bullet",
+        "description": "纪念币兑换",
+        "armsType": "rocket"
+      }
+    }
+  }
+}

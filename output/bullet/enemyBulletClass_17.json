@@ -1,0 +1,72 @@
+{
+  "father": {
+    "type": "zombie",
+    "cnName": "尸狼",
+    "bullet": {
+      "ZombieWolf_shoot": {
+        "cnName": "嗜血尸狼-喷毒",
+        "name": "ZombieWolf_shoot",
+        "hurtRatio": 1,
+        "bulletAngle": -175,
+        "shakeAngle": 5,
+        "bulletAngleRange": 20,
+        "bulletLife": 3,
+        "bulletWidth": 20,
+        "hitType": "rect",
+        "attackGap": 1.2,
+        "attackDelay": 0.33,
+        "bulletNum": 1,
+        "shootNum": 9,
+        "shootGap": 0,
+        "shootAngle": 5,
+        "penetrationGap": 1000,
+        "shootPoint": "-73,-31",
+        "bulletSpeed": 20,
+        "speedD": {
+          "random": 0.5,
+          "max": 20,
+          "min": 5,
+          "a": -10
+        },
+        "followD": {
+          "value": 0.5,
+          "maxTime": 0.3
+        },
+        "extendGap": 15,
+        "flipX": 1,
+        "bulletImgUrl": "skillEffect/poisonClaw_enemy",
+        "hitImgUrl": "boomEffect/posion1",
+        "smokeImgUrl": "skillEffect/poisonClaw_enemy",
+        "armsType": "zombie"
+      },
+      "BoomWolf_bullet": {
+        "cnName": "火炮尸狼-火炮",
+        "name": "BoomWolf_bullet",
+        "shakeAngle": 5,
+        "bulletLife": 2,
+        "bulletWidth": 20,
+        "hitType": "rect",
+        "attackGap": 1.1,
+        "attackDelay": 0.27,
+        "bulletAngle": 200,
+        "bulletAngleRange": 20,
+        "bulletNum": 3,
+        "shootNum": 3,
+        "shootGap": 0.2,
+        "shootAngle": 30,
+        "bounceD": {
+          "floor": 999
+        },
+        "shootPoint": "-49,-61",
+        "bulletSpeed": 30,
+        "gravity": 0.6,
+        "flipX": 1,
+        "bulletImgUrl": "BoomWolf/bullet_floor",
+        "hitImgUrl": "boomEffect/boom1",
+        "hitFloorImgUrl": "bulletHitEffect/smoke_small",
+        "smokeImgUrl": "bulletHitEffect/spark_motion",
+        "armsType": "zombie"
+      }
+    }
+  }
+}

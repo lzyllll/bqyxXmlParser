@@ -1,0 +1,142 @@
+{
+  "father": {
+    "name": "enemy",
+    "bullet": {
+      "YouthWolfShoot": {
+        "cnName": "地波",
+        "name": "YouthWolfShoot",
+        "bulletLife": 10,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "attackGap": 0.7,
+        "attackDelay": 0.4,
+        "bulletAngle": 180.01,
+        "shootPoint": "-82,-17",
+        "bulletSpeed": 20,
+        "penetrationGap": 1000,
+        "flipX": 1,
+        "bulletImgUrl": "YouthWolf/bulletRight",
+        "bulletLeftImgUrl": "YouthWolf/bulletLeft",
+        "hitImgUrl": "bulletHitEffect/fitHit",
+        "armsType": null
+      },
+      "YouthWolf_oblique": {
+        "name": "YouthWolf_oblique",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "cnName": "斜拳",
+        "cd": 7,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "otherConditionArr": "nearAttackTarget",
+        "conditionRange": 250,
+        "target": "me",
+        "addType": "state",
+        "effectType": "invincible",
+        "duration": 1,
+        "meActionLabel": "obliqueAttack",
+        "description": "阿巴达斯从空中向敌人发起俯冲拳攻击。",
+        "armsType": null
+      },
+      "YouthWolf_shake": {
+        "name": "YouthWolf_shake",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "cnName": "抱拳",
+        "cd": 9,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "target": "me",
+        "addType": "state",
+        "effectType": "invincible",
+        "duration": 1,
+        "meActionLabel": "shakeAttack",
+        "description": "阿巴达斯腾空而起，对脚下的敌人发起抱拳震击，并减速敌人。",
+        "armsType": null
+      },
+      "YouthWolf_combo": {
+        "name": "YouthWolf_combo",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "cnName": "连拳",
+        "cd": 11,
+        "conditionType": "active",
+        "condition": "avtiveSkillCdOver",
+        "target": "me",
+        "addType": "state",
+        "effectType": "no",
+        "duration": 1.3,
+        "meActionLabel": "comboAttack",
+        "pointEffectImg": {
+          "value": "YouthWolf/shadowRight",
+          "raNum": 1,
+          "con": "filter"
+        },
+        "otherEffectImg": {
+          "value": "YouthWolf/shadowLeft",
+          "raNum": 1,
+          "con": "filter"
+        },
+        "description": "阿巴达斯闪烁到任意位置进行拳击，并有几率再次闪烁，如果玩家此时处于无敌状态，则该几率为100%。",
+        "armsType": null
+      },
+      "YouthWolf_crazy": {
+        "name": "YouthWolf_crazy",
+        "showInLifeBarB": 1,
+        "wantDescripB": 1,
+        "cnName": "虚无狂暴",
+        "conditionType": "passive",
+        "condition": "no",
+        "target": "me",
+        "addType": "state",
+        "effectType": "no",
+        "duration": 0.1,
+        "pointEffectImg": {
+          "value": "bulletHitEffect/headshot",
+          "con": "add",
+          "soundUrl": "sound/fireHit2"
+        },
+        "otherEffectImg": {
+          "value": "bulletHitEffect/purpleLaser",
+          "con": "add",
+          "soundUrl": "sound/crazy_hero"
+        },
+        "description": "生命值低于30%时进入虚无狂暴状态，此时除副手攻击外，其他伤害降低至0%（虚天塔中降低至25%）。",
+        "armsType": null
+      },
+      "YouthWolfUnder": {
+        "cnName": "只受副手攻击",
+        "name": "YouthWolfUnder",
+        "noBeClearB": 1,
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "conditionType": "passive",
+        "condition": "underAllHit",
+        "target": "target",
+        "addType": "instant",
+        "effectType": "YouthWolfUnder",
+        "mul": 0.03,
+        "description": "只受副手攻击",
+        "armsType": null
+      },
+      "YouthWolfHeroAngerAdd": {
+        "index": 0,
+        "name": "YouthWolfHeroAngerAdd",
+        "noSkillDodgeB": 1,
+        "ignoreImmunityB": 1,
+        "ignoreNoSkillB": 1,
+        "cnName": "激怒",
+        "conditionType": "passive",
+        "condition": "interval",
+        "target": "me,range,enemy",
+        "addType": "state",
+        "effectType": "angerAddMul",
+        "mul": 6,
+        "duration": 1,
+        "range": 99999,
+        "description": "所有敌人的怒气回复速度增加6倍。",
+        "armsType": null
+      }
+    }
+  }
+}

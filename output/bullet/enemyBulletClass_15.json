@@ -1,0 +1,62 @@
+{
+  "father": {
+    "type": "zombie",
+    "cnName": "雷尔",
+    "bullet": {
+      "shoot_PetLaer": {
+        "cnName": "雷尔-射击",
+        "name": "shoot_PetLaer",
+        "shakeAngle": 1,
+        "bulletLife": 2,
+        "bulletWidth": 40,
+        "hitType": "rect",
+        "attackGap": 0.9,
+        "attackDelay": 0.5,
+        "bulletAngle": 180,
+        "bulletAngleRange": 30,
+        "bulletNum": 1,
+        "penetrationGap": 1000,
+        "shootPoint": "-86,-55",
+        "bulletSpeed": 30,
+        "followD": {
+          "value": 0.3
+        },
+        "flipX": 1,
+        "bulletImgUrl": "PetLaer/bullet",
+        "hitImgUrl": "bulletHitEffect/energy",
+        "armsType": "zombie"
+      },
+      "lightBall_PetLaer": {
+        "cnName": "雷尔-辐射光球",
+        "name": "lightBall_PetLaer",
+        "shakeAngle": 1,
+        "bulletLife": 13,
+        "bulletWidth": 60,
+        "hitType": "rect",
+        "attackGap": 1,
+        "attackDelay": 0.55,
+        "bulletAngle": 180,
+        "bulletNum": 1,
+        "penetrationNum": 999,
+        "penetrationGap": 1000,
+        "twoHitGap": 0.1,
+        "followD": {
+          "value": 1,
+          "maxTime": 2
+        },
+        "shootPoint": "-92,-43",
+        "bulletSpeed": 10,
+        "speedD": {
+          "max": 25,
+          "min": 1,
+          "a": -4
+        },
+        "skillArr": "lightBall_PetLake_slow,silence_wind",
+        "flipX": 1,
+        "bulletImgUrl": "PetLaer/ball",
+        "hitImgUrl": "bulletHitEffect/energy",
+        "armsType": "zombie"
+      }
+    }
+  }
+}

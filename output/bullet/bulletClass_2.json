@@ -1,0 +1,245 @@
+{
+  "father": {
+    "type": "heroSkill",
+    "cnName": "英雄技能所需",
+    "bullet": {
+      "moreMissile_hero": {
+        "cnName": "万弹归宗",
+        "name": "moreMissile_hero",
+        "hurtRatio": 0.75,
+        "shakeAngle": 5,
+        "bulletLife": 2,
+        "bulletWidth": 10,
+        "hitType": "rect",
+        "attackGap": 1,
+        "attackDelay": 0,
+        "bulletAngle": 180,
+        "bulletNum": 10,
+        "shootNum": 1,
+        "shootAngle": 60,
+        "followD": {
+          "value": 2,
+          "delay": 0.1
+        },
+        "penetrationGap": 1000,
+        "shootPoint": "-30,-60",
+        "bulletSpeed": 15,
+        "speedD": {
+          "random": 0.3
+        },
+        "gravity": 0,
+        "flipX": 1,
+        "bulletImgUrl": "bullet/missile_bullet",
+        "hitImgUrl": "boomEffect/boom1",
+        "smokeImgUrl": "bulletHitEffect/smoke_small",
+        "armsType": "heroSkill"
+      },
+      "moreMissile_hero_dizziness": {
+        "cnName": "万弹归宗",
+        "name": "moreMissile_hero_dizziness",
+        "hurtRatio": 0.75,
+        "shakeAngle": 5,
+        "bulletLife": 2,
+        "bulletWidth": 10,
+        "hitType": "rect",
+        "attackGap": 1,
+        "attackDelay": 0,
+        "bulletAngle": 180,
+        "bulletNum": 10,
+        "shootNum": 1,
+        "shootAngle": 60,
+        "followD": {
+          "value": 2,
+          "delay": 0.1
+        },
+        "penetrationGap": 1000,
+        "shootPoint": "-30,-60",
+        "bulletSpeed": 15,
+        "speedD": {
+          "random": 0.3
+        },
+        "skillArr": "moreMissile_hero_dizziness",
+        "flipX": 1,
+        "bulletImgUrl": "bullet/missile_bullet",
+        "hitImgUrl": "boomEffect/boom1",
+        "smokeImgUrl": "bulletHitEffect/smoke_small",
+        "armsType": "heroSkill"
+      },
+      "moreMissile_hero_dizziness2": {
+        "cnName": "万弹归宗",
+        "name": "moreMissile_hero_dizziness2",
+        "hurtRatio": 0.75,
+        "shakeAngle": 5,
+        "bulletLife": 3,
+        "bulletWidth": 10,
+        "hitType": "rect",
+        "attackGap": 1,
+        "attackDelay": 0,
+        "bulletAngle": 180,
+        "bulletNum": 10,
+        "shootNum": 1,
+        "shootAngle": 60,
+        "followD": {
+          "value": 2,
+          "delay": 0.1
+        },
+        "penetrationGap": 1000,
+        "shootPoint": "-30,-60",
+        "bulletSpeed": 20,
+        "speedD": {
+          "random": 0.3
+        },
+        "skillArr": "moreMissile_hero_dizziness2",
+        "flipX": 1,
+        "bulletImgUrl": "bullet/missile_bullet",
+        "hitImgUrl": "boomEffect/boom1",
+        "smokeImgUrl": "bulletHitEffect/smoke_small",
+        "armsType": "heroSkill"
+      },
+      "hitMissile_hero": {
+        "cnName": "派生导弹",
+        "name": "hitMissile_hero",
+        "hurtRatio": 1,
+        "shakeAngle": 5,
+        "bulletLife": 3,
+        "bulletWidth": 15,
+        "hitType": "rect",
+        "attackGap": 0,
+        "attackDelay": 0,
+        "bulletAngle": 0,
+        "bulletNum": 1,
+        "shootNum": 1,
+        "shootAngle": 0,
+        "followD": {
+          "value": 1,
+          "delay": 0.2
+        },
+        "shootPoint": "0,0",
+        "bulletSpeed": 25,
+        "speedD": {
+          "random": 0.1
+        },
+        "gravity": 0,
+        "flipX": 1,
+        "bulletImgUrl": "bullet/missile_bullet",
+        "hitImgUrl": null,
+        "smokeImgUrl": "bulletHitEffect/smoke_small",
+        "armsType": "heroSkill"
+      },
+      "hitMissile_outfit": {
+        "cnName": "派生导弹-套件",
+        "name": "hitMissile_outfit",
+        "hurtRatio": 0.2,
+        "shakeAngle": 5,
+        "bulletLife": 2,
+        "bulletWidth": 15,
+        "hitType": "rect",
+        "attackGap": 0,
+        "attackDelay": 0,
+        "bulletAngle": 0,
+        "bulletNum": 1,
+        "shootNum": 1,
+        "shootAngle": 0,
+        "followD": {
+          "value": 1,
+          "delay": 0.1,
+          "maxTime": 0.7
+        },
+        "shootPoint": "0,0",
+        "bulletSpeed": 20,
+        "speedD": {
+          "random": 0.1
+        },
+        "gravity": 0,
+        "flipX": 1,
+        "bulletImgUrl": "bullet/laser",
+        "hitImgUrl": null,
+        "smokeImgUrl": "bullet/laser",
+        "armsType": "heroSkill"
+      },
+      "pointBoom_hero": {
+        "cnName": "定点轰炸",
+        "name": "pointBoom_hero",
+        "hurtRatio": 1.5,
+        "shakeAngle": 5,
+        "bulletLife": 0.001,
+        "bulletWidth": 0,
+        "hitType": "rect",
+        "attackGap": 0,
+        "attackDelay": 0,
+        "bulletAngle": 270,
+        "bulletNum": 1,
+        "shootNum": 1,
+        "shootAngle": 0,
+        "boomD": {
+          "selfB": true,
+          "radius": 160
+        },
+        "shootPoint": "0,0",
+        "bulletSpeed": 0,
+        "flipX": 1,
+        "bulletImgUrl": "bullet/missile_bullet",
+        "hitImgUrl": "boomEffect/boom3",
+        "armsType": "heroSkill"
+      },
+      "chainMissile_hero": {
+        "cnName": "连锁轰炸",
+        "name": "chainMissile_hero",
+        "hurtRatio": 1.1,
+        "shakeAngle": 5,
+        "bulletLife": 1,
+        "bulletWidth": 20,
+        "hitType": "rect",
+        "attackGap": 0,
+        "attackDelay": 0,
+        "bulletAngle": 270,
+        "bulletNum": 1,
+        "shootNum": 1,
+        "shootAngle": 0,
+        "twoHitGap": 1,
+        "bounceD": {
+          "body": 30,
+          "liveInitB": true
+        },
+        "followD": {
+          "value": 2
+        },
+        "penetrationGap": 1000,
+        "shootPoint": "0,0",
+        "bulletSpeed": 20,
+        "flipX": 1,
+        "bulletImgUrl": "bullet/missile_bullet",
+        "hitImgUrl": "boomEffect/boom1",
+        "smokeImgUrl": "bulletHitEffect/smoke_small",
+        "armsType": "heroSkill"
+      },
+      "endlessRocket": {
+        "cnName": "无尽轰炮",
+        "name": "endlessRocket",
+        "hurtRatio": 1,
+        "shakeAngle": 5,
+        "bulletLife": 2,
+        "bulletWidth": 20,
+        "hitType": "rect",
+        "attackGap": 5,
+        "attackDelay": 0,
+        "bulletAngle": 179,
+        "bulletNum": 1,
+        "shootNum": 50,
+        "shootGap": 0.1,
+        "followD": {
+          "value": 1
+        },
+        "penetrationGap": 1000,
+        "shootPoint": "0,-50",
+        "bulletSpeed": 30,
+        "flipX": 1,
+        "bulletImgUrl": "bullet/missile_bullet",
+        "hitImgUrl": "boomEffect/boom1",
+        "hitFloorImgUrl": "boomEffect/boom1",
+        "smokeImgUrl": "bulletHitEffect/smoke_small",
+        "armsType": "heroSkill"
+      }
+    }
+  }
+}

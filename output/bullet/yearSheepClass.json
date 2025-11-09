@@ -1,0 +1,60 @@
+{
+  "father": {
+    "type": "wavegun",
+    "bullet": {
+      "yearSheep": {
+        "name": "yearSheep",
+        "color": "darkgold",
+        "composeLv": 99,
+        "dropLevelArr": 999,
+        "evoMaxLv": 2,
+        "cnName": "未羊",
+        "iconUrl": "specialGun/yearSheepIcon",
+        "dpsMul": 1.9,
+        "uiDpsMul": 2.5,
+        "extraMul": 1.1,
+        "capacity": 6,
+        "attackGap": 1,
+        "reloadGap": 3,
+        "shakeAngle": 0,
+        "bulletWidth": 900,
+        "bulletShakeWidth": 50,
+        "bulletNum": 1,
+        "shootAngle": 0,
+        "beatBack": 10,
+        "targetShakeValue": 10,
+        "twoShootPro": 0.2,
+        "penetrationNum": 12,
+        "penetrationGap": 0,
+        "bounceD": {
+          "floor": 0,
+          "body": 0
+        },
+        "critD": {
+          "mul": 2,
+          "pro": 0.2
+        },
+        "skillArr": "Hit_Spurting_ArmsSkill",
+        "godSkillArr": "yearSheepSkill",
+        "hurtRatio": 15,
+        "gunNum": 1,
+        "armsArmMul": 0.5,
+        "armsWeight": 5,
+        "upValue": 3,
+        "shootShakeAngle": 15,
+        "shootRecoil": 10,
+        "screenShakeValue": 15,
+        "noShakeTime": 0.5,
+        "bulletLife": 0.001,
+        "hitType": "longLine",
+        "shootSoundUrl": "sound/waveShoot",
+        "flipX": 1,
+        "bulletImgUrl": "specialGun/yearSheepBullet",
+        "hitImgUrl": "bulletHitEffect/fitHit",
+        "bodyImgRange": "specialGun/yearSheep",
+        "bulletImgRange": "specialGun/bullet",
+        "armsType": "wavegun"
+      }
+    }
+  }
+}

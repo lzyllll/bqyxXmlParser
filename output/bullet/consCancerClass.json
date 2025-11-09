@@ -1,0 +1,59 @@
+{
+  "father": {
+    "type": "sniper",
+    "bullet": {
+      "consCancer": {
+        "color": "purgold",
+        "kind": "electric",
+        "evoMaxLv": 2,
+        "evoMustFirstLv": 13,
+        "composeLv": 99,
+        "chipNum": 300,
+        "name": "consCancer",
+        "extraMul": 2.5,
+        "dpsMul": 2.4,
+        "uiDpsMul": 1.525,
+        "cnName": "巨蟹座",
+        "iconUrl": "newGun/consCancerIcon",
+        "capacity": 8,
+        "attackGap": 0.8,
+        "reloadGap": 2.5,
+        "shakeAngle": 0,
+        "bulletWidth": 1700,
+        "bulletShakeWidth": 50,
+        "bulletNum": 1,
+        "shootAngle": 0,
+        "beatBack": 10,
+        "targetShakeValue": 10,
+        "twoShootPro": 0.3,
+        "penetrationNum": 0,
+        "penetrationGap": 0,
+        "critD": {
+          "mul": 2,
+          "pro": 0.2
+        },
+        "skillArr": "Hit_Spurting_ArmsSkill,Kill_AddLifeMul_ArmsSkill",
+        "godSkillArr": "consCancerSkill,Hit_crazy_godArmsSkill",
+        "hurtRatio": 15,
+        "gunNum": 1,
+        "armsArmMul": 0.5,
+        "armsWeight": 5,
+        "upValue": 3,
+        "shootShakeAngle": 15,
+        "shootRecoil": 10,
+        "screenShakeValue": 15,
+        "noShakeTime": 0.5,
+        "bulletLife": 0.001,
+        "hitType": "longLine",
+        "shootSoundUrl": "newGun/consCancerSound",
+        "flipX": 1,
+        "bulletImgUrl": "consCancerLine",
+        "hitImgUrl": "bulletHitEffect/yellow_motion",
+        "bodyImgRange": "newGun/consCancer",
+        "bulletImgRange": "specialGun/bullet",
+        "description": "消灭首领黑暗骑士(99级)",
+        "armsType": "sniper"
+      }
+    }
+  }
+}

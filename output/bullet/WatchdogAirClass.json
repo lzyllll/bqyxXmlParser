@@ -1,0 +1,26 @@
+{
+  "father": {
+    "name": "enemy",
+    "bullet": {
+      "WatchdogAirShoot": {
+        "cnName": "小飞天狗-射击",
+        "name": "WatchdogAirShoot",
+        "shakeAngle": 1,
+        "bulletLife": 2,
+        "bulletWidth": 20,
+        "hitType": "rect",
+        "attackGap": 0.9,
+        "attackDelay": 0.6,
+        "bulletAngle": 90,
+        "bulletAngleRange": 10,
+        "penetrationGap": 1000,
+        "shootPoint": "0,34",
+        "bulletSpeed": 30,
+        "flipX": 1,
+        "bulletImgUrl": "shoot_Watchdog_bullet",
+        "hitImgUrl": null,
+        "armsType": null
+      }
+    }
+  }
+}

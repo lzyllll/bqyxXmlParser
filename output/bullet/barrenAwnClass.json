@@ -1,0 +1,64 @@
+{
+  "father": {
+    "type": "rocket",
+    "cnName": "火炮-特殊",
+    "bullet": {
+      "barrenAwn": {
+        "cnName": "荒芒",
+        "name": "barrenAwn",
+        "color": "black",
+        "composeLv": 90,
+        "chipB": true,
+        "chipNum": 160,
+        "dropLevelArr": 999,
+        "capacity": 20,
+        "attackGap": 1,
+        "reloadGap": 2,
+        "shakeAngle": 0,
+        "bulletWidth": 35,
+        "bulletShakeWidth": "0,0",
+        "bulletNum": 17,
+        "shootAngle": 90,
+        "armsArmMul": 0.65,
+        "upValue": 20,
+        "shootShakeAngle": 40,
+        "shootRecoil": 12,
+        "screenShakeValue": 16,
+        "noShakeTime": 0.5,
+        "bulletLife": 2,
+        "hitType": "rect",
+        "dpsMul": 2,
+        "uiDpsMul": 2,
+        "bulletSpeed": 30,
+        "boomD": {
+          "bodyB": true,
+          "floorB": true,
+          "selfB": true,
+          "radius": 130
+        },
+        "twoShootPro": 0.3,
+        "penetrationGap": 1000,
+        "bounceD": {
+          "floor": 0,
+          "body": 0
+        },
+        "critD": {
+          "mul": 2,
+          "pro": 0.2
+        },
+        "iconUrl": "specialGun/barrenAwnIcon",
+        "skillArr": "Hit_Spurting_ArmsSkill,Kill_Spurting_ArmsSkill",
+        "godSkillArr": "Hit_seckill_godArmsSkill,barrenAwnSkill",
+        "flipX": 1,
+        "fireImgUrl": null,
+        "bulletImgUrl": "bullet/blueFire",
+        "hitImgUrl": null,
+        "shootSoundUrl": "sound/bigShoot",
+        "bodyImgRange": "specialGun/barrenAwn",
+        "bulletImgRange": "specialGun/bullet",
+        "description": "纪念币兑换",
+        "armsType": "rocket"
+      }
+    }
+  }
+}

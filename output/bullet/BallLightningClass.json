@@ -1,0 +1,92 @@
+{
+  "father": {
+    "type": "zombie",
+    "bullet": {
+      "BallLightning_fire": {
+        "name": "BallLightning_fire",
+        "cnName": "火焰球",
+        "attackType": "holy",
+        "hurtRatio": 1.5,
+        "bulletAngle": 0,
+        "bulletAngleRange": 360,
+        "bulletLife": 5,
+        "bulletWidth": 50,
+        "hitType": "rect",
+        "penetrationGap": 1000,
+        "noMagneticB": 1,
+        "bulletSpeed": 20,
+        "speedD": {
+          "random": 0.3
+        },
+        "hitGap": 0.06,
+        "bounceD": {
+          "floor": 20
+        },
+        "flipX": 1,
+        "bulletImgUrl": "generalEffect/fireBall",
+        "hitImgUrl": "bulletHitEffect/fitHit",
+        "hitFloorImgUrl": "no",
+        "armsType": "zombie"
+      },
+      "BallLightning_electric": {
+        "name": "BallLightning_electric",
+        "cnName": "电磁球",
+        "bulletSkillArr": "BallLightning_electric",
+        "attackType": "holy",
+        "hurtRatio": 1,
+        "bulletAngle": 0,
+        "bulletLife": 99999,
+        "bulletWidth": 70,
+        "hitType": "rect",
+        "penetrationGap": 1000,
+        "penetrationNum": 999,
+        "noMagneticB": 1,
+        "noBeClearB": 1,
+        "bulletSpeed": 0,
+        "flipX": 1,
+        "bulletImgUrl": "generalEffect/electricBall",
+        "hitImgUrl": "bulletHitEffect/fitHit",
+        "armsType": "zombie"
+      },
+      "BallLightning_frozen": {
+        "name": "BallLightning_frozen",
+        "cnName": "冰冻球",
+        "bulletSkillArr": "BallLightning_electric",
+        "attackType": "holy",
+        "hurtRatio": 0.5,
+        "bulletAngle": 0,
+        "bulletLife": 99999,
+        "bulletWidth": 50,
+        "hitType": "rect",
+        "penetrationGap": 1000,
+        "penetrationNum": 999,
+        "noMagneticB": 1,
+        "noBeClearB": 1,
+        "bulletSpeed": 0,
+        "flipX": 1,
+        "bulletImgUrl": "generalEffect/frozenBall",
+        "hitImgUrl": "bulletHitEffect/fitHit",
+        "armsType": "zombie"
+      },
+      "BallLightning_frozenLine": {
+        "name": "BallLightning_frozenLine",
+        "cnName": "冰冻连线",
+        "attackType": "holy",
+        "hurtRatio": 0.15,
+        "bulletAngle": 0,
+        "bulletLife": 0.034,
+        "bulletWidth": 530,
+        "hitType": "longLine",
+        "penetrationGap": 1000,
+        "penetrationNum": 999,
+        "noMagneticB": 1,
+        "noBeClearB": 1,
+        "bulletSpeed": 0,
+        "flipX": 1,
+        "bulletImgUrl": "generalEffect/lineLightning",
+        "hitImgUrl": "bulletHitEffect/fitHit",
+        "armsType": "zombie"
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "father": {
+    "type": "arms",
+    "cnName": "武器",
+    "bullet": {
+      "rocketMammothSun": {
+        "cnName": "熔炉-子弹",
+        "name": "rocketMammothSun",
+        "armsType": "arms",
+        "noMagneticB": 1,
+        "hurtRatio": 0.9,
+        "bulletAngle": 0,
+        "bulletLife": 1,
+        "lifeRandom": 0.2,
+        "bulletWidth": 25,
+        "hitType": "rect",
+        "bulletNum": 7,
+        "shootAngle": 20,
+        "bulletSpeed": 20,
+        "speedD": {
+          "a": -2,
+          "min": 2,
+          "random": 0.2
+        },
+        "flipX": 1,
+        "bulletImgUrl": "bullet/gaiaSmallBullet",
+        "smokeImgUrl": "bulletHitEffect/smoke_small",
+        "hitImgUrl": "boomEffect/boom1"
+      },
+      "fireworksSun": {
+        "cnName": "烟花-子弹",
+        "name": "fireworksSun",
+        "armsType": "arms",
+        "noMagneticB": 1,
+        "noHitTime": 0.4,
+        "hurtRatio": 0.3,
+        "bulletNum": 1,
+        "bulletAngle": 0,
+        "bulletLife": 2.5,
+        "lifeRandom": 0.1,
+        "bulletWidth": 25,
+        "hitType": "rect",
+        "extendGap": 10,
+        "shootAngle": -90,
+        "shootShakeAngle": 360,
+        "bulletSpeed": 10,
+        "speedD": {
+          "random": 0.2
+        },
+        "gravity": 1,
+        "penetrationGap": 1000,
+        "flipX": 1,
+        "bulletImgUrl": "specialGun/electricLine",
+        "hitImgUrl": "bulletHitEffect/energy"
+      }
+    }
+  }
+}

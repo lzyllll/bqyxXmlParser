@@ -1,0 +1,55 @@
+{
+  "father": {
+    "type": "zombie",
+    "cnName": "虚洪螈",
+    "bullet": {
+      "Salamander_shoot": {
+        "cnName": "虚洪螈-射击",
+        "name": "Salamander_shoot",
+        "hurtRatio": 1,
+        "bulletAngle": 175,
+        "bulletAngleRange": 30,
+        "bulletLife": 4,
+        "bulletWidth": 25,
+        "hitType": "rect",
+        "attackGap": 0.6,
+        "attackDelay": 0.4,
+        "bulletNum": 1,
+        "shootPoint": "-101,-128",
+        "penetrationGap": 1000,
+        "followD": {
+          "value": 0.1
+        },
+        "bulletSpeed": 15,
+        "flipX": 1,
+        "bulletImgUrl": "Salamander/bullet1",
+        "hitImgUrl": "bulletHitEffect/energy",
+        "armsType": "zombie"
+      },
+      "Salamander_water": {
+        "cnName": "虚洪螈-水柱",
+        "name": "Salamander_water",
+        "hurtRatio": 1,
+        "bulletAngle": 175,
+        "bulletAngleRange": 30,
+        "bulletLife": 10,
+        "bulletWidth": 25,
+        "hitType": "rect",
+        "attackGap": 0.9,
+        "attackDelay": 0.6,
+        "bulletNum": 2,
+        "shootAngle": 10,
+        "shootPoint": "-101,-128",
+        "penetrationGap": 1000,
+        "followD": {
+          "value": 0.5
+        },
+        "bulletSpeed": 30,
+        "flipX": 1,
+        "bulletImgUrl": "Salamander/waterBullet",
+        "hitImgUrl": "bulletHitEffect/energy",
+        "armsType": "zombie"
+      }
+    }
+  }
+}

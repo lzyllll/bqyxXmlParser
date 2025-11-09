@@ -1,0 +1,229 @@
+{
+  "father": {
+    "type": "zombie",
+    "cnName": "爆骷",
+    "bullet": {
+      "PetBoomSkull_shoot1": {
+        "cnName": "爆骷-跟踪导弹",
+        "name": "PetBoomSkull_shoot1",
+        "hurtRatio": 0.3,
+        "shakeAngle": 5,
+        "bulletLife": 2,
+        "bulletWidth": 40,
+        "hitType": "rect",
+        "attackGap": 0.7,
+        "attackDelay": 0.3,
+        "bulletAngle": 179,
+        "bulletNum": 2,
+        "shootNum": 1,
+        "shootAngle": 20,
+        "followD": {
+          "value": 1
+        },
+        "penetrationGap": 1000,
+        "boomD": {
+          "selfB": true,
+          "bodyB": true,
+          "radius": 140
+        },
+        "shootPoint": "-78,-90",
+        "bulletSpeed": 30,
+        "flipX": 1,
+        "bulletImgUrl": "PetBoomSkull/bullet1",
+        "hitImgUrl": "boomEffect/boom2",
+        "smokeImgUrl": "bulletHitEffect/smoke_small",
+        "armsType": "zombie"
+      },
+      "PetBoomSkullSecond_shoot1": {
+        "cnName": "爆骷-跟踪导弹",
+        "name": "PetBoomSkullSecond_shoot1",
+        "hurtRatio": 0.3,
+        "shakeAngle": 5,
+        "bulletLife": 2,
+        "bulletWidth": 40,
+        "hitType": "rect",
+        "attackGap": 0.7,
+        "attackDelay": 0.3,
+        "bulletAngle": 179,
+        "bulletNum": 2,
+        "shootNum": 1,
+        "shootAngle": 20,
+        "followD": {
+          "value": 1
+        },
+        "penetrationGap": 1000,
+        "boomD": {
+          "selfB": true,
+          "bodyB": true,
+          "radius": 140
+        },
+        "shootPoint": "-78,-90",
+        "bulletSpeed": 30,
+        "flipX": 1,
+        "bulletImgUrl": "PetBoomSkullSecond/bullet1",
+        "hitImgUrl": "boomEffect/boom2",
+        "smokeImgUrl": "bulletHitEffect/smoke_small",
+        "armsType": "zombie"
+      },
+      "PetBoomSkullThird_shoot1": {
+        "cnName": "爆骷X3-跟踪导弹",
+        "name": "PetBoomSkullThird_shoot1",
+        "hurtRatio": 0.3,
+        "shakeAngle": 5,
+        "bulletLife": 2,
+        "bulletWidth": 40,
+        "hitType": "rect",
+        "attackGap": 0.8,
+        "attackDelay": 0.4,
+        "bulletAngle": 179,
+        "bulletNum": 1,
+        "shootNum": 1,
+        "shootAngle": 20,
+        "followD": {
+          "value": 1
+        },
+        "penetrationGap": 1000,
+        "boomD": {
+          "selfB": true,
+          "bodyB": true,
+          "radius": 200
+        },
+        "shootPoint": "-108,-173",
+        "bulletSpeed": 35,
+        "flipX": 1,
+        "bulletImgUrl": "PetBoomSkullThird/bullet1",
+        "hitImgUrl": "boomEffect/boom1",
+        "smokeImgUrl": "bulletHitEffect/smoke_small",
+        "armsType": "zombie"
+      },
+      "PetBoomSkullThird_machine": {
+        "index": 0,
+        "name": "PetBoomSkullThird_machine",
+        "cnName": "爆骷X3-机关枪",
+        "hurtRatio": 1,
+        "bulletLife": 0.001,
+        "hitType": "longLine",
+        "bulletWidth": 800,
+        "bulletShakeWidth": 100,
+        "shootPoint": "-97,-84",
+        "bulletAngle": 175,
+        "attackGap": 1.3,
+        "attackDelay": 0.5,
+        "bulletNum": 3,
+        "shootNum": 7,
+        "shootGap": 0.08,
+        "shootAngle": 10,
+        "shakeAngle": 3,
+        "bulletSpeed": 0,
+        "positionD": {
+          "point": [
+            {
+              "shootPoint": "-69,-48",
+              "bulletAngle": 145
+            },
+            {
+              "shootPoint": "-78,-67",
+              "bulletAngle": 152
+            },
+            {
+              "shootPoint": "-86,-87",
+              "bulletAngle": 159
+            },
+            {
+              "shootPoint": "-94,-106",
+              "bulletAngle": 166
+            },
+            {
+              "shootPoint": "-99,-119",
+              "bulletAngle": 171
+            },
+            {
+              "shootPoint": "-103,-133",
+              "bulletAngle": 176
+            },
+            {
+              "shootPoint": "-106,-142",
+              "bulletAngle": 179
+            }
+          ]
+        },
+        "bounceD": {
+          "floor": 6,
+          "body": 0,
+          "num": 0
+        },
+        "flipX": 1,
+        "lineD": {
+          "lightColor": 65535,
+          "size": 2,
+          "lightSize": 6
+        },
+        "bulletImgUrl": "longLine",
+        "hitImgUrl": "bulletHitEffect/yellow_motion",
+        "armsType": "zombie"
+      },
+      "PetBoomSkullThird_shoot3": {
+        "cnName": "爆骷X3-跟踪导弹",
+        "name": "PetBoomSkullThird_shoot3",
+        "hurtRatio": 0.3,
+        "shakeAngle": 5,
+        "bulletLife": 2,
+        "bulletWidth": 40,
+        "hitType": "rect",
+        "attackGap": 1,
+        "attackDelay": 0.5,
+        "bulletAngle": 179,
+        "bulletNum": 1,
+        "shootNum": 2,
+        "shootGap": 0.16,
+        "followD": {
+          "value": 1
+        },
+        "shootPoint": "-100,-185",
+        "bulletSpeed": 25,
+        "positionD": {
+          "point": [
+            {
+              "shootPoint": "-100,-185"
+            },
+            {
+              "shootPoint": "-100,-156"
+            }
+          ]
+        },
+        "flipX": 1,
+        "bulletImgUrl": "PetBoomSkullThird/bullet3",
+        "hitImgUrl": "boomEffect/boom2",
+        "smokeImgUrl": "bulletHitEffect/smoke_small",
+        "armsType": "zombie"
+      },
+      "PetBoomSkull_endlessBombing": {
+        "cnName": "爆骷-无尽轰炸",
+        "name": "PetBoomSkull_endlessBombing",
+        "hurtRatio": 1,
+        "shakeAngle": 5,
+        "bulletLife": 2,
+        "bulletWidth": 40,
+        "hitType": "rect",
+        "attackGap": 5,
+        "attackDelay": 0,
+        "bulletAngle": 179,
+        "bulletNum": 1,
+        "shootNum": 50,
+        "shootGap": 0.1,
+        "followD": {
+          "value": 1
+        },
+        "penetrationGap": 1000,
+        "shootPoint": "-78,-90",
+        "bulletSpeed": 30,
+        "flipX": 1,
+        "bulletImgUrl": "skillEffect/PetBoomSkull_bullet2",
+        "hitImgUrl": "boomEffect/boom1",
+        "hitFloorImgUrl": "boomEffect/boom1",
+        "smokeImgUrl": "bulletHitEffect/smoke_small",
+        "armsType": "zombie"
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "father": {
+    "type": "zombie",
+    "cnName": "关东尸",
+    "bullet": {
+      "SnowFattyShoot": {
+        "cnName": "关东尸-飞刀",
+        "name": "SnowFattyShoot",
+        "shakeAngle": 5,
+        "bulletLife": 2,
+        "bulletWidth": 40,
+        "hitType": "rect",
+        "attackGap": 1.1,
+        "attackDelay": 0.46,
+        "bulletAngle": 185,
+        "bulletAngleRange": 50,
+        "bulletNum": 1,
+        "shootNum": 1,
+        "shootAngle": 0,
+        "shootPoint": "-81,-95",
+        "bulletSpeed": 30,
+        "gravity": 0.7,
+        "flipX": 1,
+        "bulletImgUrl": "SnowFatty/bullet",
+        "hitImgUrl": "bladeHitEffect/blood",
+        "hitFloorImgUrl": "bladeHitEffect/blood",
+        "armsType": "zombie"
+      },
+      "SnowFattySprint": {
+        "cnName": "关东尸千斤顶",
+        "name": "SnowFattySprint",
+        "shakeAngle": 5,
+        "bulletLife": 2,
+        "bulletWidth": 50,
+        "hitType": "rect",
+        "attackGap": 1.1,
+        "attackDelay": 0.46,
+        "bulletAngle": 185,
+        "bulletAngleRange": 90,
+        "bulletNum": 1,
+        "shootNum": 1,
+        "shootAngle": 0,
+        "shootPoint": "0,-75",
+        "bulletSpeed": 30,
+        "penetrationGap": 1000,
+        "skillArr": "SnowFattySprintHit,hitBloodGreen",
+        "flipX": 1,
+        "bulletImgUrl": "SnowFatty/bullet",
+        "hitImgUrl": "bladeHitEffect/blood",
+        "hitFloorImgUrl": "bladeHitEffect/blood",
+        "smokeImgUrl": "SnowFatty/bullet",
+        "armsType": "zombie"
+      }
+    }
+  }
+}

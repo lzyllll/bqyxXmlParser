@@ -1,0 +1,92 @@
+{
+  "father": {
+    "type": "zombie",
+    "cnName": "年兽",
+    "bullet": {
+      "Nian_fireball": {
+        "cnName": "年兽-火球",
+        "name": "Nian_fireball",
+        "hurtRatio": 0,
+        "hurtMul": 0.1,
+        "bulletAngle": 175,
+        "bulletAngleRange": 10,
+        "bulletLife": 10,
+        "bulletWidth": 25,
+        "hitType": "rect",
+        "attackGap": 0.7,
+        "attackDelay": 0.3,
+        "bulletNum": 1,
+        "shootPoint": "-198,-124",
+        "penetrationGap": 1000,
+        "followD": {
+          "delay": 2,
+          "maxTime": 2.3,
+          "value": 6
+        },
+        "bulletSpeed": 10,
+        "flipX": 1,
+        "bulletImgUrl": "NianMonster/fireball",
+        "hitImgUrl": "boomEffect/boom1",
+        "armsType": "zombie"
+      },
+      "Nian_spark": {
+        "cnName": "驾驭星火",
+        "name": "Nian_spark",
+        "hurtRatio": 0,
+        "hurtMul": 0.2,
+        "attackType": "holy",
+        "shakeAngle": 10,
+        "bulletAngle": -90,
+        "bulletLife": 10,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "bulletNum": 1,
+        "penetrationGap": 1000,
+        "bulletSkillArr": "Mammoth_missile",
+        "followD": {
+          "value": 2,
+          "delay": 1
+        },
+        "bulletSpeed": 12,
+        "speedD": {
+          "max": 25,
+          "min": 1,
+          "a": -10,
+          "random": 0.2
+        },
+        "flipX": 1,
+        "bulletImgUrl": "NianMonster/sparkBullet",
+        "hitImgUrl": "boomEffect/boom2",
+        "smokeImgUrl": "bulletHitEffect/spark_motion",
+        "armsType": "zombie"
+      },
+      "Nian_darts": {
+        "cnName": "年兽-晶火刃",
+        "name": "Nian_darts",
+        "hurtRatio": 0,
+        "hurtMul": 0.1,
+        "bulletAngle": 160,
+        "bulletAngleRange": 30,
+        "bulletLife": 15,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "attackGap": 1.1,
+        "attackDelay": 0.6,
+        "bulletNum": 3,
+        "shootAngle": 20,
+        "shootPoint": "-103,-230",
+        "skillArr": "Nian_dartsParalysis",
+        "bounceD": {
+          "glueFloorB": true
+        },
+        "penetrationNum": 999,
+        "oneHitBodyB": 1,
+        "bulletSpeed": 40,
+        "flipX": 1,
+        "bulletImgUrl": "NianMonster/dartsBullet",
+        "hitImgUrl": "bulletHitEffect/yellow_motion",
+        "armsType": "zombie"
+      }
+    }
+  }
+}

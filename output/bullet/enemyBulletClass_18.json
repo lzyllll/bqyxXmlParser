@@ -1,0 +1,105 @@
+{
+  "father": {
+    "type": "zombie",
+    "cnName": "狂战狼",
+    "bullet": {
+      "summonWolf_FightWolf": {
+        "cnName": "狂战狼-召唤群狼",
+        "name": "summonWolf_FightWolf",
+        "hurtRatio": 0,
+        "hurtMul": 0.05,
+        "bulletAngle": 179.9,
+        "shakeAngle": 0,
+        "bulletLife": 4,
+        "bulletWidth": 40,
+        "hitType": "rect",
+        "attackGap": 1.8,
+        "attackDelay": 0.3,
+        "bulletNum": 1,
+        "shootNum": 20,
+        "shootGap": 0.05,
+        "shootAngle": 0,
+        "positionD": {
+          "specialType": "summonWolf_FightWolf"
+        },
+        "penetrationGap": 1000,
+        "penetrationNum": 999,
+        "twoHitGap": 0.5,
+        "shootPoint": "0,0",
+        "bulletSpeed": 23,
+        "speedD": {
+          "random": 0.2
+        },
+        "gravity": 0,
+        "flipX": 1,
+        "bulletImgUrl": "generalEffect/wolfSummonBullet",
+        "bulletLeftImgUrl": "generalEffect/wolfSummonBullet2",
+        "hitImgUrl": "bulletHitEffect/energy",
+        "armsType": "zombie"
+      },
+      "summonWolf_FightWolf_slow": {
+        "cnName": "狂战狼-召唤群狼",
+        "name": "summonWolf_FightWolf_slow",
+        "hurtRatio": 0,
+        "hurtMul": 0.05,
+        "bulletAngle": 179.9,
+        "shakeAngle": 0,
+        "bulletLife": 4,
+        "bulletWidth": 40,
+        "hitType": "rect",
+        "attackGap": 1.8,
+        "attackDelay": 0.3,
+        "bulletNum": 1,
+        "shootNum": 20,
+        "shootGap": 0.05,
+        "shootAngle": 0,
+        "positionD": {
+          "specialType": "summonWolf_FightWolf"
+        },
+        "penetrationGap": 1000,
+        "penetrationNum": 999,
+        "twoHitGap": 0.5,
+        "shootPoint": "0,0",
+        "bulletSpeed": 23,
+        "speedD": {
+          "random": 0.2
+        },
+        "gravity": 0,
+        "flipX": 1,
+        "bulletImgUrl": "generalEffect/wolfSummonBullet",
+        "bulletLeftImgUrl": "generalEffect/wolfSummonBullet2",
+        "hitImgUrl": "bulletHitEffect/energy",
+        "armsType": "zombie"
+      },
+      "anger_FightWolf": {
+        "cnName": "狂战狼-大地之怒",
+        "name": "anger_FightWolf",
+        "hurtRatio": 0,
+        "hurtMul": 0.05,
+        "shakeAngle": 5,
+        "bulletLife": 0.04,
+        "bulletWidth": 100,
+        "hitType": "rect",
+        "attackGap": 0,
+        "attackDelay": 0,
+        "bulletAngle": 270,
+        "bulletNum": 1,
+        "shootNum": 24,
+        "shootGap": 0.03,
+        "shootAngle": 0,
+        "positionD": {
+          "specialType": "anger_FightWolf"
+        },
+        "penetrationGap": 1000,
+        "skillArr": "blindness_anger_PetFightWolf",
+        "shootPoint": "0,0",
+        "bulletSpeed": 0,
+        "flipX": 1,
+        "imgClearDelay": 0.3,
+        "bulletImgUrl": "boomEffect/blackBoom",
+        "hitImgUrl": "bladeHitEffect/blood",
+        "armsType": "zombie"
+      }
+    }
+  }
+}

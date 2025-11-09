@@ -1,0 +1,29 @@
+{
+  "father": {
+    "name": "enemy",
+    "bullet": {
+      "WatchdogSmallShoot": {
+        "cnName": "小看门狗-射击",
+        "name": "WatchdogSmallShoot",
+        "hurtRatio": 0.2,
+        "shakeAngle": 1,
+        "bulletLife": 2,
+        "bulletWidth": 20,
+        "hitType": "rect",
+        "attackGap": 0.9,
+        "attackDelay": 0.3,
+        "bulletAngle": 180,
+        "bulletAngleRange": 20,
+        "shootNum": 6,
+        "shootGap": 0.077,
+        "penetrationGap": 1000,
+        "shootPoint": "-37,-48",
+        "bulletSpeed": 20,
+        "flipX": 1,
+        "bulletImgUrl": "shoot_Watchdog_bullet",
+        "hitImgUrl": null,
+        "armsType": null
+      }
+    }
+  }
+}

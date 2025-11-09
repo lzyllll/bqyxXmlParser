@@ -1,0 +1,29 @@
+{
+  "father": {
+    "type": "zombie",
+    "cnName": "掘金尸",
+    "bullet": {
+      "knife_Nuggets": {
+        "cnName": "掘金尸-疾风斩",
+        "name": "knife_Nuggets",
+        "hurtMul": 0.2,
+        "shakeAngle": 5,
+        "bulletLife": 0.06,
+        "bulletWidth": 90,
+        "hitType": "rect",
+        "twoHitGap": 0.5,
+        "twoHitSameNameB": 1,
+        "bulletAngle": 270,
+        "bulletNum": 1,
+        "penetrationGap": 1000,
+        "penetrationNum": 999,
+        "flipX": 1,
+        "imgClearDelay": 0.12,
+        "bulletImgUrl": "NuggetsZombie/piercingLeft",
+        "secondBulletImgUrl": "NuggetsZombie/piercingRight",
+        "hitImgUrl": "bulletHitEffect/energy",
+        "armsType": "zombie"
+      }
+    }
+  }
+}

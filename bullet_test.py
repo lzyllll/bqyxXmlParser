@@ -1,6 +1,7 @@
 
 
 from pathlib import Path
+import shutil
 from typing import Any, Dict
 from utils import attrib_factory
 from utils.json.save_json import save_to_json
@@ -51,6 +52,9 @@ class EndWithUrlParser(ElementParser):
             return True
         return False
     def parse(self, element: ET.Element) -> Any:
+        # text 和 attrib.name 必有一个
+        if element.tag == 'bulletImgUrl':
+            return element.get('name') or element.text
         return element.text
     
 
@@ -64,7 +68,11 @@ factory.register_parser(EndWithUrlParser(),110)
 if __name__ == '__main__':
     # XML文件夹路径
     xml_dir = Path(r'classified_3521\father\bullet')
-        
+    output_dir = Path('output') / 'bullet'
+    # 清理输出目录
+    if output_dir.exists():
+        shutil.rmtree(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
     # walk
     for root_dir, dirs, files in xml_dir.walk():
         for file in files:
@@ -75,5 +83,5 @@ if __name__ == '__main__':
             json_path = save_to_json(
                 ele_dict, 
                 xml_path,
-                Path('output') / 'bullet'
+                output_dir
             )

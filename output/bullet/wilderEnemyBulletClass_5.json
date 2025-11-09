@@ -1,0 +1,94 @@
+{
+  "father": {
+    "type": "zombie",
+    "cnName": "虚空客",
+    "bullet": {
+      "VanityKer_shoot": {
+        "cnName": "虚空客-射击",
+        "name": "VanityKer_shoot",
+        "hurtRatio": 1,
+        "bulletAngle": 179.9,
+        "bulletAngleRange": 5,
+        "bulletLife": 3,
+        "bulletWidth": 20,
+        "hitType": "rect",
+        "attackGap": 0.6,
+        "attackDelay": 0.3,
+        "bulletNum": 3,
+        "shootAngle": 2,
+        "shootPoint": "-83,7",
+        "penetrationGap": 1000,
+        "bulletSpeed": 25,
+        "flipX": 1,
+        "bulletImgUrl": "VanityKer/bullet1",
+        "hitImgUrl": "bulletHitEffect/energy",
+        "armsType": "zombie"
+      },
+      "VanityKer_missle": {
+        "cnName": "虚空客-导弹",
+        "name": "VanityKer_missle",
+        "hurtRatio": 1,
+        "bulletAngle": 179.9,
+        "bulletAngleRange": 5,
+        "bulletLife": 5,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "attackGap": 0.5,
+        "attackDelay": 0.2,
+        "bulletNum": 1,
+        "shootPoint": "-48,75",
+        "penetrationGap": 1000,
+        "boomD": {
+          "selfB": true,
+          "bodyB": true,
+          "radius": 140
+        },
+        "followD": {
+          "value": 0.8
+        },
+        "bulletSpeed": 10,
+        "flipX": 1,
+        "bulletImgUrl": "VanityKer/bullet2",
+        "hitImgUrl": "boomEffect/boom1",
+        "armsType": "zombie"
+      },
+      "VanityKer_comet": {
+        "cnName": "星际尘埃",
+        "name": "VanityKer_comet",
+        "hurtRatio": 0,
+        "attackType": "holy",
+        "bulletAngle": 90,
+        "bulletLife": 30,
+        "bulletWidth": 30,
+        "hitType": "rect",
+        "penetrationGap": 1000,
+        "skillArr": "VanityKer_cometBuff",
+        "bulletSpeed": 5,
+        "flipX": 1,
+        "bulletImgUrl": "VanityKer/comet",
+        "hitImgUrl": "bulletHitEffect/energy",
+        "armsType": "zombie"
+      },
+      "VanityKer_dreamland": {
+        "cnName": "虚空客-虚幻镜像",
+        "name": "VanityKer_dreamland",
+        "hurtRatio": 1e-05,
+        "attackType": "holy",
+        "bulletAngle": 270,
+        "bulletLife": 8,
+        "bulletWidth": 440,
+        "hitType": "longLine",
+        "shootPoint": "-378,130",
+        "penetrationGap": 1000,
+        "penetrationNum": 999,
+        "oneHitBodyB": 1,
+        "bulletSpeed": 0,
+        "skillArr": "VanityKer_dreamlandUnit",
+        "flipX": 1,
+        "bulletImgUrl": "VanityKer/lightWall",
+        "hitImgUrl": "VanityKer/lightHit",
+        "armsType": "zombie"
+      }
+    }
+  }
+}
