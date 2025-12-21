@@ -1,0 +1,5 @@
+output/
+compiled/
+swf_assets/
+.venv
+persistent_state.ini

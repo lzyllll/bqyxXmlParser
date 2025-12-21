@@ -1,0 +1,25 @@
+[project]
+name = "bqxmlparser"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiofiles>=25.1.0",
+    "aiohttp>=3.13.2",
+    "lxml>=6.0.2",
+    "requests>=2.32.5",
+]
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
+
+# 添加构建系统配置
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# 指定包位置
+[tool.hatch.build.targets.wheel]
+packages = ["bqyx_parser"]
