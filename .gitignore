@@ -3,3 +3,7 @@ compiled/
 swf_assets/
 .venv
 persistent_state.ini
+
+__pycache__/
+*.pyc
+.idea/

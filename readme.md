@@ -1,154 +1,208 @@
-# XML 解析器框架 - 自定义类注册说明
+# 爆枪英雄 XML 解析器
 
 https://github.com/lzyllll/bqyxXmlParser
 
+从 4399 下载爆枪英雄 SWF，用 FFDec 反编译，再把 XML 解析成 JSON。
 
+## 环境
 
+Python 3.12+。需要本机可用的 `ffdec-cli`。
 
-# 使用说明
-使用全局python
-1. 下载python 3.9 +  python --version
-2. 设置下载源 pip config set global.index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
-3. pip install -r requirements.txt
-4. cd bqXmlParser; 
-5. python main.py (等待即可，较为耗时)
+使用 pip：
 
-使用uv包管理，比pip好用多了(也得设置下载源，不然太慢)
-切换使用的python版本 uv python pin 3.12 (不然，uv会下载对应的版本)
-pip install uv 
-uv sync 
-cd bqXmlParser
+```text
+pip config set global.index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
+pip install -r requirements.txt
+python main.py
+```
+
+使用 uv：
+
+```text
+uv python pin 3.12
+uv sync
 uv run main.py
-# 提取json的脚本
-需要运行main.py获取xml
+```
+
+lxml 类型提示：
+
+```text
+uv pip install -U types-lxml
+pip install -U types-lxml
+```
+
+`parser_config.ini` 里配置 FFDec 路径：
+
+```ini
+[DEFAULT]
+ffdec = ffdec-cli.exe
+```
+
+## 目录
+
+```text
+bqyx_parser/
+  app.py                 总流程：下载 -> 提取 -> 清理
+  downloader/            下载器，拉取游戏 SWF
+  extractor/             提取器
+    ffdec.py             调用 FFDec 导出脚本/图片/二进制
+    as3.py               从 AS3 提取加载器和版本常量
+    swf_url.py           从 XML 提取 <swfUrl>
+    equip.py             复制装备/时装图标
+  parser/                解析器
+    factory.py           元素工厂和属性工厂
+    xml.py               读 XML、parse_element / parse_xml
+    convert.py           文本和属性类型转换
+    element/             元素解析器
+    attrib/              属性解析器
+    module/              业务模块
+      achieve/           成就、勋章
+      things/            道具、强化
+      union/             军团
+    suit.py              套装和装备
+  tools/                 工具
+    config.py            版本号和 FFDec 路径
+    files.py             重命名、清理非法 XML
+    classify.py          按 father 分类 XML
+    jsonfile.py          保存 JSON
+    compare.py           递归对比 JSON / 解析结果
+    gift_str.py          解析 gift 字符串
+script/                  命令行入口，调用 parser 里的业务解析
+test/                    工厂、默认规则和对比工具测试
+```
+
+数据目录：
+
+```text
+swf_assets/              下载下来的 SWF
+compiled/                FFDec 反编译结果
+output/<version>/xml     分类后的 XML
+output/<version>/json    解析后的 JSON
+```
+
+## 使用流程
+
+1. 运行 `python main.py`，下载主 SWF，反编译 XML/AS3，再补齐依赖资源。
+2. 需要装备图时，按提示输入 `1`，会从 equipGather 提取并分类图标。
+3. 用 `tools.classify.classify_xml` 把 XML 按 father 拆到 `output/<version>/xml`。
+4. 跑脚本生成 JSON：
+
+```text
 python script/skill_element.py
-或者 uv run script/skill_element.py
-# lxml的类型提示
-uv pip install -U types-lxml  # using uv
-pip install -U types-lxml  # using pip
-
-## 概述
-本框架提供了一个灵活的 XML 解析系统，支持通过注册自定义解析器来处理特定结构的 XML 元素。以下以 `SkillFatherParser` 为例说明如何创建和使用自定义解析器。
-
-## 核心组件
-
-### ElementParser 基类
-所有自定义解析器都需要继承此基类，并实现以下两个方法：
-
-### 1. can_parse(element)
-**功能**: 判断解析器是否能处理当前 XML 元素
-**参数**: 
-- `element`: ET.Element - XML 元素对象
-**返回**: bool - 是否能解析该元素
-
-```python
-def can_parse(self, element: ET.Element) -> bool:
-    # 检查元素标签和特定子元素
-    if element.tag == 'father':
-        if element.find('skill') is not None:
-            return True
-    return False
+python script/bullet_element.py
+python script/suit.py
+python script/question.py
 ```
 
-### 2. parse(element)
-**功能**: 解析 XML 元素并返回字典结果
-**参数**: 
-- `element`: ET.Element - XML 元素对象
-**返回**: Dict[str, Any] - 解析结果
+也可以 `uv run script/skill_element.py`。
 
-## 自定义解析器示例：SkillFatherParser
+## 解析框架
 
-### 解析逻辑
+基于 lxml。`create_factory()` 每次返回一个新工厂，按三条通道选解析器：
+
+1. `register()`：自定义解析器，按优先级匹配 `can_parse`
+2. `register_tag()` / `register_suffix()`：精确标签或后缀，例如 `obj`、`*B`、`*Arr`
+3. 形态兜底：纯文本、纯属性、文本+属性、嵌套子元素、空元素
+
+属性工厂 `create_attrib_registry()` 同样三条通道，按单个属性选解析器：
+
+1. `register()`：自定义解析器，按优先级匹配 `can_parse(key, value, element)`
+2. `register_name()` / `register_suffix()`：精确属性名或后缀，例如 `name`、`*B`、`*Arr`
+3. 兜底：`safe_eval`
 
 ```python
+factory = create_factory()
+factory.attrib_registry.register_suffix("Url", UrlAttribParser())
+factory.attrib_registry.register_name("lightColor", HexAttribParser())
+```
+
+```python
+from bqyx_parser.parser import create_factory, load_xml, parse_element, parse_xml
+
+root = load_xml("output/v3611/xml/father/skill/name/heroSkill.xml")
+data = parse_element(root)          # 默认工厂
+data = parse_xml(path, factory)     # 读文件并解析
+```
+
+`load_xml` 默认去掉注释和空白文本，并兼容 `<?xmlversion` 这种声明。
+
+## 自定义解析器
+
+继承 `ElementParser`，实现 `parse`。`can_parse` 默认返回 True。基类还提供：
+
+- `parse_attribs(element)` 解析属性
+- `parse_children(element)` 子元素按 tag 分组，单个为值，多个为列表
+- `parse_named_map(element, key)` 把带 name 的子元素收成字典
+- `parse_child_list(element)` 把子元素收成列表
+- `text(element)` / `eval_text(element)` / `safe_eval(value)`
+
+```python
+from bqyx_parser.parser import ElementParser, create_factory, load_xml, parse_element
+
+class TargetParser(ElementParser):
+    def parse(self, element):
+        return (self.text(element) or "").split(",")
+
 class SkillFatherParser(ElementParser):
-    #使用状态判断
-    def can_parse(self, element: ET.Element) -> bool:
-        '''检查是否为包含skill子元素的father元素'''
-        if element.tag == 'father':
-            if element.find('skill') is not None:
-                return True
-        return False
-    # 解析element
-    # text,attrib,childs 的解析可以自己实现
-    # 可使用self.factry self.attrib_registr来递归使用
-    def parse(self, element: ET.Element) -> Dict[str, Any]:
-        result = {} 
-        
-        # 1. 处理元素文本内容（如果有）
-        # result[element.element] = self.safe_eval(element.text)
-        
-        # 2. 解析元素属性 ,也可自己实现,
-        # 此函数，为将解析后的结果，放到result中
-        self.attrib_registr.parse(element, result)
-        
-        # 3. 按标签分组处理子元素
-        result['skills'] = {}
-        for bullet in element:
-            # 递归解析子元素
-            bullet_dict = self.factory.parse_element(bullet)
-            
-            # 使用name作为主键
-            name = bullet_dict.get('name')
+    def can_parse(self, element):
+        return element.tag in {"data", "father"} and element.find("skill") is not None
 
-            result['skills'][name] = bullet_dict
-            
-        return result
+    def parse(self, element):
+        return self.parse_named_map(element, "skills", child_tag="skill")
+
+factory = create_factory()
+factory.register_tag("target", TargetParser())
+factory.register(SkillFatherParser(), 100)
+
+root = load_xml(xml_path)
+result = parse_element(root, factory)
 ```
 
-### 关键特性
+- `register(parser, priority)` 走自定义通道，适合按结构判断
+- `register_tag(tag, parser)` 精确匹配标签
+- `register_suffix(suffix, parser)` 匹配标签后缀
 
-1. **属性解析**: 使用 `attrib_registr` 自动解析元素属性
-2. **递归解析**: 使用 `factory.parse_element()` 递归处理子元素
-3. **结构化数据**: 将子元素按名称分组存储
-4. **eval**: 提供 `safe_eval()` 方法安全处理文本内容，可转换dict,list等基本数据类型
+业务解析器在 `bqyx_parser/parser/module/`。
 
-## 注册和使用
+## 默认规则
 
-### 注册解析器
+- `<obj>"pro":0.35</obj>` -> `{"pro": 0.35}`
+- `<superB>1</superB>` -> `True`
+- `<effectInfoArr>a,b</effectInfoArr>` -> `["a", "b"]`
+- `<dropLevelArr>76,84</dropLevelArr>` -> `[76, 84]`
+- `<cnName>鬼目枪</cnName>` -> `"鬼目枪"`
+- `<lineD size="2"/>` -> `{"size": 2}`
+- 有子元素时，属性 + 子元素组成字典；同名子元素变成列表
+
+属性名以 `B` 结尾时，`true/1` 转成 `True`，其它转成 `False`。
+标签或属性名以 `Arr` 结尾时，按逗号拆成列表，每一项再走 `safe_eval`：数字变成数字，普通文本保持字符串。
+
+## 分类后的 XML
+
+先按有没有 `father` 分成 father / other，再按 father 的子标签拆分：
+
+- `father/skill`
+- `father/body`
+
+然后再按 father 的 `name`、`type` 分：
+
+- `father/skill/name`
+- `father/skill/type`
+
+## 对比工具
+
+解析结果可以和旧 JSON 递归对比：
 
 ```python
-# 创建工厂实例
-factory = get_default_factory()
+from bqyx_parser.tools import compare_data, compare_json
 
-# 注册自定义解析器（数字表示优先级）
-factory.register_parser(SkillFatherParser(), 100)
-factory.register_parser(GrowthObjParser(), 110)
+compare_data(old, new)
+compare_json("achieveClass.json", achieve_result)
 ```
 
-### 解析 XML
+## 测试
 
-```python
-# 直接解析XML文件
-root = direct_parse_xml(xml_path)
-
-# 使用注册的解析器处理元素
-ele_dict = parse_element(root, element_factory=factory)
+```text
+python test/parser_factory_test.py
+python test/compare_test.py
 ```
-
-### 反编译
-
-local版本号 反编译后的xml为非法，需要处理
-先将非法注释消掉，还有一些attrib <name:"abc"age:15> 有些属性挨着一块，需要加空格
-
-# 分类后的xml
-
-先根据father，和other分出去
-然后根据father的所有child，拆分  如一堆skill和一堆body元素
-father/skill
-father/body
-然后再根据father的name,type分
-father/skill/name
-father/skill/type
-
-
-# todo
-
-原生 xml 使用时各种bug 会将 注释当成text,  拆分某个元素再转string时，会导致注释影响xml数状结构
-而且没有获取父类元素的方法
-
-建议使用 lxml 使用了c语言加速 修复了各种bug
-如果要有类型提示，请使用
-uv pip install -U types-lxml  # using uv
-pip install -U types-lxml  # using pip
-
