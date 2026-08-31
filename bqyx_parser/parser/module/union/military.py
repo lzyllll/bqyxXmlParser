@@ -11,6 +11,11 @@ from bqyx_parser.parser.xml import Element, has_children
 from bqyx_parser.tools.gift_str import parse_gift_string
 
 from bqyx_parser.parser import load_xml, parse_element
+from bqyx_parser.tools.compare import compare_data
+from bqyx_parser.tools.logger import get_logger
+
+logger = get_logger()
+
 class LevelParser(ElementParser):
     """
     <level>
@@ -45,5 +50,12 @@ if __name__ == "__main__":
     military_result = parse_element(load_xml(xml_path), create_military_factory())
     military_result = military_result.get('level', [])
 
+
     with open(output_path, "w", encoding="utf-8") as f:
-        f.write(json.dumps(military_result, ensure_ascii=False, indent=2))
+        json.dump(military_result, f, ensure_ascii=False, indent=2)
+    logger.info("已保存 %s", output_path)
+    resource_path = Path(r"D:\bqyx\rs\resource\union\military.json")
+    with open(resource_path, "r", encoding="utf-8") as f:
+        old = json.load(f)
+    logger.info("对比 %s", resource_path)
+    compare_data(old, military_result)

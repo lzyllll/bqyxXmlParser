@@ -7,6 +7,9 @@ from bqyx_parser.parser.element.base import ElementParser
 from bqyx_parser.parser.factory import create_factory
 from bqyx_parser.parser.xml import Element, load_xml, parse_element
 from bqyx_parser.tools.compare import compare_data
+from bqyx_parser.tools.logger import get_logger
+
+logger = get_logger()
 
 class DataRootParser(ElementParser):
     """<data> 全是 <pro>，"""
@@ -47,9 +50,9 @@ if __name__ == "__main__":
     )
     with open(output_medel_property_path, "w", encoding="utf-8") as f:
         json.dump(medel_result, f, ensure_ascii=False, indent=4)
-
-    # with open(r"D:\bqyx\rs\resource\achieve\medelPropertyClass.json",'r') as f:
-    #     r = json.load(f)
-    #     print(len(r))
-    #     print("=== 数据对比结果 ===")
-    #     compare_data(r, medel_result                                                                            )
+    logger.info("已保存 %s", output_medel_property_path)
+    resource_path = Path(r"D:\bqyx\rs\resource\achieve\medelPropertyClass.json")
+    with open(resource_path, "r", encoding="utf-8") as f:
+        old = json.load(f)
+    logger.info("对比 %s", resource_path)
+    compare_data(old, medel_result)

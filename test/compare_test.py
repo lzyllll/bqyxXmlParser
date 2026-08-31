@@ -32,11 +32,29 @@ class TestCompareData(unittest.TestCase):
         )
         self.assertTrue(any("endless10.medelProArr" in line and "类型变化" in line for line in diffs))
 
-    def test_list_length_and_values(self):
+    def test_list_ignores_order(self):
+        self.assertEqual(compare_data(["def", "abc"], ["abc", "def"], print_diff=False), [])
+
+    def test_list_set_diff(self):
         diffs = compare_data([1, 2], [1, 3, 4], print_diff=False)
-        self.assertIn("[长度变化] <root>: 长度 2 -> 3", diffs)
-        self.assertIn("[值变化] [1]: 2 -> 3", diffs)
-        self.assertIn("[新增元素] [2] = 4", diffs)
+        self.assertIn("[删除元素] <root> = 2", diffs)
+        self.assertIn("[新增元素] <root> = 3", diffs)
+        self.assertIn("[新增元素] <root> = 4", diffs)
+
+    def test_list_of_dicts_by_name_ignores_order(self):
+        old = [{"name": "abc", "n": 1}, {"name": "def", "n": 2}]
+        new = [{"name": "def", "n": 2}, {"name": "abc", "n": 1}]
+        self.assertEqual(compare_data(old, new, print_diff=False), [])
+
+    def test_list_of_dicts_by_name_diff(self):
+        diffs = compare_data(
+            [{"name": "a", "n": 1}, {"name": "b", "n": 2}],
+            [{"name": "b", "n": 3}, {"name": "c", "n": 4}],
+            print_diff=False,
+        )
+        self.assertIn("[删除] a = {'name': 'a', 'n': 1}", diffs)
+        self.assertIn("[新增] c = {'name': 'c', 'n': 4}", diffs)
+        self.assertIn("[值变化] b.n: 2 -> 3", diffs)
 
     def test_compare_json_file(self):
         with tempfile.TemporaryDirectory() as tmp:

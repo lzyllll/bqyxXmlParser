@@ -120,7 +120,8 @@ if __name__ == "__main__":
     import json
     from pathlib import Path
     from bqyx_parser.parser import load_xml, parse_element
-    from bqyx_parser.tools.jsonfile import save_to_json
+    from bqyx_parser.tools.compare import compare_data
+    from bqyx_parser.tools.logger import get_logger
 
     xml_dir = Path(r"compiled\v3671\xml")
     out_put_dir = Path(r"output\v3671\json\things")
@@ -137,18 +138,36 @@ if __name__ == "__main__":
     thingsdict = parse_element(load_xml(xml_things), factory)
     chipdict = parse_element(load_xml(xml_chip), factory)
 
-    with open(out_put_dir / "things90Class.json", "w", encoding="utf-8") as f:
-        f.write(json.dumps(things90dict, ensure_ascii=False, indent=2))
-    with open(out_put_dir / "partsClass.json", "w", encoding="utf-8") as f:
-        f.write(json.dumps(partsdict, ensure_ascii=False, indent=2))
-    with open(out_put_dir / "thingsClass.json", "w", encoding="utf-8") as f:
-        f.write(json.dumps(thingsdict, ensure_ascii=False, indent=2))
-    with open(out_put_dir / "chipClass.json", "w", encoding="utf-8") as f:
-        f.write(json.dumps(chipdict, ensure_ascii=False, indent=2))
+    logger = get_logger()
 
-    # with open(r"D:\bqyx\rs\resource\things\thingsClass.json", "r", encoding="utf-8") as f:
-    #     r = json.load(f)
-    #     print(len(r))
-    #     print("=== 数据对比结果 ===")
-    #     from bqyx_parser.tools.compare import compare_data
-    #     compare_data(r, thingsdict)   
+    with open(out_put_dir / "things90Class.json", "w", encoding="utf-8") as f:
+        json.dump(things90dict, f, ensure_ascii=False, indent=2)
+    logger.info("已保存 things90Class.json")
+    with open(r"D:\bqyx\rs\resource\things\things90Class.json", "r", encoding="utf-8") as f:
+        old = json.load(f)
+    logger.info("对比 things90Class.json")
+    compare_data(old, things90dict)
+
+    with open(out_put_dir / "partsClass.json", "w", encoding="utf-8") as f:
+        json.dump(partsdict, f, ensure_ascii=False, indent=2)
+    logger.info("已保存 partsClass.json")
+    with open(r"D:\bqyx\rs\resource\things\partsClass.json", "r", encoding="utf-8") as f:
+        old = json.load(f)
+    logger.info("对比 partsClass.json")
+    compare_data(old, partsdict)
+
+    with open(out_put_dir / "thingsClass.json", "w", encoding="utf-8") as f:
+        json.dump(thingsdict, f, ensure_ascii=False, indent=2)
+    logger.info("已保存 thingsClass.json")
+    with open(r"D:\bqyx\rs\resource\things\thingsClass.json", "r", encoding="utf-8") as f:
+        old = json.load(f)
+    logger.info("对比 thingsClass.json")
+    compare_data(old, thingsdict)
+
+    with open(out_put_dir / "chipClass.json", "w", encoding="utf-8") as f:
+        json.dump(chipdict, f, ensure_ascii=False, indent=2)
+    logger.info("已保存 chipClass.json")
+    with open(r"D:\bqyx\rs\resource\things\chipClass.json", "r", encoding="utf-8") as f:
+        old = json.load(f)
+    logger.info("对比 chipClass.json")
+    compare_data(old, chipdict)

@@ -8,7 +8,10 @@ from bqyx_parser.parser.factory import create_factory
 from bqyx_parser.parser.xml import Element
 from bqyx_parser.parser import load_xml, parse_element
 from bqyx_parser.tools.compare import compare_data
+from bqyx_parser.tools.logger import get_logger
 from bqyx_parser.tools.property import parse_property
+
+logger = get_logger()
 class DataRootParser(ElementParser):
     """<data> 下若全是 <gather>，开始解析 gather 并更新每个成就的gather字段"""
 
@@ -125,16 +128,21 @@ if __name__ == "__main__":
 
     father_gather_result = generate_achieveGatherFatherMap(xml_path)
     achieve_result = parse_element(load_xml(xml_path), create_achieve_factory())
+
     with open(output_achievefatherGather_path, "w", encoding="utf-8") as f:
         json.dump(father_gather_result, f, ensure_ascii=False, indent=2)
+    logger.info("已保存 %s", output_achievefatherGather_path)
+    resource_father_path = Path(r"D:\bqyx\rs\resource\achieve\achieveFatherClass.json")
+    with open(resource_father_path, "r", encoding="utf-8") as f:
+        old = json.load(f)
+    logger.info("对比 %s", resource_father_path)
+    compare_data(old, father_gather_result)
 
     with open(output_achieve_path, "w", encoding="utf-8") as f:
         json.dump(achieve_result, f, ensure_ascii=False, indent=2)
-
-    # with open(r"D:\bqyx\rs\resource\achieve\achieveClass.json",'r') as f:
-    #     r = json.load(f)
-    #     print(len(r))
-    #     print("=== 数据对比结果 ===")
-    #     compare_data(r, achieve_result)
-
-    
+    logger.info("已保存 %s", output_achieve_path)
+    resource_achieve_path = Path(r"D:\bqyx\rs\resource\achieve\achieveClass.json")
+    with open(resource_achieve_path, "r", encoding="utf-8") as f:
+        old = json.load(f)
+    logger.info("对比 %s", resource_achieve_path)
+    compare_data(old, achieve_result)
