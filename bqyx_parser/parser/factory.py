@@ -19,6 +19,7 @@ from bqyx_parser.parser.element.defaults import (
     EmptyElementParser,
     EndWithArrParser,
     EndWithBParser,
+    EndWithList,
     GiftParser,
     HurtArrParser,
     NestedElementParser,
@@ -321,6 +322,7 @@ def create_factory(
     factory.register_suffix("B", EndWithBParser())
     factory.register_suffix("Arr", EndWithArrParser())
     factory.register_suffix("ArrCn", EndWithArrParser())
+    factory.register_suffix("List", EndWithList())
     factory.register_fallback(GiftParser(), 6)
     factory.register_fallback(ObjParser(), 5)
     factory.register_fallback(ParserArrParser(), 4)

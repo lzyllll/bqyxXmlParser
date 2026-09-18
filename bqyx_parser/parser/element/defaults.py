@@ -11,6 +11,16 @@ from bqyx_parser.tools.gift_str import parse_gift_string
 from bqyx_parser.tools.split import clean_split_text
 
 
+
+class EndWithList(ElementParser):
+    """标签以 List 结尾时，按逗号拆成列表。比如btnList"""
+
+    def can_parse(self, element: Element) -> bool:
+        return isinstance(element.tag, str) and element.tag.endswith("List") and has_text(element)
+
+    def parse(self, element: Element) -> list[Any]:
+        return [safe_eval(a) for a in clean_split_text(element.text, ",")]
+
 class HurtArrParser(ElementParser):
     """
     <hurtArr>
