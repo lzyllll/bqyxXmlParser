@@ -7,3 +7,4 @@ persistent_state.ini
 __pycache__/
 *.pyc
 .idea/
+temp_*/

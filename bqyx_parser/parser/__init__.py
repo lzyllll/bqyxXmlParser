@@ -31,7 +31,7 @@ from bqyx_parser.parser.xml import (
     Element,
     load_xml,
     load_xml_files,
-    parse_element,
+    parse_element_by_factory,
     parse_xml,
 )
 
@@ -62,7 +62,7 @@ __all__ = [
     "load_xml_files",
     "parse_arr",
     "parse_bool_flag",
-    "parse_element",
+    "parse_element_by_factory",
     "parse_xml",
     "safe_eval",
 ]

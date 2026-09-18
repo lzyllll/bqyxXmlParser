@@ -1,52 +1,71 @@
+from __future__ import annotations
+
 from pathlib import Path
-from lxml import etree as ET
+from typing import Any
 
-def parse_property(xml_path: Path) -> list:
-    """
-    读取XML文件，返回属性字典列表，每个字典包含所有XML属性和dataArr
-    例如
-    <pro name="strengthen" cnName="强化" unit="" fixedNum="0">
-        100%
-        40%
-        30%
-    </pro>
-    
-    """
-    tree = ET.parse(xml_path)
-    root = tree.getroot()
+from bqyx_parser.parser.convert import safe_eval
+from bqyx_parser.parser.xml import Element, load_xml
 
-    result = []
-    for pro_node in root.findall(".//pro"):  # 递归查找所有<pro>
-        # 1. 复制所有XML属性（如 name, cnName, unit 等）
-        item = dict(pro_node.attrib)
-        # 强制int属性
-        for int_attr in ["fixedNum",'maxLv']:
-            if int_attr in item:
-                try:
-                    item[int_attr] = int(item[int_attr])
-                except ValueError:
-                    item[int_attr] = 0  # 如果无法转换为整数，设置为0
-        # 2. 解析文本内容（多行数值）
+
+def parse_pro_node(pro_node: Element) -> dict[str, Any]:
+    """解析单个 <pro> 节点。"""
+    item: dict[str, Any] = {}
+    for k, v in pro_node.attrib.items():
+        if k in ("fixedNum", "maxLv"):
+            try:
+                item[k] = int(v)
+            except ValueError:
+                item[k] = 0
+        elif k.endswith("B"):
+            item[k] = v in ("1", "true", True, 1)
+        elif k in ("name", "cnName", "unit", "gatherColor"):
+            item[k] = str(v)
+        elif "~" in str(v):
+            parts = str(v).split("~")
+            item[k] = [safe_eval(p) for p in parts]
+        else:
+            item[k] = safe_eval(v)
+
+    raw_text = (pro_node.text or "").strip()
+    if raw_text:
         data_arr = []
-        raw_text = pro_node.text or ""
         for line in raw_text.splitlines():
             line = line.strip()
             if not line:
                 continue
-            # 去除末尾的 %（如果有）
             if line.endswith("%"):
                 line = line[:-1]
+                item["unit"] = "%"
             try:
-                # 转为浮点数（如果全是整数，可以改为 int）
                 val = float(line)
-                if val.is_integer():
-                    data_arr.append(int(val))
-                else:
-                    data_arr.append(val)
+                data_arr.append(int(val) if val.is_integer() else val)
             except ValueError:
-                pass  # 忽略非数字行
+                pass
         item["dataArr"] = data_arr
-        
-        result.append(item)
 
-    return result
+    return item
+
+
+def parse_property(xml_path: str | Path) -> list[dict[str, Any]] | dict[str, list[dict[str, Any]]]:
+    """
+    读取 XML 文件，返回属性字典列表或按分组划分的字典。
+    1. 若根节点下直接为 <pro>，返回 list[dict]；
+    2. 若根节点下按分类分组（如 <base><pro/></base><bullet><pro/></bullet>），返回 dict[str, list[dict]]；
+    3. 兜底返回所有递归查找到的 <pro> 列表。
+    """
+    root = load_xml(xml_path)
+
+    direct_pros = [c for c in root if isinstance(c.tag, str) and c.tag == "pro"]
+    if direct_pros:
+        return [parse_pro_node(p) for p in direct_pros]
+
+    containers: dict[str, list[dict[str, Any]]] = {}
+    for child in root:
+        if isinstance(child.tag, str):
+            pros = [c for c in child if isinstance(c.tag, str) and c.tag == "pro"]
+            if pros:
+                containers[child.tag] = [parse_pro_node(p) for p in pros]
+    if containers:
+        return containers
+
+    return [parse_pro_node(p) for p in root.findall(".//pro")]

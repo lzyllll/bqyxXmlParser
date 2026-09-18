@@ -1,14 +1,16 @@
-"""从反编译后的 AS3 中提取加载器和版本常量。"""
+"""从反编译后的 AS3 中提取加载器、版本常量和 DefineGroup 模块映射。"""
 import logging
 import re
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
+from bqyx_parser.extractor.define_group import extract_define_modules as parse_define_modules
+
 logger = logging.getLogger(__name__)
 
 
 class BqAS3Parser:
-    """读取 Gaming.as 和 ConstantDefine.as。"""
+    """读取 Gaming.as、ConstantDefine.as 和 DefineGroup.as。"""
 
     def extract_swf_loaders(self, project_path: Path) -> List[Tuple[str, str, str]]:
         """提取 swfLoaderManager.addSWFLoader 配置，返回 (路径, 名称, 类型)。"""
@@ -49,3 +51,15 @@ class BqAS3Parser:
         except Exception as exc:
             logger.error("提取常量定义失败: %s", exc)
             return empty
+
+    def extract_define_modules(self, project_path: Path) -> Dict[str, List[str]]:
+        """从 DefineGroup.init() 提取模块到 xmlOut 文件名映射。"""
+        file_path = project_path / "dataAll/_data/DefineGroup.as"
+        if not file_path.exists():
+            logger.error("文件不存在: %s", file_path)
+            return {}
+        try:
+            return parse_define_modules(file_path)
+        except Exception as exc:
+            logger.error("提取 DefineGroup 模块映射失败: %s", exc)
+            return {}

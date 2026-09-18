@@ -6,8 +6,7 @@ from pathlib import Path
 from bqyx_parser.parser.element.base import ElementParser
 from bqyx_parser.parser.factory import create_factory
 from bqyx_parser.parser.xml import Element
-from bqyx_parser.parser import load_xml, parse_element
-from bqyx_parser.tools.compare import compare_data
+from bqyx_parser.parser import load_xml, parse_element_by_factory
 from bqyx_parser.tools.logger import get_logger
 from bqyx_parser.tools.property import parse_property
 
@@ -25,7 +24,7 @@ class DataRootParser(ElementParser):
         merged: list[dict[str, Any]] = []
         for gather in element:
             if isinstance(gather.tag, str) and gather.tag == "gather":
-                merged.extend(self.factory.parse(gather))
+                merged.extend(self.parser_element(gather))
         #转字典
         merged_dict = {achieve['name']: achieve for achieve in merged}
         return merged_dict
@@ -45,7 +44,7 @@ class GatherParser(ElementParser):
         merged: list[dict[str, Any]] = []
         for father in element:
             if isinstance(father.tag, str) and father.tag == "father":
-                achieves:list[dict[str, Any]] = self.factory.parse(father)
+                achieves:list[dict[str, Any]] = self.parser_element(father)
                 for achieve in achieves:
                     achieve.update(
                         {
@@ -68,7 +67,7 @@ class FatherParser(ElementParser):
         achieves: list[dict[str, Any]] = []
         for achieve in element:
             if isinstance(achieve.tag, str) and achieve.tag == "achieve":
-                parsed:dict = self.factory.parse(achieve)
+                parsed:dict = self.parser_element(achieve)
                 parsed.update({
                     'father': element.get('name'),
                 })
@@ -113,36 +112,29 @@ def generate_achieveGatherFatherMap(xml_path):
     return father_gather_list
 
 
-if __name__ == "__main__":
-    xml_dir = Path(r"compiled\v3671\xml")
-    out_put_dir = Path(r"output\v3671\json\achieve")
+def run(xml_dir: Path | None = None, out_put_dir: Path | None = None) -> None:
+    if xml_dir is None:
+        xml_dir = Path(r"compiled\v3671\xml")
+    if out_put_dir is None:
+        out_put_dir = Path(r"output\v3671\json\achieve")
     out_put_dir.mkdir(parents=True, exist_ok=True)
-    xml_path = xml_dir / "achieve.xml"
-    medel_property_path = out_put_dir / "medelProperty.json"
 
+    xml_path = xml_dir / "achieve.xml"
     output_achieve_path = out_put_dir / "achieve.json"
     output_achievefatherGather_path = out_put_dir / "achieveFatherGather.json"
-    output_medel_property_path = out_put_dir / "medelProperty.json"
 
-
-
+    logger.info("解析 %s", xml_path)
     father_gather_result = generate_achieveGatherFatherMap(xml_path)
-    achieve_result = parse_element(load_xml(xml_path), create_achieve_factory())
+    achieve_result = parse_element_by_factory(load_xml(xml_path), create_achieve_factory())
 
     with open(output_achievefatherGather_path, "w", encoding="utf-8") as f:
         json.dump(father_gather_result, f, ensure_ascii=False, indent=2)
     logger.info("已保存 %s", output_achievefatherGather_path)
-    resource_father_path = Path(r"D:\bqyx\rs\resource\achieve\achieveFatherClass.json")
-    with open(resource_father_path, "r", encoding="utf-8") as f:
-        old = json.load(f)
-    logger.info("对比 %s", resource_father_path)
-    compare_data(old, father_gather_result)
 
     with open(output_achieve_path, "w", encoding="utf-8") as f:
         json.dump(achieve_result, f, ensure_ascii=False, indent=2)
     logger.info("已保存 %s", output_achieve_path)
-    resource_achieve_path = Path(r"D:\bqyx\rs\resource\achieve\achieveClass.json")
-    with open(resource_achieve_path, "r", encoding="utf-8") as f:
-        old = json.load(f)
-    logger.info("对比 %s", resource_achieve_path)
-    compare_data(old, achieve_result)
+
+
+if __name__ == "__main__":
+    run()

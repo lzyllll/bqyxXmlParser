@@ -14,6 +14,7 @@ from bqyx_parser.extractor import (
     copy_fashion_image,
     copy_fashion_svg,
     extract_swf_urls,
+    save_define_modules_json,
 )
 from bqyx_parser.tools import FileProcessor, load_last_main_swf, load_last_version, save_main_swf_info
 
@@ -76,10 +77,18 @@ class BQYXParserApp:
 
         exporter = FFDecExporter(input_swf=game_swf_path, output_dir=main_game_compiled)
         # 只导出需要的 AS3，避免整包脚本全导出
-        exporter.export_scripts(select_classes=["Gaming", "dataAll._data.ConstantDefine"])
+        exporter.export_scripts(
+            # select_classes=[
+            #     "Gaming",
+            #     "dataAll._data.ConstantDefine",
+            #     "dataAll._data.DefineGroup",
+            # ]
+        )
 
         main_game_project = main_game_compiled / "scripts"
         version_dic = self.as3_extractor.extract_specific_constants(main_game_project)
+        self.extract_define_module_map(main_game_project)
+
         if "xmlSwfUrl" in version_dic:
             await self.downloader.download(version_dic["xmlSwfUrl"])
             xml_swf = self.downloader.root_dir / version_dic["xmlSwfUrl"]
@@ -91,6 +100,22 @@ class BQYXParserApp:
             await self._download_all_swf_files(main_game_project, xml_compiled)
 
         logger.info("所有操作完成！")
+
+    def extract_define_module_map(self, project_path: Path) -> dict[str, list[str]]:
+        """从 DefineGroup.as 提取模块 XML 映射，保存到 output/<version>/define_modules.json。"""
+        modules = self.as3_extractor.extract_define_modules(project_path)
+        if not modules:
+            logger.warning("未提取到 DefineGroup 模块映射")
+            return {}
+
+        output_path = Path("output") / self.version / "define_modules.json"
+        save_define_modules_json(modules, output_path)
+        logger.info(
+            "DefineGroup 模块映射已保存: %s (%d modules)",
+            output_path,
+            len(modules),
+        )
+        return modules
 
     async def _download_all_swf_files(self, project_path: Path, xml_dir: Path) -> None:
         """合并 XML 与 AS3 中的 SWF 路径后批量下载。"""

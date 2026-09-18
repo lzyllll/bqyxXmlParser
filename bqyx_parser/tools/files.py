@@ -151,7 +151,7 @@ class FileProcessor:
         filename = file_path.name
 
         # 移除数字前缀和 XMLOut 部分
-        pattern = r'^\d+_XMLOut_+'
+        pattern = r'^\d+_XMLOut_'
         match = re.match(pattern, filename)
         if match:
             # 移除数字_XMLOut_部分

@@ -12,6 +12,15 @@ Element = etree._Element
 _DEFAULT_FACTORY = None
 
 
+def get_father_name(element: Element) -> str | None:
+    """获取 <father> 的 name 属性，若不存在则尝试 type 属性。"""
+    if element.tag != "father":
+        return None
+    name = element.attrib.get("name")
+    if name is None:
+        name = element.attrib.get("type")
+    return name
+
 def element_text(element: Element) -> str | None:
     """返回去掉首尾空白的文本，空则 None。"""
     if element.text is None:
@@ -62,8 +71,8 @@ def _normalize_declaration(data: bytes) -> bytes:
     # 反编译产物里偶尔会出现 <?xmlversion
     stripped = data.lstrip()
     if stripped.startswith(b"<?xmlversion"):
-        return data.replace(b"<?xmlversion", b"<?xml version", 1)
-    return data
+        return stripped.replace(b"<?xmlversion", b"<?xml version", 1)
+    return stripped
 
 
 def load_xml(
@@ -95,7 +104,7 @@ def load_xml_files(paths: Iterable[str | Path], **kwargs: Any) -> list[Element]:
     return roots
 
 
-def parse_element(element: Element, factory=None) -> Any:
+def parse_element_by_factory(element: Element, factory=None) -> Any:
     """用指定工厂解析一个元素；未传工厂时复用默认工厂。"""
     global _DEFAULT_FACTORY
     if factory is None:
@@ -109,4 +118,4 @@ def parse_element(element: Element, factory=None) -> Any:
 
 def parse_xml(source: str | Path | bytes, factory=None, **kwargs: Any) -> Any:
     """加载 XML 并解析根元素。"""
-    return parse_element(load_xml(source, **kwargs), factory=factory)
+    return parse_element_by_factory(load_xml(source, **kwargs), factory=factory)

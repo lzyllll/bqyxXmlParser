@@ -56,6 +56,26 @@ class TestCompareData(unittest.TestCase):
         self.assertIn("[新增] c = {'name': 'c', 'n': 4}", diffs)
         self.assertIn("[值变化] b.n: 2 -> 3", diffs)
 
+    def test_list_of_dicts_by_lv_diff(self):
+        diffs = compare_data(
+            [{"lv": 1, "n": 1}, {"lv": 2, "n": 2}],
+            [{"lv": 2, "n": 3}, {"lv": 3, "n": 4}],
+            print_diff=False,
+        )
+        self.assertIn("[删除] 1 = {'lv': 1, 'n': 1}", diffs)
+        self.assertIn("[新增] 3 = {'lv': 3, 'n': 4}", diffs)
+        self.assertIn("[值变化] 2.n: 2 -> 3", diffs)
+
+    def test_list_of_dicts_by_cn_name_diff(self):
+        diffs = compare_data(
+            [{"cnName": "排名", "proUrl": "rank"}, {"cnName": "积分", "proUrl": "old"}],
+            [{"cnName": "积分", "proUrl": "score"}, {"cnName": "用户名", "proUrl": "extraObj.player"}],
+            print_diff=False,
+        )
+        self.assertIn("[删除] 排名 = {'cnName': '排名', 'proUrl': 'rank'}", diffs)
+        self.assertIn("[新增] 用户名 = {'cnName': '用户名', 'proUrl': 'extraObj.player'}", diffs)
+        self.assertIn("[值变化] 积分.proUrl: 'old' -> 'score'", diffs)
+
     def test_compare_json_file(self):
         with tempfile.TemporaryDirectory() as tmp:
             old_path = Path(tmp) / "old.json"

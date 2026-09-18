@@ -1,6 +1,5 @@
-"""工具：配置、文件处理、XML 分类、JSON 保存。"""
+"""工具：配置、文件处理、JSON 保存。"""
 
-from bqyx_parser.tools.classify import classify_xml
 from bqyx_parser.tools.compare import compare_data, compare_json
 from bqyx_parser.tools.config import (
     load_FFDEC_path,
@@ -15,7 +14,6 @@ from bqyx_parser.tools.logger import add_file_handler, get_logger
 __all__ = [
     "FileProcessor",
     "add_file_handler",
-    "classify_xml",
     "compare_data",
     "compare_json",
     "get_logger",

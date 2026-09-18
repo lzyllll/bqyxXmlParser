@@ -17,6 +17,8 @@ class FFDecExporter:
         'movie',
         'script',
         'shape',
+        'sprite',
+        'button',
         'symbolClass',
         'text'
     }
@@ -34,21 +36,22 @@ class FFDecExporter:
         初始化FFDec导出器
 
         Args:
-            ffdec_path (str): FFDec可执行文件的路径
             input_swf (Path|str): 输入的SWF文件路径
             output_dir (Path|str): 输出目录路径
         """
         self.input_swf = str(input_swf)
         self.output_dir = str(output_dir)
 
-    def export(self, export_types='all', select_classes=None):
+    def export(self, export_types='all', select_classes=None, formats=None, select_id=None):
         """
         导出SWF文件中的资源
-        export_scripts(['com.example.MyClass', 'com.example.SecondClass'])
+
         Args:
             export_types (set/list/str): 要导出的资源类型，如果为all则默认导出所有支持的类型
                                        可以是单个类型字符串或类型列表/集合
             select_classes (list, optional): 要导出的AS3类名列表 仅仅用于scripts
+            formats (str/list/dict, optional): 导出格式，例如 'sprite:svg' 或 {'sprite': 'svg'}
+            select_id (str/list/int, optional): 指定导出的 character ID 范围
         """
         
         # 检查输入文件是否存在
@@ -61,11 +64,11 @@ class FFDecExporter:
             # 默认导出所有支持的类型
             types_to_export = {'all'}
         elif isinstance(export_types, str):
-            # 单个类型
-            types_to_export = {export_types}
+            # 单个类型（支持以逗号分隔的多个类型）
+            types_to_export = [t.strip() for t in export_types.split(',') if t.strip()]
         else:
             # 列表或集合
-            types_to_export = set(export_types)
+            types_to_export = list(export_types)
         # 将类型列表转换为逗号分隔的字符串
         export_types_str = ','.join(types_to_export)
 
@@ -73,6 +76,24 @@ class FFDecExporter:
         cmd = [
             self.ffdec_path
         ]
+
+        # 格式参数 (-format)
+        if formats:
+            if isinstance(formats, dict):
+                format_str = ','.join(f"{k}:{v}" for k, v in formats.items())
+            elif isinstance(formats, (list, tuple, set)):
+                format_str = ','.join(formats)
+            else:
+                format_str = str(formats)
+            cmd.extend(["-format", format_str])
+
+        # 如果指定了 select_id
+        if select_id:
+            if isinstance(select_id, (list, tuple, set)):
+                id_str = ','.join(str(i) for i in select_id)
+            else:
+                id_str = str(select_id)
+            cmd.extend(["-selectid", id_str])
         
         # 如果指定了要导出的类，先添加-selectclass参数
         if select_classes:
@@ -106,6 +127,7 @@ class FFDecExporter:
         except Exception as e:
             print(f"发生未预期的错误: {e}")
             return False
+
     def export_scripts(self, select_classes=None):
         """
         导出脚本资源
@@ -119,17 +141,21 @@ class FFDecExporter:
         """只导出binaryData资源"""
         return self.export('binaryData')
 
-    def export_images(self):
+    def export_images(self, formats=None):
         """只导出images资源"""
-        return self.export('image')
+        return self.export('image', formats=formats)
+
+    def export_sprites(self, formats='sprite:svg', select_id=None):
+        """导出sprites资源，默认转为 SVG"""
+        return self.export('sprite', formats=formats, select_id=select_id)
 
     def export_symbol_class(self):
         """只导出symbolClass资源"""
         return self.export('symbolClass')
 
-    def export_shapes(self):
+    def export_shapes(self, formats='shape:svg'):
         """只导出shapes资源"""
-        return self.export('shape')
+        return self.export('shape', formats=formats)
 
     def export_all(self):
         return self.export(export_types='all')

@@ -24,7 +24,7 @@ class DataRootParser(ElementParser):
         merged: list[dict[str, Any]] = []
         for child in element:
             if isinstance(child.tag, str) and child.tag == "father":
-                parsed = self.factory.parse(child)
+                parsed = self.parser_element(child)
                 merged.extend(parsed)
 
         return [m for m in merged]
@@ -50,7 +50,7 @@ class FatherChildrenParser(ElementParser):
         for child in element:
             if not isinstance(child.tag, str):
                 continue
-            parsed = self.factory.parse(child)
+            parsed = self.parser_element(child)
             if element.get("name") != None:
                 parsed.update({
                     'father': element.get('name'),
@@ -115,16 +115,16 @@ def create_things_factory():
     return factory
 
 
-if __name__ == "__main__":
-    # 端到端小验证：things90.xml vs things90Class.json
+def run(xml_dir: Path | None = None, out_put_dir: Path | None = None) -> None:
     import json
     from pathlib import Path
-    from bqyx_parser.parser import load_xml, parse_element
-    from bqyx_parser.tools.compare import compare_data
+    from bqyx_parser.parser import load_xml, parse_element_by_factory
     from bqyx_parser.tools.logger import get_logger
 
-    xml_dir = Path(r"compiled\v3671\xml")
-    out_put_dir = Path(r"output\v3671\json\things")
+    if xml_dir is None:
+        xml_dir = Path(r"compiled\v3671\xml")
+    if out_put_dir is None:
+        out_put_dir = Path(r"output\v3671\json\things")
     out_put_dir.mkdir(parents=True, exist_ok=True)
 
     factory = create_things_factory()
@@ -133,41 +133,52 @@ if __name__ == "__main__":
     xml_things = xml_dir / "things.xml"
     xml_chip = xml_dir / "chip.xml"
 
-    things90dict = parse_element(load_xml(xml_things90), factory)
-    partsdict = parse_element(load_xml(xml_parts), factory)
-    thingsdict = parse_element(load_xml(xml_things), factory)
-    chipdict = parse_element(load_xml(xml_chip), factory)
+    things90dict = parse_element_by_factory(load_xml(xml_things90), factory)
+    partsdict = parse_element_by_factory(load_xml(xml_parts), factory)
+    thingsdict = parse_element_by_factory(load_xml(xml_things), factory)
+    chipdict = parse_element_by_factory(load_xml(xml_chip), factory)
 
     logger = get_logger()
 
     with open(out_put_dir / "things90Class.json", "w", encoding="utf-8") as f:
         json.dump(things90dict, f, ensure_ascii=False, indent=2)
     logger.info("已保存 things90Class.json")
-    with open(r"D:\bqyx\rs\resource\things\things90Class.json", "r", encoding="utf-8") as f:
-        old = json.load(f)
-    logger.info("对比 things90Class.json")
-    compare_data(old, things90dict)
 
     with open(out_put_dir / "partsClass.json", "w", encoding="utf-8") as f:
         json.dump(partsdict, f, ensure_ascii=False, indent=2)
     logger.info("已保存 partsClass.json")
-    with open(r"D:\bqyx\rs\resource\things\partsClass.json", "r", encoding="utf-8") as f:
-        old = json.load(f)
-    logger.info("对比 partsClass.json")
-    compare_data(old, partsdict)
 
     with open(out_put_dir / "thingsClass.json", "w", encoding="utf-8") as f:
         json.dump(thingsdict, f, ensure_ascii=False, indent=2)
     logger.info("已保存 thingsClass.json")
-    with open(r"D:\bqyx\rs\resource\things\thingsClass.json", "r", encoding="utf-8") as f:
-        old = json.load(f)
-    logger.info("对比 thingsClass.json")
-    compare_data(old, thingsdict)
 
     with open(out_put_dir / "chipClass.json", "w", encoding="utf-8") as f:
         json.dump(chipdict, f, ensure_ascii=False, indent=2)
     logger.info("已保存 chipClass.json")
-    with open(r"D:\bqyx\rs\resource\things\chipClass.json", "r", encoding="utf-8") as f:
-        old = json.load(f)
-    logger.info("对比 chipClass.json")
-    compare_data(old, chipdict)
+
+    # 生成 blackArmsChip / blackEquipChip / rareArmsChip
+    from bqyx_parser.parser.module.things.chip import generate_all_chips
+
+    base_json_dir = out_put_dir.parent
+    arms_path = base_json_dir / "arms" / "armsClass.json"
+    if not arms_path.is_file():
+        arms_path = out_put_dir / "armsClass.json"
+
+    black_equip_path = base_json_dir / "equip" / "blackEquip.json"
+    if not black_equip_path.is_file():
+        black_equip_path = out_put_dir / "blackEquip.json"
+
+    if arms_path.is_file() and black_equip_path.is_file():
+        arms_data = json.loads(arms_path.read_text(encoding="utf-8"))
+        black_equip_data = json.loads(black_equip_path.read_text(encoding="utf-8"))
+        chips_result = generate_all_chips(chipdict, arms_data, black_equip_data)
+
+        for chip_name, data in chips_result.items():
+            out_file = out_put_dir / f"{chip_name}.json"
+            with open(out_file, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+            logger.info("已保存 %s (共 %d 条)", out_file, len(data))
+
+
+if __name__ == "__main__":
+    run()

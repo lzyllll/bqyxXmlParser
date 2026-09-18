@@ -9,6 +9,9 @@ from bqyx_parser.parser.attrib.defaults import (
     EndWithArrAttribParser,
     EndWithBAttribParser,
     NameAttribParser,
+    ParserArrAttribParser,
+    addObjJsonAttribParser,
+    lightColorParser
 )
 from bqyx_parser.parser.element.base import ElementParser
 from bqyx_parser.parser.element.defaults import (
@@ -17,10 +20,15 @@ from bqyx_parser.parser.element.defaults import (
     EndWithArrParser,
     EndWithBParser,
     GiftParser,
+    HurtArrParser,
     NestedElementParser,
     ObjParser,
+    ParserArrParser,
     TagAttribElementParser,
     TextElementParser,
+    addObjJsonParser,
+    hurtRectArrParser,
+    EndWithRectParser
 )
 from bqyx_parser.parser.xml import Element, is_element
 
@@ -134,14 +142,49 @@ class ElementParserFactory:
     3. 按形态兜底：纯文本、纯属性、嵌套、空元素
     """
 
-    def __init__(self, attrib_registry: AttribParserFactory | None = None):
+    def __init__(
+        self,
+        attrib_registry: AttribParserFactory | None = None,
+        rename_maps: dict[str, dict[str, str]] | None = None,
+        force_list_for: Iterable[str] | str | None = None,
+    ):
         self.attrib_registry = attrib_registry or AttribParserFactory()
+        maps = rename_maps or {}
+        self.rename_maps: dict[str, dict[str, str]] = {
+            "attrib": dict(maps.get("attrib") or {}),
+            "element": dict(maps.get("element") or {}),
+        }
+        if isinstance(force_list_for, str):
+            self.force_list_for: set[str] = {force_list_for}
+        else:
+            self.force_list_for: set[str] = set(force_list_for or ())
         self._custom: list[tuple[int, ElementParser]] = []
         self._tag_parsers: dict[str, ElementParser] = {}
         self._suffix_parsers: list[tuple[str, ElementParser]] = []
         self._fallbacks: list[tuple[int, ElementParser]] = []
         self._empty = EmptyElementParser()
         self._bind(self._empty)
+
+    def add_force_list_for(self, *tags: str | Iterable[str]) -> ElementParserFactory:
+        """追加全局强制转换为列表的标签。可传集合、列表或单个/多个标签名。"""
+        for item in tags:
+            if isinstance(item, str):
+                self.force_list_for.add(item)
+            else:
+                self.force_list_for.update(item)
+        return self
+
+    def add_rename_maps(
+        self,
+        attrib: dict[str, str] | None = None,
+        element: dict[str, str] | None = None,
+    ) -> ElementParserFactory:
+        """追加 attrib / element 改名映射。"""
+        if attrib:
+            self.rename_maps["attrib"].update(attrib)
+        if element:
+            self.rename_maps["element"].update(element)
+        return self
 
     def set_attrib_registry(self, attrib_registry: AttribParserFactory) -> None:
         self.attrib_registry = attrib_registry
@@ -155,7 +198,7 @@ class ElementParserFactory:
         self._custom.sort(key=lambda item: item[0], reverse=True)
         return self
 
-    def register_parser(self, parser: ElementParser, priority: int = 0) -> ElementParserFactory:
+    def register_parser(self, parser: ElementParser, priority: int = 10) -> ElementParserFactory:
         return self.register(parser, priority=priority)
 
     def register_tag(self, tag: str, parser: ElementParser) -> ElementParserFactory:
@@ -245,9 +288,13 @@ class ElementParserFactory:
 def create_attrib_registry() -> AttribParserFactory:
     """创建带默认规则的属性工厂，每次都是独立实例。"""
     factory = AttribParserFactory()
+    factory.register_name("addObjJson", addObjJsonAttribParser())
+    factory.register_name('lightColor',lightColorParser())
     factory.register_name("name", NameAttribParser())
     factory.register_suffix("B", EndWithBAttribParser())
     factory.register_suffix("Arr", EndWithArrAttribParser())
+    factory.register_suffix("ArrCn", EndWithArrAttribParser())
+    factory.register_fallback(ParserArrAttribParser(), 1)
     factory.register_fallback(DefaultAttribParser(), 0)
     return factory
 
@@ -255,16 +302,30 @@ def create_attrib_registry() -> AttribParserFactory:
 create_attrib_factory = create_attrib_registry
 
 
-def create_factory(attrib_registry: AttribParserFactory | None = None) -> ElementParserFactory:
+def create_factory(
+    attrib_registry: AttribParserFactory | None = None,
+    rename_maps: dict[str, dict[str, str]] | None = None,
+    force_list_for: Iterable[str] | str | None = None,
+) -> ElementParserFactory:
     """创建带默认规则的新工厂，每次都是独立实例。"""
-    factory = ElementParserFactory(attrib_registry or create_attrib_registry())
+    factory = ElementParserFactory(
+        attrib_registry or create_attrib_registry(),
+        rename_maps=rename_maps,
+        force_list_for=force_list_for,
+    )
+    factory.register_tag("hurtArr", HurtArrParser())
     factory.register_tag("obj", ObjParser())
+    factory.register_tag("hurtRectArr", hurtRectArrParser())
+    factory.register_tag("addObjJson", addObjJsonParser())
+    factory.register_suffix("Rect", EndWithRectParser())
     factory.register_suffix("B", EndWithBParser())
     factory.register_suffix("Arr", EndWithArrParser())
-    factory.register_fallback(GiftParser(), 5)
-    factory.register_fallback(TextElementParser(), 4)
-    factory.register_fallback(AttributeElementParser(), 3)
-    factory.register_fallback(TagAttribElementParser(), 2)
-    factory.register_fallback(NestedElementParser(), 1)
-    factory.register_fallback(EmptyElementParser(), 0)
+    factory.register_suffix("ArrCn", EndWithArrParser())
+    factory.register_fallback(GiftParser(), 6)
+    factory.register_fallback(ObjParser(), 5)
+    factory.register_fallback(ParserArrParser(), 4)
+    factory.register_fallback(TextElementParser(), 3)
+    factory.register_fallback(AttributeElementParser(), 2)
+    factory.register_fallback(TagAttribElementParser(), 1)
+    factory.register_fallback(NestedElementParser(), 0)
     return factory

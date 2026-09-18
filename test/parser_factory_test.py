@@ -17,7 +17,7 @@ from bqyx_parser.parser import (
     create_attrib_registry,
     create_factory,
     load_xml,
-    parse_element,
+    parse_element_by_factory,
     parse_xml,
 )
 from bqyx_parser.parser.convert import auto_convert, parse_arr, safe_eval
@@ -52,6 +52,8 @@ class TestConvert(unittest.TestCase):
         self.assertEqual(parse_arr("a,,b,"), ["a", "b"])
         self.assertEqual(parse_arr("76,84"), [76, 84])
         self.assertEqual(parse_arr("1,foo,0.5"), [1, "foo", 0.5])
+        self.assertEqual(parse_arr("1,2,3", int), [1, 2, 3])
+        self.assertEqual(parse_arr("a,b", str.upper), ["A", "B"])
 
 
 class TestAttribRegistry(unittest.TestCase):
@@ -79,6 +81,12 @@ class TestAttribRegistry(unittest.TestCase):
     def test_drop_level_arr_ints(self):
         result = self.registry.parse(elem('<item dropLevelArr="1,2,999"/>'))
         self.assertEqual(result["dropLevelArr"], [1, 2, 999])
+
+    def test_arr_custom_item_parser(self):
+        registry = create_attrib_registry()
+        registry.register_name("colorArr", EndWithArrAttribParser(str.upper))
+        result = registry.parse(elem('<item colorArr="red,blue"/>'))
+        self.assertEqual(result["colorArr"], ["RED", "BLUE"])
 
     def test_empty_attributes(self):
         result = {}
@@ -141,6 +149,85 @@ class TestDefaultParsers(unittest.TestCase):
         self.assertEqual(result["size"], 2)
         self.assertEqual(result["lightColor"], 0xFFCC00)
 
+    def test_parse_attribs_rename_keys(self):
+        parser = self.factory.get_parser(elem('<item name="a" cnName="test" activeB="1"/>'))
+        result = parser.parse_attribs(
+            elem('<item name="a" cnName="test" activeB="1"/>'),
+            rename_keys={"cnName": "nameCn", "activeB": "active"},
+        )
+        self.assertEqual(result["name"], "a")
+        self.assertEqual(result["nameCn"], "test")
+        self.assertTrue(result["active"])
+        self.assertNotIn("cnName", result)
+        self.assertNotIn("activeB", result)
+
+    def test_factory_rename_maps(self):
+        factory = create_factory(rename_maps={
+            "attrib": {"cnName": "nameCn"},
+            "element": {"addObjJson": "addObj"},
+        })
+        result = factory.parse(elem("""
+            <item cnName="test">
+                <addObjJson>"pro":1</addObjJson>
+            </item>
+        """))
+        self.assertEqual(result["nameCn"], "test")
+        self.assertNotIn("cnName", result)
+        self.assertEqual(result["addObj"], {"pro": 1})
+        self.assertNotIn("addObjJson", result)
+
+    def test_parse_rename_override_factory_map(self):
+        factory = create_factory(rename_maps={"attrib": {"cnName": "nameCn"}})
+        parser = factory.get_parser(elem('<item cnName="test"/>'))
+        result = parser.parse_attribs(
+            elem('<item cnName="test"/>'),
+            rename_keys={"cnName": "title"},
+        )
+        self.assertEqual(result["title"], "test")
+        self.assertNotIn("nameCn", result)
+        self.assertNotIn("cnName", result)
+
+    def test_factory_force_list_for(self):
+        factory = create_factory(force_list_for={"gift"})
+        result = factory.parse(elem("""
+            <item>
+                <gift>things;demStone;25</gift>
+                <name>single</name>
+            </item>
+        """))
+        self.assertEqual(result["gift"], [{"type": "things", "name": "demStone", "num": 25}])
+        self.assertEqual(result["name"], "single")
+
+    def test_factory_add_force_list_for(self):
+        factory = create_factory()
+        factory.add_force_list_for("gift")
+        result = factory.parse(elem("""
+            <item>
+                <gift>things;demStone;25</gift>
+            </item>
+        """))
+        self.assertEqual(result["gift"], [{"type": "things", "name": "demStone", "num": 25}])
+
+    def test_parse_children_merge_factory_and_local_force_list(self):
+        factory = create_factory(force_list_for={"gift"})
+        class CustomParser(ElementParser):
+            def can_parse(self, element):
+                return element.tag == "custom"
+            def parse(self, element):
+                return self.parse_children(element, force_list_for={"extra"})
+
+        factory.register_parser(CustomParser(), 100)
+        result = factory.parse(elem("""
+            <custom>
+                <gift>things;demStone;25</gift>
+                <extra>123</extra>
+                <single>456</single>
+            </custom>
+        """))
+        self.assertEqual(result["gift"], [{"type": "things", "name": "demStone", "num": 25}])
+        self.assertEqual(result["extra"], [123])
+        self.assertEqual(result["single"], 456)
+
     def test_tag_and_attrib(self):
         result = self.factory.parse(elem('<addD pro="mul" range="0.03,0.12">1.5</addD>'))
         self.assertEqual(result["pro"], "mul")
@@ -183,7 +270,7 @@ class TestDefaultParsers(unittest.TestCase):
 
     def test_comments_are_removed(self):
         root = load_xml(b"<data><!-- ignore --><name>ok</name></data>")
-        self.assertEqual(parse_element(root, self.factory), {"name": "ok"})
+        self.assertEqual(parse_element_by_factory(root, self.factory), {"name": "ok"})
 
 
 class TestFactoryOverride(unittest.TestCase):
@@ -199,24 +286,7 @@ class TestFactoryOverride(unittest.TestCase):
         factory.register(TargetParser(), 100)
         self.assertEqual(factory.parse(elem("<target>me,range,we</target>")), ["me", "range", "we"])
 
-    def test_named_map_helper(self):
-        class SkillFatherParser(ElementParser):
-            def can_parse(self, element):
-                return element.find("skill") is not None
 
-            def parse(self, element):
-                return self.parse_named_map(element, "skills")
-
-        factory = create_factory()
-        factory.register(SkillFatherParser(), 100)
-        result = factory.parse(elem("""
-            <data>
-                <skill><name>a</name><cd>1</cd></skill>
-                <skill><name>b</name><cd>2</cd></skill>
-            </data>
-        """))
-        self.assertEqual(result["skills"]["a"]["cd"], 1)
-        self.assertEqual(result["skills"]["b"]["cd"], 2)
 
 
 class TestXmlTools(unittest.TestCase):

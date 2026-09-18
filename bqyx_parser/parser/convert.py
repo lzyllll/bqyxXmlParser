@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+from collections.abc import Callable
 from typing import Any
 
 
@@ -28,13 +29,20 @@ def safe_eval(value: Any) -> Any:
         return value
 
 
-def parse_arr(value: Any) -> list[Any]:
-    """按逗号拆成列表，丢掉空项，每一项走 safe_eval。"""
+def parse_arr(
+    value: Any,
+    item_parser: Callable[[str], Any] = safe_eval,
+) -> list[Any]:
+    '''把逗号分隔的字符串转成列表，strip 每个元素，过滤掉空串。'''
     if value is None:
         return []
     text = value if isinstance(value, str) else str(value)
-    return [safe_eval(item) for item in text.split(",") if item != ""]
-
+    result = []
+    for item in text.split(","):
+        stripped = item.strip()
+        if stripped:  # 非空才保留
+            result.append(item_parser(stripped))
+    return result
 
 def parse_bool_flag(value: Any) -> bool:
     """true/1 为 True，其余为 False。"""

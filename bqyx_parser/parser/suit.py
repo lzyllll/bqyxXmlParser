@@ -4,7 +4,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from bqyx_parser.parser.xml import load_xml, parse_element
+from bqyx_parser.parser.xml import load_xml, parse_element_by_factory
 from bqyx_parser.tools import load_last_version
 
 
@@ -38,7 +38,7 @@ def parse_suits(version: str | None = None) -> tuple[dict, dict]:
             range_value = father.getparent().attrib.get("range")
             for image in father.findall("image"):
                 name = father.get("name") + "_" + image.find("type").text
-                equip_result[name] = parse_element(image)
+                equip_result[name] = parse_element_by_factory(image)
                 if range_value:
                     start, mx1, mx2, end = list(map(int, range_value.split(",")))
                     equip_result[name]["level"] = {
