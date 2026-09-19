@@ -71,12 +71,13 @@ def main():
     print("\n🎉 提取任务已全部完成！统计结果：")
     print(f"  - 图标分类: {len(result.get('icons', {}))} 个分类")
     for k, v in result.get("icons", {}).items():
-        print(f"      • {k}: {v} 个 SVG")
+        print(f"      • {k}: {v} 个 PNG")
     print(f"  - 装备套装 (EquipGather): {result.get('equip_suits', 0)} 套")
     print(f"  - 武器兵器分类: {len(result.get('weapons', {}))} 个分类")
     for k, v in result.get("weapons", {}).items():
-        print(f"      • {k}: {v} 个 SVG/PNG")
+        print(f"      • {k}: {v} 个 PNG")
     print(f"  - 系统通用图标与底框 (icons): {result.get('ui_system_icons', 0)} 个文件")
+    print(f"  - 同步至 D:\\bqyx\\rs\\assets: {result.get('rs_synced_files', 0)} 个文件")
 
 
 if __name__ == "__main__":
