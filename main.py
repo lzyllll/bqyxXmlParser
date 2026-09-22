@@ -64,17 +64,18 @@ def swf_equip(version: str | None, swf_dir: str) -> None:
 
 
 @swf_group.command("assets")
-@click.option("-v", "--version", default="v3680", help="游戏版本号 (默认: v3680)")
+@click.option("-v", "--version", default=None, help="游戏版本号 (默认: 最新记录版本)")
 @click.option("-d", "--swf-dir", default=None, help="SWF 存放目录 (默认: swf_assets/<version>)")
 @click.option("-c", "--scripts-dir", default=None, help="AS3 源码目录 (默认: compiled/<version>/scripts)")
 @click.option("-o", "--output", default=None, help="输出 assets 目录 (默认: output/<version>/assets)")
-def swf_assets(version: str, swf_dir: str | None, scripts_dir: str | None, output: str | None) -> None:
+def swf_assets(version: str | None, swf_dir: str | None, scripts_dir: str | None, output: str | None) -> None:
     """根据 decompiled AS3 源码自动提取该版本所需的所有图片/矢量图标资源。"""
     from bqyx_parser.extractor.asset_extractor import AssetExtractor
 
-    logger.info("正在根据源码提取 SWF 资源到 assets (版本: %s)...", version)
+    target_ver = version or load_last_version() or "v3690"
+    logger.info("正在根据源码提取 SWF 资源到 assets (版本: %s)...", target_ver)
     extractor = AssetExtractor(
-        version=version,
+        version=target_ver,
         swf_dir=swf_dir,
         scripts_dir=scripts_dir,
         output_assets_dir=output,
