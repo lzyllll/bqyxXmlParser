@@ -14,8 +14,10 @@
 **核心决策：**
 这些系统 UI 底框与通用图标属于游戏底层最稳定的基石素材（10 种品质底色、强化星级指示器、锁图标、导航入口等，运营多年从未变动）。
 因此，我们将这套标准的完整素材（共 40 个 PNG 文件）单独固化存放在仓库的 **`resources/icons/`** 文件夹中并纳入 Git 版本控制：
-1. **零开销极速复制**：在执行 `python main.py swf assets -v <version>` 时，`extract_ui_system_icons` 优先直接将 `resources/icons/` 复制到输出目录，耗时仅 0.01 秒。
-2. **100% 稳定性**：彻底摆脱对 `BasicUI*.swf` 内部临时递增 ID 的依赖，任何后续版本（v3700、v3710...）更新时，通用图标均 100% 准确生效，永不失效。
+> [!IMPORTANT]
+> **版本更新维护警示**：
+> `AssetExtractor.extract_ui_system_icons` 中的 SWF 动态提取生成函数**会随游戏版本更新（SWF 重新编译）产生 Character ID 偏移，若需从新版本 SWF 重新提取生成，必须手动核对并更新代码中的对应 ID**。
+> 平常日常解析中，默认优先直接使用 `resources/icons` 静态目录快速复制，以彻底规避版本更新带来的维护负担。
 
 ---
 

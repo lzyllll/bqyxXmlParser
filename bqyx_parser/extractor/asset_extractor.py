@@ -351,14 +351,16 @@ class AssetExtractor:
           - back/equip_*.png (10 种装备品质底框)
           - stars/str_*.png (10 档强化星级图)
         
-        注：这些图标属于游戏底层标准固定素材，版本更新几乎从不改动。
-        优先直接从 resources/icons 静态目录复制，避免版本更新导致 SWF 内部 Character ID 偏移失效；
-        若静态目录不存在，则回退至从 BasicUI SWF 反编译提取。
+        【重要维护说明】：
+        该提取函数在从 BasicUI.swf 反编译生成时，所依赖的 Flash Character ID（如 410, 383, 822/824, 397）
+        会随游戏版本更新（SWF 重新编译）发生偏移，【需要随版本更新手动更新】。
+        为保证日常解析稳定，函数默认优先直接从固化的 resources/icons 静态目录秒级复制；
+        若后续版本游戏 UI 改版需要重新提取生成，请参考 docs/BASIC_UI_ICONS_GUIDE.md 手动核对并更新此处 ID。
         """
         dest_dir = custom_dest_dir or (self.output_assets_dir / "icons")
         dest_dir.mkdir(parents=True, exist_ok=True)
 
-        # 1. 优先直接从固化的 resources/icons 静态目录复制
+        # 1. 优先直接从固化的 resources/icons 静态目录复制 (日常解析免维护)
         static_candidates = [
             Path(__file__).resolve().parents[2] / "resources" / "icons",
             Path("resources/icons"),
@@ -379,6 +381,7 @@ class AssetExtractor:
             return copied
 
         # 2. 回退机制：若静态目录不存在，尝试从 BasicUI SWF 中提取
+        # 【注意：此处的 Character ID 随版本更新重新编译会发生变动，需要手动核对并更新！】
         basic_ui_swf = self.find_actual_swf("swf/UI/BasicUI368.swf", "BasicUI")
         if not basic_ui_swf:
             logger.warning("未找到 BasicUI SWF，且未找到预置 icons 目录，跳过通用系统底框与星级提取")
@@ -389,7 +392,12 @@ class AssetExtractor:
         with tempfile.TemporaryDirectory() as tmp_dir:
             tmp_path = Path(tmp_dir)
             exporter = FFDecExporter(output_dir=tmp_path, input_swf=basic_ui_swf)
-            # 410: lockBmp, 383: equip back frames, 822/824: arm back frames, 397: star frames
+            # 【随版本更新需手动更新的 Character ID 列表】：
+            #   - 410: lockBmp (锁定图标)
+            #   - 383: equipGrip.backMc (装备品质底框 10 帧)
+            #   - 822/824: armsGrip.backMc (武器品质底框 10 帧，v3671/v3680 为 822，v3690 为 824)
+            #   - 397: starMc (强化星级 10 档)
+            # 详细查找方法请查阅 docs/BASIC_UI_ICONS_GUIDE.md
             exporter.export(
                 export_types=["sprite", "image"],
                 formats="sprite:png",
