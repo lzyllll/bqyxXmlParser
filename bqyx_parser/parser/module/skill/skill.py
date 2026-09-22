@@ -573,20 +573,20 @@ def run(xml_dir: Path | None = None, out_put_dir: Path | None = None) -> None:
     if xml_dir is None:
         xml_dir = Path(r"compiled\v3671\xml")
     if out_put_dir is None:
-        out_put_dir = Path(r"output\v3671\json")
+        out_put_dir = Path(r"output\v3671\resource")
     out_put_dir.mkdir(parents=True, exist_ok=True)
 
     logger.info("=== 开始解析 skill 统一技能模块 ===")
     logger.info("解析 XML 路径: %s", xml_dir)
     result = parse_skills_from_xmls(xml_dir)
 
-    # 保存到主目录 output/<version>/json/skill.json
+    # 保存到主目录 output/<version>/resource/skill.json
     skill_json_path = out_put_dir / "skill.json"
     with open(skill_json_path, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
     logger.info("已生成技能库: %s (共 %d 个技能)", skill_json_path, len(result["obj"]))
 
-    # 同时保存到子目录 output/<version>/json/skill/skill.json 方便分模块访问
+    # 同时保存到子目录 output/<version>/resource/skill/skill.json 方便分模块访问
     sub_skill_dir = out_put_dir / "skill"
     sub_skill_dir.mkdir(parents=True, exist_ok=True)
     sub_skill_path = sub_skill_dir / "skill.json"

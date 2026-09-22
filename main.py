@@ -137,7 +137,7 @@ def swf_all(force: bool, swf_dir: str) -> None:
     "--output-dir",
     default=None,
     type=click.Path(path_type=Path),
-    help="自定义 JSON 输出目录 (默认: output/<version>/json)",
+    help="自定义 JSON 输出目录 (默认: output/<version>/resource)",
 )
 def parse_cmd(
     version: str | None,
@@ -175,7 +175,7 @@ def parse_cmd(
     if xml_dir is None:
         xml_dir = Path("compiled") / version / "xml"
     if output_dir is None:
-        output_dir = Path("output") / version / "json"
+        output_dir = Path("output") / version / "resource"
 
     if not xml_dir.exists():
         raise click.ClickException(f"XML 目录不存在: {xml_dir}。请先执行 `python main.py swf update` 下载反编译 XML。")

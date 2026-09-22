@@ -52,7 +52,7 @@ def parse_suits(version: str | None = None) -> tuple[dict, dict]:
 
 def main() -> None:
     version = load_last_version()
-    output_dir = Path("output", version, "json", "equip")
+    output_dir = Path("output", version, "resource", "equip")
     output_dir.mkdir(parents=True, exist_ok=True)
     suit_result, equip_result = parse_suits(version)
     (output_dir / "suit.json").write_text(

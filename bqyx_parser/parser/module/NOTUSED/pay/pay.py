@@ -22,7 +22,7 @@ def create_pay_factory():
     return factory
 if __name__ == "__main__":
     xml_dir = Path(r"compiled\v3671\xml")
-    out_put_dir = Path(r"output\v3671\json\pay")
+    out_put_dir = Path(r"output\v3671\resource\pay")
     out_put_dir.mkdir(parents=True, exist_ok=True)
 
     xml_path = xml_dir / "goods.xml"

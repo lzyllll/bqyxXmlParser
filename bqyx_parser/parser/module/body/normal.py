@@ -69,7 +69,7 @@ def run(xml_dir: Path | None = None, out_put_dir: Path | None = None) -> None:
     if xml_dir is None:
         xml_dir = Path(r"compiled\v3671\xml")
     if out_put_dir is None:
-        out_put_dir = Path(r"output\v3671\json\body")
+        out_put_dir = Path(r"output\v3671\resource\body")
     out_put_dir.mkdir(parents=True, exist_ok=True)
 
     bodys_paths = [

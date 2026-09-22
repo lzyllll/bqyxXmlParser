@@ -22,7 +22,7 @@ def create_extraAsk_factory():
     return factory
 if __name__ == "__main__":
     xml_dir = Path(r"compiled\v3671\xml")
-    out_put_dir = Path(r"output\v3671\json\ask")
+    out_put_dir = Path(r"output\v3671\resource\ask")
     out_put_dir.mkdir(parents=True, exist_ok=True)
 
     xml_path = xml_dir / "extraAsk.xml"

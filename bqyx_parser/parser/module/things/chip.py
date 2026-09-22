@@ -191,19 +191,19 @@ def generate_all_chips(
 
 
 if __name__ == "__main__":
-    out_dir = Path(r"output\v3671\json\things")
+    out_dir = Path(r"output\v3671\resource\things")
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # 读取输入数据：优先 output/v3671/json，兜底 D:/bqyx/rs/resource
+    # 读取输入数据：优先 output/v3671/resource，兜底 D:/bqyx/rs/resource
     chip_path = out_dir / "chipClass.json"
     if not chip_path.is_file():
         chip_path = Path(r"D:\bqyx\rs\resource\things\chipClass.json")
 
-    arms_path = Path(r"output\v3671\json\arms\armsClass.json")
+    arms_path = Path(r"output\v3671\resource\arms\armsClass.json")
     if not arms_path.is_file():
         arms_path = Path(r"D:\bqyx\rs\resource\arms\armsClass.json")
 
-    black_equip_path = Path(r"output\v3671\json\equip\blackEquip.json")
+    black_equip_path = Path(r"output\v3671\resource\equip\blackEquip.json")
     if not black_equip_path.is_file():
         black_equip_path = Path(r"D:\bqyx\rs\resource\equip\blackEquip.json")
 

@@ -10,11 +10,14 @@ from bqyx_parser.parser.module.equip import (
     fashion,
     suitProperty,
 )
+from bqyx_parser.parser.module.equip.base import scan_father_equips
 from bqyx_parser.parser.module.equip.device import device
 from bqyx_parser.parser.module.equip.jewelry import jewelry
 from bqyx_parser.parser.module.equip.shield import shield
 from bqyx_parser.parser.module.equip.vehicle import vehicle, vehicleProperty
 from bqyx_parser.parser.module.equip.weapon import weapon
+
+__all__ = ["run", "scan_father_equips"]
 
 
 def run(xml_dir: Path, output_dir: Path) -> None:

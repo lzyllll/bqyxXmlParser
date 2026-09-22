@@ -76,7 +76,7 @@ test/                    工厂、默认规则和对比工具测试
 ```text
 swf_assets/              下载下来的 SWF
 compiled/                FFDec 反编译结果
-output/<version>/json    解析后的 JSON
+output/<version>/resource    解析后的 JSON
 ```
 
 ## 使用流程 (Click CLI)
@@ -126,7 +126,7 @@ python main.py parse -v v3671 -m worldMap
 python main.py parse -v v3671 -m equip -m arms -m things
 
 # 自定义 XML 输入与 JSON 输出目录
-python main.py parse -v v3671 -x compiled/v3671/xml -o output/v3671/json
+python main.py parse -v v3671 -x compiled/v3671/xml -o output/v3671/resource
 ```
 
 ## 解析体系全景
@@ -446,7 +446,7 @@ from pathlib import Path
 from bqyx_parser.tools.jsonfile import save_to_json
 
 # 将数据保存为 JSON。如果目标文件已存在，会自动安全递增编号（如 head_1.json）
-saved_path = save_to_json(result, xml_path=Path("head.xml"), output_dir="output/json")
+saved_path = save_to_json(result, xml_path=Path("head.xml"), output_dir="output/resource")
 ```
 
 ### 4. 数据对比工具 (`compare_data` / `compare_json`)
@@ -513,7 +513,7 @@ def create_head_factory():
 
 if __name__ == "__main__":
     xml_path = Path("compiled/v3671/xml/head.xml")
-    output_path = Path("output/v3671/json/head/headData.json")
+    output_path = Path("output/v3671/resource/head/headData.json")
     resource_path = Path("resource/head/headData.json")
 
     # 1. 解析

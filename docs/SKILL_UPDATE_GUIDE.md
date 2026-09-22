@@ -205,7 +205,7 @@ from bqyx_parser.parser import Element, load_xml
 
 ## 5. 数据结构规范 (`skill.json`)
 
-解析器将全部有效 XML 解析并聚合输出为单一 JSON 文件：`output/<version>/json/skill.json`。
+解析器将全部有效 XML 解析并聚合输出为单一 JSON 文件：`output/<version>/resource/skill.json`。
 
 ### 字段说明
 - `"obj"`: `{ [skill_name]: SkillDefine }`（当前包含 **3,120+** 个技能定义，展开英雄成长等级 `<growth>`）；
@@ -227,8 +227,8 @@ from bqyx_parser.parser import Element, load_xml
 from bqyx_api.archive.skill import SkillDefineService
 from bqyx_api.archive.world_map import WorldMapDefineService
 
-skill_service = SkillDefineService("output/v3671/json")
-map_service = WorldMapDefineService("output/v3671/json", skill_service=skill_service)
+skill_service = SkillDefineService("output/v3671/resource")
+map_service = WorldMapDefineService("output/v3671/resource", skill_service=skill_service)
 
 wotu = map_service.get_define("WoTu")
 # 获取水合后的首领修罗词缀（含中文名与英文名）
