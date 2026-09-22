@@ -364,11 +364,11 @@ class AssetExtractor:
         with tempfile.TemporaryDirectory() as tmp_dir:
             tmp_path = Path(tmp_dir)
             exporter = FFDecExporter(output_dir=tmp_path, input_swf=basic_ui_swf)
-            # 410: lockBmp, 383: equip back frames, 822: arm back frames, 397: star frames
+            # 410: lockBmp, 383: equip back frames, 822/824: arm back frames, 397: star frames
             exporter.export(
                 export_types=["sprite", "image"],
                 formats="sprite:png",
-                select_id="410,383,822,397",
+                select_id="410,383,822,824,397",
             )
 
             # 1. arms/lock.png
@@ -408,7 +408,7 @@ class AssetExtractor:
                         (back_dir / f"equip_{color}.png").write_bytes(src.read_bytes())
                         count += 1
 
-            d822_list = list(tmp_path.rglob("DefineSprite_822"))
+            d822_list = list(tmp_path.rglob("DefineSprite_822")) or list(tmp_path.rglob("DefineSprite_824"))
             if d822_list:
                 d822 = d822_list[0]
                 for idx, color in enumerate(colors, start=1):
