@@ -77,6 +77,7 @@ test/                    工厂、默认规则和对比工具测试
 swf_assets/              下载下来的 SWF
 compiled/                FFDec 反编译结果
 output/<version>/resource    解析后的 JSON
+resources/icons/         预置通用UI图标、强化星级与品质底框
 ```
 
 ## 使用流程 (Click CLI)

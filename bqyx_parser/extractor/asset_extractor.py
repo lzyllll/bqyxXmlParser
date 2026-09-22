@@ -343,20 +343,45 @@ class AssetExtractor:
         return stats
 
     def extract_ui_system_icons(self, custom_dest_dir: Optional[Path] = None) -> int:
-        """从 BasicUI 与图标库中提取前端/客户端系统通用图标与品质底框 (如 D:\\bqyx\\rs\\assets\\icons)。
+        """从预置 resources/icons 目录直接复制前端/客户端系统通用图标与品质底框 (如 D:\\bqyx\\rs\\assets\\icons)。
         包括:
-          - 根目录 SVG (achieve, active, arms, ask, blackMarket, head, pay, thingsBag)
+          - 根目录图标 (achieve, active, arms, ask, blackMarket, check, head, pay, thingsBag)
           - arms/lock.png
-          - back/arm_*.png (10 种品质底框)
-          - back/equip_*.png (10 种品质底框)
+          - back/arm_*.png (10 种武器品质底框)
+          - back/equip_*.png (10 种装备品质底框)
           - stars/str_*.png (10 档强化星级图)
+        
+        注：这些图标属于游戏底层标准固定素材，版本更新几乎从不改动。
+        优先直接从 resources/icons 静态目录复制，避免版本更新导致 SWF 内部 Character ID 偏移失效；
+        若静态目录不存在，则回退至从 BasicUI SWF 反编译提取。
         """
         dest_dir = custom_dest_dir or (self.output_assets_dir / "icons")
         dest_dir.mkdir(parents=True, exist_ok=True)
 
+        # 1. 优先直接从固化的 resources/icons 静态目录复制
+        static_candidates = [
+            Path(__file__).resolve().parents[2] / "resources" / "icons",
+            Path("resources/icons"),
+            Path(__file__).resolve().parents[1] / "assets" / "icons",
+        ]
+        static_icons_dir = next((p for p in static_candidates if p.is_dir() and (p / "back").is_dir()), None)
+
+        if static_icons_dir:
+            logger.info("正在从预置静态图标库直接复制通用素材 (%s -> %s)...", static_icons_dir, dest_dir)
+            copied = 0
+            for item in static_icons_dir.rglob("*.png"):
+                rel = item.relative_to(static_icons_dir)
+                target = dest_dir / rel
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(item, target)
+                copied += 1
+            logger.info("  ✓ 系统通用图标直接复制完成: %d 个 PNG 文件已保存至 %s", copied, dest_dir)
+            return copied
+
+        # 2. 回退机制：若静态目录不存在，尝试从 BasicUI SWF 中提取
         basic_ui_swf = self.find_actual_swf("swf/UI/BasicUI368.swf", "BasicUI")
         if not basic_ui_swf:
-            logger.warning("未找到 BasicUI SWF，跳过通用系统底框与星级提取")
+            logger.warning("未找到 BasicUI SWF，且未找到预置 icons 目录，跳过通用系统底框与星级提取")
             return 0
 
         logger.info("正在提取系统通用图标、品质底框与强化星级 (来自 %s)...", basic_ui_swf.name)

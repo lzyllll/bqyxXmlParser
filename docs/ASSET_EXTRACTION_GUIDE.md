@@ -54,13 +54,13 @@
   - `head.svg` ← `IconGather/head.svg`（称号系统）
   - `pay.svg` ← `IconGather/pay.svg`（充值福利）
   - `thingsBag.svg` ← `IconGather/wear.svg`（角色装备/道具背包）
-- **锁定标识**：
-  - `arms/lock.png` ← `BasicUI.swf` 中的 Character 410 (`lockBmp`，12×12)
-- **强化星级进度条**：
-  - `stars/str_5.png` ~ `stars/str_50.png` ← `BasicUI.swf` 中的 Character 397 (`starMc` 帧 1~10，46×10)
-- **品质底框**：
-  - `back/equip_*.png` ← `BasicUI.swf` 中的 Character 383 (`equipGrip` 帧 1~10，56×56)
-  - `back/arm_*.png` ← `BasicUI.swf` 中的 Character 822 (`armsGrip` 帧 1~10，173×69)
+- **系统底框与静态素材固化 (`resources/icons/`)**：
+  - 为避免各版本 SWF 内部 Character ID 偏移（如 822 变为 824），系统底层极少变动的 40 个通用图标与品质底框已固化在仓库 `resources/icons/` 下，解析时秒级直接复制。
+  - 详细定位与维护说明请查阅：[BasicUI 图标维护指南](file:///d:/bqyx/python/bqXmlParser/docs/BASIC_UI_ICONS_GUIDE.md)。
+  - `arms/lock.png`：锁定图标 (12×12)
+  - `stars/str_5.png` ~ `stars/str_50.png`：强化星级 (46×10)
+  - `back/equip_*.png`：装备品质底框 (10 种品质，56×56)
+  - `back/arm_*.png`：武器品质底框 (10 种品质，173×69)
   - 颜色顺序（对应 1~10 帧）：`white`, `green`, `blue`, `purple`, `orange`, `red`, `black`, `darkgold`, `purgold`, `yagold`。
 
 ---
